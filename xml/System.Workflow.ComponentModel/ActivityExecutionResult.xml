@@ -1,7 +1,9 @@
-<Type Name="ActivityExecutionResult" FullName="System.Workflow.ComponentModel.ActivityExecutionResult">
+﻿<Type Name="ActivityExecutionResult" FullName="System.Workflow.ComponentModel.ActivityExecutionResult">
   <TypeSignature Language="C#" Value="public enum ActivityExecutionResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActivityExecutionResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ActivityExecutionResult" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ActivityExecutionResult" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Canceled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityExecutionResult Canceled = unsigned int8(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionResult.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Canceled" />
+      <MemberSignature Language="C++ CLI" Value="Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The activity has transitioned to the closed state from the canceling state.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Compensated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityExecutionResult Compensated = unsigned int8(3)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionResult.Compensated" />
+      <MemberSignature Language="VB.NET" Value="Compensated" />
+      <MemberSignature Language="C++ CLI" Value="Compensated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The activity has transitioned to the closed state from the compensating state.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Faulted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityExecutionResult Faulted = unsigned int8(4)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionResult.Faulted" />
+      <MemberSignature Language="VB.NET" Value="Faulted" />
+      <MemberSignature Language="C++ CLI" Value="Faulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The activity has transitioned to the closed state from the faulting state.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityExecutionResult None = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionResult.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The activity is not in the <see cref="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Closed" /> state.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="Succeeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityExecutionResult Succeeded = unsigned int8(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionResult.Succeeded" />
+      <MemberSignature Language="VB.NET" Value="Succeeded" />
+      <MemberSignature Language="C++ CLI" Value="Succeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -106,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The activity has transitioned to the closed state from the executing state.</summary>
       </Docs>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="Uninitialized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityExecutionResult Uninitialized = unsigned int8(5)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionResult.Uninitialized" />
+      <MemberSignature Language="VB.NET" Value="Uninitialized" />
+      <MemberSignature Language="C++ CLI" Value="Uninitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -122,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The activity has transitioned to the closed state from the initialized state.</summary>
       </Docs>

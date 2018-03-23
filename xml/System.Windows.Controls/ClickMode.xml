@@ -1,7 +1,9 @@
-<Type Name="ClickMode" FullName="System.Windows.Controls.ClickMode">
+﻿<Type Name="ClickMode" FullName="System.Windows.Controls.ClickMode">
   <TypeSignature Language="C#" Value="public enum ClickMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClickMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ClickMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ClickMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ClickMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Hover" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ClickMode Hover = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Hover" />
+      <MemberSignature Language="VB.NET" Value="Hover" />
+      <MemberSignature Language="C++ CLI" Value="Hover" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised when the mouse hovers over a control.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="Press" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ClickMode Press = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Press" />
+      <MemberSignature Language="VB.NET" Value="Press" />
+      <MemberSignature Language="C++ CLI" Value="Press" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised as soon as a button is pressed.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="Release" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ClickMode Release = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Release" />
+      <MemberSignature Language="VB.NET" Value="Release" />
+      <MemberSignature Language="C++ CLI" Value="Release" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised when a button is pressed and released.</summary>
       </Docs>

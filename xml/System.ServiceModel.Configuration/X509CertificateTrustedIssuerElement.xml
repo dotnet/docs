@@ -1,7 +1,9 @@
-<Type Name="X509CertificateTrustedIssuerElement" FullName="System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement">
+﻿<Type Name="X509CertificateTrustedIssuerElement" FullName="System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement">
   <TypeSignature Language="C#" Value="public sealed class X509CertificateTrustedIssuerElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509CertificateTrustedIssuerElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509CertificateTrustedIssuerElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509CertificateTrustedIssuerElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public X509CertificateTrustedIssuerElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509CertificateTrustedIssuerElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public void Copy (System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Copy(class System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.Copy(System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As X509CertificateTrustedIssuerElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::X509CertificateTrustedIssuerElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public string FindValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FindValue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.FindValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property FindValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FindValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +119,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreLocation StoreLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreLocation StoreLocation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.StoreLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property StoreLocation As StoreLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation StoreLocation { System::Security::Cryptography::X509Certificates::StoreLocation get(); void set(System::Security::Cryptography::X509Certificates::StoreLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,7 +128,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("storeLocation", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreName StoreName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreName StoreName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.StoreName" />
+      <MemberSignature Language="VB.NET" Value="Public Property StoreName As StoreName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreName StoreName { System::Security::Cryptography::X509Certificates::StoreName get(); void set(System::Security::Cryptography::X509Certificates::StoreName value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -139,7 +153,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("storeName", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -155,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509FindType X509FindType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.X509FindType X509FindType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.X509FindType" />
+      <MemberSignature Language="VB.NET" Value="Public Property X509FindType As X509FindType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509FindType X509FindType { System::Security::Cryptography::X509Certificates::X509FindType get(); void set(System::Security::Cryptography::X509Certificates::X509FindType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,7 +178,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("x509FindType", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

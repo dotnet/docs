@@ -1,7 +1,9 @@
-<Type Name="Delegate" FullName="System.Delegate">
+﻿<Type Name="Delegate" FullName="System.Delegate">
   <TypeSignature Language="C#" Value="public abstract class Delegate : ICloneable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi abstract serializable beforefieldinit Delegate extends System.Object implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Delegate" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Delegate&#xA;Implements ICloneable, ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Delegate abstract : ICloneable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,10 +108,22 @@
     <altmember cref="T:System.MulticastDelegate" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new delegate.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected Delegate (object target, string method);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object target, string method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.#ctor(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (target As Object, method As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Delegate(System::Object ^ target, System::String ^ method);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +172,8 @@
       <MemberSignature Language="C#" Value="protected Delegate (Type target, string method);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type target, string method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (target As Type, method As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Delegate(Type ^ target, System::String ^ method);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -211,7 +227,12 @@
       <MemberSignature Language="C#" Value="public virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -245,10 +266,25 @@
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Combine">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Concatenates the invocation lists of the specified multicast (combinable) delegates.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Combine">
       <MemberSignature Language="C#" Value="public static Delegate Combine (params Delegate[] delegates);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate Combine(class System.Delegate[] delegates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.Combine(System.Delegate[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Combine (ParamArray delegates As Delegate()) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ Combine(... cli::array &lt;Delegate ^&gt; ^ delegates);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -313,6 +349,8 @@
       <MemberSignature Language="C#" Value="public static Delegate Combine (Delegate a, Delegate b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate Combine(class System.Delegate a, class System.Delegate b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.Combine(System.Delegate,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Combine (a As Delegate, b As Delegate) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ Combine(Delegate ^ a, Delegate ^ b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -366,6 +404,8 @@
       <MemberSignature Language="C#" Value="protected virtual Delegate CombineImpl (Delegate d);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Delegate CombineImpl(class System.Delegate d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CombineImpl(System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CombineImpl (d As Delegate) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Delegate ^ CombineImpl(Delegate ^ d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -407,10 +447,21 @@
         <altmember cref="M:System.Delegate.Combine(System.Delegate,System.Delegate)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDelegate">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a delegate of the specified type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateDelegate">
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, System.Reflection.MethodInfo method);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, class System.Reflection.MethodInfo method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Reflection.MethodInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, System::Reflection::MethodInfo ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -544,6 +595,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, object firstArgument, System.Reflection.MethodInfo method);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, object firstArgument, class System.Reflection.MethodInfo method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Object,System.Reflection.MethodInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, System::Object ^ firstArgument, System::Reflection::MethodInfo ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -739,6 +791,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, object target, string method);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, object target, string method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Object,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, System::Object ^ target, System::String ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -819,6 +872,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, System.Reflection.MethodInfo method, bool throwOnBindFailure);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, class System.Reflection.MethodInfo method, bool throwOnBindFailure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Reflection.MethodInfo,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, System::Reflection::MethodInfo ^ method, bool throwOnBindFailure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -955,6 +1009,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, Type target, string method);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, class System.Type target, string method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, Type ^ target, System::String ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1043,6 +1098,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, object firstArgument, System.Reflection.MethodInfo method, bool throwOnBindFailure);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, object firstArgument, class System.Reflection.MethodInfo method, bool throwOnBindFailure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Object,System.Reflection.MethodInfo,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, System::Object ^ firstArgument, System::Reflection::MethodInfo ^ method, bool throwOnBindFailure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1241,6 +1297,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, object target, string method, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, object target, string method, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Object,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, System::Object ^ target, System::String ^ method, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1323,6 +1380,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, Type target, string method, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, class System.Type target, string method, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Type,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, Type ^ target, System::String ^ method, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1413,6 +1471,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, object target, string method, bool ignoreCase, bool throwOnBindFailure);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, object target, string method, bool ignoreCase, bool throwOnBindFailure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Object,System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, System::Object ^ target, System::String ^ method, bool ignoreCase, bool throwOnBindFailure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1496,6 +1555,7 @@
       <MemberSignature Language="C#" Value="public static Delegate CreateDelegate (Type type, Type target, string method, bool ignoreCase, bool throwOnBindFailure);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate CreateDelegate(class System.Type type, class System.Type target, string method, bool ignoreCase, bool throwOnBindFailure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.CreateDelegate(System.Type,System.Type,System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ CreateDelegate(Type ^ type, Type ^ target, System::String ^ method, bool ignoreCase, bool throwOnBindFailure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1587,6 +1647,8 @@
       <MemberSignature Language="C#" Value="public object DynamicInvoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object DynamicInvoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.DynamicInvoke(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function DynamicInvoke (ParamArray args As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ DynamicInvoke(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1653,6 +1715,8 @@
       <MemberSignature Language="C#" Value="protected virtual object DynamicInvokeImpl (object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object DynamicInvokeImpl(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.DynamicInvokeImpl(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function DynamicInvokeImpl (args As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ DynamicInvokeImpl(cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1709,6 +1773,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1768,6 +1834,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1809,6 +1877,8 @@
       <MemberSignature Language="C#" Value="public virtual Delegate[] GetInvocationList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Delegate[] GetInvocationList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.GetInvocationList" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInvocationList () As Delegate()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Delegate ^&gt; ^ GetInvocationList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1859,6 +1929,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Reflection.MethodInfo GetMethodImpl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethodImpl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.GetMethodImpl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetMethodImpl () As MethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Reflection::MethodInfo ^ GetMethodImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1898,7 +1970,12 @@
       <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1935,6 +2012,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo Method { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodInfo Method" />
       <MemberSignature Language="DocId" Value="P:System.Delegate.Method" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As MethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ Method { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1966,6 +2045,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (Delegate d1, Delegate d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Delegate d1, class System.Delegate d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.op_Equality(System.Delegate,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (d1 As Delegate, d2 As Delegate) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Delegate ^ d1, Delegate ^ d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2028,6 +2109,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (Delegate d1, Delegate d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Delegate d1, class System.Delegate d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.op_Inequality(System.Delegate,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (d1 As Delegate, d2 As Delegate) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Delegate ^ d1, Delegate ^ d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2090,6 +2173,8 @@
       <MemberSignature Language="C#" Value="public static Delegate Remove (Delegate source, Delegate value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate Remove(class System.Delegate source, class System.Delegate value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.Remove(System.Delegate,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Remove (source As Delegate, value As Delegate) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ Remove(Delegate ^ source, Delegate ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2140,6 +2225,8 @@
       <MemberSignature Language="C#" Value="public static Delegate RemoveAll (Delegate source, Delegate value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate RemoveAll(class System.Delegate source, class System.Delegate value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.RemoveAll(System.Delegate,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveAll (source As Delegate, value As Delegate) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ RemoveAll(Delegate ^ source, Delegate ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2190,6 +2277,8 @@
       <MemberSignature Language="C#" Value="protected virtual Delegate RemoveImpl (Delegate d);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Delegate RemoveImpl(class System.Delegate d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.RemoveImpl(System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function RemoveImpl (d As Delegate) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Delegate ^ RemoveImpl(Delegate ^ d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2232,6 +2321,8 @@
       <MemberSignature Language="C#" Value="public object Target { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Target" />
       <MemberSignature Language="DocId" Value="P:System.Delegate.Target" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Target { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2269,38 +2360,5 @@
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Combine">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Concatenates the invocation lists of the specified multicast (combinable) delegates.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateDelegate">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a delegate of the specified type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new delegate.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

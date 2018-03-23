@@ -1,7 +1,9 @@
-<Type Name="TemplateEditingVerb" FullName="System.Web.UI.Design.TemplateEditingVerb">
+﻿<Type Name="TemplateEditingVerb" FullName="System.Web.UI.Design.TemplateEditingVerb">
   <TypeSignature Language="C#" Value="public class TemplateEditingVerb : System.ComponentModel.Design.DesignerVerb, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateEditingVerb extends System.ComponentModel.Design.DesignerVerb implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateEditingVerb" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateEditingVerb&#xA;Inherits DesignerVerb&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateEditingVerb : System::ComponentModel::Design::DesignerVerb, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +38,24 @@
     <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> class.</summary>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+        <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TemplateEditingVerb (string text, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateEditingVerb(System::String ^ text, int index);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -72,6 +88,8 @@
       <MemberSignature Language="C#" Value="public TemplateEditingVerb (string text, int index, System.Web.UI.Design.TemplatedControlDesigner designer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 index, class System.Web.UI.Design.TemplatedControlDesigner designer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32,System.Web.UI.Design.TemplatedControlDesigner)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, index As Integer, designer As TemplatedControlDesigner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateEditingVerb(System::String ^ text, int index, System::Web::UI::Design::TemplatedControlDesigner ^ designer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -102,11 +120,28 @@
         <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Web.UI.Design.TemplateEditingVerb" />.</summary>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+        <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -137,6 +172,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -183,6 +220,8 @@
       <MemberSignature Language="C#" Value="~TemplateEditingVerb ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!TemplateEditingVerb ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -218,6 +257,8 @@
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateEditingVerb.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -244,29 +285,5 @@
         <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> class.</summary>
-        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
-        <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
-        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Web.UI.Design.TemplateEditingVerb" />.</summary>
-        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
-        <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
-        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="IteratorStateMachineAttribute" FullName="System.Runtime.CompilerServices.IteratorStateMachineAttribute">
+﻿<Type Name="IteratorStateMachineAttribute" FullName="System.Runtime.CompilerServices.IteratorStateMachineAttribute">
   <TypeSignature Language="C#" Value="public sealed class IteratorStateMachineAttribute : System.Runtime.CompilerServices.StateMachineAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit IteratorStateMachineAttribute extends System.Runtime.CompilerServices.StateMachineAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IteratorStateMachineAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IteratorStateMachineAttribute&#xA;Inherits StateMachineAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IteratorStateMachineAttribute sealed : System::Runtime::CompilerServices::StateMachineAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,8 @@
       <MemberSignature Language="C#" Value="public IteratorStateMachineAttribute (Type stateMachineType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type stateMachineType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IteratorStateMachineAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stateMachineType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IteratorStateMachineAttribute(Type ^ stateMachineType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

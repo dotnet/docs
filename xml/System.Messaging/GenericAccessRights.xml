@@ -1,7 +1,9 @@
-<Type Name="GenericAccessRights" FullName="System.Messaging.GenericAccessRights">
+﻿<Type Name="GenericAccessRights" FullName="System.Messaging.GenericAccessRights">
   <TypeSignature Language="C#" Value="public enum GenericAccessRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed GenericAccessRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.GenericAccessRights" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GenericAccessRights" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GenericAccessRights" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.GenericAccessRights All = int32(268435456)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>268435456</MemberValue>
       <Docs>
         <summary>Read, write, and execute access.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="Execute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.GenericAccessRights Execute = int32(536870912)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.Execute" />
+      <MemberSignature Language="VB.NET" Value="Execute" />
+      <MemberSignature Language="C++ CLI" Value="Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>536870912</MemberValue>
       <Docs>
         <summary>Execute access.</summary>
       </Docs>
@@ -67,6 +75,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.GenericAccessRights None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -75,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No access.</summary>
       </Docs>
@@ -83,6 +94,8 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.GenericAccessRights Read = int32(-2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -91,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
       <Docs>
         <summary>Read access.</summary>
       </Docs>
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.GenericAccessRights Write = int32(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -107,6 +123,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>Write access.</summary>
       </Docs>

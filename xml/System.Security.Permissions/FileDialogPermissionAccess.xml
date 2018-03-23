@@ -1,7 +1,9 @@
-<Type Name="FileDialogPermissionAccess" FullName="System.Security.Permissions.FileDialogPermissionAccess">
+﻿<Type Name="FileDialogPermissionAccess" FullName="System.Security.Permissions.FileDialogPermissionAccess">
   <TypeSignature Language="C#" Value="public enum FileDialogPermissionAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileDialogPermissionAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileDialogPermissionAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FileDialogPermissionAccess" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileDialogPermissionAccess" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileDialogPermissionAccess None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileDialogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No access to files through the **File** dialog boxes.</summary>
       </Docs>
@@ -54,6 +59,8 @@
       <MemberSignature Language="C#" Value="Open" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileDialogPermissionAccess Open = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.Open" />
+      <MemberSignature Language="VB.NET" Value="Open" />
+      <MemberSignature Language="C++ CLI" Value="Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileDialogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Ability to open files through the **File** dialog boxes.</summary>
       </Docs>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="OpenSave" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileDialogPermissionAccess OpenSave = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.OpenSave" />
+      <MemberSignature Language="VB.NET" Value="OpenSave" />
+      <MemberSignature Language="C++ CLI" Value="OpenSave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileDialogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Ability to open and save files through the **File** dialog boxes.</summary>
       </Docs>
@@ -96,6 +107,8 @@
       <MemberSignature Language="C#" Value="Save" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileDialogPermissionAccess Save = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.Save" />
+      <MemberSignature Language="VB.NET" Value="Save" />
+      <MemberSignature Language="C++ CLI" Value="Save" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileDialogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Ability to save files through the **File** dialog boxes.</summary>
       </Docs>

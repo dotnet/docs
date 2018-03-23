@@ -1,7 +1,9 @@
-<Type Name="BuildExtensionContext" FullName="Microsoft.Build.Tasks.Xaml.BuildExtensionContext">
+﻿<Type Name="BuildExtensionContext" FullName="Microsoft.Build.Tasks.Xaml.BuildExtensionContext">
   <TypeSignature Language="C#" Value="public class BuildExtensionContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildExtensionContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.BuildExtensionContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildExtensionContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildExtensionContext" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public void AddGeneratedFile (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddGeneratedFile(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.AddGeneratedFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddGeneratedFile (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddGeneratedFile(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="public void AddGeneratedResourceFile (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddGeneratedResourceFile(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.AddGeneratedResourceFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddGeneratedResourceFile (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddGeneratedResourceFile(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GeneratedFiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; GeneratedFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.GeneratedFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GeneratedFiles As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ GeneratedFiles { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -97,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GeneratedResourceFiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; GeneratedResourceFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.GeneratedResourceFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GeneratedResourceFiles As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ GeneratedResourceFiles { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -115,6 +127,8 @@
       <MemberSignature Language="C#" Value="public bool IsInProcessXamlMarkupCompile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInProcessXamlMarkupCompile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.IsInProcessXamlMarkupCompile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInProcessXamlMarkupCompile As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInProcessXamlMarkupCompile { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -134,6 +148,8 @@
       <MemberSignature Language="C#" Value="public string Language { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.Language" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -152,6 +168,8 @@
       <MemberSignature Language="C#" Value="public string LocalAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalAssembly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.LocalAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalAssembly As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalAssembly { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -170,6 +188,8 @@
       <MemberSignature Language="C#" Value="public string OutputPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.OutputPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -188,6 +208,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; References { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; References" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.References" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property References As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ References { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -206,6 +228,8 @@
       <MemberSignature Language="C#" Value="public string RootNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RootNamespace" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.RootNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -224,6 +248,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; SourceCodeFiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; SourceCodeFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.SourceCodeFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceCodeFiles As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ SourceCodeFiles { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -242,6 +268,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Utilities.TaskLoggingHelper XamlBuildLogger { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Utilities.TaskLoggingHelper XamlBuildLogger" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.BuildExtensionContext.XamlBuildLogger" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XamlBuildLogger As TaskLoggingHelper" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Utilities::TaskLoggingHelper ^ XamlBuildLogger { Microsoft::Build::Utilities::TaskLoggingHelper ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="XpsSerializationProgressChangedEventHandler" FullName="System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler">
+﻿<Type Name="XpsSerializationProgressChangedEventHandler" FullName="System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void XpsSerializationProgressChangedEventHandler(object sender, XpsSerializationProgressChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsSerializationProgressChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub XpsSerializationProgressChangedEventHandler(sender As Object, e As XpsSerializationProgressChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void XpsSerializationProgressChangedEventHandler(System::Object ^ sender, XpsSerializationProgressChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

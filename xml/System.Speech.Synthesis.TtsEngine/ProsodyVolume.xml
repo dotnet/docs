@@ -1,7 +1,9 @@
-<Type Name="ProsodyVolume" FullName="System.Speech.Synthesis.TtsEngine.ProsodyVolume">
+﻿<Type Name="ProsodyVolume" FullName="System.Speech.Synthesis.TtsEngine.ProsodyVolume">
   <TypeSignature Language="C#" Value="public enum ProsodyVolume" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProsodyVolume extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ProsodyVolume" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProsodyVolume" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProsodyVolume" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyVolume Default = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Current default volume value, same as the value returned by the <see cref="P:System.Speech.Synthesis.TtsEngine.ITtsEngineSite.Volume" /> property on the <see cref="T:System.Speech.Synthesis.TtsEngine.ITtsEngineSite" /> site supplied to that engine.</summary>
       </Docs>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="ExtraLoud" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyVolume ExtraLoud = int32(-7)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.ExtraLoud" />
+      <MemberSignature Language="VB.NET" Value="ExtraLoud" />
+      <MemberSignature Language="C++ CLI" Value="ExtraLoud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -53,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>-7</MemberValue>
       <Docs>
         <summary>Maximum volume.</summary>
       </Docs>
@@ -61,6 +69,8 @@
       <MemberSignature Language="C#" Value="ExtraSoft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyVolume ExtraSoft = int32(-3)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.ExtraSoft" />
+      <MemberSignature Language="VB.NET" Value="ExtraSoft" />
+      <MemberSignature Language="C++ CLI" Value="ExtraSoft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>-3</MemberValue>
       <Docs>
         <summary>Approximately 20% of maximum volume.</summary>
       </Docs>
@@ -77,6 +88,8 @@
       <MemberSignature Language="C#" Value="Loud" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyVolume Loud = int32(-6)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Loud" />
+      <MemberSignature Language="VB.NET" Value="Loud" />
+      <MemberSignature Language="C++ CLI" Value="Loud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -85,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>-6</MemberValue>
       <Docs>
         <summary>Approximately 80% of maximum volume.</summary>
       </Docs>
@@ -93,6 +107,8 @@
       <MemberSignature Language="C#" Value="Medium" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyVolume Medium = int32(-5)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Medium" />
+      <MemberSignature Language="VB.NET" Value="Medium" />
+      <MemberSignature Language="C++ CLI" Value="Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -101,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>-5</MemberValue>
       <Docs>
         <summary>Approximately 60% of maximum volume.</summary>
       </Docs>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="Silent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyVolume Silent = int32(-2)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Silent" />
+      <MemberSignature Language="VB.NET" Value="Silent" />
+      <MemberSignature Language="C++ CLI" Value="Silent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -117,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>-2</MemberValue>
       <Docs>
         <summary>Volume off</summary>
       </Docs>
@@ -125,6 +145,8 @@
       <MemberSignature Language="C#" Value="Soft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyVolume Soft = int32(-4)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Soft" />
+      <MemberSignature Language="VB.NET" Value="Soft" />
+      <MemberSignature Language="C++ CLI" Value="Soft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -133,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>-4</MemberValue>
       <Docs>
         <summary>Approximately 40% of maximum volume.</summary>
       </Docs>

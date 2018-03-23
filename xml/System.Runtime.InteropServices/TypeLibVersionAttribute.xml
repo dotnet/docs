@@ -1,7 +1,9 @@
-<Type Name="TypeLibVersionAttribute" FullName="System.Runtime.InteropServices.TypeLibVersionAttribute">
+﻿<Type Name="TypeLibVersionAttribute" FullName="System.Runtime.InteropServices.TypeLibVersionAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeLibVersionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeLibVersionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibVersionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeLibVersionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeLibVersionAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="public TypeLibVersionAttribute (int major, int minor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 major, int32 minor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.TypeLibVersionAttribute.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (major As Integer, minor As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeLibVersionAttribute(int major, int minor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +81,8 @@
       <MemberSignature Language="C#" Value="public int MajorVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MajorVersion" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.TypeLibVersionAttribute.MajorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorVersion As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MajorVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public int MinorVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinorVersion" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.TypeLibVersionAttribute.MinorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorVersion As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinorVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

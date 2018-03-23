@@ -1,7 +1,9 @@
-<Type Name="BasicProfileViolationCollection" FullName="System.Web.Services.Description.BasicProfileViolationCollection">
+﻿<Type Name="BasicProfileViolationCollection" FullName="System.Web.Services.Description.BasicProfileViolationCollection">
   <TypeSignature Language="C#" Value="public class BasicProfileViolationCollection : System.Collections.CollectionBase, System.Collections.Generic.IEnumerable&lt;System.Web.Services.Description.BasicProfileViolation&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicProfileViolationCollection extends System.Collections.CollectionBase implements class System.Collections.Generic.IEnumerable`1&lt;class System.Web.Services.Description.BasicProfileViolation&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.BasicProfileViolationCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class BasicProfileViolationCollection&#xA;Inherits CollectionBase&#xA;Implements IEnumerable(Of BasicProfileViolation)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BasicProfileViolationCollection : System::Collections::CollectionBase, System::Collections::Generic::IEnumerable&lt;System::Web::Services::Description::BasicProfileViolation ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public BasicProfileViolationCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicProfileViolationCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.BasicProfileViolation violation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.BasicProfileViolation violation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.Contains(System.Web.Services.Description.BasicProfileViolation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (violation As BasicProfileViolation) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::BasicProfileViolation ^ violation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.BasicProfileViolation[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.BasicProfileViolation[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.CopyTo(System.Web.Services.Description.BasicProfileViolation[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As BasicProfileViolation(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::BasicProfileViolation ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -84,6 +92,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.BasicProfileViolation violation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.BasicProfileViolation violation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.IndexOf(System.Web.Services.Description.BasicProfileViolation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (violation As BasicProfileViolation) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::BasicProfileViolation ^ violation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -106,6 +116,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.BasicProfileViolation violation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.BasicProfileViolation violation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.Insert(System.Int32,System.Web.Services.Description.BasicProfileViolation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, violation As BasicProfileViolation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::BasicProfileViolation ^ violation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -129,6 +141,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.BasicProfileViolation this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.BasicProfileViolation Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolationCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As BasicProfileViolation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::BasicProfileViolation ^ default[int] { System::Web::Services::Description::BasicProfileViolation ^ get(int index); void set(int index, System::Web::Services::Description::BasicProfileViolation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -151,6 +165,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.BasicProfileViolation violation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.BasicProfileViolation violation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.Remove(System.Web.Services.Description.BasicProfileViolation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (violation As BasicProfileViolation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::BasicProfileViolation ^ violation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -172,7 +188,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Web.Services.Description.BasicProfileViolation&gt; IEnumerable&lt;BasicProfileViolation&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Web.Services.Description.BasicProfileViolation&gt; System.Collections.Generic.IEnumerable&lt;System.Web.Services.Description.BasicProfileViolation&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.System#Collections#Generic#IEnumerable&lt;System#Web#Services#Description#BasicProfileViolation&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of BasicProfileViolation) Implements IEnumerable(Of BasicProfileViolation).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Web::Services::Description::BasicProfileViolation ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Web.Services.Description.BasicProfileViolation&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Web::Services::Description::BasicProfileViolation ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -191,6 +212,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

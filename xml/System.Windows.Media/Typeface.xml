@@ -1,7 +1,9 @@
-<Type Name="Typeface" FullName="System.Windows.Media.Typeface">
+﻿<Type Name="Typeface" FullName="System.Windows.Media.Typeface">
   <TypeSignature Language="C#" Value="public class Typeface" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Typeface extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Typeface" />
+  <TypeSignature Language="VB.NET" Value="Public Class Typeface" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Typeface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Typeface (string typefaceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typefaceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typefaceName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Typeface(System::String ^ typefaceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +71,7 @@
       <MemberSignature Language="C#" Value="public Typeface (System.Windows.Media.FontFamily fontFamily, System.Windows.FontStyle style, System.Windows.FontWeight weight, System.Windows.FontStretch stretch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.FontFamily fontFamily, valuetype System.Windows.FontStyle style, valuetype System.Windows.FontWeight weight, valuetype System.Windows.FontStretch stretch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.#ctor(System.Windows.Media.FontFamily,System.Windows.FontStyle,System.Windows.FontWeight,System.Windows.FontStretch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Typeface(System::Windows::Media::FontFamily ^ fontFamily, System::Windows::FontStyle style, System::Windows::FontWeight weight, System::Windows::FontStretch stretch);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +104,7 @@
       <MemberSignature Language="C#" Value="public Typeface (System.Windows.Media.FontFamily fontFamily, System.Windows.FontStyle style, System.Windows.FontWeight weight, System.Windows.FontStretch stretch, System.Windows.Media.FontFamily fallbackFontFamily);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.FontFamily fontFamily, valuetype System.Windows.FontStyle style, valuetype System.Windows.FontWeight weight, valuetype System.Windows.FontStretch stretch, class System.Windows.Media.FontFamily fallbackFontFamily) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.#ctor(System.Windows.Media.FontFamily,System.Windows.FontStyle,System.Windows.FontWeight,System.Windows.FontStretch,System.Windows.Media.FontFamily)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Typeface(System::Windows::Media::FontFamily ^ fontFamily, System::Windows::FontStyle style, System::Windows::FontWeight weight, System::Windows::FontStretch stretch, System::Windows::Media::FontFamily ^ fallbackFontFamily);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -129,6 +144,8 @@
       <MemberSignature Language="C#" Value="public double CapsHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 CapsHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.CapsHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapsHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CapsHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +171,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +196,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.LanguageSpecificStringDictionary FaceNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.LanguageSpecificStringDictionary FaceNames" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.FaceNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FaceNames As LanguageSpecificStringDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::LanguageSpecificStringDictionary ^ FaceNames { System::Windows::Media::LanguageSpecificStringDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +216,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.FontFamily FontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.FontFamily FontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FontFamily As FontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FontFamily ^ FontFamily { System::Windows::Media::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -213,6 +236,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +257,8 @@
       <MemberSignature Language="C#" Value="public bool IsBoldSimulated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBoldSimulated" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.IsBoldSimulated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBoldSimulated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBoldSimulated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +285,8 @@
       <MemberSignature Language="C#" Value="public bool IsObliqueSimulated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsObliqueSimulated" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.IsObliqueSimulated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsObliqueSimulated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsObliqueSimulated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -284,6 +313,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontStretch Stretch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStretch Stretch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stretch As FontStretch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStretch Stretch { System::Windows::FontStretch get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -315,6 +346,8 @@
       <MemberSignature Language="C#" Value="public double StrikethroughPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 StrikethroughPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.StrikethroughPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StrikethroughPosition As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrikethroughPosition { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -340,6 +373,8 @@
       <MemberSignature Language="C#" Value="public double StrikethroughThickness { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 StrikethroughThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.StrikethroughThickness" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StrikethroughThickness As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrikethroughThickness { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -365,6 +400,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontStyle Style { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStyle Style" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.Style" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Style As FontStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle Style { System::Windows::FontStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -396,6 +433,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetGlyphTypeface (out System.Windows.Media.GlyphTypeface glyphTypeface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGlyphTypeface([out] class System.Windows.Media.GlyphTypeface&amp; glyphTypeface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.TryGetGlyphTypeface(System.Windows.Media.GlyphTypeface@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetGlyphTypeface (ByRef glyphTypeface As GlyphTypeface) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetGlyphTypeface([Runtime::InteropServices::Out] System::Windows::Media::GlyphTypeface ^ % glyphTypeface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -427,6 +466,8 @@
       <MemberSignature Language="C#" Value="public double UnderlinePosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 UnderlinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.UnderlinePosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlinePosition As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UnderlinePosition { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -452,6 +493,8 @@
       <MemberSignature Language="C#" Value="public double UnderlineThickness { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 UnderlineThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.UnderlineThickness" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlineThickness As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UnderlineThickness { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -477,6 +520,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontWeight Weight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontWeight Weight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.Weight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Weight As FontWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight Weight { System::Windows::FontWeight get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -510,6 +555,8 @@
       <MemberSignature Language="C#" Value="public double XHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 XHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.XHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double XHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -531,14 +578,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

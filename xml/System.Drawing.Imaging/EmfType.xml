@@ -1,7 +1,9 @@
-<Type Name="EmfType" FullName="System.Drawing.Imaging.EmfType">
+﻿<Type Name="EmfType" FullName="System.Drawing.Imaging.EmfType">
   <TypeSignature Language="C#" Value="public enum EmfType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EmfType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EmfType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EmfType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EmfType" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="EmfOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EmfType EmfOnly = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfOnly" />
+      <MemberSignature Language="VB.NET" Value="EmfOnly" />
+      <MemberSignature Language="C++ CLI" Value="EmfOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that all the records in the metafile are EMF records, which can be displayed by GDI or GDI+.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="EmfPlusDual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EmfType EmfPlusDual = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfPlusDual" />
+      <MemberSignature Language="VB.NET" Value="EmfPlusDual" />
+      <MemberSignature Language="C++ CLI" Value="EmfPlusDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies that all EMF+ records in the metafile are associated with an alternate EMF record. Metafiles of type <see cref="F:System.Drawing.Imaging.EmfType.EmfPlusDual" /> can be displayed by GDI or by GDI+.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="EmfPlusOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EmfType EmfPlusOnly = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfPlusOnly" />
+      <MemberSignature Language="VB.NET" Value="EmfPlusOnly" />
+      <MemberSignature Language="C++ CLI" Value="EmfPlusOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that all the records in the metafile are EMF+ records, which can be displayed by GDI+ but not by GDI.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ISZArrayTypeProvider&lt;TType&gt;" FullName="System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;">
+﻿<Type Name="ISZArrayTypeProvider&lt;TType&gt;" FullName="System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;">
   <TypeSignature Language="C#" Value="public interface ISZArrayTypeProvider&lt;TType&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISZArrayTypeProvider`1&lt;TType&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISZArrayTypeProvider`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISZArrayTypeProvider(Of TType)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public interface class ISZArrayTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public TType GetSZArrayType (TType elementType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetSZArrayType(!TType elementType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISZArrayTypeProvider`1.GetSZArrayType(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSZArrayType (elementType As TType) As TType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetSZArrayType(TType elementType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

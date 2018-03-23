@@ -1,7 +1,9 @@
-<Type Name="ADODC" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC">
+﻿<Type Name="ADODC" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC">
   <TypeSignature Language="C#" Value="public class ADODC : System.Windows.Forms.UserControl, msdatasrc.DataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ADODC extends System.Windows.Forms.UserControl implements class msdatasrc.DataSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" />
+  <TypeSignature Language="VB.NET" Value="Public Class ADODC&#xA;Inherits UserControl&#xA;Implements DataSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ADODC : System::Windows::Forms::UserControl, msdatasrc::DataSource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public ADODC ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ADODC();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -63,7 +67,12 @@
       <MemberSignature Language="C#" Value="public void addDataSourceListener (msdatasrc.DataSourceListener dsl);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void addDataSourceListener(class msdatasrc.DataSourceListener dsl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.addDataSourceListener(msdatasrc.DataSourceListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub addDataSourceListener (dsl As DataSourceListener)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void addDataSourceListener(msdatasrc::DataSourceListener ^ dsl) = msdatasrc::DataSource::addDataSourceListener;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:msdatasrc.DataSource.addDataSourceListener(msdatasrc.DataSourceListener)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -99,6 +108,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -135,6 +146,8 @@
       <MemberSignature Language="C#" Value="public bool BOF { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BOF" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOF" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BOF As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BOF { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -145,7 +158,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,6 +187,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOFActionEnum BOFAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualBasic.Compatibility.VB6.ADODC/BOFActionEnum BOFAction" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOFAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property BOFAction As ADODC.BOFActionEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::ADODC::BOFActionEnum BOFAction { Microsoft::VisualBasic::Compatibility::VB6::ADODC::BOFActionEnum get(); void set(Microsoft::VisualBasic::Compatibility::VB6::ADODC::BOFActionEnum value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -213,6 +228,8 @@
       <MemberSignature Language="C#" Value="public int CacheSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CacheSize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.CacheSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CacheSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -254,6 +271,8 @@
       <MemberSignature Language="C#" Value="public int CommandTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CommandTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.CommandTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CommandTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -293,6 +312,8 @@
       <MemberSignature Language="C#" Value="public ADODB.CommandTypeEnum CommandType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype ADODB.CommandTypeEnum CommandType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.CommandType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandType As CommandTypeEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::CommandTypeEnum CommandType { ADODB::CommandTypeEnum get(); void set(ADODB::CommandTypeEnum value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -335,6 +356,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -374,6 +397,8 @@
       <MemberSignature Language="C#" Value="public int ConnectionTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.ConnectionTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -413,6 +438,8 @@
       <MemberSignature Language="C#" Value="public ADODB.CursorLocationEnum CursorLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype ADODB.CursorLocationEnum CursorLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.CursorLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property CursorLocation As CursorLocationEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::CursorLocationEnum CursorLocation { ADODB::CursorLocationEnum get(); void set(ADODB::CursorLocationEnum value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -455,6 +482,8 @@
       <MemberSignature Language="C#" Value="public ADODB.CursorTypeEnum CursorType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype ADODB.CursorTypeEnum CursorType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.CursorType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CursorType As CursorTypeEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::CursorTypeEnum CursorType { ADODB::CursorTypeEnum get(); void set(ADODB::CursorTypeEnum value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -497,6 +526,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -535,6 +566,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.EndOfRecordsetDelegate EndOfRecordset;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/EndOfRecordsetDelegate EndOfRecordset" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EndOfRecordset" />
+      <MemberSignature Language="VB.NET" Value="Public Event EndOfRecordset As ADODC.EndOfRecordsetDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::EndOfRecordsetDelegate ^ EndOfRecordset;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -567,6 +600,8 @@
       <MemberSignature Language="C#" Value="public bool EOF { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EOF" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOF" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EOF As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EOF { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -577,7 +612,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -606,6 +641,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum EOFAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualBasic.Compatibility.VB6.ADODC/EOFActionEnum EOFAction" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property EOFAction As ADODC.EOFActionEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::ADODC::EOFActionEnum EOFAction { Microsoft::VisualBasic::Compatibility::VB6::ADODC::EOFActionEnum get(); void set(Microsoft::VisualBasic::Compatibility::VB6::ADODC::EOFActionEnum value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -645,6 +682,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.ErrorDelegate Error;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/ErrorDelegate Error" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Event Error As ADODC.ErrorDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::ErrorDelegate ^ Error;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -672,6 +711,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchCompleteDelegate FetchComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/FetchCompleteDelegate FetchComplete" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Event FetchComplete As ADODC.FetchCompleteDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::FetchCompleteDelegate ^ FetchComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -704,6 +745,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchProgressDelegate FetchProgress;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/FetchProgressDelegate FetchProgress" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchProgress" />
+      <MemberSignature Language="VB.NET" Value="Public Event FetchProgress As ADODC.FetchProgressDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::FetchProgressDelegate ^ FetchProgress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -736,6 +779,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.FieldChangeCompleteDelegate FieldChangeComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/FieldChangeCompleteDelegate FieldChangeComplete" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FieldChangeComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Event FieldChangeComplete As ADODC.FieldChangeCompleteDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::FieldChangeCompleteDelegate ^ FieldChangeComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -768,7 +813,12 @@
       <MemberSignature Language="C#" Value="public object getDataMember (string dataMember, ref Guid riid);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance object getDataMember(string dataMember, valuetype System.Guid&amp; riid) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.getDataMember(System.String,System.Guid@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function getDataMember (dataMember As String, ByRef riid As Guid) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ getDataMember(System::String ^ dataMember, Guid % riid) = msdatasrc::DataSource::getDataMember;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:msdatasrc.DataSource.getDataMember(System.String,System.Guid@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -801,7 +851,12 @@
       <MemberSignature Language="C#" Value="public int getDataMemberCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 getDataMemberCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.getDataMemberCount" />
+      <MemberSignature Language="VB.NET" Value="Public Function getDataMemberCount () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int getDataMemberCount() = msdatasrc::DataSource::getDataMemberCount;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:msdatasrc.DataSource.getDataMemberCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -830,7 +885,12 @@
       <MemberSignature Language="C#" Value="public string getDataMemberName (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance string getDataMemberName(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.getDataMemberName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function getDataMemberName (index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ getDataMemberName(int index) = msdatasrc::DataSource::getDataMemberName;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:msdatasrc.DataSource.getDataMemberName(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -862,6 +922,8 @@
       <MemberSignature Language="C#" Value="public ADODB.LockTypeEnum LockType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype ADODB.LockTypeEnum LockType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.LockType" />
+      <MemberSignature Language="VB.NET" Value="Public Property LockType As LockTypeEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::LockTypeEnum LockType { ADODB::LockTypeEnum get(); void set(ADODB::LockTypeEnum value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -904,6 +966,8 @@
       <MemberSignature Language="C#" Value="public int MaxRecords { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxRecords" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.MaxRecords" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxRecords As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRecords { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -943,6 +1007,8 @@
       <MemberSignature Language="C#" Value="public ADODB.ConnectModeEnum Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype ADODB.ConnectModeEnum Mode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As ConnectModeEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::ConnectModeEnum Mode { ADODB::ConnectModeEnum get(); void set(ADODB::ConnectModeEnum value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -985,6 +1051,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.MoveCompleteDelegate MoveComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/MoveCompleteDelegate MoveComplete" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.MoveComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Event MoveComplete As ADODC.MoveCompleteDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::MoveCompleteDelegate ^ MoveComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1017,6 +1085,8 @@
       <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.OnResize(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1053,6 +1123,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.ADODC.OrientationEnum Orientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualBasic.Compatibility.VB6.ADODC/OrientationEnum Orientation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Orientation As ADODC.OrientationEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::ADODC::OrientationEnum Orientation { Microsoft::VisualBasic::Compatibility::VB6::ADODC::OrientationEnum get(); void set(Microsoft::VisualBasic::Compatibility::VB6::ADODC::OrientationEnum value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1092,6 +1164,8 @@
       <MemberSignature Language="C#" Value="public string Password { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Password" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Password" />
+      <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password {  void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1102,7 +1176,7 @@
           <AttributeName>Microsoft.VisualBasic.Compatibility.VB6.SRDescription("ADODC_DESCPassword")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1128,6 +1202,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordChangeCompleteDelegate RecordChangeComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/RecordChangeCompleteDelegate RecordChangeComplete" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordChangeComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Event RecordChangeComplete As ADODC.RecordChangeCompleteDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::RecordChangeCompleteDelegate ^ RecordChangeComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1160,6 +1236,8 @@
       <MemberSignature Language="C#" Value="public ADODB.Recordset Recordset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class ADODB.Recordset Recordset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recordset As Recordset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::Recordset ^ Recordset { ADODB::Recordset ^ get(); void set(ADODB::Recordset ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1173,7 +1251,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1199,6 +1277,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordsetChangeCompleteDelegate RecordsetChangeComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/RecordsetChangeCompleteDelegate RecordsetChangeComplete" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordsetChangeComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Event RecordsetChangeComplete As ADODC.RecordsetChangeCompleteDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::RecordsetChangeCompleteDelegate ^ RecordsetChangeComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1231,6 +1311,8 @@
       <MemberSignature Language="C#" Value="public string RecordSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RecordSource" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecordSource As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RecordSource { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1270,6 +1352,8 @@
       <MemberSignature Language="C#" Value="public override void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1297,7 +1381,12 @@
       <MemberSignature Language="C#" Value="public void removeDataSourceListener (msdatasrc.DataSourceListener dsl);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void removeDataSourceListener(class msdatasrc.DataSourceListener dsl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.removeDataSourceListener(msdatasrc.DataSourceListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub removeDataSourceListener (dsl As DataSourceListener)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void removeDataSourceListener(msdatasrc::DataSourceListener ^ dsl) = msdatasrc::DataSource::removeDataSourceListener;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:msdatasrc.DataSource.removeDataSourceListener(msdatasrc.DataSourceListener)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -1333,6 +1422,8 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1352,7 +1443,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1378,6 +1469,8 @@
       <MemberSignature Language="C#" Value="public string UserName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.UserName" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1417,6 +1510,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeFieldDelegate WillChangeField;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/WillChangeFieldDelegate WillChangeField" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeField" />
+      <MemberSignature Language="VB.NET" Value="Public Event WillChangeField As ADODC.WillChangeFieldDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::WillChangeFieldDelegate ^ WillChangeField;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1448,6 +1543,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordDelegate WillChangeRecord;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/WillChangeRecordDelegate WillChangeRecord" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecord" />
+      <MemberSignature Language="VB.NET" Value="Public Event WillChangeRecord As ADODC.WillChangeRecordDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::WillChangeRecordDelegate ^ WillChangeRecord;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1479,6 +1576,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordsetDelegate WillChangeRecordset;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/WillChangeRecordsetDelegate WillChangeRecordset" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordset" />
+      <MemberSignature Language="VB.NET" Value="Public Event WillChangeRecordset As ADODC.WillChangeRecordsetDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::WillChangeRecordsetDelegate ^ WillChangeRecordset;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1510,6 +1609,8 @@
       <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillMoveDelegate WillMove;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Compatibility.VB6.ADODC/WillMoveDelegate WillMove" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillMove" />
+      <MemberSignature Language="VB.NET" Value="Public Event WillMove As ADODC.WillMoveDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::WillMoveDelegate ^ WillMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

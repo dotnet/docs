@@ -1,7 +1,9 @@
-<Type Name="RouteUrlExpressionEditor" FullName="System.Web.UI.Design.RouteUrlExpressionEditor">
+﻿<Type Name="RouteUrlExpressionEditor" FullName="System.Web.UI.Design.RouteUrlExpressionEditor">
   <TypeSignature Language="C#" Value="public class RouteUrlExpressionEditor : System.Web.UI.Design.ExpressionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteUrlExpressionEditor extends System.Web.UI.Design.ExpressionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.RouteUrlExpressionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class RouteUrlExpressionEditor&#xA;Inherits ExpressionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RouteUrlExpressionEditor : System::Web::UI::Design::ExpressionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public RouteUrlExpressionEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.RouteUrlExpressionEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteUrlExpressionEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public override object EvaluateExpression (string expression, object parseTimeData, Type propertyType, IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EvaluateExpression(string expression, object parseTimeData, class System.Type propertyType, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.RouteUrlExpressionEditor.EvaluateExpression(System.String,System.Object,System.Type,System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (expression As String, parseTimeData As Object, propertyType As Type, serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::String ^ expression, System::Object ^ parseTimeData, Type ^ propertyType, IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.ExpressionEditorSheet GetExpressionEditorSheet (string expression, IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Design.ExpressionEditorSheet GetExpressionEditorSheet(string expression, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.RouteUrlExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExpressionEditorSheet (expression As String, serviceProvider As IServiceProvider) As ExpressionEditorSheet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Design::ExpressionEditorSheet ^ GetExpressionEditorSheet(System::String ^ expression, IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

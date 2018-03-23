@@ -1,7 +1,9 @@
-<Type Name="Control" FullName="System.Web.UI.Control">
+﻿<Type Name="Control" FullName="System.Web.UI.Control">
   <TypeSignature Language="C#" Value="public class Control : IDisposable, System.ComponentModel.IComponent, System.Web.UI.IControlBuilderAccessor, System.Web.UI.IControlDesignerAccessor, System.Web.UI.IDataBindingsAccessor, System.Web.UI.IExpressionsAccessor, System.Web.UI.IParserAccessor, System.Web.UI.IUrlResolutionService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Control extends System.Object implements class System.ComponentModel.IComponent, class System.IDisposable, class System.Web.UI.IControlBuilderAccessor, class System.Web.UI.IControlDesignerAccessor, class System.Web.UI.IDataBindingsAccessor, class System.Web.UI.IExpressionsAccessor, class System.Web.UI.IParserAccessor, class System.Web.UI.IUrlResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Control" />
+  <TypeSignature Language="VB.NET" Value="Public Class Control&#xA;Implements IComponent, IControlBuilderAccessor, IControlDesignerAccessor, IDataBindingsAccessor, IDisposable, IExpressionsAccessor, IParserAccessor, IUrlResolutionService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Control : IDisposable, System::ComponentModel::IComponent, System::Web::UI::IControlBuilderAccessor, System::Web::UI::IControlDesignerAccessor, System::Web::UI::IDataBindingsAccessor, System::Web::UI::IExpressionsAccessor, System::Web::UI::IParserAccessor, System::Web::UI::IUrlResolutionService" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,7 +57,7 @@
       <AttributeName>System.ComponentModel.ToolboxItem("System.Web.UI.Design.WebControlToolboxItem, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Web.UI", System.ComponentModel.ToolboxItemFilterType.Require)</AttributeName>
+      <AttributeName>System.ComponentModel.ToolboxItemFilter</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
@@ -98,6 +100,8 @@
       <MemberSignature Language="C#" Value="public Control ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Control();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +117,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Adapters.ControlAdapter Adapter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Adapters.ControlAdapter Adapter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.Adapter" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Adapter As ControlAdapter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Adapters::ControlAdapter ^ Adapter { System::Web::UI::Adapters::ControlAdapter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,9 +145,10 @@
       </Docs>
     </Member>
     <Member MemberName="AddedControl">
-      <MemberSignature Language="C#" Value="protected virtual void AddedControl (System.Web.UI.Control control, int index);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void AddedControl (System.Web.UI.Control control, int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void AddedControl(class System.Web.UI.Control control, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.AddedControl(System.Web.UI.Control,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void AddedControl(System::Web::UI::Control ^ control, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,7 +183,12 @@
       <MemberSignature Language="C#" Value="protected virtual void AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddParsedSubObject (obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddParsedSubObject(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -216,6 +228,7 @@
       <MemberSignature Language="C#" Value="public virtual void ApplyStyleSheetSkin (System.Web.UI.Page page);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyStyleSheetSkin(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ApplyStyleSheetSkin(System.Web.UI.Page)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyStyleSheetSkin(System::Web::UI::Page ^ page);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -250,6 +263,8 @@
       <MemberSignature Language="C#" Value="public string AppRelativeTemplateSourceDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AppRelativeTemplateSourceDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.AppRelativeTemplateSourceDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppRelativeTemplateSourceDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppRelativeTemplateSourceDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,7 +275,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -291,6 +306,8 @@
       <MemberSignature Language="C#" Value="protected void BeginRenderTracing (System.IO.TextWriter writer, object traceObject);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BeginRenderTracing(class System.IO.TextWriter writer, object traceObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.BeginRenderTracing(System.IO.TextWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub BeginRenderTracing (writer As TextWriter, traceObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BeginRenderTracing(System::IO::TextWriter ^ writer, System::Object ^ traceObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +336,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control BindingContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control BindingContainer" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.BindingContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingContainer As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ BindingContainer { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,7 +351,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -361,6 +380,8 @@
       <MemberSignature Language="C#" Value="protected void BuildProfileTree (string parentId, bool calcViewState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BuildProfileTree(string parentId, bool calcViewState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.BuildProfileTree(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub BuildProfileTree (parentId As String, calcViewState As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BuildProfileTree(System::String ^ parentId, bool calcViewState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -391,6 +412,8 @@
       <MemberSignature Language="C#" Value="protected bool ChildControlsCreated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ChildControlsCreated" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ChildControlsCreated" />
+      <MemberSignature Language="VB.NET" Value="Protected Property ChildControlsCreated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool ChildControlsCreated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +449,8 @@
       <MemberSignature Language="C#" Value="protected void ClearCachedClientID ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearCachedClientID() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ClearCachedClientID" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ClearCachedClientID ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ClearCachedClientID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -444,6 +469,8 @@
       <MemberSignature Language="C#" Value="protected void ClearChildControlState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearChildControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ClearChildControlState" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ClearChildControlState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ClearChildControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -475,6 +502,8 @@
       <MemberSignature Language="C#" Value="protected void ClearChildState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearChildState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ClearChildState" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ClearChildState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ClearChildState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -512,6 +541,8 @@
       <MemberSignature Language="C#" Value="protected void ClearChildViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearChildViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ClearChildViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ClearChildViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ClearChildViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -545,6 +576,8 @@
       <MemberSignature Language="C#" Value="protected void ClearEffectiveClientIDMode ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearEffectiveClientIDMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ClearEffectiveClientIDMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ClearEffectiveClientIDMode ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ClearEffectiveClientIDMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -563,6 +596,8 @@
       <MemberSignature Language="C#" Value="public virtual string ClientID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ClientID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ClientID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -573,7 +608,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -633,6 +668,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ClientIDMode ClientIDMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ClientIDMode ClientIDMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ClientIDMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ClientIDMode As ClientIDMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ClientIDMode ClientIDMode { System::Web::UI::ClientIDMode get(); void set(System::Web::UI::ClientIDMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -690,6 +727,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected char ClientIDSeparator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char ClientIDSeparator" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ClientIDSeparator" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ClientIDSeparator As Char" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property char ClientIDSeparator { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -716,9 +755,11 @@ span#ProductIDLabel { background-color: white; }
       </Docs>
     </Member>
     <Member MemberName="Context">
-      <MemberSignature Language="C#" Value="protected virtual System.Web.HttpContext Context { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Web.HttpContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.Context" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property Context As HttpContext" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -729,7 +770,7 @@ span#ProductIDLabel { background-color: white; }
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -763,6 +804,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Controls As ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -773,7 +816,7 @@ span#ProductIDLabel { background-color: white; }
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -809,9 +852,11 @@ span#ProductIDLabel { background-color: white; }
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected virtual void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub CreateChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -854,6 +899,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.ControlCollection CreateControlCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.CreateControlCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateControlCollection () As ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -890,10 +937,21 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DataBind">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Binds a data source to the invoked server control and all its child controls.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DataBind">
       <MemberSignature Language="C#" Value="public virtual void DataBind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DataBind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.DataBind" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DataBind ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DataBind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -932,6 +990,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected virtual void DataBind (bool raiseOnDataBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DataBind(bool raiseOnDataBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.DataBind(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DataBind (raiseOnDataBinding As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DataBind(bool raiseOnDataBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -968,6 +1028,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected virtual void DataBindChildren ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DataBindChildren() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.DataBindChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DataBindChildren ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DataBindChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -996,6 +1058,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public event EventHandler DataBinding;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataBinding" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Control.DataBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DataBinding As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataBinding;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1027,6 +1091,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public System.Web.UI.Control DataItemContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control DataItemContainer" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.DataItemContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItemContainer As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ DataItemContainer { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1040,7 +1106,7 @@ span#ProductIDLabel { background-color: white; }
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -1059,6 +1125,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public System.Web.UI.Control DataKeysContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control DataKeysContainer" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.DataKeysContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataKeysContainer As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ DataKeysContainer { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1072,7 +1140,7 @@ span#ProductIDLabel { background-color: white; }
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -1088,9 +1156,11 @@ span#ProductIDLabel { background-color: white; }
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
-      <MemberSignature Language="C#" Value="protected bool DesignMode { get; }" />
+      <MemberSignature Language="C#" Value="protected internal bool DesignMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DesignMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.DesignMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property DesignMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool DesignMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1117,7 +1187,12 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1150,6 +1225,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Control.Disposed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Disposed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1175,6 +1252,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public virtual bool EnableTheming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.EnableTheming" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableTheming As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1222,6 +1301,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public virtual bool EnableViewState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.EnableViewState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableViewState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableViewState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1283,6 +1364,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected void EndRenderTracing (System.IO.TextWriter writer, object traceObject);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EndRenderTracing(class System.IO.TextWriter writer, object traceObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.EndRenderTracing(System.IO.TextWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EndRenderTracing (writer As TextWriter, traceObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EndRenderTracing(System::IO::TextWriter ^ writer, System::Object ^ traceObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1311,6 +1394,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected virtual void EnsureChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EnsureChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.EnsureChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1356,6 +1441,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected void EnsureID ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnsureID() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.EnsureID" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EnsureID ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnsureID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1381,6 +1468,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected System.ComponentModel.EventHandlerList Events { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.EventHandlerList Events" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.Events" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Events As EventHandlerList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::EventHandlerList ^ Events { System::ComponentModel::EventHandlerList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1412,10 +1501,21 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="T:System.ComponentModel.EventHandlerList" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches the current naming container for the specified server control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindControl">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control FindControl (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Control FindControl(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.FindControl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FindControl (id As String) As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::Control ^ FindControl(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1456,6 +1556,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.Control FindControl (string id, int pathOffset);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Control FindControl(string id, int32 pathOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.FindControl(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FindControl (id As String, pathOffset As Integer) As Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::Control ^ FindControl(System::String ^ id, int pathOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1480,6 +1582,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public virtual void Focus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Focus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.Focus" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Focus ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Focus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1509,7 +1613,12 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="protected virtual System.Collections.IDictionary GetDesignModeState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IDictionary GetDesignModeState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.GetDesignModeState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDesignModeState () As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IDictionary ^ GetDesignModeState();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IControlDesignerAccessor.GetDesignModeState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1556,6 +1665,8 @@ span#ProductIDLabel { background-color: white; }
       <MemberSignature Language="C#" Value="public string GetRouteUrl (object routeParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRouteUrl(object routeParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.GetRouteUrl(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRouteUrl (routeParameters As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRouteUrl(System::Object ^ routeParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1600,6 +1711,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(
       <MemberSignature Language="C#" Value="public string GetRouteUrl (System.Web.Routing.RouteValueDictionary routeParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRouteUrl(class System.Web.Routing.RouteValueDictionary routeParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.GetRouteUrl(System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRouteUrl (routeParameters As RouteValueDictionary) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRouteUrl(System::Web::Routing::RouteValueDictionary ^ routeParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1644,6 +1757,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(
       <MemberSignature Language="C#" Value="public string GetRouteUrl (string routeName, object routeParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRouteUrl(string routeName, object routeParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.GetRouteUrl(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRouteUrl (routeName As String, routeParameters As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRouteUrl(System::String ^ routeName, System::Object ^ routeParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1690,6 +1805,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public string GetRouteUrl (string routeName, System.Web.Routing.RouteValueDictionary routeParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRouteUrl(string routeName, class System.Web.Routing.RouteValueDictionary routeParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.GetRouteUrl(System.String,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRouteUrl (routeName As String, routeParameters As RouteValueDictionary) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRouteUrl(System::String ^ routeName, System::Web::Routing::RouteValueDictionary ^ routeParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1736,6 +1853,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public string GetUniqueIDRelativeTo (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetUniqueIDRelativeTo(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.GetUniqueIDRelativeTo(System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetUniqueIDRelativeTo(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1768,6 +1886,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected bool HasChildViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasChildViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.HasChildViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property HasChildViewState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool HasChildViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1801,6 +1921,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual bool HasControls ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.HasControls" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasControls () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1841,6 +1963,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected bool HasEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.HasEvents" />
+      <MemberSignature Language="VB.NET" Value="Protected Function HasEvents () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasEvents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1861,6 +1985,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual string ID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1913,6 +2039,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected char IdSeparator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char IdSeparator" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.IdSeparator" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IdSeparator As Char" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property char IdSeparator { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1938,6 +2066,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public event EventHandler Init;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Init" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Control.Init" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Init As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Init;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1967,9 +2097,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="IsChildControlStateCleared">
-      <MemberSignature Language="C#" Value="protected bool IsChildControlStateCleared { get; }" />
+      <MemberSignature Language="C#" Value="protected internal bool IsChildControlStateCleared { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsChildControlStateCleared" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.IsChildControlStateCleared" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property IsChildControlStateCleared As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool IsChildControlStateCleared { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1989,6 +2121,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected bool IsLiteralContent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsLiteralContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.IsLiteralContent" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsLiteralContent () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsLiteralContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2026,6 +2160,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected bool IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2060,9 +2196,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="IsViewStateEnabled">
-      <MemberSignature Language="C#" Value="protected bool IsViewStateEnabled { get; }" />
+      <MemberSignature Language="C#" Value="protected internal bool IsViewStateEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsViewStateEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.IsViewStateEnabled" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property IsViewStateEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool IsViewStateEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2096,6 +2234,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public event EventHandler Load;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Load" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Control.Load" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Load As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Load;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2126,9 +2266,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
-      <MemberSignature Language="C#" Value="protected virtual void LoadControlState (object savedState);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void LoadControlState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void LoadControlState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.LoadControlState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub LoadControlState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2170,6 +2312,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2208,6 +2352,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected bool LoadViewStateByID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LoadViewStateByID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.LoadViewStateByID" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property LoadViewStateByID As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool LoadViewStateByID { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2242,9 +2388,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="MapPathSecure">
-      <MemberSignature Language="C#" Value="protected string MapPathSecure (string virtualPath);" />
+      <MemberSignature Language="C#" Value="protected internal string MapPathSecure (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string MapPathSecure(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.MapPathSecure(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function MapPathSecure (virtualPath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::String ^ MapPathSecure(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2284,6 +2432,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control NamingContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control NamingContainer" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.NamingContainer" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NamingContainer As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Control ^ NamingContainer { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2297,7 +2447,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2335,6 +2485,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual bool OnBubbleEvent (object source, EventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnBubbleEvent(object source, class System.EventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnBubbleEvent (source As Object, args As EventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnBubbleEvent(System::Object ^ source, EventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2376,6 +2528,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual void OnDataBinding (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataBinding(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataBinding (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataBinding(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2413,9 +2567,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected virtual void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2448,9 +2604,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
-      <MemberSignature Language="C#" Value="protected virtual void OnLoad (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2484,9 +2642,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected virtual void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2519,9 +2679,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
-      <MemberSignature Language="C#" Value="protected virtual void OnUnload (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnUnload (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnUnload(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.OnUnload(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnUnload (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnUnload(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2554,9 +2716,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
-      <MemberSignature Language="C#" Value="protected System.IO.Stream OpenFile (string path);" />
+      <MemberSignature Language="C#" Value="protected internal System.IO.Stream OpenFile (string path);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.IO.Stream OpenFile(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.OpenFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function OpenFile (path As String) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::IO::Stream ^ OpenFile(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2590,6 +2754,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Page Page { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Page Page" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.Page" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Page As Page" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Page ^ Page { System::Web::UI::Page ^ get(); void set(System::Web::UI::Page ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2603,7 +2769,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2636,6 +2802,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control Parent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Parent As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Control ^ Parent { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2649,7 +2817,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2680,6 +2848,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public event EventHandler PreRender;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PreRender" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Control.PreRender" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreRender As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreRender;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2704,6 +2874,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected void RaiseBubbleEvent (object source, EventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseBubbleEvent(object source, class System.EventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.RaiseBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaiseBubbleEvent (source As Object, args As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseBubbleEvent(System::Object ^ source, EventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2742,9 +2914,10 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
-      <MemberSignature Language="C#" Value="protected virtual void RemovedControl (System.Web.UI.Control control);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void RemovedControl (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void RemovedControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.RemovedControl(System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void RemovedControl(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2773,9 +2946,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected virtual void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2810,9 +2985,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
-      <MemberSignature Language="C#" Value="protected virtual void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub RenderChildren (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void RenderChildren(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2849,10 +3026,21 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Outputs server control content and stores tracing information about the control if tracing is enabled.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RenderControl">
       <MemberSignature Language="C#" Value="public virtual void RenderControl (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderControl(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderControl (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderControl(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2892,6 +3080,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected void RenderControl (System.Web.UI.HtmlTextWriter writer, System.Web.UI.Adapters.ControlAdapter adapter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderControl(class System.Web.UI.HtmlTextWriter writer, class System.Web.UI.Adapters.ControlAdapter adapter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter,System.Web.UI.Adapters.ControlAdapter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderControl (writer As HtmlTextWriter, adapter As ControlAdapter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderControl(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::Adapters::ControlAdapter ^ adapter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2932,6 +3122,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual Version RenderingCompatibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version RenderingCompatibility" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.RenderingCompatibility" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RenderingCompatibility As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Version ^ RenderingCompatibility { Version ^ get(); void set(Version ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2945,7 +3137,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2983,6 +3175,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.Adapters.ControlAdapter ResolveAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Adapters.ControlAdapter ResolveAdapter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ResolveAdapter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ResolveAdapter () As ControlAdapter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::Adapters::ControlAdapter ^ ResolveAdapter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3015,7 +3209,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public string ResolveClientUrl (string relativeUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveClientUrl(string relativeUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ResolveClientUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveClientUrl (relativeUrl As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ResolveClientUrl(System::String ^ relativeUrl);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IUrlResolutionService.ResolveClientUrl(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3049,6 +3248,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public string ResolveUrl (string relativeUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ResolveUrl(string relativeUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.ResolveUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveUrl (relativeUrl As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveUrl(System::String ^ relativeUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3104,9 +3305,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
-      <MemberSignature Language="C#" Value="protected virtual object SaveControlState ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual object SaveControlState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object SaveControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.SaveControlState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SaveControlState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3154,6 +3357,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3193,7 +3398,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual void SetDesignModeState (System.Collections.IDictionary data);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetDesignModeState(class System.Collections.IDictionary data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDesignModeState (data As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetDesignModeState(System::Collections::IDictionary ^ data);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3224,6 +3434,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public void SetRenderMethodDelegate (System.Web.UI.RenderMethod renderMethod);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRenderMethodDelegate(class System.Web.UI.RenderMethod renderMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.SetRenderMethodDelegate(System.Web.UI.RenderMethod)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRenderMethodDelegate(System::Web::UI::RenderMethod ^ renderMethod);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3254,10 +3465,21 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetTraceData">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets trace data for design-time tracing of rendering data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetTraceData">
       <MemberSignature Language="C#" Value="public void SetTraceData (object traceDataKey, object traceDataValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTraceData(object traceDataKey, object traceDataValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.SetTraceData(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetTraceData (traceDataKey As Object, traceDataValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetTraceData(System::Object ^ traceDataKey, System::Object ^ traceDataValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3286,6 +3508,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public void SetTraceData (object tracedObject, object traceDataKey, object traceDataValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTraceData(object tracedObject, object traceDataKey, object traceDataValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.SetTraceData(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetTraceData (tracedObject As Object, traceDataKey As Object, traceDataValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetTraceData(System::Object ^ tracedObject, System::Object ^ traceDataKey, System::Object ^ traceDataValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3316,6 +3540,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public System.ComponentModel.ISite Site { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Property Site As ISite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3326,7 +3552,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -3354,6 +3580,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual string SkinID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SkinID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.SkinID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SkinID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkinID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3404,7 +3632,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="System.Web.UI.ControlBuilder System.Web.UI.IControlBuilderAccessor.ControlBuilder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlBuilder System.Web.UI.IControlBuilderAccessor.ControlBuilder" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.System#Web#UI#IControlBuilderAccessor#ControlBuilder" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ControlBuilder As ControlBuilder Implements IControlBuilderAccessor.ControlBuilder" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::ControlBuilder ^ System.Web.UI.IControlBuilderAccessor.ControlBuilder { System::Web::UI::ControlBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IControlBuilderAccessor.ControlBuilder</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3414,7 +3647,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3437,7 +3670,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="System.Collections.IDictionary IControlDesignerAccessor.GetDesignModeState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IDictionary System.Web.UI.IControlDesignerAccessor.GetDesignModeState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.System#Web#UI#IControlDesignerAccessor#GetDesignModeState" />
+      <MemberSignature Language="VB.NET" Value="Function GetDesignModeState () As IDictionary Implements IControlDesignerAccessor.GetDesignModeState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IDictionary ^ System.Web.UI.IControlDesignerAccessor.GetDesignModeState() = System::Web::UI::IControlDesignerAccessor::GetDesignModeState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IControlDesignerAccessor.GetDesignModeState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3463,7 +3701,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="void IControlDesignerAccessor.SetDesignModeState (System.Collections.IDictionary data);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IControlDesignerAccessor.SetDesignModeState(class System.Collections.IDictionary data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.System#Web#UI#IControlDesignerAccessor#SetDesignModeState(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetDesignModeState (data As IDictionary) Implements IControlDesignerAccessor.SetDesignModeState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System::Collections::IDictionary ^ data) = System::Web::UI::IControlDesignerAccessor::SetDesignModeState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3491,7 +3734,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="void IControlDesignerAccessor.SetOwnerControl (System.Web.UI.Control owner);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IControlDesignerAccessor.SetOwnerControl(class System.Web.UI.Control owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.System#Web#UI#IControlDesignerAccessor#SetOwnerControl(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetOwnerControl (owner As Control) Implements IControlDesignerAccessor.SetOwnerControl" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System::Web::UI::Control ^ owner) = System::Web::UI::IControlDesignerAccessor::SetOwnerControl;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System.Web.UI.Control)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3523,7 +3771,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="System.Collections.IDictionary System.Web.UI.IControlDesignerAccessor.UserData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary System.Web.UI.IControlDesignerAccessor.UserData" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.System#Web#UI#IControlDesignerAccessor#UserData" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property UserData As IDictionary Implements IControlDesignerAccessor.UserData" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::IDictionary ^ System.Web.UI.IControlDesignerAccessor.UserData { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IControlDesignerAccessor.UserData</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3548,7 +3801,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="System.Web.UI.DataBindingCollection System.Web.UI.IDataBindingsAccessor.DataBindings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataBindingCollection System.Web.UI.IDataBindingsAccessor.DataBindings" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.System#Web#UI#IDataBindingsAccessor#DataBindings" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataBindings As DataBindingCollection Implements IDataBindingsAccessor.DataBindings" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::DataBindingCollection ^ System.Web.UI.IDataBindingsAccessor.DataBindings { System::Web::UI::DataBindingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IDataBindingsAccessor.DataBindings</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3573,7 +3831,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="bool System.Web.UI.IDataBindingsAccessor.HasDataBindings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IDataBindingsAccessor.HasDataBindings" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.System#Web#UI#IDataBindingsAccessor#HasDataBindings" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasDataBindings As Boolean Implements IDataBindingsAccessor.HasDataBindings" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IDataBindingsAccessor.HasDataBindings { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IDataBindingsAccessor.HasDataBindings</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3599,7 +3862,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="System.Web.UI.ExpressionBindingCollection System.Web.UI.IExpressionsAccessor.Expressions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ExpressionBindingCollection System.Web.UI.IExpressionsAccessor.Expressions" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.System#Web#UI#IExpressionsAccessor#Expressions" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Expressions As ExpressionBindingCollection Implements IExpressionsAccessor.Expressions" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::ExpressionBindingCollection ^ System.Web.UI.IExpressionsAccessor.Expressions { System::Web::UI::ExpressionBindingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IExpressionsAccessor.Expressions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3624,7 +3892,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="bool System.Web.UI.IExpressionsAccessor.HasExpressions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IExpressionsAccessor.HasExpressions" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.System#Web#UI#IExpressionsAccessor#HasExpressions" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasExpressions As Boolean Implements IExpressionsAccessor.HasExpressions" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IExpressionsAccessor.HasExpressions { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IExpressionsAccessor.HasExpressions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3650,7 +3923,12 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="void IParserAccessor.AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IParserAccessor.AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.System#Web#UI#IParserAccessor#AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddParsedSubObject (obj As Object) Implements IParserAccessor.AddParsedSubObject" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IParserAccessor.AddParsedSubObject(System::Object ^ obj) = System::Web::UI::IParserAccessor::AddParsedSubObject;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3678,6 +3956,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public System.Web.UI.TemplateControl TemplateControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.TemplateControl TemplateControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.TemplateControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property TemplateControl As TemplateControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::TemplateControl ^ TemplateControl { System::Web::UI::TemplateControl ^ get(); void set(System::Web::UI::TemplateControl ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3691,7 +3971,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -3717,6 +3997,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual string TemplateSourceDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TemplateSourceDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.TemplateSourceDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TemplateSourceDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TemplateSourceDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3727,7 +4009,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3762,6 +4044,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Control.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3801,6 +4085,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual string UniqueID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.UniqueID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UniqueID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3811,7 +4097,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3848,6 +4134,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public event EventHandler Unload;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Unload" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Control.Unload" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Unload As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Unload;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3872,6 +4160,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ValidateRequestMode ValidateRequestMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ValidateRequestMode ValidateRequestMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ValidateRequestMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidateRequestMode As ValidateRequestMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ValidateRequestMode ValidateRequestMode { System::Web::UI::ValidateRequestMode get(); void set(System::Web::UI::ValidateRequestMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3902,6 +4192,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.StateBag ViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.StateBag ViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ViewState As StateBag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::StateBag ^ ViewState { System::Web::UI::StateBag ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3912,7 +4204,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3948,6 +4240,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="protected virtual bool ViewStateIgnoresCase { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ViewStateIgnoresCase" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ViewStateIgnoresCase" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ViewStateIgnoresCase As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ViewStateIgnoresCase { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3958,7 +4252,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3992,6 +4286,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ViewStateMode ViewStateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ViewStateMode ViewStateMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.ViewStateMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ViewStateMode As ViewStateMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ViewStateMode ViewStateMode { System::Web::UI::ViewStateMode get(); void set(System::Web::UI::ViewStateMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4035,6 +4331,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
       <MemberSignature Language="C#" Value="public virtual bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Control.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4068,41 +4366,5 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetTraceData">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets trace data for design-time tracing of rendering data.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindControl">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Searches the current naming container for the specified server control.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RenderControl">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Outputs server control content and stores tracing information about the control if tracing is enabled.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DataBind">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Binds a data source to the invoked server control and all its child controls.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="WorkflowInstanceStates" FullName="System.Activities.Tracking.WorkflowInstanceStates">
+﻿<Type Name="WorkflowInstanceStates" FullName="System.Activities.Tracking.WorkflowInstanceStates">
   <TypeSignature Language="C#" Value="public static class WorkflowInstanceStates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WorkflowInstanceStates extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.WorkflowInstanceStates" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowInstanceStates" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstanceStates abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public const string Aborted;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Aborted" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Public Const Aborted As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Aborted;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public const string Canceled;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Canceled" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Public Const Canceled As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Canceled;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public const string Completed;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Completed" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Completed" />
+      <MemberSignature Language="VB.NET" Value="Public Const Completed As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Completed;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="public const string Deleted;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Deleted" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Deleted" />
+      <MemberSignature Language="VB.NET" Value="Public Const Deleted As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Deleted;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -87,6 +97,8 @@
       <MemberSignature Language="C#" Value="public const string Idle;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Idle" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Idle" />
+      <MemberSignature Language="VB.NET" Value="Public Const Idle As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Idle;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -104,6 +116,8 @@
       <MemberSignature Language="C#" Value="public const string Persisted;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Persisted" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Persisted" />
+      <MemberSignature Language="VB.NET" Value="Public Const Persisted As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Persisted;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +135,8 @@
       <MemberSignature Language="C#" Value="public const string Resumed;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Resumed" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Resumed" />
+      <MemberSignature Language="VB.NET" Value="Public Const Resumed As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Resumed;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -138,6 +154,8 @@
       <MemberSignature Language="C#" Value="public const string Started;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Started" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Started" />
+      <MemberSignature Language="VB.NET" Value="Public Const Started As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Started;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -155,6 +173,8 @@
       <MemberSignature Language="C#" Value="public const string Suspended;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Suspended" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Suspended" />
+      <MemberSignature Language="VB.NET" Value="Public Const Suspended As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Suspended;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -172,6 +192,8 @@
       <MemberSignature Language="C#" Value="public const string Terminated;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Terminated" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Terminated" />
+      <MemberSignature Language="VB.NET" Value="Public Const Terminated As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Terminated;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -189,6 +211,8 @@
       <MemberSignature Language="C#" Value="public const string UnhandledException;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UnhandledException" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.UnhandledException" />
+      <MemberSignature Language="VB.NET" Value="Public Const UnhandledException As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UnhandledException;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -206,6 +230,8 @@
       <MemberSignature Language="C#" Value="public const string Unloaded;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Unloaded" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Unloaded" />
+      <MemberSignature Language="VB.NET" Value="Public Const Unloaded As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Unloaded;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -223,6 +249,8 @@
       <MemberSignature Language="C#" Value="public const string Unsuspended;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Unsuspended" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Unsuspended" />
+      <MemberSignature Language="VB.NET" Value="Public Const Unsuspended As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Unsuspended;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -240,6 +268,8 @@
       <MemberSignature Language="C#" Value="public const string Updated;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Updated" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Updated" />
+      <MemberSignature Language="VB.NET" Value="Public Const Updated As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Updated;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -257,6 +287,8 @@
       <MemberSignature Language="C#" Value="public const string UpdateFailed;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateFailed" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.UpdateFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Const UpdateFailed As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UpdateFailed;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

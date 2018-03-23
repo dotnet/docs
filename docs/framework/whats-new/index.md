@@ -188,7 +188,7 @@ Starting with the .NET Framework 4.7, ASP.NET adds a new set of APIs that allow 
 <a name="wcf47" />
 #### Windows Communication Foundation (WCF)
 
-Windows Communication Foundation (WFC) adds the following features and changes:
+Windows Communication Foundation (WCF) adds the following features and changes:
 
 **Ability to configure the default message security settings to TLS 1.1 or TLS 1.2**
 
@@ -1062,7 +1062,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
         - **Using a connection group name prefix**
 
-             Users can specify a string that WCF will use as a prefix achieve for the connection group name. Two messages with different prefixes are sent using different underlying HTTP connections. You set the prefix by adding a key/value pair to the message's <xref:System.ServiceModel.Channels.Message.Properties%2A?displayProperty=nameWithType> property. The key is "HttpTransportConnectionGroupNamePrefix"; the value is the desired prefix.
+             Users can specify a string that WCF will use as a prefix for the connection group name. Two messages with different prefixes are sent using different underlying HTTP connections. You set the prefix by adding a key/value pair to the message's <xref:System.ServiceModel.Channels.Message.Properties%2A?displayProperty=nameWithType> property. The key is "HttpTransportConnectionGroupNamePrefix"; the value is the desired prefix.
 
         - **Using different channel factories**
 

@@ -1,7 +1,9 @@
-<Type Name="DeviceFontSubstitution" FullName="System.Printing.DeviceFontSubstitution">
+﻿<Type Name="DeviceFontSubstitution" FullName="System.Printing.DeviceFontSubstitution">
   <TypeSignature Language="C#" Value="public enum DeviceFontSubstitution" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceFontSubstitution extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.DeviceFontSubstitution" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DeviceFontSubstitution" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DeviceFontSubstitution" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="Off" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.DeviceFontSubstitution Off = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.DeviceFontSubstitution.Off" />
+      <MemberSignature Language="VB.NET" Value="Off" />
+      <MemberSignature Language="C++ CLI" Value="Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -56,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.DeviceFontSubstitution</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Device font substitution is disabled.</summary>
       </Docs>
@@ -64,6 +69,8 @@
       <MemberSignature Language="C#" Value="On" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.DeviceFontSubstitution On = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.DeviceFontSubstitution.On" />
+      <MemberSignature Language="VB.NET" Value="On" />
+      <MemberSignature Language="C++ CLI" Value="On" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -72,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.DeviceFontSubstitution</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Device font substitution is enabled.</summary>
       </Docs>
@@ -80,6 +88,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.DeviceFontSubstitution Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.DeviceFontSubstitution.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -88,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.DeviceFontSubstitution</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

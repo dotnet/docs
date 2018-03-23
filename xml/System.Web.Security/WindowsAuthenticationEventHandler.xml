@@ -1,7 +1,9 @@
-<Type Name="WindowsAuthenticationEventHandler" FullName="System.Web.Security.WindowsAuthenticationEventHandler">
+﻿<Type Name="WindowsAuthenticationEventHandler" FullName="System.Web.Security.WindowsAuthenticationEventHandler">
   <TypeSignature Language="C#" Value="public delegate void WindowsAuthenticationEventHandler(object sender, WindowsAuthenticationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowsAuthenticationEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.WindowsAuthenticationEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WindowsAuthenticationEventHandler(sender As Object, e As WindowsAuthenticationEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WindowsAuthenticationEventHandler(System::Object ^ sender, WindowsAuthenticationEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

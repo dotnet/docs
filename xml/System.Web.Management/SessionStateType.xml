@@ -1,7 +1,9 @@
-<Type Name="SessionStateType" FullName="System.Web.Management.SessionStateType">
+﻿<Type Name="SessionStateType" FullName="System.Web.Management.SessionStateType">
   <TypeSignature Language="C#" Value="public enum SessionStateType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionStateType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SessionStateType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SessionStateType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SessionStateType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SessionStateType Custom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Session-state data and stored procedures are placed in a custom data store.</summary>
       </Docs>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="Persisted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SessionStateType Persisted = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Persisted" />
+      <MemberSignature Language="VB.NET" Value="Persisted" />
+      <MemberSignature Language="C++ CLI" Value="Persisted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Session-state data and stored procedures are placed in the "ASPState" database. Session-state data will survive a restart of the database server.</summary>
       </Docs>
@@ -61,6 +69,8 @@
       <MemberSignature Language="C#" Value="Temporary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SessionStateType Temporary = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Temporary" />
+      <MemberSignature Language="VB.NET" Value="Temporary" />
+      <MemberSignature Language="C++ CLI" Value="Temporary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Session state data is stored in tempdb, and stored procedures are placed in the "ASPState" database. Session state data will not survive a restart of SQL Server.</summary>
       </Docs>

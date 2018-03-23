@@ -1,7 +1,9 @@
-<Type Name="EventLogEntryType" FullName="System.Diagnostics.EventLogEntryType">
+﻿<Type Name="EventLogEntryType" FullName="System.Diagnostics.EventLogEntryType">
   <TypeSignature Language="C#" Value="public enum EventLogEntryType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventLogEntryType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogEntryType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventLogEntryType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventLogEntryType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType Error = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -53,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An error event. This indicates a significant problem the user should know about; usually a loss of functionality or data.</summary>
       </Docs>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="FailureAudit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType FailureAudit = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.FailureAudit" />
+      <MemberSignature Language="VB.NET" Value="FailureAudit" />
+      <MemberSignature Language="C++ CLI" Value="FailureAudit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -73,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A failure audit event. This indicates a security event that occurs when an audited access attempt fails; for example, a failed attempt to open a file.</summary>
       </Docs>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="Information" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType Information = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Information" />
+      <MemberSignature Language="VB.NET" Value="Information" />
+      <MemberSignature Language="C++ CLI" Value="Information" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>An information event. This indicates a significant, successful operation.</summary>
       </Docs>
@@ -101,6 +112,8 @@
       <MemberSignature Language="C#" Value="SuccessAudit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType SuccessAudit = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.SuccessAudit" />
+      <MemberSignature Language="VB.NET" Value="SuccessAudit" />
+      <MemberSignature Language="C++ CLI" Value="SuccessAudit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A success audit event. This indicates a security event that occurs when an audited access attempt is successful; for example, logging on successfully.</summary>
       </Docs>
@@ -121,6 +135,8 @@
       <MemberSignature Language="C#" Value="Warning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType Warning = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A warning event. This indicates a problem that is not immediately significant, but that may signify conditions that could cause future problems.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="NetworkInformationAccess" FullName="System.Net.NetworkInformation.NetworkInformationAccess">
+﻿<Type Name="NetworkInformationAccess" FullName="System.Net.NetworkInformation.NetworkInformationAccess">
   <TypeSignature Language="C#" Value="public enum NetworkInformationAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetworkInformationAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInformationAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NetworkInformationAccess" />
+  <TypeSignature Language="C++ CLI" Value="public enum class NetworkInformationAccess" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInformationAccess None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInformationAccess.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInformationAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No access to network information.</summary>
       </Docs>
@@ -65,6 +70,8 @@
       <MemberSignature Language="C#" Value="Ping" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInformationAccess Ping = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />
+      <MemberSignature Language="VB.NET" Value="Ping" />
+      <MemberSignature Language="C++ CLI" Value="Ping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInformationAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Ping access to network information.</summary>
       </Docs>
@@ -86,6 +94,8 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInformationAccess Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInformationAccess.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInformationAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Read access to network information.</summary>
       </Docs>

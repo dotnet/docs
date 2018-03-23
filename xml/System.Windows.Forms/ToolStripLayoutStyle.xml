@@ -1,7 +1,9 @@
-<Type Name="ToolStripLayoutStyle" FullName="System.Windows.Forms.ToolStripLayoutStyle">
+﻿<Type Name="ToolStripLayoutStyle" FullName="System.Windows.Forms.ToolStripLayoutStyle">
   <TypeSignature Language="C#" Value="public enum ToolStripLayoutStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripLayoutStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripLayoutStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ToolStripLayoutStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolStripLayoutStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +78,8 @@
       <MemberSignature Language="C#" Value="Flow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripLayoutStyle Flow = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.Flow" />
+      <MemberSignature Language="VB.NET" Value="Flow" />
+      <MemberSignature Language="C++ CLI" Value="Flow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripLayoutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that items flow horizontally or vertically as necessary.</summary>
       </Docs>
@@ -92,6 +97,8 @@
       <MemberSignature Language="C#" Value="HorizontalStackWithOverflow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripLayoutStyle HorizontalStackWithOverflow = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow" />
+      <MemberSignature Language="VB.NET" Value="HorizontalStackWithOverflow" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalStackWithOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripLayoutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that items are laid out horizontally and overflow as necessary.</summary>
       </Docs>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="StackWithOverflow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripLayoutStyle StackWithOverflow = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow" />
+      <MemberSignature Language="VB.NET" Value="StackWithOverflow" />
+      <MemberSignature Language="C++ CLI" Value="StackWithOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripLayoutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that items are laid out automatically.</summary>
       </Docs>
@@ -124,6 +135,8 @@
       <MemberSignature Language="C#" Value="Table" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripLayoutStyle Table = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.Table" />
+      <MemberSignature Language="VB.NET" Value="Table" />
+      <MemberSignature Language="C++ CLI" Value="Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripLayoutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that items are laid out flush left.</summary>
       </Docs>
@@ -140,6 +154,8 @@
       <MemberSignature Language="C#" Value="VerticalStackWithOverflow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripLayoutStyle VerticalStackWithOverflow = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow" />
+      <MemberSignature Language="VB.NET" Value="VerticalStackWithOverflow" />
+      <MemberSignature Language="C++ CLI" Value="VerticalStackWithOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +164,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripLayoutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that items are laid out vertically, are centered within the control, and overflow as necessary.</summary>
       </Docs>

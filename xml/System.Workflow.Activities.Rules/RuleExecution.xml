@@ -1,7 +1,9 @@
-<Type Name="RuleExecution" FullName="System.Workflow.Activities.Rules.RuleExecution">
+﻿<Type Name="RuleExecution" FullName="System.Workflow.Activities.Rules.RuleExecution">
   <TypeSignature Language="C#" Value="public class RuleExecution" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleExecution extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExecution" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuleExecution" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleExecution" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleExecution (System.Workflow.Activities.Rules.RuleValidation validation, object thisObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleValidation validation, object thisObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExecution.#ctor(System.Workflow.Activities.Rules.RuleValidation,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (validation As RuleValidation, thisObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleExecution(System::Workflow::Activities::Rules::RuleValidation ^ validation, System::Object ^ thisObject);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -46,6 +59,7 @@
       <MemberSignature Language="C#" Value="public RuleExecution (System.Workflow.Activities.Rules.RuleValidation validation, object thisObject, System.Workflow.ComponentModel.ActivityExecutionContext activityExecutionContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleValidation validation, object thisObject, class System.Workflow.ComponentModel.ActivityExecutionContext activityExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExecution.#ctor(System.Workflow.Activities.Rules.RuleValidation,System.Object,System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleExecution(System::Workflow::Activities::Rules::RuleValidation ^ validation, System::Object ^ thisObject, System::Workflow::ComponentModel::ActivityExecutionContext ^ activityExecutionContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -73,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity Activity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity Activity" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.Activity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As Activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ Activity { System::Workflow::ComponentModel::Activity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -91,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContext ActivityExecutionContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.ActivityExecutionContext ActivityExecutionContext" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.ActivityExecutionContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityExecutionContext As ActivityExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityExecutionContext ^ ActivityExecutionContext { System::Workflow::ComponentModel::ActivityExecutionContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -109,6 +127,8 @@
       <MemberSignature Language="C#" Value="public bool Halted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Halted" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.Halted" />
+      <MemberSignature Language="VB.NET" Value="Public Property Halted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Halted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -128,6 +148,8 @@
       <MemberSignature Language="C#" Value="public object ThisObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ThisObject" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.ThisObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThisObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ThisObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -146,6 +168,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleValidation Validation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleValidation Validation" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.Validation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Validation As RuleValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleValidation ^ Validation { System::Workflow::Activities::Rules::RuleValidation ^ get(); void set(System::Workflow::Activities::Rules::RuleValidation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -160,14 +184,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

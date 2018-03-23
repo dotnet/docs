@@ -1,7 +1,9 @@
-<Type Name="DataGridEditAction" FullName="System.Windows.Controls.DataGridEditAction">
+﻿<Type Name="DataGridEditAction" FullName="System.Windows.Controls.DataGridEditAction">
   <TypeSignature Language="C#" Value="public enum DataGridEditAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridEditAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridEditAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridEditAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridEditAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="Cancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridEditAction Cancel = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridEditAction.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Cancel" />
+      <MemberSignature Language="C++ CLI" Value="Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridEditAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The edit is being canceled.</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="Commit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridEditAction Commit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridEditAction.Commit" />
+      <MemberSignature Language="VB.NET" Value="Commit" />
+      <MemberSignature Language="C++ CLI" Value="Commit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridEditAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The edit is being committed.</summary>
       </Docs>

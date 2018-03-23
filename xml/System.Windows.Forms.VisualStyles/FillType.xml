@@ -1,7 +1,9 @@
-<Type Name="FillType" FullName="System.Windows.Forms.VisualStyles.FillType">
+﻿<Type Name="FillType" FullName="System.Windows.Forms.VisualStyles.FillType">
   <TypeSignature Language="C#" Value="public enum FillType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FillType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.FillType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FillType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FillType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="HorizontalGradient" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType HorizontalGradient = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.HorizontalGradient" />
+      <MemberSignature Language="VB.NET" Value="HorizontalGradient" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalGradient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The interior of the element is a horizontal gradient.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="RadialGradient" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType RadialGradient = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.RadialGradient" />
+      <MemberSignature Language="VB.NET" Value="RadialGradient" />
+      <MemberSignature Language="C++ CLI" Value="RadialGradient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The interior of the element is a radial gradient.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Solid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType Solid = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.Solid" />
+      <MemberSignature Language="VB.NET" Value="Solid" />
+      <MemberSignature Language="C++ CLI" Value="Solid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The interior of the element is solid.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="TileImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType TileImage = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.TileImage" />
+      <MemberSignature Language="VB.NET" Value="TileImage" />
+      <MemberSignature Language="C++ CLI" Value="TileImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The interior of the element is a tiled image.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="VerticalGradient" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType VerticalGradient = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.VerticalGradient" />
+      <MemberSignature Language="VB.NET" Value="VerticalGradient" />
+      <MemberSignature Language="C++ CLI" Value="VerticalGradient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The interior of the element is a vertical gradient.</summary>
       </Docs>

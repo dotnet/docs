@@ -1,7 +1,9 @@
-<Type Name="XObjectChangeEventArgs" FullName="System.Xml.Linq.XObjectChangeEventArgs">
+﻿<Type Name="XObjectChangeEventArgs" FullName="System.Xml.Linq.XObjectChangeEventArgs">
   <TypeSignature Language="C#" Value="public class XObjectChangeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XObjectChangeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XObjectChangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class XObjectChangeEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XObjectChangeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public XObjectChangeEventArgs (System.Xml.Linq.XObjectChange objectChange);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Xml.Linq.XObjectChange objectChange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObjectChangeEventArgs.#ctor(System.Xml.Linq.XObjectChange)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (objectChange As XObjectChange)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XObjectChangeEventArgs(System::Xml::Linq::XObjectChange objectChange);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.Linq.XObjectChangeEventArgs Add;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.Linq.XObjectChangeEventArgs Add" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.XObjectChangeEventArgs.Add" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Add As XObjectChangeEventArgs " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::Linq::XObjectChangeEventArgs ^ Add;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -109,6 +115,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.Linq.XObjectChangeEventArgs Name;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.Linq.XObjectChangeEventArgs Name" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.XObjectChangeEventArgs.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Name As XObjectChangeEventArgs " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::Linq::XObjectChangeEventArgs ^ Name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -144,6 +152,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XObjectChange ObjectChange { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Linq.XObjectChange ObjectChange" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObjectChangeEventArgs.ObjectChange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectChange As XObjectChange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XObjectChange ObjectChange { System::Xml::Linq::XObjectChange get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -173,6 +183,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.Linq.XObjectChangeEventArgs Remove;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.Linq.XObjectChangeEventArgs Remove" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.XObjectChangeEventArgs.Remove" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Remove As XObjectChangeEventArgs " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::Linq::XObjectChangeEventArgs ^ Remove;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -208,6 +220,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.Linq.XObjectChangeEventArgs Value;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.Linq.XObjectChangeEventArgs Value" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.XObjectChangeEventArgs.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Value As XObjectChangeEventArgs " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::Linq::XObjectChangeEventArgs ^ Value;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

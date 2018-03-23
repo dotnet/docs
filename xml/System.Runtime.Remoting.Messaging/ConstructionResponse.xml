@@ -1,7 +1,9 @@
-<Type Name="ConstructionResponse" FullName="System.Runtime.Remoting.Messaging.ConstructionResponse">
+﻿<Type Name="ConstructionResponse" FullName="System.Runtime.Remoting.Messaging.ConstructionResponse">
   <TypeSignature Language="C#" Value="public class ConstructionResponse : System.Runtime.Remoting.Messaging.MethodResponse, System.Runtime.Remoting.Activation.IConstructionReturnMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ConstructionResponse extends System.Runtime.Remoting.Messaging.MethodResponse implements class System.Runtime.Remoting.Activation.IConstructionReturnMessage, class System.Runtime.Remoting.Messaging.IMessage, class System.Runtime.Remoting.Messaging.IMethodMessage, class System.Runtime.Remoting.Messaging.IMethodReturnMessage" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.ConstructionResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConstructionResponse&#xA;Inherits MethodResponse&#xA;Implements IConstructionReturnMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConstructionResponse : System::Runtime::Remoting::Messaging::MethodResponse, System::Runtime::Remoting::Activation::IConstructionReturnMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public ConstructionResponse (System.Runtime.Remoting.Messaging.Header[] h, System.Runtime.Remoting.Messaging.IMethodCallMessage mcm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Remoting.Messaging.Header[] h, class System.Runtime.Remoting.Messaging.IMethodCallMessage mcm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.ConstructionResponse.#ctor(System.Runtime.Remoting.Messaging.Header[],System.Runtime.Remoting.Messaging.IMethodCallMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (h As Header(), mcm As IMethodCallMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstructionResponse(cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ h, System::Runtime::Remoting::Messaging::IMethodCallMessage ^ mcm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,7 +79,12 @@
       <MemberSignature Language="C#" Value="public override System.Collections.IDictionary Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Properties" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.ConstructionResponse.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Properties As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMessage.Properties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

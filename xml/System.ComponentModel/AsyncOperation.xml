@@ -1,7 +1,9 @@
-<Type Name="AsyncOperation" FullName="System.ComponentModel.AsyncOperation">
+﻿<Type Name="AsyncOperation" FullName="System.ComponentModel.AsyncOperation">
   <TypeSignature Language="C#" Value="public sealed class AsyncOperation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AsyncOperation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncOperation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncOperation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsyncOperation sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -60,6 +62,8 @@
       <MemberSignature Language="C#" Value="~AsyncOperation ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperation.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!AsyncOperation ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -84,6 +88,8 @@
       <MemberSignature Language="C#" Value="public void OperationCompleted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OperationCompleted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperation.OperationCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OperationCompleted ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OperationCompleted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -121,6 +127,8 @@
       <MemberSignature Language="C#" Value="public void Post (System.Threading.SendOrPostCallback d, object arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Post(class System.Threading.SendOrPostCallback d, object arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperation.Post(System.Threading.SendOrPostCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Post (d As SendOrPostCallback, arg As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Post(System::Threading::SendOrPostCallback ^ d, System::Object ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -190,6 +198,8 @@
       <MemberSignature Language="C#" Value="public void PostOperationCompleted (System.Threading.SendOrPostCallback d, object arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PostOperationCompleted(class System.Threading.SendOrPostCallback d, object arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperation.PostOperationCompleted(System.Threading.SendOrPostCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PostOperationCompleted (d As SendOrPostCallback, arg As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PostOperationCompleted(System::Threading::SendOrPostCallback ^ d, System::Object ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -253,6 +263,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.SynchronizationContext SynchronizationContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.SynchronizationContext SynchronizationContext" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AsyncOperation.SynchronizationContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SynchronizationContext As SynchronizationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::SynchronizationContext ^ SynchronizationContext { System::Threading::SynchronizationContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -281,6 +293,8 @@
       <MemberSignature Language="C#" Value="public object UserSuppliedState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object UserSuppliedState" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AsyncOperation.UserSuppliedState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserSuppliedState As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserSuppliedState { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

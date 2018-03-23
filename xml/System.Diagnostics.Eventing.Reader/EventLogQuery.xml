@@ -1,7 +1,9 @@
-<Type Name="EventLogQuery" FullName="System.Diagnostics.Eventing.Reader.EventLogQuery">
+﻿<Type Name="EventLogQuery" FullName="System.Diagnostics.Eventing.Reader.EventLogQuery">
   <TypeSignature Language="C#" Value="public class EventLogQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventLogQuery extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventLogQuery" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventLogQuery (string path, System.Diagnostics.Eventing.Reader.PathType pathType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogQuery.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogQuery(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -46,6 +58,7 @@
       <MemberSignature Language="C#" Value="public EventLogQuery (string path, System.Diagnostics.Eventing.Reader.PathType pathType, string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogQuery.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogQuery(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -68,6 +81,8 @@
       <MemberSignature Language="C#" Value="public bool ReverseDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReverseDirection" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogQuery.ReverseDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReverseDirection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReverseDirection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -93,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventLogSession Session { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventLogSession Session" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogQuery.Session" />
+      <MemberSignature Language="VB.NET" Value="Public Property Session As EventLogSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLogSession ^ Session { System::Diagnostics::Eventing::Reader::EventLogSession ^ get(); void set(System::Diagnostics::Eventing::Reader::EventLogSession ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -111,6 +128,8 @@
       <MemberSignature Language="C#" Value="public bool TolerateQueryErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TolerateQueryErrors" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogQuery.TolerateQueryErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Property TolerateQueryErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TolerateQueryErrors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -126,14 +145,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

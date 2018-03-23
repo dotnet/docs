@@ -1,7 +1,9 @@
-<Type Name="XmlElementEventHandler" FullName="System.Xml.Serialization.XmlElementEventHandler">
+﻿<Type Name="XmlElementEventHandler" FullName="System.Xml.Serialization.XmlElementEventHandler">
   <TypeSignature Language="C#" Value="public delegate void XmlElementEventHandler(object sender, XmlElementEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlElementEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlElementEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlElementEventHandler(sender As Object, e As XmlElementEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void XmlElementEventHandler(System::Object ^ sender, XmlElementEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

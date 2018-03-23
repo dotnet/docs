@@ -1,7 +1,9 @@
-<Type Name="StatementCompletedEventHandler" FullName="System.Data.StatementCompletedEventHandler">
+﻿<Type Name="StatementCompletedEventHandler" FullName="System.Data.StatementCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void StatementCompletedEventHandler(object sender, StatementCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatementCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.StatementCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub StatementCompletedEventHandler(sender As Object, e As StatementCompletedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void StatementCompletedEventHandler(System::Object ^ sender, StatementCompletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

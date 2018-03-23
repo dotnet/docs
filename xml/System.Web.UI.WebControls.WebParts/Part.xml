@@ -1,7 +1,9 @@
-<Type Name="Part" FullName="System.Web.UI.WebControls.WebParts.Part">
+﻿<Type Name="Part" FullName="System.Web.UI.WebControls.WebParts.Part">
   <TypeSignature Language="C#" Value="public abstract class Part : System.Web.UI.WebControls.Panel, System.Web.UI.INamingContainer, System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Part extends System.Web.UI.WebControls.Panel implements class System.Web.UI.INamingContainer, class System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.Part" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Part&#xA;Inherits Panel&#xA;Implements ICompositeControlDesignerAccessor, INamingContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Part abstract : System::Web::UI::WebControls::Panel, System::Web::UI::INamingContainer, System::Web::UI::WebControls::ICompositeControlDesignerAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +87,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.PartChromeState ChromeState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.PartChromeState ChromeState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.ChromeState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ChromeState As PartChromeState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::PartChromeState ChromeState { System::Web::UI::WebControls::WebParts::PartChromeState get(); void set(System::Web::UI::WebControls::WebParts::PartChromeState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +133,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.PartChromeType ChromeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.PartChromeType ChromeType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ChromeType As PartChromeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::PartChromeType ChromeType { System::Web::UI::WebControls::WebParts::PartChromeType get(); void set(System::Web::UI::WebControls::WebParts::PartChromeType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +179,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -201,6 +209,8 @@
       <MemberSignature Language="C#" Value="public override void DataBind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DataBind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.Part.DataBind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DataBind ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +230,8 @@
       <MemberSignature Language="C#" Value="public virtual string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,7 +282,12 @@
       <MemberSignature Language="C#" Value="void ICompositeControlDesignerAccessor.RecreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.Part.System#Web#UI#WebControls#ICompositeControlDesignerAccessor#RecreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Sub RecreateChildControls () Implements ICompositeControlDesignerAccessor.RecreateChildControls" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls() = System::Web::UI::WebControls::ICompositeControlDesignerAccessor::RecreateChildControls;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -289,6 +306,8 @@
       <MemberSignature Language="C#" Value="public virtual string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

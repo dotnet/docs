@@ -1,7 +1,9 @@
-<Type Name="IDesignerLoaderHost2" FullName="System.ComponentModel.Design.Serialization.IDesignerLoaderHost2">
-  <TypeSignature Language="C#" Value="public interface IDesignerLoaderHost2 : IServiceProvider, System.ComponentModel.Design.Serialization.IDesignerLoaderHost" />
+﻿<Type Name="IDesignerLoaderHost2" FullName="System.ComponentModel.Design.Serialization.IDesignerLoaderHost2">
+  <TypeSignature Language="C#" Value="public interface IDesignerLoaderHost2 : System.ComponentModel.Design.Serialization.IDesignerLoaderHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerLoaderHost2 implements class System.ComponentModel.Design.IDesignerHost, class System.ComponentModel.Design.IServiceContainer, class System.ComponentModel.Design.Serialization.IDesignerLoaderHost, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.IDesignerLoaderHost2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDesignerLoaderHost2&#xA;Implements IDesignerLoaderHost" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerLoaderHost2 : System::ComponentModel::Design::Serialization::IDesignerLoaderHost" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -18,9 +20,6 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.ComponentModel.Design.Serialization.IDesignerLoaderHost</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.IServiceProvider</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -43,6 +42,8 @@
       <MemberSignature Language="C#" Value="public bool CanReloadWithErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanReloadWithErrors" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.IDesignerLoaderHost2.CanReloadWithErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanReloadWithErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanReloadWithErrors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +83,8 @@
       <MemberSignature Language="C#" Value="public bool IgnoreErrorsDuringReload { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreErrorsDuringReload" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.IDesignerLoaderHost2.IgnoreErrorsDuringReload" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreErrorsDuringReload As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreErrorsDuringReload { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

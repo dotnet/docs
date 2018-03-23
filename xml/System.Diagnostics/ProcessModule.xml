@@ -1,7 +1,9 @@
-<Type Name="ProcessModule" FullName="System.Diagnostics.ProcessModule">
+﻿<Type Name="ProcessModule" FullName="System.Diagnostics.ProcessModule">
   <TypeSignature Language="C#" Value="public class ProcessModule : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessModule extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProcessModule&#xA;Inherits Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProcessModule : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -56,6 +58,8 @@
       <MemberSignature Language="C#" Value="public IntPtr BaseAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int BaseAddress" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.BaseAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseAddress As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr BaseAddress { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -100,6 +104,8 @@
       <MemberSignature Language="C#" Value="public IntPtr EntryPointAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int EntryPointAddress" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.EntryPointAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntryPointAddress As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr EntryPointAddress { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -152,6 +158,8 @@
       <MemberSignature Language="C#" Value="public string FileName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -201,6 +209,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.FileVersionInfo FileVersionInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.FileVersionInfo FileVersionInfo" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.FileVersionInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileVersionInfo As FileVersionInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::FileVersionInfo ^ FileVersionInfo { System::Diagnostics::FileVersionInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -244,6 +254,8 @@
       <MemberSignature Language="C#" Value="public int ModuleMemorySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ModuleMemorySize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.ModuleMemorySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModuleMemorySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ModuleMemorySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -293,6 +305,8 @@
       <MemberSignature Language="C#" Value="public string ModuleName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ModuleName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.ModuleName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModuleName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModuleName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -342,6 +356,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessModule.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>

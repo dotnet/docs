@@ -1,7 +1,9 @@
-<Type Name="ListBoxItem" FullName="Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem">
+﻿<Type Name="ListBoxItem" FullName="Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem">
   <TypeSignature Language="C#" Value="public class ListBoxItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ListBoxItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListBoxItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListBoxItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ListBoxItem (string ItemString);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string ItemString) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ItemString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBoxItem(System::String ^ ItemString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -62,6 +75,8 @@
       <MemberSignature Language="C#" Value="public ListBoxItem (string ItemString, int ItemData);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string ItemString, int32 ItemData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ItemString As String, ItemData As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBoxItem(System::String ^ ItemString, int ItemData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -91,6 +106,8 @@
       <MemberSignature Language="C#" Value="public int ItemData;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 ItemData" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ItemData" />
+      <MemberSignature Language="VB.NET" Value="Public ItemData As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int ItemData;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="public string ItemString;" />
       <MemberSignature Language="ILAsm" Value=".field public string ItemString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ItemString" />
+      <MemberSignature Language="VB.NET" Value="Public ItemString As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ItemString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -143,6 +162,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -167,14 +188,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

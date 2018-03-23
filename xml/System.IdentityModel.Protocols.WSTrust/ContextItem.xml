@@ -1,7 +1,9 @@
-<Type Name="ContextItem" FullName="System.IdentityModel.Protocols.WSTrust.ContextItem">
+﻿<Type Name="ContextItem" FullName="System.IdentityModel.Protocols.WSTrust.ContextItem">
   <TypeSignature Language="C#" Value="public class ContextItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.ContextItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContextItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,21 @@
     <altmember cref="T:System.IdentityModel.Protocols.WSTrust.AdditionalContext" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ContextItem (Uri name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextItem(Uri ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public ContextItem (Uri name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As Uri, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextItem(Uri ^ name, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -89,6 +104,8 @@
       <MemberSignature Language="C#" Value="public ContextItem (Uri name, string value, Uri scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri name, string value, class System.Uri scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri,System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As Uri, value As String, scope As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextItem(Uri ^ name, System::String ^ value, Uri ^ scope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -119,6 +136,8 @@
       <MemberSignature Language="C#" Value="public Uri Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Name" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Name { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -137,6 +156,8 @@
       <MemberSignature Language="C#" Value="public Uri Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Scope" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Scope { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -156,6 +177,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -177,14 +200,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

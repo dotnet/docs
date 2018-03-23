@@ -1,7 +1,9 @@
-<Type Name="IDataGridColumnStyleEditingNotificationService" FullName="System.Windows.Forms.IDataGridColumnStyleEditingNotificationService">
+﻿<Type Name="IDataGridColumnStyleEditingNotificationService" FullName="System.Windows.Forms.IDataGridColumnStyleEditingNotificationService">
   <TypeSignature Language="C#" Value="public interface IDataGridColumnStyleEditingNotificationService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataGridColumnStyleEditingNotificationService" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataGridColumnStyleEditingNotificationService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataGridColumnStyleEditingNotificationService" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public void ColumnStartedEditing (System.Windows.Forms.Control editingControl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ColumnStartedEditing(class System.Windows.Forms.Control editingControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ColumnStartedEditing (editingControl As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ColumnStartedEditing(System::Windows::Forms::Control ^ editingControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

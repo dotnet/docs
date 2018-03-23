@@ -1,7 +1,9 @@
-<Type Name="StylusPointPropertyUnit" FullName="System.Windows.Input.StylusPointPropertyUnit">
+﻿<Type Name="StylusPointPropertyUnit" FullName="System.Windows.Input.StylusPointPropertyUnit">
   <TypeSignature Language="C#" Value="public enum StylusPointPropertyUnit" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StylusPointPropertyUnit extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointPropertyUnit" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StylusPointPropertyUnit" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StylusPointPropertyUnit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Centimeters" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusPointPropertyUnit Centimeters = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Centimeters" />
+      <MemberSignature Language="VB.NET" Value="Centimeters" />
+      <MemberSignature Language="C++ CLI" Value="Centimeters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in centimeters.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="Degrees" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusPointPropertyUnit Degrees = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Degrees" />
+      <MemberSignature Language="VB.NET" Value="Degrees" />
+      <MemberSignature Language="C++ CLI" Value="Degrees" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in degrees.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Grams" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusPointPropertyUnit Grams = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Grams" />
+      <MemberSignature Language="VB.NET" Value="Grams" />
+      <MemberSignature Language="C++ CLI" Value="Grams" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in grams.</summary>
       </Docs>
@@ -78,6 +89,8 @@
       <MemberSignature Language="C#" Value="Inches" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusPointPropertyUnit Inches = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Inches" />
+      <MemberSignature Language="VB.NET" Value="Inches" />
+      <MemberSignature Language="C++ CLI" Value="Inches" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in inches.</summary>
       </Docs>
@@ -94,6 +108,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusPointPropertyUnit None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property's measurement is not specified.</summary>
       </Docs>
@@ -110,6 +127,8 @@
       <MemberSignature Language="C#" Value="Pounds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusPointPropertyUnit Pounds = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Pounds" />
+      <MemberSignature Language="VB.NET" Value="Pounds" />
+      <MemberSignature Language="C++ CLI" Value="Pounds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in pounds.</summary>
       </Docs>
@@ -126,6 +146,8 @@
       <MemberSignature Language="C#" Value="Radians" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusPointPropertyUnit Radians = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Radians" />
+      <MemberSignature Language="VB.NET" Value="Radians" />
+      <MemberSignature Language="C++ CLI" Value="Radians" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in radians.</summary>
       </Docs>
@@ -142,6 +165,8 @@
       <MemberSignature Language="C#" Value="Seconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusPointPropertyUnit Seconds = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Seconds" />
+      <MemberSignature Language="VB.NET" Value="Seconds" />
+      <MemberSignature Language="C++ CLI" Value="Seconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in seconds.</summary>
       </Docs>

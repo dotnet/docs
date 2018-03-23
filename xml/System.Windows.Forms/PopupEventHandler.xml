@@ -1,7 +1,9 @@
-<Type Name="PopupEventHandler" FullName="System.Windows.Forms.PopupEventHandler">
+﻿<Type Name="PopupEventHandler" FullName="System.Windows.Forms.PopupEventHandler">
   <TypeSignature Language="C#" Value="public delegate void PopupEventHandler(object sender, PopupEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PopupEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PopupEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PopupEventHandler(sender As Object, e As PopupEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void PopupEventHandler(System::Object ^ sender, PopupEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

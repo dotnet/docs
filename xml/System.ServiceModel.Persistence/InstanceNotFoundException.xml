@@ -1,7 +1,9 @@
-<Type Name="InstanceNotFoundException" FullName="System.ServiceModel.Persistence.InstanceNotFoundException">
+﻿<Type Name="InstanceNotFoundException" FullName="System.ServiceModel.Persistence.InstanceNotFoundException">
   <TypeSignature Language="C#" Value="public class InstanceNotFoundException : System.ServiceModel.Persistence.PersistenceException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InstanceNotFoundException extends System.ServiceModel.Persistence.PersistenceException" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.InstanceNotFoundException" />
+  <TypeSignature Language="VB.NET" Value="Public Class InstanceNotFoundException&#xA;Inherits PersistenceException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstanceNotFoundException : System::ServiceModel::Persistence::PersistenceException" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +22,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.InstanceNotFoundException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceNotFoundException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceNotFoundException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -39,6 +52,8 @@
       <MemberSignature Language="C#" Value="public InstanceNotFoundException (Guid id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.#ctor(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceNotFoundException(Guid id);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -57,6 +72,8 @@
       <MemberSignature Language="C#" Value="public InstanceNotFoundException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceNotFoundException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -75,6 +92,8 @@
       <MemberSignature Language="C#" Value="public InstanceNotFoundException (Guid id, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.#ctor(System.Guid,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As Guid, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceNotFoundException(Guid id, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -95,6 +114,8 @@
       <MemberSignature Language="C#" Value="public InstanceNotFoundException (Guid id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.#ctor(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As Guid, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceNotFoundException(Guid id, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -115,6 +136,8 @@
       <MemberSignature Language="C#" Value="protected InstanceNotFoundException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstanceNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -135,6 +158,8 @@
       <MemberSignature Language="C#" Value="public InstanceNotFoundException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceNotFoundException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -155,6 +180,8 @@
       <MemberSignature Language="C#" Value="public InstanceNotFoundException (Guid id, string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id, string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.#ctor(System.Guid,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As Guid, message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceNotFoundException(Guid id, System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -177,6 +204,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.InstanceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -200,6 +229,8 @@
       <MemberSignature Language="C#" Value="public Guid InstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InstanceId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.InstanceNotFoundException.InstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -214,14 +245,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.InstanceNotFoundException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

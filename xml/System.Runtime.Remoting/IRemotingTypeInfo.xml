@@ -1,7 +1,9 @@
-<Type Name="IRemotingTypeInfo" FullName="System.Runtime.Remoting.IRemotingTypeInfo">
+﻿<Type Name="IRemotingTypeInfo" FullName="System.Runtime.Remoting.IRemotingTypeInfo">
   <TypeSignature Language="C#" Value="public interface IRemotingTypeInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemotingTypeInfo" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.IRemotingTypeInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemotingTypeInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemotingTypeInfo" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool CanCastTo (Type fromType, object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCastTo(class System.Type fromType, object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.IRemotingTypeInfo.CanCastTo(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanCastTo (fromType As Type, o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanCastTo(Type ^ fromType, System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.IRemotingTypeInfo.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

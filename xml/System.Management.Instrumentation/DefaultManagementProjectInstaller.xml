@@ -1,7 +1,9 @@
-<Type Name="DefaultManagementProjectInstaller" FullName="System.Management.Instrumentation.DefaultManagementProjectInstaller">
+﻿<Type Name="DefaultManagementProjectInstaller" FullName="System.Management.Instrumentation.DefaultManagementProjectInstaller">
   <TypeSignature Language="C#" Value="public class DefaultManagementProjectInstaller : System.Configuration.Install.Installer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultManagementProjectInstaller extends System.Configuration.Install.Installer" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.DefaultManagementProjectInstaller" />
+  <TypeSignature Language="VB.NET" Value="Public Class DefaultManagementProjectInstaller&#xA;Inherits Installer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultManagementProjectInstaller : System::Configuration::Install::Installer" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public DefaultManagementProjectInstaller ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.DefaultManagementProjectInstaller.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultManagementProjectInstaller();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

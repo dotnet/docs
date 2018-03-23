@@ -1,7 +1,9 @@
-<Type Name="ModifierKeys" FullName="System.Windows.Input.ModifierKeys">
+﻿<Type Name="ModifierKeys" FullName="System.Windows.Input.ModifierKeys">
   <TypeSignature Language="C#" Value="public enum ModifierKeys" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ModifierKeys extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ModifierKeys" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ModifierKeys" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ModifierKeys" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +66,8 @@
       <MemberSignature Language="C#" Value="Alt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ModifierKeys Alt = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.Alt" />
+      <MemberSignature Language="VB.NET" Value="Alt" />
+      <MemberSignature Language="C++ CLI" Value="Alt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -72,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The ALT key.</summary>
       </Docs>
@@ -80,6 +85,8 @@
       <MemberSignature Language="C#" Value="Control" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ModifierKeys Control = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.Control" />
+      <MemberSignature Language="VB.NET" Value="Control" />
+      <MemberSignature Language="C++ CLI" Value="Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -88,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The CTRL key.</summary>
       </Docs>
@@ -96,6 +104,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ModifierKeys None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -104,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No modifiers are pressed.</summary>
       </Docs>
@@ -112,6 +123,8 @@
       <MemberSignature Language="C#" Value="Shift" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ModifierKeys Shift = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.Shift" />
+      <MemberSignature Language="VB.NET" Value="Shift" />
+      <MemberSignature Language="C++ CLI" Value="Shift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -120,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The SHIFT key.</summary>
       </Docs>
@@ -128,6 +142,8 @@
       <MemberSignature Language="C#" Value="Windows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ModifierKeys Windows = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.Windows" />
+      <MemberSignature Language="VB.NET" Value="Windows" />
+      <MemberSignature Language="C++ CLI" Value="Windows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -136,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The Windows logo key.</summary>
       </Docs>

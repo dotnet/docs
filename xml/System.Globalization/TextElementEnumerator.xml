@@ -1,7 +1,9 @@
-<Type Name="TextElementEnumerator" FullName="System.Globalization.TextElementEnumerator">
+﻿<Type Name="TextElementEnumerator" FullName="System.Globalization.TextElementEnumerator">
   <TypeSignature Language="C#" Value="public class TextElementEnumerator : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TextElementEnumerator extends System.Object implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.TextElementEnumerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextElementEnumerator&#xA;Implements IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextElementEnumerator : System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,7 +83,12 @@
       <MemberSignature Language="C#" Value="public object Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Current" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextElementEnumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +136,8 @@
       <MemberSignature Language="C#" Value="public int ElementIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ElementIndex" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextElementEnumerator.ElementIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ElementIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -164,6 +173,8 @@
       <MemberSignature Language="C#" Value="public string GetTextElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetTextElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextElementEnumerator.GetTextElement" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTextElement () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetTextElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -207,7 +218,12 @@
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextElementEnumerator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -254,7 +270,12 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextElementEnumerator.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

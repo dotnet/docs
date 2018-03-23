@@ -1,7 +1,9 @@
-<Type Name="DynamicEndpoint" FullName="System.ServiceModel.Discovery.DynamicEndpoint">
+﻿<Type Name="DynamicEndpoint" FullName="System.ServiceModel.Discovery.DynamicEndpoint">
   <TypeSignature Language="C#" Value="public class DynamicEndpoint : System.ServiceModel.Description.ServiceEndpoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicEndpoint extends System.ServiceModel.Description.ServiceEndpoint" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DynamicEndpoint" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicEndpoint&#xA;Inherits ServiceEndpoint" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicEndpoint : System::ServiceModel::Description::ServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public DynamicEndpoint (System.ServiceModel.Description.ContractDescription contract, System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ContractDescription contract, class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DynamicEndpoint.#ctor(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicEndpoint(System::ServiceModel::Description::ContractDescription ^ contract, System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryEndpointProvider DiscoveryEndpointProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.DiscoveryEndpointProvider DiscoveryEndpointProvider" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DynamicEndpoint.DiscoveryEndpointProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiscoveryEndpointProvider As DiscoveryEndpointProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::DiscoveryEndpointProvider ^ DiscoveryEndpointProvider { System::ServiceModel::Discovery::DiscoveryEndpointProvider ^ get(); void set(System::ServiceModel::Discovery::DiscoveryEndpointProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -64,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.FindCriteria FindCriteria { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.FindCriteria FindCriteria" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DynamicEndpoint.FindCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public Property FindCriteria As FindCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::FindCriteria ^ FindCriteria { System::ServiceModel::Discovery::FindCriteria ^ get(); void set(System::ServiceModel::Discovery::FindCriteria ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

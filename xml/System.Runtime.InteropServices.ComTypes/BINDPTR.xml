@@ -1,7 +1,9 @@
-<Type Name="BINDPTR" FullName="System.Runtime.InteropServices.ComTypes.BINDPTR">
+﻿<Type Name="BINDPTR" FullName="System.Runtime.InteropServices.ComTypes.BINDPTR">
   <TypeSignature Language="C#" Value="public struct BINDPTR" />
   <TypeSignature Language="ILAsm" Value=".class public sealed beforefieldinit BINDPTR extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.BINDPTR" />
+  <TypeSignature Language="VB.NET" Value="Public Structure BINDPTR" />
+  <TypeSignature Language="C++ CLI" Value="public value class BINDPTR" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lpfuncdesc;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lpfuncdesc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.BINDPTR.lpfuncdesc" />
+      <MemberSignature Language="VB.NET" Value="Public lpfuncdesc As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lpfuncdesc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lptcomp;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lptcomp" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.BINDPTR.lptcomp" />
+      <MemberSignature Language="VB.NET" Value="Public lptcomp As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lptcomp;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lpvardesc;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lpvardesc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.BINDPTR.lpvardesc" />
+      <MemberSignature Language="VB.NET" Value="Public lpvardesc As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lpvardesc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MimeFormatter" FullName="System.Web.Services.Protocols.MimeFormatter">
+﻿<Type Name="MimeFormatter" FullName="System.Web.Services.Protocols.MimeFormatter">
   <TypeSignature Language="C#" Value="public abstract class MimeFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MimeFormatter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MimeFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MimeFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimeFormatter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="protected MimeFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MimeFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -48,6 +52,7 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Protocols.MimeFormatter CreateInstance (Type type, object initializer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Protocols.MimeFormatter CreateInstance(class System.Type type, object initializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.CreateInstance(System.Type,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Protocols::MimeFormatter ^ CreateInstance(Type ^ type, System::Object ^ initializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -78,10 +83,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetInitializer">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns an initializer for the specified method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetInitializer">
       <MemberSignature Language="C#" Value="public abstract object GetInitializer (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetInitializer(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInitializer (methodInfo As LogicalMethodInfo) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetInitializer(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -114,6 +131,7 @@
       <MemberSignature Language="C#" Value="public static object GetInitializer (Type type, System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetInitializer(class System.Type type, class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.GetInitializer(System.Type,System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetInitializer(Type ^ type, System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -144,10 +162,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetInitializers">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns an array of initializer objects corresponding to an input array of method definitions.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetInitializers">
       <MemberSignature Language="C#" Value="public virtual object[] GetInitializers (System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetInitializers(class System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.GetInitializers(System.Web.Services.Protocols.LogicalMethodInfo[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInitializers (methodInfos As LogicalMethodInfo()) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Object ^&gt; ^ GetInitializers(cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ methodInfos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -180,6 +210,7 @@
       <MemberSignature Language="C#" Value="public static object[] GetInitializers (Type type, System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object[] GetInitializers(class System.Type type, class System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.GetInitializers(System.Type,System.Web.Services.Protocols.LogicalMethodInfo[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Object ^&gt; ^ GetInitializers(Type ^ type, cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ methodInfos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -214,6 +245,8 @@
       <MemberSignature Language="C#" Value="public abstract void Initialize (object initializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(object initializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.Initialize(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Initialize (initializer As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Initialize(System::Object ^ initializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -239,25 +272,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetInitializer">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns an initializer for the specified method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetInitializers">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns an array of initializer objects corresponding to an input array of method definitions.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

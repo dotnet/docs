@@ -1,7 +1,9 @@
-<Type Name="BIND_OPTS" FullName="System.Runtime.InteropServices.BIND_OPTS">
+﻿<Type Name="BIND_OPTS" FullName="System.Runtime.InteropServices.BIND_OPTS">
   <TypeSignature Language="C#" Value="public struct BIND_OPTS" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BIND_OPTS extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.BIND_OPTS" />
+  <TypeSignature Language="VB.NET" Value="Public Structure BIND_OPTS" />
+  <TypeSignature Language="C++ CLI" Value="public value class BIND_OPTS" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public int cbStruct;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 cbStruct" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BIND_OPTS.cbStruct" />
+      <MemberSignature Language="VB.NET" Value="Public cbStruct As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int cbStruct;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public int dwTickCountDeadline;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 dwTickCountDeadline" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BIND_OPTS.dwTickCountDeadline" />
+      <MemberSignature Language="VB.NET" Value="Public dwTickCountDeadline As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int dwTickCountDeadline;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public int grfFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfFlags" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BIND_OPTS.grfFlags" />
+      <MemberSignature Language="VB.NET" Value="Public grfFlags As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int grfFlags;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public int grfMode;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfMode" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BIND_OPTS.grfMode" />
+      <MemberSignature Language="VB.NET" Value="Public grfMode As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int grfMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

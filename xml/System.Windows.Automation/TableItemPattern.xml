@@ -1,7 +1,9 @@
-<Type Name="TableItemPattern" FullName="System.Windows.Automation.TableItemPattern">
+﻿<Type Name="TableItemPattern" FullName="System.Windows.Automation.TableItemPattern">
   <TypeSignature Language="C#" Value="public class TableItemPattern : System.Windows.Automation.GridItemPattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableItemPattern extends System.Windows.Automation.GridItemPattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TableItemPattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableItemPattern&#xA;Inherits GridItemPattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableItemPattern : System::Windows::Automation::GridItemPattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.TableItemPattern.TableItemPatternInformation Cached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TableItemPattern/TableItemPatternInformation Cached" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TableItemPattern.Cached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As TableItemPattern.TableItemPatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TableItemPattern::TableItemPatternInformation Cached { System::Windows::Automation::TableItemPattern::TableItemPatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ColumnHeaderItemsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ColumnHeaderItemsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TableItemPattern.ColumnHeaderItemsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnHeaderItemsProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ColumnHeaderItemsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.TableItemPattern.TableItemPatternInformation Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TableItemPattern/TableItemPatternInformation Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TableItemPattern.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As TableItemPattern.TableItemPatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TableItemPattern::TableItemPatternInformation Current { System::Windows::Automation::TableItemPattern::TableItemPatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TableItemPattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -156,6 +166,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty RowHeaderItemsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty RowHeaderItemsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TableItemPattern.RowHeaderItemsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowHeaderItemsProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ RowHeaderItemsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

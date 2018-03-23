@@ -1,7 +1,9 @@
-<Type Name="WorkflowHostingOptionsSection" FullName="System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection">
+﻿<Type Name="WorkflowHostingOptionsSection" FullName="System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection">
   <TypeSignature Language="C#" Value="public sealed class WorkflowHostingOptionsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowHostingOptionsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowHostingOptionsSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowHostingOptionsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public WorkflowHostingOptionsSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowHostingOptionsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool OverrideSiteName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OverrideSiteName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection.OverrideSiteName" />
+      <MemberSignature Language="VB.NET" Value="Public Property OverrideSiteName As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OverrideSiteName { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

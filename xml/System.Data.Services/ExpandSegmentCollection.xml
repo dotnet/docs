@@ -1,7 +1,9 @@
-<Type Name="ExpandSegmentCollection" FullName="System.Data.Services.ExpandSegmentCollection">
+﻿<Type Name="ExpandSegmentCollection" FullName="System.Data.Services.ExpandSegmentCollection">
   <TypeSignature Language="C#" Value="public class ExpandSegmentCollection : System.Collections.Generic.List&lt;System.Data.Services.ExpandSegment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpandSegmentCollection extends System.Collections.Generic.List`1&lt;class System.Data.Services.ExpandSegment&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.ExpandSegmentCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpandSegmentCollection&#xA;Inherits List(Of ExpandSegment)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpandSegmentCollection : System::Collections::Generic::List&lt;System::Data::Services::ExpandSegment ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a collection of expand segments for a query.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExpandSegmentCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegmentCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandSegmentCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public ExpandSegmentCollection (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegmentCollection.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandSegmentCollection(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -66,6 +81,8 @@
       <MemberSignature Language="C#" Value="public bool HasFilter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasFilter" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegmentCollection.HasFilter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFilter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -80,14 +97,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a collection of expand segments for a query.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

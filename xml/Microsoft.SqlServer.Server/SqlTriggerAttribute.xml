@@ -1,7 +1,9 @@
-<Type Name="SqlTriggerAttribute" FullName="Microsoft.SqlServer.Server.SqlTriggerAttribute">
+﻿<Type Name="SqlTriggerAttribute" FullName="Microsoft.SqlServer.Server.SqlTriggerAttribute">
   <TypeSignature Language="C#" Value="public sealed class SqlTriggerAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlTriggerAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlTriggerAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlTriggerAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlTriggerAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public SqlTriggerAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlTriggerAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTriggerAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public string Event { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Event" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlTriggerAttribute.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Property Event As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Event { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlTriggerAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -116,6 +124,8 @@
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlTriggerAttribute.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

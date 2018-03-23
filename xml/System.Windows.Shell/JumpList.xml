@@ -1,7 +1,9 @@
-<Type Name="JumpList" FullName="System.Windows.Shell.JumpList">
+﻿<Type Name="JumpList" FullName="System.Windows.Shell.JumpList">
   <TypeSignature Language="C#" Value="public sealed class JumpList : System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JumpList extends System.Object implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpList" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JumpList&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JumpList sealed : System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,10 +94,21 @@ Windows Media Player Jump List
     <permission cref="T:System.Security.Permissions.UIPermission">for full access to modify the Windows shell. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public JumpList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JumpList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +130,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public JumpList (System.Collections.Generic.IEnumerable&lt;System.Windows.Shell.JumpItem&gt; items, bool showFrequent, bool showRecent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Shell.JumpItem&gt; items, bool showFrequent, bool showRecent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Shell.JumpItem},System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As IEnumerable(Of JumpItem), showFrequent As Boolean, showRecent As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JumpList(System::Collections::Generic::IEnumerable&lt;System::Windows::Shell::JumpItem ^&gt; ^ items, bool showFrequent, bool showRecent);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -151,10 +166,21 @@ Windows Media Player Jump List
         <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddToRecentCategory">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified item to the **Recent** category of the Jump List.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddToRecentCategory">
       <MemberSignature Language="C#" Value="public static void AddToRecentCategory (string itemPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddToRecentCategory(string itemPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddToRecentCategory (itemPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddToRecentCategory(System::String ^ itemPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +218,7 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public static void AddToRecentCategory (System.Windows.Shell.JumpPath jumpPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddToRecentCategory(class System.Windows.Shell.JumpPath jumpPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.Windows.Shell.JumpPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddToRecentCategory(System::Windows::Shell::JumpPath ^ jumpPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -229,6 +256,7 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public static void AddToRecentCategory (System.Windows.Shell.JumpTask jumpTask);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddToRecentCategory(class System.Windows.Shell.JumpTask jumpTask) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.Windows.Shell.JumpTask)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddToRecentCategory(System::Windows::Shell::JumpTask ^ jumpTask);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -266,6 +294,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public void Apply ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Apply() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.Apply" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Apply ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,6 +335,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -339,6 +371,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -375,6 +409,7 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public static System.Windows.Shell.JumpList GetJumpList (System.Windows.Application application);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Shell.JumpList GetJumpList(class System.Windows.Application application) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.GetJumpList(System.Windows.Application)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Shell::JumpList ^ GetJumpList(System::Windows::Application ^ application);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -411,6 +446,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Windows.Shell.JumpItem&gt; JumpItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.Windows.Shell.JumpItem&gt; JumpItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.JumpItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JumpItems As List(Of JumpItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Windows::Shell::JumpItem ^&gt; ^ JumpItems { System::Collections::Generic::List&lt;System::Windows::Shell::JumpItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -445,6 +482,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Shell.JumpItemsRejectedEventArgs&gt; JumpItemsRejected;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Shell.JumpItemsRejectedEventArgs&gt; JumpItemsRejected" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Shell.JumpList.JumpItemsRejected" />
+      <MemberSignature Language="VB.NET" Value="Public Event JumpItemsRejected As EventHandler(Of JumpItemsRejectedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Shell::JumpItemsRejectedEventArgs ^&gt; ^ JumpItemsRejected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -476,6 +515,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Shell.JumpItemsRemovedEventArgs&gt; JumpItemsRemovedByUser;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Shell.JumpItemsRemovedEventArgs&gt; JumpItemsRemovedByUser" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Shell.JumpList.JumpItemsRemovedByUser" />
+      <MemberSignature Language="VB.NET" Value="Public Event JumpItemsRemovedByUser As EventHandler(Of JumpItemsRemovedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Shell::JumpItemsRemovedEventArgs ^&gt; ^ JumpItemsRemovedByUser;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -507,6 +548,7 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public static void SetJumpList (System.Windows.Application application, System.Windows.Shell.JumpList value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetJumpList(class System.Windows.Application application, class System.Windows.Shell.JumpList value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.SetJumpList(System.Windows.Application,System.Windows.Shell.JumpList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetJumpList(System::Windows::Application ^ application, System::Windows::Shell::JumpList ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -549,6 +591,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public bool ShowFrequentCategory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowFrequentCategory" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.ShowFrequentCategory" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowFrequentCategory As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFrequentCategory { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -592,6 +636,8 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public bool ShowRecentCategory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowRecentCategory" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowRecentCategory As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowRecentCategory { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -633,23 +679,5 @@ Windows Media Player Jump List
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddToRecentCategory">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified item to the **Recent** category of the Jump List.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpList" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

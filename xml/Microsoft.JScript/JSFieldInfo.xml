@@ -1,7 +1,9 @@
-<Type Name="JSFieldInfo" FullName="Microsoft.JScript.JSFieldInfo">
+﻿<Type Name="JSFieldInfo" FullName="Microsoft.JScript.JSFieldInfo">
   <TypeSignature Language="C#" Value="public sealed class JSFieldInfo : System.Reflection.FieldInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JSFieldInfo extends System.Reflection.FieldInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSFieldInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JSFieldInfo&#xA;Inherits FieldInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSFieldInfo sealed : System::Reflection::FieldInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.FieldAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.FieldAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSFieldInfo.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As FieldAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::FieldAttributes Attributes { System::Reflection::FieldAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSFieldInfo.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public override RuntimeFieldHandle FieldHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.RuntimeFieldHandle FieldHandle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSFieldInfo.FieldHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldHandle As RuntimeFieldHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property RuntimeFieldHandle FieldHandle { RuntimeFieldHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -84,6 +92,8 @@
       <MemberSignature Language="C#" Value="public override Type FieldType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type FieldType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSFieldInfo.FieldType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ FieldType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -101,10 +111,23 @@
         <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array that contains the custom attributes that are attached to this field.</summary>
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFieldInfo.GetCustomAttributes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -130,6 +153,8 @@
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (Type t, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(class System.Type t, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFieldInfo.GetCustomAttributes(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (t As Type, inherit As Boolean) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ t, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -157,6 +182,8 @@
       <MemberSignature Language="C#" Value="public override object GetValue (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFieldInfo.GetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (obj As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -182,6 +209,7 @@
       <MemberSignature Language="C#" Value="public override bool IsDefined (Type type, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefined(class System.Type type, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFieldInfo.IsDefined(System.Type,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ type, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -211,6 +239,8 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MemberTypes MemberType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MemberTypes MemberType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSFieldInfo.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -232,6 +262,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSFieldInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -253,6 +285,8 @@
       <MemberSignature Language="C#" Value="public override Type ReflectedType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReflectedType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSFieldInfo.ReflectedType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -270,10 +304,23 @@
         <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the field.</summary>
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetValue">
       <MemberSignature Language="C#" Value="public void SetValue (object obj, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(object obj, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFieldInfo.SetValue(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (obj As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ obj, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -300,6 +347,7 @@
       <MemberSignature Language="C#" Value="public override void SetValue (object obj, object value, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object obj, object value, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(System::Object ^ obj, System::Object ^ value, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -328,27 +376,5 @@
         <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an array that contains the custom attributes that are attached to this field.</summary>
-        <altmember cref="T:Microsoft.JScript.JSField" />
-        <altmember cref="T:System.Reflection.FieldInfo" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetValue">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the value of the field.</summary>
-        <altmember cref="T:Microsoft.JScript.JSField" />
-        <altmember cref="T:System.Reflection.FieldInfo" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

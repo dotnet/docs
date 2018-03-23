@@ -1,7 +1,9 @@
-<Type Name="PutOptions" FullName="System.Management.PutOptions">
+﻿<Type Name="PutOptions" FullName="System.Management.PutOptions">
   <TypeSignature Language="C#" Value="public class PutOptions : System.Management.ManagementOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PutOptions extends System.Management.ManagementOptions" />
   <TypeSignature Language="DocId" Value="T:System.Management.PutOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class PutOptions&#xA;Inherits ManagementOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PutOptions : System::Management::ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.PutOptions" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PutOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public PutOptions (System.Management.ManagementNamedValueCollection context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.#ctor(System.Management.ManagementNamedValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions(System::Management::ManagementNamedValueCollection ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -70,6 +85,7 @@
       <MemberSignature Language="C#" Value="public PutOptions (System.Management.ManagementNamedValueCollection context, TimeSpan timeout, bool useAmendedQualifiers, System.Management.PutType putType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout, bool useAmendedQualifiers, valuetype System.Management.PutType putType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Boolean,System.Management.PutType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout, bool useAmendedQualifiers, System::Management::PutType putType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -104,6 +120,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -133,6 +151,8 @@
       <MemberSignature Language="C#" Value="public System.Management.PutType Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Management.PutType Type" />
       <MemberSignature Language="DocId" Value="P:System.Management.PutOptions.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As PutType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::PutType Type { System::Management::PutType get(); void set(System::Management::PutType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -163,6 +183,8 @@
       <MemberSignature Language="C#" Value="public bool UseAmendedQualifiers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAmendedQualifiers" />
       <MemberSignature Language="DocId" Value="P:System.Management.PutOptions.UseAmendedQualifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseAmendedQualifiers As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAmendedQualifiers { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -189,14 +211,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.PutOptions" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

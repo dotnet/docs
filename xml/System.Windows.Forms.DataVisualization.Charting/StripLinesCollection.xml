@@ -1,7 +1,9 @@
-<Type Name="StripLinesCollection" FullName="System.Windows.Forms.DataVisualization.Charting.StripLinesCollection">
+﻿<Type Name="StripLinesCollection" FullName="System.Windows.Forms.DataVisualization.Charting.StripLinesCollection">
   <TypeSignature Language="C#" Value="public class StripLinesCollection : System.Windows.Forms.DataVisualization.Charting.ChartElementCollection&lt;System.Windows.Forms.DataVisualization.Charting.StripLine&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StripLinesCollection extends System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1&lt;class System.Windows.Forms.DataVisualization.Charting.StripLine&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.StripLinesCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class StripLinesCollection&#xA;Inherits ChartElementCollection(Of StripLine)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StripLinesCollection : System::Windows::Forms::DataVisualization::Charting::ChartElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::StripLine ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

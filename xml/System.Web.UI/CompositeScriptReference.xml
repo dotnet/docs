@@ -1,7 +1,9 @@
-<Type Name="CompositeScriptReference" FullName="System.Web.UI.CompositeScriptReference">
+﻿<Type Name="CompositeScriptReference" FullName="System.Web.UI.CompositeScriptReference">
   <TypeSignature Language="C#" Value="public class CompositeScriptReference : System.Web.UI.ScriptReferenceBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeScriptReference extends System.Web.UI.ScriptReferenceBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.CompositeScriptReference" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompositeScriptReference&#xA;Inherits ScriptReferenceBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositeScriptReference : System::Web::UI::ScriptReferenceBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public CompositeScriptReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CompositeScriptReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeScriptReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -48,9 +52,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetUrl">
-      <MemberSignature Language="C#" Value="protected override string GetUrl (System.Web.UI.ScriptManager scriptManager, bool zip);" />
+      <MemberSignature Language="C#" Value="protected internal override string GetUrl (System.Web.UI.ScriptManager scriptManager, bool zip);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetUrl(class System.Web.UI.ScriptManager scriptManager, bool zip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CompositeScriptReference.GetUrl(System.Web.UI.ScriptManager,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ GetUrl(System::Web::UI::ScriptManager ^ scriptManager, bool zip);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -73,9 +78,10 @@
       </Docs>
     </Member>
     <Member MemberName="IsAjaxFrameworkScript">
-      <MemberSignature Language="C#" Value="protected override bool IsAjaxFrameworkScript (System.Web.UI.ScriptManager scriptManager);" />
+      <MemberSignature Language="C#" Value="protected internal override bool IsAjaxFrameworkScript (System.Web.UI.ScriptManager scriptManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsAjaxFrameworkScript(class System.Web.UI.ScriptManager scriptManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CompositeScriptReference.IsAjaxFrameworkScript(System.Web.UI.ScriptManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsAjaxFrameworkScript(System::Web::UI::ScriptManager ^ scriptManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -96,9 +102,11 @@
       </Docs>
     </Member>
     <Member MemberName="IsFromSystemWebExtensions">
-      <MemberSignature Language="C#" Value="protected override bool IsFromSystemWebExtensions ();" />
+      <MemberSignature Language="C#" Value="protected internal override bool IsFromSystemWebExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsFromSystemWebExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CompositeScriptReference.IsFromSystemWebExtensions" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsFromSystemWebExtensions () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsFromSystemWebExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -124,6 +132,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ScriptReferenceCollection Scripts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ScriptReferenceCollection Scripts" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.CompositeScriptReference.Scripts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scripts As ScriptReferenceCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ScriptReferenceCollection ^ Scripts { System::Web::UI::ScriptReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -146,7 +156,7 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,7 +1,9 @@
-<Type Name="IApplicationPreloadManager" FullName="System.Web.Hosting.IApplicationPreloadManager">
+﻿<Type Name="IApplicationPreloadManager" FullName="System.Web.Hosting.IApplicationPreloadManager">
   <TypeSignature Language="C#" Value="public interface IApplicationPreloadManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationPreloadManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IApplicationPreloadManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IApplicationPreloadManager" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IApplicationPreloadManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("AE54F424-71BC-4da5-AA2F-8C0CD53496FC")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public void SetApplicationPreloadState (string context, string appId, bool enabled);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetApplicationPreloadState([in]string context, [in]string appId, [in]bool enabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadState(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetApplicationPreloadState (context As String, appId As String, enabled As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetApplicationPreloadState(System::String ^ context, System::String ^ appId, bool enabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public void SetApplicationPreloadUtil (System.Web.Hosting.IApplicationPreloadUtil preloadUtil);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetApplicationPreloadUtil([in]class System.Web.Hosting.IApplicationPreloadUtil preloadUtil) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadUtil(System.Web.Hosting.IApplicationPreloadUtil)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetApplicationPreloadUtil (preloadUtil As IApplicationPreloadUtil)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetApplicationPreloadUtil(System::Web::Hosting::IApplicationPreloadUtil ^ preloadUtil);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

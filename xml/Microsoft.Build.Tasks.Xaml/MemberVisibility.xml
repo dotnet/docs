@@ -1,7 +1,9 @@
-<Type Name="MemberVisibility" FullName="Microsoft.Build.Tasks.Xaml.MemberVisibility">
+﻿<Type Name="MemberVisibility" FullName="Microsoft.Build.Tasks.Xaml.MemberVisibility">
   <TypeSignature Language="C#" Value="public enum MemberVisibility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemberVisibility extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.MemberVisibility" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MemberVisibility" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MemberVisibility" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Assembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility Assembly = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The assembly visibility.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Family" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility Family = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.Family" />
+      <MemberSignature Language="VB.NET" Value="Family" />
+      <MemberSignature Language="C++ CLI" Value="Family" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The family visibility.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="FamilyAndAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility FamilyAndAssembly = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.FamilyAndAssembly" />
+      <MemberSignature Language="VB.NET" Value="FamilyAndAssembly" />
+      <MemberSignature Language="C++ CLI" Value="FamilyAndAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The family and assembly visibility.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="FamilyOrAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility FamilyOrAssembly = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.FamilyOrAssembly" />
+      <MemberSignature Language="VB.NET" Value="FamilyOrAssembly" />
+      <MemberSignature Language="C++ CLI" Value="FamilyOrAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The family or assembly visibility.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="Private" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility Private = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.Private" />
+      <MemberSignature Language="VB.NET" Value="Private" />
+      <MemberSignature Language="C++ CLI" Value="Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The private visibility.</summary>
       </Docs>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="Public" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility Public = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.Public" />
+      <MemberSignature Language="VB.NET" Value="Public" />
+      <MemberSignature Language="C++ CLI" Value="Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -106,6 +125,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The public visibility.</summary>
       </Docs>

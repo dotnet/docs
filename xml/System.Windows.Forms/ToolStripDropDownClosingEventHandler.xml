@@ -1,7 +1,9 @@
-<Type Name="ToolStripDropDownClosingEventHandler" FullName="System.Windows.Forms.ToolStripDropDownClosingEventHandler">
+﻿<Type Name="ToolStripDropDownClosingEventHandler" FullName="System.Windows.Forms.ToolStripDropDownClosingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolStripDropDownClosingEventHandler(object sender, ToolStripDropDownClosingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripDropDownClosingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownClosingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolStripDropDownClosingEventHandler(sender As Object, e As ToolStripDropDownClosingEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ToolStripDropDownClosingEventHandler(System::Object ^ sender, ToolStripDropDownClosingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

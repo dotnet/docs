@@ -1,7 +1,9 @@
-<Type Name="RibbonSplitMenuItem" FullName="System.Windows.Controls.Ribbon.RibbonSplitMenuItem">
+﻿<Type Name="RibbonSplitMenuItem" FullName="System.Windows.Controls.Ribbon.RibbonSplitMenuItem">
   <TypeSignature Language="C#" Value="public class RibbonSplitMenuItem : System.Windows.Controls.Ribbon.RibbonMenuItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonSplitMenuItem extends System.Windows.Controls.Ribbon.RibbonMenuItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonSplitMenuItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonSplitMenuItem&#xA;Inherits RibbonMenuItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonSplitMenuItem : System::Windows::Controls::Ribbon::RibbonMenuItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public RibbonSplitMenuItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonSplitMenuItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public string DropDownToolTipDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DropDownToolTipDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DropDownToolTipDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DropDownToolTipDescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DropDownToolTipDescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipDescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipDescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="public string DropDownToolTipFooterDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DropDownToolTipFooterDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipFooterDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipFooterDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DropDownToolTipFooterDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -126,6 +136,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DropDownToolTipFooterDescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DropDownToolTipFooterDescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipFooterDescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipFooterDescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipFooterDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -143,6 +155,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource DropDownToolTipFooterImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource DropDownToolTipFooterImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipFooterImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipFooterImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ DropDownToolTipFooterImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -175,6 +189,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DropDownToolTipFooterImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DropDownToolTipFooterImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipFooterImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipFooterImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipFooterImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -192,6 +208,8 @@
       <MemberSignature Language="C#" Value="public string DropDownToolTipFooterTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DropDownToolTipFooterTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipFooterTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipFooterTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DropDownToolTipFooterTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -224,6 +242,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DropDownToolTipFooterTitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DropDownToolTipFooterTitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipFooterTitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipFooterTitleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipFooterTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -241,6 +261,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource DropDownToolTipImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource DropDownToolTipImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ DropDownToolTipImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -273,6 +295,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DropDownToolTipImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DropDownToolTipImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -290,6 +314,8 @@
       <MemberSignature Language="C#" Value="public string DropDownToolTipTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DropDownToolTipTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DropDownToolTipTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -322,6 +348,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DropDownToolTipTitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DropDownToolTipTitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.DropDownToolTipTitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipTitleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -339,6 +367,8 @@
       <MemberSignature Language="C#" Value="public string HeaderKeyTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HeaderKeyTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.HeaderKeyTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderKeyTip As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderKeyTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -374,6 +404,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderKeyTipProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderKeyTipProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.HeaderKeyTipProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderKeyTipProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderKeyTipProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -391,6 +423,8 @@
       <MemberSignature Language="C#" Value="public object HeaderQuickAccessToolBarId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object HeaderQuickAccessToolBarId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.HeaderQuickAccessToolBarId" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderQuickAccessToolBarId As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ HeaderQuickAccessToolBarId { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -423,6 +457,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderQuickAccessToolBarIdProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderQuickAccessToolBarIdProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.HeaderQuickAccessToolBarIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderQuickAccessToolBarIdProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderQuickAccessToolBarIdProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -440,6 +476,8 @@
       <MemberSignature Language="C#" Value="protected override bool IsEnabledCore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabledCore" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.IsEnabledCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsEnabledCore As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsEnabledCore { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -459,6 +497,8 @@
       <MemberSignature Language="C#" Value="protected override void OnActivatingKeyTip (System.Windows.Controls.ActivatingKeyTipEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnActivatingKeyTip(class System.Windows.Controls.ActivatingKeyTipEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -480,6 +520,8 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -505,6 +547,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -526,6 +570,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyTipAccessed (System.Windows.Controls.KeyTipAccessedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyTipAccessed(class System.Windows.Controls.KeyTipAccessedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitMenuItem.OnKeyTipAccessed(System.Windows.Controls.KeyTipAccessedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyTipAccessed (e As KeyTipAccessedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyTipAccessed(System::Windows::Controls::KeyTipAccessedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="FormClosedEventHandler" FullName="System.Windows.Forms.FormClosedEventHandler">
+﻿<Type Name="FormClosedEventHandler" FullName="System.Windows.Forms.FormClosedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FormClosedEventHandler(object sender, FormClosedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormClosedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormClosedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormClosedEventHandler(sender As Object, e As FormClosedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FormClosedEventHandler(System::Object ^ sender, FormClosedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

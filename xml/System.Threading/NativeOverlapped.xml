@@ -1,7 +1,9 @@
-<Type Name="NativeOverlapped" FullName="System.Threading.NativeOverlapped">
+﻿<Type Name="NativeOverlapped" FullName="System.Threading.NativeOverlapped">
   <TypeSignature Language="C#" Value="public struct NativeOverlapped" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NativeOverlapped extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Threading.NativeOverlapped" />
+  <TypeSignature Language="VB.NET" Value="Public Structure NativeOverlapped" />
+  <TypeSignature Language="C++ CLI" Value="public value class NativeOverlapped" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Overlapped</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public IntPtr EventHandle;" />
       <MemberSignature Language="ILAsm" Value=".field public native int EventHandle" />
       <MemberSignature Language="DocId" Value="F:System.Threading.NativeOverlapped.EventHandle" />
+      <MemberSignature Language="VB.NET" Value="Public EventHandle As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr EventHandle;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public IntPtr InternalHigh;" />
       <MemberSignature Language="ILAsm" Value=".field public native int InternalHigh" />
       <MemberSignature Language="DocId" Value="F:System.Threading.NativeOverlapped.InternalHigh" />
+      <MemberSignature Language="VB.NET" Value="Public InternalHigh As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr InternalHigh;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public IntPtr InternalLow;" />
       <MemberSignature Language="ILAsm" Value=".field public native int InternalLow" />
       <MemberSignature Language="DocId" Value="F:System.Threading.NativeOverlapped.InternalLow" />
+      <MemberSignature Language="VB.NET" Value="Public InternalLow As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr InternalLow;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public int OffsetHigh;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 OffsetHigh" />
       <MemberSignature Language="DocId" Value="F:System.Threading.NativeOverlapped.OffsetHigh" />
+      <MemberSignature Language="VB.NET" Value="Public OffsetHigh As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int OffsetHigh;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -156,6 +166,8 @@
       <MemberSignature Language="C#" Value="public int OffsetLow;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 OffsetLow" />
       <MemberSignature Language="DocId" Value="F:System.Threading.NativeOverlapped.OffsetLow" />
+      <MemberSignature Language="VB.NET" Value="Public OffsetLow As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int OffsetLow;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>

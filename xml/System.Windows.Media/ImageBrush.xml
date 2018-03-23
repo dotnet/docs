@@ -1,7 +1,9 @@
-<Type Name="ImageBrush" FullName="System.Windows.Media.ImageBrush">
+﻿<Type Name="ImageBrush" FullName="System.Windows.Media.ImageBrush">
   <TypeSignature Language="C#" Value="public sealed class ImageBrush : System.Windows.Media.TileBrush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageBrush extends System.Windows.Media.TileBrush" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ImageBrush" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageBrush&#xA;Inherits TileBrush" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageBrush sealed : System::Windows::Media::TileBrush" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,21 @@ An ImageBrush can paint shapes, controls, text, and more
     <altmember cref="T:System.Windows.Media.TileBrush" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ImageBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ImageBrush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageBrush.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageBrush();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -54,6 +67,8 @@ An ImageBrush can paint shapes, controls, text, and more
       <MemberSignature Language="C#" Value="public ImageBrush (System.Windows.Media.ImageSource image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.ImageSource image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageBrush.#ctor(System.Windows.Media.ImageSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (image As ImageSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageBrush(System::Windows::Media::ImageSource ^ image);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +87,8 @@ An ImageBrush can paint shapes, controls, text, and more
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageBrush Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.ImageBrush Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageBrush.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As ImageBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ImageBrush ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +119,8 @@ An ImageBrush can paint shapes, controls, text, and more
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageBrush CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.ImageBrush CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageBrush.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As ImageBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ImageBrush ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +151,8 @@ An ImageBrush can paint shapes, controls, text, and more
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageBrush.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +172,8 @@ An ImageBrush can paint shapes, controls, text, and more
       <MemberSignature Language="C#" Value="protected override void GetContentBounds (out System.Windows.Rect contentBounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetContentBounds([out] valuetype System.Windows.Rect&amp; contentBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageBrush.GetContentBounds(System.Windows.Rect@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetContentBounds (ByRef contentBounds As Rect)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetContentBounds([Runtime::InteropServices::Out] System::Windows::Rect % contentBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +195,8 @@ An ImageBrush can paint shapes, controls, text, and more
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ImageBrush.ImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +248,8 @@ An ImageBrush can paint shapes, controls, text, and more
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ImageBrush.ImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,14 +263,5 @@ An ImageBrush can paint shapes, controls, text, and more
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ImageBrush" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

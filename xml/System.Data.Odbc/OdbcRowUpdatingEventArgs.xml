@@ -1,7 +1,9 @@
-<Type Name="OdbcRowUpdatingEventArgs" FullName="System.Data.Odbc.OdbcRowUpdatingEventArgs">
+﻿<Type Name="OdbcRowUpdatingEventArgs" FullName="System.Data.Odbc.OdbcRowUpdatingEventArgs">
   <TypeSignature Language="C#" Value="public sealed class OdbcRowUpdatingEventArgs : System.Data.Common.RowUpdatingEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcRowUpdatingEventArgs extends System.Data.Common.RowUpdatingEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcRowUpdatingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcRowUpdatingEventArgs&#xA;Inherits RowUpdatingEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OdbcRowUpdatingEventArgs sealed : System::Data::Common::RowUpdatingEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,7 @@
       <MemberSignature Language="C#" Value="public OdbcRowUpdatingEventArgs (System.Data.DataRow row, System.Data.IDbCommand command, System.Data.StatementType statementType, System.Data.Common.DataTableMapping tableMapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRow row, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcRowUpdatingEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcRowUpdatingEventArgs(System::Data::DataRow ^ row, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -74,6 +77,8 @@
       <MemberSignature Language="C#" Value="protected override System.Data.IDbCommand BaseCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand BaseCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcRowUpdatingEventArgs.BaseCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property BaseCommand As IDbCommand" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::IDbCommand ^ BaseCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -96,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcCommand Command { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Odbc.OdbcCommand Command" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcRowUpdatingEventArgs.Command" />
+      <MemberSignature Language="VB.NET" Value="Public Property Command As OdbcCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcCommand ^ Command { System::Data::Odbc::OdbcCommand ^ get(); void set(System::Data::Odbc::OdbcCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IComparable" FullName="System.IComparable">
+﻿<Type Name="IComparable" FullName="System.IComparable">
   <TypeSignature Language="C#" Value="public interface IComparable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComparable" />
   <TypeSignature Language="DocId" Value="T:System.IComparable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComparable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComparable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +62,8 @@
       <MemberSignature Language="C#" Value="public int CompareTo (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IComparable.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

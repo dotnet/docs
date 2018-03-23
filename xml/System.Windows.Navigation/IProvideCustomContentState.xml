@@ -1,7 +1,9 @@
-<Type Name="IProvideCustomContentState" FullName="System.Windows.Navigation.IProvideCustomContentState">
+﻿<Type Name="IProvideCustomContentState" FullName="System.Windows.Navigation.IProvideCustomContentState">
   <TypeSignature Language="C#" Value="public interface IProvideCustomContentState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideCustomContentState" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.IProvideCustomContentState" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProvideCustomContentState" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProvideCustomContentState" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Navigation.CustomContentState GetContentState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Navigation.CustomContentState GetContentState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.IProvideCustomContentState.GetContentState" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContentState () As CustomContentState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Navigation::CustomContentState ^ GetContentState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

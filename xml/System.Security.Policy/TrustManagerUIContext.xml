@@ -1,7 +1,9 @@
-<Type Name="TrustManagerUIContext" FullName="System.Security.Policy.TrustManagerUIContext">
+﻿<Type Name="TrustManagerUIContext" FullName="System.Security.Policy.TrustManagerUIContext">
   <TypeSignature Language="C#" Value="public enum TrustManagerUIContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrustManagerUIContext extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.TrustManagerUIContext" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TrustManagerUIContext" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TrustManagerUIContext" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="Install" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.TrustManagerUIContext Install = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.TrustManagerUIContext.Install" />
+      <MemberSignature Language="VB.NET" Value="Install" />
+      <MemberSignature Language="C++ CLI" Value="Install" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -48,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Policy.TrustManagerUIContext</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An Install UI.</summary>
       </Docs>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="Run" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.TrustManagerUIContext Run = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.TrustManagerUIContext.Run" />
+      <MemberSignature Language="VB.NET" Value="Run" />
+      <MemberSignature Language="C++ CLI" Value="Run" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -69,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Policy.TrustManagerUIContext</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A Run UI.</summary>
       </Docs>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="Upgrade" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.TrustManagerUIContext Upgrade = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.TrustManagerUIContext.Upgrade" />
+      <MemberSignature Language="VB.NET" Value="Upgrade" />
+      <MemberSignature Language="C++ CLI" Value="Upgrade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Policy.TrustManagerUIContext</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An Upgrade UI.</summary>
       </Docs>

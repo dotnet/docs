@@ -1,7 +1,9 @@
-<Type Name="ECDiffieHellmanKeyDerivationFunction" FullName="System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction">
+﻿<Type Name="ECDiffieHellmanKeyDerivationFunction" FullName="System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction">
   <TypeSignature Language="C#" Value="public enum ECDiffieHellmanKeyDerivationFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ECDiffieHellmanKeyDerivationFunction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ECDiffieHellmanKeyDerivationFunction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ECDiffieHellmanKeyDerivationFunction" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Hash" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction Hash = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hash" />
+      <MemberSignature Language="VB.NET" Value="Hash" />
+      <MemberSignature Language="C++ CLI" Value="Hash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A hash algorithm is used to generate key material. The <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm" /> property specifies the name of the algorithm to use. If the algorithm name is not specified, <see cref="T:System.Security.Cryptography.SHA256" /> is used as the default algorithm.</summary>
         <remarks>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Hmac" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction Hmac = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac" />
+      <MemberSignature Language="VB.NET" Value="Hmac" />
+      <MemberSignature Language="C++ CLI" Value="Hmac" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A Hash-based Message Authentication Code (HMAC) algorithm is used to generate key material. The <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.HmacKey" /> property specifies the key to use. Either this property must be set or the <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.UseSecretAgreementAsHmacKey" /> property must be set to <see langword="true" />; otherwise, a <see cref="T:System.Security.Cryptography.CryptographicException" /> is thrown when you use <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac" />. If both properties are set, the secret agreement is used as the HMAC key.</summary>
         <remarks>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="Tls" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction Tls = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls" />
+      <MemberSignature Language="VB.NET" Value="Tls" />
+      <MemberSignature Language="C++ CLI" Value="Tls" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The Transport Layer Security (TLS) protocol is used to generate key material. The <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.Seed" /> and <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.Label" /> properties must be set; otherwise, a <see cref="T:System.Security.Cryptography.CryptographicException" /> is thrown when you use <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls" />.</summary>
         <remarks>

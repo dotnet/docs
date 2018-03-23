@@ -1,7 +1,9 @@
-<Type Name="DesignerActionPropertyItem" FullName="System.ComponentModel.Design.DesignerActionPropertyItem">
+﻿<Type Name="DesignerActionPropertyItem" FullName="System.ComponentModel.Design.DesignerActionPropertyItem">
   <TypeSignature Language="C#" Value="public sealed class DesignerActionPropertyItem : System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerActionPropertyItem extends System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionPropertyItem" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerActionPropertyItem&#xA;Inherits DesignerActionItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionPropertyItem sealed : System::ComponentModel::Design::DesignerActionItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +48,21 @@
     <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionPropertyItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignerActionPropertyItem (string memberName, string displayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName, string displayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String, displayName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionPropertyItem(System::String ^ memberName, System::String ^ displayName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -80,6 +93,8 @@
       <MemberSignature Language="C#" Value="public DesignerActionPropertyItem (string memberName, string displayName, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName, string displayName, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String, displayName As String, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionPropertyItem(System::String ^ memberName, System::String ^ displayName, System::String ^ category);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -115,6 +130,8 @@
       <MemberSignature Language="C#" Value="public DesignerActionPropertyItem (string memberName, string displayName, string category, string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName, string displayName, string category, string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String, displayName As String, category As String, description As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionPropertyItem(System::String ^ memberName, System::String ^ displayName, System::String ^ category, System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -158,6 +175,8 @@
       <MemberSignature Language="C#" Value="public string MemberName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -187,6 +206,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent RelatedComponent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent RelatedComponent" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelatedComponent As IComponent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ RelatedComponent { System::ComponentModel::IComponent ^ get(); void set(System::ComponentModel::IComponent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -212,14 +233,5 @@
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionPropertyItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

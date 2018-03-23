@@ -1,7 +1,9 @@
-<Type Name="NetworkProgressChangedEventArgs" FullName="System.Net.NetworkProgressChangedEventArgs">
+﻿<Type Name="NetworkProgressChangedEventArgs" FullName="System.Net.NetworkProgressChangedEventArgs">
   <TypeSignature Language="C#" Value="public class NetworkProgressChangedEventArgs : System.ComponentModel.ProgressChangedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkProgressChangedEventArgs extends System.ComponentModel.ProgressChangedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkProgressChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetworkProgressChangedEventArgs&#xA;Inherits ProgressChangedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetworkProgressChangedEventArgs : System::ComponentModel::ProgressChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public NetworkProgressChangedEventArgs (int percentage, int processedBytes, int totalBytes, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 percentage, int32 processedBytes, int32 totalBytes, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkProgressChangedEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (percentage As Integer, processedBytes As Integer, totalBytes As Integer, userState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkProgressChangedEventArgs(int percentage, int processedBytes, int totalBytes, System::Object ^ userState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public int ProcessedBytes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProcessedBytes" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkProgressChangedEventArgs.ProcessedBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessedBytes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProcessedBytes { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public int TotalBytes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TotalBytes" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkProgressChangedEventArgs.TotalBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalBytes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalBytes { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

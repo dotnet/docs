@@ -1,7 +1,9 @@
-<Type Name="IToolboxService" FullName="System.Drawing.Design.IToolboxService">
+﻿<Type Name="IToolboxService" FullName="System.Drawing.Design.IToolboxService">
   <TypeSignature Language="C#" Value="public interface IToolboxService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IToolboxService" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.IToolboxService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IToolboxService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IToolboxService" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("4BACD258-DE64-4048-BC4E-FEDBEF9ACB76")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -84,10 +86,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddCreator">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new toolbox item creator for a specified data format.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddCreator">
       <MemberSignature Language="C#" Value="public void AddCreator (System.Drawing.Design.ToolboxItemCreatorCallback creator, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddCreator(class System.Drawing.Design.ToolboxItemCreatorCallback creator, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.AddCreator(System.Drawing.Design.ToolboxItemCreatorCallback,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCreator (creator As ToolboxItemCreatorCallback, format As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCreator(System::Drawing::Design::ToolboxItemCreatorCallback ^ creator, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -119,6 +132,8 @@
       <MemberSignature Language="C#" Value="public void AddCreator (System.Drawing.Design.ToolboxItemCreatorCallback creator, string format, System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddCreator(class System.Drawing.Design.ToolboxItemCreatorCallback creator, string format, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.AddCreator(System.Drawing.Design.ToolboxItemCreatorCallback,System.String,System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCreator (creator As ToolboxItemCreatorCallback, format As String, host As IDesignerHost)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCreator(System::Drawing::Design::ToolboxItemCreatorCallback ^ creator, System::String ^ format, System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -150,10 +165,20 @@
         <altmember cref="T:System.Drawing.Design.ToolboxItemCreatorCallback" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddLinkedToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a project-linked toolbox item to the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddLinkedToolboxItem">
       <MemberSignature Language="C#" Value="public void AddLinkedToolboxItem (System.Drawing.Design.ToolboxItem toolboxItem, System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddLinkedToolboxItem(class System.Drawing.Design.ToolboxItem toolboxItem, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.AddLinkedToolboxItem(System.Drawing.Design.ToolboxItem,System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLinkedToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem, System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -184,6 +209,7 @@
       <MemberSignature Language="C#" Value="public void AddLinkedToolboxItem (System.Drawing.Design.ToolboxItem toolboxItem, string category, System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddLinkedToolboxItem(class System.Drawing.Design.ToolboxItem toolboxItem, string category, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.AddLinkedToolboxItem(System.Drawing.Design.ToolboxItem,System.String,System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLinkedToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem, System::String ^ category, System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -212,10 +238,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified toolbox item to the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddToolboxItem">
       <MemberSignature Language="C#" Value="public void AddToolboxItem (System.Drawing.Design.ToolboxItem toolboxItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddToolboxItem(class System.Drawing.Design.ToolboxItem toolboxItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.AddToolboxItem(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -237,6 +273,7 @@
       <MemberSignature Language="C#" Value="public void AddToolboxItem (System.Drawing.Design.ToolboxItem toolboxItem, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddToolboxItem(class System.Drawing.Design.ToolboxItem toolboxItem, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.AddToolboxItem(System.Drawing.Design.ToolboxItem,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -260,6 +297,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Design.CategoryNameCollection CategoryNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Design.CategoryNameCollection CategoryNames" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.IToolboxService.CategoryNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CategoryNames As CategoryNameCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Design::CategoryNameCollection ^ CategoryNames { System::Drawing::Design::CategoryNameCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -275,10 +314,21 @@
         <altmember cref="T:System.Drawing.Design.CategoryNameCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeserializeToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a toolbox item from the specified object that represents a toolbox item in serialized form.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DeserializeToolboxItem">
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItem DeserializeToolboxItem (object serializedObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItem DeserializeToolboxItem(object serializedObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.DeserializeToolboxItem(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeserializeToolboxItem (serializedObject As Object) As ToolboxItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItem ^ DeserializeToolboxItem(System::Object ^ serializedObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -301,6 +351,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItem DeserializeToolboxItem (object serializedObject, System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItem DeserializeToolboxItem(object serializedObject, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.DeserializeToolboxItem(System.Object,System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeserializeToolboxItem (serializedObject As Object, host As IDesignerHost) As ToolboxItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItem ^ DeserializeToolboxItem(System::Object ^ serializedObject, System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -321,10 +373,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSelectedToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the currently selected toolbox item.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSelectedToolboxItem">
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItem GetSelectedToolboxItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItem GetSelectedToolboxItem() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.GetSelectedToolboxItem" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedToolboxItem () As ToolboxItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItem ^ GetSelectedToolboxItem();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -344,6 +407,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItem GetSelectedToolboxItem (System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItem GetSelectedToolboxItem(class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.GetSelectedToolboxItem(System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedToolboxItem (host As IDesignerHost) As ToolboxItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItem ^ GetSelectedToolboxItem(System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -369,10 +434,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetToolboxItems">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of toolbox items from the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetToolboxItems">
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItemCollection GetToolboxItems ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItemCollection GetToolboxItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.GetToolboxItems" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetToolboxItems () As ToolboxItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItemCollection ^ GetToolboxItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -392,6 +468,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItemCollection GetToolboxItems (System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItemCollection GetToolboxItems(class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.GetToolboxItems(System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetToolboxItems (host As IDesignerHost) As ToolboxItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItemCollection ^ GetToolboxItems(System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -414,6 +492,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItemCollection GetToolboxItems (string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItemCollection GetToolboxItems(string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.GetToolboxItems(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetToolboxItems (category As String) As ToolboxItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItemCollection ^ GetToolboxItems(System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -436,6 +516,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItemCollection GetToolboxItems (string category, System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItemCollection GetToolboxItems(string category, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.GetToolboxItems(System.String,System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetToolboxItems (category As String, host As IDesignerHost) As ToolboxItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItemCollection ^ GetToolboxItems(System::String ^ category, System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -456,10 +538,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsSupported">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the specified object which represents a serialized toolbox item can be used by the specified designer host.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsSupported">
       <MemberSignature Language="C#" Value="public bool IsSupported (object serializedObject, System.Collections.ICollection filterAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupported(object serializedObject, class System.Collections.ICollection filterAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.IsSupported(System.Object,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSupported (serializedObject As Object, filterAttributes As ICollection) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupported(System::Object ^ serializedObject, System::Collections::ICollection ^ filterAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -485,6 +578,8 @@
       <MemberSignature Language="C#" Value="public bool IsSupported (object serializedObject, System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupported(object serializedObject, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.IsSupported(System.Object,System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSupported (serializedObject As Object, host As IDesignerHost) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupported(System::Object ^ serializedObject, System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -506,10 +601,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the specified object is a serialized toolbox item.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsToolboxItem">
       <MemberSignature Language="C#" Value="public bool IsToolboxItem (object serializedObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsToolboxItem(object serializedObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.IsToolboxItem(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsToolboxItem (serializedObject As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsToolboxItem(System::Object ^ serializedObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -533,6 +639,8 @@
       <MemberSignature Language="C#" Value="public bool IsToolboxItem (object serializedObject, System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsToolboxItem(object serializedObject, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.IsToolboxItem(System.Object,System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsToolboxItem (serializedObject As Object, host As IDesignerHost) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsToolboxItem(System::Object ^ serializedObject, System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -558,6 +666,8 @@
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -579,10 +689,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveCreator">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a previously added toolbox item creator.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveCreator">
       <MemberSignature Language="C#" Value="public void RemoveCreator (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveCreator(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.RemoveCreator(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveCreator (format As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCreator(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -604,6 +725,8 @@
       <MemberSignature Language="C#" Value="public void RemoveCreator (string format, System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveCreator(string format, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.RemoveCreator(System.String,System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveCreator (format As String, host As IDesignerHost)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCreator(System::String ^ format, System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -623,10 +746,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified toolbox item from the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveToolboxItem">
       <MemberSignature Language="C#" Value="public void RemoveToolboxItem (System.Drawing.Design.ToolboxItem toolboxItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveToolboxItem(class System.Drawing.Design.ToolboxItem toolboxItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.RemoveToolboxItem(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -648,6 +781,7 @@
       <MemberSignature Language="C#" Value="public void RemoveToolboxItem (System.Drawing.Design.ToolboxItem toolboxItem, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveToolboxItem(class System.Drawing.Design.ToolboxItem toolboxItem, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.RemoveToolboxItem(System.Drawing.Design.ToolboxItem,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -671,6 +805,8 @@
       <MemberSignature Language="C#" Value="public string SelectedCategory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedCategory" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.IToolboxService.SelectedCategory" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedCategory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedCategory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -689,6 +825,8 @@
       <MemberSignature Language="C#" Value="public void SelectedToolboxItemUsed ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectedToolboxItemUsed() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.SelectedToolboxItemUsed" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectedToolboxItemUsed ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectedToolboxItemUsed();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -707,6 +845,7 @@
       <MemberSignature Language="C#" Value="public object SerializeToolboxItem (System.Drawing.Design.ToolboxItem toolboxItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SerializeToolboxItem(class System.Drawing.Design.ToolboxItem toolboxItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.SerializeToolboxItem(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ SerializeToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -736,6 +875,8 @@
       <MemberSignature Language="C#" Value="public bool SetCursor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetCursor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.SetCursor" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetCursor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetCursor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -763,6 +904,7 @@
       <MemberSignature Language="C#" Value="public void SetSelectedToolboxItem (System.Drawing.Design.ToolboxItem toolboxItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelectedToolboxItem(class System.Drawing.Design.ToolboxItem toolboxItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxService.SetSelectedToolboxItem(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -780,95 +922,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsSupported">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value indicating whether the specified object which represents a serialized toolbox item can be used by the specified designer host.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddCreator">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new toolbox item creator for a specified data format.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveCreator">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a previously added toolbox item creator.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveToolboxItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified toolbox item from the toolbox.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DeserializeToolboxItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a toolbox item from the specified object that represents a toolbox item in serialized form.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddLinkedToolboxItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a project-linked toolbox item to the toolbox.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsToolboxItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value indicating whether the specified object is a serialized toolbox item.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetSelectedToolboxItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the currently selected toolbox item.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddToolboxItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified toolbox item to the toolbox.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetToolboxItems">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a collection of toolbox items from the toolbox.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

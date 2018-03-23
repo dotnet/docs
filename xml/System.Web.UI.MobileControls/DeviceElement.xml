@@ -1,7 +1,9 @@
-<Type Name="DeviceElement" FullName="System.Web.UI.MobileControls.DeviceElement">
+﻿<Type Name="DeviceElement" FullName="System.Web.UI.MobileControls.DeviceElement">
   <TypeSignature Language="C#" Value="public sealed class DeviceElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeviceElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeviceElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DeviceElement (string name, string inheritsFrom);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string inheritsFrom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElement.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, inheritsFrom As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceElement(System::String ^ name, System::String ^ inheritsFrom);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -51,6 +64,8 @@
       <MemberSignature Language="C#" Value="public DeviceElement (string name, Type predicateClass, string predicateMethod, Type pageAdapter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type predicateClass, string predicateMethod, class System.Type pageAdapter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElement.#ctor(System.String,System.Type,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, predicateClass As Type, predicateMethod As String, pageAdapter As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceElement(System::String ^ name, Type ^ predicateClass, System::String ^ predicateMethod, Type ^ pageAdapter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -75,6 +90,8 @@
       <MemberSignature Language="C#" Value="public DeviceElement (string name, string inheritsFrom, Type predicateClass, string predicateMethod, Type pageAdapter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string inheritsFrom, class System.Type predicateClass, string predicateMethod, class System.Type pageAdapter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElement.#ctor(System.String,System.String,System.Type,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, inheritsFrom As String, predicateClass As Type, predicateMethod As String, pageAdapter As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceElement(System::String ^ name, System::String ^ inheritsFrom, Type ^ predicateClass, System::String ^ predicateMethod, Type ^ pageAdapter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -101,6 +118,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ControlElementCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ControlElementCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As ControlElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ControlElementCollection ^ Controls { System::Web::UI::MobileControls::ControlElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -124,6 +143,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.ElementProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -142,6 +163,8 @@
       <MemberSignature Language="C#" Value="public string InheritsFrom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InheritsFrom" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.InheritsFrom" />
+      <MemberSignature Language="VB.NET" Value="Public Property InheritsFrom As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InheritsFrom { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -168,6 +191,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -194,6 +219,8 @@
       <MemberSignature Language="C#" Value="public Type PageAdapter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PageAdapter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.PageAdapter" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageAdapter As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PageAdapter { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -223,6 +250,8 @@
       <MemberSignature Language="C#" Value="public Type PredicateClass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PredicateClass" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.PredicateClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property PredicateClass As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PredicateClass { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -249,6 +278,8 @@
       <MemberSignature Language="C#" Value="public string PredicateMethod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PredicateMethod" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.PredicateMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Property PredicateMethod As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PredicateMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -275,6 +306,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -289,14 +322,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

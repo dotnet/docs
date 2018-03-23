@@ -1,7 +1,9 @@
-<Type Name="CacheEntryChangeMonitor" FullName="System.Runtime.Caching.CacheEntryChangeMonitor">
+﻿<Type Name="CacheEntryChangeMonitor" FullName="System.Runtime.Caching.CacheEntryChangeMonitor">
   <TypeSignature Language="C#" Value="public abstract class CacheEntryChangeMonitor : System.Runtime.Caching.ChangeMonitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CacheEntryChangeMonitor extends System.Runtime.Caching.ChangeMonitor" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryChangeMonitor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CacheEntryChangeMonitor&#xA;Inherits ChangeMonitor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CacheEntryChangeMonitor abstract : System::Runtime::Caching::ChangeMonitor" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="protected CacheEntryChangeMonitor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.CacheEntryChangeMonitor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CacheEntryChangeMonitor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; CacheKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; CacheKeys" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.CacheKeys" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CacheKeys As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ CacheKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public abstract DateTimeOffset LastModified { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModified" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property LastModified As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTimeOffset LastModified { DateTimeOffset get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public abstract string RegionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegionName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.RegionName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RegionName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ RegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

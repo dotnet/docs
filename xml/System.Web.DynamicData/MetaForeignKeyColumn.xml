@@ -1,7 +1,9 @@
-<Type Name="MetaForeignKeyColumn" FullName="System.Web.DynamicData.MetaForeignKeyColumn">
+﻿<Type Name="MetaForeignKeyColumn" FullName="System.Web.DynamicData.MetaForeignKeyColumn">
   <TypeSignature Language="C#" Value="public class MetaForeignKeyColumn : System.Web.DynamicData.MetaColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetaForeignKeyColumn extends System.Web.DynamicData.MetaColumn" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.MetaForeignKeyColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class MetaForeignKeyColumn&#xA;Inherits MetaColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetaForeignKeyColumn : System::Web::DynamicData::MetaColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public MetaForeignKeyColumn (System.Web.DynamicData.MetaTable table, System.Web.DynamicData.ModelProviders.ColumnProvider entityMember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.DynamicData.MetaTable table, class System.Web.DynamicData.ModelProviders.ColumnProvider entityMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.#ctor(System.Web.DynamicData.MetaTable,System.Web.DynamicData.ModelProviders.ColumnProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (table As MetaTable, entityMember As ColumnProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MetaForeignKeyColumn(System::Web::DynamicData::MetaTable ^ table, System::Web::DynamicData::ModelProviders::ColumnProvider ^ entityMember);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -48,7 +52,12 @@
       <MemberSignature Language="C#" Value="public void ExtractForeignKey (System.Collections.IDictionary dictionary, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExtractForeignKey(class System.Collections.IDictionary dictionary, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.ExtractForeignKey(System.Collections.IDictionary,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExtractForeignKey (dictionary As IDictionary, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExtractForeignKey(System::Collections::IDictionary ^ dictionary, System::String ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IMetaForeignKeyColumn.ExtractForeignKey(System.Collections.IDictionary,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,7 +87,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; ForeignKeyNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; ForeignKeyNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaForeignKeyColumn.ForeignKeyNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeignKeyNames As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ ForeignKeyNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IMetaForeignKeyColumn.ForeignKeyNames</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +110,8 @@
       <MemberSignature Language="C#" Value="public string GetFilterExpression (string foreignKeyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetFilterExpression(string foreignKeyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetFilterExpression(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFilterExpression (foreignKeyName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetFilterExpression(System::String ^ foreignKeyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -125,7 +141,12 @@
       <MemberSignature Language="C#" Value="public string GetForeignKeyDetailsPath (object row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetForeignKeyDetailsPath(object row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyDetailsPath(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetForeignKeyDetailsPath (row As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetForeignKeyDetailsPath(System::Object ^ row);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IMetaForeignKeyColumn.GetForeignKeyDetailsPath(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -153,11 +174,25 @@
         <altmember cref="Overload:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetForeignKeyPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the path for the specified action page of the parent table of the specified foreign-key field.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetForeignKeyPath">
       <MemberSignature Language="C#" Value="public string GetForeignKeyPath (string action, object row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetForeignKeyPath(string action, object row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetForeignKeyPath (action As String, row As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetForeignKeyPath(System::String ^ action, System::Object ^ row);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IMetaForeignKeyColumn.GetForeignKeyPath(System.String,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -191,7 +226,12 @@
       <MemberSignature Language="C#" Value="public string GetForeignKeyPath (string action, object row, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetForeignKeyPath(string action, object row, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath(System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetForeignKeyPath (action As String, row As Object, path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetForeignKeyPath(System::String ^ action, System::Object ^ row, System::String ^ path);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IMetaForeignKeyColumn.GetForeignKeyPath(System.String,System.Object,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -227,7 +267,12 @@
       <MemberSignature Language="C#" Value="public string GetForeignKeyString (object row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetForeignKeyString(object row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetForeignKeyString (row As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetForeignKeyString(System::Object ^ row);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IMetaForeignKeyColumn.GetForeignKeyString(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -257,7 +302,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;object&gt; GetForeignKeyValues (object row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;object&gt; GetForeignKeyValues(object row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyValues(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetForeignKeyValues (row As Object) As IList(Of Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IList&lt;System::Object ^&gt; ^ GetForeignKeyValues(System::Object ^ row);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IMetaForeignKeyColumn.GetForeignKeyValues(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -284,9 +334,11 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected override void Initialize ();" />
+      <MemberSignature Language="C#" Value="protected internal override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -312,7 +364,12 @@
       <MemberSignature Language="C#" Value="public bool IsPrimaryKeyInThisTable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrimaryKeyInThisTable" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaForeignKeyColumn.IsPrimaryKeyInThisTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrimaryKeyInThisTable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrimaryKeyInThisTable { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IMetaForeignKeyColumn.IsPrimaryKeyInThisTable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -339,6 +396,8 @@
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaTable ParentTable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable ParentTable" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaForeignKeyColumn.ParentTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentTable As MetaTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaTable ^ ParentTable { System::Web::DynamicData::MetaTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -353,14 +412,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetForeignKeyPath">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the path for the specified action page of the parent table of the specified foreign-key field.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

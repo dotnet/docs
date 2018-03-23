@@ -1,7 +1,9 @@
-<Type Name="WebPartHelpMode" FullName="System.Web.UI.WebControls.WebParts.WebPartHelpMode">
+﻿<Type Name="WebPartHelpMode" FullName="System.Web.UI.WebControls.WebParts.WebPartHelpMode">
   <TypeSignature Language="C#" Value="public enum WebPartHelpMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartHelpMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartHelpMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebPartHelpMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebPartHelpMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="Modal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.WebPartHelpMode Modal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Modal" />
+      <MemberSignature Language="VB.NET" Value="Modal" />
+      <MemberSignature Language="C++ CLI" Value="Modal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartHelpMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Opens a separate browser window, if the browser has this capability. A user must close the window before returning to the Web Parts page.</summary>
       </Docs>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="Modeless" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.WebPartHelpMode Modeless = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Modeless" />
+      <MemberSignature Language="VB.NET" Value="Modeless" />
+      <MemberSignature Language="C++ CLI" Value="Modeless" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartHelpMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Opens a separate browser window, if the browser has this capability. A user does not have to close the window before returning to the Web page.</summary>
       </Docs>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="Navigate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.WebPartHelpMode Navigate = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Navigate" />
+      <MemberSignature Language="VB.NET" Value="Navigate" />
+      <MemberSignature Language="C++ CLI" Value="Navigate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartHelpMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Replaces the Web Parts page in the browser window.</summary>
       </Docs>

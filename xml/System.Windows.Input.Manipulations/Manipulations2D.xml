@@ -1,7 +1,9 @@
-<Type Name="Manipulations2D" FullName="System.Windows.Input.Manipulations.Manipulations2D">
+﻿<Type Name="Manipulations2D" FullName="System.Windows.Input.Manipulations.Manipulations2D">
   <TypeSignature Language="C#" Value="public enum Manipulations2D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Manipulations2D extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.Manipulations2D" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Manipulations2D" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Manipulations2D" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D All = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>All available manipulations.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No manipulations.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="Rotate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D Rotate = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Rotate" />
+      <MemberSignature Language="VB.NET" Value="Rotate" />
+      <MemberSignature Language="C++ CLI" Value="Rotate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A rotation.</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="Scale" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D Scale = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Scale" />
+      <MemberSignature Language="VB.NET" Value="Scale" />
+      <MemberSignature Language="C++ CLI" Value="Scale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A scale in both directions.</summary>
       </Docs>
@@ -87,6 +101,8 @@
       <MemberSignature Language="C#" Value="Translate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D Translate = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Translate" />
+      <MemberSignature Language="VB.NET" Value="Translate" />
+      <MemberSignature Language="C++ CLI" Value="Translate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -95,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A translation in the x and/or y axes.</summary>
       </Docs>
@@ -103,6 +120,8 @@
       <MemberSignature Language="C#" Value="TranslateX" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D TranslateX = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.TranslateX" />
+      <MemberSignature Language="VB.NET" Value="TranslateX" />
+      <MemberSignature Language="C++ CLI" Value="TranslateX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -111,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A translation in the x-axis.</summary>
       </Docs>
@@ -119,6 +139,8 @@
       <MemberSignature Language="C#" Value="TranslateY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D TranslateY = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.TranslateY" />
+      <MemberSignature Language="VB.NET" Value="TranslateY" />
+      <MemberSignature Language="C++ CLI" Value="TranslateY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -127,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A translation in the y-axis.</summary>
       </Docs>

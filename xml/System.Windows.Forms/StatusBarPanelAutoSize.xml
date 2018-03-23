@@ -1,7 +1,9 @@
-<Type Name="StatusBarPanelAutoSize" FullName="System.Windows.Forms.StatusBarPanelAutoSize">
+﻿<Type Name="StatusBarPanelAutoSize" FullName="System.Windows.Forms.StatusBarPanelAutoSize">
   <TypeSignature Language="C#" Value="public enum StatusBarPanelAutoSize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarPanelAutoSize extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelAutoSize" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StatusBarPanelAutoSize" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StatusBarPanelAutoSize" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Contents" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelAutoSize Contents = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelAutoSize.Contents" />
+      <MemberSignature Language="VB.NET" Value="Contents" />
+      <MemberSignature Language="C++ CLI" Value="Contents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelAutoSize</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The width of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> is determined by its contents.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelAutoSize None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelAutoSize.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelAutoSize</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> does not change size when the <see cref="T:System.Windows.Forms.StatusBar" /> control resizes.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="Spring" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelAutoSize Spring = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelAutoSize.Spring" />
+      <MemberSignature Language="VB.NET" Value="Spring" />
+      <MemberSignature Language="C++ CLI" Value="Spring" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelAutoSize</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> shares the available space on the <see cref="T:System.Windows.Forms.StatusBar" /> (the space not taken up by other panels whose <see cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" /> property is set to <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.None" /> or <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.Contents" />) with other panels that have their <see cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" /> property set to <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.Spring" />.</summary>
       </Docs>

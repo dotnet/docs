@@ -1,7 +1,9 @@
-<Type Name="AsyncValueTaskMethodBuilder&lt;TResult&gt;" FullName="System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder&lt;TResult&gt;">
+﻿<Type Name="AsyncValueTaskMethodBuilder&lt;TResult&gt;" FullName="System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public struct AsyncValueTaskMethodBuilder&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AsyncValueTaskMethodBuilder`1&lt;TResult&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure AsyncValueTaskMethodBuilder(Of TResult)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public value class AsyncValueTaskMethodBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public void AwaitOnCompleted&lt;TAwaiter,TStateMachine&gt; (ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : System.Runtime.CompilerServices.INotifyCompletion where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitOnCompleted&lt;(class System.Runtime.CompilerServices.INotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter&amp; awaiter, !!TStateMachine&amp; stateMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.AwaitOnCompleted``2(``0@,``1@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AwaitOnCompleted(Of TAwaiter As INotifyCompletion, TStateMachine As INotifyCompletion) (ByRef awaiter As TAwaiter, ByRef stateMachine As TStateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAwaiter, typename TStateMachine&gt;&#xA; where TAwaiter : System::Runtime::CompilerServices::INotifyCompletion where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void AwaitOnCompleted(TAwaiter % awaiter, TStateMachine % stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public void AwaitUnsafeOnCompleted&lt;TAwaiter,TStateMachine&gt; (ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : System.Runtime.CompilerServices.ICriticalNotifyCompletion where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitUnsafeOnCompleted&lt;(class System.Runtime.CompilerServices.ICriticalNotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter&amp; awaiter, !!TStateMachine&amp; stateMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.AwaitUnsafeOnCompleted``2(``0@,``1@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AwaitUnsafeOnCompleted(Of TAwaiter As ICriticalNotifyCompletion, TStateMachine As ICriticalNotifyCompletion) (ByRef awaiter As TAwaiter, ByRef stateMachine As TStateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAwaiter, typename TStateMachine&gt;&#xA; where TAwaiter : System::Runtime::CompilerServices::ICriticalNotifyCompletion where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void AwaitUnsafeOnCompleted(TAwaiter % awaiter, TStateMachine % stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder&lt;TResult&gt; Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1&lt;!TResult&gt; Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As AsyncValueTaskMethodBuilder(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder&lt;TResult&gt; Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -125,6 +133,7 @@
       <MemberSignature Language="C#" Value="public void SetException (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetException(System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetException(Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -147,6 +156,8 @@
       <MemberSignature Language="C#" Value="public void SetResult (TResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetResult(!TResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetResult (result As TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResult(TResult result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -169,6 +180,8 @@
       <MemberSignature Language="C#" Value="public void SetStateMachine (System.Runtime.CompilerServices.IAsyncStateMachine stateMachine);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStateMachine(class System.Runtime.CompilerServices.IAsyncStateMachine stateMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStateMachine (stateMachine As IAsyncStateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStateMachine(System::Runtime::CompilerServices::IAsyncStateMachine ^ stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -191,6 +204,8 @@
       <MemberSignature Language="C#" Value="public void Start&lt;TStateMachine&gt; (ref TStateMachine stateMachine) where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start&lt;(class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TStateMachine&amp; stateMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.Start``1(``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start(Of TStateMachine As IAsyncStateMachine) (ByRef stateMachine As TStateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TStateMachine&gt;&#xA; where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void Start(TStateMachine % stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -221,6 +236,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;TResult&gt; Task { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt; Task" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.Task" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As ValueTask(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::ValueTask&lt;TResult&gt; Task { System::Threading::Tasks::ValueTask&lt;TResult&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>

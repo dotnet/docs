@@ -1,7 +1,9 @@
-<Type Name="Condition" FullName="System.Windows.Automation.Condition">
+﻿<Type Name="Condition" FullName="System.Windows.Automation.Condition">
   <TypeSignature Language="C#" Value="public abstract class Condition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Condition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Condition" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Condition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Condition abstract" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition FalseCondition;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition FalseCondition" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Condition.FalseCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FalseCondition As Condition " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ FalseCondition;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition TrueCondition;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition TrueCondition" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Condition.TrueCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TrueCondition As Condition " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ TrueCondition;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="LiteralLink" FullName="System.Web.UI.MobileControls.LiteralLink">
+﻿<Type Name="LiteralLink" FullName="System.Web.UI.MobileControls.LiteralLink">
   <TypeSignature Language="C#" Value="public class LiteralLink : System.Web.UI.MobileControls.Link" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LiteralLink extends System.Web.UI.MobileControls.Link" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LiteralLink" />
+  <TypeSignature Language="VB.NET" Value="Public Class LiteralLink&#xA;Inherits Link" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LiteralLink : System::Web::UI::MobileControls::Link" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public LiteralLink ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.LiteralLink.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LiteralLink();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

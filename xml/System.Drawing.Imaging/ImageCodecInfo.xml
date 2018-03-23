@@ -1,7 +1,9 @@
-<Type Name="ImageCodecInfo" FullName="System.Drawing.Imaging.ImageCodecInfo">
+﻿<Type Name="ImageCodecInfo" FullName="System.Drawing.Imaging.ImageCodecInfo">
   <TypeSignature Language="C#" Value="public sealed class ImageCodecInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImageCodecInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageCodecInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageCodecInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageCodecInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public Guid Clsid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Clsid" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.Clsid" />
+      <MemberSignature Language="VB.NET" Value="Public Property Clsid As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Clsid { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public string CodecName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CodecName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.CodecName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodecName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CodecName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public string DllName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DllName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.DllName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DllName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DllName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -80,6 +88,8 @@
       <MemberSignature Language="C#" Value="public string FilenameExtension { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FilenameExtension" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.FilenameExtension" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilenameExtension As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilenameExtension { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -98,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Imaging.ImageCodecFlags Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Imaging.ImageCodecFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As ImageCodecFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::ImageCodecFlags Flags { System::Drawing::Imaging::ImageCodecFlags get(); void set(System::Drawing::Imaging::ImageCodecFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -116,6 +128,8 @@
       <MemberSignature Language="C#" Value="public string FormatDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FormatDescription" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.FormatDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormatDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -134,6 +148,8 @@
       <MemberSignature Language="C#" Value="public Guid FormatID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid FormatID" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.FormatID" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormatID As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid FormatID { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -152,6 +168,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Imaging.ImageCodecInfo[] GetImageDecoders ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Imaging.ImageCodecInfo[] GetImageDecoders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageCodecInfo.GetImageDecoders" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetImageDecoders () As ImageCodecInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Drawing::Imaging::ImageCodecInfo ^&gt; ^ GetImageDecoders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -178,6 +196,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Imaging.ImageCodecInfo[] GetImageEncoders ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Imaging.ImageCodecInfo[] GetImageEncoders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageCodecInfo.GetImageEncoders" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetImageEncoders () As ImageCodecInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Drawing::Imaging::ImageCodecInfo ^&gt; ^ GetImageEncoders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -208,6 +228,8 @@
       <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.MimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MimeType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MimeType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -226,6 +248,8 @@
       <MemberSignature Language="C#" Value="public byte[][] SignatureMasks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[][] SignatureMasks" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.SignatureMasks" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignatureMasks As Byte()()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ SignatureMasks { cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ get(); void set(cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -249,6 +273,8 @@
       <MemberSignature Language="C#" Value="public byte[][] SignaturePatterns { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[][] SignaturePatterns" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.SignaturePatterns" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignaturePatterns As Byte()()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ SignaturePatterns { cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ get(); void set(cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -272,6 +298,8 @@
       <MemberSignature Language="C#" Value="public int Version { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

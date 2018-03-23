@@ -1,7 +1,9 @@
-<Type Name="NativeActivityUpdateContext" FullName="System.Activities.DynamicUpdate.NativeActivityUpdateContext">
+﻿<Type Name="NativeActivityUpdateContext" FullName="System.Activities.DynamicUpdate.NativeActivityUpdateContext">
   <TypeSignature Language="C#" Value="public class NativeActivityUpdateContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NativeActivityUpdateContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.NativeActivityUpdateContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class NativeActivityUpdateContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NativeActivityUpdateContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public string ActivityInstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ActivityInstanceId" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ActivityInstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityInstanceId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityInstanceId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -58,10 +62,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a point at which a NativeActivity can passively wait to be resumed.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateBookmark">
       <MemberSignature Language="C#" Value="public System.Activities.Bookmark CreateBookmark ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Bookmark CreateBookmark() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark () As Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Bookmark CreateBookmark (System.Activities.BookmarkCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Bookmark CreateBookmark(class System.Activities.BookmarkCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.Activities.BookmarkCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (callback As BookmarkCallback) As Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::Activities::BookmarkCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -103,6 +120,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Bookmark CreateBookmark (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Bookmark CreateBookmark(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String) As Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Bookmark CreateBookmark (System.Activities.BookmarkCallback callback, System.Activities.BookmarkOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Bookmark CreateBookmark(class System.Activities.BookmarkCallback callback, valuetype System.Activities.BookmarkOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.Activities.BookmarkCallback,System.Activities.BookmarkOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (callback As BookmarkCallback, options As BookmarkOptions) As Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,6 +170,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Bookmark CreateBookmark (string name, System.Activities.BookmarkCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Bookmark CreateBookmark(string name, class System.Activities.BookmarkCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String,System.Activities.BookmarkCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback) As Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -173,6 +196,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Bookmark CreateBookmark (string name, System.Activities.BookmarkCallback callback, System.Activities.BookmarkOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Bookmark CreateBookmark(string name, class System.Activities.BookmarkCallback callback, valuetype System.Activities.BookmarkOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, options As BookmarkOptions) As Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -199,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Bookmark CreateBookmark (string name, System.Activities.BookmarkCallback callback, System.Activities.BookmarkScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Bookmark CreateBookmark(string name, class System.Activities.BookmarkCallback callback, class System.Activities.BookmarkScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, scope As BookmarkScope) As Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkScope ^ scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -225,6 +252,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Bookmark CreateBookmark (string name, System.Activities.BookmarkCallback callback, System.Activities.BookmarkScope scope, System.Activities.BookmarkOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Bookmark CreateBookmark(string name, class System.Activities.BookmarkCallback callback, class System.Activities.BookmarkScope scope, valuetype System.Activities.BookmarkOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkScope,System.Activities.BookmarkOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, scope As BookmarkScope, options As BookmarkOptions) As Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkScope ^ scope, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -253,6 +282,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.BookmarkScope DefaultBookmarkScope { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.BookmarkScope DefaultBookmarkScope" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.NativeActivityUpdateContext.DefaultBookmarkScope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultBookmarkScope As BookmarkScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::BookmarkScope ^ DefaultBookmarkScope { System::Activities::BookmarkScope ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -271,6 +302,8 @@
       <MemberSignature Language="C#" Value="public void DisallowUpdate (string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisallowUpdate(string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.DisallowUpdate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisallowUpdate (reason As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisallowUpdate(System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -292,6 +325,8 @@
       <MemberSignature Language="C#" Value="public object FindExecutionProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object FindExecutionProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.FindExecutionProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindExecutionProperty (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindExecutionProperty(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -314,6 +349,7 @@
       <MemberSignature Language="C#" Value="public System.Activities.Location&lt;T&gt; GetLocation&lt;T&gt; (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!!T&gt; GetLocation&lt;T&gt;(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetLocation``1(System.Activities.Variable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -336,10 +372,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSavedOriginalValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates the object to save the original value for the current activity.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSavedOriginalValue">
       <MemberSignature Language="C#" Value="public object GetSavedOriginalValue (System.Activities.Activity childActivity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetSavedOriginalValue(class System.Activities.Activity childActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetSavedOriginalValue(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSavedOriginalValue (childActivity As Activity) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSavedOriginalValue(System::Activities::Activity ^ childActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -362,6 +409,8 @@
       <MemberSignature Language="C#" Value="public object GetSavedOriginalValue (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetSavedOriginalValue(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetSavedOriginalValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSavedOriginalValue (propertyName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSavedOriginalValue(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -380,10 +429,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetValue">
       <MemberSignature Language="C#" Value="public object GetValue (System.Activities.Argument argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.Argument argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetValue(System.Activities.Argument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Activities::Argument ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -406,6 +465,7 @@
       <MemberSignature Language="C#" Value="public object GetValue (System.Activities.RuntimeArgument runtimeArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.RuntimeArgument runtimeArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetValue(System.Activities.RuntimeArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Activities::RuntimeArgument ^ runtimeArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -428,6 +488,7 @@
       <MemberSignature Language="C#" Value="public object GetValue (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetValue(System.Activities.Variable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -450,6 +511,8 @@
       <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; (System.Activities.Variable&lt;T&gt; variable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;(class System.Activities.Variable`1&lt;!!T&gt; variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetValue``1(System.Activities.Variable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue(Of T) (variable As Variable(Of T)) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetValue(System::Activities::Variable&lt;T&gt; ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -476,6 +539,8 @@
       <MemberSignature Language="C#" Value="public bool IsCancellationRequested { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCancellationRequested" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.NativeActivityUpdateContext.IsCancellationRequested" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCancellationRequested As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancellationRequested { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -495,6 +560,8 @@
       <MemberSignature Language="C#" Value="public bool IsNewlyAdded (System.Activities.Activity childActivity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNewlyAdded(class System.Activities.Activity childActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.IsNewlyAdded(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNewlyAdded (childActivity As Activity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNewlyAdded(System::Activities::Activity ^ childActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -518,6 +585,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAllBookmarks ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAllBookmarks() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.RemoveAllBookmarks" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllBookmarks ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllBookmarks();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -532,10 +601,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified bookmark.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveBookmark">
       <MemberSignature Language="C#" Value="public bool RemoveBookmark (System.Activities.Bookmark bookmark);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveBookmark(class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.RemoveBookmark(System.Activities.Bookmark)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::Activities::Bookmark ^ bookmark);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -559,6 +638,8 @@
       <MemberSignature Language="C#" Value="public bool RemoveBookmark (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveBookmark(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.RemoveBookmark(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveBookmark (name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -582,6 +663,8 @@
       <MemberSignature Language="C#" Value="public bool RemoveBookmark (string name, System.Activities.BookmarkScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveBookmark(string name, class System.Activities.BookmarkScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.RemoveBookmark(System.String,System.Activities.BookmarkScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveBookmark (name As String, scope As BookmarkScope) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::String ^ name, System::Activities::BookmarkScope ^ scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -632,6 +715,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T&gt; (System.Activities.ActivityAction&lt;T&gt; activityAction, T argument, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T&gt;(class System.Activities.ActivityAction`1&lt;!!T&gt; activityAction, !!T argument, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``1(System.Activities.ActivityAction{``0},``0,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T) (activityAction As ActivityAction(Of T), argument As T, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -663,6 +747,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2&gt; (System.Activities.ActivityAction&lt;T1,T2&gt; activityAction, T1 argument1, T2 argument2, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2&gt;(class System.Activities.ActivityAction`2&lt;!!T1, !!T2&gt; activityAction, !!T1 argument1, !!T2 argument2, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``2(System.Activities.ActivityAction{``0,``1},``0,``1,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2) (activityAction As ActivityAction(Of T1, T2), argument1 As T1, argument2 As T2, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -698,6 +783,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3&gt; (System.Activities.ActivityAction&lt;T1,T2,T3&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3&gt;(class System.Activities.ActivityAction`3&lt;!!T1, !!T2, !!T3&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``3(System.Activities.ActivityAction{``0,``1,``2},``0,``1,``2,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3) (activityAction As ActivityAction(Of T1, T2, T3), argument1 As T1, argument2 As T2, argument3 As T3, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -737,6 +823,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4&gt;(class System.Activities.ActivityAction`4&lt;!!T1, !!T2, !!T3, !!T4&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``4(System.Activities.ActivityAction{``0,``1,``2,``3},``0,``1,``2,``3,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4) (activityAction As ActivityAction(Of T1, T2, T3, T4), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -780,6 +867,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5&gt;(class System.Activities.ActivityAction`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``5(System.Activities.ActivityAction{``0,``1,``2,``3,``4},``0,``1,``2,``3,``4,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -827,6 +915,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6&gt;(class System.Activities.ActivityAction`6&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``6(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5},``0,``1,``2,``3,``4,``5,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -878,6 +967,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7&gt;(class System.Activities.ActivityAction`7&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``7(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6},``0,``1,``2,``3,``4,``5,``6,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -933,6 +1023,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(class System.Activities.ActivityAction`8&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``8(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7},``0,``1,``2,``3,``4,``5,``6,``7,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -992,6 +1083,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;(class System.Activities.ActivityAction`9&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``9(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7,``8},``0,``1,``2,``3,``4,``5,``6,``7,``8,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1055,6 +1147,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;(class System.Activities.ActivityAction`10&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``10(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1122,6 +1215,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11&gt;(class System.Activities.ActivityAction`11&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``11(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1193,6 +1287,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;(class System.Activities.ActivityAction`12&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``12(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1268,6 +1363,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, T13 argument13, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;(class System.Activities.ActivityAction`13&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!T13&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, !!T13 argument13, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``13(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, argument13 As T13, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1347,6 +1443,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, T13 argument13, T14 argument14, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14&gt;(class System.Activities.ActivityAction`14&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!T13, !!T14&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, !!T13 argument13, !!T14 argument14, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``14(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, argument13 As T13, argument14 As T14, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1430,6 +1527,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, T13 argument13, T14 argument14, T15 argument15, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15&gt;(class System.Activities.ActivityAction`15&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!T13, !!T14, !!T15&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, !!T13 argument13, !!T14 argument14, !!T15 argument15, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``15(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, argument13 As T13, argument14 As T14, argument15 As T15, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1517,6 +1615,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16&gt; (System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16&gt; activityAction, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, T13 argument13, T14 argument14, T15 argument15, T16 argument16, System.Activities.CompletionCallback onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleAction&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16&gt;(class System.Activities.ActivityAction`16&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!T13, !!T14, !!T15, !!T16&gt; activityAction, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, !!T13 argument13, !!T14 argument14, !!T15 argument15, !!T16 argument16, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleAction``16(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16) (activityAction As ActivityAction(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, argument13 As T13, argument14 As T14, argument15 As T15, argument16 As T16, Optional onCompleted As CompletionCallback = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1604,10 +1703,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ScheduleActivity">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Schedules the specified NativeActivity.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ScheduleActivity">
       <MemberSignature Language="C#" Value="public void ScheduleActivity (System.Activities.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity(System.Activities.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleActivity(System::Activities::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1629,6 +1738,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleActivity (System.Activities.Activity activity, System.Activities.CompletionCallback onCompleted);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity(class System.Activities.Activity activity, class System.Activities.CompletionCallback onCompleted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity(System.Activities.Activity,System.Activities.CompletionCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::CompletionCallback ^ onCompleted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1652,6 +1762,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleActivity (System.Activities.Activity activity, System.Activities.FaultCallback onFaulted);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity(class System.Activities.Activity activity, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity(System.Activities.Activity,System.Activities.FaultCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::FaultCallback ^ onFaulted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1675,6 +1786,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleActivity (System.Activities.Activity activity, System.Activities.CompletionCallback onCompleted, System.Activities.FaultCallback onFaulted);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity(class System.Activities.Activity activity, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity(System.Activities.Activity,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::CompletionCallback ^ onCompleted, System::Activities::FaultCallback ^ onFaulted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1700,6 +1812,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleActivity&lt;TResult&gt; (System.Activities.Activity&lt;TResult&gt; activity, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity&lt;TResult&gt;(class System.Activities.Activity`1&lt;!!TResult&gt; activity, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity``1(System.Activities.Activity{``0},System.Activities.CompletionCallback{``0},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleActivity(Of TResult) (activity As Activity(Of TResult), Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1756,6 +1869,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;TResult&gt; (System.Activities.ActivityFunc&lt;TResult&gt; activityFunc, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;TResult&gt;(class System.Activities.ActivityFunc`1&lt;!!TResult&gt; activityFunc, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``1(System.Activities.ActivityFunc{``0},System.Activities.CompletionCallback{``0},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of TResult) (activityFunc As ActivityFunc(Of TResult), Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1785,6 +1899,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T,TResult&gt; (System.Activities.ActivityFunc&lt;T,TResult&gt; activityFunc, T argument, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T, TResult&gt;(class System.Activities.ActivityFunc`2&lt;!!T, !!TResult&gt; activityFunc, !!T argument, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``2(System.Activities.ActivityFunc{``0,``1},``0,System.Activities.CompletionCallback{``1},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T, TResult) (activityFunc As ActivityFunc(Of T, TResult), argument As T, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1818,6 +1933,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,TResult&gt; activityFunc, T1 argument1, T2 argument2, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, TResult&gt;(class System.Activities.ActivityFunc`3&lt;!!T1, !!T2, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``3(System.Activities.ActivityFunc{``0,``1,``2},``0,``1,System.Activities.CompletionCallback{``2},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, TResult) (activityFunc As ActivityFunc(Of T1, T2, TResult), argument1 As T1, argument2 As T2, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1855,6 +1971,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, TResult&gt;(class System.Activities.ActivityFunc`4&lt;!!T1, !!T2, !!T3, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``4(System.Activities.ActivityFunc{``0,``1,``2,``3},``0,``1,``2,System.Activities.CompletionCallback{``3},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, TResult), argument1 As T1, argument2 As T2, argument3 As T3, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1896,6 +2013,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, TResult&gt;(class System.Activities.ActivityFunc`5&lt;!!T1, !!T2, !!T3, !!T4, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``5(System.Activities.ActivityFunc{``0,``1,``2,``3,``4},``0,``1,``2,``3,System.Activities.CompletionCallback{``4},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1941,6 +2059,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, TResult&gt;(class System.Activities.ActivityFunc`6&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``6(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5},``0,``1,``2,``3,``4,System.Activities.CompletionCallback{``5},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1990,6 +2109,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, TResult&gt;(class System.Activities.ActivityFunc`7&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``7(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6},``0,``1,``2,``3,``4,``5,System.Activities.CompletionCallback{``6},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2043,6 +2163,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, TResult&gt;(class System.Activities.ActivityFunc`8&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``8(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7},``0,``1,``2,``3,``4,``5,``6,System.Activities.CompletionCallback{``7},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2100,6 +2221,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, TResult&gt;(class System.Activities.ActivityFunc`9&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``9(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8},``0,``1,``2,``3,``4,``5,``6,``7,System.Activities.CompletionCallback{``8},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2161,6 +2283,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult&gt;(class System.Activities.ActivityFunc`10&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``10(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9},``0,``1,``2,``3,``4,``5,``6,``7,``8,System.Activities.CompletionCallback{``9},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2226,6 +2349,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult&gt;(class System.Activities.ActivityFunc`11&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``11(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.Activities.CompletionCallback{``10},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2295,6 +2419,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult&gt;(class System.Activities.ActivityFunc`12&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``12(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.Activities.CompletionCallback{``11},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2368,6 +2493,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult&gt;(class System.Activities.ActivityFunc`13&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``13(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.Activities.CompletionCallback{``12},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2445,6 +2571,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, T13 argument13, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult&gt;(class System.Activities.ActivityFunc`14&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!T13, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, !!T13 argument13, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``14(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.Activities.CompletionCallback{``13},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, argument13 As T13, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2526,6 +2653,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, T13 argument13, T14 argument14, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult&gt;(class System.Activities.ActivityFunc`15&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!T13, !!T14, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, !!T13 argument13, !!T14 argument14, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``15(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.Activities.CompletionCallback{``14},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, argument13 As T13, argument14 As T14, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2611,6 +2739,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, T13 argument13, T14 argument14, T15 argument15, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult&gt;(class System.Activities.ActivityFunc`16&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!T13, !!T14, !!T15, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, !!T13 argument13, !!T14 argument14, !!T15 argument15, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``16(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,System.Activities.CompletionCallback{``15},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, argument13 As T13, argument14 As T14, argument15 As T15, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2700,6 +2829,7 @@
       <MemberSignature Language="C#" Value="public void ScheduleFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,TResult&gt; (System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,TResult&gt; activityFunc, T1 argument1, T2 argument2, T3 argument3, T4 argument4, T5 argument5, T6 argument6, T7 argument7, T8 argument8, T9 argument9, T10 argument10, T11 argument11, T12 argument12, T13 argument13, T14 argument14, T15 argument15, T16 argument16, System.Activities.CompletionCallback&lt;TResult&gt; onCompleted = null, System.Activities.FaultCallback onFaulted = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult&gt;(class System.Activities.ActivityFunc`17&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!T8, !!T9, !!T10, !!T11, !!T12, !!T13, !!T14, !!T15, !!T16, !!TResult&gt; activityFunc, !!T1 argument1, !!T2 argument2, !!T3 argument3, !!T4 argument4, !!T5 argument5, !!T6 argument6, !!T7 argument7, !!T8 argument8, !!T9 argument9, !!T10 argument10, !!T11 argument11, !!T12 argument12, !!T13 argument13, !!T14 argument14, !!T15 argument15, !!T16 argument16, class System.Activities.CompletionCallback`1&lt;!!TResult&gt; onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleFunc``17(System.Activities.ActivityFunc{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15,``16},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15,System.Activities.CompletionCallback{``16},System.Activities.FaultCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScheduleFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult) (activityFunc As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult), argument1 As T1, argument2 As T2, argument3 As T3, argument4 As T4, argument5 As T5, argument6 As T6, argument7 As T7, argument8 As T8, argument9 As T9, argument10 As T10, argument11 As T11, argument12 As T12, argument13 As T13, argument14 As T14, argument15 As T15, argument16 As T16, Optional onCompleted As CompletionCallback(Of TResult) = null, Optional onFaulted As FaultCallback = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2789,10 +2919,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Assigns a value to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetValue">
       <MemberSignature Language="C#" Value="public void SetValue (System.Activities.Argument argument, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Activities.Argument argument, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.SetValue(System.Activities.Argument,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Activities::Argument ^ argument, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2816,6 +2956,7 @@
       <MemberSignature Language="C#" Value="public void SetValue (System.Activities.Variable variable, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Activities.Variable variable, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.SetValue(System.Activities.Variable,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Activities::Variable ^ variable, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2839,6 +2980,8 @@
       <MemberSignature Language="C#" Value="public void SetValue&lt;T&gt; (System.Activities.Variable&lt;T&gt; variable, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue&lt;T&gt;(class System.Activities.Variable`1&lt;!!T&gt; variable, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.SetValue``1(System.Activities.Variable{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue(Of T) (variable As Variable(Of T), value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void SetValue(System::Activities::Variable&lt;T&gt; ^ variable, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2862,59 +3005,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateBookmark">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a point at which a NativeActivity can passively wait to be resumed.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ScheduleActivity">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Schedules the specified NativeActivity.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetSavedOriginalValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates the object to save the original value for the current activity.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveBookmark">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified bookmark.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Assigns a value to the specified object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the value of the specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

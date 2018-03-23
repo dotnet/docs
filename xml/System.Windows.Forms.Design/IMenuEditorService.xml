@@ -1,7 +1,9 @@
-<Type Name="IMenuEditorService" FullName="System.Windows.Forms.Design.IMenuEditorService">
+﻿<Type Name="IMenuEditorService" FullName="System.Windows.Forms.Design.IMenuEditorService">
   <TypeSignature Language="C#" Value="public interface IMenuEditorService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMenuEditorService" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IMenuEditorService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMenuEditorService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMenuEditorService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Menu GetMenu ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.Menu GetMenu() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.GetMenu" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMenu () As Menu" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Menu ^ GetMenu();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public bool IsActive ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsActive() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.IsActive" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsActive () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsActive();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public bool MessageFilter (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MessageFilter(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.MessageFilter(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MessageFilter (ByRef m As Message) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MessageFilter(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -85,6 +93,7 @@
       <MemberSignature Language="C#" Value="public void SetMenu (System.Windows.Forms.Menu menu);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMenu(class System.Windows.Forms.Menu menu) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.SetMenu(System.Windows.Forms.Menu)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMenu(System::Windows::Forms::Menu ^ menu);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,6 +122,8 @@
       <MemberSignature Language="C#" Value="public void SetSelection (System.Windows.Forms.MenuItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelection(class System.Windows.Forms.MenuItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.SetSelection(System.Windows.Forms.MenuItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSelection (item As MenuItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelection(System::Windows::Forms::MenuItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

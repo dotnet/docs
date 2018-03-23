@@ -1,7 +1,9 @@
-<Type Name="ControlBindingsCollection" FullName="System.Windows.Forms.ControlBindingsCollection">
+﻿<Type Name="ControlBindingsCollection" FullName="System.Windows.Forms.ControlBindingsCollection">
   <TypeSignature Language="C#" Value="public class ControlBindingsCollection : System.Windows.Forms.BindingsCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlBindingsCollection extends System.Windows.Forms.BindingsCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlBindingsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlBindingsCollection&#xA;Inherits BindingsCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlBindingsCollection : System::Windows::Forms::BindingsCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public ControlBindingsCollection (System.Windows.Forms.IBindableComponent control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.IBindableComponent control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.#ctor(System.Windows.Forms.IBindableComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (control As IBindableComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlBindingsCollection(System::Windows::Forms::IBindableComponent ^ control);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,10 +68,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.Binding" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Forms.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Forms.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.Windows.Forms.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Forms::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +123,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (propertyName As String, dataSource As Object, dataMember As String) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Binding ^ Add(System::String ^ propertyName, System::Object ^ dataSource, System::String ^ dataMember);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +171,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (propertyName As String, dataSource As Object, dataMember As String, formattingEnabled As Boolean) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Binding ^ Add(System::String ^ propertyName, System::Object ^ dataSource, System::String ^ dataMember, bool formattingEnabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +208,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled, System.Windows.Forms.DataSourceUpdateMode updateMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled, valuetype System.Windows.Forms.DataSourceUpdateMode updateMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (propertyName As String, dataSource As Object, dataMember As String, formattingEnabled As Boolean, updateMode As DataSourceUpdateMode) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Binding ^ Add(System::String ^ propertyName, System::Object ^ dataSource, System::String ^ dataMember, bool formattingEnabled, System::Windows::Forms::DataSourceUpdateMode updateMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -237,6 +257,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled, System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled, valuetype System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (propertyName As String, dataSource As Object, dataMember As String, formattingEnabled As Boolean, updateMode As DataSourceUpdateMode, nullValue As Object) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Binding ^ Add(System::String ^ propertyName, System::Object ^ dataSource, System::String ^ dataMember, bool formattingEnabled, System::Windows::Forms::DataSourceUpdateMode updateMode, System::Object ^ nullValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -286,6 +308,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled, System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue, string formatString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled, valuetype System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue, string formatString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (propertyName As String, dataSource As Object, dataMember As String, formattingEnabled As Boolean, updateMode As DataSourceUpdateMode, nullValue As Object, formatString As String) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Binding ^ Add(System::String ^ propertyName, System::Object ^ dataSource, System::String ^ dataMember, bool formattingEnabled, System::Windows::Forms::DataSourceUpdateMode updateMode, System::Object ^ nullValue, System::String ^ formatString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -337,6 +361,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled, System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue, string formatString, IFormatProvider formatInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled, valuetype System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue, string formatString, class System.IFormatProvider formatInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode,System.Object,System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (propertyName As String, dataSource As Object, dataMember As String, formattingEnabled As Boolean, updateMode As DataSourceUpdateMode, nullValue As Object, formatString As String, formatInfo As IFormatProvider) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Binding ^ Add(System::String ^ propertyName, System::Object ^ dataSource, System::String ^ dataMember, bool formattingEnabled, System::Windows::Forms::DataSourceUpdateMode updateMode, System::Object ^ nullValue, System::String ^ formatString, IFormatProvider ^ formatInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -390,6 +416,8 @@
       <MemberSignature Language="C#" Value="protected override void AddCore (System.Windows.Forms.Binding dataBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddCore(class System.Windows.Forms.Binding dataBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.AddCore(System.Windows.Forms.Binding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddCore (dataBinding As Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddCore(System::Windows::Forms::Binding ^ dataBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -411,6 +439,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.IBindableComponent BindableComponent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.IBindableComponent BindableComponent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlBindingsCollection.BindableComponent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindableComponent As IBindableComponent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::IBindableComponent ^ BindableComponent { System::Windows::Forms::IBindableComponent ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -436,6 +466,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -470,6 +502,8 @@
       <MemberSignature Language="C#" Value="protected override void ClearCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.ClearCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearCore ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -488,6 +522,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Control Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control Control" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlBindingsCollection.Control" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ Control { System::Windows::Forms::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -517,6 +553,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataSourceUpdateMode DefaultDataSourceUpdateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataSourceUpdateMode DefaultDataSourceUpdateMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlBindingsCollection.DefaultDataSourceUpdateMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultDataSourceUpdateMode As DataSourceUpdateMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataSourceUpdateMode DefaultDataSourceUpdateMode { System::Windows::Forms::DataSourceUpdateMode get(); void set(System::Windows::Forms::DataSourceUpdateMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -542,6 +580,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding this[string propertyName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Binding Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlBindingsCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(propertyName As String) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Binding ^ default[System::String ^] { System::Windows::Forms::Binding ^ get(System::String ^ propertyName); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -580,6 +620,7 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Windows.Forms.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Forms.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Remove(System.Windows.Forms.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Forms::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -613,6 +654,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -651,6 +694,8 @@
       <MemberSignature Language="C#" Value="protected override void RemoveCore (System.Windows.Forms.Binding dataBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveCore(class System.Windows.Forms.Binding dataBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.RemoveCore(System.Windows.Forms.Binding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveCore (dataBinding As Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveCore(System::Windows::Forms::Binding ^ dataBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -669,14 +714,5 @@
         <exception cref="T:System.ArgumentException">The binding belongs to another <see cref="T:System.Windows.Forms.ControlBindingsCollection" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Windows.Forms.Binding" /> to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

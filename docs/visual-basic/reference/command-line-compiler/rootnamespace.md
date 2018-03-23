@@ -1,8 +1,7 @@
 ---
-title: "/rootnamespace"
-ms.date: 07/20/2015
+title: "-rootnamespace"
+ms.date: 03/13/2018
 ms.prod: .net
-ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
@@ -15,17 +14,16 @@ helpviewer_keywords:
   - "-rootnamespace compiler option [Visual Basic]"
   - "rootnamespace compiler option [Visual Basic]"
 ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
 ---
-# /rootnamespace
+# -rootnamespace
 Specifies a namespace for all type declarations.  
   
 ## Syntax  
   
 ```  
-/rootnamespace:namespace  
+-rootnamespace:namespace  
 ```  
   
 ## Arguments  
@@ -35,19 +33,19 @@ Specifies a namespace for all type declarations.
 |`namespace`|The name of the namespace in which to enclose all type declarations for the current project.|  
   
 ## Remarks  
- If you use the Visual Studio executable file (Devenv.exe) to compile a project created in the Visual Studio integrated development environment, use `/rootnamespace` to specify the value of the <xref:VSLangProj80.VBProjectProperties3.RootNamespace%2A> property. See [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches) for more information.  
+ If you use the Visual Studio executable file (Devenv.exe) to compile a project created in the Visual Studio integrated development environment, use `-rootnamespace` to specify the value of the <xref:VSLangProj80.VBProjectProperties3.RootNamespace%2A> property. See [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches) for more information.  
   
  Use the common language runtime MSIL Disassembler (`Ildasm.exe`) to view the namespace names in your output file.  
   
-|To set /rootnamespace in the Visual Studio integrated development environment|  
+|To set -rootnamespace in the Visual Studio integrated development environment|  
 |---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Application** tab.<br />3.  Modify the value in the **Root Namespace** box.|  
   
 ## Example  
  The following code compiles `In.vb` and encloses all type declarations in the namespace `mynamespace`.  
   
-```  
-vbc /rootnamespace:mynamespace in.vb  
+```console
+vbc -rootnamespace:mynamespace in.vb  
 ```  
   
 ## See Also  

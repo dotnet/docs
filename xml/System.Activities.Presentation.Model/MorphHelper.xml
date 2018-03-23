@@ -1,7 +1,9 @@
-<Type Name="MorphHelper" FullName="System.Activities.Presentation.Model.MorphHelper">
+﻿<Type Name="MorphHelper" FullName="System.Activities.Presentation.Model.MorphHelper">
   <TypeSignature Language="C#" Value="public static class MorphHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MorphHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.MorphHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class MorphHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MorphHelper abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static void AddPropertyValueMorphHelper (Type propertyType, System.Activities.Presentation.Model.PropertyValueMorphHelper extension);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddPropertyValueMorphHelper(class System.Type propertyType, class System.Activities.Presentation.Model.PropertyValueMorphHelper extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.MorphHelper.AddPropertyValueMorphHelper(System.Type,System.Activities.Presentation.Model.PropertyValueMorphHelper)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPropertyValueMorphHelper (propertyType As Type, extension As PropertyValueMorphHelper)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPropertyValueMorphHelper(Type ^ propertyType, System::Activities::Presentation::Model::PropertyValueMorphHelper ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Presentation.Model.PropertyValueMorphHelper GetPropertyValueMorphHelper (Type propertyType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.PropertyValueMorphHelper GetPropertyValueMorphHelper(class System.Type propertyType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.MorphHelper.GetPropertyValueMorphHelper(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertyValueMorphHelper (propertyType As Type) As PropertyValueMorphHelper" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::Model::PropertyValueMorphHelper ^ GetPropertyValueMorphHelper(Type ^ propertyType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public static void MorphObject (System.Activities.Presentation.Model.ModelItem oldModelItem, System.Activities.Presentation.Model.ModelItem newModelitem);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MorphObject(class System.Activities.Presentation.Model.ModelItem oldModelItem, class System.Activities.Presentation.Model.ModelItem newModelitem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.MorphHelper.MorphObject(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MorphObject (oldModelItem As ModelItem, newModelitem As ModelItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MorphObject(System::Activities::Presentation::Model::ModelItem ^ oldModelItem, System::Activities::Presentation::Model::ModelItem ^ newModelitem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -87,6 +95,8 @@
       <MemberSignature Language="C#" Value="public static void MorphProperties (System.Activities.Presentation.Model.ModelItem oldModelItem, System.Activities.Presentation.Model.ModelItem newModelitem);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MorphProperties(class System.Activities.Presentation.Model.ModelItem oldModelItem, class System.Activities.Presentation.Model.ModelItem newModelitem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.MorphHelper.MorphProperties(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MorphProperties (oldModelItem As ModelItem, newModelitem As ModelItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MorphProperties(System::Activities::Presentation::Model::ModelItem ^ oldModelItem, System::Activities::Presentation::Model::ModelItem ^ newModelitem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

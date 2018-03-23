@@ -1,7 +1,9 @@
-<Type Name="ValueSource" FullName="System.Windows.ValueSource">
+﻿<Type Name="ValueSource" FullName="System.Windows.ValueSource">
   <TypeSignature Language="C#" Value="public struct ValueSource" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueSource extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ValueSource" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ValueSource" />
+  <TypeSignature Language="C++ CLI" Value="public value class ValueSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.BaseValueSource BaseValueSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.BaseValueSource BaseValueSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.BaseValueSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseValueSource As BaseValueSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::BaseValueSource BaseValueSource { System::Windows::BaseValueSource get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ValueSource.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +97,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ValueSource.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +127,8 @@
       <MemberSignature Language="C#" Value="public bool IsAnimated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAnimated" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.IsAnimated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAnimated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAnimated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,6 +158,8 @@
       <MemberSignature Language="C#" Value="public bool IsCoerced { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCoerced" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.IsCoerced" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCoerced As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCoerced { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -179,6 +191,8 @@
       <MemberSignature Language="C#" Value="public bool IsCurrent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCurrent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.IsCurrent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCurrent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCurrent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -198,6 +212,8 @@
       <MemberSignature Language="C#" Value="public bool IsExpression { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsExpression" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.IsExpression" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExpression As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExpression { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -229,6 +245,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.ValueSource vs1, System.Windows.ValueSource vs2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.ValueSource vs1, valuetype System.Windows.ValueSource vs2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ValueSource.op_Equality(System.Windows.ValueSource,System.Windows.ValueSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (vs1 As ValueSource, vs2 As ValueSource) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::ValueSource vs1, System::Windows::ValueSource vs2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -263,6 +281,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.ValueSource vs1, System.Windows.ValueSource vs2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.ValueSource vs1, valuetype System.Windows.ValueSource vs2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ValueSource.op_Inequality(System.Windows.ValueSource,System.Windows.ValueSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (vs1 As ValueSource, vs2 As ValueSource) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::ValueSource vs1, System::Windows::ValueSource vs2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

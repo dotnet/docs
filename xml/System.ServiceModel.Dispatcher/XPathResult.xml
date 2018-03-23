@@ -1,7 +1,9 @@
-<Type Name="XPathResult" FullName="System.ServiceModel.Dispatcher.XPathResult">
+﻿<Type Name="XPathResult" FullName="System.ServiceModel.Dispatcher.XPathResult">
   <TypeSignature Language="C#" Value="public sealed class XPathResult : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XPathResult extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.XPathResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XPathResult&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathResult sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,7 +35,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathResult.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +58,8 @@
       <MemberSignature Language="C#" Value="public bool GetResultAsBoolean ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetResultAsBoolean() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathResult.GetResultAsBoolean" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResultAsBoolean () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetResultAsBoolean();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathNodeIterator GetResultAsNodeset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XPath.XPathNodeIterator GetResultAsNodeset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathResult.GetResultAsNodeset" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResultAsNodeset () As XPathNodeIterator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XPath::XPathNodeIterator ^ GetResultAsNodeset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +112,8 @@
       <MemberSignature Language="C#" Value="public double GetResultAsNumber ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetResultAsNumber() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathResult.GetResultAsNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResultAsNumber () As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetResultAsNumber();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +135,8 @@
       <MemberSignature Language="C#" Value="public string GetResultAsString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetResultAsString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathResult.GetResultAsString" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResultAsString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetResultAsString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +156,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathResultType ResultType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XPath.XPathResultType ResultType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathResult.ResultType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultType As XPathResultType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XPath::XPathResultType ResultType { System::Xml::XPath::XPathResultType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

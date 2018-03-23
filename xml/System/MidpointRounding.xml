@@ -1,7 +1,9 @@
-<Type Name="MidpointRounding" FullName="System.MidpointRounding">
+﻿<Type Name="MidpointRounding" FullName="System.MidpointRounding">
   <TypeSignature Language="C#" Value="public enum MidpointRounding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MidpointRounding extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.MidpointRounding" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MidpointRounding" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MidpointRounding" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +73,8 @@
       <MemberSignature Language="C#" Value="AwayFromZero" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.MidpointRounding AwayFromZero = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.MidpointRounding.AwayFromZero" />
+      <MemberSignature Language="VB.NET" Value="AwayFromZero" />
+      <MemberSignature Language="C++ CLI" Value="AwayFromZero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -94,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.MidpointRounding</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>When a number is halfway between two others, it is rounded toward the nearest number that is away from zero.</summary>
       </Docs>
@@ -102,6 +107,8 @@
       <MemberSignature Language="C#" Value="ToEven" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.MidpointRounding ToEven = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.MidpointRounding.ToEven" />
+      <MemberSignature Language="VB.NET" Value="ToEven" />
+      <MemberSignature Language="C++ CLI" Value="ToEven" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -125,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.MidpointRounding</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>When a number is halfway between two others, it is rounded toward the nearest even number.</summary>
       </Docs>

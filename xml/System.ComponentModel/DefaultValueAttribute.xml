@@ -1,7 +1,9 @@
-<Type Name="DefaultValueAttribute" FullName="System.ComponentModel.DefaultValueAttribute">
+﻿<Type Name="DefaultValueAttribute" FullName="System.ComponentModel.DefaultValueAttribute">
   <TypeSignature Language="C#" Value="public class DefaultValueAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultValueAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DefaultValueAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class DefaultValueAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultValueAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,10 +66,25 @@
     <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DefaultValueAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(bool value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -99,6 +116,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::Byte value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -130,6 +149,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(char value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -161,6 +182,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(double value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -192,6 +215,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(short value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -223,6 +248,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(int value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -254,6 +281,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(long value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -285,6 +314,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -316,6 +347,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::SByte value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -339,6 +372,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(float value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -370,6 +405,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -401,6 +438,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::UInt16 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -424,6 +463,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::UInt32 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -447,6 +488,8 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::UInt64 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -470,6 +513,7 @@
       <MemberSignature Language="C#" Value="public DefaultValueAttribute (Type type, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(Type ^ type, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -503,6 +547,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -539,6 +585,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -572,6 +620,8 @@
       <MemberSignature Language="C#" Value="protected void SetValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetValue(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.SetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetValue (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetValue(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -602,6 +652,8 @@
       <MemberSignature Language="C#" Value="public virtual object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DefaultValueAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -629,18 +681,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DefaultValueAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

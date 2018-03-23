@@ -1,7 +1,9 @@
-<Type Name="CodePropertySetValueReferenceExpression" FullName="System.CodeDom.CodePropertySetValueReferenceExpression">
+﻿<Type Name="CodePropertySetValueReferenceExpression" FullName="System.CodeDom.CodePropertySetValueReferenceExpression">
   <TypeSignature Language="C#" Value="public class CodePropertySetValueReferenceExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodePropertySetValueReferenceExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodePropertySetValueReferenceExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodePropertySetValueReferenceExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodePropertySetValueReferenceExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public CodePropertySetValueReferenceExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePropertySetValueReferenceExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodePropertySetValueReferenceExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TableItemPattern+TableItemPatternInformation" FullName="System.Windows.Automation.TableItemPattern+TableItemPatternInformation">
+﻿<Type Name="TableItemPattern+TableItemPatternInformation" FullName="System.Windows.Automation.TableItemPattern+TableItemPatternInformation">
   <TypeSignature Language="C#" Value="public struct TableItemPattern.TableItemPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit TableItemPattern/TableItemPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TableItemPattern.TableItemPatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure TableItemPattern.TableItemPatternInformation" />
+  <TypeSignature Language="C++ CLI" Value="public: value class TableItemPattern::TableItemPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public int Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Column" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TableItemPattern.TableItemPatternInformation.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public int ColumnSpan { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnSpan" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TableItemPattern.TableItemPatternInformation.ColumnSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnSpan As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnSpan { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement ContainingGrid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.AutomationElement ContainingGrid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TableItemPattern.TableItemPatternInformation.ContainingGrid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainingGrid As AutomationElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElement ^ ContainingGrid { System::Windows::Automation::AutomationElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement[] GetColumnHeaderItems ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement[] GetColumnHeaderItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TableItemPattern.TableItemPatternInformation.GetColumnHeaderItems" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnHeaderItems () As AutomationElement()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationElement ^&gt; ^ GetColumnHeaderItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -140,6 +150,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement[] GetRowHeaderItems ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement[] GetRowHeaderItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TableItemPattern.TableItemPatternInformation.GetRowHeaderItems" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRowHeaderItems () As AutomationElement()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationElement ^&gt; ^ GetRowHeaderItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -171,6 +183,8 @@
       <MemberSignature Language="C#" Value="public int Row { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Row" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TableItemPattern.TableItemPatternInformation.Row" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Row { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -201,6 +215,8 @@
       <MemberSignature Language="C#" Value="public int RowSpan { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowSpan" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TableItemPattern.TableItemPatternInformation.RowSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowSpan As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowSpan { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

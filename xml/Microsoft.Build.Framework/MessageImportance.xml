@@ -1,7 +1,9 @@
-<Type Name="MessageImportance" FullName="Microsoft.Build.Framework.MessageImportance">
+﻿<Type Name="MessageImportance" FullName="Microsoft.Build.Framework.MessageImportance">
   <TypeSignature Language="C#" Value="public enum MessageImportance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MessageImportance extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.MessageImportance" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageImportance" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageImportance" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.MessageImportance High = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.MessageImportance.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.MessageImportance</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A high importance message.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Low" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.MessageImportance Low = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.MessageImportance.Low" />
+      <MemberSignature Language="VB.NET" Value="Low" />
+      <MemberSignature Language="C++ CLI" Value="Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.MessageImportance</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A low importance message.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.MessageImportance Normal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.MessageImportance.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.MessageImportance</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A normal importance message.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="VisualTreeChangeType" FullName="System.Windows.Diagnostics.VisualTreeChangeType">
+﻿<Type Name="VisualTreeChangeType" FullName="System.Windows.Diagnostics.VisualTreeChangeType">
   <TypeSignature Language="C#" Value="public enum VisualTreeChangeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VisualTreeChangeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.VisualTreeChangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VisualTreeChangeType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class VisualTreeChangeType" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Add" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Diagnostics.VisualTreeChangeType Add = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Diagnostics.VisualTreeChangeType.Add" />
+      <MemberSignature Language="VB.NET" Value="Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Diagnostics.VisualTreeChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The child element was added to the visual tree of the parent element.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Remove" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Diagnostics.VisualTreeChangeType Remove = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Diagnostics.VisualTreeChangeType.Remove" />
+      <MemberSignature Language="VB.NET" Value="Remove" />
+      <MemberSignature Language="C++ CLI" Value="Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Diagnostics.VisualTreeChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The child element was removed from the visual tree of the parent element.</summary>
       </Docs>

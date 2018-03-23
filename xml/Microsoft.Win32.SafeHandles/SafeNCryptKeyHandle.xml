@@ -1,7 +1,9 @@
-<Type Name="SafeNCryptKeyHandle" FullName="Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle">
+﻿<Type Name="SafeNCryptKeyHandle" FullName="Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle">
   <TypeSignature Language="C#" Value="public sealed class SafeNCryptKeyHandle : Microsoft.Win32.SafeHandles.SafeNCryptHandle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SafeNCryptKeyHandle extends Microsoft.Win32.SafeHandles.SafeNCryptHandle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeNCryptKeyHandle&#xA;Inherits SafeNCryptHandle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SafeNCryptKeyHandle sealed : Microsoft::Win32::SafeHandles::SafeNCryptHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public SafeNCryptKeyHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeNCryptKeyHandle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public SafeNCryptKeyHandle (IntPtr handle, System.Runtime.InteropServices.SafeHandle parentHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle, class System.Runtime.InteropServices.SafeHandle parentHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle.#ctor(System.IntPtr,System.Runtime.InteropServices.SafeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr, parentHandle As SafeHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeNCryptKeyHandle(IntPtr handle, System::Runtime::InteropServices::SafeHandle ^ parentHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="protected override bool ReleaseNativeHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ReleaseNativeHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle.ReleaseNativeHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseNativeHandle () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseNativeHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

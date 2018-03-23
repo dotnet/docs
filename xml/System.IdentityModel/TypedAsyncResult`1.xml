@@ -1,7 +1,9 @@
-<Type Name="TypedAsyncResult&lt;T&gt;" FullName="System.IdentityModel.TypedAsyncResult&lt;T&gt;">
+﻿<Type Name="TypedAsyncResult&lt;T&gt;" FullName="System.IdentityModel.TypedAsyncResult&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class TypedAsyncResult&lt;T&gt; : System.IdentityModel.AsyncResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypedAsyncResult`1&lt;T&gt; extends System.IdentityModel.AsyncResult" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.TypedAsyncResult`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypedAsyncResult(Of T)&#xA;Inherits AsyncResult" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class TypedAsyncResult : System::IdentityModel::AsyncResult" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +21,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.TypedAsyncResult`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypedAsyncResult (object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedAsyncResult(System::Object ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public TypedAsyncResult (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.#ctor(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callback As AsyncCallback, state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedAsyncResult(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -64,10 +79,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Complete">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called to complete the asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Complete">
       <MemberSignature Language="C#" Value="public void Complete (T result, bool completedSynchronously);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete(!T result, bool completedSynchronously) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.Complete(`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complete (result As T, completedSynchronously As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete(T result, bool completedSynchronously);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -92,6 +118,7 @@
       <MemberSignature Language="C#" Value="public void Complete (T result, bool completedSynchronously, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete(!T result, bool completedSynchronously, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.Complete(`0,System.Boolean,System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete(T result, bool completedSynchronously, Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -118,6 +145,8 @@
       <MemberSignature Language="C#" Value="public static T End (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !T End(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.End(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function End (result As IAsyncResult) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static T End(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -140,6 +169,8 @@
       <MemberSignature Language="C#" Value="public T Result { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Result" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.TypedAsyncResult`1.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Result { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -154,23 +185,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.TypedAsyncResult`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Complete">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Called to complete the asynchronous operation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

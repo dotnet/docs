@@ -1,7 +1,9 @@
-<Type Name="IScriptControl" FullName="System.Web.UI.IScriptControl">
+﻿<Type Name="IScriptControl" FullName="System.Web.UI.IScriptControl">
   <TypeSignature Language="C#" Value="public interface IScriptControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScriptControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IScriptControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IScriptControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IScriptControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptDescriptor&gt; GetScriptDescriptors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptDescriptor&gt; GetScriptDescriptors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IScriptControl.GetScriptDescriptors" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetScriptDescriptors () As IEnumerable(Of ScriptDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ GetScriptDescriptors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptReference&gt; GetScriptReferences ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptReference&gt; GetScriptReferences() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IScriptControl.GetScriptReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetScriptReferences () As IEnumerable(Of ScriptReference)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ GetScriptReferences();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

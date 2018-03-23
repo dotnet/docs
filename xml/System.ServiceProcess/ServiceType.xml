@@ -1,7 +1,9 @@
-<Type Name="ServiceType" FullName="System.ServiceProcess.ServiceType">
+﻿<Type Name="ServiceType" FullName="System.ServiceProcess.ServiceType">
   <TypeSignature Language="C#" Value="public enum ServiceType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ServiceType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ServiceType" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="Adapter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceType Adapter = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.Adapter" />
+      <MemberSignature Language="VB.NET" Value="Adapter" />
+      <MemberSignature Language="C++ CLI" Value="Adapter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -63,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A service for a hardware device that requires its own driver.</summary>
       </Docs>
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="FileSystemDriver" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceType FileSystemDriver = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.FileSystemDriver" />
+      <MemberSignature Language="VB.NET" Value="FileSystemDriver" />
+      <MemberSignature Language="C++ CLI" Value="FileSystemDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A file system driver, which is also a Kernel device driver.</summary>
       </Docs>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="InteractiveProcess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceType InteractiveProcess = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.InteractiveProcess" />
+      <MemberSignature Language="VB.NET" Value="InteractiveProcess" />
+      <MemberSignature Language="C++ CLI" Value="InteractiveProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -105,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>A service that can communicate with the desktop.</summary>
       </Docs>
@@ -113,6 +124,8 @@
       <MemberSignature Language="C#" Value="KernelDriver" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceType KernelDriver = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.KernelDriver" />
+      <MemberSignature Language="VB.NET" Value="KernelDriver" />
+      <MemberSignature Language="C++ CLI" Value="KernelDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -126,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A Kernel device driver such as a hard disk or other low-level hardware device driver.</summary>
       </Docs>
@@ -134,6 +148,8 @@
       <MemberSignature Language="C#" Value="RecognizerDriver" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceType RecognizerDriver = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.RecognizerDriver" />
+      <MemberSignature Language="VB.NET" Value="RecognizerDriver" />
+      <MemberSignature Language="C++ CLI" Value="RecognizerDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -147,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A file system driver used during startup to determine the file systems present on the system.</summary>
       </Docs>
@@ -155,6 +172,8 @@
       <MemberSignature Language="C#" Value="Win32OwnProcess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceType Win32OwnProcess = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.Win32OwnProcess" />
+      <MemberSignature Language="VB.NET" Value="Win32OwnProcess" />
+      <MemberSignature Language="C++ CLI" Value="Win32OwnProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -168,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A Win32 program that can be started by the Service Controller and that obeys the service control protocol. This type of Win32 service runs in a process by itself.</summary>
       </Docs>
@@ -176,6 +196,8 @@
       <MemberSignature Language="C#" Value="Win32ShareProcess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceType Win32ShareProcess = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.Win32ShareProcess" />
+      <MemberSignature Language="VB.NET" Value="Win32ShareProcess" />
+      <MemberSignature Language="C++ CLI" Value="Win32ShareProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -189,6 +211,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>A Win32 service that can share a process with other Win32 services.</summary>
       </Docs>

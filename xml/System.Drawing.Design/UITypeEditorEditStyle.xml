@@ -1,7 +1,9 @@
-<Type Name="UITypeEditorEditStyle" FullName="System.Drawing.Design.UITypeEditorEditStyle">
+﻿<Type Name="UITypeEditorEditStyle" FullName="System.Drawing.Design.UITypeEditorEditStyle">
   <TypeSignature Language="C#" Value="public enum UITypeEditorEditStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UITypeEditorEditStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.UITypeEditorEditStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UITypeEditorEditStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class UITypeEditorEditStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="DropDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Design.UITypeEditorEditStyle DropDown = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Design.UITypeEditorEditStyle.DropDown" />
+      <MemberSignature Language="VB.NET" Value="DropDown" />
+      <MemberSignature Language="C++ CLI" Value="DropDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Displays a drop-down arrow button and hosts the user interface (UI) in a drop-down dialog box.</summary>
         <remarks>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="Modal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Design.UITypeEditorEditStyle Modal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Design.UITypeEditorEditStyle.Modal" />
+      <MemberSignature Language="VB.NET" Value="Modal" />
+      <MemberSignature Language="C++ CLI" Value="Modal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Displays an ellipsis (...) button to start a modal dialog box, which requires user input before continuing a program, or a modeless dialog box, which stays on the screen and is available for use at any time but permits other user activities.</summary>
         <altmember cref="T:System.Drawing.Design.UITypeEditor" />
@@ -74,6 +82,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Design.UITypeEditorEditStyle None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Design.UITypeEditorEditStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Provides no interactive user interface (UI) component.</summary>
         <altmember cref="T:System.Drawing.Design.UITypeEditor" />

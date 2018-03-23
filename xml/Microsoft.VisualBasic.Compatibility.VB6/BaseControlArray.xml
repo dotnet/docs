@@ -1,7 +1,9 @@
-<Type Name="BaseControlArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray">
+﻿<Type Name="BaseControlArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray">
   <TypeSignature Language="C#" Value="public abstract class BaseControlArray : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract BaseControlArray extends System.ComponentModel.Component implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseControlArray&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseControlArray abstract : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BaseControlArray ();" />
       <MemberSignature Language="ILAsm" Value=".method familyspecialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BaseControlArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -63,6 +76,8 @@
       <MemberSignature Language="C#" Value="protected BaseControlArray (System.ComponentModel.IContainer Container);" />
       <MemberSignature Language="ILAsm" Value=".method familyspecialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer Container) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (Container As IContainer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BaseControlArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -91,6 +106,8 @@
       <MemberSignature Language="C#" Value="protected bool BaseCanExtend (object target);" />
       <MemberSignature Language="ILAsm" Value=".method familyinstance bool BaseCanExtend(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseCanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BaseCanExtend (target As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool BaseCanExtend(System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -129,6 +146,8 @@
       <MemberSignature Language="C#" Value="protected short BaseGetIndex (object ctl);" />
       <MemberSignature Language="ILAsm" Value=".method familyinstance int16 BaseGetIndex(object ctl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseGetIndex(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BaseGetIndex (ctl As Object) As Short" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; short BaseGetIndex(System::Object ^ ctl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -164,6 +183,8 @@
       <MemberSignature Language="C#" Value="protected object BaseGetItem (short Index);" />
       <MemberSignature Language="ILAsm" Value=".method familyinstance object BaseGetItem(int16 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseGetItem(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BaseGetItem (Index As Short) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ BaseGetItem(short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -199,6 +220,8 @@
       <MemberSignature Language="C#" Value="protected void BaseResetIndex (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyinstance void BaseResetIndex(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseResetIndex(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub BaseResetIndex (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseResetIndex(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -232,6 +255,7 @@
       <MemberSignature Language="C#" Value="protected void BaseSetIndex (object ctl, short Index, bool fIsDynamic = false);" />
       <MemberSignature Language="ILAsm" Value=".method familyinstance void BaseSetIndex(object ctl, int16 Index, bool fIsDynamic) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseSetIndex(System.Object,System.Int16,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub BaseSetIndex (ctl As Object, Index As Short, Optional fIsDynamic As Boolean = false)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -270,6 +294,8 @@
       <MemberSignature Language="C#" Value="protected bool BaseShouldSerializeIndex (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyinstance bool BaseShouldSerializeIndex(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseShouldSerializeIndex(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BaseShouldSerializeIndex (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool BaseShouldSerializeIndex(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -306,6 +332,8 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.IContainer components;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.ComponentModel.IContainer components" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.components" />
+      <MemberSignature Language="VB.NET" Value="Protected components As IContainer " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::ComponentModel::IContainer ^ components;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -333,6 +361,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Hashtable controlAddedAtDesignTime;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Hashtable controlAddedAtDesignTime" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.controlAddedAtDesignTime" />
+      <MemberSignature Language="VB.NET" Value="Protected controlAddedAtDesignTime As Hashtable " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ controlAddedAtDesignTime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -360,6 +390,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Hashtable controls;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Hashtable controls" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.controls" />
+      <MemberSignature Language="VB.NET" Value="Protected controls As Hashtable " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ controls;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -387,6 +419,8 @@
       <MemberSignature Language="C#" Value="public short Count ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance int16 Count() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Function Count () As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short Count();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -418,6 +452,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -453,6 +489,8 @@
       <MemberSignature Language="C#" Value="protected bool fIsEndInitCalled;" />
       <MemberSignature Language="ILAsm" Value=".field family bool fIsEndInitCalled" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.fIsEndInitCalled" />
+      <MemberSignature Language="VB.NET" Value="Protected fIsEndInitCalled As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool fIsEndInitCalled;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -480,6 +518,8 @@
       <MemberSignature Language="C#" Value="protected abstract Type GetControlInstanceType ();" />
       <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance class System.Type GetControlInstanceType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.GetControlInstanceType" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetControlInstanceType () As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -509,6 +549,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -538,6 +580,8 @@
       <MemberSignature Language="C#" Value="protected abstract void HookUpControlEvents (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void HookUpControlEvents(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.HookUpControlEvents(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub HookUpControlEvents (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -574,6 +618,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Hashtable indices;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Hashtable indices" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.indices" />
+      <MemberSignature Language="VB.NET" Value="Protected indices As Hashtable " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ indices;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -601,6 +647,8 @@
       <MemberSignature Language="C#" Value="public short LBound ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance int16 LBound() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.LBound" />
+      <MemberSignature Language="VB.NET" Value="Public Function LBound () As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short LBound();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -632,6 +680,8 @@
       <MemberSignature Language="C#" Value="public void Load (short Index);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Load(int16 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Load(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (Index As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -665,6 +715,8 @@
       <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -693,6 +745,8 @@
       <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -721,6 +775,8 @@
       <MemberSignature Language="C#" Value="public short UBound ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance int16 UBound() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.UBound" />
+      <MemberSignature Language="VB.NET" Value="Public Function UBound () As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short UBound();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -752,6 +808,8 @@
       <MemberSignature Language="C#" Value="public void Unload (short Index);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Unload(int16 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Unload(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unload (Index As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unload(short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -784,14 +842,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

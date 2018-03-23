@@ -1,7 +1,9 @@
-<Type Name="InertiaRotationBehavior" FullName="System.Windows.Input.InertiaRotationBehavior">
+﻿<Type Name="InertiaRotationBehavior" FullName="System.Windows.Input.InertiaRotationBehavior">
   <TypeSignature Language="C#" Value="public class InertiaRotationBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InertiaRotationBehavior extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InertiaRotationBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Class InertiaRotationBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InertiaRotationBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public InertiaRotationBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InertiaRotationBehavior.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InertiaRotationBehavior();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public double DesiredDeceleration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredDeceleration" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredDeceleration As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DesiredDeceleration { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +97,8 @@
       <MemberSignature Language="C#" Value="public double DesiredRotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredRotation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.DesiredRotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredRotation As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DesiredRotation { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="public double InitialVelocity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 InitialVelocity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.InitialVelocity" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialVelocity As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InitialVelocity { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

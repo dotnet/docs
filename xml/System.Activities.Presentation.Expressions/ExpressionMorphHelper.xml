@@ -1,7 +1,9 @@
-<Type Name="ExpressionMorphHelper" FullName="System.Activities.Presentation.Expressions.ExpressionMorphHelper">
+﻿<Type Name="ExpressionMorphHelper" FullName="System.Activities.Presentation.Expressions.ExpressionMorphHelper">
   <TypeSignature Language="C#" Value="public abstract class ExpressionMorphHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionMorphHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Expressions.ExpressionMorphHelper" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpressionMorphHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpressionMorphHelper abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected ExpressionMorphHelper ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionMorphHelper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExpressionMorphHelper();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public virtual bool TryInferReturnType (System.Activities.ActivityWithResult expression, System.Activities.Presentation.EditingContext context, out Type returnType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryInferReturnType(class System.Activities.ActivityWithResult expression, class System.Activities.Presentation.EditingContext context, [out] class System.Type&amp; returnType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionMorphHelper.TryInferReturnType(System.Activities.ActivityWithResult,System.Activities.Presentation.EditingContext,System.Type@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryInferReturnType (expression As ActivityWithResult, context As EditingContext, ByRef returnType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryInferReturnType(System::Activities::ActivityWithResult ^ expression, System::Activities::Presentation::EditingContext ^ context, [Runtime::InteropServices::Out] Type ^ % returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public abstract bool TryMorphExpression (System.Activities.ActivityWithResult expression, bool isLocationExpression, Type newType, System.Activities.Presentation.EditingContext context, out System.Activities.ActivityWithResult newExpression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMorphExpression(class System.Activities.ActivityWithResult expression, bool isLocationExpression, class System.Type newType, class System.Activities.Presentation.EditingContext context, [out] class System.Activities.ActivityWithResult&amp; newExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionMorphHelper.TryMorphExpression(System.Activities.ActivityWithResult,System.Boolean,System.Type,System.Activities.Presentation.EditingContext,System.Activities.ActivityWithResult@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryMorphExpression (expression As ActivityWithResult, isLocationExpression As Boolean, newType As Type, context As EditingContext, ByRef newExpression As ActivityWithResult) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryMorphExpression(System::Activities::ActivityWithResult ^ expression, bool isLocationExpression, Type ^ newType, System::Activities::Presentation::EditingContext ^ context, [Runtime::InteropServices::Out] System::Activities::ActivityWithResult ^ % newExpression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

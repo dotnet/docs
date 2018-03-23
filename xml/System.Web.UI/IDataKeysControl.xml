@@ -1,7 +1,9 @@
-<Type Name="IDataKeysControl" FullName="System.Web.UI.IDataKeysControl">
+﻿<Type Name="IDataKeysControl" FullName="System.Web.UI.IDataKeysControl">
   <TypeSignature Language="C#" Value="public interface IDataKeysControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataKeysControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataKeysControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataKeysControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataKeysControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public string[] ClientIDRowSuffix { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ClientIDRowSuffix" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataKeysControl.ClientIDRowSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientIDRowSuffix As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataKeyArray ClientIDRowSuffixDataKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKeyArray ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientIDRowSuffixDataKeys As DataKeyArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKeyArray ^ ClientIDRowSuffixDataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

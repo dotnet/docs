@@ -1,7 +1,9 @@
-<Type Name="MultidimensionalArrayItemReference&lt;TItem&gt;" FullName="System.Activities.Expressions.MultidimensionalArrayItemReference&lt;TItem&gt;">
+﻿<Type Name="MultidimensionalArrayItemReference&lt;TItem&gt;" FullName="System.Activities.Expressions.MultidimensionalArrayItemReference&lt;TItem&gt;">
   <TypeSignature Language="C#" Value="public sealed class MultidimensionalArrayItemReference&lt;TItem&gt; : System.Activities.CodeActivity&lt;System.Activities.Location&lt;TItem&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MultidimensionalArrayItemReference`1&lt;TItem&gt; extends System.Activities.CodeActivity`1&lt;class System.Activities.Location`1&lt;!TItem&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.MultidimensionalArrayItemReference`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultidimensionalArrayItemReference(Of TItem)&#xA;Inherits CodeActivity(Of Location(Of TItem))" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TItem&gt;&#xA;public ref class MultidimensionalArrayItemReference sealed : System::Activities::CodeActivity&lt;System::Activities::Location&lt;TItem&gt; ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +80,8 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="C#" Value="public MultidimensionalArrayItemReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.MultidimensionalArrayItemReference`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultidimensionalArrayItemReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +97,8 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;Array&gt; Array { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;class System.Array&gt; Array" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.MultidimensionalArrayItemReference`1.Array" />
+      <MemberSignature Language="VB.NET" Value="Public Property Array As InArgument(Of Array)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;Array ^&gt; ^ Array { System::Activities::InArgument&lt;Array ^&gt; ^ get(); void set(System::Activities::InArgument&lt;Array ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,6 +125,8 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.MultidimensionalArrayItemReference`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -140,6 +148,8 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="C#" Value="protected override System.Activities.Location&lt;TItem&gt; Execute (System.Activities.CodeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Activities.Location`1&lt;!TItem&gt; Execute(class System.Activities.CodeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.MultidimensionalArrayItemReference`1.Execute(System.Activities.CodeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As Location(Of TItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Location&lt;TItem&gt; ^ Execute(System::Activities::CodeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -162,6 +172,8 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.InArgument&lt;int&gt;&gt; Indices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.InArgument`1&lt;int32&gt;&gt; Indices" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.MultidimensionalArrayItemReference`1.Indices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Indices As Collection(Of InArgument(Of Integer))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::InArgument&lt;int&gt; ^&gt; ^ Indices { System::Collections::ObjectModel::Collection&lt;System::Activities::InArgument&lt;int&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

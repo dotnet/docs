@@ -1,7 +1,9 @@
-<Type Name="X509InitiatorCertificateServiceElement" FullName="System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement">
+﻿<Type Name="X509InitiatorCertificateServiceElement" FullName="System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement">
   <TypeSignature Language="C#" Value="public sealed class X509InitiatorCertificateServiceElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509InitiatorCertificateServiceElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509InitiatorCertificateServiceElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509InitiatorCertificateServiceElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public X509InitiatorCertificateServiceElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509InitiatorCertificateServiceElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement Authentication { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement Authentication" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Authentication" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authentication As X509ClientCertificateAuthenticationElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::X509ClientCertificateAuthenticationElement ^ Authentication { System::ServiceModel::Configuration::X509ClientCertificateAuthenticationElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement Certificate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement Certificate" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As X509ClientCertificateCredentialsElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::X509ClientCertificateCredentialsElement ^ Certificate { System::ServiceModel::Configuration::X509ClientCertificateCredentialsElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +88,8 @@
       <MemberSignature Language="C#" Value="public void Copy (System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Copy(class System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Copy(System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As X509InitiatorCertificateServiceElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::X509InitiatorCertificateServiceElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +114,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

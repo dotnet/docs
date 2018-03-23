@@ -1,7 +1,9 @@
-<Type Name="PropertyChangedEventManager" FullName="System.ComponentModel.PropertyChangedEventManager">
+﻿<Type Name="PropertyChangedEventManager" FullName="System.ComponentModel.PropertyChangedEventManager">
   <TypeSignature Language="C#" Value="public class PropertyChangedEventManager : System.Windows.WeakEventManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyChangedEventManager extends System.Windows.WeakEventManager" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyChangedEventManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class PropertyChangedEventManager&#xA;Inherits WeakEventManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyChangedEventManager : System::Windows::WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static void AddHandler (System.ComponentModel.INotifyPropertyChanged source, EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt; handler, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHandler(class System.ComponentModel.INotifyPropertyChanged source, class System.EventHandler`1&lt;class System.ComponentModel.PropertyChangedEventArgs&gt; handler, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.AddHandler(System.ComponentModel.INotifyPropertyChanged,System.EventHandler{System.ComponentModel.PropertyChangedEventArgs},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As INotifyPropertyChanged, handler As EventHandler(Of PropertyChangedEventArgs), propertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(System::ComponentModel::INotifyPropertyChanged ^ source, EventHandler&lt;System::ComponentModel::PropertyChangedEventArgs ^&gt; ^ handler, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public static void AddListener (System.ComponentModel.INotifyPropertyChanged source, System.Windows.IWeakEventListener listener, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddListener(class System.ComponentModel.INotifyPropertyChanged source, class System.Windows.IWeakEventListener listener, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.AddListener(System.ComponentModel.INotifyPropertyChanged,System.Windows.IWeakEventListener,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddListener (source As INotifyPropertyChanged, listener As IWeakEventListener, propertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddListener(System::ComponentModel::INotifyPropertyChanged ^ source, System::Windows::IWeakEventListener ^ listener, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -88,6 +94,7 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.WeakEventManager.ListenerList NewListenerList ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.NewListenerList" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -107,6 +114,8 @@
       <MemberSignature Language="C#" Value="protected override bool Purge (object source, object data, bool purgeAll);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool Purge(object source, object data, bool purgeAll) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.Purge(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Purge (source As Object, data As Object, purgeAll As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool Purge(System::Object ^ source, System::Object ^ data, bool purgeAll);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -135,6 +144,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveHandler (System.ComponentModel.INotifyPropertyChanged source, EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt; handler, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveHandler(class System.ComponentModel.INotifyPropertyChanged source, class System.EventHandler`1&lt;class System.ComponentModel.PropertyChangedEventArgs&gt; handler, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.RemoveHandler(System.ComponentModel.INotifyPropertyChanged,System.EventHandler{System.ComponentModel.PropertyChangedEventArgs},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As INotifyPropertyChanged, handler As EventHandler(Of PropertyChangedEventArgs), propertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(System::ComponentModel::INotifyPropertyChanged ^ source, EventHandler&lt;System::ComponentModel::PropertyChangedEventArgs ^&gt; ^ handler, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -163,6 +174,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveListener (System.ComponentModel.INotifyPropertyChanged source, System.Windows.IWeakEventListener listener, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveListener(class System.ComponentModel.INotifyPropertyChanged source, class System.Windows.IWeakEventListener listener, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.RemoveListener(System.ComponentModel.INotifyPropertyChanged,System.Windows.IWeakEventListener,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveListener (source As INotifyPropertyChanged, listener As IWeakEventListener, propertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveListener(System::ComponentModel::INotifyPropertyChanged ^ source, System::Windows::IWeakEventListener ^ listener, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -189,6 +202,8 @@
       <MemberSignature Language="C#" Value="protected override void StartListening (object source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StartListening(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.StartListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -218,6 +233,8 @@
       <MemberSignature Language="C#" Value="protected override void StopListening (object source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StopListening(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.StopListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ListViewVirtualItemsSelectionRangeChangedEventHandler" FullName="System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler">
+﻿<Type Name="ListViewVirtualItemsSelectionRangeChangedEventHandler" FullName="System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ListViewVirtualItemsSelectionRangeChangedEventHandler(object sender, ListViewVirtualItemsSelectionRangeChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewVirtualItemsSelectionRangeChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ListViewVirtualItemsSelectionRangeChangedEventHandler(sender As Object, e As ListViewVirtualItemsSelectionRangeChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ListViewVirtualItemsSelectionRangeChangedEventHandler(System::Object ^ sender, ListViewVirtualItemsSelectionRangeChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

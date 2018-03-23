@@ -1,7 +1,9 @@
-<Type Name="RoleGroup" FullName="System.Web.UI.WebControls.RoleGroup">
+﻿<Type Name="RoleGroup" FullName="System.Web.UI.WebControls.RoleGroup">
   <TypeSignature Language="C#" Value="public sealed class RoleGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoleGroup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RoleGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoleGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RoleGroup sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public RoleGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoleGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public bool ContainsUser (System.Security.Principal.IPrincipal user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsUser(class System.Security.Principal.IPrincipal user) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroup.ContainsUser(System.Security.Principal.IPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsUser (user As IPrincipal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsUser(System::Security::Principal::IPrincipal ^ user);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ITemplate ContentTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate ContentTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RoleGroup.ContentTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentTemplate As ITemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ITemplate ^ ContentTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +150,8 @@
       <MemberSignature Language="C#" Value="public string[] Roles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] Roles" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RoleGroup.Roles" />
+      <MemberSignature Language="VB.NET" Value="Public Property Roles As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Roles { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +185,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroup.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

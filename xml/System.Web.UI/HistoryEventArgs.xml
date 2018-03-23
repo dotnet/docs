@@ -1,7 +1,9 @@
-<Type Name="HistoryEventArgs" FullName="System.Web.UI.HistoryEventArgs">
+﻿<Type Name="HistoryEventArgs" FullName="System.Web.UI.HistoryEventArgs">
   <TypeSignature Language="C#" Value="public class HistoryEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HistoryEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HistoryEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class HistoryEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HistoryEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public HistoryEventArgs (System.Collections.Specialized.NameValueCollection state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HistoryEventArgs.#ctor(System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HistoryEventArgs(System::Collections::Specialized::NameValueCollection ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameValueCollection State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection State" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HistoryEventArgs.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As NameValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ State { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaExternal" FullName="System.Xml.Schema.XmlSchemaExternal">
+﻿<Type Name="XmlSchemaExternal" FullName="System.Xml.Schema.XmlSchemaExternal">
   <TypeSignature Language="C#" Value="public abstract class XmlSchemaExternal : System.Xml.Schema.XmlSchemaObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlSchemaExternal extends System.Xml.Schema.XmlSchemaObject" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaExternal" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaExternal&#xA;Inherits XmlSchemaObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaExternal abstract : System::Xml::Schema::XmlSchemaObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="protected XmlSchemaExternal ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaExternal.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSchemaExternal();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaExternal.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -93,6 +99,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema Schema { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchema Schema" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaExternal.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public Property Schema As XmlSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchema ^ Schema { System::Xml::Schema::XmlSchema ^ get(); void set(System::Xml::Schema::XmlSchema ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="public string SchemaLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SchemaLocation" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaExternal.SchemaLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SchemaLocation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaLocation { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -168,6 +178,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute[] UnhandledAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlAttribute[] UnhandledAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaExternal.UnhandledAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnhandledAttributes As XmlAttribute()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ UnhandledAttributes { cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ get(); void set(cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

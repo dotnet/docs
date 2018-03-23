@@ -1,7 +1,9 @@
-<Type Name="XmlSerializationCollectionFixupCallback" FullName="System.Xml.Serialization.XmlSerializationCollectionFixupCallback">
+﻿<Type Name="XmlSerializationCollectionFixupCallback" FullName="System.Xml.Serialization.XmlSerializationCollectionFixupCallback">
   <TypeSignature Language="C#" Value="public delegate void XmlSerializationCollectionFixupCallback(object collection, object collectionItems);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSerializationCollectionFixupCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationCollectionFixupCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlSerializationCollectionFixupCallback(collection As Object, collectionItems As Object)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void XmlSerializationCollectionFixupCallback(System::Object ^ collection, System::Object ^ collectionItems);" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

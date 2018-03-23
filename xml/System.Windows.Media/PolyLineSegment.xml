@@ -1,7 +1,9 @@
-<Type Name="PolyLineSegment" FullName="System.Windows.Media.PolyLineSegment">
+﻿<Type Name="PolyLineSegment" FullName="System.Windows.Media.PolyLineSegment">
   <TypeSignature Language="C#" Value="public sealed class PolyLineSegment : System.Windows.Media.PathSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PolyLineSegment extends System.Windows.Media.PathSegment" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PolyLineSegment" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolyLineSegment&#xA;Inherits PathSegment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PolyLineSegment sealed : System::Windows::Media::PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     <altmember cref="T:System.Windows.Media.PathGeometry" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PolyLineSegment" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PolyLineSegment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolyLineSegment();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public PolyLineSegment (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; points, bool isStroked);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; points, bool isStroked) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (points As IEnumerable(Of Point), isStroked As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolyLineSegment(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ points, bool isStroked);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.PolyLineSegment Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PolyLineSegment Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As PolyLineSegment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PolyLineSegment ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +119,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.PolyLineSegment CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PolyLineSegment CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PolyLineSegment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PolyLineSegment ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -130,6 +149,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +170,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.PointCollection Points { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.PointCollection Points" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PolyLineSegment.Points" />
+      <MemberSignature Language="VB.NET" Value="Public Property Points As PointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PointCollection ^ Points { System::Windows::Media::PointCollection ^ get(); void set(System::Windows::Media::PointCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,6 +213,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PointsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PointsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PolyLineSegment.PointsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PointsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PointsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -203,14 +228,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PolyLineSegment" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

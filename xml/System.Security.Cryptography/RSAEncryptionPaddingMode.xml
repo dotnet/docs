@@ -1,7 +1,9 @@
-<Type Name="RSAEncryptionPaddingMode" FullName="System.Security.Cryptography.RSAEncryptionPaddingMode">
+﻿<Type Name="RSAEncryptionPaddingMode" FullName="System.Security.Cryptography.RSAEncryptionPaddingMode">
   <TypeSignature Language="C#" Value="public enum RSAEncryptionPaddingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RSAEncryptionPaddingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAEncryptionPaddingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RSAEncryptionPaddingMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RSAEncryptionPaddingMode" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Oaep" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.RSAEncryptionPaddingMode Oaep = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep" />
+      <MemberSignature Language="VB.NET" Value="Oaep" />
+      <MemberSignature Language="C++ CLI" Value="Oaep" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -50,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.RSAEncryptionPaddingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Optimal Asymmetric Encryption Padding.</summary>
         <remarks>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="Pkcs1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.RSAEncryptionPaddingMode Pkcs1 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAEncryptionPaddingMode.Pkcs1" />
+      <MemberSignature Language="VB.NET" Value="Pkcs1" />
+      <MemberSignature Language="C++ CLI" Value="Pkcs1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -86,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.RSAEncryptionPaddingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>PKCS #1 v1.5.</summary>
         <remarks>

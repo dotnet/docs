@@ -1,7 +1,9 @@
-<Type Name="ProcessProtocolHandler" FullName="System.Web.Hosting.ProcessProtocolHandler">
+﻿<Type Name="ProcessProtocolHandler" FullName="System.Web.Hosting.ProcessProtocolHandler">
   <TypeSignature Language="C#" Value="public abstract class ProcessProtocolHandler : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProcessProtocolHandler extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ProcessProtocolHandler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProcessProtocolHandler&#xA;Inherits MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProcessProtocolHandler abstract : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected ProcessProtocolHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ProcessProtocolHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public abstract void StartListenerChannel (System.Web.Hosting.IListenerChannelCallback listenerChannelCallback, System.Web.Hosting.IAdphManager AdphManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartListenerChannel(class System.Web.Hosting.IListenerChannelCallback listenerChannelCallback, class System.Web.Hosting.IAdphManager AdphManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StartListenerChannel(System.Web.Hosting.IListenerChannelCallback,System.Web.Hosting.IAdphManager)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StartListenerChannel (listenerChannelCallback As IListenerChannelCallback, AdphManager As IAdphManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StartListenerChannel(System::Web::Hosting::IListenerChannelCallback ^ listenerChannelCallback, System::Web::Hosting::IAdphManager ^ AdphManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="public abstract void StopListenerChannel (int listenerChannelId, bool immediate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopListenerChannel(int32 listenerChannelId, bool immediate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StopListenerChannel(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StopListenerChannel (listenerChannelId As Integer, immediate As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StopListenerChannel(int listenerChannelId, bool immediate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +150,8 @@
       <MemberSignature Language="C#" Value="public abstract void StopProtocol (bool immediate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopProtocol(bool immediate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StopProtocol(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StopProtocol (immediate As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StopProtocol(bool immediate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

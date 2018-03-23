@@ -1,7 +1,9 @@
-<Type Name="FormsIdentity" FullName="System.Web.Security.FormsIdentity">
+﻿<Type Name="FormsIdentity" FullName="System.Web.Security.FormsIdentity">
   <TypeSignature Language="C#" Value="public class FormsIdentity : System.Security.Claims.ClaimsIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FormsIdentity extends System.Security.Claims.ClaimsIdentity" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormsIdentity&#xA;Inherits ClaimsIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormsIdentity : System::Security::Claims::ClaimsIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FormsIdentity (System.Web.Security.FormsAuthenticationTicket ticket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Security.FormsAuthenticationTicket ticket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsIdentity.#ctor(System.Web.Security.FormsAuthenticationTicket)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ticket As FormsAuthenticationTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormsIdentity(System::Web::Security::FormsAuthenticationTicket ^ ticket);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +70,8 @@
       <MemberSignature Language="C#" Value="protected FormsIdentity (System.Web.Security.FormsIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.Security.FormsIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsIdentity.#ctor(System.Web.Security.FormsIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (identity As FormsIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FormsIdentity(System::Web::Security::FormsIdentity ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +90,8 @@
       <MemberSignature Language="C#" Value="public override string AuthenticationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.AuthenticationType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuthenticationType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AuthenticationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +110,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; Claims { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; Claims" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.Claims" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Claims As IEnumerable(Of Claim)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ Claims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +131,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Claims.ClaimsIdentity Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Claims.ClaimsIdentity Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsIdentity.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As ClaimsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Claims::ClaimsIdentity ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +152,8 @@
       <MemberSignature Language="C#" Value="public override bool IsAuthenticated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuthenticated" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.IsAuthenticated" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAuthenticated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +172,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -174,6 +199,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Security.FormsAuthenticationTicket Ticket { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Security.FormsAuthenticationTicket Ticket" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.Ticket" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ticket As FormsAuthenticationTicket" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::FormsAuthenticationTicket ^ Ticket { System::Web::Security::FormsAuthenticationTicket ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,14 +215,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsIdentity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

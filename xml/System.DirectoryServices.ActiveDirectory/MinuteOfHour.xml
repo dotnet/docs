@@ -1,7 +1,9 @@
-<Type Name="MinuteOfHour" FullName="System.DirectoryServices.ActiveDirectory.MinuteOfHour">
+﻿<Type Name="MinuteOfHour" FullName="System.DirectoryServices.ActiveDirectory.MinuteOfHour">
   <TypeSignature Language="C#" Value="public enum MinuteOfHour" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MinuteOfHour extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MinuteOfHour" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MinuteOfHour" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="Fifteen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour Fifteen = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.MinuteOfHour.Fifteen" />
+      <MemberSignature Language="VB.NET" Value="Fifteen" />
+      <MemberSignature Language="C++ CLI" Value="Fifteen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -29,6 +33,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.MinuteOfHour</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Represents 15 to 29 minutes after the hour.</summary>
       </Docs>
@@ -37,6 +42,8 @@
       <MemberSignature Language="C#" Value="FortyFive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour FortyFive = int32(45)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.MinuteOfHour.FortyFive" />
+      <MemberSignature Language="VB.NET" Value="FortyFive" />
+      <MemberSignature Language="C++ CLI" Value="FortyFive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -46,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.MinuteOfHour</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>Represents 45 to 59 minutes after the hour.</summary>
       </Docs>
@@ -54,6 +62,8 @@
       <MemberSignature Language="C#" Value="Thirty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour Thirty = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.MinuteOfHour.Thirty" />
+      <MemberSignature Language="VB.NET" Value="Thirty" />
+      <MemberSignature Language="C++ CLI" Value="Thirty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.MinuteOfHour</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>Represents 30 to 44 minutes after the hour.</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="Zero" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour Zero = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.MinuteOfHour.Zero" />
+      <MemberSignature Language="VB.NET" Value="Zero" />
+      <MemberSignature Language="C++ CLI" Value="Zero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -80,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.MinuteOfHour</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Represents 0 to 14 minutes after the hour.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ProjectTargetFrameworkAttribute" FullName="System.ComponentModel.Design.ProjectTargetFrameworkAttribute">
+﻿<Type Name="ProjectTargetFrameworkAttribute" FullName="System.ComponentModel.Design.ProjectTargetFrameworkAttribute">
   <TypeSignature Language="C#" Value="public sealed class ProjectTargetFrameworkAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProjectTargetFrameworkAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ProjectTargetFrameworkAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectTargetFrameworkAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectTargetFrameworkAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Interface)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Struct)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public ProjectTargetFrameworkAttribute (string targetFrameworkMoniker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetFrameworkMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ProjectTargetFrameworkAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetFrameworkMoniker As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectTargetFrameworkAttribute(System::String ^ targetFrameworkMoniker);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkMoniker { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkMoniker" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ProjectTargetFrameworkAttribute.TargetFrameworkMoniker" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetFrameworkMoniker As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMoniker { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

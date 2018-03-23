@@ -1,7 +1,9 @@
-<Type Name="Table" FullName="System.Windows.Documents.Table">
+﻿<Type Name="Table" FullName="System.Windows.Documents.Table">
   <TypeSignature Language="C#" Value="public class Table : System.Windows.Documents.Block, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Table extends System.Windows.Documents.Block implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Table" />
+  <TypeSignature Language="VB.NET" Value="Public Class Table&#xA;Inherits Block&#xA;Implements IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Table : System::Windows::Documents::Block, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="public Table ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Table();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public override void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public double CellSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 CellSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Table.CellSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property CellSpacing As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CellSpacing { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -166,6 +174,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CellSpacingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CellSpacingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Table.CellSpacingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CellSpacingProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CellSpacingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -183,6 +193,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TableColumnCollection Columns { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TableColumnCollection Columns" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Table.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As TableColumnCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TableColumnCollection ^ Columns { System::Windows::Documents::TableColumnCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,7 +202,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -215,6 +227,8 @@
       <MemberSignature Language="C#" Value="public override void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -230,9 +244,11 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Table.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -262,6 +278,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -288,6 +306,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TableRowGroupCollection RowGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TableRowGroupCollection RowGroups" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Table.RowGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowGroups As TableRowGroupCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TableRowGroupCollection ^ RowGroups { System::Windows::Documents::TableRowGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -295,7 +315,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -313,6 +333,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeColumns ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeColumns() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.ShouldSerializeColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeColumns () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeColumns();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -338,7 +360,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -359,7 +386,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

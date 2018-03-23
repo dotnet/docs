@@ -1,7 +1,9 @@
-<Type Name="TextLineBreak" FullName="System.Windows.Media.TextFormatting.TextLineBreak">
+﻿<Type Name="TextLineBreak" FullName="System.Windows.Media.TextFormatting.TextLineBreak">
   <TypeSignature Language="C#" Value="public sealed class TextLineBreak : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextLineBreak extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextLineBreak" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextLineBreak&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextLineBreak sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.TextLineBreak Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.TextFormatting.TextLineBreak Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLineBreak.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TextLineBreak" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextFormatting::TextLineBreak ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,7 +51,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLineBreak.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +81,8 @@
       <MemberSignature Language="C#" Value="~TextLineBreak ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLineBreak.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!TextLineBreak ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

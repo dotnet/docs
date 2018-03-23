@@ -1,7 +1,9 @@
-<Type Name="Visual" FullName="System.Windows.Media.Visual">
+﻿<Type Name="Visual" FullName="System.Windows.Media.Visual">
   <TypeSignature Language="C#" Value="public abstract class Visual : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Visual extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Visual" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Visual&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Visual abstract : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +69,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="protected Visual ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Visual();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +86,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="protected void AddVisualChild (System.Windows.Media.Visual child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddVisualChild(class System.Windows.Media.Visual child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.AddVisualChild(System.Windows.Media.Visual)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddVisualChild (child As Visual)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddVisualChild(System::Windows::Media::Visual ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -122,6 +128,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject FindCommonVisualAncestor (System.Windows.DependencyObject otherVisual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.DependencyObject FindCommonVisualAncestor(class System.Windows.DependencyObject otherVisual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.FindCommonVisualAncestor(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindCommonVisualAncestor (otherVisual As DependencyObject) As DependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ FindCommonVisualAncestor(System::Windows::DependencyObject ^ otherVisual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +159,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Media.Visual GetVisualChild (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.GetVisualChild(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetVisualChild (index As Integer) As Visual" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,10 +197,21 @@ Visual class hierarchy
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTestCore">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a point or geometry value is within the bounds of the visual object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HitTestCore">
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Media.GeometryHitTestResult HitTestCore (System.Windows.Media.GeometryHitTestParameters hitTestParameters);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Media.GeometryHitTestResult HitTestCore(class System.Windows.Media.GeometryHitTestParameters hitTestParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.HitTestCore(System.Windows.Media.GeometryHitTestParameters)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function HitTestCore (hitTestParameters As GeometryHitTestParameters) As GeometryHitTestResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Media::GeometryHitTestResult ^ HitTestCore(System::Windows::Media::GeometryHitTestParameters ^ hitTestParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,6 +249,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Media.HitTestResult HitTestCore (System.Windows.Media.PointHitTestParameters hitTestParameters);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Media.HitTestResult HitTestCore(class System.Windows.Media.PointHitTestParameters hitTestParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.HitTestCore(System.Windows.Media.PointHitTestParameters)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function HitTestCore (hitTestParameters As PointHitTestParameters) As HitTestResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Media::HitTestResult ^ HitTestCore(System::Windows::Media::PointHitTestParameters ^ hitTestParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -265,6 +288,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="public bool IsAncestorOf (System.Windows.DependencyObject descendant);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAncestorOf(class System.Windows.DependencyObject descendant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.IsAncestorOf(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsAncestorOf (descendant As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAncestorOf(System::Windows::DependencyObject ^ descendant);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -288,6 +313,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="public bool IsDescendantOf (System.Windows.DependencyObject ancestor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDescendantOf(class System.Windows.DependencyObject ancestor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.IsDescendantOf(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDescendantOf (ancestor As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDescendantOf(System::Windows::DependencyObject ^ ancestor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -311,6 +338,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="protected virtual void OnDpiChanged (System.Windows.DpiScale oldDpi, System.Windows.DpiScale newDpi);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDpiChanged(valuetype System.Windows.DpiScale oldDpi, valuetype System.Windows.DpiScale newDpi) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDpiChanged (oldDpi As DpiScale, newDpi As DpiScale)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDpiChanged(System::Windows::DpiScale oldDpi, System::Windows::DpiScale newDpi);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -331,9 +360,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="OnVisualChildrenChanged">
-      <MemberSignature Language="C#" Value="protected virtual void OnVisualChildrenChanged (System.Windows.DependencyObject visualAdded, System.Windows.DependencyObject visualRemoved);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnVisualChildrenChanged (System.Windows.DependencyObject visualAdded, System.Windows.DependencyObject visualRemoved);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnVisualChildrenChanged(class System.Windows.DependencyObject visualAdded, class System.Windows.DependencyObject visualRemoved) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnVisualChildrenChanged (visualAdded As DependencyObject, visualRemoved As DependencyObject)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnVisualChildrenChanged(System::Windows::DependencyObject ^ visualAdded, System::Windows::DependencyObject ^ visualRemoved);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -354,9 +385,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="OnVisualParentChanged">
-      <MemberSignature Language="C#" Value="protected virtual void OnVisualParentChanged (System.Windows.DependencyObject oldParent);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnVisualParentChanged (System.Windows.DependencyObject oldParent);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnVisualParentChanged(class System.Windows.DependencyObject oldParent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.OnVisualParentChanged(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnVisualParentChanged (oldParent As DependencyObject)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnVisualParentChanged(System::Windows::DependencyObject ^ oldParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -396,6 +429,7 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="public System.Windows.Point PointFromScreen (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point PointFromScreen(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.PointFromScreen(System.Windows.Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point PointFromScreen(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -425,6 +459,7 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="public System.Windows.Point PointToScreen (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point PointToScreen(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.PointToScreen(System.Windows.Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point PointToScreen(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -454,6 +489,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="protected void RemoveVisualChild (System.Windows.Media.Visual child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveVisualChild(class System.Windows.Media.Visual child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.RemoveVisualChild(System.Windows.Media.Visual)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RemoveVisualChild (child As Visual)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveVisualChild(System::Windows::Media::Visual ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -490,10 +527,21 @@ Visual class hierarchy
         <altmember cref="T:System.Windows.Media.VisualCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TransformToAncestor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a transform that can be used to transform coordinates from the <see cref="T:System.Windows.Media.Visual" /> to the specified ancestor of the visual object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TransformToAncestor">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.GeneralTransform2DTo3D TransformToAncestor (System.Windows.Media.Media3D.Visual3D ancestor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.GeneralTransform2DTo3D TransformToAncestor(class System.Windows.Media.Media3D.Visual3D ancestor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.TransformToAncestor(System.Windows.Media.Media3D.Visual3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformToAncestor (ancestor As Visual3D) As GeneralTransform2DTo3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::GeneralTransform2DTo3D ^ TransformToAncestor(System::Windows::Media::Media3D::Visual3D ^ ancestor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -516,6 +564,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransform TransformToAncestor (System.Windows.Media.Visual ancestor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransform TransformToAncestor(class System.Windows.Media.Visual ancestor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.TransformToAncestor(System.Windows.Media.Visual)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformToAncestor (ancestor As Visual) As GeneralTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeneralTransform ^ TransformToAncestor(System::Windows::Media::Visual ^ ancestor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -567,6 +617,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransform TransformToDescendant (System.Windows.Media.Visual descendant);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransform TransformToDescendant(class System.Windows.Media.Visual descendant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.TransformToDescendant(System.Windows.Media.Visual)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformToDescendant (descendant As Visual) As GeneralTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeneralTransform ^ TransformToDescendant(System::Windows::Media::Visual ^ descendant);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -609,6 +661,7 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransform TransformToVisual (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransform TransformToVisual(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.TransformToVisual(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeneralTransform ^ TransformToVisual(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -652,9 +705,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualBitmapEffect">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.Effects.BitmapEffect VisualBitmapEffect { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BitmapEffect VisualBitmapEffect { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.BitmapEffect VisualBitmapEffect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualBitmapEffect" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualBitmapEffect As BitmapEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::Effects::BitmapEffect ^ VisualBitmapEffect {  protected public:&#xA;System::Windows::Media::Effects::BitmapEffect ^ get(); protected:&#xA; void set(System::Windows::Media::Effects::BitmapEffect ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -676,9 +731,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualBitmapEffectInput">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.Effects.BitmapEffectInput VisualBitmapEffectInput { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BitmapEffectInput VisualBitmapEffectInput { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.BitmapEffectInput VisualBitmapEffectInput" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualBitmapEffectInput" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualBitmapEffectInput As BitmapEffectInput" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::Effects::BitmapEffectInput ^ VisualBitmapEffectInput {  protected public:&#xA;System::Windows::Media::Effects::BitmapEffectInput ^ get(); protected:&#xA; void set(System::Windows::Media::Effects::BitmapEffectInput ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -700,9 +757,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualBitmapScalingMode">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.BitmapScalingMode VisualBitmapScalingMode { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapScalingMode VisualBitmapScalingMode { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.BitmapScalingMode VisualBitmapScalingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualBitmapScalingMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualBitmapScalingMode As BitmapScalingMode" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::BitmapScalingMode VisualBitmapScalingMode {  protected public:&#xA;System::Windows::Media::BitmapScalingMode get(); protected:&#xA; void set(System::Windows::Media::BitmapScalingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -718,9 +777,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualCacheMode">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.CacheMode VisualCacheMode { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.CacheMode VisualCacheMode { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.CacheMode VisualCacheMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualCacheMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualCacheMode As CacheMode" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::CacheMode ^ VisualCacheMode {  protected public:&#xA;System::Windows::Media::CacheMode ^ get(); protected:&#xA; void set(System::Windows::Media::CacheMode ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -750,6 +811,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="protected virtual int VisualChildrenCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualChildrenCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property VisualChildrenCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -783,9 +846,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualClearTypeHint">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.ClearTypeHint VisualClearTypeHint { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Windows.Media.ClearTypeHint VisualClearTypeHint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.ClearTypeHint VisualClearTypeHint" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualClearTypeHint" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property VisualClearTypeHint As ClearTypeHint" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Media::ClearTypeHint VisualClearTypeHint { System::Windows::Media::ClearTypeHint get(); void set(System::Windows::Media::ClearTypeHint value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -801,9 +866,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualClip">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.Geometry VisualClip { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry VisualClip { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry VisualClip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualClip" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualClip As Geometry" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::Geometry ^ VisualClip {  protected public:&#xA;System::Windows::Media::Geometry ^ get(); protected:&#xA; void set(System::Windows::Media::Geometry ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -819,9 +886,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualEdgeMode">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.EdgeMode VisualEdgeMode { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.EdgeMode VisualEdgeMode { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.EdgeMode VisualEdgeMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualEdgeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualEdgeMode As EdgeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::EdgeMode VisualEdgeMode {  protected public:&#xA;System::Windows::Media::EdgeMode get(); protected:&#xA; void set(System::Windows::Media::EdgeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -837,9 +906,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualEffect">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.Effects.Effect VisualEffect { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.Effect VisualEffect { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.Effect VisualEffect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualEffect" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualEffect As Effect" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::Effects::Effect ^ VisualEffect {  protected public:&#xA;System::Windows::Media::Effects::Effect ^ get(); protected:&#xA; void set(System::Windows::Media::Effects::Effect ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -857,9 +928,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualOffset">
-      <MemberSignature Language="C#" Value="protected System.Windows.Vector VisualOffset { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Vector VisualOffset { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector VisualOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualOffset As Vector" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Vector VisualOffset {  protected public:&#xA;System::Windows::Vector get(); protected:&#xA; void set(System::Windows::Vector value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -875,9 +948,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualOpacity">
-      <MemberSignature Language="C#" Value="protected double VisualOpacity { get; set; }" />
+      <MemberSignature Language="C#" Value="public double VisualOpacity { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 VisualOpacity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualOpacity" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualOpacity As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:  property double VisualOpacity {  protected public:&#xA;double get(); protected:&#xA; void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -900,9 +975,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualOpacityMask">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.Brush VisualOpacityMask { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush VisualOpacityMask { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush VisualOpacityMask" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualOpacityMask" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualOpacityMask As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::Brush ^ VisualOpacityMask {  protected public:&#xA;System::Windows::Media::Brush ^ get(); protected:&#xA; void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -928,6 +1005,8 @@ Visual class hierarchy
       <MemberSignature Language="C#" Value="protected System.Windows.DependencyObject VisualParent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject VisualParent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualParent" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property VisualParent As DependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::DependencyObject ^ VisualParent { System::Windows::DependencyObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -945,9 +1024,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualScrollableAreaClip">
-      <MemberSignature Language="C#" Value="protected Nullable&lt;System.Windows.Rect&gt; VisualScrollableAreaClip { get; set; }" />
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Windows.Rect&gt; VisualScrollableAreaClip { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Windows.Rect&gt; VisualScrollableAreaClip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualScrollableAreaClip" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualScrollableAreaClip As Nullable(Of Rect)" />
+      <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;System::Windows::Rect&gt; VisualScrollableAreaClip {  protected public:&#xA;Nullable&lt;System::Windows::Rect&gt; get(); protected:&#xA; void set(Nullable&lt;System::Windows::Rect&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1014,9 +1095,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualTextHintingMode">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.TextHintingMode VisualTextHintingMode { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Windows.Media.TextHintingMode VisualTextHintingMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextHintingMode VisualTextHintingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualTextHintingMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property VisualTextHintingMode As TextHintingMode" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Media::TextHintingMode VisualTextHintingMode { System::Windows::Media::TextHintingMode get(); void set(System::Windows::Media::TextHintingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1032,9 +1115,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualTextRenderingMode">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.TextRenderingMode VisualTextRenderingMode { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Windows.Media.TextRenderingMode VisualTextRenderingMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextRenderingMode VisualTextRenderingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualTextRenderingMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property VisualTextRenderingMode As TextRenderingMode" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Media::TextRenderingMode VisualTextRenderingMode { System::Windows::Media::TextRenderingMode get(); void set(System::Windows::Media::TextRenderingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1050,9 +1135,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualTransform">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.Transform VisualTransform { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Transform VisualTransform { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Transform VisualTransform" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualTransform" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualTransform As Transform" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::Transform ^ VisualTransform {  protected public:&#xA;System::Windows::Media::Transform ^ get(); protected:&#xA; void set(System::Windows::Media::Transform ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1068,9 +1155,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualXSnappingGuidelines">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.DoubleCollection VisualXSnappingGuidelines { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.DoubleCollection VisualXSnappingGuidelines { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.DoubleCollection VisualXSnappingGuidelines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualXSnappingGuidelines" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualXSnappingGuidelines As DoubleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::DoubleCollection ^ VisualXSnappingGuidelines {  protected public:&#xA;System::Windows::Media::DoubleCollection ^ get(); protected:&#xA; void set(System::Windows::Media::DoubleCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1096,9 +1185,11 @@ Visual class hierarchy
       </Docs>
     </Member>
     <Member MemberName="VisualYSnappingGuidelines">
-      <MemberSignature Language="C#" Value="protected System.Windows.Media.DoubleCollection VisualYSnappingGuidelines { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Media.DoubleCollection VisualYSnappingGuidelines { protected internal get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.DoubleCollection VisualYSnappingGuidelines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualYSnappingGuidelines" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisualYSnappingGuidelines As DoubleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Windows::Media::DoubleCollection ^ VisualYSnappingGuidelines {  protected public:&#xA;System::Windows::Media::DoubleCollection ^ get(); protected:&#xA; void set(System::Windows::Media::DoubleCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1123,23 +1214,5 @@ Visual class hierarchy
         <altmember cref="M:System.Windows.Media.VisualTreeHelper.GetYSnappingGuidelines(System.Windows.Media.Visual)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="TransformToAncestor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a transform that can be used to transform coordinates from the <see cref="T:System.Windows.Media.Visual" /> to the specified ancestor of the visual object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="HitTestCore">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a point or geometry value is within the bounds of the visual object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

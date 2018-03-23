@@ -1,7 +1,9 @@
-<Type Name="IDLFLAG" FullName="System.Runtime.InteropServices.ComTypes.IDLFLAG">
+﻿<Type Name="IDLFLAG" FullName="System.Runtime.InteropServices.ComTypes.IDLFLAG">
   <TypeSignature Language="C#" Value="public enum IDLFLAG" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IDLFLAG extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IDLFLAG" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IDLFLAG" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IDLFLAG" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="IDLFLAG_FIN" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.IDLFLAG IDLFLAG_FIN = int16(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IDLFLAG.IDLFLAG_FIN" />
+      <MemberSignature Language="VB.NET" Value="IDLFLAG_FIN" />
+      <MemberSignature Language="C++ CLI" Value="IDLFLAG_FIN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -66,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.IDLFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The parameter passes information from the caller to the callee.</summary>
       </Docs>
@@ -74,6 +79,8 @@
       <MemberSignature Language="C#" Value="IDLFLAG_FLCID" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.IDLFLAG IDLFLAG_FLCID = int16(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IDLFLAG.IDLFLAG_FLCID" />
+      <MemberSignature Language="VB.NET" Value="IDLFLAG_FLCID" />
+      <MemberSignature Language="C++ CLI" Value="IDLFLAG_FLCID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -96,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.IDLFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The parameter is the local identifier of a client application.</summary>
       </Docs>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="IDLFLAG_FOUT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.IDLFLAG IDLFLAG_FOUT = int16(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IDLFLAG.IDLFLAG_FOUT" />
+      <MemberSignature Language="VB.NET" Value="IDLFLAG_FOUT" />
+      <MemberSignature Language="C++ CLI" Value="IDLFLAG_FOUT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -126,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.IDLFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The parameter returns information from the callee to the caller.</summary>
       </Docs>
@@ -134,6 +145,8 @@
       <MemberSignature Language="C#" Value="IDLFLAG_FRETVAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.IDLFLAG IDLFLAG_FRETVAL = int16(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IDLFLAG.IDLFLAG_FRETVAL" />
+      <MemberSignature Language="VB.NET" Value="IDLFLAG_FRETVAL" />
+      <MemberSignature Language="C++ CLI" Value="IDLFLAG_FRETVAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -156,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.IDLFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The parameter is the return value of the member.</summary>
       </Docs>
@@ -164,6 +178,8 @@
       <MemberSignature Language="C#" Value="IDLFLAG_NONE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.IDLFLAG IDLFLAG_NONE = int16(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IDLFLAG.IDLFLAG_NONE" />
+      <MemberSignature Language="VB.NET" Value="IDLFLAG_NONE" />
+      <MemberSignature Language="C++ CLI" Value="IDLFLAG_NONE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -186,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.IDLFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Does not specify whether the parameter passes or receives information.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="SamlConstants" FullName="System.IdentityModel.Tokens.SamlConstants">
+﻿<Type Name="SamlConstants" FullName="System.IdentityModel.Tokens.SamlConstants">
   <TypeSignature Language="C#" Value="public static class SamlConstants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SamlConstants extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class SamlConstants" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlConstants abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public static string EmailName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string EmailName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.EmailName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EmailName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ EmailName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public static string EmailNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string EmailNamespace" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.EmailNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EmailNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ EmailNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public static string HolderOfKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string HolderOfKey" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.HolderOfKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HolderOfKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ HolderOfKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="public static int MajorVersionValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 MajorVersionValue" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.MajorVersionValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MajorVersionValue As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MajorVersionValue { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -130,6 +140,8 @@
       <MemberSignature Language="C#" Value="public static int MinorVersionValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 MinorVersionValue" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.MinorVersionValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinorVersionValue As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MinorVersionValue { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -151,6 +163,8 @@
       <MemberSignature Language="C#" Value="public static string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -176,6 +190,8 @@
       <MemberSignature Language="C#" Value="public const string Prefix;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Prefix" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SamlConstants.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Public Const Prefix As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Prefix;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -193,6 +209,8 @@
       <MemberSignature Language="C#" Value="public static string SenderVouches { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string SenderVouches" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.SenderVouches" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SenderVouches As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SenderVouches { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -218,6 +236,8 @@
       <MemberSignature Language="C#" Value="public static string UserName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string UserName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.UserName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UserName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -243,6 +263,8 @@
       <MemberSignature Language="C#" Value="public static string UserNameNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string UserNameNamespace" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConstants.UserNameNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserNameNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UserNameNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

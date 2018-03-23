@@ -1,7 +1,9 @@
-<Type Name="SqlException" FullName="System.Data.SqlClient.SqlException">
+﻿<Type Name="SqlException" FullName="System.Data.SqlClient.SqlException">
   <TypeSignature Language="C#" Value="public sealed class SqlException : System.Data.Common.DbException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlException extends System.Data.Common.DbException" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlException&#xA;Inherits DbException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlException sealed : System::Data::Common::DbException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -96,6 +98,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public byte Class { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Class" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Class { System::Byte get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -151,6 +155,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public Guid ClientConnectionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ClientConnectionId" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.ClientConnectionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientConnectionId As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ClientConnectionId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -186,6 +192,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlErrorCollection Errors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlErrorCollection Errors" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As SqlErrorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlErrorCollection ^ Errors { System::Data::SqlClient::SqlErrorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -203,7 +211,7 @@ catch (Exception ex) {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -238,6 +246,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (si As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -274,6 +284,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -325,6 +337,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -344,6 +358,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public int Number { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Number" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.Number" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Number As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Number { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -393,6 +409,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public string Procedure { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Procedure" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.Procedure" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Procedure As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Procedure { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -442,6 +460,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public string Server { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Server" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.Server" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Server { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -491,6 +511,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public override string Source { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Source As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Source { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -540,6 +562,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public byte State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 State" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlException.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte State { System::Byte get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -589,6 +613,8 @@ catch (Exception ex) {
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlException.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

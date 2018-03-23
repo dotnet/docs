@@ -1,7 +1,9 @@
-<Type Name="BindingOption" FullName="System.EnterpriseServices.BindingOption">
+﻿<Type Name="BindingOption" FullName="System.EnterpriseServices.BindingOption">
   <TypeSignature Language="C#" Value="public enum BindingOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed BindingOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.BindingOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BindingOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class BindingOption" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="BindingToPoolThread" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.BindingOption BindingToPoolThread = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BindingOption.BindingToPoolThread" />
+      <MemberSignature Language="VB.NET" Value="BindingToPoolThread" />
+      <MemberSignature Language="C++ CLI" Value="BindingToPoolThread" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.BindingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The work submitted by the activity is bound to a single STA.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="NoBinding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.BindingOption NoBinding = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BindingOption.NoBinding" />
+      <MemberSignature Language="VB.NET" Value="NoBinding" />
+      <MemberSignature Language="C++ CLI" Value="NoBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.BindingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The work submitted by the activity is not bound to a single STA.</summary>
       </Docs>

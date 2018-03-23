@@ -1,7 +1,9 @@
-<Type Name="ManagementInstaller" FullName="System.Management.Instrumentation.ManagementInstaller">
+﻿<Type Name="ManagementInstaller" FullName="System.Management.Instrumentation.ManagementInstaller">
   <TypeSignature Language="C#" Value="public class ManagementInstaller : System.Configuration.Install.Installer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagementInstaller extends System.Configuration.Install.Installer" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementInstaller" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagementInstaller&#xA;Inherits Installer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementInstaller : System::Configuration::Install::Installer" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public ManagementInstaller ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementInstaller();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public override void Commit (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.Commit(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public override string HelpText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpText" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementInstaller.HelpText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HelpText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public override void Install (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Install(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.Install(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Install (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Install(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -136,6 +146,8 @@
       <MemberSignature Language="C#" Value="public override void Rollback (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Rollback(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.Rollback(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -166,6 +178,8 @@
       <MemberSignature Language="C#" Value="public override void Uninstall (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Uninstall(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.Uninstall(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Uninstall (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Uninstall(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

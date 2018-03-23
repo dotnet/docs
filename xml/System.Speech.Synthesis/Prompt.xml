@@ -1,7 +1,9 @@
-<Type Name="Prompt" FullName="System.Speech.Synthesis.Prompt">
+﻿<Type Name="Prompt" FullName="System.Speech.Synthesis.Prompt">
   <TypeSignature Language="C#" Value="public class Prompt" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Prompt extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.Prompt" />
+  <TypeSignature Language="VB.NET" Value="Public Class Prompt" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Prompt" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.Prompt" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Prompt (System.Speech.Synthesis.PromptBuilder promptBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Synthesis.PromptBuilder promptBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.Prompt.#ctor(System.Speech.Synthesis.PromptBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Prompt(System::Speech::Synthesis::PromptBuilder ^ promptBuilder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -53,6 +65,8 @@
       <MemberSignature Language="C#" Value="public Prompt (string textToSpeak);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string textToSpeak) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.Prompt.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (textToSpeak As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Prompt(System::String ^ textToSpeak);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -111,6 +125,8 @@ namespace SampleSynthesis
       <MemberSignature Language="C#" Value="public Prompt (string textToSpeak, System.Speech.Synthesis.SynthesisTextFormat media);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string textToSpeak, valuetype System.Speech.Synthesis.SynthesisTextFormat media) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.Prompt.#ctor(System.String,System.Speech.Synthesis.SynthesisTextFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (textToSpeak As String, media As SynthesisTextFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Prompt(System::String ^ textToSpeak, System::Speech::Synthesis::SynthesisTextFormat media);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -184,6 +200,8 @@ namespace SampleSynthesis
       <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.Prompt.IsCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -198,14 +216,5 @@ namespace SampleSynthesis
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.Prompt" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

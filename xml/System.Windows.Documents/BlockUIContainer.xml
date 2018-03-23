@@ -1,7 +1,9 @@
-<Type Name="BlockUIContainer" FullName="System.Windows.Documents.BlockUIContainer">
+﻿<Type Name="BlockUIContainer" FullName="System.Windows.Documents.BlockUIContainer">
   <TypeSignature Language="C#" Value="public class BlockUIContainer : System.Windows.Documents.Block" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlockUIContainer extends System.Windows.Documents.Block" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.BlockUIContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlockUIContainer&#xA;Inherits Block" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlockUIContainer : System::Windows::Documents::Block" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +43,21 @@
     <altmember cref="T:System.Windows.Documents.InlineUIContainer" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.BlockUIContainer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BlockUIContainer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.BlockUIContainer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BlockUIContainer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +73,7 @@
       <MemberSignature Language="C#" Value="public BlockUIContainer (System.Windows.UIElement uiElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement uiElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.BlockUIContainer.#ctor(System.Windows.UIElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BlockUIContainer(System::Windows::UIElement ^ uiElement);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +102,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.UIElement Child { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement Child" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.BlockUIContainer.Child" />
+      <MemberSignature Language="VB.NET" Value="Public Property Child As UIElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ Child { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,14 +143,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.BlockUIContainer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

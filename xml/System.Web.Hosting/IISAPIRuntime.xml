@@ -1,7 +1,9 @@
-<Type Name="IISAPIRuntime" FullName="System.Web.Hosting.IISAPIRuntime">
+﻿<Type Name="IISAPIRuntime" FullName="System.Web.Hosting.IISAPIRuntime">
   <TypeSignature Language="C#" Value="public interface IISAPIRuntime" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IISAPIRuntime" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IISAPIRuntime" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IISAPIRuntime" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IISAPIRuntime" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("08a2c56f-7c16-41c1-a8be-432917a1a2d1")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public void DoGCCollect ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DoGCCollect() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IISAPIRuntime.DoGCCollect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DoGCCollect ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoGCCollect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public int ProcessRequest (IntPtr ecb, int useProcessModel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ProcessRequest([in]native int ecb, [in]int32 useProcessModel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IISAPIRuntime.ProcessRequest(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessRequest (ecb As IntPtr, useProcessModel As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ProcessRequest(IntPtr ecb, int useProcessModel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public void StartProcessing ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartProcessing() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IISAPIRuntime.StartProcessing" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StartProcessing ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartProcessing();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="public void StopProcessing ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopProcessing() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IISAPIRuntime.StopProcessing" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopProcessing ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopProcessing();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

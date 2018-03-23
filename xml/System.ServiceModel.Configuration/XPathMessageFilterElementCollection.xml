@@ -1,7 +1,9 @@
-<Type Name="XPathMessageFilterElementCollection" FullName="System.ServiceModel.Configuration.XPathMessageFilterElementCollection">
+﻿<Type Name="XPathMessageFilterElementCollection" FullName="System.ServiceModel.Configuration.XPathMessageFilterElementCollection">
   <TypeSignature Language="C#" Value="public sealed class XPathMessageFilterElementCollection : System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;System.ServiceModel.Configuration.XPathMessageFilterElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XPathMessageFilterElementCollection extends System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.XPathMessageFilterElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.XPathMessageFilterElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XPathMessageFilterElementCollection&#xA;Inherits ServiceModelConfigurationElementCollection(Of XPathMessageFilterElement)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageFilterElementCollection sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;System::ServiceModel::Configuration::XPathMessageFilterElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public XPathMessageFilterElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XPathMessageFilterElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilterElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override bool ContainsKey (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ContainsKey(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XPathMessageFilterElementCollection.ContainsKey(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContainsKey (key As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ContainsKey(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XPathMessageFilterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +98,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Configuration.XPathMessageFilterElement this[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.XPathMessageFilterElement Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XPathMessageFilterElementCollection.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(key As Object) As XPathMessageFilterElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Configuration::XPathMessageFilterElement ^ default[System::Object ^] { System::ServiceModel::Configuration::XPathMessageFilterElement ^ get(System::Object ^ key); void set(System::Object ^ key, System::ServiceModel::Configuration::XPathMessageFilterElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +122,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XPathMessageFilterElementCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

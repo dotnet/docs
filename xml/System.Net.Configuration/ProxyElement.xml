@@ -1,7 +1,9 @@
-<Type Name="ProxyElement" FullName="System.Net.Configuration.ProxyElement">
+﻿<Type Name="ProxyElement" FullName="System.Net.Configuration.ProxyElement">
   <TypeSignature Language="C#" Value="public sealed class ProxyElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProxyElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ProxyElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProxyElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProxyElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public ProxyElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ProxyElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProxyElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.ProxyElement.AutoDetectValues AutoDetect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Configuration.ProxyElement/AutoDetectValues AutoDetect" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.AutoDetect" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoDetect As ProxyElement.AutoDetectValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ProxyElement::AutoDetectValues AutoDetect { System::Net::Configuration::ProxyElement::AutoDetectValues get(); void set(System::Net::Configuration::ProxyElement::AutoDetectValues value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.ProxyElement.BypassOnLocalValues BypassOnLocal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Configuration.ProxyElement/BypassOnLocalValues BypassOnLocal" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.BypassOnLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property BypassOnLocal As ProxyElement.BypassOnLocalValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ProxyElement::BypassOnLocalValues BypassOnLocal { System::Net::Configuration::ProxyElement::BypassOnLocalValues get(); void set(System::Net::Configuration::ProxyElement::BypassOnLocalValues value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +153,8 @@
       <MemberSignature Language="C#" Value="public Uri ProxyAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ProxyAddress" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.ProxyAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProxyAddress As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ProxyAddress { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -167,6 +179,8 @@
       <MemberSignature Language="C#" Value="public Uri ScriptLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ScriptLocation" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.ScriptLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScriptLocation As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ScriptLocation { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +205,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.ProxyElement.UseSystemDefaultValues UseSystemDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Configuration.ProxyElement/UseSystemDefaultValues UseSystemDefault" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.UseSystemDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSystemDefault As ProxyElement.UseSystemDefaultValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ProxyElement::UseSystemDefaultValues UseSystemDefault { System::Net::Configuration::ProxyElement::UseSystemDefaultValues get(); void set(System::Net::Configuration::ProxyElement::UseSystemDefaultValues value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TextSource" FullName="System.Windows.Media.TextFormatting.TextSource">
+﻿<Type Name="TextSource" FullName="System.Windows.Media.TextFormatting.TextSource">
   <TypeSignature Language="C#" Value="public abstract class TextSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextSource extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextSource" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextSource abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected TextSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextSpan&lt;System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange&gt; GetPrecedingText (int textSourceCharacterIndexLimit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextSpan`1&lt;class System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange&gt; GetPrecedingText(int32 textSourceCharacterIndexLimit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextSource.GetPrecedingText(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPrecedingText (textSourceCharacterIndexLimit As Integer) As TextSpan(Of CultureSpecificCharacterBufferRange)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::TextSpan&lt;System::Windows::Media::TextFormatting::CultureSpecificCharacterBufferRange ^&gt; ^ GetPrecedingText(int textSourceCharacterIndexLimit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetTextEffectCharacterIndexFromTextSourceCharacterIndex (int textSourceCharacterIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetTextEffectCharacterIndexFromTextSourceCharacterIndex(int32 textSourceCharacterIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextSource.GetTextEffectCharacterIndexFromTextSourceCharacterIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTextEffectCharacterIndexFromTextSourceCharacterIndex (textSourceCharacterIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetTextEffectCharacterIndexFromTextSourceCharacterIndex(int textSourceCharacterIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextRun GetTextRun (int textSourceCharacterIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextRun GetTextRun(int32 textSourceCharacterIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextSource.GetTextRun(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTextRun (textSourceCharacterIndex As Integer) As TextRun" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::TextRun ^ GetTextRun(int textSourceCharacterIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +164,8 @@
       <MemberSignature Language="C#" Value="public double PixelsPerDip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 PixelsPerDip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextSource.PixelsPerDip" />
+      <MemberSignature Language="VB.NET" Value="Public Property PixelsPerDip As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerDip { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

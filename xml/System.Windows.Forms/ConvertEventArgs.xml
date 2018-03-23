@@ -1,7 +1,9 @@
-<Type Name="ConvertEventArgs" FullName="System.Windows.Forms.ConvertEventArgs">
+﻿<Type Name="ConvertEventArgs" FullName="System.Windows.Forms.ConvertEventArgs">
   <TypeSignature Language="C#" Value="public class ConvertEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConvertEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ConvertEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConvertEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConvertEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public ConvertEventArgs (object value, Type desiredType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value, class System.Type desiredType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ConvertEventArgs.#ctor(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object, desiredType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConvertEventArgs(System::Object ^ value, Type ^ desiredType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public Type DesiredType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DesiredType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ConvertEventArgs.DesiredType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesiredType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DesiredType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ConvertEventArgs.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

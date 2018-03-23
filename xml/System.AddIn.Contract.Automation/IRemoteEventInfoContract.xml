@@ -1,7 +1,9 @@
-<Type Name="IRemoteEventInfoContract" FullName="System.AddIn.Contract.Automation.IRemoteEventInfoContract">
+﻿<Type Name="IRemoteEventInfoContract" FullName="System.AddIn.Contract.Automation.IRemoteEventInfoContract">
   <TypeSignature Language="C#" Value="public interface IRemoteEventInfoContract : System.AddIn.Contract.IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteEventInfoContract implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteEventInfoContract&#xA;Implements IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteEventInfoContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteMethodInfoContract GetAddMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteMethodInfoContract GetAddMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetAddMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAddMethod () As IRemoteMethodInfoContract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::IRemoteMethodInfoContract ^ GetAddMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.RemoteMemberData GetMemberData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.Automation.RemoteMemberData GetMemberData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetMemberData" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMemberData () As RemoteMemberData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::RemoteMemberData GetMemberData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteMethodInfoContract GetRemoveMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteMethodInfoContract GetRemoveMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetRemoveMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRemoveMethod () As IRemoteMethodInfoContract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::IRemoteMethodInfoContract ^ GetRemoveMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

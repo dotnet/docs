@@ -1,7 +1,9 @@
-<Type Name="ActivationOption" FullName="System.EnterpriseServices.ActivationOption">
+﻿<Type Name="ActivationOption" FullName="System.EnterpriseServices.ActivationOption">
   <TypeSignature Language="C#" Value="public enum ActivationOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ActivationOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ActivationOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ActivationOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ActivationOption" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="Library" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ActivationOption Library = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ActivationOption.Library" />
+      <MemberSignature Language="VB.NET" Value="Library" />
+      <MemberSignature Language="C++ CLI" Value="Library" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.ActivationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that serviced components in the marked application are activated in the creator's process.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ActivationOption Server = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ActivationOption.Server" />
+      <MemberSignature Language="VB.NET" Value="Server" />
+      <MemberSignature Language="C++ CLI" Value="Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.ActivationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that serviced components in the marked application are activated in a system-provided process.</summary>
       </Docs>

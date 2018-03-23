@@ -1,7 +1,9 @@
-<Type Name="DayOfWeek" FullName="System.DayOfWeek">
+﻿<Type Name="DayOfWeek" FullName="System.DayOfWeek">
   <TypeSignature Language="C#" Value="public enum DayOfWeek" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DayOfWeek extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DayOfWeek" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DayOfWeek" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DayOfWeek" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +58,8 @@
       <MemberSignature Language="C#" Value="Friday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Friday = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Friday" />
+      <MemberSignature Language="VB.NET" Value="Friday" />
+      <MemberSignature Language="C++ CLI" Value="Friday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -77,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates Friday.</summary>
       </Docs>
@@ -85,6 +90,8 @@
       <MemberSignature Language="C#" Value="Monday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Monday = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Monday" />
+      <MemberSignature Language="VB.NET" Value="Monday" />
+      <MemberSignature Language="C++ CLI" Value="Monday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -106,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates Monday.</summary>
       </Docs>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="Saturday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Saturday = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Saturday" />
+      <MemberSignature Language="VB.NET" Value="Saturday" />
+      <MemberSignature Language="C++ CLI" Value="Saturday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -135,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Indicates Saturday.</summary>
       </Docs>
@@ -143,6 +154,8 @@
       <MemberSignature Language="C#" Value="Sunday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Sunday = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Sunday" />
+      <MemberSignature Language="VB.NET" Value="Sunday" />
+      <MemberSignature Language="C++ CLI" Value="Sunday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -164,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates Sunday.</summary>
       </Docs>
@@ -172,6 +186,8 @@
       <MemberSignature Language="C#" Value="Thursday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Thursday = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Thursday" />
+      <MemberSignature Language="VB.NET" Value="Thursday" />
+      <MemberSignature Language="C++ CLI" Value="Thursday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -193,6 +209,7 @@
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates Thursday.</summary>
       </Docs>
@@ -201,6 +218,8 @@
       <MemberSignature Language="C#" Value="Tuesday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Tuesday = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Tuesday" />
+      <MemberSignature Language="VB.NET" Value="Tuesday" />
+      <MemberSignature Language="C++ CLI" Value="Tuesday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -222,6 +241,7 @@
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates Tuesday.</summary>
       </Docs>
@@ -230,6 +250,8 @@
       <MemberSignature Language="C#" Value="Wednesday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DayOfWeek Wednesday = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.DayOfWeek.Wednesday" />
+      <MemberSignature Language="VB.NET" Value="Wednesday" />
+      <MemberSignature Language="C++ CLI" Value="Wednesday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -251,6 +273,7 @@
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates Wednesday.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="MergeLocalizationDirectives" FullName="Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives">
+﻿<Type Name="MergeLocalizationDirectives" FullName="Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives">
   <TypeSignature Language="C#" Value="public sealed class MergeLocalizationDirectives : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MergeLocalizationDirectives extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MergeLocalizationDirectives&#xA;Inherits Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MergeLocalizationDirectives sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public MergeLocalizationDirectives ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MergeLocalizationDirectives();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] GeneratedLocalizationFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] GeneratedLocalizationFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.GeneratedLocalizationFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property GeneratedLocalizationFiles As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ GeneratedLocalizationFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="public string OutputFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.OutputFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

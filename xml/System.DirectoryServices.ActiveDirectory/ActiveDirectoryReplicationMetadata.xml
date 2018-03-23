@@ -1,7 +1,9 @@
-<Type Name="ActiveDirectoryReplicationMetadata" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata">
+﻿<Type Name="ActiveDirectoryReplicationMetadata" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata">
   <TypeSignature Language="C#" Value="public class ActiveDirectoryReplicationMetadata : System.Collections.DictionaryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectoryReplicationMetadata extends System.Collections.DictionaryBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectoryReplicationMetadata&#xA;Inherits DictionaryBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryReplicationMetadata : System::Collections::DictionaryBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection AttributeNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection AttributeNames" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata.AttributeNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeNames As ReadOnlyStringCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReadOnlyStringCollection ^ AttributeNames { System::DirectoryServices::ActiveDirectory::ReadOnlyStringCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (attributeName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ attributeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.AttributeMetadata[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.AttributeMetadata[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata.CopyTo(System.DirectoryServices.ActiveDirectory.AttributeMetadata[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As AttributeMetadata(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::AttributeMetadata ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.AttributeMetadata this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.AttributeMetadata Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As AttributeMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::AttributeMetadata ^ default[System::String ^] { System::DirectoryServices::ActiveDirectory::AttributeMetadata ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -121,6 +131,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.AttributeMetadataCollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.AttributeMetadataCollection Values" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As AttributeMetadataCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::AttributeMetadataCollection ^ Values { System::DirectoryServices::ActiveDirectory::AttributeMetadataCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

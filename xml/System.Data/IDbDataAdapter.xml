@@ -1,7 +1,9 @@
-<Type Name="IDbDataAdapter" FullName="System.Data.IDbDataAdapter">
+﻿<Type Name="IDbDataAdapter" FullName="System.Data.IDbDataAdapter">
   <TypeSignature Language="C#" Value="public interface IDbDataAdapter : System.Data.IDataAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDbDataAdapter implements class System.Data.IDataAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Data.IDbDataAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDbDataAdapter&#xA;Implements IDataAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDbDataAdapter : System::Data::IDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Data.IDbCommand DeleteCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand DeleteCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbDataAdapter.DeleteCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteCommand As IDbCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbCommand ^ DeleteCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -119,6 +123,8 @@
       <MemberSignature Language="C#" Value="public System.Data.IDbCommand InsertCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand InsertCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbDataAdapter.InsertCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property InsertCommand As IDbCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbCommand ^ InsertCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -166,6 +172,8 @@
       <MemberSignature Language="C#" Value="public System.Data.IDbCommand SelectCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand SelectCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbDataAdapter.SelectCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectCommand As IDbCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbCommand ^ SelectCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -210,6 +218,8 @@
       <MemberSignature Language="C#" Value="public System.Data.IDbCommand UpdateCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand UpdateCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbDataAdapter.UpdateCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateCommand As IDbCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbCommand ^ UpdateCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CookieHandlerElement" FullName="System.IdentityModel.Services.CookieHandlerElement">
+﻿<Type Name="CookieHandlerElement" FullName="System.IdentityModel.Services.CookieHandlerElement">
   <TypeSignature Language="C#" Value="public class CookieHandlerElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CookieHandlerElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.CookieHandlerElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class CookieHandlerElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CookieHandlerElement : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public CookieHandlerElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandlerElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CookieHandlerElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Services.ChunkedCookieHandlerElement ChunkedCookieHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Services.ChunkedCookieHandlerElement ChunkedCookieHandler" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChunkedCookieHandler As ChunkedCookieHandlerElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::ChunkedCookieHandlerElement ^ ChunkedCookieHandler { System::IdentityModel::Services::ChunkedCookieHandlerElement ^ get(); void set(System::IdentityModel::Services::ChunkedCookieHandlerElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.CustomTypeElement CustomCookieHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.CustomTypeElement CustomCookieHandler" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomCookieHandler As CustomTypeElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::CustomTypeElement ^ CustomCookieHandler { System::IdentityModel::Configuration::CustomTypeElement ^ get(); void set(System::IdentityModel::Configuration::CustomTypeElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="public string Domain { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Domain" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.Domain" />
+      <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -143,6 +153,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Services.CookieHandler GetConfiguredCookieHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Services.CookieHandler GetConfiguredCookieHandler() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandlerElement.GetConfiguredCookieHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfiguredCookieHandler () As CookieHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Services::CookieHandler ^ GetConfiguredCookieHandler();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -170,6 +182,8 @@
       <MemberSignature Language="C#" Value="public bool HideFromScript { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HideFromScript" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.HideFromScript" />
+      <MemberSignature Language="VB.NET" Value="Public Property HideFromScript As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HideFromScript { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -203,6 +217,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Services.CookieHandlerMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Services.CookieHandlerMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As CookieHandlerMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::CookieHandlerMode Mode { System::IdentityModel::Services::CookieHandlerMode get(); void set(System::IdentityModel::Services::CookieHandlerMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -235,6 +251,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -265,6 +283,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -297,6 +317,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan PersistentSessionLifetime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan PersistentSessionLifetime" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.PersistentSessionLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistentSessionLifetime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PersistentSessionLifetime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -330,6 +352,8 @@
       <MemberSignature Language="C#" Value="public bool RequireSsl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireSsl" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandlerElement.RequireSsl" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireSsl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSsl { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="FormViewInsertedEventHandler" FullName="System.Web.UI.WebControls.FormViewInsertedEventHandler">
+﻿<Type Name="FormViewInsertedEventHandler" FullName="System.Web.UI.WebControls.FormViewInsertedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FormViewInsertedEventHandler(object sender, FormViewInsertedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewInsertedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewInsertedEventHandler(sender As Object, e As FormViewInsertedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FormViewInsertedEventHandler(System::Object ^ sender, FormViewInsertedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

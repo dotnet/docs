@@ -1,7 +1,9 @@
-<Type Name="LinkedResource" FullName="System.Net.Mail.LinkedResource">
+﻿<Type Name="LinkedResource" FullName="System.Net.Mail.LinkedResource">
   <TypeSignature Language="C#" Value="public class LinkedResource : System.Net.Mail.AttachmentBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinkedResource extends System.Net.Mail.AttachmentBase" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.LinkedResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinkedResource&#xA;Inherits AttachmentBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinkedResource : System::Net::Mail::AttachmentBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,10 +26,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.LinkedResource" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinkedResource (System.IO.Stream contentStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream contentStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contentStream As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedResource(System::IO::Stream ^ contentStream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +71,8 @@
       <MemberSignature Language="C#" Value="public LinkedResource (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedResource(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +102,7 @@
       <MemberSignature Language="C#" Value="public LinkedResource (System.IO.Stream contentStream, System.Net.Mime.ContentType contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream contentStream, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.#ctor(System.IO.Stream,System.Net.Mime.ContentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedResource(System::IO::Stream ^ contentStream, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +136,8 @@
       <MemberSignature Language="C#" Value="public LinkedResource (System.IO.Stream contentStream, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream contentStream, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.#ctor(System.IO.Stream,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contentStream As Stream, mediaType As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedResource(System::IO::Stream ^ contentStream, System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +171,7 @@
       <MemberSignature Language="C#" Value="public LinkedResource (string fileName, System.Net.Mime.ContentType contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.#ctor(System.String,System.Net.Mime.ContentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedResource(System::String ^ fileName, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -185,6 +205,8 @@
       <MemberSignature Language="C#" Value="public LinkedResource (string fileName, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, mediaType As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedResource(System::String ^ fileName, System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +240,8 @@
       <MemberSignature Language="C#" Value="public Uri ContentLink { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ContentLink" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.LinkedResource.ContentLink" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentLink As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ContentLink { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,10 +265,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateLinkedResourceFromString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Net.Mail.LinkedResource" /> object from the content stored in a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateLinkedResourceFromString">
       <MemberSignature Language="C#" Value="public static System.Net.Mail.LinkedResource CreateLinkedResourceFromString (string content);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Mail.LinkedResource CreateLinkedResourceFromString(string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.CreateLinkedResourceFromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateLinkedResourceFromString (content As String) As LinkedResource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::LinkedResource ^ CreateLinkedResourceFromString(System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -277,6 +313,7 @@
       <MemberSignature Language="C#" Value="public static System.Net.Mail.LinkedResource CreateLinkedResourceFromString (string content, System.Net.Mime.ContentType contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Mail.LinkedResource CreateLinkedResourceFromString(string content, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.CreateLinkedResourceFromString(System.String,System.Net.Mime.ContentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::LinkedResource ^ CreateLinkedResourceFromString(System::String ^ content, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +348,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.Mail.LinkedResource CreateLinkedResourceFromString (string content, System.Text.Encoding contentEncoding, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Mail.LinkedResource CreateLinkedResourceFromString(string content, class System.Text.Encoding contentEncoding, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResource.CreateLinkedResourceFromString(System.String,System.Text.Encoding,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateLinkedResourceFromString (content As String, contentEncoding As Encoding, mediaType As String) As LinkedResource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::LinkedResource ^ CreateLinkedResourceFromString(System::String ^ content, System::Text::Encoding ^ contentEncoding, System::String ^ mediaType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -343,25 +382,5 @@
         <exception cref="T:System.ArgumentNullException">The specified content string is null.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateLinkedResourceFromString">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.Net.Mail.LinkedResource" /> object from the content stored in a <see cref="T:System.String" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.LinkedResource" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

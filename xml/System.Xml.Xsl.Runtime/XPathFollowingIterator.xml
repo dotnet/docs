@@ -1,7 +1,9 @@
-<Type Name="XPathFollowingIterator" FullName="System.Xml.Xsl.Runtime.XPathFollowingIterator">
+﻿<Type Name="XPathFollowingIterator" FullName="System.Xml.Xsl.Runtime.XPathFollowingIterator">
   <TypeSignature Language="C#" Value="public struct XPathFollowingIterator" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit XPathFollowingIterator extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XPathFollowingIterator" />
+  <TypeSignature Language="VB.NET" Value="Public Structure XPathFollowingIterator" />
+  <TypeSignature Language="C++ CLI" Value="public value class XPathFollowingIterator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public void Create (System.Xml.XPath.XPathNavigator input, System.Xml.Xsl.Runtime.XmlNavigatorFilter filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Create(class System.Xml.XPath.XPathNavigator input, class System.Xml.Xsl.Runtime.XmlNavigatorFilter filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XPathFollowingIterator.Create(System.Xml.XPath.XPathNavigator,System.Xml.Xsl.Runtime.XmlNavigatorFilter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Create (input As XPathNavigator, filter As XmlNavigatorFilter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create(System::Xml::XPath::XPathNavigator ^ input, System::Xml::Xsl::Runtime::XmlNavigatorFilter ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathNavigator Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XPath.XPathNavigator Current" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XPathFollowingIterator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As XPathNavigator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XPath::XPathNavigator ^ Current { System::Xml::XPath::XPathNavigator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -96,6 +102,8 @@
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XPathFollowingIterator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

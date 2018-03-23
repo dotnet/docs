@@ -1,7 +1,9 @@
-<Type Name="ActivityExecutionContextManager" FullName="System.Workflow.ComponentModel.ActivityExecutionContextManager">
+﻿<Type Name="ActivityExecutionContextManager" FullName="System.Workflow.ComponentModel.ActivityExecutionContextManager">
   <TypeSignature Language="C#" Value="public sealed class ActivityExecutionContextManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityExecutionContextManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionContextManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityExecutionContextManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityExecutionContextManager sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CompleteExecutionContext">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Marks an execution context as completed.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompleteExecutionContext">
       <MemberSignature Language="C#" Value="public void CompleteExecutionContext (System.Workflow.ComponentModel.ActivityExecutionContext childContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompleteExecutionContext(class System.Workflow.ComponentModel.ActivityExecutionContext childContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CompleteExecutionContext (childContext As ActivityExecutionContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompleteExecutionContext(System::Workflow::ComponentModel::ActivityExecutionContext ^ childContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -67,6 +80,8 @@
       <MemberSignature Language="C#" Value="public void CompleteExecutionContext (System.Workflow.ComponentModel.ActivityExecutionContext childContext, bool forcePersist);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompleteExecutionContext(class System.Workflow.ComponentModel.ActivityExecutionContext childContext, bool forcePersist) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext(System.Workflow.ComponentModel.ActivityExecutionContext,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CompleteExecutionContext (childContext As ActivityExecutionContext, forcePersist As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompleteExecutionContext(System::Workflow::ComponentModel::ActivityExecutionContext ^ childContext, bool forcePersist);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -104,6 +119,7 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContext CreateExecutionContext (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.ActivityExecutionContext CreateExecutionContext(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.CreateExecutionContext(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::ActivityExecutionContext ^ CreateExecutionContext(System::Workflow::ComponentModel::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -130,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.ActivityExecutionContext&gt; ExecutionContexts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.ActivityExecutionContext&gt; ExecutionContexts" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContextManager.ExecutionContexts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionContexts As ReadOnlyCollection(Of ActivityExecutionContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::ActivityExecutionContext ^&gt; ^ ExecutionContexts { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::ActivityExecutionContext ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -148,6 +166,7 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContext GetExecutionContext (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.ActivityExecutionContext GetExecutionContext(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.GetExecutionContext(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::ActivityExecutionContext ^ GetExecutionContext(System::Workflow::ComponentModel::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -179,6 +198,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContext GetPersistedExecutionContext (Guid contextGuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.ActivityExecutionContext GetPersistedExecutionContext(valuetype System.Guid contextGuid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.GetPersistedExecutionContext(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPersistedExecutionContext (contextGuid As Guid) As ActivityExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::ActivityExecutionContext ^ GetPersistedExecutionContext(Guid contextGuid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -201,6 +222,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Guid&gt; PersistedExecutionContexts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Guid&gt; PersistedExecutionContexts" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContextManager.PersistedExecutionContexts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PersistedExecutionContexts As IEnumerable(Of Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Guid&gt; ^ PersistedExecutionContexts { System::Collections::Generic::IEnumerable&lt;Guid&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -215,14 +238,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CompleteExecutionContext">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Marks an execution context as completed.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

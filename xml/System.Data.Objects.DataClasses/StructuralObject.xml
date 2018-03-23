@@ -1,7 +1,9 @@
-<Type Name="StructuralObject" FullName="System.Data.Objects.DataClasses.StructuralObject">
+﻿<Type Name="StructuralObject" FullName="System.Data.Objects.DataClasses.StructuralObject">
   <TypeSignature Language="C#" Value="public abstract class StructuralObject : System.ComponentModel.INotifyPropertyChanged, System.ComponentModel.INotifyPropertyChanging" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit StructuralObject extends System.Object implements class System.ComponentModel.INotifyPropertyChanged, class System.ComponentModel.INotifyPropertyChanging" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.StructuralObject" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class StructuralObject&#xA;Implements INotifyPropertyChanged, INotifyPropertyChanging" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StructuralObject abstract : System::ComponentModel::INotifyPropertyChanged, System::ComponentModel::INotifyPropertyChanging" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected StructuralObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StructuralObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,9 +54,11 @@
       </Docs>
     </Member>
     <Member MemberName="BinaryEquals">
-      <MemberSignature Language="C#" Value="protected static bool BinaryEquals (byte[] first, byte[] second);" />
+      <MemberSignature Language="C#" Value="protected internal static bool BinaryEquals (byte[] first, byte[] second);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig bool BinaryEquals(unsigned int8[] first, unsigned int8[] second) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.BinaryEquals(System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function BinaryEquals (first As Byte(), second As Byte()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static bool BinaryEquals(cli::array &lt;System::Byte&gt; ^ first, cli::array &lt;System::Byte&gt; ^ second);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="protected static DateTime DefaultDateTimeValue ();" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig valuetype System.DateTime DefaultDateTimeValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.DefaultDateTimeValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function DefaultDateTimeValue () As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static DateTime DefaultDateTimeValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public static readonly string EntityKeyPropertyName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string EntityKeyPropertyName" />
       <MemberSignature Language="DocId" Value="F:System.Data.Objects.DataClasses.StructuralObject.EntityKeyPropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EntityKeyPropertyName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ EntityKeyPropertyName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -111,9 +121,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetValidValue">
-      <MemberSignature Language="C#" Value="protected static byte[] GetValidValue (byte[] currentValue);" />
+      <MemberSignature Language="C#" Value="protected internal static byte[] GetValidValue (byte[] currentValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int8[] GetValidValue(unsigned int8[] currentValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.GetValidValue(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function GetValidValue (currentValue As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetValidValue(cli::array &lt;System::Byte&gt; ^ currentValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -133,9 +145,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetValidValue&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected T GetValidValue&lt;T&gt; (T currentValue, string property, bool isNullable, bool isInitialized) where T : System.Data.Objects.DataClasses.ComplexObjectnew();" />
+      <MemberSignature Language="C#" Value="protected internal T GetValidValue&lt;T&gt; (T currentValue, string property, bool isNullable, bool isInitialized) where T : System.Data.Objects.DataClasses.ComplexObjectnew();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance !!T GetValidValue&lt;.ctor (class System.Data.Objects.DataClasses.ComplexObject) T&gt;(!!T currentValue, string property, bool isNullable, bool isInitialized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.GetValidValue``1(``0,System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function GetValidValue(Of T As {ComplexObjectNew}) (currentValue As T, property As String, isNullable As Boolean, isInitialized As Boolean) As T" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Objects::DataClasses::ComplexObjectgcnew() T GetValidValue(T currentValue, System::String ^ property, bool isNullable, bool isInitialized);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -173,6 +187,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (string property);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.OnPropertyChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (property As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::String ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -194,6 +210,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanging (string property);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanging(string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.OnPropertyChanging(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanging (property As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanging(System::String ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -215,6 +233,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Data.Objects.DataClasses.StructuralObject.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -232,6 +252,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangingEventHandler PropertyChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangingEventHandler PropertyChanging" />
       <MemberSignature Language="DocId" Value="E:System.Data.Objects.DataClasses.StructuralObject.PropertyChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanging As PropertyChangingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangingEventHandler ^ PropertyChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -249,6 +271,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ReportPropertyChanged (string property);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReportPropertyChanged(string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.ReportPropertyChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReportPropertyChanged (property As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReportPropertyChanged(System::String ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -270,6 +294,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ReportPropertyChanging (string property);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReportPropertyChanging(string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.ReportPropertyChanging(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReportPropertyChanging (property As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReportPropertyChanging(System::String ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -287,10 +313,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValidValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes sure the value being set for a property is valid.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static bool SetValidValue (bool value);" />
+      <MemberSignature Language="C#" Value="protected internal static bool SetValidValue (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig bool SetValidValue(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static bool SetValidValue(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -310,9 +347,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static byte SetValidValue (byte value);" />
+      <MemberSignature Language="C#" Value="protected internal static byte SetValidValue (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int8 SetValidValue(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Byte) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Byte SetValidValue(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -332,9 +371,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static DateTime SetValidValue (DateTime value);" />
+      <MemberSignature Language="C#" Value="protected internal static DateTime SetValidValue (DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.DateTime SetValidValue(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DateTime) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static DateTime SetValidValue(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -354,9 +395,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static DateTimeOffset SetValidValue (DateTimeOffset value);" />
+      <MemberSignature Language="C#" Value="protected internal static DateTimeOffset SetValidValue (DateTimeOffset value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.DateTimeOffset SetValidValue(valuetype System.DateTimeOffset value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DateTimeOffset) As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static DateTimeOffset SetValidValue(DateTimeOffset value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -376,9 +419,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static decimal SetValidValue (decimal value);" />
+      <MemberSignature Language="C#" Value="protected internal static decimal SetValidValue (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Decimal SetValidValue(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Decimal SetValidValue(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -398,9 +443,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static double SetValidValue (double value);" />
+      <MemberSignature Language="C#" Value="protected internal static double SetValidValue (double value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig float64 SetValidValue(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static double SetValidValue(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -420,9 +467,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Guid SetValidValue (Guid value);" />
+      <MemberSignature Language="C#" Value="protected internal static Guid SetValidValue (Guid value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Guid SetValidValue(valuetype System.Guid value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Guid) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Guid SetValidValue(Guid value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -442,9 +491,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static short SetValidValue (short value);" />
+      <MemberSignature Language="C#" Value="protected internal static short SetValidValue (short value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig int16 SetValidValue(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Short) As Short" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static short SetValidValue(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -464,9 +515,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static int SetValidValue (int value);" />
+      <MemberSignature Language="C#" Value="protected internal static int SetValidValue (int value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig int32 SetValidValue(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static int SetValidValue(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -486,9 +539,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static long SetValidValue (long value);" />
+      <MemberSignature Language="C#" Value="protected internal static long SetValidValue (long value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig int64 SetValidValue(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Long) As Long" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static long SetValidValue(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -508,9 +563,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;bool&gt; SetValidValue (Nullable&lt;bool&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;bool&gt; SetValidValue (Nullable&lt;bool&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;bool&gt; SetValidValue(valuetype System.Nullable`1&lt;bool&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Boolean)) As Nullable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;bool&gt; SetValidValue(Nullable&lt;bool&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -530,9 +587,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;byte&gt; SetValidValue (Nullable&lt;byte&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;byte&gt; SetValidValue (Nullable&lt;byte&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;unsigned int8&gt; SetValidValue(valuetype System.Nullable`1&lt;unsigned int8&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Byte)) As Nullable(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::Byte&gt; SetValidValue(Nullable&lt;System::Byte&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -552,9 +611,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;DateTime&gt; SetValidValue (Nullable&lt;DateTime&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;DateTime&gt; SetValidValue (Nullable&lt;DateTime&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of DateTime)) As Nullable(Of DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;DateTime&gt; SetValidValue(Nullable&lt;DateTime&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -574,9 +635,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;DateTimeOffset&gt; SetValidValue (Nullable&lt;DateTimeOffset&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;DateTimeOffset&gt; SetValidValue (Nullable&lt;DateTimeOffset&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of DateTimeOffset)) As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;DateTimeOffset&gt; SetValidValue(Nullable&lt;DateTimeOffset&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -596,9 +659,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;decimal&gt; SetValidValue (Nullable&lt;decimal&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;decimal&gt; SetValidValue (Nullable&lt;decimal&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Decimal})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Decimal)) As Nullable(Of Decimal)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::Decimal&gt; SetValidValue(Nullable&lt;System::Decimal&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -618,9 +683,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;double&gt; SetValidValue (Nullable&lt;double&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;double&gt; SetValidValue (Nullable&lt;double&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;float64&gt; SetValidValue(valuetype System.Nullable`1&lt;float64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Double)) As Nullable(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;double&gt; SetValidValue(Nullable&lt;double&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -640,9 +707,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;Guid&gt; SetValidValue (Nullable&lt;Guid&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;Guid&gt; SetValidValue (Nullable&lt;Guid&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.Guid&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Guid})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Guid)) As Nullable(Of Guid)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;Guid&gt; SetValidValue(Nullable&lt;Guid&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -662,9 +731,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;short&gt; SetValidValue (Nullable&lt;short&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;short&gt; SetValidValue (Nullable&lt;short&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;int16&gt; SetValidValue(valuetype System.Nullable`1&lt;int16&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Short)) As Nullable(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;short&gt; SetValidValue(Nullable&lt;short&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -684,9 +755,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;int&gt; SetValidValue (Nullable&lt;int&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;int&gt; SetValidValue (Nullable&lt;int&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;int32&gt; SetValidValue(valuetype System.Nullable`1&lt;int32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Integer)) As Nullable(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;int&gt; SetValidValue(Nullable&lt;int&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -706,9 +779,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;long&gt; SetValidValue (Nullable&lt;long&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;long&gt; SetValidValue (Nullable&lt;long&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;int64&gt; SetValidValue(valuetype System.Nullable`1&lt;int64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int64})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Long)) As Nullable(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;long&gt; SetValidValue(Nullable&lt;long&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -728,9 +803,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;sbyte&gt; SetValidValue (Nullable&lt;sbyte&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;sbyte&gt; SetValidValue (Nullable&lt;sbyte&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;int8&gt; SetValidValue(valuetype System.Nullable`1&lt;int8&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.SByte})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of SByte)) As Nullable(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::SByte&gt; SetValidValue(Nullable&lt;System::SByte&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -755,9 +832,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;float&gt; SetValidValue (Nullable&lt;float&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;float&gt; SetValidValue (Nullable&lt;float&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;float32&gt; SetValidValue(valuetype System.Nullable`1&lt;float32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Single)) As Nullable(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;float&gt; SetValidValue(Nullable&lt;float&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -777,9 +856,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;TimeSpan&gt; SetValidValue (Nullable&lt;TimeSpan&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;TimeSpan&gt; SetValidValue (Nullable&lt;TimeSpan&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.TimeSpan})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of TimeSpan)) As Nullable(Of TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;TimeSpan&gt; SetValidValue(Nullable&lt;TimeSpan&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -799,9 +880,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;ushort&gt; SetValidValue (Nullable&lt;ushort&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;ushort&gt; SetValidValue (Nullable&lt;ushort&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;unsigned int16&gt; SetValidValue(valuetype System.Nullable`1&lt;unsigned int16&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt16})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of UShort)) As Nullable(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt16&gt; SetValidValue(Nullable&lt;System::UInt16&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -826,9 +909,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;uint&gt; SetValidValue (Nullable&lt;uint&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;uint&gt; SetValidValue (Nullable&lt;uint&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;unsigned int32&gt; SetValidValue(valuetype System.Nullable`1&lt;unsigned int32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of UInteger)) As Nullable(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt32&gt; SetValidValue(Nullable&lt;System::UInt32&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -853,9 +938,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;ulong&gt; SetValidValue (Nullable&lt;ulong&gt; value);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;ulong&gt; SetValidValue (Nullable&lt;ulong&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;unsigned int64&gt; SetValidValue(valuetype System.Nullable`1&lt;unsigned int64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt64})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of ULong)) As Nullable(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt64&gt; SetValidValue(Nullable&lt;System::UInt64&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -880,9 +967,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static sbyte SetValidValue (sbyte value);" />
+      <MemberSignature Language="C#" Value="protected internal static sbyte SetValidValue (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig int8 SetValidValue(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As SByte) As SByte" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::SByte SetValidValue(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -907,9 +996,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static float SetValidValue (float value);" />
+      <MemberSignature Language="C#" Value="protected internal static float SetValidValue (float value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig float32 SetValidValue(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static float SetValidValue(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -929,9 +1020,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static TimeSpan SetValidValue (TimeSpan value);" />
+      <MemberSignature Language="C#" Value="protected internal static TimeSpan SetValidValue (TimeSpan value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.TimeSpan SetValidValue(valuetype System.TimeSpan value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As TimeSpan) As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static TimeSpan SetValidValue(TimeSpan value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -951,9 +1044,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static ushort SetValidValue (ushort value);" />
+      <MemberSignature Language="C#" Value="protected internal static ushort SetValidValue (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int16 SetValidValue(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As UShort) As UShort" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt16 SetValidValue(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -978,9 +1073,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static uint SetValidValue (uint value);" />
+      <MemberSignature Language="C#" Value="protected internal static uint SetValidValue (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int32 SetValidValue(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As UInteger) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt32 SetValidValue(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1005,9 +1102,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static ulong SetValidValue (ulong value);" />
+      <MemberSignature Language="C#" Value="protected internal static ulong SetValidValue (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int64 SetValidValue(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As ULong) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt64 SetValidValue(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1032,9 +1131,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static bool SetValidValue (bool value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static bool SetValidValue (bool value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig bool SetValidValue(bool value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Boolean, propertyName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static bool SetValidValue(bool value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1056,9 +1157,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static byte SetValidValue (byte value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static byte SetValidValue (byte value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int8 SetValidValue(unsigned int8 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Byte,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Byte, propertyName As String) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Byte SetValidValue(System::Byte value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1080,9 +1183,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static byte[] SetValidValue (byte[] value, bool isNullable);" />
+      <MemberSignature Language="C#" Value="protected internal static byte[] SetValidValue (byte[] value, bool isNullable);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int8[] SetValidValue(unsigned int8[] value, bool isNullable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Byte[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Byte(), isNullable As Boolean) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static cli::array &lt;System::Byte&gt; ^ SetValidValue(cli::array &lt;System::Byte&gt; ^ value, bool isNullable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1104,9 +1209,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static System.Data.Spatial.DbGeography SetValidValue (System.Data.Spatial.DbGeography value, bool isNullable);" />
+      <MemberSignature Language="C#" Value="protected internal static System.Data.Spatial.DbGeography SetValidValue (System.Data.Spatial.DbGeography value, bool isNullable);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig class System.Data.Spatial.DbGeography SetValidValue(class System.Data.Spatial.DbGeography value, bool isNullable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Data.Spatial.DbGeography,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DbGeography, isNullable As Boolean) As DbGeography" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Data::Spatial::DbGeography ^ SetValidValue(System::Data::Spatial::DbGeography ^ value, bool isNullable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1130,9 +1237,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static System.Data.Spatial.DbGeometry SetValidValue (System.Data.Spatial.DbGeometry value, bool isNullable);" />
+      <MemberSignature Language="C#" Value="protected internal static System.Data.Spatial.DbGeometry SetValidValue (System.Data.Spatial.DbGeometry value, bool isNullable);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig class System.Data.Spatial.DbGeometry SetValidValue(class System.Data.Spatial.DbGeometry value, bool isNullable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Data.Spatial.DbGeometry,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DbGeometry, isNullable As Boolean) As DbGeometry" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Data::Spatial::DbGeometry ^ SetValidValue(System::Data::Spatial::DbGeometry ^ value, bool isNullable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1155,9 +1264,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static DateTime SetValidValue (DateTime value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static DateTime SetValidValue (DateTime value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.DateTime SetValidValue(valuetype System.DateTime value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.DateTime,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DateTime, propertyName As String) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static DateTime SetValidValue(DateTime value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1179,9 +1290,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static DateTimeOffset SetValidValue (DateTimeOffset value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static DateTimeOffset SetValidValue (DateTimeOffset value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.DateTimeOffset SetValidValue(valuetype System.DateTimeOffset value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DateTimeOffset, propertyName As String) As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static DateTimeOffset SetValidValue(DateTimeOffset value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1203,9 +1316,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static decimal SetValidValue (decimal value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static decimal SetValidValue (decimal value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Decimal SetValidValue(valuetype System.Decimal value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Decimal,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Decimal, propertyName As String) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Decimal SetValidValue(System::Decimal value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1227,9 +1342,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static double SetValidValue (double value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static double SetValidValue (double value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig float64 SetValidValue(float64 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Double,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Double, propertyName As String) As Double" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static double SetValidValue(double value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1251,9 +1368,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Guid SetValidValue (Guid value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Guid SetValidValue (Guid value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Guid SetValidValue(valuetype System.Guid value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Guid, propertyName As String) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Guid SetValidValue(Guid value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1275,9 +1394,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static short SetValidValue (short value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static short SetValidValue (short value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig int16 SetValidValue(int16 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int16,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Short, propertyName As String) As Short" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static short SetValidValue(short value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1299,9 +1420,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static int SetValidValue (int value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static int SetValidValue (int value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig int32 SetValidValue(int32 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Integer, propertyName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static int SetValidValue(int value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1323,9 +1446,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static long SetValidValue (long value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static long SetValidValue (long value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig int64 SetValidValue(int64 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int64,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Long, propertyName As String) As Long" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static long SetValidValue(long value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1347,9 +1472,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;bool&gt; SetValidValue (Nullable&lt;bool&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;bool&gt; SetValidValue (Nullable&lt;bool&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;bool&gt; SetValidValue(valuetype System.Nullable`1&lt;bool&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Boolean), propertyName As String) As Nullable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;bool&gt; SetValidValue(Nullable&lt;bool&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1371,9 +1498,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;byte&gt; SetValidValue (Nullable&lt;byte&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;byte&gt; SetValidValue (Nullable&lt;byte&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;unsigned int8&gt; SetValidValue(valuetype System.Nullable`1&lt;unsigned int8&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Byte},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Byte), propertyName As String) As Nullable(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::Byte&gt; SetValidValue(Nullable&lt;System::Byte&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1395,9 +1524,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;DateTime&gt; SetValidValue (Nullable&lt;DateTime&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;DateTime&gt; SetValidValue (Nullable&lt;DateTime&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.DateTime},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of DateTime), propertyName As String) As Nullable(Of DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;DateTime&gt; SetValidValue(Nullable&lt;DateTime&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1419,9 +1550,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;DateTimeOffset&gt; SetValidValue (Nullable&lt;DateTimeOffset&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;DateTimeOffset&gt; SetValidValue (Nullable&lt;DateTimeOffset&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.DateTimeOffset},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of DateTimeOffset), propertyName As String) As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;DateTimeOffset&gt; SetValidValue(Nullable&lt;DateTimeOffset&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1443,9 +1576,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;decimal&gt; SetValidValue (Nullable&lt;decimal&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;decimal&gt; SetValidValue (Nullable&lt;decimal&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Decimal},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Decimal), propertyName As String) As Nullable(Of Decimal)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::Decimal&gt; SetValidValue(Nullable&lt;System::Decimal&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1467,9 +1602,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;double&gt; SetValidValue (Nullable&lt;double&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;double&gt; SetValidValue (Nullable&lt;double&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;float64&gt; SetValidValue(valuetype System.Nullable`1&lt;float64&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Double},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Double), propertyName As String) As Nullable(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;double&gt; SetValidValue(Nullable&lt;double&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1491,9 +1628,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;Guid&gt; SetValidValue (Nullable&lt;Guid&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;Guid&gt; SetValidValue (Nullable&lt;Guid&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.Guid&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Guid},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Guid), propertyName As String) As Nullable(Of Guid)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;Guid&gt; SetValidValue(Nullable&lt;Guid&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1515,9 +1654,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;short&gt; SetValidValue (Nullable&lt;short&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;short&gt; SetValidValue (Nullable&lt;short&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;int16&gt; SetValidValue(valuetype System.Nullable`1&lt;int16&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int16},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Short), propertyName As String) As Nullable(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;short&gt; SetValidValue(Nullable&lt;short&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1539,9 +1680,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;int&gt; SetValidValue (Nullable&lt;int&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;int&gt; SetValidValue (Nullable&lt;int&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;int32&gt; SetValidValue(valuetype System.Nullable`1&lt;int32&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int32},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Integer), propertyName As String) As Nullable(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;int&gt; SetValidValue(Nullable&lt;int&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1563,9 +1706,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;long&gt; SetValidValue (Nullable&lt;long&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;long&gt; SetValidValue (Nullable&lt;long&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;int64&gt; SetValidValue(valuetype System.Nullable`1&lt;int64&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int64},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Long), propertyName As String) As Nullable(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;long&gt; SetValidValue(Nullable&lt;long&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1587,9 +1732,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;sbyte&gt; SetValidValue (Nullable&lt;sbyte&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;sbyte&gt; SetValidValue (Nullable&lt;sbyte&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;int8&gt; SetValidValue(valuetype System.Nullable`1&lt;int8&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.SByte},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of SByte), propertyName As String) As Nullable(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::SByte&gt; SetValidValue(Nullable&lt;System::SByte&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1616,9 +1763,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;float&gt; SetValidValue (Nullable&lt;float&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;float&gt; SetValidValue (Nullable&lt;float&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;float32&gt; SetValidValue(valuetype System.Nullable`1&lt;float32&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Single},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Single), propertyName As String) As Nullable(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;float&gt; SetValidValue(Nullable&lt;float&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1640,9 +1789,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;TimeSpan&gt; SetValidValue (Nullable&lt;TimeSpan&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;TimeSpan&gt; SetValidValue (Nullable&lt;TimeSpan&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; SetValidValue(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.TimeSpan},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of TimeSpan), propertyName As String) As Nullable(Of TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;TimeSpan&gt; SetValidValue(Nullable&lt;TimeSpan&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1664,9 +1815,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;ushort&gt; SetValidValue (Nullable&lt;ushort&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;ushort&gt; SetValidValue (Nullable&lt;ushort&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;unsigned int16&gt; SetValidValue(valuetype System.Nullable`1&lt;unsigned int16&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt16},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of UShort), propertyName As String) As Nullable(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt16&gt; SetValidValue(Nullable&lt;System::UInt16&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1693,9 +1846,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;uint&gt; SetValidValue (Nullable&lt;uint&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;uint&gt; SetValidValue (Nullable&lt;uint&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;unsigned int32&gt; SetValidValue(valuetype System.Nullable`1&lt;unsigned int32&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt32},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of UInteger), propertyName As String) As Nullable(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt32&gt; SetValidValue(Nullable&lt;System::UInt32&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1722,9 +1877,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static Nullable&lt;ulong&gt; SetValidValue (Nullable&lt;ulong&gt; value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static Nullable&lt;ulong&gt; SetValidValue (Nullable&lt;ulong&gt; value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.Nullable`1&lt;unsigned int64&gt; SetValidValue(valuetype System.Nullable`1&lt;unsigned int64&gt; value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt64},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of ULong), propertyName As String) As Nullable(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt64&gt; SetValidValue(Nullable&lt;System::UInt64&gt; value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1751,9 +1908,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static sbyte SetValidValue (sbyte value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static sbyte SetValidValue (sbyte value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig int8 SetValidValue(int8 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.SByte,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As SByte, propertyName As String) As SByte" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::SByte SetValidValue(System::SByte value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1780,9 +1939,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static float SetValidValue (float value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static float SetValidValue (float value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig float32 SetValidValue(float32 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Single,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Single, propertyName As String) As Single" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static float SetValidValue(float value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1804,9 +1965,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static string SetValidValue (string value, bool isNullable);" />
+      <MemberSignature Language="C#" Value="protected internal static string SetValidValue (string value, bool isNullable);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig string SetValidValue(string value, bool isNullable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As String, isNullable As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::String ^ SetValidValue(System::String ^ value, bool isNullable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1828,9 +1991,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static TimeSpan SetValidValue (TimeSpan value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static TimeSpan SetValidValue (TimeSpan value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig valuetype System.TimeSpan SetValidValue(valuetype System.TimeSpan value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.TimeSpan,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As TimeSpan, propertyName As String) As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static TimeSpan SetValidValue(TimeSpan value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1852,9 +2017,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static ushort SetValidValue (ushort value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static ushort SetValidValue (ushort value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int16 SetValidValue(unsigned int16 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt16,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As UShort, propertyName As String) As UShort" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt16 SetValidValue(System::UInt16 value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1881,9 +2048,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static uint SetValidValue (uint value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static uint SetValidValue (uint value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int32 SetValidValue(unsigned int32 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As UInteger, propertyName As String) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt32 SetValidValue(System::UInt32 value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1910,9 +2079,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static ulong SetValidValue (ulong value, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static ulong SetValidValue (ulong value, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int64 SetValidValue(unsigned int64 value, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt64,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As ULong, propertyName As String) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt64 SetValidValue(System::UInt64 value, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1939,9 +2110,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static byte[] SetValidValue (byte[] value, bool isNullable, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static byte[] SetValidValue (byte[] value, bool isNullable, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig unsigned int8[] SetValidValue(unsigned int8[] value, bool isNullable, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Byte[],System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Byte(), isNullable As Boolean, propertyName As String) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static cli::array &lt;System::Byte&gt; ^ SetValidValue(cli::array &lt;System::Byte&gt; ^ value, bool isNullable, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1966,9 +2139,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static System.Data.Spatial.DbGeography SetValidValue (System.Data.Spatial.DbGeography value, bool isNullable, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static System.Data.Spatial.DbGeography SetValidValue (System.Data.Spatial.DbGeography value, bool isNullable, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig class System.Data.Spatial.DbGeography SetValidValue(class System.Data.Spatial.DbGeography value, bool isNullable, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Data.Spatial.DbGeography,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DbGeography, isNullable As Boolean, propertyName As String) As DbGeography" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Data::Spatial::DbGeography ^ SetValidValue(System::Data::Spatial::DbGeography ^ value, bool isNullable, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1993,9 +2168,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static System.Data.Spatial.DbGeometry SetValidValue (System.Data.Spatial.DbGeometry value, bool isNullable, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static System.Data.Spatial.DbGeometry SetValidValue (System.Data.Spatial.DbGeometry value, bool isNullable, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig class System.Data.Spatial.DbGeometry SetValidValue(class System.Data.Spatial.DbGeometry value, bool isNullable, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Data.Spatial.DbGeometry,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DbGeometry, isNullable As Boolean, propertyName As String) As DbGeometry" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Data::Spatial::DbGeometry ^ SetValidValue(System::Data::Spatial::DbGeometry ^ value, bool isNullable, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2021,9 +2198,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
-      <MemberSignature Language="C#" Value="protected static string SetValidValue (string value, bool isNullable, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal static string SetValidValue (string value, bool isNullable, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig string SetValidValue(string value, bool isNullable, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As String, isNullable As Boolean, propertyName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::String ^ SetValidValue(System::String ^ value, bool isNullable, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2048,9 +2227,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetValidValue&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected T SetValidValue&lt;T&gt; (T oldValue, T newValue, string property) where T : System.Data.Objects.DataClasses.ComplexObject;" />
+      <MemberSignature Language="C#" Value="protected internal T SetValidValue&lt;T&gt; (T oldValue, T newValue, string property) where T : System.Data.Objects.DataClasses.ComplexObject;" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance !!T SetValidValue&lt;(class System.Data.Objects.DataClasses.ComplexObject) T&gt;(!!T oldValue, !!T newValue, string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue``1(``0,``0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function SetValidValue(Of T As ComplexObject) (oldValue As T, newValue As T, property As String) As T" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Objects::DataClasses::ComplexObject T SetValidValue(T oldValue, T newValue, System::String ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2082,9 +2263,11 @@
       </Docs>
     </Member>
     <Member MemberName="VerifyComplexObjectIsNotNull&lt;TComplex&gt;">
-      <MemberSignature Language="C#" Value="protected static TComplex VerifyComplexObjectIsNotNull&lt;TComplex&gt; (TComplex complexObject, string propertyName) where TComplex : System.Data.Objects.DataClasses.ComplexObject;" />
+      <MemberSignature Language="C#" Value="protected internal static TComplex VerifyComplexObjectIsNotNull&lt;TComplex&gt; (TComplex complexObject, string propertyName) where TComplex : System.Data.Objects.DataClasses.ComplexObject;" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig !!TComplex VerifyComplexObjectIsNotNull&lt;(class System.Data.Objects.DataClasses.ComplexObject) TComplex&gt;(!!TComplex complexObject, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.VerifyComplexObjectIsNotNull``1(``0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function VerifyComplexObjectIsNotNull(Of TComplex As ComplexObject) (complexObject As TComplex, propertyName As String) As TComplex" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename TComplex&gt;&#xA; where TComplex : System::Data::Objects::DataClasses::ComplexObject static TComplex VerifyComplexObjectIsNotNull(TComplex complexObject, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2113,14 +2296,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetValidValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Makes sure the value being set for a property is valid.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

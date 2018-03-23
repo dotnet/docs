@@ -1,7 +1,9 @@
-<Type Name="SizeChangedInfo" FullName="System.Windows.SizeChangedInfo">
+﻿<Type Name="SizeChangedInfo" FullName="System.Windows.SizeChangedInfo">
   <TypeSignature Language="C#" Value="public class SizeChangedInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SizeChangedInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.SizeChangedInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class SizeChangedInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SizeChangedInfo" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public SizeChangedInfo (System.Windows.UIElement element, System.Windows.Size previousSize, bool widthChanged, bool heightChanged);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement element, valuetype System.Windows.Size previousSize, bool widthChanged, bool heightChanged) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SizeChangedInfo.#ctor(System.Windows.UIElement,System.Windows.Size,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (element As UIElement, previousSize As Size, widthChanged As Boolean, heightChanged As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SizeChangedInfo(System::Windows::UIElement ^ element, System::Windows::Size previousSize, bool widthChanged, bool heightChanged);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public bool HeightChanged { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HeightChanged" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SizeChangedInfo.HeightChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeightChanged As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HeightChanged { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size NewSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size NewSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SizeChangedInfo.NewSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size NewSize { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +119,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size PreviousSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PreviousSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SizeChangedInfo.PreviousSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size PreviousSize { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +147,8 @@
       <MemberSignature Language="C#" Value="public bool WidthChanged { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WidthChanged" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SizeChangedInfo.WidthChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WidthChanged As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WidthChanged { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

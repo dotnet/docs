@@ -1,7 +1,9 @@
-<Type Name="VirtualFile" FullName="System.Web.Hosting.VirtualFile">
+﻿<Type Name="VirtualFile" FullName="System.Web.Hosting.VirtualFile">
   <TypeSignature Language="C#" Value="public abstract class VirtualFile : System.Web.Hosting.VirtualFileBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VirtualFile extends System.Web.Hosting.VirtualFileBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.VirtualFile" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class VirtualFile&#xA;Inherits VirtualFileBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualFile abstract : System::Web::Hosting::VirtualFileBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +112,8 @@
       <MemberSignature Language="C#" Value="protected VirtualFile (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualFile.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (virtualPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; VirtualFile(System::String ^ virtualPath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +142,8 @@
       <MemberSignature Language="C#" Value="public override bool IsDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualFile.IsDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDirectory As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDirectory { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +162,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.Stream Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualFile.Open" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Open () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::Stream ^ Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

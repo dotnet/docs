@@ -1,7 +1,9 @@
-<Type Name="WindowsAuthenticationEventArgs" FullName="System.Web.Security.WindowsAuthenticationEventArgs">
+﻿<Type Name="WindowsAuthenticationEventArgs" FullName="System.Web.Security.WindowsAuthenticationEventArgs">
   <TypeSignature Language="C#" Value="public sealed class WindowsAuthenticationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsAuthenticationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.WindowsAuthenticationEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsAuthenticationEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsAuthenticationEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public WindowsAuthenticationEventArgs (System.Security.Principal.WindowsIdentity identity, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsAuthenticationEventArgs.#ctor(System.Security.Principal.WindowsIdentity,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsAuthenticationEventArgs(System::Security::Principal::WindowsIdentity ^ identity, System::Web::HttpContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.WindowsAuthenticationEventArgs.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +98,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.WindowsIdentity Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.WindowsIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.WindowsAuthenticationEventArgs.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As WindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::WindowsIdentity ^ Identity { System::Security::Principal::WindowsIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +135,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.WindowsAuthenticationEventArgs.User" />
+      <MemberSignature Language="VB.NET" Value="Public Property User As IPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

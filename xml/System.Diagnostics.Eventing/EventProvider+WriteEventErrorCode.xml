@@ -1,7 +1,9 @@
-<Type Name="EventProvider+WriteEventErrorCode" FullName="System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode">
+﻿<Type Name="EventProvider+WriteEventErrorCode" FullName="System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode">
   <TypeSignature Language="C#" Value="public enum EventProvider.WriteEventErrorCode" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed EventProvider/WriteEventErrorCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventProvider.WriteEventErrorCode" />
+  <TypeSignature Language="C++ CLI" Value="public: enum class EventProvider::WriteEventErrorCode" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="EventTooBig" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.EventProvider/WriteEventErrorCode EventTooBig = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.EventTooBig" />
+      <MemberSignature Language="VB.NET" Value="EventTooBig" />
+      <MemberSignature Language="C++ CLI" Value="EventTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The event is larger than the session buffer size; events cannot span buffers.</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="NoError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.EventProvider/WriteEventErrorCode NoError = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.NoError" />
+      <MemberSignature Language="VB.NET" Value="NoError" />
+      <MemberSignature Language="C++ CLI" Value="NoError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The write was successful.</summary>
       </Docs>
@@ -60,6 +68,8 @@
       <MemberSignature Language="C#" Value="NoFreeBuffers" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.EventProvider/WriteEventErrorCode NoFreeBuffers = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.NoFreeBuffers" />
+      <MemberSignature Language="VB.NET" Value="NoFreeBuffers" />
+      <MemberSignature Language="C++ CLI" Value="NoFreeBuffers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The session ran out of free buffers to write to. This can occur during high event rates because the disk subsystem is overloaded or the number of buffers is too small. Rather than blocking until more buffers become available, the event is dropped. Consider increasing the number and size of the buffers for the session, or reducing the number of events written or the size of the events.</summary>
       </Docs>

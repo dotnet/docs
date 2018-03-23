@@ -1,7 +1,9 @@
-<Type Name="Task&lt;TResult&gt;" FullName="System.Threading.Tasks.Task&lt;TResult&gt;">
+﻿<Type Name="Task&lt;TResult&gt;" FullName="System.Threading.Tasks.Task&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public class Task&lt;TResult&gt; : System.Threading.Tasks.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Task`1&lt;TResult&gt; extends System.Threading.Tasks.Task" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Task`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Task(Of TResult)&#xA;Inherits Task" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class Task : System::Threading::Tasks::Task" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,10 +70,22 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
     <altmember cref="T:System.Threading.Tasks.Task" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Task (Func&lt;TResult&gt; function);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!TResult&gt; function) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (function As Func(Of TResult))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Task(Func&lt;TResult&gt; ^ function);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -124,6 +138,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public Task (Func&lt;object,TResult&gt; function, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;object, !TResult&gt; function, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{System.Object,`0},System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (function As Func(Of Object, TResult), state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Task(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -166,6 +182,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public Task (Func&lt;TResult&gt; function, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!TResult&gt; function, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{`0},System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Task(Func&lt;TResult&gt; ^ function, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -209,6 +226,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public Task (Func&lt;TResult&gt; function, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!TResult&gt; function, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{`0},System.Threading.Tasks.TaskCreationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (function As Func(Of TResult), creationOptions As TaskCreationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Task(Func&lt;TResult&gt; ^ function, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -252,6 +271,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public Task (Func&lt;object,TResult&gt; function, object state, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;object, !TResult&gt; function, object state, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{System.Object,`0},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Task(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -297,6 +317,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public Task (Func&lt;object,TResult&gt; function, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;object, !TResult&gt; function, object state, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{System.Object,`0},System.Object,System.Threading.Tasks.TaskCreationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (function As Func(Of Object, TResult), state As Object, creationOptions As TaskCreationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Task(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -342,6 +364,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public Task (Func&lt;TResult&gt; function, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!TResult&gt; function, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{`0},System.Threading.CancellationToken,System.Threading.Tasks.TaskCreationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Task(Func&lt;TResult&gt; ^ function, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -388,6 +411,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public Task (Func&lt;object,TResult&gt; function, object state, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;object, !TResult&gt; function, object state, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{System.Object,`0},System.Object,System.Threading.CancellationToken,System.Threading.Tasks.TaskCreationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Task(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -436,6 +460,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredTaskAwaitable&lt;TResult&gt; ConfigureAwait (bool continueOnCapturedContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1&lt;!TResult&gt; ConfigureAwait(bool continueOnCapturedContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ConfigureAwait(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConfigureAwait (continueOnCapturedContext As Boolean) As ConfiguredTaskAwaitable(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredTaskAwaitable&lt;TResult&gt; ConfigureAwait(bool continueOnCapturedContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -468,10 +494,22 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContinueWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation task that executes when another task completes.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ContinueWith">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; continuationAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`1&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;&gt; continuationAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith (continuationAction As Action(Of Task(Of TResult))) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ continuationAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -525,6 +563,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object&gt; continuationAction, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object&gt; continuationAction, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith (continuationAction As Action(Of Task(Of TResult), Object), state As Object) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^&gt; ^ continuationAction, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -579,6 +619,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; continuationAction, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`1&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;&gt; continuationAction, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ continuationAction, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -642,6 +683,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; continuationAction, System.Threading.Tasks.TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`1&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;&gt; continuationAction, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}},System.Threading.Tasks.TaskContinuationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith (continuationAction As Action(Of Task(Of TResult)), continuationOptions As TaskContinuationOptions) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ continuationAction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -692,6 +735,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; continuationAction, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`1&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;&gt; continuationAction, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}},System.Threading.Tasks.TaskScheduler)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith (continuationAction As Action(Of Task(Of TResult)), scheduler As TaskScheduler) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ continuationAction, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -743,6 +788,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object&gt; continuationAction, object state, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object&gt; continuationAction, object state, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^&gt; ^ continuationAction, System::Object ^ state, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -792,6 +838,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object&gt; continuationAction, object state, System.Threading.Tasks.TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object&gt; continuationAction, object state, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object,System.Threading.Tasks.TaskContinuationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith (continuationAction As Action(Of Task(Of TResult), Object), state As Object, continuationOptions As TaskContinuationOptions) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^&gt; ^ continuationAction, System::Object ^ state, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -841,6 +889,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object&gt; continuationAction, object state, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object&gt; continuationAction, object state, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object,System.Threading.Tasks.TaskScheduler)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith (continuationAction As Action(Of Task(Of TResult), Object), state As Object, scheduler As TaskScheduler) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^&gt; ^ continuationAction, System::Object ^ state, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -889,6 +939,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; continuationAction, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`1&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;&gt; continuationAction, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}},System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ continuationAction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -949,6 +1000,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueWith (Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object&gt; continuationAction, object state, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueWith(class System.Action`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object&gt; continuationAction, object state, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object,System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ContinueWith(Action&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^&gt; ^ continuationAction, System::Object ^ state, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1003,6 +1055,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,TNewResult&gt; continuationFunction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, !!TNewResult&gt; continuationFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith(Of TNewResult) (continuationFunction As Func(Of Task(Of TResult), TNewResult)) As Task(Of TNewResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, TNewResult&gt; ^ continuationFunction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1052,6 +1106,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object,TNewResult&gt; continuationFunction, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`3&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object, !!TNewResult&gt; continuationFunction, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith(Of TNewResult) (continuationFunction As Func(Of Task(Of TResult), Object, TNewResult), state As Object) As Task(Of TNewResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^, TNewResult&gt; ^ continuationFunction, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1110,6 +1166,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,TNewResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, !!TNewResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0},System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, TNewResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1165,6 +1222,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,TNewResult&gt; continuationFunction, System.Threading.Tasks.TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, !!TNewResult&gt; continuationFunction, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0},System.Threading.Tasks.TaskContinuationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith(Of TNewResult) (continuationFunction As Func(Of Task(Of TResult), TNewResult), continuationOptions As TaskContinuationOptions) As Task(Of TNewResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, TNewResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1221,6 +1280,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,TNewResult&gt; continuationFunction, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, !!TNewResult&gt; continuationFunction, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0},System.Threading.Tasks.TaskScheduler)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith(Of TNewResult) (continuationFunction As Func(Of Task(Of TResult), TNewResult), scheduler As TaskScheduler) As Task(Of TNewResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, TNewResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1276,6 +1337,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object,TNewResult&gt; continuationFunction, object state, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`3&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object, !!TNewResult&gt; continuationFunction, object state, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^, TNewResult&gt; ^ continuationFunction, System::Object ^ state, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1329,6 +1391,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object,TNewResult&gt; continuationFunction, object state, System.Threading.Tasks.TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`3&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object, !!TNewResult&gt; continuationFunction, object state, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object,System.Threading.Tasks.TaskContinuationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith(Of TNewResult) (continuationFunction As Func(Of Task(Of TResult), Object, TNewResult), state As Object, continuationOptions As TaskContinuationOptions) As Task(Of TNewResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^, TNewResult&gt; ^ continuationFunction, System::Object ^ state, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1384,6 +1448,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object,TNewResult&gt; continuationFunction, object state, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`3&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object, !!TNewResult&gt; continuationFunction, object state, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object,System.Threading.Tasks.TaskScheduler)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWith(Of TNewResult) (continuationFunction As Func(Of Task(Of TResult), Object, TNewResult), state As Object, scheduler As TaskScheduler) As Task(Of TNewResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^, TNewResult&gt; ^ continuationFunction, System::Object ^ state, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1436,6 +1502,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,TNewResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, !!TNewResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0},System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, TNewResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1504,6 +1571,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TNewResult&gt; ContinueWith&lt;TNewResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,object,TNewResult&gt; continuationFunction, object state, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!TNewResult&gt; ContinueWith&lt;TNewResult&gt;(class System.Func`3&lt;class System.Threading.Tasks.Task`1&lt;!TResult&gt;, object, !!TNewResult&gt; continuationFunction, object state, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object,System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TNewResult&gt;&#xA; System::Threading::Tasks::Task&lt;TNewResult&gt; ^ ContinueWith(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^, System::Object ^, TNewResult&gt; ^ continuationFunction, System::Object ^ state, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1564,6 +1632,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.TaskFactory&lt;TResult&gt; Factory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Threading.Tasks.TaskFactory`1&lt;!TResult&gt; Factory" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Task`1.Factory" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Factory As TaskFactory(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Threading::Tasks::TaskFactory&lt;TResult&gt; ^ Factory { System::Threading::Tasks::TaskFactory&lt;TResult&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1620,6 +1690,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.TaskAwaiter&lt;TResult&gt; GetAwaiter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.TaskAwaiter`1&lt;!TResult&gt; GetAwaiter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.GetAwaiter" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As TaskAwaiter(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::TaskAwaiter&lt;TResult&gt; GetAwaiter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1660,6 +1732,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <MemberSignature Language="C#" Value="public TResult Result { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TResult Result" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Task`1.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As TResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TResult Result { TResult get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1715,25 +1789,5 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  An exception was thrown during the execution of the task. The <see cref="P:System.AggregateException.InnerExceptions" /> collection contains information about the exception or exceptions.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Tasks</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task`1" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ContinueWith">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Tasks</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a continuation task that executes when another task completes.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ConfigXmlDocument" FullName="System.Configuration.ConfigXmlDocument">
+﻿<Type Name="ConfigXmlDocument" FullName="System.Configuration.ConfigXmlDocument">
   <TypeSignature Language="C#" Value="public sealed class ConfigXmlDocument : System.Xml.XmlDocument, System.Configuration.Internal.IConfigErrorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConfigXmlDocument extends System.Xml.XmlDocument implements class System.Configuration.Internal.IConfigErrorInfo" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigXmlDocument" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigXmlDocument&#xA;Inherits XmlDocument&#xA;Implements IConfigErrorInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigXmlDocument sealed : System::Xml::XmlDocument, System::Configuration::Internal::IConfigErrorInfo" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public ConfigXmlDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigXmlDocument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlAttribute CreateAttribute (string prefix, string localName, string namespaceUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlAttribute CreateAttribute(string prefix, string localName, string namespaceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateAttribute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateAttribute (prefix As String, localName As String, namespaceUri As String) As XmlAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlAttribute ^ CreateAttribute(System::String ^ prefix, System::String ^ localName, System::String ^ namespaceUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlCDataSection CreateCDataSection (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlCDataSection CreateCDataSection(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateCDataSection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCDataSection (data As String) As XmlCDataSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlCDataSection ^ CreateCDataSection(System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,9 +122,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateComment">
-      <MemberSignature Language="C#" Value="public override System.Xml.XmlComment CreateComment (string comment);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlComment CreateComment(string comment) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateComment(System.String)" />
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlComment CreateComment (string data);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlComment CreateComment(string data) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateComment(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateComment (data As String) As XmlComment" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlComment ^ CreateComment(System::String ^ data);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlComment CreateComment (string comment);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlComment CreateComment(string comment) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateComment(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateComment (comment As String) As XmlComment" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlComment ^ CreateComment(System::String ^ comment);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,7 +145,8 @@
         <ReturnType>System.Xml.XmlComment</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="System.String" />
+        <Parameter Name="data" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="comment" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="comment">To be added.</param>
@@ -145,6 +161,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlElement CreateElement (string prefix, string localName, string namespaceUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement CreateElement(string prefix, string localName, string namespaceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateElement(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateElement (prefix As String, localName As String, namespaceUri As String) As XmlElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ CreateElement(System::String ^ prefix, System::String ^ localName, System::String ^ namespaceUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +195,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlSignificantWhitespace CreateSignificantWhitespace (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlSignificantWhitespace CreateSignificantWhitespace(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateSignificantWhitespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateSignificantWhitespace (data As String) As XmlSignificantWhitespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlSignificantWhitespace ^ CreateSignificantWhitespace(System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +225,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlText CreateTextNode (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlText CreateTextNode(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateTextNode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateTextNode (text As String) As XmlText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlText ^ CreateTextNode(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,6 +255,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlWhitespace CreateWhitespace (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlWhitespace CreateWhitespace(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateWhitespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateWhitespace (data As String) As XmlWhitespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlWhitespace ^ CreateWhitespace(System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -261,7 +285,13 @@
       <MemberSignature Language="C#" Value="public string Filename { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filename" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigXmlDocument.Filename" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filename As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filename { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.IConfigXmlNode.Filename</InterfaceMember>
+        <InterfaceMember>P:System.Configuration.Internal.IConfigErrorInfo.Filename</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -285,7 +315,13 @@
       <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigXmlDocument.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.IConfigXmlNode.LineNumber</InterfaceMember>
+        <InterfaceMember>P:System.Configuration.Internal.IConfigErrorInfo.LineNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -309,6 +345,8 @@
       <MemberSignature Language="C#" Value="public override void Load (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Load (filename As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Load(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -336,6 +374,8 @@
       <MemberSignature Language="C#" Value="public void LoadSingleElement (string filename, System.Xml.XmlTextReader sourceReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadSingleElement(string filename, class System.Xml.XmlTextReader sourceReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.LoadSingleElement(System.String,System.Xml.XmlTextReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadSingleElement (filename As String, sourceReader As XmlTextReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadSingleElement(System::String ^ filename, System::Xml::XmlTextReader ^ sourceReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -365,7 +405,12 @@
       <MemberSignature Language="C#" Value="string System.Configuration.Internal.IConfigErrorInfo.Filename { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string System.Configuration.Internal.IConfigErrorInfo.Filename" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigXmlDocument.System#Configuration#Internal#IConfigErrorInfo#Filename" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Filename As String Implements IConfigErrorInfo.Filename" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Configuration.Internal.IConfigErrorInfo.Filename { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IConfigErrorInfo.Filename</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -388,7 +433,12 @@
       <MemberSignature Language="C#" Value="int System.Configuration.Internal.IConfigErrorInfo.LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Configuration.Internal.IConfigErrorInfo.LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigXmlDocument.System#Configuration#Internal#IConfigErrorInfo#LineNumber" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property LineNumber As Integer Implements IConfigErrorInfo.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Configuration.Internal.IConfigErrorInfo.LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IConfigErrorInfo.LineNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

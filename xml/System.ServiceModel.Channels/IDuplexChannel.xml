@@ -1,7 +1,9 @@
-<Type Name="IDuplexChannel" FullName="System.ServiceModel.Channels.IDuplexChannel">
+﻿<Type Name="IDuplexChannel" FullName="System.ServiceModel.Channels.IDuplexChannel">
   <TypeSignature Language="C#" Value="public interface IDuplexChannel : System.ServiceModel.Channels.IInputChannel, System.ServiceModel.Channels.IOutputChannel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDuplexChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.Channels.IInputChannel, class System.ServiceModel.Channels.IOutputChannel, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IDuplexChannel" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDuplexChannel&#xA;Implements IInputChannel, IOutputChannel" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDuplexChannel : System::ServiceModel::Channels::IInputChannel, System::ServiceModel::Channels::IOutputChannel" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

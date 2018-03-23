@@ -1,7 +1,9 @@
-<Type Name="BindingCompleteContext" FullName="System.Windows.Forms.BindingCompleteContext">
+﻿<Type Name="BindingCompleteContext" FullName="System.Windows.Forms.BindingCompleteContext">
   <TypeSignature Language="C#" Value="public enum BindingCompleteContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindingCompleteContext extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingCompleteContext" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BindingCompleteContext" />
+  <TypeSignature Language="C++ CLI" Value="public enum class BindingCompleteContext" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="ControlUpdate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BindingCompleteContext ControlUpdate = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BindingCompleteContext.ControlUpdate" />
+      <MemberSignature Language="VB.NET" Value="ControlUpdate" />
+      <MemberSignature Language="C++ CLI" Value="ControlUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingCompleteContext</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An indication that the control property value is being updated from the data source.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="DataSourceUpdate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BindingCompleteContext DataSourceUpdate = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BindingCompleteContext.DataSourceUpdate" />
+      <MemberSignature Language="VB.NET" Value="DataSourceUpdate" />
+      <MemberSignature Language="C++ CLI" Value="DataSourceUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingCompleteContext</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An indication that the data source value is being updated from the control property.</summary>
       </Docs>

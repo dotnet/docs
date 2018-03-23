@@ -1,7 +1,9 @@
-<Type Name="DbMetaDataCollectionNames" FullName="System.Data.Common.DbMetaDataCollectionNames">
+﻿<Type Name="DbMetaDataCollectionNames" FullName="System.Data.Common.DbMetaDataCollectionNames">
   <TypeSignature Language="C#" Value="public static class DbMetaDataCollectionNames" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DbMetaDataCollectionNames extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbMetaDataCollectionNames" />
+  <TypeSignature Language="VB.NET" Value="Public Class DbMetaDataCollectionNames" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbMetaDataCollectionNames abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public static readonly string DataSourceInformation;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string DataSourceInformation" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataSourceInformation As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DataSourceInformation;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public static readonly string DataTypes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string DataTypes" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.DataTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataTypes As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DataTypes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public static readonly string MetaDataCollections;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string MetaDataCollections" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.MetaDataCollections" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MetaDataCollections As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MetaDataCollections;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public static readonly string ReservedWords;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ReservedWords" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.ReservedWords" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ReservedWords As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ReservedWords;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -132,6 +142,8 @@
       <MemberSignature Language="C#" Value="public static readonly string Restrictions;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Restrictions" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.Restrictions" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Restrictions As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Restrictions;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="UpdatePanelControlTrigger" FullName="System.Web.UI.UpdatePanelControlTrigger">
+﻿<Type Name="UpdatePanelControlTrigger" FullName="System.Web.UI.UpdatePanelControlTrigger">
   <TypeSignature Language="C#" Value="public abstract class UpdatePanelControlTrigger : System.Web.UI.UpdatePanelTrigger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UpdatePanelControlTrigger extends System.Web.UI.UpdatePanelTrigger" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanelControlTrigger" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class UpdatePanelControlTrigger&#xA;Inherits UpdatePanelTrigger" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpdatePanelControlTrigger abstract : System::Web::UI::UpdatePanelTrigger" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected UpdatePanelControlTrigger ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelControlTrigger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UpdatePanelControlTrigger();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public string ControlID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanelControlTrigger.ControlID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Control FindTargetControl (bool searchNamingContainers);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.UI.Control FindTargetControl(bool searchNamingContainers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelControlTrigger.FindTargetControl(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FindTargetControl (searchNamingContainers As Boolean) As Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::UI::Control ^ FindTargetControl(bool searchNamingContainers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

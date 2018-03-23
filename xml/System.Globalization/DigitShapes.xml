@@ -1,7 +1,9 @@
-<Type Name="DigitShapes" FullName="System.Globalization.DigitShapes">
+﻿<Type Name="DigitShapes" FullName="System.Globalization.DigitShapes">
   <TypeSignature Language="C#" Value="public enum DigitShapes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DigitShapes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.DigitShapes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DigitShapes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DigitShapes" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="Context" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DigitShapes Context = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DigitShapes.Context" />
+      <MemberSignature Language="VB.NET" Value="Context" />
+      <MemberSignature Language="C++ CLI" Value="Context" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DigitShapes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The digit shape depends on the previous text in the same output. European digits follow Latin scripts; Arabic-Indic digits follow Arabic text; and Thai digits follow Thai text.</summary>
       </Docs>
@@ -69,6 +74,8 @@
       <MemberSignature Language="C#" Value="NativeNational" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DigitShapes NativeNational = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DigitShapes.NativeNational" />
+      <MemberSignature Language="VB.NET" Value="NativeNational" />
+      <MemberSignature Language="C++ CLI" Value="NativeNational" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DigitShapes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The digit shape is the native equivalent of the digits from 0 through 9. ASCII digits from 0 through 9 are replaced by equivalent native national digits.</summary>
       </Docs>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DigitShapes None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DigitShapes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DigitShapes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The digit shape is not changed. Full Unicode compatibility is maintained.</summary>
       </Docs>

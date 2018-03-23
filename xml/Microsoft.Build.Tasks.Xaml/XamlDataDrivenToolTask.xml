@@ -1,7 +1,9 @@
-<Type Name="XamlDataDrivenToolTask" FullName="Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask">
+﻿<Type Name="XamlDataDrivenToolTask" FullName="Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask">
   <TypeSignature Language="C#" Value="public abstract class XamlDataDrivenToolTask : Microsoft.Build.Utilities.ToolTask" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XamlDataDrivenToolTask extends Microsoft.Build.Utilities.ToolTask" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XamlDataDrivenToolTask&#xA;Inherits ToolTask" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlDataDrivenToolTask abstract : Microsoft::Build::Utilities::ToolTask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected XamlDataDrivenToolTask (string[] switchOrderList, System.Resources.ResourceManager taskResources);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string[] switchOrderList, class System.Resources.ResourceManager taskResources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.#ctor(System.String[],System.Resources.ResourceManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (switchOrderList As String(), taskResources As ResourceManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlDataDrivenToolTask(cli::array &lt;System::String ^&gt; ^ switchOrderList, System::Resources::ResourceManager ^ taskResources);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public virtual string[] AcceptableNonZeroExitCodes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] AcceptableNonZeroExitCodes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.AcceptableNonZeroExitCodes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AcceptableNonZeroExitCodes As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ AcceptableNonZeroExitCodes { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -54,9 +60,11 @@
       </Docs>
     </Member>
     <Member MemberName="ActiveToolSwitches">
-      <MemberSignature Language="C#" Value="protected System.Collections.Generic.Dictionary&lt;string,Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch&gt; ActiveToolSwitches { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Collections.Generic.Dictionary&lt;string,Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch&gt; ActiveToolSwitches { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch&gt; ActiveToolSwitches" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.ActiveToolSwitches" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ActiveToolSwitches As Dictionary(Of String, CommandLineToolSwitch)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, Microsoft::Build::Tasks::Xaml::CommandLineToolSwitch ^&gt; ^ ActiveToolSwitches { System::Collections::Generic::Dictionary&lt;System::String ^, Microsoft::Build::Tasks::Xaml::CommandLineToolSwitch ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch&gt; ActiveToolSwitchesValues { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch&gt; ActiveToolSwitchesValues" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.ActiveToolSwitchesValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveToolSwitchesValues As Dictionary(Of String, CommandLineToolSwitch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, Microsoft::Build::Tasks::Xaml::CommandLineToolSwitch ^&gt; ^ ActiveToolSwitchesValues { System::Collections::Generic::Dictionary&lt;System::String ^, Microsoft::Build::Tasks::Xaml::CommandLineToolSwitch ^&gt; ^ get(); void set(System::Collections::Generic::Dictionary&lt;System::String ^, Microsoft::Build::Tasks::Xaml::CommandLineToolSwitch ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -93,6 +103,8 @@
       <MemberSignature Language="C#" Value="public void AddActiveSwitchToolValue (Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch switchToAdd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddActiveSwitchToolValue(class Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch switchToAdd) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.AddActiveSwitchToolValue(Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddActiveSwitchToolValue (switchToAdd As CommandLineToolSwitch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddActiveSwitchToolValue(Microsoft::Build::Tasks::Xaml::CommandLineToolSwitch ^ switchToAdd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -114,6 +126,8 @@
       <MemberSignature Language="C#" Value="public string AdditionalOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AdditionalOptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.AdditionalOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalOptions As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AdditionalOptions { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -132,6 +146,8 @@
       <MemberSignature Language="C#" Value="public string CommandLineTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandLineTemplate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.CommandLineTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandLineTemplate As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandLineTemplate { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -150,6 +166,8 @@
       <MemberSignature Language="C#" Value="public string CreateSwitchValue (string propertyName, string baseSwitch, string separator, Tuple&lt;string,bool&gt;[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string CreateSwitchValue(string propertyName, string baseSwitch, string separator, class System.Tuple`2&lt;string, bool&gt;[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.CreateSwitchValue(System.String,System.String,System.String,System.Tuple{System.String,System.Boolean}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSwitchValue (propertyName As String, baseSwitch As String, separator As String, arguments As Tuple(Of String, Boolean)()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateSwitchValue(System::String ^ propertyName, System::String ^ baseSwitch, System::String ^ separator, cli::array &lt;Tuple&lt;System::String ^, bool&gt; ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -178,6 +196,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -197,6 +217,8 @@
       <MemberSignature Language="C#" Value="protected override string GenerateCommandLineCommands ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GenerateCommandLineCommands() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.GenerateCommandLineCommands" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateCommandLineCommands () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateCommandLineCommands();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -216,6 +238,8 @@
       <MemberSignature Language="C#" Value="protected override string GenerateFullPathToTool ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GenerateFullPathToTool() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.GenerateFullPathToTool" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateFullPathToTool () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateFullPathToTool();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -235,6 +259,8 @@
       <MemberSignature Language="C#" Value="protected override string GenerateResponseFileCommands ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GenerateResponseFileCommands() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.GenerateResponseFileCommands" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateResponseFileCommands () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateResponseFileCommands();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -254,6 +280,8 @@
       <MemberSignature Language="C#" Value="protected override bool HandleTaskExecutionErrors ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HandleTaskExecutionErrors() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.HandleTaskExecutionErrors" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HandleTaskExecutionErrors () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool HandleTaskExecutionErrors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -273,6 +301,8 @@
       <MemberSignature Language="C#" Value="public bool IsPropertySet (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsPropertySet(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.IsPropertySet(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsPropertySet (propertyName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsPropertySet(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -296,6 +326,8 @@
       <MemberSignature Language="C#" Value="public string ReadSwitchMap (string propertyName, string[][] switchMap, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ReadSwitchMap(string propertyName, string[][] switchMap, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.ReadSwitchMap(System.String,System.String[][],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadSwitchMap (propertyName As String, switchMap As String()(), value As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadSwitchMap(System::String ^ propertyName, cli::array &lt;cli::array &lt;System::String ^&gt; ^&gt; ^ switchMap, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -322,6 +354,8 @@
       <MemberSignature Language="C#" Value="public int ReadSwitchMap2 (string propertyName, Tuple&lt;string,string,Tuple&lt;string,bool&gt;[]&gt;[] switchMap, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadSwitchMap2(string propertyName, class System.Tuple`3&lt;string, string, class System.Tuple`2&lt;string, bool&gt;[]&gt;[] switchMap, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.ReadSwitchMap2(System.String,System.Tuple{System.String,System.String,System.Tuple{System.String,System.Boolean}[]}[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadSwitchMap2 (propertyName As String, switchMap As Tuple(Of String, String, Tuple(Of String, Boolean)())(), value As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadSwitchMap2(System::String ^ propertyName, cli::array &lt;Tuple&lt;System::String ^, System::String ^, cli::array &lt;Tuple&lt;System::String ^, bool&gt; ^&gt; ^&gt; ^&gt; ^ switchMap, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -348,6 +382,8 @@
       <MemberSignature Language="C#" Value="public void ReplaceToolSwitch (Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch switchToAdd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceToolSwitch(class Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch switchToAdd) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.ReplaceToolSwitch(Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReplaceToolSwitch (switchToAdd As CommandLineToolSwitch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceToolSwitch(Microsoft::Build::Tasks::Xaml::CommandLineToolSwitch ^ switchToAdd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -369,6 +405,8 @@
       <MemberSignature Language="C#" Value="protected override System.Text.Encoding ResponseFileEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding ResponseFileEncoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.ResponseFileEncoding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ResponseFileEncoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Text::Encoding ^ ResponseFileEncoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -387,6 +425,8 @@
       <MemberSignature Language="C#" Value="public bool ValidateInteger (string switchName, int min, int max, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateInteger(string switchName, int32 min, int32 max, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.ValidateInteger(System.String,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateInteger (switchName As String, min As Integer, max As Integer, value As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateInteger(System::String ^ switchName, int min, int max, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -416,6 +456,8 @@
       <MemberSignature Language="C#" Value="protected override bool ValidateParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ValidateParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlDataDrivenToolTask.ValidateParameters" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateParameters () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ValidateParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

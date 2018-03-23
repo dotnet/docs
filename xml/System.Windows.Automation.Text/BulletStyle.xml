@@ -1,7 +1,9 @@
-<Type Name="BulletStyle" FullName="System.Windows.Automation.Text.BulletStyle">
+﻿<Type Name="BulletStyle" FullName="System.Windows.Automation.Text.BulletStyle">
   <TypeSignature Language="C#" Value="public enum BulletStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BulletStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.BulletStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BulletStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class BulletStyle" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="DashBullet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.BulletStyle DashBullet = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.BulletStyle.DashBullet" />
+      <MemberSignature Language="VB.NET" Value="DashBullet" />
+      <MemberSignature Language="C++ CLI" Value="DashBullet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Dash bullets.</summary>
       </Docs>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="FilledRoundBullet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.BulletStyle FilledRoundBullet = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.BulletStyle.FilledRoundBullet" />
+      <MemberSignature Language="VB.NET" Value="FilledRoundBullet" />
+      <MemberSignature Language="C++ CLI" Value="FilledRoundBullet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Solid round bullets.</summary>
       </Docs>
@@ -58,6 +66,8 @@
       <MemberSignature Language="C#" Value="FilledSquareBullet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.BulletStyle FilledSquareBullet = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.BulletStyle.FilledSquareBullet" />
+      <MemberSignature Language="VB.NET" Value="FilledSquareBullet" />
+      <MemberSignature Language="C++ CLI" Value="FilledSquareBullet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Solid square bullets.</summary>
       </Docs>
@@ -74,6 +85,8 @@
       <MemberSignature Language="C#" Value="HollowRoundBullet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.BulletStyle HollowRoundBullet = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.BulletStyle.HollowRoundBullet" />
+      <MemberSignature Language="VB.NET" Value="HollowRoundBullet" />
+      <MemberSignature Language="C++ CLI" Value="HollowRoundBullet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -82,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Hollow round bullets.</summary>
       </Docs>
@@ -90,6 +104,8 @@
       <MemberSignature Language="C#" Value="HollowSquareBullet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.BulletStyle HollowSquareBullet = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.BulletStyle.HollowSquareBullet" />
+      <MemberSignature Language="VB.NET" Value="HollowSquareBullet" />
+      <MemberSignature Language="C++ CLI" Value="HollowSquareBullet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -98,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Hollow square bullets.</summary>
       </Docs>
@@ -106,6 +123,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.BulletStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.BulletStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -114,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No bullet style.</summary>
       </Docs>
@@ -122,6 +142,8 @@
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.BulletStyle Other = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.BulletStyle.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -130,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Another bullet style not explicitly specified in the <see cref="T:System.Windows.Automation.Text.BulletStyle" /> enumeration.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="SymScope" FullName="System.Diagnostics.SymbolStore.SymScope">
+﻿<Type Name="SymScope" FullName="System.Diagnostics.SymbolStore.SymScope">
   <TypeSignature Language="C#" Value="public class SymScope : System.Diagnostics.SymbolStore.SymScopeBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymScope extends System.Diagnostics.SymbolStore.SymScopeBase implements class System.Diagnostics.SymbolStore.ISymbolScope, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class SymScope&#xA;Inherits SymScopeBase&#xA;Implements IDisposable, ISymbolScope" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SymScope : System::Diagnostics::SymbolStore::SymScopeBase, IDisposable, System::Diagnostics::SymbolStore::ISymbolScope" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public SymScope (System.Diagnostics.SymbolStore.Private.ISymUnmanagedScope* pScope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedScope* pScope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymScope.#ctor(System.Diagnostics.SymbolStore.Private.ISymUnmanagedScope*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymScope(System::Diagnostics::SymbolStore::Private::ISymUnmanagedScope* pScope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -56,7 +59,12 @@
       <MemberSignature Language="C#" Value="public override sealed void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymScope.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +82,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool A_0);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymScope.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -108,6 +118,8 @@
       <MemberSignature Language="C#" Value="public virtual int EndOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndOffset" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymScope.EndOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EndOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EndOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -126,6 +138,8 @@
       <MemberSignature Language="C#" Value="~SymScope ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymScope.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!SymScope ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -151,6 +165,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Diagnostics.SymbolStore.ISymbolScope[] GetChildren ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolScope[] GetChildren() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymScope.GetChildren" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChildren () As ISymbolScope()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::SymbolStore::ISymbolScope ^&gt; ^ GetChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -171,6 +187,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Diagnostics.SymbolStore.ISymbolVariable[] GetLocals ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolVariable[] GetLocals() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymScope.GetLocals" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLocals () As ISymbolVariable()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetLocals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -198,6 +216,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Diagnostics.SymbolStore.ISymbolNamespace[] GetNamespaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolNamespace[] GetNamespaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymScope.GetNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNamespaces () As ISymbolNamespace()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::SymbolStore::ISymbolNamespace ^&gt; ^ GetNamespaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -217,6 +237,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Diagnostics.SymbolStore.ISymbolMethod Method { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.SymbolStore.ISymbolMethod Method" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymScope.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Method As ISymbolMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Diagnostics::SymbolStore::ISymbolMethod ^ Method { System::Diagnostics::SymbolStore::ISymbolMethod ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -235,6 +257,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Diagnostics.SymbolStore.ISymbolScope Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.SymbolStore.ISymbolScope Parent" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymScope.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Parent As ISymbolScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Diagnostics::SymbolStore::ISymbolScope ^ Parent { System::Diagnostics::SymbolStore::ISymbolScope ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -253,6 +277,8 @@
       <MemberSignature Language="C#" Value="public virtual int StartOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartOffset" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymScope.StartOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StartOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int StartOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="EventLevel" FullName="System.Diagnostics.Tracing.EventLevel">
+﻿<Type Name="EventLevel" FullName="System.Diagnostics.Tracing.EventLevel">
   <TypeSignature Language="C#" Value="public enum EventLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventLevel" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="Critical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventLevel Critical = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Critical" />
+      <MemberSignature Language="VB.NET" Value="Critical" />
+      <MemberSignature Language="C++ CLI" Value="Critical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -73,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>This level corresponds to a critical error, which is a serious error that has caused a major failure.</summary>
       </Docs>
@@ -81,6 +86,8 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventLevel Error = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -102,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>This level adds standard errors that signify a problem.</summary>
         <remarks>
@@ -121,6 +129,8 @@
       <MemberSignature Language="C#" Value="Informational" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventLevel Informational = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Informational" />
+      <MemberSignature Language="VB.NET" Value="Informational" />
+      <MemberSignature Language="C++ CLI" Value="Informational" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -142,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>This level adds informational events or messages that are not errors. These events can help trace the progress or state of an application.</summary>
         <remarks>
@@ -161,6 +172,8 @@
       <MemberSignature Language="C#" Value="LogAlways" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventLevel LogAlways = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.LogAlways" />
+      <MemberSignature Language="VB.NET" Value="LogAlways" />
+      <MemberSignature Language="C++ CLI" Value="LogAlways" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -182,6 +195,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No level filtering is done on the event.</summary>
       </Docs>
@@ -190,6 +204,8 @@
       <MemberSignature Language="C#" Value="Verbose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventLevel Verbose = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Verbose" />
+      <MemberSignature Language="VB.NET" Value="Verbose" />
+      <MemberSignature Language="C++ CLI" Value="Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -211,6 +227,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>This level adds lengthy events or messages. It causes all events to be logged.</summary>
         <remarks>
@@ -230,6 +247,8 @@
       <MemberSignature Language="C#" Value="Warning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventLevel Warning = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -251,6 +270,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>This level adds warning events (for example, events that are published because a disk is nearing full capacity).</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="CounterSampleCalculator" FullName="System.Diagnostics.CounterSampleCalculator">
+﻿<Type Name="CounterSampleCalculator" FullName="System.Diagnostics.CounterSampleCalculator">
   <TypeSignature Language="C#" Value="public static class CounterSampleCalculator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CounterSampleCalculator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CounterSampleCalculator" />
+  <TypeSignature Language="VB.NET" Value="Public Class CounterSampleCalculator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CounterSampleCalculator abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="ComputeCounterValue">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the calculated value of a raw counter sample.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ComputeCounterValue">
       <MemberSignature Language="C#" Value="public static float ComputeCounterValue (System.Diagnostics.CounterSample newSample);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 ComputeCounterValue(valuetype System.Diagnostics.CounterSample newSample) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue(System.Diagnostics.CounterSample)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComputeCounterValue (newSample As CounterSample) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ComputeCounterValue(System::Diagnostics::CounterSample newSample);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +73,8 @@
       <MemberSignature Language="C#" Value="public static float ComputeCounterValue (System.Diagnostics.CounterSample oldSample, System.Diagnostics.CounterSample newSample);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 ComputeCounterValue(valuetype System.Diagnostics.CounterSample oldSample, valuetype System.Diagnostics.CounterSample newSample) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComputeCounterValue (oldSample As CounterSample, newSample As CounterSample) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ComputeCounterValue(System::Diagnostics::CounterSample oldSample, System::Diagnostics::CounterSample newSample);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,14 +115,5 @@
           <paramref name="newSample" /> counter type has a Performance Data Helper (PDH) error. For more information, see "Checking PDH Interface Return Values" in the Win32 and COM Development section of this documentation.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ComputeCounterValue">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Computes the calculated value of a raw counter sample.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

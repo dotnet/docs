@@ -1,7 +1,9 @@
-<Type Name="OperationAction" FullName="System.Data.Metadata.Edm.OperationAction">
+﻿<Type Name="OperationAction" FullName="System.Data.Metadata.Edm.OperationAction">
   <TypeSignature Language="C#" Value="public enum OperationAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OperationAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.OperationAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OperationAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OperationAction" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Cascade" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.OperationAction Cascade = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.OperationAction.Cascade" />
+      <MemberSignature Language="VB.NET" Value="Cascade" />
+      <MemberSignature Language="C++ CLI" Value="Cascade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>When a parent <see langword="End" /> is deleted, its associated child ends are deleted as well.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.OperationAction None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.OperationAction.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Only a parent <see langword="End" /> can be deleted.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Restrict" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.OperationAction Restrict = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.OperationAction.Restrict" />
+      <MemberSignature Language="VB.NET" Value="Restrict" />
+      <MemberSignature Language="C++ CLI" Value="Restrict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A parent <see langword="End" /> cannot be deleted if it has one or more associated child ends.</summary>
       </Docs>

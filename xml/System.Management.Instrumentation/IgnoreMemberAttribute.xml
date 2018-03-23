@@ -1,7 +1,9 @@
-<Type Name="IgnoreMemberAttribute" FullName="System.Management.Instrumentation.IgnoreMemberAttribute">
+﻿<Type Name="IgnoreMemberAttribute" FullName="System.Management.Instrumentation.IgnoreMemberAttribute">
   <TypeSignature Language="C#" Value="public class IgnoreMemberAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IgnoreMemberAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.IgnoreMemberAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class IgnoreMemberAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IgnoreMemberAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Method | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public IgnoreMemberAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.IgnoreMemberAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IgnoreMemberAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

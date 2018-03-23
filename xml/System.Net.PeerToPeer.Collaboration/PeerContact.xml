@@ -1,7 +1,9 @@
-<Type Name="PeerContact" FullName="System.Net.PeerToPeer.Collaboration.PeerContact">
+﻿<Type Name="PeerContact" FullName="System.Net.PeerToPeer.Collaboration.PeerContact">
   <TypeSignature Language="C#" Value="public class PeerContact : System.Net.PeerToPeer.Collaboration.Peer, IEquatable&lt;System.Net.PeerToPeer.Collaboration.PeerContact&gt;, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable PeerContact extends System.Net.PeerToPeer.Collaboration.Peer implements class System.IEquatable`1&lt;class System.Net.PeerToPeer.Collaboration.PeerContact&gt;, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+  <TypeSignature Language="VB.NET" Value="Public Class PeerContact&#xA;Inherits Peer&#xA;Implements IEquatable(Of PeerContact), ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerContact : System::Net::PeerToPeer::Collaboration::Peer, IEquatable&lt;System::Net::PeerToPeer::Collaboration::PeerContact ^&gt;, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="protected PeerContact (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PeerContact(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -74,6 +77,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs&gt; ApplicationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs&gt; ApplicationChanged" />
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.PeerContact.ApplicationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ApplicationChanged As EventHandler(Of ApplicationChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::ApplicationChangedEventArgs ^&gt; ^ ApplicationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -102,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 Credentials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2 Credentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerContact.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As X509Certificate2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ Credentials { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -131,6 +138,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerContact.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -159,6 +168,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -193,6 +204,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Mail.MailAddress EmailAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailAddress EmailAddress" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerContact.EmailAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property EmailAddress As MailAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailAddress ^ EmailAddress { System::Net::Mail::MailAddress ^ get(); void set(System::Net::Mail::MailAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -240,7 +253,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Net.PeerToPeer.Collaboration.PeerContact other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Net.PeerToPeer.Collaboration.PeerContact other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Equals(System.Net.PeerToPeer.Collaboration.PeerContact)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PeerContact) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Net::PeerToPeer::Collaboration::PeerContact ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -270,6 +288,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -302,6 +322,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals (object objA, object objB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(object objA, object objB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Equals(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (objA As Object, objB As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Object ^ objA, System::Object ^ objB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -336,6 +358,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.PeerToPeer.Collaboration.PeerContact FromXml (string peerContactXml);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.PeerToPeer.Collaboration.PeerContact FromXml(string peerContactXml) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.FromXml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromXml (peerContactXml As String) As PeerContact" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::PeerToPeer::Collaboration::PeerContact ^ FromXml(System::String ^ peerContactXml);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -393,6 +417,8 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetApplications () As PeerApplicationCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerApplicationCollection ^ GetApplications();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -435,6 +461,8 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications (Guid applicationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications(valuetype System.Guid applicationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetApplications (applicationId As Guid) As PeerApplicationCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerApplicationCollection ^ GetApplications(Guid applicationId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -481,6 +509,7 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications (System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications(System.Net.PeerToPeer.Collaboration.PeerEndPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerApplicationCollection ^ GetApplications(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -530,6 +559,7 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications (System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, Guid applicationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, valuetype System.Guid applicationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications(System.Net.PeerToPeer.Collaboration.PeerEndPoint,System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerApplicationCollection ^ GetApplications(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint, Guid applicationId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -584,6 +614,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -614,7 +646,12 @@
       <MemberSignature Language="C#" Value="protected override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -643,10 +680,23 @@
         <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetObjects">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the collection of peer objects from a local cache.</summary>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetObjects">
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerObjectCollection GetObjects (System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerObjectCollection GetObjects(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects(System.Net.PeerToPeer.Collaboration.PeerEndPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerObjectCollection ^ GetObjects(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -696,6 +746,7 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerObjectCollection GetObjects (System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, Guid objectId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerObjectCollection GetObjects(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, valuetype System.Guid objectId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects(System.Net.PeerToPeer.Collaboration.PeerEndPoint,System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerObjectCollection ^ GetObjects(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint, Guid objectId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -767,6 +818,8 @@
       <MemberSignature Language="C#" Value="public override System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Invite" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Invite () As PeerInvitationResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::PeerToPeer::Collaboration::PeerInvitationResponse ^ Invite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -806,6 +859,7 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite (System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Invite(System.Net.PeerToPeer.Collaboration.PeerEndPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerInvitationResponse ^ Invite(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -854,6 +908,8 @@
       <MemberSignature Language="C#" Value="public override System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite (System.Net.PeerToPeer.Collaboration.PeerApplication applicationToInvite, string message, byte[] invitationData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite(class System.Net.PeerToPeer.Collaboration.PeerApplication applicationToInvite, string message, unsigned int8[] invitationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Invite(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Invite (applicationToInvite As PeerApplication, message As String, invitationData As Byte()) As PeerInvitationResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::PeerToPeer::Collaboration::PeerInvitationResponse ^ Invite(System::Net::PeerToPeer::Collaboration::PeerApplication ^ applicationToInvite, System::String ^ message, cli::array &lt;System::Byte&gt; ^ invitationData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -904,6 +960,7 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite (System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, System.Net.PeerToPeer.Collaboration.PeerApplication applicationToInvite, string message, byte[] invitationData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, class System.Net.PeerToPeer.Collaboration.PeerApplication applicationToInvite, string message, unsigned int8[] invitationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Invite(System.Net.PeerToPeer.Collaboration.PeerEndPoint,System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerInvitationResponse ^ Invite(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint, System::Net::PeerToPeer::Collaboration::PeerApplication ^ applicationToInvite, System::String ^ message, cli::array &lt;System::Byte&gt; ^ invitationData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -980,6 +1037,8 @@
       <MemberSignature Language="C#" Value="public override void InviteAsync (object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InviteAsync(object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.InviteAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InviteAsync (userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InviteAsync(System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1027,6 +1086,7 @@
       <MemberSignature Language="C#" Value="public void InviteAsync (System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InviteAsync(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerEndPoint,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InviteAsync(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1078,6 +1138,8 @@
       <MemberSignature Language="C#" Value="public override void InviteAsync (System.Net.PeerToPeer.Collaboration.PeerApplication applicationToInvite, string message, byte[] invitationData, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InviteAsync(class System.Net.PeerToPeer.Collaboration.PeerApplication applicationToInvite, string message, unsigned int8[] invitationData, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[],System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InviteAsync (applicationToInvite As PeerApplication, message As String, invitationData As Byte(), userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InviteAsync(System::Net::PeerToPeer::Collaboration::PeerApplication ^ applicationToInvite, System::String ^ message, cli::array &lt;System::Byte&gt; ^ invitationData, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1133,6 +1195,7 @@
       <MemberSignature Language="C#" Value="public void InviteAsync (System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, string message, byte[] invitationData, System.Net.PeerToPeer.Collaboration.PeerApplication applicationToInvite, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InviteAsync(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint, string message, unsigned int8[] invitationData, class System.Net.PeerToPeer.Collaboration.PeerApplication applicationToInvite, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerEndPoint,System.String,System.Byte[],System.Net.PeerToPeer.Collaboration.PeerApplication,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InviteAsync(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint, System::String ^ message, cli::array &lt;System::Byte&gt; ^ invitationData, System::Net::PeerToPeer::Collaboration::PeerApplication ^ applicationToInvite, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1189,6 +1252,8 @@
       <MemberSignature Language="C#" Value="public bool IsSubscribed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSubscribed" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerContact.IsSubscribed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSubscribed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSubscribed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1223,6 +1288,8 @@
       <MemberSignature Language="C#" Value="public string Nickname { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Nickname" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerContact.Nickname" />
+      <MemberSignature Language="VB.NET" Value="Public Property Nickname As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Nickname { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1251,6 +1318,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs&gt; ObjectChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs&gt; ObjectChanged" />
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.PeerContact.ObjectChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ObjectChanged As EventHandler(Of ObjectChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::ObjectChangedEventArgs ^&gt; ^ ObjectChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1287,6 +1356,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnApplicationChanged (System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs appChangedArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnApplicationChanged(class System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs appChangedArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnApplicationChanged(System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnApplicationChanged (appChangedArgs As ApplicationChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnApplicationChanged(System::Net::PeerToPeer::Collaboration::ApplicationChangedEventArgs ^ appChangedArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1322,6 +1393,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnObjectChanged (System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs objChangedArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnObjectChanged(class System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs objChangedArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnObjectChanged(System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnObjectChanged (objChangedArgs As ObjectChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnObjectChanged(System::Net::PeerToPeer::Collaboration::ObjectChangedEventArgs ^ objChangedArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1348,6 +1421,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPresenceChanged (System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs presenceChangedArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPresenceChanged(class System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs presenceChangedArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnPresenceChanged(System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPresenceChanged (presenceChangedArgs As PresenceChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPresenceChanged(System::Net::PeerToPeer::Collaboration::PresenceChangedEventArgs ^ presenceChangedArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1379,6 +1454,8 @@
       <MemberSignature Language="C#" Value="protected void OnSubscribeCompleted (System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnSubscribeCompleted(class System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnSubscribeCompleted(System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnSubscribeCompleted (e As SubscribeCompletedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnSubscribeCompleted(System::Net::PeerToPeer::Collaboration::SubscribeCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1413,6 +1490,8 @@
       <MemberSignature Language="C#" Value="public override System.Net.PeerToPeer.Collaboration.PeerEndPointCollection PeerEndPoints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerEndPointCollection PeerEndPoints" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerEndPoints" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PeerEndPoints As PeerEndPointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::PeerToPeer::Collaboration::PeerEndPointCollection ^ PeerEndPoints { System::Net::PeerToPeer::Collaboration::PeerEndPointCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1453,6 +1532,8 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.PeerName PeerName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.PeerName PeerName" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerName As PeerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::PeerName ^ PeerName { System::Net::PeerToPeer::PeerName ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1482,6 +1563,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs&gt; PresenceChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs&gt; PresenceChanged" />
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.PeerContact.PresenceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PresenceChanged As EventHandler(Of PresenceChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::PresenceChangedEventArgs ^&gt; ^ PresenceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1509,6 +1592,8 @@
       <MemberSignature Language="C#" Value="public virtual void Subscribe ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Subscribe() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Subscribe ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Subscribe();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1544,6 +1629,8 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.SubscriptionType SubscribeAllowed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.PeerToPeer.Collaboration.SubscriptionType SubscribeAllowed" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubscribeAllowed As SubscriptionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::SubscriptionType SubscribeAllowed { System::Net::PeerToPeer::Collaboration::SubscriptionType get(); void set(System::Net::PeerToPeer::Collaboration::SubscriptionType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1578,6 +1665,8 @@
       <MemberSignature Language="C#" Value="public virtual void SubscribeAsync (object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SubscribeAsync(object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SubscribeAsync (userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SubscribeAsync(System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1616,6 +1705,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs&gt; SubscribeCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs&gt; SubscribeCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SubscribeCompleted As EventHandler(Of SubscribeCompletedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::SubscribeCompletedEventArgs ^&gt; ^ SubscribeCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1645,7 +1736,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1673,6 +1769,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1694,6 +1792,8 @@
       <MemberSignature Language="C#" Value="public string ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToXml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1722,6 +1822,8 @@
       <MemberSignature Language="C#" Value="public virtual void Unsubscribe ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unsubscribe() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContact.Unsubscribe" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Unsubscribe ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Unsubscribe();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1749,17 +1851,5 @@
         <altmember cref="T:System.Net.PeerToPeer.Collaboration.SubscriptionType" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetObjects">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the collection of peer objects from a local cache.</summary>
-        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
-        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
-        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="IVsaScriptCodeItem" FullName="Microsoft.JScript.IVsaScriptCodeItem">
+﻿<Type Name="IVsaScriptCodeItem" FullName="Microsoft.JScript.IVsaScriptCodeItem">
   <TypeSignature Language="C#" Value="public interface IVsaScriptCodeItem : Microsoft.JScript.Vsa.IJSVsaCodeItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaScriptCodeItem implements class Microsoft.JScript.Vsa.IJSVsaCodeItem, class Microsoft.JScript.Vsa.IJSVsaItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IVsaScriptCodeItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVsaScriptCodeItem&#xA;Implements IJSVsaCodeItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVsaScriptCodeItem : Microsoft::JScript::Vsa::IJSVsaCodeItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -19,7 +21,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("E0C0FFE8-7eea-4ee5-b7e4-0080c7eb0b74")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public object Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptCodeItem.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public int StartColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartColumn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.IVsaScriptCodeItem.StartColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartColumn { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public int StartLine { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.IVsaScriptCodeItem.StartLine" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartLine As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartLine { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

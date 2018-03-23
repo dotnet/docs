@@ -1,7 +1,9 @@
-<Type Name="DirectoryAttributeModification" FullName="System.DirectoryServices.Protocols.DirectoryAttributeModification">
+﻿<Type Name="DirectoryAttributeModification" FullName="System.DirectoryServices.Protocols.DirectoryAttributeModification">
   <TypeSignature Language="C#" Value="public class DirectoryAttributeModification : System.DirectoryServices.Protocols.DirectoryAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryAttributeModification extends System.DirectoryServices.Protocols.DirectoryAttribute" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryAttributeModification" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryAttributeModification&#xA;Inherits DirectoryAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryAttributeModification : System::DirectoryServices::Protocols::DirectoryAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public DirectoryAttributeModification ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeModification.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryAttributeModification();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DirectoryAttributeOperation Operation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.DirectoryAttributeOperation Operation" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryAttributeModification.Operation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Operation As DirectoryAttributeOperation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DirectoryAttributeOperation Operation { System::DirectoryServices::Protocols::DirectoryAttributeOperation get(); void set(System::DirectoryServices::Protocols::DirectoryAttributeOperation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

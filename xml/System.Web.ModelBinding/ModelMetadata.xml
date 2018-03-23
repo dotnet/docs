@@ -1,7 +1,9 @@
-<Type Name="ModelMetadata" FullName="System.Web.ModelBinding.ModelMetadata">
+﻿<Type Name="ModelMetadata" FullName="System.Web.ModelBinding.ModelMetadata">
   <TypeSignature Language="C#" Value="public class ModelMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class ModelMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public ModelMetadata (System.Web.ModelBinding.ModelMetadataProvider provider, Type containerType, Func&lt;object&gt; modelAccessor, Type modelType, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadataProvider provider, class System.Type containerType, class System.Func`1&lt;object&gt; modelAccessor, class System.Type modelType, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadata.#ctor(System.Web.ModelBinding.ModelMetadataProvider,System.Type,System.Func{System.Object},System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (provider As ModelMetadataProvider, containerType As Type, modelAccessor As Func(Of Object), modelType As Type, propertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelMetadata(System::Web::ModelBinding::ModelMetadataProvider ^ provider, Type ^ containerType, Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ modelType, System::String ^ propertyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.Dictionary&lt;string,object&gt; AdditionalValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; AdditionalValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.AdditionalValues" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AdditionalValues As Dictionary(Of String, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ AdditionalValues { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public Type ContainerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContainerType" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ContainerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainerType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContainerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ConvertEmptyStringToNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ConvertEmptyStringToNull" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ConvertEmptyStringToNull As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ConvertEmptyStringToNull { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +121,8 @@
       <MemberSignature Language="C#" Value="public virtual string DataTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.DataTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +148,8 @@
       <MemberSignature Language="C#" Value="public const int DefaultOrder = 10000;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultOrder = (10000)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ModelBinding.ModelMetadata.DefaultOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultOrder As Integer  = 10000" />
+      <MemberSignature Language="C++ CLI" Value="public: int DefaultOrder = 10000;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +168,8 @@
       <MemberSignature Language="C#" Value="public virtual string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +188,8 @@
       <MemberSignature Language="C#" Value="public virtual string DisplayFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.DisplayFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +209,8 @@
       <MemberSignature Language="C#" Value="public virtual string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -209,6 +229,8 @@
       <MemberSignature Language="C#" Value="public virtual string EditFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EditFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.EditFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EditFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +250,8 @@
       <MemberSignature Language="C#" Value="public string GetDisplayName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDisplayName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadata.GetDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDisplayName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDisplayName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,6 +271,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetSimpleDisplayText ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetSimpleDisplayText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadata.GetSimpleDisplayText" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSimpleDisplayText () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetSimpleDisplayText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +304,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidator&gt; GetValidators (System.Web.ModelBinding.ModelBindingExecutionContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelValidator&gt; GetValidators(class System.Web.ModelBinding.ModelBindingExecutionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadata.GetValidators(System.Web.ModelBinding.ModelBindingExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValidators (context As ModelBindingExecutionContext) As IEnumerable(Of ModelValidator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelValidator ^&gt; ^ GetValidators(System::Web::ModelBinding::ModelBindingExecutionContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +328,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HideSurroundingHtml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HideSurroundingHtml" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.HideSurroundingHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HideSurroundingHtml As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HideSurroundingHtml { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +349,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsComplexType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsComplexType" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.IsComplexType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsComplexType As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsComplexType { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -345,6 +377,8 @@
       <MemberSignature Language="C#" Value="public bool IsNullableValueType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullableValueType" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.IsNullableValueType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNullableValueType As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullableValueType { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -364,6 +398,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,6 +419,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.IsRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsRequired As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsRequired { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -402,6 +440,8 @@
       <MemberSignature Language="C#" Value="public object Model { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Model" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Model" />
+      <MemberSignature Language="VB.NET" Value="Public Property Model As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Model { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -420,6 +460,8 @@
       <MemberSignature Language="C#" Value="public Type ModelType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ModelType" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ModelType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ModelType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -438,6 +480,8 @@
       <MemberSignature Language="C#" Value="public virtual string NullDisplayText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NullDisplayText" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.NullDisplayText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property NullDisplayText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NullDisplayText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -456,6 +500,8 @@
       <MemberSignature Language="C#" Value="public virtual int Order { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Order As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Order { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -474,6 +520,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt; Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelMetadata&gt; Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Properties As IEnumerable(Of ModelMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelMetadata ^&gt; ^ Properties { System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelMetadata ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -492,6 +540,8 @@
       <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -510,6 +560,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.ModelBinding.ModelMetadataProvider Provider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelMetadataProvider Provider" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Provider" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Provider As ModelMetadataProvider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::ModelBinding::ModelMetadataProvider ^ Provider { System::Web::ModelBinding::ModelMetadataProvider ^ get(); void set(System::Web::ModelBinding::ModelMetadataProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -528,6 +580,8 @@
       <MemberSignature Language="C#" Value="public virtual bool RequestValidationEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequestValidationEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.RequestValidationEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RequestValidationEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequestValidationEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -547,6 +601,8 @@
       <MemberSignature Language="C#" Value="public virtual string ShortDisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ShortDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ShortDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShortDisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ShortDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -572,6 +628,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowForDisplay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowForDisplay" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ShowForDisplay" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowForDisplay As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowForDisplay { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -592,6 +650,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowForEdit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowForEdit" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ShowForEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowForEdit As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowForEdit { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -612,6 +672,8 @@
       <MemberSignature Language="C#" Value="public virtual string SimpleDisplayText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SimpleDisplayText" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.SimpleDisplayText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SimpleDisplayText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SimpleDisplayText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -630,6 +692,8 @@
       <MemberSignature Language="C#" Value="public virtual string TemplateHint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TemplateHint" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.TemplateHint" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TemplateHint As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TemplateHint { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -648,6 +712,8 @@
       <MemberSignature Language="C#" Value="public virtual string Watermark { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Watermark" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Watermark" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Watermark As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Watermark { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

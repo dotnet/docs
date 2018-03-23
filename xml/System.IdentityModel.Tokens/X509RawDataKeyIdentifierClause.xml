@@ -1,7 +1,9 @@
-<Type Name="X509RawDataKeyIdentifierClause" FullName="System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause">
+﻿<Type Name="X509RawDataKeyIdentifierClause" FullName="System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause">
   <TypeSignature Language="C#" Value="public class X509RawDataKeyIdentifierClause : System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509RawDataKeyIdentifierClause extends System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public Class X509RawDataKeyIdentifierClause&#xA;Inherits BinaryKeyIdentifierClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509RawDataKeyIdentifierClause : System::IdentityModel::Tokens::BinaryKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public X509RawDataKeyIdentifierClause (byte[] certificateRawData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] certificateRawData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificateRawData As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509RawDataKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ certificateRawData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public X509RawDataKeyIdentifierClause (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509RawDataKeyIdentifierClause(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -85,6 +100,8 @@
       <MemberSignature Language="C#" Value="public override bool CanCreateKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateKey" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.CanCreateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanCreateKey As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCreateKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -111,6 +128,8 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityKey CreateKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityKey CreateKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.CreateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKey () As SecurityKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityKey ^ CreateKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -130,6 +149,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetX509RawData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetX509RawData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.GetX509RawData" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetX509RawData () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetX509RawData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -149,6 +170,8 @@
       <MemberSignature Language="C#" Value="public bool Matches (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (certificate As X509Certificate2) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -181,6 +204,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -203,14 +228,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

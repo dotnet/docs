@@ -1,7 +1,9 @@
-<Type Name="AddInSecurityLevel" FullName="System.AddIn.Hosting.AddInSecurityLevel">
+﻿<Type Name="AddInSecurityLevel" FullName="System.AddIn.Hosting.AddInSecurityLevel">
   <TypeSignature Language="C#" Value="public enum AddInSecurityLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AddInSecurityLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInSecurityLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AddInSecurityLevel" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AddInSecurityLevel" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="FullTrust" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSecurityLevel FullTrust = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.FullTrust" />
+      <MemberSignature Language="VB.NET" Value="FullTrust" />
+      <MemberSignature Language="C++ CLI" Value="FullTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.AddIn.Hosting.AddInSecurityLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Use the full trust security level for add-ins that are allowed to read and write to the local file system, create network connections, and read from the registry. This security level grants full access to the add-in's code access security (CAS) by applying the <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> field.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="Host" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSecurityLevel Host = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Host" />
+      <MemberSignature Language="VB.NET" Value="Host" />
+      <MemberSignature Language="C++ CLI" Value="Host" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.AddIn.Hosting.AddInSecurityLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Use the host security level to give the add-in the same permissions currently granted to the hosting code.</summary>
         <remarks>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="Internet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSecurityLevel Internet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Internet" />
+      <MemberSignature Language="VB.NET" Value="Internet" />
+      <MemberSignature Language="C++ CLI" Value="Internet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.AddIn.Hosting.AddInSecurityLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Use the Internet security level for add-ins that have a low trust level.</summary>
       </Docs>
@@ -95,6 +106,8 @@
       <MemberSignature Language="C#" Value="Intranet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSecurityLevel Intranet = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Intranet" />
+      <MemberSignature Language="VB.NET" Value="Intranet" />
+      <MemberSignature Language="C++ CLI" Value="Intranet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -103,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.AddIn.Hosting.AddInSecurityLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Use the Intranet security level for add-ins that are located on a company's intranet. These add-ins can have a greater trust level because the servers and information are within a company's firewall.</summary>
       </Docs>

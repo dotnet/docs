@@ -1,7 +1,9 @@
-<Type Name="HttpCacheVaryByParams" FullName="System.Web.HttpCacheVaryByParams">
+﻿<Type Name="HttpCacheVaryByParams" FullName="System.Web.HttpCacheVaryByParams">
   <TypeSignature Language="C#" Value="public sealed class HttpCacheVaryByParams" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpCacheVaryByParams extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByParams" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCacheVaryByParams" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpCacheVaryByParams sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public HttpCacheVaryByParams ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByParams.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCacheVaryByParams();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public string[] GetParams ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetParams() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByParams.GetParams" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParams () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetParams();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public bool IgnoreParams { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreParams" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByParams.IgnoreParams" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreParams As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreParams { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +108,8 @@
       <MemberSignature Language="C#" Value="public bool this[string header] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByParams.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(header As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default[System::String ^] { bool get(System::String ^ header); void set(System::String ^ header, bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +152,8 @@
       <MemberSignature Language="C#" Value="public void SetParams (string[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParams(string[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByParams.SetParams(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetParams (parameters As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParams(cli::array &lt;System::String ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

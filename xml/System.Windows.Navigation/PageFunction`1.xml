@@ -1,7 +1,9 @@
-<Type Name="PageFunction&lt;T&gt;" FullName="System.Windows.Navigation.PageFunction&lt;T&gt;">
+﻿<Type Name="PageFunction&lt;T&gt;" FullName="System.Windows.Navigation.PageFunction&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class PageFunction&lt;T&gt; : System.Windows.Navigation.PageFunctionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PageFunction`1&lt;T&gt; extends System.Windows.Navigation.PageFunctionBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.PageFunction`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class PageFunction(Of T)&#xA;Inherits PageFunctionBase" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class PageFunction : System::Windows::Navigation::PageFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public PageFunction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.PageFunction`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageFunction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnReturn (System.Windows.Navigation.ReturnEventArgs&lt;T&gt; e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnReturn(class System.Windows.Navigation.ReturnEventArgs`1&lt;!T&gt; e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.PageFunction`1.OnReturn(System.Windows.Navigation.ReturnEventArgs{`0})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReturn (e As ReturnEventArgs(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnReturn(System::Windows::Navigation::ReturnEventArgs&lt;T&gt; ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +123,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.ReturnEventHandler&lt;T&gt; Return;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.ReturnEventHandler`1&lt;!T&gt; Return" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.PageFunction`1.Return" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Return As ReturnEventHandler(Of T) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::ReturnEventHandler&lt;T&gt; ^ Return;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

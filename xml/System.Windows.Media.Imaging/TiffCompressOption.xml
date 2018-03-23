@@ -1,7 +1,9 @@
-<Type Name="TiffCompressOption" FullName="System.Windows.Media.Imaging.TiffCompressOption">
+﻿<Type Name="TiffCompressOption" FullName="System.Windows.Media.Imaging.TiffCompressOption">
   <TypeSignature Language="C#" Value="public enum TiffCompressOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TiffCompressOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.TiffCompressOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TiffCompressOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TiffCompressOption" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="Ccitt3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.TiffCompressOption Ccitt3 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Ccitt3" />
+      <MemberSignature Language="VB.NET" Value="Ccitt3" />
+      <MemberSignature Language="C++ CLI" Value="Ccitt3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The CCITT3 compression schema is used.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="Ccitt4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.TiffCompressOption Ccitt4 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Ccitt4" />
+      <MemberSignature Language="VB.NET" Value="Ccitt4" />
+      <MemberSignature Language="C++ CLI" Value="Ccitt4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The CCITT4 compression schema is used.</summary>
       </Docs>
@@ -67,6 +75,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.TiffCompressOption Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Media.Imaging.TiffBitmapEncoder" /> encoder attempts to save the bitmap with the best possible compression schema.</summary>
       </Docs>
@@ -83,6 +94,8 @@
       <MemberSignature Language="C#" Value="Lzw" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.TiffCompressOption Lzw = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Lzw" />
+      <MemberSignature Language="VB.NET" Value="Lzw" />
+      <MemberSignature Language="C++ CLI" Value="Lzw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The LZW compression schema is used.</summary>
       </Docs>
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.TiffCompressOption None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +123,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] image is not compressed.</summary>
       </Docs>
@@ -115,6 +132,8 @@
       <MemberSignature Language="C#" Value="Rle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.TiffCompressOption Rle = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Rle" />
+      <MemberSignature Language="VB.NET" Value="Rle" />
+      <MemberSignature Language="C++ CLI" Value="Rle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The RLE compression schema is used.</summary>
       </Docs>
@@ -131,6 +151,8 @@
       <MemberSignature Language="C#" Value="Zip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.TiffCompressOption Zip = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Zip" />
+      <MemberSignature Language="VB.NET" Value="Zip" />
+      <MemberSignature Language="C++ CLI" Value="Zip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +161,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Zip compression schema is used.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="XmlPeek" FullName="Microsoft.Build.Tasks.XmlPeek">
+﻿<Type Name="XmlPeek" FullName="Microsoft.Build.Tasks.XmlPeek">
   <TypeSignature Language="C#" Value="public class XmlPeek : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlPeek extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.XmlPeek" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlPeek&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlPeek : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public XmlPeek ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.XmlPeek.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlPeek();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.XmlPeek.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public string Namespaces { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespaces" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPeek.Namespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespaces As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespaces { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="public string Query { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Query" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPeek.Query" />
+      <MemberSignature Language="VB.NET" Value="Public Property Query As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Query { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -89,6 +99,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Result { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPeek.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Result { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -112,6 +124,8 @@
       <MemberSignature Language="C#" Value="public string XmlContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlContent" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPeek.XmlContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlContent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlContent { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -130,6 +144,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem XmlInputPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem XmlInputPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPeek.XmlInputPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlInputPath As ITaskItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ XmlInputPath { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

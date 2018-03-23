@@ -1,7 +1,9 @@
-<Type Name="QueryForConnectionCallback" FullName="System.DirectoryServices.Protocols.QueryForConnectionCallback">
+﻿<Type Name="QueryForConnectionCallback" FullName="System.DirectoryServices.Protocols.QueryForConnectionCallback">
   <TypeSignature Language="C#" Value="public delegate System.DirectoryServices.Protocols.LdapConnection QueryForConnectionCallback(LdapConnection primaryConnection, LdapConnection referralFromConnection, string newDistinguishedName, LdapDirectoryIdentifier identifier, NetworkCredential credential, long currentUserToken);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryForConnectionCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function QueryForConnectionCallback(primaryConnection As LdapConnection, referralFromConnection As LdapConnection, newDistinguishedName As String, identifier As LdapDirectoryIdentifier, credential As NetworkCredential, currentUserToken As Long) As LdapConnection " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::DirectoryServices::Protocols::LdapConnection ^ QueryForConnectionCallback(LdapConnection ^ primaryConnection, LdapConnection ^ referralFromConnection, System::String ^ newDistinguishedName, LdapDirectoryIdentifier ^ identifier, NetworkCredential ^ credential, long currentUserToken);" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

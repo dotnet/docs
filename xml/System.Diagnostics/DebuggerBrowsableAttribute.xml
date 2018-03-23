@@ -1,7 +1,9 @@
-<Type Name="DebuggerBrowsableAttribute" FullName="System.Diagnostics.DebuggerBrowsableAttribute">
+﻿<Type Name="DebuggerBrowsableAttribute" FullName="System.Diagnostics.DebuggerBrowsableAttribute">
   <TypeSignature Language="C#" Value="public sealed class DebuggerBrowsableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DebuggerBrowsableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggerBrowsableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggerBrowsableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebuggerBrowsableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Debug</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +62,8 @@
       <MemberSignature Language="C#" Value="public DebuggerBrowsableAttribute (System.Diagnostics.DebuggerBrowsableState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.DebuggerBrowsableState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerBrowsableAttribute.#ctor(System.Diagnostics.DebuggerBrowsableState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As DebuggerBrowsableState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerBrowsableAttribute(System::Diagnostics::DebuggerBrowsableState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -107,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.DebuggerBrowsableState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.DebuggerBrowsableState State" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerBrowsableAttribute.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As DebuggerBrowsableState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::DebuggerBrowsableState State { System::Diagnostics::DebuggerBrowsableState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>

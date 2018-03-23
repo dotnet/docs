@@ -1,7 +1,9 @@
-<Type Name="IJSVsaItem" FullName="Microsoft.JScript.Vsa.IJSVsaItem">
+﻿<Type Name="IJSVsaItem" FullName="Microsoft.JScript.Vsa.IJSVsaItem">
   <TypeSignature Language="C#" Value="public interface IJSVsaItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IJSVsaItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IJSVsaItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IJSVsaItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -18,7 +20,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("1F2377AC-8A09-417B-89DC-D146769F0B45")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public object GetOption (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetOption(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaItem.GetOption(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOption (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOption(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public bool IsDirty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaItem.IsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +76,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.JSVsaItemType ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.JScript.Vsa.JSVsaItemType ItemType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaItem.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As JSVsaItemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::JScript::Vsa::JSVsaItemType ItemType { Microsoft::JScript::Vsa::JSVsaItemType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -88,6 +96,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaItem.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -106,6 +116,8 @@
       <MemberSignature Language="C#" Value="public void SetOption (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOption(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaItem.SetOption(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetOption (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOption(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

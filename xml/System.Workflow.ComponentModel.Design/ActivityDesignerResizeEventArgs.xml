@@ -1,7 +1,9 @@
-<Type Name="ActivityDesignerResizeEventArgs" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs">
+﻿<Type Name="ActivityDesignerResizeEventArgs" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs">
   <TypeSignature Language="C#" Value="public class ActivityDesignerResizeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityDesignerResizeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityDesignerResizeEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerResizeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public ActivityDesignerResizeEventArgs (System.Workflow.ComponentModel.Design.DesignerEdges sizingEdge, System.Drawing.Rectangle newBounds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Workflow.ComponentModel.Design.DesignerEdges sizingEdge, valuetype System.Drawing.Rectangle newBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs.#ctor(System.Workflow.ComponentModel.Design.DesignerEdges,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sizingEdge As DesignerEdges, newBounds As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerResizeEventArgs(System::Workflow::ComponentModel::Design::DesignerEdges sizingEdge, System::Drawing::Rectangle newBounds);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.DesignerEdges SizingEdge { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.Design.DesignerEdges SizingEdge" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs.SizingEdge" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizingEdge As DesignerEdges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::DesignerEdges SizingEdge { System::Workflow::ComponentModel::Design::DesignerEdges get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

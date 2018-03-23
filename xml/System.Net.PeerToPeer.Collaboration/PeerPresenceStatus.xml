@@ -1,7 +1,9 @@
-<Type Name="PeerPresenceStatus" FullName="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus">
+﻿<Type Name="PeerPresenceStatus" FullName="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus">
   <TypeSignature Language="C#" Value="public enum PeerPresenceStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeerPresenceStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PeerPresenceStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PeerPresenceStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Away" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Away = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Away" />
+      <MemberSignature Language="VB.NET" Value="Away" />
+      <MemberSignature Language="C++ CLI" Value="Away" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the peer is "Away" and unable to respond.</summary>
       </Docs>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="BeRightBack" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerPresenceStatus BeRightBack = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.BeRightBack" />
+      <MemberSignature Language="VB.NET" Value="BeRightBack" />
+      <MemberSignature Language="C++ CLI" Value="BeRightBack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -53,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that the peer has stepped away from the application and will participate soon.</summary>
       </Docs>
@@ -61,6 +69,8 @@
       <MemberSignature Language="C#" Value="Busy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Busy = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Busy" />
+      <MemberSignature Language="VB.NET" Value="Busy" />
+      <MemberSignature Language="C++ CLI" Value="Busy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies that the peer is "Busy" and does not wish to be disturbed.</summary>
       </Docs>
@@ -77,6 +88,8 @@
       <MemberSignature Language="C#" Value="Idle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Idle = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Idle" />
+      <MemberSignature Language="VB.NET" Value="Idle" />
+      <MemberSignature Language="C++ CLI" Value="Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -85,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the peer is idling.</summary>
       </Docs>
@@ -93,6 +107,8 @@
       <MemberSignature Language="C#" Value="Offline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Offline = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Offline" />
+      <MemberSignature Language="VB.NET" Value="Offline" />
+      <MemberSignature Language="C++ CLI" Value="Offline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -101,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the peer is Offline.</summary>
       </Docs>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="Online" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Online = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Online" />
+      <MemberSignature Language="VB.NET" Value="Online" />
+      <MemberSignature Language="C++ CLI" Value="Online" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -117,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Specifies that the peer is actively participating in the Peer Collaboration network.</summary>
       </Docs>
@@ -125,6 +145,8 @@
       <MemberSignature Language="C#" Value="OnThePhone" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerPresenceStatus OnThePhone = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.OnThePhone" />
+      <MemberSignature Language="VB.NET" Value="OnThePhone" />
+      <MemberSignature Language="C++ CLI" Value="OnThePhone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -133,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies that the peer is currently on the phone and does not wish to be disturbed.</summary>
       </Docs>
@@ -141,6 +164,8 @@
       <MemberSignature Language="C#" Value="OutToLunch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerPresenceStatus OutToLunch = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.OutToLunch" />
+      <MemberSignature Language="VB.NET" Value="OutToLunch" />
+      <MemberSignature Language="C++ CLI" Value="OutToLunch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -149,6 +174,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the peer is currently "Out to Lunch" and unable to respond.</summary>
       </Docs>

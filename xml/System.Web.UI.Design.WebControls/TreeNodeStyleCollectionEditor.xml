@@ -1,7 +1,9 @@
-<Type Name="TreeNodeStyleCollectionEditor" FullName="System.Web.UI.Design.WebControls.TreeNodeStyleCollectionEditor">
+﻿<Type Name="TreeNodeStyleCollectionEditor" FullName="System.Web.UI.Design.WebControls.TreeNodeStyleCollectionEditor">
   <TypeSignature Language="C#" Value="public class TreeNodeStyleCollectionEditor : System.Web.UI.Design.WebControls.StyleCollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TreeNodeStyleCollectionEditor extends System.Web.UI.Design.WebControls.StyleCollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.TreeNodeStyleCollectionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class TreeNodeStyleCollectionEditor&#xA;Inherits StyleCollectionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TreeNodeStyleCollectionEditor : System::Web::UI::Design::WebControls::StyleCollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public TreeNodeStyleCollectionEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeNodeStyleCollectionEditor.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNodeStyleCollectionEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override Type CreateCollectionItemType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type CreateCollectionItemType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeNodeStyleCollectionEditor.CreateCollectionItemType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionItemType () As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ CreateCollectionItemType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

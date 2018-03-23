@@ -1,7 +1,9 @@
-<Type Name="ImageEditor" FullName="System.Drawing.Design.ImageEditor">
+﻿<Type Name="ImageEditor" FullName="System.Drawing.Design.ImageEditor">
   <TypeSignature Language="C#" Value="public class ImageEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ImageEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class ImageEditor&#xA;Inherits UITypeEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageEditor : System::Drawing::Design::UITypeEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public ImageEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="protected static string CreateExtensionsString (string[] extensions, string sep);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string CreateExtensionsString(string[] extensions, string sep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.CreateExtensionsString(System.String[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateExtensionsString (extensions As String(), sep As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ CreateExtensionsString(cli::array &lt;System::String ^&gt; ^ extensions, System::String ^ sep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="protected static string CreateFilterEntry (System.Drawing.Design.ImageEditor e);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string CreateFilterEntry(class System.Drawing.Design.ImageEditor e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.CreateFilterEntry(System.Drawing.Design.ImageEditor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateFilterEntry (e As ImageEditor) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ CreateFilterEntry(System::Drawing::Design::ImageEditor ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -105,6 +113,8 @@
       <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -138,6 +148,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Design.UITypeEditorEditStyle GetEditStyle (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditStyle (context As ITypeDescriptorContext) As UITypeEditorEditStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Design::UITypeEditorEditStyle GetEditStyle(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -167,6 +179,8 @@
       <MemberSignature Language="C#" Value="protected virtual string[] GetExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string[] GetExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetExtensions" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetExtensions () As String()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -186,6 +200,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetFileDialogDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetFileDialogDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetFileDialogDescription" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetFileDialogDescription () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetFileDialogDescription();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -212,6 +228,8 @@
       <MemberSignature Language="C#" Value="protected virtual Type[] GetImageExtenders ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type[] GetImageExtenders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetImageExtenders" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetImageExtenders () As Type()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetImageExtenders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -234,6 +252,8 @@
       <MemberSignature Language="C#" Value="public override bool GetPaintValueSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetPaintValueSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPaintValueSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPaintValueSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -257,6 +277,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Drawing.Image LoadFromStream (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Drawing.Image LoadFromStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.LoadFromStream(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Drawing::Image ^ LoadFromStream(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -279,6 +300,8 @@
       <MemberSignature Language="C#" Value="public override void PaintValue (System.Drawing.Design.PaintValueEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PaintValue(class System.Drawing.Design.PaintValueEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaintValue (e As PaintValueEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaintValue(System::Drawing::Design::PaintValueEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>

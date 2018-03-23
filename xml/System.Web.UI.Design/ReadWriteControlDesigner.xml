@@ -1,7 +1,9 @@
-<Type Name="ReadWriteControlDesigner" FullName="System.Web.UI.Design.ReadWriteControlDesigner">
+﻿<Type Name="ReadWriteControlDesigner" FullName="System.Web.UI.Design.ReadWriteControlDesigner">
   <TypeSignature Language="C#" Value="public class ReadWriteControlDesigner : System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReadWriteControlDesigner extends System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ReadWriteControlDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReadWriteControlDesigner&#xA;Inherits ControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReadWriteControlDesigner : System::Web::UI::Design::ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public ReadWriteControlDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadWriteControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -92,6 +98,8 @@
       <MemberSignature Language="C#" Value="protected virtual void MapPropertyToStyle (string propName, object varPropValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MapPropertyToStyle(string propName, object varPropValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.MapPropertyToStyle(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub MapPropertyToStyle (propName As String, varPropValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void MapPropertyToStyle(System::String ^ propName, System::Object ^ varPropValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -128,6 +136,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBehaviorAttached ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBehaviorAttached() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.OnBehaviorAttached" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBehaviorAttached ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBehaviorAttached();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -162,6 +172,8 @@
       <MemberSignature Language="C#" Value="public override void OnComponentChanged (object sender, System.ComponentModel.Design.ComponentChangedEventArgs ce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnComponentChanged(object sender, class System.ComponentModel.Design.ComponentChangedEventArgs ce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -198,6 +210,8 @@
       <MemberSignature Language="C#" Value="public override void UpdateDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.UpdateDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateDesignTimeHtml ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

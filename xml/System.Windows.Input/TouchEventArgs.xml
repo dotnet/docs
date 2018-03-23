@@ -1,7 +1,9 @@
-<Type Name="TouchEventArgs" FullName="System.Windows.Input.TouchEventArgs">
+﻿<Type Name="TouchEventArgs" FullName="System.Windows.Input.TouchEventArgs">
   <TypeSignature Language="C#" Value="public class TouchEventArgs : System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TouchEventArgs extends System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class TouchEventArgs&#xA;Inherits InputEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TouchEventArgs : System::Windows::Input::InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,7 @@
       <MemberSignature Language="C#" Value="public TouchEventArgs (System.Windows.Input.TouchDevice touchDevice, int timestamp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.TouchDevice touchDevice, int32 timestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchEventArgs.#ctor(System.Windows.Input.TouchDevice,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TouchEventArgs(System::Windows::Input::TouchDevice ^ touchDevice, int timestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.TouchPointCollection GetIntermediateTouchPoints (System.Windows.IInputElement relativeTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.TouchPointCollection GetIntermediateTouchPoints(class System.Windows.IInputElement relativeTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchEventArgs.GetIntermediateTouchPoints(System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIntermediateTouchPoints (relativeTo As IInputElement) As TouchPointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::TouchPointCollection ^ GetIntermediateTouchPoints(System::Windows::IInputElement ^ relativeTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +113,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.TouchPoint GetTouchPoint (System.Windows.IInputElement relativeTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.TouchPoint GetTouchPoint(class System.Windows.IInputElement relativeTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchEventArgs.GetTouchPoint(System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTouchPoint (relativeTo As IInputElement) As TouchPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::TouchPoint ^ GetTouchPoint(System::Windows::IInputElement ^ relativeTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -130,6 +137,8 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.TouchDevice TouchDevice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.TouchDevice TouchDevice" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchEventArgs.TouchDevice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TouchDevice As TouchDevice" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::TouchDevice ^ TouchDevice { System::Windows::Input::TouchDevice ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

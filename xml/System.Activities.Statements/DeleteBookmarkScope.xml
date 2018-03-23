@@ -1,7 +1,9 @@
-<Type Name="DeleteBookmarkScope" FullName="System.Activities.Statements.DeleteBookmarkScope">
+﻿<Type Name="DeleteBookmarkScope" FullName="System.Activities.Statements.DeleteBookmarkScope">
   <TypeSignature Language="C#" Value="public sealed class DeleteBookmarkScope : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeleteBookmarkScope extends System.Activities.NativeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.DeleteBookmarkScope" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeleteBookmarkScope&#xA;Inherits NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeleteBookmarkScope sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public DeleteBookmarkScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DeleteBookmarkScope.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteBookmarkScope();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DeleteBookmarkScope.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DeleteBookmarkScope.Execute(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -90,6 +98,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;System.Activities.BookmarkScope&gt; Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;class System.Activities.BookmarkScope&gt; Scope" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.DeleteBookmarkScope.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As InArgument(Of BookmarkScope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::Activities::BookmarkScope ^&gt; ^ Scope { System::Activities::InArgument&lt;System::Activities::BookmarkScope ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::Activities::BookmarkScope ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

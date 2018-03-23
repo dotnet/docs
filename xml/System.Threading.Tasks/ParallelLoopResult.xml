@@ -1,7 +1,9 @@
-<Type Name="ParallelLoopResult" FullName="System.Threading.Tasks.ParallelLoopResult">
+﻿<Type Name="ParallelLoopResult" FullName="System.Threading.Tasks.ParallelLoopResult">
   <TypeSignature Language="C#" Value="public struct ParallelLoopResult" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ParallelLoopResult extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ParallelLoopResult" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ParallelLoopResult" />
+  <TypeSignature Language="C++ CLI" Value="public value class ParallelLoopResult" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelLoopResult.IsCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; LowestBreakIteration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; LowestBreakIteration" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelLoopResult.LowestBreakIteration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LowestBreakIteration As Nullable(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; LowestBreakIteration { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>

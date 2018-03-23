@@ -1,7 +1,9 @@
-<Type Name="ExtensionCollection&lt;T&gt;" FullName="System.ServiceModel.ExtensionCollection&lt;T&gt;">
+﻿<Type Name="ExtensionCollection&lt;T&gt;" FullName="System.ServiceModel.ExtensionCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class ExtensionCollection&lt;T&gt; : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;, System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;, System.Collections.Generic.IEnumerable&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;, System.ServiceModel.IExtensionCollection&lt;T&gt; where T : IExtensibleObject&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtensionCollection`1&lt;(class System.ServiceModel.IExtensibleObject`1&lt;!T&gt;) T&gt; extends System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.IExtension`1&lt;!T&gt;&gt; implements class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.IExtension`1&lt;!T&gt;&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.IExtension`1&lt;!T&gt;&gt;, class System.Collections.IEnumerable, class System.ServiceModel.IExtensionCollection`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ExtensionCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExtensionCollection(Of T)&#xA;Inherits SynchronizedCollection(Of IExtension(Of T))&#xA;Implements ICollection(Of IExtension(Of T)), IEnumerable(Of IExtension(Of T)), IExtensionCollection(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : IExtensibleObject&lt;T&gt;public ref class ExtensionCollection sealed : System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::IExtension&lt;T&gt; ^&gt;, System::Collections::Generic::ICollection&lt;System::ServiceModel::IExtension&lt;T&gt; ^&gt;, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::IExtension&lt;T&gt; ^&gt;, System::ServiceModel::IExtensionCollection&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,10 +50,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ExtensionCollection`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExtensionCollection (T owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExtensionCollection`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtensionCollection(T owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +89,8 @@
       <MemberSignature Language="C#" Value="public ExtensionCollection (T owner, object syncRoot);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T owner, object syncRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExtensionCollection`1.#ctor(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As T, syncRoot As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtensionCollection(T owner, System::Object ^ syncRoot);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +116,8 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExtensionCollection`1.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,7 +141,12 @@
       <MemberSignature Language="C#" Value="public E Find&lt;E&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!E Find&lt;E&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExtensionCollection`1.Find``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find(Of E) () As E" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename E&gt;&#xA; virtual E Find();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.IExtensionCollection`1.Find``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -151,7 +174,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;E&gt; FindAll&lt;E&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.Collection`1&lt;!!E&gt; FindAll&lt;E&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExtensionCollection`1.FindAll``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAll(Of E) () As Collection(Of E)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename E&gt;&#xA; virtual System::Collections::ObjectModel::Collection&lt;E&gt; ^ FindAll();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.IExtensionCollection`1.FindAll``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -179,6 +207,8 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.ServiceModel.IExtension&lt;T&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.ServiceModel.IExtension`1&lt;!T&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExtensionCollection`1.InsertItem(System.Int32,System.ServiceModel.IExtension{`0})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As IExtension(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ServiceModel::IExtension&lt;T&gt; ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +237,8 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExtensionCollection`1.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -233,6 +265,8 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.ServiceModel.IExtension&lt;T&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.ServiceModel.IExtension`1&lt;!T&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExtensionCollection`1.SetItem(System.Int32,System.ServiceModel.IExtension{`0})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As IExtension(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ServiceModel::IExtension&lt;T&gt; ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -261,7 +295,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExtensionCollection`1.System#Collections#Generic#ICollection&lt;System#ServiceModel#IExtension&lt;T&gt;&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of IExtension(Of T)).IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -277,15 +316,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ExtensionCollection`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

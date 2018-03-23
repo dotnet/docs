@@ -1,7 +1,9 @@
-<Type Name="IDesignTimeAssemblyLoader" FullName="System.ComponentModel.Design.IDesignTimeAssemblyLoader">
+﻿<Type Name="IDesignTimeAssemblyLoader" FullName="System.ComponentModel.Design.IDesignTimeAssemblyLoader">
   <TypeSignature Language="C#" Value="public interface IDesignTimeAssemblyLoader" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignTimeAssemblyLoader" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignTimeAssemblyLoader" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDesignTimeAssemblyLoader" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignTimeAssemblyLoader" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("665f0ba5-ce72-4e87-9ba0-3c461de74d0b")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public string GetTargetAssemblyPath (System.Reflection.AssemblyName runtimeOrTargetAssemblyName, string suggestedAssemblyPath, System.Runtime.Versioning.FrameworkName targetFramework);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTargetAssemblyPath(class System.Reflection.AssemblyName runtimeOrTargetAssemblyName, string suggestedAssemblyPath, class System.Runtime.Versioning.FrameworkName targetFramework) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignTimeAssemblyLoader.GetTargetAssemblyPath(System.Reflection.AssemblyName,System.String,System.Runtime.Versioning.FrameworkName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTargetAssemblyPath (runtimeOrTargetAssemblyName As AssemblyName, suggestedAssemblyPath As String, targetFramework As FrameworkName) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetTargetAssemblyPath(System::Reflection::AssemblyName ^ runtimeOrTargetAssemblyName, System::String ^ suggestedAssemblyPath, System::Runtime::Versioning::FrameworkName ^ targetFramework);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly LoadRuntimeAssembly (System.Reflection.AssemblyName targetAssemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly LoadRuntimeAssembly(class System.Reflection.AssemblyName targetAssemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignTimeAssemblyLoader.LoadRuntimeAssembly(System.Reflection.AssemblyName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadRuntimeAssembly (targetAssemblyName As AssemblyName) As Assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ LoadRuntimeAssembly(System::Reflection::AssemblyName ^ targetAssemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

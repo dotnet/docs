@@ -1,7 +1,9 @@
-<Type Name="DataGridViewEditMode" FullName="System.Windows.Forms.DataGridViewEditMode">
+﻿<Type Name="DataGridViewEditMode" FullName="System.Windows.Forms.DataGridViewEditMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewEditMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewEditMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewEditMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewEditMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewEditMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="EditOnEnter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewEditMode EditOnEnter = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditOnEnter" />
+      <MemberSignature Language="VB.NET" Value="EditOnEnter" />
+      <MemberSignature Language="C++ CLI" Value="EditOnEnter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Editing begins when the cell receives focus. This mode is useful when pressing the TAB key to enter values across a row, or when pressing the ENTER key to enter values down a column.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="EditOnF2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewEditMode EditOnF2 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditOnF2" />
+      <MemberSignature Language="VB.NET" Value="EditOnF2" />
+      <MemberSignature Language="C++ CLI" Value="EditOnF2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Editing begins when F2 is pressed while the cell has focus. This mode places the selection point at the end of the cell contents.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="EditOnKeystroke" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewEditMode EditOnKeystroke = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke" />
+      <MemberSignature Language="VB.NET" Value="EditOnKeystroke" />
+      <MemberSignature Language="C++ CLI" Value="EditOnKeystroke" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Editing begins when any alphanumeric key is pressed while the cell has focus.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="EditOnKeystrokeOrF2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewEditMode EditOnKeystrokeOrF2 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2" />
+      <MemberSignature Language="VB.NET" Value="EditOnKeystrokeOrF2" />
+      <MemberSignature Language="C++ CLI" Value="EditOnKeystrokeOrF2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Editing begins when any alphanumeric key or F2 is pressed while the cell has focus.</summary>
       </Docs>
@@ -101,6 +115,8 @@
       <MemberSignature Language="C#" Value="EditProgrammatically" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewEditMode EditProgrammatically = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditProgrammatically" />
+      <MemberSignature Language="VB.NET" Value="EditProgrammatically" />
+      <MemberSignature Language="C++ CLI" Value="EditProgrammatically" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Editing begins only when the <see cref="M:System.Windows.Forms.DataGridView.BeginEdit(System.Boolean)" /> method is called.</summary>
       </Docs>

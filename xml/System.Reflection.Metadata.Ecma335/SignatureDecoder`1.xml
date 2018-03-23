@@ -1,7 +1,9 @@
-<Type Name="SignatureDecoder&lt;TType&gt;" FullName="System.Reflection.Metadata.Ecma335.SignatureDecoder&lt;TType&gt;">
+﻿<Type Name="SignatureDecoder&lt;TType&gt;" FullName="System.Reflection.Metadata.Ecma335.SignatureDecoder&lt;TType&gt;">
   <TypeSignature Language="C#" Value="public struct SignatureDecoder&lt;TType&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SignatureDecoder`1&lt;TType&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.SignatureDecoder`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SignatureDecoder(Of TType)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public value class SignatureDecoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public TType DecodeFieldSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeFieldSignature(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeFieldSignature(System.Reflection.Metadata.BlobReader@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeFieldSignature (ByRef blobReader As BlobReader) As TType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TType DecodeFieldSignature(System::Reflection::Metadata::BlobReader % blobReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; DecodeLocalSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; DecodeLocalSignature(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeLocalSignature(System.Reflection.Metadata.BlobReader@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeLocalSignature (ByRef blobReader As BlobReader) As ImmutableArray(Of TType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;TType&gt; DecodeLocalSignature(System::Reflection::Metadata::BlobReader % blobReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodSignature&lt;TType&gt; DecodeMethodSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSignature`1&lt;!TType&gt; DecodeMethodSignature(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeMethodSignature(System.Reflection.Metadata.BlobReader@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeMethodSignature (ByRef blobReader As BlobReader) As MethodSignature(Of TType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodSignature&lt;TType&gt; DecodeMethodSignature(System::Reflection::Metadata::BlobReader % blobReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; DecodeMethodSpecificationSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; DecodeMethodSpecificationSignature(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeMethodSpecificationSignature(System.Reflection.Metadata.BlobReader@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeMethodSpecificationSignature (ByRef blobReader As BlobReader) As ImmutableArray(Of TType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;TType&gt; DecodeMethodSpecificationSignature(System::Reflection::Metadata::BlobReader % blobReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -131,6 +141,7 @@
       <MemberSignature Language="C#" Value="public TType DecodeType (ref System.Reflection.Metadata.BlobReader blobReader, bool allowTypeSpecifications = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeType(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader, bool allowTypeSpecifications) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeType(System.Reflection.Metadata.BlobReader@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeType (ByRef blobReader As BlobReader, Optional allowTypeSpecifications As Boolean = false) As TType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

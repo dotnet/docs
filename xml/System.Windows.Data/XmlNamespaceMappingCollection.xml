@@ -1,7 +1,9 @@
-<Type Name="XmlNamespaceMappingCollection" FullName="System.Windows.Data.XmlNamespaceMappingCollection">
+﻿<Type Name="XmlNamespaceMappingCollection" FullName="System.Windows.Data.XmlNamespaceMappingCollection">
   <TypeSignature Language="C#" Value="public class XmlNamespaceMappingCollection : System.Xml.XmlNamespaceManager, System.Collections.Generic.ICollection&lt;System.Windows.Data.XmlNamespaceMapping&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Data.XmlNamespaceMapping&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNamespaceMappingCollection extends System.Xml.XmlNamespaceManager implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Data.XmlNamespaceMapping&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Data.XmlNamespaceMapping&gt;, class System.Collections.IEnumerable, class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.XmlNamespaceMappingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlNamespaceMappingCollection&#xA;Inherits XmlNamespaceManager&#xA;Implements ICollection(Of XmlNamespaceMapping), IEnumerable(Of XmlNamespaceMapping)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlNamespaceMappingCollection : System::Xml::XmlNamespaceManager, System::Collections::Generic::ICollection&lt;System::Windows::Data::XmlNamespaceMapping ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Data::XmlNamespaceMapping ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public XmlNamespaceMappingCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlNamespaceMappingCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,7 +58,12 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Data.XmlNamespaceMapping mapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Windows.Data.XmlNamespaceMapping mapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.Add(System.Windows.Data.XmlNamespaceMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (mapping As XmlNamespaceMapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Data::XmlNamespaceMapping ^ mapping);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,7 +86,12 @@
       <MemberSignature Language="C#" Value="protected virtual void AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddChild (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddChild(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,7 +113,12 @@
       <MemberSignature Language="C#" Value="protected virtual void AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddText (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddText(System::String ^ text);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,7 +140,12 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -146,7 +170,12 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Data.XmlNamespaceMapping mapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Data.XmlNamespaceMapping mapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.Contains(System.Windows.Data.XmlNamespaceMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (mapping As XmlNamespaceMapping) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Data::XmlNamespaceMapping ^ mapping);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -171,6 +200,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Data.XmlNamespaceMapping[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Windows.Data.XmlNamespaceMapping[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.CopyTo(System.Windows.Data.XmlNamespaceMapping[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As XmlNamespaceMapping(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Data::XmlNamespaceMapping ^&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,7 +227,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlNamespaceMappingCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -214,7 +250,12 @@
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -234,7 +275,12 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlNamespaceMappingCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -252,6 +298,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Generic.IEnumerator&lt;System.Windows.Data.XmlNamespaceMapping&gt; ProtectedGetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Data.XmlNamespaceMapping&gt; ProtectedGetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.ProtectedGetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Protected Iterator Function ProtectedGetEnumerator () As IEnumerator(Of XmlNamespaceMapping)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::Generic::IEnumerator&lt;System::Windows::Data::XmlNamespaceMapping ^&gt; ^ ProtectedGetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -284,7 +332,12 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.Windows.Data.XmlNamespaceMapping mapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Windows.Data.XmlNamespaceMapping mapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.Remove(System.Windows.Data.XmlNamespaceMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (mapping As XmlNamespaceMapping) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Data::XmlNamespaceMapping ^ mapping);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -309,7 +362,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Data.XmlNamespaceMapping&gt; IEnumerable&lt;XmlNamespaceMapping&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Data.XmlNamespaceMapping&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Data.XmlNamespaceMapping&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Data#XmlNamespaceMapping&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of XmlNamespaceMapping) Implements IEnumerable(Of XmlNamespaceMapping).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Data::XmlNamespaceMapping ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Windows.Data.XmlNamespaceMapping&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Windows::Data::XmlNamespaceMapping ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -335,7 +393,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -363,7 +426,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMappingCollection.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

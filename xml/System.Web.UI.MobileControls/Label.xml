@@ -1,7 +1,9 @@
-<Type Name="Label" FullName="System.Web.UI.MobileControls.Label">
+﻿<Type Name="Label" FullName="System.Web.UI.MobileControls.Label">
   <TypeSignature Language="C#" Value="public class Label : System.Web.UI.MobileControls.TextControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Label extends System.Web.UI.MobileControls.TextControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Label" />
+  <TypeSignature Language="VB.NET" Value="Public Class Label&#xA;Inherits TextControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Label : System::Web::UI::MobileControls::TextControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public Label ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Label.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Label();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

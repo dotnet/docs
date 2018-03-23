@@ -1,7 +1,9 @@
-<Type Name="IAuthorizationComponent" FullName="System.IdentityModel.Policy.IAuthorizationComponent">
+﻿<Type Name="IAuthorizationComponent" FullName="System.IdentityModel.Policy.IAuthorizationComponent">
   <TypeSignature Language="C#" Value="public interface IAuthorizationComponent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthorizationComponent" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.IAuthorizationComponent" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAuthorizationComponent" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAuthorizationComponent" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.IAuthorizationComponent.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

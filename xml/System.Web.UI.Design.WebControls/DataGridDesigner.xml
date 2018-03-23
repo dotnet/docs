@@ -1,7 +1,9 @@
-<Type Name="DataGridDesigner" FullName="System.Web.UI.Design.WebControls.DataGridDesigner">
+﻿<Type Name="DataGridDesigner" FullName="System.Web.UI.Design.WebControls.DataGridDesigner">
   <TypeSignature Language="C#" Value="public class DataGridDesigner : System.Web.UI.Design.WebControls.BaseDataListDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridDesigner extends System.Web.UI.Design.WebControls.BaseDataListDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataGridDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridDesigner&#xA;Inherits BaseDataListDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridDesigner : System::Web::UI::Design::WebControls::BaseDataListDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public DataGridDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataGridDesigner.AutoFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.Design.ITemplateEditingFrame CreateTemplateEditingFrame (System.Web.UI.Design.TemplateEditingVerb verb);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.Design.ITemplateEditingFrame CreateTemplateEditingFrame(class System.Web.UI.Design.TemplateEditingVerb verb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.CreateTemplateEditingFrame(System.Web.UI.Design.TemplateEditingVerb)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateTemplateEditingFrame (verb As TemplateEditingVerb) As ITemplateEditingFrame" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::Design::ITemplateEditingFrame ^ CreateTemplateEditingFrame(System::Web::UI::Design::TemplateEditingVerb ^ verb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +108,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.Design.TemplateEditingVerb[] GetCachedTemplateEditingVerbs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.Design.TemplateEditingVerb[] GetCachedTemplateEditingVerbs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetCachedTemplateEditingVerbs" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCachedTemplateEditingVerbs () As TemplateEditingVerb()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Web::UI::Design::TemplateEditingVerb ^&gt; ^ GetCachedTemplateEditingVerbs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -159,6 +171,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -197,6 +211,8 @@
       <MemberSignature Language="C#" Value="protected override string GetEmptyDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetEmptyDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetEmptyDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEmptyDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetEmptyDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -216,6 +232,8 @@
       <MemberSignature Language="C#" Value="protected override string GetErrorDesignTimeHtml (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetErrorDesignTimeHtml(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetErrorDesignTimeHtml (e As Exception) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetErrorDesignTimeHtml(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -249,6 +267,8 @@
       <MemberSignature Language="C#" Value="public override string GetTemplateContainerDataItemProperty (string templateName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetTemplateContainerDataItemProperty(string templateName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplateContainerDataItemProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTemplateContainerDataItemProperty (templateName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetTemplateContainerDataItemProperty(System::String ^ templateName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -283,6 +303,8 @@
       <MemberSignature Language="C#" Value="public override string GetTemplateContent (System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, out bool allowEditing);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, [out] bool&amp; allowEditing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTemplateContent (editingFrame As ITemplateEditingFrame, templateName As String, ByRef allowEditing As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetTemplateContent(System::Web::UI::Design::ITemplateEditingFrame ^ editingFrame, System::String ^ templateName, [Runtime::InteropServices::Out] bool % allowEditing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -315,6 +337,8 @@
       <MemberSignature Language="C#" Value="public override Type GetTemplatePropertyParentType (string templateName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetTemplatePropertyParentType(string templateName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplatePropertyParentType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTemplatePropertyParentType (templateName As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetTemplatePropertyParentType(System::String ^ templateName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -350,6 +374,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -383,6 +409,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnColumnsChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnColumnsChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.OnColumnsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnColumnsChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnColumnsChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -401,6 +429,8 @@
       <MemberSignature Language="C#" Value="protected override void OnTemplateEditingVerbsChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTemplateEditingVerbsChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.OnTemplateEditingVerbsChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTemplateEditingVerbsChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTemplateEditingVerbsChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -419,6 +449,8 @@
       <MemberSignature Language="C#" Value="public override void SetTemplateContent (System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, string templateContent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, string templateContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.SetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetTemplateContent (editingFrame As ITemplateEditingFrame, templateName As String, templateContent As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetTemplateContent(System::Web::UI::Design::ITemplateEditingFrame ^ editingFrame, System::String ^ templateName, System::String ^ templateContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

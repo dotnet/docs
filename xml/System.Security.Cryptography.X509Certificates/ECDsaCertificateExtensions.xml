@@ -1,7 +1,9 @@
-<Type Name="ECDsaCertificateExtensions" FullName="System.Security.Cryptography.X509Certificates.ECDsaCertificateExtensions">
+﻿<Type Name="ECDsaCertificateExtensions" FullName="System.Security.Cryptography.X509Certificates.ECDsaCertificateExtensions">
   <TypeSignature Language="C#" Value="public static class ECDsaCertificateExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ECDsaCertificateExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.ECDsaCertificateExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ECDsaCertificateExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ECDsaCertificateExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.X509Certificates.X509Certificate2 CopyWithPrivateKey (this System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, System.Security.Cryptography.ECDsa privateKey);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.X509Certificates.X509Certificate2 CopyWithPrivateKey(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, class System.Security.Cryptography.ECDsa privateKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.ECDsaCertificateExtensions.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.ECDsa)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CopyWithPrivateKey (certificate As X509Certificate2, privateKey As ECDsa) As X509Certificate2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::X509Certificates::X509Certificate2 ^ CopyWithPrivateKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate, System::Security::Cryptography::ECDsa ^ privateKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECDsa GetECDsaPrivateKey (this System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.ECDsa GetECDsaPrivateKey(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.ECDsaCertificateExtensions.GetECDsaPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetECDsaPrivateKey (certificate As X509Certificate2) As ECDsa" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::ECDsa ^ GetECDsaPrivateKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECDsa GetECDsaPublicKey (this System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.ECDsa GetECDsaPublicKey(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.ECDsaCertificateExtensions.GetECDsaPublicKey(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetECDsaPublicKey (certificate As X509Certificate2) As ECDsa" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::ECDsa ^ GetECDsaPublicKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

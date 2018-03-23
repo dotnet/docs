@@ -1,7 +1,9 @@
-<Type Name="LenientStringPrototype" FullName="Microsoft.JScript.LenientStringPrototype">
+﻿<Type Name="LenientStringPrototype" FullName="Microsoft.JScript.LenientStringPrototype">
   <TypeSignature Language="C#" Value="public sealed class LenientStringPrototype : Microsoft.JScript.StringPrototype" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientStringPrototype extends Microsoft.JScript.StringPrototype" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientStringPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientStringPrototype&#xA;Inherits StringPrototype" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientStringPrototype sealed : Microsoft::JScript::StringPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public object anchor;" />
       <MemberSignature Language="ILAsm" Value=".field public object anchor" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.anchor" />
+      <MemberSignature Language="VB.NET" Value="Public anchor As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ anchor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public object big;" />
       <MemberSignature Language="ILAsm" Value=".field public object big" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.big" />
+      <MemberSignature Language="VB.NET" Value="Public big As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ big;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public object blink;" />
       <MemberSignature Language="ILAsm" Value=".field public object blink" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.blink" />
+      <MemberSignature Language="VB.NET" Value="Public blink As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ blink;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public object bold;" />
       <MemberSignature Language="ILAsm" Value=".field public object bold" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.bold" />
+      <MemberSignature Language="VB.NET" Value="Public bold As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ bold;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -102,6 +112,8 @@
       <MemberSignature Language="C#" Value="public object charAt;" />
       <MemberSignature Language="ILAsm" Value=".field public object charAt" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.charAt" />
+      <MemberSignature Language="VB.NET" Value="Public charAt As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ charAt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -122,6 +134,8 @@
       <MemberSignature Language="C#" Value="public object charCodeAt;" />
       <MemberSignature Language="ILAsm" Value=".field public object charCodeAt" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.charCodeAt" />
+      <MemberSignature Language="VB.NET" Value="Public charCodeAt As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ charCodeAt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -142,6 +156,8 @@
       <MemberSignature Language="C#" Value="public object concat;" />
       <MemberSignature Language="ILAsm" Value=".field public object concat" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.concat" />
+      <MemberSignature Language="VB.NET" Value="Public concat As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ concat;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -162,6 +178,8 @@
       <MemberSignature Language="C#" Value="public object constructor;" />
       <MemberSignature Language="ILAsm" Value=".field public object constructor" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -182,6 +200,8 @@
       <MemberSignature Language="C#" Value="public object fixed;" />
       <MemberSignature Language="ILAsm" Value=".field public object fixed" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.fixed" />
+      <MemberSignature Language="VB.NET" Value="Public fixed As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ fixed;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -202,6 +222,8 @@
       <MemberSignature Language="C#" Value="public object fontcolor;" />
       <MemberSignature Language="ILAsm" Value=".field public object fontcolor" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.fontcolor" />
+      <MemberSignature Language="VB.NET" Value="Public fontcolor As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ fontcolor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -222,6 +244,8 @@
       <MemberSignature Language="C#" Value="public object fontsize;" />
       <MemberSignature Language="ILAsm" Value=".field public object fontsize" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.fontsize" />
+      <MemberSignature Language="VB.NET" Value="Public fontsize As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ fontsize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -242,6 +266,8 @@
       <MemberSignature Language="C#" Value="public object indexOf;" />
       <MemberSignature Language="ILAsm" Value=".field public object indexOf" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.indexOf" />
+      <MemberSignature Language="VB.NET" Value="Public indexOf As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ indexOf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -262,6 +288,8 @@
       <MemberSignature Language="C#" Value="public object italics;" />
       <MemberSignature Language="ILAsm" Value=".field public object italics" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.italics" />
+      <MemberSignature Language="VB.NET" Value="Public italics As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ italics;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -282,6 +310,8 @@
       <MemberSignature Language="C#" Value="public object lastIndexOf;" />
       <MemberSignature Language="ILAsm" Value=".field public object lastIndexOf" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.lastIndexOf" />
+      <MemberSignature Language="VB.NET" Value="Public lastIndexOf As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ lastIndexOf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -302,6 +332,8 @@
       <MemberSignature Language="C#" Value="public object link;" />
       <MemberSignature Language="ILAsm" Value=".field public object link" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.link" />
+      <MemberSignature Language="VB.NET" Value="Public link As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ link;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -322,6 +354,8 @@
       <MemberSignature Language="C#" Value="public object localeCompare;" />
       <MemberSignature Language="ILAsm" Value=".field public object localeCompare" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.localeCompare" />
+      <MemberSignature Language="VB.NET" Value="Public localeCompare As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ localeCompare;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -342,6 +376,8 @@
       <MemberSignature Language="C#" Value="public object match;" />
       <MemberSignature Language="ILAsm" Value=".field public object match" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.match" />
+      <MemberSignature Language="VB.NET" Value="Public match As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ match;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -362,6 +398,8 @@
       <MemberSignature Language="C#" Value="public object replace;" />
       <MemberSignature Language="ILAsm" Value=".field public object replace" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.replace" />
+      <MemberSignature Language="VB.NET" Value="Public replace As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ replace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -382,6 +420,8 @@
       <MemberSignature Language="C#" Value="public object search;" />
       <MemberSignature Language="ILAsm" Value=".field public object search" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.search" />
+      <MemberSignature Language="VB.NET" Value="Public search As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ search;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -402,6 +442,8 @@
       <MemberSignature Language="C#" Value="public object slice;" />
       <MemberSignature Language="ILAsm" Value=".field public object slice" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.slice" />
+      <MemberSignature Language="VB.NET" Value="Public slice As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ slice;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -422,6 +464,8 @@
       <MemberSignature Language="C#" Value="public object small;" />
       <MemberSignature Language="ILAsm" Value=".field public object small" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.small" />
+      <MemberSignature Language="VB.NET" Value="Public small As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ small;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -442,6 +486,8 @@
       <MemberSignature Language="C#" Value="public object split;" />
       <MemberSignature Language="ILAsm" Value=".field public object split" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.split" />
+      <MemberSignature Language="VB.NET" Value="Public split As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ split;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -462,6 +508,8 @@
       <MemberSignature Language="C#" Value="public object strike;" />
       <MemberSignature Language="ILAsm" Value=".field public object strike" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.strike" />
+      <MemberSignature Language="VB.NET" Value="Public strike As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ strike;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -482,6 +530,8 @@
       <MemberSignature Language="C#" Value="public object sub;" />
       <MemberSignature Language="ILAsm" Value=".field public object sub" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.sub" />
+      <MemberSignature Language="VB.NET" Value="Public sub As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ sub;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -502,6 +552,8 @@
       <MemberSignature Language="C#" Value="public object substr;" />
       <MemberSignature Language="ILAsm" Value=".field public object substr" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.substr" />
+      <MemberSignature Language="VB.NET" Value="Public substr As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ substr;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -527,6 +579,8 @@
       <MemberSignature Language="C#" Value="public object substring;" />
       <MemberSignature Language="ILAsm" Value=".field public object substring" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.substring" />
+      <MemberSignature Language="VB.NET" Value="Public substring As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ substring;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -547,6 +601,8 @@
       <MemberSignature Language="C#" Value="public object sup;" />
       <MemberSignature Language="ILAsm" Value=".field public object sup" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.sup" />
+      <MemberSignature Language="VB.NET" Value="Public sup As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ sup;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -567,6 +623,8 @@
       <MemberSignature Language="C#" Value="public object toLocaleLowerCase;" />
       <MemberSignature Language="ILAsm" Value=".field public object toLocaleLowerCase" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toLocaleLowerCase" />
+      <MemberSignature Language="VB.NET" Value="Public toLocaleLowerCase As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toLocaleLowerCase;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -587,6 +645,8 @@
       <MemberSignature Language="C#" Value="public object toLocaleUpperCase;" />
       <MemberSignature Language="ILAsm" Value=".field public object toLocaleUpperCase" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toLocaleUpperCase" />
+      <MemberSignature Language="VB.NET" Value="Public toLocaleUpperCase As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toLocaleUpperCase;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -607,6 +667,8 @@
       <MemberSignature Language="C#" Value="public object toLowerCase;" />
       <MemberSignature Language="ILAsm" Value=".field public object toLowerCase" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toLowerCase" />
+      <MemberSignature Language="VB.NET" Value="Public toLowerCase As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toLowerCase;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -627,6 +689,8 @@
       <MemberSignature Language="C#" Value="public object toString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toString" />
+      <MemberSignature Language="VB.NET" Value="Public toString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -647,6 +711,8 @@
       <MemberSignature Language="C#" Value="public object toUpperCase;" />
       <MemberSignature Language="ILAsm" Value=".field public object toUpperCase" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toUpperCase" />
+      <MemberSignature Language="VB.NET" Value="Public toUpperCase As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toUpperCase;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -667,6 +733,8 @@
       <MemberSignature Language="C#" Value="public object valueOf;" />
       <MemberSignature Language="ILAsm" Value=".field public object valueOf" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.valueOf" />
+      <MemberSignature Language="VB.NET" Value="Public valueOf As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ valueOf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

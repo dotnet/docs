@@ -1,7 +1,9 @@
-<Type Name="EntityDataSourceValidationException" FullName="System.Web.UI.WebControls.EntityDataSourceValidationException">
+﻿<Type Name="EntityDataSourceValidationException" FullName="System.Web.UI.WebControls.EntityDataSourceValidationException">
   <TypeSignature Language="C#" Value="public sealed class EntityDataSourceValidationException : Exception, System.Web.DynamicData.IDynamicValidatorException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EntityDataSourceValidationException extends System.Exception implements class System.Web.DynamicData.IDynamicValidatorException" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceValidationException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityDataSourceValidationException&#xA;Inherits Exception&#xA;Implements IDynamicValidatorException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceValidationException sealed : Exception, System::Web::DynamicData::IDynamicValidatorException" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +21,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.EntityDataSourceValidationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityDataSourceValidationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceValidationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDataSourceValidationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -52,6 +65,8 @@
       <MemberSignature Language="C#" Value="public EntityDataSourceValidationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceValidationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDataSourceValidationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -82,6 +97,8 @@
       <MemberSignature Language="C#" Value="public EntityDataSourceValidationException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceValidationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDataSourceValidationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -116,7 +133,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IDictionary&lt;string,Exception&gt; System.Web.DynamicData.IDynamicValidatorException.InnerExceptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Exception&gt; System.Web.DynamicData.IDynamicValidatorException.InnerExceptions" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceValidationException.System#Web#DynamicData#IDynamicValidatorException#InnerExceptions" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property InnerExceptions As IDictionary(Of String, Exception) Implements IDynamicValidatorException.InnerExceptions" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ System.Web.DynamicData.IDynamicValidatorException.InnerExceptions { System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicValidatorException.InnerExceptions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -137,14 +159,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.EntityDataSourceValidationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

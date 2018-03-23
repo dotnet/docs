@@ -1,7 +1,9 @@
-<Type Name="CmdLineOptionParser" FullName="Microsoft.JScript.CmdLineOptionParser">
+﻿<Type Name="CmdLineOptionParser" FullName="Microsoft.JScript.CmdLineOptionParser">
   <TypeSignature Language="C#" Value="public class CmdLineOptionParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CmdLineOptionParser extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.CmdLineOptionParser" />
+  <TypeSignature Language="VB.NET" Value="Public Class CmdLineOptionParser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CmdLineOptionParser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public CmdLineOptionParser ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CmdLineOptionParser();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -32,10 +36,21 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsArgumentOption">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the argument from a command-line option that accepts an argument, such as <c>/r[eference]:&amp;lt;file list&amp;gt;</c>.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsArgumentOption">
       <MemberSignature Language="C#" Value="public static string IsArgumentOption (string option, string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string IsArgumentOption(string option, string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsArgumentOption(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsArgumentOption (option As String, prefix As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ IsArgumentOption(System::String ^ option, System::String ^ prefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -61,6 +76,8 @@
       <MemberSignature Language="C#" Value="public static string IsArgumentOption (string option, string shortPrefix, string longPrefix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string IsArgumentOption(string option, string shortPrefix, string longPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsArgumentOption(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsArgumentOption (option As String, shortPrefix As String, longPrefix As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ IsArgumentOption(System::String ^ option, System::String ^ shortPrefix, System::String ^ longPrefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -84,10 +101,21 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsBooleanOption">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the argument from a command-line option that accepts a <c>+</c> or <c>-</c> switch argument, such as <c>/debug[+|-]</c>.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsBooleanOption">
       <MemberSignature Language="C#" Value="public static object IsBooleanOption (string option, string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object IsBooleanOption(string option, string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsBooleanOption(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsBooleanOption (option As String, prefix As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IsBooleanOption(System::String ^ option, System::String ^ prefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -114,6 +142,8 @@
       <MemberSignature Language="C#" Value="public static object IsBooleanOption (string option, string shortPrefix, string longPrefix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object IsBooleanOption(string option, string shortPrefix, string longPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsBooleanOption(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsBooleanOption (option As String, shortPrefix As String, longPrefix As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IsBooleanOption(System::String ^ option, System::String ^ shortPrefix, System::String ^ longPrefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -142,6 +172,8 @@
       <MemberSignature Language="C#" Value="public static bool IsSimpleOption (string option, string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSimpleOption(string option, string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsSimpleOption(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSimpleOption (option As String, prefix As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSimpleOption(System::String ^ option, System::String ^ prefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -164,23 +196,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsBooleanOption">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the argument from a command-line option that accepts a <c>+</c> or <c>-</c> switch argument, such as <c>/debug[+|-]</c>.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsArgumentOption">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the argument from a command-line option that accepts an argument, such as <c>/r[eference]:&amp;lt;file list&amp;gt;</c>.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

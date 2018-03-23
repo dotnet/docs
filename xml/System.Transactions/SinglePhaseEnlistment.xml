@@ -1,7 +1,9 @@
-<Type Name="SinglePhaseEnlistment" FullName="System.Transactions.SinglePhaseEnlistment">
+﻿<Type Name="SinglePhaseEnlistment" FullName="System.Transactions.SinglePhaseEnlistment">
   <TypeSignature Language="C#" Value="public class SinglePhaseEnlistment : System.Transactions.Enlistment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SinglePhaseEnlistment extends System.Transactions.Enlistment" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.SinglePhaseEnlistment" />
+  <TypeSignature Language="VB.NET" Value="Public Class SinglePhaseEnlistment&#xA;Inherits Enlistment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SinglePhaseEnlistment : System::Transactions::Enlistment" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public void Aborted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Aborted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Aborted ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Aborted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -89,6 +93,8 @@
       <MemberSignature Language="C#" Value="public void Aborted (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Aborted(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.Aborted(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Aborted (e As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Aborted(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public void Committed ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Committed() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.Committed" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Committed ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Committed();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -149,10 +157,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InDoubt">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Represents a callback that is used to indicate to the transaction manager that the status of the transaction is in doubt.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InDoubt">
       <MemberSignature Language="C#" Value="public void InDoubt ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InDoubt() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.InDoubt" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InDoubt ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InDoubt();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -187,6 +207,8 @@
       <MemberSignature Language="C#" Value="public void InDoubt (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InDoubt(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.InDoubt(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InDoubt (e As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InDoubt(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -213,15 +235,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="InDoubt">
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Represents a callback that is used to indicate to the transaction manager that the status of the transaction is in doubt.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

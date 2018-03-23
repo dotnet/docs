@@ -1,7 +1,9 @@
-<Type Name="RowToFieldTransformer" FullName="System.Web.UI.WebControls.WebParts.RowToFieldTransformer">
+﻿<Type Name="RowToFieldTransformer" FullName="System.Web.UI.WebControls.WebParts.RowToFieldTransformer">
   <TypeSignature Language="C#" Value="public sealed class RowToFieldTransformer : System.Web.UI.WebControls.WebParts.WebPartTransformer, System.Web.UI.WebControls.WebParts.IWebPartField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RowToFieldTransformer extends System.Web.UI.WebControls.WebParts.WebPartTransformer implements class System.Web.UI.WebControls.WebParts.IWebPartField" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RowToFieldTransformer&#xA;Inherits WebPartTransformer&#xA;Implements IWebPartField" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RowToFieldTransformer sealed : System::Web::UI::WebControls::WebParts::WebPartTransformer, System::Web::UI::WebControls::WebParts::IWebPartField" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public RowToFieldTransformer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToFieldTransformer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RowToFieldTransformer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Control CreateConfigurationControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Control CreateConfigurationControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToFieldTransformer.CreateConfigurationControl" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConfigurationControl () As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Control ^ CreateConfigurationControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +104,8 @@
       <MemberSignature Language="C#" Value="public string FieldName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FieldName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.RowToFieldTransformer.FieldName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FieldName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,9 +128,11 @@
       </Docs>
     </Member>
     <Member MemberName="LoadConfigurationState">
-      <MemberSignature Language="C#" Value="protected override void LoadConfigurationState (object savedState);" />
+      <MemberSignature Language="C#" Value="protected internal override void LoadConfigurationState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadConfigurationState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToFieldTransformer.LoadConfigurationState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadConfigurationState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadConfigurationState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,9 +151,11 @@
       </Docs>
     </Member>
     <Member MemberName="SaveConfigurationState">
-      <MemberSignature Language="C#" Value="protected override object SaveConfigurationState ();" />
+      <MemberSignature Language="C#" Value="protected internal override object SaveConfigurationState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveConfigurationState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToFieldTransformer.SaveConfigurationState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveConfigurationState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveConfigurationState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,7 +175,12 @@
       <MemberSignature Language="C#" Value="void IWebPartField.GetFieldValue (System.Web.UI.WebControls.WebParts.FieldCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue(class System.Web.UI.WebControls.WebParts.FieldCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToFieldTransformer.System#Web#UI#WebControls#WebParts#IWebPartField#GetFieldValue(System.Web.UI.WebControls.WebParts.FieldCallback)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetFieldValue (callback As FieldCallback) Implements IWebPartField.GetFieldValue" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue(System::Web::UI::WebControls::WebParts::FieldCallback ^ callback) = System::Web::UI::WebControls::WebParts::IWebPartField::GetFieldValue;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue(System.Web.UI.WebControls.WebParts.FieldCallback)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -193,7 +210,12 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptor System.Web.UI.WebControls.WebParts.IWebPartField.Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor System.Web.UI.WebControls.WebParts.IWebPartField.Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.RowToFieldTransformer.System#Web#UI#WebControls#WebParts#IWebPartField#Schema" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Schema As PropertyDescriptor Implements IWebPartField.Schema" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptor ^ System.Web.UI.WebControls.WebParts.IWebPartField.Schema { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.WebParts.IWebPartField.Schema</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -218,6 +240,8 @@
       <MemberSignature Language="C#" Value="public override object Transform (object providerData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Transform(object providerData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToFieldTransformer.Transform(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Transform (providerData As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Transform(System::Object ^ providerData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

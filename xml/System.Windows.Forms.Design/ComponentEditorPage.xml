@@ -1,7 +1,9 @@
-<Type Name="ComponentEditorPage" FullName="System.Windows.Forms.Design.ComponentEditorPage">
+﻿<Type Name="ComponentEditorPage" FullName="System.Windows.Forms.Design.ComponentEditorPage">
   <TypeSignature Language="C#" Value="public abstract class ComponentEditorPage : System.Windows.Forms.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ComponentEditorPage extends System.Windows.Forms.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentEditorPage" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComponentEditorPage&#xA;Inherits Panel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentEditorPage abstract : System::Windows::Forms::Panel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public ComponentEditorPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentEditorPage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public virtual void Activate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Activate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Activate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public virtual void ApplyChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ApplyChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ApplyChanges ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public override bool AutoSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,7 +117,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -127,6 +137,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AutoSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoSizeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.ComponentEditorPage.AutoSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -152,6 +164,8 @@
       <MemberSignature Language="C#" Value="public bool CommitOnDeactivate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CommitOnDeactivate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.CommitOnDeactivate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommitOnDeactivate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CommitOnDeactivate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +192,8 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.IComponent Component { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Component" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Component" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Component As IComponent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::IComponent ^ Component { System::ComponentModel::IComponent ^ get(); void set(System::ComponentModel::IComponent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -196,6 +212,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -217,6 +235,8 @@
       <MemberSignature Language="C#" Value="public virtual void Deactivate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deactivate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.Deactivate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Deactivate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Deactivate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -235,6 +255,8 @@
       <MemberSignature Language="C#" Value="protected void EnterLoadingMode ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnterLoadingMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.EnterLoadingMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EnterLoadingMode ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnterLoadingMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -262,6 +284,8 @@
       <MemberSignature Language="C#" Value="protected void ExitLoadingMode ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ExitLoadingMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ExitLoadingMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ExitLoadingMode ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ExitLoadingMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -289,6 +313,8 @@
       <MemberSignature Language="C#" Value="protected bool FirstActivate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FirstActivate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.FirstActivate" />
+      <MemberSignature Language="VB.NET" Value="Protected Property FirstActivate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool FirstActivate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -308,6 +334,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Control GetControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.Control GetControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.GetControl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetControl () As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::Control ^ GetControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -327,6 +355,8 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.IComponent GetSelectedComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.ComponentModel.IComponent GetSelectedComponent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.GetSelectedComponent" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetSelectedComponent () As IComponent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::ComponentModel::IComponent ^ GetSelectedComponent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -346,6 +376,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Icon Icon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Icon Icon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Icon" />
+      <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Icon ^ Icon { System::Drawing::Icon ^ get(); void set(System::Drawing::Icon ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -364,6 +396,8 @@
       <MemberSignature Language="C#" Value="protected bool IsFirstActivate ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsFirstActivate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsFirstActivate" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsFirstActivate () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsFirstActivate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -384,6 +418,8 @@
       <MemberSignature Language="C#" Value="protected bool IsLoading ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsLoading() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsLoading" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsLoading () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsLoading();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -404,6 +440,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsPageMessage (ref System.Windows.Forms.Message msg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPageMessage(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsPageMessage(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsPageMessage (ByRef msg As Message) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsPageMessage(System::Windows::Forms::Message % msg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -434,6 +472,8 @@
       <MemberSignature Language="C#" Value="protected abstract void LoadComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadComponent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.LoadComponent" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub LoadComponent ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void LoadComponent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -455,6 +495,8 @@
       <MemberSignature Language="C#" Value="protected int Loading { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Loading" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Loading" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Loading As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Loading { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -480,6 +522,8 @@
       <MemberSignature Language="C#" Value="protected bool LoadRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LoadRequired" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.LoadRequired" />
+      <MemberSignature Language="VB.NET" Value="Protected Property LoadRequired As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool LoadRequired { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -499,6 +543,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnApplyComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnApplyComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.OnApplyComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnApplyComplete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnApplyComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -517,6 +563,8 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Forms.IComponentEditorPageSite PageSite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.IComponentEditorPageSite PageSite" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.PageSite" />
+      <MemberSignature Language="VB.NET" Value="Protected Property PageSite As IComponentEditorPageSite" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::IComponentEditorPageSite ^ PageSite { System::Windows::Forms::IComponentEditorPageSite ^ get(); void set(System::Windows::Forms::IComponentEditorPageSite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -542,6 +590,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ReloadComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReloadComponent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ReloadComponent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReloadComponent ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReloadComponent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -567,6 +617,8 @@
       <MemberSignature Language="C#" Value="protected abstract void SaveComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SaveComponent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SaveComponent" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub SaveComponent ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void SaveComponent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -588,6 +640,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetComponent (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetComponent(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetComponent(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetComponent (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetComponent(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -609,6 +663,8 @@
       <MemberSignature Language="C#" Value="protected virtual void SetDirty ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetDirty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetDirty" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDirty ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetDirty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -627,6 +683,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetSite (System.Windows.Forms.IComponentEditorPageSite site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSite(class System.Windows.Forms.IComponentEditorPageSite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetSite(System.Windows.Forms.IComponentEditorPageSite)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSite (site As IComponentEditorPageSite)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSite(System::Windows::Forms::IComponentEditorPageSite ^ site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -648,6 +706,8 @@
       <MemberSignature Language="C#" Value="public virtual void ShowHelp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowHelp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ShowHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ShowHelp ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ShowHelp();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -673,6 +733,8 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsHelp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsHelp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SupportsHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SupportsHelp () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SupportsHelp();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -693,6 +755,8 @@
       <MemberSignature Language="C#" Value="public virtual string Title { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

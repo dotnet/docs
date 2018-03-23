@@ -1,7 +1,9 @@
-<Type Name="DataGridTextBoxColumn" FullName="System.Windows.Forms.DataGridTextBoxColumn">
+﻿<Type Name="DataGridTextBoxColumn" FullName="System.Windows.Forms.DataGridTextBoxColumn">
   <TypeSignature Language="C#" Value="public class DataGridTextBoxColumn : System.Windows.Forms.DataGridColumnStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridTextBoxColumn extends System.Windows.Forms.DataGridColumnStyle" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridTextBoxColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridTextBoxColumn&#xA;Inherits DataGridColumnStyle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridTextBoxColumn : System::Windows::Forms::DataGridColumnStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,10 +47,21 @@
     <altmember cref="T:System.Windows.Forms.TextBox" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridTextBoxColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridTextBoxColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +91,8 @@
       <MemberSignature Language="C#" Value="public DataGridTextBoxColumn (System.ComponentModel.PropertyDescriptor prop);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.PropertyDescriptor prop) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prop As PropertyDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridTextBoxColumn(System::ComponentModel::PropertyDescriptor ^ prop);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +130,8 @@
       <MemberSignature Language="C#" Value="public DataGridTextBoxColumn (System.ComponentModel.PropertyDescriptor prop, bool isDefault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.PropertyDescriptor prop, bool isDefault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor(System.ComponentModel.PropertyDescriptor,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prop As PropertyDescriptor, isDefault As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridTextBoxColumn(System::ComponentModel::PropertyDescriptor ^ prop, bool isDefault);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +159,8 @@
       <MemberSignature Language="C#" Value="public DataGridTextBoxColumn (System.ComponentModel.PropertyDescriptor prop, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.PropertyDescriptor prop, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor(System.ComponentModel.PropertyDescriptor,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prop As PropertyDescriptor, format As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridTextBoxColumn(System::ComponentModel::PropertyDescriptor ^ prop, System::String ^ format);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +204,8 @@
       <MemberSignature Language="C#" Value="public DataGridTextBoxColumn (System.ComponentModel.PropertyDescriptor prop, string format, bool isDefault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.PropertyDescriptor prop, string format, bool isDefault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor(System.ComponentModel.PropertyDescriptor,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prop As PropertyDescriptor, format As String, isDefault As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridTextBoxColumn(System::ComponentModel::PropertyDescriptor ^ prop, System::String ^ format, bool isDefault);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,9 +232,11 @@
       </Docs>
     </Member>
     <Member MemberName="Abort">
-      <MemberSignature Language="C#" Value="protected override void Abort (int rowNum);" />
+      <MemberSignature Language="C#" Value="protected internal override void Abort (int rowNum);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Abort(int32 rowNum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Abort(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Abort (rowNum As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Abort(int rowNum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,9 +263,11 @@
       </Docs>
     </Member>
     <Member MemberName="Commit">
-      <MemberSignature Language="C#" Value="protected override bool Commit (System.Windows.Forms.CurrencyManager dataSource, int rowNum);" />
+      <MemberSignature Language="C#" Value="protected internal override bool Commit (System.Windows.Forms.CurrencyManager dataSource, int rowNum);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool Commit(class System.Windows.Forms.CurrencyManager dataSource, int32 rowNum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Commit (dataSource As CurrencyManager, rowNum As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool Commit(System::Windows::Forms::CurrencyManager ^ dataSource, int rowNum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -278,9 +303,11 @@
       </Docs>
     </Member>
     <Member MemberName="ConcedeFocus">
-      <MemberSignature Language="C#" Value="protected override void ConcedeFocus ();" />
+      <MemberSignature Language="C#" Value="protected internal override void ConcedeFocus ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ConcedeFocus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.ConcedeFocus" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ConcedeFocus ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ConcedeFocus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -303,9 +330,11 @@
       </Docs>
     </Member>
     <Member MemberName="Edit">
-      <MemberSignature Language="C#" Value="protected override void Edit (System.Windows.Forms.CurrencyManager source, int rowNum, System.Drawing.Rectangle bounds, bool readOnly, string displayText, bool cellIsVisible);" />
+      <MemberSignature Language="C#" Value="protected internal override void Edit (System.Windows.Forms.CurrencyManager source, int rowNum, System.Drawing.Rectangle bounds, bool readOnly, string displayText, bool cellIsVisible);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Edit(class System.Windows.Forms.CurrencyManager source, int32 rowNum, valuetype System.Drawing.Rectangle bounds, bool readOnly, string displayText, bool cellIsVisible) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Edit (source As CurrencyManager, rowNum As Integer, bounds As Rectangle, readOnly As Boolean, displayText As String, cellIsVisible As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Edit(System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::Drawing::Rectangle bounds, bool readOnly, System::String ^ displayText, bool cellIsVisible);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -356,6 +385,8 @@
       <MemberSignature Language="C#" Value="protected void EndEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EndEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.EndEdit" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EndEdit ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EndEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -385,9 +416,11 @@
       </Docs>
     </Member>
     <Member MemberName="EnterNullValue">
-      <MemberSignature Language="C#" Value="protected override void EnterNullValue ();" />
+      <MemberSignature Language="C#" Value="protected internal override void EnterNullValue ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void EnterNullValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.EnterNullValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub EnterNullValue ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void EnterNullValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -424,6 +457,8 @@
       <MemberSignature Language="C#" Value="public string Format { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -476,6 +511,8 @@
       <MemberSignature Language="C#" Value="public IFormatProvider FormatInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IFormatProvider FormatInfo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormatInfo As IFormatProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IFormatProvider ^ FormatInfo { IFormatProvider ^ get(); void set(IFormatProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -519,9 +556,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetMinimumHeight">
-      <MemberSignature Language="C#" Value="protected override int GetMinimumHeight ();" />
+      <MemberSignature Language="C#" Value="protected internal override int GetMinimumHeight ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance int32 GetMinimumHeight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.GetMinimumHeight" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetMinimumHeight () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override int GetMinimumHeight();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -547,9 +586,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPreferredHeight">
-      <MemberSignature Language="C#" Value="protected override int GetPreferredHeight (System.Drawing.Graphics g, object value);" />
+      <MemberSignature Language="C#" Value="protected internal override int GetPreferredHeight (System.Drawing.Graphics g, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance int32 GetPreferredHeight(class System.Drawing.Graphics g, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetPreferredHeight (g As Graphics, value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override int GetPreferredHeight(System::Drawing::Graphics ^ g, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -584,9 +625,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
-      <MemberSignature Language="C#" Value="protected override System.Drawing.Size GetPreferredSize (System.Drawing.Graphics g, object value);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Drawing.Size GetPreferredSize (System.Drawing.Graphics g, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(class System.Drawing.Graphics g, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetPreferredSize (g As Graphics, value As Object) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Graphics ^ g, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -631,6 +674,8 @@
       <MemberSignature Language="C#" Value="protected void HideEditBox ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void HideEditBox() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.HideEditBox" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub HideEditBox ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void HideEditBox();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -647,10 +692,21 @@
         <altmember cref="T:System.Windows.Forms.TextBox" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Paint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Paints the column in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Paint">
-      <MemberSignature Language="C#" Value="protected override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum);" />
+      <MemberSignature Language="C#" Value="protected internal override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Paint(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.CurrencyManager source, int32 rowNum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Paint (g As Graphics, bounds As Rectangle, source As CurrencyManager, rowNum As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Paint(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::CurrencyManager ^ source, int rowNum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -677,9 +733,11 @@
       </Docs>
     </Member>
     <Member MemberName="Paint">
-      <MemberSignature Language="C#" Value="protected override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum, bool alignToRight);" />
+      <MemberSignature Language="C#" Value="protected internal override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum, bool alignToRight);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Paint(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.CurrencyManager source, int32 rowNum, bool alignToRight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Paint (g As Graphics, bounds As Rectangle, source As CurrencyManager, rowNum As Integer, alignToRight As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Paint(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::CurrencyManager ^ source, int rowNum, bool alignToRight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -715,9 +773,11 @@
       </Docs>
     </Member>
     <Member MemberName="Paint">
-      <MemberSignature Language="C#" Value="protected override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum, System.Drawing.Brush backBrush, System.Drawing.Brush foreBrush, bool alignToRight);" />
+      <MemberSignature Language="C#" Value="protected internal override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum, System.Drawing.Brush backBrush, System.Drawing.Brush foreBrush, bool alignToRight);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Paint(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.CurrencyManager source, int32 rowNum, class System.Drawing.Brush backBrush, class System.Drawing.Brush foreBrush, bool alignToRight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Paint (g As Graphics, bounds As Rectangle, source As CurrencyManager, rowNum As Integer, backBrush As Brush, foreBrush As Brush, alignToRight As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Paint(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::Drawing::Brush ^ backBrush, System::Drawing::Brush ^ foreBrush, bool alignToRight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -765,10 +825,21 @@
         <altmember cref="M:System.Windows.Forms.DataGridTextBoxColumn.PaintText(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PaintText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the specified text and surrounding rectangle at the specified location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PaintText">
       <MemberSignature Language="C#" Value="protected void PaintText (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string text, bool alignToRight);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PaintText(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string text, bool alignToRight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.PaintText(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub PaintText (g As Graphics, bounds As Rectangle, text As String, alignToRight As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void PaintText(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ text, bool alignToRight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -807,6 +878,8 @@
       <MemberSignature Language="C#" Value="protected void PaintText (System.Drawing.Graphics g, System.Drawing.Rectangle textBounds, string text, System.Drawing.Brush backBrush, System.Drawing.Brush foreBrush, bool alignToRight);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PaintText(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle textBounds, string text, class System.Drawing.Brush backBrush, class System.Drawing.Brush foreBrush, bool alignToRight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.PaintText(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub PaintText (g As Graphics, textBounds As Rectangle, text As String, backBrush As Brush, foreBrush As Brush, alignToRight As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void PaintText(System::Drawing::Graphics ^ g, System::Drawing::Rectangle textBounds, System::String ^ text, System::Drawing::Brush ^ backBrush, System::Drawing::Brush ^ foreBrush, bool alignToRight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -849,6 +922,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptor PropertyDescriptor { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor PropertyDescriptor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.PropertyDescriptor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property PropertyDescriptor As PropertyDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::PropertyDescriptor ^ PropertyDescriptor {  void set(System::ComponentModel::PropertyDescriptor ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -883,6 +958,8 @@
       <MemberSignature Language="C#" Value="public override bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -899,9 +976,11 @@
       </Docs>
     </Member>
     <Member MemberName="ReleaseHostedControl">
-      <MemberSignature Language="C#" Value="protected override void ReleaseHostedControl ();" />
+      <MemberSignature Language="C#" Value="protected internal override void ReleaseHostedControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ReleaseHostedControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.ReleaseHostedControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ReleaseHostedControl ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ReleaseHostedControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -927,6 +1006,8 @@
       <MemberSignature Language="C#" Value="protected override void SetDataGridInColumn (System.Windows.Forms.DataGrid value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDataGridInColumn(class System.Windows.Forms.DataGrid value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.SetDataGridInColumn(System.Windows.Forms.DataGrid)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDataGridInColumn (value As DataGrid)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDataGridInColumn(System::Windows::Forms::DataGrid ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -956,6 +1037,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.TextBox TextBox { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TextBox TextBox" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.TextBox" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TextBox As TextBox" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::TextBox ^ TextBox { System::Windows::Forms::TextBox ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -986,9 +1069,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateUI">
-      <MemberSignature Language="C#" Value="protected override void UpdateUI (System.Windows.Forms.CurrencyManager source, int rowNum, string displayText);" />
+      <MemberSignature Language="C#" Value="protected internal override void UpdateUI (System.Windows.Forms.CurrencyManager source, int rowNum, string displayText);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void UpdateUI(class System.Windows.Forms.CurrencyManager source, int32 rowNum, string displayText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.UpdateUI(System.Windows.Forms.CurrencyManager,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub UpdateUI (source As CurrencyManager, rowNum As Integer, displayText As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void UpdateUI(System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::String ^ displayText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1010,32 +1095,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Paint">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Paints the column in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PaintText">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Draws the specified text and surrounding rectangle at the specified location.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

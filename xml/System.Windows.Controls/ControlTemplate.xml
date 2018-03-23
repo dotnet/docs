@@ -1,7 +1,9 @@
-<Type Name="ControlTemplate" FullName="System.Windows.Controls.ControlTemplate">
+﻿<Type Name="ControlTemplate" FullName="System.Windows.Controls.ControlTemplate">
   <TypeSignature Language="C#" Value="public class ControlTemplate : System.Windows.FrameworkTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlTemplate extends System.Windows.FrameworkTemplate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ControlTemplate" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlTemplate&#xA;Inherits FrameworkTemplate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlTemplate : System::Windows::FrameworkTemplate" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,10 +82,21 @@
     <altmember cref="P:System.Windows.FrameworkElement.OverridesDefaultStyle" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ControlTemplate" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ControlTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ControlTemplate.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlTemplate();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +112,8 @@
       <MemberSignature Language="C#" Value="public ControlTemplate (Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ControlTemplate.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlTemplate(Type ^ targetType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +132,8 @@
       <MemberSignature Language="C#" Value="public Type TargetType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ControlTemplate.TargetType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -179,6 +196,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.TriggerCollection Triggers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TriggerCollection Triggers" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ControlTemplate.Triggers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Triggers As TriggerCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TriggerCollection ^ Triggers { System::Windows::TriggerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -186,7 +205,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Windows.Markup.DependsOn("VisualTree")</AttributeName>
@@ -244,6 +263,8 @@
       <MemberSignature Language="C#" Value="protected override void ValidateTemplatedParent (System.Windows.FrameworkElement templatedParent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateTemplatedParent(class System.Windows.FrameworkElement templatedParent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ControlTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateTemplatedParent (templatedParent As FrameworkElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateTemplatedParent(System::Windows::FrameworkElement ^ templatedParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -276,14 +297,5 @@
         <exception cref="T:System.ArgumentException">You must associate the <see cref="T:System.Windows.Controls.ControlTemplate" /> with a <see cref="T:System.Windows.Controls.Control" /> by setting the <see cref="P:System.Windows.Controls.Control.Template" /> property before using the <see cref="T:System.Windows.Controls.ControlTemplate" /> on the <see cref="T:System.Windows.Controls.Control" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ControlTemplate" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

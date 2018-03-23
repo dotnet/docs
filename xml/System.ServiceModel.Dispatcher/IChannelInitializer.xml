@@ -1,7 +1,9 @@
-<Type Name="IChannelInitializer" FullName="System.ServiceModel.Dispatcher.IChannelInitializer">
+﻿<Type Name="IChannelInitializer" FullName="System.ServiceModel.Dispatcher.IChannelInitializer">
   <TypeSignature Language="C#" Value="public interface IChannelInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelInitializer" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IChannelInitializer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IChannelInitializer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IChannelInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public void Initialize (System.ServiceModel.IClientChannel channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.ServiceModel.IClientChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IChannelInitializer.Initialize(System.ServiceModel.IClientChannel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (channel As IClientChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::ServiceModel::IClientChannel ^ channel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

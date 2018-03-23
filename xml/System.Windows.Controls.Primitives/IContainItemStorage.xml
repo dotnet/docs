@@ -1,7 +1,9 @@
-<Type Name="IContainItemStorage" FullName="System.Windows.Controls.Primitives.IContainItemStorage">
+﻿<Type Name="IContainItemStorage" FullName="System.Windows.Controls.Primitives.IContainItemStorage">
   <TypeSignature Language="C#" Value="public interface IContainItemStorage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContainItemStorage" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IContainItemStorage" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IContainItemStorage" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IContainItemStorage" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public void ClearItemValue (object item, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearItemValue(object item, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.ClearItemValue(System.Object,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearItemValue (item As Object, dp As DependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public void ClearValue (System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearValue(class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.ClearValue(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearValue (dp As DependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearValue(System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public object ReadItemValue (object item, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ReadItemValue(object item, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.ReadItemValue(System.Object,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadItemValue (item As Object, dp As DependencyProperty) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ReadItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -109,6 +119,8 @@
       <MemberSignature Language="C#" Value="public void StoreItemValue (object item, System.Windows.DependencyProperty dp, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StoreItemValue(object item, class System.Windows.DependencyProperty dp, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.StoreItemValue(System.Object,System.Windows.DependencyProperty,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StoreItemValue (item As Object, dp As DependencyProperty, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StoreItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

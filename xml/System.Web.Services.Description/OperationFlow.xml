@@ -1,7 +1,9 @@
-<Type Name="OperationFlow" FullName="System.Web.Services.Description.OperationFlow">
+﻿<Type Name="OperationFlow" FullName="System.Web.Services.Description.OperationFlow">
   <TypeSignature Language="C#" Value="public enum OperationFlow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OperationFlow extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationFlow" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OperationFlow" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OperationFlow" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.OperationFlow None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.OperationFlow.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the endpoint of the XML Web service receives no transmissions.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="Notification" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.OperationFlow Notification = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.OperationFlow.Notification" />
+      <MemberSignature Language="VB.NET" Value="Notification" />
+      <MemberSignature Language="C++ CLI" Value="Notification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the endpoint of the XML Web service sends a message.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="OneWay" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.OperationFlow OneWay = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.OperationFlow.OneWay" />
+      <MemberSignature Language="VB.NET" Value="OneWay" />
+      <MemberSignature Language="C++ CLI" Value="OneWay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the endpoint of the XML Web service receives a message.</summary>
       </Docs>
@@ -86,6 +97,8 @@
       <MemberSignature Language="C#" Value="RequestResponse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.OperationFlow RequestResponse = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.OperationFlow.RequestResponse" />
+      <MemberSignature Language="VB.NET" Value="RequestResponse" />
+      <MemberSignature Language="C++ CLI" Value="RequestResponse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -95,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that the endpoint of the XML Web service receives a message, then sends a correlated message.</summary>
       </Docs>
@@ -103,6 +117,8 @@
       <MemberSignature Language="C#" Value="SolicitResponse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.OperationFlow SolicitResponse = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.OperationFlow.SolicitResponse" />
+      <MemberSignature Language="VB.NET" Value="SolicitResponse" />
+      <MemberSignature Language="C++ CLI" Value="SolicitResponse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -112,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the endpoint of the XML Web service sends a message, then receives a correlated message.</summary>
       </Docs>

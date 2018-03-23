@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public struct _RemotableHandle" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit _RemotableHandle extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Accessibility._RemotableHandle" />
+  <TypeSignature Language="VB.NET" Value="Public Structure _RemotableHandle" />
+  <TypeSignature Language="C++ CLI" Value="public value class _RemotableHandle" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public int fContext;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 fContext" />
       <MemberSignature Language="DocId" Value="F:Accessibility._RemotableHandle.fContext" />
+      <MemberSignature Language="VB.NET" Value="Public fContext As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int fContext;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public Accessibility.__MIDL_IWinTypes_0009 u;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype Accessibility.__MIDL_IWinTypes_0009 u" />
       <MemberSignature Language="DocId" Value="F:Accessibility._RemotableHandle.u" />
+      <MemberSignature Language="VB.NET" Value="Public u As __MIDL_IWinTypes_0009 " />
+      <MemberSignature Language="C++ CLI" Value="public: Accessibility::__MIDL_IWinTypes_0009 u;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

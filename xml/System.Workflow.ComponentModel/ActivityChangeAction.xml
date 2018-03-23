@@ -1,7 +1,9 @@
-<Type Name="ActivityChangeAction" FullName="System.Workflow.ComponentModel.ActivityChangeAction">
+﻿<Type Name="ActivityChangeAction" FullName="System.Workflow.ComponentModel.ActivityChangeAction">
   <TypeSignature Language="C#" Value="public abstract class ActivityChangeAction : System.Workflow.ComponentModel.WorkflowChangeAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ActivityChangeAction extends System.Workflow.ComponentModel.WorkflowChangeAction" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityChangeAction" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityChangeAction&#xA;Inherits WorkflowChangeAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityChangeAction abstract : System::Workflow::ComponentModel::WorkflowChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityChangeAction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ActivityChangeAction ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityChangeAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActivityChangeAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -53,6 +66,7 @@
       <MemberSignature Language="C#" Value="protected ActivityChangeAction (System.Workflow.ComponentModel.CompositeActivity compositeActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.CompositeActivity compositeActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityChangeAction.#ctor(System.Workflow.ComponentModel.CompositeActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActivityChangeAction(System::Workflow::ComponentModel::CompositeActivity ^ compositeActivity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -73,6 +87,8 @@
       <MemberSignature Language="C#" Value="public string OwnerActivityDottedPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OwnerActivityDottedPath" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerActivityDottedPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OwnerActivityDottedPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -80,7 +96,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -100,9 +116,11 @@
       </Docs>
     </Member>
     <Member MemberName="ValidateChanges">
-      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges (System.Workflow.ComponentModel.Activity contextActivity);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges (System.Workflow.ComponentModel.Activity contextActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges(class System.Workflow.ComponentModel.Activity contextActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ValidateChanges (contextActivity As Activity) As ValidationErrorCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ ValidateChanges(System::Workflow::ComponentModel::Activity ^ contextActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -130,14 +148,5 @@
           <paramref name="contextActivity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityChangeAction" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

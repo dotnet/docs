@@ -1,7 +1,9 @@
-<Type Name="LockRecursionPolicy" FullName="System.Threading.LockRecursionPolicy">
+﻿<Type Name="LockRecursionPolicy" FullName="System.Threading.LockRecursionPolicy">
   <TypeSignature Language="C#" Value="public enum LockRecursionPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LockRecursionPolicy extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Threading.LockRecursionPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LockRecursionPolicy" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LockRecursionPolicy" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="NoRecursion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.LockRecursionPolicy NoRecursion = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.LockRecursionPolicy.NoRecursion" />
+      <MemberSignature Language="VB.NET" Value="NoRecursion" />
+      <MemberSignature Language="C++ CLI" Value="NoRecursion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -71,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.LockRecursionPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>If a thread tries to enter a lock recursively, an exception is thrown. Some classes may allow certain recursions when this setting is in effect.</summary>
       </Docs>
@@ -79,6 +84,8 @@
       <MemberSignature Language="C#" Value="SupportsRecursion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.LockRecursionPolicy SupportsRecursion = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.LockRecursionPolicy.SupportsRecursion" />
+      <MemberSignature Language="VB.NET" Value="SupportsRecursion" />
+      <MemberSignature Language="C++ CLI" Value="SupportsRecursion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -98,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.LockRecursionPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A thread can enter a lock recursively. Some classes may restrict this capability.</summary>
       </Docs>

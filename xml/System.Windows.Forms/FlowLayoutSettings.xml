@@ -1,7 +1,9 @@
-<Type Name="FlowLayoutSettings" FullName="System.Windows.Forms.FlowLayoutSettings">
+﻿<Type Name="FlowLayoutSettings" FullName="System.Windows.Forms.FlowLayoutSettings">
   <TypeSignature Language="C#" Value="public class FlowLayoutSettings : System.Windows.Forms.LayoutSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlowLayoutSettings extends System.Windows.Forms.LayoutSettings" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowLayoutSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class FlowLayoutSettings&#xA;Inherits LayoutSettings" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FlowLayoutSettings : System::Windows::Forms::LayoutSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.FlowDirection FlowDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.FlowDirection FlowDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutSettings.FlowDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FlowDirection FlowDirection { System::Windows::Forms::FlowDirection get(); void set(System::Windows::Forms::FlowDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public bool GetFlowBreak (object child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetFlowBreak(object child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutSettings.GetFlowBreak(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFlowBreak (child As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetFlowBreak(System::Object ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Layout.LayoutEngine LayoutEngine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Layout.LayoutEngine LayoutEngine" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutSettings.LayoutEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LayoutEngine As LayoutEngine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Layout::LayoutEngine ^ LayoutEngine { System::Windows::Forms::Layout::LayoutEngine ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +137,8 @@
       <MemberSignature Language="C#" Value="public void SetFlowBreak (object child, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFlowBreak(object child, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutSettings.SetFlowBreak(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFlowBreak (child As Object, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFlowBreak(System::Object ^ child, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -152,6 +162,8 @@
       <MemberSignature Language="C#" Value="public bool WrapContents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WrapContents" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutSettings.WrapContents" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrapContents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrapContents { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

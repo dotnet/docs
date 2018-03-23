@@ -1,7 +1,9 @@
-<Type Name="StringNormalizationExtensions" FullName="System.StringNormalizationExtensions">
+﻿<Type Name="StringNormalizationExtensions" FullName="System.StringNormalizationExtensions">
   <TypeSignature Language="C#" Value="public static class StringNormalizationExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StringNormalizationExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.StringNormalizationExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StringNormalizationExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringNormalizationExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization.Extensions</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -40,10 +42,21 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="IsNormalized">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a string is normalized.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsNormalized">
       <MemberSignature Language="C#" Value="public static bool IsNormalized (this string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNormalized(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.StringNormalizationExtensions.IsNormalized(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsNormalized (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsNormalized(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -83,6 +96,7 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
       <MemberSignature Language="C#" Value="public static bool IsNormalized (this string value, System.Text.NormalizationForm normalizationForm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNormalized(string value, valuetype System.Text.NormalizationForm normalizationForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.StringNormalizationExtensions.IsNormalized(System.String,System.Text.NormalizationForm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsNormalized(System::String ^ value, System::Text::NormalizationForm normalizationForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -120,10 +134,21 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
           <paramref name="value" /> contains invalid Unicode characters.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Normalize">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Normalizes a string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Normalize">
       <MemberSignature Language="C#" Value="public static string Normalize (this string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Normalize(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.StringNormalizationExtensions.Normalize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Normalize (value As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ Normalize(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -162,6 +187,7 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
       <MemberSignature Language="C#" Value="public static string Normalize (this string value, System.Text.NormalizationForm normalizationForm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Normalize(string value, valuetype System.Text.NormalizationForm normalizationForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.StringNormalizationExtensions.Normalize(System.String,System.Text.NormalizationForm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ Normalize(System::String ^ value, System::Text::NormalizationForm normalizationForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -198,23 +224,5 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
           <paramref name="value" /> contains invalid Unicode characters.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsNormalized">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a string is normalized.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Normalize">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Normalizes a string.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="SelectionMode" FullName="System.Windows.Controls.SelectionMode">
+﻿<Type Name="SelectionMode" FullName="System.Windows.Controls.SelectionMode">
   <TypeSignature Language="C#" Value="public enum SelectionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SelectionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SelectionMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SelectionMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Extended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SelectionMode Extended = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectionMode.Extended" />
+      <MemberSignature Language="VB.NET" Value="Extended" />
+      <MemberSignature Language="C++ CLI" Value="Extended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The user can select multiple consecutive items while holding down the SHIFT key.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="Multiple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SelectionMode Multiple = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectionMode.Multiple" />
+      <MemberSignature Language="VB.NET" Value="Multiple" />
+      <MemberSignature Language="C++ CLI" Value="Multiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The user can select multiple items without holding down a modifier key.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SelectionMode Single = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectionMode.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The user can select only one item at a time.</summary>
       </Docs>

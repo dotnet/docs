@@ -1,7 +1,9 @@
-<Type Name="IControlBuilderAccessor" FullName="System.Web.UI.IControlBuilderAccessor">
+﻿<Type Name="IControlBuilderAccessor" FullName="System.Web.UI.IControlBuilderAccessor">
   <TypeSignature Language="C#" Value="public interface IControlBuilderAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IControlBuilderAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IControlBuilderAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IControlBuilderAccessor" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IControlBuilderAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ControlBuilder ControlBuilder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlBuilder ControlBuilder" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IControlBuilderAccessor.ControlBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlBuilder As ControlBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ControlBuilder ^ ControlBuilder { System::Web::UI::ControlBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

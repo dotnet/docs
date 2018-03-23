@@ -1,7 +1,9 @@
-<Type Name="SupportsEventValidationAttribute" FullName="System.Web.UI.SupportsEventValidationAttribute">
+﻿<Type Name="SupportsEventValidationAttribute" FullName="System.Web.UI.SupportsEventValidationAttribute">
   <TypeSignature Language="C#" Value="public sealed class SupportsEventValidationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SupportsEventValidationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.SupportsEventValidationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SupportsEventValidationAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SupportsEventValidationAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public SupportsEventValidationAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.SupportsEventValidationAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SupportsEventValidationAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

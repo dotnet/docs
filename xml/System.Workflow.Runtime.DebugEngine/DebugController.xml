@@ -1,7 +1,9 @@
-<Type Name="DebugController" FullName="System.Workflow.Runtime.DebugEngine.DebugController">
+﻿<Type Name="DebugController" FullName="System.Workflow.Runtime.DebugEngine.DebugController">
   <TypeSignature Language="C#" Value="public sealed class DebugController : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DebugController extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.DebugController" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebugController&#xA;Inherits MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebugController sealed : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public void AttachToConduit (Uri url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachToConduit(class System.Uri url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.DebugController.AttachToConduit(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AttachToConduit (url As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachToConduit(Uri ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.DebugController.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

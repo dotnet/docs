@@ -1,7 +1,9 @@
-<Type Name="CanExecuteChangedEventManager" FullName="System.Windows.Input.CanExecuteChangedEventManager">
+﻿<Type Name="CanExecuteChangedEventManager" FullName="System.Windows.Input.CanExecuteChangedEventManager">
   <TypeSignature Language="C#" Value="public class CanExecuteChangedEventManager : System.Windows.WeakEventManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CanExecuteChangedEventManager extends System.Windows.WeakEventManager" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CanExecuteChangedEventManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class CanExecuteChangedEventManager&#xA;Inherits WeakEventManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CanExecuteChangedEventManager : System::Windows::WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public static void AddHandler (System.Windows.Input.ICommand source, EventHandler&lt;EventArgs&gt; handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHandler(class System.Windows.Input.ICommand source, class System.EventHandler`1&lt;class System.EventArgs&gt; handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.AddHandler(System.Windows.Input.ICommand,System.EventHandler{System.EventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As ICommand, handler As EventHandler(Of EventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(System::Windows::Input::ICommand ^ source, EventHandler&lt;EventArgs ^&gt; ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.WeakEventManager.ListenerList NewListenerList ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.NewListenerList" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::WeakEventManager::ListenerList ^ NewListenerList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="protected override bool Purge (object source, object data, bool purgeAll);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool Purge(object source, object data, bool purgeAll) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.Purge(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Purge (source As Object, data As Object, purgeAll As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool Purge(System::Object ^ source, System::Object ^ data, bool purgeAll);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveHandler (System.Windows.Input.ICommand source, EventHandler&lt;EventArgs&gt; handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveHandler(class System.Windows.Input.ICommand source, class System.EventHandler`1&lt;class System.EventArgs&gt; handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.RemoveHandler(System.Windows.Input.ICommand,System.EventHandler{System.EventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As ICommand, handler As EventHandler(Of EventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(System::Windows::Input::ICommand ^ source, EventHandler&lt;EventArgs ^&gt; ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="protected override void StartListening (object source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StartListening(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.StartListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +164,8 @@
       <MemberSignature Language="C#" Value="protected override void StopListening (object source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StopListening(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.StopListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

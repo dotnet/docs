@@ -1,7 +1,9 @@
-<Type Name="BerConverter" FullName="System.DirectoryServices.Protocols.BerConverter">
+﻿<Type Name="BerConverter" FullName="System.DirectoryServices.Protocols.BerConverter">
   <TypeSignature Language="C#" Value="public sealed class BerConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BerConverter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.BerConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BerConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BerConverter sealed" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static object[] Decode (string format, byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object[] Decode(string format, unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.BerConverter.Decode(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decode (format As String, value As Byte()) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Object ^&gt; ^ Decode(System::String ^ format, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static byte[] Encode (string format, params object[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Encode(string format, object[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.BerConverter.Encode(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Encode (format As String, ParamArray value As Object()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Encode(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="PeerChangeType" FullName="System.Net.PeerToPeer.Collaboration.PeerChangeType">
+﻿<Type Name="PeerChangeType" FullName="System.Net.PeerToPeer.Collaboration.PeerChangeType">
   <TypeSignature Language="C#" Value="public enum PeerChangeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeerChangeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PeerChangeType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PeerChangeType" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="Added" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerChangeType Added = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerChangeType.Added" />
+      <MemberSignature Language="VB.NET" Value="Added" />
+      <MemberSignature Language="C++ CLI" Value="Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -28,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A peer object, endpoint or application has been added.</summary>
       </Docs>
@@ -36,6 +41,8 @@
       <MemberSignature Language="C#" Value="Deleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerChangeType Deleted = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerChangeType.Deleted" />
+      <MemberSignature Language="VB.NET" Value="Deleted" />
+      <MemberSignature Language="C++ CLI" Value="Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -44,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A peer object, endpoint or application has been deleted.</summary>
       </Docs>
@@ -52,6 +60,8 @@
       <MemberSignature Language="C#" Value="Updated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerChangeType Updated = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerChangeType.Updated" />
+      <MemberSignature Language="VB.NET" Value="Updated" />
+      <MemberSignature Language="C++ CLI" Value="Updated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A peer object, endpoint or application has been updated.</summary>
       </Docs>

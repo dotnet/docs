@@ -1,7 +1,9 @@
-<Type Name="CodeTypeParameter" FullName="System.CodeDom.CodeTypeParameter">
+﻿<Type Name="CodeTypeParameter" FullName="System.CodeDom.CodeTypeParameter">
   <TypeSignature Language="C#" Value="public class CodeTypeParameter : System.CodeDom.CodeObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeTypeParameter extends System.CodeDom.CodeObject" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeParameter" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeTypeParameter&#xA;Inherits CodeObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeParameter : System::CodeDom::CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -46,10 +48,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeTypeParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +89,8 @@
       <MemberSignature Language="C#" Value="public CodeTypeParameter (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameter.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeParameter(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +123,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReferenceCollection Constraints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReferenceCollection Constraints" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameter.Constraints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Constraints As CodeTypeReferenceCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceCollection ^ Constraints { System::CodeDom::CodeTypeReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +162,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeAttributeDeclarationCollection CustomAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeAttributeDeclarationCollection CustomAttributes" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameter.CustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomAttributes As CodeAttributeDeclarationCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeAttributeDeclarationCollection ^ CustomAttributes { System::CodeDom::CodeAttributeDeclarationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -186,6 +205,8 @@
       <MemberSignature Language="C#" Value="public bool HasConstructorConstraint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasConstructorConstraint" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameter.HasConstructorConstraint" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasConstructorConstraint As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasConstructorConstraint { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -224,6 +245,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameter.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -242,14 +265,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeParameter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

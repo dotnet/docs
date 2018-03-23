@@ -1,7 +1,9 @@
-<Type Name="GeoPosition&lt;T&gt;" FullName="System.Device.Location.GeoPosition&lt;T&gt;">
+﻿<Type Name="GeoPosition&lt;T&gt;" FullName="System.Device.Location.GeoPosition&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class GeoPosition&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeoPosition`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPosition`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class GeoPosition(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class GeoPosition" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +21,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.GeoPosition`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GeoPosition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoPosition`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeoPosition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -38,6 +51,8 @@
       <MemberSignature Language="C#" Value="public GeoPosition (DateTimeOffset timestamp, T position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTimeOffset timestamp, !T position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoPosition`1.#ctor(System.DateTimeOffset,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (timestamp As DateTimeOffset, position As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeoPosition(DateTimeOffset timestamp, T position);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -58,6 +73,8 @@
       <MemberSignature Language="C#" Value="public T Location { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Location" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoPosition`1.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Location { T get(); void set(T value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -76,6 +93,8 @@
       <MemberSignature Language="C#" Value="public DateTimeOffset Timestamp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset Timestamp" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoPosition`1.Timestamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timestamp As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset Timestamp { DateTimeOffset get(); void set(DateTimeOffset value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -90,14 +109,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Device</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.GeoPosition`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

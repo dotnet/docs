@@ -1,7 +1,9 @@
-<Type Name="BitmapEffectInput" FullName="System.Windows.Media.Effects.BitmapEffectInput">
+﻿<Type Name="BitmapEffectInput" FullName="System.Windows.Media.Effects.BitmapEffectInput">
   <TypeSignature Language="C#" Value="public sealed class BitmapEffectInput : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapEffectInput extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BitmapEffectInput" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapEffectInput&#xA;Inherits Animatable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapEffectInput sealed : System::Windows::Media::Animation::Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Initializes a new instance of the <see cref="T:System.Windows.Media.Effects.BitmapEffectInput" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BitmapEffectInput ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapEffectInput();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public BitmapEffectInput (System.Windows.Media.Imaging.BitmapSource input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Imaging.BitmapSource input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.#ctor(System.Windows.Media.Imaging.BitmapSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (input As BitmapSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapEffectInput(System::Windows::Media::Imaging::BitmapSource ^ input);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +76,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect AreaToApplyEffect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect AreaToApplyEffect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffect" />
+      <MemberSignature Language="VB.NET" Value="Public Property AreaToApplyEffect As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect AreaToApplyEffect { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +113,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AreaToApplyEffectProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AreaToApplyEffectProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AreaToApplyEffectProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AreaToApplyEffectProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +132,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.BrushMappingMode AreaToApplyEffectUnits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.BrushMappingMode AreaToApplyEffectUnits" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnits" />
+      <MemberSignature Language="VB.NET" Value="Public Property AreaToApplyEffectUnits As BrushMappingMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::BrushMappingMode AreaToApplyEffectUnits { System::Windows::Media::BrushMappingMode get(); void set(System::Windows::Media::BrushMappingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +166,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AreaToApplyEffectUnitsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AreaToApplyEffectUnitsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnitsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AreaToApplyEffectUnitsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AreaToApplyEffectUnitsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,6 +185,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BitmapEffectInput Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.BitmapEffectInput Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapEffectInput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectInput ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,6 +215,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BitmapEffectInput CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.BitmapEffectInput CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapEffectInput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectInput ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -218,6 +245,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSource ContextInputSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapSource ContextInputSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectInput.ContextInputSource" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextInputSource As BitmapSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapSource ^ ContextInputSource { System::Windows::Media::Imaging::BitmapSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +265,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -255,6 +286,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.BitmapSource Input { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapSource Input" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectInput.Input" />
+      <MemberSignature Language="VB.NET" Value="Public Property Input As BitmapSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::BitmapSource ^ Input { System::Windows::Media::Imaging::BitmapSource ^ get(); void set(System::Windows::Media::Imaging::BitmapSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -288,6 +321,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty InputProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty InputProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BitmapEffectInput.InputProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ InputProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +340,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeInput ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeInput() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.ShouldSerializeInput" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeInput () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeInput();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -326,14 +363,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Initializes a new instance of the <see cref="T:System.Windows.Media.Effects.BitmapEffectInput" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

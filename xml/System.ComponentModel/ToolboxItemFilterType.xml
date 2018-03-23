@@ -1,7 +1,9 @@
-<Type Name="ToolboxItemFilterType" FullName="System.ComponentModel.ToolboxItemFilterType">
+﻿<Type Name="ToolboxItemFilterType" FullName="System.ComponentModel.ToolboxItemFilterType">
   <TypeSignature Language="C#" Value="public enum ToolboxItemFilterType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolboxItemFilterType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ToolboxItemFilterType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ToolboxItemFilterType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolboxItemFilterType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="Allow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ToolboxItemFilterType Allow = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemFilterType.Allow" />
+      <MemberSignature Language="VB.NET" Value="Allow" />
+      <MemberSignature Language="C++ CLI" Value="Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -56,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that a toolbox item filter string is allowed, but not required.</summary>
         <altmember cref="T:System.ComponentModel.ToolboxItemFilterAttribute" />
@@ -65,6 +70,8 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ToolboxItemFilterType Custom = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemFilterType.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that custom processing is required to determine whether to use a toolbox item filter string.</summary>
         <remarks>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="Prevent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ToolboxItemFilterType Prevent = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemFilterType.Prevent" />
+      <MemberSignature Language="VB.NET" Value="Prevent" />
+      <MemberSignature Language="C++ CLI" Value="Prevent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +135,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that a toolbox item filter string is not allowed.</summary>
         <remarks>
@@ -142,6 +153,8 @@
       <MemberSignature Language="C#" Value="Require" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ToolboxItemFilterType Require = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemFilterType.Require" />
+      <MemberSignature Language="VB.NET" Value="Require" />
+      <MemberSignature Language="C++ CLI" Value="Require" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that a toolbox item filter string must be present for a toolbox item to be enabled.</summary>
         <remarks>

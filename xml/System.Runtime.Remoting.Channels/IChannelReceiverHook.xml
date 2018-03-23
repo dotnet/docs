@@ -1,7 +1,9 @@
-<Type Name="IChannelReceiverHook" FullName="System.Runtime.Remoting.Channels.IChannelReceiverHook">
+﻿<Type Name="IChannelReceiverHook" FullName="System.Runtime.Remoting.Channels.IChannelReceiverHook">
   <TypeSignature Language="C#" Value="public interface IChannelReceiverHook" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelReceiverHook" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IChannelReceiverHook" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IChannelReceiverHook" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IChannelReceiverHook" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public void AddHookChannelUri (string channelUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddHookChannelUri(string channelUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiverHook.AddHookChannelUri(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddHookChannelUri (channelUri As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHookChannelUri(System::String ^ channelUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public string ChannelScheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelScheme" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelReceiverHook.ChannelScheme" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelScheme As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelScheme { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Channels.IServerChannelSink ChannelSinkChain { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Channels.IServerChannelSink ChannelSinkChain" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelReceiverHook.ChannelSinkChain" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelSinkChain As IServerChannelSink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IServerChannelSink ^ ChannelSinkChain { System::Runtime::Remoting::Channels::IServerChannelSink ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +135,8 @@
       <MemberSignature Language="C#" Value="public bool WantsToListen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WantsToListen" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelReceiverHook.WantsToListen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WantsToListen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WantsToListen { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,4 +1,5 @@
 # [C# 6.0 draft specification](index.md)
+## [Introduction](../../../../_csharplang/spec/introduction.md)
 ## [Lexical structure](../../../../_csharplang/spec/lexical-structure.md)
 ## [Basic concepts](../../../../_csharplang/spec/basic-concepts.md)
 ## [Types](../../../../_csharplang/spec/types.md)

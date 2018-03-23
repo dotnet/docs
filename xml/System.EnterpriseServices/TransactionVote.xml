@@ -1,7 +1,9 @@
-<Type Name="TransactionVote" FullName="System.EnterpriseServices.TransactionVote">
+﻿<Type Name="TransactionVote" FullName="System.EnterpriseServices.TransactionVote">
   <TypeSignature Language="C#" Value="public enum TransactionVote" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TransactionVote extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionVote" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TransactionVote" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TransactionVote" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="Abort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionVote Abort = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionVote.Abort" />
+      <MemberSignature Language="VB.NET" Value="Abort" />
+      <MemberSignature Language="C++ CLI" Value="Abort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -47,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.TransactionVote</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Aborts the current transaction.</summary>
       </Docs>
@@ -55,6 +60,8 @@
       <MemberSignature Language="C#" Value="Commit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionVote Commit = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionVote.Commit" />
+      <MemberSignature Language="VB.NET" Value="Commit" />
+      <MemberSignature Language="C++ CLI" Value="Commit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -63,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.TransactionVote</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Commits the current transaction.</summary>
       </Docs>

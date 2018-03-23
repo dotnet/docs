@@ -1,7 +1,9 @@
-<Type Name="SerializationMode" FullName="System.Web.Configuration.SerializationMode">
+﻿<Type Name="SerializationMode" FullName="System.Web.Configuration.SerializationMode">
   <TypeSignature Language="C#" Value="public enum SerializationMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerializationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SerializationMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SerializationMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SerializationMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.SerializationMode Binary = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object is serialized using binary serialization.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="ProviderSpecific" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.SerializationMode ProviderSpecific = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.ProviderSpecific" />
+      <MemberSignature Language="VB.NET" Value="ProviderSpecific" />
+      <MemberSignature Language="C++ CLI" Value="ProviderSpecific" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The provider has implicit knowledge of the type and is responsible for deciding how to serialize the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object into the data store.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.SerializationMode String = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object is serialized to a simple string.</summary>
       </Docs>
@@ -84,6 +95,8 @@
       <MemberSignature Language="C#" Value="Xml" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.SerializationMode Xml = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.Xml" />
+      <MemberSignature Language="VB.NET" Value="Xml" />
+      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The profile <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> is serialized as XML using XML serialization.</summary>
       </Docs>

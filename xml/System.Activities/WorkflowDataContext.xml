@@ -1,7 +1,9 @@
-<Type Name="WorkflowDataContext" FullName="System.Activities.WorkflowDataContext">
+﻿<Type Name="WorkflowDataContext" FullName="System.Activities.WorkflowDataContext">
   <TypeSignature Language="C#" Value="public sealed class WorkflowDataContext : System.ComponentModel.CustomTypeDescriptor, IDisposable, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowDataContext extends System.ComponentModel.CustomTypeDescriptor implements class System.ComponentModel.INotifyPropertyChanged, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowDataContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowDataContext&#xA;Inherits CustomTypeDescriptor&#xA;Implements IDisposable, INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDataContext sealed : System::ComponentModel::CustomTypeDescriptor, IDisposable, System::ComponentModel::INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,7 +28,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowDataContext.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +51,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowDataContext.GetProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties () As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,6 +72,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Activities.WorkflowDataContext.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

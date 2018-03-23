@@ -1,7 +1,9 @@
-<Type Name="TextEffect" FullName="System.Windows.Media.TextEffect">
+﻿<Type Name="TextEffect" FullName="System.Windows.Media.TextEffect">
   <TypeSignature Language="C#" Value="public sealed class TextEffect : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextEffect extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextEffect" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextEffect&#xA;Inherits Animatable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextEffect sealed : System::Windows::Media::Animation::Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,21 @@
     <altmember cref="T:System.Windows.Media.TextEffectCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextEffect" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TextEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEffect();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +81,7 @@
       <MemberSignature Language="C#" Value="public TextEffect (System.Windows.Media.Transform transform, System.Windows.Media.Brush foreground, System.Windows.Media.Geometry clip, int positionStart, int positionCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Transform transform, class System.Windows.Media.Brush foreground, class System.Windows.Media.Geometry clip, int32 positionStart, int32 positionCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffect.#ctor(System.Windows.Media.Transform,System.Windows.Media.Brush,System.Windows.Media.Geometry,System.Int32,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEffect(System::Windows::Media::Transform ^ transform, System::Windows::Media::Brush ^ foreground, System::Windows::Media::Geometry ^ clip, int positionStart, int positionCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +118,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry Clip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry Clip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffect.Clip" />
+      <MemberSignature Language="VB.NET" Value="Public Property Clip As Geometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Geometry ^ Clip { System::Windows::Media::Geometry ^ get(); void set(System::Windows::Media::Geometry ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,6 +152,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ClipProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ClipProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextEffect.ClipProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClipProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ClipProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +171,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.TextEffect Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.TextEffect Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffect.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TextEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextEffect ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -181,6 +201,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.TextEffect CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.TextEffect CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffect.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TextEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextEffect ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -209,6 +231,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffect.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,6 +252,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Foreground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Foreground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffect.Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Foreground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -268,6 +294,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ForegroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ForegroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextEffect.ForegroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForegroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -285,6 +313,8 @@
       <MemberSignature Language="C#" Value="public int PositionCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PositionCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffect.PositionCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property PositionCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PositionCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -326,6 +356,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PositionCountProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PositionCountProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextEffect.PositionCountProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PositionCountProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PositionCountProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -343,6 +375,8 @@
       <MemberSignature Language="C#" Value="public int PositionStart { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PositionStart" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffect.PositionStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property PositionStart As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PositionStart { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -375,6 +409,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PositionStartProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PositionStartProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextEffect.PositionStartProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PositionStartProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PositionStartProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -392,6 +428,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Transform Transform { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Transform Transform" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffect.Transform" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transform As Transform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Transform ^ Transform { System::Windows::Media::Transform ^ get(); void set(System::Windows::Media::Transform ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -433,6 +471,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TransformProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TransformProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextEffect.TransformProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TransformProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TransformProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -446,14 +486,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextEffect" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

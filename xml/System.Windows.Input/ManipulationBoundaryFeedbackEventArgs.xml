@@ -1,7 +1,9 @@
-<Type Name="ManipulationBoundaryFeedbackEventArgs" FullName="System.Windows.Input.ManipulationBoundaryFeedbackEventArgs">
+﻿<Type Name="ManipulationBoundaryFeedbackEventArgs" FullName="System.Windows.Input.ManipulationBoundaryFeedbackEventArgs">
   <TypeSignature Language="C#" Value="public sealed class ManipulationBoundaryFeedbackEventArgs : System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManipulationBoundaryFeedbackEventArgs extends System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationBoundaryFeedbackEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManipulationBoundaryFeedbackEventArgs&#xA;Inherits InputEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManipulationBoundaryFeedbackEventArgs sealed : System::Windows::Input::InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ManipulationDelta BoundaryFeedback { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ManipulationDelta BoundaryFeedback" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.BoundaryFeedback" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundaryFeedback As ManipulationDelta" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationDelta ^ BoundaryFeedback { System::Windows::Input::ManipulationDelta ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.IInputElement ManipulationContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement ManipulationContainer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.ManipulationContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManipulationContainer As IInputElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ ManipulationContainer { System::Windows::IInputElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt; Manipulators { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Input.IManipulator&gt; Manipulators" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.Manipulators" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manipulators As IEnumerable(Of IManipulator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ Manipulators { System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

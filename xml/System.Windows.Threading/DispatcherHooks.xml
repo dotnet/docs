@@ -1,7 +1,9 @@
-<Type Name="DispatcherHooks" FullName="System.Windows.Threading.DispatcherHooks">
+﻿<Type Name="DispatcherHooks" FullName="System.Windows.Threading.DispatcherHooks">
   <TypeSignature Language="C#" Value="public sealed class DispatcherHooks" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DispatcherHooks extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherHooks" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DispatcherHooks" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatcherHooks sealed" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DispatcherInactive;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DispatcherInactive" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherHooks.DispatcherInactive" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DispatcherInactive As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DispatcherInactive;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Threading.DispatcherHookEventHandler OperationAborted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Threading.DispatcherHookEventHandler OperationAborted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherHooks.OperationAborted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event OperationAborted As DispatcherHookEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Threading::DispatcherHookEventHandler ^ OperationAborted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Threading.DispatcherHookEventHandler OperationCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Threading.DispatcherHookEventHandler OperationCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherHooks.OperationCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event OperationCompleted As DispatcherHookEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Threading::DispatcherHookEventHandler ^ OperationCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -124,6 +132,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Threading.DispatcherHookEventHandler OperationPosted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Threading.DispatcherHookEventHandler OperationPosted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherHooks.OperationPosted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event OperationPosted As DispatcherHookEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Threading::DispatcherHookEventHandler ^ OperationPosted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -163,6 +173,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Threading.DispatcherHookEventHandler OperationPriorityChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Threading.DispatcherHookEventHandler OperationPriorityChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherHooks.OperationPriorityChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event OperationPriorityChanged As DispatcherHookEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Threading::DispatcherHookEventHandler ^ OperationPriorityChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -198,6 +210,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Threading.DispatcherHookEventHandler OperationStarted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Threading.DispatcherHookEventHandler OperationStarted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherHooks.OperationStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event OperationStarted As DispatcherHookEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Threading::DispatcherHookEventHandler ^ OperationStarted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

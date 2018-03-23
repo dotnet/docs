@@ -1,7 +1,9 @@
-<Type Name="Block" FullName="System.Windows.Documents.Block">
+﻿<Type Name="Block" FullName="System.Windows.Documents.Block">
   <TypeSignature Language="C#" Value="public abstract class Block : System.Windows.Documents.TextElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Block extends System.Windows.Documents.TextElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Block" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Block&#xA;Inherits TextElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Block abstract : System::Windows::Documents::TextElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="protected Block ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Block();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush BorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush BorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.BorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ BorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +104,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.BorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +123,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness BorderThickness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness BorderThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.BorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderThickness As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness BorderThickness { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +213,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderThicknessProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderThicknessProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.BorderThicknessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderThicknessProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BorderThicknessProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +232,8 @@
       <MemberSignature Language="C#" Value="public bool BreakColumnBefore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BreakColumnBefore" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.BreakColumnBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property BreakColumnBefore As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BreakColumnBefore { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -254,6 +268,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BreakColumnBeforeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BreakColumnBeforeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.BreakColumnBeforeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BreakColumnBeforeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BreakColumnBeforeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +287,8 @@
       <MemberSignature Language="C#" Value="public bool BreakPageBefore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BreakPageBefore" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.BreakPageBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property BreakPageBefore As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BreakPageBefore { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,6 +323,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BreakPageBeforeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BreakPageBeforeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.BreakPageBeforeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BreakPageBeforeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BreakPageBeforeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -322,6 +342,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.WrapDirection ClearFloaters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.WrapDirection ClearFloaters" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.ClearFloaters" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClearFloaters As WrapDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::WrapDirection ClearFloaters { System::Windows::WrapDirection get(); void set(System::Windows::WrapDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -355,6 +377,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ClearFloatersProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ClearFloatersProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.ClearFloatersProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClearFloatersProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ClearFloatersProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -372,6 +396,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FlowDirection FlowDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FlowDirection FlowDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.FlowDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FlowDirection FlowDirection { System::Windows::FlowDirection get(); void set(System::Windows::FlowDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -422,6 +448,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FlowDirectionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FlowDirectionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.FlowDirectionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FlowDirectionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FlowDirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -439,6 +467,8 @@
       <MemberSignature Language="C#" Value="public static bool GetIsHyphenationEnabled (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsHyphenationEnabled(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.GetIsHyphenationEnabled(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsHyphenationEnabled (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsHyphenationEnabled(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -464,6 +494,8 @@
       <MemberSignature Language="C#" Value="public static double GetLineHeight (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetLineHeight(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.GetLineHeight(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLineHeight (element As DependencyObject) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetLineHeight(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -494,6 +526,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.LineStackingStrategy GetLineStackingStrategy (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.LineStackingStrategy GetLineStackingStrategy(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.GetLineStackingStrategy(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLineStackingStrategy (element As DependencyObject) As LineStackingStrategy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::LineStackingStrategy GetLineStackingStrategy(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -519,6 +553,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.TextAlignment GetTextAlignment (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.TextAlignment GetTextAlignment(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.GetTextAlignment(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTextAlignment (element As DependencyObject) As TextAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::TextAlignment GetTextAlignment(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -544,6 +580,8 @@
       <MemberSignature Language="C#" Value="public bool IsHyphenationEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHyphenationEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.IsHyphenationEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsHyphenationEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHyphenationEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -598,6 +636,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsHyphenationEnabledProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsHyphenationEnabledProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.IsHyphenationEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHyphenationEnabledProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsHyphenationEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -615,6 +655,8 @@
       <MemberSignature Language="C#" Value="public double LineHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.LineHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LineHeight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -711,6 +753,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LineHeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LineHeightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.LineHeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineHeightProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineHeightProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -728,6 +772,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.LineStackingStrategy LineStackingStrategy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.LineStackingStrategy LineStackingStrategy" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.LineStackingStrategy" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineStackingStrategy As LineStackingStrategy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::LineStackingStrategy LineStackingStrategy { System::Windows::LineStackingStrategy get(); void set(System::Windows::LineStackingStrategy value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -772,6 +818,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LineStackingStrategyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LineStackingStrategyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.LineStackingStrategyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineStackingStrategyProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineStackingStrategyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -789,6 +837,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness Margin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness Margin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.Margin" />
+      <MemberSignature Language="VB.NET" Value="Public Property Margin As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness Margin { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -878,6 +928,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MarginProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MarginProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.MarginProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MarginProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MarginProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -895,6 +947,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.Block NextBlock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Block NextBlock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.NextBlock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextBlock As Block" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Block ^ NextBlock { System::Windows::Documents::Block ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -915,6 +969,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness Padding { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1004,6 +1060,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PaddingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PaddingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.PaddingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PaddingProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PaddingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1021,6 +1079,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.Block PreviousBlock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Block PreviousBlock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.PreviousBlock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousBlock As Block" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Block ^ PreviousBlock { System::Windows::Documents::Block ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1041,6 +1101,8 @@
       <MemberSignature Language="C#" Value="public static void SetIsHyphenationEnabled (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsHyphenationEnabled(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.SetIsHyphenationEnabled(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsHyphenationEnabled (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsHyphenationEnabled(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1067,6 +1129,8 @@
       <MemberSignature Language="C#" Value="public static void SetLineHeight (System.Windows.DependencyObject element, double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLineHeight(class System.Windows.DependencyObject element, float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.SetLineHeight(System.Windows.DependencyObject,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLineHeight (element As DependencyObject, value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLineHeight(System::Windows::DependencyObject ^ element, double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1095,6 +1159,8 @@
       <MemberSignature Language="C#" Value="public static void SetLineStackingStrategy (System.Windows.DependencyObject element, System.Windows.LineStackingStrategy value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLineStackingStrategy(class System.Windows.DependencyObject element, valuetype System.Windows.LineStackingStrategy value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.SetLineStackingStrategy(System.Windows.DependencyObject,System.Windows.LineStackingStrategy)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLineStackingStrategy (element As DependencyObject, value As LineStackingStrategy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLineStackingStrategy(System::Windows::DependencyObject ^ element, System::Windows::LineStackingStrategy value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1121,6 +1187,8 @@
       <MemberSignature Language="C#" Value="public static void SetTextAlignment (System.Windows.DependencyObject element, System.Windows.TextAlignment value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTextAlignment(class System.Windows.DependencyObject element, valuetype System.Windows.TextAlignment value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Block.SetTextAlignment(System.Windows.DependencyObject,System.Windows.TextAlignment)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTextAlignment (element As DependencyObject, value As TextAlignment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTextAlignment(System::Windows::DependencyObject ^ element, System::Windows::TextAlignment value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1153,6 +1221,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.BlockCollection SiblingBlocks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.BlockCollection SiblingBlocks" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.SiblingBlocks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SiblingBlocks As BlockCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::BlockCollection ^ SiblingBlocks { System::Windows::Documents::BlockCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1180,6 +1250,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.TextAlignment TextAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextAlignment TextAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Block.TextAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextAlignment As TextAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextAlignment TextAlignment { System::Windows::TextAlignment get(); void set(System::Windows::TextAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1236,6 +1308,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextAlignmentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextAlignmentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Block.TextAlignmentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextAlignmentProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextAlignmentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

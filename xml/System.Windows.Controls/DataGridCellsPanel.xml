@@ -1,7 +1,9 @@
-<Type Name="DataGridCellsPanel" FullName="System.Windows.Controls.DataGridCellsPanel">
+﻿<Type Name="DataGridCellsPanel" FullName="System.Windows.Controls.DataGridCellsPanel">
   <TypeSignature Language="C#" Value="public class DataGridCellsPanel : System.Windows.Controls.VirtualizingPanel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataGridCellsPanel extends System.Windows.Controls.VirtualizingPanel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridCellsPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridCellsPanel&#xA;Inherits VirtualizingPanel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridCellsPanel : System::Windows::Controls::VirtualizingPanel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public DataGridCellsPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridCellsPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,9 +73,11 @@
       </Docs>
     </Member>
     <Member MemberName="BringIndexIntoView">
-      <MemberSignature Language="C#" Value="protected override void BringIndexIntoView (int index);" />
+      <MemberSignature Language="C#" Value="protected internal override void BringIndexIntoView (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void BringIndexIntoView(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub BringIndexIntoView (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void BringIndexIntoView(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +134,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClearChildren ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClearChildren() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.OnClearChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearChildren ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +157,8 @@
       <MemberSignature Language="C#" Value="protected override void OnIsItemsHostChanged (bool oldIsItemsHost, bool newIsItemsHost);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnIsItemsHostChanged(bool oldIsItemsHost, bool newIsItemsHost) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.OnIsItemsHostChanged(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsItemsHostChanged (oldIsItemsHost As Boolean, newIsItemsHost As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsItemsHostChanged(bool oldIsItemsHost, bool newIsItemsHost);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -171,6 +185,8 @@
       <MemberSignature Language="C#" Value="protected override void OnItemsChanged (object sender, System.Windows.Controls.Primitives.ItemsChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnItemsChanged(object sender, class System.Windows.Controls.Primitives.ItemsChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (sender As Object, args As ItemsChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Object ^ sender, System::Windows::Controls::Primitives::ItemsChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

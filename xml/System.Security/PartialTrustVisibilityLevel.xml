@@ -1,7 +1,9 @@
-<Type Name="PartialTrustVisibilityLevel" FullName="System.Security.PartialTrustVisibilityLevel">
+﻿<Type Name="PartialTrustVisibilityLevel" FullName="System.Security.PartialTrustVisibilityLevel">
   <TypeSignature Language="C#" Value="public enum PartialTrustVisibilityLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartialTrustVisibilityLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.PartialTrustVisibilityLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PartialTrustVisibilityLevel" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PartialTrustVisibilityLevel" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="NotVisibleByDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.PartialTrustVisibilityLevel NotVisibleByDefault = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault" />
+      <MemberSignature Language="VB.NET" Value="NotVisibleByDefault" />
+      <MemberSignature Language="C++ CLI" Value="NotVisibleByDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -55,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Security.PartialTrustVisibilityLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The assembly has been audited for partial trust, but it is not visible to partial-trust code in all hosts. To make the assembly visible to partial-trust code, add it to the <see cref="P:System.AppDomainSetup.PartialTrustVisibleAssemblies" /> property.</summary>
       </Docs>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="VisibleToAllHosts" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.PartialTrustVisibilityLevel VisibleToAllHosts = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.PartialTrustVisibilityLevel.VisibleToAllHosts" />
+      <MemberSignature Language="VB.NET" Value="VisibleToAllHosts" />
+      <MemberSignature Language="C++ CLI" Value="VisibleToAllHosts" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Security.PartialTrustVisibilityLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The assembly can always be called by partial-trust code.</summary>
       </Docs>

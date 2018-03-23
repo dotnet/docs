@@ -80,15 +80,15 @@ Because XML resource (.resx) files must consist of well-defined XML, including a
   
  The result is a binary resource file that has the same root file name as the .resx file and a .resources file extension. This file can then be compiled into an executable or a library at compile time. If you are using the Visual Basic compiler, use the following syntax to embed a .resources file in an application's executable:  
   
- **vbc** *filename* **.vb /resource:** *.resourcesFilename*  
+ **vbc** *filename* **.vb -resource:** *.resourcesFilename*  
   
  If you are using C#, the syntax is as follows:  
   
- **csc** *filename* **.cs /resource:** *.resourcesFilename*  
+ **csc** *filename* **.cs -resource:** *.resourcesFilename*  
   
  The .resources file can also be embedded in a satellite assembly by using [Assembly Linker (AL.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md), which has the following basic syntax:  
   
- **al** *resourcesFilename* **/out:** *assemblyFilename*  
+ **al** *resourcesFilename* **-out:** *assemblyFilename*  
   
 ## See Also  
  [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  

@@ -1,7 +1,9 @@
-<Type Name="EventQuery" FullName="System.Management.EventQuery">
+﻿<Type Name="EventQuery" FullName="System.Management.EventQuery">
   <TypeSignature Language="C#" Value="public class EventQuery : System.Management.ManagementQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventQuery extends System.Management.ManagementQuery" />
   <TypeSignature Language="DocId" Value="T:System.Management.EventQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventQuery&#xA;Inherits ManagementQuery" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventQuery : System::Management::ManagementQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -61,6 +74,8 @@
       <MemberSignature Language="C#" Value="public EventQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (query As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventQuery(System::String ^ query);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -96,6 +111,8 @@
       <MemberSignature Language="C#" Value="public EventQuery (string language, string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string language, string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventQuery.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (language As String, query As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventQuery(System::String ^ language, System::String ^ query);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -133,6 +150,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventQuery.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -158,14 +177,5 @@
         <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.EventQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="SoapOption" FullName="System.Runtime.Remoting.Metadata.SoapOption">
+﻿<Type Name="SoapOption" FullName="System.Runtime.Remoting.Metadata.SoapOption">
   <TypeSignature Language="C#" Value="public enum SoapOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SoapOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.SoapOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SoapOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SoapOption" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="AlwaysIncludeTypes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Metadata.SoapOption AlwaysIncludeTypes = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.SoapOption.AlwaysIncludeTypes" />
+      <MemberSignature Language="VB.NET" Value="AlwaysIncludeTypes" />
+      <MemberSignature Language="C++ CLI" Value="AlwaysIncludeTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Metadata.SoapOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that type will always be included on SOAP elements. This option is useful when performing SOAP interop with SOAP implementations that require types on all elements.</summary>
         <forInternalUseOnly />
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="EmbedAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Metadata.SoapOption EmbedAll = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.SoapOption.EmbedAll" />
+      <MemberSignature Language="VB.NET" Value="EmbedAll" />
+      <MemberSignature Language="C++ CLI" Value="EmbedAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -62,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Metadata.SoapOption</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that SOAP will be generated without references. This option is currently not implemented.</summary>
         <forInternalUseOnly />
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Metadata.SoapOption None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.SoapOption.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Metadata.SoapOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The default option indicating that no extra options are selected.</summary>
         <forInternalUseOnly />
@@ -89,6 +100,8 @@
       <MemberSignature Language="C#" Value="Option1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Metadata.SoapOption Option1 = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.SoapOption.Option1" />
+      <MemberSignature Language="VB.NET" Value="Option1" />
+      <MemberSignature Language="C++ CLI" Value="Option1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Metadata.SoapOption</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Public reserved option for temporary interop conditions; the use will change.</summary>
         <forInternalUseOnly />
@@ -107,6 +121,8 @@
       <MemberSignature Language="C#" Value="Option2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Metadata.SoapOption Option2 = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.SoapOption.Option2" />
+      <MemberSignature Language="VB.NET" Value="Option2" />
+      <MemberSignature Language="C++ CLI" Value="Option2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Metadata.SoapOption</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Public reserved option for temporary interop conditions; the use will change.</summary>
         <forInternalUseOnly />
@@ -125,6 +142,8 @@
       <MemberSignature Language="C#" Value="XsdString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Metadata.SoapOption XsdString = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.SoapOption.XsdString" />
+      <MemberSignature Language="VB.NET" Value="XsdString" />
+      <MemberSignature Language="C++ CLI" Value="XsdString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Metadata.SoapOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the output SOAP string type in a SOAP Envelope is using the <see langword="XSD" /> prefix, and that the resulting XML does not have an ID attribute for the string.</summary>
         <remarks>

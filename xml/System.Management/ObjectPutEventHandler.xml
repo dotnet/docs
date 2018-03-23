@@ -1,7 +1,9 @@
-<Type Name="ObjectPutEventHandler" FullName="System.Management.ObjectPutEventHandler">
+﻿<Type Name="ObjectPutEventHandler" FullName="System.Management.ObjectPutEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ObjectPutEventHandler(object sender, ObjectPutEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectPutEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectPutEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectPutEventHandler(sender As Object, e As ObjectPutEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ObjectPutEventHandler(System::Object ^ sender, ObjectPutEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

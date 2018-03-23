@@ -1,7 +1,9 @@
-<Type Name="FragmentNavigationEventHandler" FullName="System.Windows.Navigation.FragmentNavigationEventHandler">
+﻿<Type Name="FragmentNavigationEventHandler" FullName="System.Windows.Navigation.FragmentNavigationEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FragmentNavigationEventHandler(object sender, FragmentNavigationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FragmentNavigationEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.FragmentNavigationEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FragmentNavigationEventHandler(sender As Object, e As FragmentNavigationEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FragmentNavigationEventHandler(System::Object ^ sender, FragmentNavigationEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,6 +1,5 @@
  '<snippet1>
 '<snippet2>
-Imports System
 Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Windows.Forms
@@ -17,7 +16,6 @@ Public Class Form1
     End Sub 'New
     '</snippet4>  
     '<snippet5>
-    <STAThread()> _
     Public Shared Sub Main()
         Application.EnableVisualStyles()
         Application.Run(New Form1())

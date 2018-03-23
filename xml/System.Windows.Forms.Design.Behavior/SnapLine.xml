@@ -1,7 +1,9 @@
-<Type Name="SnapLine" FullName="System.Windows.Forms.Design.Behavior.SnapLine">
+﻿<Type Name="SnapLine" FullName="System.Windows.Forms.Design.Behavior.SnapLine">
   <TypeSignature Language="C#" Value="public sealed class SnapLine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SnapLine extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.SnapLine" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SnapLine" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SnapLine sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +74,8 @@
       <MemberSignature Language="C#" Value="public SnapLine (System.Windows.Forms.Design.Behavior.SnapLineType type, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Design.Behavior.SnapLineType type, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As SnapLineType, offset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SnapLine(System::Windows::Forms::Design::Behavior::SnapLineType type, int offset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -101,6 +105,8 @@
       <MemberSignature Language="C#" Value="public SnapLine (System.Windows.Forms.Design.Behavior.SnapLineType type, int offset, string filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Design.Behavior.SnapLineType type, int32 offset, string filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As SnapLineType, offset As Integer, filter As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SnapLine(System::Windows::Forms::Design::Behavior::SnapLineType type, int offset, System::String ^ filter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -133,6 +139,8 @@
       <MemberSignature Language="C#" Value="public SnapLine (System.Windows.Forms.Design.Behavior.SnapLineType type, int offset, System.Windows.Forms.Design.Behavior.SnapLinePriority priority);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Design.Behavior.SnapLineType type, int32 offset, valuetype System.Windows.Forms.Design.Behavior.SnapLinePriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.Windows.Forms.Design.Behavior.SnapLinePriority)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As SnapLineType, offset As Integer, priority As SnapLinePriority)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SnapLine(System::Windows::Forms::Design::Behavior::SnapLineType type, int offset, System::Windows::Forms::Design::Behavior::SnapLinePriority priority);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -165,6 +173,8 @@
       <MemberSignature Language="C#" Value="public SnapLine (System.Windows.Forms.Design.Behavior.SnapLineType type, int offset, string filter, System.Windows.Forms.Design.Behavior.SnapLinePriority priority);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Design.Behavior.SnapLineType type, int32 offset, string filter, valuetype System.Windows.Forms.Design.Behavior.SnapLinePriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.String,System.Windows.Forms.Design.Behavior.SnapLinePriority)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As SnapLineType, offset As Integer, filter As String, priority As SnapLinePriority)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SnapLine(System::Windows::Forms::Design::Behavior::SnapLineType type, int offset, System::String ^ filter, System::Windows::Forms::Design::Behavior::SnapLinePriority priority);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -200,6 +210,8 @@
       <MemberSignature Language="C#" Value="public void AdjustOffset (int adjustment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AdjustOffset(int32 adjustment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.AdjustOffset(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AdjustOffset (adjustment As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdjustOffset(int adjustment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -230,6 +242,8 @@
       <MemberSignature Language="C#" Value="public string Filter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -259,6 +273,8 @@
       <MemberSignature Language="C#" Value="public bool IsHorizontal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHorizontal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.IsHorizontal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHorizontal As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHorizontal { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -286,6 +302,8 @@
       <MemberSignature Language="C#" Value="public bool IsVertical { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVertical" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.IsVertical" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVertical As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVertical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -313,6 +331,8 @@
       <MemberSignature Language="C#" Value="public int Offset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -341,6 +361,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.SnapLinePriority Priority { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Design.Behavior.SnapLinePriority Priority" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Priority As SnapLinePriority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::SnapLinePriority Priority { System::Windows::Forms::Design::Behavior::SnapLinePriority get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -373,6 +395,8 @@
       <MemberSignature Language="C#" Value="public static bool ShouldSnap (System.Windows.Forms.Design.Behavior.SnapLine line1, System.Windows.Forms.Design.Behavior.SnapLine line2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldSnap(class System.Windows.Forms.Design.Behavior.SnapLine line1, class System.Windows.Forms.Design.Behavior.SnapLine line2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.ShouldSnap(System.Windows.Forms.Design.Behavior.SnapLine,System.Windows.Forms.Design.Behavior.SnapLine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ShouldSnap (line1 As SnapLine, line2 As SnapLine) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ShouldSnap(System::Windows::Forms::Design::Behavior::SnapLine ^ line1, System::Windows::Forms::Design::Behavior::SnapLine ^ line2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -398,6 +422,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.SnapLineType SnapLineType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Design.Behavior.SnapLineType SnapLineType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SnapLineType As SnapLineType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::SnapLineType SnapLineType { System::Windows::Forms::Design::Behavior::SnapLineType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -428,6 +454,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

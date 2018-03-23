@@ -1,7 +1,9 @@
-<Type Name="CatalogReflectionContextAttribute" FullName="System.ComponentModel.Composition.CatalogReflectionContextAttribute">
+﻿<Type Name="CatalogReflectionContextAttribute" FullName="System.ComponentModel.Composition.CatalogReflectionContextAttribute">
   <TypeSignature Language="C#" Value="public class CatalogReflectionContextAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CatalogReflectionContextAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.CatalogReflectionContextAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class CatalogReflectionContextAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CatalogReflectionContextAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public CatalogReflectionContextAttribute (Type reflectionContextType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type reflectionContextType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.CatalogReflectionContextAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reflectionContextType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogReflectionContextAttribute(Type ^ reflectionContextType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ReflectionContext CreateReflectionContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.ReflectionContext CreateReflectionContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.CatalogReflectionContextAttribute.CreateReflectionContext" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateReflectionContext () As ReflectionContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::ReflectionContext ^ CreateReflectionContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

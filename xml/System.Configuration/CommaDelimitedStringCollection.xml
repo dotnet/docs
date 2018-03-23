@@ -1,7 +1,9 @@
-<Type Name="CommaDelimitedStringCollection" FullName="System.Configuration.CommaDelimitedStringCollection">
+﻿<Type Name="CommaDelimitedStringCollection" FullName="System.Configuration.CommaDelimitedStringCollection">
   <TypeSignature Language="C#" Value="public sealed class CommaDelimitedStringCollection : System.Collections.Specialized.StringCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CommaDelimitedStringCollection extends System.Collections.Specialized.StringCollection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.CommaDelimitedStringCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommaDelimitedStringCollection&#xA;Inherits StringCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommaDelimitedStringCollection sealed : System::Collections::Specialized::StringCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public CommaDelimitedStringCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommaDelimitedStringCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public void Add (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (string[] range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(string[] range) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.AddRange(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (range As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::String ^&gt; ^ range);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -140,6 +148,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -169,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.CommaDelimitedStringCollection Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.CommaDelimitedStringCollection Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As CommaDelimitedStringCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::CommaDelimitedStringCollection ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -192,6 +204,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Insert(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -234,6 +248,8 @@
       <MemberSignature Language="C#" Value="public bool IsModified { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsModified" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.CommaDelimitedStringCollection.IsModified" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsModified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsModified { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -272,6 +288,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.CommaDelimitedStringCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -310,6 +328,8 @@
       <MemberSignature Language="C#" Value="public string this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.CommaDelimitedStringCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[int] { System::String ^ get(int index); void set(int index, System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -343,6 +363,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -383,6 +405,8 @@
       <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -412,6 +436,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

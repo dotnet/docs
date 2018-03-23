@@ -1,7 +1,9 @@
-<Type Name="TrueSizeScalingType" FullName="System.Windows.Forms.VisualStyles.TrueSizeScalingType">
+﻿<Type Name="TrueSizeScalingType" FullName="System.Windows.Forms.VisualStyles.TrueSizeScalingType">
   <TypeSignature Language="C#" Value="public enum TrueSizeScalingType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrueSizeScalingType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TrueSizeScalingType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TrueSizeScalingType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TrueSizeScalingType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Dpi" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TrueSizeScalingType Dpi = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrueSizeScalingType.Dpi" />
+      <MemberSignature Language="VB.NET" Value="Dpi" />
+      <MemberSignature Language="C++ CLI" Value="Dpi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TrueSizeScalingType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The element is scaled to dots per inch (DPI) settings.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TrueSizeScalingType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrueSizeScalingType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TrueSizeScalingType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No scaling type is specified for the element.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Size" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TrueSizeScalingType Size = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrueSizeScalingType.Size" />
+      <MemberSignature Language="VB.NET" Value="Size" />
+      <MemberSignature Language="C++ CLI" Value="Size" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TrueSizeScalingType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The element is scaled to size settings.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="Marshal" FullName="System.Runtime.InteropServices.Marshal">
+﻿<Type Name="Marshal" FullName="System.Runtime.InteropServices.Marshal">
   <TypeSignature Language="C#" Value="public static class Marshal" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Marshal extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.Marshal" />
+  <TypeSignature Language="VB.NET" Value="Public Class Marshal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Marshal abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public static int AddRef (IntPtr pUnk);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 AddRef(native int pUnk) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.AddRef(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddRef (pUnk As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int AddRef(IntPtr pUnk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -104,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr AllocCoTaskMem (int cb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int AllocCoTaskMem(int32 cb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.AllocCoTaskMem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AllocCoTaskMem (cb As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr AllocCoTaskMem(int cb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -147,10 +153,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AllocHGlobal">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates memory from the unmanaged memory of the process.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AllocHGlobal">
       <MemberSignature Language="C#" Value="public static IntPtr AllocHGlobal (int cb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int AllocHGlobal(int32 cb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.AllocHGlobal(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AllocHGlobal (cb As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr AllocHGlobal(int cb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -214,6 +236,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr AllocHGlobal (IntPtr cb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int AllocHGlobal(native int cb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.AllocHGlobal(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AllocHGlobal (cb As IntPtr) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr AllocHGlobal(IntPtr cb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -270,6 +294,8 @@
       <MemberSignature Language="C#" Value="public static bool AreComObjectsAvailableForCleanup ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AreComObjectsAvailableForCleanup() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.AreComObjectsAvailableForCleanup" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AreComObjectsAvailableForCleanup () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool AreComObjectsAvailableForCleanup();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -314,6 +340,8 @@
       <MemberSignature Language="C#" Value="public static object BindToMoniker (string monikerName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object BindToMoniker(string monikerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.BindToMoniker(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BindToMoniker (monikerName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ BindToMoniker(System::String ^ monikerName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -354,6 +382,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr BufferToBSTR (Array ptr, int slen);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int BufferToBSTR(class System.Array ptr, int32 slen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.BufferToBSTR(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BufferToBSTR (ptr As Array, slen As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr BufferToBSTR(Array ^ ptr, int slen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -379,6 +409,8 @@
       <MemberSignature Language="C#" Value="public static void ChangeWrapperHandleStrength (object otp, bool fIsWeak);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ChangeWrapperHandleStrength(object otp, bool fIsWeak) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ChangeWrapperHandleStrength(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ChangeWrapperHandleStrength (otp As Object, fIsWeak As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChangeWrapperHandleStrength(System::Object ^ otp, bool fIsWeak);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -420,6 +452,8 @@
       <MemberSignature Language="C#" Value="public static void CleanupUnusedObjectsInCurrentContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CleanupUnusedObjectsInCurrentContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.CleanupUnusedObjectsInCurrentContext" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CleanupUnusedObjectsInCurrentContext ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CleanupUnusedObjectsInCurrentContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -459,10 +493,26 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Copy">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies data from a managed array to an unmanaged memory pointer, or from an unmanaged memory pointer to a managed array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Copy">
       <MemberSignature Language="C#" Value="public static void Copy (byte[] source, int startIndex, IntPtr destination, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(unsigned int8[] source, int32 startIndex, native int destination, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.Byte[],System.Int32,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As Byte(), startIndex As Integer, destination As IntPtr, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(cli::array &lt;System::Byte&gt; ^ source, int startIndex, IntPtr destination, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -524,6 +574,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (char[] source, int startIndex, IntPtr destination, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(char[] source, int32 startIndex, native int destination, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.Char[],System.Int32,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As Char(), startIndex As Integer, destination As IntPtr, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(cli::array &lt;char&gt; ^ source, int startIndex, IntPtr destination, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -585,6 +637,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (double[] source, int startIndex, IntPtr destination, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(float64[] source, int32 startIndex, native int destination, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.Double[],System.Int32,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As Double(), startIndex As Integer, destination As IntPtr, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(cli::array &lt;double&gt; ^ source, int startIndex, IntPtr destination, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -646,6 +700,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (short[] source, int startIndex, IntPtr destination, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(int16[] source, int32 startIndex, native int destination, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.Int16[],System.Int32,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As Short(), startIndex As Integer, destination As IntPtr, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(cli::array &lt;short&gt; ^ source, int startIndex, IntPtr destination, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -707,6 +763,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (int[] source, int startIndex, IntPtr destination, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(int32[] source, int32 startIndex, native int destination, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As Integer(), startIndex As Integer, destination As IntPtr, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(cli::array &lt;int&gt; ^ source, int startIndex, IntPtr destination, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -768,6 +826,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (long[] source, int startIndex, IntPtr destination, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(int64[] source, int32 startIndex, native int destination, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.Int64[],System.Int32,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As Long(), startIndex As Integer, destination As IntPtr, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(cli::array &lt;long&gt; ^ source, int startIndex, IntPtr destination, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -829,6 +889,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr source, byte[] destination, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int source, unsigned int8[] destination, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr,System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr, destination As Byte(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(IntPtr source, cli::array &lt;System::Byte&gt; ^ destination, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -889,6 +951,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr source, char[] destination, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int source, char[] destination, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr, destination As Char(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(IntPtr source, cli::array &lt;char&gt; ^ destination, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -949,6 +1013,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr source, double[] destination, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int source, float64[] destination, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr,System.Double[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr, destination As Double(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(IntPtr source, cli::array &lt;double&gt; ^ destination, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1009,6 +1075,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr source, short[] destination, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int source, int16[] destination, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr,System.Int16[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr, destination As Short(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(IntPtr source, cli::array &lt;short&gt; ^ destination, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1069,6 +1137,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr source, int[] destination, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int source, int32[] destination, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr,System.Int32[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr, destination As Integer(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(IntPtr source, cli::array &lt;int&gt; ^ destination, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1129,6 +1199,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr source, long[] destination, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int source, int64[] destination, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr,System.Int64[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr, destination As Long(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(IntPtr source, cli::array &lt;long&gt; ^ destination, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1189,6 +1261,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr source, IntPtr[] destination, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int source, native int[] destination, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr,System.IntPtr[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr, destination As IntPtr(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(IntPtr source, cli::array &lt;IntPtr&gt; ^ destination, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1240,6 +1314,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr source, float[] destination, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int source, float32[] destination, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr,System.Single[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr, destination As Single(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(IntPtr source, cli::array &lt;float&gt; ^ destination, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1292,6 +1368,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (IntPtr[] source, int startIndex, IntPtr destination, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(native int[] source, int32 startIndex, native int destination, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.IntPtr[],System.Int32,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As IntPtr(), startIndex As Integer, destination As IntPtr, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(cli::array &lt;IntPtr&gt; ^ source, int startIndex, IntPtr destination, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1343,6 +1421,8 @@
       <MemberSignature Language="C#" Value="public static void Copy (float[] source, int startIndex, IntPtr destination, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy(float32[] source, int32 startIndex, native int destination, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Copy(System.Single[],System.Int32,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (source As Single(), startIndex As Integer, destination As IntPtr, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(cli::array &lt;float&gt; ^ source, int startIndex, IntPtr destination, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1396,6 +1476,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr CreateAggregatedObject (IntPtr pOuter, object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateAggregatedObject(native int pOuter, object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.CreateAggregatedObject(System.IntPtr,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAggregatedObject (pOuter As IntPtr, o As Object) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CreateAggregatedObject(IntPtr pOuter, System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1444,6 +1526,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr CreateAggregatedObject&lt;T&gt; (IntPtr pOuter, T o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateAggregatedObject&lt;T&gt;(native int pOuter, !!T o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.CreateAggregatedObject``1(System.IntPtr,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAggregatedObject(Of T) (pOuter As IntPtr, o As T) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static IntPtr CreateAggregatedObject(IntPtr pOuter, T o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1497,6 +1581,8 @@
       <MemberSignature Language="C#" Value="public static object CreateWrapperOfType (object o, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateWrapperOfType(object o, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.CreateWrapperOfType(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWrapperOfType (o As Object, t As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateWrapperOfType(System::Object ^ o, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1560,6 +1646,8 @@
       <MemberSignature Language="C#" Value="public static TWrapper CreateWrapperOfType&lt;T,TWrapper&gt; (T o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TWrapper CreateWrapperOfType&lt;T, TWrapper&gt;(!!T o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.CreateWrapperOfType``2(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWrapperOfType(Of T, TWrapper) (o As T) As TWrapper" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TWrapper&gt;&#xA; static TWrapper CreateWrapperOfType(T o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1626,6 +1714,8 @@
       <MemberSignature Language="C#" Value="public static void DestroyStructure (IntPtr ptr, Type structuretype);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DestroyStructure(native int ptr, class System.Type structuretype) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.DestroyStructure(System.IntPtr,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DestroyStructure (ptr As IntPtr, structuretype As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DestroyStructure(IntPtr ptr, Type ^ structuretype);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1684,6 +1774,8 @@
       <MemberSignature Language="C#" Value="public static void DestroyStructure&lt;T&gt; (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DestroyStructure&lt;T&gt;(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.DestroyStructure``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DestroyStructure(Of T) (ptr As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void DestroyStructure(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1736,6 +1828,8 @@
       <MemberSignature Language="C#" Value="public static int FinalReleaseComObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 FinalReleaseComObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.FinalReleaseComObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FinalReleaseComObject (o As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int FinalReleaseComObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1790,6 +1884,8 @@
       <MemberSignature Language="C#" Value="public static void FreeBSTR (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FreeBSTR(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.FreeBSTR(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub FreeBSTR (ptr As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FreeBSTR(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1835,6 +1931,8 @@
       <MemberSignature Language="C#" Value="public static void FreeCoTaskMem (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FreeCoTaskMem(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub FreeCoTaskMem (ptr As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FreeCoTaskMem(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1886,6 +1984,8 @@
       <MemberSignature Language="C#" Value="public static void FreeHGlobal (IntPtr hglobal);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FreeHGlobal(native int hglobal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub FreeHGlobal (hglobal As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FreeHGlobal(IntPtr hglobal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1954,6 +2054,7 @@
       <MemberSignature Language="C#" Value="public static Guid GenerateGuidForType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GenerateGuidForType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GenerateGuidForType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid GenerateGuidForType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1990,6 +2091,7 @@
       <MemberSignature Language="C#" Value="public static string GenerateProgIdForType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateProgIdForType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GenerateProgIdForType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateProgIdForType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2027,6 +2129,8 @@
       <MemberSignature Language="C#" Value="public static object GetActiveObject (string progID);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetActiveObject(string progID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetActiveObject(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetActiveObject (progID As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetActiveObject(System::String ^ progID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2072,10 +2176,26 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetComInterfaceForObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an interface pointer that represents an interface for an object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetComInterfaceForObject">
       <MemberSignature Language="C#" Value="public static IntPtr GetComInterfaceForObject (object o, Type T);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetComInterfaceForObject(object o, class System.Type T) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComInterfaceForObject (o As Object, T As Type) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetComInterfaceForObject(System::Object ^ o, Type ^ T);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2148,6 +2268,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetComInterfaceForObject (object o, Type T, System.Runtime.InteropServices.CustomQueryInterfaceMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetComInterfaceForObject(object o, class System.Type T, valuetype System.Runtime.InteropServices.CustomQueryInterfaceMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type,System.Runtime.InteropServices.CustomQueryInterfaceMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComInterfaceForObject (o As Object, T As Type, mode As CustomQueryInterfaceMode) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetComInterfaceForObject(System::Object ^ o, Type ^ T, System::Runtime::InteropServices::CustomQueryInterfaceMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2211,6 +2333,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetComInterfaceForObject&lt;T,TInterface&gt; (T o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetComInterfaceForObject&lt;T, TInterface&gt;(!!T o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject``2(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComInterfaceForObject(Of T, TInterface) (o As T) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TInterface&gt;&#xA; static IntPtr GetComInterfaceForObject(T o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2279,6 +2403,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetComInterfaceForObjectInContext (object o, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetComInterfaceForObjectInContext(object o, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObjectInContext(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComInterfaceForObjectInContext (o As Object, t As Type) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetComInterfaceForObjectInContext(System::Object ^ o, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2331,6 +2457,8 @@
       <MemberSignature Language="C#" Value="public static object GetComObjectData (object obj, object key);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetComObjectData(object obj, object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetComObjectData(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComObjectData (obj As Object, key As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetComObjectData(System::Object ^ obj, System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2381,6 +2509,8 @@
       <MemberSignature Language="C#" Value="public static int GetComSlotForMethodInfo (System.Reflection.MemberInfo m);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetComSlotForMethodInfo(class System.Reflection.MemberInfo m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo(System.Reflection.MemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComSlotForMethodInfo (m As MemberInfo) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetComSlotForMethodInfo(System::Reflection::MemberInfo ^ m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2422,6 +2552,8 @@
       <MemberSignature Language="C#" Value="public static Delegate GetDelegateForFunctionPointer (IntPtr ptr, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate GetDelegateForFunctionPointer(native int ptr, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer(System.IntPtr,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDelegateForFunctionPointer (ptr As IntPtr, t As Type) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ GetDelegateForFunctionPointer(IntPtr ptr, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2488,6 +2620,8 @@
       <MemberSignature Language="C#" Value="public static TDelegate GetDelegateForFunctionPointer&lt;TDelegate&gt; (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TDelegate GetDelegateForFunctionPointer&lt;TDelegate&gt;(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDelegateForFunctionPointer(Of TDelegate) (ptr As IntPtr) As TDelegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TDelegate&gt;&#xA; static TDelegate GetDelegateForFunctionPointer(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2549,6 +2683,8 @@
       <MemberSignature Language="C#" Value="public static int GetEndComSlot (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetEndComSlot(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetEndComSlot(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEndComSlot (t As Type) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetEndComSlot(Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2582,6 +2718,8 @@
       <MemberSignature Language="C#" Value="public static int GetExceptionCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetExceptionCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetExceptionCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExceptionCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetExceptionCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2619,10 +2757,26 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetExceptionForHR">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an HRESULT error code to a corresponding <see cref="T:System.Exception" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetExceptionForHR">
       <MemberSignature Language="C#" Value="public static Exception GetExceptionForHR (int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Exception GetExceptionForHR(int32 errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetExceptionForHR(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExceptionForHR (errorCode As Integer) As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Exception ^ GetExceptionForHR(int errorCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2672,6 +2826,8 @@
       <MemberSignature Language="C#" Value="public static Exception GetExceptionForHR (int errorCode, IntPtr errorInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Exception GetExceptionForHR(int32 errorCode, native int errorInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetExceptionForHR(System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExceptionForHR (errorCode As Integer, errorInfo As IntPtr) As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Exception ^ GetExceptionForHR(int errorCode, IntPtr errorInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2723,6 +2879,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetExceptionPointers ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetExceptionPointers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetExceptionPointers" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExceptionPointers () As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetExceptionPointers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2756,6 +2914,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetFunctionPointerForDelegate (Delegate d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetFunctionPointerForDelegate(class System.Delegate d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate(System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFunctionPointerForDelegate (d As Delegate) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetFunctionPointerForDelegate(Delegate ^ d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2804,6 +2964,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetFunctionPointerForDelegate&lt;TDelegate&gt; (TDelegate d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetFunctionPointerForDelegate&lt;TDelegate&gt;(!!TDelegate d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFunctionPointerForDelegate(Of TDelegate) (d As TDelegate) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TDelegate&gt;&#xA; static IntPtr GetFunctionPointerForDelegate(TDelegate d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2857,6 +3019,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetHINSTANCE (System.Reflection.Module m);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetHINSTANCE(class System.Reflection.Module m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetHINSTANCE(System.Reflection.Module)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHINSTANCE (m As Module) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetHINSTANCE(System::Reflection::Module ^ m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2893,6 +3057,8 @@
       <MemberSignature Language="C#" Value="public static int GetHRForException (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHRForException(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetHRForException(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHRForException (e As Exception) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetHRForException(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2940,6 +3106,8 @@
       <MemberSignature Language="C#" Value="public static int GetHRForLastWin32Error ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHRForLastWin32Error() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetHRForLastWin32Error" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHRForLastWin32Error () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetHRForLastWin32Error();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2995,6 +3163,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetIDispatchForObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetIDispatchForObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIDispatchForObject (o As Object) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetIDispatchForObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3036,6 +3206,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetIDispatchForObjectInContext (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetIDispatchForObjectInContext(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObjectInContext(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIDispatchForObjectInContext (o As Object) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetIDispatchForObjectInContext(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3073,6 +3245,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetITypeInfoForType (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetITypeInfoForType(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetITypeInfoForType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetITypeInfoForType (t As Type) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetITypeInfoForType(Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3121,6 +3295,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetIUnknownForObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetIUnknownForObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetIUnknownForObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIUnknownForObject (o As Object) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetIUnknownForObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3177,6 +3353,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetIUnknownForObjectInContext (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetIUnknownForObjectInContext(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetIUnknownForObjectInContext(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIUnknownForObjectInContext (o As Object) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetIUnknownForObjectInContext(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3219,6 +3397,8 @@
       <MemberSignature Language="C#" Value="public static int GetLastWin32Error ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetLastWin32Error() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetLastWin32Error" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLastWin32Error () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetLastWin32Error();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3276,6 +3456,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetManagedThunkForUnmanagedMethodPtr (IntPtr pfnMethodToWrap, IntPtr pbSignature, int cbSignature);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetManagedThunkForUnmanagedMethodPtr(native int pfnMethodToWrap, native int pbSignature, int32 cbSignature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetManagedThunkForUnmanagedMethodPtr(System.IntPtr,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetManagedThunkForUnmanagedMethodPtr (pfnMethodToWrap As IntPtr, pbSignature As IntPtr, cbSignature As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetManagedThunkForUnmanagedMethodPtr(IntPtr pfnMethodToWrap, IntPtr pbSignature, int cbSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3316,6 +3498,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo GetMethodInfoForComSlot (Type t, int slot, ref System.Runtime.InteropServices.ComMemberType memberType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo GetMethodInfoForComSlot(class System.Type t, int32 slot, valuetype System.Runtime.InteropServices.ComMemberType&amp; memberType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot(System.Type,System.Int32,System.Runtime.InteropServices.ComMemberType@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodInfoForComSlot (t As Type, slot As Integer, ByRef memberType As ComMemberType) As MemberInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MemberInfo ^ GetMethodInfoForComSlot(Type ^ t, int slot, System::Runtime::InteropServices::ComMemberType % memberType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3361,6 +3545,8 @@
       <MemberSignature Language="C#" Value="public static void GetNativeVariantForObject (object obj, IntPtr pDstNativeVariant);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetNativeVariantForObject(object obj, native int pDstNativeVariant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject(System.Object,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetNativeVariantForObject (obj As Object, pDstNativeVariant As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetNativeVariantForObject(System::Object ^ obj, IntPtr pDstNativeVariant);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3407,6 +3593,8 @@
       <MemberSignature Language="C#" Value="public static void GetNativeVariantForObject&lt;T&gt; (T obj, IntPtr pDstNativeVariant);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetNativeVariantForObject&lt;T&gt;(!!T obj, native int pDstNativeVariant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject``1(``0,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetNativeVariantForObject(Of T) (obj As T, pDstNativeVariant As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void GetNativeVariantForObject(T obj, IntPtr pDstNativeVariant);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3457,6 +3645,8 @@
       <MemberSignature Language="C#" Value="public static object GetObjectForIUnknown (IntPtr pUnk);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetObjectForIUnknown(native int pUnk) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectForIUnknown (pUnk As IntPtr) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetObjectForIUnknown(IntPtr pUnk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3514,6 +3704,8 @@
       <MemberSignature Language="C#" Value="public static object GetObjectForNativeVariant (IntPtr pSrcNativeVariant);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetObjectForNativeVariant(native int pSrcNativeVariant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectForNativeVariant (pSrcNativeVariant As IntPtr) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetObjectForNativeVariant(IntPtr pSrcNativeVariant);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3567,6 +3759,8 @@
       <MemberSignature Language="C#" Value="public static T GetObjectForNativeVariant&lt;T&gt; (IntPtr pSrcNativeVariant);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetObjectForNativeVariant&lt;T&gt;(native int pSrcNativeVariant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectForNativeVariant(Of T) (pSrcNativeVariant As IntPtr) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T GetObjectForNativeVariant(IntPtr pSrcNativeVariant);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3622,6 +3816,8 @@
       <MemberSignature Language="C#" Value="public static object[] GetObjectsForNativeVariants (IntPtr aSrcNativeVariant, int cVars);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object[] GetObjectsForNativeVariants(native int aSrcNativeVariant, int32 cVars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetObjectsForNativeVariants(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectsForNativeVariants (aSrcNativeVariant As IntPtr, cVars As Integer) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Object ^&gt; ^ GetObjectsForNativeVariants(IntPtr aSrcNativeVariant, int cVars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3672,6 +3868,8 @@
       <MemberSignature Language="C#" Value="public static T[] GetObjectsForNativeVariants&lt;T&gt; (IntPtr aSrcNativeVariant, int cVars);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T[] GetObjectsForNativeVariants&lt;T&gt;(native int aSrcNativeVariant, int32 cVars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetObjectsForNativeVariants``1(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectsForNativeVariants(Of T) (aSrcNativeVariant As IntPtr, cVars As Integer) As T()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static cli::array &lt;T&gt; ^ GetObjectsForNativeVariants(IntPtr aSrcNativeVariant, int cVars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3727,6 +3925,8 @@
       <MemberSignature Language="C#" Value="public static int GetStartComSlot (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetStartComSlot(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetStartComSlot(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStartComSlot (t As Type) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetStartComSlot(Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3775,6 +3975,8 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Thread GetThreadFromFiberCookie (int cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Thread GetThreadFromFiberCookie(int32 cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetThreadFromFiberCookie(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetThreadFromFiberCookie (cookie As Integer) As Thread" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Thread ^ GetThreadFromFiberCookie(int cookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3813,6 +4015,8 @@
       <MemberSignature Language="C#" Value="public static object GetTypedObjectForIUnknown (IntPtr pUnk, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetTypedObjectForIUnknown(native int pUnk, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypedObjectForIUnknown(System.IntPtr,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypedObjectForIUnknown (pUnk As IntPtr, t As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetTypedObjectForIUnknown(IntPtr pUnk, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3859,6 +4063,8 @@
       <MemberSignature Language="C#" Value="public static Type GetTypeForITypeInfo (IntPtr piTypeInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetTypeForITypeInfo(native int piTypeInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeForITypeInfo(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeForITypeInfo (piTypeInfo As IntPtr) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetTypeForITypeInfo(IntPtr piTypeInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3892,6 +4098,8 @@
       <MemberSignature Language="C#" Value="public static Type GetTypeFromCLSID (Guid clsid);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetTypeFromCLSID(valuetype System.Guid clsid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeFromCLSID(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeFromCLSID (clsid As Guid) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetTypeFromCLSID(Guid clsid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3925,10 +4133,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTypeInfoName">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTypeInfoName">
       <MemberSignature Language="C#" Value="public static string GetTypeInfoName (System.Runtime.InteropServices.ComTypes.ITypeInfo typeInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTypeInfoName(class System.Runtime.InteropServices.ComTypes.ITypeInfo typeInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeInfoName(System.Runtime.InteropServices.ComTypes.ITypeInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeInfoName (typeInfo As ITypeInfo) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTypeInfoName(System::Runtime::InteropServices::ComTypes::ITypeInfo ^ typeInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -3975,6 +4199,8 @@
       <MemberSignature Language="C#" Value="public static string GetTypeInfoName (System.Runtime.InteropServices.UCOMITypeInfo pTI);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTypeInfoName(class System.Runtime.InteropServices.UCOMITypeInfo pTI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeInfoName(System.Runtime.InteropServices.UCOMITypeInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeInfoName (pTI As UCOMITypeInfo) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTypeInfoName(System::Runtime::InteropServices::UCOMITypeInfo ^ pTI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4008,10 +4234,22 @@
         <altmember cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTypeLibGuid">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the library identifier (LIBID) of a type library.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTypeLibGuid">
       <MemberSignature Language="C#" Value="public static Guid GetTypeLibGuid (System.Runtime.InteropServices.ComTypes.ITypeLib typelib);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetTypeLibGuid(class System.Runtime.InteropServices.ComTypes.ITypeLib typelib) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibGuid(System.Runtime.InteropServices.ComTypes.ITypeLib)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeLibGuid (typelib As ITypeLib) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid GetTypeLibGuid(System::Runtime::InteropServices::ComTypes::ITypeLib ^ typelib);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4047,6 +4285,8 @@
       <MemberSignature Language="C#" Value="public static Guid GetTypeLibGuid (System.Runtime.InteropServices.UCOMITypeLib pTLB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetTypeLibGuid(class System.Runtime.InteropServices.UCOMITypeLib pTLB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibGuid(System.Runtime.InteropServices.UCOMITypeLib)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeLibGuid (pTLB As UCOMITypeLib) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid GetTypeLibGuid(System::Runtime::InteropServices::UCOMITypeLib ^ pTLB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4087,6 +4327,8 @@
       <MemberSignature Language="C#" Value="public static Guid GetTypeLibGuidForAssembly (System.Reflection.Assembly asm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetTypeLibGuidForAssembly(class System.Reflection.Assembly asm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeLibGuidForAssembly (asm As Assembly) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid GetTypeLibGuidForAssembly(System::Reflection::Assembly ^ asm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4120,10 +4362,22 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetTypeLibGuid(System.Runtime.InteropServices.UCOMITypeLib)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTypeLibLcid">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the LCID of a type library.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTypeLibLcid">
       <MemberSignature Language="C#" Value="public static int GetTypeLibLcid (System.Runtime.InteropServices.ComTypes.ITypeLib typelib);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTypeLibLcid(class System.Runtime.InteropServices.ComTypes.ITypeLib typelib) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibLcid(System.Runtime.InteropServices.ComTypes.ITypeLib)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeLibLcid (typelib As ITypeLib) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetTypeLibLcid(System::Runtime::InteropServices::ComTypes::ITypeLib ^ typelib);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4148,6 +4402,8 @@
       <MemberSignature Language="C#" Value="public static int GetTypeLibLcid (System.Runtime.InteropServices.UCOMITypeLib pTLB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTypeLibLcid(class System.Runtime.InteropServices.UCOMITypeLib pTLB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibLcid(System.Runtime.InteropServices.UCOMITypeLib)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeLibLcid (pTLB As UCOMITypeLib) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetTypeLibLcid(System::Runtime::InteropServices::UCOMITypeLib ^ pTLB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4173,10 +4429,22 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTypeLibName">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the name of a type library.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTypeLibName">
       <MemberSignature Language="C#" Value="public static string GetTypeLibName (System.Runtime.InteropServices.ComTypes.ITypeLib typelib);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTypeLibName(class System.Runtime.InteropServices.ComTypes.ITypeLib typelib) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibName(System.Runtime.InteropServices.ComTypes.ITypeLib)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeLibName (typelib As ITypeLib) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTypeLibName(System::Runtime::InteropServices::ComTypes::ITypeLib ^ typelib);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4212,6 +4480,8 @@
       <MemberSignature Language="C#" Value="public static string GetTypeLibName (System.Runtime.InteropServices.UCOMITypeLib pTLB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTypeLibName(class System.Runtime.InteropServices.UCOMITypeLib pTLB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibName(System.Runtime.InteropServices.UCOMITypeLib)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeLibName (pTLB As UCOMITypeLib) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTypeLibName(System::Runtime::InteropServices::UCOMITypeLib ^ pTLB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4251,6 +4521,8 @@
       <MemberSignature Language="C#" Value="public static void GetTypeLibVersionForAssembly (System.Reflection.Assembly inputAssembly, out int majorVersion, out int minorVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetTypeLibVersionForAssembly(class System.Reflection.Assembly inputAssembly, [out] int32&amp; majorVersion, [out] int32&amp; minorVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibVersionForAssembly(System.Reflection.Assembly,System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetTypeLibVersionForAssembly (inputAssembly As Assembly, ByRef majorVersion As Integer, ByRef minorVersion As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetTypeLibVersionForAssembly(System::Reflection::Assembly ^ inputAssembly, [Runtime::InteropServices::Out] int % majorVersion, [Runtime::InteropServices::Out] int % minorVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4292,6 +4564,8 @@
       <MemberSignature Language="C#" Value="public static object GetUniqueObjectForIUnknown (IntPtr unknown);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetUniqueObjectForIUnknown(native int unknown) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetUniqueObjectForIUnknown(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUniqueObjectForIUnknown (unknown As IntPtr) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetUniqueObjectForIUnknown(IntPtr unknown);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4336,6 +4610,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetUnmanagedThunkForManagedMethodPtr (IntPtr pfnMethodToWrap, IntPtr pbSignature, int cbSignature);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetUnmanagedThunkForManagedMethodPtr(native int pfnMethodToWrap, native int pbSignature, int32 cbSignature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetUnmanagedThunkForManagedMethodPtr(System.IntPtr,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnmanagedThunkForManagedMethodPtr (pfnMethodToWrap As IntPtr, pbSignature As IntPtr, cbSignature As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetUnmanagedThunkForManagedMethodPtr(IntPtr pfnMethodToWrap, IntPtr pbSignature, int cbSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4376,6 +4652,8 @@
       <MemberSignature Language="C#" Value="public static bool IsComObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsComObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.IsComObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsComObject (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsComObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4427,6 +4705,8 @@
       <MemberSignature Language="C#" Value="public static bool IsTypeVisibleFromCom (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTypeVisibleFromCom(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.IsTypeVisibleFromCom(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsTypeVisibleFromCom (t As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsTypeVisibleFromCom(Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4459,6 +4739,8 @@
       <MemberSignature Language="C#" Value="public static int NumParamBytes (System.Reflection.MethodInfo m);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 NumParamBytes(class System.Reflection.MethodInfo m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.NumParamBytes(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NumParamBytes (m As MethodInfo) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int NumParamBytes(System::Reflection::MethodInfo ^ m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4494,6 +4776,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr OffsetOf (Type t, string fieldName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int OffsetOf(class System.Type t, string fieldName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.OffsetOf(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OffsetOf (t As Type, fieldName As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr OffsetOf(Type ^ t, System::String ^ fieldName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4545,6 +4829,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr OffsetOf&lt;T&gt; (string fieldName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int OffsetOf&lt;T&gt;(string fieldName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.OffsetOf``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OffsetOf(Of T) (fieldName As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static IntPtr OffsetOf(System::String ^ fieldName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4597,6 +4883,8 @@
       <MemberSignature Language="C#" Value="public static void Prelink (System.Reflection.MethodInfo m);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Prelink(class System.Reflection.MethodInfo m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Prelink(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Prelink (m As MethodInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Prelink(System::Reflection::MethodInfo ^ m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4649,6 +4937,8 @@
       <MemberSignature Language="C#" Value="public static void PrelinkAll (Type c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PrelinkAll(class System.Type c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PrelinkAll(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub PrelinkAll (c As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrelinkAll(Type ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4685,10 +4975,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Prelink(System.Reflection.MethodInfo)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PtrToStringAnsi">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged ANSI string into it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PtrToStringAnsi">
       <MemberSignature Language="C#" Value="public static string PtrToStringAnsi (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringAnsi(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringAnsi(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringAnsi (ptr As IntPtr) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringAnsi(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4742,6 +5048,8 @@
       <MemberSignature Language="C#" Value="public static string PtrToStringAnsi (IntPtr ptr, int len);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringAnsi(native int ptr, int32 len) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringAnsi(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringAnsi (ptr As IntPtr, len As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringAnsi(IntPtr ptr, int len);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4795,10 +5103,22 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PtrToStringAuto">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged string into it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PtrToStringAuto">
       <MemberSignature Language="C#" Value="public static string PtrToStringAuto (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringAuto(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringAuto(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringAuto (ptr As IntPtr) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringAuto(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4848,6 +5168,8 @@
       <MemberSignature Language="C#" Value="public static string PtrToStringAuto (IntPtr ptr, int len);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringAuto(native int ptr, int32 len) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringAuto(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringAuto (ptr As IntPtr, len As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringAuto(IntPtr ptr, int len);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4901,6 +5223,8 @@
       <MemberSignature Language="C#" Value="public static string PtrToStringBSTR (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringBSTR(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringBSTR(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringBSTR (ptr As IntPtr) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringBSTR(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4946,10 +5270,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToBSTR(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PtrToStringUni">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged Unicode string into it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PtrToStringUni">
       <MemberSignature Language="C#" Value="public static string PtrToStringUni (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringUni(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringUni(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringUni (ptr As IntPtr) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringUni(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4996,6 +5336,8 @@
       <MemberSignature Language="C#" Value="public static string PtrToStringUni (IntPtr ptr, int len);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringUni(native int ptr, int32 len) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringUni(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringUni (ptr As IntPtr, len As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringUni(IntPtr ptr, int len);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5044,6 +5386,8 @@
       <MemberSignature Language="C#" Value="public static string PtrToStringUTF8 (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringUTF8(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringUTF8(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringUTF8 (ptr As IntPtr) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringUTF8(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5067,6 +5411,8 @@
       <MemberSignature Language="C#" Value="public static string PtrToStringUTF8 (IntPtr ptr, int byteLen);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringUTF8(native int ptr, int32 byteLen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStringUTF8(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringUTF8 (ptr As IntPtr, byteLen As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringUTF8(IntPtr ptr, int byteLen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5088,10 +5434,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PtrToStructure">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Marshals data from an unmanaged block of memory to a managed object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PtrToStructure">
       <MemberSignature Language="C#" Value="public static void PtrToStructure (IntPtr ptr, object structure);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PtrToStructure(native int ptr, object structure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStructure(System.IntPtr,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub PtrToStructure (ptr As IntPtr, structure As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PtrToStructure(IntPtr ptr, System::Object ^ structure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5147,6 +5509,8 @@
       <MemberSignature Language="C#" Value="public static object PtrToStructure (IntPtr ptr, Type structureType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object PtrToStructure(native int ptr, class System.Type structureType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStructure(System.IntPtr,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStructure (ptr As IntPtr, structureType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ PtrToStructure(IntPtr ptr, Type ^ structureType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5223,6 +5587,8 @@
       <MemberSignature Language="C#" Value="public static T PtrToStructure&lt;T&gt; (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T PtrToStructure&lt;T&gt;(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStructure``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStructure(Of T) (ptr As IntPtr) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T PtrToStructure(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5274,6 +5640,8 @@
       <MemberSignature Language="C#" Value="public static void PtrToStructure&lt;T&gt; (IntPtr ptr, T structure);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PtrToStructure&lt;T&gt;(native int ptr, !!T structure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.PtrToStructure``1(System.IntPtr,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub PtrToStructure(Of T) (ptr As IntPtr, structure As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void PtrToStructure(IntPtr ptr, T structure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5325,6 +5693,8 @@
       <MemberSignature Language="C#" Value="public static int QueryInterface (IntPtr pUnk, ref Guid iid, out IntPtr ppv);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 QueryInterface(native int pUnk, valuetype System.Guid&amp; iid, [out] native int&amp; ppv) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.QueryInterface(System.IntPtr,System.Guid@,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QueryInterface (pUnk As IntPtr, ByRef iid As Guid, ByRef ppv As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int QueryInterface(IntPtr pUnk, Guid % iid, [Runtime::InteropServices::Out] IntPtr % ppv);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5375,10 +5745,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(System.IntPtr)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadByte">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a single byte from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadByte">
       <MemberSignature Language="C#" Value="public static byte ReadByte (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 ReadByte(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadByte(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadByte (ptr As IntPtr) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ReadByte(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5448,6 +5834,8 @@
       <MemberSignature Language="C#" Value="public static byte ReadByte (IntPtr ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 ReadByte(native int ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadByte(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadByte (ptr As IntPtr, ofs As Integer) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ReadByte(IntPtr ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5510,6 +5898,8 @@
       <MemberSignature Language="C#" Value="public static byte ReadByte (object ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 ReadByte([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadByte(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadByte (ptr As Object, ofs As Integer) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ReadByte(System::Object ^ ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5563,10 +5953,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadInt16">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a 16-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadInt16">
       <MemberSignature Language="C#" Value="public static short ReadInt16 (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt16(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16 (ptr As IntPtr) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5636,6 +6042,8 @@
       <MemberSignature Language="C#" Value="public static short ReadInt16 (IntPtr ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16(native int ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt16(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16 (ptr As IntPtr, ofs As Integer) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16(IntPtr ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5699,6 +6107,8 @@
       <MemberSignature Language="C#" Value="public static short ReadInt16 (object ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt16(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16 (ptr As Object, ofs As Integer) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16(System::Object ^ ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5752,10 +6162,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadInt32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a 32-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadInt32">
       <MemberSignature Language="C#" Value="public static int ReadInt32 (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt32(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32 (ptr As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5830,6 +6256,8 @@
       <MemberSignature Language="C#" Value="public static int ReadInt32 (IntPtr ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32(native int ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt32(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32 (ptr As IntPtr, ofs As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32(IntPtr ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5898,6 +6326,8 @@
       <MemberSignature Language="C#" Value="public static int ReadInt32 (object ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt32(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32 (ptr As Object, ofs As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32(System::Object ^ ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -5954,10 +6384,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadInt64">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a 64-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadInt64">
       <MemberSignature Language="C#" Value="public static long ReadInt64 (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt64(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64 (ptr As IntPtr) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6032,6 +6478,8 @@
       <MemberSignature Language="C#" Value="public static long ReadInt64 (IntPtr ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64(native int ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt64(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64 (ptr As IntPtr, ofs As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64(IntPtr ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6095,6 +6543,8 @@
       <MemberSignature Language="C#" Value="public static long ReadInt64 (object ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt64(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64 (ptr As Object, ofs As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64(System::Object ^ ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6151,10 +6601,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadIntPtr">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a processor native sized integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadIntPtr">
       <MemberSignature Language="C#" Value="public static IntPtr ReadIntPtr (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReadIntPtr(native int ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadIntPtr(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadIntPtr (ptr As IntPtr) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr ReadIntPtr(IntPtr ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6225,6 +6691,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ReadIntPtr (IntPtr ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReadIntPtr(native int ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadIntPtr(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadIntPtr (ptr As IntPtr, ofs As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr ReadIntPtr(IntPtr ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6289,6 +6757,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ReadIntPtr (object ptr, int ofs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReadIntPtr([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadIntPtr(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadIntPtr (ptr As Object, ofs As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr ReadIntPtr(System::Object ^ ptr, int ofs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6346,6 +6816,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ReAllocCoTaskMem (IntPtr pv, int cb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReAllocCoTaskMem(native int pv, int32 cb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReAllocCoTaskMem (pv As IntPtr, cb As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr ReAllocCoTaskMem(IntPtr pv, int cb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6395,6 +6867,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ReAllocHGlobal (IntPtr pv, IntPtr cb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReAllocHGlobal(native int pv, native int cb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReAllocHGlobal(System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReAllocHGlobal (pv As IntPtr, cb As IntPtr) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr ReAllocHGlobal(IntPtr pv, IntPtr cb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6446,6 +6920,8 @@
       <MemberSignature Language="C#" Value="public static int Release (IntPtr pUnk);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Release(native int pUnk) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Release (pUnk As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Release(IntPtr pUnk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6510,6 +6986,8 @@
       <MemberSignature Language="C#" Value="public static int ReleaseComObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReleaseComObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReleaseComObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReleaseComObject (o As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReleaseComObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6574,6 +7052,8 @@
       <MemberSignature Language="C#" Value="public static void ReleaseThreadCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseThreadCache() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReleaseThreadCache" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReleaseThreadCache ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReleaseThreadCache();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6599,6 +7079,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr SecureStringToBSTR (System.Security.SecureString s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToBSTR(class System.Security.SecureString s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SecureStringToBSTR(System.Security.SecureString)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToBSTR (s As SecureString) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToBSTR(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6644,6 +7126,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr SecureStringToCoTaskMemAnsi (System.Security.SecureString s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToCoTaskMemAnsi(class System.Security.SecureString s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemAnsi(System.Security.SecureString)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToCoTaskMemAnsi (s As SecureString) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToCoTaskMemAnsi(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6697,6 +7181,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr SecureStringToCoTaskMemUnicode (System.Security.SecureString s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToCoTaskMemUnicode(class System.Security.SecureString s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode(System.Security.SecureString)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToCoTaskMemUnicode (s As SecureString) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToCoTaskMemUnicode(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6750,6 +7236,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr SecureStringToGlobalAllocAnsi (System.Security.SecureString s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToGlobalAllocAnsi(class System.Security.SecureString s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SecureStringToGlobalAllocAnsi(System.Security.SecureString)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToGlobalAllocAnsi (s As SecureString) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToGlobalAllocAnsi(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6803,6 +7291,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr SecureStringToGlobalAllocUnicode (System.Security.SecureString s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int SecureStringToGlobalAllocUnicode(class System.Security.SecureString s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SecureStringToGlobalAllocUnicode(System.Security.SecureString)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToGlobalAllocUnicode (s As SecureString) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToGlobalAllocUnicode(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6856,6 +7346,8 @@
       <MemberSignature Language="C#" Value="public static bool SetComObjectData (object obj, object key, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SetComObjectData(object obj, object key, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SetComObjectData(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetComObjectData (obj As Object, key As Object, data As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetComObjectData(System::Object ^ obj, System::Object ^ key, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6905,10 +7397,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComObjectData(System.Object,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SizeOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the unmanaged size, in bytes, of a class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SizeOf">
       <MemberSignature Language="C#" Value="public static int SizeOf (object structure);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 SizeOf(object structure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SizeOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SizeOf (structure As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int SizeOf(System::Object ^ structure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6971,6 +7479,8 @@
       <MemberSignature Language="C#" Value="public static int SizeOf (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 SizeOf(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SizeOf(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SizeOf (t As Type) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int SizeOf(Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7028,6 +7538,8 @@
       <MemberSignature Language="C#" Value="public static int SizeOf&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 SizeOf&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SizeOf``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SizeOf(Of T) () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int SizeOf();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7075,6 +7587,8 @@
       <MemberSignature Language="C#" Value="public static int SizeOf&lt;T&gt; (T structure);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 SizeOf&lt;T&gt;(!!T structure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.SizeOf``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SizeOf(Of T) (structure As T) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int SizeOf(T structure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7128,6 +7642,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StringToBSTR (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int StringToBSTR(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StringToBSTR(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToBSTR (s As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToBSTR(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7176,6 +7692,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StringToCoTaskMemAnsi (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int StringToCoTaskMemAnsi(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAnsi(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToCoTaskMemAnsi (s As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToCoTaskMemAnsi(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7224,6 +7742,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StringToCoTaskMemAuto (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int StringToCoTaskMemAuto(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAuto(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToCoTaskMemAuto (s As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToCoTaskMemAuto(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -7268,6 +7788,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StringToCoTaskMemUni (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int StringToCoTaskMemUni(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemUni(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToCoTaskMemUni (s As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToCoTaskMemUni(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7316,6 +7838,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StringToCoTaskMemUTF8 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int StringToCoTaskMemUTF8(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemUTF8(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToCoTaskMemUTF8 (s As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToCoTaskMemUTF8(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7339,6 +7863,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StringToHGlobalAnsi (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int StringToHGlobalAnsi(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToHGlobalAnsi (s As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToHGlobalAnsi(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7397,6 +7923,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StringToHGlobalAuto (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int StringToHGlobalAuto(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAuto(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToHGlobalAuto (s As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToHGlobalAuto(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -7447,6 +7975,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StringToHGlobalUni (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int StringToHGlobalUni(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StringToHGlobalUni(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToHGlobalUni (s As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToHGlobalUni(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7496,6 +8026,8 @@
       <MemberSignature Language="C#" Value="public static void StructureToPtr (object structure, IntPtr ptr, bool fDeleteOld);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StructureToPtr(object structure, native int ptr, bool fDeleteOld) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StructureToPtr(System.Object,System.IntPtr,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub StructureToPtr (structure As Object, ptr As IntPtr, fDeleteOld As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StructureToPtr(System::Object ^ structure, IntPtr ptr, bool fDeleteOld);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7588,6 +8120,8 @@
       <MemberSignature Language="C#" Value="public static void StructureToPtr&lt;T&gt; (T structure, IntPtr ptr, bool fDeleteOld);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StructureToPtr&lt;T&gt;(!!T structure, native int ptr, bool fDeleteOld) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.StructureToPtr``1(``0,System.IntPtr,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub StructureToPtr(Of T) (structure As T, ptr As IntPtr, fDeleteOld As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void StructureToPtr(T structure, IntPtr ptr, bool fDeleteOld);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7663,6 +8197,8 @@
       <MemberSignature Language="C#" Value="public static readonly int SystemDefaultCharSize;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 SystemDefaultCharSize" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Marshal.SystemDefaultCharSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SystemDefaultCharSize As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int SystemDefaultCharSize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7708,6 +8244,8 @@
       <MemberSignature Language="C#" Value="public static readonly int SystemMaxDBCSCharSize;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 SystemMaxDBCSCharSize" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Marshal.SystemMaxDBCSCharSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SystemMaxDBCSCharSize As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int SystemMaxDBCSCharSize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7748,10 +8286,26 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAnsi(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ThrowExceptionForHR">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Throws an exception with a specific failure HRESULT value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ThrowExceptionForHR">
       <MemberSignature Language="C#" Value="public static void ThrowExceptionForHR (int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowExceptionForHR(int32 errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowExceptionForHR (errorCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ThrowExceptionForHR(int errorCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7809,6 +8363,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void ThrowExceptionForHR (int errorCode, IntPtr errorInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowExceptionForHR(int32 errorCode, native int errorInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowExceptionForHR (errorCode As Integer, errorInfo As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ThrowExceptionForHR(int errorCode, IntPtr errorInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7863,6 +8419,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static IntPtr UnsafeAddrOfPinnedArrayElement (Array arr, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int UnsafeAddrOfPinnedArrayElement(class System.Array arr, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.UnsafeAddrOfPinnedArrayElement(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeAddrOfPinnedArrayElement (arr As Array, index As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr UnsafeAddrOfPinnedArrayElement(Array ^ arr, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7910,6 +8468,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static IntPtr UnsafeAddrOfPinnedArrayElement&lt;T&gt; (T[] arr, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int UnsafeAddrOfPinnedArrayElement&lt;T&gt;(!!T[] arr, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.UnsafeAddrOfPinnedArrayElement``1(``0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeAddrOfPinnedArrayElement(Of T) (arr As T(), index As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static IntPtr UnsafeAddrOfPinnedArrayElement(cli::array &lt;T&gt; ^ arr, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7958,10 +8518,26 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <altmember cref="T:System.Runtime.InteropServices.GCHandle" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteByte">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a single byte value to unmanaged memory.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteByte">
       <MemberSignature Language="C#" Value="public static void WriteByte (IntPtr ptr, byte val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteByte(native int ptr, unsigned int8 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteByte(System.IntPtr,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteByte (ptr As IntPtr, val As Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteByte(IntPtr ptr, System::Byte val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8026,6 +8602,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteByte (IntPtr ptr, int ofs, byte val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteByte(native int ptr, int32 ofs, unsigned int8 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteByte(System.IntPtr,System.Int32,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteByte (ptr As IntPtr, ofs As Integer, val As Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteByte(IntPtr ptr, int ofs, System::Byte val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8083,6 +8661,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteByte (object ptr, int ofs, byte val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteByte([out] object ptr, int32 ofs, unsigned int8 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteByte(System.Object,System.Int32,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteByte (ptr As Object, ofs As Integer, val As Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteByte(System::Object ^ ptr, int ofs, System::Byte val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8135,10 +8715,26 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteInt16">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a 16-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteInt16">
       <MemberSignature Language="C#" Value="public static void WriteInt16 (IntPtr ptr, char val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16(native int ptr, char val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt16(System.IntPtr,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16 (ptr As IntPtr, val As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16(IntPtr ptr, char val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8205,6 +8801,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt16 (IntPtr ptr, short val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16(native int ptr, int16 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt16(System.IntPtr,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16 (ptr As IntPtr, val As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16(IntPtr ptr, short val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8271,6 +8869,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt16 (IntPtr ptr, int ofs, char val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16(native int ptr, int32 ofs, char val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt16(System.IntPtr,System.Int32,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16 (ptr As IntPtr, ofs As Integer, val As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16(IntPtr ptr, int ofs, char val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8331,6 +8931,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt16 (IntPtr ptr, int ofs, short val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16(native int ptr, int32 ofs, int16 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt16(System.IntPtr,System.Int32,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16 (ptr As IntPtr, ofs As Integer, val As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16(IntPtr ptr, int ofs, short val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8391,6 +8993,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt16 (object ptr, int ofs, char val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16([out] object ptr, int32 ofs, char val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt16(System.Object,System.Int32,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16 (ptr As Object, ofs As Integer, val As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16(System::Object ^ ptr, int ofs, char val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8444,6 +9048,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt16 (object ptr, int ofs, short val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16([out] object ptr, int32 ofs, int16 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt16(System.Object,System.Int32,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16 (ptr As Object, ofs As Integer, val As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16(System::Object ^ ptr, int ofs, short val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8498,10 +9104,26 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteInt32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a 32-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteInt32">
       <MemberSignature Language="C#" Value="public static void WriteInt32 (IntPtr ptr, int val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32(native int ptr, int32 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt32(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32 (ptr As IntPtr, val As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32(IntPtr ptr, int val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8568,6 +9190,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt32 (IntPtr ptr, int ofs, int val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32(native int ptr, int32 ofs, int32 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt32(System.IntPtr,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32 (ptr As IntPtr, ofs As Integer, val As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32(IntPtr ptr, int ofs, int val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8628,6 +9252,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt32 (object ptr, int ofs, int val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32([out] object ptr, int32 ofs, int32 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt32(System.Object,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32 (ptr As Object, ofs As Integer, val As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32(System::Object ^ ptr, int ofs, int val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8682,10 +9308,26 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteInt64">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a 64-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteInt64">
       <MemberSignature Language="C#" Value="public static void WriteInt64 (IntPtr ptr, long val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64(native int ptr, int64 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt64(System.IntPtr,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64 (ptr As IntPtr, val As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64(IntPtr ptr, long val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8752,6 +9394,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt64 (IntPtr ptr, int ofs, long val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64(native int ptr, int32 ofs, int64 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt64(System.IntPtr,System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64 (ptr As IntPtr, ofs As Integer, val As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64(IntPtr ptr, int ofs, long val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8812,6 +9456,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteInt64 (object ptr, int ofs, long val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64([out] object ptr, int32 ofs, int64 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt64(System.Object,System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64 (ptr As Object, ofs As Integer, val As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64(System::Object ^ ptr, int ofs, long val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8866,10 +9512,26 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteIntPtr">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a processor native-sized integer value to unmanaged memory. 32-bit integers are written on 32-bit systems, and 64-bit integers are written on 64-bit systems. Writing to unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteIntPtr">
       <MemberSignature Language="C#" Value="public static void WriteIntPtr (IntPtr ptr, IntPtr val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIntPtr(native int ptr, native int val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteIntPtr(System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIntPtr (ptr As IntPtr, val As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIntPtr(IntPtr ptr, IntPtr val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8936,6 +9598,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteIntPtr (IntPtr ptr, int ofs, IntPtr val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIntPtr(native int ptr, int32 ofs, native int val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteIntPtr(System.IntPtr,System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIntPtr (ptr As IntPtr, ofs As Integer, val As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIntPtr(IntPtr ptr, int ofs, IntPtr val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8998,6 +9662,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void WriteIntPtr (object ptr, int ofs, IntPtr val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIntPtr([out] object ptr, int32 ofs, native int val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteIntPtr(System.Object,System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIntPtr (ptr As Object, ofs As Integer, val As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIntPtr(System::Object ^ ptr, int ofs, IntPtr val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -9051,6 +9717,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void ZeroFreeBSTR (IntPtr s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ZeroFreeBSTR(native int s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ZeroFreeBSTR(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ZeroFreeBSTR (s As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ZeroFreeBSTR(IntPtr s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -9094,6 +9762,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void ZeroFreeCoTaskMemAnsi (IntPtr s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ZeroFreeCoTaskMemAnsi(native int s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemAnsi(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ZeroFreeCoTaskMemAnsi (s As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ZeroFreeCoTaskMemAnsi(IntPtr s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -9145,6 +9815,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void ZeroFreeCoTaskMemUnicode (IntPtr s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ZeroFreeCoTaskMemUnicode(native int s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemUnicode(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ZeroFreeCoTaskMemUnicode (s As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ZeroFreeCoTaskMemUnicode(IntPtr s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -9188,6 +9860,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void ZeroFreeCoTaskMemUTF8 (IntPtr s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ZeroFreeCoTaskMemUTF8(native int s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemUTF8(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ZeroFreeCoTaskMemUTF8 (s As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ZeroFreeCoTaskMemUTF8(IntPtr s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -9210,6 +9884,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void ZeroFreeGlobalAllocAnsi (IntPtr s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ZeroFreeGlobalAllocAnsi(native int s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ZeroFreeGlobalAllocAnsi(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ZeroFreeGlobalAllocAnsi (s As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ZeroFreeGlobalAllocAnsi(IntPtr s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -9261,6 +9937,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <MemberSignature Language="C#" Value="public static void ZeroFreeGlobalAllocUnicode (IntPtr s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ZeroFreeGlobalAllocUnicode(native int s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ZeroFreeGlobalAllocUnicode(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ZeroFreeGlobalAllocUnicode (s As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ZeroFreeGlobalAllocUnicode(IntPtr s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -9308,325 +9986,5 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SizeOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the unmanaged size, in bytes, of a class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetTypeLibGuid">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the library identifier (LIBID) of a type library.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ThrowExceptionForHR">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Throws an exception with a specific failure HRESULT value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteInt32">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a 32-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetComInterfaceForObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an interface pointer that represents an interface for an object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PtrToStructure">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Marshals data from an unmanaged block of memory to a managed object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PtrToStringUni">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged Unicode string into it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadInt32">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a 32-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadInt64">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a 64-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteIntPtr">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a processor native-sized integer value to unmanaged memory. 32-bit integers are written on 32-bit systems, and 64-bit integers are written on 64-bit systems. Writing to unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteInt64">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a 64-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteByte">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a single byte value to unmanaged memory.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetExceptionForHR">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts an HRESULT error code to a corresponding <see cref="T:System.Exception" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetTypeLibName">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the name of a type library.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AllocHGlobal">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allocates memory from the unmanaged memory of the process.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PtrToStringAuto">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged string into it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Copy">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies data from a managed array to an unmanaged memory pointer, or from an unmanaged memory pointer to a managed array.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadInt16">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a 16-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadByte">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a single byte from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadIntPtr">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a processor native sized integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PtrToStringAnsi">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged ANSI string into it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetTypeLibLcid">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the LCID of a type library.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteInt16">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a 16-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetTypeInfoName">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaRedefine" FullName="System.Xml.Schema.XmlSchemaRedefine">
+﻿<Type Name="XmlSchemaRedefine" FullName="System.Xml.Schema.XmlSchemaRedefine">
   <TypeSignature Language="C#" Value="public class XmlSchemaRedefine : System.Xml.Schema.XmlSchemaExternal" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaRedefine extends System.Xml.Schema.XmlSchemaExternal" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaRedefine" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaRedefine&#xA;Inherits XmlSchemaExternal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaRedefine : System::Xml::Schema::XmlSchemaExternal" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaRedefine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaRedefine.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaRedefine();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable AttributeGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable AttributeGroups" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaRedefine.AttributeGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeGroups As XmlSchemaObjectTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ AttributeGroups { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable Groups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable Groups" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaRedefine.Groups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Groups As XmlSchemaObjectTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ Groups { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -131,6 +139,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaRedefine.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As XmlSchemaObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectCollection ^ Items { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -175,6 +185,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable SchemaTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable SchemaTypes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaRedefine.SchemaTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaTypes As XmlSchemaObjectTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ SchemaTypes { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

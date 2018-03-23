@@ -1,7 +1,9 @@
-<Type Name="QueryContinueDragEventHandler" FullName="System.Windows.QueryContinueDragEventHandler">
+﻿<Type Name="QueryContinueDragEventHandler" FullName="System.Windows.QueryContinueDragEventHandler">
   <TypeSignature Language="C#" Value="public delegate void QueryContinueDragEventHandler(object sender, QueryContinueDragEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryContinueDragEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.QueryContinueDragEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub QueryContinueDragEventHandler(sender As Object, e As QueryContinueDragEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void QueryContinueDragEventHandler(System::Object ^ sender, QueryContinueDragEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

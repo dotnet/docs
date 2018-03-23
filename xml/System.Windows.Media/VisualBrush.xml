@@ -1,7 +1,9 @@
-<Type Name="VisualBrush" FullName="System.Windows.Media.VisualBrush">
+﻿<Type Name="VisualBrush" FullName="System.Windows.Media.VisualBrush">
   <TypeSignature Language="C#" Value="public sealed class VisualBrush : System.Windows.Media.TileBrush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VisualBrush extends System.Windows.Media.TileBrush" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualBrush" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VisualBrush&#xA;Inherits TileBrush" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VisualBrush sealed : System::Windows::Media::TileBrush" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.VisualBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VisualBrush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VisualBrush();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -54,6 +67,7 @@
       <MemberSignature Language="C#" Value="public VisualBrush (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.#ctor(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VisualBrush(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +86,8 @@
       <MemberSignature Language="C#" Value="public bool AutoLayoutContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoLayoutContent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualBrush.AutoLayoutContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoLayoutContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoLayoutContent { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -129,6 +145,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AutoLayoutContentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AutoLayoutContentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.VisualBrush.AutoLayoutContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutoLayoutContentProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AutoLayoutContentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.VisualBrush Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.VisualBrush Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As VisualBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::VisualBrush ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +196,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.VisualBrush CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.VisualBrush CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As VisualBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::VisualBrush ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -204,6 +226,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +247,8 @@
       <MemberSignature Language="C#" Value="protected override void GetContentBounds (out System.Windows.Rect contentBounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetContentBounds([out] valuetype System.Windows.Rect&amp; contentBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.GetContentBounds(System.Windows.Rect@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetContentBounds (ByRef contentBounds As Rect)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetContentBounds([Runtime::InteropServices::Out] System::Windows::Rect % contentBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,6 +270,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -265,6 +293,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Visual Visual { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual Visual" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualBrush.Visual" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visual As Visual" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Visual ^ Visual { System::Windows::Media::Visual ^ get(); void set(System::Windows::Media::Visual ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -341,6 +371,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VisualProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VisualProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.VisualBrush.VisualProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VisualProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VisualProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -354,14 +386,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.VisualBrush" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

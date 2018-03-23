@@ -1,7 +1,9 @@
-<Type Name="BamlLocalizabilityResolver" FullName="System.Windows.Markup.Localizer.BamlLocalizabilityResolver">
+﻿<Type Name="BamlLocalizabilityResolver" FullName="System.Windows.Markup.Localizer.BamlLocalizabilityResolver">
   <TypeSignature Language="C#" Value="public abstract class BamlLocalizabilityResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BamlLocalizabilityResolver extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizabilityResolver" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BamlLocalizabilityResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BamlLocalizabilityResolver abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected BamlLocalizabilityResolver ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BamlLocalizabilityResolver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Markup.Localizer.ElementLocalizability GetElementLocalizability (string assembly, string className);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Markup.Localizer.ElementLocalizability GetElementLocalizability(string assembly, string className) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.GetElementLocalizability(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetElementLocalizability (assembly As String, className As String) As ElementLocalizability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Markup::Localizer::ElementLocalizability ^ GetElementLocalizability(System::String ^ assembly, System::String ^ className);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.LocalizabilityAttribute GetPropertyLocalizability (string assembly, string className, string property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.LocalizabilityAttribute GetPropertyLocalizability(string assembly, string className, string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.GetPropertyLocalizability(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPropertyLocalizability (assembly As String, className As String, property As String) As LocalizabilityAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::LocalizabilityAttribute ^ GetPropertyLocalizability(System::String ^ assembly, System::String ^ className, System::String ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public abstract string ResolveAssemblyFromClass (string className);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveAssemblyFromClass(string className) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.ResolveAssemblyFromClass(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveAssemblyFromClass (className As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ResolveAssemblyFromClass(System::String ^ className);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +138,8 @@
       <MemberSignature Language="C#" Value="public abstract string ResolveFormattingTagToClass (string formattingTag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveFormattingTagToClass(string formattingTag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.ResolveFormattingTagToClass(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveFormattingTagToClass (formattingTag As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ResolveFormattingTagToClass(System::String ^ formattingTag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

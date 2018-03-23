@@ -1,7 +1,9 @@
-<Type Name="MessageQuerySet" FullName="System.ServiceModel.MessageQuerySet">
+﻿<Type Name="MessageQuerySet" FullName="System.ServiceModel.MessageQuerySet">
   <TypeSignature Language="C#" Value="public class MessageQuerySet : System.Collections.Generic.Dictionary&lt;string,System.ServiceModel.Dispatcher.MessageQuery&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageQuerySet extends System.Collections.Generic.Dictionary`2&lt;string, class System.ServiceModel.Dispatcher.MessageQuery&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageQuerySet" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageQuerySet&#xA;Inherits Dictionary(Of String, MessageQuery)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageQuerySet : System::Collections::Generic::Dictionary&lt;System::String ^, System::ServiceModel::Dispatcher::MessageQuery ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageQuerySet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessageQuerySet ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageQuerySet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQuerySet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public MessageQuerySet (System.ServiceModel.Dispatcher.MessageQueryTable&lt;string&gt; queryTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Dispatcher.MessageQueryTable`1&lt;string&gt; queryTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageQuerySet.#ctor(System.ServiceModel.Dispatcher.MessageQueryTable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queryTable As MessageQueryTable(Of String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQuerySet(System::ServiceModel::Dispatcher::MessageQueryTable&lt;System::String ^&gt; ^ queryTable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -65,6 +80,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.MessageQueryTable&lt;string&gt; GetMessageQueryTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Dispatcher.MessageQueryTable`1&lt;string&gt; GetMessageQueryTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageQuerySet.GetMessageQueryTable" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMessageQueryTable () As MessageQueryTable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Dispatcher::MessageQueryTable&lt;System::String ^&gt; ^ GetMessageQueryTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -84,6 +101,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageQuerySet.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -103,14 +122,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageQuerySet" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

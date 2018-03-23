@@ -1,7 +1,9 @@
-<Type Name="Login" FullName="System.Web.UI.WebControls.Login">
+﻿<Type Name="Login" FullName="System.Web.UI.WebControls.Login">
   <TypeSignature Language="C#" Value="public class Login : System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Login extends System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Login" />
+  <TypeSignature Language="VB.NET" Value="Public Class Login&#xA;Inherits CompositeControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Login : System::Web::UI::WebControls::CompositeControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -237,6 +239,8 @@
       <MemberSignature Language="C#" Value="public Login ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Login();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,6 +291,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.AuthenticateEventHandler Authenticate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.AuthenticateEventHandler Authenticate" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Login.Authenticate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Authenticate As AuthenticateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::AuthenticateEventHandler ^ Authenticate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,6 +338,8 @@
       <MemberSignature Language="C#" Value="public virtual int BorderPadding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.BorderPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property BorderPadding As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BorderPadding { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,6 +371,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle CheckBoxStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle CheckBoxStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.CheckBoxStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckBoxStyle As TableItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ CheckBoxStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -373,7 +383,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -442,9 +452,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal override void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -470,6 +482,8 @@
       <MemberSignature Language="C#" Value="public virtual string CreateUserIconUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CreateUserIconUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.CreateUserIconUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CreateUserIconUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CreateUserIconUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -502,6 +516,8 @@
       <MemberSignature Language="C#" Value="public virtual string CreateUserText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CreateUserText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.CreateUserText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CreateUserText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CreateUserText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -556,6 +572,8 @@
       <MemberSignature Language="C#" Value="public virtual string CreateUserUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CreateUserUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.CreateUserUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CreateUserUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CreateUserUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -608,6 +626,8 @@
       <MemberSignature Language="C#" Value="public virtual string DestinationPageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DestinationPageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.DestinationPageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DestinationPageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DestinationPageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -661,6 +681,8 @@
       <MemberSignature Language="C#" Value="public virtual bool DisplayRememberMe { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisplayRememberMe" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.DisplayRememberMe" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayRememberMe As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DisplayRememberMe { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -711,6 +733,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.LoginFailureAction FailureAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.LoginFailureAction FailureAction" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.FailureAction" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FailureAction As LoginFailureAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::LoginFailureAction FailureAction { System::Web::UI::WebControls::LoginFailureAction get(); void set(System::Web::UI::WebControls::LoginFailureAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -759,6 +783,8 @@
       <MemberSignature Language="C#" Value="public virtual string FailureText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FailureText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.FailureText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FailureText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FailureText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -807,6 +833,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle FailureTextStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle FailureTextStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.FailureTextStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FailureTextStyle As TableItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ FailureTextStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -817,7 +845,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -888,6 +916,8 @@
       <MemberSignature Language="C#" Value="public virtual string HelpPageIconUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpPageIconUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.HelpPageIconUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpPageIconUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpPageIconUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -919,6 +949,8 @@
       <MemberSignature Language="C#" Value="public virtual string HelpPageText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpPageText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.HelpPageText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpPageText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpPageText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -969,6 +1001,8 @@
       <MemberSignature Language="C#" Value="public virtual string HelpPageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpPageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.HelpPageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpPageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpPageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1019,6 +1053,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle HyperLinkStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle HyperLinkStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HyperLinkStyle As TableItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ HyperLinkStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1029,7 +1065,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1106,6 +1142,8 @@
       <MemberSignature Language="C#" Value="public virtual string InstructionText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InstructionText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.InstructionText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property InstructionText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InstructionText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1152,6 +1190,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle InstructionTextStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle InstructionTextStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.InstructionTextStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstructionTextStyle As TableItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ InstructionTextStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1162,7 +1202,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1229,6 +1269,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle LabelStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle LabelStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.LabelStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LabelStyle As TableItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ LabelStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1239,7 +1281,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1313,6 +1355,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate LayoutTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate LayoutTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.LayoutTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property LayoutTemplate As ITemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ LayoutTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1396,6 +1440,8 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1420,6 +1466,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler LoggedIn;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LoggedIn" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Login.LoggedIn" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LoggedIn As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LoggedIn;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1459,6 +1507,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.LoginCancelEventHandler LoggingIn;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.LoginCancelEventHandler LoggingIn" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Login.LoggingIn" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LoggingIn As LoginCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::LoginCancelEventHandler ^ LoggingIn;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1497,6 +1547,8 @@
       <MemberSignature Language="C#" Value="public static readonly string LoginButtonCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string LoginButtonCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Login.LoginButtonCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LoginButtonCommandName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ LoginButtonCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1521,6 +1573,8 @@
       <MemberSignature Language="C#" Value="public virtual string LoginButtonImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LoginButtonImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.LoginButtonImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property LoginButtonImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LoginButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1567,6 +1621,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style LoginButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style LoginButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.LoginButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoginButtonStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ LoginButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1577,7 +1633,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1644,6 +1700,8 @@
       <MemberSignature Language="C#" Value="public virtual string LoginButtonText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LoginButtonText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.LoginButtonText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property LoginButtonText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LoginButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1695,6 +1753,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType LoginButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType LoginButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.LoginButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property LoginButtonType As ButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType LoginButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1745,6 +1805,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler LoginError;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LoginError" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Login.LoginError" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LoginError As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LoginError;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1780,6 +1842,8 @@
       <MemberSignature Language="C#" Value="public virtual string MembershipProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MembershipProvider" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.MembershipProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MembershipProvider As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MembershipProvider { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1819,6 +1883,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAuthenticate (System.Web.UI.WebControls.AuthenticateEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAuthenticate(class System.Web.UI.WebControls.AuthenticateEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.OnAuthenticate(System.Web.UI.WebControls.AuthenticateEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAuthenticate (e As AuthenticateEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAuthenticate(System::Web::UI::WebControls::AuthenticateEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1862,6 +1928,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1900,6 +1968,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLoggedIn (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoggedIn(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.OnLoggedIn(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoggedIn (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoggedIn(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1943,6 +2013,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLoggingIn (System.Web.UI.WebControls.LoginCancelEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoggingIn(class System.Web.UI.WebControls.LoginCancelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.OnLoggingIn(System.Web.UI.WebControls.LoginCancelEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoggingIn (e As LoginCancelEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoggingIn(System::Web::UI::WebControls::LoginCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1994,6 +2066,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLoginError (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoginError(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.OnLoginError(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoginError (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoginError(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2034,9 +2108,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2073,6 +2149,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Orientation Orientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Orientation Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Orientation As Orientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Orientation Orientation { System::Web::UI::WebControls::Orientation get(); void set(System::Web::UI::WebControls::Orientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2112,6 +2190,8 @@
       <MemberSignature Language="C#" Value="public virtual string Password { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Password" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.Password" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Password As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Password { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2122,7 +2202,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2158,6 +2238,8 @@
       <MemberSignature Language="C#" Value="public virtual string PasswordLabelText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PasswordLabelText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.PasswordLabelText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PasswordLabelText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2202,6 +2284,8 @@
       <MemberSignature Language="C#" Value="public virtual string PasswordRecoveryIconUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PasswordRecoveryIconUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.PasswordRecoveryIconUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PasswordRecoveryIconUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordRecoveryIconUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2235,6 +2319,8 @@
       <MemberSignature Language="C#" Value="public virtual string PasswordRecoveryText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PasswordRecoveryText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.PasswordRecoveryText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PasswordRecoveryText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordRecoveryText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2287,6 +2373,8 @@
       <MemberSignature Language="C#" Value="public virtual string PasswordRecoveryUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PasswordRecoveryUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PasswordRecoveryUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordRecoveryUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2338,6 +2426,8 @@
       <MemberSignature Language="C#" Value="public virtual string PasswordRequiredErrorMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PasswordRequiredErrorMessage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.PasswordRequiredErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PasswordRequiredErrorMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordRequiredErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2388,6 +2478,8 @@
       <MemberSignature Language="C#" Value="public virtual bool RememberMeSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RememberMeSet" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.RememberMeSet" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RememberMeSet As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RememberMeSet { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2435,6 +2527,8 @@
       <MemberSignature Language="C#" Value="public virtual string RememberMeText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RememberMeText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.RememberMeText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RememberMeText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RememberMeText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2466,9 +2560,11 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2490,7 +2586,12 @@
       <MemberSignature Language="C#" Value="public virtual bool RenderOuterTable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderOuterTable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.RenderOuterTable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RenderOuterTable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RenderOuterTable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IRenderOuterTableControl.RenderOuterTable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2521,6 +2622,8 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2541,6 +2644,8 @@
       <MemberSignature Language="C#" Value="protected override void SetDesignModeState (System.Collections.IDictionary data);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDesignModeState(class System.Collections.IDictionary data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.SetDesignModeState(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDesignModeState (data As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDesignModeState(System::Collections::IDictionary ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2563,6 +2668,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2588,6 +2695,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style TextBoxStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style TextBoxStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.TextBoxStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextBoxStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ TextBoxStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2598,7 +2707,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2671,6 +2780,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.LoginTextLayout TextLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.LoginTextLayout TextLayout" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.TextLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TextLayout As LoginTextLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::LoginTextLayout TextLayout { System::Web::UI::WebControls::LoginTextLayout get(); void set(System::Web::UI::WebControls::LoginTextLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2715,6 +2826,8 @@
       <MemberSignature Language="C#" Value="public virtual string TitleText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TitleText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.TitleText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TitleText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TitleText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2761,6 +2874,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle TitleTextStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle TitleTextStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.TitleTextStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleTextStyle As TableItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ TitleTextStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2771,7 +2886,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2845,6 +2960,8 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Login.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2865,6 +2982,8 @@
       <MemberSignature Language="C#" Value="public virtual string UserName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.UserName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UserName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2903,6 +3022,8 @@
       <MemberSignature Language="C#" Value="public virtual string UserNameLabelText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserNameLabelText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.UserNameLabelText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UserNameLabelText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserNameLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2947,6 +3068,8 @@
       <MemberSignature Language="C#" Value="public virtual string UserNameRequiredErrorMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserNameRequiredErrorMessage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.UserNameRequiredErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UserNameRequiredErrorMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserNameRequiredErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2997,6 +3120,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style ValidatorTextStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style ValidatorTextStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.ValidatorTextStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidatorTextStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ ValidatorTextStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3007,7 +3132,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3054,6 +3179,8 @@
       <MemberSignature Language="C#" Value="public virtual bool VisibleWhenLoggedIn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool VisibleWhenLoggedIn" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Login.VisibleWhenLoggedIn" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property VisibleWhenLoggedIn As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool VisibleWhenLoggedIn { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

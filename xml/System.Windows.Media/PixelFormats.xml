@@ -1,7 +1,9 @@
-<Type Name="PixelFormats" FullName="System.Windows.Media.PixelFormats">
+﻿<Type Name="PixelFormats" FullName="System.Windows.Media.PixelFormats">
   <TypeSignature Language="C#" Value="public static class PixelFormats" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PixelFormats extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PixelFormats" />
+  <TypeSignature Language="VB.NET" Value="Public Class PixelFormats" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PixelFormats abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr101010 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr101010" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr101010" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bgr101010 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Bgr101010 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr24 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr24" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr24" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bgr24 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Bgr24 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr32 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr32" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr32" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bgr32 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Bgr32 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr555 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr555" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr555" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bgr555 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Bgr555 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr565 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr565" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr565" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bgr565 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Bgr565 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -175,6 +187,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgra32 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgra32" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgra32" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bgra32 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Bgra32 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +220,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat BlackWhite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat BlackWhite" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.BlackWhite" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlackWhite As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat BlackWhite { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +253,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Cmyk32 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Cmyk32" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Cmyk32" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cmyk32 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Cmyk32 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -269,6 +287,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Default" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Default { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -302,6 +322,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray16 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray16" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray16" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray16 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Gray16 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +355,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray2 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray2" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray2 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Gray2 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -364,6 +388,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray32Float { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray32Float" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray32Float" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray32Float As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Gray32Float { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -395,6 +421,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray4 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray4" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray4 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Gray4 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -426,6 +454,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray8 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray8" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray8" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray8 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Gray8 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -457,6 +487,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Indexed1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Indexed1" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Indexed1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Indexed1 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Indexed1 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -489,6 +521,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Indexed2 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Indexed2" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Indexed2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Indexed2 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Indexed2 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -521,6 +555,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Indexed4 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Indexed4" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Indexed4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Indexed4 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Indexed4 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -553,6 +589,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Indexed8 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Indexed8" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Indexed8" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Indexed8 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Indexed8 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -585,6 +623,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Pbgra32 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Pbgra32" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Pbgra32" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pbgra32 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Pbgra32 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -616,6 +656,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Prgba128Float { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Prgba128Float" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Prgba128Float" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Prgba128Float As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Prgba128Float { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -647,6 +689,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Prgba64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Prgba64" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Prgba64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Prgba64 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Prgba64 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -678,6 +722,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgb128Float { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgb128Float" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgb128Float" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rgb128Float As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Rgb128Float { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -709,6 +755,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgb24 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgb24" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgb24" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rgb24 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Rgb24 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -743,6 +791,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgb48 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgb48" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgb48" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rgb48 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Rgb48 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -774,6 +824,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgba128Float { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgba128Float" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgba128Float" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rgba128Float As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Rgba128Float { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -805,6 +857,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgba64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgba64" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgba64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rgba64 As PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::PixelFormat Rgba64 { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ConsoleSpecialKey" FullName="System.ConsoleSpecialKey">
+﻿<Type Name="ConsoleSpecialKey" FullName="System.ConsoleSpecialKey">
   <TypeSignature Language="C#" Value="public enum ConsoleSpecialKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ConsoleSpecialKey extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ConsoleSpecialKey" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConsoleSpecialKey" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConsoleSpecialKey" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="ControlBreak" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleSpecialKey ControlBreak = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleSpecialKey.ControlBreak" />
+      <MemberSignature Language="VB.NET" Value="ControlBreak" />
+      <MemberSignature Language="C++ CLI" Value="ControlBreak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -65,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleSpecialKey</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="F:System.ConsoleModifiers.Control" /> modifier key plus the BREAK console key.</summary>
       </Docs>
@@ -73,6 +78,8 @@
       <MemberSignature Language="C#" Value="ControlC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleSpecialKey ControlC = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleSpecialKey.ControlC" />
+      <MemberSignature Language="VB.NET" Value="ControlC" />
+      <MemberSignature Language="C++ CLI" Value="ControlC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -91,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleSpecialKey</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="F:System.ConsoleModifiers.Control" /> modifier key plus the <see cref="F:System.ConsoleKey.C" /> console key.</summary>
       </Docs>

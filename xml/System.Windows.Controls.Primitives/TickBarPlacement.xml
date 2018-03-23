@@ -1,7 +1,9 @@
-<Type Name="TickBarPlacement" FullName="System.Windows.Controls.Primitives.TickBarPlacement">
+﻿<Type Name="TickBarPlacement" FullName="System.Windows.Controls.Primitives.TickBarPlacement">
   <TypeSignature Language="C#" Value="public enum TickBarPlacement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TickBarPlacement extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.TickBarPlacement" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TickBarPlacement" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TickBarPlacement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.TickBarPlacement Bottom = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBarPlacement.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.TickBarPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The tick bar is positioned below the <see cref="T:System.Windows.Controls.Primitives.Track" /> of the <see cref="T:System.Windows.Controls.Slider" />.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.TickBarPlacement Left = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBarPlacement.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.TickBarPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The tick bar is positioned to the left of the <see cref="T:System.Windows.Controls.Primitives.Track" /> of the <see cref="T:System.Windows.Controls.Slider" />.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.TickBarPlacement Right = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBarPlacement.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.TickBarPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The tick bar is positioned to the right of the <see cref="T:System.Windows.Controls.Primitives.Track" /> of the <see cref="T:System.Windows.Controls.Slider" />.</summary>
       </Docs>
@@ -84,6 +95,8 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.TickBarPlacement Top = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBarPlacement.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.TickBarPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The tick bar is positioned above the <see cref="T:System.Windows.Controls.Primitives.Track" /> of the <see cref="T:System.Windows.Controls.Slider" />.</summary>
       </Docs>

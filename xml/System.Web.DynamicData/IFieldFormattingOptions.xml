@@ -1,7 +1,9 @@
-<Type Name="IFieldFormattingOptions" FullName="System.Web.DynamicData.IFieldFormattingOptions">
+﻿<Type Name="IFieldFormattingOptions" FullName="System.Web.DynamicData.IFieldFormattingOptions">
   <TypeSignature Language="C#" Value="public interface IFieldFormattingOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldFormattingOptions" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IFieldFormattingOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFieldFormattingOptions" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFieldFormattingOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public bool ApplyFormatInEditMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ApplyFormatInEditMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.ApplyFormatInEditMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplyFormatInEditMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyFormatInEditMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -35,6 +39,8 @@
       <MemberSignature Language="C#" Value="public bool ConvertEmptyStringToNull { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.ConvertEmptyStringToNull" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConvertEmptyStringToNull As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertEmptyStringToNull { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -54,6 +60,8 @@
       <MemberSignature Language="C#" Value="public string DataFormatString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.DataFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFormatString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -72,6 +80,8 @@
       <MemberSignature Language="C#" Value="public bool HtmlEncode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HtmlEncode" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.HtmlEncode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HtmlEncode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HtmlEncode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -98,6 +108,8 @@
       <MemberSignature Language="C#" Value="public string NullDisplayText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NullDisplayText" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.NullDisplayText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NullDisplayText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NullDisplayText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

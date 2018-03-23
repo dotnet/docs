@@ -1,7 +1,9 @@
-<Type Name="ColorBlend" FullName="System.Drawing.Drawing2D.ColorBlend">
+﻿<Type Name="ColorBlend" FullName="System.Drawing.Drawing2D.ColorBlend">
   <TypeSignature Language="C#" Value="public sealed class ColorBlend" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ColorBlend extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.ColorBlend" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorBlend" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ColorBlend sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.ColorBlend" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ColorBlend ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.ColorBlend.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorBlend();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -45,6 +58,8 @@
       <MemberSignature Language="C#" Value="public ColorBlend (int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.ColorBlend.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorBlend(int count);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -70,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color[] Colors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color[] Colors" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.ColorBlend.Colors" />
+      <MemberSignature Language="VB.NET" Value="Public Property Colors As Color()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::Color&gt; ^ Colors { cli::array &lt;System::Drawing::Color&gt; ^ get(); void set(cli::array &lt;System::Drawing::Color&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -95,6 +112,8 @@
       <MemberSignature Language="C#" Value="public float[] Positions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32[] Positions" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.ColorBlend.Positions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Positions As Single()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;float&gt; ^ Positions { cli::array &lt;float&gt; ^ get(); void set(cli::array &lt;float&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -118,14 +137,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.ColorBlend" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

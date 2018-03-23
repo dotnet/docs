@@ -1,7 +1,9 @@
-<Type Name="CompositionContextExtensions" FullName="System.Composition.CompositionContextExtensions">
+﻿<Type Name="CompositionContextExtensions" FullName="System.Composition.CompositionContextExtensions">
   <TypeSignature Language="C#" Value="public static class CompositionContextExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CompositionContextExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.CompositionContextExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module CompositionContextExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositionContextExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.TypedParts</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -13,14 +15,14 @@
   <Interfaces />
   <Docs>
     <summary>Adds methods to the composition context that are specific to the typed parts model.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="SatisfyImports">
       <MemberSignature Language="C#" Value="public static void SatisfyImports (this System.Composition.CompositionContext compositionContext, object objectWithLooseImports);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SatisfyImports(class System.Composition.CompositionContext compositionContext, object objectWithLooseImports) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SatisfyImports(System::Composition::CompositionContext ^ compositionContext, System::Object ^ objectWithLooseImports);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -38,8 +40,7 @@
         <param name="compositionContext">The context to draw exports from.</param>
         <param name="objectWithLooseImports">The object to satisfy imports on.</param>
         <summary>Satisfies the imports of the specified object from the specified context.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="compositionContext" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -52,6 +53,7 @@
       <MemberSignature Language="C#" Value="public static void SatisfyImports (this System.Composition.CompositionContext compositionContext, object objectWithLooseImports, System.Composition.Convention.AttributedModelProvider conventions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SatisfyImports(class System.Composition.CompositionContext compositionContext, object objectWithLooseImports, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SatisfyImports(System::Composition::CompositionContext ^ compositionContext, System::Object ^ objectWithLooseImports, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -71,8 +73,7 @@
         <param name="objectWithLooseImports">The object to satisfy imports on.</param>
         <param name="conventions">Conventions to use when satisfying imports.</param>
         <summary>Satisfies the imports of the specified object from the specified context, using the specified conventions.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="compositionContext" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">

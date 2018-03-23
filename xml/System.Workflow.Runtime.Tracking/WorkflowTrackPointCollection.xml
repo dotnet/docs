@@ -1,7 +1,9 @@
-<Type Name="WorkflowTrackPointCollection" FullName="System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection">
+﻿<Type Name="WorkflowTrackPointCollection" FullName="System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection">
   <TypeSignature Language="C#" Value="public class WorkflowTrackPointCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WorkflowTrackPointCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowTrackPointCollection&#xA;Inherits List(Of WorkflowTrackPoint)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTrackPointCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::WorkflowTrackPoint ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowTrackPointCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTrackPointCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -60,6 +73,8 @@
       <MemberSignature Language="C#" Value="public WorkflowTrackPointCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt; points);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.WorkflowTrackPoint&gt; points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.WorkflowTrackPoint})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (points As IEnumerable(Of WorkflowTrackPoint))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTrackPointCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::WorkflowTrackPoint ^&gt; ^ points);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -83,14 +98,5 @@
           <paramref name="points" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

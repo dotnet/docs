@@ -1,7 +1,9 @@
-<Type Name="VerificationAttribute" FullName="System.Web.UI.VerificationAttribute">
+﻿<Type Name="VerificationAttribute" FullName="System.Web.UI.VerificationAttribute">
   <TypeSignature Language="C#" Value="public sealed class VerificationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VerificationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VerificationAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VerificationAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,10 +67,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.VerificationAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (guideline As String, checkpoint As String, reportLevel As VerificationReportLevel, priority As Integer, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VerificationAttribute(System::String ^ guideline, System::String ^ checkpoint, System::Web::UI::VerificationReportLevel reportLevel, int priority, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +127,8 @@
       <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message, System.Web.UI.VerificationRule rule, string conditionalProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message, valuetype System.Web.UI.VerificationRule rule, string conditionalProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String,System.Web.UI.VerificationRule,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (guideline As String, checkpoint As String, reportLevel As VerificationReportLevel, priority As Integer, message As String, rule As VerificationRule, conditionalProperty As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VerificationAttribute(System::String ^ guideline, System::String ^ checkpoint, System::Web::UI::VerificationReportLevel reportLevel, int priority, System::String ^ message, System::Web::UI::VerificationRule rule, System::String ^ conditionalProperty);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +176,8 @@
       <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message, System.Web.UI.VerificationRule rule, string conditionalProperty, System.Web.UI.VerificationConditionalOperator conditionalOperator, string conditionalValue, string guidelineUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message, valuetype System.Web.UI.VerificationRule rule, string conditionalProperty, valuetype System.Web.UI.VerificationConditionalOperator conditionalOperator, string conditionalValue, string guidelineUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String,System.Web.UI.VerificationRule,System.String,System.Web.UI.VerificationConditionalOperator,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (guideline As String, checkpoint As String, reportLevel As VerificationReportLevel, priority As Integer, message As String, rule As VerificationRule, conditionalProperty As String, conditionalOperator As VerificationConditionalOperator, conditionalValue As String, guidelineUrl As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VerificationAttribute(System::String ^ guideline, System::String ^ checkpoint, System::Web::UI::VerificationReportLevel reportLevel, int priority, System::String ^ message, System::Web::UI::VerificationRule rule, System::String ^ conditionalProperty, System::Web::UI::VerificationConditionalOperator conditionalOperator, System::String ^ conditionalValue, System::String ^ guidelineUrl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +221,8 @@
       <MemberSignature Language="C#" Value="public string Checkpoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Checkpoint" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.Checkpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Checkpoint As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Checkpoint { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -233,6 +252,8 @@
       <MemberSignature Language="C#" Value="public string ConditionalProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConditionalProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.ConditionalProperty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConditionalProperty As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConditionalProperty { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +282,8 @@
       <MemberSignature Language="C#" Value="public string ConditionalValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConditionalValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.ConditionalValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConditionalValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConditionalValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -289,6 +312,8 @@
       <MemberSignature Language="C#" Value="public string Guideline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Guideline" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.Guideline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Guideline As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Guideline { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -318,6 +343,8 @@
       <MemberSignature Language="C#" Value="public string GuidelineUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GuidelineUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.GuidelineUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GuidelineUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GuidelineUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -346,6 +373,8 @@
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -372,6 +401,8 @@
       <MemberSignature Language="C#" Value="public int Priority { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,6 +429,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.VerificationConditionalOperator VerificationConditionalOperator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationConditionalOperator VerificationConditionalOperator" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.VerificationConditionalOperator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerificationConditionalOperator As VerificationConditionalOperator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::VerificationConditionalOperator VerificationConditionalOperator { System::Web::UI::VerificationConditionalOperator get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -424,6 +457,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.VerificationReportLevel VerificationReportLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationReportLevel VerificationReportLevel" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.VerificationReportLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerificationReportLevel As VerificationReportLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::VerificationReportLevel VerificationReportLevel { System::Web::UI::VerificationReportLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -450,6 +485,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.VerificationRule VerificationRule { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationRule VerificationRule" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.VerificationRule" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerificationRule As VerificationRule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::VerificationRule VerificationRule { System::Web::UI::VerificationRule get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -472,14 +509,5 @@
         <altmember cref="T:System.Web.UI.VerificationRule" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.VerificationAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

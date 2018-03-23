@@ -1,7 +1,9 @@
-<Type Name="ToolboxComponentsCreatingEventHandler" FullName="System.Drawing.Design.ToolboxComponentsCreatingEventHandler">
+﻿<Type Name="ToolboxComponentsCreatingEventHandler" FullName="System.Drawing.Design.ToolboxComponentsCreatingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolboxComponentsCreatingEventHandler(object sender, ToolboxComponentsCreatingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolboxComponentsCreatingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxComponentsCreatingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolboxComponentsCreatingEventHandler(sender As Object, e As ToolboxComponentsCreatingEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ToolboxComponentsCreatingEventHandler(System::Object ^ sender, ToolboxComponentsCreatingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

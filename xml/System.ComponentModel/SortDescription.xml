@@ -1,7 +1,9 @@
-<Type Name="SortDescription" FullName="System.ComponentModel.SortDescription">
+﻿<Type Name="SortDescription" FullName="System.ComponentModel.SortDescription">
   <TypeSignature Language="C#" Value="public struct SortDescription" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SortDescription extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.SortDescription" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SortDescription" />
+  <TypeSignature Language="C++ CLI" Value="public value class SortDescription" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public SortDescription (string propertyName, System.ComponentModel.ListSortDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, valuetype System.ComponentModel.ListSortDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.#ctor(System.String,System.ComponentModel.ListSortDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, direction As ListSortDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortDescription(System::String ^ propertyName, System::ComponentModel::ListSortDirection direction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ListSortDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.ListSortDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.SortDescription.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As ListSortDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ListSortDirection Direction { System::ComponentModel::ListSortDirection get(); void set(System::ComponentModel::ListSortDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -102,6 +112,8 @@
       <MemberSignature Language="C#" Value="public bool IsSealed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSealed" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.SortDescription.IsSealed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -121,6 +133,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.ComponentModel.SortDescription sd1, System.ComponentModel.SortDescription sd2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ComponentModel.SortDescription sd1, valuetype System.ComponentModel.SortDescription sd2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.op_Equality(System.ComponentModel.SortDescription,System.ComponentModel.SortDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (sd1 As SortDescription, sd2 As SortDescription) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::ComponentModel::SortDescription sd1, System::ComponentModel::SortDescription sd2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -148,6 +162,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.ComponentModel.SortDescription sd1, System.ComponentModel.SortDescription sd2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ComponentModel.SortDescription sd1, valuetype System.ComponentModel.SortDescription sd2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.op_Inequality(System.ComponentModel.SortDescription,System.ComponentModel.SortDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (sd1 As SortDescription, sd2 As SortDescription) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::ComponentModel::SortDescription sd1, System::ComponentModel::SortDescription sd2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -175,6 +191,8 @@
       <MemberSignature Language="C#" Value="public string PropertyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.SortDescription.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

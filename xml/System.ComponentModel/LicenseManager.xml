@@ -1,7 +1,9 @@
-<Type Name="LicenseManager" FullName="System.ComponentModel.LicenseManager">
+﻿<Type Name="LicenseManager" FullName="System.ComponentModel.LicenseManager">
   <TypeSignature Language="C#" Value="public sealed class LicenseManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LicenseManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LicenseManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LicenseManager sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,10 +59,21 @@
     <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateWithContext">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of an object type with a license context.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateWithContext">
       <MemberSignature Language="C#" Value="public static object CreateWithContext (Type type, System.ComponentModel.LicenseContext creationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateWithContext(class System.Type type, class System.ComponentModel.LicenseContext creationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.CreateWithContext(System.Type,System.ComponentModel.LicenseContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateWithContext(Type ^ type, System::ComponentModel::LicenseContext ^ creationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +122,7 @@
       <MemberSignature Language="C#" Value="public static object CreateWithContext (Type type, System.ComponentModel.LicenseContext creationContext, object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateWithContext(class System.Type type, class System.ComponentModel.LicenseContext creationContext, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.CreateWithContext(System.Type,System.ComponentModel.LicenseContext,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateWithContext(Type ^ type, System::ComponentModel::LicenseContext ^ creationContext, cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +172,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.LicenseContext CurrentContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.LicenseContext CurrentContext" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseManager.CurrentContext" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentContext As LicenseContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ComponentModel::LicenseContext ^ CurrentContext { System::ComponentModel::LicenseContext ^ get(); void set(System::ComponentModel::LicenseContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -200,6 +216,7 @@
       <MemberSignature Language="C#" Value="public static bool IsLicensed (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLicensed(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.IsLicensed(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLicensed(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -228,10 +245,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsValid">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a valid license can be granted.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsValid">
       <MemberSignature Language="C#" Value="public static bool IsValid (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValid(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.IsValid(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValid(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -280,6 +308,7 @@
       <MemberSignature Language="C#" Value="public static bool IsValid (Type type, object instance, out System.ComponentModel.License license);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValid(class System.Type type, object instance, [out] class System.ComponentModel.License&amp; license) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.IsValid(System.Type,System.Object,System.ComponentModel.License@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValid(Type ^ type, System::Object ^ instance, [Runtime::InteropServices::Out] System::ComponentModel::License ^ % license);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -334,6 +363,8 @@
       <MemberSignature Language="C#" Value="public static void LockContext (object contextUser);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LockContext(object contextUser) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.LockContext(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub LockContext (contextUser As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LockContext(System::Object ^ contextUser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -372,6 +403,8 @@
       <MemberSignature Language="C#" Value="public static void UnlockContext (object contextUser);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UnlockContext(object contextUser) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.UnlockContext(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UnlockContext (contextUser As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnlockContext(System::Object ^ contextUser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -411,6 +444,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.LicenseUsageMode UsageMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.ComponentModel.LicenseUsageMode UsageMode" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseManager.UsageMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UsageMode As LicenseUsageMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ComponentModel::LicenseUsageMode UsageMode { System::ComponentModel::LicenseUsageMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -449,10 +484,21 @@
         <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a license can be granted.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public static void Validate (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.Validate(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Validate(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -498,6 +544,7 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.License Validate (Type type, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.License Validate(class System.Type type, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.Validate(System.Type,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::License ^ Validate(Type ^ type, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -544,35 +591,5 @@
         <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Validate">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a license can be granted.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateWithContext">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of an object type with a license context.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsValid">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a valid license can be granted.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

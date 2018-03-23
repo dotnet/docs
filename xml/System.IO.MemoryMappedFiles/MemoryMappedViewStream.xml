@@ -1,7 +1,9 @@
-<Type Name="MemoryMappedViewStream" FullName="System.IO.MemoryMappedFiles.MemoryMappedViewStream">
+﻿<Type Name="MemoryMappedViewStream" FullName="System.IO.MemoryMappedFiles.MemoryMappedViewStream">
   <TypeSignature Language="C#" Value="public sealed class MemoryMappedViewStream : System.IO.UnmanagedMemoryStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MemoryMappedViewStream extends System.IO.UnmanagedMemoryStream" />
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedViewStream" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemoryMappedViewStream&#xA;Inherits UnmanagedMemoryStream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemoryMappedViewStream sealed : System::IO::UnmanagedMemoryStream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -126,6 +132,8 @@
       <MemberSignature Language="C#" Value="public long PointerOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PointerOffset" />
       <MemberSignature Language="DocId" Value="P:System.IO.MemoryMappedFiles.MemoryMappedViewStream.PointerOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointerOffset As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PointerOffset { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -157,6 +165,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle SafeMemoryMappedViewHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle SafeMemoryMappedViewHandle" />
       <MemberSignature Language="DocId" Value="P:System.IO.MemoryMappedFiles.MemoryMappedViewStream.SafeMemoryMappedViewHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeMemoryMappedViewHandle As SafeMemoryMappedViewHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeMemoryMappedViewHandle ^ SafeMemoryMappedViewHandle { Microsoft::Win32::SafeHandles::SafeMemoryMappedViewHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -191,6 +201,8 @@
       <MemberSignature Language="C#" Value="public override void SetLength (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetLength(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.SetLength(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>

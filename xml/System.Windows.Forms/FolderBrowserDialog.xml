@@ -1,7 +1,9 @@
-<Type Name="FolderBrowserDialog" FullName="System.Windows.Forms.FolderBrowserDialog">
+﻿<Type Name="FolderBrowserDialog" FullName="System.Windows.Forms.FolderBrowserDialog">
   <TypeSignature Language="C#" Value="public sealed class FolderBrowserDialog : System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FolderBrowserDialog extends System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FolderBrowserDialog" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FolderBrowserDialog&#xA;Inherits CommonDialog" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FolderBrowserDialog sealed : System::Windows::Forms::CommonDialog" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public FolderBrowserDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FolderBrowserDialog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FolderBrowserDialog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +96,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FolderBrowserDialog.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +143,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler HelpRequest;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler HelpRequest" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.FolderBrowserDialog.HelpRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event HelpRequest As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HelpRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +170,8 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FolderBrowserDialog.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -187,6 +197,8 @@
       <MemberSignature Language="C#" Value="public Environment.SpecialFolder RootFolder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Environment/SpecialFolder RootFolder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FolderBrowserDialog.RootFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootFolder As Environment.SpecialFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Environment::SpecialFolder RootFolder { Environment::SpecialFolder get(); void set(Environment::SpecialFolder value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,7 +209,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
@@ -236,6 +248,8 @@
       <MemberSignature Language="C#" Value="protected override bool RunDialog (IntPtr hWndOwner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool RunDialog(native int hWndOwner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FolderBrowserDialog.RunDialog(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function RunDialog (hWndOwner As IntPtr) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool RunDialog(IntPtr hWndOwner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -258,6 +272,8 @@
       <MemberSignature Language="C#" Value="public string SelectedPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FolderBrowserDialog.SelectedPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,6 +326,8 @@
       <MemberSignature Language="C#" Value="public bool ShowNewFolderButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowNewFolderButton" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FolderBrowserDialog.ShowNewFolderButton" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowNewFolderButton As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowNewFolderButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

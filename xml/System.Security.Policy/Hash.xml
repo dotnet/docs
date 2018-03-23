@@ -1,7 +1,9 @@
-<Type Name="Hash" FullName="System.Security.Policy.Hash">
+﻿<Type Name="Hash" FullName="System.Security.Policy.Hash">
   <TypeSignature Language="C#" Value="public sealed class Hash : System.Security.Policy.EvidenceBase, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Hash extends System.Security.Policy.EvidenceBase implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.Hash" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Hash&#xA;Inherits EvidenceBase&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Hash sealed : System::Security::Policy::EvidenceBase, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="public Hash (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.#ctor(System.Reflection.Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hash(System::Reflection::Assembly ^ assembly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +78,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.EvidenceBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::EvidenceBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +99,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.Hash CreateMD5 (byte[] md5);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.Hash CreateMD5(unsigned int8[] md5) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.CreateMD5(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMD5 (md5 As Byte()) As Hash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::Hash ^ CreateMD5(cli::array &lt;System::Byte&gt; ^ md5);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -129,6 +136,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.Hash CreateSHA1 (byte[] sha1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.Hash CreateSHA1(unsigned int8[] sha1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.CreateSHA1(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSHA1 (sha1 As Byte()) As Hash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::Hash ^ CreateSHA1(cli::array &lt;System::Byte&gt; ^ sha1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +173,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.Hash CreateSHA256 (byte[] sha256);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.Hash CreateSHA256(unsigned int8[] sha256) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.CreateSHA256(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSHA256 (sha256 As Byte()) As Hash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::Hash ^ CreateSHA256(cli::array &lt;System::Byte&gt; ^ sha256);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,6 +209,8 @@
       <MemberSignature Language="C#" Value="public byte[] GenerateHash (System.Security.Cryptography.HashAlgorithm hashAlg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GenerateHash(class System.Security.Cryptography.HashAlgorithm hashAlg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.GenerateHash(System.Security.Cryptography.HashAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateHash (hashAlg As HashAlgorithm) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GenerateHash(System::Security::Cryptography::HashAlgorithm ^ hashAlg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -234,7 +247,12 @@
       <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -270,6 +288,8 @@
       <MemberSignature Language="C#" Value="public byte[] MD5 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] MD5" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Hash.MD5" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MD5 As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ MD5 { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -309,6 +329,8 @@
       <MemberSignature Language="C#" Value="public byte[] SHA1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SHA1" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Hash.SHA1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SHA1 As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ SHA1 { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -348,6 +370,8 @@
       <MemberSignature Language="C#" Value="public byte[] SHA256 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SHA256" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Hash.SHA256" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SHA256 As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ SHA256 { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -377,6 +401,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

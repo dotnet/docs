@@ -1,7 +1,9 @@
-<Type Name="QueryAccessibilityHelpEventArgs" FullName="System.Windows.Forms.QueryAccessibilityHelpEventArgs">
+﻿<Type Name="QueryAccessibilityHelpEventArgs" FullName="System.Windows.Forms.QueryAccessibilityHelpEventArgs">
   <TypeSignature Language="C#" Value="public class QueryAccessibilityHelpEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryAccessibilityHelpEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryAccessibilityHelpEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryAccessibilityHelpEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryAccessibilityHelpEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +45,21 @@
     <altmember cref="T:System.Windows.Forms.HelpProvider" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryAccessibilityHelpEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QueryAccessibilityHelpEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QueryAccessibilityHelpEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryAccessibilityHelpEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +75,8 @@
       <MemberSignature Language="C#" Value="public QueryAccessibilityHelpEventArgs (string helpNamespace, string helpString, string helpKeyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string helpNamespace, string helpString, string helpKeyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QueryAccessibilityHelpEventArgs.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (helpNamespace As String, helpString As String, helpKeyword As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryAccessibilityHelpEventArgs(System::String ^ helpNamespace, System::String ^ helpString, System::String ^ helpKeyword);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public string HelpKeyword { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpKeyword" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpKeyword As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +132,8 @@
       <MemberSignature Language="C#" Value="public string HelpNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +165,8 @@
       <MemberSignature Language="C#" Value="public string HelpString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpString" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpString" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,14 +195,5 @@
         <altmember cref="T:System.Windows.Forms.Help" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryAccessibilityHelpEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

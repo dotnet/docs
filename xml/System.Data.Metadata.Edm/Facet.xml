@@ -1,7 +1,9 @@
-<Type Name="Facet" FullName="System.Data.Metadata.Edm.Facet">
+﻿<Type Name="Facet" FullName="System.Data.Metadata.Edm.Facet">
   <TypeSignature Language="C#" Value="public sealed class Facet : System.Data.Metadata.Edm.MetadataItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Facet extends System.Data.Metadata.Edm.MetadataItem" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.Facet" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Facet&#xA;Inherits MetadataItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Facet sealed : System::Data::Metadata::Edm::MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Facet.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.FacetDescription Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.FacetDescription Description" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Facet.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As FacetDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::FacetDescription ^ Description { System::Data::Metadata::Edm::FacetDescription ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmType FacetType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmType FacetType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Facet.FacetType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FacetType As EdmType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmType ^ FacetType { System::Data::Metadata::Edm::EdmType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnbounded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnbounded" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Facet.IsUnbounded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUnbounded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnbounded { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -111,6 +121,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Facet.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -129,6 +141,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.Facet.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -148,6 +162,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Facet.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

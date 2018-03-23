@@ -1,7 +1,9 @@
-<Type Name="HttpResponseWrapper" FullName="System.Web.HttpResponseWrapper">
+﻿<Type Name="HttpResponseWrapper" FullName="System.Web.HttpResponseWrapper">
   <TypeSignature Language="C#" Value="public class HttpResponseWrapper : System.Web.HttpResponseBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpResponseWrapper extends System.Web.HttpResponseBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpResponseWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpResponseWrapper&#xA;Inherits HttpResponseBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpResponseWrapper : System::Web::HttpResponseBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,7 @@
       <MemberSignature Language="C#" Value="public HttpResponseWrapper (System.Web.HttpResponse httpResponse);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpResponse httpResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.#ctor(System.Web.HttpResponse)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpResponseWrapper(System::Web::HttpResponse ^ httpResponse);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public override void AddCacheDependency (params System.Web.Caching.CacheDependency[] dependencies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddCacheDependency(class System.Web.Caching.CacheDependency[] dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddCacheDependency(System.Web.Caching.CacheDependency[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddCacheDependency (ParamArray dependencies As CacheDependency())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddCacheDependency(... cli::array &lt;System::Web::Caching::CacheDependency ^&gt; ^ dependencies);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,10 +78,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddCacheItemDependencies">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the validity of a cached response dependent on other items in the cache.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddCacheItemDependencies">
       <MemberSignature Language="C#" Value="public override void AddCacheItemDependencies (System.Collections.ArrayList cacheKeys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddCacheItemDependencies(class System.Collections.ArrayList cacheKeys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddCacheItemDependencies(System.Collections.ArrayList)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddCacheItemDependencies (cacheKeys As ArrayList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddCacheItemDependencies(System::Collections::ArrayList ^ cacheKeys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +114,8 @@
       <MemberSignature Language="C#" Value="public override void AddCacheItemDependencies (string[] cacheKeys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddCacheItemDependencies(string[] cacheKeys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddCacheItemDependencies(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddCacheItemDependencies (cacheKeys As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddCacheItemDependencies(cli::array &lt;System::String ^&gt; ^ cacheKeys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +137,8 @@
       <MemberSignature Language="C#" Value="public override void AddCacheItemDependency (string cacheKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddCacheItemDependency(string cacheKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddCacheItemDependency(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddCacheItemDependency (cacheKey As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddCacheItemDependency(System::String ^ cacheKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,10 +156,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddFileDependencies">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the validity of a cached response dependent on a specified file or files.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddFileDependencies">
       <MemberSignature Language="C#" Value="public override void AddFileDependencies (System.Collections.ArrayList filenames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddFileDependencies(class System.Collections.ArrayList filenames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddFileDependencies(System.Collections.ArrayList)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddFileDependencies (filenames As ArrayList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddFileDependencies(System::Collections::ArrayList ^ filenames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +192,8 @@
       <MemberSignature Language="C#" Value="public override void AddFileDependencies (string[] filenames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddFileDependencies(string[] filenames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddFileDependencies(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddFileDependencies (filenames As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddFileDependencies(cli::array &lt;System::String ^&gt; ^ filenames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +215,8 @@
       <MemberSignature Language="C#" Value="public override void AddFileDependency (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddFileDependency(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddFileDependency(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddFileDependency (filename As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddFileDependency(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,6 +238,8 @@
       <MemberSignature Language="C#" Value="public override void AddHeader (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddHeader(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddHeader(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddHeader (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddHeader(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +263,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.ISubscriptionToken AddOnSendingHeaders (Action&lt;System.Web.HttpContextBase&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ISubscriptionToken AddOnSendingHeaders(class System.Action`1&lt;class System.Web.HttpContextBase&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AddOnSendingHeaders(System.Action{System.Web.HttpContextBase})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AddOnSendingHeaders (callback As Action(Of HttpContextBase)) As ISubscriptionToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ISubscriptionToken ^ AddOnSendingHeaders(Action&lt;System::Web::HttpContextBase ^&gt; ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -248,6 +287,8 @@
       <MemberSignature Language="C#" Value="public override void AppendCookie (System.Web.HttpCookie cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendCookie(class System.Web.HttpCookie cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AppendCookie(System.Web.HttpCookie)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendCookie (cookie As HttpCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendCookie(System::Web::HttpCookie ^ cookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +311,8 @@
       <MemberSignature Language="C#" Value="public override void AppendHeader (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendHeader(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AppendHeader(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendHeader (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendHeader(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,6 +337,8 @@
       <MemberSignature Language="C#" Value="public override void AppendToLog (string param);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendToLog(string param) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.AppendToLog(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendToLog (param As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendToLog(System::String ^ param);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -315,6 +360,8 @@
       <MemberSignature Language="C#" Value="public override string ApplyAppPathModifier (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ApplyAppPathModifier(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.ApplyAppPathModifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ApplyAppPathModifier (virtualPath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ApplyAppPathModifier(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -337,6 +384,8 @@
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginFlush (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginFlush(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.BeginFlush(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginFlush (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginFlush(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -369,6 +418,8 @@
       <MemberSignature Language="C#" Value="public override void BinaryWrite (byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void BinaryWrite(unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.BinaryWrite(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub BinaryWrite (buffer As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BinaryWrite(cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -390,6 +441,8 @@
       <MemberSignature Language="C#" Value="public override bool Buffer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Buffer" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Buffer" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Buffer As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Buffer { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -416,6 +469,8 @@
       <MemberSignature Language="C#" Value="public override bool BufferOutput { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BufferOutput" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.BufferOutput" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BufferOutput As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool BufferOutput { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -435,6 +490,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.HttpCachePolicyBase Cache { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpCachePolicyBase Cache" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Cache" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Cache As HttpCachePolicyBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpCachePolicyBase ^ Cache { System::Web::HttpCachePolicyBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -453,6 +510,8 @@
       <MemberSignature Language="C#" Value="public override string CacheControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CacheControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.CacheControl" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CacheControl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheControl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -471,6 +530,8 @@
       <MemberSignature Language="C#" Value="public override string Charset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Charset" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Charset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Charset As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Charset { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -489,6 +550,8 @@
       <MemberSignature Language="C#" Value="public override void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -507,6 +570,8 @@
       <MemberSignature Language="C#" Value="public override void ClearContent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ClearContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.ClearContent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ClearContent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ClearContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -525,6 +590,8 @@
       <MemberSignature Language="C#" Value="public override void ClearHeaders ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ClearHeaders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.ClearHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ClearHeaders ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ClearHeaders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -543,6 +610,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.CancellationToken ClientDisconnectedToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken ClientDisconnectedToken" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.ClientDisconnectedToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClientDisconnectedToken As CancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Threading::CancellationToken ClientDisconnectedToken { System::Threading::CancellationToken get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -568,6 +637,8 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -586,6 +657,8 @@
       <MemberSignature Language="C#" Value="public override System.Text.Encoding ContentEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding ContentEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.ContentEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ContentEncoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ ContentEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -605,6 +678,8 @@
       <MemberSignature Language="C#" Value="public override string ContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ContentType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -624,6 +699,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.HttpCookieCollection Cookies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpCookieCollection Cookies" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Cookies" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Cookies As HttpCookieCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpCookieCollection ^ Cookies { System::Web::HttpCookieCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -642,6 +719,8 @@
       <MemberSignature Language="C#" Value="public override void DisableKernelCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DisableKernelCache() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.DisableKernelCache" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DisableKernelCache ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DisableKernelCache();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -660,6 +739,8 @@
       <MemberSignature Language="C#" Value="public override void DisableUserCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DisableUserCache() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.DisableUserCache" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DisableUserCache ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DisableUserCache();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -685,6 +766,8 @@
       <MemberSignature Language="C#" Value="public override void End ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void End() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.End" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub End ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void End();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -704,6 +787,8 @@
       <MemberSignature Language="C#" Value="public override void EndFlush (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndFlush(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.EndFlush(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndFlush (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndFlush(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -727,6 +812,8 @@
       <MemberSignature Language="C#" Value="public override int Expires { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Expires" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Expires" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Expires As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Expires { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -745,6 +832,8 @@
       <MemberSignature Language="C#" Value="public override DateTime ExpiresAbsolute { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ExpiresAbsolute" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.ExpiresAbsolute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ExpiresAbsolute As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ExpiresAbsolute { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -763,6 +852,8 @@
       <MemberSignature Language="C#" Value="public override System.IO.Stream Filter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream Filter" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Filter As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ Filter { System::IO::Stream ^ get(); void set(System::IO::Stream ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -781,6 +872,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -800,6 +893,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task FlushAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.FlushAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FlushAsync () As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -819,6 +914,8 @@
       <MemberSignature Language="C#" Value="public override System.Text.Encoding HeaderEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding HeaderEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.HeaderEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property HeaderEncoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ HeaderEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -843,6 +940,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Specialized.NameValueCollection Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Headers As NameValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ Headers { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -862,6 +961,8 @@
       <MemberSignature Language="C#" Value="public override bool HeadersWritten { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HeadersWritten" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.HeadersWritten" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HeadersWritten As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HeadersWritten { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -881,6 +982,8 @@
       <MemberSignature Language="C#" Value="public override bool IsClientConnected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClientConnected" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.IsClientConnected" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsClientConnected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClientConnected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -900,6 +1003,8 @@
       <MemberSignature Language="C#" Value="public override bool IsRequestBeingRedirected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRequestBeingRedirected" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.IsRequestBeingRedirected" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsRequestBeingRedirected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsRequestBeingRedirected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -919,6 +1024,8 @@
       <MemberSignature Language="C#" Value="public override System.IO.TextWriter Output { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.TextWriter Output" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Output" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Output As TextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::TextWriter ^ Output { System::IO::TextWriter ^ get(); void set(System::IO::TextWriter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -937,6 +1044,8 @@
       <MemberSignature Language="C#" Value="public override System.IO.Stream OutputStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream OutputStream" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.OutputStream" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OutputStream As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ OutputStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -955,6 +1064,8 @@
       <MemberSignature Language="C#" Value="public override void Pics (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Pics(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Pics(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Pics (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Pics(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -972,10 +1083,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PushPromise">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Promotes the promised object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PushPromise">
       <MemberSignature Language="C#" Value="public override void PushPromise (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PushPromise(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.PushPromise(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PushPromise (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PushPromise(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1004,6 +1126,8 @@
       <MemberSignature Language="C#" Value="public override void PushPromise (string path, string method, System.Collections.Specialized.NameValueCollection headers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PushPromise(string path, string method, class System.Collections.Specialized.NameValueCollection headers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.PushPromise(System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PushPromise (path As String, method As String, headers As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PushPromise(System::String ^ path, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ headers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1032,10 +1156,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Redirect">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects a request to a different URL.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Redirect">
       <MemberSignature Language="C#" Value="public override void Redirect (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Redirect(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Redirect(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Redirect (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Redirect(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1058,6 +1193,8 @@
       <MemberSignature Language="C#" Value="public override void Redirect (string url, bool endResponse);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Redirect(string url, bool endResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Redirect(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Redirect (url As String, endResponse As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Redirect(System::String ^ url, bool endResponse);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1088,6 +1225,8 @@
       <MemberSignature Language="C#" Value="public override string RedirectLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RedirectLocation" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.RedirectLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property RedirectLocation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RedirectLocation { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1102,10 +1241,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectPermanent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a permanent redirect from a requested URL to the specified URL.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RedirectPermanent">
       <MemberSignature Language="C#" Value="public override void RedirectPermanent (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectPermanent(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectPermanent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectPermanent (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectPermanent(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1140,6 +1290,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectPermanent (string url, bool endResponse);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectPermanent(string url, bool endResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectPermanent(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectPermanent (url As String, endResponse As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectPermanent(System::String ^ url, bool endResponse);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1171,10 +1323,21 @@
           <paramref name="url" /> includes a newline character (<c>\n</c>).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectToRoute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects a request to a new URL by using the specified route parameter values, a route name, or both.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RedirectToRoute">
       <MemberSignature Language="C#" Value="public override void RedirectToRoute (object routeValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoute(object routeValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoute(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoute (routeValues As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoute(System::Object ^ routeValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1209,6 +1372,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectToRoute (string routeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoute(string routeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoute (routeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoute(System::String ^ routeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1243,6 +1408,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectToRoute (System.Web.Routing.RouteValueDictionary routeValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoute(class System.Web.Routing.RouteValueDictionary routeValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoute(System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoute (routeValues As RouteValueDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoute(System::Web::Routing::RouteValueDictionary ^ routeValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1277,6 +1444,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectToRoute (string routeName, object routeValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoute(string routeName, object routeValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoute(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoute (routeName As String, routeValues As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoute(System::String ^ routeName, System::Object ^ routeValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1313,6 +1482,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectToRoute (string routeName, System.Web.Routing.RouteValueDictionary routeValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoute(string routeName, class System.Web.Routing.RouteValueDictionary routeValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoute(System.String,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoute (routeName As String, routeValues As RouteValueDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoute(System::String ^ routeName, System::Web::Routing::RouteValueDictionary ^ routeValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1345,10 +1516,21 @@
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectToRoutePermanent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a permanent redirection from a requested URL to a new URL by using the specified route parameter values, a route name, or both.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RedirectToRoutePermanent">
       <MemberSignature Language="C#" Value="public override void RedirectToRoutePermanent (object routeValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoutePermanent(object routeValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoutePermanent(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoutePermanent (routeValues As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoutePermanent(System::Object ^ routeValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1383,6 +1565,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectToRoutePermanent (string routeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoutePermanent(string routeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoutePermanent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoutePermanent (routeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoutePermanent(System::String ^ routeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1417,6 +1601,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectToRoutePermanent (System.Web.Routing.RouteValueDictionary routeValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoutePermanent(class System.Web.Routing.RouteValueDictionary routeValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoutePermanent(System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoutePermanent (routeValues As RouteValueDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoutePermanent(System::Web::Routing::RouteValueDictionary ^ routeValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1451,6 +1637,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectToRoutePermanent (string routeName, object routeValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoutePermanent(string routeName, object routeValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoutePermanent(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoutePermanent (routeName As String, routeValues As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoutePermanent(System::String ^ routeName, System::Object ^ routeValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1487,6 +1675,8 @@
       <MemberSignature Language="C#" Value="public override void RedirectToRoutePermanent (string routeName, System.Web.Routing.RouteValueDictionary routeValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RedirectToRoutePermanent(string routeName, class System.Web.Routing.RouteValueDictionary routeValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RedirectToRoutePermanent(System.String,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RedirectToRoutePermanent (routeName As String, routeValues As RouteValueDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RedirectToRoutePermanent(System::String ^ routeName, System::Web::Routing::RouteValueDictionary ^ routeValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1519,10 +1709,21 @@
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveOutputCacheItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes cached items from the output cache by using the default output-cache provider.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveOutputCacheItem">
       <MemberSignature Language="C#" Value="public override void RemoveOutputCacheItem (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveOutputCacheItem(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RemoveOutputCacheItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveOutputCacheItem (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveOutputCacheItem(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1544,6 +1745,8 @@
       <MemberSignature Language="C#" Value="public override void RemoveOutputCacheItem (string path, string providerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveOutputCacheItem(string path, string providerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.RemoveOutputCacheItem(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveOutputCacheItem (path As String, providerName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveOutputCacheItem(System::String ^ path, System::String ^ providerName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1578,6 +1781,8 @@
       <MemberSignature Language="C#" Value="public override void SetCookie (System.Web.HttpCookie cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetCookie(class System.Web.HttpCookie cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.SetCookie(System.Web.HttpCookie)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetCookie (cookie As HttpCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetCookie(System::Web::HttpCookie ^ cookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1600,6 +1805,8 @@
       <MemberSignature Language="C#" Value="public override string Status { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Status" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Status As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Status { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1620,6 +1827,8 @@
       <MemberSignature Language="C#" Value="public override int StatusCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property StatusCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int StatusCode { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1640,6 +1849,8 @@
       <MemberSignature Language="C#" Value="public override string StatusDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatusDescription" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.StatusDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property StatusDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StatusDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1661,6 +1872,8 @@
       <MemberSignature Language="C#" Value="public override int SubStatusCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SubStatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.SubStatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SubStatusCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SubStatusCode { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1681,6 +1894,8 @@
       <MemberSignature Language="C#" Value="public override bool SupportsAsyncFlush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsAsyncFlush" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.SupportsAsyncFlush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsAsyncFlush As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAsyncFlush { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1707,6 +1922,8 @@
       <MemberSignature Language="C#" Value="public override bool SuppressContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressContent" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.SuppressContent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SuppressContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SuppressContent { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1726,6 +1943,8 @@
       <MemberSignature Language="C#" Value="public override bool SuppressDefaultCacheControlHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressDefaultCacheControlHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.SuppressDefaultCacheControlHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SuppressDefaultCacheControlHeader As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SuppressDefaultCacheControlHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1745,6 +1964,8 @@
       <MemberSignature Language="C#" Value="public override bool SuppressFormsAuthenticationRedirect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressFormsAuthenticationRedirect" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.SuppressFormsAuthenticationRedirect" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SuppressFormsAuthenticationRedirect As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SuppressFormsAuthenticationRedirect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1767,10 +1988,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TransmitFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified file to the HTTP response output stream, without buffering it in memory.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TransmitFile">
       <MemberSignature Language="C#" Value="public override void TransmitFile (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TransmitFile(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.TransmitFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TransmitFile (filename As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TransmitFile(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1794,6 +2026,8 @@
       <MemberSignature Language="C#" Value="public override void TransmitFile (string filename, long offset, long length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TransmitFile(string filename, int64 offset, int64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.TransmitFile(System.String,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TransmitFile (filename As String, offset As Long, length As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TransmitFile(System::String ^ filename, long offset, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1833,6 +2067,8 @@
       <MemberSignature Language="C#" Value="public override bool TrySkipIisCustomErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrySkipIisCustomErrors" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponseWrapper.TrySkipIisCustomErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property TrySkipIisCustomErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool TrySkipIisCustomErrors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1848,10 +2084,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information to the HTTP response output stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Write(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (ch As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1873,6 +2120,8 @@
       <MemberSignature Language="C#" Value="public override void Write (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Write(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1894,6 +2143,8 @@
       <MemberSignature Language="C#" Value="public override void Write (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1915,6 +2166,8 @@
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.Write(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1936,10 +2189,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified file to the HTTP response output stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteFile">
       <MemberSignature Language="C#" Value="public override void WriteFile (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteFile(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.WriteFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFile (filename As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFile(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1962,6 +2226,8 @@
       <MemberSignature Language="C#" Value="public override void WriteFile (string filename, bool readIntoMemory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteFile(string filename, bool readIntoMemory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.WriteFile(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFile (filename As String, readIntoMemory As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFile(System::String ^ filename, bool readIntoMemory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1987,6 +2253,8 @@
       <MemberSignature Language="C#" Value="public override void WriteFile (IntPtr fileHandle, long offset, long size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteFile(native int fileHandle, int64 offset, int64 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.WriteFile(System.IntPtr,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFile (fileHandle As IntPtr, offset As Long, size As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFile(IntPtr fileHandle, long offset, long size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2020,6 +2288,8 @@
       <MemberSignature Language="C#" Value="public override void WriteFile (string filename, long offset, long size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteFile(string filename, int64 offset, int64 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.WriteFile(System.String,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFile (filename As String, offset As Long, size As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFile(System::String ^ filename, long offset, long size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2051,6 +2321,8 @@
       <MemberSignature Language="C#" Value="public override void WriteSubstitution (System.Web.HttpResponseSubstitutionCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteSubstitution(class System.Web.HttpResponseSubstitutionCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseWrapper.WriteSubstitution(System.Web.HttpResponseSubstitutionCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteSubstitution (callback As HttpResponseSubstitutionCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteSubstitution(System::Web::HttpResponseSubstitutionCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2069,104 +2341,5 @@
         <exception cref="T:System.ArgumentException">The target of the <paramref name="callback" /> parameter is of type <see cref="T:System.Web.UI.Control" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteFile">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the specified file to the HTTP response output stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveOutputCacheItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes cached items from the output cache by using the default output-cache provider.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Redirect">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Redirects a request to a different URL.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddCacheItemDependencies">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Makes the validity of a cached response dependent on other items in the cache.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TransmitFile">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the specified file to the HTTP response output stream, without buffering it in memory.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes information to the HTTP response output stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RedirectPermanent">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a permanent redirect from a requested URL to the specified URL.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PushPromise">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Promotes the promised object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RedirectToRoutePermanent">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a permanent redirection from a requested URL to a new URL by using the specified route parameter values, a route name, or both.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddFileDependencies">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Makes the validity of a cached response dependent on a specified file or files.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RedirectToRoute">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Redirects a request to a new URL by using the specified route parameter values, a route name, or both.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

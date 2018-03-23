@@ -1,7 +1,9 @@
-<Type Name="DataGridViewRowPrePaintEventHandler" FullName="System.Windows.Forms.DataGridViewRowPrePaintEventHandler">
+﻿<Type Name="DataGridViewRowPrePaintEventHandler" FullName="System.Windows.Forms.DataGridViewRowPrePaintEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewRowPrePaintEventHandler(object sender, DataGridViewRowPrePaintEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewRowPrePaintEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowPrePaintEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewRowPrePaintEventHandler(sender As Object, e As DataGridViewRowPrePaintEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewRowPrePaintEventHandler(System::Object ^ sender, DataGridViewRowPrePaintEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

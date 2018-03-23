@@ -1,7 +1,9 @@
-<Type Name="BooleanPrototype" FullName="Microsoft.JScript.BooleanPrototype">
+﻿<Type Name="BooleanPrototype" FullName="Microsoft.JScript.BooleanPrototype">
   <TypeSignature Language="C#" Value="public class BooleanPrototype : Microsoft.JScript.BooleanObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BooleanPrototype extends Microsoft.JScript.BooleanObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BooleanPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public Class BooleanPrototype&#xA;Inherits BooleanObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BooleanPrototype : Microsoft::JScript::BooleanObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected BooleanPrototype (Microsoft.JScript.ObjectPrototype parent, Type baseType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ObjectPrototype parent, class System.Type baseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanPrototype.#ctor(Microsoft.JScript.ObjectPrototype,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (parent As ObjectPrototype, baseType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BooleanPrototype(Microsoft::JScript::ObjectPrototype ^ parent, Type ^ baseType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.BooleanConstructor constructor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.JScript.BooleanConstructor constructor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.BooleanPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property constructor As BooleanConstructor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::BooleanConstructor ^ constructor { Microsoft::JScript::BooleanConstructor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public static string toString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toString(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanPrototype.toString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toString (thisob As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toString(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="public static object valueOf (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object valueOf(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanPrototype.valueOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function valueOf (thisob As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ valueOf(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

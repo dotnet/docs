@@ -1,7 +1,9 @@
-<Type Name="Choices" FullName="System.Speech.Recognition.Choices">
+﻿<Type Name="Choices" FullName="System.Speech.Recognition.Choices">
   <TypeSignature Language="C#" Value="public class Choices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Choices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.Choices" />
+  <TypeSignature Language="VB.NET" Value="Public Class Choices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Choices" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +113,8 @@ public GrammarBuilder ChoicesContructor2 ()
       <MemberSignature Language="C#" Value="public Choices ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -172,6 +176,8 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="C#" Value="public Choices (params System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.GrammarBuilder[] alternateChoices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.Speech.Recognition.GrammarBuilder[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray alternateChoices As GrammarBuilder())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices(... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ alternateChoices);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -246,6 +252,8 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="C#" Value="public Choices (params string[] phrases);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray phrases As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices(... cli::array &lt;System::String ^&gt; ^ phrases);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -314,10 +322,21 @@ public Grammar CreatePhonePhrase()
         <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds items to the set of alternatives.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (params System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Speech.Recognition.GrammarBuilder[] alternateChoices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.Speech.Recognition.GrammarBuilder[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray alternateChoices As GrammarBuilder())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ alternateChoices);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -397,6 +416,8 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="C#" Value="public void Add (params string[] phrases);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray phrases As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::String ^&gt; ^ phrases);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -474,6 +495,8 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="C#" Value="public System.Speech.Recognition.GrammarBuilder ToGrammarBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Recognition.GrammarBuilder ToGrammarBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.ToGrammarBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToGrammarBuilder () As GrammarBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::GrammarBuilder ^ ToGrammarBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -529,14 +552,5 @@ private Grammar CreateColorChoice()
         <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds items to the set of alternatives.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="IIntegratedHelpService" FullName="System.Activities.Presentation.IIntegratedHelpService">
+﻿<Type Name="IIntegratedHelpService" FullName="System.Activities.Presentation.IIntegratedHelpService">
   <TypeSignature Language="C#" Value="public interface IIntegratedHelpService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IIntegratedHelpService" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IIntegratedHelpService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IIntegratedHelpService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IIntegratedHelpService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public void AddContextAttribute (string name, string value, System.ComponentModel.Design.HelpKeywordType keywordType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddContextAttribute(string name, string value, valuetype System.ComponentModel.Design.HelpKeywordType keywordType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IIntegratedHelpService.AddContextAttribute(System.String,System.String,System.ComponentModel.Design.HelpKeywordType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddContextAttribute (name As String, value As String, keywordType As HelpKeywordType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddContextAttribute(System::String ^ name, System::String ^ value, System::ComponentModel::Design::HelpKeywordType keywordType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public void RemoveContextAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveContextAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IIntegratedHelpService.RemoveContextAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveContextAttribute (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveContextAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public void ShowHelpFromKeyword (string helpKeyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowHelpFromKeyword(string helpKeyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IIntegratedHelpService.ShowHelpFromKeyword(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowHelpFromKeyword (helpKeyword As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowHelpFromKeyword(System::String ^ helpKeyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public void ShowHelpFromUrl (string helpUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowHelpFromUrl(string helpUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IIntegratedHelpService.ShowHelpFromUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowHelpFromUrl (helpUrl As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowHelpFromUrl(System::String ^ helpUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

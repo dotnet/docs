@@ -1,7 +1,9 @@
-<Type Name="PathGeometry" FullName="System.Windows.Media.PathGeometry">
+﻿<Type Name="PathGeometry" FullName="System.Windows.Media.PathGeometry">
   <TypeSignature Language="C#" Value="public sealed class PathGeometry : System.Windows.Media.Geometry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PathGeometry extends System.Windows.Media.Geometry" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PathGeometry" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PathGeometry&#xA;Inherits Geometry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PathGeometry sealed : System::Windows::Media::Geometry" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PathGeometry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PathGeometry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathGeometry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public PathGeometry (System.Collections.Generic.IEnumerable&lt;System.Windows.Media.PathFigure&gt; figures);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.PathFigure&gt; figures) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.PathFigure})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (figures As IEnumerable(Of PathFigure))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathGeometry(System::Collections::Generic::IEnumerable&lt;System::Windows::Media::PathFigure ^&gt; ^ figures);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +81,7 @@
       <MemberSignature Language="C#" Value="public PathGeometry (System.Collections.Generic.IEnumerable&lt;System.Windows.Media.PathFigure&gt; figures, System.Windows.Media.FillRule fillRule, System.Windows.Media.Transform transform);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.PathFigure&gt; figures, valuetype System.Windows.Media.FillRule fillRule, class System.Windows.Media.Transform transform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.PathFigure},System.Windows.Media.FillRule,System.Windows.Media.Transform)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathGeometry(System::Collections::Generic::IEnumerable&lt;System::Windows::Media::PathFigure ^&gt; ^ figures, System::Windows::Media::FillRule fillRule, System::Windows::Media::Transform ^ transform);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +104,7 @@
       <MemberSignature Language="C#" Value="public void AddGeometry (System.Windows.Media.Geometry geometry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddGeometry(class System.Windows.Media.Geometry geometry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.AddGeometry(System.Windows.Media.Geometry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddGeometry(System::Windows::Media::Geometry ^ geometry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Rect Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathGeometry.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Rect Bounds { System::Windows::Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +153,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +173,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.PathGeometry Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PathGeometry Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As PathGeometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathGeometry ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -180,6 +203,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.PathGeometry CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PathGeometry CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PathGeometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathGeometry ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +233,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PathGeometry CreateFromGeometry (System.Windows.Media.Geometry geometry);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.PathGeometry CreateFromGeometry(class System.Windows.Media.Geometry geometry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.CreateFromGeometry(System.Windows.Media.Geometry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::PathGeometry ^ CreateFromGeometry(System::Windows::Media::Geometry ^ geometry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +263,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -256,6 +284,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.PathFigureCollection Figures { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.PathFigureCollection Figures" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathGeometry.Figures" />
+      <MemberSignature Language="VB.NET" Value="Public Property Figures As PathFigureCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PathFigureCollection ^ Figures { System::Windows::Media::PathFigureCollection ^ get(); void set(System::Windows::Media::PathFigureCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -316,6 +346,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FiguresProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FiguresProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathGeometry.FiguresProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FiguresProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FiguresProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +365,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.FillRule FillRule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.FillRule FillRule" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathGeometry.FillRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property FillRule As FillRule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FillRule FillRule { System::Windows::Media::FillRule get(); void set(System::Windows::Media::FillRule value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -371,6 +405,8 @@ FillRule Example
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FillRuleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FillRuleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathGeometry.FillRuleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FillRuleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FillRuleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -388,6 +424,8 @@ FillRule Example
       <MemberSignature Language="C#" Value="public void GetPointAtFractionLength (double progress, out System.Windows.Point point, out System.Windows.Point tangent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetPointAtFractionLength(float64 progress, [out] valuetype System.Windows.Point&amp; point, [out] valuetype System.Windows.Point&amp; tangent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.GetPointAtFractionLength(System.Double,System.Windows.Point@,System.Windows.Point@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetPointAtFractionLength (progress As Double, ByRef point As Point, ByRef tangent As Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPointAtFractionLength(double progress, [Runtime::InteropServices::Out] System::Windows::Point % point, [Runtime::InteropServices::Out] System::Windows::Point % tangent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -418,6 +456,8 @@ FillRule Example
       <MemberSignature Language="C#" Value="public override bool IsEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEmpty () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -437,6 +477,8 @@ FillRule Example
       <MemberSignature Language="C#" Value="public override bool MayHaveCurves ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MayHaveCurves() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.MayHaveCurves" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MayHaveCurves () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MayHaveCurves();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -456,6 +498,8 @@ FillRule Example
       <MemberSignature Language="C#" Value="protected override void OnChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.OnChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -470,14 +514,5 @@ FillRule Example
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PathGeometry" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

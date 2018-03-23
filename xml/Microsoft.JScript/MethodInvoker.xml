@@ -1,7 +1,9 @@
-<Type Name="MethodInvoker" FullName="Microsoft.JScript.MethodInvoker">
+﻿<Type Name="MethodInvoker" FullName="Microsoft.JScript.MethodInvoker">
   <TypeSignature Language="C#" Value="public abstract class MethodInvoker" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MethodInvoker extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.MethodInvoker" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MethodInvoker" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MethodInvoker abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected MethodInvoker ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MethodInvoker.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MethodInvoker();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public abstract object Invoke (object thisob, object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(object thisob, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MethodInvoker.Invoke(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Invoke (thisob As Object, parameters As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Invoke(System::Object ^ thisob, cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

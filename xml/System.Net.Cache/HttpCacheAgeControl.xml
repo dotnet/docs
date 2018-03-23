@@ -1,7 +1,9 @@
-<Type Name="HttpCacheAgeControl" FullName="System.Net.Cache.HttpCacheAgeControl">
+﻿<Type Name="HttpCacheAgeControl" FullName="System.Net.Cache.HttpCacheAgeControl">
   <TypeSignature Language="C#" Value="public enum HttpCacheAgeControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpCacheAgeControl extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.HttpCacheAgeControl" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HttpCacheAgeControl" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HttpCacheAgeControl" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="MaxAge" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpCacheAgeControl MaxAge = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MaxAge" />
+      <MemberSignature Language="VB.NET" Value="MaxAge" />
+      <MemberSignature Language="C++ CLI" Value="MaxAge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpCacheAgeControl</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Content can be taken from the cache until it is older than the age specified with this value.</summary>
       </Docs>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="MaxAgeAndMaxStale" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpCacheAgeControl MaxAgeAndMaxStale = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale" />
+      <MemberSignature Language="VB.NET" Value="MaxAgeAndMaxStale" />
+      <MemberSignature Language="C++ CLI" Value="MaxAgeAndMaxStale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpCacheAgeControl</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>
           <see cref="P:System.Net.Cache.HttpRequestCachePolicy.MaxAge" /> and <see cref="P:System.Net.Cache.HttpRequestCachePolicy.MaxStale" />.</summary>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="MaxAgeAndMinFresh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpCacheAgeControl MaxAgeAndMinFresh = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh" />
+      <MemberSignature Language="VB.NET" Value="MaxAgeAndMinFresh" />
+      <MemberSignature Language="C++ CLI" Value="MaxAgeAndMinFresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpCacheAgeControl</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
           <see cref="P:System.Net.Cache.HttpRequestCachePolicy.MaxAge" /> and <see cref="P:System.Net.Cache.HttpRequestCachePolicy.MinFresh" />.</summary>
@@ -119,6 +130,8 @@
       <MemberSignature Language="C#" Value="MaxStale" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpCacheAgeControl MaxStale = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MaxStale" />
+      <MemberSignature Language="VB.NET" Value="MaxStale" />
+      <MemberSignature Language="C++ CLI" Value="MaxStale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpCacheAgeControl</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Content can be taken from the cache after it has expired, until the time specified with this value elapses.</summary>
       </Docs>
@@ -144,6 +158,8 @@
       <MemberSignature Language="C#" Value="MinFresh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpCacheAgeControl MinFresh = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MinFresh" />
+      <MemberSignature Language="VB.NET" Value="MinFresh" />
+      <MemberSignature Language="C++ CLI" Value="MinFresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpCacheAgeControl</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Content can be taken from the cache if the time remaining before expiration is greater than or equal to the time specified with this value.</summary>
       </Docs>
@@ -169,6 +186,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpCacheAgeControl None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -186,6 +205,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpCacheAgeControl</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>For internal use only. The Framework will throw an <see cref="T:System.ArgumentException" /> if you try to use this member.</summary>
       </Docs>

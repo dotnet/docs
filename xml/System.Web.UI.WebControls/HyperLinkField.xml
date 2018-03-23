@@ -1,7 +1,9 @@
-<Type Name="HyperLinkField" FullName="System.Web.UI.WebControls.HyperLinkField">
+﻿<Type Name="HyperLinkField" FullName="System.Web.UI.WebControls.HyperLinkField">
   <TypeSignature Language="C#" Value="public class HyperLinkField : System.Web.UI.WebControls.DataControlField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HyperLinkField extends System.Web.UI.WebControls.DataControlField" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HyperLinkField" />
+  <TypeSignature Language="VB.NET" Value="Public Class HyperLinkField&#xA;Inherits DataControlField" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HyperLinkField : System::Web::UI::WebControls::DataControlField" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +86,8 @@
       <MemberSignature Language="C#" Value="public HyperLinkField ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HyperLinkField();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +127,8 @@
       <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataControlField newField);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataControlField newField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyProperties (newField As DataControlField)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CopyProperties(System::Web::UI::WebControls::DataControlField ^ newField);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +157,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.DataControlField CreateField ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.DataControlField CreateField() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.CreateField" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateField () As DataControlField" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::DataControlField ^ CreateField();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +185,8 @@
       <MemberSignature Language="C#" Value="public virtual string[] DataNavigateUrlFields { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] DataNavigateUrlFields" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataNavigateUrlFields As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ DataNavigateUrlFields { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,6 +231,8 @@
       <MemberSignature Language="C#" Value="public virtual string DataNavigateUrlFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataNavigateUrlFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataNavigateUrlFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataNavigateUrlFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -297,6 +309,8 @@
       <MemberSignature Language="C#" Value="public virtual string DataTextField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataTextField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.DataTextField" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTextField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTextField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +368,8 @@
       <MemberSignature Language="C#" Value="public virtual string DataTextFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataTextFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTextFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTextFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -430,6 +446,8 @@
       <MemberSignature Language="C#" Value="protected virtual string FormatDataNavigateUrlValue (object[] dataUrlValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataNavigateUrlValue(object[] dataUrlValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.FormatDataNavigateUrlValue(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FormatDataNavigateUrlValue (dataUrlValues As Object()) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ FormatDataNavigateUrlValue(cli::array &lt;System::Object ^&gt; ^ dataUrlValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -459,6 +477,8 @@
       <MemberSignature Language="C#" Value="protected virtual string FormatDataTextValue (object dataTextValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataTextValue(object dataTextValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.FormatDataTextValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FormatDataTextValue (dataTextValue As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ FormatDataTextValue(System::Object ^ dataTextValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -491,6 +511,7 @@
       <MemberSignature Language="C#" Value="public override bool Initialize (bool enableSorting, System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Initialize(bool enableSorting, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.Initialize(System.Boolean,System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Initialize(bool enableSorting, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -516,6 +537,8 @@
       <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlCellType cellType, System.Web.UI.WebControls.DataControlRowState rowState, int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlCellType cellType, valuetype System.Web.UI.WebControls.DataControlRowState rowState, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeCell (cell As DataControlFieldCell, cellType As DataControlCellType, rowState As DataControlRowState, rowIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeCell(System::Web::UI::WebControls::DataControlFieldCell ^ cell, System::Web::UI::WebControls::DataControlCellType cellType, System::Web::UI::WebControls::DataControlRowState rowState, int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -550,6 +573,8 @@
       <MemberSignature Language="C#" Value="public virtual string NavigateUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.NavigateUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property NavigateUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -605,6 +630,8 @@
       <MemberSignature Language="C#" Value="public virtual string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Target As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -670,6 +697,8 @@
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -724,6 +753,8 @@
       <MemberSignature Language="C#" Value="public override void ValidateSupportsCallback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ValidateSupportsCallback() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.ValidateSupportsCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ValidateSupportsCallback ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ValidateSupportsCallback();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

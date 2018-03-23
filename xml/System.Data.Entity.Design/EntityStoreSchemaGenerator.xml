@@ -1,7 +1,9 @@
-<Type Name="EntityStoreSchemaGenerator" FullName="System.Data.Entity.Design.EntityStoreSchemaGenerator">
+﻿<Type Name="EntityStoreSchemaGenerator" FullName="System.Data.Entity.Design.EntityStoreSchemaGenerator">
   <TypeSignature Language="C#" Value="public sealed class EntityStoreSchemaGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityStoreSchemaGenerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityStoreSchemaGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityStoreSchemaGenerator sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public EntityStoreSchemaGenerator (string providerInvariantName, string connectionString, string namespaceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string providerInvariantName, string connectionString, string namespaceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (providerInvariantName As String, connectionString As String, namespaceName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityStoreSchemaGenerator(System::String ^ providerInvariantName, System::String ^ connectionString, System::String ^ namespaceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -44,10 +48,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateStoreSchemaConnection">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an EntityConnection loaded with the providers metadata for the store schema.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateStoreSchemaConnection">
       <MemberSignature Language="C#" Value="public static System.Data.EntityClient.EntityConnection CreateStoreSchemaConnection (string providerInvariantName, string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EntityClient.EntityConnection CreateStoreSchemaConnection(string providerInvariantName, string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.CreateStoreSchemaConnection(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateStoreSchemaConnection (providerInvariantName As String, connectionString As String) As EntityConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::EntityClient::EntityConnection ^ CreateStoreSchemaConnection(System::String ^ providerInvariantName, System::String ^ connectionString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -72,6 +87,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.EntityClient.EntityConnection CreateStoreSchemaConnection (string providerInvariantName, string connectionString, Version targetEntityFrameworkVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EntityClient.EntityConnection CreateStoreSchemaConnection(string providerInvariantName, string connectionString, class System.Version targetEntityFrameworkVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.CreateStoreSchemaConnection(System.String,System.String,System.Version)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateStoreSchemaConnection (providerInvariantName As String, connectionString As String, targetEntityFrameworkVersion As Version) As EntityConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::EntityClient::EntityConnection ^ CreateStoreSchemaConnection(System::String ^ providerInvariantName, System::String ^ connectionString, Version ^ targetEntityFrameworkVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EntityContainer EntityContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EntityContainer EntityContainer" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaGenerator.EntityContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityContainer As EntityContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EntityContainer ^ EntityContainer { System::Data::Metadata::Edm::EntityContainer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -116,6 +135,8 @@
       <MemberSignature Language="C#" Value="public bool GenerateForeignKeyProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GenerateForeignKeyProperties" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateForeignKeyProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property GenerateForeignKeyProperties As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateForeignKeyProperties { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -131,10 +152,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateStoreMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates store metadata and returns any schema errors.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GenerateStoreMetadata">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateStoreMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateStoreMetadata() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateStoreMetadata () As IList(Of EdmSchemaError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateStoreMetadata();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -154,6 +186,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateStoreMetadata (System.Collections.Generic.IEnumerable&lt;System.Data.Entity.Design.EntityStoreSchemaFilterEntry&gt; filters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateStoreMetadata(class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Entity.Design.EntityStoreSchemaFilterEntry&gt; filters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata(System.Collections.Generic.IEnumerable{System.Data.Entity.Design.EntityStoreSchemaFilterEntry})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateStoreMetadata (filters As IEnumerable(Of EntityStoreSchemaFilterEntry)) As IList(Of EdmSchemaError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateStoreMetadata(System::Collections::Generic::IEnumerable&lt;System::Data::Entity::Design::EntityStoreSchemaFilterEntry ^&gt; ^ filters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -176,6 +210,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateStoreMetadata (System.Collections.Generic.IEnumerable&lt;System.Data.Entity.Design.EntityStoreSchemaFilterEntry&gt; filters, Version targetEntityFrameworkVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateStoreMetadata(class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Entity.Design.EntityStoreSchemaFilterEntry&gt; filters, class System.Version targetEntityFrameworkVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata(System.Collections.Generic.IEnumerable{System.Data.Entity.Design.EntityStoreSchemaFilterEntry},System.Version)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateStoreMetadata (filters As IEnumerable(Of EntityStoreSchemaFilterEntry), targetEntityFrameworkVersion As Version) As IList(Of EdmSchemaError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateStoreMetadata(System::Collections::Generic::IEnumerable&lt;System::Data::Entity::Design::EntityStoreSchemaFilterEntry ^&gt; ^ filters, Version ^ targetEntityFrameworkVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -200,6 +236,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.StoreItemCollection StoreItemCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.StoreItemCollection StoreItemCollection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaGenerator.StoreItemCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreItemCollection As StoreItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::StoreItemCollection ^ StoreItemCollection { System::Data::Metadata::Edm::StoreItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -219,10 +257,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStoreSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the generated store schema definition language (SSDL) to a file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteStoreSchema">
       <MemberSignature Language="C#" Value="public void WriteStoreSchema (string outputFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStoreSchema(string outputFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStoreSchema (outputFileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStoreSchema(System::String ^ outputFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -244,6 +293,8 @@
       <MemberSignature Language="C#" Value="public void WriteStoreSchema (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStoreSchema(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStoreSchema (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStoreSchema(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -261,32 +312,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateStoreSchemaConnection">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an EntityConnection loaded with the providers metadata for the store schema.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GenerateStoreMetadata">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates store metadata and returns any schema errors.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteStoreSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the generated store schema definition language (SSDL) to a file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

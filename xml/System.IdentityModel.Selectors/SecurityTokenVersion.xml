@@ -1,7 +1,9 @@
-<Type Name="SecurityTokenVersion" FullName="System.IdentityModel.Selectors.SecurityTokenVersion">
+﻿<Type Name="SecurityTokenVersion" FullName="System.IdentityModel.Selectors.SecurityTokenVersion">
   <TypeSignature Language="C#" Value="public abstract class SecurityTokenVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityTokenVersion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenVersion" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityTokenVersion" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenVersion abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="protected SecurityTokenVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenVersion.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityTokenVersion();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetSecuritySpecifications ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; GetSecuritySpecifications() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenVersion.GetSecuritySpecifications" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSecuritySpecifications () As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ GetSecuritySpecifications();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

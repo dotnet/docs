@@ -1,7 +1,9 @@
-<Type Name="CookieTransform" FullName="System.IdentityModel.CookieTransform">
+﻿<Type Name="CookieTransform" FullName="System.IdentityModel.CookieTransform">
   <TypeSignature Language="C#" Value="public abstract class CookieTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CookieTransform extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.CookieTransform" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CookieTransform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CookieTransform abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected CookieTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.CookieTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CookieTransform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -35,6 +39,8 @@
       <MemberSignature Language="C#" Value="public abstract byte[] Decode (byte[] encoded);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] Decode(unsigned int8[] encoded) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.CookieTransform.Decode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Decode (encoded As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ Decode(cli::array &lt;System::Byte&gt; ^ encoded);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public abstract byte[] Encode (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] Encode(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.CookieTransform.Encode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Encode (value As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ Encode(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

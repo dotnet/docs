@@ -1,7 +1,9 @@
-<Type Name="PropertyChangedEventArgs" FullName="System.ComponentModel.PropertyChangedEventArgs">
+﻿<Type Name="PropertyChangedEventArgs" FullName="System.ComponentModel.PropertyChangedEventArgs">
   <TypeSignature Language="C#" Value="public class PropertyChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class PropertyChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public PropertyChangedEventArgs (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventArgs.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyChangedEventArgs(System::String ^ propertyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -77,6 +81,8 @@
       <MemberSignature Language="C#" Value="public virtual string PropertyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyChangedEventArgs.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PropertyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PropertyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

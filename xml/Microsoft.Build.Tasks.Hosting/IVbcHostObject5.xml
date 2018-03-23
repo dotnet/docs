@@ -1,7 +1,9 @@
-<Type Name="IVbcHostObject5" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject5">
+﻿<Type Name="IVbcHostObject5" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject5">
   <TypeSignature Language="C#" Value="public interface IVbcHostObject5 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.IVbcHostObject4" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVbcHostObject5 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.IVbcHostObject, class Microsoft.Build.Tasks.Hosting.IVbcHostObject2, class Microsoft.Build.Tasks.Hosting.IVbcHostObject3, class Microsoft.Build.Tasks.Hosting.IVbcHostObject4" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject5" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVbcHostObject5&#xA;Implements ITaskHost, IVbcHostObject4" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVbcHostObject5 : Microsoft::Build::Framework::ITaskHost, Microsoft::Build::Tasks::Hosting::IVbcHostObject4" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,7 +24,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("5ACF41FF-6F2B-4623-8146-740C89212B21")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public int CompileAsync (out IntPtr buildSucceededEvent, out IntPtr buildFailedEvent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompileAsync([out] native int&amp; buildSucceededEvent, [out] native int&amp; buildFailedEvent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.CompileAsync(System.IntPtr@,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompileAsync (ByRef buildSucceededEvent As IntPtr, ByRef buildFailedEvent As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompileAsync([Runtime::InteropServices::Out] IntPtr % buildSucceededEvent, [Runtime::InteropServices::Out] IntPtr % buildFailedEvent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public int EndCompile (bool buildSuccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EndCompile(bool buildSuccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.EndCompile(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndCompile (buildSuccess As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndCompile(bool buildSuccess);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded GetFreeThreadedHostObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded GetFreeThreadedHostObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.GetFreeThreadedHostObject" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFreeThreadedHostObject () As IVbcHostObjectFreeThreaded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Tasks::Hosting::IVbcHostObjectFreeThreaded ^ GetFreeThreadedHostObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -99,6 +107,8 @@
       <MemberSignature Language="C#" Value="public bool SetHighEntropyVA (bool highEntropyVA);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetHighEntropyVA(bool highEntropyVA) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetHighEntropyVA(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetHighEntropyVA (highEntropyVA As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetHighEntropyVA(bool highEntropyVA);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -123,6 +133,8 @@
       <MemberSignature Language="C#" Value="public bool SetPlatformWith32BitPreference (string platformWith32BitPreference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetPlatformWith32BitPreference(string platformWith32BitPreference) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetPlatformWith32BitPreference(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPlatformWith32BitPreference (platformWith32BitPreference As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetPlatformWith32BitPreference(System::String ^ platformWith32BitPreference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -153,6 +165,8 @@
       <MemberSignature Language="C#" Value="public bool SetSubsystemVersion (string subsystemVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetSubsystemVersion(string subsystemVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetSubsystemVersion(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetSubsystemVersion (subsystemVersion As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetSubsystemVersion(System::String ^ subsystemVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

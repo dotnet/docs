@@ -1,7 +1,9 @@
-<Type Name="PropertyAccessRule" FullName="System.DirectoryServices.PropertyAccessRule">
+﻿<Type Name="PropertyAccessRule" FullName="System.DirectoryServices.PropertyAccessRule">
   <TypeSignature Language="C#" Value="public sealed class PropertyAccessRule : System.DirectoryServices.ActiveDirectoryAccessRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PropertyAccessRule extends System.DirectoryServices.ActiveDirectoryAccessRule" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.PropertyAccessRule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyAccessRule&#xA;Inherits ActiveDirectoryAccessRule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyAccessRule sealed : System::DirectoryServices::ActiveDirectoryAccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.PropertyAccessRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PropertyAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, access As PropertyAccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::PropertyAccess access);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -57,6 +71,8 @@
       <MemberSignature Language="C#" Value="public PropertyAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, access As PropertyAccess, inheritanceType As ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::PropertyAccess access, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -89,6 +105,8 @@
       <MemberSignature Language="C#" Value="public PropertyAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access, Guid propertyType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access, valuetype System.Guid propertyType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, access As PropertyAccess, propertyType As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::PropertyAccess access, Guid propertyType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -114,6 +132,8 @@
       <MemberSignature Language="C#" Value="public PropertyAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, access As PropertyAccess, inheritanceType As ActiveDirectorySecurityInheritance, inheritedObjectType As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::PropertyAccess access, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -148,6 +168,8 @@
       <MemberSignature Language="C#" Value="public PropertyAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access, Guid propertyType, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access, valuetype System.Guid propertyType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, access As PropertyAccess, propertyType As Guid, inheritanceType As ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::PropertyAccess access, Guid propertyType, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -175,6 +197,8 @@
       <MemberSignature Language="C#" Value="public PropertyAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access, Guid propertyType, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access, valuetype System.Guid propertyType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, access As PropertyAccess, propertyType As Guid, inheritanceType As ActiveDirectorySecurityInheritance, inheritedObjectType As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::PropertyAccess access, Guid propertyType, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -200,15 +224,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.PropertyAccessRule" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

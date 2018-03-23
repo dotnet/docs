@@ -1,7 +1,9 @@
-<Type Name="ExportDescriptorProvider" FullName="System.Composition.Hosting.Core.ExportDescriptorProvider">
+﻿<Type Name="ExportDescriptorProvider" FullName="System.Composition.Hosting.Core.ExportDescriptorProvider">
   <TypeSignature Language="C#" Value="public abstract class ExportDescriptorProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExportDescriptorProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.ExportDescriptorProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExportDescriptorProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExportDescriptorProvider abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Hosting</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -13,14 +15,15 @@
   <Interfaces />
   <Docs>
     <summary>Provides the description of an export for a part known to the composition engine.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ExportDescriptorProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExportDescriptorProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt; GetExportDescriptors (System.Composition.Hosting.Core.CompositionContract contract, System.Composition.Hosting.Core.DependencyAccessor descriptorAccessor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.ExportDescriptorPromise&gt; GetExportDescriptors(class System.Composition.Hosting.Core.CompositionContract contract, class System.Composition.Hosting.Core.DependencyAccessor descriptorAccessor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorProvider.GetExportDescriptors(System.Composition.Hosting.Core.CompositionContract,System.Composition.Hosting.Core.DependencyAccessor)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetExportDescriptors (contract As CompositionContract, descriptorAccessor As DependencyAccessor) As IEnumerable(Of ExportDescriptorPromise)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Composition::Hosting::Core::ExportDescriptorPromise ^&gt; ^ GetExportDescriptors(System::Composition::Hosting::Core::CompositionContract ^ contract, System::Composition::Hosting::Core::DependencyAccessor ^ descriptorAccessor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -76,6 +81,8 @@
       <MemberSignature Language="C#" Value="protected static readonly Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;&gt; NoDependencies;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Func`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt;&gt; NoDependencies" />
       <MemberSignature Language="DocId" Value="F:System.Composition.Hosting.Core.ExportDescriptorProvider.NoDependencies" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly NoDependencies As Func(Of IEnumerable(Of CompositionDependency)) " />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly Func&lt;System::Collections::Generic::IEnumerable&lt;System::Composition::Hosting::Core::CompositionDependency ^&gt; ^&gt; ^ NoDependencies;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -87,14 +94,15 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of dependencies.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoExportDescriptors">
       <MemberSignature Language="C#" Value="protected static readonly System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt; NoExportDescriptors;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.ExportDescriptorPromise&gt; NoExportDescriptors" />
       <MemberSignature Language="DocId" Value="F:System.Composition.Hosting.Core.ExportDescriptorProvider.NoExportDescriptors" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly NoExportDescriptors As IEnumerable(Of ExportDescriptorPromise) " />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Collections::Generic::IEnumerable&lt;System::Composition::Hosting::Core::ExportDescriptorPromise ^&gt; ^ NoExportDescriptors;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -106,14 +114,15 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of export descriptors.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoMetadata">
       <MemberSignature Language="C#" Value="protected static readonly System.Collections.Generic.IDictionary&lt;string,object&gt; NoMetadata;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Collections.Generic.IDictionary`2&lt;string, object&gt; NoMetadata" />
       <MemberSignature Language="DocId" Value="F:System.Composition.Hosting.Core.ExportDescriptorProvider.NoMetadata" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly NoMetadata As IDictionary(Of String, Object) " />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ NoMetadata;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -125,8 +134,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of metadata.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

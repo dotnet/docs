@@ -1,7 +1,9 @@
-<Type Name="ParameterToken" FullName="System.Reflection.Emit.ParameterToken">
+﻿<Type Name="ParameterToken" FullName="System.Reflection.Emit.ParameterToken">
   <TypeSignature Language="C#" Value="public struct ParameterToken" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit ParameterToken extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.ParameterToken" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ParameterToken" />
+  <TypeSignature Language="C++ CLI" Value="public value class ParameterToken" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Reflection.Emit.ParameterToken Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Reflection.Emit.ParameterToken Empty" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.ParameterToken.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As ParameterToken " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::ParameterToken Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -39,10 +43,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether an object represents the same parameter as the current <see cref="T:System.Reflection.Emit.ParameterToken" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterToken.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +83,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Emit.ParameterToken obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Reflection.Emit.ParameterToken obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterToken.Equals(System.Reflection.Emit.ParameterToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As ParameterToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Reflection::Emit::ParameterToken obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +109,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterToken.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +131,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Emit.ParameterToken a, System.Reflection.Emit.ParameterToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Emit.ParameterToken a, valuetype System.Reflection.Emit.ParameterToken b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterToken.op_Equality(System.Reflection.Emit.ParameterToken,System.Reflection.Emit.ParameterToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As ParameterToken, b As ParameterToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Emit::ParameterToken a, System::Reflection::Emit::ParameterToken b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +161,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Emit.ParameterToken a, System.Reflection.Emit.ParameterToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.ParameterToken a, valuetype System.Reflection.Emit.ParameterToken b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterToken.op_Inequality(System.Reflection.Emit.ParameterToken,System.Reflection.Emit.ParameterToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As ParameterToken, b As ParameterToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Emit::ParameterToken a, System::Reflection::Emit::ParameterToken b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +191,8 @@
       <MemberSignature Language="C#" Value="public int Token { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Token" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ParameterToken.Token" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Token { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,15 +208,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether an object represents the same parameter as the current <see cref="T:System.Reflection.Emit.ParameterToken" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

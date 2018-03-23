@@ -1,7 +1,9 @@
-<Type Name="ServiceController" FullName="System.ServiceProcess.ServiceController">
+﻿<Type Name="ServiceController" FullName="System.ServiceProcess.ServiceController">
   <TypeSignature Language="C#" Value="public class ServiceController : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceController extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceController" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceController&#xA;Inherits Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceController : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -15,8 +17,7 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.ComponentModel.Component</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName>System.ComponentModel.Designer("System.ServiceProcess.Design.ServiceControllerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
@@ -59,10 +60,21 @@
     <altmember cref="T:System.ServiceProcess.ServiceType" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceController ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceController();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -78,6 +90,8 @@
       <MemberSignature Language="C#" Value="public ServiceController (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceController(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -113,6 +127,8 @@
       <MemberSignature Language="C#" Value="public ServiceController (string name, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, machineName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceController(System::String ^ name, System::String ^ machineName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -151,6 +167,8 @@
       <MemberSignature Language="C#" Value="public bool CanPauseAndContinue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanPauseAndContinue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanPauseAndContinue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanPauseAndContinue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanPauseAndContinue { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -163,7 +181,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPCanPauseAndContinue")</AttributeName>
@@ -195,6 +213,8 @@
       <MemberSignature Language="C#" Value="public bool CanShutdown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanShutdown" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanShutdown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanShutdown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanShutdown { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -207,7 +227,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPCanShutdown")</AttributeName>
@@ -239,6 +259,8 @@
       <MemberSignature Language="C#" Value="public bool CanStop { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanStop" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanStop" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanStop As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanStop { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -251,7 +273,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPCanStop")</AttributeName>
@@ -283,6 +305,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -308,6 +332,8 @@
       <MemberSignature Language="C#" Value="public void Continue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Continue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Continue" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Continue ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Continue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -355,6 +381,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceController[] DependentServices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceProcess.ServiceController[] DependentServices" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.DependentServices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependentServices As ServiceController()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ DependentServices { cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -367,7 +395,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPDependentServices")</AttributeName>
@@ -405,6 +433,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -417,7 +447,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
@@ -458,7 +488,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -477,6 +512,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -519,6 +556,8 @@
       <MemberSignature Language="C#" Value="public void ExecuteCommand (int command);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteCommand(int32 command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.ExecuteCommand(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExecuteCommand (command As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecuteCommand(int command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -556,10 +595,22 @@
         <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDevices">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the device driver services on a computer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDevices">
       <MemberSignature Language="C#" Value="public static System.ServiceProcess.ServiceController[] GetDevices ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceProcess.ServiceController[] GetDevices() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetDevices" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDevices () As ServiceController()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ GetDevices();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -602,6 +653,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceProcess.ServiceController[] GetDevices (string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceProcess.ServiceController[] GetDevices(string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetDevices(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDevices (machineName As String) As ServiceController()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ GetDevices(System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -635,10 +688,22 @@
         <altmember cref="M:System.ServiceProcess.ServiceController.GetServices" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetServices">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the non-device driver services on a computer, and those that are not drivers.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetServices">
       <MemberSignature Language="C#" Value="public static System.ServiceProcess.ServiceController[] GetServices ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceProcess.ServiceController[] GetServices() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetServices" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetServices () As ServiceController()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ GetServices();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -681,6 +746,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceProcess.ServiceController[] GetServices (string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceProcess.ServiceController[] GetServices(string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetServices(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetServices (machineName As String) As ServiceController()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ GetServices(System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -718,6 +785,8 @@
       <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -763,6 +832,8 @@
       <MemberSignature Language="C#" Value="public void Pause ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Pause" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -808,6 +879,8 @@
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -846,6 +919,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.SafeHandle ServiceHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.InteropServices.SafeHandle ServiceHandle" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceHandle As SafeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::SafeHandle ^ ServiceHandle { System::Runtime::InteropServices::SafeHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -861,7 +936,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -879,6 +954,8 @@
       <MemberSignature Language="C#" Value="public string ServiceName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -933,6 +1010,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceController[] ServicesDependedOn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceProcess.ServiceController[] ServicesDependedOn" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServicesDependedOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicesDependedOn As ServiceController()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ ServicesDependedOn { cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -945,7 +1024,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPServicesDependedOn")</AttributeName>
@@ -983,6 +1062,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceType ServiceType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceType ServiceType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceType As ServiceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceType ServiceType { System::ServiceProcess::ServiceType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -995,7 +1076,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPServiceType")</AttributeName>
@@ -1029,10 +1110,22 @@
         <altmember cref="T:System.ServiceProcess.ServiceType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts the service.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Start">
       <MemberSignature Language="C#" Value="public void Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1078,6 +1171,8 @@
       <MemberSignature Language="C#" Value="public void Start (string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start(string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Start(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start (args As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(cli::array &lt;System::String ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1123,6 +1218,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceStartMode StartType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceStartMode StartType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.StartType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartType As ServiceStartMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceStartMode StartType { System::ServiceProcess::ServiceStartMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1135,7 +1232,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPStartType")</AttributeName>
@@ -1157,6 +1254,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceControllerStatus Status { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceControllerStatus Status" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As ServiceControllerStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceControllerStatus Status { System::ServiceProcess::ServiceControllerStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1169,7 +1268,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ServiceProcess.ServiceProcessDescription("SPStatus")</AttributeName>
@@ -1206,6 +1305,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1250,10 +1351,22 @@
         <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForStatus">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for the service to reach the specified status.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WaitForStatus">
       <MemberSignature Language="C#" Value="public void WaitForStatus (System.ServiceProcess.ServiceControllerStatus desiredStatus);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WaitForStatus(valuetype System.ServiceProcess.ServiceControllerStatus desiredStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WaitForStatus (desiredStatus As ServiceControllerStatus)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WaitForStatus(System::ServiceProcess::ServiceControllerStatus desiredStatus);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1301,6 +1414,8 @@
       <MemberSignature Language="C#" Value="public void WaitForStatus (System.ServiceProcess.ServiceControllerStatus desiredStatus, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WaitForStatus(valuetype System.ServiceProcess.ServiceControllerStatus desiredStatus, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WaitForStatus (desiredStatus As ServiceControllerStatus, timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WaitForStatus(System::ServiceProcess::ServiceControllerStatus desiredStatus, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1338,54 +1453,5 @@
         <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetDevices">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the device driver services on a computer.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetServices">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the non-device driver services on a computer, and those that are not drivers.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Start">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Starts the service.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WaitForStatus">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Waits for the service to reach the specified status.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

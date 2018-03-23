@@ -1,7 +1,9 @@
-<Type Name="ClockCollection" FullName="System.Windows.Media.Animation.ClockCollection">
+﻿<Type Name="ClockCollection" FullName="System.Windows.Media.Animation.ClockCollection">
   <TypeSignature Language="C#" Value="public class ClockCollection : System.Collections.Generic.ICollection&lt;System.Windows.Media.Animation.Clock&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Animation.Clock&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClockCollection extends System.Object implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.Animation.Clock&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.Animation.Clock&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ClockCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ClockCollection&#xA;Implements ICollection(Of Clock), IEnumerable(Of Clock)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClockCollection : System::Collections::Generic::ICollection&lt;System::Windows::Media::Animation::Clock ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Animation::Clock ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,7 +28,12 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Media.Animation.Clock item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Windows.Media.Animation.Clock item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.Add(System.Windows.Media.Animation.Clock)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As Clock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Media::Animation::Clock ^ item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,7 +54,12 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,7 +77,12 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Media.Animation.Clock item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Media.Animation.Clock item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.Contains(System.Windows.Media.Animation.Clock)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As Clock) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Media::Animation::Clock ^ item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +104,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Media.Animation.Clock[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Windows.Media.Animation.Clock[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.CopyTo(System.Windows.Media.Animation.Clock[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Clock(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Media::Animation::Clock ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -110,7 +129,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -124,10 +148,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether this instance is equal to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +185,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.Animation.ClockCollection objA, System.Windows.Media.Animation.ClockCollection objB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(class System.Windows.Media.Animation.ClockCollection objA, class System.Windows.Media.Animation.ClockCollection objB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.Equals(System.Windows.Media.Animation.ClockCollection,System.Windows.Media.Animation.ClockCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (objA As ClockCollection, objB As ClockCollection) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Animation::ClockCollection ^ objA, System::Windows::Media::Animation::ClockCollection ^ objB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -175,6 +212,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -194,7 +233,12 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -212,6 +256,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Clock this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.Clock Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Clock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Clock ^ default[int] { System::Windows::Media::Animation::Clock ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -234,6 +280,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Animation.ClockCollection objA, System.Windows.Media.Animation.ClockCollection objB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Media.Animation.ClockCollection objA, class System.Windows.Media.Animation.ClockCollection objB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.op_Equality(System.Windows.Media.Animation.ClockCollection,System.Windows.Media.Animation.ClockCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (objA As ClockCollection, objB As ClockCollection) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Animation::ClockCollection ^ objA, System::Windows::Media::Animation::ClockCollection ^ objB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +306,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Animation.ClockCollection objA, System.Windows.Media.Animation.ClockCollection objB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Media.Animation.ClockCollection objA, class System.Windows.Media.Animation.ClockCollection objB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.op_Inequality(System.Windows.Media.Animation.ClockCollection,System.Windows.Media.Animation.ClockCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (objA As ClockCollection, objB As ClockCollection) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Animation::ClockCollection ^ objA, System::Windows::Media::Animation::ClockCollection ^ objB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,7 +332,12 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.Windows.Media.Animation.Clock item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Windows.Media.Animation.Clock item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.Remove(System.Windows.Media.Animation.Clock)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (item As Clock) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Media::Animation::Clock ^ item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -304,7 +359,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Media.Animation.Clock&gt; IEnumerable&lt;Clock&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Media.Animation.Clock&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Animation.Clock&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Animation#Clock&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of Clock) Implements IEnumerable(Of Clock).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Media::Animation::Clock ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Animation.Clock&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Animation::Clock ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -330,7 +390,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -354,14 +419,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether this instance is equal to the specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

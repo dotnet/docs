@@ -1,7 +1,9 @@
-<Type Name="WsdlContractConversionContext" FullName="System.ServiceModel.Description.WsdlContractConversionContext">
+﻿<Type Name="WsdlContractConversionContext" FullName="System.ServiceModel.Description.WsdlContractConversionContext">
   <TypeSignature Language="C#" Value="public class WsdlContractConversionContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WsdlContractConversionContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WsdlContractConversionContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class WsdlContractConversionContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WsdlContractConversionContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ContractDescription Contract { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ContractDescription Contract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlContractConversionContext.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contract As ContractDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ContractDescription ^ Contract { System::ServiceModel::Description::ContractDescription ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +75,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.FaultDescription GetFaultDescription (System.Web.Services.Description.OperationFault operationFault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.FaultDescription GetFaultDescription(class System.Web.Services.Description.OperationFault operationFault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlContractConversionContext.GetFaultDescription(System.Web.Services.Description.OperationFault)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::FaultDescription ^ GetFaultDescription(System::Web::Services::Description::OperationFault ^ operationFault);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +100,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.MessageDescription GetMessageDescription (System.Web.Services.Description.OperationMessage operationMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.MessageDescription GetMessageDescription(class System.Web.Services.Description.OperationMessage operationMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlContractConversionContext.GetMessageDescription(System.Web.Services.Description.OperationMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::MessageDescription ^ GetMessageDescription(System::Web::Services::Description::OperationMessage ^ operationMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +125,7 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Operation GetOperation (System.ServiceModel.Description.OperationDescription operation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Services.Description.Operation GetOperation(class System.ServiceModel.Description.OperationDescription operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlContractConversionContext.GetOperation(System.ServiceModel.Description.OperationDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Description::Operation ^ GetOperation(System::ServiceModel::Description::OperationDescription ^ operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.OperationDescription GetOperationDescription (System.Web.Services.Description.Operation operation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.OperationDescription GetOperationDescription(class System.Web.Services.Description.Operation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlContractConversionContext.GetOperationDescription(System.Web.Services.Description.Operation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::OperationDescription ^ GetOperationDescription(System::Web::Services::Description::Operation ^ operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +184,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationFault GetOperationFault (System.ServiceModel.Description.FaultDescription fault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Services.Description.OperationFault GetOperationFault(class System.ServiceModel.Description.FaultDescription fault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlContractConversionContext.GetOperationFault(System.ServiceModel.Description.FaultDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOperationFault (fault As FaultDescription) As OperationFault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Description::OperationFault ^ GetOperationFault(System::ServiceModel::Description::FaultDescription ^ fault);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +210,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationMessage GetOperationMessage (System.ServiceModel.Description.MessageDescription message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Services.Description.OperationMessage GetOperationMessage(class System.ServiceModel.Description.MessageDescription message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlContractConversionContext.GetOperationMessage(System.ServiceModel.Description.MessageDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOperationMessage (message As MessageDescription) As OperationMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Description::OperationMessage ^ GetOperationMessage(System::ServiceModel::Description::MessageDescription ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -224,6 +236,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.PortType WsdlPortType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.PortType WsdlPortType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WsdlPortType As PortType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::PortType ^ WsdlPortType { System::Web::Services::Description::PortType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

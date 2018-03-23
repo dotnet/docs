@@ -1,7 +1,9 @@
-<Type Name="HelpProvider" FullName="System.Windows.Forms.HelpProvider">
+﻿<Type Name="HelpProvider" FullName="System.Windows.Forms.HelpProvider">
   <TypeSignature Language="C#" Value="public class HelpProvider : System.ComponentModel.Component, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HelpProvider extends System.ComponentModel.Component implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class HelpProvider&#xA;Inherits Component&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HelpProvider : System::ComponentModel::Component, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="public HelpProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HelpProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +98,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanExtend (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExtend(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanExtend (target As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -117,6 +123,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetHelpKeyword (System.Windows.Forms.Control ctl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetHelpKeyword(class System.Windows.Forms.Control ctl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.GetHelpKeyword(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHelpKeyword (ctl As Control) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetHelpKeyword(System::Windows::Forms::Control ^ ctl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -152,6 +160,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.HelpNavigator GetHelpNavigator (System.Windows.Forms.Control ctl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.HelpNavigator GetHelpNavigator(class System.Windows.Forms.Control ctl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.GetHelpNavigator(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHelpNavigator (ctl As Control) As HelpNavigator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::HelpNavigator GetHelpNavigator(System::Windows::Forms::Control ^ ctl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -189,6 +199,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetHelpString (System.Windows.Forms.Control ctl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetHelpString(class System.Windows.Forms.Control ctl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.GetHelpString(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHelpString (ctl As Control) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetHelpString(System::Windows::Forms::Control ^ ctl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,6 +252,8 @@
       <MemberSignature Language="C#" Value="public virtual bool GetShowHelp (System.Windows.Forms.Control ctl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetShowHelp(class System.Windows.Forms.Control ctl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.GetShowHelp(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetShowHelp (ctl As Control) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetShowHelp(System::Windows::Forms::Control ^ ctl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +294,8 @@
       <MemberSignature Language="C#" Value="public virtual string HelpNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HelpProvider.HelpNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -325,6 +341,8 @@
       <MemberSignature Language="C#" Value="public virtual void ResetShowHelp (System.Windows.Forms.Control ctl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetShowHelp(class System.Windows.Forms.Control ctl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.ResetShowHelp(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetShowHelp (ctl As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetShowHelp(System::Windows::Forms::Control ^ ctl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -353,6 +371,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetHelpKeyword (System.Windows.Forms.Control ctl, string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHelpKeyword(class System.Windows.Forms.Control ctl, string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.SetHelpKeyword(System.Windows.Forms.Control,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHelpKeyword (ctl As Control, keyword As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHelpKeyword(System::Windows::Forms::Control ^ ctl, System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -388,6 +408,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetHelpNavigator (System.Windows.Forms.Control ctl, System.Windows.Forms.HelpNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHelpNavigator(class System.Windows.Forms.Control ctl, valuetype System.Windows.Forms.HelpNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.SetHelpNavigator(System.Windows.Forms.Control,System.Windows.Forms.HelpNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHelpNavigator (ctl As Control, navigator As HelpNavigator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHelpNavigator(System::Windows::Forms::Control ^ ctl, System::Windows::Forms::HelpNavigator navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,6 +452,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetHelpString (System.Windows.Forms.Control ctl, string helpString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHelpString(class System.Windows.Forms.Control ctl, string helpString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.SetHelpString(System.Windows.Forms.Control,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHelpString (ctl As Control, helpString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHelpString(System::Windows::Forms::Control ^ ctl, System::String ^ helpString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -474,6 +498,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetShowHelp (System.Windows.Forms.Control ctl, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetShowHelp(class System.Windows.Forms.Control ctl, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.SetShowHelp(System.Windows.Forms.Control,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetShowHelp (ctl As Control, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetShowHelp(System::Windows::Forms::Control ^ ctl, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -519,6 +545,8 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HelpProvider.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -551,6 +579,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

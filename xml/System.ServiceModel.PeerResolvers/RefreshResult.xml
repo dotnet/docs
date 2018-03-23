@@ -1,7 +1,9 @@
-<Type Name="RefreshResult" FullName="System.ServiceModel.PeerResolvers.RefreshResult">
+﻿<Type Name="RefreshResult" FullName="System.ServiceModel.PeerResolvers.RefreshResult">
   <TypeSignature Language="C#" Value="public enum RefreshResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RefreshResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.RefreshResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RefreshResult" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RefreshResult" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="RegistrationNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerResolvers.RefreshResult RegistrationNotFound = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.RefreshResult.RegistrationNotFound" />
+      <MemberSignature Language="VB.NET" Value="RegistrationNotFound" />
+      <MemberSignature Language="C++ CLI" Value="RegistrationNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerResolvers.RefreshResult</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Registration entry was not found.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerResolvers.RefreshResult Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.RefreshResult.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerResolvers.RefreshResult</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Registration entry was successfully refreshed.</summary>
       </Docs>

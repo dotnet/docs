@@ -1,7 +1,9 @@
-<Type Name="QuarticEase" FullName="System.Windows.Media.Animation.QuarticEase">
+﻿<Type Name="QuarticEase" FullName="System.Windows.Media.Animation.QuarticEase">
   <TypeSignature Language="C#" Value="public class QuarticEase : System.Windows.Media.Animation.EasingFunctionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QuarticEase extends System.Windows.Media.Animation.EasingFunctionBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.QuarticEase" />
+  <TypeSignature Language="VB.NET" Value="Public Class QuarticEase&#xA;Inherits EasingFunctionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QuarticEase : System::Windows::Media::Animation::EasingFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +67,8 @@
       <MemberSignature Language="C#" Value="public QuarticEase ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuarticEase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QuarticEase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuarticEase.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +120,8 @@
       <MemberSignature Language="C#" Value="protected override double EaseInCore (double normalizedTime);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 EaseInCore(float64 normalizedTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuarticEase.EaseInCore(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EaseInCore (normalizedTime As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double EaseInCore(double normalizedTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

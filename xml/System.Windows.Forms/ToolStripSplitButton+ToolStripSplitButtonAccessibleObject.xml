@@ -1,7 +1,9 @@
-<Type Name="ToolStripSplitButton+ToolStripSplitButtonAccessibleObject" FullName="System.Windows.Forms.ToolStripSplitButton+ToolStripSplitButtonAccessibleObject">
+﻿<Type Name="ToolStripSplitButton+ToolStripSplitButtonAccessibleObject" FullName="System.Windows.Forms.ToolStripSplitButton+ToolStripSplitButtonAccessibleObject">
   <TypeSignature Language="C#" Value="public class ToolStripSplitButton.ToolStripSplitButtonAccessibleObject : System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ToolStripSplitButton/ToolStripSplitButtonAccessibleObject extends System.Windows.Forms.ToolStripItem/ToolStripItemAccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSplitButton.ToolStripSplitButtonAccessibleObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripSplitButton.ToolStripSplitButtonAccessibleObject&#xA;Inherits ToolStripItem.ToolStripItemAccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class ToolStripSplitButton::ToolStripSplitButtonAccessibleObject : System::Windows::Forms::ToolStripItem::ToolStripItemAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public ToolStripSplitButtonAccessibleObject (System.Windows.Forms.ToolStripSplitButton item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripSplitButton item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.ToolStripSplitButtonAccessibleObject.#ctor(System.Windows.Forms.ToolStripSplitButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (item As ToolStripSplitButton)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSplitButtonAccessibleObject(System::Windows::Forms::ToolStripSplitButton ^ item);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public override void DoDefaultAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DoDefaultAction() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.ToolStripSplitButtonAccessibleObject.DoDefaultAction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

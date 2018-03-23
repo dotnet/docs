@@ -1,7 +1,9 @@
-<Type Name="MulticastIPAddressInformation" FullName="System.Net.NetworkInformation.MulticastIPAddressInformation">
+﻿<Type Name="MulticastIPAddressInformation" FullName="System.Net.NetworkInformation.MulticastIPAddressInformation">
   <TypeSignature Language="C#" Value="public abstract class MulticastIPAddressInformation : System.Net.NetworkInformation.IPAddressInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MulticastIPAddressInformation extends System.Net.NetworkInformation.IPAddressInformation" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.MulticastIPAddressInformation" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MulticastIPAddressInformation&#xA;Inherits IPAddressInformation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MulticastIPAddressInformation abstract : System::Net::NetworkInformation::IPAddressInformation" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="protected MulticastIPAddressInformation ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MulticastIPAddressInformation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public abstract long AddressPreferredLifetime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 AddressPreferredLifetime" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformation.AddressPreferredLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AddressPreferredLifetime As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressPreferredLifetime { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="public abstract long AddressValidLifetime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 AddressValidLifetime" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformation.AddressValidLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AddressValidLifetime As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressValidLifetime { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -140,6 +148,8 @@
       <MemberSignature Language="C#" Value="public abstract long DhcpLeaseLifetime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 DhcpLeaseLifetime" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformation.DhcpLeaseLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DhcpLeaseLifetime As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DhcpLeaseLifetime { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -177,6 +187,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.DuplicateAddressDetectionState DuplicateAddressDetectionState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.DuplicateAddressDetectionState DuplicateAddressDetectionState" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformation.DuplicateAddressDetectionState" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DuplicateAddressDetectionState As DuplicateAddressDetectionState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::DuplicateAddressDetectionState DuplicateAddressDetectionState { System::Net::NetworkInformation::DuplicateAddressDetectionState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -213,6 +225,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.PrefixOrigin PrefixOrigin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.PrefixOrigin PrefixOrigin" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformation.PrefixOrigin" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PrefixOrigin As PrefixOrigin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::PrefixOrigin PrefixOrigin { System::Net::NetworkInformation::PrefixOrigin get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -249,6 +263,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.SuffixOrigin SuffixOrigin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.SuffixOrigin SuffixOrigin" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformation.SuffixOrigin" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SuffixOrigin As SuffixOrigin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::SuffixOrigin SuffixOrigin { System::Net::NetworkInformation::SuffixOrigin get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

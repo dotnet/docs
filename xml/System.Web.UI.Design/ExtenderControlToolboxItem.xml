@@ -1,7 +1,9 @@
-<Type Name="ExtenderControlToolboxItem" FullName="System.Web.UI.Design.ExtenderControlToolboxItem">
+﻿<Type Name="ExtenderControlToolboxItem" FullName="System.Web.UI.Design.ExtenderControlToolboxItem">
   <TypeSignature Language="C#" Value="public class ExtenderControlToolboxItem : System.Web.UI.Design.WebControlToolboxItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ExtenderControlToolboxItem extends System.Web.UI.Design.WebControlToolboxItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ExtenderControlToolboxItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExtenderControlToolboxItem&#xA;Inherits WebControlToolboxItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtenderControlToolboxItem : System::Web::UI::Design::WebControlToolboxItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ExtenderControlToolboxItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExtenderControlToolboxItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlToolboxItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtenderControlToolboxItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -43,6 +56,7 @@
       <MemberSignature Language="C#" Value="public ExtenderControlToolboxItem (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlToolboxItem.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtenderControlToolboxItem(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -61,6 +75,8 @@
       <MemberSignature Language="C#" Value="protected ExtenderControlToolboxItem (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlToolboxItem.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExtenderControlToolboxItem(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -81,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Type&gt; GetTargetControlTypes (System.ComponentModel.Design.IDesignerHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Type&gt; GetTargetControlTypes(class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlToolboxItem.GetTargetControlTypes(System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTargetControlTypes (host As IDesignerHost) As ReadOnlyCollection(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Type ^&gt; ^ GetTargetControlTypes(System::ComponentModel::Design::IDesignerHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -110,6 +128,7 @@
       <MemberSignature Language="C#" Value="public override void Initialize (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExtenderControlToolboxItem.Initialize(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -127,14 +146,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ExtenderControlToolboxItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

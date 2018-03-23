@@ -1,7 +1,9 @@
-<Type Name="PresentationSource" FullName="System.Windows.PresentationSource">
+﻿<Type Name="PresentationSource" FullName="System.Windows.PresentationSource">
   <TypeSignature Language="C#" Value="public abstract class PresentationSource : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract PresentationSource extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.PresentationSource" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PresentationSource&#xA;Inherits DispatcherObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PresentationSource abstract : System::Windows::Threading::DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="protected PresentationSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PresentationSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected void AddSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.AddSource" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddSource ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public static void AddSourceChangedHandler (System.Windows.IInputElement element, System.Windows.SourceChangedEventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddSourceChangedHandler(class System.Windows.IInputElement element, class System.Windows.SourceChangedEventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.AddSourceChangedHandler(System.Windows.IInputElement,System.Windows.SourceChangedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddSourceChangedHandler (element As IInputElement, handler As SourceChangedEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddSourceChangedHandler(System::Windows::IInputElement ^ element, System::Windows::SourceChangedEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +115,8 @@
       <MemberSignature Language="C#" Value="protected void ClearContentRenderedListeners ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearContentRenderedListeners() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.ClearContentRenderedListeners" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ClearContentRenderedListeners ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ClearContentRenderedListeners();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.CompositionTarget CompositionTarget { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.CompositionTarget CompositionTarget" />
       <MemberSignature Language="DocId" Value="P:System.Windows.PresentationSource.CompositionTarget" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompositionTarget As CompositionTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::CompositionTarget ^ CompositionTarget { System::Windows::Media::CompositionTarget ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +171,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContentRendered;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContentRendered" />
       <MemberSignature Language="DocId" Value="E:System.Windows.PresentationSource.ContentRendered" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContentRendered As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContentRendered;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +190,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable CurrentSources { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.IEnumerable CurrentSources" />
       <MemberSignature Language="DocId" Value="P:System.Windows.PresentationSource.CurrentSources" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentSources As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::IEnumerable ^ CurrentSources { System::Collections::IEnumerable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -209,6 +225,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.PresentationSource FromDependencyObject (System.Windows.DependencyObject dependencyObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.PresentationSource FromDependencyObject(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.FromDependencyObject(System.Windows.DependencyObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::PresentationSource ^ FromDependencyObject(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +254,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.PresentationSource FromVisual (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.PresentationSource FromVisual(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.FromVisual(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::PresentationSource ^ FromVisual(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -267,6 +285,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Windows.Media.CompositionTarget GetCompositionTargetCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Media.CompositionTarget GetCompositionTargetCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.GetCompositionTargetCore" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetCompositionTargetCore () As CompositionTarget" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Media::CompositionTarget ^ GetCompositionTargetCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +311,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsDisposed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDisposed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.PresentationSource.IsDisposed" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDisposed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDisposed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -313,6 +335,8 @@
       <MemberSignature Language="C#" Value="protected void RemoveSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.RemoveSource" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RemoveSource ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -331,6 +355,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveSourceChangedHandler (System.Windows.IInputElement e, System.Windows.SourceChangedEventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveSourceChangedHandler(class System.Windows.IInputElement e, class System.Windows.SourceChangedEventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.RemoveSourceChangedHandler(System.Windows.IInputElement,System.Windows.SourceChangedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveSourceChangedHandler (e As IInputElement, handler As SourceChangedEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveSourceChangedHandler(System::Windows::IInputElement ^ e, System::Windows::SourceChangedEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -366,6 +392,8 @@
       <MemberSignature Language="C#" Value="protected void RootChanged (System.Windows.Media.Visual oldRoot, System.Windows.Media.Visual newRoot);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RootChanged(class System.Windows.Media.Visual oldRoot, class System.Windows.Media.Visual newRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PresentationSource.RootChanged(System.Windows.Media.Visual,System.Windows.Media.Visual)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RootChanged (oldRoot As Visual, newRoot As Visual)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RootChanged(System::Windows::Media::Visual ^ oldRoot, System::Windows::Media::Visual ^ newRoot);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -410,6 +438,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Visual RootVisual { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual RootVisual" />
       <MemberSignature Language="DocId" Value="P:System.Windows.PresentationSource.RootVisual" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property RootVisual As Visual" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Visual ^ RootVisual { System::Windows::Media::Visual ^ get(); void set(System::Windows::Media::Visual ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="WebSuccessAuditEvent" FullName="System.Web.Management.WebSuccessAuditEvent">
+﻿<Type Name="WebSuccessAuditEvent" FullName="System.Web.Management.WebSuccessAuditEvent">
   <TypeSignature Language="C#" Value="public class WebSuccessAuditEvent : System.Web.Management.WebAuditEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebSuccessAuditEvent extends System.Web.Management.WebAuditEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebSuccessAuditEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebSuccessAuditEvent&#xA;Inherits WebAuditEvent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebSuccessAuditEvent : System::Web::Management::WebAuditEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,10 +88,21 @@
     <altmember cref="T:System.Web.Management.WebEventCodes" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebSuccessAuditEvent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebSuccessAuditEvent (string message, object eventSource, int eventCode);" />
+      <MemberSignature Language="C#" Value="protected internal WebSuccessAuditEvent (string message, object eventSource, int eventCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebSuccessAuditEvent.#ctor(System.String,System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebSuccessAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,9 +140,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebSuccessAuditEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
+      <MemberSignature Language="C#" Value="protected internal WebSuccessAuditEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebSuccessAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebSuccessAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,9 +184,11 @@
       </Docs>
     </Member>
     <Member MemberName="IncrementPerfCounters">
-      <MemberSignature Language="C#" Value="protected override void IncrementPerfCounters ();" />
+      <MemberSignature Language="C#" Value="protected internal override void IncrementPerfCounters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void IncrementPerfCounters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebSuccessAuditEvent.IncrementPerfCounters" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub IncrementPerfCounters ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void IncrementPerfCounters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,14 +212,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebSuccessAuditEvent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

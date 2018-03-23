@@ -1,7 +1,9 @@
-<Type Name="SimpleWebHandlerParser" FullName="System.Web.UI.SimpleWebHandlerParser">
+﻿<Type Name="SimpleWebHandlerParser" FullName="System.Web.UI.SimpleWebHandlerParser">
   <TypeSignature Language="C#" Value="public abstract class SimpleWebHandlerParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SimpleWebHandlerParser extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.SimpleWebHandlerParser" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SimpleWebHandlerParser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SimpleWebHandlerParser abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="protected SimpleWebHandlerParser (System.Web.HttpContext context, string virtualPath, string physicalPath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context, string virtualPath, string physicalPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.SimpleWebHandlerParser.#ctor(System.Web.HttpContext,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (context As HttpContext, virtualPath As String, physicalPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimpleWebHandlerParser(System::Web::HttpContext ^ context, System::String ^ virtualPath, System::String ^ physicalPath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected abstract string DefaultDirectiveName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultDirectiveName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.SimpleWebHandlerParser.DefaultDirectiveName" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property DefaultDirectiveName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ DefaultDirectiveName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="protected Type GetCompiledTypeFromCache ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Type GetCompiledTypeFromCache() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.SimpleWebHandlerParser.GetCompiledTypeFromCache" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetCompiledTypeFromCache () As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Type ^ GetCompiledTypeFromCache();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

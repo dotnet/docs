@@ -1,7 +1,9 @@
-<Type Name="RSASignaturePaddingMode" FullName="System.Security.Cryptography.RSASignaturePaddingMode">
+﻿<Type Name="RSASignaturePaddingMode" FullName="System.Security.Cryptography.RSASignaturePaddingMode">
   <TypeSignature Language="C#" Value="public enum RSASignaturePaddingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RSASignaturePaddingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSASignaturePaddingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RSASignaturePaddingMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RSASignaturePaddingMode" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Pkcs1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.RSASignaturePaddingMode Pkcs1 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSASignaturePaddingMode.Pkcs1" />
+      <MemberSignature Language="VB.NET" Value="Pkcs1" />
+      <MemberSignature Language="C++ CLI" Value="Pkcs1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -50,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.RSASignaturePaddingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>PKCS #1 v1.5</summary>
         <remarks>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="Pss" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.RSASignaturePaddingMode Pss = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSASignaturePaddingMode.Pss" />
+      <MemberSignature Language="VB.NET" Value="Pss" />
+      <MemberSignature Language="C++ CLI" Value="Pss" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -86,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.RSASignaturePaddingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Probabilistic Signature Scheme</summary>
         <remarks>

@@ -1,7 +1,9 @@
-<Type Name="Point3D" FullName="System.Windows.Media.Media3D.Point3D">
+﻿<Type Name="Point3D" FullName="System.Windows.Media.Media3D.Point3D">
   <TypeSignature Language="C#" Value="public struct Point3D : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Point3D extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Point3D" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Point3D&#xA;Implements IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Point3D : IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +71,8 @@
       <MemberSignature Language="C#" Value="public Point3D (double x, double y, double z);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y, float64 z) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Double, y As Double, z As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Point3D(double x, double y, double z);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +95,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D Add (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Vector3D vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Point3D Add(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Add(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (point As Point3D, vector As Vector3D) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D Add(System::Windows::Media::Media3D::Point3D point, System::Windows::Media::Media3D::Vector3D vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,10 +133,21 @@
         <altmember cref="M:System.Windows.Media.Media3D.Point3D.op_Addition(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Point3D" /> structures for equality.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -174,6 +191,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.Media3D.Point3D value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Media.Media3D.Point3D value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Equals(System.Windows.Media.Media3D.Point3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Point3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::Media3D::Point3D value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -205,6 +224,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.Media3D.Point3D point1, valuetype System.Windows.Media.Media3D.Point3D point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Equals(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (point1 As Point3D, point2 As Point3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Media3D::Point3D point1, System::Windows::Media::Media3D::Point3D point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -248,6 +269,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -277,6 +300,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D Multiply (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Matrix3D matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Point3D Multiply(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Matrix3D matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Multiply(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (point As Point3D, matrix As Matrix3D) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D Multiply(System::Windows::Media::Media3D::Point3D point, System::Windows::Media::Media3D::Matrix3D matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -302,6 +327,8 @@
       <MemberSignature Language="C#" Value="public void Offset (double offsetX, double offsetY, double offsetZ);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Offset(float64 offsetX, float64 offsetY, float64 offsetZ) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Offset(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Offset (offsetX As Double, offsetY As Double, offsetZ As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(double offsetX, double offsetY, double offsetZ);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -344,6 +371,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D operator + (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Vector3D vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Addition(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Addition(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (point As Point3D, vector As Vector3D) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D operator +(System::Windows::Media::Media3D::Point3D point, System::Windows::Media::Media3D::Vector3D vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -384,6 +413,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Media3D.Point3D point1, valuetype System.Windows.Media.Media3D.Point3D point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Equality(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (point1 As Point3D, point2 As Point3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Media3D::Point3D point1, System::Windows::Media::Media3D::Point3D point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -423,10 +454,21 @@
         <altmember cref="Overload:System.Windows.Media.Media3D.Point3D.Equals" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Explicit">
       <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Media.Media3D.Point4D (System.Windows.Media.Media3D.Point3D point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point4D op_Explicit(valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Explicit(System.Windows.Media.Media3D.Point3D)~System.Windows.Media.Media3D.Point4D" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (point As Point3D) As Point4D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Media::Media3D::Point4D(System::Windows::Media::Media3D::Point3D point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -449,6 +491,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Media.Media3D.Vector3D (System.Windows.Media.Media3D.Point3D point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Explicit(valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Explicit(System.Windows.Media.Media3D.Point3D)~System.Windows.Media.Media3D.Vector3D" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (point As Point3D) As Vector3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Media::Media3D::Vector3D(System::Windows::Media::Media3D::Point3D point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -471,6 +515,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Media3D.Point3D point1, valuetype System.Windows.Media.Media3D.Point3D point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Inequality(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (point1 As Point3D, point2 As Point3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Media3D::Point3D point1, System::Windows::Media::Media3D::Point3D point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -513,6 +559,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D operator * (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Matrix3D matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Multiply(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Matrix3D matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Multiply(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (point As Point3D, matrix As Matrix3D) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D operator *(System::Windows::Media::Media3D::Point3D point, System::Windows::Media::Media3D::Matrix3D matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -544,10 +592,21 @@
         <altmember cref="M:System.Windows.Media.Media3D.Point3D.Multiply(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Matrix3D)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Subtraction">
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D operator - (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Subtraction(valuetype System.Windows.Media.Media3D.Point3D point1, valuetype System.Windows.Media.Media3D.Point3D point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Subtraction(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (point1 As Point3D, point2 As Point3D) As Vector3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D operator -(System::Windows::Media::Media3D::Point3D point1, System::Windows::Media::Media3D::Point3D point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -583,6 +642,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D operator - (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Vector3D vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Subtraction(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Subtraction(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (point As Point3D, vector As Vector3D) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D operator -(System::Windows::Media::Media3D::Point3D point, System::Windows::Media::Media3D::Vector3D vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -618,6 +679,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D Parse (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Point3D Parse(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D Parse(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -646,10 +709,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Subtract">
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D Subtract (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D Subtract(valuetype System.Windows.Media.Media3D.Point3D point1, valuetype System.Windows.Media.Media3D.Point3D point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Subtract(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (point1 As Point3D, point2 As Point3D) As Vector3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D Subtract(System::Windows::Media::Media3D::Point3D point1, System::Windows::Media::Media3D::Point3D point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -685,6 +759,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D Subtract (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Vector3D vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Point3D Subtract(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.Subtract(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (point As Point3D, vector As Vector3D) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D Subtract(System::Windows::Media::Media3D::Point3D point, System::Windows::Media::Media3D::Vector3D vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -720,7 +796,12 @@
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -748,10 +829,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -771,6 +863,8 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -793,6 +887,8 @@
       <MemberSignature Language="C#" Value="public double X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Point3D.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -821,6 +917,8 @@
       <MemberSignature Language="C#" Value="public double Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Point3D.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -849,6 +947,8 @@
       <MemberSignature Language="C#" Value="public double Z { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Z" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Point3D.Z" />
+      <MemberSignature Language="VB.NET" Value="Public Property Z As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Z { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -873,50 +973,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Subtract">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Explicit">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Subtraction">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Point3D" /> structures for equality.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

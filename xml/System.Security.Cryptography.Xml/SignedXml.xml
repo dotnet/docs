@@ -1,7 +1,9 @@
-<Type Name="SignedXml" FullName="System.Security.Cryptography.Xml.SignedXml">
+﻿<Type Name="SignedXml" FullName="System.Security.Cryptography.Xml.SignedXml">
   <TypeSignature Language="C#" Value="public class SignedXml" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SignedXml extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.SignedXml" />
+  <TypeSignature Language="VB.NET" Value="Public Class SignedXml" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SignedXml" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -167,10 +169,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.SignedXml" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SignedXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedXml();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -213,6 +226,8 @@
       <MemberSignature Language="C#" Value="public SignedXml (System.Xml.XmlDocument document);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDocument document) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.#ctor(System.Xml.XmlDocument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (document As XmlDocument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedXml(System::Xml::XmlDocument ^ document);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -263,6 +278,8 @@
       <MemberSignature Language="C#" Value="public SignedXml (System.Xml.XmlElement elem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlElement elem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.#ctor(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elem As XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedXml(System::Xml::XmlElement ^ elem);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -286,6 +303,7 @@
       <MemberSignature Language="C#" Value="public void AddObject (System.Security.Cryptography.Xml.DataObject dataObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddObject(class System.Security.Cryptography.Xml.DataObject dataObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.AddObject(System.Security.Cryptography.Xml.DataObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddObject(System::Security::Cryptography::Xml::DataObject ^ dataObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -331,6 +349,7 @@
       <MemberSignature Language="C#" Value="public void AddReference (System.Security.Cryptography.Xml.Reference reference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReference(class System.Security.Cryptography.Xml.Reference reference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.AddReference(System.Security.Cryptography.Xml.Reference)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddReference(System::Security::Cryptography::Xml::Reference ^ reference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -384,10 +403,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the <see cref="P:System.Security.Cryptography.Xml.SignedXml.Signature" /> property verifies.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CheckSignature">
       <MemberSignature Language="C#" Value="public bool CheckSignature ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignature() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.CheckSignature" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckSignature () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckSignature();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -451,6 +481,8 @@
       <MemberSignature Language="C#" Value="public bool CheckSignature (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignature(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.CheckSignature(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckSignature (key As AsymmetricAlgorithm) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckSignature(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -505,6 +537,8 @@
       <MemberSignature Language="C#" Value="public bool CheckSignature (System.Security.Cryptography.KeyedHashAlgorithm macAlg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignature(class System.Security.Cryptography.KeyedHashAlgorithm macAlg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.CheckSignature(System.Security.Cryptography.KeyedHashAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckSignature (macAlg As KeyedHashAlgorithm) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckSignature(System::Security::Cryptography::KeyedHashAlgorithm ^ macAlg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -559,6 +593,8 @@
       <MemberSignature Language="C#" Value="public bool CheckSignature (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, bool verifySignatureOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignature(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, bool verifySignatureOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckSignature (certificate As X509Certificate2, verifySignatureOnly As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckSignature(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate, bool verifySignatureOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -617,6 +653,8 @@
       <MemberSignature Language="C#" Value="public bool CheckSignatureReturningKey (out System.Security.Cryptography.AsymmetricAlgorithm signingKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignatureReturningKey([out] class System.Security.Cryptography.AsymmetricAlgorithm&amp; signingKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.CheckSignatureReturningKey(System.Security.Cryptography.AsymmetricAlgorithm@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckSignatureReturningKey (ByRef signingKey As AsymmetricAlgorithm) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckSignatureReturningKey([Runtime::InteropServices::Out] System::Security::Cryptography::AsymmetricAlgorithm ^ % signingKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -667,10 +705,21 @@
  The hash algorithm could not be created.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputeSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes an XML digital signature.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ComputeSignature">
       <MemberSignature Language="C#" Value="public void ComputeSignature ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ComputeSignature() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.ComputeSignature" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ComputeSignature ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComputeSignature();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -726,6 +775,8 @@
       <MemberSignature Language="C#" Value="public void ComputeSignature (System.Security.Cryptography.KeyedHashAlgorithm macAlg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ComputeSignature(class System.Security.Cryptography.KeyedHashAlgorithm macAlg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.ComputeSignature(System.Security.Cryptography.KeyedHashAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ComputeSignature (macAlg As KeyedHashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComputeSignature(System::Security::Cryptography::KeyedHashAlgorithm ^ macAlg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -785,6 +836,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.EncryptedXml EncryptedXml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.EncryptedXml EncryptedXml" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.EncryptedXml" />
+      <MemberSignature Language="VB.NET" Value="Public Property EncryptedXml As EncryptedXml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::EncryptedXml ^ EncryptedXml { System::Security::Cryptography::Xml::EncryptedXml ^ get(); void set(System::Security::Cryptography::Xml::EncryptedXml ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -812,6 +865,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlElement GetIdElement (System.Xml.XmlDocument document, string idValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlElement GetIdElement(class System.Xml.XmlDocument document, string idValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.GetIdElement(System.Xml.XmlDocument,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIdElement (document As XmlDocument, idValue As String) As XmlElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlElement ^ GetIdElement(System::Xml::XmlDocument ^ document, System::String ^ idValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -840,6 +895,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Security.Cryptography.AsymmetricAlgorithm GetPublicKey ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.Cryptography.AsymmetricAlgorithm GetPublicKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.GetPublicKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetPublicKey () As AsymmetricAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::Cryptography::AsymmetricAlgorithm ^ GetPublicKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -873,6 +930,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -901,6 +960,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.KeyInfo KeyInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.KeyInfo KeyInfo" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.KeyInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyInfo As KeyInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::KeyInfo ^ KeyInfo { System::Security::Cryptography::Xml::KeyInfo ^ get(); void set(System::Security::Cryptography::Xml::KeyInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -949,6 +1010,8 @@
       <MemberSignature Language="C#" Value="public void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -991,6 +1054,8 @@
       <MemberSignature Language="C#" Value="protected System.Security.Cryptography.Xml.Signature m_signature;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Security.Cryptography.Xml.Signature m_signature" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.m_signature" />
+      <MemberSignature Language="VB.NET" Value="Protected m_signature As Signature " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Security::Cryptography::Xml::Signature ^ m_signature;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1012,6 +1077,8 @@
       <MemberSignature Language="C#" Value="protected string m_strSigningKeyName;" />
       <MemberSignature Language="ILAsm" Value=".field family string m_strSigningKeyName" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.m_strSigningKeyName" />
+      <MemberSignature Language="VB.NET" Value="Protected m_strSigningKeyName As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_strSigningKeyName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1033,6 +1100,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlResolver Resolver { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlResolver Resolver" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.Resolver" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resolver As XmlResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlResolver ^ Resolver {  void set(System::Xml::XmlResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1067,6 +1136,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; SafeCanonicalizationMethods { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; SafeCanonicalizationMethods" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.SafeCanonicalizationMethods" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeCanonicalizationMethods As Collection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ SafeCanonicalizationMethods { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1098,6 +1169,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.Signature Signature { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.Signature Signature" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.Signature" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As Signature" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::Signature ^ Signature { System::Security::Cryptography::Xml::Signature ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1146,6 +1219,8 @@
       <MemberSignature Language="C#" Value="public Func&lt;System.Security.Cryptography.Xml.SignedXml,bool&gt; SignatureFormatValidator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Security.Cryptography.Xml.SignedXml, bool&gt; SignatureFormatValidator" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.SignatureFormatValidator" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignatureFormatValidator As Func(Of SignedXml, Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Security::Cryptography::Xml::SignedXml ^, bool&gt; ^ SignatureFormatValidator { Func&lt;System::Security::Cryptography::Xml::SignedXml ^, bool&gt; ^ get(); void set(Func&lt;System::Security::Cryptography::Xml::SignedXml ^, bool&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1182,6 +1257,8 @@
       <MemberSignature Language="C#" Value="public string SignatureLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SignatureLength" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.SignatureLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureLength As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureLength { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1204,6 +1281,8 @@
       <MemberSignature Language="C#" Value="public string SignatureMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SignatureMethod" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.SignatureMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureMethod As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureMethod { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1237,6 +1316,8 @@
       <MemberSignature Language="C#" Value="public byte[] SignatureValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SignatureValue" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.SignatureValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureValue As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ SignatureValue { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1270,6 +1351,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.SignedInfo SignedInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.SignedInfo SignedInfo" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.SignedInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedInfo As SignedInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::SignedInfo ^ SignedInfo { System::Security::Cryptography::Xml::SignedInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1303,6 +1386,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.AsymmetricAlgorithm SigningKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.AsymmetricAlgorithm SigningKey" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.SigningKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property SigningKey As AsymmetricAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::AsymmetricAlgorithm ^ SigningKey { System::Security::Cryptography::AsymmetricAlgorithm ^ get(); void set(System::Security::Cryptography::AsymmetricAlgorithm ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1353,6 +1438,8 @@
       <MemberSignature Language="C#" Value="public string SigningKeyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SigningKeyName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedXml.SigningKeyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SigningKeyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SigningKeyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1375,6 +1462,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDecryptionTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDecryptionTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDecryptionTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDecryptionTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDecryptionTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1407,6 +1496,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigBase64TransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigBase64TransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigBase64TransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigBase64TransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigBase64TransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1450,6 +1541,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigC14NTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigC14NTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigC14NTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigC14NTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1495,6 +1588,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigC14NWithCommentsTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigC14NWithCommentsTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NWithCommentsTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigC14NWithCommentsTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigC14NWithCommentsTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1531,6 +1626,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigCanonicalizationUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigCanonicalizationUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigCanonicalizationUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigCanonicalizationUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1567,6 +1664,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigCanonicalizationWithCommentsUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigCanonicalizationWithCommentsUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigCanonicalizationWithCommentsUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigCanonicalizationWithCommentsUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1603,6 +1702,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigDSAUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigDSAUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigDSAUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigDSAUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1635,6 +1736,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigEnvelopedSignatureTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigEnvelopedSignatureTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigEnvelopedSignatureTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigEnvelopedSignatureTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigEnvelopedSignatureTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1678,6 +1781,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigExcC14NTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigExcC14NTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigExcC14NTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigExcC14NTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1721,6 +1826,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigExcC14NWithCommentsTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigExcC14NWithCommentsTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NWithCommentsTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigExcC14NWithCommentsTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigExcC14NWithCommentsTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1764,6 +1871,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigHMACSHA1Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigHMACSHA1Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigHMACSHA1Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigHMACSHA1Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigHMACSHA1Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1796,6 +1905,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigMinimalCanonicalizationUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigMinimalCanonicalizationUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigMinimalCanonicalizationUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigMinimalCanonicalizationUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigMinimalCanonicalizationUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1828,6 +1939,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigNamespaceUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigNamespaceUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigNamespaceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigNamespaceUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigNamespaceUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1860,6 +1973,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigRSASHA1Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigRSASHA1Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigRSASHA1Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigRSASHA1Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1892,6 +2007,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigRSASHA256Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigRSASHA256Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA256Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigRSASHA256Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigRSASHA256Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1920,6 +2037,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigRSASHA384Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigRSASHA384Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA384Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigRSASHA384Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigRSASHA384Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1948,6 +2067,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigRSASHA512Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigRSASHA512Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA512Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigRSASHA512Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigRSASHA512Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1976,6 +2097,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigSHA1Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigSHA1Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA1Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigSHA1Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigSHA1Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -2008,6 +2131,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigSHA256Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigSHA256Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA256Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigSHA256Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigSHA256Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -2036,6 +2161,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigSHA384Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigSHA384Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA384Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigSHA384Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigSHA384Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -2064,6 +2191,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigSHA512Url;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigSHA512Url" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA512Url" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigSHA512Url As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigSHA512Url;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -2092,6 +2221,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigXPathTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigXPathTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigXPathTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigXPathTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigXPathTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -2134,6 +2265,8 @@
       <MemberSignature Language="C#" Value="public const string XmlDsigXsltTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlDsigXsltTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigXsltTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlDsigXsltTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlDsigXsltTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -2177,6 +2310,8 @@
       <MemberSignature Language="C#" Value="public const string XmlLicenseTransformUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XmlLicenseTransformUrl" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Xml.SignedXml.XmlLicenseTransformUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const XmlLicenseTransformUrl As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XmlLicenseTransformUrl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -2205,32 +2340,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CheckSignature">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the <see cref="P:System.Security.Cryptography.Xml.SignedXml.Signature" /> property verifies.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.SignedXml" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ComputeSignature">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Computes an XML digital signature.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

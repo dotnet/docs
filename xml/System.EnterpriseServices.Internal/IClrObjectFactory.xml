@@ -1,7 +1,9 @@
-<Type Name="IClrObjectFactory" FullName="System.EnterpriseServices.Internal.IClrObjectFactory">
+﻿<Type Name="IClrObjectFactory" FullName="System.EnterpriseServices.Internal.IClrObjectFactory">
   <TypeSignature Language="C#" Value="public interface IClrObjectFactory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClrObjectFactory" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IClrObjectFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IClrObjectFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IClrObjectFactory" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public object CreateFromAssembly (string assembly, string type, string mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateFromAssembly(string assembly, string type, string mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromAssembly(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFromAssembly (assembly As String, type As String, mode As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateFromAssembly(System::String ^ assembly, System::String ^ type, System::String ^ mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public object CreateFromMailbox (string Mailbox, string Mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateFromMailbox(string Mailbox, string Mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromMailbox(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFromMailbox (Mailbox As String, Mode As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateFromMailbox(System::String ^ Mailbox, System::String ^ Mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public object CreateFromVroot (string VrootUrl, string Mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateFromVroot(string VrootUrl, string Mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromVroot(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFromVroot (VrootUrl As String, Mode As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateFromVroot(System::String ^ VrootUrl, System::String ^ Mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -131,6 +139,8 @@
       <MemberSignature Language="C#" Value="public object CreateFromWsdl (string WsdlUrl, string Mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateFromWsdl(string WsdlUrl, string Mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromWsdl(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFromWsdl (WsdlUrl As String, Mode As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateFromWsdl(System::String ^ WsdlUrl, System::String ^ Mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

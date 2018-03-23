@@ -1,7 +1,9 @@
-<Type Name="StoreLocation" FullName="System.Security.Cryptography.X509Certificates.StoreLocation">
+﻿<Type Name="StoreLocation" FullName="System.Security.Cryptography.X509Certificates.StoreLocation">
   <TypeSignature Language="C#" Value="public enum StoreLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StoreLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.StoreLocation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StoreLocation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StoreLocation" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="CurrentUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.StoreLocation CurrentUser = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser" />
+      <MemberSignature Language="VB.NET" Value="CurrentUser" />
+      <MemberSignature Language="C++ CLI" Value="CurrentUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -64,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The X.509 certificate store used by the current user.</summary>
         <remarks>
@@ -84,6 +89,8 @@
       <MemberSignature Language="C#" Value="LocalMachine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.StoreLocation LocalMachine = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine" />
+      <MemberSignature Language="VB.NET" Value="LocalMachine" />
+      <MemberSignature Language="C++ CLI" Value="LocalMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -103,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The X.509 certificate store assigned to the local machine.</summary>
         <remarks>

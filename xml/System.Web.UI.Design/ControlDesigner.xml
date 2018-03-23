@@ -1,7 +1,9 @@
-<Type Name="ControlDesigner" FullName="System.Web.UI.Design.ControlDesigner">
+﻿<Type Name="ControlDesigner" FullName="System.Web.UI.Design.ControlDesigner">
   <TypeSignature Language="C#" Value="public class ControlDesigner : System.Web.UI.Design.HtmlControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlDesigner extends System.Web.UI.Design.HtmlControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlDesigner&#xA;Inherits HtmlControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlDesigner : System::Web::UI::Design::HtmlControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,6 +115,8 @@
       <MemberSignature Language="C#" Value="public ControlDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -128,6 +132,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -160,6 +166,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowResize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowResize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.AllowResize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowResize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowResize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -194,6 +202,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -228,10 +238,21 @@
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateErrorDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates HTML markup to display an error message at design time.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateErrorDesignTimeHtml">
       <MemberSignature Language="C#" Value="protected string CreateErrorDesignTimeHtml (string errorMessage);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string CreateErrorDesignTimeHtml(string errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreateErrorDesignTimeHtml (errorMessage As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CreateErrorDesignTimeHtml(System::String ^ errorMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -273,6 +294,8 @@
       <MemberSignature Language="C#" Value="protected string CreateErrorDesignTimeHtml (string errorMessage, Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string CreateErrorDesignTimeHtml(string errorMessage, class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreateErrorDesignTimeHtml (errorMessage As String, e As Exception) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CreateErrorDesignTimeHtml(System::String ^ errorMessage, Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -312,10 +335,24 @@
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreatePlaceHolderDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a simple rectangular placeholder representation that displays the type and ID of the control.</summary>
+        <block subset="none" type="overrides">
+          <para>The typical design pattern is to try to get HTML markup through the associated control, and then if an error is encountered, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method. If no markup is returned by the control, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" /> method, which if it is not overridden to provide specific markup, calls the <see cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" /> method, which should contain information about the type and ID of the control.</para>
+        </block>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreatePlaceHolderDesignTimeHtml">
       <MemberSignature Language="C#" Value="protected string CreatePlaceHolderDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string CreatePlaceHolderDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreatePlaceHolderDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CreatePlaceHolderDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -338,6 +375,8 @@
       <MemberSignature Language="C#" Value="protected string CreatePlaceHolderDesignTimeHtml (string instruction);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string CreatePlaceHolderDesignTimeHtml(string instruction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreatePlaceHolderDesignTimeHtml (instruction As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CreatePlaceHolderDesignTimeHtml(System::String ^ instruction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -375,6 +414,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.Control CreateViewControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Control CreateViewControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreateViewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateViewControl () As Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::Control ^ CreateViewControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -394,6 +435,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool DataBindingsEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DataBindingsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.DataBindingsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DataBindingsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DataBindingsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -414,6 +457,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Design.ControlDesignerState DesignerState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.ControlDesignerState DesignerState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.DesignerState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DesignerState As ControlDesignerState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Design::ControlDesignerState ^ DesignerState { System::Web::UI::Design::ControlDesignerState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -441,6 +486,8 @@
       <MemberSignature Language="C#" Value="protected object DesignTimeElementView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DesignTimeElementView" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.DesignTimeElementView" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DesignTimeElementView As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ DesignTimeElementView { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -474,6 +521,8 @@
       <MemberSignature Language="C#" Value="public virtual bool DesignTimeHtmlRequiresLoadComplete { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DesignTimeHtmlRequiresLoadComplete" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DesignTimeHtmlRequiresLoadComplete As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignTimeHtmlRequiresLoadComplete { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -510,6 +559,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetBounds ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetBounds() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetBounds" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBounds () As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetBounds();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -527,10 +578,22 @@
         <altmember cref="M:System.Web.UI.Design.DesignerRegion.GetBounds" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the HTML markup that is used to represent the control at design time.</summary>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDesignTimeHtml">
       <MemberSignature Language="C#" Value="public virtual string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -566,6 +629,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetDesignTimeHtml (System.Web.UI.Design.DesignerRegionCollection regions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDesignTimeHtml(class System.Web.UI.Design.DesignerRegionCollection regions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetDesignTimeHtml(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -606,6 +671,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.Design.DesignTimeResourceProviderFactory GetDesignTimeResourceProviderFactory (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.Design.DesignTimeResourceProviderFactory GetDesignTimeResourceProviderFactory(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeResourceProviderFactory(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDesignTimeResourceProviderFactory (serviceProvider As IServiceProvider) As DesignTimeResourceProviderFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Design::DesignTimeResourceProviderFactory ^ GetDesignTimeResourceProviderFactory(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -641,6 +708,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEditableDesignerRegionContent (region As EditableDesignerRegion) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -681,6 +750,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetEmptyDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetEmptyDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetEmptyDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetEmptyDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -717,6 +788,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetErrorDesignTimeHtml (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetErrorDesignTimeHtml(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetErrorDesignTimeHtml (e As Exception) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetErrorDesignTimeHtml(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -759,6 +832,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetPersistenceContent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPersistenceContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetPersistenceContent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPersistenceContent () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPersistenceContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -782,6 +857,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetPersistInnerHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPersistInnerHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetPersistInnerHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPersistInnerHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPersistInnerHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -812,10 +889,22 @@
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.Tag" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetViewRendering">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an object that contains the design-time markup for the content and regions of the associated control.</summary>
+        <altmember cref="T:System.Web.UI.Design.ViewRendering" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetViewRendering">
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.ViewRendering GetViewRendering ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Design.ViewRendering GetViewRendering() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetViewRendering" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetViewRendering () As ViewRendering" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::ViewRendering ^ GetViewRendering();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -836,6 +925,7 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.Design.ViewRendering GetViewRendering (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.Design.ViewRendering GetViewRendering(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetViewRendering(System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Design::ViewRendering ^ GetViewRendering(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -859,6 +949,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.Design.ViewRendering GetViewRendering (System.Web.UI.Design.ControlDesigner designer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.Design.ViewRendering GetViewRendering(class System.Web.UI.Design.ControlDesigner designer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetViewRendering(System.Web.UI.Design.ControlDesigner)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetViewRendering (designer As ControlDesigner) As ViewRendering" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Design::ViewRendering ^ GetViewRendering(System::Web::UI::Design::ControlDesigner ^ designer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -879,9 +971,11 @@
       </Docs>
     </Member>
     <Member MemberName="HidePropertiesInTemplateMode">
-      <MemberSignature Language="C#" Value="protected virtual bool HidePropertiesInTemplateMode { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool HidePropertiesInTemplateMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HidePropertiesInTemplateMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.HidePropertiesInTemplateMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property HidePropertiesInTemplateMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HidePropertiesInTemplateMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -908,6 +1002,8 @@
       <MemberSignature Language="C#" Value="public virtual string ID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -934,6 +1030,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -977,6 +1075,8 @@
       <MemberSignature Language="C#" Value="protected bool InTemplateMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InTemplateMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.InTemplateMode" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InTemplateMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool InTemplateMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1027,6 +1127,8 @@
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1054,6 +1156,7 @@
       <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Rectangle rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.Invalidate(System.Drawing.Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(System::Drawing::Rectangle rectangle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1080,10 +1183,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeTransactedChange">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Wraps a series of changes into a transaction, using the specified parameters that can be rolled back as a unit with the undo functionality of the design host.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeTransactedChange">
       <MemberSignature Language="C#" Value="public static void InvokeTransactedChange (System.ComponentModel.IComponent component, System.Web.UI.Design.TransactedChangeCallback callback, object context, string description);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvokeTransactedChange(class System.ComponentModel.IComponent component, class System.Web.UI.Design.TransactedChangeCallback callback, object context, string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransactedChange (component As IComponent, callback As TransactedChangeCallback, context As Object, description As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransactedChange(System::ComponentModel::IComponent ^ component, System::Web::UI::Design::TransactedChangeCallback ^ callback, System::Object ^ context, System::String ^ description);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1136,6 +1250,8 @@
       <MemberSignature Language="C#" Value="public static void InvokeTransactedChange (System.ComponentModel.IComponent component, System.Web.UI.Design.TransactedChangeCallback callback, object context, string description, System.ComponentModel.MemberDescriptor member);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvokeTransactedChange(class System.ComponentModel.IComponent component, class System.Web.UI.Design.TransactedChangeCallback callback, object context, string description, class System.ComponentModel.MemberDescriptor member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransactedChange (component As IComponent, callback As TransactedChangeCallback, context As Object, description As String, member As MemberDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransactedChange(System::ComponentModel::IComponent ^ component, System::Web::UI::Design::TransactedChangeCallback ^ callback, System::Object ^ context, System::String ^ description, System::ComponentModel::MemberDescriptor ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1188,6 +1304,8 @@
       <MemberSignature Language="C#" Value="public static void InvokeTransactedChange (IServiceProvider serviceProvider, System.ComponentModel.IComponent component, System.Web.UI.Design.TransactedChangeCallback callback, object context, string description, System.ComponentModel.MemberDescriptor member);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvokeTransactedChange(class System.IServiceProvider serviceProvider, class System.ComponentModel.IComponent component, class System.Web.UI.Design.TransactedChangeCallback callback, object context, string description, class System.ComponentModel.MemberDescriptor member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.IServiceProvider,System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransactedChange (serviceProvider As IServiceProvider, component As IComponent, callback As TransactedChangeCallback, context As Object, description As String, member As MemberDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransactedChange(IServiceProvider ^ serviceProvider, System::ComponentModel::IComponent ^ component, System::Web::UI::Design::TransactedChangeCallback ^ callback, System::Object ^ context, System::String ^ description, System::ComponentModel::MemberDescriptor ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1247,6 +1365,8 @@
       <MemberSignature Language="C#" Value="public bool IsDirty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirty" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.IsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDirty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1283,6 +1403,8 @@
       <MemberSignature Language="C#" Value="public bool IsPropertyBound (string propName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsPropertyBound(string propName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.IsPropertyBound(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsPropertyBound (propName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsPropertyBound(System::String ^ propName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1321,6 +1443,8 @@
       <MemberSignature Language="C#" Value="public void Localize (System.Web.UI.Design.IDesignTimeResourceWriter resourceWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Localize(class System.Web.UI.Design.IDesignTimeResourceWriter resourceWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.Localize(System.Web.UI.Design.IDesignTimeResourceWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Localize (resourceWriter As IDesignTimeResourceWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Localize(System::Web::UI::Design::IDesignTimeResourceWriter ^ resourceWriter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1349,6 +1473,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnAutoFormatApplied (System.Web.UI.Design.DesignerAutoFormat appliedAutoFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnAutoFormatApplied(class System.Web.UI.Design.DesignerAutoFormat appliedAutoFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnAutoFormatApplied(System.Web.UI.Design.DesignerAutoFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnAutoFormatApplied (appliedAutoFormat As DesignerAutoFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnAutoFormatApplied(System::Web::UI::Design::DesignerAutoFormat ^ appliedAutoFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1382,6 +1508,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBindingsCollectionChanged (string propName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingsCollectionChanged(string propName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnBindingsCollectionChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBindingsCollectionChanged (propName As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBindingsCollectionChanged(System::String ^ propName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1419,6 +1547,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnClick (System.Web.UI.Design.DesignerRegionMouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClick(class System.Web.UI.Design.DesignerRegionMouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClick (e As DesignerRegionMouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClick(System::Web::UI::Design::DesignerRegionMouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1475,6 +1605,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnComponentChanged (object sender, System.ComponentModel.Design.ComponentChangedEventArgs ce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnComponentChanged(object sender, class System.ComponentModel.Design.ComponentChangedEventArgs ce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1511,6 +1643,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnComponentChanging (object sender, System.ComponentModel.Design.ComponentChangingEventArgs ce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnComponentChanging(object sender, class System.ComponentModel.Design.ComponentChangingEventArgs ce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnComponentChanging(System.Object,System.ComponentModel.Design.ComponentChangingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnComponentChanging (sender As Object, ce As ComponentChangingEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnComponentChanging(System::Object ^ sender, System::ComponentModel::Design::ComponentChangingEventArgs ^ ce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1545,6 +1679,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnControlResize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnControlResize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnControlResize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnControlResize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnControlResize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1581,6 +1717,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPaint (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPaint (e As PaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1628,6 +1766,8 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1661,6 +1801,8 @@
       <MemberSignature Language="C#" Value="public void RaiseResizeEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RaiseResizeEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.RaiseResizeEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RaiseResizeEvent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseResizeEvent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1693,6 +1835,8 @@
       <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1729,6 +1873,8 @@
       <MemberSignature Language="C#" Value="public void RegisterClone (object original, object clone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClone(object original, object clone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.RegisterClone(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterClone (original As Object, clone As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterClone(System::Object ^ original, System::Object ^ clone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1765,6 +1911,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Design.WebFormsRootDesigner RootDesigner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.WebFormsRootDesigner RootDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.RootDesigner" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property RootDesigner As WebFormsRootDesigner" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Design::WebFormsRootDesigner ^ RootDesigner { System::Web::UI::Design::WebFormsRootDesigner ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1791,6 +1939,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region, string content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region, string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetEditableDesignerRegionContent (region As EditableDesignerRegion, content As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1831,6 +1981,8 @@
       <MemberSignature Language="C#" Value="protected void SetRegionContent (System.Web.UI.Design.EditableDesignerRegion region, string content);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetRegionContent(class System.Web.UI.Design.EditableDesignerRegion region, string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.SetRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetRegionContent (region As EditableDesignerRegion, content As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1865,6 +2017,7 @@
       <MemberSignature Language="C#" Value="protected void SetViewFlags (System.Web.UI.Design.ViewFlags viewFlags, bool setFlag);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetViewFlags(valuetype System.Web.UI.Design.ViewFlags viewFlags, bool setFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetViewFlags(System::Web::UI::Design::ViewFlags viewFlags, bool setFlag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1906,6 +2059,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Design.IControlDesignerTag Tag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IControlDesignerTag Tag" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.Tag" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Tag As IControlDesignerTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Design::IControlDesignerTag ^ Tag { System::Web::UI::Design::IControlDesignerTag ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1932,6 +2087,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Design.TemplateGroupCollection TemplateGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroupCollection TemplateGroups" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TemplateGroups As TemplateGroupCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::TemplateGroupCollection ^ TemplateGroups { System::Web::UI::Design::TemplateGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1969,6 +2126,8 @@
       <MemberSignature Language="C#" Value="public virtual void UpdateDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateDesignTimeHtml ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UpdateDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2008,6 +2167,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool UsePreviewControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property UsePreviewControl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2045,6 +2206,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ViewControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control ViewControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewControl As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ ViewControl { System::Web::UI::Control ^ get(); void set(System::Web::UI::Control ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2088,6 +2251,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ViewControlCreated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ViewControlCreated" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ViewControlCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ViewControlCreated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ViewControlCreated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2108,6 +2273,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool Visible { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.Visible" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool Visible { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2123,55 +2290,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreatePlaceHolderDesignTimeHtml">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides a simple rectangular placeholder representation that displays the type and ID of the control.</summary>
-        <block subset="none" type="overrides">
-          <para>The typical design pattern is to try to get HTML markup through the associated control, and then if an error is encountered, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method. If no markup is returned by the control, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" /> method, which if it is not overridden to provide specific markup, calls the <see cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" /> method, which should contain information about the type and ID of the control.</para>
-        </block>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateErrorDesignTimeHtml">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates HTML markup to display an error message at design time.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="InvokeTransactedChange">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Wraps a series of changes into a transaction, using the specified parameters that can be rolled back as a unit with the undo functionality of the design host.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDesignTimeHtml">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the HTML markup that is used to represent the control at design time.</summary>
-        <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetViewRendering">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves an object that contains the design-time markup for the content and regions of the associated control.</summary>
-        <altmember cref="T:System.Web.UI.Design.ViewRendering" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

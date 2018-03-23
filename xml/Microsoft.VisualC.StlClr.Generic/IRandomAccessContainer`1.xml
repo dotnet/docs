@@ -1,7 +1,9 @@
-<Type Name="IRandomAccessContainer&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;">
+﻿<Type Name="IRandomAccessContainer&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IRandomAccessContainer&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IRandomAccessContainer`1&lt;TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRandomAccessContainer(Of TValue)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IRandomAccessContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public TValue at_bias (int A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue at_bias(int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1.at_bias(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function at_bias (A_0 As Integer) As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % at_bias(int A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public bool valid_bias (int A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool valid_bias(int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1.valid_bias(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function valid_bias (A_0 As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool valid_bias(int A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

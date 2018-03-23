@@ -1,7 +1,9 @@
-<Type Name="RibbonControlLengthUnitType" FullName="System.Windows.Controls.Ribbon.RibbonControlLengthUnitType">
+﻿<Type Name="RibbonControlLengthUnitType" FullName="System.Windows.Controls.Ribbon.RibbonControlLengthUnitType">
   <TypeSignature Language="C#" Value="public enum RibbonControlLengthUnitType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RibbonControlLengthUnitType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RibbonControlLengthUnitType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RibbonControlLengthUnitType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonControlLengthUnitType Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The sizing method is not specified.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Item" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonControlLengthUnitType Item = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Item" />
+      <MemberSignature Language="VB.NET" Value="Item" />
+      <MemberSignature Language="C++ CLI" Value="Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The size is a fixed value expressed in the number of child elements.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Pixel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonControlLengthUnitType Pixel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Pixel" />
+      <MemberSignature Language="VB.NET" Value="Pixel" />
+      <MemberSignature Language="C++ CLI" Value="Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The size is a fixed value expressed in pixels.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="Star" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonControlLengthUnitType Star = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Star" />
+      <MemberSignature Language="VB.NET" Value="Star" />
+      <MemberSignature Language="C++ CLI" Value="Star" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The size is a weighted proportion of the available space.</summary>
       </Docs>

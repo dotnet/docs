@@ -1,7 +1,9 @@
-<Type Name="FolderNameEditor+FolderBrowser" FullName="System.Windows.Forms.Design.FolderNameEditor+FolderBrowser">
+﻿<Type Name="FolderNameEditor+FolderBrowser" FullName="System.Windows.Forms.Design.FolderNameEditor+FolderBrowser">
   <TypeSignature Language="C#" Value="protected sealed class FolderNameEditor.FolderBrowser : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed beforefieldinit FolderNameEditor/FolderBrowser extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser" />
+  <TypeSignature Language="VB.NET" Value="Protected NotInheritable Class FolderNameEditor.FolderBrowser&#xA;Inherits Component" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class FolderNameEditor::FolderBrowser sealed : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public FolderBrowser ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FolderBrowser();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public string DirectoryPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DirectoryPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.DirectoryPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectoryPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectoryPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -73,10 +81,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowDialog">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Shows the folder browser dialog.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowDialog">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DialogResult ShowDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.DialogResult ShowDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.ShowDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShowDialog () As DialogResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DialogResult ShowDialog();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +115,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DialogResult ShowDialog (System.Windows.Forms.IWin32Window owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.DialogResult ShowDialog(class System.Windows.Forms.IWin32Window owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.ShowDialog(System.Windows.Forms.IWin32Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShowDialog (owner As IWin32Window) As DialogResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DialogResult ShowDialog(System::Windows::Forms::IWin32Window ^ owner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -118,6 +139,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder StartLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder StartLocation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.StartLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartLocation As FolderNameEditor.FolderBrowserFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::FolderNameEditor::FolderBrowserFolder StartLocation { System::Windows::Forms::Design::FolderNameEditor::FolderBrowserFolder get(); void set(System::Windows::Forms::Design::FolderNameEditor::FolderBrowserFolder value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -136,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles Style { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserStyles Style" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As FolderNameEditor.FolderBrowserStyles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::FolderNameEditor::FolderBrowserStyles Style { System::Windows::Forms::Design::FolderNameEditor::FolderBrowserStyles get(); void set(System::Windows::Forms::Design::FolderNameEditor::FolderBrowserStyles value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -150,14 +175,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ShowDialog">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Shows the folder browser dialog.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

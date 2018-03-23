@@ -1,7 +1,9 @@
-<Type Name="SecurityTokenServiceConfiguration" FullName="System.IdentityModel.Configuration.SecurityTokenServiceConfiguration">
+﻿<Type Name="SecurityTokenServiceConfiguration" FullName="System.IdentityModel.Configuration.SecurityTokenServiceConfiguration">
   <TypeSignature Language="C#" Value="public class SecurityTokenServiceConfiguration : System.IdentityModel.Configuration.IdentityConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityTokenServiceConfiguration extends System.IdentityModel.Configuration.IdentityConfiguration" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenServiceConfiguration&#xA;Inherits IdentityConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenServiceConfiguration : System::IdentityModel::Configuration::IdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     <altmember cref="T:System.IdentityModel.SecurityTokenService" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SecurityTokenServiceConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenServiceConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +68,8 @@
       <MemberSignature Language="C#" Value="public SecurityTokenServiceConfiguration (bool loadConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool loadConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (loadConfig As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenServiceConfiguration(bool loadConfig);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -81,6 +96,8 @@
       <MemberSignature Language="C#" Value="public SecurityTokenServiceConfiguration (string issuerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string issuerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (issuerName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenServiceConfiguration(System::String ^ issuerName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +123,8 @@
       <MemberSignature Language="C#" Value="public SecurityTokenServiceConfiguration (string issuerName, bool loadConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string issuerName, bool loadConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (issuerName As String, loadConfig As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenServiceConfiguration(System::String ^ issuerName, bool loadConfig);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -134,6 +153,7 @@
       <MemberSignature Language="C#" Value="public SecurityTokenServiceConfiguration (string issuerName, System.IdentityModel.Tokens.SigningCredentials signingCredentials);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string issuerName, class System.IdentityModel.Tokens.SigningCredentials signingCredentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenServiceConfiguration(System::String ^ issuerName, System::IdentityModel::Tokens::SigningCredentials ^ signingCredentials);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -161,6 +181,7 @@
       <MemberSignature Language="C#" Value="public SecurityTokenServiceConfiguration (string issuerName, System.IdentityModel.Tokens.SigningCredentials signingCredentials, bool loadConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string issuerName, class System.IdentityModel.Tokens.SigningCredentials signingCredentials, bool loadConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenServiceConfiguration(System::String ^ issuerName, System::IdentityModel::Tokens::SigningCredentials ^ signingCredentials, bool loadConfig);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -191,6 +212,7 @@
       <MemberSignature Language="C#" Value="public SecurityTokenServiceConfiguration (string issuerName, System.IdentityModel.Tokens.SigningCredentials signingCredentials, string serviceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string issuerName, class System.IdentityModel.Tokens.SigningCredentials signingCredentials, string serviceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenServiceConfiguration(System::String ^ issuerName, System::IdentityModel::Tokens::SigningCredentials ^ signingCredentials, System::String ^ serviceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -220,6 +242,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.SecurityTokenService CreateSecurityTokenService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.SecurityTokenService CreateSecurityTokenService() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.CreateSecurityTokenService" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSecurityTokenService () As SecurityTokenService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::SecurityTokenService ^ CreateSecurityTokenService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -255,6 +279,8 @@
       <MemberSignature Language="C#" Value="public int DefaultMaxSymmetricKeySizeInBits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultMaxSymmetricKeySizeInBits" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.DefaultMaxSymmetricKeySizeInBits" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultMaxSymmetricKeySizeInBits As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DefaultMaxSymmetricKeySizeInBits { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -280,6 +306,8 @@
       <MemberSignature Language="C#" Value="public int DefaultSymmetricKeySizeInBits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultSymmetricKeySizeInBits" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.DefaultSymmetricKeySizeInBits" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultSymmetricKeySizeInBits As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DefaultSymmetricKeySizeInBits { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -305,6 +333,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan DefaultTokenLifetime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultTokenLifetime" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.DefaultTokenLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultTokenLifetime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DefaultTokenLifetime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -323,6 +353,8 @@
       <MemberSignature Language="C#" Value="public string DefaultTokenType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultTokenType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.DefaultTokenType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultTokenType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultTokenType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -352,6 +384,8 @@
       <MemberSignature Language="C#" Value="public bool DisableWsdl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisableWsdl" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.DisableWsdl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableWsdl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableWsdl { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -371,6 +405,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan MaximumTokenLifetime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaximumTokenLifetime" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.MaximumTokenLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumTokenLifetime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaximumTokenLifetime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -389,6 +425,8 @@
       <MemberSignature Language="C#" Value="public Type SecurityTokenService { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type SecurityTokenService" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SecurityTokenService" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityTokenService As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ SecurityTokenService { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -417,6 +455,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SigningCredentials SigningCredentials { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SigningCredentials SigningCredentials" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SigningCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public Property SigningCredentials As SigningCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SigningCredentials ^ SigningCredentials { System::IdentityModel::Tokens::SigningCredentials ^ get(); void set(System::IdentityModel::Tokens::SigningCredentials ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -444,6 +484,8 @@
       <MemberSignature Language="C#" Value="public string TokenIssuerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TokenIssuerName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenIssuerName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TokenIssuerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -463,6 +505,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrust13RequestSerializer WSTrust13RequestSerializer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrust13RequestSerializer WSTrust13RequestSerializer" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.WSTrust13RequestSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrust13RequestSerializer As WSTrust13RequestSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::WSTrust13RequestSerializer ^ WSTrust13RequestSerializer { System::IdentityModel::Protocols::WSTrust::WSTrust13RequestSerializer ^ get(); void set(System::IdentityModel::Protocols::WSTrust::WSTrust13RequestSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -482,6 +526,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrust13ResponseSerializer WSTrust13ResponseSerializer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrust13ResponseSerializer WSTrust13ResponseSerializer" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.WSTrust13ResponseSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrust13ResponseSerializer As WSTrust13ResponseSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::WSTrust13ResponseSerializer ^ WSTrust13ResponseSerializer { System::IdentityModel::Protocols::WSTrust::WSTrust13ResponseSerializer ^ get(); void set(System::IdentityModel::Protocols::WSTrust::WSTrust13ResponseSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -501,6 +547,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005RequestSerializer WSTrustFeb2005RequestSerializer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005RequestSerializer WSTrustFeb2005RequestSerializer" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.WSTrustFeb2005RequestSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrustFeb2005RequestSerializer As WSTrustFeb2005RequestSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::WSTrustFeb2005RequestSerializer ^ WSTrustFeb2005RequestSerializer { System::IdentityModel::Protocols::WSTrust::WSTrustFeb2005RequestSerializer ^ get(); void set(System::IdentityModel::Protocols::WSTrust::WSTrustFeb2005RequestSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -520,6 +568,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer WSTrustFeb2005ResponseSerializer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer WSTrustFeb2005ResponseSerializer" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.WSTrustFeb2005ResponseSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrustFeb2005ResponseSerializer As WSTrustFeb2005ResponseSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::WSTrustFeb2005ResponseSerializer ^ WSTrustFeb2005ResponseSerializer { System::IdentityModel::Protocols::WSTrust::WSTrustFeb2005ResponseSerializer ^ get(); void set(System::IdentityModel::Protocols::WSTrust::WSTrustFeb2005ResponseSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -535,14 +585,5 @@
         <exception cref="T:System.ArgumentNullException">The specified value is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="RoutedUICommand" FullName="System.Windows.Input.RoutedUICommand">
+﻿<Type Name="RoutedUICommand" FullName="System.Windows.Input.RoutedUICommand">
   <TypeSignature Language="C#" Value="public class RoutedUICommand : System.Windows.Input.RoutedCommand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoutedUICommand extends System.Windows.Input.RoutedCommand" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.RoutedUICommand" />
+  <TypeSignature Language="VB.NET" Value="Public Class RoutedUICommand&#xA;Inherits RoutedCommand" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RoutedUICommand : System::Windows::Input::RoutedCommand" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,10 +67,21 @@
     <altmember cref="T:System.Windows.Input.MouseGesture" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedUICommand" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RoutedUICommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedUICommand.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutedUICommand();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +98,8 @@
       <MemberSignature Language="C#" Value="public RoutedUICommand (string text, string name, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string name, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedUICommand.#ctor(System.String,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, name As String, ownerType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutedUICommand(System::String ^ text, System::String ^ name, Type ^ ownerType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +127,8 @@
       <MemberSignature Language="C#" Value="public RoutedUICommand (string text, string name, Type ownerType, System.Windows.Input.InputGestureCollection inputGestures);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string name, class System.Type ownerType, class System.Windows.Input.InputGestureCollection inputGestures) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedUICommand.#ctor(System.String,System.String,System.Type,System.Windows.Input.InputGestureCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, name As String, ownerType As Type, inputGestures As InputGestureCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutedUICommand(System::String ^ text, System::String ^ name, Type ^ ownerType, System::Windows::Input::InputGestureCollection ^ inputGestures);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -141,6 +158,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.RoutedUICommand.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,14 +176,5 @@
         <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedUICommand" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

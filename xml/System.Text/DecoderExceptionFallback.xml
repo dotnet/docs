@@ -1,7 +1,9 @@
-<Type Name="DecoderExceptionFallback" FullName="System.Text.DecoderExceptionFallback">
+﻿<Type Name="DecoderExceptionFallback" FullName="System.Text.DecoderExceptionFallback">
   <TypeSignature Language="C#" Value="public sealed class DecoderExceptionFallback : System.Text.DecoderFallback" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DecoderExceptionFallback extends System.Text.DecoderFallback" />
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderExceptionFallback" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecoderExceptionFallback&#xA;Inherits DecoderFallback" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DecoderExceptionFallback sealed : System::Text::DecoderFallback" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -54,6 +56,8 @@
       <MemberSignature Language="C#" Value="public DecoderExceptionFallback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallback.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoderExceptionFallback();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public override System.Text.DecoderFallbackBuffer CreateFallbackBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.DecoderFallbackBuffer CreateFallbackBuffer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallback.CreateFallbackBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateFallbackBuffer () As DecoderFallbackBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::DecoderFallbackBuffer ^ CreateFallbackBuffer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -121,6 +127,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallback.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -157,6 +165,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallback.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -196,6 +206,8 @@
       <MemberSignature Language="C#" Value="public override int MaxCharCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCharCount" />
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderExceptionFallback.MaxCharCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxCharCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxCharCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>

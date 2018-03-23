@@ -1,7 +1,9 @@
-<Type Name="ScrollPattern" FullName="System.Windows.Automation.ScrollPattern">
+﻿<Type Name="ScrollPattern" FullName="System.Windows.Automation.ScrollPattern">
   <TypeSignature Language="C#" Value="public class ScrollPattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollPattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ScrollPattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScrollPattern&#xA;Inherits BasePattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScrollPattern : System::Windows::Automation::BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.ScrollPattern.ScrollPatternInformation Cached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ScrollPattern/ScrollPatternInformation Cached" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ScrollPattern.Cached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As ScrollPattern.ScrollPatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ScrollPattern::ScrollPatternInformation Cached { System::Windows::Automation::ScrollPattern::ScrollPatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.ScrollPattern.ScrollPatternInformation Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ScrollPattern/ScrollPatternInformation Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ScrollPattern.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As ScrollPattern.ScrollPatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ScrollPattern::ScrollPatternInformation Current { System::Windows::Automation::ScrollPattern::ScrollPatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty HorizontallyScrollableProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty HorizontallyScrollableProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollPattern.HorizontallyScrollableProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontallyScrollableProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ HorizontallyScrollableProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -115,6 +123,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty HorizontalScrollPercentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty HorizontalScrollPercentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollPattern.HorizontalScrollPercentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalScrollPercentProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ HorizontalScrollPercentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -148,6 +158,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty HorizontalViewSizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty HorizontalViewSizeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollPattern.HorizontalViewSizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalViewSizeProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ HorizontalViewSizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -181,6 +193,8 @@
       <MemberSignature Language="C#" Value="public const double NoScroll = -1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 NoScroll = (-1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollPattern.NoScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Const NoScroll As Double  = -1" />
+      <MemberSignature Language="C++ CLI" Value="public: double NoScroll = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -216,6 +230,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollPattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -250,6 +266,8 @@
       <MemberSignature Language="C#" Value="public void Scroll (System.Windows.Automation.ScrollAmount horizontalAmount, System.Windows.Automation.ScrollAmount verticalAmount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Scroll(valuetype System.Windows.Automation.ScrollAmount horizontalAmount, valuetype System.Windows.Automation.ScrollAmount verticalAmount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ScrollPattern.Scroll(System.Windows.Automation.ScrollAmount,System.Windows.Automation.ScrollAmount)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Scroll (horizontalAmount As ScrollAmount, verticalAmount As ScrollAmount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Scroll(System::Windows::Automation::ScrollAmount horizontalAmount, System::Windows::Automation::ScrollAmount verticalAmount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -289,6 +307,8 @@
       <MemberSignature Language="C#" Value="public void ScrollHorizontal (System.Windows.Automation.ScrollAmount amount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollHorizontal(valuetype System.Windows.Automation.ScrollAmount amount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ScrollPattern.ScrollHorizontal(System.Windows.Automation.ScrollAmount)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollHorizontal (amount As ScrollAmount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollHorizontal(System::Windows::Automation::ScrollAmount amount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -326,6 +346,8 @@
       <MemberSignature Language="C#" Value="public void ScrollVertical (System.Windows.Automation.ScrollAmount amount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollVertical(valuetype System.Windows.Automation.ScrollAmount amount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ScrollPattern.ScrollVertical(System.Windows.Automation.ScrollAmount)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollVertical (amount As ScrollAmount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollVertical(System::Windows::Automation::ScrollAmount amount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -363,6 +385,8 @@
       <MemberSignature Language="C#" Value="public void SetScrollPercent (double horizontalPercent, double verticalPercent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetScrollPercent(float64 horizontalPercent, float64 verticalPercent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ScrollPattern.SetScrollPercent(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetScrollPercent (horizontalPercent As Double, verticalPercent As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetScrollPercent(double horizontalPercent, double verticalPercent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -408,6 +432,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty VerticallyScrollableProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty VerticallyScrollableProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollPattern.VerticallyScrollableProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticallyScrollableProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ VerticallyScrollableProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -441,6 +467,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty VerticalScrollPercentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty VerticalScrollPercentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollPattern.VerticalScrollPercentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalScrollPercentProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ VerticalScrollPercentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -474,6 +502,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty VerticalViewSizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty VerticalViewSizeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollPattern.VerticalViewSizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalViewSizeProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ VerticalViewSizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

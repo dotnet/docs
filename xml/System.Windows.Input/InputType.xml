@@ -1,7 +1,9 @@
-<Type Name="InputType" FullName="System.Windows.Input.InputType">
+﻿<Type Name="InputType" FullName="System.Windows.Input.InputType">
   <TypeSignature Language="C#" Value="public enum InputType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InputType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum InputType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class InputType" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Command" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputType Command = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Command" />
+      <MemberSignature Language="VB.NET" Value="Command" />
+      <MemberSignature Language="C++ CLI" Value="Command" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Input was provided by a command.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Hid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputType Hid = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Hid" />
+      <MemberSignature Language="VB.NET" Value="Hid" />
+      <MemberSignature Language="C++ CLI" Value="Hid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Input was provided a Human Interface Device that was not a keyboard, a mouse, or a stylus.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Keyboard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputType Keyboard = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Keyboard" />
+      <MemberSignature Language="VB.NET" Value="Keyboard" />
+      <MemberSignature Language="C++ CLI" Value="Keyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Input was provided by a keyboard.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="Mouse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputType Mouse = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Mouse" />
+      <MemberSignature Language="VB.NET" Value="Mouse" />
+      <MemberSignature Language="C++ CLI" Value="Mouse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Input was provided by a mouse.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="Stylus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputType Stylus = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Stylus" />
+      <MemberSignature Language="VB.NET" Value="Stylus" />
+      <MemberSignature Language="C++ CLI" Value="Stylus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Input was provided by a stylus.</summary>
       </Docs>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputType Text = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Input was provided by text.</summary>
       </Docs>

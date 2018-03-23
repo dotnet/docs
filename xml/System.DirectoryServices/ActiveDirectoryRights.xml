@@ -1,7 +1,9 @@
-<Type Name="ActiveDirectoryRights" FullName="System.DirectoryServices.ActiveDirectoryRights">
+﻿<Type Name="ActiveDirectoryRights" FullName="System.DirectoryServices.ActiveDirectoryRights">
   <TypeSignature Language="C#" Value="public enum ActiveDirectoryRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActiveDirectoryRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectoryRights" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ActiveDirectoryRights" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ActiveDirectoryRights" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="AccessSystemSecurity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights AccessSystemSecurity = int32(16777216)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.AccessSystemSecurity" />
+      <MemberSignature Language="VB.NET" Value="AccessSystemSecurity" />
+      <MemberSignature Language="C++ CLI" Value="AccessSystemSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>16777216</MemberValue>
       <Docs>
         <summary>The right to get or set the SACL in the object security descriptor.</summary>
       </Docs>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="CreateChild" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights CreateChild = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.CreateChild" />
+      <MemberSignature Language="VB.NET" Value="CreateChild" />
+      <MemberSignature Language="C++ CLI" Value="CreateChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The right to create children of the object.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights Delete = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -71,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The right to delete the object.</summary>
       </Docs>
@@ -79,6 +90,8 @@
       <MemberSignature Language="C#" Value="DeleteChild" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights DeleteChild = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.DeleteChild" />
+      <MemberSignature Language="VB.NET" Value="DeleteChild" />
+      <MemberSignature Language="C++ CLI" Value="DeleteChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -88,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The right to delete children of the object.</summary>
       </Docs>
@@ -96,6 +110,8 @@
       <MemberSignature Language="C#" Value="DeleteTree" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights DeleteTree = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.DeleteTree" />
+      <MemberSignature Language="VB.NET" Value="DeleteTree" />
+      <MemberSignature Language="C++ CLI" Value="DeleteTree" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -105,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The right to delete all children of this object, regardless of the permissions of the children.</summary>
       </Docs>
@@ -113,6 +130,8 @@
       <MemberSignature Language="C#" Value="ExtendedRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights ExtendedRight = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ExtendedRight" />
+      <MemberSignature Language="VB.NET" Value="ExtendedRight" />
+      <MemberSignature Language="C++ CLI" Value="ExtendedRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -122,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>A customized control access right. For a list of possible extended rights, see the topic "Extended Rights" in the MSDN Library at [http://msdn.microsoft.com](http://msdn.microsoft.com/). For more information about extended rights, see the topic "Control Access Rights" in the MSDN Library at [http://msdn.microsoft.com](http://msdn.microsoft.com/).</summary>
       </Docs>
@@ -130,6 +150,8 @@
       <MemberSignature Language="C#" Value="GenericAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights GenericAll = int32(983551)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.GenericAll" />
+      <MemberSignature Language="VB.NET" Value="GenericAll" />
+      <MemberSignature Language="C++ CLI" Value="GenericAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -139,6 +161,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>983551</MemberValue>
       <Docs>
         <summary>The right to create or delete children, delete a subtree, read and write properties, examine children and the object itself, add and remove the object from the directory, and read or write with an extended right.</summary>
       </Docs>
@@ -147,6 +170,8 @@
       <MemberSignature Language="C#" Value="GenericExecute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights GenericExecute = int32(131076)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.GenericExecute" />
+      <MemberSignature Language="VB.NET" Value="GenericExecute" />
+      <MemberSignature Language="C++ CLI" Value="GenericExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -156,6 +181,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131076</MemberValue>
       <Docs>
         <summary>The right to read permissions on, and list the contents of, a container object.</summary>
       </Docs>
@@ -164,6 +190,8 @@
       <MemberSignature Language="C#" Value="GenericRead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights GenericRead = int32(131220)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.GenericRead" />
+      <MemberSignature Language="VB.NET" Value="GenericRead" />
+      <MemberSignature Language="C++ CLI" Value="GenericRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -173,6 +201,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131220</MemberValue>
       <Docs>
         <summary>The right to read permissions on this object, read all the properties on this object, list this object name when the parent container is listed, and list the contents of this object if it is a container.</summary>
       </Docs>
@@ -181,6 +210,8 @@
       <MemberSignature Language="C#" Value="GenericWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights GenericWrite = int32(131112)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.GenericWrite" />
+      <MemberSignature Language="VB.NET" Value="GenericWrite" />
+      <MemberSignature Language="C++ CLI" Value="GenericWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -190,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131112</MemberValue>
       <Docs>
         <summary>The right to read permissions on this object, write all the properties on this object, and perform all validated writes to this object.</summary>
       </Docs>
@@ -198,6 +230,8 @@
       <MemberSignature Language="C#" Value="ListChildren" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights ListChildren = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ListChildren" />
+      <MemberSignature Language="VB.NET" Value="ListChildren" />
+      <MemberSignature Language="C++ CLI" Value="ListChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -207,6 +241,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The right to list children of this object. For more information about this right, see the topic "Controlling Object Visibility" in the MSDN Library [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
       </Docs>
@@ -215,6 +250,8 @@
       <MemberSignature Language="C#" Value="ListObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights ListObject = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ListObject" />
+      <MemberSignature Language="VB.NET" Value="ListObject" />
+      <MemberSignature Language="C++ CLI" Value="ListObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -224,6 +261,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The right to list a particular object. For more information about this right, see the topic "Controlling Object Visibility" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
       </Docs>
@@ -232,6 +270,8 @@
       <MemberSignature Language="C#" Value="ReadControl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights ReadControl = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ReadControl" />
+      <MemberSignature Language="VB.NET" Value="ReadControl" />
+      <MemberSignature Language="C++ CLI" Value="ReadControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -241,6 +281,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The right to read data from the security descriptor of the object, not including the data in the SACL.</summary>
       </Docs>
@@ -249,6 +290,8 @@
       <MemberSignature Language="C#" Value="ReadProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights ReadProperty = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ReadProperty" />
+      <MemberSignature Language="VB.NET" Value="ReadProperty" />
+      <MemberSignature Language="C++ CLI" Value="ReadProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -258,6 +301,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The right to read properties of the object.</summary>
       </Docs>
@@ -266,6 +310,8 @@
       <MemberSignature Language="C#" Value="Self" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights Self = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.Self" />
+      <MemberSignature Language="VB.NET" Value="Self" />
+      <MemberSignature Language="C++ CLI" Value="Self" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -275,6 +321,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The right to perform an operation that is controlled by a validated write access right.</summary>
       </Docs>
@@ -283,6 +330,8 @@
       <MemberSignature Language="C#" Value="Synchronize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights Synchronize = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.Synchronize" />
+      <MemberSignature Language="VB.NET" Value="Synchronize" />
+      <MemberSignature Language="C++ CLI" Value="Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -292,6 +341,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>The right to use the object for synchronization. This right enables a thread to wait until that object is in the signaled state.</summary>
       </Docs>
@@ -300,6 +350,8 @@
       <MemberSignature Language="C#" Value="WriteDacl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights WriteDacl = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.WriteDacl" />
+      <MemberSignature Language="VB.NET" Value="WriteDacl" />
+      <MemberSignature Language="C++ CLI" Value="WriteDacl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -309,6 +361,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>The right to modify the DACL in the object security descriptor.</summary>
       </Docs>
@@ -317,6 +370,8 @@
       <MemberSignature Language="C#" Value="WriteOwner" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights WriteOwner = int32(524288)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.WriteOwner" />
+      <MemberSignature Language="VB.NET" Value="WriteOwner" />
+      <MemberSignature Language="C++ CLI" Value="WriteOwner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -326,6 +381,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>The right to assume ownership of the object. The user must be an object trustee. The user cannot transfer the ownership to other users.</summary>
       </Docs>
@@ -334,6 +390,8 @@
       <MemberSignature Language="C#" Value="WriteProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectoryRights WriteProperty = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.WriteProperty" />
+      <MemberSignature Language="VB.NET" Value="WriteProperty" />
+      <MemberSignature Language="C++ CLI" Value="WriteProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -343,6 +401,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The right to write properties of the object.</summary>
       </Docs>

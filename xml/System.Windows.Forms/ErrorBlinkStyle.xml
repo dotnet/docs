@@ -1,7 +1,9 @@
-<Type Name="ErrorBlinkStyle" FullName="System.Windows.Forms.ErrorBlinkStyle">
+﻿<Type Name="ErrorBlinkStyle" FullName="System.Windows.Forms.ErrorBlinkStyle">
   <TypeSignature Language="C#" Value="public enum ErrorBlinkStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrorBlinkStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ErrorBlinkStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ErrorBlinkStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ErrorBlinkStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="AlwaysBlink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ErrorBlinkStyle AlwaysBlink = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink" />
+      <MemberSignature Language="VB.NET" Value="AlwaysBlink" />
+      <MemberSignature Language="C++ CLI" Value="AlwaysBlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ErrorBlinkStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Always blink when the error icon is first displayed, or when a error description string is set for the control and the error icon is already displayed.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="BlinkIfDifferentError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ErrorBlinkStyle BlinkIfDifferentError = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError" />
+      <MemberSignature Language="VB.NET" Value="BlinkIfDifferentError" />
+      <MemberSignature Language="C++ CLI" Value="BlinkIfDifferentError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ErrorBlinkStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Blinks when the icon is already displayed and a new error string is set for the control.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="NeverBlink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ErrorBlinkStyle NeverBlink = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ErrorBlinkStyle.NeverBlink" />
+      <MemberSignature Language="VB.NET" Value="NeverBlink" />
+      <MemberSignature Language="C++ CLI" Value="NeverBlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ErrorBlinkStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Never blink the error icon.</summary>
       </Docs>

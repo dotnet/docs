@@ -1,7 +1,9 @@
-<Type Name="SelectionItemPatternIdentifiers" FullName="System.Windows.Automation.SelectionItemPatternIdentifiers">
+﻿<Type Name="SelectionItemPatternIdentifiers" FullName="System.Windows.Automation.SelectionItemPatternIdentifiers">
   <TypeSignature Language="C#" Value="public static class SelectionItemPatternIdentifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SelectionItemPatternIdentifiers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionItemPatternIdentifiers" />
+  <TypeSignature Language="VB.NET" Value="Public Class SelectionItemPatternIdentifiers" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SelectionItemPatternIdentifiers abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent ElementAddedToSelectionEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent ElementAddedToSelectionEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ElementAddedToSelectionEvent As AutomationEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ ElementAddedToSelectionEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent ElementRemovedFromSelectionEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent ElementRemovedFromSelectionEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ElementRemovedFromSelectionEvent As AutomationEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ ElementRemovedFromSelectionEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent ElementSelectedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent ElementSelectedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ElementSelectedEvent As AutomationEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ ElementSelectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsSelectedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsSelectedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPatternIdentifiers.IsSelectedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectedProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsSelectedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -128,6 +138,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPatternIdentifiers.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -152,6 +164,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty SelectionContainerProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty SelectionContainerProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPatternIdentifiers.SelectionContainerProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionContainerProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ SelectionContainerProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

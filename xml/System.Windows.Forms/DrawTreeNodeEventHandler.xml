@@ -1,7 +1,9 @@
-<Type Name="DrawTreeNodeEventHandler" FullName="System.Windows.Forms.DrawTreeNodeEventHandler">
+﻿<Type Name="DrawTreeNodeEventHandler" FullName="System.Windows.Forms.DrawTreeNodeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DrawTreeNodeEventHandler(object sender, DrawTreeNodeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawTreeNodeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawTreeNodeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DrawTreeNodeEventHandler(sender As Object, e As DrawTreeNodeEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DrawTreeNodeEventHandler(System::Object ^ sender, DrawTreeNodeEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

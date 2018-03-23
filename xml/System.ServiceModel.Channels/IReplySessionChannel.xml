@@ -1,7 +1,9 @@
-<Type Name="IReplySessionChannel" FullName="System.ServiceModel.Channels.IReplySessionChannel">
+﻿<Type Name="IReplySessionChannel" FullName="System.ServiceModel.Channels.IReplySessionChannel">
   <TypeSignature Language="C#" Value="public interface IReplySessionChannel : System.ServiceModel.Channels.IReplyChannel, System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IInputSession&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReplySessionChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.Channels.IReplyChannel, class System.ServiceModel.Channels.ISessionChannel`1&lt;class System.ServiceModel.Channels.IInputSession&gt;, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IReplySessionChannel" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IReplySessionChannel&#xA;Implements IReplyChannel, ISessionChannel(Of IInputSession)" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IReplySessionChannel : System::ServiceModel::Channels::IReplyChannel, System::ServiceModel::Channels::ISessionChannel&lt;System::ServiceModel::Channels::IInputSession ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

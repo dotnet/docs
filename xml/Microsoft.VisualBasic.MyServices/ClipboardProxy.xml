@@ -1,7 +1,9 @@
-<Type Name="ClipboardProxy" FullName="Microsoft.VisualBasic.MyServices.ClipboardProxy">
+﻿<Type Name="ClipboardProxy" FullName="Microsoft.VisualBasic.MyServices.ClipboardProxy">
   <TypeSignature Language="C#" Value="public class ClipboardProxy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ClipboardProxy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.ClipboardProxy" />
+  <TypeSignature Language="VB.NET" Value="Public Class ClipboardProxy" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClipboardProxy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -64,6 +66,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -116,6 +120,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public bool ContainsAudio ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsAudio() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsAudio () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsAudio();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -167,6 +173,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public bool ContainsData (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsData(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsData (format As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsData(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -227,6 +235,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public bool ContainsFileDropList ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsFileDropList() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsFileDropList () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsFileDropList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -281,6 +291,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public bool ContainsImage ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsImage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsImage () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsImage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -330,10 +342,21 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContainsText">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if there is text on the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ContainsText">
       <MemberSignature Language="C#" Value="public bool ContainsText ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsText() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsText () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -387,6 +410,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public bool ContainsText (System.Windows.Forms.TextDataFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsText(valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText(System.Windows.Forms.TextDataFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsText (format As TextDataFormat) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsText(System::Windows::Forms::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -444,6 +469,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public System.IO.Stream GetAudioStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Stream GetAudioStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAudioStream () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetAudioStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -495,6 +522,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public object GetData (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public instance object GetData(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (format As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -553,6 +582,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public System.Windows.Forms.IDataObject GetDataObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.Windows.Forms.IDataObject GetDataObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataObject () As IDataObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::IDataObject ^ GetDataObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -614,6 +645,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection GetFileDropList ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.Collections.Specialized.StringCollection GetFileDropList() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFileDropList () As StringCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Specialized::StringCollection ^ GetFileDropList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -670,6 +703,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public System.Drawing.Image GetImage ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.Drawing.Image GetImage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImage () As Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Image ^ GetImage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -719,10 +754,21 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetText">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves text from the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetText">
       <MemberSignature Language="C#" Value="public string GetText ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance string GetText() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetText () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -777,6 +823,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public string GetText (System.Windows.Forms.TextDataFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public instance string GetText(valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText(System.Windows.Forms.TextDataFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetText (format As TextDataFormat) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText(System::Windows::Forms::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -831,10 +879,21 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetAudio">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes audio data to the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetAudio">
       <MemberSignature Language="C#" Value="public void SetAudio (byte[] audioBytes);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetAudio(unsigned int8[] audioBytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAudio (audioBytes As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAudio(cli::array &lt;System::Byte&gt; ^ audioBytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -893,6 +952,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public void SetAudio (System.IO.Stream audioStream);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetAudio(class System.IO.Stream audioStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAudio (audioStream As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAudio(System::IO::Stream ^ audioStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -950,6 +1011,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public void SetData (string format, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetData(string format, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetData (format As String, data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::String ^ format, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1013,6 +1076,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public void SetDataObject (System.Windows.Forms.DataObject data);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetDataObject(class System.Windows.Forms.DataObject data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDataObject (data As DataObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDataObject(System::Windows::Forms::DataObject ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1079,6 +1144,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public void SetFileDropList (System.Collections.Specialized.StringCollection filePaths);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetFileDropList(class System.Collections.Specialized.StringCollection filePaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFileDropList (filePaths As StringCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFileDropList(System::Collections::Specialized::StringCollection ^ filePaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1135,6 +1202,7 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public void SetImage (System.Drawing.Image image);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetImage(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImage(System::Drawing::Image ^ image);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1190,10 +1258,21 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetText">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes text to the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetText">
       <MemberSignature Language="C#" Value="public void SetText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetText (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1258,6 +1337,8 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="C#" Value="public void SetText (string text, System.Windows.Forms.TextDataFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetText(string text, valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String,System.Windows.Forms.TextDataFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetText (text As String, format As TextDataFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetText(System::String ^ text, System::Windows::Forms::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1321,41 +1402,5 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetAudio">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes audio data to the Clipboard.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetText">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves text from the Clipboard.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ContainsText">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines if there is text on the Clipboard.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetText">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes text to the Clipboard.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

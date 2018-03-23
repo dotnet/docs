@@ -1,7 +1,9 @@
-<Type Name="DependencyObject" FullName="System.Windows.DependencyObject">
+﻿<Type Name="DependencyObject" FullName="System.Windows.DependencyObject">
   <TypeSignature Language="C#" Value="public class DependencyObject : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DependencyObject extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class DependencyObject&#xA;Inherits DispatcherObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DependencyObject : System::Windows::Threading::DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +59,8 @@
       <MemberSignature Language="C#" Value="public DependencyObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DependencyObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -69,10 +73,21 @@
         <altmember cref="T:System.Windows.DependencyProperty" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ClearValue">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the local value of a property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ClearValue">
       <MemberSignature Language="C#" Value="public void ClearValue (System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearValue(class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearValue (dp As DependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearValue(System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -113,6 +128,8 @@
       <MemberSignature Language="C#" Value="public void ClearValue (System.Windows.DependencyPropertyKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearValue(class System.Windows.DependencyPropertyKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyPropertyKey)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearValue (key As DependencyPropertyKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearValue(System::Windows::DependencyPropertyKey ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -146,6 +163,8 @@
       <MemberSignature Language="C#" Value="public void CoerceValue (System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CoerceValue(class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CoerceValue (dp As DependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CoerceValue(System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -189,6 +208,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObjectType DependencyObjectType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObjectType DependencyObjectType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyObject.DependencyObjectType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependencyObjectType As DependencyObjectType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObjectType ^ DependencyObjectType { System::Windows::DependencyObjectType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -231,6 +252,8 @@
       <MemberSignature Language="C#" Value="public override sealed bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -265,6 +288,8 @@
       <MemberSignature Language="C#" Value="public override sealed int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -288,6 +313,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.LocalValueEnumerator GetLocalValueEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.LocalValueEnumerator GetLocalValueEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.GetLocalValueEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLocalValueEnumerator () As LocalValueEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::LocalValueEnumerator GetLocalValueEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -328,6 +355,8 @@
       <MemberSignature Language="C#" Value="public object GetValue (System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.GetValue(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (dp As DependencyProperty) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -364,6 +393,8 @@
       <MemberSignature Language="C#" Value="public void InvalidateProperty (System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvalidateProperty(class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.InvalidateProperty(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateProperty (dp As DependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateProperty(System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -405,6 +436,8 @@
       <MemberSignature Language="C#" Value="public bool IsSealed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSealed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyObject.IsSealed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -432,6 +465,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -466,6 +501,8 @@
       <MemberSignature Language="C#" Value="public object ReadLocalValue (System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ReadLocalValue(class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.ReadLocalValue(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadLocalValue (dp As DependencyProperty) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ReadLocalValue(System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -503,6 +540,8 @@
       <MemberSignature Language="C#" Value="public void SetCurrentValue (System.Windows.DependencyProperty dp, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCurrentValue(class System.Windows.DependencyProperty dp, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.SetCurrentValue(System.Windows.DependencyProperty,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentValue (dp As DependencyProperty, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCurrentValue(System::Windows::DependencyProperty ^ dp, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -532,10 +571,21 @@
           <paramref name="value" /> was not the correct type as registered for the <paramref name="dp" /> property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the local value of a dependency property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetValue">
       <MemberSignature Language="C#" Value="public void SetValue (System.Windows.DependencyProperty dp, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Windows.DependencyProperty dp, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (dp As DependencyProperty, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Windows::DependencyProperty ^ dp, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -571,6 +621,8 @@
       <MemberSignature Language="C#" Value="public void SetValue (System.Windows.DependencyPropertyKey key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Windows.DependencyPropertyKey key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyPropertyKey,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (key As DependencyPropertyKey, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Windows::DependencyPropertyKey ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -608,9 +660,11 @@
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeProperty">
-      <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeProperty (System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool ShouldSerializeProperty (System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ShouldSerializeProperty(class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObject.ShouldSerializeProperty(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShouldSerializeProperty (dp As DependencyProperty) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ShouldSerializeProperty(System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -640,23 +694,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetValue">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the local value of a dependency property.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ClearValue">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Clears the local value of a property.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

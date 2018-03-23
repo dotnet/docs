@@ -1,7 +1,9 @@
-<Type Name="IHierarchicalEnumerable" FullName="System.Web.UI.IHierarchicalEnumerable">
+﻿<Type Name="IHierarchicalEnumerable" FullName="System.Web.UI.IHierarchicalEnumerable">
   <TypeSignature Language="C#" Value="public interface IHierarchicalEnumerable : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHierarchicalEnumerable implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IHierarchicalEnumerable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHierarchicalEnumerable&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHierarchicalEnumerable : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.IHierarchyData GetHierarchyData (object enumeratedItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchyData GetHierarchyData(object enumeratedItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHierarchyData (enumeratedItem As Object) As IHierarchyData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::IHierarchyData ^ GetHierarchyData(System::Object ^ enumeratedItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

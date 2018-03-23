@@ -1,7 +1,9 @@
-<Type Name="PartChromeType" FullName="System.Web.UI.WebControls.WebParts.PartChromeType">
+﻿<Type Name="PartChromeType" FullName="System.Web.UI.WebControls.WebParts.PartChromeType">
   <TypeSignature Language="C#" Value="public enum PartChromeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartChromeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PartChromeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PartChromeType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PartChromeType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="BorderOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType BorderOnly = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.BorderOnly" />
+      <MemberSignature Language="VB.NET" Value="BorderOnly" />
+      <MemberSignature Language="C++ CLI" Value="BorderOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A border only, without a title bar.</summary>
       </Docs>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A border setting inherited from the part control's containing zone.</summary>
       </Docs>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType None = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>No border and no title bar.</summary>
       </Docs>
@@ -91,6 +102,8 @@
       <MemberSignature Language="C#" Value="TitleAndBorder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType TitleAndBorder = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.TitleAndBorder" />
+      <MemberSignature Language="VB.NET" Value="TitleAndBorder" />
+      <MemberSignature Language="C++ CLI" Value="TitleAndBorder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A title bar and a border.</summary>
       </Docs>
@@ -107,6 +121,8 @@
       <MemberSignature Language="C#" Value="TitleOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType TitleOnly = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.TitleOnly" />
+      <MemberSignature Language="VB.NET" Value="TitleOnly" />
+      <MemberSignature Language="C++ CLI" Value="TitleOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +131,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A title bar only, without a border.</summary>
       </Docs>

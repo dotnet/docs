@@ -1,7 +1,9 @@
-<Type Name="FormControlBuilder" FullName="System.Web.UI.MobileControls.FormControlBuilder">
+﻿<Type Name="FormControlBuilder" FullName="System.Web.UI.MobileControls.FormControlBuilder">
   <TypeSignature Language="C#" Value="public class FormControlBuilder : System.Web.UI.MobileControls.LiteralTextContainerControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormControlBuilder extends System.Web.UI.MobileControls.LiteralTextContainerControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.FormControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormControlBuilder&#xA;Inherits LiteralTextContainerControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormControlBuilder : System::Web::UI::MobileControls::LiteralTextContainerControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public FormControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.FormControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.FormControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

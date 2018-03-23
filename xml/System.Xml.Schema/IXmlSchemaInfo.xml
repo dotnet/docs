@@ -1,7 +1,9 @@
-<Type Name="IXmlSchemaInfo" FullName="System.Xml.Schema.IXmlSchemaInfo">
+﻿<Type Name="IXmlSchemaInfo" FullName="System.Xml.Schema.IXmlSchemaInfo">
   <TypeSignature Language="C#" Value="public interface IXmlSchemaInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlSchemaInfo" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.IXmlSchemaInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXmlSchemaInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlSchemaInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public bool IsDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefault" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.IXmlSchemaInfo.IsDefault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefault As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public bool IsNil { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNil" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.IXmlSchemaInfo.IsNil" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNil As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNil { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaSimpleType MemberType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaSimpleType MemberType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.IXmlSchemaInfo.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberType As XmlSchemaSimpleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSimpleType ^ MemberType { System::Xml::Schema::XmlSchemaSimpleType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaAttribute SchemaAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaAttribute SchemaAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.IXmlSchemaInfo.SchemaAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaAttribute As XmlSchemaAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAttribute ^ SchemaAttribute { System::Xml::Schema::XmlSchemaAttribute ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -149,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaElement SchemaElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaElement SchemaElement" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.IXmlSchemaInfo.SchemaElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaElement As XmlSchemaElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaElement ^ SchemaElement { System::Xml::Schema::XmlSchemaElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -176,6 +188,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaType SchemaType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaType SchemaType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.IXmlSchemaInfo.SchemaType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaType As XmlSchemaType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaType ^ SchemaType { System::Xml::Schema::XmlSchemaType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -210,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaValidity Validity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaValidity Validity" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.IXmlSchemaInfo.Validity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Validity As XmlSchemaValidity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaValidity Validity { System::Xml::Schema::XmlSchemaValidity get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

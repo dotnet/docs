@@ -1,7 +1,9 @@
-<Type Name="ParameterImportConventionBuilder" FullName="System.Composition.Convention.ParameterImportConventionBuilder">
+﻿<Type Name="ParameterImportConventionBuilder" FullName="System.Composition.Convention.ParameterImportConventionBuilder">
   <TypeSignature Language="C#" Value="public abstract class ParameterImportConventionBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ParameterImportConventionBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.ParameterImportConventionBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ParameterImportConventionBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParameterImportConventionBuilder abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Convention</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public T Import&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Import&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ParameterImportConventionBuilder.Import``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Import(Of T) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Import();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -44,14 +48,15 @@
         <typeparam name="T">The type to import.</typeparam>
         <summary>Imports the specified type.</summary>
         <returns>The imported instance.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Import&lt;T&gt;">
       <MemberSignature Language="C#" Value="public T Import&lt;T&gt; (Action&lt;System.Composition.Convention.ImportConventionBuilder&gt; configure);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Import&lt;T&gt;(class System.Action`1&lt;class System.Composition.Convention.ImportConventionBuilder&gt; configure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ParameterImportConventionBuilder.Import``1(System.Action{System.Composition.Convention.ImportConventionBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Import(Of T) (configure As Action(Of ImportConventionBuilder)) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Import(Action&lt;System::Composition::Convention::ImportConventionBuilder ^&gt; ^ configure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -72,8 +77,7 @@
         <param name="configure">The configuration for the import.</param>
         <summary>Imports the specified generic type by using the specified configuration.</summary>
         <returns>The imported instance.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

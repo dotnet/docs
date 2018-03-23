@@ -1,7 +1,9 @@
-<Type Name="CallSiteBinder" FullName="System.Runtime.CompilerServices.CallSiteBinder">
+﻿<Type Name="CallSiteBinder" FullName="System.Runtime.CompilerServices.CallSiteBinder">
   <TypeSignature Language="C#" Value="public abstract class CallSiteBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CallSiteBinder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CallSiteBinder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CallSiteBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CallSiteBinder abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="protected CallSiteBinder ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteBinder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CallSiteBinder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Linq.Expressions.Expression Bind (object[] args, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.ParameterExpression&gt; parameters, System.Linq.Expressions.LabelTarget returnLabel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression Bind(object[] args, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Linq.Expressions.ParameterExpression&gt; parameters, class System.Linq.Expressions.LabelTarget returnLabel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteBinder.Bind(System.Object[],System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.LabelTarget)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Bind (args As Object(), parameters As ReadOnlyCollection(Of ParameterExpression), returnLabel As LabelTarget) As Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Linq::Expressions::Expression ^ Bind(cli::array &lt;System::Object ^&gt; ^ args, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ parameters, System::Linq::Expressions::LabelTarget ^ returnLabel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public virtual T BindDelegate&lt;T&gt; (System.Runtime.CompilerServices.CallSite&lt;T&gt; site, object[] args) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T BindDelegate&lt;class T&gt;(class System.Runtime.CompilerServices.CallSite`1&lt;!!T&gt; site, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindDelegate(Of T As Class) (site As CallSite(Of T), args As Object()) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual T BindDelegate(System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ site, cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -144,6 +152,8 @@
       <MemberSignature Language="C#" Value="protected void CacheTarget&lt;T&gt; (T target) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CacheTarget&lt;class T&gt;(!!T target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CacheTarget(Of T As Class) (target As T)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; where T : class void CacheTarget(T target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -186,6 +196,8 @@
       <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LabelTarget UpdateLabel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Linq.Expressions.LabelTarget UpdateLabel" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.CallSiteBinder.UpdateLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UpdateLabel As LabelTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Linq::Expressions::LabelTarget ^ UpdateLabel { System::Linq::Expressions::LabelTarget ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

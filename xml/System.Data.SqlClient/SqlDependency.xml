@@ -1,7 +1,9 @@
-<Type Name="SqlDependency" FullName="System.Data.SqlClient.SqlDependency">
+﻿<Type Name="SqlDependency" FullName="System.Data.SqlClient.SqlDependency">
   <TypeSignature Language="C#" Value="public sealed class SqlDependency" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlDependency extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlDependency" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlDependency" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlDependency sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,10 +57,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlDependency" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlDependency ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDependency.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDependency();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -104,6 +118,8 @@
       <MemberSignature Language="C#" Value="public SqlDependency (System.Data.SqlClient.SqlCommand command);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.SqlClient.SqlCommand command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDependency.#ctor(System.Data.SqlClient.SqlCommand)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (command As SqlCommand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDependency(System::Data::SqlClient::SqlCommand ^ command);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -154,6 +170,8 @@
       <MemberSignature Language="C#" Value="public SqlDependency (System.Data.SqlClient.SqlCommand command, string options, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.SqlClient.SqlCommand command, string options, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDependency.#ctor(System.Data.SqlClient.SqlCommand,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (command As SqlCommand, options As String, timeout As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDependency(System::Data::SqlClient::SqlCommand ^ command, System::String ^ options, int timeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -209,6 +227,8 @@
       <MemberSignature Language="C#" Value="public void AddCommandDependency (System.Data.SqlClient.SqlCommand command);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCommandDependency(class System.Data.SqlClient.SqlCommand command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDependency.AddCommandDependency(System.Data.SqlClient.SqlCommand)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCommandDependency (command As SqlCommand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCommandDependency(System::Data::SqlClient::SqlCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -260,6 +280,8 @@
       <MemberSignature Language="C#" Value="public bool HasChanges { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasChanges" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDependency.HasChanges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChanges As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasChanges { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -288,6 +310,8 @@
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDependency.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -314,6 +338,8 @@
       <MemberSignature Language="C#" Value="public event System.Data.SqlClient.OnChangeEventHandler OnChange;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Data.SqlClient.OnChangeEventHandler OnChange" />
       <MemberSignature Language="DocId" Value="E:System.Data.SqlClient.SqlDependency.OnChange" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event OnChange As OnChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::SqlClient::OnChangeEventHandler ^ OnChange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -373,6 +399,8 @@
       <MemberSignature Language="C#" Value="public static bool Start (string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Start(string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDependency.Start(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Start (connectionString As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Start(System::String ^ connectionString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -414,6 +442,8 @@
       <MemberSignature Language="C#" Value="public static bool Start (string connectionString, string queue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Start(string connectionString, string queue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDependency.Start(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Start (connectionString As String, queue As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Start(System::String ^ connectionString, System::String ^ queue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -477,6 +507,8 @@
       <MemberSignature Language="C#" Value="public static bool Stop (string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Stop(string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDependency.Stop(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Stop (connectionString As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Stop(System::String ^ connectionString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -511,6 +543,8 @@
       <MemberSignature Language="C#" Value="public static bool Stop (string connectionString, string queue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Stop(string connectionString, string queue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDependency.Stop(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Stop (connectionString As String, queue As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Stop(System::String ^ connectionString, System::String ^ queue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -543,15 +577,5 @@
         <exception cref="T:System.Data.SqlClient.SqlException">And underlying **SqlClient** exception occurred.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlDependency" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

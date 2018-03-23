@@ -1,7 +1,9 @@
-<Type Name="BuildProviderAppliesToAttribute" FullName="System.Web.Compilation.BuildProviderAppliesToAttribute">
+﻿<Type Name="BuildProviderAppliesToAttribute" FullName="System.Web.Compilation.BuildProviderAppliesToAttribute">
   <TypeSignature Language="C#" Value="public sealed class BuildProviderAppliesToAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BuildProviderAppliesToAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProviderAppliesToAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuildProviderAppliesToAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildProviderAppliesToAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public BuildProviderAppliesToAttribute (System.Web.Compilation.BuildProviderAppliesTo appliesTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.Compilation.BuildProviderAppliesTo appliesTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProviderAppliesToAttribute.#ctor(System.Web.Compilation.BuildProviderAppliesTo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appliesTo As BuildProviderAppliesTo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildProviderAppliesToAttribute(System::Web::Compilation::BuildProviderAppliesTo appliesTo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Compilation.BuildProviderAppliesTo AppliesTo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Compilation.BuildProviderAppliesTo AppliesTo" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProviderAppliesToAttribute.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As BuildProviderAppliesTo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Compilation::BuildProviderAppliesTo AppliesTo { System::Web::Compilation::BuildProviderAppliesTo get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

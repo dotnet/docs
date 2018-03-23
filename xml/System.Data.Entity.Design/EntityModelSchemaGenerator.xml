@@ -1,7 +1,9 @@
-<Type Name="EntityModelSchemaGenerator" FullName="System.Data.Entity.Design.EntityModelSchemaGenerator">
+﻿<Type Name="EntityModelSchemaGenerator" FullName="System.Data.Entity.Design.EntityModelSchemaGenerator">
   <TypeSignature Language="C#" Value="public sealed class EntityModelSchemaGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityModelSchemaGenerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityModelSchemaGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityModelSchemaGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityModelSchemaGenerator sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityModelSchemaGenerator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityModelSchemaGenerator (System.Data.Metadata.Edm.EntityContainer storeEntityContainer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.EntityContainer storeEntityContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.#ctor(System.Data.Metadata.Edm.EntityContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storeEntityContainer As EntityContainer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityModelSchemaGenerator(System::Data::Metadata::Edm::EntityContainer ^ storeEntityContainer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -44,6 +57,8 @@
       <MemberSignature Language="C#" Value="public EntityModelSchemaGenerator (System.Data.Metadata.Edm.EntityContainer storeEntityContainer, string namespaceName, string modelEntityContainerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.EntityContainer storeEntityContainer, string namespaceName, string modelEntityContainerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.#ctor(System.Data.Metadata.Edm.EntityContainer,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storeEntityContainer As EntityContainer, namespaceName As String, modelEntityContainerName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityModelSchemaGenerator(System::Data::Metadata::Edm::EntityContainer ^ storeEntityContainer, System::String ^ namespaceName, System::String ^ modelEntityContainerName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -66,6 +81,7 @@
       <MemberSignature Language="C#" Value="public EntityModelSchemaGenerator (System.Data.Metadata.Edm.StoreItemCollection storeItemCollection, string namespaceName, string modelEntityContainerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection, string namespaceName, string modelEntityContainerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.#ctor(System.Data.Metadata.Edm.StoreItemCollection,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityModelSchemaGenerator(System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection, System::String ^ namespaceName, System::String ^ modelEntityContainerName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -93,6 +109,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmItemCollection EdmItemCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmItemCollection EdmItemCollection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityModelSchemaGenerator.EdmItemCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EdmItemCollection As EdmItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmItemCollection ^ EdmItemCollection { System::Data::Metadata::Edm::EdmItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -116,6 +134,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EntityContainer EntityContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EntityContainer EntityContainer" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityModelSchemaGenerator.EntityContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityContainer As EntityContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EntityContainer ^ EntityContainer { System::Data::Metadata::Edm::EntityContainer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -134,6 +154,8 @@
       <MemberSignature Language="C#" Value="public bool GenerateForeignKeyProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GenerateForeignKeyProperties" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateForeignKeyProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property GenerateForeignKeyProperties As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateForeignKeyProperties { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -148,10 +170,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates the conceptual model metadata information and returns any schema errors.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GenerateMetadata">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateMetadata() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateMetadata () As IList(Of EdmSchemaError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateMetadata();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -171,6 +204,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateMetadata (Version targetEntityFrameworkVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateMetadata(class System.Version targetEntityFrameworkVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateMetadata(System.Version)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateMetadata (targetEntityFrameworkVersion As Version) As IList(Of EdmSchemaError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateMetadata(Version ^ targetEntityFrameworkVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -193,6 +228,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Entity.Design.PluralizationServices.PluralizationService PluralizationService { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Entity.Design.PluralizationServices.PluralizationService PluralizationService" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityModelSchemaGenerator.PluralizationService" />
+      <MemberSignature Language="VB.NET" Value="Public Property PluralizationService As PluralizationService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Entity::Design::PluralizationServices::PluralizationService ^ PluralizationService { System::Data::Entity::Design::PluralizationServices::PluralizationService ^ get(); void set(System::Data::Entity::Design::PluralizationServices::PluralizationService ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -207,10 +244,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteModelSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the generated conceptual schema definition language (CSDL) to the specified file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteModelSchema">
       <MemberSignature Language="C#" Value="public void WriteModelSchema (string outputFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteModelSchema(string outputFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.WriteModelSchema(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteModelSchema (outputFileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteModelSchema(System::String ^ outputFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -232,6 +280,8 @@
       <MemberSignature Language="C#" Value="public void WriteModelSchema (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteModelSchema(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.WriteModelSchema(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteModelSchema (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteModelSchema(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -249,10 +299,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStorageMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the generated mapping specification language (MSL) to the specified file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteStorageMapping">
       <MemberSignature Language="C#" Value="public void WriteStorageMapping (string outputFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStorageMapping(string outputFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.WriteStorageMapping(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStorageMapping (outputFileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStorageMapping(System::String ^ outputFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -274,6 +335,8 @@
       <MemberSignature Language="C#" Value="public void WriteStorageMapping (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStorageMapping(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.WriteStorageMapping(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStorageMapping (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStorageMapping(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -291,41 +354,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteStorageMapping">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the generated mapping specification language (MSL) to the specified file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GenerateMetadata">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates the conceptual model metadata information and returns any schema errors.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityModelSchemaGenerator" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteModelSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the generated conceptual schema definition language (CSDL) to the specified file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

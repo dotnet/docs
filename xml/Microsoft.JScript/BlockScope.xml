@@ -1,7 +1,9 @@
-<Type Name="BlockScope" FullName="Microsoft.JScript.BlockScope">
+﻿<Type Name="BlockScope" FullName="Microsoft.JScript.BlockScope">
   <TypeSignature Language="C#" Value="public class BlockScope : Microsoft.JScript.ActivationObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlockScope extends Microsoft.JScript.ActivationObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BlockScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlockScope&#xA;Inherits ActivationObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlockScope : Microsoft::JScript::ActivationObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public BlockScope (Microsoft.JScript.ScriptObject parent, string name, int scopeId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject parent, string name, int32 scopeId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BlockScope.#ctor(Microsoft.JScript.ScriptObject,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ScriptObject, name As String, scopeId As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BlockScope(Microsoft::JScript::ScriptObject ^ parent, System::String ^ name, int scopeId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected override Microsoft.JScript.JSVariableField CreateField (string name, System.Reflection.FieldAttributes attributeFlags, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.JScript.JSVariableField CreateField(string name, valuetype System.Reflection.FieldAttributes attributeFlags, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BlockScope.CreateField(System.String,System.Reflection.FieldAttributes,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateField (name As String, attributeFlags As FieldAttributes, value As Object) As JSVariableField" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::JScript::JSVariableField ^ CreateField(System::String ^ name, System::Reflection::FieldAttributes attributeFlags, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

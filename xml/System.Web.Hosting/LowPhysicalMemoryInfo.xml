@@ -1,7 +1,9 @@
-<Type Name="LowPhysicalMemoryInfo" FullName="System.Web.Hosting.LowPhysicalMemoryInfo">
+﻿<Type Name="LowPhysicalMemoryInfo" FullName="System.Web.Hosting.LowPhysicalMemoryInfo">
   <TypeSignature Language="C#" Value="public sealed class LowPhysicalMemoryInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LowPhysicalMemoryInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.LowPhysicalMemoryInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LowPhysicalMemoryInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LowPhysicalMemoryInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public LowPhysicalMemoryInfo (int currentPercentUsed, int percentLimit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 currentPercentUsed, int32 percentLimit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryInfo.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (currentPercentUsed As Integer, percentLimit As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LowPhysicalMemoryInfo(int currentPercentUsed, int percentLimit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public int CurrentPercentUsed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentPercentUsed" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.LowPhysicalMemoryInfo.CurrentPercentUsed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentPercentUsed As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentPercentUsed { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public int PercentLimit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PercentLimit" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.LowPhysicalMemoryInfo.PercentLimit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PercentLimit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentLimit { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="public bool RequestGC { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequestGC" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.LowPhysicalMemoryInfo.RequestGC" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestGC As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequestGC { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

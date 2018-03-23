@@ -1,7 +1,9 @@
-<Type Name="ThreadPoolBoundHandle" FullName="System.Threading.ThreadPoolBoundHandle">
+﻿<Type Name="ThreadPoolBoundHandle" FullName="System.Threading.ThreadPoolBoundHandle">
   <TypeSignature Language="C#" Value="public sealed class ThreadPoolBoundHandle : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThreadPoolBoundHandle extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadPoolBoundHandle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThreadPoolBoundHandle&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThreadPoolBoundHandle sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Overlapped</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -33,10 +35,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AllocateNativeOverlapped">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AllocateNativeOverlapped">
       <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* AllocateNativeOverlapped (System.Threading.PreAllocatedOverlapped preAllocated);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* AllocateNativeOverlapped(class System.Threading.PreAllocatedOverlapped preAllocated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* AllocateNativeOverlapped(System::Threading::PreAllocatedOverlapped ^ preAllocated);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -90,6 +103,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* AllocateNativeOverlapped (System.Threading.IOCompletionCallback callback, object state, object pinData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* AllocateNativeOverlapped(class System.Threading.IOCompletionCallback callback, object state, object pinData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* AllocateNativeOverlapped(System::Threading::IOCompletionCallback ^ callback, System::Object ^ state, System::Object ^ pinData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -133,6 +147,8 @@
       <MemberSignature Language="C#" Value="public static System.Threading.ThreadPoolBoundHandle BindHandle (System.Runtime.InteropServices.SafeHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.ThreadPoolBoundHandle BindHandle(class System.Runtime.InteropServices.SafeHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.BindHandle(System.Runtime.InteropServices.SafeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BindHandle (handle As SafeHandle) As ThreadPoolBoundHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::ThreadPoolBoundHandle ^ BindHandle(System::Runtime::InteropServices::SafeHandle ^ handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -189,7 +205,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -216,6 +237,7 @@
       <MemberSignature Language="C#" Value="public void FreeNativeOverlapped (System.Threading.NativeOverlapped* overlapped);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FreeNativeOverlapped(valuetype System.Threading.NativeOverlapped* overlapped) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FreeNativeOverlapped(System::Threading::NativeOverlapped* overlapped);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -263,6 +285,7 @@
       <MemberSignature Language="C#" Value="public static object GetNativeOverlappedState (System.Threading.NativeOverlapped* overlapped);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetNativeOverlappedState(valuetype System.Threading.NativeOverlapped* overlapped) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.GetNativeOverlappedState(System.Threading.NativeOverlapped*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetNativeOverlappedState(System::Threading::NativeOverlapped* overlapped);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -301,6 +324,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.SafeHandle Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.InteropServices.SafeHandle Handle" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadPoolBoundHandle.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As SafeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::SafeHandle ^ Handle { System::Runtime::InteropServices::SafeHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -324,15 +349,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AllocateNativeOverlapped">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Overlapped</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

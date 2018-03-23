@@ -1,7 +1,9 @@
-<Type Name="MathObject" FullName="Microsoft.JScript.MathObject">
+﻿<Type Name="MathObject" FullName="Microsoft.JScript.MathObject">
   <TypeSignature Language="C#" Value="public class MathObject : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MathObject extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.MathObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class MathObject&#xA;Inherits JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MathObject : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static double abs (double d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 abs(float64 d) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.abs(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function abs (d As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double abs(double d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public static double acos (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 acos(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.acos(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function acos (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double acos(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public static double asin (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 asin(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.asin(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function asin (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double asin(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public static double atan (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 atan(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.atan(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function atan (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double atan(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="public static double atan2 (double dy, double dx);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 atan2(float64 dy, float64 dx) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.atan2(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function atan2 (dy As Double, dx As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double atan2(double dy, double dx);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -166,6 +178,8 @@
       <MemberSignature Language="C#" Value="public static double ceil (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ceil(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.ceil(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ceil (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ceil(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -195,6 +209,8 @@
       <MemberSignature Language="C#" Value="public static double cos (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 cos(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.cos(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function cos (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double cos(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -224,6 +240,8 @@
       <MemberSignature Language="C#" Value="public const double E = 2.71828182845905;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 E = (2.71828182845905)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.E" />
+      <MemberSignature Language="VB.NET" Value="Public Const E As Double  = 2.71828182845905" />
+      <MemberSignature Language="C++ CLI" Value="public: double E = 2.71828182845905;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -243,6 +261,8 @@
       <MemberSignature Language="C#" Value="public static double exp (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 exp(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.exp(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function exp (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double exp(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -272,6 +292,8 @@
       <MemberSignature Language="C#" Value="public static double floor (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 floor(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.floor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function floor (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double floor(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -301,6 +323,8 @@
       <MemberSignature Language="C#" Value="public const double LN10 = 2.30258509299405;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 LN10 = (2.30258509299405)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.LN10" />
+      <MemberSignature Language="VB.NET" Value="Public Const LN10 As Double  = 2.30258509299405" />
+      <MemberSignature Language="C++ CLI" Value="public: double LN10 = 2.30258509299405;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -320,6 +344,8 @@
       <MemberSignature Language="C#" Value="public const double LN2 = 0.693147180559945;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 LN2 = (0.693147180559945)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.LN2" />
+      <MemberSignature Language="VB.NET" Value="Public Const LN2 As Double  = 0.693147180559945" />
+      <MemberSignature Language="C++ CLI" Value="public: double LN2 = 0.693147180559945;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -339,6 +365,8 @@
       <MemberSignature Language="C#" Value="public static double log (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 log(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.log(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function log (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double log(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -368,6 +396,8 @@
       <MemberSignature Language="C#" Value="public const double LOG10E = 0.434294481903252;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 LOG10E = (0.434294481903252)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.LOG10E" />
+      <MemberSignature Language="VB.NET" Value="Public Const LOG10E As Double  = 0.434294481903252" />
+      <MemberSignature Language="C++ CLI" Value="public: double LOG10E = 0.434294481903252;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -387,6 +417,8 @@
       <MemberSignature Language="C#" Value="public const double LOG2E = 1.44269504088896;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 LOG2E = (1.44269504088896)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.LOG2E" />
+      <MemberSignature Language="VB.NET" Value="Public Const LOG2E As Double  = 1.44269504088896" />
+      <MemberSignature Language="C++ CLI" Value="public: double LOG2E = 1.44269504088896;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -406,6 +438,8 @@
       <MemberSignature Language="C#" Value="public static double max (object x, object y, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 max(object x, object y, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.max(System.Object,System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function max (x As Object, y As Object, ParamArray args As Object()) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double max(System::Object ^ x, System::Object ^ y, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -444,6 +478,8 @@
       <MemberSignature Language="C#" Value="public static double min (object x, object y, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 min(object x, object y, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.min(System.Object,System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function min (x As Object, y As Object, ParamArray args As Object()) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double min(System::Object ^ x, System::Object ^ y, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -482,6 +518,8 @@
       <MemberSignature Language="C#" Value="public const double PI = 3.14159265358979;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 PI = (3.14159265358979)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.PI" />
+      <MemberSignature Language="VB.NET" Value="Public Const PI As Double  = 3.14159265358979" />
+      <MemberSignature Language="C++ CLI" Value="public: double PI = 3.14159265358979;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -501,6 +539,8 @@
       <MemberSignature Language="C#" Value="public static double pow (double dx, double dy);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 pow(float64 dx, float64 dy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.pow(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function pow (dx As Double, dy As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double pow(double dx, double dy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -531,6 +571,8 @@
       <MemberSignature Language="C#" Value="public static double random ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 random() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.random" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function random () As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double random();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -557,6 +599,8 @@
       <MemberSignature Language="C#" Value="public static double round (double d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 round(float64 d) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.round(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function round (d As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double round(double d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -585,6 +629,8 @@
       <MemberSignature Language="C#" Value="public static double sin (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 sin(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.sin(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function sin (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double sin(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -614,6 +660,8 @@
       <MemberSignature Language="C#" Value="public static double sqrt (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 sqrt(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.sqrt(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function sqrt (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double sqrt(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -643,6 +691,8 @@
       <MemberSignature Language="C#" Value="public const double SQRT1_2 = 0.707106781186548;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 SQRT1_2 = (0.707106781186548)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.SQRT1_2" />
+      <MemberSignature Language="VB.NET" Value="Public Const SQRT1_2 As Double  = 0.707106781186548" />
+      <MemberSignature Language="C++ CLI" Value="public: double SQRT1_2 = 0.707106781186548;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -662,6 +712,8 @@
       <MemberSignature Language="C#" Value="public const double SQRT2 = 1.4142135623731;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 SQRT2 = (1.4142135623731)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.SQRT2" />
+      <MemberSignature Language="VB.NET" Value="Public Const SQRT2 As Double  = 1.4142135623731" />
+      <MemberSignature Language="C++ CLI" Value="public: double SQRT2 = 1.4142135623731;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -681,6 +733,8 @@
       <MemberSignature Language="C#" Value="public static double tan (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 tan(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.tan(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function tan (x As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double tan(double x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IntegrationExceptionEventArgs" FullName="System.Windows.Forms.Integration.IntegrationExceptionEventArgs">
+﻿<Type Name="IntegrationExceptionEventArgs" FullName="System.Windows.Forms.Integration.IntegrationExceptionEventArgs">
   <TypeSignature Language="C#" Value="public class IntegrationExceptionEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IntegrationExceptionEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.IntegrationExceptionEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class IntegrationExceptionEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IntegrationExceptionEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public IntegrationExceptionEventArgs (bool throwException, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool throwException, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.#ctor(System.Boolean,System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntegrationExceptionEventArgs(bool throwException, Exception ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="public bool ThrowException { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowException" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThrowException As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThrowException { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>

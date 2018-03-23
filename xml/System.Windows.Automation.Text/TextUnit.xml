@@ -1,7 +1,9 @@
-<Type Name="TextUnit" FullName="System.Windows.Automation.Text.TextUnit">
+﻿<Type Name="TextUnit" FullName="System.Windows.Automation.Text.TextUnit">
   <TypeSignature Language="C#" Value="public enum TextUnit" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextUnit extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextUnit" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextUnit" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextUnit" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="Character" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Character = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Character" />
+      <MemberSignature Language="VB.NET" Value="Character" />
+      <MemberSignature Language="C++ CLI" Value="Character" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -57,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the text unit is one character in length.</summary>
       </Docs>
@@ -65,6 +70,8 @@
       <MemberSignature Language="C#" Value="Document" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Document = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Document" />
+      <MemberSignature Language="VB.NET" Value="Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -73,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies that the text unit is an entire document in length.</summary>
       </Docs>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="Format" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Format = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Format" />
+      <MemberSignature Language="VB.NET" Value="Format" />
+      <MemberSignature Language="C++ CLI" Value="Format" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -89,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the text unit is the length of a single, common format specification, such as bold, italic, or similar.</summary>
       </Docs>
@@ -97,6 +108,8 @@
       <MemberSignature Language="C#" Value="Line" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Line = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Line" />
+      <MemberSignature Language="VB.NET" Value="Line" />
+      <MemberSignature Language="C++ CLI" Value="Line" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -105,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that the text unit is one line in length.</summary>
       </Docs>
@@ -113,6 +127,8 @@
       <MemberSignature Language="C#" Value="Page" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Page = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Page" />
+      <MemberSignature Language="VB.NET" Value="Page" />
+      <MemberSignature Language="C++ CLI" Value="Page" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -121,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies that the text unit is one document-specific page in length.</summary>
       </Docs>
@@ -129,6 +146,8 @@
       <MemberSignature Language="C#" Value="Paragraph" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Paragraph = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Paragraph" />
+      <MemberSignature Language="VB.NET" Value="Paragraph" />
+      <MemberSignature Language="C++ CLI" Value="Paragraph" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -137,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the text unit is one paragraph in length.</summary>
       </Docs>
@@ -145,6 +165,8 @@
       <MemberSignature Language="C#" Value="Word" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Word = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Word" />
+      <MemberSignature Language="VB.NET" Value="Word" />
+      <MemberSignature Language="C++ CLI" Value="Word" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -153,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the text unit is one word in length.</summary>
       </Docs>

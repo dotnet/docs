@@ -1,7 +1,9 @@
-<Type Name="FUNCDESC" FullName="System.Runtime.InteropServices.ComTypes.FUNCDESC">
+﻿<Type Name="FUNCDESC" FullName="System.Runtime.InteropServices.ComTypes.FUNCDESC">
   <TypeSignature Language="C#" Value="public struct FUNCDESC" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FUNCDESC extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.FUNCDESC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure FUNCDESC" />
+  <TypeSignature Language="C++ CLI" Value="public value class FUNCDESC" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.CALLCONV callconv;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.CALLCONV callconv" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.callconv" />
+      <MemberSignature Language="VB.NET" Value="Public callconv As CALLCONV " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::CALLCONV callconv;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public short cParams;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cParams" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.cParams" />
+      <MemberSignature Language="VB.NET" Value="Public cParams As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short cParams;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -118,6 +124,8 @@
       <MemberSignature Language="C#" Value="public short cParamsOpt;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cParamsOpt" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.cParamsOpt" />
+      <MemberSignature Language="VB.NET" Value="Public cParamsOpt As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short cParamsOpt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -156,6 +164,8 @@
       <MemberSignature Language="C#" Value="public short cScodes;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cScodes" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.cScodes" />
+      <MemberSignature Language="VB.NET" Value="Public cScodes As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short cScodes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -194,6 +204,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.ELEMDESC elemdescFunc;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.ELEMDESC elemdescFunc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.elemdescFunc" />
+      <MemberSignature Language="VB.NET" Value="Public elemdescFunc As ELEMDESC " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::ELEMDESC elemdescFunc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -232,6 +244,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.FUNCKIND funckind;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.FUNCKIND funckind" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.funckind" />
+      <MemberSignature Language="VB.NET" Value="Public funckind As FUNCKIND " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::FUNCKIND funckind;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -270,6 +284,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.INVOKEKIND invkind;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.INVOKEKIND invkind" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.invkind" />
+      <MemberSignature Language="VB.NET" Value="Public invkind As INVOKEKIND " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::INVOKEKIND invkind;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -308,6 +324,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lprgelemdescParam;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lprgelemdescParam" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.lprgelemdescParam" />
+      <MemberSignature Language="VB.NET" Value="Public lprgelemdescParam As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lprgelemdescParam;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -346,6 +364,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lprgscode;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lprgscode" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.lprgscode" />
+      <MemberSignature Language="VB.NET" Value="Public lprgscode As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lprgscode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -384,6 +404,8 @@
       <MemberSignature Language="C#" Value="public int memid;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 memid" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.memid" />
+      <MemberSignature Language="VB.NET" Value="Public memid As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int memid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -422,6 +444,8 @@
       <MemberSignature Language="C#" Value="public short oVft;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 oVft" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.oVft" />
+      <MemberSignature Language="VB.NET" Value="Public oVft As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short oVft;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -460,6 +484,8 @@
       <MemberSignature Language="C#" Value="public short wFuncFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 wFuncFlags" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCDESC.wFuncFlags" />
+      <MemberSignature Language="VB.NET" Value="Public wFuncFlags As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short wFuncFlags;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

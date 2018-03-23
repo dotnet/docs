@@ -1,7 +1,9 @@
-<Type Name="DockPattern" FullName="System.Windows.Automation.DockPattern">
+﻿<Type Name="DockPattern" FullName="System.Windows.Automation.DockPattern">
   <TypeSignature Language="C#" Value="public class DockPattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DockPattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.DockPattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class DockPattern&#xA;Inherits BasePattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DockPattern : System::Windows::Automation::BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.DockPattern.DockPatternInformation Cached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.DockPattern/DockPatternInformation Cached" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.DockPattern.Cached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As DockPattern.DockPatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::DockPattern::DockPatternInformation Cached { System::Windows::Automation::DockPattern::DockPatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.DockPattern.DockPatternInformation Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.DockPattern/DockPatternInformation Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.DockPattern.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As DockPattern.DockPatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::DockPattern::DockPatternInformation Current { System::Windows::Automation::DockPattern::DockPatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty DockPositionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty DockPositionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPattern.DockPositionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DockPositionProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ DockPositionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -160,6 +170,7 @@
       <MemberSignature Language="C#" Value="public void SetDockPosition (System.Windows.Automation.DockPosition dockPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDockPosition(valuetype System.Windows.Automation.DockPosition dockPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.DockPattern.SetDockPosition(System.Windows.Automation.DockPosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDockPosition(System::Windows::Automation::DockPosition dockPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

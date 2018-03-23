@@ -1,7 +1,9 @@
-<Type Name="MessageBoxImage" FullName="System.Windows.MessageBoxImage">
+﻿<Type Name="MessageBoxImage" FullName="System.Windows.MessageBoxImage">
   <TypeSignature Language="C#" Value="public enum MessageBoxImage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageBoxImage extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.MessageBoxImage" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxImage" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxImage" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="Asterisk" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Asterisk = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Asterisk" />
+      <MemberSignature Language="VB.NET" Value="Asterisk" />
+      <MemberSignature Language="C++ CLI" Value="Asterisk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
       </Docs>
@@ -58,6 +63,8 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Error = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
       </Docs>
@@ -74,6 +82,8 @@
       <MemberSignature Language="C#" Value="Exclamation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Exclamation = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Exclamation" />
+      <MemberSignature Language="VB.NET" Value="Exclamation" />
+      <MemberSignature Language="C++ CLI" Value="Exclamation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
       </Docs>
@@ -90,6 +101,8 @@
       <MemberSignature Language="C#" Value="Hand" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Hand = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Hand" />
+      <MemberSignature Language="VB.NET" Value="Hand" />
+      <MemberSignature Language="C++ CLI" Value="Hand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of a white X in a circle with a red background.</summary>
       </Docs>
@@ -106,6 +120,8 @@
       <MemberSignature Language="C#" Value="Information" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Information = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Information" />
+      <MemberSignature Language="VB.NET" Value="Information" />
+      <MemberSignature Language="C++ CLI" Value="Information" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
       </Docs>
@@ -122,6 +139,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No icon is displayed.</summary>
       </Docs>
@@ -138,6 +158,8 @@
       <MemberSignature Language="C#" Value="Question" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Question = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Question" />
+      <MemberSignature Language="VB.NET" Value="Question" />
+      <MemberSignature Language="C++ CLI" Value="Question" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of a question mark in a circle.</summary>
       </Docs>
@@ -154,6 +177,8 @@
       <MemberSignature Language="C#" Value="Stop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Stop = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Stop" />
+      <MemberSignature Language="VB.NET" Value="Stop" />
+      <MemberSignature Language="C++ CLI" Value="Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
       </Docs>
@@ -170,6 +196,8 @@
       <MemberSignature Language="C#" Value="Warning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Warning = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +206,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
       </Docs>

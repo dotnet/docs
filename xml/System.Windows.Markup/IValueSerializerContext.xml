@@ -1,7 +1,9 @@
-<Type Name="IValueSerializerContext" FullName="System.Windows.Markup.IValueSerializerContext">
+﻿<Type Name="IValueSerializerContext" FullName="System.Windows.Markup.IValueSerializerContext">
   <TypeSignature Language="C#" Value="public interface IValueSerializerContext : IServiceProvider, System.ComponentModel.ITypeDescriptorContext" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValueSerializerContext implements class System.ComponentModel.ITypeDescriptorContext, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IValueSerializerContext" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IValueSerializerContext&#xA;Implements IServiceProvider, ITypeDescriptorContext" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IValueSerializerContext : IServiceProvider, System::ComponentModel::ITypeDescriptorContext" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +38,21 @@
     <altmember cref="T:System.Windows.Markup.ValueSerializer" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="GetValueSerializerFor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Markup.ValueSerializer" /> associated with an object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetValueSerializerFor">
       <MemberSignature Language="C#" Value="public System.Windows.Markup.ValueSerializer GetValueSerializerFor (System.ComponentModel.PropertyDescriptor descriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Markup.ValueSerializer GetValueSerializerFor(class System.ComponentModel.PropertyDescriptor descriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValueSerializerFor (descriptor As PropertyDescriptor) As ValueSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Markup::ValueSerializer ^ GetValueSerializerFor(System::ComponentModel::PropertyDescriptor ^ descriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -63,6 +76,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Markup.ValueSerializer GetValueSerializerFor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Markup.ValueSerializer GetValueSerializerFor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Markup::ValueSerializer ^ GetValueSerializerFor(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -82,14 +96,5 @@
         <altmember cref="T:System.Windows.Markup.ValueSerializer" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetValueSerializerFor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Markup.ValueSerializer" /> associated with an object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

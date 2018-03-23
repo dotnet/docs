@@ -1,7 +1,9 @@
-<Type Name="TargetMode" FullName="System.IO.Packaging.TargetMode">
+﻿<Type Name="TargetMode" FullName="System.IO.Packaging.TargetMode">
   <TypeSignature Language="C#" Value="public enum TargetMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TargetMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.TargetMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TargetMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TargetMode" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="External" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.TargetMode External = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.TargetMode.External" />
+      <MemberSignature Language="VB.NET" Value="External" />
+      <MemberSignature Language="C++ CLI" Value="External" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.TargetMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The relationship references a resource that is external to the package.</summary>
       </Docs>
@@ -54,6 +59,8 @@
       <MemberSignature Language="C#" Value="Internal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.TargetMode Internal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.TargetMode.Internal" />
+      <MemberSignature Language="VB.NET" Value="Internal" />
+      <MemberSignature Language="C++ CLI" Value="Internal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -67,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.TargetMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The relationship references a part that is inside the package.</summary>
       </Docs>

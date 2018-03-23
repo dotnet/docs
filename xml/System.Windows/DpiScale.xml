@@ -1,7 +1,9 @@
-<Type Name="DpiScale" FullName="System.Windows.DpiScale">
+﻿<Type Name="DpiScale" FullName="System.Windows.DpiScale">
   <TypeSignature Language="C#" Value="public struct DpiScale" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DpiScale extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DpiScale" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DpiScale" />
+  <TypeSignature Language="C++ CLI" Value="public value class DpiScale" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public DpiScale (double dpiScaleX, double dpiScaleY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 dpiScaleX, float64 dpiScaleY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DpiScale.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dpiScaleX As Double, dpiScaleY As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DpiScale(double dpiScaleX, double dpiScaleY);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public double DpiScaleX { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DpiScaleX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.DpiScaleX" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DpiScaleX As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DpiScaleX { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public double DpiScaleY { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DpiScaleY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.DpiScaleY" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DpiScaleY As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DpiScaleY { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +97,8 @@
       <MemberSignature Language="C#" Value="public double PixelsPerDip { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 PixelsPerDip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.PixelsPerDip" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelsPerDip As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerDip { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +117,8 @@
       <MemberSignature Language="C#" Value="public double PixelsPerInchX { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 PixelsPerInchX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.PixelsPerInchX" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelsPerInchX As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerInchX { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +144,8 @@
       <MemberSignature Language="C#" Value="public double PixelsPerInchY { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 PixelsPerInchY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.PixelsPerInchY" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelsPerInchY As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerInchY { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

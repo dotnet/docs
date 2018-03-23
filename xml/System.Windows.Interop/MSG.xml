@@ -1,7 +1,9 @@
-<Type Name="MSG" FullName="System.Windows.Interop.MSG">
+﻿<Type Name="MSG" FullName="System.Windows.Interop.MSG">
   <TypeSignature Language="C#" Value="public struct MSG" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit MSG extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.MSG" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MSG" />
+  <TypeSignature Language="C++ CLI" Value="public value class MSG" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public IntPtr hwnd { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int hwnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.MSG.hwnd" />
+      <MemberSignature Language="VB.NET" Value="Public Property hwnd As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr hwnd { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lParam { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int lParam" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.MSG.lParam" />
+      <MemberSignature Language="VB.NET" Value="Public Property lParam As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr lParam { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public int message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 message" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.MSG.message" />
+      <MemberSignature Language="VB.NET" Value="Public Property message As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int message { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="public int pt_x { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 pt_x" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.MSG.pt_x" />
+      <MemberSignature Language="VB.NET" Value="Public Property pt_x As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int pt_x { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public int pt_y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 pt_y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.MSG.pt_y" />
+      <MemberSignature Language="VB.NET" Value="Public Property pt_y As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int pt_y { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -170,6 +182,8 @@
       <MemberSignature Language="C#" Value="public int time { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 time" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.MSG.time" />
+      <MemberSignature Language="VB.NET" Value="Public Property time As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int time { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -196,6 +210,8 @@
       <MemberSignature Language="C#" Value="public IntPtr wParam { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int wParam" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.MSG.wParam" />
+      <MemberSignature Language="VB.NET" Value="Public Property wParam As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr wParam { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

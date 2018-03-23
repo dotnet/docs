@@ -1,7 +1,9 @@
-<Type Name="ReaderOptions" FullName="System.Xml.Linq.ReaderOptions">
+﻿<Type Name="ReaderOptions" FullName="System.Xml.Linq.ReaderOptions">
   <TypeSignature Language="C#" Value="public enum ReaderOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReaderOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.ReaderOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ReaderOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ReaderOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.ReaderOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.ReaderOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -53,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Linq.ReaderOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No reader options specified.</summary>
       </Docs>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="OmitDuplicateNamespaces" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.ReaderOptions OmitDuplicateNamespaces = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.ReaderOptions.OmitDuplicateNamespaces" />
+      <MemberSignature Language="VB.NET" Value="OmitDuplicateNamespaces" />
+      <MemberSignature Language="C++ CLI" Value="OmitDuplicateNamespaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -80,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Linq.ReaderOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Omit duplicate namespaces when loading the <see cref="T:System.Xml.Linq.XDocument" />.</summary>
       </Docs>

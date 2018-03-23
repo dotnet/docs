@@ -1,7 +1,9 @@
-<Type Name="IActivityEventListener&lt;T&gt;" FullName="System.Workflow.ComponentModel.IActivityEventListener&lt;T&gt;">
+﻿<Type Name="IActivityEventListener&lt;T&gt;" FullName="System.Workflow.ComponentModel.IActivityEventListener&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IActivityEventListener&lt;T&gt; where T : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivityEventListener`1&lt;(class System.EventArgs) T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IActivityEventListener`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IActivityEventListener(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : EventArgspublic interface class IActivityEventListener" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public void OnEvent (object sender, T e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnEvent(object sender, !T e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IActivityEventListener`1.OnEvent(System.Object,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnEvent (sender As Object, e As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnEvent(System::Object ^ sender, T e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

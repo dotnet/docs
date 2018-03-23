@@ -1,7 +1,9 @@
-<Type Name="DataGridViewCellToolTipTextNeededEventHandler" FullName="System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler">
+﻿<Type Name="DataGridViewCellToolTipTextNeededEventHandler" FullName="System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewCellToolTipTextNeededEventHandler(object sender, DataGridViewCellToolTipTextNeededEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellToolTipTextNeededEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellToolTipTextNeededEventHandler(sender As Object, e As DataGridViewCellToolTipTextNeededEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellToolTipTextNeededEventHandler(System::Object ^ sender, DataGridViewCellToolTipTextNeededEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

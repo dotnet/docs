@@ -1,7 +1,9 @@
-<Type Name="EdgeEffects" FullName="System.Windows.Forms.VisualStyles.EdgeEffects">
+﻿<Type Name="EdgeEffects" FullName="System.Windows.Forms.VisualStyles.EdgeEffects">
   <TypeSignature Language="C#" Value="public enum EdgeEffects" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EdgeEffects extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.EdgeEffects" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EdgeEffects" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EdgeEffects" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="FillInterior" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects FillInterior = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.FillInterior" />
+      <MemberSignature Language="VB.NET" Value="FillInterior" />
+      <MemberSignature Language="C++ CLI" Value="FillInterior" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>The area within the element borders is filled.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="Flat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects Flat = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>The border is flat.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Mono" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects Mono = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Mono" />
+      <MemberSignature Language="VB.NET" Value="Mono" />
+      <MemberSignature Language="C++ CLI" Value="Mono" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>The border is one-dimensional.</summary>
       </Docs>
@@ -78,6 +89,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The border is drawn without any effects.</summary>
       </Docs>
@@ -94,6 +108,8 @@
       <MemberSignature Language="C#" Value="Soft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects Soft = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Soft" />
+      <MemberSignature Language="VB.NET" Value="Soft" />
+      <MemberSignature Language="C++ CLI" Value="Soft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>The border is soft.</summary>
       </Docs>

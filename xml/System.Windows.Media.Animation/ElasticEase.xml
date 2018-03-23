@@ -1,7 +1,9 @@
-<Type Name="ElasticEase" FullName="System.Windows.Media.Animation.ElasticEase">
+﻿<Type Name="ElasticEase" FullName="System.Windows.Media.Animation.ElasticEase">
   <TypeSignature Language="C#" Value="public class ElasticEase : System.Windows.Media.Animation.EasingFunctionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ElasticEase extends System.Windows.Media.Animation.EasingFunctionBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ElasticEase" />
+  <TypeSignature Language="VB.NET" Value="Public Class ElasticEase&#xA;Inherits EasingFunctionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ElasticEase : System::Windows::Media::Animation::EasingFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="public ElasticEase ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ElasticEase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ElasticEase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ElasticEase.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +118,8 @@
       <MemberSignature Language="C#" Value="protected override double EaseInCore (double normalizedTime);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 EaseInCore(float64 normalizedTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ElasticEase.EaseInCore(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EaseInCore (normalizedTime As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double EaseInCore(double normalizedTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -143,6 +151,8 @@
       <MemberSignature Language="C#" Value="public int Oscillations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Oscillations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ElasticEase.Oscillations" />
+      <MemberSignature Language="VB.NET" Value="Public Property Oscillations As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Oscillations { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -182,6 +192,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OscillationsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OscillationsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ElasticEase.OscillationsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OscillationsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OscillationsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +211,8 @@
       <MemberSignature Language="C#" Value="public double Springiness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Springiness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ElasticEase.Springiness" />
+      <MemberSignature Language="VB.NET" Value="Public Property Springiness As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Springiness { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,6 +258,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SpringinessProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SpringinessProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ElasticEase.SpringinessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SpringinessProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SpringinessProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

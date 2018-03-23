@@ -1,7 +1,9 @@
-<Type Name="AxHost+ConnectionPointCookie" FullName="System.Windows.Forms.AxHost+ConnectionPointCookie">
+﻿<Type Name="AxHost+ConnectionPointCookie" FullName="System.Windows.Forms.AxHost+ConnectionPointCookie">
   <TypeSignature Language="C#" Value="public class AxHost.ConnectionPointCookie" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit AxHost/ConnectionPointCookie extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.ConnectionPointCookie" />
+  <TypeSignature Language="VB.NET" Value="Public Class AxHost.ConnectionPointCookie" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class AxHost::ConnectionPointCookie" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public ConnectionPointCookie (object source, object sink, Type eventInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object source, object sink, class System.Type eventInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ConnectionPointCookie.#ctor(System.Object,System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As Object, sink As Object, eventInterface As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionPointCookie(System::Object ^ source, System::Object ^ sink, Type ^ eventInterface);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public void Disconnect ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Disconnect() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ConnectionPointCookie.Disconnect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Disconnect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="~ConnectionPointCookie ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ConnectionPointCookie.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ConnectionPointCookie ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

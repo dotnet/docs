@@ -1,7 +1,9 @@
-<Type Name="FieldAttributes" FullName="System.Reflection.FieldAttributes">
+﻿<Type Name="FieldAttributes" FullName="System.Reflection.FieldAttributes">
   <TypeSignature Language="C#" Value="public enum FieldAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FieldAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.FieldAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FieldAttributes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FieldAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="Assembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes Assembly = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -84,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that the field is accessible throughout the assembly.</summary>
       </Docs>
@@ -92,6 +97,8 @@
       <MemberSignature Language="C#" Value="FamANDAssem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes FamANDAssem = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.FamANDAssem" />
+      <MemberSignature Language="VB.NET" Value="FamANDAssem" />
+      <MemberSignature Language="C++ CLI" Value="FamANDAssem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -113,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the field is accessible only by subtypes in this assembly.</summary>
       </Docs>
@@ -121,6 +129,8 @@
       <MemberSignature Language="C#" Value="Family" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes Family = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Family" />
+      <MemberSignature Language="VB.NET" Value="Family" />
+      <MemberSignature Language="C++ CLI" Value="Family" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -142,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the field is accessible only by type and subtypes.</summary>
       </Docs>
@@ -150,6 +161,8 @@
       <MemberSignature Language="C#" Value="FamORAssem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes FamORAssem = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.FamORAssem" />
+      <MemberSignature Language="VB.NET" Value="FamORAssem" />
+      <MemberSignature Language="C++ CLI" Value="FamORAssem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -171,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies that the field is accessible by subtypes anywhere, as well as throughout this assembly.</summary>
       </Docs>
@@ -179,6 +193,8 @@
       <MemberSignature Language="C#" Value="FieldAccessMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes FieldAccessMask = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.FieldAccessMask" />
+      <MemberSignature Language="VB.NET" Value="FieldAccessMask" />
+      <MemberSignature Language="C++ CLI" Value="FieldAccessMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -200,6 +216,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Specifies the access level of a given field.</summary>
       </Docs>
@@ -208,6 +225,8 @@
       <MemberSignature Language="C#" Value="HasDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes HasDefault = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.HasDefault" />
+      <MemberSignature Language="VB.NET" Value="HasDefault" />
+      <MemberSignature Language="C++ CLI" Value="HasDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -229,6 +248,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>Specifies that the field has a default value.</summary>
       </Docs>
@@ -237,6 +257,8 @@
       <MemberSignature Language="C#" Value="HasFieldMarshal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes HasFieldMarshal = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.HasFieldMarshal" />
+      <MemberSignature Language="VB.NET" Value="HasFieldMarshal" />
+      <MemberSignature Language="C++ CLI" Value="HasFieldMarshal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -258,6 +280,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Specifies that the field has marshaling information.</summary>
       </Docs>
@@ -266,6 +289,8 @@
       <MemberSignature Language="C#" Value="HasFieldRVA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes HasFieldRVA = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.HasFieldRVA" />
+      <MemberSignature Language="VB.NET" Value="HasFieldRVA" />
+      <MemberSignature Language="C++ CLI" Value="HasFieldRVA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -287,6 +312,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Specifies that the field has a relative virtual address (RVA). The RVA is the location of the method body in the current image, as an address relative to the start of the image file in which it is located.</summary>
       </Docs>
@@ -295,6 +321,8 @@
       <MemberSignature Language="C#" Value="InitOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes InitOnly = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.InitOnly" />
+      <MemberSignature Language="VB.NET" Value="InitOnly" />
+      <MemberSignature Language="C++ CLI" Value="InitOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -316,6 +344,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies that the field is initialized only, and can be set only in the body of a constructor.</summary>
       </Docs>
@@ -324,6 +353,8 @@
       <MemberSignature Language="C#" Value="Literal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes Literal = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Literal" />
+      <MemberSignature Language="VB.NET" Value="Literal" />
+      <MemberSignature Language="C++ CLI" Value="Literal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -345,6 +376,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Specifies that the field's value is a compile-time (static or early bound) constant. Any attempt to set it throws a <see cref="T:System.FieldAccessException" />.</summary>
       </Docs>
@@ -353,6 +385,8 @@
       <MemberSignature Language="C#" Value="NotSerialized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes NotSerialized = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.NotSerialized" />
+      <MemberSignature Language="VB.NET" Value="NotSerialized" />
+      <MemberSignature Language="C++ CLI" Value="NotSerialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -374,6 +408,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Specifies that the field does not have to be serialized when the type is remoted.</summary>
       </Docs>
@@ -382,6 +417,8 @@
       <MemberSignature Language="C#" Value="PinvokeImpl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes PinvokeImpl = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.PinvokeImpl" />
+      <MemberSignature Language="VB.NET" Value="PinvokeImpl" />
+      <MemberSignature Language="C++ CLI" Value="PinvokeImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -403,6 +440,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Reserved for future use.</summary>
       </Docs>
@@ -411,6 +449,8 @@
       <MemberSignature Language="C#" Value="Private" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes Private = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Private" />
+      <MemberSignature Language="VB.NET" Value="Private" />
+      <MemberSignature Language="C++ CLI" Value="Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -432,6 +472,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the field is accessible only by the parent type.</summary>
       </Docs>
@@ -440,6 +481,8 @@
       <MemberSignature Language="C#" Value="PrivateScope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes PrivateScope = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.PrivateScope" />
+      <MemberSignature Language="VB.NET" Value="PrivateScope" />
+      <MemberSignature Language="C++ CLI" Value="PrivateScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -461,6 +504,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the field cannot be referenced.</summary>
       </Docs>
@@ -469,6 +513,8 @@
       <MemberSignature Language="C#" Value="Public" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes Public = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Public" />
+      <MemberSignature Language="VB.NET" Value="Public" />
+      <MemberSignature Language="C++ CLI" Value="Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -490,6 +536,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies that the field is accessible by any member for whom this scope is visible.</summary>
       </Docs>
@@ -498,6 +545,8 @@
       <MemberSignature Language="C#" Value="ReservedMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes ReservedMask = int32(38144)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.ReservedMask" />
+      <MemberSignature Language="VB.NET" Value="ReservedMask" />
+      <MemberSignature Language="C++ CLI" Value="ReservedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -515,6 +564,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>38144</MemberValue>
       <Docs>
         <summary>Reserved.</summary>
       </Docs>
@@ -523,6 +573,8 @@
       <MemberSignature Language="C#" Value="RTSpecialName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes RTSpecialName = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.RTSpecialName" />
+      <MemberSignature Language="VB.NET" Value="RTSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="RTSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -544,6 +596,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Specifies that the common language runtime (metadata internal APIs) should check the name encoding.</summary>
       </Docs>
@@ -552,6 +605,8 @@
       <MemberSignature Language="C#" Value="SpecialName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes SpecialName = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.SpecialName" />
+      <MemberSignature Language="VB.NET" Value="SpecialName" />
+      <MemberSignature Language="C++ CLI" Value="SpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -573,6 +628,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Specifies a special method, with the name describing how the method is special.</summary>
       </Docs>
@@ -581,6 +637,8 @@
       <MemberSignature Language="C#" Value="Static" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.FieldAttributes Static = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Static" />
+      <MemberSignature Language="VB.NET" Value="Static" />
+      <MemberSignature Language="C++ CLI" Value="Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -602,6 +660,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.FieldAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies that the field represents the defined type, or else it is per-instance.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ContextDataSource" FullName="System.Web.UI.WebControls.ContextDataSource">
+﻿<Type Name="ContextDataSource" FullName="System.Web.UI.WebControls.ContextDataSource">
   <TypeSignature Language="C#" Value="public abstract class ContextDataSource : System.Web.UI.WebControls.QueryableDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContextDataSource extends System.Web.UI.WebControls.QueryableDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ContextDataSource" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContextDataSource&#xA;Inherits QueryableDataSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContextDataSource abstract : System::Web::UI::WebControls::QueryableDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected ContextDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ContextDataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public virtual string ContextTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContextTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSource.ContextTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ContextTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="protected string EntitySetName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EntitySetName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSource.EntitySetName" />
+      <MemberSignature Language="VB.NET" Value="Protected Property EntitySetName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ EntitySetName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public virtual string EntityTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EntityTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSource.EntityTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EntityTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EntityTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

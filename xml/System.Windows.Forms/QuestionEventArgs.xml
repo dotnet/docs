@@ -1,7 +1,9 @@
-<Type Name="QuestionEventArgs" FullName="System.Windows.Forms.QuestionEventArgs">
+﻿<Type Name="QuestionEventArgs" FullName="System.Windows.Forms.QuestionEventArgs">
   <TypeSignature Language="C#" Value="public class QuestionEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QuestionEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QuestionEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class QuestionEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QuestionEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +38,21 @@
     <altmember cref="E:System.Windows.Forms.DataGridView.RowDirtyStateNeeded" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QuestionEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QuestionEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QuestionEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QuestionEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +69,8 @@
       <MemberSignature Language="C#" Value="public QuestionEventArgs (bool response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QuestionEventArgs.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (response As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QuestionEventArgs(bool response);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +90,8 @@
       <MemberSignature Language="C#" Value="public bool Response { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Response" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QuestionEventArgs.Response" />
+      <MemberSignature Language="VB.NET" Value="Public Property Response As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Response { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,14 +119,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QuestionEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

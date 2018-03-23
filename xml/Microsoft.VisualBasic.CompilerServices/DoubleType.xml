@@ -1,7 +1,9 @@
-<Type Name="DoubleType" FullName="Microsoft.VisualBasic.CompilerServices.DoubleType">
+﻿<Type Name="DoubleType" FullName="Microsoft.VisualBasic.CompilerServices.DoubleType">
   <TypeSignature Language="C#" Value="public sealed class DoubleType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DoubleType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.DoubleType" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DoubleType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DoubleType sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public static double FromObject (object Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 FromObject(object Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromObject(System::Object ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -79,6 +83,8 @@
       <MemberSignature Language="C#" Value="public static double FromObject (object Value, System.Globalization.NumberFormatInfo NumberFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 FromObject(object Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject(System.Object,System.Globalization.NumberFormatInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object, NumberFormat As NumberFormatInfo) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromObject(System::Object ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -128,6 +134,8 @@
       <MemberSignature Language="C#" Value="public static double FromString (string Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 FromString(string Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.FromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromString(System::String ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -158,6 +166,8 @@
       <MemberSignature Language="C#" Value="public static double FromString (string Value, System.Globalization.NumberFormatInfo NumberFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 FromString(string Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.FromString(System.String,System.Globalization.NumberFormatInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String, NumberFormat As NumberFormatInfo) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromString(System::String ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -207,6 +217,8 @@
       <MemberSignature Language="C#" Value="public static double Parse (string Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 Parse(string Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (Value As String) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Parse(System::String ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -237,6 +249,8 @@
       <MemberSignature Language="C#" Value="public static double Parse (string Value, System.Globalization.NumberFormatInfo NumberFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 Parse(string Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.Parse(System.String,System.Globalization.NumberFormatInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (Value As String, NumberFormat As NumberFormatInfo) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Parse(System::String ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MediaCommands" FullName="System.Windows.Input.MediaCommands">
+﻿<Type Name="MediaCommands" FullName="System.Windows.Input.MediaCommands">
   <TypeSignature Language="C#" Value="public static class MediaCommands" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MediaCommands extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MediaCommands" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaCommands" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MediaCommands abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand BoostBass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand BoostBass" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.BoostBass" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BoostBass As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ BoostBass { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +94,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ChannelDown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ChannelDown" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.ChannelDown" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ChannelDown As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ChannelDown { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -143,6 +149,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ChannelUp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ChannelUp" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.ChannelUp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ChannelUp As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ChannelUp { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -196,6 +204,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseBass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseBass" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.DecreaseBass" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DecreaseBass As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ DecreaseBass { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +259,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseMicrophoneVolume { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseMicrophoneVolume" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.DecreaseMicrophoneVolume" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DecreaseMicrophoneVolume As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ DecreaseMicrophoneVolume { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -302,6 +314,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseTreble { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseTreble" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.DecreaseTreble" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DecreaseTreble As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ DecreaseTreble { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -355,6 +369,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseVolume { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseVolume" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.DecreaseVolume" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DecreaseVolume As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ DecreaseVolume { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -408,6 +424,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand FastForward { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand FastForward" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.FastForward" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FastForward As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ FastForward { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -461,6 +479,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseBass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseBass" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.IncreaseBass" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IncreaseBass As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ IncreaseBass { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -514,6 +534,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseMicrophoneVolume { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseMicrophoneVolume" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.IncreaseMicrophoneVolume" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IncreaseMicrophoneVolume As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ IncreaseMicrophoneVolume { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -567,6 +589,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseTreble { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseTreble" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.IncreaseTreble" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IncreaseTreble As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ IncreaseTreble { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -620,6 +644,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseVolume { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseVolume" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.IncreaseVolume" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IncreaseVolume As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ IncreaseVolume { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -673,6 +699,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MuteMicrophoneVolume { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MuteMicrophoneVolume" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.MuteMicrophoneVolume" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MuteMicrophoneVolume As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MuteMicrophoneVolume { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -726,6 +754,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MuteVolume { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MuteVolume" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.MuteVolume" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MuteVolume As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MuteVolume { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -779,6 +809,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand NextTrack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand NextTrack" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.NextTrack" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NextTrack As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ NextTrack { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -832,6 +864,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Pause { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Pause" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Pause" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pause As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ Pause { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -885,6 +919,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Play { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Play" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Play" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Play As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ Play { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -938,6 +974,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand PreviousTrack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand PreviousTrack" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.PreviousTrack" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PreviousTrack As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ PreviousTrack { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -991,6 +1029,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Record { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Record" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Record" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Record As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ Record { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1044,6 +1084,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Rewind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Rewind" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Rewind" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rewind As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ Rewind { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1097,6 +1139,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Select { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Select" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Select As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ Select { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1150,6 +1194,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Stop { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Stop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Stop As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ Stop { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1203,6 +1249,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleMicrophoneOnOff { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleMicrophoneOnOff" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.ToggleMicrophoneOnOff" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleMicrophoneOnOff As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleMicrophoneOnOff { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1256,6 +1304,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand TogglePlayPause { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand TogglePlayPause" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.TogglePlayPause" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TogglePlayPause As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ TogglePlayPause { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

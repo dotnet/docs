@@ -1,7 +1,9 @@
-<Type Name="INotifyDataErrorInfo" FullName="System.ComponentModel.INotifyDataErrorInfo">
+﻿<Type Name="INotifyDataErrorInfo" FullName="System.ComponentModel.INotifyDataErrorInfo">
   <TypeSignature Language="C#" Value="public interface INotifyDataErrorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INotifyDataErrorInfo" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.INotifyDataErrorInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INotifyDataErrorInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INotifyDataErrorInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,9 +33,11 @@
   </Docs>
   <Members>
     <Member MemberName="ErrorsChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt; ErrorsChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt; ErrorsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.DataErrorsChangedEventArgs&gt; ErrorsChanged" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" />
+      <MemberSignature Language="VB.NET" Value="Event ErrorsChanged As EventHandler(Of DataErrorsChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::DataErrorsChangedEventArgs ^&gt; ^ ErrorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetErrors (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerable GetErrors(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.INotifyDataErrorInfo.GetErrors(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetErrors (propertyName As String) As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetErrors(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -111,6 +117,8 @@
       <MemberSignature Language="C#" Value="public bool HasErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasErrors" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.INotifyDataErrorInfo.HasErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TabPage+TabPageControlCollection" FullName="System.Windows.Forms.TabPage+TabPageControlCollection">
+﻿<Type Name="TabPage+TabPageControlCollection" FullName="System.Windows.Forms.TabPage+TabPageControlCollection">
   <TypeSignature Language="C#" Value="public class TabPage.TabPageControlCollection : System.Windows.Forms.Control.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit TabPage/TabPageControlCollection extends System.Windows.Forms.Control/ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabPage.TabPageControlCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class TabPage.TabPageControlCollection&#xA;Inherits Control.ControlCollection" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class TabPage::TabPageControlCollection : System::Windows::Forms::Control::ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public TabPageControlCollection (System.Windows.Forms.TabPage owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.TabPage owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.TabPageControlCollection.#ctor(System.Windows.Forms.TabPage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As TabPage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TabPageControlCollection(System::Windows::Forms::TabPage ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override void Add (System.Windows.Forms.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Windows.Forms.Control value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.TabPageControlCollection.Add(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (value As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Windows::Forms::Control ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -50,7 +50,7 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 [Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you want to use command-line tools.
 
-[Get started with F# and Xamarin](https://docs.microsoft.com/en-gb/xamarin/cross-platform/platform/fsharp/) for mobile programming with F#.
+[Get started with F# and Xamarin](https://docs.microsoft.com/xamarin/cross-platform/platform/fsharp/) for mobile programming with F#.
 
 ## References
 

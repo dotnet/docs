@@ -54,7 +54,7 @@
   
 -   You can discover what attributes are applied to the method by retrieving the value of the <xref:System.Reflection.MethodBase.Attributes%2A> property or calling the <xref:System.Reflection.Assembly.GetCustomAttributes%2A> method.  
   
--   You can determine whether the method is a generic method, an open constructed generic method, or a closed constructed generic method, by retrieving the values of the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> and <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> properties.  
+-   You can determine whether the method is a generic method, an open constructed generic method, or a closed constructed generic method, by retrieving the values of the <xref:System.Reflection.MethodBase.IsGenericMethod%2A> and <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A> properties.  
   
 -   You can get information about the method's parameters and return type from the <xref:System.Reflection.MethodBase.GetParameters%2A> method and the <xref:System.Reflection.MethodInfo.ReturnParameter%2A>, <xref:System.Reflection.MethodInfo.ReturnType%2A>, and <xref:System.Reflection.MethodInfo.ReturnTypeCustomAttributes%2A> properties.  
   
@@ -64,7 +64,7 @@
   
  You can instantiate a <xref:System.Reflection.MethodInfo> instances by calling the <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> or <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method, or by calling the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> method of a <xref:System.Reflection.MethodInfo> object that represents a generic method definition.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodBase.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
   
  ]]></format>
     </remarks>
@@ -75,7 +75,7 @@
     </block>
     <altmember cref="Overload:System.Type.GetMethods" />
     <altmember cref="Overload:System.Type.GetMethod" />
-    <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+    <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -359,15 +359,13 @@
 ## Remarks  
  The elements of the returned array are in the order in which they appear in the list of type parameters for the generic method.  
   
--   If the current method is a closed constructed method (that is, the <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property returns `false`), the array returned by the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A> method contains the types that have been assigned to the generic type parameters of the generic method definition.  
+-   If the current method is a closed constructed method (that is, the <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A> property returns `false`), the array returned by the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A> method contains the types that have been assigned to the generic type parameters of the generic method definition.  
   
 -   If the current method is a generic method definition, the array contains the type parameters.  
   
--   If the current method is an open constructed method (that is, the <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property returns `true`) in which specific types have been assigned to some type parameters and type parameters of enclosing generic types have been assigned to other type parameters, the array contains both types and type parameters. Use the <xref:System.Type.IsGenericParameter%2A> property to tell them apart. For a demonstration of this scenario, see the code example for the <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property.  
+-   If the current method is an open constructed method (that is, the <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A> property returns `true`) in which specific types have been assigned to some type parameters and type parameters of enclosing generic types have been assigned to other type parameters, the array contains both types and type parameters. Use the <xref:System.Type.IsGenericParameter%2A> property to tell them apart. For a demonstration of this scenario, see the code example for the <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A> property.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType> property.  
-  
-   
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodBase.IsGenericMethod%2A?displayProperty=nameWithType> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType> property.  
   
 ## Examples  
  The following code example shows how to get the type arguments of a generic method and display them.  
@@ -381,7 +379,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
-        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
         <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
         <altmember cref="M:System.Reflection.MethodInfo.GetGenericMethodDefinition" />
         <altmember cref="P:System.Type.IsGenericType" />
@@ -459,7 +457,7 @@ public:
   
  In the constructed type `C<int>` (`C(Of Integer)` in Visual Basic), the generic method `M` returns `B<int, S>`. In the open type `C<T>`, `M` returns `B<T, S>`. In both cases, the <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A> property returns `true` for the <xref:System.Reflection.MethodInfo> that represents `M`, so <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> can be called on both <xref:System.Reflection.MethodInfo> objects. In the case of the constructed type, the result of calling <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> is a <xref:System.Reflection.MethodInfo> that can be invoked. In the case of the open type, the <xref:System.Reflection.MethodInfo> returned by <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> cannot be invoked.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodBase.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
   
    
   
@@ -480,11 +478,11 @@ public:
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The current method is not a generic method. That is, <see cref="P:System.Reflection.MethodInfo.IsGenericMethod" /> returns <see langword="false" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The current method is not a generic method. That is, <see cref="P:System.Reflection.MethodBase.IsGenericMethod" /> returns <see langword="false" />.</exception>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
         <altmember cref="M:System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])" />
-        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
-        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -572,7 +570,7 @@ public:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> method allows you to write code that assigns specific types to the type parameters of a generic method definition, thus creating a <xref:System.Reflection.MethodInfo> object that represents a particular constructed method. If the <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property of this <xref:System.Reflection.MethodInfo> object returns `true`, you can use it to invoke the method or to create a delegate to invoke the method.  
+ The <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> method allows you to write code that assigns specific types to the type parameters of a generic method definition, thus creating a <xref:System.Reflection.MethodInfo> object that represents a particular constructed method. If the <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A> property of this <xref:System.Reflection.MethodInfo> object returns `true`, you can use it to invoke the method or to create a delegate to invoke the method.  
   
  Methods constructed with the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> method can be open, that is, some of their type arguments can be type parameters of enclosing generic types. You might use such open constructed methods when you generate dynamic assemblies. For example, consider the following C#, Visual Basic, and C++ code.  
   
@@ -607,9 +605,9 @@ public:
 };  
 ```  
   
- The method body of `M` contains a call to method `N`, specifying the type parameter of `M` and the type <xref:System.Int32>. The <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A> property returns `false` for method `N<V,int>`. The <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property returns `true`, so method `N<V,int>` cannot be invoked.  
+ The method body of `M` contains a call to method `N`, specifying the type parameter of `M` and the type <xref:System.Int32>. The <xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A> property returns `false` for method `N<V,int>`. The <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A> property returns `true`, so method `N<V,int>` cannot be invoked.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodBase.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
   
    
   
@@ -634,7 +632,7 @@ public:
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Reflection.MethodInfo" /> does not represent a generic method definition. That is, <see cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" /> returns <see langword="false" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Reflection.MethodInfo" /> does not represent a generic method definition. That is, <see cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" /> returns <see langword="false" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="typeArguments" /> is <see langword="null" />.  
   
@@ -647,7 +645,7 @@ public:
   
  An element of <paramref name="typeArguments" /> does not satisfy the constraints specified for the corresponding type parameter of the current generic method definition.</exception>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
-        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
         <altmember cref="M:System.Reflection.MethodInfo.GetGenericMethodDefinition" />
       </Docs>
     </Member>

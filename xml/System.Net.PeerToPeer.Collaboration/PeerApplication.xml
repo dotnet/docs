@@ -36,7 +36,7 @@
   
  After registering an application with the Peer Collaboration infrastructure, the registration information persists in the registry.  This makes the application available to collaboration applications even after the program which registered the application has exited.  
   
- Changing the properties on an application instance after it has been registered has no effect on the registration. To update the registration, the application must be deregistered and then registered again with the new information.  
+ Changing the properties on an application instance after it has been registered has no effect on the registration. To update the registration, the application must be unregistered and then registered again with the new information.  
   
  ]]></format>
     </remarks>

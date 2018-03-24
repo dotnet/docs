@@ -32,9 +32,9 @@
   
  After constructing an instance of this class and setting the appropriate properties this object may be passed to the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration><xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.DeleteObject%2A> methods to enable/disable the publishing of this object for other peers to discover and view.  
   
- After registering an object with the collaboration infrastructure the registration information is not persisted in the registry, resulting in different behavior from <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> instances.  The object registration is only valid for the lifetime duration of the application which registered the object.  Applications should deregister objects when they are no longer required or prior to application exit.  By default, a PeerObject is automatically deregistered if the instance goes out of scope.  
+ After registering an object with the collaboration infrastructure the registration information is not persisted in the registry, resulting in different behavior from <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> instances. The object registration is only valid for the lifetime duration of the application which registered the object. Applications should unregister objects when they are no longer required or prior to application exit. By default, a PeerObject is automatically unregistered if the instance goes out of scope.  
   
- Changing the properties on a PeerObject instance after it has been registered using the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> registration methods will not update the registration for the PeerObject instance.  To effectively update the registration of a specific PeerObject instance, the PeerObject must be deleted and registered again with the new information.  
+ Changing the properties on a PeerObject instance after it has been registered using the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> registration methods will not update the registration for the PeerObject instance. To effectively update the registration of a specific PeerObject instance, the PeerObject must be deleted and registered again with the new information.  
   
  ]]></format>
     </remarks>

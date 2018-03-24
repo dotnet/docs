@@ -128,13 +128,13 @@
         <Parameter Name="peerObject" Type="System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Parameters>
       <Docs>
-        <param name="peerObject">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to deregister.</param>
-        <summary>Deregisters a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> associated with the calling peer.</summary>
+        <param name="peerObject">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to unregister.</param>
+        <summary>Unregisters a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> associated with the calling peer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Peer objects are automatically deregistered (removed) from the Peer Collaboration infrastructure when a reference to the object is no longer valid.  If a caller does not maintain a reference to the object, it is deregistered from the Peer Collaboration infrastructure.  Alternatively, an object can be manually deregistered by using this method.  
+ Peer objects are automatically unregistered (removed) from the Peer Collaboration infrastructure when a reference to the object is no longer valid.  If a caller does not maintain a reference to the object, it is unregistered from the Peer Collaboration infrastructure.  Alternatively, an object can be manually unregistered by using this method.  
   
  Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
@@ -827,14 +827,14 @@
         <Parameter Name="type" Type="System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType" />
       </Parameters>
       <Docs>
-        <param name="application">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> to deregister for the calling peer.</param>
+        <param name="application">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> to unregister for the calling peer.</param>
         <param name="type">The type of deregistration to perform for either the calling peer or for all peers that exist on the machine.</param>
-        <summary>Deregisters the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> from the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> infrastructure.</summary>
+        <summary>Unregisters the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> from the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> infrastructure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Deregistering a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> stops the calling peer from receiving collaboration invitations for it.  If the application being deregistered was not previously registered, this is a no-op.  
+ Unregistering a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> stops the calling peer from receiving collaboration invitations for it. If the application being unregistered was not previously registered, this is a no-op.  
   
  Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   

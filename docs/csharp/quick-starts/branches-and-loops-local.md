@@ -69,7 +69,7 @@ The statement following the `else` keyword executes only when the condition bein
 
 > [!IMPORTANT]
 > The indentation under the `if` and `else` statements is for human readers.
-> The C# language doesn't treat indentation or whitespace as significant. 
+> The C# language doesn't treat indentation or white space as significant. 
 > The statement following the `if` or `else` keyword will be executed based
 > on the condition. All the samples in this quickstart follow a common
 > practice to indent lines based on the control flow of statements.

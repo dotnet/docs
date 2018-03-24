@@ -247,7 +247,7 @@ searching for known command values. You might write something like:
 [!code-csharp[VarCaseExpression](../../samples/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]
 
 The `var` case matches `null`, the empty string, or any string that contains
-only whitespace. Notice that the preceding code uses the `?.` operator to
+only white space. Notice that the preceding code uses the `?.` operator to
 ensure that it does not accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that are not understood by this command parser.
 
 This is one example where you may want to consider

@@ -61,13 +61,13 @@ public class StringInterpolation
     private static void CreateCultureSpecificResults()
     {
         // <Snippet4>
-        double price = 1000;
-        FormattableString message = $"The cost of this item is {price:C}.";
+        double speedOfLight = 299792.458;
+        FormattableString message = $"The speed of light is {speedOfLight:N3} km/s.";
         
-        CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
+        CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("nl-NL");
         string messageInCurrentCulture = message.ToString();
 
-        CultureInfo specificCulture = CultureInfo.GetCultureInfo("nl-NL");
+        CultureInfo specificCulture = CultureInfo.GetCultureInfo("en-IN");
         string messageInSpecificCulture = message.ToString(specificCulture);
 
         string messageInInvariantCulture = FormattableString.Invariant(message);
@@ -77,9 +77,9 @@ public class StringInterpolation
         Console.WriteLine($"{specificCulture,CultureOutputAlignment} {messageInSpecificCulture}");
         Console.WriteLine($"{"Invariant",CultureOutputAlignment} {messageInInvariantCulture}");
         // Expected output is:
-        // en-US      The cost of this item is $1,000.00.
-        // nl-NL      The cost of this item is € 1.000,00.
-        // Invariant  The cost of this item is ¤1,000.00.
+        // nl-NL      The speed of light is 299.792,458 km/s.
+        // en-IN      The speed of light is 2,99,792.458 km/s.
+        // Invariant  The speed of light is 299,792.458 km/s.
         // </Snippet4>
     }
 }

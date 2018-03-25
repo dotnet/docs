@@ -98,7 +98,7 @@ With versions 3.0 and 5.0, C# had added some impressive features in an object or
 - [Property initializers](http://geekswithblogs.net/WinAZ/archive/2015/06/30/whatrsquos-new-in-c-6.0-auto-property-initializers.aspx)
 - [Expression bodied members](https://lostechies.com/jimmybogard/2015/12/17/c-6-feature-review-expression-bodied-function-members/)
 - [Null propagator](https://davefancher.com/2014/08/14/c-6-0-null-propagation-operator/)
-- [String interpolation](../language-reference/keywords/interpolated-strings.md)
+- [String interpolation](../language-reference/tokens/interpolated.md)
 - [nameof operator](https://stackoverflow.com/questions/31695900/what-is-the-purpose-of-nameof)
 - [Dictionary initializer](../programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md)
 

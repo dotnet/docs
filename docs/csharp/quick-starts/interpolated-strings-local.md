@@ -161,5 +161,4 @@ You've completed the interpolated strings quickstart.
     
 You can continue with the [Arrays and collections](arrays-and-collections.md) quickstart in your own development environment.
 
-You can learn more about working with interpolated strings in the [Interpolated Strings](../language-reference/keywords/interpolated-strings.md) topic in the C# Reference.
-
+You can learn more about interpolated strings in the [String interpolation](../language-reference/tokens/interpolated.md) topic in the C# Reference.

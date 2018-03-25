@@ -309,7 +309,7 @@ As one final cleanup, let's make a type to represent the card, instead of relyin
 
 [!CODE-csharp[PlayingCard](../../../samples/csharp/getting-started/console-linq/playingcard.cs?name=snippet1)]
 
-This type uses *auto-implemented read-only properties* which are set in the constructor, and then cannot be modified. It also makes use of the new *string interpolation* feature that makes it easier to format string output.
+This type uses *auto-implemented read-only properties* which are set in the constructor, and then cannot be modified. It also makes use of the [string interpolation](../language-reference/tokens/interpolated.md) feature that makes it easier to format string output.
 
 Update the query that generates the starting deck to use the new type:
 

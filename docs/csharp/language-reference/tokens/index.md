@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "C# language, special characters"
   - "Visual C#, special characters"
   - "@ character (C#)"
-  - "@ character (C#)"
+  - "$ character (C#)"
 ms.assetid: 4c5c0539-2e37-40b7-91ce-75af5aabd3f9
 caps.latest.revision: 22
 author: "rpetrusha"

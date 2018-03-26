@@ -256,7 +256,7 @@ This Boolean values specifies whether the build output assemblies should be pack
 This Boolean value specifies whether any items that have a type of `Content` will be included in the resulting package automatically. The default is `true`. 
 
 ### BuildOutputTargetFolder
-Specifies the folder where to place the output assemblies.. The output assemblies (and other output files) are copied into their respective framework folders.
+Specifies the folder where to place the output assemblies. The output assemblies (and other output files) are copied into their respective framework folders.
 
 ### ContentTargetFolders
 This property specifies the default location of where all the content files should go if `PackagePath` is not specified for them. The default value is "content;contentFiles".

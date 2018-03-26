@@ -17,8 +17,8 @@
     {
       StringBuilder csText = new StringBuilder();
       csText.Append("<script type=\"text/javascript\"> function DoClick() {");
-      csText.Append("Form1.Message.value='Text from client script.'} </");
-      csText.Append("script>");
+      csText.Append("Form1.Message.value='Text from client script.'; }");
+      csText.Append("</script>");
       cs.RegisterClientScriptBlock(csType, csName, csText.ToString());
     }
   }

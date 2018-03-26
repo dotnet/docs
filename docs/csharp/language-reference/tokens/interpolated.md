@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation (C# Reference)"
-description: String interpolation provides a more convenient way to format strings than traditional string composite formatting.
-ms.date: 03/22/2018
+description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
+ms.date: 03/26/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,7 +14,6 @@ helpviewer_keywords:
   - "$ language element [C#]"
   - "string interpolation [C#]"
   - "interpolated string [C#]"
-ms.assetid: 7d9e21b5-eac3-4878-9530-50e4da578acd
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
@@ -22,7 +21,7 @@ ms.author: "ronpet"
 
 The `$` special character identifies a string literal as an *interpolated string*. An interpolated string looks like a template string that contains *interpolated expressions*. When the interpolated string is resolved, for example in an assignment statement or a method call, interpolated expressions are replaced by the string representations of their results to produce the result string. This feature is available in C# 6 and later versions.
 
-String interpolation is a more convenient way to create formatted strings than a [string composite formatting](../../../standard/base-types/composite-formatting.md) feature. The following example uses both features to produce the same output:
+String interpolation is a more readable and convenient way to create formatted strings than a [string composite formatting](../../../standard/base-types/composite-formatting.md) feature. The following example uses both features to produce the same output:
 
 [!code-csharp-interactive[compare with composite formatting](../../../../samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#1)]
 
@@ -41,7 +40,7 @@ Elements in square brackets are optional. The following table describes each ele
 |-------------|-----------------|
 |`interpolatedExpression`|The expression to evaluate to get a result to be formatted. String representation of the `null` result is <xref:System.String.Empty?displayProperty=nameWithType>.|
 |`alignment`|The constant expression whose value defines the minimum number of characters in the string representation of the result of the interpolated expression. If positive, the string representation is right-aligned; if negative, it is left-aligned. For more information, see [Alignment Component](../../../standard/base-types/composite-formatting.md#alignment-component).|
-|`formatString`|A standard or custom format string that is supported by the expression result. For more information, see [Format String Component](../../../standard/base-types/composite-formatting.md#format-string-component).|
+|`formatString`|A standard or custom format string that is supported by the type of the expression result. For more information, see [Format String Component](../../../standard/base-types/composite-formatting.md#format-string-component).|
 
 The following example uses optional formatting components described in the table above:
 
@@ -49,9 +48,9 @@ The following example uses optional formatting components described in the table
 
 To include a curly brace ("{" or "}") in the text produced by an interpolated string, use two curly braces, "{{" or "}}". For more information, see [Escaping Braces](../../../standard/base-types/composite-formatting.md#escaping-braces).
 
-As colon (:) has special meaning in an interpolated expression item, in order to use [conditional operator](../operators/conditional-operator.md) in an interpolated expression, enclose that expression in parentheses.
+As the colon (:) has special meaning in an interpolated expression item, in order to use a [conditional operator](../operators/conditional-operator.md) in an interpolated expression, enclose that expression in parentheses.
 
-The following example shows how to include a curly brace into the result string and how to use conditional operator in an interpolated expression:
+The following example shows how to include a curly brace into the result string and how to use a conditional operator in an interpolated expression:
 
 [!code-csharp-interactive[example with ternary conditional operator](../../../../samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#3)]
 
@@ -64,7 +63,7 @@ Verbatim interpolated strings use the `$` character followed by the `@` characte
 
 There are three implicit type conversions from an interpolated string:
 
-1. Conversion of an interpolated string to a <xref:System.String> instance that is the result of interpolated string resolution with interpolated expression items being replaced with the properly formatted string representations of their results.
+1. Conversion of an interpolated string to a <xref:System.String> instance that is the result of interpolated string resolution with interpolated expression items being replaced with the properly formatted string representations of their results. This conversion uses the current culture.
 
 1. Conversion of an interpolated string to a <xref:System.FormattableString> variable that represents a composite format string along with the expression results to be formatted. That allows you to create multiple result strings with culture-specific content from a single <xref:System.FormattableString> instance. To do that call one of the following methods:
 
@@ -87,6 +86,7 @@ If you are new to the string interpolation, check the [interpolated strings quic
  <xref:System.FormattableString?displayProperty=nameWithType>  
  <xref:System.IFormattable?displayProperty=nameWithType>  
  [Composite formatting](../../../standard/base-types/composite-formatting.md)  
+ [Strings](../../../csharp/programming-guide/strings/index.md)  
  [C# Special Characters](../../../csharp/language-reference/tokens/index.md)  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Reference](../../../csharp/language-reference/index.md)  

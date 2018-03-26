@@ -1,7 +1,9 @@
-<Type Name="IPInterfaceProperties" FullName="System.Net.NetworkInformation.IPInterfaceProperties">
+﻿<Type Name="IPInterfaceProperties" FullName="System.Net.NetworkInformation.IPInterfaceProperties">
   <TypeSignature Language="C#" Value="public abstract class IPInterfaceProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IPInterfaceProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPInterfaceProperties" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IPInterfaceProperties" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IPInterfaceProperties abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected IPInterfaceProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPInterfaceProperties.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IPInterfaceProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.IPAddressInformationCollection AnycastAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.IPAddressInformationCollection AnycastAddresses" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.AnycastAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AnycastAddresses As IPAddressInformationCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::IPAddressInformationCollection ^ AnycastAddresses { System::Net::NetworkInformation::IPAddressInformationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -122,6 +128,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.IPAddressCollection DhcpServerAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.IPAddressCollection DhcpServerAddresses" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.DhcpServerAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DhcpServerAddresses As IPAddressCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::IPAddressCollection ^ DhcpServerAddresses { System::Net::NetworkInformation::IPAddressCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -166,6 +174,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.IPAddressCollection DnsAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.IPAddressCollection DnsAddresses" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.DnsAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DnsAddresses As IPAddressCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::IPAddressCollection ^ DnsAddresses { System::Net::NetworkInformation::IPAddressCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -210,6 +220,8 @@
       <MemberSignature Language="C#" Value="public abstract string DnsSuffix { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DnsSuffix" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.DnsSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DnsSuffix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DnsSuffix { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -255,6 +267,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.GatewayIPAddressInformationCollection GatewayAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.GatewayIPAddressInformationCollection GatewayAddresses" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.GatewayAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property GatewayAddresses As GatewayIPAddressInformationCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::GatewayIPAddressInformationCollection ^ GatewayAddresses { System::Net::NetworkInformation::GatewayIPAddressInformationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -299,6 +313,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.IPv4InterfaceProperties GetIPv4Properties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.IPv4InterfaceProperties GetIPv4Properties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIPv4Properties () As IPv4InterfaceProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Net::NetworkInformation::IPv4InterfaceProperties ^ GetIPv4Properties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -338,6 +354,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.IPv6InterfaceProperties GetIPv6Properties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.IPv6InterfaceProperties GetIPv6Properties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIPv6Properties () As IPv6InterfaceProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Net::NetworkInformation::IPv6InterfaceProperties ^ GetIPv6Properties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -375,6 +393,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsDnsEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDnsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.IsDnsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDnsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDnsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -420,6 +440,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsDynamicDnsEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDynamicDnsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.IsDynamicDnsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDynamicDnsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDynamicDnsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -465,6 +487,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.MulticastIPAddressInformationCollection MulticastAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.MulticastIPAddressInformationCollection MulticastAddresses" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.MulticastAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MulticastAddresses As MulticastIPAddressInformationCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::MulticastIPAddressInformationCollection ^ MulticastAddresses { System::Net::NetworkInformation::MulticastIPAddressInformationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -509,6 +533,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.UnicastIPAddressInformationCollection UnicastAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.UnicastIPAddressInformationCollection UnicastAddresses" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.UnicastAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property UnicastAddresses As UnicastIPAddressInformationCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::UnicastIPAddressInformationCollection ^ UnicastAddresses { System::Net::NetworkInformation::UnicastIPAddressInformationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -553,6 +579,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Net.NetworkInformation.IPAddressCollection WinsServersAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.IPAddressCollection WinsServersAddresses" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.WinsServersAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property WinsServersAddresses As IPAddressCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::IPAddressCollection ^ WinsServersAddresses { System::Net::NetworkInformation::IPAddressCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MetadataItem" FullName="System.Data.Metadata.Edm.MetadataItem">
+﻿<Type Name="MetadataItem" FullName="System.Data.Metadata.Edm.MetadataItem">
   <TypeSignature Language="C#" Value="public abstract class MetadataItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract MetadataItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetadataItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetadataItem abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataItem.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.Documentation Documentation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.Documentation Documentation" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataItem.Documentation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Documentation As Documentation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::Documentation ^ Documentation { System::Data::Metadata::Edm::Documentation ^ get(); void set(System::Data::Metadata::Edm::Documentation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -62,6 +68,7 @@
       <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.EdmType GetBuiltInType (System.Data.Metadata.Edm.BuiltInTypeKind builtInTypeKind);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.EdmType GetBuiltInType(valuetype System.Data.Metadata.Edm.BuiltInTypeKind builtInTypeKind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataItem.GetBuiltInType(System.Data.Metadata.Edm.BuiltInTypeKind)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::EdmType ^ GetBuiltInType(System::Data::Metadata::Edm::BuiltInTypeKind builtInTypeKind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -84,6 +91,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt; GetGeneralFacetDescriptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.FacetDescription&gt; GetGeneralFacetDescriptions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataItem.GetGeneralFacetDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetGeneralFacetDescriptions () As ReadOnlyCollection(Of FacetDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::FacetDescription ^&gt; ^ GetGeneralFacetDescriptions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -103,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.MetadataProperty&gt; MetadataProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.MetadataProperty&gt; MetadataProperties" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataItem.MetadataProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataProperties As ReadOnlyMetadataCollection(Of MetadataProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::MetadataProperty ^&gt; ^ MetadataProperties { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::MetadataProperty ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

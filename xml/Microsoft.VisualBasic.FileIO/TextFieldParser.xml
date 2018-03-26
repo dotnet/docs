@@ -1,7 +1,9 @@
-<Type Name="TextFieldParser" FullName="Microsoft.VisualBasic.FileIO.TextFieldParser">
+﻿<Type Name="TextFieldParser" FullName="Microsoft.VisualBasic.FileIO.TextFieldParser">
   <TypeSignature Language="C#" Value="public class TextFieldParser : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TextFieldParser extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextFieldParser&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextFieldParser : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -44,10 +46,21 @@
     <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextFieldParser(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -79,6 +92,8 @@
       <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.TextReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.TextReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.TextReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As TextReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextFieldParser(System::IO::TextReader ^ reader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -108,6 +123,8 @@
       <MemberSignature Language="C#" Value="public TextFieldParser (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextFieldParser(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -137,6 +154,7 @@
       <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.Stream stream, System.Text.Encoding defaultEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding defaultEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextFieldParser(System::IO::Stream ^ stream, System::Text::Encoding ^ defaultEncoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -174,6 +192,8 @@
       <MemberSignature Language="C#" Value="public TextFieldParser (string path, System.Text.Encoding defaultEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding defaultEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, defaultEncoding As Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextFieldParser(System::String ^ path, System::Text::Encoding ^ defaultEncoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -209,6 +229,7 @@
       <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.Stream stream, System.Text.Encoding defaultEncoding, bool detectEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding defaultEncoding, bool detectEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextFieldParser(System::IO::Stream ^ stream, System::Text::Encoding ^ defaultEncoding, bool detectEncoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -251,6 +272,8 @@
       <MemberSignature Language="C#" Value="public TextFieldParser (string path, System.Text.Encoding defaultEncoding, bool detectEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding defaultEncoding, bool detectEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String,System.Text.Encoding,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, defaultEncoding As Encoding, detectEncoding As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextFieldParser(System::String ^ path, System::Text::Encoding ^ defaultEncoding, bool detectEncoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -291,6 +314,7 @@
       <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.Stream stream, System.Text.Encoding defaultEncoding, bool detectEncoding, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding defaultEncoding, bool detectEncoding, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextFieldParser(System::IO::Stream ^ stream, System::Text::Encoding ^ defaultEncoding, bool detectEncoding, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -336,6 +360,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -364,6 +390,8 @@
       <MemberSignature Language="C#" Value="public string[] CommentTokens { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] CommentTokens" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommentTokens As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ CommentTokens { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -405,6 +433,8 @@
       <MemberSignature Language="C#" Value="public string[] Delimiters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] Delimiters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Delimiters As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Delimiters { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -444,11 +474,26 @@
         <altmember cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters(System.String[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</summary>
+        <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -467,6 +512,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -489,6 +536,8 @@
       <MemberSignature Language="C#" Value="public bool EndOfData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EndOfData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndOfData As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EndOfData { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -530,6 +579,8 @@
       <MemberSignature Language="C#" Value="public string ErrorLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorLine As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorLine { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -572,6 +623,8 @@
       <MemberSignature Language="C#" Value="public long ErrorLineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ErrorLineNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorLineNumber As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ErrorLineNumber { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -614,6 +667,8 @@
       <MemberSignature Language="C#" Value="public int[] FieldWidths { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32[] FieldWidths" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldWidths As Integer()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ FieldWidths { cli::array &lt;int&gt; ^ get(); void set(cli::array &lt;int&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -657,6 +712,8 @@
       <MemberSignature Language="C#" Value="~TextFieldParser ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!TextFieldParser ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -676,6 +733,8 @@
       <MemberSignature Language="C#" Value="public bool HasFieldsEnclosedInQuotes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasFieldsEnclosedInQuotes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.HasFieldsEnclosedInQuotes" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasFieldsEnclosedInQuotes As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFieldsEnclosedInQuotes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -719,6 +778,8 @@
       <MemberSignature Language="C#" Value="public long LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 LineNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long LineNumber { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -759,6 +820,8 @@
       <MemberSignature Language="C#" Value="public string PeekChars (int numberOfChars);" />
       <MemberSignature Language="ILAsm" Value=".method public instance string PeekChars(int32 numberOfChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekChars (numberOfChars As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PeekChars(int numberOfChars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -811,6 +874,8 @@
       <MemberSignature Language="C#" Value="public string[] ReadFields ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance string[] ReadFields() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadFields () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ ReadFields();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -863,6 +928,8 @@
       <MemberSignature Language="C#" Value="public string ReadLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance string ReadLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadLine () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -910,6 +977,8 @@
       <MemberSignature Language="C#" Value="public string ReadToEnd ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance string ReadToEnd() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadToEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadToEnd () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadToEnd();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -957,6 +1026,8 @@
       <MemberSignature Language="C#" Value="public void SetDelimiters (params string[] delimiters);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetDelimiters(string[] delimiters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDelimiters (ParamArray delimiters As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDelimiters(... cli::array &lt;System::String ^&gt; ^ delimiters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1011,6 +1082,8 @@
       <MemberSignature Language="C#" Value="public void SetFieldWidths (params int[] fieldWidths);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetFieldWidths(int32[] fieldWidths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths(System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFieldWidths (ParamArray fieldWidths As Integer())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFieldWidths(... cli::array &lt;int&gt; ^ fieldWidths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1070,6 +1143,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.FileIO.FieldType TextFieldType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualBasic.FileIO.FieldType TextFieldType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextFieldType As FieldType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::FileIO::FieldType TextFieldType { Microsoft::VisualBasic::FileIO::FieldType get(); void set(Microsoft::VisualBasic::FileIO::FieldType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1116,6 +1191,8 @@
       <MemberSignature Language="C#" Value="public bool TrimWhiteSpace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrimWhiteSpace" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.TrimWhiteSpace" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrimWhiteSpace As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrimWhiteSpace { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1146,25 +1223,5 @@
         <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases resources used by the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</summary>
-        <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
-        <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

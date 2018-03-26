@@ -1,7 +1,9 @@
-<Type Name="NotifyFilters" FullName="System.IO.NotifyFilters">
+﻿<Type Name="NotifyFilters" FullName="System.IO.NotifyFilters">
   <TypeSignature Language="C#" Value="public enum NotifyFilters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotifyFilters extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.NotifyFilters" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NotifyFilters" />
+  <TypeSignature Language="C++ CLI" Value="public enum class NotifyFilters" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="Attributes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.NotifyFilters Attributes = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.NotifyFilters.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Attributes" />
+      <MemberSignature Language="C++ CLI" Value="Attributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -77,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The attributes of the file or folder.</summary>
       </Docs>
@@ -85,6 +90,8 @@
       <MemberSignature Language="C#" Value="CreationTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.NotifyFilters CreationTime = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.IO.NotifyFilters.CreationTime" />
+      <MemberSignature Language="VB.NET" Value="CreationTime" />
+      <MemberSignature Language="C++ CLI" Value="CreationTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -103,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The time the file or folder was created.</summary>
       </Docs>
@@ -111,6 +119,8 @@
       <MemberSignature Language="C#" Value="DirectoryName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.NotifyFilters DirectoryName = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.NotifyFilters.DirectoryName" />
+      <MemberSignature Language="VB.NET" Value="DirectoryName" />
+      <MemberSignature Language="C++ CLI" Value="DirectoryName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -129,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The name of the directory.</summary>
       </Docs>
@@ -137,6 +148,8 @@
       <MemberSignature Language="C#" Value="FileName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.NotifyFilters FileName = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.NotifyFilters.FileName" />
+      <MemberSignature Language="VB.NET" Value="FileName" />
+      <MemberSignature Language="C++ CLI" Value="FileName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -155,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The name of the file.</summary>
       </Docs>
@@ -163,6 +177,8 @@
       <MemberSignature Language="C#" Value="LastAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.NotifyFilters LastAccess = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.IO.NotifyFilters.LastAccess" />
+      <MemberSignature Language="VB.NET" Value="LastAccess" />
+      <MemberSignature Language="C++ CLI" Value="LastAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -181,6 +197,7 @@
       <ReturnValue>
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The date the file or folder was last opened.</summary>
       </Docs>
@@ -189,6 +206,8 @@
       <MemberSignature Language="C#" Value="LastWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.NotifyFilters LastWrite = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.IO.NotifyFilters.LastWrite" />
+      <MemberSignature Language="VB.NET" Value="LastWrite" />
+      <MemberSignature Language="C++ CLI" Value="LastWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -207,6 +226,7 @@
       <ReturnValue>
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The date the file or folder last had anything written to it.</summary>
       </Docs>
@@ -215,6 +235,8 @@
       <MemberSignature Language="C#" Value="Security" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.NotifyFilters Security = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.IO.NotifyFilters.Security" />
+      <MemberSignature Language="VB.NET" Value="Security" />
+      <MemberSignature Language="C++ CLI" Value="Security" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -233,6 +255,7 @@
       <ReturnValue>
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The security settings of the file or folder.</summary>
       </Docs>
@@ -241,6 +264,8 @@
       <MemberSignature Language="C#" Value="Size" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.NotifyFilters Size = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.IO.NotifyFilters.Size" />
+      <MemberSignature Language="VB.NET" Value="Size" />
+      <MemberSignature Language="C++ CLI" Value="Size" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -259,6 +284,7 @@
       <ReturnValue>
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The size of the file or folder.</summary>
       </Docs>

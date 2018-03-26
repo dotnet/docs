@@ -1,7 +1,9 @@
-<Type Name="ToolStripManager" FullName="System.Windows.Forms.ToolStripManager">
+﻿<Type Name="ToolStripManager" FullName="System.Windows.Forms.ToolStripManager">
   <TypeSignature Language="C#" Value="public sealed class ToolStripManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolStripManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripManager sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.ToolStrip FindToolStrip (string toolStripName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.ToolStrip FindToolStrip(string toolStripName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.FindToolStrip(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindToolStrip (toolStripName As String) As ToolStrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::ToolStrip ^ FindToolStrip(System::String ^ toolStripName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static bool IsShortcutDefined (System.Windows.Forms.Keys shortcut);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsShortcutDefined(valuetype System.Windows.Forms.Keys shortcut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.IsShortcutDefined(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsShortcutDefined (shortcut As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsShortcutDefined(System::Windows::Forms::Keys shortcut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +116,8 @@
       <MemberSignature Language="C#" Value="public static bool IsValidShortcut (System.Windows.Forms.Keys shortcut);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidShortcut(valuetype System.Windows.Forms.Keys shortcut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.IsValidShortcut(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidShortcut (shortcut As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidShortcut(System::Windows::Forms::Keys shortcut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,10 +145,21 @@
         <altmember cref="M:System.Windows.Forms.ToolStripManager.IsShortcutDefined(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadSettings">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads settings for a <see cref="T:System.Windows.Forms.Form" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadSettings">
       <MemberSignature Language="C#" Value="public static void LoadSettings (System.Windows.Forms.Form targetForm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LoadSettings(class System.Windows.Forms.Form targetForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.LoadSettings(System.Windows.Forms.Form)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub LoadSettings (targetForm As Form)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LoadSettings(System::Windows::Forms::Form ^ targetForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +189,8 @@
       <MemberSignature Language="C#" Value="public static void LoadSettings (System.Windows.Forms.Form targetForm, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LoadSettings(class System.Windows.Forms.Form targetForm, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.LoadSettings(System.Windows.Forms.Form,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub LoadSettings (targetForm As Form, key As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LoadSettings(System::Windows::Forms::Form ^ targetForm, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,10 +218,22 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Merge">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Combines <see cref="T:System.Windows.Forms.ToolStrip" /> controls.</summary>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Merge">
       <MemberSignature Language="C#" Value="public static bool Merge (System.Windows.Forms.ToolStrip sourceToolStrip, string targetName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Merge(class System.Windows.Forms.ToolStrip sourceToolStrip, string targetName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Merge (sourceToolStrip As ToolStrip, targetName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Merge(System::Windows::Forms::ToolStrip ^ sourceToolStrip, System::String ^ targetName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -243,6 +276,8 @@
       <MemberSignature Language="C#" Value="public static bool Merge (System.Windows.Forms.ToolStrip sourceToolStrip, System.Windows.Forms.ToolStrip targetToolStrip);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Merge(class System.Windows.Forms.ToolStrip sourceToolStrip, class System.Windows.Forms.ToolStrip targetToolStrip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Merge (sourceToolStrip As ToolStrip, targetToolStrip As ToolStrip) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Merge(System::Windows::Forms::ToolStrip ^ sourceToolStrip, System::Windows::Forms::ToolStrip ^ targetToolStrip);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -291,6 +326,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.ToolStripRenderer Renderer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.ToolStripRenderer Renderer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripManager.Renderer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Renderer As ToolStripRenderer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::ToolStripRenderer ^ Renderer { System::Windows::Forms::ToolStripRenderer ^ get(); void set(System::Windows::Forms::ToolStripRenderer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -324,6 +361,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler RendererChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RendererChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripManager.RendererChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event RendererChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ RendererChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -361,6 +400,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.ToolStripManagerRenderMode RenderMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Forms.ToolStripManagerRenderMode RenderMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripManager.RenderMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property RenderMode As ToolStripManagerRenderMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::ToolStripManagerRenderMode RenderMode { System::Windows::Forms::ToolStripManagerRenderMode get(); void set(System::Windows::Forms::ToolStripManagerRenderMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -393,10 +434,22 @@
           <see cref="T:System.Windows.Forms.ToolStripManagerRenderMode" /> is set to <see cref="F:System.Windows.Forms.ToolStripManagerRenderMode.Custom" />; use the <see cref="P:System.Windows.Forms.ToolStripManager.Renderer" /> property instead.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RevertMerge">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Undoes a merging of two <see cref="T:System.Windows.Forms.ToolStrip" /> objects.</summary>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RevertMerge">
       <MemberSignature Language="C#" Value="public static bool RevertMerge (string targetName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RevertMerge(string targetName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RevertMerge (targetName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RevertMerge(System::String ^ targetName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -428,6 +481,8 @@
       <MemberSignature Language="C#" Value="public static bool RevertMerge (System.Windows.Forms.ToolStrip targetToolStrip);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RevertMerge(class System.Windows.Forms.ToolStrip targetToolStrip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RevertMerge (targetToolStrip As ToolStrip) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RevertMerge(System::Windows::Forms::ToolStrip ^ targetToolStrip);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -467,6 +522,8 @@
       <MemberSignature Language="C#" Value="public static bool RevertMerge (System.Windows.Forms.ToolStrip targetToolStrip, System.Windows.Forms.ToolStrip sourceToolStrip);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RevertMerge(class System.Windows.Forms.ToolStrip targetToolStrip, class System.Windows.Forms.ToolStrip sourceToolStrip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RevertMerge (targetToolStrip As ToolStrip, sourceToolStrip As ToolStrip) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RevertMerge(System::Windows::Forms::ToolStrip ^ targetToolStrip, System::Windows::Forms::ToolStrip ^ sourceToolStrip);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -496,10 +553,21 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="sourceToolStrip" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveSettings">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves settings for the specified <see cref="T:System.Windows.Forms.Form" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveSettings">
       <MemberSignature Language="C#" Value="public static void SaveSettings (System.Windows.Forms.Form sourceForm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SaveSettings(class System.Windows.Forms.Form sourceForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.SaveSettings(System.Windows.Forms.Form)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SaveSettings (sourceForm As Form)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SaveSettings(System::Windows::Forms::Form ^ sourceForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -529,6 +597,8 @@
       <MemberSignature Language="C#" Value="public static void SaveSettings (System.Windows.Forms.Form sourceForm, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SaveSettings(class System.Windows.Forms.Form sourceForm, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.SaveSettings(System.Windows.Forms.Form,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SaveSettings (sourceForm As Form, key As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SaveSettings(System::Windows::Forms::Form ^ sourceForm, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -560,6 +630,8 @@
       <MemberSignature Language="C#" Value="public static bool VisualStylesEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool VisualStylesEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripManager.VisualStylesEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property VisualStylesEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool VisualStylesEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -575,43 +647,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="LoadSettings">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads settings for a <see cref="T:System.Windows.Forms.Form" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RevertMerge">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Undoes a merging of two <see cref="T:System.Windows.Forms.ToolStrip" /> objects.</summary>
-        <altmember cref="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Merge">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Combines <see cref="T:System.Windows.Forms.ToolStrip" /> controls.</summary>
-        <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SaveSettings">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves settings for the specified <see cref="T:System.Windows.Forms.Form" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

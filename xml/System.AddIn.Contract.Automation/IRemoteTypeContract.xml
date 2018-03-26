@@ -1,7 +1,9 @@
-<Type Name="IRemoteTypeContract" FullName="System.AddIn.Contract.Automation.IRemoteTypeContract">
+﻿<Type Name="IRemoteTypeContract" FullName="System.AddIn.Contract.Automation.IRemoteTypeContract">
   <TypeSignature Language="C#" Value="public interface IRemoteTypeContract : System.AddIn.Contract.IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteTypeContract implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteTypeContract&#xA;Implements IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteTypeContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public string GetCanonicalName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCanonicalName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetCanonicalName" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCanonicalName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCanonicalName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -61,6 +65,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteEventInfoContract GetEvent (string name, System.Reflection.BindingFlags bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteEventInfoContract GetEvent(string name, valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvent(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::IRemoteEventInfoContract ^ GetEvent(System::String ^ name, System::Reflection::BindingFlags bindingFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -85,6 +90,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteEventInfoContract&gt; GetEvents (System.Reflection.BindingFlags bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteEventInfoContract&gt; GetEvents(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvents(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::Automation::IRemoteEventInfoContract ^&gt; ^ GetEvents(System::Reflection::BindingFlags bindingFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -107,6 +113,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteFieldInfoContract GetField (string name, System.Reflection.BindingFlags bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteFieldInfoContract GetField(string name, valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetField(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::IRemoteFieldInfoContract ^ GetField(System::String ^ name, System::Reflection::BindingFlags bindingFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -131,6 +138,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteFieldInfoContract&gt; GetFields (System.Reflection.BindingFlags bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteFieldInfoContract&gt; GetFields(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetFields(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::Automation::IRemoteFieldInfoContract ^&gt; ^ GetFields(System::Reflection::BindingFlags bindingFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -153,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteTypeContract GetInterface (string canonicalName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteTypeContract GetInterface(string canonicalName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetInterface(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInterface (canonicalName As String) As IRemoteTypeContract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::IRemoteTypeContract ^ GetInterface(System::String ^ canonicalName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -184,6 +194,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt; GetInterfaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteTypeContract&gt; GetInterfaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInterfaces () As IArrayContract(Of IRemoteTypeContract)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::Automation::IRemoteTypeContract ^&gt; ^ GetInterfaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -203,6 +215,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.IContract&gt; GetMember (string name, System.Reflection.MemberTypes memberTypes, System.Reflection.BindingFlags bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.IContract&gt; GetMember(string name, valuetype System.Reflection.MemberTypes memberTypes, valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMember(System.String,System.Reflection.MemberTypes,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::IContract ^&gt; ^ GetMember(System::String ^ name, System::Reflection::MemberTypes memberTypes, System::Reflection::BindingFlags bindingFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -236,6 +249,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.IContract&gt; GetMembers (System.Reflection.BindingFlags bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.IContract&gt; GetMembers(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMembers(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::IContract ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -258,6 +272,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteMethodInfoContract GetMethod (string name, System.Reflection.BindingFlags bindingFlags, System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt; remoteTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteMethodInfoContract GetMethod(string name, valuetype System.Reflection.BindingFlags bindingFlags, class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteTypeContract&gt; remoteTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethod(System.String,System.Reflection.BindingFlags,System.AddIn.Contract.Collections.IArrayContract{System.AddIn.Contract.Automation.IRemoteTypeContract})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::IRemoteMethodInfoContract ^ GetMethod(System::String ^ name, System::Reflection::BindingFlags bindingFlags, System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::Automation::IRemoteTypeContract ^&gt; ^ remoteTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -284,6 +299,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteMethodInfoContract&gt; GetMethods (System.Reflection.BindingFlags bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteMethodInfoContract&gt; GetMethods(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethods(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::Automation::IRemoteMethodInfoContract ^&gt; ^ GetMethods(System::Reflection::BindingFlags bindingFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -306,6 +322,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemotePropertyInfoContract&gt; GetProperties (System.Reflection.BindingFlags bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemotePropertyInfoContract&gt; GetProperties(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetProperties(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::Automation::IRemotePropertyInfoContract ^&gt; ^ GetProperties(System::Reflection::BindingFlags bindingFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -328,6 +345,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemotePropertyInfoContract GetProperty (string name, System.Reflection.BindingFlags bindingFlags, System.AddIn.Contract.Automation.IRemoteTypeContract remoteReturnType, System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt; remoteTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemotePropertyInfoContract GetProperty(string name, valuetype System.Reflection.BindingFlags bindingFlags, class System.AddIn.Contract.Automation.IRemoteTypeContract remoteReturnType, class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteTypeContract&gt; remoteTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetProperty(System.String,System.Reflection.BindingFlags,System.AddIn.Contract.Automation.IRemoteTypeContract,System.AddIn.Contract.Collections.IArrayContract{System.AddIn.Contract.Automation.IRemoteTypeContract})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::IRemotePropertyInfoContract ^ GetProperty(System::String ^ name, System::Reflection::BindingFlags bindingFlags, System::AddIn::Contract::Automation::IRemoteTypeContract ^ remoteReturnType, System::AddIn::Contract::Collections::IArrayContract&lt;System::AddIn::Contract::Automation::IRemoteTypeContract ^&gt; ^ remoteTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -356,6 +374,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.RemoteTypeData GetTypeData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.Automation.RemoteTypeData GetTypeData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetTypeData" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeData () As RemoteTypeData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::RemoteTypeData GetTypeData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -375,6 +395,7 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument InvokeMember (string name, System.Reflection.BindingFlags bindingFlags, System.AddIn.Contract.Automation.IRemoteObjectContract target, System.AddIn.Contract.Collections.IRemoteArgumentArrayContract remoteArgs, bool[] remoteArgModifiers, int localeId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.RemoteArgument InvokeMember(string name, valuetype System.Reflection.BindingFlags bindingFlags, class System.AddIn.Contract.Automation.IRemoteObjectContract target, class System.AddIn.Contract.Collections.IRemoteArgumentArrayContract remoteArgs, bool[] remoteArgModifiers, int32 localeId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.InvokeMember(System.String,System.Reflection.BindingFlags,System.AddIn.Contract.Automation.IRemoteObjectContract,System.AddIn.Contract.Collections.IRemoteArgumentArrayContract,System.Boolean[],System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument InvokeMember(System::String ^ name, System::Reflection::BindingFlags bindingFlags, System::AddIn::Contract::Automation::IRemoteObjectContract ^ target, System::AddIn::Contract::Collections::IRemoteArgumentArrayContract ^ remoteArgs, cli::array &lt;bool&gt; ^ remoteArgModifiers, int localeId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

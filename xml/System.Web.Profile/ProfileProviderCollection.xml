@@ -1,7 +1,9 @@
-<Type Name="ProfileProviderCollection" FullName="System.Web.Profile.ProfileProviderCollection">
+﻿<Type Name="ProfileProviderCollection" FullName="System.Web.Profile.ProfileProviderCollection">
   <TypeSignature Language="C#" Value="public sealed class ProfileProviderCollection : System.Configuration.SettingsProviderCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileProviderCollection extends System.Configuration.SettingsProviderCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileProviderCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileProviderCollection&#xA;Inherits SettingsProviderCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfileProviderCollection sealed : System::Configuration::SettingsProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public ProfileProviderCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProviderCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileProviderCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public override void Add (System.Configuration.Provider.ProviderBase provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Configuration::Provider::ProviderBase ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Profile.ProfileProvider this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Profile.ProfileProvider Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileProviderCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ProfileProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Profile::ProfileProvider ^ default[System::String ^] { System::Web::Profile::ProfileProvider ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="LinqDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.LinqDataSourceDesigner">
+﻿<Type Name="LinqDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.LinqDataSourceDesigner">
   <TypeSignature Language="C#" Value="public class LinqDataSourceDesigner : System.Web.UI.Design.DataSourceDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceDesigner extends System.Web.UI.Design.DataSourceDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceDesigner&#xA;Inherits DataSourceDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceDesigner : System::Web::UI::Design::DataSourceDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public LinqDataSourceDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -71,6 +77,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConfigure { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanConfigure" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanConfigure As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanConfigure { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="public override bool CanRefreshSchema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRefreshSchema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRefreshSchema As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRefreshSchema { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="public override void Configure ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Configure() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Configure ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Configure();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -166,6 +178,8 @@
       <MemberSignature Language="C#" Value="public string ContextTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContextTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.ContextTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -203,6 +217,8 @@
       <MemberSignature Language="C#" Value="public string Delete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Delete" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Property Delete As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Delete { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -216,7 +232,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.WebControls.LinqDataSourceStatementEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -254,6 +270,8 @@
       <MemberSignature Language="C#" Value="public bool EnableDelete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDelete" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.EnableDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableDelete As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDelete { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -274,6 +292,8 @@
       <MemberSignature Language="C#" Value="public bool EnableInsert { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableInsert" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.EnableInsert" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableInsert As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableInsert { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -295,6 +315,8 @@
       <MemberSignature Language="C#" Value="public bool EnableUpdate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableUpdate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.EnableUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableUpdate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUpdate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -316,6 +338,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerDataSourceView GetView (string viewName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Design.DesignerDataSourceView GetView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.GetView(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetView (viewName As String) As DesignerDataSourceView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Design::DesignerDataSourceView ^ GetView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -340,6 +364,8 @@
       <MemberSignature Language="C#" Value="public override string[] GetViewNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetViewNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.GetViewNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetViewNames () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetViewNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -361,6 +387,8 @@
       <MemberSignature Language="C#" Value="public string GroupBy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GroupBy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.GroupBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -398,6 +426,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -421,6 +451,8 @@
       <MemberSignature Language="C#" Value="public string Insert { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Insert" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Insert" />
+      <MemberSignature Language="VB.NET" Value="Public Property Insert As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Insert { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -434,7 +466,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.WebControls.LinqDataSourceStatementEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -472,6 +504,8 @@
       <MemberSignature Language="C#" Value="public string OrderBy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OrderBy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.OrderBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrderBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OrderBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -509,6 +543,8 @@
       <MemberSignature Language="C#" Value="public string OrderGroupsBy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OrderGroupsBy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.OrderGroupsBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrderGroupsBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OrderGroupsBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -546,6 +582,8 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -569,6 +607,8 @@
       <MemberSignature Language="C#" Value="public override void RefreshSchema (bool preferSilent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RefreshSchema(bool preferSilent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RefreshSchema (preferSilent As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RefreshSchema(bool preferSilent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -601,6 +641,8 @@
       <MemberSignature Language="C#" Value="public string Select { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Select" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Property Select As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Select { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -638,6 +680,8 @@
       <MemberSignature Language="C#" Value="public IServiceProvider ServiceProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IServiceProvider ServiceProvider" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.ServiceProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceProvider As IServiceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IServiceProvider ^ ServiceProvider { IServiceProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -658,6 +702,8 @@
       <MemberSignature Language="C#" Value="public string TableName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TableName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.TableName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TableName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -695,6 +741,8 @@
       <MemberSignature Language="C#" Value="public string Update { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Update" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Update" />
+      <MemberSignature Language="VB.NET" Value="Public Property Update As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Update { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -708,7 +756,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.WebControls.LinqDataSourceStatementEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -746,6 +794,8 @@
       <MemberSignature Language="C#" Value="public string Where { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Where" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Where" />
+      <MemberSignature Language="VB.NET" Value="Public Property Where As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Where { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>

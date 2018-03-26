@@ -1,7 +1,9 @@
-<Type Name="InputScopePhrase" FullName="System.Windows.Input.InputScopePhrase">
+﻿<Type Name="InputScopePhrase" FullName="System.Windows.Input.InputScopePhrase">
   <TypeSignature Language="C#" Value="public class InputScopePhrase : System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputScopePhrase extends System.Object implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScopePhrase" />
+  <TypeSignature Language="VB.NET" Value="Public Class InputScopePhrase&#xA;Implements IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InputScopePhrase : System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     <altmember cref="T:System.Windows.Input.InputScope" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputScopePhrase" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InputScopePhrase ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopePhrase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InputScopePhrase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +64,8 @@
       <MemberSignature Language="C#" Value="public InputScopePhrase (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopePhrase.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InputScopePhrase(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,7 +92,12 @@
       <MemberSignature Language="C#" Value="public void AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopePhrase.AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddChild (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddChild(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,7 +118,12 @@
       <MemberSignature Language="C#" Value="public void AddText (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddText(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopePhrase.AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddText (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddText(System::String ^ name);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +144,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScopePhrase.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,14 +176,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputScopePhrase" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="Saml2Action" FullName="System.IdentityModel.Tokens.Saml2Action">
+﻿<Type Name="Saml2Action" FullName="System.IdentityModel.Tokens.Saml2Action">
   <TypeSignature Language="C#" Value="public class Saml2Action" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2Action extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Action" />
+  <TypeSignature Language="VB.NET" Value="Public Class Saml2Action" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Saml2Action" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public Saml2Action (string value, Uri actionNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, class System.Uri actionNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Action.#ctor(System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, actionNamespace As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Action(System::String ^ value, Uri ^ actionNamespace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public Uri Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Namespace" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Action.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Namespace { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -92,6 +98,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Action.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

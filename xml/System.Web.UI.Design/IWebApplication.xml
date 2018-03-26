@@ -1,7 +1,9 @@
-<Type Name="IWebApplication" FullName="System.Web.UI.Design.IWebApplication">
+﻿<Type Name="IWebApplication" FullName="System.Web.UI.Design.IWebApplication">
   <TypeSignature Language="C#" Value="public interface IWebApplication : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebApplication implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebApplication" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebApplication&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebApplication : IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IProjectItem GetProjectItemFromUrl (string appRelativeUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IProjectItem GetProjectItemFromUrl(string appRelativeUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebApplication.GetProjectItemFromUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProjectItemFromUrl (appRelativeUrl As String) As IProjectItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::IProjectItem ^ GetProjectItemFromUrl(System::String ^ appRelativeUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.Configuration OpenWebConfiguration (bool isReadOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.Configuration OpenWebConfiguration(bool isReadOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebApplication.OpenWebConfiguration(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenWebConfiguration (isReadOnly As Boolean) As Configuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::Configuration ^ OpenWebConfiguration(bool isReadOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IProjectItem RootProjectItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IProjectItem RootProjectItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IWebApplication.RootProjectItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootProjectItem As IProjectItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IProjectItem ^ RootProjectItem { System::Web::UI::Design::IProjectItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

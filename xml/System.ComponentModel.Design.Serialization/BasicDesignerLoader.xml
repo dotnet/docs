@@ -1,7 +1,9 @@
-<Type Name="BasicDesignerLoader" FullName="System.ComponentModel.Design.Serialization.BasicDesignerLoader">
+﻿<Type Name="BasicDesignerLoader" FullName="System.ComponentModel.Design.Serialization.BasicDesignerLoader">
   <TypeSignature Language="C#" Value="public abstract class BasicDesignerLoader : System.ComponentModel.Design.Serialization.DesignerLoader, System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BasicDesignerLoader extends System.ComponentModel.Design.Serialization.DesignerLoader implements class System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.BasicDesignerLoader" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BasicDesignerLoader&#xA;Inherits DesignerLoader&#xA;Implements IDesignerLoaderService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BasicDesignerLoader abstract : System::ComponentModel::Design::Serialization::DesignerLoader, System::ComponentModel::Design::Serialization::IDesignerLoaderService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="protected BasicDesignerLoader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BasicDesignerLoader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public override void BeginLoad (System.ComponentModel.Design.Serialization.IDesignerLoaderHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void BeginLoad(class System.ComponentModel.Design.Serialization.IDesignerLoaderHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.BeginLoad(System.ComponentModel.Design.Serialization.IDesignerLoaderHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginLoad (host As IDesignerLoaderHost)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginLoad(System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -112,6 +118,8 @@
       <MemberSignature Language="C#" Value="public override void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -142,6 +150,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool EnableComponentNotification (bool enable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool EnableComponentNotification(bool enable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.EnableComponentNotification(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function EnableComponentNotification (enable As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool EnableComponentNotification(bool enable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -166,6 +176,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -191,6 +203,8 @@
       <MemberSignature Language="C#" Value="protected object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -220,6 +234,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -247,6 +263,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsReloadNeeded ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsReloadNeeded() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.IsReloadNeeded" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsReloadNeeded () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsReloadNeeded();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -274,6 +292,8 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.Design.Serialization.IDesignerLoaderHost LoaderHost { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Serialization.IDesignerLoaderHost LoaderHost" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.LoaderHost" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property LoaderHost As IDesignerLoaderHost" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ LoaderHost { System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -302,6 +322,8 @@
       <MemberSignature Language="C#" Value="public override bool Loading { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Loading" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Loading" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Loading As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Loading { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -328,6 +350,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool Modified { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Modified" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Modified" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Property Modified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool Modified { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -354,6 +378,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBeginLoad ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeginLoad() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnBeginLoad" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeginLoad ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeginLoad();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -383,6 +409,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBeginUnload ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeginUnload() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnBeginUnload" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeginUnload ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeginUnload();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -410,6 +438,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEndLoad (bool successful, System.Collections.ICollection errors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndLoad(bool successful, class System.Collections.ICollection errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnEndLoad(System.Boolean,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndLoad (successful As Boolean, errors As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndLoad(bool successful, System::Collections::ICollection ^ errors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -447,6 +477,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnModifying ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnModifying() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnModifying" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModifying ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModifying();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -472,6 +504,8 @@
       <MemberSignature Language="C#" Value="protected abstract void PerformFlush (System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PerformFlush(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PerformFlush (serializationManager As IDesignerSerializationManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PerformFlush(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -501,6 +535,8 @@
       <MemberSignature Language="C#" Value="protected abstract void PerformLoad (System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PerformLoad(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.PerformLoad(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PerformLoad (serializationManager As IDesignerSerializationManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PerformLoad(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -530,6 +566,8 @@
       <MemberSignature Language="C#" Value="protected object PropertyProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object PropertyProvider" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.PropertyProvider" />
+      <MemberSignature Language="VB.NET" Value="Protected Property PropertyProvider As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ PropertyProvider { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -556,6 +594,8 @@
       <MemberSignature Language="C#" Value="protected void Reload (System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions flags);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Reload(valuetype System.ComponentModel.Design.Serialization.BasicDesignerLoader/ReloadOptions flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Reload(System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Reload (flags As BasicDesignerLoader.ReloadOptions)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Reload(System::ComponentModel::Design::Serialization::BasicDesignerLoader::ReloadOptions flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -585,6 +625,8 @@
       <MemberSignature Language="C#" Value="protected bool ReloadPending { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReloadPending" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadPending" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ReloadPending As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool ReloadPending { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -605,6 +647,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ReportFlushErrors (System.Collections.ICollection errors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReportFlushErrors(class System.Collections.ICollection errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReportFlushErrors(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReportFlushErrors (errors As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReportFlushErrors(System::Collections::ICollection ^ errors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -634,6 +678,8 @@
       <MemberSignature Language="C#" Value="protected void SetBaseComponentClassName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetBaseComponentClassName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.SetBaseComponentClassName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetBaseComponentClassName (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetBaseComponentClassName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -664,6 +710,8 @@
       <MemberSignature Language="C#" Value="void IDesignerLoaderService.AddLoadDependency ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.System#ComponentModel#Design#Serialization#IDesignerLoaderService#AddLoadDependency" />
+      <MemberSignature Language="VB.NET" Value="Sub AddLoadDependency () Implements IDesignerLoaderService.AddLoadDependency" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency() = System::ComponentModel::Design::Serialization::IDesignerLoaderService::AddLoadDependency;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -690,6 +738,8 @@
       <MemberSignature Language="C#" Value="void IDesignerLoaderService.DependentLoadComplete (bool successful, System.Collections.ICollection errorCollection);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(bool successful, class System.Collections.ICollection errorCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.System#ComponentModel#Design#Serialization#IDesignerLoaderService#DependentLoadComplete(System.Boolean,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Sub DependentLoadComplete (successful As Boolean, errorCollection As ICollection) Implements IDesignerLoaderService.DependentLoadComplete" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(bool successful, System::Collections::ICollection ^ errorCollection) = System::ComponentModel::Design::Serialization::IDesignerLoaderService::DependentLoadComplete;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -725,6 +775,8 @@
       <MemberSignature Language="C#" Value="bool IDesignerLoaderService.Reload ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.System#ComponentModel#Design#Serialization#IDesignerLoaderService#Reload" />
+      <MemberSignature Language="VB.NET" Value="Function Reload () As Boolean Implements IDesignerLoaderService.Reload" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload() = System::ComponentModel::Design::Serialization::IDesignerLoaderService::Reload;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

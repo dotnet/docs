@@ -1,7 +1,9 @@
-<Type Name="SizingType" FullName="System.Windows.Forms.VisualStyles.SizingType">
+﻿<Type Name="SizingType" FullName="System.Windows.Forms.VisualStyles.SizingType">
   <TypeSignature Language="C#" Value="public enum SizingType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SizingType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.SizingType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SizingType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SizingType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="FixedSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.SizingType FixedSize = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.SizingType.FixedSize" />
+      <MemberSignature Language="VB.NET" Value="FixedSize" />
+      <MemberSignature Language="C++ CLI" Value="FixedSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.SizingType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The element cannot be resized.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Stretch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.SizingType Stretch = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.SizingType.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Stretch" />
+      <MemberSignature Language="C++ CLI" Value="Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.SizingType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The background image stretches to fill the bounds.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Tile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.SizingType Tile = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.SizingType.Tile" />
+      <MemberSignature Language="VB.NET" Value="Tile" />
+      <MemberSignature Language="C++ CLI" Value="Tile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.SizingType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The background image repeats the pattern to fill the bounds.</summary>
       </Docs>

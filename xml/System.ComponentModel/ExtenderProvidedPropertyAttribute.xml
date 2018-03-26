@@ -1,7 +1,9 @@
-<Type Name="ExtenderProvidedPropertyAttribute" FullName="System.ComponentModel.ExtenderProvidedPropertyAttribute">
+﻿<Type Name="ExtenderProvidedPropertyAttribute" FullName="System.ComponentModel.ExtenderProvidedPropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class ExtenderProvidedPropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtenderProvidedPropertyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ExtenderProvidedPropertyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExtenderProvidedPropertyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtenderProvidedPropertyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public ExtenderProvidedPropertyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ExtenderProvidedPropertyAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtenderProvidedPropertyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ExtenderProvidedPropertyAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -109,6 +115,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptor ExtenderProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor ExtenderProperty" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ExtenderProvidedPropertyAttribute.ExtenderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtenderProperty As PropertyDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::PropertyDescriptor ^ ExtenderProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -139,6 +147,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ExtenderProvidedPropertyAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -170,6 +180,8 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ExtenderProvidedPropertyAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -201,6 +213,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.IExtenderProvider Provider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IExtenderProvider Provider" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ExtenderProvidedPropertyAttribute.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As IExtenderProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IExtenderProvider ^ Provider { System::ComponentModel::IExtenderProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -231,6 +245,8 @@
       <MemberSignature Language="C#" Value="public Type ReceiverType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReceiverType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ExtenderProvidedPropertyAttribute.ReceiverType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReceiverType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReceiverType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

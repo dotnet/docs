@@ -1,7 +1,9 @@
-<Type Name="ViewStateEncryptionMode" FullName="System.Web.UI.ViewStateEncryptionMode">
+﻿<Type Name="ViewStateEncryptionMode" FullName="System.Web.UI.ViewStateEncryptionMode">
   <TypeSignature Language="C#" Value="public enum ViewStateEncryptionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewStateEncryptionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ViewStateEncryptionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ViewStateEncryptionMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ViewStateEncryptionMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateEncryptionMode Always = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateEncryptionMode.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ViewStateEncryptionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The view-state information is always encrypted.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateEncryptionMode Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateEncryptionMode.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ViewStateEncryptionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The view-state information is encrypted if a control requests encryption by calling the <see cref="M:System.Web.UI.Page.RegisterRequiresViewStateEncryption" /> method. This is the default.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateEncryptionMode Never = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateEncryptionMode.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ViewStateEncryptionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The view-state information is never encrypted, even if a control requests it.</summary>
       </Docs>

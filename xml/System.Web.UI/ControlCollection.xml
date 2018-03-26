@@ -1,7 +1,9 @@
-<Type Name="ControlCollection" FullName="System.Web.UI.ControlCollection">
+﻿<Type Name="ControlCollection" FullName="System.Web.UI.ControlCollection">
   <TypeSignature Language="C#" Value="public class ControlCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlCollection : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public ControlCollection (System.Web.UI.Control owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Control owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.#ctor(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlCollection(System::Web::UI::Control ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public virtual void Add (System.Web.UI.Control child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Web.UI.Control child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.Add(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (child As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +122,8 @@
       <MemberSignature Language="C#" Value="public virtual void AddAt (int index, System.Web.UI.Control child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAt(int32 index, class System.Web.UI.Control child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddAt (index As Integer, child As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddAt(int index, System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +167,8 @@
       <MemberSignature Language="C#" Value="public virtual void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +203,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Contains (System.Web.UI.Control c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Web.UI.Control c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.Contains(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (c As Control) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Web::UI::Control ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,7 +237,11 @@
       <MemberSignature Language="C#" Value="public virtual void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -252,7 +268,12 @@
       <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -281,7 +302,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -312,6 +338,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (System.Web.UI.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Web.UI.Control value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.IndexOf(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Control) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Web::UI::Control ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +378,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -380,7 +410,12 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -409,6 +444,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Control ^ default[int] { System::Web::UI::Control ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,6 +480,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Control Owner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control Owner" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.Owner" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Owner As Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Control ^ Owner { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -472,6 +511,8 @@
       <MemberSignature Language="C#" Value="public virtual void Remove (System.Web.UI.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class System.Web.UI.Control value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.Remove(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (value As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Web::UI::Control ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -510,6 +551,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -549,7 +592,12 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

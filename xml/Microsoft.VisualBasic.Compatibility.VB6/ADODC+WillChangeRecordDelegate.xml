@@ -1,7 +1,9 @@
-<Type Name="ADODC+WillChangeRecordDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+WillChangeRecordDelegate">
+﻿<Type Name="ADODC+WillChangeRecordDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+WillChangeRecordDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.WillChangeRecordDelegate(EventReasonEnum adReason, int cRecords, ref EventStatusEnum adStatus, Recordset pRecordset);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/WillChangeRecordDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.WillChangeRecordDelegate(adReason As EventReasonEnum, cRecords As Integer, ByRef adStatus As EventStatusEnum, pRecordset As Recordset)" />
+  <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::WillChangeRecordDelegate(EventReasonEnum adReason, int cRecords, EventStatusEnum % adStatus, Recordset ^ pRecordset);" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

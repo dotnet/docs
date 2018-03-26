@@ -1,7 +1,9 @@
-<Type Name="TlsOperationException" FullName="System.DirectoryServices.Protocols.TlsOperationException">
+﻿<Type Name="TlsOperationException" FullName="System.DirectoryServices.Protocols.TlsOperationException">
   <TypeSignature Language="C#" Value="public class TlsOperationException : System.DirectoryServices.Protocols.DirectoryOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TlsOperationException extends System.DirectoryServices.Protocols.DirectoryOperationException" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.TlsOperationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class TlsOperationException&#xA;Inherits DirectoryOperationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TlsOperationException : System::DirectoryServices::Protocols::DirectoryOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TlsOperationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +50,8 @@
       <MemberSignature Language="C#" Value="public TlsOperationException (System.DirectoryServices.Protocols.DirectoryResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.DirectoryResponse response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (response As DirectoryResponse)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::DirectoryServices::Protocols::DirectoryResponse ^ response);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -55,6 +71,8 @@
       <MemberSignature Language="C#" Value="public TlsOperationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -74,6 +92,8 @@
       <MemberSignature Language="C#" Value="public TlsOperationException (System.DirectoryServices.Protocols.DirectoryResponse response, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.DirectoryResponse response, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (response As DirectoryResponse, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::DirectoryServices::Protocols::DirectoryResponse ^ response, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -95,6 +115,8 @@
       <MemberSignature Language="C#" Value="protected TlsOperationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TlsOperationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -116,6 +138,8 @@
       <MemberSignature Language="C#" Value="public TlsOperationException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -137,6 +161,8 @@
       <MemberSignature Language="C#" Value="public TlsOperationException (System.DirectoryServices.Protocols.DirectoryResponse response, string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.DirectoryResponse response, string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (response As DirectoryResponse, message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::DirectoryServices::Protocols::DirectoryResponse ^ response, System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -156,15 +182,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

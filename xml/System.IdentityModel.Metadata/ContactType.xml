@@ -1,7 +1,9 @@
-<Type Name="ContactType" FullName="System.IdentityModel.Metadata.ContactType">
+﻿<Type Name="ContactType" FullName="System.IdentityModel.Metadata.ContactType">
   <TypeSignature Language="C#" Value="public enum ContactType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContactType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ContactType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ContactType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ContactType" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Administrative" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Administrative = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Administrative" />
+      <MemberSignature Language="VB.NET" Value="Administrative" />
+      <MemberSignature Language="C++ CLI" Value="Administrative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An administrative contact.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Billing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Billing = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Billing" />
+      <MemberSignature Language="VB.NET" Value="Billing" />
+      <MemberSignature Language="C++ CLI" Value="Billing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A billing contact.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Other = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A contact with a type other than administrative, billing, support, technical, or unspecified.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="Support" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Support = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Support" />
+      <MemberSignature Language="VB.NET" Value="Support" />
+      <MemberSignature Language="C++ CLI" Value="Support" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A support contact.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="Technical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Technical = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Technical" />
+      <MemberSignature Language="VB.NET" Value="Technical" />
+      <MemberSignature Language="C++ CLI" Value="Technical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A technical contact.</summary>
       </Docs>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Unspecified = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A contact with a type that is not specified.</summary>
       </Docs>

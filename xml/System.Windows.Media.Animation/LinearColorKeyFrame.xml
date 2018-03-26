@@ -1,7 +1,9 @@
-<Type Name="LinearColorKeyFrame" FullName="System.Windows.Media.Animation.LinearColorKeyFrame">
+﻿<Type Name="LinearColorKeyFrame" FullName="System.Windows.Media.Animation.LinearColorKeyFrame">
   <TypeSignature Language="C#" Value="public class LinearColorKeyFrame : System.Windows.Media.Animation.ColorKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinearColorKeyFrame extends System.Windows.Media.Animation.ColorKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearColorKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinearColorKeyFrame&#xA;Inherits ColorKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinearColorKeyFrame : System::Windows::Media::Animation::ColorKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.Windows.Media.Animation.ColorKeyFrameCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearColorKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinearColorKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearColorKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearColorKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public LinearColorKeyFrame (System.Windows.Media.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearColorKeyFrame.#ctor(System.Windows.Media.Color)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Color)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearColorKeyFrame(System::Windows::Media::Color value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +80,7 @@
       <MemberSignature Language="C#" Value="public LinearColorKeyFrame (System.Windows.Media.Color value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearColorKeyFrame.#ctor(System.Windows.Media.Color,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearColorKeyFrame(System::Windows::Media::Color value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +101,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearColorKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +123,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Color InterpolateValueCore (System.Windows.Media.Color baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Color InterpolateValueCore(valuetype System.Windows.Media.Color baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearColorKeyFrame.InterpolateValueCore(System.Windows.Media.Color,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Color, keyFrameProgress As Double) As Color" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Color InterpolateValueCore(System::Windows::Media::Color baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,14 +145,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearColorKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

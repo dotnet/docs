@@ -1,7 +1,9 @@
-<Type Name="RepeatLayout" FullName="System.Web.UI.WebControls.RepeatLayout">
+﻿<Type Name="RepeatLayout" FullName="System.Web.UI.WebControls.RepeatLayout">
   <TypeSignature Language="C#" Value="public enum RepeatLayout" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RepeatLayout extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeatLayout" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RepeatLayout" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RepeatLayout" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="Flow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.RepeatLayout Flow = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatLayout.Flow" />
+      <MemberSignature Language="VB.NET" Value="Flow" />
+      <MemberSignature Language="C++ CLI" Value="Flow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.RepeatLayout</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Items are displayed without a table structure. Rendered markup consists of a <see langword="span" /> element and items are separated by <see langword="br" /> elements.</summary>
         <remarks>
@@ -79,6 +84,8 @@
       <MemberSignature Language="C#" Value="OrderedList" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.RepeatLayout OrderedList = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatLayout.OrderedList" />
+      <MemberSignature Language="VB.NET" Value="OrderedList" />
+      <MemberSignature Language="C++ CLI" Value="OrderedList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.RepeatLayout</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Items are displayed without a table structure. Rendered markup consists of an <see langword="ol" /> element that contains <see langword="li" /> elements.</summary>
         <remarks>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="Table" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.RepeatLayout Table = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatLayout.Table" />
+      <MemberSignature Language="VB.NET" Value="Table" />
+      <MemberSignature Language="C++ CLI" Value="Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.RepeatLayout</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Items are displayed in a table.</summary>
         <remarks>
@@ -179,6 +190,8 @@
       <MemberSignature Language="C#" Value="UnorderedList" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.RepeatLayout UnorderedList = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatLayout.UnorderedList" />
+      <MemberSignature Language="VB.NET" Value="UnorderedList" />
+      <MemberSignature Language="C++ CLI" Value="UnorderedList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.RepeatLayout</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Items are displayed without a table structure. Rendered markup consists of a <see langword="ul" /> element that contains <see langword="li" /> elements.</summary>
         <remarks>

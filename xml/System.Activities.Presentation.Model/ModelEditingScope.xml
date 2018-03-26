@@ -1,7 +1,9 @@
-<Type Name="ModelEditingScope" FullName="System.Activities.Presentation.Model.ModelEditingScope">
+﻿<Type Name="ModelEditingScope" FullName="System.Activities.Presentation.Model.ModelEditingScope">
   <TypeSignature Language="C#" Value="public abstract class ModelEditingScope : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ModelEditingScope extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelEditingScope" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelEditingScope&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelEditingScope abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="protected ModelEditingScope ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ModelEditingScope();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="protected abstract bool CanComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CanComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.CanComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CanComplete () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool CanComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public void Complete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.Complete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -84,6 +92,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelEditingScope.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -98,11 +108,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disposes of this object by aborting changes.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -127,6 +151,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -155,6 +181,8 @@
       <MemberSignature Language="C#" Value="protected abstract void OnComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.OnComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnComplete ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -173,6 +201,7 @@
       <MemberSignature Language="C#" Value="protected abstract bool OnException (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.OnException(System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool OnException(Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -203,6 +232,8 @@
       <MemberSignature Language="C#" Value="protected abstract void OnRevert (bool finalizing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRevert(bool finalizing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.OnRevert(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnRevert (finalizing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnRevert(bool finalizing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -224,6 +255,8 @@
       <MemberSignature Language="C#" Value="public void Revert ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Revert() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelEditingScope.Revert" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Revert ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Revert();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -246,14 +279,5 @@
         <exception cref="T:System.InvalidOperationException">The group of changes has already been committed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Disposes of this object by aborting changes.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="StandardBindingReliableSessionElement" FullName="System.ServiceModel.Configuration.StandardBindingReliableSessionElement">
+﻿<Type Name="StandardBindingReliableSessionElement" FullName="System.ServiceModel.Configuration.StandardBindingReliableSessionElement">
   <TypeSignature Language="C#" Value="public class StandardBindingReliableSessionElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StandardBindingReliableSessionElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.StandardBindingReliableSessionElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class StandardBindingReliableSessionElement&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StandardBindingReliableSessionElement : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public StandardBindingReliableSessionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingReliableSessionElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StandardBindingReliableSessionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +38,7 @@
       <MemberSignature Language="C#" Value="public void ApplyConfiguration (System.ServiceModel.ReliableSession reliableSession);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyConfiguration(class System.ServiceModel.ReliableSession reliableSession) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingReliableSessionElement.ApplyConfiguration(System.ServiceModel.ReliableSession)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyConfiguration(System::ServiceModel::ReliableSession ^ reliableSession);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan InactivityTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan InactivityTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingReliableSessionElement.InactivityTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property InactivityTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan InactivityTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +97,7 @@
       <MemberSignature Language="C#" Value="public void InitializeFrom (System.ServiceModel.ReliableSession reliableSession);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InitializeFrom(class System.ServiceModel.ReliableSession reliableSession) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingReliableSessionElement.InitializeFrom(System.ServiceModel.ReliableSession)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeFrom(System::ServiceModel::ReliableSession ^ reliableSession);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="public bool Ordered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Ordered" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingReliableSessionElement.Ordered" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ordered As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Ordered { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +147,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingReliableSessionElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IActivationFactory" FullName="System.Runtime.InteropServices.WindowsRuntime.IActivationFactory">
+﻿<Type Name="IActivationFactory" FullName="System.Runtime.InteropServices.WindowsRuntime.IActivationFactory">
   <TypeSignature Language="C#" Value="public interface IActivationFactory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivationFactory" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.IActivationFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IActivationFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IActivationFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public object ActivateInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ActivateInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.IActivationFactory.ActivateInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Function ActivateInstance () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ActivateInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>

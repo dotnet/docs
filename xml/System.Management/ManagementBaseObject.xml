@@ -1,7 +1,9 @@
-<Type Name="ManagementBaseObject" FullName="System.Management.ManagementBaseObject">
+﻿<Type Name="ManagementBaseObject" FullName="System.Management.ManagementBaseObject">
   <TypeSignature Language="C#" Value="public class ManagementBaseObject : System.ComponentModel.Component, ICloneable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagementBaseObject extends System.ComponentModel.Component implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementBaseObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagementBaseObject&#xA;Inherits Component&#xA;Implements ICloneable, ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementBaseObject : System::ComponentModel::Component, ICloneable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected ManagementBaseObject (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementBaseObject(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Management.ManagementPath ClassPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementPath ClassPath" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.ClassPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ClassPath As ManagementPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::ManagementPath ^ ClassPath { System::Management::ManagementPath ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -100,7 +106,12 @@
       <MemberSignature Language="C#" Value="public virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +140,8 @@
       <MemberSignature Language="C#" Value="public bool CompareTo (System.Management.ManagementBaseObject otherObject, System.Management.ComparisonSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CompareTo(class System.Management.ManagementBaseObject otherObject, valuetype System.Management.ComparisonSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject,System.Management.ComparisonSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (otherObject As ManagementBaseObject, settings As ComparisonSettings) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CompareTo(System::Management::ManagementBaseObject ^ otherObject, System::Management::ComparisonSettings settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -163,6 +176,8 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -181,6 +196,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -213,6 +230,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -241,7 +260,12 @@
       <MemberSignature Language="C#" Value="protected virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -273,6 +297,8 @@
       <MemberSignature Language="C#" Value="public object GetPropertyQualifierValue (string propertyName, string qualifierName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPropertyQualifierValue(string propertyName, string qualifierName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetPropertyQualifierValue(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertyQualifierValue (propertyName As String, qualifierName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyQualifierValue(System::String ^ propertyName, System::String ^ qualifierName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -314,6 +340,8 @@
       <MemberSignature Language="C#" Value="public object GetPropertyValue (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPropertyValue(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetPropertyValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValue (propertyName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyValue(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -353,6 +381,8 @@
       <MemberSignature Language="C#" Value="public object GetQualifierValue (string qualifierName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetQualifierValue(string qualifierName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetQualifierValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQualifierValue (qualifierName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetQualifierValue(System::String ^ qualifierName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -392,6 +422,8 @@
       <MemberSignature Language="C#" Value="public string GetText (System.Management.TextFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetText(valuetype System.Management.TextFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetText (format As TextFormat) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText(System::Management::TextFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -432,6 +464,8 @@
       <MemberSignature Language="C#" Value="public object this[string propertyName] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(propertyName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -474,6 +508,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator IntPtr (System.Management.ManagementBaseObject managementObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(class System.Management.ManagementBaseObject managementObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.op_Explicit(System.Management.ManagementBaseObject)~System.IntPtr" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (managementObject As ManagementBaseObject) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator IntPtr(System::Management::ManagementBaseObject ^ managementObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -506,6 +542,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Management.PropertyDataCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.PropertyDataCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Properties As PropertyDataCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::PropertyDataCollection ^ Properties { System::Management::PropertyDataCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -544,6 +582,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Management.QualifierDataCollection Qualifiers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.QualifierDataCollection Qualifiers" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Qualifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Qualifiers As QualifierDataCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::QualifierDataCollection ^ Qualifiers { System::Management::QualifierDataCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -582,6 +622,8 @@
       <MemberSignature Language="C#" Value="public void SetPropertyQualifierValue (string propertyName, string qualifierName, object qualifierValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPropertyQualifierValue(string propertyName, string qualifierName, object qualifierValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPropertyQualifierValue (propertyName As String, qualifierName As String, qualifierValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPropertyQualifierValue(System::String ^ propertyName, System::String ^ qualifierName, System::Object ^ qualifierValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -616,6 +658,8 @@
       <MemberSignature Language="C#" Value="public void SetPropertyValue (string propertyName, object propertyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPropertyValue(string propertyName, object propertyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetPropertyValue(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPropertyValue (propertyName As String, propertyValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPropertyValue(System::String ^ propertyName, System::Object ^ propertyValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -648,6 +692,8 @@
       <MemberSignature Language="C#" Value="public void SetQualifierValue (string qualifierName, object qualifierValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetQualifierValue(string qualifierName, object qualifierValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetQualifierValue(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetQualifierValue (qualifierName As String, qualifierValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetQualifierValue(System::String ^ qualifierName, System::Object ^ qualifierValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -680,7 +726,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -705,6 +756,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Management.PropertyDataCollection SystemProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.PropertyDataCollection SystemProperties" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.SystemProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SystemProperties As PropertyDataCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::PropertyDataCollection ^ SystemProperties { System::Management::PropertyDataCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="DesignerRegion" FullName="System.Web.UI.Design.DesignerRegion">
+﻿<Type Name="DesignerRegion" FullName="System.Web.UI.Design.DesignerRegion">
   <TypeSignature Language="C#" Value="public class DesignerRegion : System.Web.UI.Design.DesignerObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerRegion extends System.Web.UI.Design.DesignerObject" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerRegion" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignerRegion&#xA;Inherits DesignerObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerRegion : System::Web::UI::Design::DesignerObject" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegion" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignerRegion (System.Web.UI.Design.ControlDesigner designer, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (designer As ControlDesigner, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerRegion(System::Web::UI::Design::ControlDesigner ^ designer, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +103,8 @@
       <MemberSignature Language="C#" Value="public DesignerRegion (System.Web.UI.Design.ControlDesigner designer, string name, bool selectable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, bool selectable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (designer As ControlDesigner, name As String, selectable As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerRegion(System::Web::UI::Design::ControlDesigner ^ designer, System::String ^ name, bool selectable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +162,8 @@
       <MemberSignature Language="C#" Value="public virtual string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegion.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -172,6 +189,8 @@
       <MemberSignature Language="C#" Value="public static readonly string DesignerRegionAttributeName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string DesignerRegionAttributeName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.DesignerRegion.DesignerRegionAttributeName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DesignerRegionAttributeName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DesignerRegionAttributeName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -196,6 +215,8 @@
       <MemberSignature Language="C#" Value="public virtual string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegion.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -214,6 +235,8 @@
       <MemberSignature Language="C#" Value="public bool EnsureSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnsureSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegion.EnsureSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnsureSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnsureSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -233,6 +256,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetBounds ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetBounds() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegion.GetBounds" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBounds () As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetBounds();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -259,6 +284,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Highlight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Highlight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegion.Highlight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Highlight As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Highlight { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -278,6 +305,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Selectable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selectable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegion.Selectable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Selectable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Selectable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -297,6 +326,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Selected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selected" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegion.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Selected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Selected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -316,6 +347,8 @@
       <MemberSignature Language="C#" Value="public object UserData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object UserData" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegion.UserData" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserData As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserData { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -339,14 +372,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegion" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

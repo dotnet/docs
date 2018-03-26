@@ -1,7 +1,9 @@
-<Type Name="AutomationElement+AutomationElementInformation" FullName="System.Windows.Automation.AutomationElement+AutomationElementInformation">
+﻿<Type Name="AutomationElement+AutomationElementInformation" FullName="System.Windows.Automation.AutomationElement+AutomationElementInformation">
   <TypeSignature Language="C#" Value="public struct AutomationElement.AutomationElementInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit AutomationElement/AutomationElementInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationElement.AutomationElementInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure AutomationElement.AutomationElementInformation" />
+  <TypeSignature Language="C++ CLI" Value="public: value class AutomationElement::AutomationElementInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public string AcceleratorKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AcceleratorKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.AcceleratorKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AcceleratorKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceleratorKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public string AccessKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AccessKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.AccessKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccessKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public string AutomationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AutomationId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutomationId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AutomationId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -119,6 +127,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect BoundingRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect BoundingRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.BoundingRectangle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundingRectangle As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect BoundingRectangle { System::Windows::Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -145,6 +155,8 @@
       <MemberSignature Language="C#" Value="public string ClassName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClassName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ClassName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -172,6 +184,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.ControlType ControlType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.ControlType ControlType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ControlType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlType As ControlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ControlType ^ ControlType { System::Windows::Automation::ControlType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -201,6 +215,8 @@
       <MemberSignature Language="C#" Value="public string FrameworkId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FrameworkId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.FrameworkId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameworkId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FrameworkId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -230,6 +246,8 @@
       <MemberSignature Language="C#" Value="public bool HasKeyboardFocus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasKeyboardFocus" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.HasKeyboardFocus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasKeyboardFocus As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasKeyboardFocus { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -258,6 +276,8 @@
       <MemberSignature Language="C#" Value="public string HelpText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -283,6 +303,8 @@
       <MemberSignature Language="C#" Value="public bool IsContentElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsContentElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsContentElement As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsContentElement { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -311,6 +333,8 @@
       <MemberSignature Language="C#" Value="public bool IsControlElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsControlElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsControlElement As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsControlElement { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -337,6 +361,8 @@
       <MemberSignature Language="C#" Value="public bool IsEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -365,6 +391,8 @@
       <MemberSignature Language="C#" Value="public bool IsKeyboardFocusable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsKeyboardFocusable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsKeyboardFocusable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsKeyboardFocusable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsKeyboardFocusable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -391,6 +419,8 @@
       <MemberSignature Language="C#" Value="public bool IsOffscreen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOffscreen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsOffscreen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOffscreen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOffscreen { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -429,6 +459,8 @@
       <MemberSignature Language="C#" Value="public bool IsPassword { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPassword" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsPassword" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPassword As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPassword { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -457,6 +489,8 @@
       <MemberSignature Language="C#" Value="public bool IsRequiredForForm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRequiredForForm" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsRequiredForForm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRequiredForForm As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequiredForForm { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -483,6 +517,8 @@
       <MemberSignature Language="C#" Value="public string ItemStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemStatus" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemStatus As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemStatus { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -510,6 +546,8 @@
       <MemberSignature Language="C#" Value="public string ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -537,6 +575,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement LabeledBy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.AutomationElement LabeledBy" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.LabeledBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LabeledBy As AutomationElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElement ^ LabeledBy { System::Windows::Automation::AutomationElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -564,6 +604,8 @@
       <MemberSignature Language="C#" Value="public string LocalizedControlType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalizedControlType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.LocalizedControlType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalizedControlType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalizedControlType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -589,6 +631,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -624,6 +668,8 @@
       <MemberSignature Language="C#" Value="public int NativeWindowHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NativeWindowHandle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.NativeWindowHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NativeWindowHandle As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NativeWindowHandle { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -649,6 +695,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.OrientationType Orientation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.OrientationType Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Orientation As OrientationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::OrientationType Orientation { System::Windows::Automation::OrientationType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -676,6 +724,8 @@
       <MemberSignature Language="C#" Value="public int ProcessId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProcessId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ProcessId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProcessId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

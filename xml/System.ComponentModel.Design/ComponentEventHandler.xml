@@ -1,7 +1,9 @@
-<Type Name="ComponentEventHandler" FullName="System.ComponentModel.Design.ComponentEventHandler">
+﻿<Type Name="ComponentEventHandler" FullName="System.ComponentModel.Design.ComponentEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ComponentEventHandler(object sender, ComponentEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComponentEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ComponentEventHandler(sender As Object, e As ComponentEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ComponentEventHandler(System::Object ^ sender, ComponentEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

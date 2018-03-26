@@ -1,7 +1,9 @@
-<Type Name="ComponentEditorForm" FullName="System.Windows.Forms.Design.ComponentEditorForm">
+﻿<Type Name="ComponentEditorForm" FullName="System.Windows.Forms.Design.ComponentEditorForm">
   <TypeSignature Language="C#" Value="public class ComponentEditorForm : System.Windows.Forms.Form" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentEditorForm extends System.Windows.Forms.Form" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentEditorForm" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentEditorForm&#xA;Inherits Form" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentEditorForm : System::Windows::Forms::Form" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public ComponentEditorForm (object component, Type[] pageTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object component, class System.Type[] pageTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.#ctor(System.Object,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (component As Object, pageTypes As Type())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentEditorForm(System::Object ^ component, cli::array &lt;Type ^&gt; ^ pageTypes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public override bool AutoSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorForm.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,7 +78,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -93,6 +99,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AutoSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoSizeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.ComponentEditorForm.AutoSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="protected override void OnActivated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnActivated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.OnActivated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivated (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -153,6 +163,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHelpRequested (System.Windows.Forms.HelpEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHelpRequested(class System.Windows.Forms.HelpEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHelpRequested (e As HelpEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHelpRequested(System::Windows::Forms::HelpEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -188,6 +200,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelChangeSelector (object source, System.Windows.Forms.TreeViewEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelChangeSelector(object source, class System.Windows.Forms.TreeViewEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.OnSelChangeSelector(System.Object,System.Windows.Forms.TreeViewEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelChangeSelector (source As Object, e As TreeViewEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelChangeSelector(System::Object ^ source, System::Windows::Forms::TreeViewEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -212,6 +226,8 @@
       <MemberSignature Language="C#" Value="public override bool PreProcessMessage (ref System.Windows.Forms.Message msg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool PreProcessMessage(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.PreProcessMessage(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function PreProcessMessage (ByRef msg As Message) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool PreProcessMessage(System::Windows::Forms::Message % msg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,10 +256,21 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowForm">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Shows the form. The form will have no owner window.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowForm">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DialogResult ShowForm ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult ShowForm() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.ShowForm" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowForm () As DialogResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DialogResult ShowForm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,6 +291,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DialogResult ShowForm (int page);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult ShowForm(int32 page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.ShowForm(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowForm (page As Integer) As DialogResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DialogResult ShowForm(int page);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -287,6 +316,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DialogResult ShowForm (System.Windows.Forms.IWin32Window owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult ShowForm(class System.Windows.Forms.IWin32Window owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.ShowForm(System.Windows.Forms.IWin32Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowForm (owner As IWin32Window) As DialogResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DialogResult ShowForm(System::Windows::Forms::IWin32Window ^ owner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,6 +341,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DialogResult ShowForm (System.Windows.Forms.IWin32Window owner, int page);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult ShowForm(class System.Windows.Forms.IWin32Window owner, int32 page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.ShowForm(System.Windows.Forms.IWin32Window,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowForm (owner As IWin32Window, page As Integer) As DialogResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DialogResult ShowForm(System::Windows::Forms::IWin32Window ^ owner, int page);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -331,14 +364,5 @@
         <altmember cref="T:System.Windows.Forms.DialogResult" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ShowForm">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Shows the form. The form will have no owner window.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

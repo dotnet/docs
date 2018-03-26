@@ -1,7 +1,9 @@
-<Type Name="IRemoteFieldInfoContract" FullName="System.AddIn.Contract.Automation.IRemoteFieldInfoContract">
+﻿<Type Name="IRemoteFieldInfoContract" FullName="System.AddIn.Contract.Automation.IRemoteFieldInfoContract">
   <TypeSignature Language="C#" Value="public interface IRemoteFieldInfoContract : System.AddIn.Contract.IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteFieldInfoContract implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteFieldInfoContract&#xA;Implements IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteFieldInfoContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.RemoteFieldData GetFieldData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.Automation.RemoteFieldData GetFieldData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteFieldInfoContract.GetFieldData" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFieldData () As RemoteFieldData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::RemoteFieldData GetFieldData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument GetValue (System.AddIn.Contract.Automation.IRemoteObjectContract obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.RemoteArgument GetValue(class System.AddIn.Contract.Automation.IRemoteObjectContract obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteFieldInfoContract.GetValue(System.AddIn.Contract.Automation.IRemoteObjectContract)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (obj As IRemoteObjectContract) As RemoteArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument GetValue(System::AddIn::Contract::Automation::IRemoteObjectContract ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public void SetValue (System.AddIn.Contract.Automation.IRemoteObjectContract obj, System.AddIn.Contract.RemoteArgument value, int localeId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(class System.AddIn.Contract.Automation.IRemoteObjectContract obj, valuetype System.AddIn.Contract.RemoteArgument value, int32 localeId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteFieldInfoContract.SetValue(System.AddIn.Contract.Automation.IRemoteObjectContract,System.AddIn.Contract.RemoteArgument,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (obj As IRemoteObjectContract, value As RemoteArgument, localeId As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::AddIn::Contract::Automation::IRemoteObjectContract ^ obj, System::AddIn::Contract::RemoteArgument value, int localeId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

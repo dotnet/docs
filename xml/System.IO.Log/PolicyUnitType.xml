@@ -1,7 +1,9 @@
-<Type Name="PolicyUnitType" FullName="System.IO.Log.PolicyUnitType">
+﻿<Type Name="PolicyUnitType" FullName="System.IO.Log.PolicyUnitType">
   <TypeSignature Language="C#" Value="public enum PolicyUnitType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PolicyUnitType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.PolicyUnitType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PolicyUnitType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PolicyUnitType" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Extents" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.PolicyUnitType Extents = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.PolicyUnitType.Extents" />
+      <MemberSignature Language="VB.NET" Value="Extents" />
+      <MemberSignature Language="C++ CLI" Value="Extents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.PolicyUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The measurement is in containers.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="Percentage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.PolicyUnitType Percentage = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.PolicyUnitType.Percentage" />
+      <MemberSignature Language="VB.NET" Value="Percentage" />
+      <MemberSignature Language="C++ CLI" Value="Percentage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.PolicyUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The measurement is a percentage of the size of the <see cref="T:System.IO.Log.LogStore" />.</summary>
       </Docs>

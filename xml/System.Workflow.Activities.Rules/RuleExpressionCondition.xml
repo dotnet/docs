@@ -1,7 +1,9 @@
-<Type Name="RuleExpressionCondition" FullName="System.Workflow.Activities.Rules.RuleExpressionCondition">
+﻿<Type Name="RuleExpressionCondition" FullName="System.Workflow.Activities.Rules.RuleExpressionCondition">
   <TypeSignature Language="C#" Value="public sealed class RuleExpressionCondition : System.Workflow.Activities.Rules.RuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RuleExpressionCondition extends System.Workflow.Activities.Rules.RuleCondition" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExpressionCondition" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleExpressionCondition&#xA;Inherits RuleCondition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleExpressionCondition sealed : System::Workflow::Activities::Rules::RuleCondition" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleExpressionCondition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleExpressionCondition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public RuleExpressionCondition (System.CodeDom.CodeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor(System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As CodeExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleExpressionCondition(System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -61,6 +76,8 @@
       <MemberSignature Language="C#" Value="public RuleExpressionCondition (string conditionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conditionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conditionName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleExpressionCondition(System::String ^ conditionName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -81,6 +98,8 @@
       <MemberSignature Language="C#" Value="public RuleExpressionCondition (string conditionName, System.CodeDom.CodeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conditionName, class System.CodeDom.CodeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor(System.String,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conditionName As String, expression As CodeExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleExpressionCondition(System::String ^ conditionName, System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -101,6 +120,8 @@
       <MemberSignature Language="C#" Value="public override System.Workflow.Activities.Rules.RuleCondition Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.Activities.Rules.RuleCondition Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::Activities::Rules::RuleCondition ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -120,6 +141,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -143,6 +166,8 @@
       <MemberSignature Language="C#" Value="public override bool Evaluate (System.Workflow.Activities.Rules.RuleExecution execution);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Evaluate(class System.Workflow.Activities.Rules.RuleExecution execution) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.Evaluate(System.Workflow.Activities.Rules.RuleExecution)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Evaluate (execution As RuleExecution) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Evaluate(System::Workflow::Activities::Rules::RuleExecution ^ execution);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -166,6 +191,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Expression" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExpressionCondition.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Expression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -173,7 +200,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -190,6 +217,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.ICollection&lt;string&gt; GetDependencies (System.Workflow.Activities.Rules.RuleValidation validation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.ICollection`1&lt;string&gt; GetDependencies(class System.Workflow.Activities.Rules.RuleValidation validation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.GetDependencies(System.Workflow.Activities.Rules.RuleValidation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDependencies (validation As RuleValidation) As ICollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ GetDependencies(System::Workflow::Activities::Rules::RuleValidation ^ validation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -212,6 +241,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -231,6 +262,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExpressionCondition.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -250,6 +283,8 @@
       <MemberSignature Language="C#" Value="public override void OnRuntimeInitialized ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnRuntimeInitialized() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.OnRuntimeInitialized" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnRuntimeInitialized ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnRuntimeInitialized();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -275,6 +310,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -294,6 +331,8 @@
       <MemberSignature Language="C#" Value="public override bool Validate (System.Workflow.Activities.Rules.RuleValidation validation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Validate(class System.Workflow.Activities.Rules.RuleValidation validation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.Validate(System.Workflow.Activities.Rules.RuleValidation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Validate (validation As RuleValidation) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Validate(System::Workflow::Activities::Rules::RuleValidation ^ validation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -322,14 +361,5 @@
           <paramref name="validator" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

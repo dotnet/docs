@@ -1,7 +1,9 @@
-<Type Name="HttpCachePolicyWrapper" FullName="System.Web.HttpCachePolicyWrapper">
+﻿<Type Name="HttpCachePolicyWrapper" FullName="System.Web.HttpCachePolicyWrapper">
   <TypeSignature Language="C#" Value="public class HttpCachePolicyWrapper : System.Web.HttpCachePolicyBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpCachePolicyWrapper extends System.Web.HttpCachePolicyBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCachePolicyWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpCachePolicyWrapper&#xA;Inherits HttpCachePolicyBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpCachePolicyWrapper : System::Web::HttpCachePolicyBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,7 @@
       <MemberSignature Language="C#" Value="public HttpCachePolicyWrapper (System.Web.HttpCachePolicy httpCachePolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpCachePolicy httpCachePolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.#ctor(System.Web.HttpCachePolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCachePolicyWrapper(System::Web::HttpCachePolicy ^ httpCachePolicy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public override void AddValidationCallback (System.Web.HttpCacheValidateHandler handler, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddValidationCallback(class System.Web.HttpCacheValidateHandler handler, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.AddValidationCallback(System.Web.HttpCacheValidateHandler,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddValidationCallback (handler As HttpCacheValidateHandler, data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddValidationCallback(System::Web::HttpCacheValidateHandler ^ handler, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="public override void AppendCacheExtension (string extension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendCacheExtension(string extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.AppendCacheExtension(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendCacheExtension (extension As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendCacheExtension(System::String ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +105,8 @@
       <MemberSignature Language="C#" Value="public override void SetAllowResponseInBrowserHistory (bool allow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetAllowResponseInBrowserHistory(bool allow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetAllowResponseInBrowserHistory(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetAllowResponseInBrowserHistory (allow As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetAllowResponseInBrowserHistory(bool allow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,10 +125,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCacheability">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the <see langword="Cache-Control" /> header to one of the <see cref="T:System.Web.HttpCacheability" /> values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetCacheability">
       <MemberSignature Language="C#" Value="public override void SetCacheability (System.Web.HttpCacheability cacheability);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetCacheability(valuetype System.Web.HttpCacheability cacheability) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetCacheability(System.Web.HttpCacheability)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetCacheability (cacheability As HttpCacheability)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetCacheability(System::Web::HttpCacheability cacheability);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +163,8 @@
       <MemberSignature Language="C#" Value="public override void SetCacheability (System.Web.HttpCacheability cacheability, string field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetCacheability(valuetype System.Web.HttpCacheability cacheability, string field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetCacheability(System.Web.HttpCacheability,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetCacheability (cacheability As HttpCacheability, field As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetCacheability(System::Web::HttpCacheability cacheability, System::String ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +192,8 @@
       <MemberSignature Language="C#" Value="public override void SetETag (string etag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetETag(string etag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetETag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetETag (etag As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetETag(System::String ^ etag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +222,8 @@
       <MemberSignature Language="C#" Value="public override void SetETagFromFileDependencies ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetETagFromFileDependencies() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetETagFromFileDependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetETagFromFileDependencies ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetETagFromFileDependencies();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +243,8 @@
       <MemberSignature Language="C#" Value="public override void SetExpires (DateTime date);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetExpires(valuetype System.DateTime date) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetExpires(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetExpires (date As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetExpires(DateTime date);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +266,8 @@
       <MemberSignature Language="C#" Value="public override void SetLastModified (DateTime date);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetLastModified(valuetype System.DateTime date) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetLastModified(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLastModified (date As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLastModified(DateTime date);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +291,8 @@
       <MemberSignature Language="C#" Value="public override void SetLastModifiedFromFileDependencies ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetLastModifiedFromFileDependencies() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetLastModifiedFromFileDependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLastModifiedFromFileDependencies ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLastModifiedFromFileDependencies();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +311,8 @@
       <MemberSignature Language="C#" Value="public override void SetMaxAge (TimeSpan delta);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetMaxAge(valuetype System.TimeSpan delta) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetMaxAge(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetMaxAge (delta As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetMaxAge(TimeSpan delta);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,6 +336,8 @@
       <MemberSignature Language="C#" Value="public override void SetNoServerCaching ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetNoServerCaching() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetNoServerCaching" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetNoServerCaching ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetNoServerCaching();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -320,6 +356,8 @@
       <MemberSignature Language="C#" Value="public override void SetNoStore ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetNoStore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetNoStore" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetNoStore ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetNoStore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -338,6 +376,8 @@
       <MemberSignature Language="C#" Value="public override void SetNoTransforms ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetNoTransforms() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetNoTransforms" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetNoTransforms ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetNoTransforms();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -356,6 +396,8 @@
       <MemberSignature Language="C#" Value="public override void SetOmitVaryStar (bool omit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetOmitVaryStar(bool omit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetOmitVaryStar(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetOmitVaryStar (omit As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetOmitVaryStar(bool omit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,6 +420,8 @@
       <MemberSignature Language="C#" Value="public override void SetProxyMaxAge (TimeSpan delta);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetProxyMaxAge(valuetype System.TimeSpan delta) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetProxyMaxAge(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetProxyMaxAge (delta As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetProxyMaxAge(TimeSpan delta);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -401,6 +445,8 @@
       <MemberSignature Language="C#" Value="public override void SetRevalidation (System.Web.HttpCacheRevalidation revalidation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetRevalidation(valuetype System.Web.HttpCacheRevalidation revalidation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetRevalidation(System.Web.HttpCacheRevalidation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetRevalidation (revalidation As HttpCacheRevalidation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetRevalidation(System::Web::HttpCacheRevalidation revalidation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -424,6 +470,8 @@
       <MemberSignature Language="C#" Value="public override void SetSlidingExpiration (bool slide);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSlidingExpiration(bool slide) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetSlidingExpiration(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetSlidingExpiration (slide As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetSlidingExpiration(bool slide);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -446,6 +494,8 @@
       <MemberSignature Language="C#" Value="public override void SetValidUntilExpires (bool validUntilExpires);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValidUntilExpires(bool validUntilExpires) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetValidUntilExpires(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValidUntilExpires (validUntilExpires As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValidUntilExpires(bool validUntilExpires);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -468,6 +518,8 @@
       <MemberSignature Language="C#" Value="public override void SetVaryByCustom (string custom);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetVaryByCustom(string custom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCachePolicyWrapper.SetVaryByCustom(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetVaryByCustom (custom As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetVaryByCustom(System::String ^ custom);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -492,6 +544,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.HttpCacheVaryByContentEncodings VaryByContentEncodings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpCacheVaryByContentEncodings VaryByContentEncodings" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCachePolicyWrapper.VaryByContentEncodings" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VaryByContentEncodings As HttpCacheVaryByContentEncodings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpCacheVaryByContentEncodings ^ VaryByContentEncodings { System::Web::HttpCacheVaryByContentEncodings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -510,6 +564,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.HttpCacheVaryByHeaders VaryByHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpCacheVaryByHeaders VaryByHeaders" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCachePolicyWrapper.VaryByHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VaryByHeaders As HttpCacheVaryByHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpCacheVaryByHeaders ^ VaryByHeaders { System::Web::HttpCacheVaryByHeaders ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -528,6 +584,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.HttpCacheVaryByParams VaryByParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpCacheVaryByParams VaryByParams" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCachePolicyWrapper.VaryByParams" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VaryByParams As HttpCacheVaryByParams" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpCacheVaryByParams ^ VaryByParams { System::Web::HttpCacheVaryByParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -542,14 +600,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetCacheability">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the <see langword="Cache-Control" /> header to one of the <see cref="T:System.Web.HttpCacheability" /> values.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

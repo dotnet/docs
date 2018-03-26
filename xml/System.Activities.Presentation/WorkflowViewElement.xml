@@ -1,7 +1,9 @@
-<Type Name="WorkflowViewElement" FullName="System.Activities.Presentation.WorkflowViewElement">
+﻿<Type Name="WorkflowViewElement" FullName="System.Activities.Presentation.WorkflowViewElement">
   <TypeSignature Language="C#" Value="public class WorkflowViewElement : System.Windows.Controls.ContentControl, System.Activities.Presentation.ICompositeViewEvents" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowViewElement extends System.Windows.Controls.ContentControl implements class System.Activities.Presentation.ICompositeViewEvents" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowViewElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowViewElement&#xA;Inherits ContentControl&#xA;Implements ICompositeViewEvents" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowViewElement : System::Windows::Controls::ContentControl, System::Activities::Presentation::ICompositeViewEvents" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public WorkflowViewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowViewElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public bool Collapsible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Collapsible" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.Collapsible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Collapsible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Collapsible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Generic.IList&lt;System.Activities.Presentation.ICompositeView&gt; CompositeViews { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Activities.Presentation.ICompositeView&gt; CompositeViews" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.CompositeViews" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CompositeViews As IList(Of ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Generic::IList&lt;System::Activities::Presentation::ICompositeView ^&gt; ^ CompositeViews { System::Collections::Generic::IList&lt;System::Activities::Presentation::ICompositeView ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -98,6 +106,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.EditingContext Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.EditingContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As EditingContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::EditingContext ^ Context { System::Activities::Presentation::EditingContext ^ get(); void set(System::Activities::Presentation::EditingContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -123,6 +133,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowViewElement.ContextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -140,6 +152,8 @@
       <MemberSignature Language="C#" Value="protected System.Activities.Presentation.ICompositeView DefaultCompositeView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.ICompositeView DefaultCompositeView" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.DefaultCompositeView" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DefaultCompositeView As ICompositeView" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Activities::Presentation::ICompositeView ^ DefaultCompositeView { System::Activities::Presentation::ICompositeView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -155,9 +169,11 @@
       </Docs>
     </Member>
     <Member MemberName="Designer">
-      <MemberSignature Language="C#" Value="protected System.Activities.Presentation.View.DesignerView Designer { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Activities.Presentation.View.DesignerView Designer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.View.DesignerView Designer" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.Designer" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Designer As DesignerView" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Activities::Presentation::View::DesignerView ^ Designer { System::Activities::Presentation::View::DesignerView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -176,6 +192,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FrameworkElement DragHandle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.FrameworkElement DragHandle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.DragHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragHandle As FrameworkElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FrameworkElement ^ DragHandle { System::Windows::FrameworkElement ^ get(); void set(System::Windows::FrameworkElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -194,6 +212,8 @@
       <MemberSignature Language="C#" Value="public bool ExpandState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExpandState" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.ExpandState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpandState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExpandState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -213,6 +233,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ExpandStateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ExpandStateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowViewElement.ExpandStateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpandStateProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExpandStateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -230,6 +252,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetAutomationHelpText ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetAutomationHelpText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.GetAutomationHelpText" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetAutomationHelpText () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetAutomationHelpText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -256,6 +280,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetAutomationIdMemberName ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetAutomationIdMemberName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.GetAutomationIdMemberName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetAutomationIdMemberName () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetAutomationIdMemberName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -279,9 +305,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetAutomationItemStatus">
-      <MemberSignature Language="C#" Value="protected virtual string GetAutomationItemStatus ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual string GetAutomationItemStatus ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetAutomationItemStatus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.GetAutomationItemStatus" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetAutomationItemStatus () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ GetAutomationItemStatus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -301,6 +329,8 @@
       <MemberSignature Language="C#" Value="protected bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -320,6 +350,8 @@
       <MemberSignature Language="C#" Value="public bool IsRootDesigner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRootDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.IsRootDesigner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRootDesigner As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRootDesigner { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -339,6 +371,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem ModelItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem ModelItem" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.ModelItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModelItem As ModelItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::ModelItem ^ ModelItem { System::Activities::Presentation::Model::ModelItem ^ get(); void set(System::Activities::Presentation::Model::ModelItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -364,6 +398,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ModelItemProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ModelItemProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowViewElement.ModelItemProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ModelItemProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ModelItemProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -381,6 +417,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnContextMenuLoaded (System.Windows.Controls.ContextMenu menu);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContextMenuLoaded(class System.Windows.Controls.ContextMenu menu) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnContextMenuLoaded(System.Windows.Controls.ContextMenu)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContextMenuLoaded (menu As ContextMenu)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContextMenuLoaded(System::Windows::Controls::ContextMenu ^ menu);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -402,6 +440,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -421,6 +461,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragEnter (System.Windows.DragEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragEnter(class System.Windows.DragEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnDragEnter(System.Windows.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragEnter (e As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragEnter(System::Windows::DragEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -442,6 +484,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragOver (System.Windows.DragEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragOver(class System.Windows.DragEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnDragOver(System.Windows.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragOver (e As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Windows::DragEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -460,9 +504,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnEditAnnotation">
-      <MemberSignature Language="C#" Value="protected virtual void OnEditAnnotation ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnEditAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnEditAnnotation() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnEditAnnotation" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnEditAnnotation ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnEditAnnotation();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -481,6 +527,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInitialized (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitialized(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnInitialized(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -509,6 +557,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnModelItemChanged (object newItem);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnModelItemChanged(object newItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnModelItemChanged(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModelItemChanged (newItem As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModelItemChanged(System::Object ^ newItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -537,6 +587,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -558,6 +610,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Input.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Input.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Input::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -579,6 +633,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -600,6 +656,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPreviewDragEnter (System.Windows.DragEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewDragEnter(class System.Windows.DragEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnPreviewDragEnter(System.Windows.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewDragEnter (e As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewDragEnter(System::Windows::DragEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -621,6 +679,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPreviewDragLeave (System.Windows.DragEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewDragLeave(class System.Windows.DragEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnPreviewDragLeave(System.Windows.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewDragLeave (e As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewDragLeave(System::Windows::DragEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -642,6 +702,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPreviewMouseUp (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewMouseUp(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnPreviewMouseUp(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseUp (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -663,6 +725,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnReadOnlyChanged (bool isReadOnly);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnReadOnlyChanged(bool isReadOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnReadOnlyChanged(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReadOnlyChanged (isReadOnly As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnReadOnlyChanged(bool isReadOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -692,6 +756,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnShowExpandedChanged (bool newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnShowExpandedChanged(bool newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.OnShowExpandedChanged(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnShowExpandedChanged (newValue As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnShowExpandedChanged(bool newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -721,6 +787,8 @@
       <MemberSignature Language="C#" Value="public bool PinState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PinState" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.PinState" />
+      <MemberSignature Language="VB.NET" Value="Public Property PinState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PinState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -740,6 +808,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PinStateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PinStateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowViewElement.PinStateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PinStateProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PinStateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -757,7 +827,12 @@
       <MemberSignature Language="C#" Value="public void RegisterCompositeView (System.Activities.Presentation.ICompositeView container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterCompositeView(class System.Activities.Presentation.ICompositeView container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.RegisterCompositeView(System.Activities.Presentation.ICompositeView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterCompositeView (container As ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterCompositeView(System::Activities::Presentation::ICompositeView ^ container);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Presentation.ICompositeViewEvents.RegisterCompositeView(System.Activities.Presentation.ICompositeView)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -778,7 +853,12 @@
       <MemberSignature Language="C#" Value="public void RegisterDefaultCompositeView (System.Activities.Presentation.ICompositeView container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterDefaultCompositeView(class System.Activities.Presentation.ICompositeView container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.RegisterDefaultCompositeView(System.Activities.Presentation.ICompositeView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterDefaultCompositeView (container As ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterDefaultCompositeView(System::Activities::Presentation::ICompositeView ^ container);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Presentation.ICompositeViewEvents.RegisterDefaultCompositeView(System.Activities.Presentation.ICompositeView)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -799,6 +879,8 @@
       <MemberSignature Language="C#" Value="public bool ShowExpanded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowExpanded" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.ShowExpanded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShowExpanded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowExpanded { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -818,6 +900,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ShowExpandedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ShowExpandedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowViewElement.ShowExpandedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowExpandedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowExpandedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -835,7 +919,12 @@
       <MemberSignature Language="C#" Value="public void UnregisterCompositeView (System.Activities.Presentation.ICompositeView container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterCompositeView(class System.Activities.Presentation.ICompositeView container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.UnregisterCompositeView(System.Activities.Presentation.ICompositeView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterCompositeView (container As ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnregisterCompositeView(System::Activities::Presentation::ICompositeView ^ container);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Presentation.ICompositeViewEvents.UnregisterCompositeView(System.Activities.Presentation.ICompositeView)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -856,7 +945,12 @@
       <MemberSignature Language="C#" Value="public void UnregisterDefaultCompositeView (System.Activities.Presentation.ICompositeView container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterDefaultCompositeView(class System.Activities.Presentation.ICompositeView container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowViewElement.UnregisterDefaultCompositeView(System.Activities.Presentation.ICompositeView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterDefaultCompositeView (container As ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnregisterDefaultCompositeView(System::Activities::Presentation::ICompositeView ^ container);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Presentation.ICompositeViewEvents.UnregisterDefaultCompositeView(System.Activities.Presentation.ICompositeView)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -874,9 +968,11 @@
       </Docs>
     </Member>
     <Member MemberName="ViewService">
-      <MemberSignature Language="C#" Value="protected System.Activities.Presentation.Services.ViewService ViewService { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Activities.Presentation.Services.ViewService ViewService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Services.ViewService ViewService" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.ViewService" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ViewService As ViewService" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Activities::Presentation::Services::ViewService ^ ViewService { System::Activities::Presentation::Services::ViewService ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -899,9 +995,11 @@
       </Docs>
     </Member>
     <Member MemberName="ViewStateService">
-      <MemberSignature Language="C#" Value="protected System.Activities.Presentation.View.ViewStateService ViewStateService { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Activities.Presentation.View.ViewStateService ViewStateService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.View.ViewStateService ViewStateService" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowViewElement.ViewStateService" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ViewStateService As ViewStateService" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Activities::Presentation::View::ViewStateService ^ ViewStateService { System::Activities::Presentation::View::ViewStateService ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="SamlNameIdentifierClaimResource" FullName="System.IdentityModel.Tokens.SamlNameIdentifierClaimResource">
+﻿<Type Name="SamlNameIdentifierClaimResource" FullName="System.IdentityModel.Tokens.SamlNameIdentifierClaimResource">
   <TypeSignature Language="C#" Value="public class SamlNameIdentifierClaimResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlNameIdentifierClaimResource extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class SamlNameIdentifierClaimResource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlNameIdentifierClaimResource" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public SamlNameIdentifierClaimResource (string name, string nameQualifier, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string nameQualifier, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, nameQualifier As String, format As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlNameIdentifierClaimResource(System::String ^ name, System::String ^ nameQualifier, System::String ^ format);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public string Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -129,6 +137,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -148,6 +158,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -175,6 +187,8 @@
       <MemberSignature Language="C#" Value="public string NameQualifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NameQualifier" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.NameQualifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameQualifier As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameQualifier { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

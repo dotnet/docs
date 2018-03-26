@@ -1,7 +1,9 @@
-<Type Name="PageOrder" FullName="System.Printing.PageOrder">
+﻿<Type Name="PageOrder" FullName="System.Printing.PageOrder">
   <TypeSignature Language="C#" Value="public enum PageOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PageOrder" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PageOrder" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PageOrder" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="Reverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrder Reverse = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Reverse" />
+      <MemberSignature Language="VB.NET" Value="Reverse" />
+      <MemberSignature Language="C++ CLI" Value="Reverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -54,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Output prints in back-to-front order.</summary>
       </Docs>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="Standard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrder Standard = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Standard" />
+      <MemberSignature Language="VB.NET" Value="Standard" />
+      <MemberSignature Language="C++ CLI" Value="Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -70,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Output prints in front-to-back order.</summary>
       </Docs>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrder Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

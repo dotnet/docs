@@ -1,7 +1,9 @@
-<Type Name="IsolatedStorageScope" FullName="System.IO.IsolatedStorage.IsolatedStorageScope">
+﻿<Type Name="IsolatedStorageScope" FullName="System.IO.IsolatedStorage.IsolatedStorageScope">
   <TypeSignature Language="C#" Value="public enum IsolatedStorageScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IsolatedStorageScope extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IsolatedStorageScope" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IsolatedStorageScope" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="Application" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.IsolatedStorage.IsolatedStorageScope Application = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Application" />
+      <MemberSignature Language="VB.NET" Value="Application" />
+      <MemberSignature Language="C++ CLI" Value="Application" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Isolated storage scoped to the application.</summary>
       </Docs>
@@ -76,6 +81,8 @@
       <MemberSignature Language="C#" Value="Assembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.IsolatedStorage.IsolatedStorageScope Assembly = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Isolated storage scoped to the identity of the assembly.</summary>
       </Docs>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="Domain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.IsolatedStorage.IsolatedStorageScope Domain = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Domain" />
+      <MemberSignature Language="VB.NET" Value="Domain" />
+      <MemberSignature Language="C++ CLI" Value="Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Isolated storage scoped to the application domain identity.</summary>
       </Docs>
@@ -126,6 +137,8 @@
       <MemberSignature Language="C#" Value="Machine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.IsolatedStorage.IsolatedStorageScope Machine = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Machine" />
+      <MemberSignature Language="VB.NET" Value="Machine" />
+      <MemberSignature Language="C++ CLI" Value="Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -143,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Isolated storage scoped to the machine.</summary>
       </Docs>
@@ -151,6 +165,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.IsolatedStorage.IsolatedStorageScope None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No isolated storage usage.</summary>
       </Docs>
@@ -176,6 +193,8 @@
       <MemberSignature Language="C#" Value="Roaming" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.IsolatedStorage.IsolatedStorageScope Roaming = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Roaming" />
+      <MemberSignature Language="VB.NET" Value="Roaming" />
+      <MemberSignature Language="C++ CLI" Value="Roaming" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -193,6 +212,7 @@
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The isolated store can be placed in a location on the file system that might roam (if roaming user data is enabled on the underlying operating system).</summary>
       </Docs>
@@ -201,6 +221,8 @@
       <MemberSignature Language="C#" Value="User" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.IsolatedStorage.IsolatedStorageScope User = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.User" />
+      <MemberSignature Language="VB.NET" Value="User" />
+      <MemberSignature Language="C++ CLI" Value="User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -218,6 +240,7 @@
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Isolated storage scoped by user identity.</summary>
       </Docs>

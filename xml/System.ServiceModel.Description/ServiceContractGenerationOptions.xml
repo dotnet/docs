@@ -1,7 +1,9 @@
-<Type Name="ServiceContractGenerationOptions" FullName="System.ServiceModel.Description.ServiceContractGenerationOptions">
+﻿<Type Name="ServiceContractGenerationOptions" FullName="System.ServiceModel.Description.ServiceContractGenerationOptions">
   <TypeSignature Language="C#" Value="public enum ServiceContractGenerationOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceContractGenerationOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceContractGenerationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ServiceContractGenerationOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ServiceContractGenerationOptions" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="AsynchronousMethods" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.ServiceContractGenerationOptions AsynchronousMethods = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceContractGenerationOptions.AsynchronousMethods" />
+      <MemberSignature Language="VB.NET" Value="AsynchronousMethods" />
+      <MemberSignature Language="C++ CLI" Value="AsynchronousMethods" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Generates asynchronous methods for operations in addition to synchronous versions.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="ChannelInterface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.ServiceContractGenerationOptions ChannelInterface = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceContractGenerationOptions.ChannelInterface" />
+      <MemberSignature Language="VB.NET" Value="ChannelInterface" />
+      <MemberSignature Language="C++ CLI" Value="ChannelInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Generates an interface that derives from the contract interface and <see cref="T:System.ServiceModel.IClientChannel" />.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="ClientClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.ServiceContractGenerationOptions ClientClass = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceContractGenerationOptions.ClientClass" />
+      <MemberSignature Language="VB.NET" Value="ClientClass" />
+      <MemberSignature Language="C++ CLI" Value="ClientClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Generates a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client class that extends <see cref="T:System.ServiceModel.ClientBase`1" />.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="EventBasedAsynchronousMethods" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.ServiceContractGenerationOptions EventBasedAsynchronousMethods = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceContractGenerationOptions.EventBasedAsynchronousMethods" />
+      <MemberSignature Language="VB.NET" Value="EventBasedAsynchronousMethods" />
+      <MemberSignature Language="C++ CLI" Value="EventBasedAsynchronousMethods" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Generates event-based asynchronous methods for operations in addition to synchronous versions.</summary>
       </Docs>
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="InternalTypes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.ServiceContractGenerationOptions InternalTypes = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceContractGenerationOptions.InternalTypes" />
+      <MemberSignature Language="VB.NET" Value="InternalTypes" />
+      <MemberSignature Language="C++ CLI" Value="InternalTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Causes all types to be marked internal.</summary>
       </Docs>
@@ -116,6 +133,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.ServiceContractGenerationOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceContractGenerationOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No options specified.</summary>
       </Docs>
@@ -133,6 +153,8 @@
       <MemberSignature Language="C#" Value="TaskBasedAsynchronousMethod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.ServiceContractGenerationOptions TaskBasedAsynchronousMethod = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceContractGenerationOptions.TaskBasedAsynchronousMethod" />
+      <MemberSignature Language="VB.NET" Value="TaskBasedAsynchronousMethod" />
+      <MemberSignature Language="C++ CLI" Value="TaskBasedAsynchronousMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Generates task based asynchronous methods for operations in addition to synchronous versions.</summary>
       </Docs>
@@ -149,6 +172,8 @@
       <MemberSignature Language="C#" Value="TypedMessages" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.ServiceContractGenerationOptions TypedMessages = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceContractGenerationOptions.TypedMessages" />
+      <MemberSignature Language="VB.NET" Value="TypedMessages" />
+      <MemberSignature Language="C++ CLI" Value="TypedMessages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -158,6 +183,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Generate message contracts.</summary>
       </Docs>

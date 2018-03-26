@@ -1,7 +1,9 @@
-<Type Name="GridResizeDirection" FullName="System.Windows.Controls.GridResizeDirection">
+﻿<Type Name="GridResizeDirection" FullName="System.Windows.Controls.GridResizeDirection">
   <TypeSignature Language="C#" Value="public enum GridResizeDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridResizeDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridResizeDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GridResizeDirection" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GridResizeDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeDirection Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeDirection.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Space is redistributed based on the values of the <see cref="P:System.Windows.FrameworkElement.HorizontalAlignment" />, <see cref="P:System.Windows.FrameworkElement.VerticalAlignment" />, <see cref="P:System.Windows.FrameworkElement.ActualWidth" />, and <see cref="P:System.Windows.FrameworkElement.ActualHeight" /> properties of the <see cref="T:System.Windows.Controls.GridSplitter" />.</summary>
         <remarks>
@@ -72,6 +77,8 @@
       <MemberSignature Language="C#" Value="Columns" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeDirection Columns = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeDirection.Columns" />
+      <MemberSignature Language="VB.NET" Value="Columns" />
+      <MemberSignature Language="C++ CLI" Value="Columns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Space is redistributed between columns.</summary>
       </Docs>
@@ -88,6 +96,8 @@
       <MemberSignature Language="C#" Value="Rows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeDirection Rows = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeDirection.Rows" />
+      <MemberSignature Language="VB.NET" Value="Rows" />
+      <MemberSignature Language="C++ CLI" Value="Rows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Space is redistributed between rows.</summary>
       </Docs>

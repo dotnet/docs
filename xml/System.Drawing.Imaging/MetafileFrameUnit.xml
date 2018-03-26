@@ -1,7 +1,9 @@
-<Type Name="MetafileFrameUnit" FullName="System.Drawing.Imaging.MetafileFrameUnit">
+﻿<Type Name="MetafileFrameUnit" FullName="System.Drawing.Imaging.MetafileFrameUnit">
   <TypeSignature Language="C#" Value="public enum MetafileFrameUnit" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MetafileFrameUnit extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.MetafileFrameUnit" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MetafileFrameUnit" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MetafileFrameUnit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Document" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileFrameUnit Document = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileFrameUnit.Document" />
+      <MemberSignature Language="VB.NET" Value="Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileFrameUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The unit of measurement is 1/300 of an inch.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="GdiCompatible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileFrameUnit GdiCompatible = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileFrameUnit.GdiCompatible" />
+      <MemberSignature Language="VB.NET" Value="GdiCompatible" />
+      <MemberSignature Language="C++ CLI" Value="GdiCompatible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileFrameUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The unit of measurement is 0.01 millimeter. Provided for compatibility with GDI.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Inch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileFrameUnit Inch = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileFrameUnit.Inch" />
+      <MemberSignature Language="VB.NET" Value="Inch" />
+      <MemberSignature Language="C++ CLI" Value="Inch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileFrameUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The unit of measurement is 1 inch.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="Millimeter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileFrameUnit Millimeter = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileFrameUnit.Millimeter" />
+      <MemberSignature Language="VB.NET" Value="Millimeter" />
+      <MemberSignature Language="C++ CLI" Value="Millimeter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileFrameUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The unit of measurement is 1 millimeter.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="Pixel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileFrameUnit Pixel = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileFrameUnit.Pixel" />
+      <MemberSignature Language="VB.NET" Value="Pixel" />
+      <MemberSignature Language="C++ CLI" Value="Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileFrameUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The unit of measurement is 1 pixel.</summary>
       </Docs>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="Point" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileFrameUnit Point = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileFrameUnit.Point" />
+      <MemberSignature Language="VB.NET" Value="Point" />
+      <MemberSignature Language="C++ CLI" Value="Point" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -106,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileFrameUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The unit of measurement is 1 printer's point.</summary>
       </Docs>

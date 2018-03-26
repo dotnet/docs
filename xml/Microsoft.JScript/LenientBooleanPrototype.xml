@@ -1,7 +1,9 @@
-<Type Name="LenientBooleanPrototype" FullName="Microsoft.JScript.LenientBooleanPrototype">
+﻿<Type Name="LenientBooleanPrototype" FullName="Microsoft.JScript.LenientBooleanPrototype">
   <TypeSignature Language="C#" Value="public sealed class LenientBooleanPrototype : Microsoft.JScript.BooleanPrototype" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientBooleanPrototype extends Microsoft.JScript.BooleanPrototype" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientBooleanPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientBooleanPrototype&#xA;Inherits BooleanPrototype" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientBooleanPrototype sealed : Microsoft::JScript::BooleanPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public object constructor;" />
       <MemberSignature Language="ILAsm" Value=".field public object constructor" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientBooleanPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public object toString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientBooleanPrototype.toString" />
+      <MemberSignature Language="VB.NET" Value="Public toString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public object valueOf;" />
       <MemberSignature Language="ILAsm" Value=".field public object valueOf" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientBooleanPrototype.valueOf" />
+      <MemberSignature Language="VB.NET" Value="Public valueOf As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ valueOf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

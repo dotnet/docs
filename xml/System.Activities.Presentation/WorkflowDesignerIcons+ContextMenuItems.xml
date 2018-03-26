@@ -1,7 +1,9 @@
-<Type Name="WorkflowDesignerIcons+ContextMenuItems" FullName="System.Activities.Presentation.WorkflowDesignerIcons+ContextMenuItems">
+﻿<Type Name="WorkflowDesignerIcons+ContextMenuItems" FullName="System.Activities.Presentation.WorkflowDesignerIcons+ContextMenuItems">
   <TypeSignature Language="C#" Value="public static class WorkflowDesignerIcons.ContextMenuItems" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit WorkflowDesignerIcons/ContextMenuItems extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowDesignerIcons.ContextMenuItems" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class WorkflowDesignerIcons::ContextMenuItems abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Copy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Copy" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Copy As DrawingBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ Copy { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush CopyDisabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush CopyDisabled" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.CopyDisabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CopyDisabled As DrawingBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ CopyDisabled { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Cut { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Cut" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Cut As DrawingBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ Cut { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush CutDisabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush CutDisabled" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.CutDisabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CutDisabled As DrawingBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ CutDisabled { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -91,6 +101,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Delete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Delete" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Delete As DrawingBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ Delete { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -109,6 +121,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush DeleteDisabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush DeleteDisabled" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.DeleteDisabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DeleteDisabled As DrawingBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ DeleteDisabled { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -127,6 +141,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Paste { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Paste" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.Paste" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Paste As DrawingBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ Paste { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -145,6 +161,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush PasteDisabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush PasteDisabled" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.PasteDisabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property PasteDisabled As DrawingBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ PasteDisabled { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

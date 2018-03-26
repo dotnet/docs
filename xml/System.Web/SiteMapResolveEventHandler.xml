@@ -1,7 +1,9 @@
-<Type Name="SiteMapResolveEventHandler" FullName="System.Web.SiteMapResolveEventHandler">
+﻿<Type Name="SiteMapResolveEventHandler" FullName="System.Web.SiteMapResolveEventHandler">
   <TypeSignature Language="C#" Value="public delegate System.Web.SiteMapNode SiteMapResolveEventHandler(object sender, SiteMapResolveEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SiteMapResolveEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.SiteMapResolveEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function SiteMapResolveEventHandler(sender As Object, e As SiteMapResolveEventArgs) As SiteMapNode " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Web::SiteMapNode ^ SiteMapResolveEventHandler(System::Object ^ sender, SiteMapResolveEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="IDebuggableWorkflowTree" FullName="System.Activities.Debugger.IDebuggableWorkflowTree">
+﻿<Type Name="IDebuggableWorkflowTree" FullName="System.Activities.Debugger.IDebuggableWorkflowTree">
   <TypeSignature Language="C#" Value="public interface IDebuggableWorkflowTree" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebuggableWorkflowTree" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.IDebuggableWorkflowTree" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDebuggableWorkflowTree" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDebuggableWorkflowTree" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity GetWorkflowRoot ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Activity GetWorkflowRoot() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.IDebuggableWorkflowTree.GetWorkflowRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWorkflowRoot () As Activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Activity ^ GetWorkflowRoot();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

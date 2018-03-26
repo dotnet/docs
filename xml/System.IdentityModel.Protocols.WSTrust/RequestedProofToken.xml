@@ -1,7 +1,9 @@
-<Type Name="RequestedProofToken" FullName="System.IdentityModel.Protocols.WSTrust.RequestedProofToken">
+﻿<Type Name="RequestedProofToken" FullName="System.IdentityModel.Protocols.WSTrust.RequestedProofToken">
   <TypeSignature Language="C#" Value="public class RequestedProofToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestedProofToken extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestedProofToken" />
+  <TypeSignature Language="VB.NET" Value="Public Class RequestedProofToken" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RequestedProofToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestedProofToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RequestedProofToken (byte[] secret);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (secret As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestedProofToken(cli::array &lt;System::Byte&gt; ^ secret);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +66,7 @@
       <MemberSignature Language="C#" Value="public RequestedProofToken (System.IdentityModel.Protocols.WSTrust.ProtectedKey protectedKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Protocols.WSTrust.ProtectedKey protectedKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor(System.IdentityModel.Protocols.WSTrust.ProtectedKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestedProofToken(System::IdentityModel::Protocols::WSTrust::ProtectedKey ^ protectedKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -73,6 +87,8 @@
       <MemberSignature Language="C#" Value="public RequestedProofToken (string computedKeyAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string computedKeyAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (computedKeyAlgorithm As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestedProofToken(System::String ^ computedKeyAlgorithm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +116,8 @@
       <MemberSignature Language="C#" Value="public RequestedProofToken (byte[] secret, System.IdentityModel.Tokens.EncryptingCredentials wrappingCredentials);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] secret, class System.IdentityModel.Tokens.EncryptingCredentials wrappingCredentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor(System.Byte[],System.IdentityModel.Tokens.EncryptingCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (secret As Byte(), wrappingCredentials As EncryptingCredentials)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestedProofToken(cli::array &lt;System::Byte&gt; ^ secret, System::IdentityModel::Tokens::EncryptingCredentials ^ wrappingCredentials);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -127,6 +145,8 @@
       <MemberSignature Language="C#" Value="public string ComputedKeyAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ComputedKeyAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestedProofToken.ComputedKeyAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComputedKeyAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ComputedKeyAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -152,6 +172,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.ProtectedKey ProtectedKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.ProtectedKey ProtectedKey" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestedProofToken.ProtectedKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtectedKey As ProtectedKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::ProtectedKey ^ ProtectedKey { System::IdentityModel::Protocols::WSTrust::ProtectedKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -173,14 +195,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestedProofToken" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ChartHttpHandler" FullName="System.Web.UI.DataVisualization.Charting.ChartHttpHandler">
-  <TypeSignature Language="C#" Value="public class ChartHttpHandler : System.Web.UI.Page, System.Web.SessionState.IRequiresSessionState" />
+﻿<Type Name="ChartHttpHandler" FullName="System.Web.UI.DataVisualization.Charting.ChartHttpHandler">
+  <TypeSignature Language="C#" Value="public class ChartHttpHandler : System.Web.UI.Page, System.Web.IHttpHandler, System.Web.SessionState.IRequiresSessionState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartHttpHandler extends System.Web.UI.Page implements class System.Web.IHttpHandler, class System.Web.SessionState.IRequiresSessionState" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartHttpHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartHttpHandler&#xA;Inherits Page&#xA;Implements IHttpHandler, IRequiresSessionState" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChartHttpHandler : System::Web::UI::Page, System::Web::IHttpHandler, System::Web::SessionState::IRequiresSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,6 +12,9 @@
     <BaseTypeName>System.Web.UI.Page</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.IHttpHandler</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Web.SessionState.IRequiresSessionState</InterfaceName>
     </Interface>
@@ -23,6 +28,8 @@
       <MemberSignature Language="C#" Value="public ChartHttpHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartHttpHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChartHttpHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -38,6 +45,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.DataVisualization.Charting.ChartHttpHandlerSettings Settings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.UI.DataVisualization.Charting.ChartHttpHandlerSettings Settings" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartHttpHandler.Settings" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Settings As ChartHttpHandlerSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::DataVisualization::Charting::ChartHttpHandlerSettings ^ Settings { System::Web::UI::DataVisualization::Charting::ChartHttpHandlerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -56,6 +65,8 @@
       <MemberSignature Language="C#" Value="bool System.Web.IHttpHandler.IsReusable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.IHttpHandler.IsReusable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System#Web#IHttpHandler#IsReusable" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="void IHttpHandler.ProcessRequest (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.IHttpHandler.ProcessRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System#Web#IHttpHandler#ProcessRequest(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ProcessRequest (context As HttpContext) Implements IHttpHandler.ProcessRequest" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpHandler.ProcessRequest(System::Web::HttpContext ^ context) = System::Web::IHttpHandler::ProcessRequest;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

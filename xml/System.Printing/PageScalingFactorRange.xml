@@ -1,7 +1,9 @@
-<Type Name="PageScalingFactorRange" FullName="System.Printing.PageScalingFactorRange">
+﻿<Type Name="PageScalingFactorRange" FullName="System.Printing.PageScalingFactorRange">
   <TypeSignature Language="C#" Value="public sealed class PageScalingFactorRange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageScalingFactorRange extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PageScalingFactorRange" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageScalingFactorRange" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageScalingFactorRange sealed" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public int MaximumScale { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumScale" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PageScalingFactorRange.MaximumScale" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumScale As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumScale { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public int MinimumScale { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumScale" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PageScalingFactorRange.MinimumScale" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumScale As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumScale { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PageScalingFactorRange.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

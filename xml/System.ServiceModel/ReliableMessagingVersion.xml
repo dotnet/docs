@@ -1,7 +1,9 @@
-<Type Name="ReliableMessagingVersion" FullName="System.ServiceModel.ReliableMessagingVersion">
+﻿<Type Name="ReliableMessagingVersion" FullName="System.ServiceModel.ReliableMessagingVersion">
   <TypeSignature Language="C#" Value="public abstract class ReliableMessagingVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ReliableMessagingVersion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReliableMessagingVersion" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ReliableMessagingVersion" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReliableMessagingVersion abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected ReliableMessagingVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReliableMessagingVersion.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ReliableMessagingVersion();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.ReliableMessagingVersion Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.ReliableMessagingVersion Default" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableMessagingVersion.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As ReliableMessagingVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::ReliableMessagingVersion ^ Default { System::ServiceModel::ReliableMessagingVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.ReliableMessagingVersion WSReliableMessaging11 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.ReliableMessagingVersion WSReliableMessaging11" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableMessagingVersion.WSReliableMessaging11" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSReliableMessaging11 As ReliableMessagingVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::ReliableMessagingVersion ^ WSReliableMessaging11 { System::ServiceModel::ReliableMessagingVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.ReliableMessagingVersion WSReliableMessagingFebruary2005 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.ReliableMessagingVersion WSReliableMessagingFebruary2005" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableMessagingVersion.WSReliableMessagingFebruary2005" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSReliableMessagingFebruary2005 As ReliableMessagingVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::ReliableMessagingVersion ^ WSReliableMessagingFebruary2005 { System::ServiceModel::ReliableMessagingVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

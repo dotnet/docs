@@ -1,7 +1,9 @@
-<Type Name="PersistenceProviderFactory" FullName="System.ServiceModel.Persistence.PersistenceProviderFactory">
+﻿<Type Name="PersistenceProviderFactory" FullName="System.ServiceModel.Persistence.PersistenceProviderFactory">
   <TypeSignature Language="C#" Value="public abstract class PersistenceProviderFactory : System.ServiceModel.Channels.CommunicationObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PersistenceProviderFactory extends System.ServiceModel.Channels.CommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.PersistenceProviderFactory" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PersistenceProviderFactory&#xA;Inherits CommunicationObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistenceProviderFactory abstract : System::ServiceModel::Channels::CommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="protected PersistenceProviderFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProviderFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PersistenceProviderFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Persistence.PersistenceProvider CreateProvider (Guid id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Persistence.PersistenceProvider CreateProvider(valuetype System.Guid id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProviderFactory.CreateProvider(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateProvider (id As Guid) As PersistenceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Persistence::PersistenceProvider ^ CreateProvider(Guid id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

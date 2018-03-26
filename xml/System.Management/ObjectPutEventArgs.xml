@@ -1,7 +1,9 @@
-<Type Name="ObjectPutEventArgs" FullName="System.Management.ObjectPutEventArgs">
+﻿<Type Name="ObjectPutEventArgs" FullName="System.Management.ObjectPutEventArgs">
   <TypeSignature Language="C#" Value="public class ObjectPutEventArgs : System.Management.ManagementEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectPutEventArgs extends System.Management.ManagementEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectPutEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectPutEventArgs&#xA;Inherits ManagementEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectPutEventArgs : System::Management::ManagementEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementPath Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementPath Path" />
       <MemberSignature Language="DocId" Value="P:System.Management.ObjectPutEventArgs.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As ManagementPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementPath ^ Path { System::Management::ManagementPath ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="PixelFormat" FullName="System.Windows.Media.PixelFormat">
+﻿<Type Name="PixelFormat" FullName="System.Windows.Media.PixelFormat">
   <TypeSignature Language="C#" Value="public struct PixelFormat : IEquatable&lt;System.Windows.Media.PixelFormat&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit PixelFormat extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Media.PixelFormat&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PixelFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Structure PixelFormat&#xA;Implements IEquatable(Of PixelFormat)" />
+  <TypeSignature Language="C++ CLI" Value="public value class PixelFormat : IEquatable&lt;System::Windows::Media::PixelFormat&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public int BitsPerPixel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BitsPerPixel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormat.BitsPerPixel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BitsPerPixel As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BitsPerPixel { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,10 +83,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the two <see cref="T:System.Windows.Media.PixelFormat" /> objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,7 +121,11 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.PixelFormat pixelFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Media.PixelFormat pixelFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.Equals(System.Windows.Media.PixelFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Media::PixelFormat pixelFormat);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +148,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.PixelFormat left, valuetype System.Windows.Media.PixelFormat right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.Equals(System.Windows.Media.PixelFormat,System.Windows.Media.PixelFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (left As PixelFormat, right As PixelFormat) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::PixelFormat left, System::Windows::Media::PixelFormat right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +175,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +196,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Media.PixelFormatChannelMask&gt; Masks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Media.PixelFormatChannelMask&gt; Masks" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormat.Masks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Masks As IList(Of PixelFormatChannelMask)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Windows::Media::PixelFormatChannelMask&gt; ^ Masks { System::Collections::Generic::IList&lt;System::Windows::Media::PixelFormatChannelMask&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +231,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.PixelFormat left, valuetype System.Windows.Media.PixelFormat right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.op_Equality(System.Windows.Media.PixelFormat,System.Windows.Media.PixelFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As PixelFormat, right As PixelFormat) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::PixelFormat left, System::Windows::Media::PixelFormat right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -231,6 +258,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.PixelFormat left, valuetype System.Windows.Media.PixelFormat right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.op_Inequality(System.Windows.Media.PixelFormat,System.Windows.Media.PixelFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As PixelFormat, right As PixelFormat) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::PixelFormat left, System::Windows::Media::PixelFormat right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -256,6 +285,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,14 +302,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the two <see cref="T:System.Windows.Media.PixelFormat" /> objects are equal.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

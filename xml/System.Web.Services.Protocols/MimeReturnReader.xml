@@ -1,7 +1,9 @@
-<Type Name="MimeReturnReader" FullName="System.Web.Services.Protocols.MimeReturnReader">
+﻿<Type Name="MimeReturnReader" FullName="System.Web.Services.Protocols.MimeReturnReader">
   <TypeSignature Language="C#" Value="public abstract class MimeReturnReader : System.Web.Services.Protocols.MimeFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MimeReturnReader extends System.Web.Services.Protocols.MimeFormatter" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MimeReturnReader" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MimeReturnReader&#xA;Inherits MimeFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimeReturnReader abstract : System::Web::Services::Protocols::MimeFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="protected MimeReturnReader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeReturnReader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MimeReturnReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public abstract object Read (System.Net.WebResponse response, System.IO.Stream responseStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Read(class System.Net.WebResponse response, class System.IO.Stream responseStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeReturnReader.Read(System.Net.WebResponse,System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Read (response As WebResponse, responseStream As Stream) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Read(System::Net::WebResponse ^ response, System::IO::Stream ^ responseStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

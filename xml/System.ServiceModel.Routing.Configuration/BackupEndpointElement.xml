@@ -1,7 +1,9 @@
-<Type Name="BackupEndpointElement" FullName="System.ServiceModel.Routing.Configuration.BackupEndpointElement">
+﻿<Type Name="BackupEndpointElement" FullName="System.ServiceModel.Routing.Configuration.BackupEndpointElement">
   <TypeSignature Language="C#" Value="public class BackupEndpointElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupEndpointElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.BackupEndpointElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class BackupEndpointElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BackupEndpointElement : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public BackupEndpointElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.BackupEndpointElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BackupEndpointElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public string EndpointName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EndpointName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.BackupEndpointElement.EndpointName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IDataGridViewEditingControl" FullName="System.Windows.Forms.IDataGridViewEditingControl">
+﻿<Type Name="IDataGridViewEditingControl" FullName="System.Windows.Forms.IDataGridViewEditingControl">
   <TypeSignature Language="C#" Value="public interface IDataGridViewEditingControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataGridViewEditingControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataGridViewEditingControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataGridViewEditingControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataGridViewEditingControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,7 @@
       <MemberSignature Language="C#" Value="public void ApplyCellStyleToEditingControl (System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyCellStyleToEditingControl(class System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridViewEditingControl.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyCellStyleToEditingControl(System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridView EditingControlDataGridView { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridView EditingControlDataGridView" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlDataGridView" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditingControlDataGridView As DataGridView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridView ^ EditingControlDataGridView { System::Windows::Forms::DataGridView ^ get(); void set(System::Windows::Forms::DataGridView ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +117,8 @@
       <MemberSignature Language="C#" Value="public object EditingControlFormattedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object EditingControlFormattedValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlFormattedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditingControlFormattedValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ EditingControlFormattedValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +155,8 @@
       <MemberSignature Language="C#" Value="public int EditingControlRowIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EditingControlRowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlRowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditingControlRowIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EditingControlRowIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -176,6 +185,8 @@
       <MemberSignature Language="C#" Value="public bool EditingControlValueChanged { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EditingControlValueChanged" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditingControlValueChanged As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EditingControlValueChanged { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,6 +219,8 @@
       <MemberSignature Language="C#" Value="public bool EditingControlWantsInputKey (System.Windows.Forms.Keys keyData, bool dataGridViewWantsInputKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EditingControlWantsInputKey(valuetype System.Windows.Forms.Keys keyData, bool dataGridViewWantsInputKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridViewEditingControl.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EditingControlWantsInputKey (keyData As Keys, dataGridViewWantsInputKey As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EditingControlWantsInputKey(System::Windows::Forms::Keys keyData, bool dataGridViewWantsInputKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -252,6 +265,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Cursor EditingPanelCursor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Cursor EditingPanelCursor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IDataGridViewEditingControl.EditingPanelCursor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditingPanelCursor As Cursor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Cursor ^ EditingPanelCursor { System::Windows::Forms::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -289,6 +304,8 @@
       <MemberSignature Language="C#" Value="public object GetEditingControlFormattedValue (System.Windows.Forms.DataGridViewDataErrorContexts context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEditingControlFormattedValue(valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridViewEditingControl.GetEditingControlFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEditingControlFormattedValue (context As DataGridViewDataErrorContexts) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetEditingControlFormattedValue(System::Windows::Forms::DataGridViewDataErrorContexts context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -326,6 +343,8 @@
       <MemberSignature Language="C#" Value="public void PrepareEditingControlForEdit (bool selectAll);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrepareEditingControlForEdit(bool selectAll) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridViewEditingControl.PrepareEditingControlForEdit(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrepareEditingControlForEdit (selectAll As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrepareEditingControlForEdit(bool selectAll);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -356,6 +375,8 @@
       <MemberSignature Language="C#" Value="public bool RepositionEditingControlOnValueChange { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RepositionEditingControlOnValueChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IDataGridViewEditingControl.RepositionEditingControlOnValueChange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RepositionEditingControlOnValueChange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RepositionEditingControlOnValueChange { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

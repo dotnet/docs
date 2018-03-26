@@ -1,7 +1,9 @@
-<Type Name="CaptureCollection" FullName="System.Text.RegularExpressions.CaptureCollection">
+﻿<Type Name="CaptureCollection" FullName="System.Text.RegularExpressions.CaptureCollection">
   <TypeSignature Language="C#" Value="public class CaptureCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CaptureCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.CaptureCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class CaptureCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CaptureCollection : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,7 +71,11 @@
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Text.RegularExpressions.Capture[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Text.RegularExpressions.Capture[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.CopyTo(System.Text.RegularExpressions.Capture[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Capture(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Text::RegularExpressions::Capture ^&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -142,7 +150,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -173,7 +186,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -212,6 +230,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -240,7 +260,12 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -278,6 +303,8 @@
       <MemberSignature Language="C#" Value="public System.Text.RegularExpressions.Capture this[int i] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.RegularExpressions.Capture Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(i As Integer) As Capture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::RegularExpressions::Capture ^ default[int] { System::Text::RegularExpressions::Capture ^ get(int i); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -315,7 +342,12 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -352,7 +384,12 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;Capture&gt;.Add (System.Text.RegularExpressions.Capture item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Add(class System.Text.RegularExpressions.Capture item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Capture&gt;#Add(System.Text.RegularExpressions.Capture)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (item As Capture) Implements ICollection(Of Capture).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Add(System::Text::RegularExpressions::Capture ^ item) = System::Collections::Generic::ICollection&lt;System::Text::RegularExpressions::Capture ^&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -373,7 +410,12 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;Capture&gt;.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Capture&gt;#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of Capture).Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Clear() = System::Collections::Generic::ICollection&lt;System::Text::RegularExpressions::Capture ^&gt;::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -391,7 +433,12 @@
       <MemberSignature Language="C#" Value="bool ICollection&lt;Capture&gt;.Contains (System.Text.RegularExpressions.Capture item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Contains(class System.Text.RegularExpressions.Capture item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Capture&gt;#Contains(System.Text.RegularExpressions.Capture)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (item As Capture) As Boolean Implements ICollection(Of Capture).Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Contains(System::Text::RegularExpressions::Capture ^ item) = System::Collections::Generic::ICollection&lt;System::Text::RegularExpressions::Capture ^&gt;::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -413,7 +460,12 @@
       <MemberSignature Language="C#" Value="bool ICollection&lt;Capture&gt;.Remove (System.Text.RegularExpressions.Capture item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Remove(class System.Text.RegularExpressions.Capture item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Capture&gt;#Remove(System.Text.RegularExpressions.Capture)" />
+      <MemberSignature Language="VB.NET" Value="Function Remove (item As Capture) As Boolean Implements ICollection(Of Capture).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Remove(System::Text::RegularExpressions::Capture ^ item) = System::Collections::Generic::ICollection&lt;System::Text::RegularExpressions::Capture ^&gt;::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -435,7 +487,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Text.RegularExpressions.Capture&gt; IEnumerable&lt;Capture&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Text.RegularExpressions.Capture&gt; System.Collections.Generic.IEnumerable&lt;System.Text.RegularExpressions.Capture&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IEnumerable&lt;System#Text#RegularExpressions#Capture&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of Capture) Implements IEnumerable(Of Capture).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Text::RegularExpressions::Capture ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Text.RegularExpressions.Capture&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Text::RegularExpressions::Capture ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -454,7 +511,12 @@
       <MemberSignature Language="C#" Value="int IList&lt;Capture&gt;.IndexOf (System.Text.RegularExpressions.Capture item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.IndexOf(class System.Text.RegularExpressions.Capture item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Capture&gt;#IndexOf(System.Text.RegularExpressions.Capture)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (item As Capture) As Integer Implements IList(Of Capture).IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.IndexOf(System::Text::RegularExpressions::Capture ^ item) = System::Collections::Generic::IList&lt;System::Text::RegularExpressions::Capture ^&gt;::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -476,7 +538,12 @@
       <MemberSignature Language="C#" Value="void IList&lt;Capture&gt;.Insert (int index, System.Text.RegularExpressions.Capture item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.Insert(int32 index, class System.Text.RegularExpressions.Capture item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Capture&gt;#Insert(System.Int32,System.Text.RegularExpressions.Capture)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, item As Capture) Implements IList(Of Capture).Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.Insert(int index, System::Text::RegularExpressions::Capture ^ item) = System::Collections::Generic::IList&lt;System::Text::RegularExpressions::Capture ^&gt;::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -499,7 +566,12 @@
       <MemberSignature Language="C#" Value="System.Text.RegularExpressions.Capture System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.RegularExpressions.Capture System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Capture&gt;#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Capture Implements IList(Of Capture).Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Text::RegularExpressions::Capture ^ System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.Item[int] { System::Text::RegularExpressions::Capture ^ get(int index); void set(int index, System::Text::RegularExpressions::Capture ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -521,7 +593,12 @@
       <MemberSignature Language="C#" Value="void IList&lt;Capture&gt;.RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Capture&gt;#RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList(Of Capture).RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IList&lt;System.Text.RegularExpressions.Capture&gt;.RemoveAt(int index) = System::Collections::Generic::IList&lt;System::Text::RegularExpressions::Capture ^&gt;::RemoveAt;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -542,7 +619,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int arrayIndex) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -568,7 +649,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -589,7 +675,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -610,7 +701,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -632,7 +728,12 @@
       <MemberSignature Language="C#" Value="void IList.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IList.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Clear() = System::Collections::IList::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -650,7 +751,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -672,7 +778,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -694,7 +805,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -717,7 +833,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -735,7 +856,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -757,7 +883,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -778,7 +909,12 @@
       <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.RemoveAt(int index) = System::Collections::IList::RemoveAt;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>

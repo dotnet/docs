@@ -1,7 +1,9 @@
-<Type Name="SecurityRoleAttribute" FullName="System.EnterpriseServices.SecurityRoleAttribute">
+﻿<Type Name="SecurityRoleAttribute" FullName="System.EnterpriseServices.SecurityRoleAttribute">
   <TypeSignature Language="C#" Value="public sealed class SecurityRoleAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityRoleAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SecurityRoleAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityRoleAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityRoleAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, AllowMultiple=true, Inherited=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Method, AllowMultiple=true, Inherited=true)</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="public SecurityRoleAttribute (string role);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string role) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityRoleAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (role As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityRoleAttribute(System::String ^ role);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -87,6 +91,8 @@
       <MemberSignature Language="C#" Value="public SecurityRoleAttribute (string role, bool everyone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string role, bool everyone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityRoleAttribute.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (role As String, everyone As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityRoleAttribute(System::String ^ role, bool everyone);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -108,6 +114,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityRoleAttribute.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="public string Role { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Role" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityRoleAttribute.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Role { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public bool SetEveryoneAccess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SetEveryoneAccess" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityRoleAttribute.SetEveryoneAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property SetEveryoneAccess As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SetEveryoneAccess { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IProvideValueTarget" FullName="System.Windows.Markup.IProvideValueTarget">
+﻿<Type Name="IProvideValueTarget" FullName="System.Windows.Markup.IProvideValueTarget">
   <TypeSignature Language="C#" Value="public interface IProvideValueTarget" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideValueTarget" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IProvideValueTarget" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProvideValueTarget" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProvideValueTarget" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,8 @@
       <MemberSignature Language="C#" Value="public object TargetObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TargetObject" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.IProvideValueTarget.TargetObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TargetObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -95,6 +99,8 @@
       <MemberSignature Language="C#" Value="public object TargetProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TargetProperty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.IProvideValueTarget.TargetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetProperty As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TargetProperty { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

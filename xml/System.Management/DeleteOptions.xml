@@ -1,7 +1,9 @@
-<Type Name="DeleteOptions" FullName="System.Management.DeleteOptions">
+﻿<Type Name="DeleteOptions" FullName="System.Management.DeleteOptions">
   <TypeSignature Language="C#" Value="public class DeleteOptions : System.Management.ManagementOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeleteOptions extends System.Management.ManagementOptions" />
   <TypeSignature Language="DocId" Value="T:System.Management.DeleteOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeleteOptions&#xA;Inherits ManagementOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeleteOptions : System::Management::ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.DeleteOptions" /> class for the delete operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DeleteOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.DeleteOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public DeleteOptions (System.Management.ManagementNamedValueCollection context, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.DeleteOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection, timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -72,6 +87,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.DeleteOptions.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -97,14 +114,5 @@
         <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.DeleteOptions" /> class for the delete operation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

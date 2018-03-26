@@ -1,7 +1,9 @@
-<Type Name="RelatedObjectQuery" FullName="System.Management.RelatedObjectQuery">
+﻿<Type Name="RelatedObjectQuery" FullName="System.Management.RelatedObjectQuery">
   <TypeSignature Language="C#" Value="public class RelatedObjectQuery : System.Management.WqlObjectQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RelatedObjectQuery extends System.Management.WqlObjectQuery" />
   <TypeSignature Language="DocId" Value="T:System.Management.RelatedObjectQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class RelatedObjectQuery&#xA;Inherits WqlObjectQuery" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RelatedObjectQuery : System::Management::WqlObjectQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.RelatedObjectQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RelatedObjectQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RelatedObjectQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public RelatedObjectQuery (string queryOrSourceObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string queryOrSourceObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queryOrSourceObject As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RelatedObjectQuery(System::String ^ queryOrSourceObject);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -70,6 +85,8 @@
       <MemberSignature Language="C#" Value="public RelatedObjectQuery (string sourceObject, string relatedClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceObject, string relatedClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceObject As String, relatedClass As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RelatedObjectQuery(System::String ^ sourceObject, System::String ^ relatedClass);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -99,6 +116,8 @@
       <MemberSignature Language="C#" Value="public RelatedObjectQuery (bool isSchemaQuery, string sourceObject, string relatedClass, string relationshipClass, string relatedQualifier, string relationshipQualifier, string relatedRole, string thisRole);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isSchemaQuery, string sourceObject, string relatedClass, string relationshipClass, string relatedQualifier, string relationshipQualifier, string relatedRole, string thisRole) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor(System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isSchemaQuery As Boolean, sourceObject As String, relatedClass As String, relationshipClass As String, relatedQualifier As String, relationshipQualifier As String, relatedRole As String, thisRole As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RelatedObjectQuery(bool isSchemaQuery, System::String ^ sourceObject, System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relatedQualifier, System::String ^ relationshipQualifier, System::String ^ relatedRole, System::String ^ thisRole);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -141,6 +160,8 @@
       <MemberSignature Language="C#" Value="public RelatedObjectQuery (string sourceObject, string relatedClass, string relationshipClass, string relatedQualifier, string relationshipQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceObject, string relatedClass, string relationshipClass, string relatedQualifier, string relationshipQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceObject As String, relatedClass As String, relationshipClass As String, relatedQualifier As String, relationshipQualifier As String, relatedRole As String, thisRole As String, classDefinitionsOnly As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RelatedObjectQuery(System::String ^ sourceObject, System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relatedQualifier, System::String ^ relationshipQualifier, System::String ^ relatedRole, System::String ^ thisRole, bool classDefinitionsOnly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -180,9 +201,11 @@
       </Docs>
     </Member>
     <Member MemberName="BuildQuery">
-      <MemberSignature Language="C#" Value="protected void BuildQuery ();" />
+      <MemberSignature Language="C#" Value="protected internal void BuildQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BuildQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.BuildQuery" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub BuildQuery ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void BuildQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -210,6 +233,8 @@
       <MemberSignature Language="C#" Value="public bool ClassDefinitionsOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ClassDefinitionsOnly" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.ClassDefinitionsOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClassDefinitionsOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ClassDefinitionsOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -241,6 +266,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -270,6 +297,8 @@
       <MemberSignature Language="C#" Value="public bool IsSchemaQuery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaQuery" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.IsSchemaQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSchemaQuery As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSchemaQuery { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -298,9 +327,11 @@
       </Docs>
     </Member>
     <Member MemberName="ParseQuery">
-      <MemberSignature Language="C#" Value="protected override void ParseQuery (string query);" />
+      <MemberSignature Language="C#" Value="protected internal override void ParseQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ParseQuery(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.ParseQuery(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ParseQuery (query As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ParseQuery(System::String ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -331,6 +362,8 @@
       <MemberSignature Language="C#" Value="public string RelatedClass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelatedClass" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelatedClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelatedClass As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelatedClass { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -370,6 +403,8 @@
       <MemberSignature Language="C#" Value="public string RelatedQualifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelatedQualifier" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelatedQualifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelatedQualifier As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelatedQualifier { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -401,6 +436,8 @@
       <MemberSignature Language="C#" Value="public string RelatedRole { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelatedRole" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelatedRole" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelatedRole As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelatedRole { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -432,6 +469,8 @@
       <MemberSignature Language="C#" Value="public string RelationshipClass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelationshipClass" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelationshipClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelationshipClass As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelationshipClass { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -471,6 +510,8 @@
       <MemberSignature Language="C#" Value="public string RelationshipQualifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelationshipQualifier" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelationshipQualifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelationshipQualifier As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelationshipQualifier { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -502,6 +543,8 @@
       <MemberSignature Language="C#" Value="public string SourceObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceObject" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.SourceObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceObject As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceObject { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -533,6 +576,8 @@
       <MemberSignature Language="C#" Value="public string ThisRole { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThisRole" />
       <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.ThisRole" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThisRole As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThisRole { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -560,14 +605,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.RelatedObjectQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

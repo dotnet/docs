@@ -1,7 +1,9 @@
-<Type Name="BuildManagerHostUnloadEventArgs" FullName="System.Web.Compilation.BuildManagerHostUnloadEventArgs">
+﻿<Type Name="BuildManagerHostUnloadEventArgs" FullName="System.Web.Compilation.BuildManagerHostUnloadEventArgs">
   <TypeSignature Language="C#" Value="public class BuildManagerHostUnloadEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildManagerHostUnloadEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildManagerHostUnloadEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildManagerHostUnloadEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildManagerHostUnloadEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public BuildManagerHostUnloadEventArgs (System.Web.ApplicationShutdownReason reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.ApplicationShutdownReason reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManagerHostUnloadEventArgs.#ctor(System.Web.ApplicationShutdownReason)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As ApplicationShutdownReason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildManagerHostUnloadEventArgs(System::Web::ApplicationShutdownReason reason);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ApplicationShutdownReason Reason { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.ApplicationShutdownReason Reason" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManagerHostUnloadEventArgs.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As ApplicationShutdownReason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ApplicationShutdownReason Reason { System::Web::ApplicationShutdownReason get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="DictationGrammar" FullName="System.Speech.Recognition.DictationGrammar">
+﻿<Type Name="DictationGrammar" FullName="System.Speech.Recognition.DictationGrammar">
   <TypeSignature Language="C#" Value="public class DictationGrammar : System.Speech.Recognition.Grammar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DictationGrammar extends System.Speech.Recognition.Grammar" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.DictationGrammar" />
+  <TypeSignature Language="VB.NET" Value="Public Class DictationGrammar&#xA;Inherits Grammar" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DictationGrammar : System::Speech::Recognition::Grammar" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,10 +71,21 @@ private SpeechRecognitionEngine LoadDictationGrammars()
     <altmember cref="T:System.Speech.Recognition.Grammar" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.DictationGrammar" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DictationGrammar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.DictationGrammar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DictationGrammar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -95,6 +108,8 @@ private SpeechRecognitionEngine LoadDictationGrammars()
       <MemberSignature Language="C#" Value="public DictationGrammar (string topic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string topic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.DictationGrammar.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (topic As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DictationGrammar(System::String ^ topic);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -120,6 +135,8 @@ private SpeechRecognitionEngine LoadDictationGrammars()
       <MemberSignature Language="C#" Value="public void SetDictationContext (string precedingText, string subsequentText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDictationContext(string precedingText, string subsequentText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.DictationGrammar.SetDictationContext(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDictationContext (precedingText As String, subsequentText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDictationContext(System::String ^ precedingText, System::String ^ subsequentText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -159,14 +176,5 @@ private SpeechRecognitionEngine LoadDictationGrammars()
         <altmember cref="T:System.Speech.Recognition.Grammar" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.DictationGrammar" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

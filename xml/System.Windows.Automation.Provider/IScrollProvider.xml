@@ -1,7 +1,9 @@
-<Type Name="IScrollProvider" FullName="System.Windows.Automation.Provider.IScrollProvider">
+﻿<Type Name="IScrollProvider" FullName="System.Windows.Automation.Provider.IScrollProvider">
   <TypeSignature Language="C#" Value="public interface IScrollProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScrollProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IScrollProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IScrollProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IScrollProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("b38b8077-1fc3-42a5-8cae-d40c2215055a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public bool HorizontallyScrollable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HorizontallyScrollable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontallyScrollable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HorizontallyScrollable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public double HorizontalScrollPercent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalScrollPercent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalScrollPercent As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalScrollPercent { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public double HorizontalViewSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalViewSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalViewSize As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalViewSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public void Scroll (System.Windows.Automation.ScrollAmount horizontalAmount, System.Windows.Automation.ScrollAmount verticalAmount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Scroll(valuetype System.Windows.Automation.ScrollAmount horizontalAmount, valuetype System.Windows.Automation.ScrollAmount verticalAmount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IScrollProvider.Scroll(System.Windows.Automation.ScrollAmount,System.Windows.Automation.ScrollAmount)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Scroll (horizontalAmount As ScrollAmount, verticalAmount As ScrollAmount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Scroll(System::Windows::Automation::ScrollAmount horizontalAmount, System::Windows::Automation::ScrollAmount verticalAmount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -122,6 +132,8 @@
       <MemberSignature Language="C#" Value="public void SetScrollPercent (double horizontalPercent, double verticalPercent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetScrollPercent(float64 horizontalPercent, float64 verticalPercent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetScrollPercent (horizontalPercent As Double, verticalPercent As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetScrollPercent(double horizontalPercent, double verticalPercent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -157,6 +169,8 @@
       <MemberSignature Language="C#" Value="public bool VerticallyScrollable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool VerticallyScrollable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticallyScrollable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool VerticallyScrollable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -183,6 +197,8 @@
       <MemberSignature Language="C#" Value="public double VerticalScrollPercent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalScrollPercent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalScrollPercent As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalScrollPercent { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -201,6 +217,8 @@
       <MemberSignature Language="C#" Value="public double VerticalViewSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalViewSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalViewSize As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalViewSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

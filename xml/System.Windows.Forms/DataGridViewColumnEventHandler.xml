@@ -1,7 +1,9 @@
-<Type Name="DataGridViewColumnEventHandler" FullName="System.Windows.Forms.DataGridViewColumnEventHandler">
+﻿<Type Name="DataGridViewColumnEventHandler" FullName="System.Windows.Forms.DataGridViewColumnEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewColumnEventHandler(object sender, DataGridViewColumnEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewColumnEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewColumnEventHandler(sender As Object, e As DataGridViewColumnEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewColumnEventHandler(System::Object ^ sender, DataGridViewColumnEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

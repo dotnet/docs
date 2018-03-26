@@ -1,7 +1,9 @@
-<Type Name="ArgumentToExpressionConverter" FullName="System.Activities.Presentation.Converters.ArgumentToExpressionConverter">
+﻿<Type Name="ArgumentToExpressionConverter" FullName="System.Activities.Presentation.Converters.ArgumentToExpressionConverter">
   <TypeSignature Language="C#" Value="public class ArgumentToExpressionConverter : System.Windows.Data.IValueConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArgumentToExpressionConverter extends System.Object implements class System.Windows.Data.IValueConverter" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Converters.ArgumentToExpressionConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArgumentToExpressionConverter&#xA;Implements IValueConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArgumentToExpressionConverter : System::Windows::Data::IValueConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public ArgumentToExpressionConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Converters.ArgumentToExpressionConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentToExpressionConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -62,7 +66,12 @@
       <MemberSignature Language="C#" Value="public object Convert (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Converters.ArgumentToExpressionConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Convert (value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Convert(System::Object ^ value, Type ^ targetType, System::Object ^ parameter, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,7 +108,12 @@
       <MemberSignature Language="C#" Value="public object ConvertBack (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertBack(object value, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Converters.ArgumentToExpressionConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConvertBack (value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ConvertBack(System::Object ^ value, Type ^ targetType, System::Object ^ parameter, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

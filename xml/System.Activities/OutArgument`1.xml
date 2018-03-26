@@ -1,7 +1,9 @@
-<Type Name="OutArgument&lt;T&gt;" FullName="System.Activities.OutArgument&lt;T&gt;">
+﻿<Type Name="OutArgument&lt;T&gt;" FullName="System.Activities.OutArgument&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class OutArgument&lt;T&gt; : System.Activities.OutArgument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OutArgument`1&lt;T&gt; extends System.Activities.OutArgument" />
   <TypeSignature Language="DocId" Value="T:System.Activities.OutArgument`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutArgument(Of T)&#xA;Inherits OutArgument" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class OutArgument sealed : System::Activities::OutArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +55,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initialize a new instance of the <see cref="T:System.Activities.OutArgument`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OutArgument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutArgument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +94,8 @@
       <MemberSignature Language="C#" Value="public OutArgument (System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity`1&lt;class System.Activities.Location`1&lt;!T&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.#ctor(System.Activities.Activity{System.Activities.Location{`0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As Activity(Of Location(Of T)))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutArgument(System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -99,6 +114,7 @@
       <MemberSignature Language="C#" Value="public OutArgument (System.Activities.DelegateArgument delegateArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.DelegateArgument delegateArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.#ctor(System.Activities.DelegateArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutArgument(System::Activities::DelegateArgument ^ delegateArgument);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -117,6 +133,7 @@
       <MemberSignature Language="C#" Value="public OutArgument (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.#ctor(System.Activities.Variable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutArgument(System::Activities::Variable ^ variable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -135,6 +152,8 @@
       <MemberSignature Language="C#" Value="public OutArgument (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,T&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !T&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As Expression(Of Func(Of ActivityContext, T)))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutArgument(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, T&gt; ^&gt; ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -153,6 +172,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt; Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity`1&lt;class System.Activities.Location`1&lt;!T&gt;&gt; Expression" />
       <MemberSignature Language="DocId" Value="P:System.Activities.OutArgument`1.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As Activity(Of Location(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ Expression { System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ get(); void set(System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -176,6 +197,7 @@
       <MemberSignature Language="C#" Value="public static System.Activities.OutArgument&lt;T&gt; FromDelegateArgument (System.Activities.DelegateArgument delegateArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.OutArgument`1&lt;!T&gt; FromDelegateArgument(class System.Activities.DelegateArgument delegateArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.FromDelegateArgument(System.Activities.DelegateArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::OutArgument&lt;T&gt; ^ FromDelegateArgument(System::Activities::DelegateArgument ^ delegateArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -198,6 +220,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.OutArgument&lt;T&gt; FromExpression (System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.OutArgument`1&lt;!T&gt; FromExpression(class System.Activities.Activity`1&lt;class System.Activities.Location`1&lt;!T&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.FromExpression(System.Activities.Activity{System.Activities.Location{`0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExpression (expression As Activity(Of Location(Of T))) As OutArgument(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::OutArgument&lt;T&gt; ^ FromExpression(System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -220,6 +244,7 @@
       <MemberSignature Language="C#" Value="public static System.Activities.OutArgument&lt;T&gt; FromVariable (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.OutArgument`1&lt;!T&gt; FromVariable(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.FromVariable(System.Activities.Variable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::OutArgument&lt;T&gt; ^ FromVariable(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -242,6 +267,8 @@
       <MemberSignature Language="C#" Value="public T Get (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Get(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.Get(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T Get(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -264,6 +291,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Location&lt;T&gt; GetLocation (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!T&gt; GetLocation(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.GetLocation(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLocation (context As ActivityContext) As Location(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -286,6 +315,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.OutArgument&lt;T&gt; (System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.OutArgument`1&lt;!T&gt; op_Implicit(class System.Activities.Activity`1&lt;class System.Activities.Location`1&lt;!T&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.op_Implicit(System.Activities.Activity{System.Activities.Location{`0}})~System.Activities.OutArgument{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (expression As Activity(Of Location(Of T))) As OutArgument(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::OutArgument&lt;T&gt; ^(System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -308,6 +339,7 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.OutArgument&lt;T&gt; (System.Activities.DelegateArgument delegateArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.OutArgument`1&lt;!T&gt; op_Implicit(class System.Activities.DelegateArgument delegateArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.op_Implicit(System.Activities.DelegateArgument)~System.Activities.OutArgument{`0}" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::OutArgument&lt;T&gt; ^(System::Activities::DelegateArgument ^ delegateArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -337,6 +369,7 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.OutArgument&lt;T&gt; (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.OutArgument`1&lt;!T&gt; op_Implicit(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.op_Implicit(System.Activities.Variable)~System.Activities.OutArgument{`0}" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::OutArgument&lt;T&gt; ^(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -359,6 +392,8 @@
       <MemberSignature Language="C#" Value="public void Set (System.Activities.ActivityContext context, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Activities.ActivityContext context, !T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.Set(System.Activities.ActivityContext,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -378,14 +413,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initialize a new instance of the <see cref="T:System.Activities.OutArgument`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

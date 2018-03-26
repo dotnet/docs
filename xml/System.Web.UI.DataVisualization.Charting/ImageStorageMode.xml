@@ -1,7 +1,9 @@
-<Type Name="ImageStorageMode" FullName="System.Web.UI.DataVisualization.Charting.ImageStorageMode">
+﻿<Type Name="ImageStorageMode" FullName="System.Web.UI.DataVisualization.Charting.ImageStorageMode">
   <TypeSignature Language="C#" Value="public enum ImageStorageMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageStorageMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ImageStorageMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImageStorageMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImageStorageMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="UseHttpHandler" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ImageStorageMode UseHttpHandler = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler" />
+      <MemberSignature Language="VB.NET" Value="UseHttpHandler" />
+      <MemberSignature Language="C++ CLI" Value="UseHttpHandler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ImageStorageMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> uses an HTTP handler to store images to memory or a file.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="UseImageLocation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ImageStorageMode UseImageLocation = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseImageLocation" />
+      <MemberSignature Language="VB.NET" Value="UseImageLocation" />
+      <MemberSignature Language="C++ CLI" Value="UseImageLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ImageStorageMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> stores the image in a temporary file at the specified location.</summary>
       </Docs>

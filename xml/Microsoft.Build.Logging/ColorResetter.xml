@@ -1,7 +1,9 @@
-<Type Name="ColorResetter" FullName="Microsoft.Build.Logging.ColorResetter">
+﻿<Type Name="ColorResetter" FullName="Microsoft.Build.Logging.ColorResetter">
   <TypeSignature Language="C#" Value="public delegate void ColorResetter();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColorResetter extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.ColorResetter" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ColorResetter()" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ColorResetter();" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

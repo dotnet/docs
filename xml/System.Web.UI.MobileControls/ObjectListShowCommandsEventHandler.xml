@@ -1,7 +1,9 @@
-<Type Name="ObjectListShowCommandsEventHandler" FullName="System.Web.UI.MobileControls.ObjectListShowCommandsEventHandler">
+﻿<Type Name="ObjectListShowCommandsEventHandler" FullName="System.Web.UI.MobileControls.ObjectListShowCommandsEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ObjectListShowCommandsEventHandler(object sender, ObjectListShowCommandsEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectListShowCommandsEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListShowCommandsEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectListShowCommandsEventHandler(sender As Object, e As ObjectListShowCommandsEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ObjectListShowCommandsEventHandler(System::Object ^ sender, ObjectListShowCommandsEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

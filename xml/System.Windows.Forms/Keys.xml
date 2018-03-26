@@ -1,7 +1,9 @@
-<Type Name="Keys" FullName="System.Windows.Forms.Keys">
+﻿<Type Name="Keys" FullName="System.Windows.Forms.Keys">
   <TypeSignature Language="C#" Value="public enum Keys" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Keys extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Keys" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Keys" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Keys" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +83,8 @@
       <MemberSignature Language="C#" Value="A" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys A = int32(65)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.A" />
+      <MemberSignature Language="VB.NET" Value="A" />
+      <MemberSignature Language="C++ CLI" Value="A" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>65</MemberValue>
       <Docs>
         <summary>The A key.</summary>
       </Docs>
@@ -97,6 +102,8 @@
       <MemberSignature Language="C#" Value="Add" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Add = int32(107)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Add" />
+      <MemberSignature Language="VB.NET" Value="Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>107</MemberValue>
       <Docs>
         <summary>The add key.</summary>
       </Docs>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="Alt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Alt = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Alt" />
+      <MemberSignature Language="VB.NET" Value="Alt" />
+      <MemberSignature Language="C++ CLI" Value="Alt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +131,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>The ALT modifier key.</summary>
       </Docs>
@@ -129,6 +140,8 @@
       <MemberSignature Language="C#" Value="Apps" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Apps = int32(93)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Apps" />
+      <MemberSignature Language="VB.NET" Value="Apps" />
+      <MemberSignature Language="C++ CLI" Value="Apps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +150,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>93</MemberValue>
       <Docs>
         <summary>The application key (Microsoft Natural Keyboard).</summary>
       </Docs>
@@ -145,6 +159,8 @@
       <MemberSignature Language="C#" Value="Attn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Attn = int32(246)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Attn" />
+      <MemberSignature Language="VB.NET" Value="Attn" />
+      <MemberSignature Language="C++ CLI" Value="Attn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -153,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>246</MemberValue>
       <Docs>
         <summary>The ATTN key.</summary>
       </Docs>
@@ -161,6 +178,8 @@
       <MemberSignature Language="C#" Value="B" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys B = int32(66)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.B" />
+      <MemberSignature Language="VB.NET" Value="B" />
+      <MemberSignature Language="C++ CLI" Value="B" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -169,6 +188,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>66</MemberValue>
       <Docs>
         <summary>The B key.</summary>
       </Docs>
@@ -177,6 +197,8 @@
       <MemberSignature Language="C#" Value="Back" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Back = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Back" />
+      <MemberSignature Language="VB.NET" Value="Back" />
+      <MemberSignature Language="C++ CLI" Value="Back" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +207,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The BACKSPACE key.</summary>
       </Docs>
@@ -193,6 +216,8 @@
       <MemberSignature Language="C#" Value="BrowserBack" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserBack = int32(166)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserBack" />
+      <MemberSignature Language="VB.NET" Value="BrowserBack" />
+      <MemberSignature Language="C++ CLI" Value="BrowserBack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +226,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>166</MemberValue>
       <Docs>
         <summary>The browser back key (Windows 2000 or later).</summary>
       </Docs>
@@ -209,6 +235,8 @@
       <MemberSignature Language="C#" Value="BrowserFavorites" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserFavorites = int32(171)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserFavorites" />
+      <MemberSignature Language="VB.NET" Value="BrowserFavorites" />
+      <MemberSignature Language="C++ CLI" Value="BrowserFavorites" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -217,6 +245,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>171</MemberValue>
       <Docs>
         <summary>The browser favorites key (Windows 2000 or later).</summary>
       </Docs>
@@ -225,6 +254,8 @@
       <MemberSignature Language="C#" Value="BrowserForward" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserForward = int32(167)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserForward" />
+      <MemberSignature Language="VB.NET" Value="BrowserForward" />
+      <MemberSignature Language="C++ CLI" Value="BrowserForward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -233,6 +264,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>167</MemberValue>
       <Docs>
         <summary>The browser forward key (Windows 2000 or later).</summary>
       </Docs>
@@ -241,6 +273,8 @@
       <MemberSignature Language="C#" Value="BrowserHome" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserHome = int32(172)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserHome" />
+      <MemberSignature Language="VB.NET" Value="BrowserHome" />
+      <MemberSignature Language="C++ CLI" Value="BrowserHome" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -249,6 +283,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>172</MemberValue>
       <Docs>
         <summary>The browser home key (Windows 2000 or later).</summary>
       </Docs>
@@ -257,6 +292,8 @@
       <MemberSignature Language="C#" Value="BrowserRefresh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserRefresh = int32(168)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserRefresh" />
+      <MemberSignature Language="VB.NET" Value="BrowserRefresh" />
+      <MemberSignature Language="C++ CLI" Value="BrowserRefresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -265,6 +302,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>168</MemberValue>
       <Docs>
         <summary>The browser refresh key (Windows 2000 or later).</summary>
       </Docs>
@@ -273,6 +311,8 @@
       <MemberSignature Language="C#" Value="BrowserSearch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserSearch = int32(170)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserSearch" />
+      <MemberSignature Language="VB.NET" Value="BrowserSearch" />
+      <MemberSignature Language="C++ CLI" Value="BrowserSearch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +321,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>170</MemberValue>
       <Docs>
         <summary>The browser search key (Windows 2000 or later).</summary>
       </Docs>
@@ -289,6 +330,8 @@
       <MemberSignature Language="C#" Value="BrowserStop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserStop = int32(169)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserStop" />
+      <MemberSignature Language="VB.NET" Value="BrowserStop" />
+      <MemberSignature Language="C++ CLI" Value="BrowserStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -297,6 +340,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>169</MemberValue>
       <Docs>
         <summary>The browser stop key (Windows 2000 or later).</summary>
       </Docs>
@@ -305,6 +349,8 @@
       <MemberSignature Language="C#" Value="C" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys C = int32(67)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.C" />
+      <MemberSignature Language="VB.NET" Value="C" />
+      <MemberSignature Language="C++ CLI" Value="C" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +359,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>67</MemberValue>
       <Docs>
         <summary>The C key.</summary>
       </Docs>
@@ -321,6 +368,8 @@
       <MemberSignature Language="C#" Value="Cancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Cancel = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Cancel" />
+      <MemberSignature Language="C++ CLI" Value="Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -329,6 +378,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The CANCEL key.</summary>
       </Docs>
@@ -337,6 +387,8 @@
       <MemberSignature Language="C#" Value="Capital" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Capital = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Capital" />
+      <MemberSignature Language="VB.NET" Value="Capital" />
+      <MemberSignature Language="C++ CLI" Value="Capital" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -345,6 +397,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>The CAPS LOCK key.</summary>
       </Docs>
@@ -353,6 +406,8 @@
       <MemberSignature Language="C#" Value="CapsLock" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys CapsLock = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.CapsLock" />
+      <MemberSignature Language="VB.NET" Value="CapsLock" />
+      <MemberSignature Language="C++ CLI" Value="CapsLock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -361,6 +416,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>The CAPS LOCK key.</summary>
       </Docs>
@@ -369,6 +425,8 @@
       <MemberSignature Language="C#" Value="Clear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Clear = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Clear" />
+      <MemberSignature Language="VB.NET" Value="Clear" />
+      <MemberSignature Language="C++ CLI" Value="Clear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -377,6 +435,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The CLEAR key.</summary>
       </Docs>
@@ -385,6 +444,8 @@
       <MemberSignature Language="C#" Value="Control" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Control = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Control" />
+      <MemberSignature Language="VB.NET" Value="Control" />
+      <MemberSignature Language="C++ CLI" Value="Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -393,6 +454,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The CTRL modifier key.</summary>
       </Docs>
@@ -401,6 +463,8 @@
       <MemberSignature Language="C#" Value="ControlKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys ControlKey = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ControlKey" />
+      <MemberSignature Language="VB.NET" Value="ControlKey" />
+      <MemberSignature Language="C++ CLI" Value="ControlKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -409,6 +473,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>The CTRL key.</summary>
       </Docs>
@@ -417,6 +482,8 @@
       <MemberSignature Language="C#" Value="Crsel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Crsel = int32(247)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Crsel" />
+      <MemberSignature Language="VB.NET" Value="Crsel" />
+      <MemberSignature Language="C++ CLI" Value="Crsel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -425,6 +492,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>247</MemberValue>
       <Docs>
         <summary>The CRSEL key.</summary>
       </Docs>
@@ -433,6 +501,8 @@
       <MemberSignature Language="C#" Value="D" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D = int32(68)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D" />
+      <MemberSignature Language="VB.NET" Value="D" />
+      <MemberSignature Language="C++ CLI" Value="D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -441,6 +511,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>68</MemberValue>
       <Docs>
         <summary>The D key.</summary>
       </Docs>
@@ -449,6 +520,8 @@
       <MemberSignature Language="C#" Value="D0" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D0 = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D0" />
+      <MemberSignature Language="VB.NET" Value="D0" />
+      <MemberSignature Language="C++ CLI" Value="D0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -457,6 +530,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The 0 key.</summary>
       </Docs>
@@ -465,6 +539,8 @@
       <MemberSignature Language="C#" Value="D1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D1 = int32(49)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D1" />
+      <MemberSignature Language="VB.NET" Value="D1" />
+      <MemberSignature Language="C++ CLI" Value="D1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -473,6 +549,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>The 1 key.</summary>
       </Docs>
@@ -481,6 +558,8 @@
       <MemberSignature Language="C#" Value="D2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D2 = int32(50)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D2" />
+      <MemberSignature Language="VB.NET" Value="D2" />
+      <MemberSignature Language="C++ CLI" Value="D2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -489,6 +568,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>The 2 key.</summary>
       </Docs>
@@ -497,6 +577,8 @@
       <MemberSignature Language="C#" Value="D3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D3 = int32(51)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D3" />
+      <MemberSignature Language="VB.NET" Value="D3" />
+      <MemberSignature Language="C++ CLI" Value="D3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -505,6 +587,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>The 3 key.</summary>
       </Docs>
@@ -513,6 +596,8 @@
       <MemberSignature Language="C#" Value="D4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D4 = int32(52)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D4" />
+      <MemberSignature Language="VB.NET" Value="D4" />
+      <MemberSignature Language="C++ CLI" Value="D4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -521,6 +606,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>The 4 key.</summary>
       </Docs>
@@ -529,6 +615,8 @@
       <MemberSignature Language="C#" Value="D5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D5 = int32(53)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D5" />
+      <MemberSignature Language="VB.NET" Value="D5" />
+      <MemberSignature Language="C++ CLI" Value="D5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -537,6 +625,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>The 5 key.</summary>
       </Docs>
@@ -545,6 +634,8 @@
       <MemberSignature Language="C#" Value="D6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D6 = int32(54)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D6" />
+      <MemberSignature Language="VB.NET" Value="D6" />
+      <MemberSignature Language="C++ CLI" Value="D6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -553,6 +644,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>54</MemberValue>
       <Docs>
         <summary>The 6 key.</summary>
       </Docs>
@@ -561,6 +653,8 @@
       <MemberSignature Language="C#" Value="D7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D7 = int32(55)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D7" />
+      <MemberSignature Language="VB.NET" Value="D7" />
+      <MemberSignature Language="C++ CLI" Value="D7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -569,6 +663,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>55</MemberValue>
       <Docs>
         <summary>The 7 key.</summary>
       </Docs>
@@ -577,6 +672,8 @@
       <MemberSignature Language="C#" Value="D8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D8 = int32(56)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D8" />
+      <MemberSignature Language="VB.NET" Value="D8" />
+      <MemberSignature Language="C++ CLI" Value="D8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -585,6 +682,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>56</MemberValue>
       <Docs>
         <summary>The 8 key.</summary>
       </Docs>
@@ -593,6 +691,8 @@
       <MemberSignature Language="C#" Value="D9" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D9 = int32(57)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D9" />
+      <MemberSignature Language="VB.NET" Value="D9" />
+      <MemberSignature Language="C++ CLI" Value="D9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -601,6 +701,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>57</MemberValue>
       <Docs>
         <summary>The 9 key.</summary>
       </Docs>
@@ -609,6 +710,8 @@
       <MemberSignature Language="C#" Value="Decimal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Decimal = int32(110)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Decimal" />
+      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -617,6 +720,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>110</MemberValue>
       <Docs>
         <summary>The decimal key.</summary>
       </Docs>
@@ -625,6 +729,8 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Delete = int32(46)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -633,6 +739,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>The DEL key.</summary>
       </Docs>
@@ -641,6 +748,8 @@
       <MemberSignature Language="C#" Value="Divide" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Divide = int32(111)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Divide" />
+      <MemberSignature Language="VB.NET" Value="Divide" />
+      <MemberSignature Language="C++ CLI" Value="Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -649,6 +758,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>111</MemberValue>
       <Docs>
         <summary>The divide key.</summary>
       </Docs>
@@ -657,6 +767,8 @@
       <MemberSignature Language="C#" Value="Down" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Down = int32(40)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Down" />
+      <MemberSignature Language="VB.NET" Value="Down" />
+      <MemberSignature Language="C++ CLI" Value="Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -665,6 +777,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>The DOWN ARROW key.</summary>
       </Docs>
@@ -673,6 +786,8 @@
       <MemberSignature Language="C#" Value="E" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys E = int32(69)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.E" />
+      <MemberSignature Language="VB.NET" Value="E" />
+      <MemberSignature Language="C++ CLI" Value="E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -681,6 +796,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>69</MemberValue>
       <Docs>
         <summary>The E key.</summary>
       </Docs>
@@ -689,6 +805,8 @@
       <MemberSignature Language="C#" Value="End" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys End = int32(35)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.End" />
+      <MemberSignature Language="VB.NET" Value="End" />
+      <MemberSignature Language="C++ CLI" Value="End" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -697,6 +815,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>The END key.</summary>
       </Docs>
@@ -705,6 +824,8 @@
       <MemberSignature Language="C#" Value="Enter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Enter = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Enter" />
+      <MemberSignature Language="VB.NET" Value="Enter" />
+      <MemberSignature Language="C++ CLI" Value="Enter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -713,6 +834,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>The ENTER key.</summary>
       </Docs>
@@ -721,6 +843,8 @@
       <MemberSignature Language="C#" Value="EraseEof" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys EraseEof = int32(249)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.EraseEof" />
+      <MemberSignature Language="VB.NET" Value="EraseEof" />
+      <MemberSignature Language="C++ CLI" Value="EraseEof" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -729,6 +853,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>249</MemberValue>
       <Docs>
         <summary>The ERASE EOF key.</summary>
       </Docs>
@@ -737,6 +862,8 @@
       <MemberSignature Language="C#" Value="Escape" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Escape = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Escape" />
+      <MemberSignature Language="VB.NET" Value="Escape" />
+      <MemberSignature Language="C++ CLI" Value="Escape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -745,6 +872,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>The ESC key.</summary>
       </Docs>
@@ -753,6 +881,8 @@
       <MemberSignature Language="C#" Value="Execute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Execute = int32(43)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Execute" />
+      <MemberSignature Language="VB.NET" Value="Execute" />
+      <MemberSignature Language="C++ CLI" Value="Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -761,6 +891,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>The EXECUTE key.</summary>
       </Docs>
@@ -769,6 +900,8 @@
       <MemberSignature Language="C#" Value="Exsel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Exsel = int32(248)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Exsel" />
+      <MemberSignature Language="VB.NET" Value="Exsel" />
+      <MemberSignature Language="C++ CLI" Value="Exsel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -777,6 +910,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>248</MemberValue>
       <Docs>
         <summary>The EXSEL key.</summary>
       </Docs>
@@ -785,6 +919,8 @@
       <MemberSignature Language="C#" Value="F" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F = int32(70)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F" />
+      <MemberSignature Language="VB.NET" Value="F" />
+      <MemberSignature Language="C++ CLI" Value="F" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -793,6 +929,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>70</MemberValue>
       <Docs>
         <summary>The F key.</summary>
       </Docs>
@@ -801,6 +938,8 @@
       <MemberSignature Language="C#" Value="F1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F1 = int32(112)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F1" />
+      <MemberSignature Language="VB.NET" Value="F1" />
+      <MemberSignature Language="C++ CLI" Value="F1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -809,6 +948,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>112</MemberValue>
       <Docs>
         <summary>The F1 key.</summary>
       </Docs>
@@ -817,6 +957,8 @@
       <MemberSignature Language="C#" Value="F10" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F10 = int32(121)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F10" />
+      <MemberSignature Language="VB.NET" Value="F10" />
+      <MemberSignature Language="C++ CLI" Value="F10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -825,6 +967,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>121</MemberValue>
       <Docs>
         <summary>The F10 key.</summary>
       </Docs>
@@ -833,6 +976,8 @@
       <MemberSignature Language="C#" Value="F11" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F11 = int32(122)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F11" />
+      <MemberSignature Language="VB.NET" Value="F11" />
+      <MemberSignature Language="C++ CLI" Value="F11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -841,6 +986,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>122</MemberValue>
       <Docs>
         <summary>The F11 key.</summary>
       </Docs>
@@ -849,6 +995,8 @@
       <MemberSignature Language="C#" Value="F12" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F12 = int32(123)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F12" />
+      <MemberSignature Language="VB.NET" Value="F12" />
+      <MemberSignature Language="C++ CLI" Value="F12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -857,6 +1005,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>123</MemberValue>
       <Docs>
         <summary>The F12 key.</summary>
       </Docs>
@@ -865,6 +1014,8 @@
       <MemberSignature Language="C#" Value="F13" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F13 = int32(124)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F13" />
+      <MemberSignature Language="VB.NET" Value="F13" />
+      <MemberSignature Language="C++ CLI" Value="F13" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -873,6 +1024,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>124</MemberValue>
       <Docs>
         <summary>The F13 key.</summary>
       </Docs>
@@ -881,6 +1033,8 @@
       <MemberSignature Language="C#" Value="F14" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F14 = int32(125)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F14" />
+      <MemberSignature Language="VB.NET" Value="F14" />
+      <MemberSignature Language="C++ CLI" Value="F14" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -889,6 +1043,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>125</MemberValue>
       <Docs>
         <summary>The F14 key.</summary>
       </Docs>
@@ -897,6 +1052,8 @@
       <MemberSignature Language="C#" Value="F15" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F15 = int32(126)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F15" />
+      <MemberSignature Language="VB.NET" Value="F15" />
+      <MemberSignature Language="C++ CLI" Value="F15" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -905,6 +1062,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>126</MemberValue>
       <Docs>
         <summary>The F15 key.</summary>
       </Docs>
@@ -913,6 +1071,8 @@
       <MemberSignature Language="C#" Value="F16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F16 = int32(127)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F16" />
+      <MemberSignature Language="VB.NET" Value="F16" />
+      <MemberSignature Language="C++ CLI" Value="F16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -921,6 +1081,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>127</MemberValue>
       <Docs>
         <summary>The F16 key.</summary>
       </Docs>
@@ -929,6 +1090,8 @@
       <MemberSignature Language="C#" Value="F17" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F17 = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F17" />
+      <MemberSignature Language="VB.NET" Value="F17" />
+      <MemberSignature Language="C++ CLI" Value="F17" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -937,6 +1100,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The F17 key.</summary>
       </Docs>
@@ -945,6 +1109,8 @@
       <MemberSignature Language="C#" Value="F18" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F18 = int32(129)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F18" />
+      <MemberSignature Language="VB.NET" Value="F18" />
+      <MemberSignature Language="C++ CLI" Value="F18" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -953,6 +1119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>129</MemberValue>
       <Docs>
         <summary>The F18 key.</summary>
       </Docs>
@@ -961,6 +1128,8 @@
       <MemberSignature Language="C#" Value="F19" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F19 = int32(130)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F19" />
+      <MemberSignature Language="VB.NET" Value="F19" />
+      <MemberSignature Language="C++ CLI" Value="F19" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -969,6 +1138,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>130</MemberValue>
       <Docs>
         <summary>The F19 key.</summary>
       </Docs>
@@ -977,6 +1147,8 @@
       <MemberSignature Language="C#" Value="F2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F2 = int32(113)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F2" />
+      <MemberSignature Language="VB.NET" Value="F2" />
+      <MemberSignature Language="C++ CLI" Value="F2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -985,6 +1157,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>113</MemberValue>
       <Docs>
         <summary>The F2 key.</summary>
       </Docs>
@@ -993,6 +1166,8 @@
       <MemberSignature Language="C#" Value="F20" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F20 = int32(131)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F20" />
+      <MemberSignature Language="VB.NET" Value="F20" />
+      <MemberSignature Language="C++ CLI" Value="F20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1001,6 +1176,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>131</MemberValue>
       <Docs>
         <summary>The F20 key.</summary>
       </Docs>
@@ -1009,6 +1185,8 @@
       <MemberSignature Language="C#" Value="F21" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F21 = int32(132)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F21" />
+      <MemberSignature Language="VB.NET" Value="F21" />
+      <MemberSignature Language="C++ CLI" Value="F21" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1017,6 +1195,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>132</MemberValue>
       <Docs>
         <summary>The F21 key.</summary>
       </Docs>
@@ -1025,6 +1204,8 @@
       <MemberSignature Language="C#" Value="F22" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F22 = int32(133)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F22" />
+      <MemberSignature Language="VB.NET" Value="F22" />
+      <MemberSignature Language="C++ CLI" Value="F22" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1033,6 +1214,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>133</MemberValue>
       <Docs>
         <summary>The F22 key.</summary>
       </Docs>
@@ -1041,6 +1223,8 @@
       <MemberSignature Language="C#" Value="F23" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F23 = int32(134)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F23" />
+      <MemberSignature Language="VB.NET" Value="F23" />
+      <MemberSignature Language="C++ CLI" Value="F23" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1049,6 +1233,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>134</MemberValue>
       <Docs>
         <summary>The F23 key.</summary>
       </Docs>
@@ -1057,6 +1242,8 @@
       <MemberSignature Language="C#" Value="F24" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F24 = int32(135)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F24" />
+      <MemberSignature Language="VB.NET" Value="F24" />
+      <MemberSignature Language="C++ CLI" Value="F24" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1065,6 +1252,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>135</MemberValue>
       <Docs>
         <summary>The F24 key.</summary>
       </Docs>
@@ -1073,6 +1261,8 @@
       <MemberSignature Language="C#" Value="F3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F3 = int32(114)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F3" />
+      <MemberSignature Language="VB.NET" Value="F3" />
+      <MemberSignature Language="C++ CLI" Value="F3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1081,6 +1271,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>114</MemberValue>
       <Docs>
         <summary>The F3 key.</summary>
       </Docs>
@@ -1089,6 +1280,8 @@
       <MemberSignature Language="C#" Value="F4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F4 = int32(115)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F4" />
+      <MemberSignature Language="VB.NET" Value="F4" />
+      <MemberSignature Language="C++ CLI" Value="F4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1097,6 +1290,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>115</MemberValue>
       <Docs>
         <summary>The F4 key.</summary>
       </Docs>
@@ -1105,6 +1299,8 @@
       <MemberSignature Language="C#" Value="F5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F5 = int32(116)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F5" />
+      <MemberSignature Language="VB.NET" Value="F5" />
+      <MemberSignature Language="C++ CLI" Value="F5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1113,6 +1309,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>116</MemberValue>
       <Docs>
         <summary>The F5 key.</summary>
       </Docs>
@@ -1121,6 +1318,8 @@
       <MemberSignature Language="C#" Value="F6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F6 = int32(117)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F6" />
+      <MemberSignature Language="VB.NET" Value="F6" />
+      <MemberSignature Language="C++ CLI" Value="F6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1129,6 +1328,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>117</MemberValue>
       <Docs>
         <summary>The F6 key.</summary>
       </Docs>
@@ -1137,6 +1337,8 @@
       <MemberSignature Language="C#" Value="F7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F7 = int32(118)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F7" />
+      <MemberSignature Language="VB.NET" Value="F7" />
+      <MemberSignature Language="C++ CLI" Value="F7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1145,6 +1347,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>118</MemberValue>
       <Docs>
         <summary>The F7 key.</summary>
       </Docs>
@@ -1153,6 +1356,8 @@
       <MemberSignature Language="C#" Value="F8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F8 = int32(119)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F8" />
+      <MemberSignature Language="VB.NET" Value="F8" />
+      <MemberSignature Language="C++ CLI" Value="F8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1161,6 +1366,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>119</MemberValue>
       <Docs>
         <summary>The F8 key.</summary>
       </Docs>
@@ -1169,6 +1375,8 @@
       <MemberSignature Language="C#" Value="F9" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F9 = int32(120)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F9" />
+      <MemberSignature Language="VB.NET" Value="F9" />
+      <MemberSignature Language="C++ CLI" Value="F9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1177,6 +1385,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>120</MemberValue>
       <Docs>
         <summary>The F9 key.</summary>
       </Docs>
@@ -1185,6 +1394,8 @@
       <MemberSignature Language="C#" Value="FinalMode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys FinalMode = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.FinalMode" />
+      <MemberSignature Language="VB.NET" Value="FinalMode" />
+      <MemberSignature Language="C++ CLI" Value="FinalMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1193,6 +1404,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>The IME final mode key.</summary>
       </Docs>
@@ -1201,6 +1413,8 @@
       <MemberSignature Language="C#" Value="G" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys G = int32(71)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.G" />
+      <MemberSignature Language="VB.NET" Value="G" />
+      <MemberSignature Language="C++ CLI" Value="G" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1209,6 +1423,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>71</MemberValue>
       <Docs>
         <summary>The G key.</summary>
       </Docs>
@@ -1217,6 +1432,8 @@
       <MemberSignature Language="C#" Value="H" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys H = int32(72)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.H" />
+      <MemberSignature Language="VB.NET" Value="H" />
+      <MemberSignature Language="C++ CLI" Value="H" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1225,6 +1442,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>72</MemberValue>
       <Docs>
         <summary>The H key.</summary>
       </Docs>
@@ -1233,6 +1451,8 @@
       <MemberSignature Language="C#" Value="HanguelMode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys HanguelMode = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HanguelMode" />
+      <MemberSignature Language="VB.NET" Value="HanguelMode" />
+      <MemberSignature Language="C++ CLI" Value="HanguelMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1241,6 +1461,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>The IME Hanguel mode key. (maintained for compatibility; use <see langword="HangulMode" />)</summary>
       </Docs>
@@ -1249,6 +1470,8 @@
       <MemberSignature Language="C#" Value="HangulMode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys HangulMode = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HangulMode" />
+      <MemberSignature Language="VB.NET" Value="HangulMode" />
+      <MemberSignature Language="C++ CLI" Value="HangulMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1257,6 +1480,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>The IME Hangul mode key.</summary>
       </Docs>
@@ -1265,6 +1489,8 @@
       <MemberSignature Language="C#" Value="HanjaMode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys HanjaMode = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HanjaMode" />
+      <MemberSignature Language="VB.NET" Value="HanjaMode" />
+      <MemberSignature Language="C++ CLI" Value="HanjaMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1273,6 +1499,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>The IME Hanja mode key.</summary>
       </Docs>
@@ -1281,6 +1508,8 @@
       <MemberSignature Language="C#" Value="Help" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Help = int32(47)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Help" />
+      <MemberSignature Language="VB.NET" Value="Help" />
+      <MemberSignature Language="C++ CLI" Value="Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1289,6 +1518,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>The HELP key.</summary>
       </Docs>
@@ -1297,6 +1527,8 @@
       <MemberSignature Language="C#" Value="Home" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Home = int32(36)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Home" />
+      <MemberSignature Language="VB.NET" Value="Home" />
+      <MemberSignature Language="C++ CLI" Value="Home" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1305,6 +1537,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>The HOME key.</summary>
       </Docs>
@@ -1313,6 +1546,8 @@
       <MemberSignature Language="C#" Value="I" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys I = int32(73)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.I" />
+      <MemberSignature Language="VB.NET" Value="I" />
+      <MemberSignature Language="C++ CLI" Value="I" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1321,6 +1556,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>73</MemberValue>
       <Docs>
         <summary>The I key.</summary>
       </Docs>
@@ -1329,6 +1565,8 @@
       <MemberSignature Language="C#" Value="IMEAccept" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMEAccept = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEAccept" />
+      <MemberSignature Language="VB.NET" Value="IMEAccept" />
+      <MemberSignature Language="C++ CLI" Value="IMEAccept" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1337,6 +1575,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>The IME accept key, replaces <see cref="F:System.Windows.Forms.Keys.IMEAceept" />.</summary>
       </Docs>
@@ -1345,6 +1584,8 @@
       <MemberSignature Language="C#" Value="IMEAceept" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMEAceept = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEAceept" />
+      <MemberSignature Language="VB.NET" Value="IMEAceept" />
+      <MemberSignature Language="C++ CLI" Value="IMEAceept" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1353,6 +1594,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>The IME accept key. Obsolete, use <see cref="F:System.Windows.Forms.Keys.IMEAccept" /> instead.</summary>
       </Docs>
@@ -1361,6 +1603,8 @@
       <MemberSignature Language="C#" Value="IMEConvert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMEConvert = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEConvert" />
+      <MemberSignature Language="VB.NET" Value="IMEConvert" />
+      <MemberSignature Language="C++ CLI" Value="IMEConvert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1369,6 +1613,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>The IME convert key.</summary>
       </Docs>
@@ -1377,6 +1622,8 @@
       <MemberSignature Language="C#" Value="IMEModeChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMEModeChange = int32(31)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEModeChange" />
+      <MemberSignature Language="VB.NET" Value="IMEModeChange" />
+      <MemberSignature Language="C++ CLI" Value="IMEModeChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1385,6 +1632,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>The IME mode change key.</summary>
       </Docs>
@@ -1393,6 +1641,8 @@
       <MemberSignature Language="C#" Value="IMENonconvert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMENonconvert = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMENonconvert" />
+      <MemberSignature Language="VB.NET" Value="IMENonconvert" />
+      <MemberSignature Language="C++ CLI" Value="IMENonconvert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1401,6 +1651,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>The IME nonconvert key.</summary>
       </Docs>
@@ -1409,6 +1660,8 @@
       <MemberSignature Language="C#" Value="Insert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Insert = int32(45)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Insert" />
+      <MemberSignature Language="VB.NET" Value="Insert" />
+      <MemberSignature Language="C++ CLI" Value="Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1417,6 +1670,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>The INS key.</summary>
       </Docs>
@@ -1425,6 +1679,8 @@
       <MemberSignature Language="C#" Value="J" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys J = int32(74)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.J" />
+      <MemberSignature Language="VB.NET" Value="J" />
+      <MemberSignature Language="C++ CLI" Value="J" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1433,6 +1689,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>74</MemberValue>
       <Docs>
         <summary>The J key.</summary>
       </Docs>
@@ -1441,6 +1698,8 @@
       <MemberSignature Language="C#" Value="JunjaMode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys JunjaMode = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.JunjaMode" />
+      <MemberSignature Language="VB.NET" Value="JunjaMode" />
+      <MemberSignature Language="C++ CLI" Value="JunjaMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1449,6 +1708,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>The IME Junja mode key.</summary>
       </Docs>
@@ -1457,6 +1717,8 @@
       <MemberSignature Language="C#" Value="K" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys K = int32(75)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.K" />
+      <MemberSignature Language="VB.NET" Value="K" />
+      <MemberSignature Language="C++ CLI" Value="K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1465,6 +1727,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>75</MemberValue>
       <Docs>
         <summary>The K key.</summary>
       </Docs>
@@ -1473,6 +1736,8 @@
       <MemberSignature Language="C#" Value="KanaMode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys KanaMode = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KanaMode" />
+      <MemberSignature Language="VB.NET" Value="KanaMode" />
+      <MemberSignature Language="C++ CLI" Value="KanaMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1481,6 +1746,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>The IME Kana mode key.</summary>
       </Docs>
@@ -1489,6 +1755,8 @@
       <MemberSignature Language="C#" Value="KanjiMode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys KanjiMode = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KanjiMode" />
+      <MemberSignature Language="VB.NET" Value="KanjiMode" />
+      <MemberSignature Language="C++ CLI" Value="KanjiMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1497,6 +1765,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>The IME Kanji mode key.</summary>
       </Docs>
@@ -1505,6 +1774,8 @@
       <MemberSignature Language="C#" Value="KeyCode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys KeyCode = int32(65535)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KeyCode" />
+      <MemberSignature Language="VB.NET" Value="KeyCode" />
+      <MemberSignature Language="C++ CLI" Value="KeyCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1513,6 +1784,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>65535</MemberValue>
       <Docs>
         <summary>The bitmask to extract a key code from a key value.</summary>
       </Docs>
@@ -1521,6 +1793,8 @@
       <MemberSignature Language="C#" Value="L" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys L = int32(76)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.L" />
+      <MemberSignature Language="VB.NET" Value="L" />
+      <MemberSignature Language="C++ CLI" Value="L" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1529,6 +1803,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>76</MemberValue>
       <Docs>
         <summary>The L key.</summary>
       </Docs>
@@ -1537,6 +1812,8 @@
       <MemberSignature Language="C#" Value="LaunchApplication1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LaunchApplication1 = int32(182)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchApplication1" />
+      <MemberSignature Language="VB.NET" Value="LaunchApplication1" />
+      <MemberSignature Language="C++ CLI" Value="LaunchApplication1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1545,6 +1822,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>182</MemberValue>
       <Docs>
         <summary>The start application one key (Windows 2000 or later).</summary>
       </Docs>
@@ -1553,6 +1831,8 @@
       <MemberSignature Language="C#" Value="LaunchApplication2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LaunchApplication2 = int32(183)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchApplication2" />
+      <MemberSignature Language="VB.NET" Value="LaunchApplication2" />
+      <MemberSignature Language="C++ CLI" Value="LaunchApplication2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1561,6 +1841,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>183</MemberValue>
       <Docs>
         <summary>The start application two key (Windows 2000 or later).</summary>
       </Docs>
@@ -1569,6 +1850,8 @@
       <MemberSignature Language="C#" Value="LaunchMail" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LaunchMail = int32(180)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchMail" />
+      <MemberSignature Language="VB.NET" Value="LaunchMail" />
+      <MemberSignature Language="C++ CLI" Value="LaunchMail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1577,6 +1860,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>180</MemberValue>
       <Docs>
         <summary>The launch mail key (Windows 2000 or later).</summary>
       </Docs>
@@ -1585,6 +1869,8 @@
       <MemberSignature Language="C#" Value="LButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LButton = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LButton" />
+      <MemberSignature Language="VB.NET" Value="LButton" />
+      <MemberSignature Language="C++ CLI" Value="LButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1593,6 +1879,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The left mouse button.</summary>
       </Docs>
@@ -1601,6 +1888,8 @@
       <MemberSignature Language="C#" Value="LControlKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LControlKey = int32(162)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LControlKey" />
+      <MemberSignature Language="VB.NET" Value="LControlKey" />
+      <MemberSignature Language="C++ CLI" Value="LControlKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1609,6 +1898,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>162</MemberValue>
       <Docs>
         <summary>The left CTRL key.</summary>
       </Docs>
@@ -1617,6 +1907,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Left = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1625,6 +1917,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>The LEFT ARROW key.</summary>
       </Docs>
@@ -1633,6 +1926,8 @@
       <MemberSignature Language="C#" Value="LineFeed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LineFeed = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LineFeed" />
+      <MemberSignature Language="VB.NET" Value="LineFeed" />
+      <MemberSignature Language="C++ CLI" Value="LineFeed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1641,6 +1936,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The LINEFEED key.</summary>
       </Docs>
@@ -1649,6 +1945,8 @@
       <MemberSignature Language="C#" Value="LMenu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LMenu = int32(164)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LMenu" />
+      <MemberSignature Language="VB.NET" Value="LMenu" />
+      <MemberSignature Language="C++ CLI" Value="LMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1657,6 +1955,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>164</MemberValue>
       <Docs>
         <summary>The left ALT key.</summary>
       </Docs>
@@ -1665,6 +1964,8 @@
       <MemberSignature Language="C#" Value="LShiftKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LShiftKey = int32(160)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LShiftKey" />
+      <MemberSignature Language="VB.NET" Value="LShiftKey" />
+      <MemberSignature Language="C++ CLI" Value="LShiftKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1673,6 +1974,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>160</MemberValue>
       <Docs>
         <summary>The left SHIFT key.</summary>
       </Docs>
@@ -1681,6 +1983,8 @@
       <MemberSignature Language="C#" Value="LWin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LWin = int32(91)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LWin" />
+      <MemberSignature Language="VB.NET" Value="LWin" />
+      <MemberSignature Language="C++ CLI" Value="LWin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1689,6 +1993,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>91</MemberValue>
       <Docs>
         <summary>The left Windows logo key (Microsoft Natural Keyboard).</summary>
       </Docs>
@@ -1697,6 +2002,8 @@
       <MemberSignature Language="C#" Value="M" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys M = int32(77)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.M" />
+      <MemberSignature Language="VB.NET" Value="M" />
+      <MemberSignature Language="C++ CLI" Value="M" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1705,6 +2012,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>77</MemberValue>
       <Docs>
         <summary>The M key.</summary>
       </Docs>
@@ -1713,6 +2021,8 @@
       <MemberSignature Language="C#" Value="MButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MButton = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MButton" />
+      <MemberSignature Language="VB.NET" Value="MButton" />
+      <MemberSignature Language="C++ CLI" Value="MButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1721,6 +2031,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The middle mouse button (three-button mouse).</summary>
       </Docs>
@@ -1729,6 +2040,8 @@
       <MemberSignature Language="C#" Value="MediaNextTrack" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MediaNextTrack = int32(176)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaNextTrack" />
+      <MemberSignature Language="VB.NET" Value="MediaNextTrack" />
+      <MemberSignature Language="C++ CLI" Value="MediaNextTrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1737,6 +2050,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>176</MemberValue>
       <Docs>
         <summary>The media next track key (Windows 2000 or later).</summary>
       </Docs>
@@ -1745,6 +2059,8 @@
       <MemberSignature Language="C#" Value="MediaPlayPause" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MediaPlayPause = int32(179)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaPlayPause" />
+      <MemberSignature Language="VB.NET" Value="MediaPlayPause" />
+      <MemberSignature Language="C++ CLI" Value="MediaPlayPause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1753,6 +2069,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>179</MemberValue>
       <Docs>
         <summary>The media play pause key (Windows 2000 or later).</summary>
       </Docs>
@@ -1761,6 +2078,8 @@
       <MemberSignature Language="C#" Value="MediaPreviousTrack" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MediaPreviousTrack = int32(177)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaPreviousTrack" />
+      <MemberSignature Language="VB.NET" Value="MediaPreviousTrack" />
+      <MemberSignature Language="C++ CLI" Value="MediaPreviousTrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1769,6 +2088,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>177</MemberValue>
       <Docs>
         <summary>The media previous track key (Windows 2000 or later).</summary>
       </Docs>
@@ -1777,6 +2097,8 @@
       <MemberSignature Language="C#" Value="MediaStop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MediaStop = int32(178)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaStop" />
+      <MemberSignature Language="VB.NET" Value="MediaStop" />
+      <MemberSignature Language="C++ CLI" Value="MediaStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1785,6 +2107,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>178</MemberValue>
       <Docs>
         <summary>The media Stop key (Windows 2000 or later).</summary>
       </Docs>
@@ -1793,6 +2116,8 @@
       <MemberSignature Language="C#" Value="Menu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Menu = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Menu" />
+      <MemberSignature Language="VB.NET" Value="Menu" />
+      <MemberSignature Language="C++ CLI" Value="Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1801,6 +2126,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>The ALT key.</summary>
       </Docs>
@@ -1809,6 +2135,8 @@
       <MemberSignature Language="C#" Value="Modifiers" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Modifiers = int32(-65536)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Modifiers" />
+      <MemberSignature Language="VB.NET" Value="Modifiers" />
+      <MemberSignature Language="C++ CLI" Value="Modifiers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1817,6 +2145,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>-65536</MemberValue>
       <Docs>
         <summary>The bitmask to extract modifiers from a key value.</summary>
       </Docs>
@@ -1825,6 +2154,8 @@
       <MemberSignature Language="C#" Value="Multiply" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Multiply = int32(106)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Multiply" />
+      <MemberSignature Language="VB.NET" Value="Multiply" />
+      <MemberSignature Language="C++ CLI" Value="Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1833,6 +2164,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>106</MemberValue>
       <Docs>
         <summary>The multiply key.</summary>
       </Docs>
@@ -1841,6 +2173,8 @@
       <MemberSignature Language="C#" Value="N" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys N = int32(78)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.N" />
+      <MemberSignature Language="VB.NET" Value="N" />
+      <MemberSignature Language="C++ CLI" Value="N" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1849,6 +2183,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>78</MemberValue>
       <Docs>
         <summary>The N key.</summary>
       </Docs>
@@ -1857,6 +2192,8 @@
       <MemberSignature Language="C#" Value="Next" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Next = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Next" />
+      <MemberSignature Language="VB.NET" Value="Next" />
+      <MemberSignature Language="C++ CLI" Value="Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1865,6 +2202,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>The PAGE DOWN key.</summary>
       </Docs>
@@ -1873,6 +2211,8 @@
       <MemberSignature Language="C#" Value="NoName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NoName = int32(252)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NoName" />
+      <MemberSignature Language="VB.NET" Value="NoName" />
+      <MemberSignature Language="C++ CLI" Value="NoName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1881,6 +2221,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>252</MemberValue>
       <Docs>
         <summary>A constant reserved for future use.</summary>
       </Docs>
@@ -1889,6 +2230,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1897,6 +2240,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No key pressed.</summary>
       </Docs>
@@ -1905,6 +2249,8 @@
       <MemberSignature Language="C#" Value="NumLock" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumLock = int32(144)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumLock" />
+      <MemberSignature Language="VB.NET" Value="NumLock" />
+      <MemberSignature Language="C++ CLI" Value="NumLock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1913,6 +2259,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>144</MemberValue>
       <Docs>
         <summary>The NUM LOCK key.</summary>
       </Docs>
@@ -1921,6 +2268,8 @@
       <MemberSignature Language="C#" Value="NumPad0" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad0 = int32(96)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad0" />
+      <MemberSignature Language="VB.NET" Value="NumPad0" />
+      <MemberSignature Language="C++ CLI" Value="NumPad0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1929,6 +2278,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>96</MemberValue>
       <Docs>
         <summary>The 0 key on the numeric keypad.</summary>
       </Docs>
@@ -1937,6 +2287,8 @@
       <MemberSignature Language="C#" Value="NumPad1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad1 = int32(97)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad1" />
+      <MemberSignature Language="VB.NET" Value="NumPad1" />
+      <MemberSignature Language="C++ CLI" Value="NumPad1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1945,6 +2297,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>97</MemberValue>
       <Docs>
         <summary>The 1 key on the numeric keypad.</summary>
       </Docs>
@@ -1953,6 +2306,8 @@
       <MemberSignature Language="C#" Value="NumPad2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad2 = int32(98)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad2" />
+      <MemberSignature Language="VB.NET" Value="NumPad2" />
+      <MemberSignature Language="C++ CLI" Value="NumPad2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1961,6 +2316,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>98</MemberValue>
       <Docs>
         <summary>The 2 key on the numeric keypad.</summary>
       </Docs>
@@ -1969,6 +2325,8 @@
       <MemberSignature Language="C#" Value="NumPad3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad3 = int32(99)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad3" />
+      <MemberSignature Language="VB.NET" Value="NumPad3" />
+      <MemberSignature Language="C++ CLI" Value="NumPad3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1977,6 +2335,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>99</MemberValue>
       <Docs>
         <summary>The 3 key on the numeric keypad.</summary>
       </Docs>
@@ -1985,6 +2344,8 @@
       <MemberSignature Language="C#" Value="NumPad4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad4 = int32(100)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad4" />
+      <MemberSignature Language="VB.NET" Value="NumPad4" />
+      <MemberSignature Language="C++ CLI" Value="NumPad4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1993,6 +2354,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>100</MemberValue>
       <Docs>
         <summary>The 4 key on the numeric keypad.</summary>
       </Docs>
@@ -2001,6 +2363,8 @@
       <MemberSignature Language="C#" Value="NumPad5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad5 = int32(101)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad5" />
+      <MemberSignature Language="VB.NET" Value="NumPad5" />
+      <MemberSignature Language="C++ CLI" Value="NumPad5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2009,6 +2373,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>101</MemberValue>
       <Docs>
         <summary>The 5 key on the numeric keypad.</summary>
       </Docs>
@@ -2017,6 +2382,8 @@
       <MemberSignature Language="C#" Value="NumPad6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad6 = int32(102)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad6" />
+      <MemberSignature Language="VB.NET" Value="NumPad6" />
+      <MemberSignature Language="C++ CLI" Value="NumPad6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2025,6 +2392,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>102</MemberValue>
       <Docs>
         <summary>The 6 key on the numeric keypad.</summary>
       </Docs>
@@ -2033,6 +2401,8 @@
       <MemberSignature Language="C#" Value="NumPad7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad7 = int32(103)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad7" />
+      <MemberSignature Language="VB.NET" Value="NumPad7" />
+      <MemberSignature Language="C++ CLI" Value="NumPad7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2041,6 +2411,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>103</MemberValue>
       <Docs>
         <summary>The 7 key on the numeric keypad.</summary>
       </Docs>
@@ -2049,6 +2420,8 @@
       <MemberSignature Language="C#" Value="NumPad8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad8 = int32(104)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad8" />
+      <MemberSignature Language="VB.NET" Value="NumPad8" />
+      <MemberSignature Language="C++ CLI" Value="NumPad8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2057,6 +2430,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>104</MemberValue>
       <Docs>
         <summary>The 8 key on the numeric keypad.</summary>
       </Docs>
@@ -2065,6 +2439,8 @@
       <MemberSignature Language="C#" Value="NumPad9" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad9 = int32(105)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad9" />
+      <MemberSignature Language="VB.NET" Value="NumPad9" />
+      <MemberSignature Language="C++ CLI" Value="NumPad9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2073,6 +2449,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>105</MemberValue>
       <Docs>
         <summary>The 9 key on the numeric keypad.</summary>
       </Docs>
@@ -2081,6 +2458,8 @@
       <MemberSignature Language="C#" Value="O" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys O = int32(79)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.O" />
+      <MemberSignature Language="VB.NET" Value="O" />
+      <MemberSignature Language="C++ CLI" Value="O" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2089,6 +2468,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>79</MemberValue>
       <Docs>
         <summary>The O key.</summary>
       </Docs>
@@ -2097,6 +2477,8 @@
       <MemberSignature Language="C#" Value="Oem1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem1 = int32(186)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem1" />
+      <MemberSignature Language="VB.NET" Value="Oem1" />
+      <MemberSignature Language="C++ CLI" Value="Oem1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2105,6 +2487,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>186</MemberValue>
       <Docs>
         <summary>The OEM 1 key.</summary>
       </Docs>
@@ -2113,6 +2496,8 @@
       <MemberSignature Language="C#" Value="Oem102" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem102 = int32(226)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem102" />
+      <MemberSignature Language="VB.NET" Value="Oem102" />
+      <MemberSignature Language="C++ CLI" Value="Oem102" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2121,6 +2506,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>226</MemberValue>
       <Docs>
         <summary>The OEM 102 key.</summary>
       </Docs>
@@ -2129,6 +2515,8 @@
       <MemberSignature Language="C#" Value="Oem2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem2 = int32(191)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem2" />
+      <MemberSignature Language="VB.NET" Value="Oem2" />
+      <MemberSignature Language="C++ CLI" Value="Oem2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2137,6 +2525,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>191</MemberValue>
       <Docs>
         <summary>The OEM 2 key.</summary>
       </Docs>
@@ -2145,6 +2534,8 @@
       <MemberSignature Language="C#" Value="Oem3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem3 = int32(192)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem3" />
+      <MemberSignature Language="VB.NET" Value="Oem3" />
+      <MemberSignature Language="C++ CLI" Value="Oem3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2153,6 +2544,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>192</MemberValue>
       <Docs>
         <summary>The OEM 3 key.</summary>
       </Docs>
@@ -2161,6 +2553,8 @@
       <MemberSignature Language="C#" Value="Oem4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem4 = int32(219)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem4" />
+      <MemberSignature Language="VB.NET" Value="Oem4" />
+      <MemberSignature Language="C++ CLI" Value="Oem4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2169,6 +2563,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>219</MemberValue>
       <Docs>
         <summary>The OEM 4 key.</summary>
       </Docs>
@@ -2177,6 +2572,8 @@
       <MemberSignature Language="C#" Value="Oem5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem5 = int32(220)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem5" />
+      <MemberSignature Language="VB.NET" Value="Oem5" />
+      <MemberSignature Language="C++ CLI" Value="Oem5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2185,6 +2582,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>220</MemberValue>
       <Docs>
         <summary>The OEM 5 key.</summary>
       </Docs>
@@ -2193,6 +2591,8 @@
       <MemberSignature Language="C#" Value="Oem6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem6 = int32(221)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem6" />
+      <MemberSignature Language="VB.NET" Value="Oem6" />
+      <MemberSignature Language="C++ CLI" Value="Oem6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2201,6 +2601,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>221</MemberValue>
       <Docs>
         <summary>The OEM 6 key.</summary>
       </Docs>
@@ -2209,6 +2610,8 @@
       <MemberSignature Language="C#" Value="Oem7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem7 = int32(222)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem7" />
+      <MemberSignature Language="VB.NET" Value="Oem7" />
+      <MemberSignature Language="C++ CLI" Value="Oem7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2217,6 +2620,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>222</MemberValue>
       <Docs>
         <summary>The OEM 7 key.</summary>
       </Docs>
@@ -2225,6 +2629,8 @@
       <MemberSignature Language="C#" Value="Oem8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem8 = int32(223)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem8" />
+      <MemberSignature Language="VB.NET" Value="Oem8" />
+      <MemberSignature Language="C++ CLI" Value="Oem8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2233,6 +2639,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>223</MemberValue>
       <Docs>
         <summary>The OEM 8 key.</summary>
       </Docs>
@@ -2241,6 +2648,8 @@
       <MemberSignature Language="C#" Value="OemBackslash" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemBackslash = int32(226)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemBackslash" />
+      <MemberSignature Language="VB.NET" Value="OemBackslash" />
+      <MemberSignature Language="C++ CLI" Value="OemBackslash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2249,6 +2658,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>226</MemberValue>
       <Docs>
         <summary>The OEM angle bracket or backslash key on the RT 102 key keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2257,6 +2667,8 @@
       <MemberSignature Language="C#" Value="OemClear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemClear = int32(254)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemClear" />
+      <MemberSignature Language="VB.NET" Value="OemClear" />
+      <MemberSignature Language="C++ CLI" Value="OemClear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2265,6 +2677,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>254</MemberValue>
       <Docs>
         <summary>The CLEAR key.</summary>
       </Docs>
@@ -2273,6 +2686,8 @@
       <MemberSignature Language="C#" Value="OemCloseBrackets" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemCloseBrackets = int32(221)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemCloseBrackets" />
+      <MemberSignature Language="VB.NET" Value="OemCloseBrackets" />
+      <MemberSignature Language="C++ CLI" Value="OemCloseBrackets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2281,6 +2696,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>221</MemberValue>
       <Docs>
         <summary>The OEM close bracket key on a US standard keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2289,6 +2705,8 @@
       <MemberSignature Language="C#" Value="Oemcomma" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oemcomma = int32(188)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemcomma" />
+      <MemberSignature Language="VB.NET" Value="Oemcomma" />
+      <MemberSignature Language="C++ CLI" Value="Oemcomma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2297,6 +2715,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>188</MemberValue>
       <Docs>
         <summary>The OEM comma key on any country/region keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2305,6 +2724,8 @@
       <MemberSignature Language="C#" Value="OemMinus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemMinus = int32(189)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemMinus" />
+      <MemberSignature Language="VB.NET" Value="OemMinus" />
+      <MemberSignature Language="C++ CLI" Value="OemMinus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2313,6 +2734,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>189</MemberValue>
       <Docs>
         <summary>The OEM minus key on any country/region keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2321,6 +2743,8 @@
       <MemberSignature Language="C#" Value="OemOpenBrackets" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemOpenBrackets = int32(219)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemOpenBrackets" />
+      <MemberSignature Language="VB.NET" Value="OemOpenBrackets" />
+      <MemberSignature Language="C++ CLI" Value="OemOpenBrackets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2329,6 +2753,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>219</MemberValue>
       <Docs>
         <summary>The OEM open bracket key on a US standard keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2337,6 +2762,8 @@
       <MemberSignature Language="C#" Value="OemPeriod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemPeriod = int32(190)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemPeriod" />
+      <MemberSignature Language="VB.NET" Value="OemPeriod" />
+      <MemberSignature Language="C++ CLI" Value="OemPeriod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2345,6 +2772,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>190</MemberValue>
       <Docs>
         <summary>The OEM period key on any country/region keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2353,6 +2781,8 @@
       <MemberSignature Language="C#" Value="OemPipe" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemPipe = int32(220)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemPipe" />
+      <MemberSignature Language="VB.NET" Value="OemPipe" />
+      <MemberSignature Language="C++ CLI" Value="OemPipe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2361,6 +2791,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>220</MemberValue>
       <Docs>
         <summary>The OEM pipe key on a US standard keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2369,6 +2800,8 @@
       <MemberSignature Language="C#" Value="Oemplus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oemplus = int32(187)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemplus" />
+      <MemberSignature Language="VB.NET" Value="Oemplus" />
+      <MemberSignature Language="C++ CLI" Value="Oemplus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2377,6 +2810,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>187</MemberValue>
       <Docs>
         <summary>The OEM plus key on any country/region keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2385,6 +2819,8 @@
       <MemberSignature Language="C#" Value="OemQuestion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemQuestion = int32(191)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemQuestion" />
+      <MemberSignature Language="VB.NET" Value="OemQuestion" />
+      <MemberSignature Language="C++ CLI" Value="OemQuestion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2393,6 +2829,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>191</MemberValue>
       <Docs>
         <summary>The OEM question mark key on a US standard keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2401,6 +2838,8 @@
       <MemberSignature Language="C#" Value="OemQuotes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemQuotes = int32(222)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemQuotes" />
+      <MemberSignature Language="VB.NET" Value="OemQuotes" />
+      <MemberSignature Language="C++ CLI" Value="OemQuotes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2409,6 +2848,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>222</MemberValue>
       <Docs>
         <summary>The OEM singled/double quote key on a US standard keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2417,6 +2857,8 @@
       <MemberSignature Language="C#" Value="OemSemicolon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemSemicolon = int32(186)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemSemicolon" />
+      <MemberSignature Language="VB.NET" Value="OemSemicolon" />
+      <MemberSignature Language="C++ CLI" Value="OemSemicolon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2425,6 +2867,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>186</MemberValue>
       <Docs>
         <summary>The OEM Semicolon key on a US standard keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2433,6 +2876,8 @@
       <MemberSignature Language="C#" Value="Oemtilde" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oemtilde = int32(192)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemtilde" />
+      <MemberSignature Language="VB.NET" Value="Oemtilde" />
+      <MemberSignature Language="C++ CLI" Value="Oemtilde" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2441,6 +2886,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>192</MemberValue>
       <Docs>
         <summary>The OEM tilde key on a US standard keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2449,6 +2895,8 @@
       <MemberSignature Language="C#" Value="P" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys P = int32(80)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.P" />
+      <MemberSignature Language="VB.NET" Value="P" />
+      <MemberSignature Language="C++ CLI" Value="P" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2457,6 +2905,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>80</MemberValue>
       <Docs>
         <summary>The P key.</summary>
       </Docs>
@@ -2465,6 +2914,8 @@
       <MemberSignature Language="C#" Value="Pa1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Pa1 = int32(253)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Pa1" />
+      <MemberSignature Language="VB.NET" Value="Pa1" />
+      <MemberSignature Language="C++ CLI" Value="Pa1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2473,6 +2924,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>253</MemberValue>
       <Docs>
         <summary>The PA1 key.</summary>
       </Docs>
@@ -2481,6 +2933,8 @@
       <MemberSignature Language="C#" Value="Packet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Packet = int32(231)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Packet" />
+      <MemberSignature Language="VB.NET" Value="Packet" />
+      <MemberSignature Language="C++ CLI" Value="Packet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2489,6 +2943,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>231</MemberValue>
       <Docs>
         <summary>Used to pass Unicode characters as if they were keystrokes. The Packet key value is the low word of a 32-bit virtual-key value used for non-keyboard input methods.</summary>
       </Docs>
@@ -2497,6 +2952,8 @@
       <MemberSignature Language="C#" Value="PageDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys PageDown = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PageDown" />
+      <MemberSignature Language="VB.NET" Value="PageDown" />
+      <MemberSignature Language="C++ CLI" Value="PageDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2505,6 +2962,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>The PAGE DOWN key.</summary>
       </Docs>
@@ -2513,6 +2971,8 @@
       <MemberSignature Language="C#" Value="PageUp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys PageUp = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PageUp" />
+      <MemberSignature Language="VB.NET" Value="PageUp" />
+      <MemberSignature Language="C++ CLI" Value="PageUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2521,6 +2981,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>The PAGE UP key.</summary>
       </Docs>
@@ -2529,6 +2990,8 @@
       <MemberSignature Language="C#" Value="Pause" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Pause = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Pause" />
+      <MemberSignature Language="VB.NET" Value="Pause" />
+      <MemberSignature Language="C++ CLI" Value="Pause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2537,6 +3000,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>The PAUSE key.</summary>
       </Docs>
@@ -2545,6 +3009,8 @@
       <MemberSignature Language="C#" Value="Play" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Play = int32(250)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Play" />
+      <MemberSignature Language="VB.NET" Value="Play" />
+      <MemberSignature Language="C++ CLI" Value="Play" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2553,6 +3019,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>250</MemberValue>
       <Docs>
         <summary>The PLAY key.</summary>
       </Docs>
@@ -2561,6 +3028,8 @@
       <MemberSignature Language="C#" Value="Print" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Print = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Print" />
+      <MemberSignature Language="VB.NET" Value="Print" />
+      <MemberSignature Language="C++ CLI" Value="Print" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2569,6 +3038,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>The PRINT key.</summary>
       </Docs>
@@ -2577,6 +3047,8 @@
       <MemberSignature Language="C#" Value="PrintScreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys PrintScreen = int32(44)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PrintScreen" />
+      <MemberSignature Language="VB.NET" Value="PrintScreen" />
+      <MemberSignature Language="C++ CLI" Value="PrintScreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2585,6 +3057,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>The PRINT SCREEN key.</summary>
       </Docs>
@@ -2593,6 +3066,8 @@
       <MemberSignature Language="C#" Value="Prior" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Prior = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Prior" />
+      <MemberSignature Language="VB.NET" Value="Prior" />
+      <MemberSignature Language="C++ CLI" Value="Prior" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2601,6 +3076,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>The PAGE UP key.</summary>
       </Docs>
@@ -2609,6 +3085,8 @@
       <MemberSignature Language="C#" Value="ProcessKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys ProcessKey = int32(229)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ProcessKey" />
+      <MemberSignature Language="VB.NET" Value="ProcessKey" />
+      <MemberSignature Language="C++ CLI" Value="ProcessKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2617,6 +3095,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>229</MemberValue>
       <Docs>
         <summary>The PROCESS KEY key.</summary>
       </Docs>
@@ -2625,6 +3104,8 @@
       <MemberSignature Language="C#" Value="Q" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Q = int32(81)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Q" />
+      <MemberSignature Language="VB.NET" Value="Q" />
+      <MemberSignature Language="C++ CLI" Value="Q" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2633,6 +3114,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>81</MemberValue>
       <Docs>
         <summary>The Q key.</summary>
       </Docs>
@@ -2641,6 +3123,8 @@
       <MemberSignature Language="C#" Value="R" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys R = int32(82)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.R" />
+      <MemberSignature Language="VB.NET" Value="R" />
+      <MemberSignature Language="C++ CLI" Value="R" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2649,6 +3133,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>82</MemberValue>
       <Docs>
         <summary>The R key.</summary>
       </Docs>
@@ -2657,6 +3142,8 @@
       <MemberSignature Language="C#" Value="RButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RButton = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RButton" />
+      <MemberSignature Language="VB.NET" Value="RButton" />
+      <MemberSignature Language="C++ CLI" Value="RButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2665,6 +3152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The right mouse button.</summary>
       </Docs>
@@ -2673,6 +3161,8 @@
       <MemberSignature Language="C#" Value="RControlKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RControlKey = int32(163)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RControlKey" />
+      <MemberSignature Language="VB.NET" Value="RControlKey" />
+      <MemberSignature Language="C++ CLI" Value="RControlKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2681,6 +3171,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>163</MemberValue>
       <Docs>
         <summary>The right CTRL key.</summary>
       </Docs>
@@ -2689,6 +3180,8 @@
       <MemberSignature Language="C#" Value="Return" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Return = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Return" />
+      <MemberSignature Language="VB.NET" Value="Return" />
+      <MemberSignature Language="C++ CLI" Value="Return" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2697,6 +3190,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>The RETURN key.</summary>
       </Docs>
@@ -2705,6 +3199,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Right = int32(39)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2713,6 +3209,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>The RIGHT ARROW key.</summary>
       </Docs>
@@ -2721,6 +3218,8 @@
       <MemberSignature Language="C#" Value="RMenu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RMenu = int32(165)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RMenu" />
+      <MemberSignature Language="VB.NET" Value="RMenu" />
+      <MemberSignature Language="C++ CLI" Value="RMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2729,6 +3228,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>165</MemberValue>
       <Docs>
         <summary>The right ALT key.</summary>
       </Docs>
@@ -2737,6 +3237,8 @@
       <MemberSignature Language="C#" Value="RShiftKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RShiftKey = int32(161)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RShiftKey" />
+      <MemberSignature Language="VB.NET" Value="RShiftKey" />
+      <MemberSignature Language="C++ CLI" Value="RShiftKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2745,6 +3247,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>161</MemberValue>
       <Docs>
         <summary>The right SHIFT key.</summary>
       </Docs>
@@ -2753,6 +3256,8 @@
       <MemberSignature Language="C#" Value="RWin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RWin = int32(92)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RWin" />
+      <MemberSignature Language="VB.NET" Value="RWin" />
+      <MemberSignature Language="C++ CLI" Value="RWin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2761,6 +3266,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>92</MemberValue>
       <Docs>
         <summary>The right Windows logo key (Microsoft Natural Keyboard).</summary>
       </Docs>
@@ -2769,6 +3275,8 @@
       <MemberSignature Language="C#" Value="S" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys S = int32(83)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.S" />
+      <MemberSignature Language="VB.NET" Value="S" />
+      <MemberSignature Language="C++ CLI" Value="S" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2777,6 +3285,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>83</MemberValue>
       <Docs>
         <summary>The S key.</summary>
       </Docs>
@@ -2785,6 +3294,8 @@
       <MemberSignature Language="C#" Value="Scroll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Scroll = int32(145)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Scroll" />
+      <MemberSignature Language="VB.NET" Value="Scroll" />
+      <MemberSignature Language="C++ CLI" Value="Scroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2793,6 +3304,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>145</MemberValue>
       <Docs>
         <summary>The SCROLL LOCK key.</summary>
       </Docs>
@@ -2801,6 +3313,8 @@
       <MemberSignature Language="C#" Value="Select" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Select = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Select" />
+      <MemberSignature Language="VB.NET" Value="Select" />
+      <MemberSignature Language="C++ CLI" Value="Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2809,6 +3323,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>The SELECT key.</summary>
       </Docs>
@@ -2817,6 +3332,8 @@
       <MemberSignature Language="C#" Value="SelectMedia" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys SelectMedia = int32(181)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.SelectMedia" />
+      <MemberSignature Language="VB.NET" Value="SelectMedia" />
+      <MemberSignature Language="C++ CLI" Value="SelectMedia" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2825,6 +3342,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>181</MemberValue>
       <Docs>
         <summary>The select media key (Windows 2000 or later).</summary>
       </Docs>
@@ -2833,6 +3351,8 @@
       <MemberSignature Language="C#" Value="Separator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Separator = int32(108)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Separator" />
+      <MemberSignature Language="VB.NET" Value="Separator" />
+      <MemberSignature Language="C++ CLI" Value="Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2841,6 +3361,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>108</MemberValue>
       <Docs>
         <summary>The separator key.</summary>
       </Docs>
@@ -2849,6 +3370,8 @@
       <MemberSignature Language="C#" Value="Shift" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Shift = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Shift" />
+      <MemberSignature Language="VB.NET" Value="Shift" />
+      <MemberSignature Language="C++ CLI" Value="Shift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2857,6 +3380,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The SHIFT modifier key.</summary>
       </Docs>
@@ -2865,6 +3389,8 @@
       <MemberSignature Language="C#" Value="ShiftKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys ShiftKey = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ShiftKey" />
+      <MemberSignature Language="VB.NET" Value="ShiftKey" />
+      <MemberSignature Language="C++ CLI" Value="ShiftKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2873,6 +3399,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The SHIFT key.</summary>
       </Docs>
@@ -2881,6 +3408,8 @@
       <MemberSignature Language="C#" Value="Sleep" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Sleep = int32(95)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Sleep" />
+      <MemberSignature Language="VB.NET" Value="Sleep" />
+      <MemberSignature Language="C++ CLI" Value="Sleep" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2889,6 +3418,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>95</MemberValue>
       <Docs>
         <summary>The computer sleep key.</summary>
       </Docs>
@@ -2897,6 +3427,8 @@
       <MemberSignature Language="C#" Value="Snapshot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Snapshot = int32(44)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Snapshot" />
+      <MemberSignature Language="VB.NET" Value="Snapshot" />
+      <MemberSignature Language="C++ CLI" Value="Snapshot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2905,6 +3437,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>The PRINT SCREEN key.</summary>
       </Docs>
@@ -2913,6 +3446,8 @@
       <MemberSignature Language="C#" Value="Space" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Space = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Space" />
+      <MemberSignature Language="VB.NET" Value="Space" />
+      <MemberSignature Language="C++ CLI" Value="Space" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2921,6 +3456,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The SPACEBAR key.</summary>
       </Docs>
@@ -2929,6 +3465,8 @@
       <MemberSignature Language="C#" Value="Subtract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Subtract = int32(109)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Subtract" />
+      <MemberSignature Language="VB.NET" Value="Subtract" />
+      <MemberSignature Language="C++ CLI" Value="Subtract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2937,6 +3475,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>109</MemberValue>
       <Docs>
         <summary>The subtract key.</summary>
       </Docs>
@@ -2945,6 +3484,8 @@
       <MemberSignature Language="C#" Value="T" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys T = int32(84)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.T" />
+      <MemberSignature Language="VB.NET" Value="T" />
+      <MemberSignature Language="C++ CLI" Value="T" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2953,6 +3494,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>84</MemberValue>
       <Docs>
         <summary>The T key.</summary>
       </Docs>
@@ -2961,6 +3503,8 @@
       <MemberSignature Language="C#" Value="Tab" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Tab = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Tab" />
+      <MemberSignature Language="VB.NET" Value="Tab" />
+      <MemberSignature Language="C++ CLI" Value="Tab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2969,6 +3513,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The TAB key.</summary>
       </Docs>
@@ -2977,6 +3522,8 @@
       <MemberSignature Language="C#" Value="U" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys U = int32(85)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.U" />
+      <MemberSignature Language="VB.NET" Value="U" />
+      <MemberSignature Language="C++ CLI" Value="U" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2985,6 +3532,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>85</MemberValue>
       <Docs>
         <summary>The U key.</summary>
       </Docs>
@@ -2993,6 +3541,8 @@
       <MemberSignature Language="C#" Value="Up" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Up = int32(38)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Up" />
+      <MemberSignature Language="VB.NET" Value="Up" />
+      <MemberSignature Language="C++ CLI" Value="Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3001,6 +3551,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>The UP ARROW key.</summary>
       </Docs>
@@ -3009,6 +3560,8 @@
       <MemberSignature Language="C#" Value="V" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys V = int32(86)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.V" />
+      <MemberSignature Language="VB.NET" Value="V" />
+      <MemberSignature Language="C++ CLI" Value="V" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3017,6 +3570,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>86</MemberValue>
       <Docs>
         <summary>The V key.</summary>
       </Docs>
@@ -3025,6 +3579,8 @@
       <MemberSignature Language="C#" Value="VolumeDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys VolumeDown = int32(174)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeDown" />
+      <MemberSignature Language="VB.NET" Value="VolumeDown" />
+      <MemberSignature Language="C++ CLI" Value="VolumeDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3033,6 +3589,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>174</MemberValue>
       <Docs>
         <summary>The volume down key (Windows 2000 or later).</summary>
       </Docs>
@@ -3041,6 +3598,8 @@
       <MemberSignature Language="C#" Value="VolumeMute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys VolumeMute = int32(173)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeMute" />
+      <MemberSignature Language="VB.NET" Value="VolumeMute" />
+      <MemberSignature Language="C++ CLI" Value="VolumeMute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3049,6 +3608,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>173</MemberValue>
       <Docs>
         <summary>The volume mute key (Windows 2000 or later).</summary>
       </Docs>
@@ -3057,6 +3617,8 @@
       <MemberSignature Language="C#" Value="VolumeUp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys VolumeUp = int32(175)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeUp" />
+      <MemberSignature Language="VB.NET" Value="VolumeUp" />
+      <MemberSignature Language="C++ CLI" Value="VolumeUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3065,6 +3627,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>175</MemberValue>
       <Docs>
         <summary>The volume up key (Windows 2000 or later).</summary>
       </Docs>
@@ -3073,6 +3636,8 @@
       <MemberSignature Language="C#" Value="W" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys W = int32(87)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.W" />
+      <MemberSignature Language="VB.NET" Value="W" />
+      <MemberSignature Language="C++ CLI" Value="W" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3081,6 +3646,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>87</MemberValue>
       <Docs>
         <summary>The W key.</summary>
       </Docs>
@@ -3089,6 +3655,8 @@
       <MemberSignature Language="C#" Value="X" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys X = int32(88)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.X" />
+      <MemberSignature Language="VB.NET" Value="X" />
+      <MemberSignature Language="C++ CLI" Value="X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3097,6 +3665,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>88</MemberValue>
       <Docs>
         <summary>The X key.</summary>
       </Docs>
@@ -3105,6 +3674,8 @@
       <MemberSignature Language="C#" Value="XButton1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys XButton1 = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.XButton1" />
+      <MemberSignature Language="VB.NET" Value="XButton1" />
+      <MemberSignature Language="C++ CLI" Value="XButton1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3113,6 +3684,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The first x mouse button (five-button mouse).</summary>
       </Docs>
@@ -3121,6 +3693,8 @@
       <MemberSignature Language="C#" Value="XButton2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys XButton2 = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.XButton2" />
+      <MemberSignature Language="VB.NET" Value="XButton2" />
+      <MemberSignature Language="C++ CLI" Value="XButton2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3129,6 +3703,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The second x mouse button (five-button mouse).</summary>
       </Docs>
@@ -3137,6 +3712,8 @@
       <MemberSignature Language="C#" Value="Y" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Y = int32(89)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Y" />
+      <MemberSignature Language="VB.NET" Value="Y" />
+      <MemberSignature Language="C++ CLI" Value="Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3145,6 +3722,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>89</MemberValue>
       <Docs>
         <summary>The Y key.</summary>
       </Docs>
@@ -3153,6 +3731,8 @@
       <MemberSignature Language="C#" Value="Z" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Z = int32(90)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Z" />
+      <MemberSignature Language="VB.NET" Value="Z" />
+      <MemberSignature Language="C++ CLI" Value="Z" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3161,6 +3741,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>90</MemberValue>
       <Docs>
         <summary>The Z key.</summary>
       </Docs>
@@ -3169,6 +3750,8 @@
       <MemberSignature Language="C#" Value="Zoom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Zoom = int32(251)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Zoom" />
+      <MemberSignature Language="VB.NET" Value="Zoom" />
+      <MemberSignature Language="C++ CLI" Value="Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3177,6 +3760,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
+      <MemberValue>251</MemberValue>
       <Docs>
         <summary>The ZOOM key.</summary>
       </Docs>

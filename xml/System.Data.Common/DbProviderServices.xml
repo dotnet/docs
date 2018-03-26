@@ -1,7 +1,9 @@
-<Type Name="DbProviderServices" FullName="System.Data.Common.DbProviderServices">
+﻿<Type Name="DbProviderServices" FullName="System.Data.Common.DbProviderServices">
   <TypeSignature Language="C#" Value="public abstract class DbProviderServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbProviderServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderServices" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbProviderServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbProviderServices abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected DbProviderServices ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DbProviderServices();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -42,10 +46,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateCommandDefinition">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a command definition object from the specified command definition.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateCommandDefinition">
       <MemberSignature Language="C#" Value="public System.Data.Common.DbCommandDefinition CreateCommandDefinition (System.Data.Common.CommandTrees.DbCommandTree commandTree);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbCommandDefinition CreateCommandDefinition(class System.Data.Common.CommandTrees.DbCommandTree commandTree) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.CreateCommandDefinition(System.Data.Common.CommandTrees.DbCommandTree)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCommandDefinition (commandTree As DbCommandTree) As DbCommandDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommandDefinition ^ CreateCommandDefinition(System::Data::Common::CommandTrees::DbCommandTree ^ commandTree);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -68,6 +83,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Data.Common.DbCommandDefinition CreateCommandDefinition (System.Data.Common.DbCommand prototype);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Common.DbCommandDefinition CreateCommandDefinition(class System.Data.Common.DbCommand prototype) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.CreateCommandDefinition(System.Data.Common.DbCommand)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateCommandDefinition (prototype As DbCommand) As DbCommandDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbCommandDefinition ^ CreateCommandDefinition(System::Data::Common::DbCommand ^ prototype);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -90,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbCommandDefinition CreateCommandDefinition (System.Data.Common.DbProviderManifest providerManifest, System.Data.Common.CommandTrees.DbCommandTree commandTree);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbCommandDefinition CreateCommandDefinition(class System.Data.Common.DbProviderManifest providerManifest, class System.Data.Common.CommandTrees.DbCommandTree commandTree) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.CreateCommandDefinition(System.Data.Common.DbProviderManifest,System.Data.Common.CommandTrees.DbCommandTree)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCommandDefinition (providerManifest As DbProviderManifest, commandTree As DbCommandTree) As DbCommandDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommandDefinition ^ CreateCommandDefinition(System::Data::Common::DbProviderManifest ^ providerManifest, System::Data::Common::CommandTrees::DbCommandTree ^ commandTree);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -114,6 +133,7 @@
       <MemberSignature Language="C#" Value="public void CreateDatabase (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateDatabase(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateDatabase(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -139,6 +159,7 @@
       <MemberSignature Language="C#" Value="public string CreateDatabaseScript (string providerManifestToken, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string CreateDatabaseScript(string providerManifestToken, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.CreateDatabaseScript(System.String,System.Data.Metadata.Edm.StoreItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateDatabaseScript(System::String ^ providerManifestToken, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -163,6 +184,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Data.Common.DbCommandDefinition CreateDbCommandDefinition (System.Data.Common.DbProviderManifest providerManifest, System.Data.Common.CommandTrees.DbCommandTree commandTree);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DbCommandDefinition CreateDbCommandDefinition(class System.Data.Common.DbProviderManifest providerManifest, class System.Data.Common.CommandTrees.DbCommandTree commandTree) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.CreateDbCommandDefinition(System.Data.Common.DbProviderManifest,System.Data.Common.CommandTrees.DbCommandTree)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateDbCommandDefinition (providerManifest As DbProviderManifest, commandTree As DbCommandTree) As DbCommandDefinition" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Common::DbCommandDefinition ^ CreateDbCommandDefinition(System::Data::Common::DbProviderManifest ^ providerManifest, System::Data::Common::CommandTrees::DbCommandTree ^ commandTree);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -187,6 +210,7 @@
       <MemberSignature Language="C#" Value="public bool DatabaseExists (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool DatabaseExists(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.DatabaseExists(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DatabaseExists(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -213,6 +237,7 @@
       <MemberSignature Language="C#" Value="protected virtual void DbCreateDatabase (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DbCreateDatabase(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.DbCreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DbCreateDatabase(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -238,6 +263,7 @@
       <MemberSignature Language="C#" Value="protected virtual string DbCreateDatabaseScript (string providerManifestToken, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string DbCreateDatabaseScript(string providerManifestToken, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.DbCreateDatabaseScript(System.String,System.Data.Metadata.Edm.StoreItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ DbCreateDatabaseScript(System::String ^ providerManifestToken, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -262,6 +288,7 @@
       <MemberSignature Language="C#" Value="protected virtual bool DbDatabaseExists (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool DbDatabaseExists(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.DbDatabaseExists(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool DbDatabaseExists(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -289,6 +316,7 @@
       <MemberSignature Language="C#" Value="protected virtual void DbDeleteDatabase (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DbDeleteDatabase(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.DbDeleteDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DbDeleteDatabase(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -314,6 +342,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Data.Spatial.DbSpatialServices DbGetSpatialServices (string manifestToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Spatial.DbSpatialServices DbGetSpatialServices(string manifestToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.DbGetSpatialServices(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function DbGetSpatialServices (manifestToken As String) As DbSpatialServices" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Spatial::DbSpatialServices ^ DbGetSpatialServices(System::String ^ manifestToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -336,6 +366,7 @@
       <MemberSignature Language="C#" Value="public void DeleteDatabase (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteDatabase(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.DeleteDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteDatabase(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -361,6 +392,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Data.Common.DbProviderManifest GetDbProviderManifest (string manifestToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DbProviderManifest GetDbProviderManifest(string manifestToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetDbProviderManifest(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetDbProviderManifest (manifestToken As String) As DbProviderManifest" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Common::DbProviderManifest ^ GetDbProviderManifest(System::String ^ manifestToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -383,6 +416,8 @@
       <MemberSignature Language="C#" Value="protected abstract string GetDbProviderManifestToken (System.Data.Common.DbConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetDbProviderManifestToken(class System.Data.Common.DbConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetDbProviderManifestToken(System.Data.Common.DbConnection)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetDbProviderManifestToken (connection As DbConnection) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GetDbProviderManifestToken(System::Data::Common::DbConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -405,6 +440,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Data.Spatial.DbSpatialDataReader GetDbSpatialDataReader (System.Data.Common.DbDataReader fromReader, string manifestToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Spatial.DbSpatialDataReader GetDbSpatialDataReader(class System.Data.Common.DbDataReader fromReader, string manifestToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetDbSpatialDataReader(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDbSpatialDataReader (fromReader As DbDataReader, manifestToken As String) As DbSpatialDataReader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Spatial::DbSpatialDataReader ^ GetDbSpatialDataReader(System::Data::Common::DbDataReader ^ fromReader, System::String ^ manifestToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -429,6 +466,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.DbProviderFactory GetProviderFactory (System.Data.Common.DbConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbProviderFactory GetProviderFactory(class System.Data.Common.DbConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetProviderFactory(System.Data.Common.DbConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProviderFactory (connection As DbConnection) As DbProviderFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DbProviderFactory ^ GetProviderFactory(System::Data::Common::DbConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -451,6 +490,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbProviderManifest GetProviderManifest (string manifestToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbProviderManifest GetProviderManifest(string manifestToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetProviderManifest(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProviderManifest (manifestToken As String) As DbProviderManifest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbProviderManifest ^ GetProviderManifest(System::String ^ manifestToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -473,6 +514,8 @@
       <MemberSignature Language="C#" Value="public string GetProviderManifestToken (System.Data.Common.DbConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetProviderManifestToken(class System.Data.Common.DbConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetProviderManifestToken(System.Data.Common.DbConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProviderManifestToken (connection As DbConnection) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetProviderManifestToken(System::Data::Common::DbConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -495,6 +538,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.DbProviderServices GetProviderServices (System.Data.Common.DbConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbProviderServices GetProviderServices(class System.Data.Common.DbConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetProviderServices(System.Data.Common.DbConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProviderServices (connection As DbConnection) As DbProviderServices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DbProviderServices ^ GetProviderServices(System::Data::Common::DbConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -517,6 +562,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbSpatialDataReader GetSpatialDataReader (System.Data.Common.DbDataReader fromReader, string manifestToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbSpatialDataReader GetSpatialDataReader(class System.Data.Common.DbDataReader fromReader, string manifestToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetSpatialDataReader(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpatialDataReader (fromReader As DbDataReader, manifestToken As String) As DbSpatialDataReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbSpatialDataReader ^ GetSpatialDataReader(System::Data::Common::DbDataReader ^ fromReader, System::String ^ manifestToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -541,6 +588,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbSpatialServices GetSpatialServices (string manifestToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbSpatialServices GetSpatialServices(string manifestToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.GetSpatialServices(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpatialServices (manifestToken As String) As DbSpatialServices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbSpatialServices ^ GetSpatialServices(System::String ^ manifestToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -563,6 +612,8 @@
       <MemberSignature Language="C#" Value="protected virtual void SetDbParameterValue (System.Data.Common.DbParameter parameter, System.Data.Metadata.Edm.TypeUsage parameterType, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetDbParameterValue(class System.Data.Common.DbParameter parameter, class System.Data.Metadata.Edm.TypeUsage parameterType, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderServices.SetDbParameterValue(System.Data.Common.DbParameter,System.Data.Metadata.Edm.TypeUsage,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDbParameterValue (parameter As DbParameter, parameterType As TypeUsage, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetDbParameterValue(System::Data::Common::DbParameter ^ parameter, System::Data::Metadata::Edm::TypeUsage ^ parameterType, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -584,14 +635,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateCommandDefinition">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a command definition object from the specified command definition.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

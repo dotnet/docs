@@ -1,7 +1,9 @@
-<Type Name="RegistrationException" FullName="System.EnterpriseServices.RegistrationException">
+﻿<Type Name="RegistrationException" FullName="System.EnterpriseServices.RegistrationException">
   <TypeSignature Language="C#" Value="public sealed class RegistrationException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RegistrationException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrationException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegistrationException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public RegistrationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistrationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public RegistrationException (string msg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistrationException(System::String ^ msg);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public RegistrationException (string msg, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistrationException(System::String ^ msg, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.RegistrationErrorInfo[] ErrorInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.RegistrationErrorInfo[] ErrorInfo" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationException.ErrorInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorInfo As RegistrationErrorInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::EnterpriseServices::RegistrationErrorInfo ^&gt; ^ ErrorInfo { cli::array &lt;System::EnterpriseServices::RegistrationErrorInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -117,6 +127,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext ctx);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext ctx) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, ctx As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext ctx);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

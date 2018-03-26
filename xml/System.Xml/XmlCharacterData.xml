@@ -1,7 +1,9 @@
-<Type Name="XmlCharacterData" FullName="System.Xml.XmlCharacterData">
+﻿<Type Name="XmlCharacterData" FullName="System.Xml.XmlCharacterData">
   <TypeSignature Language="C#" Value="public abstract class XmlCharacterData : System.Xml.XmlLinkedNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlCharacterData extends System.Xml.XmlLinkedNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlCharacterData" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlCharacterData&#xA;Inherits XmlLinkedNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlCharacterData abstract : System::Xml::XmlLinkedNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -29,9 +31,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected XmlCharacterData (string data, System.Xml.XmlDocument doc);" />
+      <MemberSignature Language="C#" Value="protected internal XmlCharacterData (string data, System.Xml.XmlDocument doc);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string data, class System.Xml.XmlDocument doc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.#ctor(System.String,System.Xml.XmlDocument)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (data As String, doc As XmlDocument)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; XmlCharacterData(System::String ^ data, System::Xml::XmlDocument ^ doc);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public virtual void AppendData (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AppendData(string strData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.AppendData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AppendData (strData As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AppendData(System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -110,6 +116,8 @@
       <MemberSignature Language="C#" Value="public virtual string Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Data" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlCharacterData.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Data As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -148,6 +156,8 @@
       <MemberSignature Language="C#" Value="public virtual void DeleteData (int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteData(int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.DeleteData(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteData (offset As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteData(int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -194,6 +204,8 @@
       <MemberSignature Language="C#" Value="public override string InnerText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlCharacterData.InnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -228,6 +240,8 @@
       <MemberSignature Language="C#" Value="public virtual void InsertData (int offset, string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertData(int32 offset, string strData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.InsertData(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub InsertData (offset As Integer, strData As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InsertData(int offset, System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -274,6 +288,8 @@
       <MemberSignature Language="C#" Value="public virtual int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlCharacterData.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -305,6 +321,8 @@
       <MemberSignature Language="C#" Value="public virtual void ReplaceData (int offset, int count, string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReplaceData(int32 offset, int32 count, string strData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.ReplaceData(System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReplaceData (offset As Integer, count As Integer, strData As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReplaceData(int offset, int count, System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -353,6 +371,8 @@
       <MemberSignature Language="C#" Value="public virtual string Substring (int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Substring(int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.Substring(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Substring (offset As Integer, count As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Substring(int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -390,6 +410,8 @@
       <MemberSignature Language="C#" Value="public override string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlCharacterData.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>

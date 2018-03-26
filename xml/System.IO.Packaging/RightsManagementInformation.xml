@@ -1,7 +1,9 @@
-<Type Name="RightsManagementInformation" FullName="System.IO.Packaging.RightsManagementInformation">
+﻿<Type Name="RightsManagementInformation" FullName="System.IO.Packaging.RightsManagementInformation">
   <TypeSignature Language="C#" Value="public class RightsManagementInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RightsManagementInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.RightsManagementInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Class RightsManagementInformation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RightsManagementInformation" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public System.Security.RightsManagement.CryptoProvider CryptoProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.RightsManagement.CryptoProvider CryptoProvider" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.RightsManagementInformation.CryptoProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property CryptoProvider As CryptoProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::RightsManagement::CryptoProvider ^ CryptoProvider { System::Security::RightsManagement::CryptoProvider ^ get(); void set(System::Security::RightsManagement::CryptoProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public void DeleteUseLicense (System.Security.RightsManagement.ContentUser userKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteUseLicense(class System.Security.RightsManagement.ContentUser userKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.DeleteUseLicense(System.Security.RightsManagement.ContentUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteUseLicense (userKey As ContentUser)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteUseLicense(System::Security::RightsManagement::ContentUser ^ userKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.UseLicense&gt; GetEmbeddedUseLicenses ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IDictionary`2&lt;class System.Security.RightsManagement.ContentUser, class System.Security.RightsManagement.UseLicense&gt; GetEmbeddedUseLicenses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.GetEmbeddedUseLicenses" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEmbeddedUseLicenses () As IDictionary(Of ContentUser, UseLicense)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::Security::RightsManagement::ContentUser ^, System::Security::RightsManagement::UseLicense ^&gt; ^ GetEmbeddedUseLicenses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="public System.Security.RightsManagement.PublishLicense LoadPublishLicense ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.PublishLicense LoadPublishLicense() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.LoadPublishLicense" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadPublishLicense () As PublishLicense" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::RightsManagement::PublishLicense ^ LoadPublishLicense();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -157,6 +167,8 @@
       <MemberSignature Language="C#" Value="public System.Security.RightsManagement.UseLicense LoadUseLicense (System.Security.RightsManagement.ContentUser userKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.UseLicense LoadUseLicense(class System.Security.RightsManagement.ContentUser userKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.LoadUseLicense(System.Security.RightsManagement.ContentUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadUseLicense (userKey As ContentUser) As UseLicense" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::RightsManagement::UseLicense ^ LoadUseLicense(System::Security::RightsManagement::ContentUser ^ userKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -195,6 +207,7 @@
       <MemberSignature Language="C#" Value="public void SavePublishLicense (System.Security.RightsManagement.PublishLicense publishLicense);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SavePublishLicense(class System.Security.RightsManagement.PublishLicense publishLicense) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.SavePublishLicense(System.Security.RightsManagement.PublishLicense)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SavePublishLicense(System::Security::RightsManagement::PublishLicense ^ publishLicense);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -227,6 +240,7 @@
       <MemberSignature Language="C#" Value="public void SaveUseLicense (System.Security.RightsManagement.ContentUser userKey, System.Security.RightsManagement.UseLicense useLicense);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveUseLicense(class System.Security.RightsManagement.ContentUser userKey, class System.Security.RightsManagement.UseLicense useLicense) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.SaveUseLicense(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.UseLicense)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveUseLicense(System::Security::RightsManagement::ContentUser ^ userKey, System::Security::RightsManagement::UseLicense ^ useLicense);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

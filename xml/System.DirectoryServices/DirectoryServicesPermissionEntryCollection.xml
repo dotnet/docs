@@ -1,7 +1,9 @@
-<Type Name="DirectoryServicesPermissionEntryCollection" FullName="System.DirectoryServices.DirectoryServicesPermissionEntryCollection">
+﻿<Type Name="DirectoryServicesPermissionEntryCollection" FullName="System.DirectoryServices.DirectoryServicesPermissionEntryCollection">
   <TypeSignature Language="C#" Value="public class DirectoryServicesPermissionEntryCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DirectoryServicesPermissionEntryCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesPermissionEntryCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesPermissionEntryCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.DirectoryServices.DirectoryServicesPermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.DirectoryServices.DirectoryServicesPermissionEntry value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.Add(System.DirectoryServices.DirectoryServicesPermissionEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As DirectoryServicesPermissionEntry) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::DirectoryServices::DirectoryServicesPermissionEntry ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.DirectoryServices.DirectoryServicesPermissionEntry[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.DirectoryServices.DirectoryServicesPermissionEntry[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.AddRange(System.DirectoryServices.DirectoryServicesPermissionEntry[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As DirectoryServicesPermissionEntry())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::DirectoryServices::DirectoryServicesPermissionEntry ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.DirectoryServices.DirectoryServicesPermissionEntryCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.DirectoryServices.DirectoryServicesPermissionEntryCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.AddRange(System.DirectoryServices.DirectoryServicesPermissionEntryCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As DirectoryServicesPermissionEntryCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::DirectoryServices::DirectoryServicesPermissionEntryCollection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.DirectoryServicesPermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.DirectoryServicesPermissionEntry value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.Contains(System.DirectoryServices.DirectoryServicesPermissionEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As DirectoryServicesPermissionEntry) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::DirectoryServicesPermissionEntry ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -120,6 +130,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.DirectoryServicesPermissionEntry[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.DirectoryServicesPermissionEntry[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.CopyTo(System.DirectoryServices.DirectoryServicesPermissionEntry[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DirectoryServicesPermissionEntry(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::DirectoryServicesPermissionEntry ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -145,6 +157,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.DirectoryServicesPermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.DirectoryServicesPermissionEntry value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.IndexOf(System.DirectoryServices.DirectoryServicesPermissionEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As DirectoryServicesPermissionEntry) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::DirectoryServicesPermissionEntry ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -169,6 +183,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.DirectoryServices.DirectoryServicesPermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.DirectoryServices.DirectoryServicesPermissionEntry value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.Insert(System.Int32,System.DirectoryServices.DirectoryServicesPermissionEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As DirectoryServicesPermissionEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::DirectoryServices::DirectoryServicesPermissionEntry ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -194,6 +210,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryServicesPermissionEntry this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.DirectoryServicesPermissionEntry Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DirectoryServicesPermissionEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryServicesPermissionEntry ^ default[int] { System::DirectoryServices::DirectoryServicesPermissionEntry ^ get(int index); void set(int index, System::DirectoryServices::DirectoryServicesPermissionEntry ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -227,6 +245,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.OnClear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -247,6 +267,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.OnInsert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -272,6 +294,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRemove (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemove(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.OnRemove(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -297,6 +321,8 @@
       <MemberSignature Language="C#" Value="protected override void OnSet (int index, object oldValue, object newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.OnSet(System.Int32,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -324,6 +350,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.DirectoryServices.DirectoryServicesPermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.DirectoryServices.DirectoryServicesPermissionEntry value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionEntryCollection.Remove(System.DirectoryServices.DirectoryServicesPermissionEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DirectoryServicesPermissionEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::DirectoryServices::DirectoryServicesPermissionEntry ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

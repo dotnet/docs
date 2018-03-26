@@ -1,7 +1,9 @@
-<Type Name="SessionIDManager" FullName="System.Web.SessionState.SessionIDManager">
+﻿<Type Name="SessionIDManager" FullName="System.Web.SessionState.SessionIDManager">
   <TypeSignature Language="C#" Value="public class SessionIDManager : System.Web.SessionState.ISessionIDManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionIDManager extends System.Object implements class System.Web.SessionState.ISessionIDManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionIDManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionIDManager&#xA;Implements ISessionIDManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionIDManager : System::Web::SessionState::ISessionIDManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public SessionIDManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionIDManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,7 +67,12 @@
       <MemberSignature Language="C#" Value="public virtual string CreateSessionID (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CreateSessionID(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.CreateSessionID(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSessionID (context As HttpContext) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ CreateSessionID(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.CreateSessionID(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,6 +132,8 @@
       <MemberSignature Language="C#" Value="public virtual string Decode (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Decode(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.Decode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Decode (id As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Decode(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +168,8 @@
       <MemberSignature Language="C#" Value="public virtual string Encode (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Encode(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.Encode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Encode (id As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Encode(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,7 +203,12 @@
       <MemberSignature Language="C#" Value="public string GetSessionID (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSessionID(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.GetSessionID(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSessionID (context As HttpContext) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetSessionID(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.GetSessionID(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -222,7 +240,12 @@
       <MemberSignature Language="C#" Value="public void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.Initialize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -247,7 +270,12 @@
       <MemberSignature Language="C#" Value="public bool InitializeRequest (System.Web.HttpContext context, bool suppressAutoDetectRedirect, out bool supportSessionIDReissue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool InitializeRequest(class System.Web.HttpContext context, bool suppressAutoDetectRedirect, [out] bool&amp; supportSessionIDReissue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.InitializeRequest(System.Web.HttpContext,System.Boolean,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InitializeRequest (context As HttpContext, suppressAutoDetectRedirect As Boolean, ByRef supportSessionIDReissue As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool InitializeRequest(System::Web::HttpContext ^ context, bool suppressAutoDetectRedirect, [Runtime::InteropServices::Out] bool % supportSessionIDReissue);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.InitializeRequest(System.Web.HttpContext,System.Boolean,System.Boolean@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -284,7 +312,12 @@
       <MemberSignature Language="C#" Value="public void RemoveSessionID (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveSessionID(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.RemoveSessionID(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveSessionID (context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveSessionID(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.RemoveSessionID(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -314,7 +347,12 @@
       <MemberSignature Language="C#" Value="public void SaveSessionID (System.Web.HttpContext context, string id, out bool redirected, out bool cookieAdded);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveSessionID(class System.Web.HttpContext context, string id, [out] bool&amp; redirected, [out] bool&amp; cookieAdded) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.SaveSessionID(System.Web.HttpContext,System.String,System.Boolean@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveSessionID (context As HttpContext, id As String, ByRef redirected As Boolean, ByRef cookieAdded As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SaveSessionID(System::Web::HttpContext ^ context, System::String ^ id, [Runtime::InteropServices::Out] bool % redirected, [Runtime::InteropServices::Out] bool % cookieAdded);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.SaveSessionID(System.Web.HttpContext,System.String,System.Boolean@,System.Boolean@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -359,6 +397,8 @@
       <MemberSignature Language="C#" Value="public static int SessionIDMaxLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 SessionIDMaxLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionIDManager.SessionIDMaxLength" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SessionIDMaxLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int SessionIDMaxLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -386,7 +426,12 @@
       <MemberSignature Language="C#" Value="public virtual bool Validate (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Validate(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.Validate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Validate (id As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Validate(System::String ^ id);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.Validate(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

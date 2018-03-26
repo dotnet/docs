@@ -1,7 +1,9 @@
-<Type Name="EntityDataSourceChangedEventArgs" FullName="System.Web.UI.WebControls.EntityDataSourceChangedEventArgs">
+﻿<Type Name="EntityDataSourceChangedEventArgs" FullName="System.Web.UI.WebControls.EntityDataSourceChangedEventArgs">
   <TypeSignature Language="C#" Value="public class EntityDataSourceChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityDataSourceChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityDataSourceChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Objects.ObjectContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ObjectContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectContext ^ Context { System::Data::Objects::ObjectContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public object Entity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Entity" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Entity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entity As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Entity { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.ExceptionHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>

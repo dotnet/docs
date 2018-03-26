@@ -1,7 +1,9 @@
-<Type Name="WSTrustChannel" FullName="System.ServiceModel.Security.WSTrustChannel">
+﻿<Type Name="WSTrustChannel" FullName="System.ServiceModel.Security.WSTrustChannel">
   <TypeSignature Language="C#" Value="public class WSTrustChannel : System.ServiceModel.Channels.IChannel, System.ServiceModel.Security.IWSTrustChannelContract" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSTrustChannel extends System.Object implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.ICommunicationObject, class System.ServiceModel.Security.IWSTrustChannelContract, class System.ServiceModel.Security.IWSTrustContract" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustChannel" />
+  <TypeSignature Language="VB.NET" Value="Public Class WSTrustChannel&#xA;Implements IChannel, IWSTrustChannelContract" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSTrustChannel : System::ServiceModel::Channels::IChannel, System::ServiceModel::Security::IWSTrustChannelContract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public WSTrustChannel (System.ServiceModel.Security.WSTrustChannelFactory factory, System.ServiceModel.Security.IWSTrustChannelContract inner, System.ServiceModel.Security.TrustVersion trustVersion, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context, System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.WSTrustChannelFactory factory, class System.ServiceModel.Security.IWSTrustChannelContract inner, class System.ServiceModel.Security.TrustVersion trustVersion, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context, class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.#ctor(System.ServiceModel.Security.WSTrustChannelFactory,System.ServiceModel.Security.IWSTrustChannelContract,System.ServiceModel.Security.TrustVersion,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustChannel(System::ServiceModel::Security::WSTrustChannelFactory ^ factory, System::ServiceModel::Security::IWSTrustChannelContract ^ inner, System::ServiceModel::Security::TrustVersion ^ trustVersion, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context, System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ requestSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ responseSerializer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,7 +57,12 @@
       <MemberSignature Language="C#" Value="public void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Abort" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Abort</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,11 +76,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginCancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginCancel">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCancel(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginCancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCancel (rst As RequestSecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginCancel(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.BeginCancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,7 +120,11 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCancel(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginCancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginCancel(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.BeginCancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,11 +146,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginClose">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to close a communication object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginClose">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginClose (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginClose(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginClose(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginClose (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginClose(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -148,7 +188,12 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -170,11 +215,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginIssue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Issue message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginIssue">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginIssue (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginIssue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginIssue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginIssue (rst As RequestSecurityToken, callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginIssue(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.BeginIssue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -200,7 +259,11 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginIssue (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginIssue(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginIssue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginIssue(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.BeginIssue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -222,11 +285,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginOpen">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to open a communication object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginOpen">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginOpen (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginOpen(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginOpen(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginOpen (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginOpen(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -250,7 +327,12 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginOpen (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -272,11 +354,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginRenew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginRenew">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRenew (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRenew(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginRenew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginRenew (rst As RequestSecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginRenew(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.BeginRenew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -302,7 +398,11 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRenew (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRenew(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginRenew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginRenew(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.BeginRenew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -324,11 +424,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginValidate">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginValidate (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginValidate(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginValidate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginValidate (rst As RequestSecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginValidate(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.BeginValidate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -354,7 +468,11 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginValidate (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginValidate(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.BeginValidate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginValidate(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.BeginValidate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -376,11 +494,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Cancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Cancel">
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Cancel (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Cancel(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Cancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Cancel (rst As RequestSecurityToken) As RequestSecurityTokenResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ Cancel(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Cancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -402,7 +534,11 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Cancel (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Cancel(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ Cancel(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.Cancel(System.ServiceModel.Channels.Message)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -424,6 +560,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IChannel Channel { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.IChannel Channel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannel.Channel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Channel As IChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::ServiceModel::Channels::IChannel ^ Channel {  public:&#xA;System::ServiceModel::Channels::IChannel ^ get(); protected:&#xA; void set(System::ServiceModel::Channels::IChannel ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -449,6 +587,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.WSTrustChannelFactory ChannelFactory { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.WSTrustChannelFactory ChannelFactory" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannel.ChannelFactory" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelFactory As WSTrustChannelFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::ServiceModel::Security::WSTrustChannelFactory ^ ChannelFactory {  public:&#xA;System::ServiceModel::Security::WSTrustChannelFactory ^ get(); protected:&#xA; void set(System::ServiceModel::Security::WSTrustChannelFactory ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -470,11 +610,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Close">
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -492,7 +646,12 @@
       <MemberSignature Language="C#" Value="public void Close (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Close(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close (timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -513,7 +672,12 @@
       <MemberSignature Language="C#" Value="public event EventHandler Closed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closed" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.WSTrustChannel.Closed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Closed;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -530,7 +694,12 @@
       <MemberSignature Language="C#" Value="public event EventHandler Closing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closing" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.WSTrustChannel.Closing" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Closing As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Closing;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closing</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -547,6 +716,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.IWSTrustChannelContract Contract { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.IWSTrustChannelContract Contract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannel.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public Property Contract As IWSTrustChannelContract" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::ServiceModel::Security::IWSTrustChannelContract ^ Contract {  public:&#xA;System::ServiceModel::Security::IWSTrustChannelContract ^ get(); protected:&#xA; void set(System::ServiceModel::Security::IWSTrustChannelContract ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -572,6 +743,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Channels.Message CreateRequest (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, string requestType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.Message CreateRequest(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, string requestType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.CreateRequest(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateRequest (request As RequestSecurityToken, requestType As String) As Message" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Channels::Message ^ CreateRequest(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, System::String ^ requestType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -592,11 +765,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndCancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndCancel">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndCancel (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndCancel(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndCancel(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndCancel (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndCancel(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.EndCancel(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -618,7 +805,12 @@
       <MemberSignature Language="C#" Value="public void EndCancel (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCancel(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndCancel (result As IAsyncResult, ByRef rstr As RequestSecurityTokenResponse)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndCancel(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % rstr);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -641,7 +833,12 @@
       <MemberSignature Language="C#" Value="public void EndClose (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndClose(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndClose(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndClose (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndClose(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -658,11 +855,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndIssue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Issue message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndIssue">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndIssue (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndIssue(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndIssue(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndIssue (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndIssue(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.EndIssue(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -684,7 +895,12 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken EndIssue (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken EndIssue(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndIssue (result As IAsyncResult, ByRef rstr As RequestSecurityTokenResponse) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ EndIssue(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % rstr);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -708,7 +924,12 @@
       <MemberSignature Language="C#" Value="public void EndOpen (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndOpen(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndOpen(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndOpen (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndOpen(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -725,11 +946,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndRenew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndRenew">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndRenew (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndRenew(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndRenew(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndRenew (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndRenew(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.EndRenew(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -751,7 +986,12 @@
       <MemberSignature Language="C#" Value="public void EndRenew (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRenew(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndRenew (result As IAsyncResult, ByRef rstr As RequestSecurityTokenResponse)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndRenew(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % rstr);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -770,11 +1010,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndValidate">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndValidate (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndValidate(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndValidate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndValidate (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndValidate(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.EndValidate(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -796,7 +1050,12 @@
       <MemberSignature Language="C#" Value="public void EndValidate (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndValidate(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndValidate (result As IAsyncResult, ByRef rstr As RequestSecurityTokenResponse)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndValidate(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % rstr);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -819,7 +1078,12 @@
       <MemberSignature Language="C#" Value="public event EventHandler Faulted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Faulted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.WSTrustChannel.Faulted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Faulted As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Faulted;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Faulted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -836,7 +1100,12 @@
       <MemberSignature Language="C#" Value="public T GetProperty&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetProperty&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.GetProperty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of T As Class) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual T GetProperty();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IChannel.GetProperty``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -863,6 +1132,7 @@
       <MemberSignature Language="C#" Value="protected static string GetRequestAction (string requestType, System.ServiceModel.Security.TrustVersion trustVersion);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string GetRequestAction(string requestType, class System.ServiceModel.Security.TrustVersion trustVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.GetRequestAction(System.String,System.ServiceModel.Security.TrustVersion)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ GetRequestAction(System::String ^ requestType, System::ServiceModel::Security::TrustVersion ^ trustVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -887,6 +1157,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityToken GetTokenFromResponse (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken GetTokenFromResponse(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.GetTokenFromResponse(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTokenFromResponse (request As RequestSecurityToken, response As RequestSecurityTokenResponse) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ GetTokenFromResponse(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -909,11 +1181,25 @@
           <paramref name="response" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Issue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Issue">
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityToken Issue (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken Issue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Issue (rst As RequestSecurityToken) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ Issue(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -935,7 +1221,11 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Issue (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Issue(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Issue(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ Issue(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.Issue(System.ServiceModel.Channels.Message)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -957,7 +1247,12 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityToken Issue (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken Issue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Issue (rst As RequestSecurityToken, ByRef rstr As RequestSecurityTokenResponse) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ Issue(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % rstr);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -977,11 +1272,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from the created state into the opened state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Open">
       <MemberSignature Language="C#" Value="public void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -999,7 +1308,12 @@
       <MemberSignature Language="C#" Value="public void Open (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Open(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open (timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1020,7 +1334,12 @@
       <MemberSignature Language="C#" Value="public event EventHandler Opened;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Opened" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.WSTrustChannel.Opened" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Opened As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Opened;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opened</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1037,7 +1356,12 @@
       <MemberSignature Language="C#" Value="public event EventHandler Opening;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Opening" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.WSTrustChannel.Opening" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Opening As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Opening;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opening</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1054,6 +1378,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse ReadResponse (System.ServiceModel.Channels.Message response);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse ReadResponse(class System.ServiceModel.Channels.Message response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.ReadResponse(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadResponse (response As Message) As RequestSecurityTokenResponse" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ ReadResponse(System::ServiceModel::Channels::Message ^ response);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1072,11 +1398,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Renew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Renew">
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Renew (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Renew(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Renew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Renew (rst As RequestSecurityToken) As RequestSecurityTokenResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ Renew(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Renew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1098,7 +1438,11 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Renew (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Renew(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Renew(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ Renew(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.Renew(System.ServiceModel.Channels.Message)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1120,7 +1464,12 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.CommunicationState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.CommunicationState State" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannel.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As CommunicationState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::CommunicationState State { System::ServiceModel::CommunicationState get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.ICommunicationObject.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1145,6 +1494,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.TrustVersion TrustVersion { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.TrustVersion TrustVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannel.TrustVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustVersion As TrustVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::ServiceModel::Security::TrustVersion ^ TrustVersion {  public:&#xA;System::ServiceModel::Security::TrustVersion ^ get(); protected:&#xA; void set(System::ServiceModel::Security::TrustVersion ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1166,11 +1517,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Validate (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Validate(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Validate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Validate (rst As RequestSecurityToken) As RequestSecurityTokenResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ Validate(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ rst);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Validate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1192,7 +1557,11 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Validate (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Validate(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Validate(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ Validate(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustContract.Validate(System.ServiceModel.Channels.Message)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1214,6 +1583,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer WSTrustRequestSerializer { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer WSTrustRequestSerializer" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannel.WSTrustRequestSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrustRequestSerializer As WSTrustRequestSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ WSTrustRequestSerializer {  public:&#xA;System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ get(); protected:&#xA; void set(System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1239,6 +1610,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer WSTrustResponseSerializer { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer WSTrustResponseSerializer" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannel.WSTrustResponseSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrustResponseSerializer As WSTrustResponseSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ WSTrustResponseSerializer {  public:&#xA;System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ get(); protected:&#xA; void set(System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1264,6 +1637,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext WSTrustSerializationContext { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext WSTrustSerializationContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannel.WSTrustSerializationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrustSerializationContext As WSTrustSerializationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ WSTrustSerializationContext {  public:&#xA;System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ get(); protected:&#xA; void set(System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1285,149 +1660,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Cancel">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends a WS-Trust Cancel message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginRenew">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to send a WS-Trust Renew message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginClose">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to close a communication object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EndRenew">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Completes an asynchronous operation to send a WS-Trust Renew message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginValidate">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to send a WS-Trust Validate message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EndCancel">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Completes an asynchronous operation to send a WS-Trust Cancel message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Renew">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends a WS-Trust Renew message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Open">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes a communication object to transition from the created state into the opened state.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginIssue">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to send a WS-Trust Issue message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Close">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EndIssue">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Completes an asynchronous operation to send a WS-Trust Issue message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Issue">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EndValidate">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Completes an asynchronous operation to send a WS-Trust Validate message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginCancel">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to send a WS-Trust Cancel message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginOpen">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to open a communication object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Validate">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends a WS-Trust Validate message to an endpoint.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

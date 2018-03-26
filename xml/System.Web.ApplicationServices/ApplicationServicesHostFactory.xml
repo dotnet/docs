@@ -1,7 +1,9 @@
-<Type Name="ApplicationServicesHostFactory" FullName="System.Web.ApplicationServices.ApplicationServicesHostFactory">
+﻿<Type Name="ApplicationServicesHostFactory" FullName="System.Web.ApplicationServices.ApplicationServicesHostFactory">
   <TypeSignature Language="C#" Value="public class ApplicationServicesHostFactory : System.ServiceModel.Activation.ServiceHostFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationServicesHostFactory extends System.ServiceModel.Activation.ServiceHostFactory" />
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.ApplicationServicesHostFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationServicesHostFactory&#xA;Inherits ServiceHostFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationServicesHostFactory : System::ServiceModel::Activation::ServiceHostFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public ApplicationServicesHostFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ApplicationServicesHostFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationServicesHostFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.ServiceHost CreateServiceHost (Type serviceType, Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.ServiceHost CreateServiceHost(class System.Type serviceType, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ApplicationServicesHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateServiceHost (serviceType As Type, baseAddresses As Uri()) As ServiceHost" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::ServiceHost ^ CreateServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

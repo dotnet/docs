@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaUnique" FullName="System.Xml.Schema.XmlSchemaUnique">
+﻿<Type Name="XmlSchemaUnique" FullName="System.Xml.Schema.XmlSchemaUnique">
   <TypeSignature Language="C#" Value="public class XmlSchemaUnique : System.Xml.Schema.XmlSchemaIdentityConstraint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaUnique extends System.Xml.Schema.XmlSchemaIdentityConstraint" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaUnique" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaUnique&#xA;Inherits XmlSchemaIdentityConstraint" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaUnique : System::Xml::Schema::XmlSchemaIdentityConstraint" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaUnique ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaUnique.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaUnique();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

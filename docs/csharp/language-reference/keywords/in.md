@@ -16,7 +16,7 @@ ms.author: "wiwagn"
 
 # in (C# Reference)
 
-The `in` contextual keyword is used in four contexts:  
+The `in` keyword is used in four contexts:  
   
 -   [generic type parameters](in-generic-modifier.md) in generic interfaces and delegates.
 -   As a [parameter modifier](in-parameter-modifier.md), which lets you pass an argument to a method by reference rather than by value.

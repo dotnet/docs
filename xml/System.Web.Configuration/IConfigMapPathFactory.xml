@@ -1,7 +1,9 @@
-<Type Name="IConfigMapPathFactory" FullName="System.Web.Configuration.IConfigMapPathFactory">
+﻿<Type Name="IConfigMapPathFactory" FullName="System.Web.Configuration.IConfigMapPathFactory">
   <TypeSignature Language="C#" Value="public interface IConfigMapPathFactory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigMapPathFactory" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.IConfigMapPathFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConfigMapPathFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IConfigMapPathFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.IConfigMapPath Create (string virtualPath, string physicalPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Configuration.IConfigMapPath Create(string virtualPath, string physicalPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IConfigMapPathFactory.Create(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Create (virtualPath As String, physicalPath As String) As IConfigMapPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::IConfigMapPath ^ Create(System::String ^ virtualPath, System::String ^ physicalPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

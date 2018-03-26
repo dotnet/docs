@@ -1,7 +1,9 @@
-<Type Name="MediaTypeNames+Image" FullName="System.Net.Mime.MediaTypeNames+Image">
+﻿<Type Name="MediaTypeNames+Image" FullName="System.Net.Mime.MediaTypeNames+Image">
   <TypeSignature Language="C#" Value="public static class MediaTypeNames.Image" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit MediaTypeNames/Image extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mime.MediaTypeNames.Image" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaTypeNames.Image" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class MediaTypeNames::Image abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public const string Gif;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Gif" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Image.Gif" />
+      <MemberSignature Language="VB.NET" Value="Public Const Gif As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Gif;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public const string Jpeg;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Jpeg" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Image.Jpeg" />
+      <MemberSignature Language="VB.NET" Value="Public Const Jpeg As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Jpeg;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public const string Tiff;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Tiff" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Image.Tiff" />
+      <MemberSignature Language="VB.NET" Value="Public Const Tiff As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Tiff;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="AppDomainManagerInitializationOptions" FullName="System.AppDomainManagerInitializationOptions">
+﻿<Type Name="AppDomainManagerInitializationOptions" FullName="System.AppDomainManagerInitializationOptions">
   <TypeSignature Language="C#" Value="public enum AppDomainManagerInitializationOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppDomainManagerInitializationOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.AppDomainManagerInitializationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AppDomainManagerInitializationOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AppDomainManagerInitializationOptions" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AppDomainManagerInitializationOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.AppDomainManagerInitializationOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.AppDomainManagerInitializationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No initialization action.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="RegisterWithHost" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AppDomainManagerInitializationOptions RegisterWithHost = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.AppDomainManagerInitializationOptions.RegisterWithHost" />
+      <MemberSignature Language="VB.NET" Value="RegisterWithHost" />
+      <MemberSignature Language="C++ CLI" Value="RegisterWithHost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.AppDomainManagerInitializationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Register the COM callable wrapper for the current <see cref="T:System.AppDomainManager" /> with the unmanaged host.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="LegendCellType" FullName="System.Web.UI.DataVisualization.Charting.LegendCellType">
+﻿<Type Name="LegendCellType" FullName="System.Web.UI.DataVisualization.Charting.LegendCellType">
   <TypeSignature Language="C#" Value="public enum LegendCellType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LegendCellType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendCellType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LegendCellType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LegendCellType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Image" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendCellType Image = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendCellType.Image" />
+      <MemberSignature Language="VB.NET" Value="Image" />
+      <MemberSignature Language="C++ CLI" Value="Image" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendCellType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The legend cell contains an image.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="SeriesSymbol" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendCellType SeriesSymbol = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendCellType.SeriesSymbol" />
+      <MemberSignature Language="VB.NET" Value="SeriesSymbol" />
+      <MemberSignature Language="C++ CLI" Value="SeriesSymbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendCellType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The legend cell contains a series symbol, such as a line or rectangle.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendCellType Text = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendCellType.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendCellType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The legend cell contains text.</summary>
       </Docs>

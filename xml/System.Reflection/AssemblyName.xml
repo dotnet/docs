@@ -1,7 +1,9 @@
-<Type Name="AssemblyName" FullName="System.Reflection.AssemblyName">
+﻿<Type Name="AssemblyName" FullName="System.Reflection.AssemblyName">
   <TypeSignature Language="C#" Value="public sealed class AssemblyName : ICloneable, System.Runtime.InteropServices._AssemblyName, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit AssemblyName extends System.Object implements class System.ICloneable, class System.Runtime.InteropServices._AssemblyName, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyName" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyName&#xA;Implements _AssemblyName, ICloneable, IDeserializationCallback, ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyName sealed : ICloneable, System::Runtime::InteropServices::_AssemblyName, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -150,10 +152,23 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
     <altmember cref="P:System.Type.AssemblyQualifiedName" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyName" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AssemblyName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyName();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -195,6 +210,8 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public AssemblyName (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyName(System::String ^ assemblyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -257,7 +274,12 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -292,6 +314,8 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public string CodeBase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CodeBase" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.CodeBase" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeBase As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CodeBase { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -340,6 +364,8 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public System.Reflection.AssemblyContentType ContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.AssemblyContentType ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As AssemblyContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyContentType ContentType { System::Reflection::AssemblyContentType get(); void set(System::Reflection::AssemblyContentType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -378,6 +404,8 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo CultureInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo CultureInfo" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.CultureInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property CultureInfo As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CultureInfo { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -416,6 +444,8 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public string CultureName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CultureName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.CultureName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CultureName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -449,6 +479,8 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public string EscapedCodeBase { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EscapedCodeBase" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.EscapedCodeBase" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EscapedCodeBase As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EscapedCodeBase { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -476,6 +508,8 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public System.Reflection.AssemblyNameFlags Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.AssemblyNameFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As AssemblyNameFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyNameFlags Flags { System::Reflection::AssemblyNameFlags get(); void set(System::Reflection::AssemblyNameFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -520,6 +554,8 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="C#" Value="public string FullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -577,6 +613,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public static System.Reflection.AssemblyName GetAssemblyName (string assemblyFile);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.AssemblyName GetAssemblyName(string assemblyFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.GetAssemblyName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAssemblyName (assemblyFile As String) As AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::AssemblyName ^ GetAssemblyName(System::String ^ assemblyFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -635,7 +673,12 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -670,6 +713,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public byte[] GetPublicKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetPublicKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.GetPublicKey" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPublicKey () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetPublicKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -716,6 +761,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public byte[] GetPublicKeyToken ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetPublicKeyToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.GetPublicKeyToken" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPublicKeyToken () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetPublicKeyToken();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -761,6 +808,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public System.Configuration.Assemblies.AssemblyHashAlgorithm HashAlgorithm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm HashAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.HashAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property HashAlgorithm As AssemblyHashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Assemblies::AssemblyHashAlgorithm HashAlgorithm { System::Configuration::Assemblies::AssemblyHashAlgorithm get(); void set(System::Configuration::Assemblies::AssemblyHashAlgorithm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -806,6 +855,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public System.Reflection.StrongNameKeyPair KeyPair { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.StrongNameKeyPair KeyPair" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.KeyPair" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyPair As StrongNameKeyPair" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::StrongNameKeyPair ^ KeyPair { System::Reflection::StrongNameKeyPair ^ get(); void set(System::Reflection::StrongNameKeyPair ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -849,6 +900,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -900,7 +953,12 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public void OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnDeserialization (sender As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -932,6 +990,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public System.Reflection.ProcessorArchitecture ProcessorArchitecture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.ProcessorArchitecture ProcessorArchitecture" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.ProcessorArchitecture" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProcessorArchitecture As ProcessorArchitecture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ProcessorArchitecture ProcessorArchitecture { System::Reflection::ProcessorArchitecture get(); void set(System::Reflection::ProcessorArchitecture value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -972,6 +1032,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public static bool ReferenceMatchesDefinition (System.Reflection.AssemblyName reference, System.Reflection.AssemblyName definition);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ReferenceMatchesDefinition(class System.Reflection.AssemblyName reference, class System.Reflection.AssemblyName definition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.ReferenceMatchesDefinition(System.Reflection.AssemblyName,System.Reflection.AssemblyName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReferenceMatchesDefinition (reference As AssemblyName, definition As AssemblyName) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ReferenceMatchesDefinition(System::Reflection::AssemblyName ^ reference, System::Reflection::AssemblyName ^ definition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1013,6 +1075,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public void SetPublicKey (byte[] publicKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPublicKey(unsigned int8[] publicKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.SetPublicKey(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPublicKey (publicKey As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPublicKey(cli::array &lt;System::Byte&gt; ^ publicKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1065,6 +1129,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public void SetPublicKeyToken (byte[] publicKeyToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPublicKeyToken(unsigned int8[] publicKeyToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.SetPublicKeyToken(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPublicKeyToken (publicKeyToken As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPublicKeyToken(cli::array &lt;System::Byte&gt; ^ publicKeyToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1117,7 +1183,12 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="void _AssemblyName.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.System#Runtime#InteropServices#_AssemblyName#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _AssemblyName.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._AssemblyName.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_AssemblyName::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._AssemblyName.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1154,7 +1225,12 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="void _AssemblyName.GetTypeInfo (uint iTInfo, uint lcid, IntPtr ppTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.System#Runtime#InteropServices#_AssemblyName#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _AssemblyName.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._AssemblyName.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_AssemblyName::GetTypeInfo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._AssemblyName.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1187,7 +1263,12 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="void _AssemblyName.GetTypeInfoCount (out uint pcTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.System#Runtime#InteropServices#_AssemblyName#GetTypeInfoCount(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _AssemblyName.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._AssemblyName.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_AssemblyName::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._AssemblyName.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1216,7 +1297,12 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="void _AssemblyName.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.System#Runtime#InteropServices#_AssemblyName#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _AssemblyName.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._AssemblyName.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_AssemblyName::Invoke;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._AssemblyName.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1259,6 +1345,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1309,6 +1397,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public Version Version { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1370,6 +1460,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="C#" Value="public System.Configuration.Assemblies.AssemblyVersionCompatibility VersionCompatibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.Assemblies.AssemblyVersionCompatibility VersionCompatibility" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.VersionCompatibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property VersionCompatibility As AssemblyVersionCompatibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Assemblies::AssemblyVersionCompatibility VersionCompatibility { System::Configuration::Assemblies::AssemblyVersionCompatibility get(); void set(System::Configuration::Assemblies::AssemblyVersionCompatibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1402,16 +1494,5 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyName" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

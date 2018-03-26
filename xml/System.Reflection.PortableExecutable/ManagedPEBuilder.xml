@@ -1,7 +1,9 @@
-<Type Name="ManagedPEBuilder" FullName="System.Reflection.PortableExecutable.ManagedPEBuilder">
+﻿<Type Name="ManagedPEBuilder" FullName="System.Reflection.PortableExecutable.ManagedPEBuilder">
   <TypeSignature Language="C#" Value="public class ManagedPEBuilder : System.Reflection.PortableExecutable.PEBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedPEBuilder extends System.Reflection.PortableExecutable.PEBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.ManagedPEBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedPEBuilder&#xA;Inherits PEBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagedPEBuilder : System::Reflection::PortableExecutable::PEBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.PEBuilder.Section&gt; CreateSections ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.PortableExecutable.PEBuilder/Section&gt; CreateSections() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ManagedPEBuilder.CreateSections" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateSections () As ImmutableArray(Of PEBuilder.Section)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Immutable::ImmutableArray&lt;System::Reflection::PortableExecutable::PEBuilder::Section&gt; CreateSections();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -76,9 +80,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
-      <MemberSignature Language="C#" Value="protected override System.Reflection.PortableExecutable.PEDirectoriesBuilder GetDirectories ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.Reflection.PortableExecutable.PEDirectoriesBuilder GetDirectories ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Reflection.PortableExecutable.PEDirectoriesBuilder GetDirectories() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ManagedPEBuilder.GetDirectories" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDirectories () As PEDirectoriesBuilder" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Reflection::PortableExecutable::PEDirectoriesBuilder ^ GetDirectories();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public const int ManagedResourcesDataAlignment = 8;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 ManagedResourcesDataAlignment = (8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.ManagedPEBuilder.ManagedResourcesDataAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Const ManagedResourcesDataAlignment As Integer  = 8" />
+      <MemberSignature Language="C++ CLI" Value="public: int ManagedResourcesDataAlignment = 8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="public const int MappedFieldDataAlignment = 8;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 MappedFieldDataAlignment = (8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.ManagedPEBuilder.MappedFieldDataAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Const MappedFieldDataAlignment As Integer  = 8" />
+      <MemberSignature Language="C++ CLI" Value="public: int MappedFieldDataAlignment = 8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -137,6 +147,8 @@
       <MemberSignature Language="C#" Value="protected override System.Reflection.Metadata.BlobBuilder SerializeSection (string name, System.Reflection.PortableExecutable.SectionLocation location);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Reflection.Metadata.BlobBuilder SerializeSection(string name, valuetype System.Reflection.PortableExecutable.SectionLocation location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ManagedPEBuilder.SerializeSection(System.String,System.Reflection.PortableExecutable.SectionLocation)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeSection (name As String, location As SectionLocation) As BlobBuilder" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Reflection::Metadata::BlobBuilder ^ SerializeSection(System::String ^ name, System::Reflection::PortableExecutable::SectionLocation location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -162,6 +174,8 @@
       <MemberSignature Language="C#" Value="public void Sign (System.Reflection.Metadata.BlobBuilder peImage, Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Blob&gt;,byte[]&gt; signatureProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sign(class System.Reflection.Metadata.BlobBuilder peImage, class System.Func`2&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.Blob&gt;, unsigned int8[]&gt; signatureProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ManagedPEBuilder.Sign(System.Reflection.Metadata.BlobBuilder,System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Metadata.Blob},System.Byte[]})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Sign (peImage As BlobBuilder, signatureProvider As Func(Of IEnumerable(Of Blob), Byte()))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sign(System::Reflection::Metadata::BlobBuilder ^ peImage, Func&lt;System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::Blob&gt; ^, cli::array &lt;System::Byte&gt; ^&gt; ^ signatureProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

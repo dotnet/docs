@@ -1,7 +1,9 @@
-<Type Name="AssemblyCopyrightAttribute" FullName="System.Reflection.AssemblyCopyrightAttribute">
+﻿<Type Name="AssemblyCopyrightAttribute" FullName="System.Reflection.AssemblyCopyrightAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyCopyrightAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyCopyrightAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyCopyrightAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyCopyrightAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyCopyrightAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public AssemblyCopyrightAttribute (string copyright);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string copyright) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyCopyrightAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (copyright As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyCopyrightAttribute(System::String ^ copyright);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public string Copyright { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Copyright" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyCopyrightAttribute.Copyright" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Copyright As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Copyright { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

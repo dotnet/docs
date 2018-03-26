@@ -1,7 +1,9 @@
-<Type Name="ApplicationSecurityManager" FullName="System.Security.Policy.ApplicationSecurityManager">
+﻿<Type Name="ApplicationSecurityManager" FullName="System.Security.Policy.ApplicationSecurityManager">
   <TypeSignature Language="C#" Value="public static class ApplicationSecurityManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ApplicationSecurityManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationSecurityManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationSecurityManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationSecurityManager abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.IApplicationTrustManager ApplicationTrustManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Policy.IApplicationTrustManager ApplicationTrustManager" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityManager.ApplicationTrustManager" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationTrustManager As IApplicationTrustManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Policy::IApplicationTrustManager ^ ApplicationTrustManager { System::Security::Policy::IApplicationTrustManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +64,7 @@
       <MemberSignature Language="C#" Value="public static bool DetermineApplicationTrust (ActivationContext activationContext, System.Security.Policy.TrustManagerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DetermineApplicationTrust(class System.ActivationContext activationContext, class System.Security.Policy.TrustManagerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationSecurityManager.DetermineApplicationTrust(System.ActivationContext,System.Security.Policy.TrustManagerContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DetermineApplicationTrust(ActivationContext ^ activationContext, System::Security::Policy::TrustManagerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +100,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.ApplicationTrustCollection UserApplicationTrusts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Policy.ApplicationTrustCollection UserApplicationTrusts" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityManager.UserApplicationTrusts" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserApplicationTrusts As ApplicationTrustCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Policy::ApplicationTrustCollection ^ UserApplicationTrusts { System::Security::Policy::ApplicationTrustCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

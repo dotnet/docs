@@ -1,7 +1,9 @@
-<Type Name="CacheItemUpdateCallback" FullName="System.Web.Caching.CacheItemUpdateCallback">
+﻿<Type Name="CacheItemUpdateCallback" FullName="System.Web.Caching.CacheItemUpdateCallback">
   <TypeSignature Language="C#" Value="public delegate void CacheItemUpdateCallback(string key, CacheItemUpdateReason reason, out object expensiveObject, out CacheDependency dependency, out DateTime absoluteExpiration, out TimeSpan slidingExpiration);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemUpdateCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemUpdateCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CacheItemUpdateCallback(key As String, reason As CacheItemUpdateReason, ByRef expensiveObject As Object, ByRef dependency As CacheDependency, ByRef absoluteExpiration As DateTime, ByRef slidingExpiration As TimeSpan)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void CacheItemUpdateCallback(System::String ^ key, CacheItemUpdateReason reason, [Runtime::InteropServices::Out] System::Object ^ % expensiveObject, [Runtime::InteropServices::Out] CacheDependency ^ % dependency, [Runtime::InteropServices::Out] DateTime % absoluteExpiration, [Runtime::InteropServices::Out] TimeSpan % slidingExpiration);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

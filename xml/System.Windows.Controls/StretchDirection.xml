@@ -1,7 +1,9 @@
-<Type Name="StretchDirection" FullName="System.Windows.Controls.StretchDirection">
+﻿<Type Name="StretchDirection" FullName="System.Windows.Controls.StretchDirection">
   <TypeSignature Language="C#" Value="public enum StretchDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StretchDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StretchDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StretchDirection" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StretchDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="Both" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StretchDirection Both = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.Both" />
+      <MemberSignature Language="VB.NET" Value="Both" />
+      <MemberSignature Language="C++ CLI" Value="Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.StretchDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The content stretches to fit the parent according to the <see cref="T:System.Windows.Media.Stretch" /> mode.</summary>
       </Docs>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="DownOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StretchDirection DownOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.DownOnly" />
+      <MemberSignature Language="VB.NET" Value="DownOnly" />
+      <MemberSignature Language="C++ CLI" Value="DownOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.StretchDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The content scales downward only when it is larger than the parent. If the content is smaller, no scaling upward is performed.</summary>
       </Docs>
@@ -63,6 +71,8 @@
       <MemberSignature Language="C#" Value="UpOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StretchDirection UpOnly = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.UpOnly" />
+      <MemberSignature Language="VB.NET" Value="UpOnly" />
+      <MemberSignature Language="C++ CLI" Value="UpOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.StretchDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The content scales upward only when it is smaller than the parent. If the content is larger, no scaling downward is performed.</summary>
       </Docs>

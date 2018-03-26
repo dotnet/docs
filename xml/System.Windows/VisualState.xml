@@ -1,7 +1,9 @@
-<Type Name="VisualState" FullName="System.Windows.VisualState">
+﻿<Type Name="VisualState" FullName="System.Windows.VisualState">
   <TypeSignature Language="C#" Value="public class VisualState : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualState extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.VisualState" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualState&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VisualState : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public VisualState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.VisualState.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VisualState();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualState.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +100,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Storyboard Storyboard { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.Storyboard Storyboard" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualState.Storyboard" />
+      <MemberSignature Language="VB.NET" Value="Public Property Storyboard As Storyboard" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Storyboard ^ Storyboard { System::Windows::Media::Animation::Storyboard ^ get(); void set(System::Windows::Media::Animation::Storyboard ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

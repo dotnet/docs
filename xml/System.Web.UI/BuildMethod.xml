@@ -1,7 +1,9 @@
-<Type Name="BuildMethod" FullName="System.Web.UI.BuildMethod">
+﻿<Type Name="BuildMethod" FullName="System.Web.UI.BuildMethod">
   <TypeSignature Language="C#" Value="public delegate System.Web.UI.Control BuildMethod();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildMethod extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BuildMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function BuildMethod() As Control " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Web::UI::Control ^ BuildMethod();" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

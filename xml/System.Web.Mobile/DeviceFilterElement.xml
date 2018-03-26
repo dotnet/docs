@@ -1,7 +1,9 @@
-<Type Name="DeviceFilterElement" FullName="System.Web.Mobile.DeviceFilterElement">
+﻿<Type Name="DeviceFilterElement" FullName="System.Web.Mobile.DeviceFilterElement">
   <TypeSignature Language="C#" Value="public sealed class DeviceFilterElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceFilterElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.DeviceFilterElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeviceFilterElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeviceFilterElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.DeviceFilterElement" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DeviceFilterElement (string name, string compareName, string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string compareName, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElement.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, compareName As String, argument As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceFilterElement(System::String ^ name, System::String ^ compareName, System::String ^ argument);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -62,6 +75,8 @@
       <MemberSignature Language="C#" Value="public DeviceFilterElement (string name, Type filterClass, string method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type filterClass, string method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElement.#ctor(System.String,System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, filterClass As Type, method As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceFilterElement(System::String ^ name, Type ^ filterClass, System::String ^ method);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -91,6 +106,8 @@
       <MemberSignature Language="C#" Value="public string Argument { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Argument" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Argument" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Argument { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -124,6 +141,8 @@
       <MemberSignature Language="C#" Value="public string Compare { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Compare" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Compare" />
+      <MemberSignature Language="VB.NET" Value="Public Property Compare As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Compare { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -157,6 +176,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.ElementProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -175,6 +196,8 @@
       <MemberSignature Language="C#" Value="public Type FilterClass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type FilterClass" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.FilterClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterClass As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ FilterClass { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -208,6 +231,8 @@
       <MemberSignature Language="C#" Value="public string Method { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Method" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Property Method As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -241,6 +266,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -274,6 +301,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -288,14 +317,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.DeviceFilterElement" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

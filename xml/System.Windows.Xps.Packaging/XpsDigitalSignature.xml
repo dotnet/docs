@@ -1,7 +1,9 @@
-<Type Name="XpsDigitalSignature" FullName="System.Windows.Xps.Packaging.XpsDigitalSignature">
+﻿<Type Name="XpsDigitalSignature" FullName="System.Windows.Xps.Packaging.XpsDigitalSignature">
   <TypeSignature Language="C#" Value="public class XpsDigitalSignature" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsDigitalSignature extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsDigitalSignature" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsDigitalSignature" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsDigitalSignature" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public XpsDigitalSignature (System.IO.Packaging.PackageDigitalSignature packageSignature, System.Windows.Xps.Packaging.XpsDocument package);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.PackageDigitalSignature packageSignature, class System.Windows.Xps.Packaging.XpsDocument package) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDigitalSignature.#ctor(System.IO.Packaging.PackageDigitalSignature,System.Windows.Xps.Packaging.XpsDocument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (packageSignature As PackageDigitalSignature, package As XpsDocument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsDigitalSignature(System::IO::Packaging::PackageDigitalSignature ^ packageSignature, System::Windows::Xps::Packaging::XpsDocument ^ package);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public bool DocumentPropertiesRestricted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DocumentPropertiesRestricted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.DocumentPropertiesRestricted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentPropertiesRestricted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DocumentPropertiesRestricted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; Id" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Nullable(Of Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Guid&gt; Id { Nullable&lt;Guid&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="public bool IsCertificateAvailable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCertificateAvailable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.IsCertificateAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCertificateAvailable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCertificateAvailable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -132,6 +142,8 @@
       <MemberSignature Language="C#" Value="public bool SignatureOriginRestricted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SignatureOriginRestricted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.SignatureOriginRestricted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureOriginRestricted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SignatureOriginRestricted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -162,6 +174,8 @@
       <MemberSignature Language="C#" Value="public string SignatureType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SignatureType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.SignatureType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -180,6 +194,8 @@
       <MemberSignature Language="C#" Value="public byte[] SignatureValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SignatureValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.SignatureValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureValue As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ SignatureValue { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -198,6 +214,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader SignedDocumentSequence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader SignedDocumentSequence" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.SignedDocumentSequence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedDocumentSequence As IXpsFixedDocumentSequenceReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Packaging::IXpsFixedDocumentSequenceReader ^ SignedDocumentSequence { System::Windows::Xps::Packaging::IXpsFixedDocumentSequenceReader ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -217,6 +235,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate SignerCertificate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate SignerCertificate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.SignerCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignerCertificate As X509Certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate ^ SignerCertificate { System::Security::Cryptography::X509Certificates::X509Certificate ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -247,6 +267,8 @@
       <MemberSignature Language="C#" Value="public DateTime SigningTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime SigningTime" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDigitalSignature.SigningTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SigningTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime SigningTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -270,10 +292,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Verify">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the document digital signature against an X.509 certificate.</summary>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Verify">
       <MemberSignature Language="C#" Value="public System.IO.Packaging.VerifyResult Verify ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.IO.Packaging.VerifyResult Verify() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
+      <MemberSignature Language="VB.NET" Value="Public Function Verify () As VerifyResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::VerifyResult Verify();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -302,6 +337,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.VerifyResult Verify (System.Security.Cryptography.X509Certificates.X509Certificate certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.IO.Packaging.VerifyResult Verify(class System.Security.Cryptography.X509Certificates.X509Certificate certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify(System.Security.Cryptography.X509Certificates.X509Certificate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Verify (certificate As X509Certificate) As VerifyResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::VerifyResult Verify(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -322,10 +359,23 @@
         <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="VerifyCertificate">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies an X.509 certificate.</summary>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="VerifyCertificate">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509ChainStatusFlags VerifyCertificate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Security.Cryptography.X509Certificates.X509ChainStatusFlags VerifyCertificate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifyCertificate () As X509ChainStatusFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509ChainStatusFlags VerifyCertificate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -364,6 +414,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.X509Certificates.X509ChainStatusFlags VerifyCertificate (System.Security.Cryptography.X509Certificates.X509Certificate certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Security.Cryptography.X509Certificates.X509ChainStatusFlags VerifyCertificate(class System.Security.Cryptography.X509Certificates.X509Certificate certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyCertificate (certificate As X509Certificate) As X509ChainStatusFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509ChainStatusFlags VerifyCertificate(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -398,27 +450,5 @@
         <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="VerifyCertificate">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Verifies an X.509 certificate.</summary>
-        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
-        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Verify">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Verifies the document digital signature against an X.509 certificate.</summary>
-        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate" />
-        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

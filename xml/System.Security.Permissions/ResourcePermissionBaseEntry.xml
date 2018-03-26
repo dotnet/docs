@@ -1,7 +1,9 @@
-<Type Name="ResourcePermissionBaseEntry" FullName="System.Security.Permissions.ResourcePermissionBaseEntry">
+﻿<Type Name="ResourcePermissionBaseEntry" FullName="System.Security.Permissions.ResourcePermissionBaseEntry">
   <TypeSignature Language="C#" Value="public class ResourcePermissionBaseEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResourcePermissionBaseEntry extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.ResourcePermissionBaseEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResourcePermissionBaseEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourcePermissionBaseEntry" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,10 +32,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.ResourcePermissionBaseEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResourcePermissionBaseEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBaseEntry.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourcePermissionBaseEntry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +73,8 @@
       <MemberSignature Language="C#" Value="public ResourcePermissionBaseEntry (int permissionAccess, string[] permissionAccessPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 permissionAccess, string[] permissionAccessPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBaseEntry.#ctor(System.Int32,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As Integer, permissionAccessPath As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourcePermissionBaseEntry(int permissionAccess, cli::array &lt;System::String ^&gt; ^ permissionAccessPath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +100,8 @@
       <MemberSignature Language="C#" Value="public int PermissionAccess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PermissionAccess" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ResourcePermissionBaseEntry.PermissionAccess" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionAccess As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PermissionAccess { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +124,8 @@
       <MemberSignature Language="C#" Value="public string[] PermissionAccessPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] PermissionAccessPath" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ResourcePermissionBaseEntry.PermissionAccessPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionAccessPath As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ PermissionAccessPath { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,14 +151,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.ResourcePermissionBaseEntry" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

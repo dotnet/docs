@@ -1,7 +1,9 @@
-<Type Name="CspProviderFlags" FullName="System.Security.Cryptography.CspProviderFlags">
+﻿<Type Name="CspProviderFlags" FullName="System.Security.Cryptography.CspProviderFlags">
   <TypeSignature Language="C#" Value="public enum CspProviderFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CspProviderFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CspProviderFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CspProviderFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CspProviderFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="CreateEphemeralKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags CreateEphemeralKey = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.CreateEphemeralKey" />
+      <MemberSignature Language="VB.NET" Value="CreateEphemeralKey" />
+      <MemberSignature Language="C++ CLI" Value="CreateEphemeralKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -54,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Create a temporary key that is released when the associated Rivest-Shamir-Adleman (RSA) object is closed. Do not use this flag if you want your key to be independent of the RSA object.</summary>
         <remarks>
@@ -72,6 +77,8 @@
       <MemberSignature Language="C#" Value="NoFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags NoFlags = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.NoFlags" />
+      <MemberSignature Language="VB.NET" Value="NoFlags" />
+      <MemberSignature Language="C++ CLI" Value="NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -90,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Do not specify any settings.</summary>
       </Docs>
@@ -98,6 +106,8 @@
       <MemberSignature Language="C#" Value="NoPrompt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags NoPrompt = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.NoPrompt" />
+      <MemberSignature Language="VB.NET" Value="NoPrompt" />
+      <MemberSignature Language="C++ CLI" Value="NoPrompt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -116,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Prevent the CSP from displaying any user interface (UI) for this context.</summary>
       </Docs>
@@ -124,6 +135,8 @@
       <MemberSignature Language="C#" Value="UseArchivableKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags UseArchivableKey = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseArchivableKey" />
+      <MemberSignature Language="VB.NET" Value="UseArchivableKey" />
+      <MemberSignature Language="C++ CLI" Value="UseArchivableKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -142,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Allow a key to be exported for archival or recovery.</summary>
       </Docs>
@@ -150,6 +164,8 @@
       <MemberSignature Language="C#" Value="UseDefaultKeyContainer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags UseDefaultKeyContainer = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseDefaultKeyContainer" />
+      <MemberSignature Language="VB.NET" Value="UseDefaultKeyContainer" />
+      <MemberSignature Language="C++ CLI" Value="UseDefaultKeyContainer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -168,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Use key information from the default key container.</summary>
       </Docs>
@@ -176,6 +193,8 @@
       <MemberSignature Language="C#" Value="UseExistingKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags UseExistingKey = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseExistingKey" />
+      <MemberSignature Language="VB.NET" Value="UseExistingKey" />
+      <MemberSignature Language="C++ CLI" Value="UseExistingKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -194,6 +213,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Use key information from the current key.</summary>
       </Docs>
@@ -202,6 +222,8 @@
       <MemberSignature Language="C#" Value="UseMachineKeyStore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags UseMachineKeyStore = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseMachineKeyStore" />
+      <MemberSignature Language="VB.NET" Value="UseMachineKeyStore" />
+      <MemberSignature Language="C++ CLI" Value="UseMachineKeyStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -220,6 +242,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Use key information from the computer's key store.</summary>
       </Docs>
@@ -228,6 +251,8 @@
       <MemberSignature Language="C#" Value="UseNonExportableKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags UseNonExportableKey = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseNonExportableKey" />
+      <MemberSignature Language="VB.NET" Value="UseNonExportableKey" />
+      <MemberSignature Language="C++ CLI" Value="UseNonExportableKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -246,6 +271,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Use key information that cannot be exported.</summary>
       </Docs>
@@ -254,6 +280,8 @@
       <MemberSignature Language="C#" Value="UseUserProtectedKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CspProviderFlags UseUserProtectedKey = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseUserProtectedKey" />
+      <MemberSignature Language="VB.NET" Value="UseUserProtectedKey" />
+      <MemberSignature Language="C++ CLI" Value="UseUserProtectedKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -272,6 +300,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Notify the user through a dialog box or another method when certain actions are attempting to use a key.  This flag is not compatible with the <see cref="F:System.Security.Cryptography.CspProviderFlags.NoPrompt" /> flag.</summary>
       </Docs>

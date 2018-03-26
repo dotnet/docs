@@ -1,7 +1,9 @@
-<Type Name="StatusBarPanelBorderStyle" FullName="System.Windows.Forms.StatusBarPanelBorderStyle">
+﻿<Type Name="StatusBarPanelBorderStyle" FullName="System.Windows.Forms.StatusBarPanelBorderStyle">
   <TypeSignature Language="C#" Value="public enum StatusBarPanelBorderStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarPanelBorderStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelBorderStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StatusBarPanelBorderStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StatusBarPanelBorderStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelBorderStyle None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -47,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>No border is displayed.</summary>
       </Docs>
@@ -55,6 +60,8 @@
       <MemberSignature Language="C#" Value="Raised" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelBorderStyle Raised = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.Raised" />
+      <MemberSignature Language="VB.NET" Value="Raised" />
+      <MemberSignature Language="C++ CLI" Value="Raised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> is displayed with a three-dimensional raised border.</summary>
       </Docs>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="Sunken" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelBorderStyle Sunken = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.Sunken" />
+      <MemberSignature Language="VB.NET" Value="Sunken" />
+      <MemberSignature Language="C++ CLI" Value="Sunken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> is displayed with a three-dimensional sunken border.</summary>
       </Docs>

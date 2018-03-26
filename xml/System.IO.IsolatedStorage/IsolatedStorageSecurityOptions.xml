@@ -1,7 +1,9 @@
-<Type Name="IsolatedStorageSecurityOptions" FullName="System.IO.IsolatedStorage.IsolatedStorageSecurityOptions">
+﻿<Type Name="IsolatedStorageSecurityOptions" FullName="System.IO.IsolatedStorage.IsolatedStorageSecurityOptions">
   <TypeSignature Language="C#" Value="public enum IsolatedStorageSecurityOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IsolatedStorageSecurityOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IsolatedStorageSecurityOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IsolatedStorageSecurityOptions" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="IncreaseQuotaForApplication" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.IsolatedStorage.IsolatedStorageSecurityOptions IncreaseQuotaForApplication = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IncreaseQuotaForApplication" />
+      <MemberSignature Language="VB.NET" Value="IncreaseQuotaForApplication" />
+      <MemberSignature Language="C++ CLI" Value="IncreaseQuotaForApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageSecurityOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The quota can be increased for isolated storage.</summary>
       </Docs>

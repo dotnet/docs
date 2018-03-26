@@ -1,7 +1,9 @@
-<Type Name="HitTestResultBehavior" FullName="System.Windows.Media.HitTestResultBehavior">
+﻿<Type Name="HitTestResultBehavior" FullName="System.Windows.Media.HitTestResultBehavior">
   <TypeSignature Language="C#" Value="public enum HitTestResultBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestResultBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestResultBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HitTestResultBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HitTestResultBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Continue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestResultBehavior Continue = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestResultBehavior.Continue" />
+      <MemberSignature Language="VB.NET" Value="Continue" />
+      <MemberSignature Language="C++ CLI" Value="Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestResultBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Continue hit testing against the next visual in the visual tree hierarchy.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="Stop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestResultBehavior Stop = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestResultBehavior.Stop" />
+      <MemberSignature Language="VB.NET" Value="Stop" />
+      <MemberSignature Language="C++ CLI" Value="Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestResultBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Stop any further hit testing and return from the callback.</summary>
       </Docs>

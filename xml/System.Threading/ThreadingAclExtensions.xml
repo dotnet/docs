@@ -1,7 +1,9 @@
-<Type Name="ThreadingAclExtensions" FullName="System.Threading.ThreadingAclExtensions">
+﻿<Type Name="ThreadingAclExtensions" FullName="System.Threading.ThreadingAclExtensions">
   <TypeSignature Language="C#" Value="public static class ThreadingAclExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ThreadingAclExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadingAclExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ThreadingAclExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThreadingAclExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.AccessControl.EventWaitHandleSecurity GetAccessControl (this System.Threading.EventWaitHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.EventWaitHandleSecurity GetAccessControl(class System.Threading.EventWaitHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.GetAccessControl(System.Threading.EventWaitHandle)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAccessControl (handle As EventWaitHandle) As EventWaitHandleSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::AccessControl::EventWaitHandleSecurity ^ GetAccessControl(System::Threading::EventWaitHandle ^ handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -43,6 +47,7 @@
       <MemberSignature Language="C#" Value="public static System.Security.AccessControl.MutexSecurity GetAccessControl (this System.Threading.Mutex mutex);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.MutexSecurity GetAccessControl(class System.Threading.Mutex mutex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.GetAccessControl(System.Threading.Mutex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::AccessControl::MutexSecurity ^ GetAccessControl(System::Threading::Mutex ^ mutex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -66,6 +71,7 @@
       <MemberSignature Language="C#" Value="public static System.Security.AccessControl.SemaphoreSecurity GetAccessControl (this System.Threading.Semaphore semaphore);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.SemaphoreSecurity GetAccessControl(class System.Threading.Semaphore semaphore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.GetAccessControl(System.Threading.Semaphore)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::AccessControl::SemaphoreSecurity ^ GetAccessControl(System::Threading::Semaphore ^ semaphore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public static void SetAccessControl (this System.Threading.EventWaitHandle handle, System.Security.AccessControl.EventWaitHandleSecurity eventSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class System.Threading.EventWaitHandle handle, class System.Security.AccessControl.EventWaitHandleSecurity eventSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.SetAccessControl(System.Threading.EventWaitHandle,System.Security.AccessControl.EventWaitHandleSecurity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetAccessControl (handle As EventWaitHandle, eventSecurity As EventWaitHandleSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetAccessControl(System::Threading::EventWaitHandle ^ handle, System::Security::AccessControl::EventWaitHandleSecurity ^ eventSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -113,6 +121,7 @@
       <MemberSignature Language="C#" Value="public static void SetAccessControl (this System.Threading.Mutex mutex, System.Security.AccessControl.MutexSecurity mutexSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class System.Threading.Mutex mutex, class System.Security.AccessControl.MutexSecurity mutexSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.SetAccessControl(System.Threading.Mutex,System.Security.AccessControl.MutexSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetAccessControl(System::Threading::Mutex ^ mutex, System::Security::AccessControl::MutexSecurity ^ mutexSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -137,6 +146,7 @@
       <MemberSignature Language="C#" Value="public static void SetAccessControl (this System.Threading.Semaphore semaphore, System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class System.Threading.Semaphore semaphore, class System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.SetAccessControl(System.Threading.Semaphore,System.Security.AccessControl.SemaphoreSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetAccessControl(System::Threading::Semaphore ^ semaphore, System::Security::AccessControl::SemaphoreSecurity ^ semaphoreSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>

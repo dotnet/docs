@@ -1,7 +1,9 @@
-<Type Name="RuntimeMethodHandle" FullName="System.RuntimeMethodHandle">
+﻿<Type Name="RuntimeMethodHandle" FullName="System.RuntimeMethodHandle">
   <TypeSignature Language="C#" Value="public struct RuntimeMethodHandle : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit RuntimeMethodHandle extends System.ValueType implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.RuntimeMethodHandle" />
+  <TypeSignature Language="VB.NET" Value="Public Structure RuntimeMethodHandle&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public value class RuntimeMethodHandle : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +40,25 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether one <see cref="T:System.RuntimeMethodHandle" /> is equal to another.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -84,6 +101,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (RuntimeMethodHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.RuntimeMethodHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.Equals(System.RuntimeMethodHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (handle As RuntimeMethodHandle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(RuntimeMethodHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -126,6 +145,8 @@
       <MemberSignature Language="C#" Value="public IntPtr GetFunctionPointer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int GetFunctionPointer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.GetFunctionPointer" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFunctionPointer () As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetFunctionPointer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -156,6 +177,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -188,7 +211,12 @@
       <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -234,6 +262,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (RuntimeMethodHandle left, RuntimeMethodHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.RuntimeMethodHandle left, valuetype System.RuntimeMethodHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.op_Equality(System.RuntimeMethodHandle,System.RuntimeMethodHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As RuntimeMethodHandle, right As RuntimeMethodHandle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(RuntimeMethodHandle left, RuntimeMethodHandle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -274,6 +304,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (RuntimeMethodHandle left, RuntimeMethodHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.RuntimeMethodHandle left, valuetype System.RuntimeMethodHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.op_Inequality(System.RuntimeMethodHandle,System.RuntimeMethodHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As RuntimeMethodHandle, right As RuntimeMethodHandle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(RuntimeMethodHandle left, RuntimeMethodHandle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -314,6 +346,8 @@
       <MemberSignature Language="C#" Value="public IntPtr Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Value" />
       <MemberSignature Language="DocId" Value="P:System.RuntimeMethodHandle.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Value { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -338,18 +372,5 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether one <see cref="T:System.RuntimeMethodHandle" /> is equal to another.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

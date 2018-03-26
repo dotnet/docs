@@ -1,7 +1,9 @@
-<Type Name="ScriptReferenceBase" FullName="System.Web.UI.ScriptReferenceBase">
+﻿<Type Name="ScriptReferenceBase" FullName="System.Web.UI.ScriptReferenceBase">
   <TypeSignature Language="C#" Value="public abstract class ScriptReferenceBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ScriptReferenceBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReferenceBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScriptReferenceBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptReferenceBase abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="protected ScriptReferenceBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ScriptReferenceBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -36,9 +40,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetUrl">
-      <MemberSignature Language="C#" Value="protected abstract string GetUrl (System.Web.UI.ScriptManager scriptManager, bool zip);" />
+      <MemberSignature Language="C#" Value="protected internal abstract string GetUrl (System.Web.UI.ScriptManager scriptManager, bool zip);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetUrl(class System.Web.UI.ScriptManager scriptManager, bool zip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.GetUrl(System.Web.UI.ScriptManager,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::String ^ GetUrl(System::Web::UI::ScriptManager ^ scriptManager, bool zip);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -61,9 +66,10 @@
       </Docs>
     </Member>
     <Member MemberName="IsAjaxFrameworkScript">
-      <MemberSignature Language="C#" Value="protected virtual bool IsAjaxFrameworkScript (System.Web.UI.ScriptManager scriptManager);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool IsAjaxFrameworkScript (System.Web.UI.ScriptManager scriptManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsAjaxFrameworkScript(class System.Web.UI.ScriptManager scriptManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.IsAjaxFrameworkScript(System.Web.UI.ScriptManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool IsAjaxFrameworkScript(System::Web::UI::ScriptManager ^ scriptManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -84,9 +90,11 @@
       </Docs>
     </Member>
     <Member MemberName="IsFromSystemWebExtensions">
-      <MemberSignature Language="C#" Value="protected abstract bool IsFromSystemWebExtensions ();" />
+      <MemberSignature Language="C#" Value="protected internal abstract bool IsFromSystemWebExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsFromSystemWebExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.IsFromSystemWebExtensions" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function IsFromSystemWebExtensions () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool IsFromSystemWebExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public bool NotifyScriptLoaded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NotifyScriptLoaded" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotifyScriptLoaded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyScriptLoaded { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -158,6 +168,8 @@ if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -190,6 +202,8 @@ if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();
       <MemberSignature Language="C#" Value="protected static string ReplaceExtension (string pathOrName);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string ReplaceExtension(string pathOrName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.ReplaceExtension(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function ReplaceExtension (pathOrName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ ReplaceExtension(System::String ^ pathOrName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -219,6 +233,8 @@ if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();
       <MemberSignature Language="C#" Value="public string[] ResourceUICultures { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ResourceUICultures" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.ResourceUICultures" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceUICultures As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ResourceUICultures { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -254,6 +270,8 @@ if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();
       <MemberSignature Language="C#" Value="public System.Web.UI.ScriptMode ScriptMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ScriptMode ScriptMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.ScriptMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScriptMode As ScriptMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ScriptMode ScriptMode { System::Web::UI::ScriptMode get(); void set(System::Web::UI::ScriptMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

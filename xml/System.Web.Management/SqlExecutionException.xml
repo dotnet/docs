@@ -1,7 +1,9 @@
-<Type Name="SqlExecutionException" FullName="System.Web.Management.SqlExecutionException">
+﻿<Type Name="SqlExecutionException" FullName="System.Web.Management.SqlExecutionException">
   <TypeSignature Language="C#" Value="public sealed class SqlExecutionException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlExecutionException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlExecutionException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlExecutionException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlExecutionException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +35,21 @@
     <altmember cref="T:System.Data.SqlClient.SqlException" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlExecutionException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlExecutionException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlExecutionException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlExecutionException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +65,8 @@
       <MemberSignature Language="C#" Value="public SqlExecutionException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlExecutionException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlExecutionException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +85,8 @@
       <MemberSignature Language="C#" Value="public SqlExecutionException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlExecutionException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlExecutionException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +107,7 @@
       <MemberSignature Language="C#" Value="public SqlExecutionException (string message, string server, string database, string sqlFile, string commands, System.Data.SqlClient.SqlException sqlException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string server, string database, string sqlFile, string commands, class System.Data.SqlClient.SqlException sqlException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlExecutionException.#ctor(System.String,System.String,System.String,System.String,System.String,System.Data.SqlClient.SqlException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlExecutionException(System::String ^ message, System::String ^ server, System::String ^ database, System::String ^ sqlFile, System::String ^ commands, System::Data::SqlClient::SqlException ^ sqlException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +137,8 @@
       <MemberSignature Language="C#" Value="public string Commands { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Commands" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.SqlExecutionException.Commands" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Commands As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Commands { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +167,8 @@
       <MemberSignature Language="C#" Value="public string Database { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Database" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.SqlExecutionException.Database" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Database As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Database { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +197,8 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlException Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlException Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.SqlExecutionException.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As SqlException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlException ^ Exception { System::Data::SqlClient::SqlException ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +228,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlExecutionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -227,6 +253,8 @@
       <MemberSignature Language="C#" Value="public string Server { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Server" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.SqlExecutionException.Server" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Server { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +283,8 @@
       <MemberSignature Language="C#" Value="public string SqlFile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SqlFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.SqlExecutionException.SqlFile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SqlFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SqlFile { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,14 +309,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlExecutionException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

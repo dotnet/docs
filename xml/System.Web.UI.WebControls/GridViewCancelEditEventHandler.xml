@@ -1,7 +1,9 @@
-<Type Name="GridViewCancelEditEventHandler" FullName="System.Web.UI.WebControls.GridViewCancelEditEventHandler">
+﻿<Type Name="GridViewCancelEditEventHandler" FullName="System.Web.UI.WebControls.GridViewCancelEditEventHandler">
   <TypeSignature Language="C#" Value="public delegate void GridViewCancelEditEventHandler(object sender, GridViewCancelEditEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridViewCancelEditEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewCancelEditEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub GridViewCancelEditEventHandler(sender As Object, e As GridViewCancelEditEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void GridViewCancelEditEventHandler(System::Object ^ sender, GridViewCancelEditEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

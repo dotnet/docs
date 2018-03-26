@@ -1,7 +1,9 @@
-<Type Name="AttachablePropertyServices" FullName="System.Xaml.AttachablePropertyServices">
+﻿<Type Name="AttachablePropertyServices" FullName="System.Xaml.AttachablePropertyServices">
   <TypeSignature Language="C#" Value="public static class AttachablePropertyServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AttachablePropertyServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.AttachablePropertyServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttachablePropertyServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachablePropertyServices abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public static void CopyPropertiesTo (object instance, System.Collections.Generic.KeyValuePair&lt;System.Xaml.AttachableMemberIdentifier,object&gt;[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyPropertiesTo(object instance, valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Xaml.AttachableMemberIdentifier, object&gt;[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.CopyPropertiesTo(System.Object,System.Collections.Generic.KeyValuePair{System.Xaml.AttachableMemberIdentifier,System.Object}[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CopyPropertiesTo (instance As Object, array As KeyValuePair(Of AttachableMemberIdentifier, Object)(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CopyPropertiesTo(System::Object ^ instance, cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::Xaml::AttachableMemberIdentifier ^, System::Object ^&gt;&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public static int GetAttachedPropertyCount (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetAttachedPropertyCount(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.GetAttachedPropertyCount(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAttachedPropertyCount (instance As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetAttachedPropertyCount(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public static bool RemoveProperty (object instance, System.Xaml.AttachableMemberIdentifier name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RemoveProperty(object instance, class System.Xaml.AttachableMemberIdentifier name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.RemoveProperty(System.Object,System.Xaml.AttachableMemberIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveProperty (instance As Object, name As AttachableMemberIdentifier) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RemoveProperty(System::Object ^ instance, System::Xaml::AttachableMemberIdentifier ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public static void SetProperty (object instance, System.Xaml.AttachableMemberIdentifier name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetProperty(object instance, class System.Xaml.AttachableMemberIdentifier name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.SetProperty(System.Object,System.Xaml.AttachableMemberIdentifier,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetProperty (instance As Object, name As AttachableMemberIdentifier, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetProperty(System::Object ^ instance, System::Xaml::AttachableMemberIdentifier ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -142,6 +152,8 @@
       <MemberSignature Language="C#" Value="public static bool TryGetProperty (object instance, System.Xaml.AttachableMemberIdentifier name, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetProperty(object instance, class System.Xaml.AttachableMemberIdentifier name, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.TryGetProperty(System.Object,System.Xaml.AttachableMemberIdentifier,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetProperty (instance As Object, name As AttachableMemberIdentifier, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetProperty(System::Object ^ instance, System::Xaml::AttachableMemberIdentifier ^ name, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -169,6 +181,8 @@
       <MemberSignature Language="C#" Value="public static bool TryGetProperty&lt;T&gt; (object instance, System.Xaml.AttachableMemberIdentifier name, out T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetProperty&lt;T&gt;(object instance, class System.Xaml.AttachableMemberIdentifier name, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.TryGetProperty``1(System.Object,System.Xaml.AttachableMemberIdentifier,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetProperty(Of T) (instance As Object, name As AttachableMemberIdentifier, ByRef value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetProperty(System::Object ^ instance, System::Xaml::AttachableMemberIdentifier ^ name, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

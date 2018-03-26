@@ -1,7 +1,9 @@
-<Type Name="AlertDescription" FullName="Mono.Security.Interface.AlertDescription">
+﻿<Type Name="AlertDescription" FullName="Mono.Security.Interface.AlertDescription">
   <TypeSignature Language="C#" Value="public enum AlertDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AlertDescription extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.AlertDescription" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AlertDescription" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AlertDescription" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="AccessDenied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription AccessDenied = unsigned int8(49)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.AccessDenied" />
+      <MemberSignature Language="VB.NET" Value="AccessDenied" />
+      <MemberSignature Language="C++ CLI" Value="AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="BadCertificate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription BadCertificate = unsigned int8(42)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.BadCertificate" />
+      <MemberSignature Language="VB.NET" Value="BadCertificate" />
+      <MemberSignature Language="C++ CLI" Value="BadCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="BadRecordMAC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription BadRecordMAC = unsigned int8(20)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.BadRecordMAC" />
+      <MemberSignature Language="VB.NET" Value="BadRecordMAC" />
+      <MemberSignature Language="C++ CLI" Value="BadRecordMAC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="CertificateExpired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription CertificateExpired = unsigned int8(45)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateExpired" />
+      <MemberSignature Language="VB.NET" Value="CertificateExpired" />
+      <MemberSignature Language="C++ CLI" Value="CertificateExpired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="CertificateRevoked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription CertificateRevoked = unsigned int8(44)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateRevoked" />
+      <MemberSignature Language="VB.NET" Value="CertificateRevoked" />
+      <MemberSignature Language="C++ CLI" Value="CertificateRevoked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="CertificateUnknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription CertificateUnknown = unsigned int8(46)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateUnknown" />
+      <MemberSignature Language="VB.NET" Value="CertificateUnknown" />
+      <MemberSignature Language="C++ CLI" Value="CertificateUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +125,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -114,6 +134,8 @@
       <MemberSignature Language="C#" Value="CloseNotify" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription CloseNotify = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CloseNotify" />
+      <MemberSignature Language="VB.NET" Value="CloseNotify" />
+      <MemberSignature Language="C++ CLI" Value="CloseNotify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +144,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -130,6 +153,8 @@
       <MemberSignature Language="C#" Value="DecodeError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription DecodeError = unsigned int8(50)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecodeError" />
+      <MemberSignature Language="VB.NET" Value="DecodeError" />
+      <MemberSignature Language="C++ CLI" Value="DecodeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +163,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -146,6 +172,8 @@
       <MemberSignature Language="C#" Value="DecompressionFailure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription DecompressionFailure = unsigned int8(30)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecompressionFailure" />
+      <MemberSignature Language="VB.NET" Value="DecompressionFailure" />
+      <MemberSignature Language="C++ CLI" Value="DecompressionFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +182,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -162,6 +191,8 @@
       <MemberSignature Language="C#" Value="DecryptError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription DecryptError = unsigned int8(51)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecryptError" />
+      <MemberSignature Language="VB.NET" Value="DecryptError" />
+      <MemberSignature Language="C++ CLI" Value="DecryptError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +201,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -178,6 +210,8 @@
       <MemberSignature Language="C#" Value="DecryptionFailed_RESERVED" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription DecryptionFailed_RESERVED = unsigned int8(21)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecryptionFailed_RESERVED" />
+      <MemberSignature Language="VB.NET" Value="DecryptionFailed_RESERVED" />
+      <MemberSignature Language="C++ CLI" Value="DecryptionFailed_RESERVED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -186,6 +220,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -194,6 +229,8 @@
       <MemberSignature Language="C#" Value="ExportRestriction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription ExportRestriction = unsigned int8(60)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.ExportRestriction" />
+      <MemberSignature Language="VB.NET" Value="ExportRestriction" />
+      <MemberSignature Language="C++ CLI" Value="ExportRestriction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +239,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>60</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -210,6 +248,8 @@
       <MemberSignature Language="C#" Value="HandshakeFailure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription HandshakeFailure = unsigned int8(40)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.HandshakeFailure" />
+      <MemberSignature Language="VB.NET" Value="HandshakeFailure" />
+      <MemberSignature Language="C++ CLI" Value="HandshakeFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +258,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -226,6 +267,8 @@
       <MemberSignature Language="C#" Value="IlegalParameter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription IlegalParameter = unsigned int8(47)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.IlegalParameter" />
+      <MemberSignature Language="VB.NET" Value="IlegalParameter" />
+      <MemberSignature Language="C++ CLI" Value="IlegalParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +277,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -242,6 +286,8 @@
       <MemberSignature Language="C#" Value="InsuficientSecurity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription InsuficientSecurity = unsigned int8(71)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.InsuficientSecurity" />
+      <MemberSignature Language="VB.NET" Value="InsuficientSecurity" />
+      <MemberSignature Language="C++ CLI" Value="InsuficientSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,6 +296,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>71</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -258,6 +305,8 @@
       <MemberSignature Language="C#" Value="InternalError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription InternalError = unsigned int8(80)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.InternalError" />
+      <MemberSignature Language="VB.NET" Value="InternalError" />
+      <MemberSignature Language="C++ CLI" Value="InternalError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,6 +315,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>80</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -274,6 +324,8 @@
       <MemberSignature Language="C#" Value="NoCertificate_RESERVED" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription NoCertificate_RESERVED = unsigned int8(41)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.NoCertificate_RESERVED" />
+      <MemberSignature Language="VB.NET" Value="NoCertificate_RESERVED" />
+      <MemberSignature Language="C++ CLI" Value="NoCertificate_RESERVED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +334,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -290,6 +343,8 @@
       <MemberSignature Language="C#" Value="NoRenegotiation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription NoRenegotiation = unsigned int8(100)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.NoRenegotiation" />
+      <MemberSignature Language="VB.NET" Value="NoRenegotiation" />
+      <MemberSignature Language="C++ CLI" Value="NoRenegotiation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -298,6 +353,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>100</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -306,6 +362,8 @@
       <MemberSignature Language="C#" Value="ProtocolVersion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription ProtocolVersion = unsigned int8(70)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.ProtocolVersion" />
+      <MemberSignature Language="VB.NET" Value="ProtocolVersion" />
+      <MemberSignature Language="C++ CLI" Value="ProtocolVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -314,6 +372,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>70</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -322,6 +381,8 @@
       <MemberSignature Language="C#" Value="RecordOverflow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription RecordOverflow = unsigned int8(22)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.RecordOverflow" />
+      <MemberSignature Language="VB.NET" Value="RecordOverflow" />
+      <MemberSignature Language="C++ CLI" Value="RecordOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -330,6 +391,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -338,6 +400,8 @@
       <MemberSignature Language="C#" Value="UnexpectedMessage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UnexpectedMessage = unsigned int8(10)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnexpectedMessage" />
+      <MemberSignature Language="VB.NET" Value="UnexpectedMessage" />
+      <MemberSignature Language="C++ CLI" Value="UnexpectedMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -346,6 +410,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -354,6 +419,8 @@
       <MemberSignature Language="C#" Value="UnknownCA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UnknownCA = unsigned int8(48)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnknownCA" />
+      <MemberSignature Language="VB.NET" Value="UnknownCA" />
+      <MemberSignature Language="C++ CLI" Value="UnknownCA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -362,6 +429,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -370,6 +438,8 @@
       <MemberSignature Language="C#" Value="UnsupportedCertificate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UnsupportedCertificate = unsigned int8(43)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnsupportedCertificate" />
+      <MemberSignature Language="VB.NET" Value="UnsupportedCertificate" />
+      <MemberSignature Language="C++ CLI" Value="UnsupportedCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -378,6 +448,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -386,6 +457,8 @@
       <MemberSignature Language="C#" Value="UnsupportedExtension" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UnsupportedExtension = unsigned int8(110)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnsupportedExtension" />
+      <MemberSignature Language="VB.NET" Value="UnsupportedExtension" />
+      <MemberSignature Language="C++ CLI" Value="UnsupportedExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -394,6 +467,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>110</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -402,6 +476,8 @@
       <MemberSignature Language="C#" Value="UserCancelled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UserCancelled = unsigned int8(90)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UserCancelled" />
+      <MemberSignature Language="VB.NET" Value="UserCancelled" />
+      <MemberSignature Language="C++ CLI" Value="UserCancelled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -410,6 +486,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
       </ReturnValue>
+      <MemberValue>90</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

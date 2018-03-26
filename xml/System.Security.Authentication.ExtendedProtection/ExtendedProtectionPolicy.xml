@@ -1,7 +1,9 @@
-<Type Name="ExtendedProtectionPolicy" FullName="System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy">
+﻿<Type Name="ExtendedProtectionPolicy" FullName="System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy">
   <TypeSignature Language="C#" Value="public class ExtendedProtectionPolicy : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ExtendedProtectionPolicy extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExtendedProtectionPolicy&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtendedProtectionPolicy : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,10 +46,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExtendedProtectionPolicy (System.Security.Authentication.ExtendedProtection.PolicyEnforcement policyEnforcement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Authentication.ExtendedProtection.PolicyEnforcement policyEnforcement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Security.Authentication.ExtendedProtection.PolicyEnforcement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedProtectionPolicy(System::Security::Authentication::ExtendedProtection::PolicyEnforcement policyEnforcement);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -88,6 +101,8 @@
       <MemberSignature Language="C#" Value="protected ExtendedProtectionPolicy (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExtendedProtectionPolicy(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +142,7 @@
       <MemberSignature Language="C#" Value="public ExtendedProtectionPolicy (System.Security.Authentication.ExtendedProtection.PolicyEnforcement policyEnforcement, System.Security.Authentication.ExtendedProtection.ChannelBinding customChannelBinding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Authentication.ExtendedProtection.PolicyEnforcement policyEnforcement, class System.Security.Authentication.ExtendedProtection.ChannelBinding customChannelBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Security.Authentication.ExtendedProtection.PolicyEnforcement,System.Security.Authentication.ExtendedProtection.ChannelBinding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedProtectionPolicy(System::Security::Authentication::ExtendedProtection::PolicyEnforcement policyEnforcement, System::Security::Authentication::ExtendedProtection::ChannelBinding ^ customChannelBinding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -168,6 +184,7 @@
       <MemberSignature Language="C#" Value="public ExtendedProtectionPolicy (System.Security.Authentication.ExtendedProtection.PolicyEnforcement policyEnforcement, System.Security.Authentication.ExtendedProtection.ProtectionScenario protectionScenario, System.Collections.ICollection customServiceNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Authentication.ExtendedProtection.PolicyEnforcement policyEnforcement, valuetype System.Security.Authentication.ExtendedProtection.ProtectionScenario protectionScenario, class System.Collections.ICollection customServiceNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Security.Authentication.ExtendedProtection.PolicyEnforcement,System.Security.Authentication.ExtendedProtection.ProtectionScenario,System.Collections.ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedProtectionPolicy(System::Security::Authentication::ExtendedProtection::PolicyEnforcement policyEnforcement, System::Security::Authentication::ExtendedProtection::ProtectionScenario protectionScenario, System::Collections::ICollection ^ customServiceNames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -211,6 +228,7 @@
       <MemberSignature Language="C#" Value="public ExtendedProtectionPolicy (System.Security.Authentication.ExtendedProtection.PolicyEnforcement policyEnforcement, System.Security.Authentication.ExtendedProtection.ProtectionScenario protectionScenario, System.Security.Authentication.ExtendedProtection.ServiceNameCollection customServiceNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Authentication.ExtendedProtection.PolicyEnforcement policyEnforcement, valuetype System.Security.Authentication.ExtendedProtection.ProtectionScenario protectionScenario, class System.Security.Authentication.ExtendedProtection.ServiceNameCollection customServiceNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Security.Authentication.ExtendedProtection.PolicyEnforcement,System.Security.Authentication.ExtendedProtection.ProtectionScenario,System.Security.Authentication.ExtendedProtection.ServiceNameCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedProtectionPolicy(System::Security::Authentication::ExtendedProtection::PolicyEnforcement policyEnforcement, System::Security::Authentication::ExtendedProtection::ProtectionScenario protectionScenario, System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ customServiceNames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -254,6 +272,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ChannelBinding CustomChannelBinding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ChannelBinding CustomChannelBinding" />
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomChannelBinding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomChannelBinding As ChannelBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ChannelBinding ^ CustomChannelBinding { System::Security::Authentication::ExtendedProtection::ChannelBinding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -289,6 +309,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ServiceNameCollection CustomServiceNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ServiceNameCollection CustomServiceNames" />
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomServiceNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomServiceNames As ServiceNameCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ CustomServiceNames { System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -324,6 +346,8 @@
       <MemberSignature Language="C#" Value="public static bool OSSupportsExtendedProtection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool OSSupportsExtendedProtection" />
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.OSSupportsExtendedProtection" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSSupportsExtendedProtection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool OSSupportsExtendedProtection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -360,6 +384,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.PolicyEnforcement PolicyEnforcement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Authentication.ExtendedProtection.PolicyEnforcement PolicyEnforcement" />
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyEnforcement As PolicyEnforcement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::PolicyEnforcement PolicyEnforcement { System::Security::Authentication::ExtendedProtection::PolicyEnforcement get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -395,6 +421,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ProtectionScenario ProtectionScenario { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Authentication.ExtendedProtection.ProtectionScenario ProtectionScenario" />
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.ProtectionScenario" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtectionScenario As ProtectionScenario" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ProtectionScenario ProtectionScenario { System::Security::Authentication::ExtendedProtection::ProtectionScenario get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -430,7 +458,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -469,6 +502,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -499,15 +534,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="InputBin" FullName="System.Printing.InputBin">
+﻿<Type Name="InputBin" FullName="System.Printing.InputBin">
   <TypeSignature Language="C#" Value="public enum InputBin" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InputBin extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.InputBin" />
+  <TypeSignature Language="VB.NET" Value="Public Enum InputBin" />
+  <TypeSignature Language="C++ CLI" Value="public enum class InputBin" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="AutoSelect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.InputBin AutoSelect = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.AutoSelect" />
+      <MemberSignature Language="VB.NET" Value="AutoSelect" />
+      <MemberSignature Language="C++ CLI" Value="AutoSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -54,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.InputBin</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The automatic selection of an input bin according to the page size and media output type.</summary>
       </Docs>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="AutoSheetFeeder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.InputBin AutoSheetFeeder = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.AutoSheetFeeder" />
+      <MemberSignature Language="VB.NET" Value="AutoSheetFeeder" />
+      <MemberSignature Language="C++ CLI" Value="AutoSheetFeeder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -70,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.InputBin</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The automatic sheet feeder is used.</summary>
       </Docs>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="Cassette" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.InputBin Cassette = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.Cassette" />
+      <MemberSignature Language="VB.NET" Value="Cassette" />
+      <MemberSignature Language="C++ CLI" Value="Cassette" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.InputBin</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A removable paper bin is used.</summary>
       </Docs>
@@ -94,6 +105,8 @@
       <MemberSignature Language="C#" Value="Manual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.InputBin Manual = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.Manual" />
+      <MemberSignature Language="VB.NET" Value="Manual" />
+      <MemberSignature Language="C++ CLI" Value="Manual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -102,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.InputBin</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The manual input bin is used.</summary>
       </Docs>
@@ -110,6 +124,8 @@
       <MemberSignature Language="C#" Value="Tractor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.InputBin Tractor = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.Tractor" />
+      <MemberSignature Language="VB.NET" Value="Tractor" />
+      <MemberSignature Language="C++ CLI" Value="Tractor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -118,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.InputBin</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A tractor feed (also called a pin feed) of continuous-feed paper is used.</summary>
       </Docs>
@@ -126,6 +143,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.InputBin Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -134,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.InputBin</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

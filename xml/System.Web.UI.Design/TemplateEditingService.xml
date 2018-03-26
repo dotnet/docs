@@ -1,7 +1,9 @@
-<Type Name="TemplateEditingService" FullName="System.Web.UI.Design.TemplateEditingService">
+﻿<Type Name="TemplateEditingService" FullName="System.Web.UI.Design.TemplateEditingService">
   <TypeSignature Language="C#" Value="public sealed class TemplateEditingService : IDisposable, System.Web.UI.Design.ITemplateEditingService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplateEditingService extends System.Object implements class System.IDisposable, class System.Web.UI.Design.ITemplateEditingService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateEditingService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TemplateEditingService&#xA;Implements IDisposable, ITemplateEditingService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateEditingService sealed : IDisposable, System::Web::UI::Design::ITemplateEditingService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public TemplateEditingService (System.ComponentModel.Design.IDesignerHost designerHost);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.IDesignerHost designerHost) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.#ctor(System.ComponentModel.Design.IDesignerHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (designerHost As IDesignerHost)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateEditingService(System::ComponentModel::Design::IDesignerHost ^ designerHost);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,11 +71,25 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateFrame">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new template editing frame.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateFrame">
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.ITemplateEditingFrame CreateFrame (System.Web.UI.Design.TemplatedControlDesigner designer, string frameName, string[] templateNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.ITemplateEditingFrame CreateFrame(class System.Web.UI.Design.TemplatedControlDesigner designer, string frameName, string[] templateNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFrame (designer As TemplatedControlDesigner, frameName As String, templateNames As String()) As ITemplateEditingFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::Design::ITemplateEditingFrame ^ CreateFrame(System::Web::UI::Design::TemplatedControlDesigner ^ designer, System::String ^ frameName, cli::array &lt;System::String ^&gt; ^ templateNames);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.ITemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -107,7 +125,12 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.ITemplateEditingFrame CreateFrame (System.Web.UI.Design.TemplatedControlDesigner designer, string frameName, string[] templateNames, System.Web.UI.WebControls.Style controlStyle, System.Web.UI.WebControls.Style[] templateStyles);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.ITemplateEditingFrame CreateFrame(class System.Web.UI.Design.TemplatedControlDesigner designer, string frameName, string[] templateNames, class System.Web.UI.WebControls.Style controlStyle, class System.Web.UI.WebControls.Style[] templateStyles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[],System.Web.UI.WebControls.Style,System.Web.UI.WebControls.Style[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFrame (designer As TemplatedControlDesigner, frameName As String, templateNames As String(), controlStyle As Style, templateStyles As Style()) As ITemplateEditingFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::Design::ITemplateEditingFrame ^ CreateFrame(System::Web::UI::Design::TemplatedControlDesigner ^ designer, System::String ^ frameName, cli::array &lt;System::String ^&gt; ^ templateNames, System::Web::UI::WebControls::Style ^ controlStyle, cli::array &lt;System::Web::UI::WebControls::Style ^&gt; ^ templateStyles);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.ITemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[],System.Web.UI.WebControls.Style,System.Web.UI.WebControls.Style[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,7 +170,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,6 +194,8 @@
       <MemberSignature Language="C#" Value="~TemplateEditingService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!TemplateEditingService ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -185,7 +215,11 @@
       <MemberSignature Language="C#" Value="public string GetContainingTemplateName (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetContainingTemplateName(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.GetContainingTemplateName(System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetContainingTemplateName(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.ITemplateEditingService.GetContainingTemplateName(System.Web.UI.Control)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -217,7 +251,12 @@
       <MemberSignature Language="C#" Value="public bool SupportsNestedTemplateEditing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsNestedTemplateEditing" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateEditingService.SupportsNestedTemplateEditing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsNestedTemplateEditing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsNestedTemplateEditing { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.Design.ITemplateEditingService.SupportsNestedTemplateEditing</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -244,14 +283,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateFrame">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new template editing frame.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

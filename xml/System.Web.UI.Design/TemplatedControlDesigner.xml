@@ -1,7 +1,9 @@
-<Type Name="TemplatedControlDesigner" FullName="System.Web.UI.Design.TemplatedControlDesigner">
+﻿<Type Name="TemplatedControlDesigner" FullName="System.Web.UI.Design.TemplatedControlDesigner">
   <TypeSignature Language="C#" Value="public abstract class TemplatedControlDesigner : System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TemplatedControlDesigner extends System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplatedControlDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TemplatedControlDesigner&#xA;Inherits ControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplatedControlDesigner abstract : System::Web::UI::Design::ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public TemplatedControlDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplatedControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.ITemplateEditingFrame ActiveTemplateEditingFrame { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.ITemplateEditingFrame ActiveTemplateEditingFrame" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.ActiveTemplateEditingFrame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveTemplateEditingFrame As ITemplateEditingFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::ITemplateEditingFrame ^ ActiveTemplateEditingFrame { System::Web::UI::Design::ITemplateEditingFrame ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public bool CanEnterTemplateMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanEnterTemplateMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.CanEnterTemplateMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanEnterTemplateMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanEnterTemplateMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Web.UI.Design.ITemplateEditingFrame CreateTemplateEditingFrame (System.Web.UI.Design.TemplateEditingVerb verb);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Design.ITemplateEditingFrame CreateTemplateEditingFrame(class System.Web.UI.Design.TemplateEditingVerb verb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.CreateTemplateEditingFrame(System.Web.UI.Design.TemplateEditingVerb)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateTemplateEditingFrame (verb As TemplateEditingVerb) As ITemplateEditingFrame" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Web::UI::Design::ITemplateEditingFrame ^ CreateTemplateEditingFrame(System::Web::UI::Design::TemplateEditingVerb ^ verb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="protected override bool DataBindingsEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DataBindingsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.DataBindingsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DataBindingsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DataBindingsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -155,6 +167,8 @@
       <MemberSignature Language="C#" Value="public void EnterTemplateMode (System.Web.UI.Design.ITemplateEditingFrame newTemplateEditingFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterTemplateMode(class System.Web.UI.Design.ITemplateEditingFrame newTemplateEditingFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.EnterTemplateMode(System.Web.UI.Design.ITemplateEditingFrame)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterTemplateMode (newTemplateEditingFrame As ITemplateEditingFrame)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterTemplateMode(System::Web::UI::Design::ITemplateEditingFrame ^ newTemplateEditingFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -192,6 +206,8 @@
       <MemberSignature Language="C#" Value="public void ExitTemplateMode (bool fSwitchingTemplates, bool fNested, bool fSave);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitTemplateMode(bool fSwitchingTemplates, bool fNested, bool fSave) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode(System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitTemplateMode (fSwitchingTemplates As Boolean, fNested As Boolean, fSave As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitTemplateMode(bool fSwitchingTemplates, bool fNested, bool fSave);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -234,6 +250,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Web.UI.Design.TemplateEditingVerb[] GetCachedTemplateEditingVerbs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Design.TemplateEditingVerb[] GetCachedTemplateEditingVerbs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetCachedTemplateEditingVerbs" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetCachedTemplateEditingVerbs () As TemplateEditingVerb()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::Web::UI::Design::TemplateEditingVerb ^&gt; ^ GetCachedTemplateEditingVerbs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -267,6 +285,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetTemplateContainerDataItemProperty (string templateName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTemplateContainerDataItemProperty(string templateName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataItemProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTemplateContainerDataItemProperty (templateName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetTemplateContainerDataItemProperty(System::String ^ templateName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -303,6 +323,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerable GetTemplateContainerDataSource (string templateName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerable GetTemplateContainerDataSource(string templateName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataSource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTemplateContainerDataSource (templateName As String) As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerable ^ GetTemplateContainerDataSource(System::String ^ templateName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -330,6 +352,8 @@
       <MemberSignature Language="C#" Value="public abstract string GetTemplateContent (System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, out bool allowEditing);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, [out] bool&amp; allowEditing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTemplateContent (editingFrame As ITemplateEditingFrame, templateName As String, ByRef allowEditing As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetTemplateContent(System::Web::UI::Design::ITemplateEditingFrame ^ editingFrame, System::String ^ templateName, [Runtime::InteropServices::Out] bool % allowEditing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -362,6 +386,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.TemplateEditingVerb[] GetTemplateEditingVerbs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Design.TemplateEditingVerb[] GetTemplateEditingVerbs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateEditingVerbs" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTemplateEditingVerbs () As TemplateEditingVerb()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::Design::TemplateEditingVerb ^&gt; ^ GetTemplateEditingVerbs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -386,6 +412,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.ITemplate GetTemplateFromText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.UI.ITemplate GetTemplateFromText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateFromText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetTemplateFromText (text As String) As ITemplate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::UI::ITemplate ^ GetTemplateFromText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -408,6 +436,8 @@
       <MemberSignature Language="C#" Value="public virtual Type GetTemplatePropertyParentType (string templateName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetTemplatePropertyParentType(string templateName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplatePropertyParentType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTemplatePropertyParentType (templateName As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetTemplatePropertyParentType(System::String ^ templateName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -444,6 +474,8 @@
       <MemberSignature Language="C#" Value="protected string GetTextFromTemplate (System.Web.UI.ITemplate template);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetTextFromTemplate(class System.Web.UI.ITemplate template) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTextFromTemplate(System.Web.UI.ITemplate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetTextFromTemplate (template As ITemplate) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetTextFromTemplate(System::Web::UI::ITemplate ^ template);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -468,6 +500,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -489,6 +523,8 @@
       <MemberSignature Language="C#" Value="public bool InTemplateMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InTemplateMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.InTemplateMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InTemplateMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InTemplateMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -524,6 +560,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBehaviorAttached ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBehaviorAttached() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnBehaviorAttached" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBehaviorAttached ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBehaviorAttached();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -556,6 +594,8 @@
       <MemberSignature Language="C#" Value="public override void OnComponentChanged (object sender, System.ComponentModel.Design.ComponentChangedEventArgs ce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnComponentChanged(object sender, class System.ComponentModel.Design.ComponentChangedEventArgs ce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -586,6 +626,8 @@
       <MemberSignature Language="C#" Value="public override void OnSetParent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnSetParent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnSetParent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnSetParent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnSetParent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -604,6 +646,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnTemplateModeChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTemplateModeChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTemplateModeChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTemplateModeChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -643,6 +687,8 @@
       <MemberSignature Language="C#" Value="protected void SaveActiveTemplateEditingFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SaveActiveTemplateEditingFrame() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.SaveActiveTemplateEditingFrame" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SaveActiveTemplateEditingFrame ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SaveActiveTemplateEditingFrame();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -661,6 +707,8 @@
       <MemberSignature Language="C#" Value="public abstract void SetTemplateContent (System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, string templateContent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, string templateContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.SetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetTemplateContent (editingFrame As ITemplateEditingFrame, templateName As String, templateContent As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetTemplateContent(System::Web::UI::Design::ITemplateEditingFrame ^ editingFrame, System::String ^ templateName, System::String ^ templateContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -691,6 +739,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.TemplateGroupCollection TemplateGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroupCollection TemplateGroups" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TemplateGroups As TemplateGroupCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::TemplateGroupCollection ^ TemplateGroups { System::Web::UI::Design::TemplateGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -709,6 +759,8 @@
       <MemberSignature Language="C#" Value="public override void UpdateDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.UpdateDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateDesignTimeHtml ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

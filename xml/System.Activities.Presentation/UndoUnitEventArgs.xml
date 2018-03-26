@@ -1,7 +1,9 @@
-<Type Name="UndoUnitEventArgs" FullName="System.Activities.Presentation.UndoUnitEventArgs">
+﻿<Type Name="UndoUnitEventArgs" FullName="System.Activities.Presentation.UndoUnitEventArgs">
   <TypeSignature Language="C#" Value="public class UndoUnitEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UndoUnitEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.UndoUnitEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class UndoUnitEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UndoUnitEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public UndoUnitEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoUnitEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UndoUnitEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.UndoUnit UndoUnit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.UndoUnit UndoUnit" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.UndoUnitEventArgs.UndoUnit" />
+      <MemberSignature Language="VB.NET" Value="Public Property UndoUnit As UndoUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::UndoUnit ^ UndoUnit { System::Activities::Presentation::UndoUnit ^ get(); void set(System::Activities::Presentation::UndoUnit ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

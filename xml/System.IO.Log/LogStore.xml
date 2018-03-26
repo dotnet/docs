@@ -1,7 +1,9 @@
-<Type Name="LogStore" FullName="System.IO.Log.LogStore">
+﻿<Type Name="LogStore" FullName="System.IO.Log.LogStore">
   <TypeSignature Language="C#" Value="public sealed class LogStore : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogStore extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogStore" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LogStore&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LogStore sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +42,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogStore" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LogStore (Microsoft.Win32.SafeHandles.SafeFileHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Win32.SafeHandles.SafeFileHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (handle As SafeFileHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogStore(Microsoft::Win32::SafeHandles::SafeFileHandle ^ handle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -68,6 +81,8 @@
       <MemberSignature Language="C#" Value="public LogStore (string path, System.IO.FileMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(System.String,System.IO.FileMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogStore(System::String ^ path, System::IO::FileMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -123,6 +138,8 @@
       <MemberSignature Language="C#" Value="public LogStore (string path, System.IO.FileMode mode, System.IO.FileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode, access As FileAccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogStore(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -184,6 +201,8 @@
       <MemberSignature Language="C#" Value="public LogStore (string path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access, valuetype System.IO.FileShare share) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode, access As FileAccess, share As FileShare)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogStore(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -251,6 +270,7 @@
       <MemberSignature Language="C#" Value="public LogStore (string path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Security.AccessControl.FileSecurity fileSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access, valuetype System.IO.FileShare share, class System.Security.AccessControl.FileSecurity fileSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Security.AccessControl.FileSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogStore(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share, System::Security::AccessControl::FileSecurity ^ fileSecurity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -333,6 +353,8 @@
       <MemberSignature Language="C#" Value="public bool Archivable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Archivable" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Archivable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Archivable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Archivable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -360,6 +382,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber BaseSequenceNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber BaseSequenceNumber" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.BaseSequenceNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseSequenceNumber As SequenceNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber BaseSequenceNumber { System::IO::Log::SequenceNumber get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -382,10 +406,21 @@
         <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateLogArchiveSnapshot">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Takes a snapshot of the log store state necessary to make a backup.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateLogArchiveSnapshot">
       <MemberSignature Language="C#" Value="public System.IO.Log.LogArchiveSnapshot CreateLogArchiveSnapshot ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Log.LogArchiveSnapshot CreateLogArchiveSnapshot() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.CreateLogArchiveSnapshot" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateLogArchiveSnapshot () As LogArchiveSnapshot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::LogArchiveSnapshot ^ CreateLogArchiveSnapshot();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -423,6 +458,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.LogArchiveSnapshot CreateLogArchiveSnapshot (System.IO.Log.SequenceNumber first, System.IO.Log.SequenceNumber last);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Log.LogArchiveSnapshot CreateLogArchiveSnapshot(valuetype System.IO.Log.SequenceNumber first, valuetype System.IO.Log.SequenceNumber last) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.CreateLogArchiveSnapshot(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateLogArchiveSnapshot (first As SequenceNumber, last As SequenceNumber) As LogArchiveSnapshot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::LogArchiveSnapshot ^ CreateLogArchiveSnapshot(System::IO::Log::SequenceNumber first, System::IO::Log::SequenceNumber last);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -465,6 +502,8 @@
       <MemberSignature Language="C#" Value="public static void Delete (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.Delete(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Delete(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -501,7 +540,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -530,6 +574,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.LogExtentCollection Extents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Log.LogExtentCollection Extents" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Extents" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extents As LogExtentCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::LogExtentCollection ^ Extents { System::IO::Log::LogExtentCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -555,6 +601,8 @@
       <MemberSignature Language="C#" Value="public long FreeBytes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 FreeBytes" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.FreeBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FreeBytes As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long FreeBytes { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -574,6 +622,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeFileHandle Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafeFileHandle Handle" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As SafeFileHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeFileHandle ^ Handle { Microsoft::Win32::SafeHandles::SafeFileHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -592,6 +642,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber LastSequenceNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber LastSequenceNumber" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.LastSequenceNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSequenceNumber As SequenceNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber LastSequenceNumber { System::IO::Log::SequenceNumber get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -618,6 +670,8 @@
       <MemberSignature Language="C#" Value="public long Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -644,6 +698,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.LogPolicy Policy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Log.LogPolicy Policy" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.Policy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Policy As LogPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::LogPolicy ^ Policy { System::IO::Log::LogPolicy ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -669,6 +725,8 @@
       <MemberSignature Language="C#" Value="public void SetArchiveTail (System.IO.Log.SequenceNumber archiveTail);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetArchiveTail(valuetype System.IO.Log.SequenceNumber archiveTail) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogStore.SetArchiveTail(System.IO.Log.SequenceNumber)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetArchiveTail (archiveTail As SequenceNumber)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetArchiveTail(System::IO::Log::SequenceNumber archiveTail);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -715,6 +773,8 @@
       <MemberSignature Language="C#" Value="public int StreamCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StreamCount" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogStore.StreamCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StreamCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StreamCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -729,23 +789,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateLogArchiveSnapshot">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Takes a snapshot of the log store state necessary to make a backup.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogStore" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

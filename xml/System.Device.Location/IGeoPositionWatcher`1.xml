@@ -1,7 +1,9 @@
-<Type Name="IGeoPositionWatcher&lt;T&gt;" FullName="System.Device.Location.IGeoPositionWatcher&lt;T&gt;">
+﻿<Type Name="IGeoPositionWatcher&lt;T&gt;" FullName="System.Device.Location.IGeoPositionWatcher&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IGeoPositionWatcher&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGeoPositionWatcher`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.IGeoPositionWatcher`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IGeoPositionWatcher(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IGeoPositionWatcher" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public System.Device.Location.GeoPosition&lt;T&gt; Position { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Device.Location.GeoPosition`1&lt;!T&gt; Position" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.IGeoPositionWatcher`1.Position" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As GeoPosition(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Device::Location::GeoPosition&lt;T&gt; ^ Position { System::Device::Location::GeoPosition&lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -44,9 +48,11 @@
       </Docs>
     </Member>
     <Member MemberName="PositionChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Device.Location.GeoPositionChangedEventArgs&lt;T&gt;&gt; PositionChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Device.Location.GeoPositionChangedEventArgs&lt;T&gt;&gt; PositionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Device.Location.GeoPositionChangedEventArgs`1&lt;!T&gt;&gt; PositionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Device.Location.IGeoPositionWatcher`1.PositionChanged" />
+      <MemberSignature Language="VB.NET" Value="Event PositionChanged As EventHandler(Of GeoPositionChangedEventArgs(Of T)) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Device::Location::GeoPositionChangedEventArgs&lt;T&gt; ^&gt; ^ PositionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -61,10 +67,21 @@
         <altmember cref="T:System.Device.Location.GeoCoordinateWatcher" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiate the acquisition of location data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Start">
       <MemberSignature Language="C#" Value="public void Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -83,6 +100,8 @@
       <MemberSignature Language="C#" Value="public void Start (bool suppressPermissionPrompt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Start(bool suppressPermissionPrompt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Start(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start (suppressPermissionPrompt As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(bool suppressPermissionPrompt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -106,6 +125,8 @@
       <MemberSignature Language="C#" Value="public System.Device.Location.GeoPositionStatus Status { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Device.Location.GeoPositionStatus Status" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.IGeoPositionWatcher`1.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As GeoPositionStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Device::Location::GeoPositionStatus Status { System::Device::Location::GeoPositionStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -122,9 +143,11 @@
       </Docs>
     </Member>
     <Member MemberName="StatusChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Device.Location.GeoPositionStatusChangedEventArgs&gt; StatusChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Device.Location.GeoPositionStatusChangedEventArgs&gt; StatusChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Device.Location.GeoPositionStatusChangedEventArgs&gt; StatusChanged" />
       <MemberSignature Language="DocId" Value="E:System.Device.Location.IGeoPositionWatcher`1.StatusChanged" />
+      <MemberSignature Language="VB.NET" Value="Event StatusChanged As EventHandler(Of GeoPositionStatusChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Device::Location::GeoPositionStatusChangedEventArgs ^&gt; ^ StatusChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -143,6 +166,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -161,6 +186,8 @@
       <MemberSignature Language="C#" Value="public bool TryStart (bool suppressPermissionPrompt, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryStart(bool suppressPermissionPrompt, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.TryStart(System.Boolean,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryStart (suppressPermissionPrompt As Boolean, timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryStart(bool suppressPermissionPrompt, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -184,14 +211,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Start">
-      <AssemblyInfo>
-        <AssemblyName>System.Device</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiate the acquisition of location data.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

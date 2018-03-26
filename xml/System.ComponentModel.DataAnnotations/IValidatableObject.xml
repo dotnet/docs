@@ -1,7 +1,9 @@
-<Type Name="IValidatableObject" FullName="System.ComponentModel.DataAnnotations.IValidatableObject">
+﻿<Type Name="IValidatableObject" FullName="System.ComponentModel.DataAnnotations.IValidatableObject">
   <TypeSignature Language="C#" Value="public interface IValidatableObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValidatableObject" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.IValidatableObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IValidatableObject" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IValidatableObject" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -22,6 +24,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; Validate (System.ComponentModel.DataAnnotations.ValidationContext validationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; Validate(class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::ComponentModel::DataAnnotations::ValidationResult ^&gt; ^ Validate(System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TextMetrics" FullName="System.Windows.Forms.VisualStyles.TextMetrics">
+﻿<Type Name="TextMetrics" FullName="System.Windows.Forms.VisualStyles.TextMetrics">
   <TypeSignature Language="C#" Value="public struct TextMetrics" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit TextMetrics extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TextMetrics" />
+  <TypeSignature Language="VB.NET" Value="Public Structure TextMetrics" />
+  <TypeSignature Language="C++ CLI" Value="public value class TextMetrics" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public int Ascent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Ascent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Ascent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ascent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Ascent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public int AverageCharWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AverageCharWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.AverageCharWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property AverageCharWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AverageCharWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public char BreakChar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char BreakChar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.BreakChar" />
+      <MemberSignature Language="VB.NET" Value="Public Property BreakChar As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char BreakChar { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.VisualStyles.TextMetricsCharacterSet CharSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.VisualStyles.TextMetricsCharacterSet CharSet" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.CharSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharSet As TextMetricsCharacterSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::VisualStyles::TextMetricsCharacterSet CharSet { System::Windows::Forms::VisualStyles::TextMetricsCharacterSet get(); void set(System::Windows::Forms::VisualStyles::TextMetricsCharacterSet value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +122,8 @@
       <MemberSignature Language="C#" Value="public char DefaultChar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char DefaultChar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DefaultChar" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultChar As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char DefaultChar { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +142,8 @@
       <MemberSignature Language="C#" Value="public int Descent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Descent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Descent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Descent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Descent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +169,8 @@
       <MemberSignature Language="C#" Value="public int DigitizedAspectX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DigitizedAspectX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DigitizedAspectX" />
+      <MemberSignature Language="VB.NET" Value="Public Property DigitizedAspectX As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DigitizedAspectX { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -173,6 +189,8 @@
       <MemberSignature Language="C#" Value="public int DigitizedAspectY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DigitizedAspectY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DigitizedAspectY" />
+      <MemberSignature Language="VB.NET" Value="Public Property DigitizedAspectY As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DigitizedAspectY { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -191,6 +209,8 @@
       <MemberSignature Language="C#" Value="public int ExternalLeading { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ExternalLeading" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.ExternalLeading" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalLeading As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExternalLeading { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,6 +236,8 @@
       <MemberSignature Language="C#" Value="public char FirstChar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char FirstChar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.FirstChar" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstChar As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char FirstChar { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +256,8 @@
       <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,6 +283,8 @@
       <MemberSignature Language="C#" Value="public int InternalLeading { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InternalLeading" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.InternalLeading" />
+      <MemberSignature Language="VB.NET" Value="Public Property InternalLeading As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InternalLeading { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -284,6 +310,8 @@
       <MemberSignature Language="C#" Value="public bool Italic { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Italic" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Italic" />
+      <MemberSignature Language="VB.NET" Value="Public Property Italic As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Italic { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -303,6 +331,8 @@
       <MemberSignature Language="C#" Value="public char LastChar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char LastChar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.LastChar" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastChar As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char LastChar { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -321,6 +351,8 @@
       <MemberSignature Language="C#" Value="public int MaxCharWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCharWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.MaxCharWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxCharWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxCharWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -339,6 +371,8 @@
       <MemberSignature Language="C#" Value="public int Overhang { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Overhang" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Overhang" />
+      <MemberSignature Language="VB.NET" Value="Public Property Overhang As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Overhang { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -357,6 +391,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues PitchAndFamily { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues PitchAndFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.PitchAndFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Property PitchAndFamily As TextMetricsPitchAndFamilyValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::VisualStyles::TextMetricsPitchAndFamilyValues PitchAndFamily { System::Windows::Forms::VisualStyles::TextMetricsPitchAndFamilyValues get(); void set(System::Windows::Forms::VisualStyles::TextMetricsPitchAndFamilyValues value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -375,6 +411,8 @@
       <MemberSignature Language="C#" Value="public bool StruckOut { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StruckOut" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.StruckOut" />
+      <MemberSignature Language="VB.NET" Value="Public Property StruckOut As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StruckOut { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -394,6 +432,8 @@
       <MemberSignature Language="C#" Value="public bool Underlined { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Underlined" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Underlined" />
+      <MemberSignature Language="VB.NET" Value="Public Property Underlined As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Underlined { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -413,6 +453,8 @@
       <MemberSignature Language="C#" Value="public int Weight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Weight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Weight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Weight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Weight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

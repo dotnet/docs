@@ -1,7 +1,9 @@
-<Type Name="DesignerVerbCollection" FullName="System.ComponentModel.Design.DesignerVerbCollection">
+﻿<Type Name="DesignerVerbCollection" FullName="System.ComponentModel.Design.DesignerVerbCollection">
   <TypeSignature Language="C#" Value="public class DesignerVerbCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerVerbCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerVerbCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignerVerbCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerVerbCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,10 +47,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignerVerbCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerVerbCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="public DesignerVerbCollection (System.ComponentModel.Design.DesignerVerb[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerVerb[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.#ctor(System.ComponentModel.Design.DesignerVerb[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As DesignerVerb())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerVerbCollection(cli::array &lt;System::ComponentModel::Design::DesignerVerb ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +134,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.ComponentModel.Design.DesignerVerb value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.ComponentModel.Design.DesignerVerb value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.Add(System.ComponentModel.Design.DesignerVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As DesignerVerb) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::ComponentModel::Design::DesignerVerb ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -156,10 +174,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified set of designer verbs to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.ComponentModel.Design.DesignerVerb[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.ComponentModel.Design.DesignerVerb[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.AddRange(System.ComponentModel.Design.DesignerVerb[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As DesignerVerb())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::ComponentModel::Design::DesignerVerb ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +233,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.ComponentModel.Design.DesignerVerbCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.ComponentModel.Design.DesignerVerbCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.AddRange(System.ComponentModel.Design.DesignerVerbCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As DesignerVerbCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::ComponentModel::Design::DesignerVerbCollection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -246,6 +278,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.ComponentModel.Design.DesignerVerb value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.ComponentModel.Design.DesignerVerb value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.Contains(System.ComponentModel.Design.DesignerVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As DesignerVerb) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ComponentModel::Design::DesignerVerb ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -289,6 +323,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.ComponentModel.Design.DesignerVerb[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.ComponentModel.Design.DesignerVerb[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.CopyTo(System.ComponentModel.Design.DesignerVerb[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DesignerVerb(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::ComponentModel::Design::DesignerVerb ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -332,6 +368,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.ComponentModel.Design.DesignerVerb value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.ComponentModel.Design.DesignerVerb value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.IndexOf(System.ComponentModel.Design.DesignerVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As DesignerVerb) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::ComponentModel::Design::DesignerVerb ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -374,6 +412,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.ComponentModel.Design.DesignerVerb value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.ComponentModel.Design.DesignerVerb value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.Insert(System.Int32,System.ComponentModel.Design.DesignerVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As DesignerVerb)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::ComponentModel::Design::DesignerVerb ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -417,6 +457,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerVerb this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerVerb Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerVerbCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DesignerVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerVerb ^ default[int] { System::ComponentModel::Design::DesignerVerb ^ get(int index); void set(int index, System::ComponentModel::Design::DesignerVerb ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -448,6 +490,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.OnClear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -482,6 +526,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.OnInsert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -521,6 +567,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRemove (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemove(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.OnRemove(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -560,6 +608,8 @@
       <MemberSignature Language="C#" Value="protected override void OnSet (int index, object oldValue, object newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.OnSet(System.Int32,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -601,6 +651,8 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -638,6 +690,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.ComponentModel.Design.DesignerVerb value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ComponentModel.Design.DesignerVerb value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerVerbCollection.Remove(System.ComponentModel.Design.DesignerVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DesignerVerb)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ComponentModel::Design::DesignerVerb ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -675,25 +729,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified set of designer verbs to the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

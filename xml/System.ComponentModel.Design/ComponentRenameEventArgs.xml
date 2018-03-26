@@ -1,7 +1,9 @@
-<Type Name="ComponentRenameEventArgs" FullName="System.ComponentModel.Design.ComponentRenameEventArgs">
+﻿<Type Name="ComponentRenameEventArgs" FullName="System.ComponentModel.Design.ComponentRenameEventArgs">
   <TypeSignature Language="C#" Value="public class ComponentRenameEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentRenameEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentRenameEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentRenameEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentRenameEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="public ComponentRenameEventArgs (object component, string oldName, string newName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object component, string oldName, string newName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentRenameEventArgs.#ctor(System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (component As Object, oldName As String, newName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentRenameEventArgs(System::Object ^ component, System::String ^ oldName, System::String ^ newName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +95,8 @@
       <MemberSignature Language="C#" Value="public object Component { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Component" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentRenameEventArgs.Component" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Component As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Component { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +124,8 @@
       <MemberSignature Language="C#" Value="public virtual string NewName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentRenameEventArgs.NewName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NewName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +154,8 @@
       <MemberSignature Language="C#" Value="public virtual string OldName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OldName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentRenameEventArgs.OldName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OldName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ OldName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="BufferedWebEventProvider" FullName="System.Web.Management.BufferedWebEventProvider">
+﻿<Type Name="BufferedWebEventProvider" FullName="System.Web.Management.BufferedWebEventProvider">
   <TypeSignature Language="C#" Value="public abstract class BufferedWebEventProvider : System.Web.Management.WebEventProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BufferedWebEventProvider extends System.Web.Management.WebEventProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.BufferedWebEventProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BufferedWebEventProvider&#xA;Inherits WebEventProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BufferedWebEventProvider abstract : System::Web::Management::WebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +86,8 @@
       <MemberSignature Language="C#" Value="protected BufferedWebEventProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BufferedWebEventProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +118,8 @@
       <MemberSignature Language="C#" Value="public string BufferMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BufferMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.BufferedWebEventProvider.BufferMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BufferMode As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BufferMode { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +161,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +196,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection config);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +236,8 @@
       <MemberSignature Language="C#" Value="public override void ProcessEvent (System.Web.Management.WebBaseEvent eventRaised);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ProcessEvent(class System.Web.Management.WebBaseEvent eventRaised) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProcessEvent (eventRaised As WebBaseEvent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProcessEvent(System::Web::Management::WebBaseEvent ^ eventRaised);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +274,8 @@
       <MemberSignature Language="C#" Value="public abstract void ProcessEventFlush (System.Web.Management.WebEventBufferFlushInfo flushInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessEventFlush(class System.Web.Management.WebEventBufferFlushInfo flushInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.ProcessEventFlush(System.Web.Management.WebEventBufferFlushInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ProcessEventFlush (flushInfo As WebEventBufferFlushInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ProcessEventFlush(System::Web::Management::WebEventBufferFlushInfo ^ flushInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -298,6 +312,8 @@
       <MemberSignature Language="C#" Value="public override void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Shutdown ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Shutdown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -323,6 +339,8 @@
       <MemberSignature Language="C#" Value="public bool UseBuffering { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseBuffering" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.BufferedWebEventProvider.UseBuffering" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseBuffering As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseBuffering { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

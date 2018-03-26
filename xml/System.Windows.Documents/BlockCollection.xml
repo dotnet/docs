@@ -1,7 +1,9 @@
-<Type Name="BlockCollection" FullName="System.Windows.Documents.BlockCollection">
+﻿<Type Name="BlockCollection" FullName="System.Windows.Documents.BlockCollection">
   <TypeSignature Language="C#" Value="public class BlockCollection : System.Windows.Documents.TextElementCollection&lt;System.Windows.Documents.Block&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlockCollection extends System.Windows.Documents.TextElementCollection`1&lt;class System.Windows.Documents.Block&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.BlockCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlockCollection&#xA;Inherits TextElementCollection(Of Block)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlockCollection : System::Windows::Documents::TextElementCollection&lt;System::Windows::Documents::Block ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.Block FirstBlock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Block FirstBlock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.BlockCollection.FirstBlock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstBlock As Block" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Block ^ FirstBlock { System::Windows::Documents::Block ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.Block LastBlock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Block LastBlock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.BlockCollection.LastBlock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastBlock As Block" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Block ^ LastBlock { System::Windows::Documents::Block ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

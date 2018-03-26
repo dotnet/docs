@@ -1,7 +1,9 @@
-<Type Name="GenerateMetadata" FullName="System.EnterpriseServices.Internal.GenerateMetadata">
+﻿<Type Name="GenerateMetadata" FullName="System.EnterpriseServices.Internal.GenerateMetadata">
   <TypeSignature Language="C#" Value="public class GenerateMetadata : System.EnterpriseServices.Internal.IComSoapMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenerateMetadata extends System.Object implements class System.EnterpriseServices.Internal.IComSoapMetadata" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.GenerateMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class GenerateMetadata&#xA;Implements IComSoapMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GenerateMetadata : System::EnterpriseServices::Internal::IComSoapMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public GenerateMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenerateMetadata();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -54,7 +58,12 @@
       <MemberSignature Language="C#" Value="public string Generate (string strSrcTypeLib, string outPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Generate(string strSrcTypeLib, string outPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.Generate(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Generate (strSrcTypeLib As String, outPath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Generate(System::String ^ strSrcTypeLib, System::String ^ outPath);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapMetadata.Generate(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +97,8 @@
       <MemberSignature Language="C#" Value="public string GenerateMetaData (string strSrcTypeLib, string outPath, byte[] PublicKey, System.Reflection.StrongNameKeyPair KeyPair);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateMetaData(string strSrcTypeLib, string outPath, unsigned int8[] PublicKey, class System.Reflection.StrongNameKeyPair KeyPair) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.GenerateMetaData(System.String,System.String,System.Byte[],System.Reflection.StrongNameKeyPair)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateMetaData (strSrcTypeLib As String, outPath As String, PublicKey As Byte(), KeyPair As StrongNameKeyPair) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateMetaData(System::String ^ strSrcTypeLib, System::String ^ outPath, cli::array &lt;System::Byte&gt; ^ PublicKey, System::Reflection::StrongNameKeyPair ^ KeyPair);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -128,7 +139,12 @@
       <MemberSignature Language="C#" Value="public string GenerateSigned (string strSrcTypeLib, string outPath, bool InstallGac, out string Error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateSigned(string strSrcTypeLib, string outPath, bool InstallGac, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateSigned (strSrcTypeLib As String, outPath As String, InstallGac As Boolean, ByRef Error As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GenerateSigned(System::String ^ strSrcTypeLib, System::String ^ outPath, bool InstallGac, [Runtime::InteropServices::Out] System::String ^ % Error);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -168,6 +184,8 @@
       <MemberSignature Language="C#" Value="public static int SearchPath (string path, string fileName, string extension, int numBufferChars, string buffer, int[] filePart);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;kernel32.dll&quot; as &quot;SearchPath&quot; unicode winapi lasterr)int32 SearchPath(string path, string fileName, string extension, int32 numBufferChars, string buffer, int32[] filePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.SearchPath(System.String,System.String,System.String,System.Int32,System.String,System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SearchPath (path As String, fileName As String, extension As String, numBufferChars As Integer, buffer As String, filePart As Integer()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int SearchPath(System::String ^ path, System::String ^ fileName, System::String ^ extension, int numBufferChars, System::String ^ buffer, cli::array &lt;int&gt; ^ filePart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

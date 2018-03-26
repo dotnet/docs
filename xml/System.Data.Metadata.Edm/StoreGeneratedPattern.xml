@@ -1,7 +1,9 @@
-<Type Name="StoreGeneratedPattern" FullName="System.Data.Metadata.Edm.StoreGeneratedPattern">
+﻿<Type Name="StoreGeneratedPattern" FullName="System.Data.Metadata.Edm.StoreGeneratedPattern">
   <TypeSignature Language="C#" Value="public enum StoreGeneratedPattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StoreGeneratedPattern extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.StoreGeneratedPattern" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StoreGeneratedPattern" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StoreGeneratedPattern" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Computed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.StoreGeneratedPattern Computed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.StoreGeneratedPattern.Computed" />
+      <MemberSignature Language="VB.NET" Value="Computed" />
+      <MemberSignature Language="C++ CLI" Value="Computed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.StoreGeneratedPattern</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A value is generated on both insert and update.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Identity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.StoreGeneratedPattern Identity = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.StoreGeneratedPattern.Identity" />
+      <MemberSignature Language="VB.NET" Value="Identity" />
+      <MemberSignature Language="C++ CLI" Value="Identity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.StoreGeneratedPattern</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A value is generated on insert and remains unchanged on update.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.StoreGeneratedPattern None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.StoreGeneratedPattern.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.StoreGeneratedPattern</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A value indicating that it is not a server generated property. This is the default value.</summary>
       </Docs>

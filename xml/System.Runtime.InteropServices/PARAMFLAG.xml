@@ -1,7 +1,9 @@
-<Type Name="PARAMFLAG" FullName="System.Runtime.InteropServices.PARAMFLAG">
+﻿<Type Name="PARAMFLAG" FullName="System.Runtime.InteropServices.PARAMFLAG">
   <TypeSignature Language="C#" Value="public enum PARAMFLAG" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PARAMFLAG extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.PARAMFLAG" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PARAMFLAG" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PARAMFLAG" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FHASCUSTDATA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.PARAMFLAG PARAMFLAG_FHASCUSTDATA = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMFLAG.PARAMFLAG_FHASCUSTDATA" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FHASCUSTDATA" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FHASCUSTDATA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The parameter has custom data.</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FHASDEFAULT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.PARAMFLAG PARAMFLAG_FHASDEFAULT = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMFLAG.PARAMFLAG_FHASDEFAULT" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FHASDEFAULT" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FHASDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -53,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The parameter has default behaviors defined.</summary>
       </Docs>
@@ -61,6 +69,8 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FIN" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.PARAMFLAG PARAMFLAG_FIN = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMFLAG.PARAMFLAG_FIN" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FIN" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FIN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The parameter passes information from the caller to the callee.</summary>
       </Docs>
@@ -78,6 +89,8 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FLCID" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.PARAMFLAG PARAMFLAG_FLCID = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMFLAG.PARAMFLAG_FLCID" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FLCID" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FLCID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -87,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The parameter is the local identifier of a client application.</summary>
       </Docs>
@@ -95,6 +109,8 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FOPT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.PARAMFLAG PARAMFLAG_FOPT = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMFLAG.PARAMFLAG_FOPT" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FOPT" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FOPT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The parameter is optional.</summary>
       </Docs>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FOUT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.PARAMFLAG PARAMFLAG_FOUT = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMFLAG.PARAMFLAG_FOUT" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FOUT" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FOUT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -121,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The parameter returns information from the callee to the caller.</summary>
       </Docs>
@@ -129,6 +149,8 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FRETVAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.PARAMFLAG PARAMFLAG_FRETVAL = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMFLAG.PARAMFLAG_FRETVAL" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FRETVAL" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FRETVAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The parameter is the return value of the member.</summary>
       </Docs>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_NONE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.PARAMFLAG PARAMFLAG_NONE = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMFLAG.PARAMFLAG_NONE" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_NONE" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_NONE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +180,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Whether the parameter passes or receives information is unspecified.</summary>
       </Docs>

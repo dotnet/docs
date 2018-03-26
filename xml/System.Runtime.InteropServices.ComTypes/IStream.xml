@@ -1,7 +1,9 @@
-<Type Name="IStream" FullName="System.Runtime.InteropServices.ComTypes.IStream">
+﻿<Type Name="IStream" FullName="System.Runtime.InteropServices.ComTypes.IStream">
   <TypeSignature Language="C#" Value="public interface IStream" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStream" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IStream" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStream" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IStream" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.ComTypes.IStream ppstm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class System.Runtime.InteropServices.ComTypes.IStream&amp; ppstm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Clone(System.Runtime.InteropServices.ComTypes.IStream@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppstm As IStream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IStream ^ % ppstm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -89,6 +93,8 @@
       <MemberSignature Language="C#" Value="public void Commit (int grfCommitFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit(int32 grfCommitFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Commit(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Commit (grfCommitFlags As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit(int grfCommitFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -131,6 +137,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Runtime.InteropServices.ComTypes.IStream pstm, long cb, IntPtr pcbRead, IntPtr pcbWritten);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Runtime.InteropServices.ComTypes.IStream pstm, int64 cb, native int pcbRead, native int pcbWritten) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.CopyTo(System.Runtime.InteropServices.ComTypes.IStream,System.Int64,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (pstm As IStream, cb As Long, pcbRead As IntPtr, pcbWritten As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::Runtime::InteropServices::ComTypes::IStream ^ pstm, long cb, IntPtr pcbRead, IntPtr pcbWritten);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -179,6 +187,8 @@
       <MemberSignature Language="C#" Value="public void LockRegion (long libOffset, long cb, int dwLockType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LockRegion(int64 libOffset, int64 cb, int32 dwLockType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.LockRegion(System.Int64,System.Int64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LockRegion (libOffset As Long, cb As Long, dwLockType As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LockRegion(long libOffset, long cb, int dwLockType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -225,6 +235,8 @@
       <MemberSignature Language="C#" Value="public void Read (byte[] pv, int cb, IntPtr pcbRead);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Read([out] unsigned int8[] pv, int32 cb, native int pcbRead) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Read(System.Byte[],System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Read (pv As Byte(), cb As Integer, pcbRead As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Read(cli::array &lt;System::Byte&gt; ^ pv, int cb, IntPtr pcbRead);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -271,6 +283,8 @@
       <MemberSignature Language="C#" Value="public void Revert ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revert() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Revert" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Revert ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Revert();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -310,6 +324,8 @@
       <MemberSignature Language="C#" Value="public void Seek (long dlibMove, int dwOrigin, IntPtr plibNewPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Seek(int64 dlibMove, int32 dwOrigin, native int plibNewPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Seek(System.Int64,System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Seek (dlibMove As Long, dwOrigin As Integer, plibNewPosition As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(long dlibMove, int dwOrigin, IntPtr plibNewPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -356,6 +372,8 @@
       <MemberSignature Language="C#" Value="public void SetSize (long libNewSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSize(int64 libNewSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.SetSize(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSize (libNewSize As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSize(long libNewSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -398,6 +416,8 @@
       <MemberSignature Language="C#" Value="public void Stat (out System.Runtime.InteropServices.ComTypes.STATSTG pstatstg, int grfStatFlag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stat([out] valuetype System.Runtime.InteropServices.ComTypes.STATSTG&amp; pstatstg, int32 grfStatFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stat (ByRef pstatstg As STATSTG, grfStatFlag As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stat([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::STATSTG % pstatstg, int grfStatFlag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -442,6 +462,8 @@
       <MemberSignature Language="C#" Value="public void UnlockRegion (long libOffset, long cb, int dwLockType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnlockRegion(int64 libOffset, int64 cb, int32 dwLockType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.UnlockRegion(System.Int64,System.Int64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnlockRegion (libOffset As Long, cb As Long, dwLockType As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnlockRegion(long libOffset, long cb, int dwLockType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -488,6 +510,8 @@
       <MemberSignature Language="C#" Value="public void Write (byte[] pv, int cb, IntPtr pcbWritten);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int8[] pv, int32 cb, native int pcbWritten) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Write(System.Byte[],System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (pv As Byte(), cb As Integer, pcbWritten As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ pv, int cb, IntPtr pcbWritten);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

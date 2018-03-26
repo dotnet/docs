@@ -1,7 +1,9 @@
-<Type Name="DataAdapter" FullName="System.Data.Common.DataAdapter">
+﻿<Type Name="DataAdapter" FullName="System.Data.Common.DataAdapter">
   <TypeSignature Language="C#" Value="public class DataAdapter : System.ComponentModel.Component, System.Data.IDataAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataAdapter extends System.ComponentModel.Component implements class System.Data.IDataAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataAdapter&#xA;Inherits Component&#xA;Implements IDataAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataAdapter : System::ComponentModel::Component, System::Data::IDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,10 +41,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of a <see cref="T:System.Data.Common.DataAdapter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DataAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="protected DataAdapter (System.Data.Common.DataAdapter from);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DataAdapter from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.#ctor(System.Data.Common.DataAdapter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (from As DataAdapter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataAdapter(System::Data::Common::DataAdapter ^ from);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -116,6 +132,8 @@
       <MemberSignature Language="C#" Value="public bool AcceptChangesDuringFill { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AcceptChangesDuringFill" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.AcceptChangesDuringFill" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcceptChangesDuringFill As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptChangesDuringFill { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -156,6 +174,8 @@
       <MemberSignature Language="C#" Value="public bool AcceptChangesDuringUpdate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AcceptChangesDuringUpdate" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.AcceptChangesDuringUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcceptChangesDuringUpdate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptChangesDuringUpdate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -207,6 +227,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Data.Common.DataAdapter CloneInternals ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DataAdapter CloneInternals() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.CloneInternals" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CloneInternals () As DataAdapter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DataAdapter ^ CloneInternals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -252,6 +274,8 @@
       <MemberSignature Language="C#" Value="public bool ContinueUpdateOnError { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContinueUpdateOnError" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.ContinueUpdateOnError" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContinueUpdateOnError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContinueUpdateOnError { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -294,6 +318,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Data.Common.DataTableMappingCollection CreateTableMappings ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DataTableMappingCollection CreateTableMappings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.CreateTableMappings" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateTableMappings () As DataTableMappingCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DataTableMappingCollection ^ CreateTableMappings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -322,6 +348,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -364,11 +392,25 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fill">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" /> to match those in the data source.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Fill">
       <MemberSignature Language="C#" Value="public virtual int Fill (System.Data.DataSet dataSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Fill(System::Data::DataSet ^ dataSet);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataAdapter.Fill(System.Data.DataSet)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -420,6 +462,7 @@
       <MemberSignature Language="C#" Value="protected virtual int Fill (System.Data.DataTable dataTable, System.Data.IDataReader dataReader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataTable dataTable, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataTable,System.Data.IDataReader)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataTable ^ dataTable, System::Data::IDataReader ^ dataReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -460,6 +503,8 @@
       <MemberSignature Language="C#" Value="protected virtual int Fill (System.Data.DataTable[] dataTables, System.Data.IDataReader dataReader, int startRecord, int maxRecords);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataTable[] dataTables, class System.Data.IDataReader dataReader, int32 startRecord, int32 maxRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataTable[],System.Data.IDataReader,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function Fill (dataTables As DataTable(), dataReader As IDataReader, startRecord As Integer, maxRecords As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(cli::array &lt;System::Data::DataTable ^&gt; ^ dataTables, System::Data::IDataReader ^ dataReader, int startRecord, int maxRecords);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -504,6 +549,7 @@
       <MemberSignature Language="C#" Value="protected virtual int Fill (System.Data.DataSet dataSet, string srcTable, System.Data.IDataReader dataReader, int startRecord, int maxRecords);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet, string srcTable, class System.Data.IDataReader dataReader, int32 startRecord, int32 maxRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet,System.String,System.Data.IDataReader,System.Int32,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataSet ^ dataSet, System::String ^ srcTable, System::Data::IDataReader ^ dataReader, int startRecord, int maxRecords);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -550,6 +596,8 @@
       <MemberSignature Language="C#" Value="public event System.Data.FillErrorEventHandler FillError;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Data.FillErrorEventHandler FillError" />
       <MemberSignature Language="DocId" Value="E:System.Data.Common.DataAdapter.FillError" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event FillError As FillErrorEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::FillErrorEventHandler ^ FillError;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -587,6 +635,8 @@
       <MemberSignature Language="C#" Value="public System.Data.LoadOption FillLoadOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.LoadOption FillLoadOption" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.FillLoadOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property FillLoadOption As LoadOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::LoadOption FillLoadOption { System::Data::LoadOption get(); void set(System::Data::LoadOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -603,7 +653,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -616,11 +666,25 @@
         <altmember cref="T:System.Data.LoadOption" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FillSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FillSchema">
       <MemberSignature Language="C#" Value="public virtual System.Data.DataTable[] FillSchema (System.Data.DataSet dataSet, System.Data.SchemaType schemaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -695,6 +759,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Data.DataTable FillSchema (System.Data.DataTable dataTable, System.Data.SchemaType schemaType, System.Data.IDataReader dataReader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.DataTable FillSchema(class System.Data.DataTable dataTable, valuetype System.Data.SchemaType schemaType, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataTable,System.Data.SchemaType,System.Data.IDataReader)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::DataTable ^ FillSchema(System::Data::DataTable ^ dataTable, System::Data::SchemaType schemaType, System::Data::IDataReader ^ dataReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -730,6 +795,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Data.DataTable[] FillSchema (System.Data.DataSet dataSet, System.Data.SchemaType schemaType, string srcTable, System.Data.IDataReader dataReader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType, string srcTable, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType,System.String,System.Data.IDataReader)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType, System::String ^ srcTable, System::Data::IDataReader ^ dataReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -767,7 +833,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Data.IDataParameter[] GetFillParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDataParameter[] GetFillParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.GetFillParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFillParameters () As IDataParameter()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Data::IDataParameter ^&gt; ^ GetFillParameters();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataAdapter.GetFillParameters</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -800,6 +871,8 @@
       <MemberSignature Language="C#" Value="protected bool HasTableMappings ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasTableMappings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.HasTableMappings" />
+      <MemberSignature Language="VB.NET" Value="Protected Function HasTableMappings () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasTableMappings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -829,7 +902,12 @@
       <MemberSignature Language="C#" Value="public System.Data.MissingMappingAction MissingMappingAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.MissingMappingAction MissingMappingAction" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.MissingMappingAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property MissingMappingAction As MissingMappingAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::MissingMappingAction MissingMappingAction { System::Data::MissingMappingAction get(); void set(System::Data::MissingMappingAction value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataAdapter.MissingMappingAction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -878,7 +956,12 @@
       <MemberSignature Language="C#" Value="public System.Data.MissingSchemaAction MissingSchemaAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.MissingSchemaAction MissingSchemaAction" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.MissingSchemaAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property MissingSchemaAction As MissingSchemaAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::MissingSchemaAction MissingSchemaAction { System::Data::MissingSchemaAction get(); void set(System::Data::MissingSchemaAction value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataAdapter.MissingSchemaAction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -922,6 +1005,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFillError (System.Data.FillErrorEventArgs value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFillError(class System.Data.FillErrorEventArgs value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.OnFillError(System.Data.FillErrorEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFillError (value As FillErrorEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFillError(System::Data::FillErrorEventArgs ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -952,6 +1037,8 @@
       <MemberSignature Language="C#" Value="public void ResetFillLoadOption ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetFillLoadOption() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ResetFillLoadOption" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetFillLoadOption ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetFillLoadOption();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -984,6 +1071,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ReturnProviderSpecificTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReturnProviderSpecificTypes" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.ReturnProviderSpecificTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ReturnProviderSpecificTypes As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReturnProviderSpecificTypes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1024,6 +1113,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ShouldSerializeAcceptChangesDuringFill ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldSerializeAcceptChangesDuringFill() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeAcceptChangesDuringFill" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerializeAcceptChangesDuringFill () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldSerializeAcceptChangesDuringFill();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1058,6 +1149,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ShouldSerializeFillLoadOption ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldSerializeFillLoadOption() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeFillLoadOption" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerializeFillLoadOption () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldSerializeFillLoadOption();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1092,6 +1185,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeTableMappings ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeTableMappings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeTableMappings" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeTableMappings () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeTableMappings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1121,7 +1216,12 @@
       <MemberSignature Language="C#" Value="System.Data.ITableMappingCollection System.Data.IDataAdapter.TableMappings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.ITableMappingCollection System.Data.IDataAdapter.TableMappings" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.System#Data#IDataAdapter#TableMappings" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property TableMappings As ITableMappingCollection Implements IDataAdapter.TableMappings" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::ITableMappingCollection ^ System.Data.IDataAdapter.TableMappings { System::Data::ITableMappingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataAdapter.TableMappings</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1157,6 +1257,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DataTableMappingCollection TableMappings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DataTableMappingCollection TableMappings" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.TableMappings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableMappings As DataTableMappingCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataTableMappingCollection ^ TableMappings { System::Data::Common::DataTableMappingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1173,7 +1275,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1204,7 +1306,11 @@
       <MemberSignature Language="C#" Value="public virtual int Update (System.Data.DataSet dataSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Update(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Update(System.Data.DataSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Update(System::Data::DataSet ^ dataSet);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataAdapter.Update(System.Data.DataSet)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1293,35 +1399,5 @@
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FillSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Fill">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" /> to match those in the data source.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of a <see cref="T:System.Data.Common.DataAdapter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

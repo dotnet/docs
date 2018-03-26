@@ -1,7 +1,9 @@
-<Type Name="CryptoKeyRights" FullName="System.Security.AccessControl.CryptoKeyRights">
+﻿<Type Name="CryptoKeyRights" FullName="System.Security.AccessControl.CryptoKeyRights">
   <TypeSignature Language="C#" Value="public enum CryptoKeyRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CryptoKeyRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.CryptoKeyRights" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CryptoKeyRights" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CryptoKeyRights" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="ChangePermissions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights ChangePermissions = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.ChangePermissions" />
+      <MemberSignature Language="VB.NET" Value="ChangePermissions" />
+      <MemberSignature Language="C++ CLI" Value="ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>Change permissions for the key.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights Delete = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>Delete the key.</summary>
       </Docs>
@@ -58,6 +66,8 @@
       <MemberSignature Language="C#" Value="FullControl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights FullControl = int32(2032027)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.FullControl" />
+      <MemberSignature Language="VB.NET" Value="FullControl" />
+      <MemberSignature Language="C++ CLI" Value="FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2032027</MemberValue>
       <Docs>
         <summary>Full control of the key.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="GenericAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights GenericAll = int32(268435456)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.GenericAll" />
+      <MemberSignature Language="VB.NET" Value="GenericAll" />
+      <MemberSignature Language="C++ CLI" Value="GenericAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>268435456</MemberValue>
       <Docs>
         <summary>A combination of <see cref="F:System.Security.AccessControl.CryptoKeyRights.GenericRead" /> and <see cref="F:System.Security.AccessControl.CryptoKeyRights.GenericWrite" />.</summary>
       </Docs>
@@ -92,6 +106,8 @@
       <MemberSignature Language="C#" Value="GenericExecute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights GenericExecute = int32(536870912)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.GenericExecute" />
+      <MemberSignature Language="VB.NET" Value="GenericExecute" />
+      <MemberSignature Language="C++ CLI" Value="GenericExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>536870912</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="GenericRead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights GenericRead = int32(-2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.GenericRead" />
+      <MemberSignature Language="VB.NET" Value="GenericRead" />
+      <MemberSignature Language="C++ CLI" Value="GenericRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
       <Docs>
         <summary>Read the key data, extended attributes of the key, attributes of the key, and permissions for the key.</summary>
       </Docs>
@@ -126,6 +146,8 @@
       <MemberSignature Language="C#" Value="GenericWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights GenericWrite = int32(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.GenericWrite" />
+      <MemberSignature Language="VB.NET" Value="GenericWrite" />
+      <MemberSignature Language="C++ CLI" Value="GenericWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>Write the key data, extended attributes of the key, attributes of the key, and permissions for the key.</summary>
       </Docs>
@@ -143,6 +166,8 @@
       <MemberSignature Language="C#" Value="ReadAttributes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights ReadAttributes = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.ReadAttributes" />
+      <MemberSignature Language="VB.NET" Value="ReadAttributes" />
+      <MemberSignature Language="C++ CLI" Value="ReadAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -152,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Read attributes of the key.</summary>
       </Docs>
@@ -160,6 +186,8 @@
       <MemberSignature Language="C#" Value="ReadData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights ReadData = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.ReadData" />
+      <MemberSignature Language="VB.NET" Value="ReadData" />
+      <MemberSignature Language="C++ CLI" Value="ReadData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +197,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Read the key data.</summary>
       </Docs>
@@ -177,6 +206,8 @@
       <MemberSignature Language="C#" Value="ReadExtendedAttributes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights ReadExtendedAttributes = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.ReadExtendedAttributes" />
+      <MemberSignature Language="VB.NET" Value="ReadExtendedAttributes" />
+      <MemberSignature Language="C++ CLI" Value="ReadExtendedAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -186,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Read extended attributes of the key.</summary>
       </Docs>
@@ -194,6 +226,8 @@
       <MemberSignature Language="C#" Value="ReadPermissions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights ReadPermissions = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.ReadPermissions" />
+      <MemberSignature Language="VB.NET" Value="ReadPermissions" />
+      <MemberSignature Language="C++ CLI" Value="ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +237,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>Read permissions for the key.</summary>
       </Docs>
@@ -211,6 +246,8 @@
       <MemberSignature Language="C#" Value="Synchronize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights Synchronize = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.Synchronize" />
+      <MemberSignature Language="VB.NET" Value="Synchronize" />
+      <MemberSignature Language="C++ CLI" Value="Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +257,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>Use the key for synchronization.</summary>
       </Docs>
@@ -228,6 +266,8 @@
       <MemberSignature Language="C#" Value="TakeOwnership" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights TakeOwnership = int32(524288)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.TakeOwnership" />
+      <MemberSignature Language="VB.NET" Value="TakeOwnership" />
+      <MemberSignature Language="C++ CLI" Value="TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -237,6 +277,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>Take ownership of the key.</summary>
       </Docs>
@@ -245,6 +286,8 @@
       <MemberSignature Language="C#" Value="WriteAttributes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights WriteAttributes = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.WriteAttributes" />
+      <MemberSignature Language="VB.NET" Value="WriteAttributes" />
+      <MemberSignature Language="C++ CLI" Value="WriteAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -254,6 +297,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Write attributes of the key.</summary>
       </Docs>
@@ -262,6 +306,8 @@
       <MemberSignature Language="C#" Value="WriteData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights WriteData = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.WriteData" />
+      <MemberSignature Language="VB.NET" Value="WriteData" />
+      <MemberSignature Language="C++ CLI" Value="WriteData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -271,6 +317,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Write key data.</summary>
       </Docs>
@@ -279,6 +326,8 @@
       <MemberSignature Language="C#" Value="WriteExtendedAttributes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.CryptoKeyRights WriteExtendedAttributes = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CryptoKeyRights.WriteExtendedAttributes" />
+      <MemberSignature Language="VB.NET" Value="WriteExtendedAttributes" />
+      <MemberSignature Language="C++ CLI" Value="WriteExtendedAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -288,6 +337,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Write extended attributes of the key.</summary>
       </Docs>

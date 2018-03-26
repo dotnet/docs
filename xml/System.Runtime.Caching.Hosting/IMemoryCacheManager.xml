@@ -1,7 +1,9 @@
-<Type Name="IMemoryCacheManager" FullName="System.Runtime.Caching.Hosting.IMemoryCacheManager">
+﻿<Type Name="IMemoryCacheManager" FullName="System.Runtime.Caching.Hosting.IMemoryCacheManager">
   <TypeSignature Language="C#" Value="public interface IMemoryCacheManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMemoryCacheManager" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Hosting.IMemoryCacheManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMemoryCacheManager" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMemoryCacheManager" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseCache (System.Runtime.Caching.MemoryCache cache);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseCache(class System.Runtime.Caching.MemoryCache cache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IMemoryCacheManager.ReleaseCache(System.Runtime.Caching.MemoryCache)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseCache (cache As MemoryCache)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseCache(System::Runtime::Caching::MemoryCache ^ cache);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public void UpdateCacheSize (long size, System.Runtime.Caching.MemoryCache cache);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateCacheSize(int64 size, class System.Runtime.Caching.MemoryCache cache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IMemoryCacheManager.UpdateCacheSize(System.Int64,System.Runtime.Caching.MemoryCache)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateCacheSize (size As Long, cache As MemoryCache)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateCacheSize(long size, System::Runtime::Caching::MemoryCache ^ cache);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

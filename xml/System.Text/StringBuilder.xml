@@ -1,7 +1,9 @@
-<Type Name="StringBuilder" FullName="System.Text.StringBuilder">
+﻿<Type Name="StringBuilder" FullName="System.Text.StringBuilder">
   <TypeSignature Language="C#" Value="public sealed class StringBuilder : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit StringBuilder extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Text.StringBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringBuilder&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringBuilder sealed : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -269,10 +271,25 @@
     <altmember cref="T:System.String" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.StringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StringBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -317,6 +334,8 @@
       <MemberSignature Language="C#" Value="public StringBuilder (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -369,6 +388,8 @@
       <MemberSignature Language="C#" Value="public StringBuilder (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -416,6 +437,8 @@
       <MemberSignature Language="C#" Value="public StringBuilder (int capacity, int maxCapacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity, int32 maxCapacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, maxCapacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(int capacity, int maxCapacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -476,6 +499,8 @@
       <MemberSignature Language="C#" Value="public StringBuilder (string value, int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -530,6 +555,8 @@
       <MemberSignature Language="C#" Value="public StringBuilder (string value, int startIndex, int length, int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, int32 startIndex, int32 length, int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, startIndex As Integer, length As Integer, capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value, int startIndex, int length, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -593,10 +620,25 @@
         <altmember cref="P:System.Text.StringBuilder.Capacity" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the string representation of a specified object to this instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Append">
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Boolean) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -649,6 +691,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Byte) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -703,6 +747,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -755,6 +801,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (char[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(char[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char()) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(cli::array &lt;char&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -813,6 +861,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Decimal) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -867,6 +917,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Double) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -921,6 +973,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Short) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -975,6 +1029,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1029,6 +1085,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Long) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1083,6 +1141,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Object) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1137,6 +1197,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As SByte) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1196,6 +1258,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Single) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1250,6 +1314,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As String) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1309,6 +1375,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As UShort) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1368,6 +1436,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As UInteger) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1427,6 +1497,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As ULong) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1486,6 +1558,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (char value, int repeatCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(char value, int32 repeatCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char, repeatCount As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char value, int repeatCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1546,6 +1620,7 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (char* value, int valueCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(char* value, int32 valueCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char*,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char* value, int valueCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1612,6 +1687,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (char[] value, int startIndex, int charCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(char[] value, int32 startIndex, int32 charCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char(), startIndex As Integer, charCount As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(cli::array &lt;char&gt; ^ value, int startIndex, int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1690,6 +1767,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Append (string value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(string value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (value As String, startIndex As Integer, count As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::String ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1764,10 +1843,23 @@
         <altmember cref="T:System.String" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AppendFormat">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a corresponding object argument.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AppendFormat">
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1852,6 +1944,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, ParamArray args As Object()) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1944,6 +2038,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(class System.IFormatProvider provider, string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2039,6 +2135,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(class System.IFormatProvider provider, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, ParamArray args As Object()) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2148,6 +2246,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object, arg1 As Object) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2234,6 +2334,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(class System.IFormatProvider provider, string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2331,6 +2433,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, object arg0, object arg1, object arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(string format, object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object, arg1 As Object, arg2 As Object) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2419,6 +2523,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, object arg0, object arg1, object arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(class System.IFormatProvider provider, string format, object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object, arg2 As Object) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2518,6 +2624,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(char separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As Char, ParamArray values As Object()) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2548,6 +2656,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(char separator, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As Char, ParamArray values As String()) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, ... cli::array &lt;System::String ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2578,6 +2688,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(string separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As String, ParamArray values As Object()) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2608,6 +2720,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(string separator, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As String, ParamArray values As String()) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, ... cli::array &lt;System::String ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2638,6 +2752,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin&lt;T&gt; (char separator, System.Collections.Generic.IEnumerable&lt;T&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin&lt;T&gt;(char separator, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin``1(System.Char,System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendJoin(Of T) (separator As Char, values As IEnumerable(Of T)) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2666,6 +2782,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin&lt;T&gt; (string separator, System.Collections.Generic.IEnumerable&lt;T&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin&lt;T&gt;(string separator, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin``1(System.String,System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendJoin(Of T) (separator As String, values As IEnumerable(Of T)) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2690,10 +2808,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AppendLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the default line terminator, or a copy of a specified string and the default line terminator, to the end of this instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AppendLine">
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendLine () As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2754,6 +2887,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendLine (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendLine(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendLine (value As String) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendLine(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2808,6 +2943,8 @@
       <MemberSignature Language="C#" Value="public int Capacity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2862,6 +2999,8 @@
       <MemberSignature Language="C#" Value="public char this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char Chars(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Chars(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Chars(index As Integer) As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[int] { char get(int index); void set(int index, char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2918,6 +3057,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clear () As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2967,6 +3108,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (int sourceIndex, char[] destination, int destinationIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(int32 sourceIndex, char[] destination, int32 destinationIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (sourceIndex As Integer, destination As Char(), destinationIndex As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int sourceIndex, cli::array &lt;char&gt; ^ destination, int destinationIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3047,6 +3190,8 @@
       <MemberSignature Language="C#" Value="public int EnsureCapacity (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EnsureCapacity(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.EnsureCapacity(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnsureCapacity (capacity As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnsureCapacity(int capacity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3104,6 +3249,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Text.StringBuilder sb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class System.Text.StringBuilder sb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Equals(System.Text.StringBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (sb As StringBuilder) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Text::StringBuilder ^ sb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3147,10 +3294,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts the string representation of a specified object into this instance at a specified character position.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Boolean) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3211,6 +3373,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Byte) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3271,6 +3435,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3336,6 +3502,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, char[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, char[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char()) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, cli::array &lt;char&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3397,6 +3565,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Decimal) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3457,6 +3627,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Double) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3517,6 +3689,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, short value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Short) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3577,6 +3751,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3637,6 +3813,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Long) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3697,6 +3875,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Object) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3759,6 +3939,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As SByte) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3824,6 +4006,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Single) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3884,6 +4068,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As String) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3951,6 +4137,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As UShort) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4016,6 +4204,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As UInteger) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4081,6 +4271,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As ULong) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4146,6 +4338,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, string value, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, string value, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As String, count As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::String ^ value, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4216,6 +4410,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Insert (int index, char[] value, int startIndex, int charCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Insert(int32 index, char[] value, int32 startIndex, int32 charCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char(), startIndex As Integer, charCount As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, cli::array &lt;char&gt; ^ value, int startIndex, int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4294,6 +4490,8 @@
       <MemberSignature Language="C#" Value="public int Length { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4348,6 +4546,8 @@
       <MemberSignature Language="C#" Value="public int MaxCapacity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCapacity" />
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.MaxCapacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxCapacity As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxCapacity { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4388,6 +4588,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Remove (int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Remove(int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Remove(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (startIndex As Integer, length As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Remove(int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4442,10 +4644,25 @@
         <altmember cref="M:System.Text.StringBuilder.Replace(System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces all occurrences of a specified character or string in this instance with another specified character or string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Replace (char oldChar, char newChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Replace(char oldChar, char newChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.Char,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldChar As Char, newChar As Char) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(char oldChar, char newChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4499,6 +4716,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Replace (string oldValue, string newValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Replace(string oldValue, string newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(System::String ^ oldValue, System::String ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4557,6 +4776,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Replace (char oldChar, char newChar, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Replace(char oldChar, char newChar, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.Char,System.Char,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldChar As Char, newChar As Char, startIndex As Integer, count As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(char oldChar, char newChar, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4620,6 +4841,8 @@
       <MemberSignature Language="C#" Value="public System.Text.StringBuilder Replace (string oldValue, string newValue, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Replace(string oldValue, string newValue, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.String,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String, startIndex As Integer, count As Integer) As StringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(System::String ^ oldValue, System::String ^ newValue, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4691,7 +4914,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -4736,10 +4964,25 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a <see cref="T:System.Text.StringBuilder" /> to a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4793,6 +5036,8 @@
       <MemberSignature Language="C#" Value="public string ToString (int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.ToString(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (startIndex As Integer, length As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4844,94 +5089,5 @@
  The sum of <paramref name="startIndex" /> and <paramref name="length" /> is greater than the length of the current instance.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Insert">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts the string representation of a specified object into this instance at a specified character position.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Text.StringBuilder" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AppendFormat">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a corresponding object argument.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Replace">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Replaces all occurrences of a specified character or string in this instance with another specified character or string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Append">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Appends the string representation of a specified object to this instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AppendLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Appends the default line terminator, or a copy of a specified string and the default line terminator, to the end of this instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the value of a <see cref="T:System.Text.StringBuilder" /> to a <see cref="T:System.String" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

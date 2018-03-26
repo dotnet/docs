@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaAnyAttribute" FullName="System.Xml.Schema.XmlSchemaAnyAttribute">
+﻿<Type Name="XmlSchemaAnyAttribute" FullName="System.Xml.Schema.XmlSchemaAnyAttribute">
   <TypeSignature Language="C#" Value="public class XmlSchemaAnyAttribute : System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaAnyAttribute extends System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAnyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaAnyAttribute&#xA;Inherits XmlSchemaAnnotated" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaAnyAttribute : System::Xml::Schema::XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaAnyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaAnyAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaAnyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAnyAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -121,6 +127,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaContentProcessing ProcessContents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaContentProcessing ProcessContents" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAnyAttribute.ProcessContents" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProcessContents As XmlSchemaContentProcessing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaContentProcessing ProcessContents { System::Xml::Schema::XmlSchemaContentProcessing get(); void set(System::Xml::Schema::XmlSchemaContentProcessing value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

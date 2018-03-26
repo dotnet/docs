@@ -1,7 +1,9 @@
-<Type Name="SymLanguageType" FullName="System.Diagnostics.SymbolStore.SymLanguageType">
+﻿<Type Name="SymLanguageType" FullName="System.Diagnostics.SymbolStore.SymLanguageType">
   <TypeSignature Language="C#" Value="public class SymLanguageType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymLanguageType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymLanguageType" />
+  <TypeSignature Language="VB.NET" Value="Public Class SymLanguageType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SymLanguageType" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public SymLanguageType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymLanguageType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymLanguageType();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid Basic;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Basic" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.Basic" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Basic As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Basic;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +100,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid C;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid C" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.C" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly C As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid C;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid Cobol;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Cobol" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.Cobol" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Cobol As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Cobol;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +156,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid CPlusPlus;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid CPlusPlus" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.CPlusPlus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CPlusPlus As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid CPlusPlus;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -172,6 +184,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid CSharp;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid CSharp" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.CSharp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CSharp As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid CSharp;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,6 +212,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid ILAssembly;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid ILAssembly" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.ILAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ILAssembly As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid ILAssembly;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -224,6 +240,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid Java;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Java" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.Java" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Java As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Java;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -250,6 +268,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid JScript;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid JScript" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.JScript" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly JScript As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid JScript;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,6 +296,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid MCPlusPlus;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid MCPlusPlus" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.MCPlusPlus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MCPlusPlus As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid MCPlusPlus;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -302,6 +324,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid Pascal;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Pascal" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.Pascal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pascal As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Pascal;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -328,6 +352,8 @@
       <MemberSignature Language="C#" Value="public static readonly Guid SMC;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid SMC" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.SMC" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SMC As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid SMC;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

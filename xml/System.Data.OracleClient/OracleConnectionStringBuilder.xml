@@ -1,7 +1,9 @@
-<Type Name="OracleConnectionStringBuilder" FullName="System.Data.OracleClient.OracleConnectionStringBuilder">
+﻿<Type Name="OracleConnectionStringBuilder" FullName="System.Data.OracleClient.OracleConnectionStringBuilder">
   <TypeSignature Language="C#" Value="public sealed class OracleConnectionStringBuilder : System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OracleConnectionStringBuilder extends System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleConnectionStringBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OracleConnectionStringBuilder&#xA;Inherits DbConnectionStringBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OracleConnectionStringBuilder sealed : System::Data::Common::DbConnectionStringBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,10 +78,21 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleConnectionStringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OracleConnectionStringBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleConnectionStringBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -95,6 +108,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public OracleConnectionStringBuilder (string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleConnectionStringBuilder(System::String ^ connectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -133,6 +148,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -166,6 +183,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override bool ContainsKey (string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ContainsKey(string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContainsKey (keyword As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ContainsKey(System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -206,6 +225,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public string DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSource { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -216,7 +237,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Data Source")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -247,6 +268,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public bool Enlist { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enlist" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Enlist" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enlist As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enlist { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -257,7 +280,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Enlist")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -280,6 +303,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="protected override void GetProperties (System.Collections.Hashtable propertyDescriptors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetProperties(class System.Collections.Hashtable propertyDescriptors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.GetProperties(System.Collections.Hashtable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetProperties (propertyDescriptors As Hashtable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetProperties(System::Collections::Hashtable ^ propertyDescriptors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -301,6 +326,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public bool IntegratedSecurity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IntegratedSecurity" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.IntegratedSecurity" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntegratedSecurity As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IntegratedSecurity { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -311,7 +338,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Integrated Security")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -345,6 +372,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -364,6 +393,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override object this[string keyword] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(keyword As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ keyword); void set(System::String ^ keyword, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -420,6 +451,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override System.Collections.ICollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -455,6 +488,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public int LoadBalanceTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LoadBalanceTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.LoadBalanceTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoadBalanceTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LoadBalanceTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -465,7 +500,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Load Balance Timeout")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -488,6 +523,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public int MaxPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.MaxPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPoolSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPoolSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -498,7 +535,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Max Pool Size")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -521,6 +558,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public int MinPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.MinPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinPoolSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinPoolSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -531,7 +570,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Min Pool Size")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -554,6 +593,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public bool OmitOracleConnectionName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OmitOracleConnectionName" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.OmitOracleConnectionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property OmitOracleConnectionName As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OmitOracleConnectionName { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -564,7 +605,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Omit Oracle Connection Name")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -588,6 +629,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public string Password { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Password" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Password" />
+      <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -601,7 +644,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.PasswordPropertyText(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -629,6 +672,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public bool PersistSecurityInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PersistSecurityInfo" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.PersistSecurityInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistSecurityInfo As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistSecurityInfo { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -639,7 +684,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Persist Security Info")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -662,6 +707,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public bool Pooling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Pooling" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Pooling" />
+      <MemberSignature Language="VB.NET" Value="Public Property Pooling As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Pooling { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -672,7 +719,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Pooling")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -695,6 +742,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override bool Remove (string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Remove(string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Remove (keyword As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Remove(System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -757,6 +806,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override bool ShouldSerialize (string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ShouldSerialize(string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.ShouldSerialize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldSerialize (keyword As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldSerialize(System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -787,6 +838,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override bool TryGetValue (string keyword, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetValue(string keyword, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetValue (keyword As String, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryGetValue(System::String ^ keyword, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -827,6 +880,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public bool Unicode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Unicode" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Unicode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Unicode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Unicode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -837,7 +892,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Unicode")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -860,6 +915,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public string UserID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserID" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.UserID" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -870,7 +927,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("User ID")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -895,6 +952,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="C#" Value="public override System.Collections.ICollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Values" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Values As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -924,14 +983,5 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleConnectionStringBuilder" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

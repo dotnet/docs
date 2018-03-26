@@ -1,7 +1,9 @@
-<Type Name="IImmutableSet&lt;T&gt;" FullName="System.Collections.Immutable.IImmutableSet&lt;T&gt;">
+﻿<Type Name="IImmutableSet&lt;T&gt;" FullName="System.Collections.Immutable.IImmutableSet&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IImmutableSet&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IImmutableSet`1&lt;T&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.IImmutableSet`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IImmutableSet(Of T)&#xA;Implements IEnumerable(Of T), IReadOnlyCollection(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IImmutableSet : System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableSet&lt;T&gt; Add (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableSet`1&lt;!T&gt; Add(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As T) As IImmutableSet(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableSet&lt;T&gt; ^ Add(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableSet&lt;T&gt; Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableSet`1&lt;!T&gt; Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clear () As IImmutableSet(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableSet&lt;T&gt; ^ Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableSet&lt;T&gt; Except (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableSet`1&lt;!T&gt; Except(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.Except(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Except (other As IEnumerable(Of T)) As IImmutableSet(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableSet&lt;T&gt; ^ Except(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -132,6 +142,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableSet&lt;T&gt; Intersect (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableSet`1&lt;!T&gt; Intersect(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.Intersect(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Intersect (other As IEnumerable(Of T)) As IImmutableSet(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableSet&lt;T&gt; ^ Intersect(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -156,6 +168,8 @@
       <MemberSignature Language="C#" Value="public bool IsProperSubsetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsProperSubsetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsProperSubsetOf (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsProperSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -188,6 +202,8 @@
       <MemberSignature Language="C#" Value="public bool IsProperSupersetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsProperSupersetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsProperSupersetOf (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsProperSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -220,6 +236,8 @@
       <MemberSignature Language="C#" Value="public bool IsSubsetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSubsetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -245,6 +263,8 @@
       <MemberSignature Language="C#" Value="public bool IsSupersetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupersetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSupersetOf (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -270,6 +290,8 @@
       <MemberSignature Language="C#" Value="public bool Overlaps (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Overlaps(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Overlaps (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Overlaps(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -295,6 +317,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableSet&lt;T&gt; Remove (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableSet`1&lt;!T&gt; Remove(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (value As T) As IImmutableSet(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableSet&lt;T&gt; ^ Remove(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -319,6 +343,8 @@
       <MemberSignature Language="C#" Value="public bool SetEquals (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetEquals(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetEquals (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetEquals(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -344,6 +370,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableSet&lt;T&gt; SymmetricExcept (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableSet`1&lt;!T&gt; SymmetricExcept(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.SymmetricExcept(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SymmetricExcept (other As IEnumerable(Of T)) As IImmutableSet(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableSet&lt;T&gt; ^ SymmetricExcept(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -368,6 +396,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (T equalValue, out T actualValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!T equalValue, [out] !T&amp; actualValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.TryGetValue(`0,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (equalValue As T, ByRef actualValue As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(T equalValue, [Runtime::InteropServices::Out] T % actualValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -406,6 +436,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableSet&lt;T&gt; Union (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableSet`1&lt;!T&gt; Union(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableSet`1.Union(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Union (other As IEnumerable(Of T)) As IImmutableSet(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableSet&lt;T&gt; ^ Union(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CompareInfo" FullName="System.Globalization.CompareInfo">
+﻿<Type Name="CompareInfo" FullName="System.Globalization.CompareInfo">
   <TypeSignature Language="C#" Value="public class CompareInfo : System.Runtime.Serialization.IDeserializationCallback" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompareInfo extends System.Object implements class System.Runtime.Serialization.IDeserializationCallback" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.CompareInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompareInfo&#xA;Implements IDeserializationCallback" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompareInfo : System::Runtime::Serialization::IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,10 +77,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Compare">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two strings.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Compare">
       <MemberSignature Language="C#" Value="public virtual int Compare (string string1, string string2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(string string1, string string2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.Compare(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (string1 As String, string2 As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::String ^ string1, System::String ^ string2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -173,6 +187,8 @@
       <MemberSignature Language="C#" Value="public virtual int Compare (string string1, string string2, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(string string1, string string2, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.Compare(System.String,System.String,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (string1 As String, string2 As String, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::String ^ string1, System::String ^ string2, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -267,6 +283,8 @@
       <MemberSignature Language="C#" Value="public virtual int Compare (string string1, int offset1, string string2, int offset2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(string string1, int32 offset1, string string2, int32 offset2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.Compare(System.String,System.Int32,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (string1 As String, offset1 As Integer, string2 As String, offset2 As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::String ^ string1, int offset1, System::String ^ string2, int offset2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -365,6 +383,8 @@
       <MemberSignature Language="C#" Value="public virtual int Compare (string string1, int offset1, string string2, int offset2, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(string string1, int32 offset1, string string2, int32 offset2, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.Compare(System.String,System.Int32,System.String,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (string1 As String, offset1 As Integer, string2 As String, offset2 As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::String ^ string1, int offset1, System::String ^ string2, int offset2, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -462,6 +482,8 @@
       <MemberSignature Language="C#" Value="public virtual int Compare (string string1, int offset1, int length1, string string2, int offset2, int length2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(string string1, int32 offset1, int32 length1, string string2, int32 offset2, int32 length2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.Compare(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (string1 As String, offset1 As Integer, length1 As Integer, string2 As String, offset2 As Integer, length2 As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::String ^ string1, int offset1, int length1, System::String ^ string2, int offset2, int length2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -572,6 +594,8 @@
       <MemberSignature Language="C#" Value="public virtual int Compare (string string1, int offset1, int length1, string string2, int offset2, int length2, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(string string1, int32 offset1, int32 length1, string string2, int32 offset2, int32 length2, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.Compare(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (string1 As String, offset1 As Integer, length1 As Integer, string2 As String, offset2 As Integer, length2 As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::String ^ string1, int offset1, int length1, System::String ^ string2, int offset2, int length2, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -686,6 +710,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -731,10 +757,22 @@
         <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCompareInfo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Globalization.CompareInfo" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCompareInfo">
       <MemberSignature Language="C#" Value="public static System.Globalization.CompareInfo GetCompareInfo (int culture);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CompareInfo GetCompareInfo(int32 culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetCompareInfo(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompareInfo (culture As Integer) As CompareInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CompareInfo ^ GetCompareInfo(int culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -783,6 +821,8 @@
       <MemberSignature Language="C#" Value="public static System.Globalization.CompareInfo GetCompareInfo (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CompareInfo GetCompareInfo(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetCompareInfo(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompareInfo (name As String) As CompareInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CompareInfo ^ GetCompareInfo(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -840,6 +880,7 @@
       <MemberSignature Language="C#" Value="public static System.Globalization.CompareInfo GetCompareInfo (int culture, System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CompareInfo GetCompareInfo(int32 culture, class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetCompareInfo(System.Int32,System.Reflection.Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CompareInfo ^ GetCompareInfo(int culture, System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -889,6 +930,7 @@
       <MemberSignature Language="C#" Value="public static System.Globalization.CompareInfo GetCompareInfo (string name, System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CompareInfo GetCompareInfo(string name, class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetCompareInfo(System.String,System.Reflection.Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CompareInfo ^ GetCompareInfo(System::String ^ name, System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -942,10 +984,22 @@
         <altmember cref="P:System.Reflection.Module.Assembly" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHashCode">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a hash code either for this <see cref="T:System.Globalization.CompareInfo" /> instance or for a particular string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -991,6 +1045,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetHashCode (string source, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(string source, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetHashCode(System.String,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHashCode (source As String, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(System::String ^ source, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1041,10 +1097,22 @@
         <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSortKey">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Globalization.SortKey" /> object for a string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSortKey">
       <MemberSignature Language="C#" Value="public virtual System.Globalization.SortKey GetSortKey (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Globalization.SortKey GetSortKey(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetSortKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSortKey (source As String) As SortKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Globalization::SortKey ^ GetSortKey(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1084,6 +1152,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Globalization.SortKey GetSortKey (string source, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Globalization.SortKey GetSortKey(string source, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetSortKey(System.String,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSortKey (source As String, options As CompareOptions) As SortKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Globalization::SortKey ^ GetSortKey(System::String ^ source, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1124,10 +1194,22 @@
         <altmember cref="T:System.Globalization.CompareOptions" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the first occurrence of a value within a string or within a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As Char) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1197,6 +1279,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1269,6 +1353,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, char value, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, char value, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.Char,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As Char, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, char value, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1344,6 +1430,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, char value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, char value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As Char, startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, char value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1411,6 +1499,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, string value, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, string value, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.String,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As String, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, System::String ^ value, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1490,6 +1580,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, string value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, string value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As String, startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, System::String ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1563,6 +1655,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, char value, int startIndex, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, char value, int32 startIndex, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.Char,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As Char, startIndex As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, char value, int startIndex, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1642,6 +1736,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, char value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, char value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.Char,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As Char, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, char value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1724,6 +1820,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, string value, int startIndex, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, string value, int32 startIndex, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.String,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As String, startIndex As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, System::String ^ value, int startIndex, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1809,6 +1907,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, string value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, string value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As String, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, System::String ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1897,6 +1997,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, char value, int startIndex, int count, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, char value, int32 startIndex, int32 count, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.Char,System.Int32,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As Char, startIndex As Integer, count As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, char value, int startIndex, int count, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1991,6 +2093,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (string source, string value, int startIndex, int count, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string source, string value, int32 startIndex, int32 count, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IndexOf(System.String,System.String,System.Int32,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (source As String, value As String, startIndex As Integer, count As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ source, System::String ^ value, int startIndex, int count, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2087,10 +2191,22 @@
         <altmember cref="T:System.Globalization.CompareOptions" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsPrefix">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a string starts with a specific prefix.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsPrefix">
       <MemberSignature Language="C#" Value="public virtual bool IsPrefix (string source, string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPrefix(string source, string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IsPrefix(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsPrefix (source As String, prefix As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsPrefix(System::String ^ source, System::String ^ prefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2156,6 +2272,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsPrefix (string source, string prefix, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPrefix(string source, string prefix, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IsPrefix(System.String,System.String,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsPrefix (source As String, prefix As String, options As CompareOptions) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsPrefix(System::String ^ source, System::String ^ prefix, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2229,10 +2347,22 @@
         <altmember cref="T:System.Globalization.CompareOptions" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsSortable">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a specified Unicode character or string is sortable.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsSortable">
       <MemberSignature Language="C#" Value="public static bool IsSortable (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSortable(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IsSortable(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSortable (ch As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSortable(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2277,6 +2407,8 @@
       <MemberSignature Language="C#" Value="public static bool IsSortable (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSortable(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IsSortable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSortable (text As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSortable(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2322,10 +2454,22 @@
           <paramref name="str" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsSuffix">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a string ends with a specific suffix.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsSuffix">
       <MemberSignature Language="C#" Value="public virtual bool IsSuffix (string source, string suffix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSuffix(string source, string suffix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IsSuffix(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSuffix (source As String, suffix As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSuffix(System::String ^ source, System::String ^ suffix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2391,6 +2535,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSuffix (string source, string suffix, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSuffix(string source, string suffix, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.IsSuffix(System.String,System.String,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSuffix (source As String, suffix As String, options As CompareOptions) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSuffix(System::String ^ source, System::String ^ suffix, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2464,10 +2610,22 @@
         <altmember cref="T:System.Globalization.CompareOptions" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="LastIndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the last occurrence of a value within a string or within a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LastIndexOf">
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As Char) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2536,6 +2694,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2608,6 +2768,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, char value, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, char value, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.Char,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As Char, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, char value, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2683,6 +2845,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, char value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, char value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As Char, startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, char value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2750,6 +2914,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, string value, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, string value, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As String, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, System::String ^ value, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2829,6 +2995,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, string value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, string value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As String, startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, System::String ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2900,6 +3068,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, char value, int startIndex, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, char value, int32 startIndex, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.Char,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As Char, startIndex As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, char value, int startIndex, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2979,6 +3149,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, char value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, char value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.Char,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As Char, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, char value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3061,6 +3233,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, string value, int startIndex, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, string value, int32 startIndex, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As String, startIndex As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, System::String ^ value, int startIndex, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3146,6 +3320,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, string value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, string value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As String, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, System::String ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3234,6 +3410,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, char value, int startIndex, int count, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, char value, int32 startIndex, int32 count, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.Char,System.Int32,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As Char, startIndex As Integer, count As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, char value, int startIndex, int count, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3328,6 +3506,8 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (string source, string value, int startIndex, int count, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(string source, string value, int32 startIndex, int32 count, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Int32,System.Int32,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (source As String, value As String, startIndex As Integer, count As Integer, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::String ^ source, System::String ^ value, int startIndex, int count, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3427,6 +3607,8 @@
       <MemberSignature Language="C#" Value="public int LCID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LCID" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CompareInfo.LCID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LCID As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3465,6 +3647,8 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CompareInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3518,7 +3702,12 @@
       <MemberSignature Language="C#" Value="void IDeserializationCallback.OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -3556,6 +3745,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3600,6 +3791,8 @@
       <MemberSignature Language="C#" Value="public System.Globalization.SortVersion Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.SortVersion Version" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CompareInfo.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As SortVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::SortVersion ^ Version { System::Globalization::SortVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3644,95 +3837,5 @@
         <altmember cref="T:System.Globalization.SortVersion" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsSortable">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a specified Unicode character or string is sortable.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCompareInfo">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Globalization.CompareInfo" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetHashCode">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a hash code either for this <see cref="T:System.Globalization.CompareInfo" /> instance or for a particular string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetSortKey">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Globalization.SortKey" /> object for a string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsPrefix">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a string starts with a specific prefix.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Compare">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two strings.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LastIndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the zero-based index of the last occurrence of a value within a string or within a portion of it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsSuffix">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a string ends with a specific suffix.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the zero-based index of the first occurrence of a value within a string or within a portion of it.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

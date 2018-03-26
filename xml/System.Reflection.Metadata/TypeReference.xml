@@ -1,7 +1,9 @@
-<Type Name="TypeReference" FullName="System.Reflection.Metadata.TypeReference">
+﻿<Type Name="TypeReference" FullName="System.Reflection.Metadata.TypeReference">
   <TypeSignature Language="C#" Value="public struct TypeReference" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit TypeReference extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.TypeReference" />
+  <TypeSignature Language="VB.NET" Value="Public Structure TypeReference" />
+  <TypeSignature Language="C++ CLI" Value="public value class TypeReference" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.TypeReference.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.TypeReference.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As StringHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Namespace { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.EntityHandle ResolutionScope { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.EntityHandle ResolutionScope" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.TypeReference.ResolutionScope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolutionScope As EntityHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle ResolutionScope { System::Reflection::Metadata::EntityHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

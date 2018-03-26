@@ -1,7 +1,9 @@
-<Type Name="ClientBuildManagerParameter" FullName="System.Web.Compilation.ClientBuildManagerParameter">
+﻿<Type Name="ClientBuildManagerParameter" FullName="System.Web.Compilation.ClientBuildManagerParameter">
   <TypeSignature Language="C#" Value="public class ClientBuildManagerParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ClientBuildManagerParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ClientBuildManagerParameter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ClientBuildManagerParameter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientBuildManagerParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public ClientBuildManagerParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManagerParameter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientBuildManagerParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; ExcludedVirtualPaths { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; ExcludedVirtualPaths" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManagerParameter.ExcludedVirtualPaths" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExcludedVirtualPaths As List(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ ExcludedVirtualPaths { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Compilation.PrecompilationFlags PrecompilationFlags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Compilation.PrecompilationFlags PrecompilationFlags" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManagerParameter.PrecompilationFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrecompilationFlags As PrecompilationFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Compilation::PrecompilationFlags PrecompilationFlags { System::Web::Compilation::PrecompilationFlags get(); void set(System::Web::Compilation::PrecompilationFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="public string StrongNameKeyContainer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StrongNameKeyContainer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyContainer" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrongNameKeyContainer As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StrongNameKeyContainer { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +170,8 @@
       <MemberSignature Language="C#" Value="public string StrongNameKeyFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StrongNameKeyFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrongNameKeyFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StrongNameKeyFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

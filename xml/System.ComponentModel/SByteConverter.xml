@@ -1,7 +1,9 @@
-<Type Name="SByteConverter" FullName="System.ComponentModel.SByteConverter">
+﻿<Type Name="SByteConverter" FullName="System.ComponentModel.SByteConverter">
   <TypeSignature Language="C#" Value="public class SByteConverter : System.ComponentModel.BaseNumberConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SByteConverter extends System.ComponentModel.BaseNumberConverter" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.SByteConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class SByteConverter&#xA;Inherits BaseNumberConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SByteConverter : System::ComponentModel::BaseNumberConverter" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public SByteConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SByteConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SByteConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="WS2007FederationHttpBinding" FullName="System.ServiceModel.WS2007FederationHttpBinding">
+﻿<Type Name="WS2007FederationHttpBinding" FullName="System.ServiceModel.WS2007FederationHttpBinding">
   <TypeSignature Language="C#" Value="public class WS2007FederationHttpBinding : System.ServiceModel.WSFederationHttpBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WS2007FederationHttpBinding extends System.ServiceModel.WSFederationHttpBinding" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WS2007FederationHttpBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class WS2007FederationHttpBinding&#xA;Inherits WSFederationHttpBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WS2007FederationHttpBinding : System::ServiceModel::WSFederationHttpBinding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WS2007FederationHttpBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WS2007FederationHttpBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -51,6 +64,8 @@
       <MemberSignature Language="C#" Value="public WS2007FederationHttpBinding (System.ServiceModel.WSFederationHttpSecurityMode securityMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.WSFederationHttpSecurityMode securityMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As WSFederationHttpSecurityMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBinding(System::ServiceModel::WSFederationHttpSecurityMode securityMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +91,8 @@
       <MemberSignature Language="C#" Value="public WS2007FederationHttpBinding (string configName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBinding(System::String ^ configName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +112,8 @@
       <MemberSignature Language="C#" Value="public WS2007FederationHttpBinding (System.ServiceModel.WSFederationHttpSecurityMode securityMode, bool reliableSessionEnabled);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.WSFederationHttpSecurityMode securityMode, bool reliableSessionEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As WSFederationHttpSecurityMode, reliableSessionEnabled As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBinding(System::ServiceModel::WSFederationHttpSecurityMode securityMode, bool reliableSessionEnabled);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +135,8 @@
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.Channels.SecurityBindingElement CreateMessageSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Channels.SecurityBindingElement CreateMessageSecurity() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.CreateMessageSecurity" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateMessageSecurity () As SecurityBindingElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::SecurityBindingElement ^ CreateMessageSecurity();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,14 +154,5 @@
         <altmember cref="T:System.ServiceModel.WS2007HttpBinding" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WS2007FederationHttpBinding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

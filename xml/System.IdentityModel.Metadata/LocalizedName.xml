@@ -1,7 +1,9 @@
-<Type Name="LocalizedName" FullName="System.IdentityModel.Metadata.LocalizedName">
+﻿<Type Name="LocalizedName" FullName="System.IdentityModel.Metadata.LocalizedName">
   <TypeSignature Language="C#" Value="public class LocalizedName : System.IdentityModel.Metadata.LocalizedEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalizedName extends System.IdentityModel.Metadata.LocalizedEntry" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.LocalizedName" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalizedName&#xA;Inherits LocalizedEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalizedName : System::IdentityModel::Metadata::LocalizedEntry" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.LocalizedName" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LocalizedName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedName.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizedName();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public LocalizedName (string name, System.Globalization.CultureInfo language);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Globalization.CultureInfo language) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedName.#ctor(System.String,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, language As CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizedName(System::String ^ name, System::Globalization::CultureInfo ^ language);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +76,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.LocalizedName.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,14 +92,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.LocalizedName" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

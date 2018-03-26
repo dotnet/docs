@@ -1,7 +1,9 @@
-<Type Name="SerializerDescriptor" FullName="System.Windows.Documents.Serialization.SerializerDescriptor">
+﻿<Type Name="SerializerDescriptor" FullName="System.Windows.Documents.Serialization.SerializerDescriptor">
   <TypeSignature Language="C#" Value="public sealed class SerializerDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SerializerDescriptor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.SerializerDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SerializerDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SerializerDescriptor sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public Version AssemblyVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version AssemblyVersion" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ AssemblyVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Documents.Serialization.SerializerDescriptor CreateFromFactoryInstance (System.Windows.Documents.Serialization.ISerializerFactory factoryInstance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Documents.Serialization.SerializerDescriptor CreateFromFactoryInstance(class System.Windows.Documents.Serialization.ISerializerFactory factoryInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerDescriptor.CreateFromFactoryInstance(System.Windows.Documents.Serialization.ISerializerFactory)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromFactoryInstance (factoryInstance As ISerializerFactory) As SerializerDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Documents::Serialization::SerializerDescriptor ^ CreateFromFactoryInstance(System::Windows::Documents::Serialization::ISerializerFactory ^ factoryInstance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +142,8 @@
       <MemberSignature Language="C#" Value="public string DefaultFileExtension { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultFileExtension" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.DefaultFileExtension" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultFileExtension As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultFileExtension { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +173,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -188,6 +202,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerDescriptor.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -218,6 +234,8 @@
       <MemberSignature Language="C#" Value="public string FactoryInterfaceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FactoryInterfaceName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.FactoryInterfaceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FactoryInterfaceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FactoryInterfaceName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -236,6 +254,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerDescriptor.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -262,6 +282,8 @@
       <MemberSignature Language="C#" Value="public bool IsLoadable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLoadable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.IsLoadable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoadable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoadable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -297,6 +319,8 @@
       <MemberSignature Language="C#" Value="public string ManufacturerName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ManufacturerName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.ManufacturerName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ManufacturerName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -322,6 +346,8 @@
       <MemberSignature Language="C#" Value="public Uri ManufacturerWebsite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ManufacturerWebsite" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.ManufacturerWebsite" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerWebsite As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ManufacturerWebsite { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -340,6 +366,8 @@
       <MemberSignature Language="C#" Value="public Version WinFXVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version WinFXVersion" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WinFXVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ WinFXVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

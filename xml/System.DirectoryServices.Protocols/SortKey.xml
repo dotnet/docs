@@ -1,7 +1,9 @@
-<Type Name="SortKey" FullName="System.DirectoryServices.Protocols.SortKey">
+﻿<Type Name="SortKey" FullName="System.DirectoryServices.Protocols.SortKey">
   <TypeSignature Language="C#" Value="public class SortKey" />
   <TypeSignature Language="ILAsm" Value=".class public sequential beforefieldinit SortKey extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SortKey" />
+  <TypeSignature Language="VB.NET" Value="Public Class SortKey" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SortKey" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortKey.#ctor" /> constructor creates and initializes a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortKey" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SortKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortKey.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortKey();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +50,8 @@
       <MemberSignature Language="C#" Value="public SortKey (string attributeName, string matchingRule, bool reverseOrder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, string matchingRule, bool reverseOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortKey.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String, matchingRule As String, reverseOrder As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortKey(System::String ^ attributeName, System::String ^ matchingRule, bool reverseOrder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -60,6 +76,8 @@
       <MemberSignature Language="C#" Value="public string AttributeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttributeName" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.AttributeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttributeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -79,6 +97,8 @@
       <MemberSignature Language="C#" Value="public string MatchingRule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MatchingRule" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.MatchingRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchingRule As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MatchingRule { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -98,6 +118,8 @@
       <MemberSignature Language="C#" Value="public bool ReverseOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReverseOrder" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.ReverseOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReverseOrder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReverseOrder { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -113,15 +135,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortKey.#ctor" /> constructor creates and initializes a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortKey" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="StandaloneSignature" FullName="System.Reflection.Metadata.StandaloneSignature">
+﻿<Type Name="StandaloneSignature" FullName="System.Reflection.Metadata.StandaloneSignature">
   <TypeSignature Language="C#" Value="public struct StandaloneSignature" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit StandaloneSignature extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.StandaloneSignature" />
+  <TypeSignature Language="VB.NET" Value="Public Structure StandaloneSignature" />
+  <TypeSignature Language="C++ CLI" Value="public value class StandaloneSignature" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; DecodeLocalSignature&lt;TType&gt; (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType&gt; provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TType&gt; DecodeLocalSignature&lt;TType&gt;(class System.Reflection.Metadata.ISignatureTypeProvider`1&lt;!!TType&gt; provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.StandaloneSignature.DecodeLocalSignature``1(System.Reflection.Metadata.ISignatureTypeProvider{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeLocalSignature(Of TType) (provider As ISignatureTypeProvider(Of TType)) As ImmutableArray(Of TType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType&gt;&#xA; System::Collections::Immutable::ImmutableArray&lt;TType&gt; DecodeLocalSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType&gt; ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; DecodeLocalSignature&lt;TType,TGenericContext&gt; (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt; provider, TGenericContext genericContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TType&gt; DecodeLocalSignature&lt;TType, TGenericContext&gt;(class System.Reflection.Metadata.ISignatureTypeProvider`2&lt;!!TType, !!TGenericContext&gt; provider, !!TGenericContext genericContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.StandaloneSignature.DecodeLocalSignature``2(System.Reflection.Metadata.ISignatureTypeProvider{``0,``1},``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeLocalSignature(Of TType, TGenericContext) (provider As ISignatureTypeProvider(Of TType, TGenericContext), genericContext As TGenericContext) As ImmutableArray(Of TType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType, typename TGenericContext&gt;&#xA; System::Collections::Immutable::ImmutableArray&lt;TType&gt; DecodeLocalSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType, TGenericContext&gt; ^ provider, TGenericContext genericContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodSignature&lt;TType&gt; DecodeMethodSignature&lt;TType&gt; (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType&gt; provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSignature`1&lt;!!TType&gt; DecodeMethodSignature&lt;TType&gt;(class System.Reflection.Metadata.ISignatureTypeProvider`1&lt;!!TType&gt; provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.StandaloneSignature.DecodeMethodSignature``1(System.Reflection.Metadata.ISignatureTypeProvider{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeMethodSignature(Of TType) (provider As ISignatureTypeProvider(Of TType)) As MethodSignature(Of TType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType&gt;&#xA; System::Reflection::Metadata::MethodSignature&lt;TType&gt; DecodeMethodSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType&gt; ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodSignature&lt;TType&gt; DecodeMethodSignature&lt;TType,TGenericContext&gt; (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt; provider, TGenericContext genericContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSignature`1&lt;!!TType&gt; DecodeMethodSignature&lt;TType, TGenericContext&gt;(class System.Reflection.Metadata.ISignatureTypeProvider`2&lt;!!TType, !!TGenericContext&gt; provider, !!TGenericContext genericContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.StandaloneSignature.DecodeMethodSignature``2(System.Reflection.Metadata.ISignatureTypeProvider{``0,``1},``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeMethodSignature(Of TType, TGenericContext) (provider As ISignatureTypeProvider(Of TType, TGenericContext), genericContext As TGenericContext) As MethodSignature(Of TType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType, typename TGenericContext&gt;&#xA; System::Reflection::Metadata::MethodSignature&lt;TType&gt; DecodeMethodSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType, TGenericContext&gt; ^ provider, TGenericContext genericContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -133,6 +143,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.StandaloneSignature.GetCustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -154,6 +166,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StandaloneSignatureKind GetKind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.StandaloneSignatureKind GetKind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.StandaloneSignature.GetKind" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKind () As StandaloneSignatureKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::StandaloneSignatureKind GetKind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -175,6 +189,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle Signature { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.BlobHandle Signature" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.StandaloneSignature.Signature" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As BlobHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle Signature { System::Reflection::Metadata::BlobHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

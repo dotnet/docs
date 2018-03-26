@@ -1,7 +1,9 @@
-<Type Name="TriggerAction" FullName="System.Windows.TriggerAction">
+﻿<Type Name="TriggerAction" FullName="System.Windows.TriggerAction">
   <TypeSignature Language="C#" Value="public abstract class TriggerAction : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TriggerAction extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.TriggerAction" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TriggerAction&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TriggerAction abstract : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

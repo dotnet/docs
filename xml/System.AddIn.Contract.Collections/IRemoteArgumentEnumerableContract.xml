@@ -1,7 +1,9 @@
-<Type Name="IRemoteArgumentEnumerableContract" FullName="System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract">
+﻿<Type Name="IRemoteArgumentEnumerableContract" FullName="System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract">
   <TypeSignature Language="C#" Value="public interface IRemoteArgumentEnumerableContract : System.AddIn.Contract.IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteArgumentEnumerableContract implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteArgumentEnumerableContract&#xA;Implements IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteArgumentEnumerableContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract GetEnumeratorContract ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract GetEnumeratorContract() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract.GetEnumeratorContract" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumeratorContract () As IRemoteArgumentEnumeratorContract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IRemoteArgumentEnumeratorContract ^ GetEnumeratorContract();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

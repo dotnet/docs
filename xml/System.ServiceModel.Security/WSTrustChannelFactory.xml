@@ -1,7 +1,9 @@
-<Type Name="WSTrustChannelFactory" FullName="System.ServiceModel.Security.WSTrustChannelFactory">
+﻿<Type Name="WSTrustChannelFactory" FullName="System.ServiceModel.Security.WSTrustChannelFactory">
   <TypeSignature Language="C#" Value="public class WSTrustChannelFactory : System.ServiceModel.ChannelFactory&lt;System.ServiceModel.Security.IWSTrustChannelContract&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSTrustChannelFactory extends System.ServiceModel.ChannelFactory`1&lt;class System.ServiceModel.Security.IWSTrustChannelContract&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustChannelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class WSTrustChannelFactory&#xA;Inherits ChannelFactory(Of IWSTrustChannelContract)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSTrustChannelFactory : System::ServiceModel::ChannelFactory&lt;System::ServiceModel::Security::IWSTrustChannelContract ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WSTrustChannelFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustChannelFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +55,7 @@
       <MemberSignature Language="C#" Value="public WSTrustChannelFactory (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustChannelFactory(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +74,8 @@
       <MemberSignature Language="C#" Value="public WSTrustChannelFactory (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpoint As ServiceEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustChannelFactory(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +94,8 @@
       <MemberSignature Language="C#" Value="public WSTrustChannelFactory (string endpointConfigurationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustChannelFactory(System::String ^ endpointConfigurationName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +114,7 @@
       <MemberSignature Language="C#" Value="public WSTrustChannelFactory (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustChannelFactory(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +135,7 @@
       <MemberSignature Language="C#" Value="public WSTrustChannelFactory (System.ServiceModel.Channels.Binding binding, string remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustChannelFactory(System::ServiceModel::Channels::Binding ^ binding, System::String ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +156,8 @@
       <MemberSignature Language="C#" Value="public WSTrustChannelFactory (string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustChannelFactory(System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +178,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Security.IWSTrustChannelContract CreateChannel (System.ServiceModel.EndpointAddress address, Uri via);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Security.IWSTrustChannelContract CreateChannel(class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateChannel (address As EndpointAddress, via As Uri) As IWSTrustChannelContract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Security::IWSTrustChannelContract ^ CreateChannel(System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -187,6 +211,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext CreateSerializationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext CreateSerializationContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.CreateSerializationContext" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateSerializationContext () As WSTrustSerializationContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ CreateSerializationContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -215,6 +241,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Security.WSTrustChannel CreateTrustChannel (System.ServiceModel.Security.IWSTrustChannelContract innerChannel, System.ServiceModel.Security.TrustVersion trustVersion, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context, System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Security.WSTrustChannel CreateTrustChannel(class System.ServiceModel.Security.IWSTrustChannelContract innerChannel, class System.ServiceModel.Security.TrustVersion trustVersion, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context, class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.CreateTrustChannel(System.ServiceModel.Security.IWSTrustChannelContract,System.ServiceModel.Security.TrustVersion,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Security::WSTrustChannel ^ CreateTrustChannel(System::ServiceModel::Security::IWSTrustChannelContract ^ innerChannel, System::ServiceModel::Security::TrustVersion ^ trustVersion, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context, System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ requestSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ responseSerializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -245,6 +272,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager SecurityTokenHandlerCollectionManager { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager SecurityTokenHandlerCollectionManager" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenHandlerCollectionManager" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityTokenHandlerCollectionManager As SecurityTokenHandlerCollectionManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ SecurityTokenHandlerCollectionManager { System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,6 +299,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenResolver SecurityTokenResolver { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenResolver SecurityTokenResolver" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityTokenResolver As SecurityTokenResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenResolver ^ SecurityTokenResolver { System::IdentityModel::Selectors::SecurityTokenResolver ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -297,6 +328,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.TrustVersion TrustVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.TrustVersion TrustVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustVersion As TrustVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::TrustVersion ^ TrustVersion { System::ServiceModel::Security::TrustVersion ^ get(); void set(System::ServiceModel::Security::TrustVersion ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -324,6 +357,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenResolver UseKeyTokenResolver { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenResolver UseKeyTokenResolver" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.UseKeyTokenResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseKeyTokenResolver As SecurityTokenResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenResolver ^ UseKeyTokenResolver { System::IdentityModel::Selectors::SecurityTokenResolver ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -351,6 +386,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer WSTrustRequestSerializer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer WSTrustRequestSerializer" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.WSTrustRequestSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrustRequestSerializer As WSTrustRequestSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ WSTrustRequestSerializer { System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ get(); void set(System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -378,6 +415,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer WSTrustResponseSerializer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer WSTrustResponseSerializer" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.WSTrustResponseSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property WSTrustResponseSerializer As WSTrustResponseSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ WSTrustResponseSerializer { System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ get(); void set(System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -401,14 +440,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

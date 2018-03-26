@@ -1,7 +1,9 @@
-<Type Name="PrintJobInfoCollection" FullName="System.Printing.PrintJobInfoCollection">
+﻿<Type Name="PrintJobInfoCollection" FullName="System.Printing.PrintJobInfoCollection">
   <TypeSignature Language="C#" Value="public class PrintJobInfoCollection : System.Printing.PrintSystemObjects, IDisposable, System.Collections.Generic.IEnumerable&lt;System.Printing.PrintSystemJobInfo&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintJobInfoCollection extends System.Printing.PrintSystemObjects implements class System.Collections.Generic.IEnumerable`1&lt;class System.Printing.PrintSystemJobInfo&gt;, class System.Collections.IEnumerable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobInfoCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintJobInfoCollection&#xA;Inherits PrintSystemObjects&#xA;Implements IDisposable, IEnumerable(Of PrintSystemJobInfo)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintJobInfoCollection : System::Printing::PrintSystemObjects, IDisposable, System::Collections::Generic::IEnumerable&lt;System::Printing::PrintSystemJobInfo ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,7 @@
       <MemberSignature Language="C#" Value="public PrintJobInfoCollection (System.Printing.PrintQueue printQueue, string[] propertyFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintQueue printQueue, string[] propertyFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobInfoCollection.#ctor(System.Printing.PrintQueue,System.String[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintJobInfoCollection(System::Printing::PrintQueue ^ printQueue, cli::array &lt;System::String ^&gt; ^ propertyFilter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Printing.PrintSystemJobInfo printObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Printing.PrintSystemJobInfo printObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobInfoCollection.Add(System.Printing.PrintSystemJobInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (printObject As PrintSystemJobInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Printing::PrintSystemJobInfo ^ printObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -85,6 +90,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool A_0);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobInfoCollection.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (A_0 As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -126,7 +133,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerator&lt;System.Printing.PrintSystemJobInfo&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Printing.PrintSystemJobInfo&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobInfoCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator(Of PrintSystemJobInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Printing::PrintSystemJobInfo ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -152,6 +164,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetNonGenericEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetNonGenericEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobInfoCollection.GetNonGenericEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNonGenericEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetNonGenericEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

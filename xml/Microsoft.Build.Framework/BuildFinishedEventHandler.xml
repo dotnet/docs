@@ -1,7 +1,9 @@
-<Type Name="BuildFinishedEventHandler" FullName="Microsoft.Build.Framework.BuildFinishedEventHandler">
+﻿<Type Name="BuildFinishedEventHandler" FullName="Microsoft.Build.Framework.BuildFinishedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void BuildFinishedEventHandler(object sender, BuildFinishedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildFinishedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildFinishedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub BuildFinishedEventHandler(sender As Object, e As BuildFinishedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void BuildFinishedEventHandler(System::Object ^ sender, BuildFinishedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

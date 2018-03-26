@@ -1,7 +1,9 @@
-<Type Name="DataGridSortCommandEventArgs" FullName="System.Web.UI.WebControls.DataGridSortCommandEventArgs">
+﻿<Type Name="DataGridSortCommandEventArgs" FullName="System.Web.UI.WebControls.DataGridSortCommandEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridSortCommandEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridSortCommandEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridSortCommandEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridSortCommandEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridSortCommandEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public DataGridSortCommandEventArgs (object commandSource, System.Web.UI.WebControls.DataGridCommandEventArgs dce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object commandSource, class System.Web.UI.WebControls.DataGridCommandEventArgs dce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridSortCommandEventArgs.#ctor(System.Object,System.Web.UI.WebControls.DataGridCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (commandSource As Object, dce As DataGridCommandEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridSortCommandEventArgs(System::Object ^ commandSource, System::Web::UI::WebControls::DataGridCommandEventArgs ^ dce);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public object CommandSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CommandSource" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridSortCommandEventArgs.CommandSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandSource { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +119,8 @@
       <MemberSignature Language="C#" Value="public string SortExpression { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SortExpression" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridSortCommandEventArgs.SortExpression" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortExpression As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortExpression { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

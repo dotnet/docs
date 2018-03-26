@@ -1,7 +1,9 @@
-<Type Name="CodeMemberProperty" FullName="System.CodeDom.CodeMemberProperty">
+﻿<Type Name="CodeMemberProperty" FullName="System.CodeDom.CodeMemberProperty">
   <TypeSignature Language="C#" Value="public class CodeMemberProperty : System.CodeDom.CodeTypeMember" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeMemberProperty extends System.CodeDom.CodeTypeMember" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMemberProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeMemberProperty&#xA;Inherits CodeTypeMember" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeMemberProperty : System::CodeDom::CodeTypeMember" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public CodeMemberProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMemberProperty.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMemberProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection GetStatements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection GetStatements" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.GetStatements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GetStatements As CodeStatementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ GetStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public bool HasGet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasGet" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.HasGet" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasGet As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasGet { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +140,8 @@
       <MemberSignature Language="C#" Value="public bool HasSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasSet" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.HasSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasSet As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSet { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +176,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReferenceCollection ImplementationTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReferenceCollection ImplementationTypes" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.ImplementationTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImplementationTypes As CodeTypeReferenceCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceCollection ^ ImplementationTypes { System::CodeDom::CodeTypeReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +207,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeParameterDeclarationExpressionCollection Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeParameterDeclarationExpressionCollection Parameters" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeParameterDeclarationExpressionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeParameterDeclarationExpressionCollection ^ Parameters { System::CodeDom::CodeParameterDeclarationExpressionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -227,6 +241,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference PrivateImplementationType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference PrivateImplementationType" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.PrivateImplementationType" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateImplementationType As CodeTypeReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ PrivateImplementationType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -256,6 +272,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection SetStatements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection SetStatements" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.SetStatements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetStatements As CodeStatementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ SetStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -287,6 +305,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference Type" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As CodeTypeReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ Type { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

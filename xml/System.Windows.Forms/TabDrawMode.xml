@@ -1,7 +1,9 @@
-<Type Name="TabDrawMode" FullName="System.Windows.Forms.TabDrawMode">
+﻿<Type Name="TabDrawMode" FullName="System.Windows.Forms.TabDrawMode">
   <TypeSignature Language="C#" Value="public enum TabDrawMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabDrawMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabDrawMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TabDrawMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TabDrawMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabDrawMode Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabDrawMode.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The tabs are drawn by the operating system, and are of the same size.</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="OwnerDrawFixed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabDrawMode OwnerDrawFixed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabDrawMode.OwnerDrawFixed" />
+      <MemberSignature Language="VB.NET" Value="OwnerDrawFixed" />
+      <MemberSignature Language="C++ CLI" Value="OwnerDrawFixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The tabs are drawn by the parent window, and are of the same size.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="EncoderReplacementFallback" FullName="System.Text.EncoderReplacementFallback">
+﻿<Type Name="EncoderReplacementFallback" FullName="System.Text.EncoderReplacementFallback">
   <TypeSignature Language="C#" Value="public sealed class EncoderReplacementFallback : System.Text.EncoderFallback" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EncoderReplacementFallback extends System.Text.EncoderFallback" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderReplacementFallback" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncoderReplacementFallback&#xA;Inherits EncoderFallback" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncoderReplacementFallback sealed : System::Text::EncoderFallback" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -57,10 +59,21 @@
     <altmember cref="P:System.Text.EncoderReplacementFallback.DefaultString" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderReplacementFallback" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EncoderReplacementFallback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallback.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderReplacementFallback();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -97,6 +110,8 @@
       <MemberSignature Language="C#" Value="public EncoderReplacementFallback (string replacement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string replacement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallback.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (replacement As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderReplacementFallback(System::String ^ replacement);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -143,6 +158,8 @@
       <MemberSignature Language="C#" Value="public override System.Text.EncoderFallbackBuffer CreateFallbackBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.EncoderFallbackBuffer CreateFallbackBuffer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallback.CreateFallbackBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateFallbackBuffer () As EncoderFallbackBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::EncoderFallbackBuffer ^ CreateFallbackBuffer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -175,6 +192,8 @@
       <MemberSignature Language="C#" Value="public string DefaultString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultString" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderReplacementFallback.DefaultString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -207,6 +226,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallback.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -250,6 +271,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallback.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -290,6 +313,8 @@
       <MemberSignature Language="C#" Value="public override int MaxCharCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCharCount" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderReplacementFallback.MaxCharCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxCharCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxCharCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -319,14 +344,5 @@
         <altmember cref="M:System.Text.EncoderReplacementFallback.#ctor(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Text.Encoding</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderReplacementFallback" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

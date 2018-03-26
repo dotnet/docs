@@ -1,7 +1,9 @@
-<Type Name="PatternMatcher" FullName="System.Web.Services.Protocols.PatternMatcher">
+﻿<Type Name="PatternMatcher" FullName="System.Web.Services.Protocols.PatternMatcher">
   <TypeSignature Language="C#" Value="public sealed class PatternMatcher" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PatternMatcher extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.PatternMatcher" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PatternMatcher" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PatternMatcher sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public PatternMatcher (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.PatternMatcher.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PatternMatcher(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -59,6 +62,8 @@
       <MemberSignature Language="C#" Value="public object Match (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Match(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.PatternMatcher.Match(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Match (text As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Match(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="SendMessageContent" FullName="System.ServiceModel.Activities.SendMessageContent">
+﻿<Type Name="SendMessageContent" FullName="System.ServiceModel.Activities.SendMessageContent">
   <TypeSignature Language="C#" Value="public sealed class SendMessageContent : System.ServiceModel.Activities.SendContent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SendMessageContent extends System.ServiceModel.Activities.SendContent" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendMessageContent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendMessageContent&#xA;Inherits SendContent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SendMessageContent sealed : System::ServiceModel::Activities::SendContent" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageContent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SendMessageContent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageContent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageContent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public SendMessageContent (System.Activities.InArgument message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.InArgument message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageContent.#ctor(System.Activities.InArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As InArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageContent(System::Activities::InArgument ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -80,6 +95,8 @@
       <MemberSignature Language="C#" Value="public SendMessageContent (System.Activities.InArgument message, Type declaredMessageType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.InArgument message, class System.Type declaredMessageType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageContent.#ctor(System.Activities.InArgument,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As InArgument, declaredMessageType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageContent(System::Activities::InArgument ^ message, Type ^ declaredMessageType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -100,6 +117,8 @@
       <MemberSignature Language="C#" Value="public Type DeclaredMessageType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaredMessageType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeclaredMessageType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaredMessageType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -130,6 +149,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument Message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument Message" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageContent.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Property Message As InArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument ^ Message { System::Activities::InArgument ^ get(); void set(System::Activities::InArgument ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -153,6 +174,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeDeclaredMessageType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeDeclaredMessageType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageContent.ShouldSerializeDeclaredMessageType" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDeclaredMessageType () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDeclaredMessageType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -174,14 +197,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageContent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

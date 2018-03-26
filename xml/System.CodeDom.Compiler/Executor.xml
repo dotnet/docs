@@ -1,7 +1,9 @@
-<Type Name="Executor" FullName="System.CodeDom.Compiler.Executor">
+﻿<Type Name="Executor" FullName="System.CodeDom.Compiler.Executor">
   <TypeSignature Language="C#" Value="public static class Executor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Executor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.Executor" />
+  <TypeSignature Language="VB.NET" Value="Public Class Executor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Executor abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public static void ExecWait (string cmd, System.CodeDom.Compiler.TempFileCollection tempFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExecWait(string cmd, class System.CodeDom.Compiler.TempFileCollection tempFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWait(System.String,System.CodeDom.Compiler.TempFileCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ExecWait (cmd As String, tempFiles As TempFileCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExecWait(System::String ^ cmd, System::CodeDom::Compiler::TempFileCollection ^ tempFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,10 +63,21 @@
         <altmember cref="T:System.CodeDom.Compiler.TempFileCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExecWaitWithCapture">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the specified command.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExecWaitWithCapture">
       <MemberSignature Language="C#" Value="public static int ExecWaitWithCapture (string cmd, System.CodeDom.Compiler.TempFileCollection tempFiles, ref string outputName, ref string errorName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ExecWaitWithCapture(string cmd, class System.CodeDom.Compiler.TempFileCollection tempFiles, string&amp; outputName, string&amp; errorName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWaitWithCapture(System.String,System.CodeDom.Compiler.TempFileCollection,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExecWaitWithCapture (cmd As String, tempFiles As TempFileCollection, ByRef outputName As String, ByRef errorName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ExecWaitWithCapture(System::String ^ cmd, System::CodeDom::Compiler::TempFileCollection ^ tempFiles, System::String ^ % outputName, System::String ^ % errorName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +111,8 @@
       <MemberSignature Language="C#" Value="public static int ExecWaitWithCapture (IntPtr userToken, string cmd, System.CodeDom.Compiler.TempFileCollection tempFiles, ref string outputName, ref string errorName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ExecWaitWithCapture(native int userToken, string cmd, class System.CodeDom.Compiler.TempFileCollection tempFiles, string&amp; outputName, string&amp; errorName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWaitWithCapture(System.IntPtr,System.String,System.CodeDom.Compiler.TempFileCollection,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExecWaitWithCapture (userToken As IntPtr, cmd As String, tempFiles As TempFileCollection, ByRef outputName As String, ByRef errorName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ExecWaitWithCapture(IntPtr userToken, System::String ^ cmd, System::CodeDom::Compiler::TempFileCollection ^ tempFiles, System::String ^ % outputName, System::String ^ % errorName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +156,8 @@
       <MemberSignature Language="C#" Value="public static int ExecWaitWithCapture (string cmd, string currentDir, System.CodeDom.Compiler.TempFileCollection tempFiles, ref string outputName, ref string errorName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ExecWaitWithCapture(string cmd, string currentDir, class System.CodeDom.Compiler.TempFileCollection tempFiles, string&amp; outputName, string&amp; errorName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWaitWithCapture(System.String,System.String,System.CodeDom.Compiler.TempFileCollection,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExecWaitWithCapture (cmd As String, currentDir As String, tempFiles As TempFileCollection, ByRef outputName As String, ByRef errorName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ExecWaitWithCapture(System::String ^ cmd, System::String ^ currentDir, System::CodeDom::Compiler::TempFileCollection ^ tempFiles, System::String ^ % outputName, System::String ^ % errorName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +194,8 @@
       <MemberSignature Language="C#" Value="public static int ExecWaitWithCapture (IntPtr userToken, string cmd, string currentDir, System.CodeDom.Compiler.TempFileCollection tempFiles, ref string outputName, ref string errorName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ExecWaitWithCapture(native int userToken, string cmd, string currentDir, class System.CodeDom.Compiler.TempFileCollection tempFiles, string&amp; outputName, string&amp; errorName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWaitWithCapture(System.IntPtr,System.String,System.String,System.CodeDom.Compiler.TempFileCollection,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExecWaitWithCapture (userToken As IntPtr, cmd As String, currentDir As String, tempFiles As TempFileCollection, ByRef outputName As String, ByRef errorName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ExecWaitWithCapture(IntPtr userToken, System::String ^ cmd, System::String ^ currentDir, System::CodeDom::Compiler::TempFileCollection ^ tempFiles, System::String ^ % outputName, System::String ^ % errorName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,14 +230,5 @@
         <altmember cref="T:System.CodeDom.Compiler.TempFileCollection" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ExecWaitWithCapture">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Executes the specified command.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

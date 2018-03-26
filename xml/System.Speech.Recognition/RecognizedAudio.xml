@@ -1,7 +1,9 @@
-<Type Name="RecognizedAudio" FullName="System.Speech.Recognition.RecognizedAudio">
+﻿<Type Name="RecognizedAudio" FullName="System.Speech.Recognition.RecognizedAudio">
   <TypeSignature Language="C#" Value="public class RecognizedAudio" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RecognizedAudio extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizedAudio" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecognizedAudio" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RecognizedAudio" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +90,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="C#" Value="public TimeSpan AudioPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AudioPosition" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedAudio.AudioPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioPosition As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AudioPosition { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -149,6 +153,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="C#" Value="public TimeSpan Duration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Duration" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedAudio.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duration As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -202,6 +208,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="C#" Value="public System.Speech.AudioFormat.SpeechAudioFormatInfo Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.AudioFormat.SpeechAudioFormatInfo Format" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedAudio.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As SpeechAudioFormatInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::AudioFormat::SpeechAudioFormatInfo ^ Format { System::Speech::AudioFormat::SpeechAudioFormatInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -254,6 +262,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="C#" Value="public System.Speech.Recognition.RecognizedAudio GetRange (TimeSpan audioPosition, TimeSpan duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Recognition.RecognizedAudio GetRange(valuetype System.TimeSpan audioPosition, valuetype System.TimeSpan duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.RecognizedAudio.GetRange(System.TimeSpan,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRange (audioPosition As TimeSpan, duration As TimeSpan) As RecognizedAudio" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::RecognizedAudio ^ GetRange(TimeSpan audioPosition, TimeSpan duration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -365,6 +375,8 @@ private static void TestAudio(object item)
       <MemberSignature Language="C#" Value="public DateTime StartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StartTime" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedAudio.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -424,6 +436,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="C#" Value="public void WriteToAudioStream (System.IO.Stream outputStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteToAudioStream(class System.IO.Stream outputStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.RecognizedAudio.WriteToAudioStream(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteToAudioStream (outputStream As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToAudioStream(System::IO::Stream ^ outputStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -456,6 +470,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="C#" Value="public void WriteToWaveStream (System.IO.Stream outputStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteToWaveStream(class System.IO.Stream outputStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.RecognizedAudio.WriteToWaveStream(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteToWaveStream (outputStream As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToWaveStream(System::IO::Stream ^ outputStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

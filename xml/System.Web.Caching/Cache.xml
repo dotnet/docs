@@ -1,7 +1,9 @@
-<Type Name="Cache" FullName="System.Web.Caching.Cache">
+﻿<Type Name="Cache" FullName="System.Web.Caching.Cache">
   <TypeSignature Language="C#" Value="public sealed class Cache : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Cache extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.Cache" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Cache&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Cache sealed : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public Cache ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Cache();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public object Add (string key, object value, System.Web.Caching.CacheDependency dependencies, DateTime absoluteExpiration, TimeSpan slidingExpiration, System.Web.Caching.CacheItemPriority priority, System.Web.Caching.CacheItemRemovedCallback onRemoveCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Add(string key, object value, class System.Web.Caching.CacheDependency dependencies, valuetype System.DateTime absoluteExpiration, valuetype System.TimeSpan slidingExpiration, valuetype System.Web.Caching.CacheItemPriority priority, class System.Web.Caching.CacheItemRemovedCallback onRemoveCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.Add(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (key As String, value As Object, dependencies As CacheDependency, absoluteExpiration As DateTime, slidingExpiration As TimeSpan, priority As CacheItemPriority, onRemoveCallback As CacheItemRemovedCallback) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Add(System::String ^ key, System::Object ^ value, System::Web::Caching::CacheDependency ^ dependencies, DateTime absoluteExpiration, TimeSpan slidingExpiration, System::Web::Caching::CacheItemPriority priority, System::Web::Caching::CacheItemRemovedCallback ^ onRemoveCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +131,8 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.Cache.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +166,8 @@
       <MemberSignature Language="C#" Value="public long EffectivePercentagePhysicalMemoryLimit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 EffectivePercentagePhysicalMemoryLimit" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EffectivePercentagePhysicalMemoryLimit As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long EffectivePercentagePhysicalMemoryLimit { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +198,8 @@
       <MemberSignature Language="C#" Value="public long EffectivePrivateBytesLimit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 EffectivePrivateBytesLimit" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.Cache.EffectivePrivateBytesLimit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EffectivePrivateBytesLimit As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long EffectivePrivateBytesLimit { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +232,8 @@
       <MemberSignature Language="C#" Value="public object Get (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Get(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (key As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Get(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -252,6 +266,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IDictionaryEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -282,10 +298,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts an item into the <see cref="T:System.Web.Caching.Cache" /> object. Use one of the versions of this method to overwrite an existing <see langword="Cache" /> item with the same <paramref name="key" /> parameter.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public void Insert (string key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(string key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (key As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(System::String ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,6 +352,8 @@
       <MemberSignature Language="C#" Value="public void Insert (string key, object value, System.Web.Caching.CacheDependency dependencies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(string key, object value, class System.Web.Caching.CacheDependency dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (key As String, value As Object, dependencies As CacheDependency)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(System::String ^ key, System::Object ^ value, System::Web::Caching::CacheDependency ^ dependencies);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -367,6 +396,8 @@
       <MemberSignature Language="C#" Value="public void Insert (string key, object value, System.Web.Caching.CacheDependency dependencies, DateTime absoluteExpiration, TimeSpan slidingExpiration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(string key, object value, class System.Web.Caching.CacheDependency dependencies, valuetype System.DateTime absoluteExpiration, valuetype System.TimeSpan slidingExpiration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (key As String, value As Object, dependencies As CacheDependency, absoluteExpiration As DateTime, slidingExpiration As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(System::String ^ key, System::Object ^ value, System::Web::Caching::CacheDependency ^ dependencies, DateTime absoluteExpiration, TimeSpan slidingExpiration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +457,8 @@
       <MemberSignature Language="C#" Value="public void Insert (string key, object value, System.Web.Caching.CacheDependency dependencies, DateTime absoluteExpiration, TimeSpan slidingExpiration, System.Web.Caching.CacheItemUpdateCallback onUpdateCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(string key, object value, class System.Web.Caching.CacheDependency dependencies, valuetype System.DateTime absoluteExpiration, valuetype System.TimeSpan slidingExpiration, class System.Web.Caching.CacheItemUpdateCallback onUpdateCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan,System.Web.Caching.CacheItemUpdateCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (key As String, value As Object, dependencies As CacheDependency, absoluteExpiration As DateTime, slidingExpiration As TimeSpan, onUpdateCallback As CacheItemUpdateCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(System::String ^ key, System::Object ^ value, System::Web::Caching::CacheDependency ^ dependencies, DateTime absoluteExpiration, TimeSpan slidingExpiration, System::Web::Caching::CacheItemUpdateCallback ^ onUpdateCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -478,6 +511,8 @@
       <MemberSignature Language="C#" Value="public void Insert (string key, object value, System.Web.Caching.CacheDependency dependencies, DateTime absoluteExpiration, TimeSpan slidingExpiration, System.Web.Caching.CacheItemPriority priority, System.Web.Caching.CacheItemRemovedCallback onRemoveCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(string key, object value, class System.Web.Caching.CacheDependency dependencies, valuetype System.DateTime absoluteExpiration, valuetype System.TimeSpan slidingExpiration, valuetype System.Web.Caching.CacheItemPriority priority, class System.Web.Caching.CacheItemRemovedCallback onRemoveCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (key As String, value As Object, dependencies As CacheDependency, absoluteExpiration As DateTime, slidingExpiration As TimeSpan, priority As CacheItemPriority, onRemoveCallback As CacheItemRemovedCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(System::String ^ key, System::Object ^ value, System::Web::Caching::CacheDependency ^ dependencies, DateTime absoluteExpiration, TimeSpan slidingExpiration, System::Web::Caching::CacheItemPriority priority, System::Web::Caching::CacheItemRemovedCallback ^ onRemoveCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -540,6 +575,8 @@
       <MemberSignature Language="C#" Value="public object this[string key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.Cache.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ key); void set(System::String ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -582,6 +619,8 @@
       <MemberSignature Language="C#" Value="public static readonly DateTime NoAbsoluteExpiration;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.DateTime NoAbsoluteExpiration" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.Cache.NoAbsoluteExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NoAbsoluteExpiration As DateTime " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly DateTime NoAbsoluteExpiration;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -616,6 +655,8 @@
       <MemberSignature Language="C#" Value="public static readonly TimeSpan NoSlidingExpiration;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan NoSlidingExpiration" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.Cache.NoSlidingExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NoSlidingExpiration As TimeSpan " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan NoSlidingExpiration;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -650,6 +691,8 @@
       <MemberSignature Language="C#" Value="public object Remove (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Remove(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (key As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Remove(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -682,7 +725,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.Cache.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -697,14 +745,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Insert">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts an item into the <see cref="T:System.Web.Caching.Cache" /> object. Use one of the versions of this method to overwrite an existing <see langword="Cache" /> item with the same <paramref name="key" /> parameter.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

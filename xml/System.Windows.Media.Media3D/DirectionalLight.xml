@@ -1,7 +1,9 @@
-<Type Name="DirectionalLight" FullName="System.Windows.Media.Media3D.DirectionalLight">
+﻿<Type Name="DirectionalLight" FullName="System.Windows.Media.Media3D.DirectionalLight">
   <TypeSignature Language="C#" Value="public sealed class DirectionalLight : System.Windows.Media.Media3D.Light" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DirectionalLight extends System.Windows.Media.Media3D.Light" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.DirectionalLight" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectionalLight&#xA;Inherits Light" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectionalLight sealed : System::Windows::Media::Media3D::Light" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructs a light that projects its effect along a direction specified by a <see cref="T:System.Windows.Media.Media3D.Vector3D" />..</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DirectionalLight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DirectionalLight.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectionalLight();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +70,8 @@
       <MemberSignature Language="C#" Value="public DirectionalLight (System.Windows.Media.Color diffuseColor, System.Windows.Media.Media3D.Vector3D direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color diffuseColor, valuetype System.Windows.Media.Media3D.Vector3D direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DirectionalLight.#ctor(System.Windows.Media.Color,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (diffuseColor As Color, direction As Vector3D)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectionalLight(System::Windows::Media::Color diffuseColor, System::Windows::Media::Media3D::Vector3D direction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +106,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.DirectionalLight Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.DirectionalLight Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DirectionalLight.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As DirectionalLight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::DirectionalLight ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.DirectionalLight CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.DirectionalLight CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DirectionalLight.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As DirectionalLight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::DirectionalLight ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +166,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DirectionalLight.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +187,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Vector3D Direction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.DirectionalLight.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As Vector3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3D Direction { System::Windows::Media::Media3D::Vector3D get(); void set(System::Windows::Media::Media3D::Vector3D value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +221,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DirectionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DirectionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.DirectionalLight.DirectionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DirectionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,14 +236,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Constructs a light that projects its effect along a direction specified by a <see cref="T:System.Windows.Media.Media3D.Vector3D" />..</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

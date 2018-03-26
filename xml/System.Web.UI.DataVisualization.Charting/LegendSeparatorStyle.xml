@@ -1,7 +1,9 @@
-<Type Name="LegendSeparatorStyle" FullName="System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle">
+﻿<Type Name="LegendSeparatorStyle" FullName="System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle">
   <TypeSignature Language="C#" Value="public enum LegendSeparatorStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LegendSeparatorStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LegendSeparatorStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LegendSeparatorStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="DashLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle DashLine = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle.DashLine" />
+      <MemberSignature Language="VB.NET" Value="DashLine" />
+      <MemberSignature Language="C++ CLI" Value="DashLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Legend separator is a dashed line.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="DotLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle DotLine = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle.DotLine" />
+      <MemberSignature Language="VB.NET" Value="DotLine" />
+      <MemberSignature Language="C++ CLI" Value="DotLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Legend separator is a dotted line.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="DoubleLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle DoubleLine = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle.DoubleLine" />
+      <MemberSignature Language="VB.NET" Value="DoubleLine" />
+      <MemberSignature Language="C++ CLI" Value="DoubleLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Legend separator is a double line.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="GradientLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle GradientLine = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle.GradientLine" />
+      <MemberSignature Language="VB.NET" Value="GradientLine" />
+      <MemberSignature Language="C++ CLI" Value="GradientLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Legend separator is a solid line with a gradient on the ends.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="Line" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle Line = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle.Line" />
+      <MemberSignature Language="VB.NET" Value="Line" />
+      <MemberSignature Language="C++ CLI" Value="Line" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Legend separator is a solid line.</summary>
       </Docs>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -106,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No separator will be shown.</summary>
       </Docs>
@@ -114,6 +134,8 @@
       <MemberSignature Language="C#" Value="ThickGradientLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle ThickGradientLine = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle.ThickGradientLine" />
+      <MemberSignature Language="VB.NET" Value="ThickGradientLine" />
+      <MemberSignature Language="C++ CLI" Value="ThickGradientLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -122,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Legend separator is a thick solid line with a gradient on the ends.</summary>
       </Docs>
@@ -130,6 +153,8 @@
       <MemberSignature Language="C#" Value="ThickLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle ThickLine = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle.ThickLine" />
+      <MemberSignature Language="VB.NET" Value="ThickLine" />
+      <MemberSignature Language="C++ CLI" Value="ThickLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -138,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Legend separator is a thick solid line.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="PointF" FullName="System.Drawing.PointF">
+﻿<Type Name="PointF" FullName="System.Drawing.PointF">
   <TypeSignature Language="C#" Value="public struct PointF" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PointF extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.PointF" />
+  <TypeSignature Language="VB.NET" Value="Public Structure PointF" />
+  <TypeSignature Language="C++ CLI" Value="public value class PointF" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,8 +20,7 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents an ordered pair of floating-point x- and y-coordinates that defines a point in a two-dimensional plane.</summary>
     <remarks>
@@ -36,6 +37,8 @@
       <MemberSignature Language="C#" Value="public PointF (float x, float y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 x, float32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.#ctor(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Single, y As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PointF(float x, float y);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -61,10 +64,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a given <see cref="T:System.Drawing.PointF" /> by the specified size.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public static System.Drawing.PointF Add (System.Drawing.PointF pt, System.Drawing.Size sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.PointF Add(valuetype System.Drawing.PointF pt, valuetype System.Drawing.Size sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Add(System.Drawing.PointF,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (pt As PointF, sz As Size) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF Add(System::Drawing::PointF pt, System::Drawing::Size sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -106,6 +121,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.PointF Add (System.Drawing.PointF pt, System.Drawing.SizeF sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.PointF Add(valuetype System.Drawing.PointF pt, valuetype System.Drawing.SizeF sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Add(System.Drawing.PointF,System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (pt As PointF, sz As SizeF) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF Add(System::Drawing::PointF pt, System::Drawing::SizeF sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -155,6 +172,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Drawing.PointF Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Drawing.PointF Empty" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.PointF.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As PointF " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::PointF Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -181,7 +200,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Drawing.PointF other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Drawing.PointF other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Equals(System.Drawing.PointF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PointF) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Drawing::PointF other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -203,6 +227,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -234,6 +260,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -262,6 +290,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.PointF.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -286,10 +316,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Addition">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates the given <see cref="T:System.Drawing.PointF" /> by a specified size.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Addition">
       <MemberSignature Language="C#" Value="public static System.Drawing.PointF operator + (System.Drawing.PointF pt, System.Drawing.Size sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Addition(valuetype System.Drawing.PointF pt, valuetype System.Drawing.Size sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (pt As PointF, sz As Size) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF operator +(System::Drawing::PointF pt, System::Drawing::Size sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -335,6 +377,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.PointF operator + (System.Drawing.PointF pt, System.Drawing.SizeF sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Addition(valuetype System.Drawing.PointF pt, valuetype System.Drawing.SizeF sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (pt As PointF, sz As SizeF) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF operator +(System::Drawing::PointF pt, System::Drawing::SizeF sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -383,6 +427,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.PointF left, System.Drawing.PointF right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.PointF left, valuetype System.Drawing.PointF right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Equality(System.Drawing.PointF,System.Drawing.PointF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As PointF, right As PointF) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::PointF left, System::Drawing::PointF right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -427,6 +473,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.PointF left, System.Drawing.PointF right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.PointF left, valuetype System.Drawing.PointF right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Inequality(System.Drawing.PointF,System.Drawing.PointF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As PointF, right As PointF) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::PointF left, System::Drawing::PointF right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -467,10 +515,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Subtraction">
       <MemberSignature Language="C#" Value="public static System.Drawing.PointF operator - (System.Drawing.PointF pt, System.Drawing.Size sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Subtraction(valuetype System.Drawing.PointF pt, valuetype System.Drawing.Size sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (pt As PointF, sz As Size) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF operator -(System::Drawing::PointF pt, System::Drawing::Size sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -504,6 +564,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.PointF operator - (System.Drawing.PointF pt, System.Drawing.SizeF sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Subtraction(valuetype System.Drawing.PointF pt, valuetype System.Drawing.SizeF sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (pt As PointF, sz As SizeF) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF operator -(System::Drawing::PointF pt, System::Drawing::SizeF sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -548,10 +610,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Subtract">
       <MemberSignature Language="C#" Value="public static System.Drawing.PointF Subtract (System.Drawing.PointF pt, System.Drawing.Size sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.PointF Subtract(valuetype System.Drawing.PointF pt, valuetype System.Drawing.Size sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Subtract(System.Drawing.PointF,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (pt As PointF, sz As Size) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF Subtract(System::Drawing::PointF pt, System::Drawing::Size sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -593,6 +667,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.PointF Subtract (System.Drawing.PointF pt, System.Drawing.SizeF sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.PointF Subtract(valuetype System.Drawing.PointF pt, valuetype System.Drawing.SizeF sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Subtract(System.Drawing.PointF,System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (pt As PointF, sz As SizeF) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF Subtract(System::Drawing::PointF pt, System::Drawing::SizeF sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -642,6 +718,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -670,6 +748,8 @@
       <MemberSignature Language="C#" Value="public float X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 X" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.PointF.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float X { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -697,6 +777,8 @@
       <MemberSignature Language="C#" Value="public float Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.PointF.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Y { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -720,45 +802,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Subtract">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Translates a given <see cref="T:System.Drawing.PointF" /> by the specified size.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Addition">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Translates the given <see cref="T:System.Drawing.PointF" /> by a specified size.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Subtraction">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

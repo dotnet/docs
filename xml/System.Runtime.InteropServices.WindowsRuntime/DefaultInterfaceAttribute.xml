@@ -1,7 +1,9 @@
-<Type Name="DefaultInterfaceAttribute" FullName="System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute">
+﻿<Type Name="DefaultInterfaceAttribute" FullName="System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute">
   <TypeSignature Language="C#" Value="public sealed class DefaultInterfaceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DefaultInterfaceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultInterfaceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultInterfaceAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public DefaultInterfaceAttribute (Type defaultInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type defaultInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultInterface As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultInterfaceAttribute(Type ^ defaultInterface);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public Type DefaultInterface { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DefaultInterface" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute.DefaultInterface" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultInterface As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DefaultInterface { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>

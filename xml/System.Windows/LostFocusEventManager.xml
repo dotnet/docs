@@ -1,7 +1,9 @@
-<Type Name="LostFocusEventManager" FullName="System.Windows.LostFocusEventManager">
+﻿<Type Name="LostFocusEventManager" FullName="System.Windows.LostFocusEventManager">
   <TypeSignature Language="C#" Value="public class LostFocusEventManager : System.Windows.WeakEventManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LostFocusEventManager extends System.Windows.WeakEventManager" />
   <TypeSignature Language="DocId" Value="T:System.Windows.LostFocusEventManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class LostFocusEventManager&#xA;Inherits WeakEventManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LostFocusEventManager : System::Windows::WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static void AddHandler (System.Windows.DependencyObject source, EventHandler&lt;System.Windows.RoutedEventArgs&gt; handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHandler(class System.Windows.DependencyObject source, class System.EventHandler`1&lt;class System.Windows.RoutedEventArgs&gt; handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.AddHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.RoutedEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As DependencyObject, handler As EventHandler(Of RoutedEventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(System::Windows::DependencyObject ^ source, EventHandler&lt;System::Windows::RoutedEventArgs ^&gt; ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public static void AddListener (System.Windows.DependencyObject source, System.Windows.IWeakEventListener listener);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddListener(class System.Windows.DependencyObject source, class System.Windows.IWeakEventListener listener) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.AddListener(System.Windows.DependencyObject,System.Windows.IWeakEventListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddListener (source As DependencyObject, listener As IWeakEventListener)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddListener(System::Windows::DependencyObject ^ source, System::Windows::IWeakEventListener ^ listener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.WeakEventManager.ListenerList NewListenerList ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.NewListenerList" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::WeakEventManager::ListenerList ^ NewListenerList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveHandler (System.Windows.DependencyObject source, EventHandler&lt;System.Windows.RoutedEventArgs&gt; handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveHandler(class System.Windows.DependencyObject source, class System.EventHandler`1&lt;class System.Windows.RoutedEventArgs&gt; handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.RemoveHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.RoutedEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As DependencyObject, handler As EventHandler(Of RoutedEventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(System::Windows::DependencyObject ^ source, EventHandler&lt;System::Windows::RoutedEventArgs ^&gt; ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveListener (System.Windows.DependencyObject source, System.Windows.IWeakEventListener listener);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveListener(class System.Windows.DependencyObject source, class System.Windows.IWeakEventListener listener) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.RemoveListener(System.Windows.DependencyObject,System.Windows.IWeakEventListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveListener (source As DependencyObject, listener As IWeakEventListener)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveListener(System::Windows::DependencyObject ^ source, System::Windows::IWeakEventListener ^ listener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -156,6 +168,8 @@
       <MemberSignature Language="C#" Value="protected override void StartListening (object source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StartListening(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.StartListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -188,6 +202,8 @@
       <MemberSignature Language="C#" Value="protected override void StopListening (object source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StopListening(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.StopListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

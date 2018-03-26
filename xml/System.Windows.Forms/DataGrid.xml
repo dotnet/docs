@@ -1,7 +1,9 @@
-<Type Name="DataGrid" FullName="System.Windows.Forms.DataGrid">
+﻿<Type Name="DataGrid" FullName="System.Windows.Forms.DataGrid">
   <TypeSignature Language="C#" Value="public class DataGrid : System.Windows.Forms.Control, System.ComponentModel.ISupportInitialize, System.Windows.Forms.IDataGridEditingService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGrid extends System.Windows.Forms.Control implements class System.ComponentModel.ISupportInitialize, class System.Windows.Forms.IDataGridEditingService" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGrid" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGrid&#xA;Inherits Control&#xA;Implements IDataGridEditingService, ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGrid : System::Windows::Forms::Control, System::ComponentModel::ISupportInitialize, System::Windows::Forms::IDataGridEditingService" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,7 +33,7 @@
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.DataGridDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -155,6 +157,8 @@
       <MemberSignature Language="C#" Value="public DataGrid ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGrid();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +194,8 @@
       <MemberSignature Language="C#" Value="public bool AllowNavigation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowNavigation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.AllowNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowNavigation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowNavigation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -230,6 +236,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AllowNavigationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AllowNavigationChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.AllowNavigationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AllowNavigationChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AllowNavigationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -263,6 +271,8 @@
       <MemberSignature Language="C#" Value="public bool AllowSorting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowSorting" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.AllowSorting" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowSorting As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowSorting { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -314,6 +324,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color AlternatingBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color AlternatingBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.AlternatingBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlternatingBackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color AlternatingBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -346,6 +358,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackButtonClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackButtonClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.BackButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackButtonClick As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackButtonClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -380,6 +394,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -417,6 +433,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackgroundColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.BackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackgroundColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackgroundColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -452,6 +470,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.BackgroundColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundColorChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -480,6 +500,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -506,6 +528,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -538,6 +562,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -564,6 +590,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -596,7 +624,12 @@
       <MemberSignature Language="C#" Value="public bool BeginEdit (System.Windows.Forms.DataGridColumnStyle gridColumn, int rowNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BeginEdit(class System.Windows.Forms.DataGridColumnStyle gridColumn, int32 rowNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginEdit (gridColumn As DataGridColumnStyle, rowNumber As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool BeginEdit(System::Windows::Forms::DataGridColumnStyle ^ gridColumn, int rowNumber);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.IDataGridEditingService.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -638,6 +671,8 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -664,6 +699,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.BorderStyle BorderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -699,6 +736,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BorderStyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BorderStyleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.BorderStyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BorderStyleChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BorderStyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -733,6 +772,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CancelEditing ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CancelEditing() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.CancelEditing" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CancelEditing ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CancelEditing();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -751,6 +792,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color CaptionBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CaptionBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CaptionBackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CaptionBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -780,6 +823,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font CaptionFont { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font CaptionFont" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.CaptionFont" />
+      <MemberSignature Language="VB.NET" Value="Public Property CaptionFont As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ CaptionFont { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -822,6 +867,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color CaptionForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CaptionForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CaptionForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CaptionForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -851,6 +898,8 @@
       <MemberSignature Language="C#" Value="public string CaptionText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CaptionText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.CaptionText" />
+      <MemberSignature Language="VB.NET" Value="Public Property CaptionText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CaptionText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -892,6 +941,8 @@
       <MemberSignature Language="C#" Value="public bool CaptionVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CaptionVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.CaptionVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property CaptionVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CaptionVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -930,6 +981,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CaptionVisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CaptionVisibleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.CaptionVisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CaptionVisibleChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CaptionVisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -958,6 +1011,8 @@
       <MemberSignature Language="C#" Value="public void Collapse (int row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Collapse(int32 row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.Collapse(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Collapse (row As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Collapse(int row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -994,6 +1049,8 @@
       <MemberSignature Language="C#" Value="public bool ColumnHeadersVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ColumnHeadersVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.ColumnHeadersVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnHeadersVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ColumnHeadersVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1028,10 +1085,21 @@
         <altmember cref="P:System.Windows.Forms.DataGrid.VisibleRowCount" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ColumnStartedEditing">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Informs the <see cref="T:System.Windows.Forms.DataGrid" /> control that the user has begun editing a column.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ColumnStartedEditing">
-      <MemberSignature Language="C#" Value="protected virtual void ColumnStartedEditing (System.Drawing.Rectangle bounds);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void ColumnStartedEditing (System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ColumnStartedEditing(valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ColumnStartedEditing(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ColumnStartedEditing (bounds As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ColumnStartedEditing(System::Drawing::Rectangle bounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1057,9 +1125,11 @@
       </Docs>
     </Member>
     <Member MemberName="ColumnStartedEditing">
-      <MemberSignature Language="C#" Value="protected virtual void ColumnStartedEditing (System.Windows.Forms.Control editingControl);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void ColumnStartedEditing (System.Windows.Forms.Control editingControl);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ColumnStartedEditing(class System.Windows.Forms.Control editingControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ColumnStartedEditing(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ColumnStartedEditing (editingControl As Control)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ColumnStartedEditing(System::Windows::Forms::Control ^ editingControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1088,6 +1158,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1121,10 +1193,21 @@
         <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateGridColumn">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> that is added to the control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateGridColumn">
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.DataGridColumnStyle CreateGridColumn (System.ComponentModel.PropertyDescriptor prop);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.DataGridColumnStyle CreateGridColumn(class System.ComponentModel.PropertyDescriptor prop) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.CreateGridColumn(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateGridColumn (prop As PropertyDescriptor) As DataGridColumnStyle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::DataGridColumnStyle ^ CreateGridColumn(System::ComponentModel::PropertyDescriptor ^ prop);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1147,6 +1230,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.DataGridColumnStyle CreateGridColumn (System.ComponentModel.PropertyDescriptor prop, bool isDefault);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.DataGridColumnStyle CreateGridColumn(class System.ComponentModel.PropertyDescriptor prop, bool isDefault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.CreateGridColumn(System.ComponentModel.PropertyDescriptor,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateGridColumn (prop As PropertyDescriptor, isDefault As Boolean) As DataGridColumnStyle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::DataGridColumnStyle ^ CreateGridColumn(System::ComponentModel::PropertyDescriptor ^ prop, bool isDefault);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1174,6 +1259,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridCell CurrentCell { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridCell CurrentCell" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.CurrentCell" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentCell As DataGridCell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridCell CurrentCell { System::Windows::Forms::DataGridCell get(); void set(System::Windows::Forms::DataGridCell value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1184,7 +1271,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1218,6 +1305,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CurrentCellChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CurrentCellChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.CurrentCellChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentCellChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentCellChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1251,6 +1340,8 @@
       <MemberSignature Language="C#" Value="public int CurrentRowIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentRowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.CurrentRowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentRowIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentRowIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1261,7 +1352,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1299,6 +1390,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Cursor Cursor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Cursor Cursor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.Cursor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Cursor As Cursor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ Cursor { System::Windows::Forms::Cursor ^ get(); void set(System::Windows::Forms::Cursor ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1325,6 +1418,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CursorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CursorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.CursorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CursorChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1357,6 +1452,8 @@
       <MemberSignature Language="C#" Value="public string DataMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.DataMember" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataMember As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1410,6 +1507,8 @@
       <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1423,7 +1522,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1485,6 +1584,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.DataSourceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DataSourceChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1521,6 +1622,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1539,6 +1642,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1575,7 +1680,12 @@
       <MemberSignature Language="C#" Value="public bool EndEdit (System.Windows.Forms.DataGridColumnStyle gridColumn, int rowNumber, bool shouldAbort);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndEdit(class System.Windows.Forms.DataGridColumnStyle gridColumn, int32 rowNumber, bool shouldAbort) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndEdit (gridColumn As DataGridColumnStyle, rowNumber As Integer, shouldAbort As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EndEdit(System::Windows::Forms::DataGridColumnStyle ^ gridColumn, int rowNumber, bool shouldAbort);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.IDataGridEditingService.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1619,6 +1729,8 @@
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1645,6 +1757,8 @@
       <MemberSignature Language="C#" Value="public void Expand (int row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Expand(int32 row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.Expand(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Expand (row As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Expand(int row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1676,6 +1790,8 @@
       <MemberSignature Language="C#" Value="public int FirstVisibleColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FirstVisibleColumn" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.FirstVisibleColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstVisibleColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FirstVisibleColumn { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1716,6 +1832,8 @@
       <MemberSignature Language="C#" Value="public bool FlatMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FlatMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.FlatMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlatMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FlatMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1751,6 +1869,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler FlatModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FlatModeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.FlatModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event FlatModeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FlatModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1780,6 +1900,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1805,10 +1927,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCellBounds">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> that specifies the four corners of a cell.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCellBounds">
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetCellBounds (System.Windows.Forms.DataGridCell dgc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetCellBounds(valuetype System.Windows.Forms.DataGridCell dgc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.GetCellBounds(System.Windows.Forms.DataGridCell)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCellBounds (dgc As DataGridCell) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetCellBounds(System::Windows::Forms::DataGridCell dgc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1843,6 +1976,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetCellBounds (int row, int col);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetCellBounds(int32 row, int32 col) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.GetCellBounds(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCellBounds (row As Integer, col As Integer) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetCellBounds(int row, int col);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1885,6 +2020,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetCurrentCellBounds ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetCurrentCellBounds() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.GetCurrentCellBounds" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentCellBounds () As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetCurrentCellBounds();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1921,6 +2058,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetOutputTextDelimiter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetOutputTextDelimiter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.GetOutputTextDelimiter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetOutputTextDelimiter () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetOutputTextDelimiter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1940,6 +2079,8 @@
       <MemberSignature Language="C#" Value="protected virtual void GridHScrolled (object sender, System.Windows.Forms.ScrollEventArgs se);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GridHScrolled(object sender, class System.Windows.Forms.ScrollEventArgs se) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.GridHScrolled(System.Object,System.Windows.Forms.ScrollEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GridHScrolled (sender As Object, se As ScrollEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GridHScrolled(System::Object ^ sender, System::Windows::Forms::ScrollEventArgs ^ se);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1963,6 +2104,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color GridLineColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color GridLineColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.GridLineColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property GridLineColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color GridLineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1999,6 +2142,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridLineStyle GridLineStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridLineStyle GridLineStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.GridLineStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property GridLineStyle As DataGridLineStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridLineStyle GridLineStyle { System::Windows::Forms::DataGridLineStyle get(); void set(System::Windows::Forms::DataGridLineStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2032,6 +2177,8 @@
       <MemberSignature Language="C#" Value="protected virtual void GridVScrolled (object sender, System.Windows.Forms.ScrollEventArgs se);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GridVScrolled(object sender, class System.Windows.Forms.ScrollEventArgs se) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.GridVScrolled(System.Object,System.Windows.Forms.ScrollEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GridVScrolled (sender As Object, se As ScrollEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GridVScrolled(System::Object ^ sender, System::Windows::Forms::ScrollEventArgs ^ se);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2055,6 +2202,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color HeaderBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color HeaderBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HeaderBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderBackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color HeaderBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2085,6 +2234,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font HeaderFont { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font HeaderFont" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HeaderFont" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderFont As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ HeaderFont { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2110,6 +2261,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color HeaderForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color HeaderForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HeaderForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color HeaderForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2135,10 +2288,21 @@
         <altmember cref="P:System.Windows.Forms.DataGrid.HeaderBackColor" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets information about the <see cref="T:System.Windows.Forms.DataGrid" /> control at a specified point on the screen.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HitTest">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGrid.HitTestInfo HitTest (System.Drawing.Point position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataGrid/HitTestInfo HitTest(valuetype System.Drawing.Point position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.HitTest(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HitTest (position As Point) As DataGrid.HitTestInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataGrid::HitTestInfo ^ HitTest(System::Drawing::Point position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2178,6 +2342,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGrid.HitTestInfo HitTest (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataGrid/HitTestInfo HitTest(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.HitTest(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HitTest (x As Integer, y As Integer) As DataGrid.HitTestInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataGrid::HitTestInfo ^ HitTest(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2219,6 +2385,8 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Forms.ScrollBar HorizScrollBar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ScrollBar HorizScrollBar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HorizScrollBar" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property HorizScrollBar As ScrollBar" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::ScrollBar ^ HorizScrollBar { System::Windows::Forms::ScrollBar ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2238,6 +2406,8 @@
       <MemberSignature Language="C#" Value="public bool IsExpanded (int rowNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsExpanded(int32 rowNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.IsExpanded(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsExpanded (rowNumber As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsExpanded(int rowNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2273,6 +2443,8 @@
       <MemberSignature Language="C#" Value="public bool IsSelected (int row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsSelected(int32 row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.IsSelected(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSelected (row As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSelected(int row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2308,10 +2480,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the value of a specified cell.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public object this[System.Windows.Forms.DataGridCell cell] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(valuetype System.Windows.Forms.DataGridCell)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.Item(System.Windows.Forms.DataGridCell)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(cell As DataGridCell) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Windows::Forms::DataGridCell] { System::Object ^ get(System::Windows::Forms::DataGridCell cell); void set(System::Windows::Forms::DataGridCell cell, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2352,6 +2535,8 @@
       <MemberSignature Language="C#" Value="public object this[int rowIndex, int columnIndex] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32, int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.Item(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(rowIndex As Integer, columnIndex As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int, int] { System::Object ^ get(int rowIndex, int columnIndex); void set(int rowIndex, int columnIndex, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2395,6 +2580,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color LinkColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LinkColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.LinkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2421,6 +2608,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color LinkHoverColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LinkHoverColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.LinkHoverColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkHoverColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LinkHoverColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2444,9 +2633,11 @@
       </Docs>
     </Member>
     <Member MemberName="ListManager">
-      <MemberSignature Language="C#" Value="protected System.Windows.Forms.CurrencyManager ListManager { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Windows.Forms.CurrencyManager ListManager { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CurrencyManager ListManager" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.ListManager" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property ListManager As CurrencyManager" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Forms::CurrencyManager ^ ListManager { System::Windows::Forms::CurrencyManager ^ get(); void set(System::Windows::Forms::CurrencyManager ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2473,6 +2664,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.NavigateEventHandler Navigate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.NavigateEventHandler Navigate" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.Navigate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Navigate As NavigateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::NavigateEventHandler ^ Navigate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2506,6 +2699,8 @@
       <MemberSignature Language="C#" Value="public void NavigateBack ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NavigateBack() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.NavigateBack" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NavigateBack ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NavigateBack();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2538,6 +2733,8 @@
       <MemberSignature Language="C#" Value="public void NavigateTo (int rowNumber, string relationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NavigateTo(int32 rowNumber, string relationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.NavigateTo(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NavigateTo (rowNumber As Integer, relationName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NavigateTo(int rowNumber, System::String ^ relationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2572,6 +2769,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAllowNavigationChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAllowNavigationChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnAllowNavigationChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAllowNavigationChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAllowNavigationChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2593,6 +2792,8 @@
       <MemberSignature Language="C#" Value="protected void OnBackButtonClicked (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnBackButtonClicked(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnBackButtonClicked(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnBackButtonClicked (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnBackButtonClicked(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2616,6 +2817,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBackColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnBackColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2649,6 +2852,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBackgroundColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBackgroundColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnBackgroundColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBackgroundColorChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBackgroundColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2670,6 +2875,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnBindingContextChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBindingContextChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBindingContextChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2703,6 +2910,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBorderStyleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBorderStyleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnBorderStyleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBorderStyleChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBorderStyleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2724,6 +2933,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCaptionVisibleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCaptionVisibleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnCaptionVisibleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCaptionVisibleChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCaptionVisibleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2745,6 +2956,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCurrentCellChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCurrentCellChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnCurrentCellChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCurrentCellChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCurrentCellChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2766,6 +2979,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDataSourceChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataSourceChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnDataSourceChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataSourceChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataSourceChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2799,6 +3014,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEnter (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEnter(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnEnter(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnter (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEnter(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2820,6 +3037,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFlatModeChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFlatModeChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnFlatModeChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFlatModeChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFlatModeChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2841,6 +3060,8 @@
       <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnFontChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2874,6 +3095,8 @@
       <MemberSignature Language="C#" Value="protected override void OnForeColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnForeColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnForeColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnForeColorChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnForeColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2907,6 +3130,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2940,6 +3165,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnHandleDestroyed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2973,6 +3200,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Forms.KeyEventArgs ke);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs ke) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (ke As KeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ ke);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3006,6 +3235,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyPress (System.Windows.Forms.KeyPressEventArgs kpe);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyPress(class System.Windows.Forms.KeyPressEventArgs kpe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyPress (kpe As KeyPressEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyPress(System::Windows::Forms::KeyPressEventArgs ^ kpe);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3039,6 +3270,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs levent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs levent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (levent As LayoutEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ levent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3072,6 +3305,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLeave (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3105,6 +3340,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3145,6 +3382,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnMouseLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3176,6 +3415,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3207,6 +3448,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3238,6 +3481,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseWheel (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseWheel(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3269,6 +3514,8 @@
       <MemberSignature Language="C#" Value="protected void OnNavigate (System.Windows.Forms.NavigateEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnNavigate(class System.Windows.Forms.NavigateEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnNavigate(System.Windows.Forms.NavigateEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnNavigate (e As NavigateEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnNavigate(System::Windows::Forms::NavigateEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3290,6 +3537,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs pe);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs pe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (pe As PaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ pe);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3321,6 +3570,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaintBackground (System.Windows.Forms.PaintEventArgs ebe);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaintBackground(class System.Windows.Forms.PaintEventArgs ebe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (ebe As PaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintBackground(System::Windows::Forms::PaintEventArgs ^ ebe);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3349,6 +3600,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnParentRowsLabelStyleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnParentRowsLabelStyleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnParentRowsLabelStyleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnParentRowsLabelStyleChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnParentRowsLabelStyleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3382,6 +3635,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnParentRowsVisibleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnParentRowsVisibleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnParentRowsVisibleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnParentRowsVisibleChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnParentRowsVisibleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3403,6 +3658,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnReadOnlyChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnReadOnlyChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnReadOnlyChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReadOnlyChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnReadOnlyChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3436,6 +3693,8 @@
       <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnResize(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3467,6 +3726,8 @@
       <MemberSignature Language="C#" Value="protected void OnRowHeaderClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnRowHeaderClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnRowHeaderClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnRowHeaderClick (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnRowHeaderClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3489,6 +3750,8 @@
       <MemberSignature Language="C#" Value="protected void OnScroll (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnScroll(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnScroll(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnScroll (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnScroll(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3510,6 +3773,8 @@
       <MemberSignature Language="C#" Value="protected void OnShowParentDetailsButtonClicked (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnShowParentDetailsButtonClicked(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.OnShowParentDetailsButtonClicked(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnShowParentDetailsButtonClicked (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnShowParentDetailsButtonClicked(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3533,6 +3798,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ParentRowsBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ParentRowsBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.ParentRowsBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentRowsBackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ParentRowsBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3560,6 +3827,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ParentRowsForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ParentRowsForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.ParentRowsForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentRowsForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ParentRowsForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3587,6 +3856,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridParentRowsLabelStyle ParentRowsLabelStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridParentRowsLabelStyle ParentRowsLabelStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.ParentRowsLabelStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentRowsLabelStyle As DataGridParentRowsLabelStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridParentRowsLabelStyle ParentRowsLabelStyle { System::Windows::Forms::DataGridParentRowsLabelStyle get(); void set(System::Windows::Forms::DataGridParentRowsLabelStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3597,7 +3868,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3627,6 +3898,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ParentRowsLabelStyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentRowsLabelStyleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.ParentRowsLabelStyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ParentRowsLabelStyleChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentRowsLabelStyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3655,6 +3928,8 @@
       <MemberSignature Language="C#" Value="public bool ParentRowsVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ParentRowsVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.ParentRowsVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentRowsVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ParentRowsVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3688,6 +3963,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ParentRowsVisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentRowsVisibleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.ParentRowsVisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ParentRowsVisibleChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentRowsVisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3716,6 +3993,8 @@
       <MemberSignature Language="C#" Value="public int PreferredColumnWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PreferredColumnWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.PreferredColumnWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferredColumnWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PreferredColumnWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3761,6 +4040,8 @@
       <MemberSignature Language="C#" Value="public int PreferredRowHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PreferredRowHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.PreferredRowHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferredRowHeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PreferredRowHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3797,6 +4078,8 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessDialogKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessDialogKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ProcessDialogKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3827,6 +4110,8 @@
       <MemberSignature Language="C#" Value="protected bool ProcessGridKey (System.Windows.Forms.KeyEventArgs ke);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ProcessGridKey(class System.Windows.Forms.KeyEventArgs ke) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ProcessGridKey(System.Windows.Forms.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ProcessGridKey (ke As KeyEventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool ProcessGridKey(System::Windows::Forms::KeyEventArgs ^ ke);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3850,6 +4135,8 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyPreview (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ProcessKeyPreview(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessKeyPreview (ByRef m As Message) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessKeyPreview(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3880,6 +4167,8 @@
       <MemberSignature Language="C#" Value="protected bool ProcessTabKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ProcessTabKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ProcessTabKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ProcessTabKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool ProcessTabKey(System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3904,6 +4193,8 @@
       <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3947,6 +4238,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ReadOnlyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ReadOnlyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.ReadOnlyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ReadOnlyChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ReadOnlyChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3976,6 +4269,8 @@
       <MemberSignature Language="C#" Value="public void ResetAlternatingBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAlternatingBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetAlternatingBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetAlternatingBackColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAlternatingBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4011,6 +4306,8 @@
       <MemberSignature Language="C#" Value="public override void ResetBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetBackColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4045,6 +4342,8 @@
       <MemberSignature Language="C#" Value="public override void ResetForeColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetForeColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4085,6 +4384,8 @@
       <MemberSignature Language="C#" Value="public void ResetGridLineColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetGridLineColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetGridLineColor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetGridLineColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetGridLineColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4119,6 +4420,8 @@
       <MemberSignature Language="C#" Value="public void ResetHeaderBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetHeaderBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetHeaderBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetHeaderBackColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetHeaderBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4153,6 +4456,8 @@
       <MemberSignature Language="C#" Value="public void ResetHeaderFont ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetHeaderFont() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetHeaderFont" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetHeaderFont ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetHeaderFont();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4187,6 +4492,8 @@
       <MemberSignature Language="C#" Value="public void ResetHeaderForeColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetHeaderForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetHeaderForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetHeaderForeColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetHeaderForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4221,6 +4528,8 @@
       <MemberSignature Language="C#" Value="public void ResetLinkColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetLinkColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetLinkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetLinkColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetLinkColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4255,6 +4564,8 @@
       <MemberSignature Language="C#" Value="public void ResetLinkHoverColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetLinkHoverColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetLinkHoverColor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetLinkHoverColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetLinkHoverColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4280,6 +4591,8 @@
       <MemberSignature Language="C#" Value="protected void ResetSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ResetSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetSelection" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ResetSelection ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ResetSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4305,6 +4618,8 @@
       <MemberSignature Language="C#" Value="public void ResetSelectionBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetSelectionBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetSelectionBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetSelectionBackColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSelectionBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4339,6 +4654,8 @@
       <MemberSignature Language="C#" Value="public void ResetSelectionForeColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetSelectionForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ResetSelectionForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetSelectionForeColor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSelectionForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4373,6 +4690,8 @@
       <MemberSignature Language="C#" Value="protected event EventHandler RowHeaderClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RowHeaderClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.RowHeaderClick" />
+      <MemberSignature Language="VB.NET" Value="Protected Custom Event RowHeaderClick As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; event EventHandler ^ RowHeaderClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4390,6 +4709,8 @@
       <MemberSignature Language="C#" Value="public bool RowHeadersVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RowHeadersVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.RowHeadersVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowHeadersVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RowHeadersVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4418,6 +4739,8 @@
       <MemberSignature Language="C#" Value="public int RowHeaderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowHeaderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.RowHeaderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowHeaderWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowHeaderWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4452,6 +4775,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Scroll;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Scroll" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.Scroll" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Scroll As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Scroll;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4480,6 +4805,8 @@
       <MemberSignature Language="C#" Value="public void Select (int row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select(int32 row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.Select(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (row As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select(int row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4517,6 +4844,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color SelectionBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectionBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.SelectionBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionBackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectionBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4551,6 +4880,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color SelectionForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectionForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.SelectionForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectionForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4580,6 +4911,8 @@
       <MemberSignature Language="C#" Value="public void SetDataBinding (object dataSource, string dataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDataBinding(object dataSource, string dataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.SetDataBinding(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDataBinding (dataSource As Object, dataMember As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDataBinding(System::Object ^ dataSource, System::String ^ dataMember);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4629,6 +4962,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeAlternatingBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeAlternatingBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeAlternatingBackColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeAlternatingBackColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeAlternatingBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4656,6 +4991,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeBackgroundColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeBackgroundColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeBackgroundColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeBackgroundColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4683,6 +5020,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeCaptionBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeCaptionBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeCaptionBackColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeCaptionBackColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeCaptionBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4710,6 +5049,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeCaptionForeColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeCaptionForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeCaptionForeColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeCaptionForeColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeCaptionForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4737,6 +5078,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeGridLineColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeGridLineColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeGridLineColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeGridLineColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeGridLineColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4764,6 +5107,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeHeaderBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeHeaderBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeHeaderBackColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeHeaderBackColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeHeaderBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4791,6 +5136,8 @@
       <MemberSignature Language="C#" Value="protected bool ShouldSerializeHeaderFont ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ShouldSerializeHeaderFont() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeHeaderFont" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ShouldSerializeHeaderFont () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool ShouldSerializeHeaderFont();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4818,6 +5165,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeHeaderForeColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeHeaderForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeHeaderForeColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeHeaderForeColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeHeaderForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4845,6 +5194,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeLinkHoverColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeLinkHoverColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeLinkHoverColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeLinkHoverColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeLinkHoverColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4873,6 +5224,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeParentRowsBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeParentRowsBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeParentRowsBackColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeParentRowsBackColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeParentRowsBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4900,6 +5253,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeParentRowsForeColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeParentRowsForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeParentRowsForeColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeParentRowsForeColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeParentRowsForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4927,6 +5282,8 @@
       <MemberSignature Language="C#" Value="protected bool ShouldSerializePreferredRowHeight ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ShouldSerializePreferredRowHeight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializePreferredRowHeight" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ShouldSerializePreferredRowHeight () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool ShouldSerializePreferredRowHeight();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4954,6 +5311,8 @@
       <MemberSignature Language="C#" Value="protected bool ShouldSerializeSelectionBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ShouldSerializeSelectionBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeSelectionBackColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ShouldSerializeSelectionBackColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool ShouldSerializeSelectionBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4981,6 +5340,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeSelectionForeColor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldSerializeSelectionForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ShouldSerializeSelectionForeColor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeSelectionForeColor () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeSelectionForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5008,6 +5369,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ShowParentDetailsButtonClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ShowParentDetailsButtonClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.ShowParentDetailsButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ShowParentDetailsButtonClick As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ShowParentDetailsButtonClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5036,6 +5399,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.ISite Site { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5055,6 +5420,8 @@
       <MemberSignature Language="C#" Value="public void SubObjectsSiteChange (bool site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SubObjectsSiteChange(bool site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.SubObjectsSiteChange(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SubObjectsSiteChange (site As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SubObjectsSiteChange(bool site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5077,6 +5444,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.GridTableStylesCollection TableStyles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.GridTableStylesCollection TableStyles" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.TableStyles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableStyles As GridTableStylesCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::GridTableStylesCollection ^ TableStyles { System::Windows::Forms::GridTableStylesCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5084,7 +5453,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -5138,6 +5507,8 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5151,7 +5522,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -5170,6 +5541,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGrid.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5202,6 +5575,8 @@
       <MemberSignature Language="C#" Value="public void UnSelect (int row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnSelect(int32 row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.UnSelect(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnSelect (row As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnSelect(int row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5239,6 +5614,8 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Forms.ScrollBar VertScrollBar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ScrollBar VertScrollBar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.VertScrollBar" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property VertScrollBar As ScrollBar" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::ScrollBar ^ VertScrollBar { System::Windows::Forms::ScrollBar ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5266,6 +5643,8 @@
       <MemberSignature Language="C#" Value="public int VisibleColumnCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleColumnCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.VisibleColumnCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleColumnCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VisibleColumnCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5305,6 +5684,8 @@
       <MemberSignature Language="C#" Value="public int VisibleRowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleRowCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.VisibleRowCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleRowCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VisibleRowCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5340,50 +5721,5 @@
         <altmember cref="P:System.Windows.Forms.DataGrid.VisibleColumnCount" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="HitTest">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets information about the <see cref="T:System.Windows.Forms.DataGrid" /> control at a specified point on the screen.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ColumnStartedEditing">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Informs the <see cref="T:System.Windows.Forms.DataGrid" /> control that the user has begun editing a column.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCellBounds">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> that specifies the four corners of a cell.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateGridColumn">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> that is added to the control.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the value of a specified cell.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

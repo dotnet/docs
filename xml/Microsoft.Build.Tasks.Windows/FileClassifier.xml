@@ -1,7 +1,9 @@
-<Type Name="FileClassifier" FullName="Microsoft.Build.Tasks.Windows.FileClassifier">
+﻿<Type Name="FileClassifier" FullName="Microsoft.Build.Tasks.Windows.FileClassifier">
   <TypeSignature Language="C#" Value="public sealed class FileClassifier : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileClassifier extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.FileClassifier" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileClassifier&#xA;Inherits Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileClassifier sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public FileClassifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.FileClassifier.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileClassifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] CLREmbeddedResource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] CLREmbeddedResource" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.FileClassifier.CLREmbeddedResource" />
+      <MemberSignature Language="VB.NET" Value="Public Property CLREmbeddedResource As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CLREmbeddedResource { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] CLRResourceFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] CLRResourceFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.FileClassifier.CLRResourceFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property CLRResourceFiles As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CLRResourceFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] CLRSatelliteEmbeddedResource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] CLRSatelliteEmbeddedResource" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.FileClassifier.CLRSatelliteEmbeddedResource" />
+      <MemberSignature Language="VB.NET" Value="Public Property CLRSatelliteEmbeddedResource As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CLRSatelliteEmbeddedResource { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -103,6 +113,8 @@
       <MemberSignature Language="C#" Value="public string Culture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Culture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.FileClassifier.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Culture { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -122,6 +134,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.FileClassifier.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -143,6 +157,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] MainEmbeddedFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] MainEmbeddedFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.FileClassifier.MainEmbeddedFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property MainEmbeddedFiles As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ MainEmbeddedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -167,6 +183,8 @@
       <MemberSignature Language="C#" Value="public string OutputType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.FileClassifier.OutputType" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -191,6 +209,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SatelliteEmbeddedFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SatelliteEmbeddedFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.FileClassifier.SatelliteEmbeddedFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property SatelliteEmbeddedFiles As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SatelliteEmbeddedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -215,6 +235,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SourceFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SourceFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.FileClassifier.SourceFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceFiles As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SourceFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TypeValidationEventHandler" FullName="System.Windows.Forms.TypeValidationEventHandler">
+﻿<Type Name="TypeValidationEventHandler" FullName="System.Windows.Forms.TypeValidationEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TypeValidationEventHandler(object sender, TypeValidationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TypeValidationEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TypeValidationEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TypeValidationEventHandler(sender As Object, e As TypeValidationEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void TypeValidationEventHandler(System::Object ^ sender, TypeValidationEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

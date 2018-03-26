@@ -1,7 +1,9 @@
-<Type Name="CAccPropServices" FullName="Accessibility.CAccPropServices">
+﻿<Type Name="CAccPropServices" FullName="Accessibility.CAccPropServices">
   <TypeSignature Language="C#" Value="public interface CAccPropServices : Accessibility.IAccPropServices" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CAccPropServices implements class Accessibility.IAccPropServices" />
   <TypeSignature Language="DocId" Value="T:Accessibility.CAccPropServices" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CAccPropServices&#xA;Implements IAccPropServices" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CAccPropServices : Accessibility::IAccPropServices" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

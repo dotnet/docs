@@ -1,7 +1,9 @@
-<Type Name="WebClassContainingClassNotOptional" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebClassContainingClassNotOptional">
+﻿<Type Name="WebClassContainingClassNotOptional" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebClassContainingClassNotOptional">
   <TypeSignature Language="C#" Value="public class WebClassContainingClassNotOptional : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebClassContainingClassNotOptional extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassContainingClassNotOptional" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebClassContainingClassNotOptional&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebClassContainingClassNotOptional : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public WebClassContainingClassNotOptional ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClassContainingClassNotOptional.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebClassContainingClassNotOptional();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

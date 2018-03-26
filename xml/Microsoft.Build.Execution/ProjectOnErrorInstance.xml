@@ -1,7 +1,9 @@
-<Type Name="ProjectOnErrorInstance" FullName="Microsoft.Build.Execution.ProjectOnErrorInstance">
+﻿<Type Name="ProjectOnErrorInstance" FullName="Microsoft.Build.Execution.ProjectOnErrorInstance">
   <TypeSignature Language="C#" Value="public sealed class ProjectOnErrorInstance : Microsoft.Build.Execution.ProjectTargetInstanceChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProjectOnErrorInstance extends Microsoft.Build.Execution.ProjectTargetInstanceChild" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectOnErrorInstance" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectOnErrorInstance&#xA;Inherits ProjectTargetInstanceChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectOnErrorInstance sealed : Microsoft::Build::Execution::ProjectTargetInstanceChild" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public override string Condition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Condition As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Condition { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Build.Construction.ElementLocation ConditionLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation ConditionLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.ConditionLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConditionLocation As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public string ExecuteTargets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExecuteTargets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.ExecuteTargets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecuteTargets As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExecuteTargets { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation ExecuteTargetsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation ExecuteTargetsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.ExecuteTargetsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecuteTargetsLocation As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ExecuteTargetsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -110,6 +120,8 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Build.Construction.ElementLocation Location { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation Location" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Location As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ Location { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

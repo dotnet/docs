@@ -1,7 +1,9 @@
-<Type Name="FilterableAttribute" FullName="System.Web.UI.FilterableAttribute">
+﻿<Type Name="FilterableAttribute" FullName="System.Web.UI.FilterableAttribute">
   <TypeSignature Language="C#" Value="public sealed class FilterableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FilterableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.FilterableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FilterableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FilterableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public FilterableAttribute (bool filterable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool filterable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filterable As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FilterableAttribute(bool filterable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +87,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.FilterableAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.FilterableAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As FilterableAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::FilterableAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +119,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +160,8 @@
       <MemberSignature Language="C#" Value="public bool Filterable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Filterable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.FilterableAttribute.Filterable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filterable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Filterable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +203,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -214,6 +226,8 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +259,8 @@
       <MemberSignature Language="C#" Value="public static bool IsObjectFilterable (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsObjectFilterable(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsObjectFilterable(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsObjectFilterable (instance As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsObjectFilterable(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +299,7 @@
       <MemberSignature Language="C#" Value="public static bool IsPropertyFilterable (System.ComponentModel.PropertyDescriptor propertyDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPropertyFilterable(class System.ComponentModel.PropertyDescriptor propertyDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsPropertyFilterable(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPropertyFilterable(System::ComponentModel::PropertyDescriptor ^ propertyDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -318,6 +335,7 @@
       <MemberSignature Language="C#" Value="public static bool IsTypeFilterable (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTypeFilterable(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsTypeFilterable(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsTypeFilterable(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +372,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.FilterableAttribute No;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.FilterableAttribute No" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.No" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As FilterableAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::FilterableAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -381,6 +401,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.FilterableAttribute Yes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.FilterableAttribute Yes" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.Yes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As FilterableAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::FilterableAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

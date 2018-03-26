@@ -1,7 +1,9 @@
-<Type Name="DesignerDataParameter" FullName="System.ComponentModel.Design.Data.DesignerDataParameter">
+﻿<Type Name="DesignerDataParameter" FullName="System.ComponentModel.Design.Data.DesignerDataParameter">
   <TypeSignature Language="C#" Value="public sealed class DesignerDataParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerDataParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataParameter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerDataParameter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataParameter sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public DesignerDataParameter (string name, System.Data.DbType dataType, System.Data.ParameterDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dataType, valuetype System.Data.ParameterDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataParameter.#ctor(System.String,System.Data.DbType,System.Data.ParameterDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As DbType, direction As ParameterDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataParameter(System::String ^ name, System::Data::DbType dataType, System::Data::ParameterDirection direction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DbType DataType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DataType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataType As DbType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DbType DataType { System::Data::DbType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Data.ParameterDirection Direction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As ParameterDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ParameterDirection Direction { System::Data::ParameterDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +108,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

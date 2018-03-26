@@ -1,7 +1,9 @@
-<Type Name="SkinBuilder" FullName="System.Web.UI.SkinBuilder">
+﻿<Type Name="SkinBuilder" FullName="System.Web.UI.SkinBuilder">
   <TypeSignature Language="C#" Value="public sealed class SkinBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SkinBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.SkinBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SkinBuilder&#xA;Inherits ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SkinBuilder sealed : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public SkinBuilder (System.Web.UI.ThemeProvider provider, System.Web.UI.Control control, System.Web.UI.ControlBuilder skinBuilder, string themePath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.ThemeProvider provider, class System.Web.UI.Control control, class System.Web.UI.ControlBuilder skinBuilder, string themePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.SkinBuilder.#ctor(System.Web.UI.ThemeProvider,System.Web.UI.Control,System.Web.UI.ControlBuilder,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SkinBuilder(System::Web::UI::ThemeProvider ^ provider, System::Web::UI::Control ^ control, System::Web::UI::ControlBuilder ^ skinBuilder, System::String ^ themePath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ApplyTheme ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control ApplyTheme() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.SkinBuilder.ApplyTheme" />
+      <MemberSignature Language="VB.NET" Value="Public Function ApplyTheme () As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Control ^ ApplyTheme();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

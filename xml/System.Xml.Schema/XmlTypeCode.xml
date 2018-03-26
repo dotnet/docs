@@ -1,7 +1,9 @@
-<Type Name="XmlTypeCode" FullName="System.Xml.Schema.XmlTypeCode">
+﻿<Type Name="XmlTypeCode" FullName="System.Xml.Schema.XmlTypeCode">
   <TypeSignature Language="C#" Value="public enum XmlTypeCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlTypeCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlTypeCode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XmlTypeCode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlTypeCode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="AnyAtomicType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode AnyAtomicType = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.AnyAtomicType" />
+      <MemberSignature Language="VB.NET" Value="AnyAtomicType" />
+      <MemberSignature Language="C++ CLI" Value="AnyAtomicType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Any atomic value of a union.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="AnyUri" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode AnyUri = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.AnyUri" />
+      <MemberSignature Language="VB.NET" Value="AnyUri" />
+      <MemberSignature Language="C++ CLI" Value="AnyUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -69,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:anyURI" /> type.</summary>
       </Docs>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="Attribute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Attribute = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Attribute" />
+      <MemberSignature Language="VB.NET" Value="Attribute" />
+      <MemberSignature Language="C++ CLI" Value="Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -94,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -102,6 +113,8 @@
       <MemberSignature Language="C#" Value="Base64Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Base64Binary = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Base64Binary" />
+      <MemberSignature Language="VB.NET" Value="Base64Binary" />
+      <MemberSignature Language="C++ CLI" Value="Base64Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -119,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:base64Binary" /> type.</summary>
       </Docs>
@@ -127,6 +141,8 @@
       <MemberSignature Language="C#" Value="Boolean" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Boolean = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Boolean" />
+      <MemberSignature Language="VB.NET" Value="Boolean" />
+      <MemberSignature Language="C++ CLI" Value="Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -144,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:boolean" /> type.</summary>
       </Docs>
@@ -152,6 +169,8 @@
       <MemberSignature Language="C#" Value="Byte" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Byte = int32(46)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Byte" />
+      <MemberSignature Language="VB.NET" Value="Byte" />
+      <MemberSignature Language="C++ CLI" Value="Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -169,6 +188,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:byte" /> type.</summary>
       </Docs>
@@ -177,6 +197,8 @@
       <MemberSignature Language="C#" Value="Comment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Comment = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Comment" />
+      <MemberSignature Language="VB.NET" Value="Comment" />
+      <MemberSignature Language="C++ CLI" Value="Comment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -194,6 +216,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -202,6 +225,8 @@
       <MemberSignature Language="C#" Value="Date" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Date = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Date" />
+      <MemberSignature Language="VB.NET" Value="Date" />
+      <MemberSignature Language="C++ CLI" Value="Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -219,6 +244,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:date" /> type.</summary>
       </Docs>
@@ -227,6 +253,8 @@
       <MemberSignature Language="C#" Value="DateTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode DateTime = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.DateTime" />
+      <MemberSignature Language="VB.NET" Value="DateTime" />
+      <MemberSignature Language="C++ CLI" Value="DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -244,6 +272,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:dateTime" /> type.</summary>
       </Docs>
@@ -252,6 +281,8 @@
       <MemberSignature Language="C#" Value="DayTimeDuration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode DayTimeDuration = int32(54)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.DayTimeDuration" />
+      <MemberSignature Language="VB.NET" Value="DayTimeDuration" />
+      <MemberSignature Language="C++ CLI" Value="DayTimeDuration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -269,6 +300,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>54</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -277,6 +309,8 @@
       <MemberSignature Language="C#" Value="Decimal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Decimal = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Decimal" />
+      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -294,6 +328,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:decimal" /> type.</summary>
       </Docs>
@@ -302,6 +337,8 @@
       <MemberSignature Language="C#" Value="Document" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Document = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Document" />
+      <MemberSignature Language="VB.NET" Value="Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -319,6 +356,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -327,6 +365,8 @@
       <MemberSignature Language="C#" Value="Double" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Double = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Double" />
+      <MemberSignature Language="VB.NET" Value="Double" />
+      <MemberSignature Language="C++ CLI" Value="Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -344,6 +384,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:double" /> type.</summary>
       </Docs>
@@ -352,6 +393,8 @@
       <MemberSignature Language="C#" Value="Duration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Duration = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Duration" />
+      <MemberSignature Language="VB.NET" Value="Duration" />
+      <MemberSignature Language="C++ CLI" Value="Duration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -369,6 +412,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:Duration" /> type.</summary>
       </Docs>
@@ -377,6 +421,8 @@
       <MemberSignature Language="C#" Value="Element" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Element = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Element" />
+      <MemberSignature Language="VB.NET" Value="Element" />
+      <MemberSignature Language="C++ CLI" Value="Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -394,6 +440,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -402,6 +449,8 @@
       <MemberSignature Language="C#" Value="Entity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Entity = int32(39)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Entity" />
+      <MemberSignature Language="VB.NET" Value="Entity" />
+      <MemberSignature Language="C++ CLI" Value="Entity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -419,6 +468,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:ENTITY" /> type.</summary>
       </Docs>
@@ -427,6 +477,8 @@
       <MemberSignature Language="C#" Value="Float" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Float = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Float" />
+      <MemberSignature Language="VB.NET" Value="Float" />
+      <MemberSignature Language="C++ CLI" Value="Float" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -444,6 +496,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:float" /> type.</summary>
       </Docs>
@@ -452,6 +505,8 @@
       <MemberSignature Language="C#" Value="GDay" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode GDay = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GDay" />
+      <MemberSignature Language="VB.NET" Value="GDay" />
+      <MemberSignature Language="C++ CLI" Value="GDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -469,6 +524,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:gDay" /> type.</summary>
       </Docs>
@@ -477,6 +533,8 @@
       <MemberSignature Language="C#" Value="GMonth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode GMonth = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GMonth" />
+      <MemberSignature Language="VB.NET" Value="GMonth" />
+      <MemberSignature Language="C++ CLI" Value="GMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -494,6 +552,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:gMonth" /> type.</summary>
       </Docs>
@@ -502,6 +561,8 @@
       <MemberSignature Language="C#" Value="GMonthDay" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode GMonthDay = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GMonthDay" />
+      <MemberSignature Language="VB.NET" Value="GMonthDay" />
+      <MemberSignature Language="C++ CLI" Value="GMonthDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -519,6 +580,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:gMonthDay" /> type.</summary>
       </Docs>
@@ -527,6 +589,8 @@
       <MemberSignature Language="C#" Value="GYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode GYear = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GYear" />
+      <MemberSignature Language="VB.NET" Value="GYear" />
+      <MemberSignature Language="C++ CLI" Value="GYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -544,6 +608,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:gYear" /> type.</summary>
       </Docs>
@@ -552,6 +617,8 @@
       <MemberSignature Language="C#" Value="GYearMonth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode GYearMonth = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GYearMonth" />
+      <MemberSignature Language="VB.NET" Value="GYearMonth" />
+      <MemberSignature Language="C++ CLI" Value="GYearMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -569,6 +636,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:gYearMonth" /> type.</summary>
       </Docs>
@@ -577,6 +645,8 @@
       <MemberSignature Language="C#" Value="HexBinary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode HexBinary = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.HexBinary" />
+      <MemberSignature Language="VB.NET" Value="HexBinary" />
+      <MemberSignature Language="C++ CLI" Value="HexBinary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -594,6 +664,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:hexBinary" /> type.</summary>
       </Docs>
@@ -602,6 +673,8 @@
       <MemberSignature Language="C#" Value="Id" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Id = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Id" />
+      <MemberSignature Language="VB.NET" Value="Id" />
+      <MemberSignature Language="C++ CLI" Value="Id" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -619,6 +692,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:ID" /> type.</summary>
       </Docs>
@@ -627,6 +701,8 @@
       <MemberSignature Language="C#" Value="Idref" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Idref = int32(38)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Idref" />
+      <MemberSignature Language="VB.NET" Value="Idref" />
+      <MemberSignature Language="C++ CLI" Value="Idref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -644,6 +720,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:IDREF" /> type.</summary>
       </Docs>
@@ -652,6 +729,8 @@
       <MemberSignature Language="C#" Value="Int" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Int = int32(44)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Int" />
+      <MemberSignature Language="VB.NET" Value="Int" />
+      <MemberSignature Language="C++ CLI" Value="Int" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -669,6 +748,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:int" /> type.</summary>
       </Docs>
@@ -677,6 +757,8 @@
       <MemberSignature Language="C#" Value="Integer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Integer = int32(40)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Integer" />
+      <MemberSignature Language="VB.NET" Value="Integer" />
+      <MemberSignature Language="C++ CLI" Value="Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -694,6 +776,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:integer" /> type.</summary>
       </Docs>
@@ -702,6 +785,8 @@
       <MemberSignature Language="C#" Value="Item" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Item = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Item" />
+      <MemberSignature Language="VB.NET" Value="Item" />
+      <MemberSignature Language="C++ CLI" Value="Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -719,6 +804,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An item such as a node or atomic value.</summary>
       </Docs>
@@ -727,6 +813,8 @@
       <MemberSignature Language="C#" Value="Language" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Language = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Language" />
+      <MemberSignature Language="VB.NET" Value="Language" />
+      <MemberSignature Language="C++ CLI" Value="Language" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -744,6 +832,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:language" /> type.</summary>
       </Docs>
@@ -752,6 +841,8 @@
       <MemberSignature Language="C#" Value="Long" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Long = int32(43)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Long" />
+      <MemberSignature Language="VB.NET" Value="Long" />
+      <MemberSignature Language="C++ CLI" Value="Long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -769,6 +860,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:long" /> type.</summary>
       </Docs>
@@ -777,6 +869,8 @@
       <MemberSignature Language="C#" Value="Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Name = int32(35)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Name" />
+      <MemberSignature Language="VB.NET" Value="Name" />
+      <MemberSignature Language="C++ CLI" Value="Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -794,6 +888,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:Name" /> type.</summary>
       </Docs>
@@ -802,6 +897,8 @@
       <MemberSignature Language="C#" Value="Namespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Namespace = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Namespace" />
+      <MemberSignature Language="C++ CLI" Value="Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -819,6 +916,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -827,6 +925,8 @@
       <MemberSignature Language="C#" Value="NCName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode NCName = int32(36)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NCName" />
+      <MemberSignature Language="VB.NET" Value="NCName" />
+      <MemberSignature Language="C++ CLI" Value="NCName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -844,6 +944,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:NCName" /> type.</summary>
       </Docs>
@@ -852,6 +953,8 @@
       <MemberSignature Language="C#" Value="NegativeInteger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode NegativeInteger = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NegativeInteger" />
+      <MemberSignature Language="VB.NET" Value="NegativeInteger" />
+      <MemberSignature Language="C++ CLI" Value="NegativeInteger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -869,6 +972,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:negativeInteger" /> type.</summary>
       </Docs>
@@ -877,6 +981,8 @@
       <MemberSignature Language="C#" Value="NmToken" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode NmToken = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NmToken" />
+      <MemberSignature Language="VB.NET" Value="NmToken" />
+      <MemberSignature Language="C++ CLI" Value="NmToken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -894,6 +1000,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:NMTOKEN" /> type.</summary>
       </Docs>
@@ -902,6 +1009,8 @@
       <MemberSignature Language="C#" Value="Node" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Node = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Node" />
+      <MemberSignature Language="VB.NET" Value="Node" />
+      <MemberSignature Language="C++ CLI" Value="Node" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -919,6 +1028,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -927,6 +1037,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -944,6 +1056,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No type information.</summary>
       </Docs>
@@ -952,6 +1065,8 @@
       <MemberSignature Language="C#" Value="NonNegativeInteger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode NonNegativeInteger = int32(47)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NonNegativeInteger" />
+      <MemberSignature Language="VB.NET" Value="NonNegativeInteger" />
+      <MemberSignature Language="C++ CLI" Value="NonNegativeInteger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -969,6 +1084,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:nonNegativeInteger" /> type.</summary>
       </Docs>
@@ -977,6 +1093,8 @@
       <MemberSignature Language="C#" Value="NonPositiveInteger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode NonPositiveInteger = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NonPositiveInteger" />
+      <MemberSignature Language="VB.NET" Value="NonPositiveInteger" />
+      <MemberSignature Language="C++ CLI" Value="NonPositiveInteger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -994,6 +1112,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:nonPositiveInteger" /> type.</summary>
       </Docs>
@@ -1002,6 +1121,8 @@
       <MemberSignature Language="C#" Value="NormalizedString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode NormalizedString = int32(31)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NormalizedString" />
+      <MemberSignature Language="VB.NET" Value="NormalizedString" />
+      <MemberSignature Language="C++ CLI" Value="NormalizedString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1019,6 +1140,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:normalizedString" /> type.</summary>
       </Docs>
@@ -1027,6 +1149,8 @@
       <MemberSignature Language="C#" Value="Notation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Notation = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Notation" />
+      <MemberSignature Language="VB.NET" Value="Notation" />
+      <MemberSignature Language="C++ CLI" Value="Notation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1044,6 +1168,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:NOTATION" /> type.</summary>
       </Docs>
@@ -1052,6 +1177,8 @@
       <MemberSignature Language="C#" Value="PositiveInteger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode PositiveInteger = int32(52)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.PositiveInteger" />
+      <MemberSignature Language="VB.NET" Value="PositiveInteger" />
+      <MemberSignature Language="C++ CLI" Value="PositiveInteger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1069,6 +1196,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:positiveInteger" /> type.</summary>
       </Docs>
@@ -1077,6 +1205,8 @@
       <MemberSignature Language="C#" Value="ProcessingInstruction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode ProcessingInstruction = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.ProcessingInstruction" />
+      <MemberSignature Language="VB.NET" Value="ProcessingInstruction" />
+      <MemberSignature Language="C++ CLI" Value="ProcessingInstruction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1094,6 +1224,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -1102,6 +1233,8 @@
       <MemberSignature Language="C#" Value="QName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode QName = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.QName" />
+      <MemberSignature Language="VB.NET" Value="QName" />
+      <MemberSignature Language="C++ CLI" Value="QName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1119,6 +1252,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:QName" /> type.</summary>
       </Docs>
@@ -1127,6 +1261,8 @@
       <MemberSignature Language="C#" Value="Short" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Short = int32(45)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Short" />
+      <MemberSignature Language="VB.NET" Value="Short" />
+      <MemberSignature Language="C++ CLI" Value="Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1144,6 +1280,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:short" /> type.</summary>
       </Docs>
@@ -1152,6 +1289,8 @@
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode String = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1169,6 +1308,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:string" /> type.</summary>
       </Docs>
@@ -1177,6 +1317,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Text = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1194,6 +1336,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
@@ -1202,6 +1345,8 @@
       <MemberSignature Language="C#" Value="Time" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Time = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Time" />
+      <MemberSignature Language="VB.NET" Value="Time" />
+      <MemberSignature Language="C++ CLI" Value="Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1219,6 +1364,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:time" /> type.</summary>
       </Docs>
@@ -1227,6 +1373,8 @@
       <MemberSignature Language="C#" Value="Token" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode Token = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Token" />
+      <MemberSignature Language="VB.NET" Value="Token" />
+      <MemberSignature Language="C++ CLI" Value="Token" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1244,6 +1392,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:token" /> type.</summary>
       </Docs>
@@ -1252,6 +1401,8 @@
       <MemberSignature Language="C#" Value="UnsignedByte" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode UnsignedByte = int32(51)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UnsignedByte" />
+      <MemberSignature Language="VB.NET" Value="UnsignedByte" />
+      <MemberSignature Language="C++ CLI" Value="UnsignedByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1269,6 +1420,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:unsignedByte" /> type.</summary>
       </Docs>
@@ -1277,6 +1429,8 @@
       <MemberSignature Language="C#" Value="UnsignedInt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode UnsignedInt = int32(49)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UnsignedInt" />
+      <MemberSignature Language="VB.NET" Value="UnsignedInt" />
+      <MemberSignature Language="C++ CLI" Value="UnsignedInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1294,6 +1448,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:unsignedInt" /> type.</summary>
       </Docs>
@@ -1302,6 +1457,8 @@
       <MemberSignature Language="C#" Value="UnsignedLong" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode UnsignedLong = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UnsignedLong" />
+      <MemberSignature Language="VB.NET" Value="UnsignedLong" />
+      <MemberSignature Language="C++ CLI" Value="UnsignedLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1319,6 +1476,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:unsignedLong" /> type.</summary>
       </Docs>
@@ -1327,6 +1485,8 @@
       <MemberSignature Language="C#" Value="UnsignedShort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode UnsignedShort = int32(50)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UnsignedShort" />
+      <MemberSignature Language="VB.NET" Value="UnsignedShort" />
+      <MemberSignature Language="C++ CLI" Value="UnsignedShort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1344,6 +1504,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>A W3C XML Schema <see langword="xs:unsignedShort" /> type.</summary>
       </Docs>
@@ -1352,6 +1513,8 @@
       <MemberSignature Language="C#" Value="UntypedAtomic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode UntypedAtomic = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UntypedAtomic" />
+      <MemberSignature Language="VB.NET" Value="UntypedAtomic" />
+      <MemberSignature Language="C++ CLI" Value="UntypedAtomic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1369,6 +1532,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>An untyped atomic value.</summary>
       </Docs>
@@ -1377,6 +1541,8 @@
       <MemberSignature Language="C#" Value="YearMonthDuration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlTypeCode YearMonthDuration = int32(53)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.YearMonthDuration" />
+      <MemberSignature Language="VB.NET" Value="YearMonthDuration" />
+      <MemberSignature Language="C++ CLI" Value="YearMonthDuration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1394,6 +1560,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="CompositeActivityValidator" FullName="System.Workflow.ComponentModel.Compiler.CompositeActivityValidator">
+﻿<Type Name="CompositeActivityValidator" FullName="System.Workflow.ComponentModel.Compiler.CompositeActivityValidator">
   <TypeSignature Language="C#" Value="public class CompositeActivityValidator : System.Workflow.ComponentModel.Compiler.ActivityValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeActivityValidator extends System.Workflow.ComponentModel.Compiler.ActivityValidator" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompositeActivityValidator&#xA;Inherits ActivityValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositeActivityValidator : System::Workflow::ComponentModel::Compiler::ActivityValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public CompositeActivityValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeActivityValidator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public override System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Validate (System.Workflow.ComponentModel.Compiler.ValidationManager manager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Validate(class System.Workflow.ComponentModel.Compiler.ValidationManager manager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.Validate(System.Workflow.ComponentModel.Compiler.ValidationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Validate (manager As ValidationManager, obj As Object) As ValidationErrorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Validate(System::Workflow::ComponentModel::Compiler::ValidationManager ^ manager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -83,6 +89,7 @@
       <MemberSignature Language="C#" Value="public override System.Workflow.ComponentModel.Compiler.ValidationError ValidateActivityChange (System.Workflow.ComponentModel.Activity activity, System.Workflow.ComponentModel.ActivityChangeAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationError ValidateActivityChange(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.ComponentModel.ActivityChangeAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.ValidateActivityChange(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.ActivityChangeAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationError ^ ValidateActivityChange(System::Workflow::ComponentModel::Activity ^ activity, System::Workflow::ComponentModel::ActivityChangeAction ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

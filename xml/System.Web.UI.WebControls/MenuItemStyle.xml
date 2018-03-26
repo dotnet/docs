@@ -1,7 +1,9 @@
-<Type Name="MenuItemStyle" FullName="System.Web.UI.WebControls.MenuItemStyle">
+﻿<Type Name="MenuItemStyle" FullName="System.Web.UI.WebControls.MenuItemStyle">
   <TypeSignature Language="C#" Value="public sealed class MenuItemStyle : System.Web.UI.WebControls.Style" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MenuItemStyle extends System.Web.UI.WebControls.Style" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuItemStyle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MenuItemStyle&#xA;Inherits Style" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuItemStyle sealed : System::Web::UI::WebControls::Style" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,10 +84,21 @@
     <altmember cref="P:System.Web.UI.WebControls.MenuItemStyle.VerticalPadding" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuItemStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MenuItemStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItemStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +135,8 @@
       <MemberSignature Language="C#" Value="public MenuItemStyle (System.Web.UI.StateBag bag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.StateBag bag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyle.#ctor(System.Web.UI.StateBag)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bag As StateBag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItemStyle(System::Web::UI::StateBag ^ bag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +176,8 @@
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.Web.UI.WebControls.Style s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Web.UI.WebControls.Style s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (s As Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Web::UI::WebControls::Style ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +222,8 @@
       <MemberSignature Language="C#" Value="protected override void FillStyleAttributes (System.Web.UI.CssStyleCollection attributes, System.Web.UI.IUrlResolutionService urlResolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void FillStyleAttributes(class System.Web.UI.CssStyleCollection attributes, class System.Web.UI.IUrlResolutionService urlResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyle.FillStyleAttributes(System.Web.UI.CssStyleCollection,System.Web.UI.IUrlResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub FillStyleAttributes (attributes As CssStyleCollection, urlResolver As IUrlResolutionService)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void FillStyleAttributes(System::Web::UI::CssStyleCollection ^ attributes, System::Web::UI::IUrlResolutionService ^ urlResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +247,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit HorizontalPadding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit HorizontalPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemStyle.HorizontalPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalPadding As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit HorizontalPadding { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -276,6 +297,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit ItemSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit ItemSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemStyle.ItemSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemSpacing As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit ItemSpacing { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -322,6 +345,8 @@
       <MemberSignature Language="C#" Value="public override void MergeWith (System.Web.UI.WebControls.Style s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void MergeWith(class System.Web.UI.WebControls.Style s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyle.MergeWith(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub MergeWith (s As Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MergeWith(System::Web::UI::WebControls::Style ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -364,6 +389,8 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyle.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -399,6 +426,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit VerticalPadding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit VerticalPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemStyle.VerticalPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerticalPadding As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit VerticalPadding { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,14 +472,5 @@
         <altmember cref="P:System.Web.UI.WebControls.MenuItemStyle.ItemSpacing" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuItemStyle" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

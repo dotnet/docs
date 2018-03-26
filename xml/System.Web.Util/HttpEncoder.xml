@@ -1,7 +1,9 @@
-<Type Name="HttpEncoder" FullName="System.Web.Util.HttpEncoder">
+﻿<Type Name="HttpEncoder" FullName="System.Web.Util.HttpEncoder">
   <TypeSignature Language="C#" Value="public class HttpEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi HttpEncoder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Util.HttpEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpEncoder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,8 @@
       <MemberSignature Language="C#" Value="public HttpEncoder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpEncoder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Util.HttpEncoder Current { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.Util.HttpEncoder Current" />
       <MemberSignature Language="DocId" Value="P:System.Web.Util.HttpEncoder.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Current As HttpEncoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Util::HttpEncoder ^ Current { System::Web::Util::HttpEncoder ^ get(); void set(System::Web::Util::HttpEncoder ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Util.HttpEncoder Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.Util.HttpEncoder Default" />
       <MemberSignature Language="DocId" Value="P:System.Web.Util.HttpEncoder.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As HttpEncoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Util::HttpEncoder ^ Default { System::Web::Util::HttpEncoder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,9 +154,11 @@
       </Docs>
     </Member>
     <Member MemberName="HeaderNameValueEncode">
-      <MemberSignature Language="C#" Value="protected virtual void HeaderNameValueEncode (string headerName, string headerValue, out string encodedHeaderName, out string encodedHeaderValue);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void HeaderNameValueEncode (string headerName, string headerValue, out string encodedHeaderName, out string encodedHeaderValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HeaderNameValueEncode(string headerName, string headerValue, [out] string&amp; encodedHeaderName, [out] string&amp; encodedHeaderValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HeaderNameValueEncode(System.String,System.String,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub HeaderNameValueEncode (headerName As String, headerValue As String, ByRef encodedHeaderName As String, ByRef encodedHeaderValue As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void HeaderNameValueEncode(System::String ^ headerName, System::String ^ headerValue, [Runtime::InteropServices::Out] System::String ^ % encodedHeaderName, [Runtime::InteropServices::Out] System::String ^ % encodedHeaderValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,9 +210,11 @@
       </Docs>
     </Member>
     <Member MemberName="HtmlAttributeEncode">
-      <MemberSignature Language="C#" Value="protected virtual void HtmlAttributeEncode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void HtmlAttributeEncode (string value, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HtmlAttributeEncode(string value, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub HtmlAttributeEncode (value As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void HtmlAttributeEncode(System::String ^ value, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,9 +251,11 @@
       </Docs>
     </Member>
     <Member MemberName="HtmlDecode">
-      <MemberSignature Language="C#" Value="protected virtual void HtmlDecode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void HtmlDecode (string value, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HtmlDecode(string value, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlDecode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub HtmlDecode (value As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void HtmlDecode(System::String ^ value, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -282,9 +296,11 @@
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
-      <MemberSignature Language="C#" Value="protected virtual void HtmlEncode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void HtmlEncode (string value, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HtmlEncode(string value, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlEncode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub HtmlEncode (value As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void HtmlEncode(System::String ^ value, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -330,9 +346,11 @@
       </Docs>
     </Member>
     <Member MemberName="JavaScriptStringEncode">
-      <MemberSignature Language="C#" Value="protected virtual string JavaScriptStringEncode (string value);" />
+      <MemberSignature Language="C#" Value="protected internal virtual string JavaScriptStringEncode (string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string JavaScriptStringEncode(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.JavaScriptStringEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function JavaScriptStringEncode (value As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ JavaScriptStringEncode(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -359,9 +377,11 @@
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
-      <MemberSignature Language="C#" Value="protected virtual byte[] UrlEncode (byte[] bytes, int offset, int count);" />
+      <MemberSignature Language="C#" Value="protected internal virtual byte[] UrlEncode (byte[] bytes, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance unsigned int8[] UrlEncode(unsigned int8[] bytes, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.UrlEncode(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function UrlEncode (bytes As Byte(), offset As Integer, count As Integer) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ UrlEncode(cli::array &lt;System::Byte&gt; ^ bytes, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -417,9 +437,11 @@
       </Docs>
     </Member>
     <Member MemberName="UrlPathEncode">
-      <MemberSignature Language="C#" Value="protected virtual string UrlPathEncode (string value);" />
+      <MemberSignature Language="C#" Value="protected internal virtual string UrlPathEncode (string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string UrlPathEncode(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.UrlPathEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function UrlPathEncode (value As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ UrlPathEncode(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

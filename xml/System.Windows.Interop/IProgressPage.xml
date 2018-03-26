@@ -1,7 +1,9 @@
-<Type Name="IProgressPage" FullName="System.Windows.Interop.IProgressPage">
+﻿<Type Name="IProgressPage" FullName="System.Windows.Interop.IProgressPage">
   <TypeSignature Language="C#" Value="public interface IProgressPage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProgressPage" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.IProgressPage" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProgressPage" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProgressPage" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,6 +19,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IProgressPage.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public Uri DeploymentPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri DeploymentPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IProgressPage.DeploymentPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentPath As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ DeploymentPath { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public string PublisherName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PublisherName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IProgressPage.PublisherName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublisherName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublisherName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperationCallback RefreshCallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Threading.DispatcherOperationCallback RefreshCallback" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IProgressPage.RefreshCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshCallback As DispatcherOperationCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::DispatcherOperationCallback ^ RefreshCallback { System::Windows::Threading::DispatcherOperationCallback ^ get(); void set(System::Windows::Threading::DispatcherOperationCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +113,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperationCallback StopCallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Threading.DispatcherOperationCallback StopCallback" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IProgressPage.StopCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property StopCallback As DispatcherOperationCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::DispatcherOperationCallback ^ StopCallback { System::Windows::Threading::DispatcherOperationCallback ^ get(); void set(System::Windows::Threading::DispatcherOperationCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +133,8 @@
       <MemberSignature Language="C#" Value="public void UpdateProgress (long bytesDownloaded, long bytesTotal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateProgress(int64 bytesDownloaded, int64 bytesTotal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IProgressPage.UpdateProgress(System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateProgress (bytesDownloaded As Long, bytesTotal As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateProgress(long bytesDownloaded, long bytesTotal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

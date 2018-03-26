@@ -1,7 +1,9 @@
-<Type Name="Condition" FullName="System.Windows.Condition">
+﻿<Type Name="Condition" FullName="System.Windows.Condition">
   <TypeSignature Language="C#" Value="public sealed class Condition : System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Condition extends System.Object implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Condition" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Condition&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Condition sealed : System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,10 +57,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Condition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Condition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Condition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +87,8 @@
       <MemberSignature Language="C#" Value="public Condition (System.Windows.Data.BindingBase binding, object conditionValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Data.BindingBase binding, object conditionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Condition.#ctor(System.Windows.Data.BindingBase,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (binding As BindingBase, conditionValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Condition(System::Windows::Data::BindingBase ^ binding, System::Object ^ conditionValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +109,8 @@
       <MemberSignature Language="C#" Value="public Condition (System.Windows.DependencyProperty conditionProperty, object conditionValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyProperty conditionProperty, object conditionValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Condition.#ctor(System.Windows.DependencyProperty,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conditionProperty As DependencyProperty, conditionValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Condition(System::Windows::DependencyProperty ^ conditionProperty, System::Object ^ conditionValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="public Condition (System.Windows.DependencyProperty conditionProperty, object conditionValue, string sourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyProperty conditionProperty, object conditionValue, string sourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Condition.#ctor(System.Windows.DependencyProperty,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conditionProperty As DependencyProperty, conditionValue As Object, sourceName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Condition(System::Windows::DependencyProperty ^ conditionProperty, System::Object ^ conditionValue, System::String ^ sourceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +156,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.BindingBase Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase Binding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Condition.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Binding As BindingBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingBase ^ Binding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -204,6 +225,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty Property { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty Property" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Condition.Property" />
+      <MemberSignature Language="VB.NET" Value="Public Property Property As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); void set(System::Windows::DependencyProperty ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -251,6 +274,8 @@
       <MemberSignature Language="C#" Value="public static void ReceiveMarkupExtension (object targetObject, System.Windows.Markup.XamlSetMarkupExtensionEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReceiveMarkupExtension(object targetObject, class System.Windows.Markup.XamlSetMarkupExtensionEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Condition.ReceiveMarkupExtension(System.Object,System.Windows.Markup.XamlSetMarkupExtensionEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReceiveMarkupExtension (targetObject As Object, eventArgs As XamlSetMarkupExtensionEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReceiveMarkupExtension(System::Object ^ targetObject, System::Windows::Markup::XamlSetMarkupExtensionEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -283,6 +308,8 @@
       <MemberSignature Language="C#" Value="public static void ReceiveTypeConverter (object targetObject, System.Windows.Markup.XamlSetTypeConverterEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReceiveTypeConverter(object targetObject, class System.Windows.Markup.XamlSetTypeConverterEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Condition.ReceiveTypeConverter(System.Object,System.Windows.Markup.XamlSetTypeConverterEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReceiveTypeConverter (targetObject As Object, eventArgs As XamlSetTypeConverterEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReceiveTypeConverter(System::Object ^ targetObject, System::Windows::Markup::XamlSetTypeConverterEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -315,6 +342,8 @@
       <MemberSignature Language="C#" Value="public string SourceName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Condition.SourceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -348,6 +377,8 @@
       <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Condition.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -373,6 +404,8 @@
       <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Condition.System#ComponentModel#ISupportInitialize#EndInit" />
+      <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -398,6 +431,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Condition.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -436,14 +471,5 @@
         <exception cref="T:System.ArgumentException">Expressions are not supported.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

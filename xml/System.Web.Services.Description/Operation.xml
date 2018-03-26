@@ -1,7 +1,9 @@
-<Type Name="Operation" FullName="System.Web.Services.Description.Operation">
+﻿<Type Name="Operation" FullName="System.Web.Services.Description.Operation">
   <TypeSignature Language="C#" Value="public sealed class Operation : System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Operation extends System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Operation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Operation&#xA;Inherits NamedItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Operation sealed : System::Web::Services::Description::NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public Operation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Operation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Operation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ Extensions { System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationFaultCollection Faults { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationFaultCollection Faults" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.Faults" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Faults As OperationFaultCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationFaultCollection ^ Faults { System::Web::Services::Description::OperationFaultCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -115,6 +123,7 @@
       <MemberSignature Language="C#" Value="public bool IsBoundBy (System.Web.Services.Description.OperationBinding operationBinding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsBoundBy(class System.Web.Services.Description.OperationBinding operationBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Operation.IsBoundBy(System.Web.Services.Description.OperationBinding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsBoundBy(System::Web::Services::Description::OperationBinding ^ operationBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -150,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationMessageCollection Messages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationMessageCollection Messages" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.Messages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Messages As OperationMessageCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationMessageCollection ^ Messages { System::Web::Services::Description::OperationMessageCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -191,6 +202,8 @@
       <MemberSignature Language="C#" Value="public string[] ParameterOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ParameterOrder" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.ParameterOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterOrder As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ParameterOrder { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -229,6 +242,8 @@
       <MemberSignature Language="C#" Value="public string ParameterOrderString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterOrderString" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.ParameterOrderString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterOrderString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterOrderString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -282,6 +297,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.PortType PortType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.PortType PortType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.PortType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PortType As PortType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::PortType ^ PortType { System::Web::Services::Description::PortType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ClientBuildManager" FullName="System.Web.Compilation.ClientBuildManager">
+﻿<Type Name="ClientBuildManager" FullName="System.Web.Compilation.ClientBuildManager">
   <TypeSignature Language="C#" Value="public sealed class ClientBuildManager : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientBuildManager extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ClientBuildManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientBuildManager&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientBuildManager sealed : MarshalByRefObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,24 @@
     <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class.</summary>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ClientBuildManager (string appVirtualDir, string appPhysicalSourceDir);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalSourceDir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appVirtualDir As String, appPhysicalSourceDir As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientBuildManager(System::String ^ appVirtualDir, System::String ^ appPhysicalSourceDir);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +74,8 @@
       <MemberSignature Language="C#" Value="public ClientBuildManager (string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appVirtualDir As String, appPhysicalSourceDir As String, appPhysicalTargetDir As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientBuildManager(System::String ^ appVirtualDir, System::String ^ appPhysicalSourceDir, System::String ^ appPhysicalTargetDir);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +108,8 @@
       <MemberSignature Language="C#" Value="public ClientBuildManager (string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir, System.Web.Compilation.ClientBuildManagerParameter parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir, class System.Web.Compilation.ClientBuildManagerParameter parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.#ctor(System.String,System.String,System.String,System.Web.Compilation.ClientBuildManagerParameter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appVirtualDir As String, appPhysicalSourceDir As String, appPhysicalTargetDir As String, parameter As ClientBuildManagerParameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientBuildManager(System::String ^ appVirtualDir, System::String ^ appPhysicalSourceDir, System::String ^ appPhysicalTargetDir, System::Web::Compilation::ClientBuildManagerParameter ^ parameter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +144,7 @@
       <MemberSignature Language="C#" Value="public ClientBuildManager (string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir, System.Web.Compilation.ClientBuildManagerParameter parameter, System.ComponentModel.TypeDescriptionProvider typeDescriptionProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir, class System.Web.Compilation.ClientBuildManagerParameter parameter, class System.ComponentModel.TypeDescriptionProvider typeDescriptionProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.#ctor(System.String,System.String,System.String,System.Web.Compilation.ClientBuildManagerParameter,System.ComponentModel.TypeDescriptionProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientBuildManager(System::String ^ appVirtualDir, System::String ^ appPhysicalSourceDir, System::String ^ appPhysicalTargetDir, System::Web::Compilation::ClientBuildManagerParameter ^ parameter, System::ComponentModel::TypeDescriptionProvider ^ typeDescriptionProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +171,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.Compilation.BuildManagerHostUnloadEventHandler AppDomainShutdown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.Compilation.BuildManagerHostUnloadEventHandler AppDomainShutdown" />
       <MemberSignature Language="DocId" Value="E:System.Web.Compilation.ClientBuildManager.AppDomainShutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Event AppDomainShutdown As BuildManagerHostUnloadEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Compilation::BuildManagerHostUnloadEventHandler ^ AppDomainShutdown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +193,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AppDomainStarted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AppDomainStarted" />
       <MemberSignature Language="DocId" Value="E:System.Web.Compilation.ClientBuildManager.AppDomainStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Event AppDomainStarted As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AppDomainStarted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +215,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.Compilation.BuildManagerHostUnloadEventHandler AppDomainUnloaded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.Compilation.BuildManagerHostUnloadEventHandler AppDomainUnloaded" />
       <MemberSignature Language="DocId" Value="E:System.Web.Compilation.ClientBuildManager.AppDomainUnloaded" />
+      <MemberSignature Language="VB.NET" Value="Public Event AppDomainUnloaded As BuildManagerHostUnloadEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Compilation::BuildManagerHostUnloadEventHandler ^ AppDomainUnloaded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +237,8 @@
       <MemberSignature Language="C#" Value="public string CodeGenDir { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CodeGenDir" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManager.CodeGenDir" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeGenDir As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CodeGenDir { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +267,8 @@
       <MemberSignature Language="C#" Value="public void CompileApplicationDependencies ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompileApplicationDependencies() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.CompileApplicationDependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CompileApplicationDependencies ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompileApplicationDependencies();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,10 +293,21 @@
         <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompileFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles the file represented by the virtual path.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompileFile">
       <MemberSignature Language="C#" Value="public void CompileFile (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompileFile(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.CompileFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CompileFile (virtualPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompileFile(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -290,6 +332,8 @@
       <MemberSignature Language="C#" Value="public void CompileFile (string virtualPath, System.Web.Compilation.ClientBuildManagerCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompileFile(string virtualPath, class System.Web.Compilation.ClientBuildManagerCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.CompileFile(System.String,System.Web.Compilation.ClientBuildManagerCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CompileFile (virtualPath As String, callback As ClientBuildManagerCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompileFile(System::String ^ virtualPath, System::Web::Compilation::ClientBuildManagerCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -318,6 +362,7 @@
       <MemberSignature Language="C#" Value="public System.Web.Hosting.IRegisteredObject CreateObject (Type type, bool failIfExists);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject CreateObject(class System.Type type, bool failIfExists) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.CreateObject(System.Type,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Hosting::IRegisteredObject ^ CreateObject(Type ^ type, bool failIfExists);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +393,8 @@
       <MemberSignature Language="C#" Value="public string GenerateCode (string virtualPath, string virtualFileString, out System.Collections.IDictionary linePragmasTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateCode(string virtualPath, string virtualFileString, [out] class System.Collections.IDictionary&amp; linePragmasTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCode(System.String,System.String,System.Collections.IDictionary@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateCode (virtualPath As String, virtualFileString As String, ByRef linePragmasTable As IDictionary) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateCode(System::String ^ virtualPath, System::String ^ virtualFileString, [Runtime::InteropServices::Out] System::Collections::IDictionary ^ % linePragmasTable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -376,10 +423,24 @@
         <altmember cref="T:System.Web.Compilation.LinePragmaCodeInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateCodeCompileUnit">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the codeDOM tree, compiler type, and compiler parameters for a file represented by a virtual path.</summary>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GenerateCodeCompileUnit">
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit (string virtualPath, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out System.Collections.IDictionary linePragmasTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit(string virtualPath, [out] class System.Type&amp; codeDomProviderType, [out] class System.CodeDom.Compiler.CompilerParameters&amp; compilerParameters, [out] class System.Collections.IDictionary&amp; linePragmasTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.Collections.IDictionary@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateCodeCompileUnit (virtualPath As String, ByRef codeDomProviderType As Type, ByRef compilerParameters As CompilerParameters, ByRef linePragmasTable As IDictionary) As CodeCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeCompileUnit ^ GenerateCodeCompileUnit(System::String ^ virtualPath, [Runtime::InteropServices::Out] Type ^ % codeDomProviderType, [Runtime::InteropServices::Out] System::CodeDom::Compiler::CompilerParameters ^ % compilerParameters, [Runtime::InteropServices::Out] System::Collections::IDictionary ^ % linePragmasTable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -419,6 +480,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit (string virtualPath, string virtualFileString, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out System.Collections.IDictionary linePragmasTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit(string virtualPath, string virtualFileString, [out] class System.Type&amp; codeDomProviderType, [out] class System.CodeDom.Compiler.CompilerParameters&amp; compilerParameters, [out] class System.Collections.IDictionary&amp; linePragmasTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit(System.String,System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.Collections.IDictionary@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateCodeCompileUnit (virtualPath As String, virtualFileString As String, ByRef codeDomProviderType As Type, ByRef compilerParameters As CompilerParameters, ByRef linePragmasTable As IDictionary) As CodeCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeCompileUnit ^ GenerateCodeCompileUnit(System::String ^ virtualPath, System::String ^ virtualFileString, [Runtime::InteropServices::Out] Type ^ % codeDomProviderType, [Runtime::InteropServices::Out] System::CodeDom::Compiler::CompilerParameters ^ % compilerParameters, [Runtime::InteropServices::Out] System::Collections::IDictionary ^ % linePragmasTable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -462,6 +525,8 @@
       <MemberSignature Language="C#" Value="public string[] GetAppDomainShutdownDirectories ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetAppDomainShutdownDirectories() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetAppDomainShutdownDirectories" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAppDomainShutdownDirectories () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetAppDomainShutdownDirectories();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,6 +555,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary GetBrowserDefinitions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionary GetBrowserDefinitions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetBrowserDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBrowserDefinitions () As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ GetBrowserDefinitions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -519,6 +586,8 @@
       <MemberSignature Language="C#" Value="public void GetCodeDirectoryInformation (string virtualCodeDir, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out string generatedFilesDir);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetCodeDirectoryInformation(string virtualCodeDir, [out] class System.Type&amp; codeDomProviderType, [out] class System.CodeDom.Compiler.CompilerParameters&amp; compilerParameters, [out] string&amp; generatedFilesDir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetCodeDirectoryInformation(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetCodeDirectoryInformation (virtualCodeDir As String, ByRef codeDomProviderType As Type, ByRef compilerParameters As CompilerParameters, ByRef generatedFilesDir As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCodeDirectoryInformation(System::String ^ virtualCodeDir, [Runtime::InteropServices::Out] Type ^ % codeDomProviderType, [Runtime::InteropServices::Out] System::CodeDom::Compiler::CompilerParameters ^ % compilerParameters, [Runtime::InteropServices::Out] System::String ^ % generatedFilesDir);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -558,6 +627,8 @@
       <MemberSignature Language="C#" Value="public Type GetCompiledType (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetCompiledType(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetCompiledType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCompiledType (virtualPath As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetCompiledType(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -585,6 +656,8 @@
       <MemberSignature Language="C#" Value="public void GetCompilerParameters (string virtualPath, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetCompilerParameters(string virtualPath, [out] class System.Type&amp; codeDomProviderType, [out] class System.CodeDom.Compiler.CompilerParameters&amp; compilerParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetCompilerParameters(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetCompilerParameters (virtualPath As String, ByRef codeDomProviderType As Type, ByRef compilerParameters As CompilerParameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCompilerParameters(System::String ^ virtualPath, [Runtime::InteropServices::Out] Type ^ % codeDomProviderType, [Runtime::InteropServices::Out] System::CodeDom::Compiler::CompilerParameters ^ % compilerParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -615,6 +688,8 @@
       <MemberSignature Language="C#" Value="public string GetGeneratedFileVirtualPath (string filePath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetGeneratedFileVirtualPath(string filePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetGeneratedFileVirtualPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGeneratedFileVirtualPath (filePath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetGeneratedFileVirtualPath(System::String ^ filePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -642,6 +717,8 @@
       <MemberSignature Language="C#" Value="public string GetGeneratedSourceFile (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetGeneratedSourceFile(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetGeneratedSourceFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGeneratedSourceFile (virtualPath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetGeneratedSourceFile(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -668,6 +745,8 @@
       <MemberSignature Language="C#" Value="public string[] GetTopLevelAssemblyReferences (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetTopLevelAssemblyReferences(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetTopLevelAssemblyReferences(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTopLevelAssemblyReferences (virtualPath As String) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetTopLevelAssemblyReferences(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -694,6 +773,8 @@
       <MemberSignature Language="C#" Value="public string[] GetVirtualCodeDirectories ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetVirtualCodeDirectories() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetVirtualCodeDirectories" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetVirtualCodeDirectories () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetVirtualCodeDirectories();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -716,6 +797,8 @@
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -745,6 +828,8 @@
       <MemberSignature Language="C#" Value="public bool IsCodeAssembly (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsCodeAssembly(string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.IsCodeAssembly(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsCodeAssembly (assemblyName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsCodeAssembly(System::String ^ assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -772,6 +857,8 @@
       <MemberSignature Language="C#" Value="public bool IsHostCreated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHostCreated" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManager.IsHostCreated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHostCreated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHostCreated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -818,6 +905,8 @@
       <MemberSignature Language="C#" Value="public void PrecompileApplication ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrecompileApplication() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.PrecompileApplication" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrecompileApplication ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrecompileApplication();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -850,6 +939,8 @@
       <MemberSignature Language="C#" Value="public void PrecompileApplication (System.Web.Compilation.ClientBuildManagerCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrecompileApplication(class System.Web.Compilation.ClientBuildManagerCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.PrecompileApplication(System.Web.Compilation.ClientBuildManagerCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrecompileApplication (callback As ClientBuildManagerCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrecompileApplication(System::Web::Compilation::ClientBuildManagerCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -886,6 +977,8 @@
       <MemberSignature Language="C#" Value="public void PrecompileApplication (System.Web.Compilation.ClientBuildManagerCallback callback, bool forceCleanBuild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrecompileApplication(class System.Web.Compilation.ClientBuildManagerCallback callback, bool forceCleanBuild) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.PrecompileApplication(System.Web.Compilation.ClientBuildManagerCallback,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrecompileApplication (callback As ClientBuildManagerCallback, forceCleanBuild As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrecompileApplication(System::Web::Compilation::ClientBuildManagerCallback ^ callback, bool forceCleanBuild);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -928,7 +1021,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -949,6 +1047,8 @@
       <MemberSignature Language="C#" Value="public bool Unload ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Unload() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.Unload" />
+      <MemberSignature Language="VB.NET" Value="Public Function Unload () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Unload();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -968,38 +1068,5 @@
         <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GenerateCodeCompileUnit">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the codeDOM tree, compiler type, and compiler parameters for a file represented by a virtual path.</summary>
-        <altmember cref="T:System.Web.Compilation.BuildManager" />
-        <altmember cref="T:System.Web.Compilation.BuildProvider" />
-        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CompileFile">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compiles the file represented by the virtual path.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class.</summary>
-        <altmember cref="T:System.Web.Compilation.BuildManager" />
-        <altmember cref="T:System.Web.Compilation.BuildProvider" />
-        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

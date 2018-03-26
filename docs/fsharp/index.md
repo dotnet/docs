@@ -3,7 +3,7 @@ title: F# Guide
 description: This guide provides an overview of various learning materials for F#, a functional programming language that runs on .NET.
 author: jackfoxy
 ms.author: phcart
-ms.date: 02/28/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -25,9 +25,13 @@ let getGreeting name =
 // Use the EntryPoint attribute to run the program.
 [<EntryPoint>]
 let main args =
-    args                     // Use F# pipe operators to send the args into some functions.
-    |> Array.map getGreeting // Turn each name into a friendly greeting.
-    |> Array.iter printfn    // Print them!
+    // Define a list of names
+    let names = [| "Don"; "Julia"; "Xi" |]
+    
+    // Print a fun greeting for each name!
+    names
+    |> Array.map getGreeting
+    |> Array.iter (fun greeting -> printfn "%s" greeting)
 
     0
 ```
@@ -46,11 +50,14 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 [Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you want to use command-line tools.
 
+[Get started with F# and Xamarin](https://docs.microsoft.com/xamarin/cross-platform/platform/fsharp/) for mobile programming with F#.
+
 ## References
 
 [F# Language Reference](language-reference/index.md) is the official, comprehensive reference for all F# language features. Each article explains the syntax and shows code samples. You can use the filter bar in the table of contents to find specific articles.
 
 [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference) is the API reference for the F# Core Library.
+
 
 ## Additional guides
 

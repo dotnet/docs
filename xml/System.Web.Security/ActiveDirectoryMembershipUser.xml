@@ -1,7 +1,9 @@
-<Type Name="ActiveDirectoryMembershipUser" FullName="System.Web.Security.ActiveDirectoryMembershipUser">
+﻿<Type Name="ActiveDirectoryMembershipUser" FullName="System.Web.Security.ActiveDirectoryMembershipUser">
   <TypeSignature Language="C#" Value="public class ActiveDirectoryMembershipUser : System.Web.Security.MembershipUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ActiveDirectoryMembershipUser extends System.Web.Security.MembershipUser" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.ActiveDirectoryMembershipUser" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectoryMembershipUser&#xA;Inherits MembershipUser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryMembershipUser : System::Web::Security::MembershipUser" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,10 +57,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.ActiveDirectoryMembershipUser" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ActiveDirectoryMembershipUser ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.ActiveDirectoryMembershipUser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActiveDirectoryMembershipUser();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +94,8 @@
       <MemberSignature Language="C#" Value="public ActiveDirectoryMembershipUser (string providerName, string name, object providerUserKey, string email, string passwordQuestion, string comment, bool isApproved, bool isLockedOut, DateTime creationDate, DateTime lastLoginDate, DateTime lastActivityDate, DateTime lastPasswordChangedDate, DateTime lastLockoutDate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string providerName, string name, object providerUserKey, string email, string passwordQuestion, string comment, bool isApproved, bool isLockedOut, valuetype System.DateTime creationDate, valuetype System.DateTime lastLoginDate, valuetype System.DateTime lastActivityDate, valuetype System.DateTime lastPasswordChangedDate, valuetype System.DateTime lastLockoutDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.ActiveDirectoryMembershipUser.#ctor(System.String,System.String,System.Object,System.String,System.String,System.String,System.Boolean,System.Boolean,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String, name As String, providerUserKey As Object, email As String, passwordQuestion As String, comment As String, isApproved As Boolean, isLockedOut As Boolean, creationDate As DateTime, lastLoginDate As DateTime, lastActivityDate As DateTime, lastPasswordChangedDate As DateTime, lastLockoutDate As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryMembershipUser(System::String ^ providerName, System::String ^ name, System::Object ^ providerUserKey, System::String ^ email, System::String ^ passwordQuestion, System::String ^ comment, bool isApproved, bool isLockedOut, DateTime creationDate, DateTime lastLoginDate, DateTime lastActivityDate, DateTime lastPasswordChangedDate, DateTime lastLockoutDate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +155,8 @@
       <MemberSignature Language="C#" Value="public override string Comment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.ActiveDirectoryMembershipUser.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Comment As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,6 +184,8 @@
       <MemberSignature Language="C#" Value="public override string Email { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Email" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.ActiveDirectoryMembershipUser.Email" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Email As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Email { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +211,8 @@
       <MemberSignature Language="C#" Value="public override bool IsApproved { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsApproved" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.ActiveDirectoryMembershipUser.IsApproved" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property IsApproved As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsApproved { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -227,6 +248,8 @@
       <MemberSignature Language="C#" Value="public override DateTime LastActivityDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastActivityDate" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.ActiveDirectoryMembershipUser.LastActivityDate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property LastActivityDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime LastActivityDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +284,8 @@
       <MemberSignature Language="C#" Value="public override DateTime LastLoginDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastLoginDate" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.ActiveDirectoryMembershipUser.LastLoginDate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property LastLoginDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime LastLoginDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -295,6 +320,8 @@
       <MemberSignature Language="C#" Value="public override object ProviderUserKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ProviderUserKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.ActiveDirectoryMembershipUser.ProviderUserKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ProviderUserKey As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ProviderUserKey { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,14 +351,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.ActiveDirectoryMembershipUser" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

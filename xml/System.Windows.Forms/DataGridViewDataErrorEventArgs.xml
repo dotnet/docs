@@ -1,7 +1,9 @@
-<Type Name="DataGridViewDataErrorEventArgs" FullName="System.Windows.Forms.DataGridViewDataErrorEventArgs">
+﻿<Type Name="DataGridViewDataErrorEventArgs" FullName="System.Windows.Forms.DataGridViewDataErrorEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewDataErrorEventArgs : System.Windows.Forms.DataGridViewCellCancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewDataErrorEventArgs extends System.Windows.Forms.DataGridViewCellCancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewDataErrorEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewDataErrorEventArgs&#xA;Inherits DataGridViewCellCancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewDataErrorEventArgs : System::Windows::Forms::DataGridViewCellCancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public DataGridViewDataErrorEventArgs (Exception exception, int columnIndex, int rowIndex, System.Windows.Forms.DataGridViewDataErrorContexts context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, int32 columnIndex, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewDataErrorEventArgs.#ctor(System.Exception,System.Int32,System.Int32,System.Windows.Forms.DataGridViewDataErrorContexts)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewDataErrorEventArgs(Exception ^ exception, int columnIndex, int rowIndex, System::Windows::Forms::DataGridViewDataErrorContexts context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +68,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewDataErrorContexts Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewDataErrorContexts Context" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As DataGridViewDataErrorContexts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewDataErrorContexts Context { System::Windows::Forms::DataGridViewDataErrorContexts get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +106,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +144,8 @@
       <MemberSignature Language="C#" Value="public bool ThrowException { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowException" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThrowException As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThrowException { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

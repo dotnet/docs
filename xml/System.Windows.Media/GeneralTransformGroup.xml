@@ -1,7 +1,9 @@
-<Type Name="GeneralTransformGroup" FullName="System.Windows.Media.GeneralTransformGroup">
+﻿<Type Name="GeneralTransformGroup" FullName="System.Windows.Media.GeneralTransformGroup">
   <TypeSignature Language="C#" Value="public sealed class GeneralTransformGroup : System.Windows.Media.GeneralTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeneralTransformGroup extends System.Windows.Media.GeneralTransform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeneralTransformGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GeneralTransformGroup&#xA;Inherits GeneralTransform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GeneralTransformGroup sealed : System::Windows::Media::GeneralTransform" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public GeneralTransformGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeneralTransformGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransformCollection Children { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GeneralTransformCollection Children" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformGroup.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As GeneralTransformCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::GeneralTransformCollection ^ Children { System::Windows::Media::GeneralTransformCollection ^ get(); void set(System::Windows::Media::GeneralTransformCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ChildrenProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ChildrenProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeneralTransformGroup.ChildrenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildrenProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ChildrenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +106,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransformGroup Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransformGroup Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformGroup.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As GeneralTransformGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeneralTransformGroup ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransformGroup CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransformGroup CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformGroup.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As GeneralTransformGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeneralTransformGroup ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +166,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformGroup.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +187,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.GeneralTransform Inverse { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GeneralTransform Inverse" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransformGroup.Inverse" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Inverse As GeneralTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::GeneralTransform ^ Inverse { System::Windows::Media::GeneralTransform ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +214,7 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Rect TransformBounds (System.Windows.Rect rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Windows.Rect TransformBounds(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformGroup.TransformBounds(System.Windows.Rect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Rect TransformBounds(System::Windows::Rect rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -220,6 +237,8 @@
       <MemberSignature Language="C#" Value="public override bool TryTransform (System.Windows.Point inPoint, out System.Windows.Point result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryTransform(valuetype System.Windows.Point inPoint, [out] valuetype System.Windows.Point&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformGroup.TryTransform(System.Windows.Point,System.Windows.Point@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryTransform (inPoint As Point, ByRef result As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryTransform(System::Windows::Point inPoint, [Runtime::InteropServices::Out] System::Windows::Point % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

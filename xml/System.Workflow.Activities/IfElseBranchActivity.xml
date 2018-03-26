@@ -1,7 +1,9 @@
-<Type Name="IfElseBranchActivity" FullName="System.Workflow.Activities.IfElseBranchActivity">
+﻿<Type Name="IfElseBranchActivity" FullName="System.Workflow.Activities.IfElseBranchActivity">
   <TypeSignature Language="C#" Value="public sealed class IfElseBranchActivity : System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IfElseBranchActivity extends System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IfElseBranchActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IfElseBranchActivity&#xA;Inherits SequenceActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IfElseBranchActivity sealed : System::Workflow::Activities::SequenceActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +45,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IfElseBranchActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseBranchActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IfElseBranchActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -72,6 +85,8 @@
       <MemberSignature Language="C#" Value="public IfElseBranchActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseBranchActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IfElseBranchActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -90,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityCondition Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.ActivityCondition Condition" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.IfElseBranchActivity.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As ActivityCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityCondition ^ Condition { System::Workflow::ComponentModel::ActivityCondition ^ get(); void set(System::Workflow::ComponentModel::ActivityCondition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -100,7 +117,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,6 +148,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ConditionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ConditionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.IfElseBranchActivity.ConditionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConditionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ConditionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -151,14 +170,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

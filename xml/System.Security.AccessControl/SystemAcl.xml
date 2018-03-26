@@ -1,7 +1,9 @@
-<Type Name="SystemAcl" FullName="System.Security.AccessControl.SystemAcl">
+﻿<Type Name="SystemAcl" FullName="System.Security.AccessControl.SystemAcl">
   <TypeSignature Language="C#" Value="public sealed class SystemAcl : System.Security.AccessControl.CommonAcl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemAcl extends System.Security.AccessControl.CommonAcl" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.SystemAcl" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemAcl&#xA;Inherits CommonAcl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SystemAcl sealed : System::Security::AccessControl::CommonAcl" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +23,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.SystemAcl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SystemAcl (bool isContainer, bool isDS, int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.#ctor(System.Boolean,System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isContainer As Boolean, isDS As Boolean, capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SystemAcl(bool isContainer, bool isDS, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -55,6 +69,7 @@
       <MemberSignature Language="C#" Value="public SystemAcl (bool isContainer, bool isDS, System.Security.AccessControl.RawAcl rawAcl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, class System.Security.AccessControl.RawAcl rawAcl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.#ctor(System.Boolean,System.Boolean,System.Security.AccessControl.RawAcl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SystemAcl(bool isContainer, bool isDS, System::Security::AccessControl::RawAcl ^ rawAcl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -92,6 +107,8 @@
       <MemberSignature Language="C#" Value="public SystemAcl (bool isContainer, bool isDS, byte revision, int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, unsigned int8 revision, int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.#ctor(System.Boolean,System.Boolean,System.Byte,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isContainer As Boolean, isDS As Boolean, revision As Byte, capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SystemAcl(bool isContainer, bool isDS, System::Byte revision, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -141,6 +158,8 @@
       <MemberSignature Language="C#" Value="public void AddAudit (System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAudit(class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.AddAudit(System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAudit (sid As SecurityIdentifier, rule As ObjectAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAudit(System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -177,6 +196,7 @@
       <MemberSignature Language="C#" Value="public void AddAudit (System.Security.AccessControl.AuditFlags auditFlags, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAudit(valuetype System.Security.AccessControl.AuditFlags auditFlags, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.AddAudit(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAudit(System::Security::AccessControl::AuditFlags auditFlags, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -219,6 +239,7 @@
       <MemberSignature Language="C#" Value="public void AddAudit (System.Security.AccessControl.AuditFlags auditFlags, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAudit(valuetype System.Security.AccessControl.AuditFlags auditFlags, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.ObjectAceFlags objectFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.AddAudit(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAudit(System::Security::AccessControl::AuditFlags auditFlags, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -277,6 +298,8 @@
       <MemberSignature Language="C#" Value="public bool RemoveAudit (System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAudit(class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.RemoveAudit(System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAudit (sid As SecurityIdentifier, rule As ObjectAuditRule) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAudit(System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -315,6 +338,7 @@
       <MemberSignature Language="C#" Value="public bool RemoveAudit (System.Security.AccessControl.AuditFlags auditFlags, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAudit(valuetype System.Security.AccessControl.AuditFlags auditFlags, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.RemoveAudit(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAudit(System::Security::AccessControl::AuditFlags auditFlags, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -359,6 +383,7 @@
       <MemberSignature Language="C#" Value="public bool RemoveAudit (System.Security.AccessControl.AuditFlags auditFlags, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAudit(valuetype System.Security.AccessControl.AuditFlags auditFlags, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.ObjectAceFlags objectFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.RemoveAudit(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAudit(System::Security::AccessControl::AuditFlags auditFlags, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -405,10 +430,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveAuditSpecific">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified audit rule from the current <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveAuditSpecific">
       <MemberSignature Language="C#" Value="public void RemoveAuditSpecific (System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditSpecific(class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.RemoveAuditSpecific(System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditSpecific (sid As SecurityIdentifier, rule As ObjectAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditSpecific(System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -438,6 +475,7 @@
       <MemberSignature Language="C#" Value="public void RemoveAuditSpecific (System.Security.AccessControl.AuditFlags auditFlags, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditSpecific(valuetype System.Security.AccessControl.AuditFlags auditFlags, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.RemoveAuditSpecific(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditSpecific(System::Security::AccessControl::AuditFlags auditFlags, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -473,6 +511,7 @@
       <MemberSignature Language="C#" Value="public void RemoveAuditSpecific (System.Security.AccessControl.AuditFlags auditFlags, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditSpecific(valuetype System.Security.AccessControl.AuditFlags auditFlags, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.ObjectAceFlags objectFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.RemoveAuditSpecific(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditSpecific(System::Security::AccessControl::AuditFlags auditFlags, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -531,6 +570,8 @@
       <MemberSignature Language="C#" Value="public void SetAudit (System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAudit(class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.SetAudit(System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAudit (sid As SecurityIdentifier, rule As ObjectAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAudit(System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -560,6 +601,7 @@
       <MemberSignature Language="C#" Value="public void SetAudit (System.Security.AccessControl.AuditFlags auditFlags, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAudit(valuetype System.Security.AccessControl.AuditFlags auditFlags, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.SetAudit(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAudit(System::Security::AccessControl::AuditFlags auditFlags, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -602,6 +644,7 @@
       <MemberSignature Language="C#" Value="public void SetAudit (System.Security.AccessControl.AuditFlags auditFlags, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAudit(valuetype System.Security.AccessControl.AuditFlags auditFlags, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.ObjectAceFlags objectFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SystemAcl.SetAudit(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAudit(System::Security::AccessControl::AuditFlags auditFlags, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -646,25 +689,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.SystemAcl" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveAuditSpecific">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified audit rule from the current <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

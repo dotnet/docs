@@ -1,7 +1,9 @@
-<Type Name="ListViewInsertionMark" FullName="System.Windows.Forms.ListViewInsertionMark">
+﻿<Type Name="ListViewInsertionMark" FullName="System.Windows.Forms.ListViewInsertionMark">
   <TypeSignature Language="C#" Value="public sealed class ListViewInsertionMark" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ListViewInsertionMark extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewInsertionMark" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ListViewInsertionMark" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewInsertionMark sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +75,8 @@
       <MemberSignature Language="C#" Value="public bool AppearsAfterItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AppearsAfterItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppearsAfterItem As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppearsAfterItem { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +125,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +153,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color Color { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color Color" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color Color { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +192,8 @@
       <MemberSignature Language="C#" Value="public int Index { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Index" />
+      <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -223,6 +233,8 @@
       <MemberSignature Language="C#" Value="public int NearestIndex (System.Drawing.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NearestIndex(valuetype System.Drawing.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewInsertionMark.NearestIndex(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NearestIndex (pt As Point) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int NearestIndex(System::Drawing::Point pt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

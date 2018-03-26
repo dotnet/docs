@@ -1,7 +1,9 @@
-<Type Name="ReferentialConstraint" FullName="System.Data.Metadata.Edm.ReferentialConstraint">
+﻿<Type Name="ReferentialConstraint" FullName="System.Data.Metadata.Edm.ReferentialConstraint">
   <TypeSignature Language="C#" Value="public sealed class ReferentialConstraint : System.Data.Metadata.Edm.MetadataItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReferentialConstraint extends System.Data.Metadata.Edm.MetadataItem" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ReferentialConstraint" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReferentialConstraint&#xA;Inherits MetadataItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReferentialConstraint sealed : System::Data::Metadata::Edm::MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmProperty&gt; FromProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.EdmProperty&gt; FromProperties" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.FromProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromProperties As ReadOnlyMetadataCollection(Of EdmProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ FromProperties { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipEndMember FromRole { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.RelationshipEndMember FromRole" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.FromRole" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromRole As RelationshipEndMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipEndMember ^ FromRole { System::Data::Metadata::Edm::RelationshipEndMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmProperty&gt; ToProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.EdmProperty&gt; ToProperties" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.ToProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToProperties As ReadOnlyMetadataCollection(Of EdmProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ ToProperties { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -91,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipEndMember ToRole { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.RelationshipEndMember ToRole" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.ToRole" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToRole As RelationshipEndMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipEndMember ^ ToRole { System::Data::Metadata::Edm::RelationshipEndMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -109,6 +121,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReferentialConstraint.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

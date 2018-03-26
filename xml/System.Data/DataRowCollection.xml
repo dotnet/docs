@@ -1,7 +1,9 @@
-<Type Name="DataRowCollection" FullName="System.Data.DataRowCollection">
+﻿<Type Name="DataRowCollection" FullName="System.Data.DataRowCollection">
   <TypeSignature Language="C#" Value="public sealed class DataRowCollection : System.Data.InternalDataCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataRowCollection extends System.Data.InternalDataCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataRowCollection&#xA;Inherits InternalDataCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataRowCollection sealed : System::Data::InternalDataCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,10 +49,22 @@
     <altmember cref="M:System.Data.DataTable.NewRow" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.DataRow" /> to the <see cref="T:System.Data.DataRowCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Data.DataRow row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Data.DataRow row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Add(System.Data.DataRow)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (row As DataRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Data::DataRow ^ row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -107,6 +121,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow Add (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow Add(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Add(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (ParamArray values As Object()) As DataRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ Add(... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -170,6 +186,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -196,10 +214,22 @@
         <altmember cref="M:System.Data.DataRowCollection.Remove(System.Data.DataRow)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value that indicates whether the primary key columns of any row in the collection contain the specified value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (key As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -251,6 +281,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (object[] keys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object[] keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Contains(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (keys As Object()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(cli::array &lt;System::Object ^&gt; ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -298,10 +330,22 @@
         <altmember cref="M:System.Data.DataRowCollection.Find(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies all the <see cref="T:System.Data.DataRow" /> objects from the collection into the given array, starting at the given destination array index.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public override void CopyTo (Array ar, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyTo(class System.Array ar, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyTo (ar As Array, index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyTo(Array ^ ar, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -334,6 +378,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Data.DataRow[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Data.DataRow[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.CopyTo(System.Data.DataRow[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataRow(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::DataRow ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -366,6 +412,8 @@
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -389,10 +437,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specified <see cref="T:System.Data.DataRow" /> using the <see cref="P:System.Data.DataTable.PrimaryKey" /> index (performance should be an O(log n) operation).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Find">
       <MemberSignature Language="C#" Value="public System.Data.DataRow Find (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow Find(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Find(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (key As Object) As DataRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ Find(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -443,6 +503,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow Find (object[] keys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow Find(object[] keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Find(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (keys As Object()) As DataRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ Find(cli::array &lt;System::Object ^&gt; ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -494,6 +556,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -522,6 +586,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Data.DataRow row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Data.DataRow row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.IndexOf(System.Data.DataRow)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (row As DataRow) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Data::DataRow ^ row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -553,6 +619,8 @@
       <MemberSignature Language="C#" Value="public void InsertAt (System.Data.DataRow row, int pos);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertAt(class System.Data.DataRow row, int32 pos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.InsertAt(System.Data.DataRow,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertAt (row As DataRow, pos As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertAt(System::Data::DataRow ^ row, int pos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -594,6 +662,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataRow Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ default[int] { System::Data::DataRow ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -642,6 +712,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Data.DataRow row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Data.DataRow row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Remove(System.Data.DataRow)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (row As DataRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::DataRow ^ row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -694,6 +766,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -738,45 +812,5 @@
         <altmember cref="M:System.Data.DataRowCollection.Add(System.Data.DataRow)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Find">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a specified <see cref="T:System.Data.DataRow" /> using the <see cref="P:System.Data.DataTable.PrimaryKey" /> index (performance should be an O(log n) operation).</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies all the <see cref="T:System.Data.DataRow" /> objects from the collection into the given array, starting at the given destination array index.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Contains">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value that indicates whether the primary key columns of any row in the collection contain the specified value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Data.DataRow" /> to the <see cref="T:System.Data.DataRowCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

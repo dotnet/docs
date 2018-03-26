@@ -32,9 +32,12 @@ C# provides many operators, which are symbols that specify which operations (mat
  Operations on integral types (such as `==`, `!=`, `<`, `>`, `&`, `|`) are generally allowed on enumeration (`enum`) types.  
   
  The sections lists the C# operators starting with the highest precedence to the lowest.  The operators within each section share the same precedence level.  
+ 
+ > [!NOTE]
+ > You can select an operator to go to the page with more information and examples.
   
 ## Primary Operators  
- These are the highest precedence operators.  NOTE, you can click on the operators to go the detailed pages with examples.  
+ These are the highest precedence operators.
   
  [x.y](../../../csharp/language-reference/operators/member-access-operator.md) – member access.  
   
@@ -67,7 +70,7 @@ C# provides many operators, which are symbols that specify which operations (mat
  [->](../../../csharp/language-reference/operators/dereference-operator.md) – pointer dereferencing combined with member access.  
   
 ## Unary Operators  
- These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
+ These operators have higher precedence than the next section and lower precedence than the previous section.  
   
  [+x](../../../csharp/language-reference/operators/addition-operator.md) – returns the value of x.  
   
@@ -90,7 +93,7 @@ C# provides many operators, which are symbols that specify which operations (mat
  [*x](../../../csharp/language-reference/operators/multiplication-operator.md) – dereferencing.  
   
 ## Multiplicative Operators  
- These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
+ These operators have higher precedence than the next section and lower precedence than the previous section.  
   
  [x * y](../../../csharp/language-reference/operators/multiplication-operator.md) – multiplication.  
   
@@ -99,21 +102,21 @@ C# provides many operators, which are symbols that specify which operations (mat
  [x % y](../../../csharp/language-reference/operators/modulus-operator.md) – modulus.  If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.  
   
 ## Additive Operators  
- These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
+ These operators have higher precedence than the next section and lower precedence than the previous section.  
   
  [x + y](../../../csharp/language-reference/operators/addition-operator.md) – addition.  
   
  [x – y](../../../csharp/language-reference/operators/subtraction-operator.md) – subtraction.  
   
 ## Shift Operators  
- These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
+ These operators have higher precedence than the next section and lower precedence than the previous section.  
   
  [x <\<  y](../../../csharp/language-reference/operators/left-shift-operator.md) – shift bits left and fill with zero on the right.  
   
  [x >> y](../../../csharp/language-reference/operators/right-shift-operator.md) – shift bits right.  If the left operand is `int` or `long`, then left bits are filled with the sign bit.  If the left operand is `uint` or `ulong`, then left bits are filled with zero.  
   
 ## Relational and Type-testing Operators  
- These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
+ These operators have higher precedence than the next section and lower precedence than the previous section.  
   
  [x \< y](../../../csharp/language-reference/operators/less-than-operator.md) – less than (true if x is less than y).  
   
@@ -128,49 +131,49 @@ C# provides many operators, which are symbols that specify which operations (mat
  [as](../../../csharp/language-reference/keywords/as.md) – type conversion.  Returns the left operand cast to the type specified by the right operand (a static type), but `as` returns `null` where `(T)x` would throw an exception.  
   
 ## Equality Operators  
- These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
+ These operators have higher precedence than the next section and lower precedence than the previous section.  
   
  [x == y](../../../csharp/language-reference/operators/equality-comparison-operator.md) – equality.  By default, for reference types other than `string`, this returns reference equality (identity test).  However, types can overload `==`, so if your intent is to test identity, it is best to use the `ReferenceEquals` method on `object`.  
   
  [x != y](../../../csharp/language-reference/operators/not-equal-operator.md) – not equal.  See comment for `==`.  If a type overloads `==`, then it must overload `!=`.  
   
 ## Logical AND Operator  
- This operator has higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operator to go the details page with examples.  
+ This operator has higher precedence than the next section and lower precedence than the previous section.  
   
  [x & y](../../../csharp/language-reference/operators/and-operator.md) – logical or bitwise AND.  Use with integer types and `enum` types is generally allowed.  
   
 ## Logical XOR Operator  
- This operator has higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operator to go the details page with examples.  
+ This operator has higher precedence than the next section and lower precedence than the previous section.  
   
  [x ^ y](../../../csharp/language-reference/operators/xor-operator.md) – logical or bitwise XOR.  You can generally use this with integer types and `enum` types.  
   
 ## Logical OR Operator  
- This operator has higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operator to go the details page with examples.  
+ This operator has higher precedence than the next section and lower precedence than the previous section.  
   
  [x &#124; y](../../../csharp/language-reference/operators/or-operator.md) – logical or bitwise OR.  Use with integer types and `enum` types is generally allowed.  
   
 ## Conditional AND Operator  
- This operator has higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operator to go the details page with examples.  
+ This operator has higher precedence than the next section and lower precedence than the previous section.  
   
  [x && y](../../../csharp/language-reference/operators/conditional-and-operator.md) – logical AND.  If the first operand is false, then C# does not evaluate the second operand.  
   
 ## Conditional OR Operator  
- This operator has higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operator to go the details page with examples.  
+ This operator has higher precedence than the next section and lower precedence than the previous section.  
   
  [x &#124;&#124; y](../../../csharp/language-reference/operators/conditional-or-operator.md) – logical OR.  If the first operand is true, then C# does not evaluate the second operand.  
   
 ## Null-coalescing Operator  
- This operator has higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operator to go the details page with examples.  
+ This operator has higher precedence than the next section and lower precedence than the previous section.  
   
  [x ?? y](../../../csharp/language-reference/operators/null-conditional-operator.md) – returns `x` if it is non-`null`; otherwise, returns `y`.  
   
 ## Conditional Operator  
- This operator has higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operator to go the details page with examples.  
+ This operator has higher precedence than the next section and lower precedence than the previous section.  
   
  [t ? x : y](../../../csharp/language-reference/operators/conditional-operator.md) – if test `t` is true, then evaluate and return `x`; otherwise, evaluate and return `y`.  
   
 ## Assignment and Lambda Operators  
- These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
+ These operators have higher precedence than the next section and lower precedence than the previous section.  
   
  [x = y](../../../csharp/language-reference/operators/assignment-operator.md) – assignment.  
   

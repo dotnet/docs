@@ -1,7 +1,9 @@
-<Type Name="UnaryOperationBinder" FullName="System.Dynamic.UnaryOperationBinder">
+﻿<Type Name="UnaryOperationBinder" FullName="System.Dynamic.UnaryOperationBinder">
   <TypeSignature Language="C#" Value="public abstract class UnaryOperationBinder : System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UnaryOperationBinder extends System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.UnaryOperationBinder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class UnaryOperationBinder&#xA;Inherits DynamicMetaObjectBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnaryOperationBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="protected UnaryOperationBinder (System.Linq.Expressions.ExpressionType operation);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Linq.Expressions.ExpressionType operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.UnaryOperationBinder.#ctor(System.Linq.Expressions.ExpressionType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (operation As ExpressionType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UnaryOperationBinder(System::Linq::Expressions::ExpressionType operation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Dynamic.DynamicMetaObject Bind (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Dynamic.DynamicMetaObject Bind(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.UnaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -96,10 +102,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FallbackUnaryOperation">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the binding of the unary dynamic operation if the target dynamic object cannot bind.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FallbackUnaryOperation">
       <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject FallbackUnaryOperation (System.Dynamic.DynamicMetaObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Dynamic.DynamicMetaObject FallbackUnaryOperation(class System.Dynamic.DynamicMetaObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FallbackUnaryOperation (target As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackUnaryOperation(System::Dynamic::DynamicMetaObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -135,6 +152,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackUnaryOperation (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject errorSuggestion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject FallbackUnaryOperation(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject errorSuggestion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackUnaryOperation (target As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackUnaryOperation(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -172,6 +191,8 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.ExpressionType Operation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Linq.Expressions.ExpressionType Operation" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.UnaryOperationBinder.Operation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As ExpressionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType Operation { System::Linq::Expressions::ExpressionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -203,6 +224,8 @@
       <MemberSignature Language="C#" Value="public override sealed Type ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.UnaryOperationBinder.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -230,14 +253,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FallbackUnaryOperation">
-      <AssemblyInfo>
-        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs the binding of the unary dynamic operation if the target dynamic object cannot bind.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

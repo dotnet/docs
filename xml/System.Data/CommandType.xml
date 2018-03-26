@@ -1,7 +1,9 @@
-<Type Name="CommandType" FullName="System.Data.CommandType">
+﻿<Type Name="CommandType" FullName="System.Data.CommandType">
   <TypeSignature Language="C#" Value="public enum CommandType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.CommandType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CommandType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CommandType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="StoredProcedure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandType StoredProcedure = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.CommandType.StoredProcedure" />
+      <MemberSignature Language="VB.NET" Value="StoredProcedure" />
+      <MemberSignature Language="C++ CLI" Value="StoredProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -60,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Data.CommandType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The name of a stored procedure.</summary>
       </Docs>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="TableDirect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandType TableDirect = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Data.CommandType.TableDirect" />
+      <MemberSignature Language="VB.NET" Value="TableDirect" />
+      <MemberSignature Language="C++ CLI" Value="TableDirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -86,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Data.CommandType</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The name of a table.</summary>
       </Docs>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandType Text = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.CommandType.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -112,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Data.CommandType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An SQL text command. (Default.)</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="CustomLabelsCollection" FullName="System.Web.UI.DataVisualization.Charting.CustomLabelsCollection">
+﻿<Type Name="CustomLabelsCollection" FullName="System.Web.UI.DataVisualization.Charting.CustomLabelsCollection">
   <TypeSignature Language="C#" Value="public class CustomLabelsCollection : System.Web.UI.DataVisualization.Charting.ChartElementCollection&lt;System.Web.UI.DataVisualization.Charting.CustomLabel&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomLabelsCollection extends System.Web.UI.DataVisualization.Charting.ChartElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.CustomLabel&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomLabelsCollection&#xA;Inherits ChartElementCollection(Of CustomLabel)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomLabelsCollection : System::Web::UI::DataVisualization::Charting::ChartElementCollection&lt;System::Web::UI::DataVisualization::Charting::CustomLabel ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,10 +32,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (double labelsStep, System.Web.UI.DataVisualization.Charting.DateTimeIntervalType intervalType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(float64 labelsStep, valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType intervalType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Web.UI.DataVisualization.Charting.DateTimeIntervalType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Web::UI::DataVisualization::Charting::DateTimeIntervalType intervalType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -69,6 +82,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.CustomLabel Add (double fromPosition, double toPosition, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.CustomLabel Add(float64 fromPosition, float64 toPosition, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String) As CustomLabel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -107,6 +122,8 @@
       <MemberSignature Language="C#" Value="public void Add (double labelsStep, System.Web.UI.DataVisualization.Charting.DateTimeIntervalType intervalType, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(float64 labelsStep, valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType intervalType, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Web.UI.DataVisualization.Charting.DateTimeIntervalType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, format As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Web::UI::DataVisualization::Charting::DateTimeIntervalType intervalType, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -144,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.CustomLabel Add (double fromPosition, double toPosition, string text, int rowIndex, System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.CustomLabel Add(float64 fromPosition, float64 toPosition, string text, int32 rowIndex, valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String, rowIndex As Integer, markStyle As LabelMarkStyle) As CustomLabel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text, int rowIndex, System::Web::UI::DataVisualization::Charting::LabelMarkStyle markStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -174,6 +193,8 @@
       <MemberSignature Language="C#" Value="public void Add (double labelsStep, System.Web.UI.DataVisualization.Charting.DateTimeIntervalType intervalType, string format, int rowIndex, System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(float64 labelsStep, valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType intervalType, string format, int32 rowIndex, valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Web.UI.DataVisualization.Charting.DateTimeIntervalType,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, format As String, rowIndex As Integer, markStyle As LabelMarkStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Web::UI::DataVisualization::Charting::DateTimeIntervalType intervalType, System::String ^ format, int rowIndex, System::Web::UI::DataVisualization::Charting::LabelMarkStyle markStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -203,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.CustomLabel Add (double fromPosition, double toPosition, string text, int rowIndex, System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle, System.Web.UI.DataVisualization.Charting.GridTickTypes gridTick);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.CustomLabel Add(float64 fromPosition, float64 toPosition, string text, int32 rowIndex, valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle, valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes gridTick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle,System.Web.UI.DataVisualization.Charting.GridTickTypes)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String, rowIndex As Integer, markStyle As LabelMarkStyle, gridTick As GridTickTypes) As CustomLabel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text, int rowIndex, System::Web::UI::DataVisualization::Charting::LabelMarkStyle markStyle, System::Web::UI::DataVisualization::Charting::GridTickTypes gridTick);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -235,6 +258,8 @@
       <MemberSignature Language="C#" Value="public void Add (double labelsStep, System.Web.UI.DataVisualization.Charting.DateTimeIntervalType intervalType, double min, double max, string format, int rowIndex, System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(float64 labelsStep, valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType intervalType, float64 min, float64 max, string format, int32 rowIndex, valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle markStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Web.UI.DataVisualization.Charting.DateTimeIntervalType,System.Double,System.Double,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, min As Double, max As Double, format As String, rowIndex As Integer, markStyle As LabelMarkStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Web::UI::DataVisualization::Charting::DateTimeIntervalType intervalType, double min, double max, System::String ^ format, int rowIndex, System::Web::UI::DataVisualization::Charting::LabelMarkStyle markStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -264,14 +289,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> object to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

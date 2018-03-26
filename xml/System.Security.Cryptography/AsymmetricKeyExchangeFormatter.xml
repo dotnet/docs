@@ -1,7 +1,9 @@
-<Type Name="AsymmetricKeyExchangeFormatter" FullName="System.Security.Cryptography.AsymmetricKeyExchangeFormatter">
+﻿<Type Name="AsymmetricKeyExchangeFormatter" FullName="System.Security.Cryptography.AsymmetricKeyExchangeFormatter">
   <TypeSignature Language="C#" Value="public abstract class AsymmetricKeyExchangeFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AsymmetricKeyExchangeFormatter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricKeyExchangeFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsymmetricKeyExchangeFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsymmetricKeyExchangeFormatter abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected AsymmetricKeyExchangeFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsymmetricKeyExchangeFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,10 +78,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateKeyExchange">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, creates the encrypted key exchange data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateKeyExchange">
       <MemberSignature Language="C#" Value="public abstract byte[] CreateKeyExchange (byte[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] CreateKeyExchange(unsigned int8[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateKeyExchange (data As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ CreateKeyExchange(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +132,8 @@
       <MemberSignature Language="C#" Value="public abstract byte[] CreateKeyExchange (byte[] data, Type symAlgType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] CreateKeyExchange(unsigned int8[] data, class System.Type symAlgType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte[],System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateKeyExchange (data As Byte(), symAlgType As Type) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ CreateKeyExchange(cli::array &lt;System::Byte&gt; ^ data, Type ^ symAlgType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -156,6 +174,8 @@
       <MemberSignature Language="C#" Value="public abstract string Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Parameters As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Parameters { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -183,6 +203,8 @@
       <MemberSignature Language="C#" Value="public abstract void SetKey (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetKey(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricKeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetKey (key As AsymmetricAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -216,15 +238,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateKeyExchange">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, creates the encrypted key exchange data.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

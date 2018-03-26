@@ -1,7 +1,9 @@
-<Type Name="EdmFunction" FullName="System.Data.Metadata.Edm.EdmFunction">
+﻿<Type Name="EdmFunction" FullName="System.Data.Metadata.Edm.EdmFunction">
   <TypeSignature Language="C#" Value="public sealed class EdmFunction : System.Data.Metadata.Edm.EdmType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EdmFunction extends System.Data.Metadata.Edm.EdmType" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EdmFunction" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmFunction&#xA;Inherits EdmType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EdmFunction sealed : System::Data::Metadata::Edm::EdmType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmFunction.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public string CommandTextAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandTextAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmFunction.CommandTextAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandTextAttribute As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandTextAttribute { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public override string FullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmFunction.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FullName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="public bool IsComposableAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsComposableAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmFunction.IsComposableAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsComposableAttribute As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsComposableAttribute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -92,6 +102,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.FunctionParameter&gt; Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.FunctionParameter&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmFunction.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ReadOnlyMetadataCollection(Of FunctionParameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::FunctionParameter ^&gt; ^ Parameters { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::FunctionParameter ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -110,6 +122,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.FunctionParameter ReturnParameter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.FunctionParameter ReturnParameter" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmFunction.ReturnParameter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnParameter As FunctionParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::FunctionParameter ^ ReturnParameter { System::Data::Metadata::Edm::FunctionParameter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -128,6 +142,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.FunctionParameter&gt; ReturnParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.FunctionParameter&gt; ReturnParameters" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmFunction.ReturnParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnParameters As ReadOnlyMetadataCollection(Of FunctionParameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::FunctionParameter ^&gt; ^ ReturnParameters { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::FunctionParameter ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

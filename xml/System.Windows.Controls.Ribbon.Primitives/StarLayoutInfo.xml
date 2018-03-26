@@ -1,7 +1,9 @@
-<Type Name="StarLayoutInfo" FullName="System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo">
+﻿<Type Name="StarLayoutInfo" FullName="System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo">
   <TypeSignature Language="C#" Value="public class StarLayoutInfo : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StarLayoutInfo extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class StarLayoutInfo&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StarLayoutInfo : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public StarLayoutInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StarLayoutInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public double AllocatedStarWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 AllocatedStarWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.AllocatedStarWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllocatedStarWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double AllocatedStarWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AllocatedStarWidthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AllocatedStarWidthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.AllocatedStarWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AllocatedStarWidthProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AllocatedStarWidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -76,6 +84,8 @@
       <MemberSignature Language="C#" Value="public double RequestedStarMaxWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 RequestedStarMaxWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.RequestedStarMaxWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestedStarMaxWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RequestedStarMaxWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -108,6 +118,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RequestedStarMaxWidthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RequestedStarMaxWidthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.RequestedStarMaxWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RequestedStarMaxWidthProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RequestedStarMaxWidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -125,6 +137,8 @@
       <MemberSignature Language="C#" Value="public double RequestedStarMinWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 RequestedStarMinWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.RequestedStarMinWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestedStarMinWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RequestedStarMinWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -157,6 +171,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RequestedStarMinWidthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RequestedStarMinWidthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.RequestedStarMinWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RequestedStarMinWidthProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RequestedStarMinWidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -174,6 +190,8 @@
       <MemberSignature Language="C#" Value="public double RequestedStarWeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 RequestedStarWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.RequestedStarWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestedStarWeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RequestedStarWeight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -206,6 +224,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RequestedStarWeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RequestedStarWeightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo.RequestedStarWeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RequestedStarWeightProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RequestedStarWeightProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

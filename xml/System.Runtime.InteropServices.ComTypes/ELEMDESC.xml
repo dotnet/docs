@@ -1,7 +1,9 @@
-<Type Name="ELEMDESC" FullName="System.Runtime.InteropServices.ComTypes.ELEMDESC">
+﻿<Type Name="ELEMDESC" FullName="System.Runtime.InteropServices.ComTypes.ELEMDESC">
   <TypeSignature Language="C#" Value="public struct ELEMDESC" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit ELEMDESC extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ELEMDESC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ELEMDESC" />
+  <TypeSignature Language="C++ CLI" Value="public value class ELEMDESC" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION desc;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.ELEMDESC/DESCUNION desc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.desc" />
+      <MemberSignature Language="VB.NET" Value="Public desc As ELEMDESC.DESCUNION " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::ELEMDESC::DESCUNION desc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.TYPEDESC tdesc;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.TYPEDESC tdesc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.tdesc" />
+      <MemberSignature Language="VB.NET" Value="Public tdesc As TYPEDESC " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYPEDESC tdesc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

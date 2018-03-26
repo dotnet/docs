@@ -1,7 +1,9 @@
-<Type Name="JSVsaError" FullName="Microsoft.JScript.Vsa.JSVsaError">
+﻿<Type Name="JSVsaError" FullName="Microsoft.JScript.Vsa.JSVsaError">
   <TypeSignature Language="C#" Value="public enum JSVsaError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSVsaError extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.JSVsaError" />
+  <TypeSignature Language="VB.NET" Value="Public Enum JSVsaError" />
+  <TypeSignature Language="C++ CLI" Value="public enum class JSVsaError" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="AppDomainCannotBeSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError AppDomainCannotBeSet = int32(-2146226176)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.AppDomainCannotBeSet" />
+      <MemberSignature Language="VB.NET" Value="AppDomainCannotBeSet" />
+      <MemberSignature Language="C++ CLI" Value="AppDomainCannotBeSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226176</MemberValue>
       <Docs>
         <summary>Value: 0x80133000</summary>
         <remarks>
@@ -55,6 +60,8 @@
       <MemberSignature Language="C#" Value="AppDomainInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError AppDomainInvalid = int32(-2146226175)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.AppDomainInvalid" />
+      <MemberSignature Language="VB.NET" Value="AppDomainInvalid" />
+      <MemberSignature Language="C++ CLI" Value="AppDomainInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -63,6 +70,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226175</MemberValue>
       <Docs>
         <summary>Value: 0x80133001</summary>
         <remarks>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="ApplicationBaseCannotBeSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ApplicationBaseCannotBeSet = int32(-2146226174)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ApplicationBaseCannotBeSet" />
+      <MemberSignature Language="VB.NET" Value="ApplicationBaseCannotBeSet" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationBaseCannotBeSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,6 +99,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226174</MemberValue>
       <Docs>
         <summary>Value: 0x80133002</summary>
         <remarks>
@@ -107,6 +118,8 @@
       <MemberSignature Language="C#" Value="ApplicationBaseInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ApplicationBaseInvalid = int32(-2146226173)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ApplicationBaseInvalid" />
+      <MemberSignature Language="VB.NET" Value="ApplicationBaseInvalid" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationBaseInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -115,6 +128,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226173</MemberValue>
       <Docs>
         <summary>Value: 0x80133003</summary>
         <remarks>
@@ -133,6 +147,8 @@
       <MemberSignature Language="C#" Value="AssemblyExpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError AssemblyExpected = int32(-2146226172)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.AssemblyExpected" />
+      <MemberSignature Language="VB.NET" Value="AssemblyExpected" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -141,6 +157,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226172</MemberValue>
       <Docs>
         <summary>Value: 0x80133004</summary>
         <remarks>
@@ -159,6 +176,8 @@
       <MemberSignature Language="C#" Value="AssemblyNameInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError AssemblyNameInvalid = int32(-2146226171)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.AssemblyNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="AssemblyNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyNameInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -167,6 +186,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226171</MemberValue>
       <Docs>
         <summary>Value: 0x80133005</summary>
         <remarks>
@@ -185,6 +205,8 @@
       <MemberSignature Language="C#" Value="BadAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError BadAssembly = int32(-2146226170)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.BadAssembly" />
+      <MemberSignature Language="VB.NET" Value="BadAssembly" />
+      <MemberSignature Language="C++ CLI" Value="BadAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -193,6 +215,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226170</MemberValue>
       <Docs>
         <summary>Value: 0x80133006</summary>
         <remarks>
@@ -211,6 +234,8 @@
       <MemberSignature Language="C#" Value="BrowserNotExist" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError BrowserNotExist = int32(-2146226115)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.BrowserNotExist" />
+      <MemberSignature Language="VB.NET" Value="BrowserNotExist" />
+      <MemberSignature Language="C++ CLI" Value="BrowserNotExist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -219,6 +244,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226115</MemberValue>
       <Docs>
         <summary>Value: 0x8013303D</summary>
         <remarks>
@@ -237,6 +263,8 @@
       <MemberSignature Language="C#" Value="CachedAssemblyInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CachedAssemblyInvalid = int32(-2146226169)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.CachedAssemblyInvalid" />
+      <MemberSignature Language="VB.NET" Value="CachedAssemblyInvalid" />
+      <MemberSignature Language="C++ CLI" Value="CachedAssemblyInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -245,6 +273,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226169</MemberValue>
       <Docs>
         <summary>Value: 0x80133007</summary>
         <remarks>
@@ -263,6 +292,8 @@
       <MemberSignature Language="C#" Value="CallbackUnexpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CallbackUnexpected = int32(-2146226168)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.CallbackUnexpected" />
+      <MemberSignature Language="VB.NET" Value="CallbackUnexpected" />
+      <MemberSignature Language="C++ CLI" Value="CallbackUnexpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -271,6 +302,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226168</MemberValue>
       <Docs>
         <summary>Value: 0x80133008</summary>
         <remarks>
@@ -289,6 +321,8 @@
       <MemberSignature Language="C#" Value="CannotAttachToWebServer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CannotAttachToWebServer = int32(-2146226100)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.CannotAttachToWebServer" />
+      <MemberSignature Language="VB.NET" Value="CannotAttachToWebServer" />
+      <MemberSignature Language="C++ CLI" Value="CannotAttachToWebServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -297,6 +331,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226100</MemberValue>
       <Docs>
         <summary>Value: 0x8013304C</summary>
         <remarks>
@@ -315,6 +350,8 @@
       <MemberSignature Language="C#" Value="CodeDOMNotAvailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CodeDOMNotAvailable = int32(-2146226167)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.CodeDOMNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="CodeDOMNotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="CodeDOMNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -323,6 +360,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226167</MemberValue>
       <Docs>
         <summary>Value: 0x80133009</summary>
         <remarks>
@@ -341,6 +379,8 @@
       <MemberSignature Language="C#" Value="CompiledStateNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CompiledStateNotFound = int32(-2146226166)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.CompiledStateNotFound" />
+      <MemberSignature Language="VB.NET" Value="CompiledStateNotFound" />
+      <MemberSignature Language="C++ CLI" Value="CompiledStateNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -349,6 +389,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226166</MemberValue>
       <Docs>
         <summary>Value: 0x8013300A</summary>
         <remarks>
@@ -367,6 +408,8 @@
       <MemberSignature Language="C#" Value="DebuggeeNotStarted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError DebuggeeNotStarted = int32(-2146226114)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.DebuggeeNotStarted" />
+      <MemberSignature Language="VB.NET" Value="DebuggeeNotStarted" />
+      <MemberSignature Language="C++ CLI" Value="DebuggeeNotStarted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -375,6 +418,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226114</MemberValue>
       <Docs>
         <summary>Value: 0x8013303E</summary>
         <remarks>
@@ -393,6 +437,8 @@
       <MemberSignature Language="C#" Value="DebugInfoNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError DebugInfoNotSupported = int32(-2146226165)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.DebugInfoNotSupported" />
+      <MemberSignature Language="VB.NET" Value="DebugInfoNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="DebugInfoNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -401,6 +447,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226165</MemberValue>
       <Docs>
         <summary>Value: 0x8013300B</summary>
         <remarks>
@@ -419,6 +466,8 @@
       <MemberSignature Language="C#" Value="ElementNameInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ElementNameInvalid = int32(-2146226164)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ElementNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="ElementNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="ElementNameInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -427,6 +476,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226164</MemberValue>
       <Docs>
         <summary>Value: 0x8013300C</summary>
         <remarks>
@@ -445,6 +495,8 @@
       <MemberSignature Language="C#" Value="ElementNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ElementNotFound = int32(-2146226163)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ElementNotFound" />
+      <MemberSignature Language="VB.NET" Value="ElementNotFound" />
+      <MemberSignature Language="C++ CLI" Value="ElementNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -453,6 +505,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226163</MemberValue>
       <Docs>
         <summary>Value: 0x8013300D</summary>
         <remarks>
@@ -471,6 +524,8 @@
       <MemberSignature Language="C#" Value="EngineBusy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineBusy = int32(-2146226162)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineBusy" />
+      <MemberSignature Language="VB.NET" Value="EngineBusy" />
+      <MemberSignature Language="C++ CLI" Value="EngineBusy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -479,6 +534,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226162</MemberValue>
       <Docs>
         <summary>Value: 0x8013300E</summary>
         <remarks>
@@ -497,6 +553,8 @@
       <MemberSignature Language="C#" Value="EngineCannotClose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineCannotClose = int32(-2146226161)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineCannotClose" />
+      <MemberSignature Language="VB.NET" Value="EngineCannotClose" />
+      <MemberSignature Language="C++ CLI" Value="EngineCannotClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -505,6 +563,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226161</MemberValue>
       <Docs>
         <summary>Value: 0x8013300F</summary>
         <remarks>
@@ -523,6 +582,8 @@
       <MemberSignature Language="C#" Value="EngineCannotReset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineCannotReset = int32(-2146226160)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineCannotReset" />
+      <MemberSignature Language="VB.NET" Value="EngineCannotReset" />
+      <MemberSignature Language="C++ CLI" Value="EngineCannotReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -531,6 +592,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226160</MemberValue>
       <Docs>
         <summary>Value: 0x80133010</summary>
         <remarks>
@@ -549,6 +611,8 @@
       <MemberSignature Language="C#" Value="EngineClosed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineClosed = int32(-2146226159)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineClosed" />
+      <MemberSignature Language="VB.NET" Value="EngineClosed" />
+      <MemberSignature Language="C++ CLI" Value="EngineClosed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -557,6 +621,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226159</MemberValue>
       <Docs>
         <summary>Value: 0x80133011</summary>
         <remarks>
@@ -575,6 +640,8 @@
       <MemberSignature Language="C#" Value="EngineEmpty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineEmpty = int32(-2146226159)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineEmpty" />
+      <MemberSignature Language="VB.NET" Value="EngineEmpty" />
+      <MemberSignature Language="C++ CLI" Value="EngineEmpty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -583,6 +650,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226159</MemberValue>
       <Docs>
         <summary>Value: 0x80133012</summary>
         <remarks>
@@ -601,6 +669,8 @@
       <MemberSignature Language="C#" Value="EngineInitialized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineInitialized = int32(-2146226157)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineInitialized" />
+      <MemberSignature Language="VB.NET" Value="EngineInitialized" />
+      <MemberSignature Language="C++ CLI" Value="EngineInitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -609,6 +679,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226157</MemberValue>
       <Docs>
         <summary>Value: 0x80133013</summary>
         <remarks>
@@ -628,6 +699,8 @@
       <MemberSignature Language="C#" Value="EngineNameInUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNameInUse = int32(-2146226156)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineNameInUse" />
+      <MemberSignature Language="VB.NET" Value="EngineNameInUse" />
+      <MemberSignature Language="C++ CLI" Value="EngineNameInUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -636,6 +709,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226156</MemberValue>
       <Docs>
         <summary>Value: 0x80133014</summary>
         <remarks>
@@ -654,6 +728,8 @@
       <MemberSignature Language="C#" Value="EngineNameInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNameInvalid = int32(-2146226113)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="EngineNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="EngineNameInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -662,6 +738,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226113</MemberValue>
       <Docs>
         <summary>Value: 0x8013303F</summary>
         <remarks>
@@ -680,6 +757,8 @@
       <MemberSignature Language="C#" Value="EngineNameNotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNameNotSet = int32(-2146226099)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineNameNotSet" />
+      <MemberSignature Language="VB.NET" Value="EngineNameNotSet" />
+      <MemberSignature Language="C++ CLI" Value="EngineNameNotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -688,6 +767,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226099</MemberValue>
       <Docs>
         <summary>Value: 0x8013303F</summary>
         <remarks>
@@ -706,6 +786,8 @@
       <MemberSignature Language="C#" Value="EngineNotCompiled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNotCompiled = int32(-2146226155)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineNotCompiled" />
+      <MemberSignature Language="VB.NET" Value="EngineNotCompiled" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotCompiled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -714,6 +796,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226155</MemberValue>
       <Docs>
         <summary>Value: 0x80133015</summary>
         <remarks>
@@ -732,6 +815,8 @@
       <MemberSignature Language="C#" Value="EngineNotExist" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNotExist = int32(-2146226112)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineNotExist" />
+      <MemberSignature Language="VB.NET" Value="EngineNotExist" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotExist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -740,6 +825,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226112</MemberValue>
       <Docs>
         <summary>Value: 0x80133040</summary>
         <remarks>
@@ -758,6 +844,8 @@
       <MemberSignature Language="C#" Value="EngineNotInitialized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNotInitialized = int32(-2146226154)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineNotInitialized" />
+      <MemberSignature Language="VB.NET" Value="EngineNotInitialized" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotInitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -766,6 +854,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226154</MemberValue>
       <Docs>
         <summary>Value: 0x80133016</summary>
         <remarks>
@@ -784,6 +873,8 @@
       <MemberSignature Language="C#" Value="EngineNotRunning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNotRunning = int32(-2146226153)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineNotRunning" />
+      <MemberSignature Language="VB.NET" Value="EngineNotRunning" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotRunning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -792,6 +883,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226153</MemberValue>
       <Docs>
         <summary>Value: 0x80133017</summary>
         <remarks>
@@ -810,6 +902,8 @@
       <MemberSignature Language="C#" Value="EngineRunning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineRunning = int32(-2146226152)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EngineRunning" />
+      <MemberSignature Language="VB.NET" Value="EngineRunning" />
+      <MemberSignature Language="C++ CLI" Value="EngineRunning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -818,6 +912,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226152</MemberValue>
       <Docs>
         <summary>Value: 0x80133018</summary>
         <remarks>
@@ -836,6 +931,8 @@
       <MemberSignature Language="C#" Value="EventSourceInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceInvalid = int32(-2146226151)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EventSourceInvalid" />
+      <MemberSignature Language="VB.NET" Value="EventSourceInvalid" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -844,6 +941,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226151</MemberValue>
       <Docs>
         <summary>Value: 0x80133019</summary>
         <remarks>
@@ -862,6 +960,8 @@
       <MemberSignature Language="C#" Value="EventSourceNameInUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceNameInUse = int32(-2146226150)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EventSourceNameInUse" />
+      <MemberSignature Language="VB.NET" Value="EventSourceNameInUse" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceNameInUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -870,6 +970,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226150</MemberValue>
       <Docs>
         <summary>Value: 0x8013301A</summary>
         <remarks>
@@ -888,6 +989,8 @@
       <MemberSignature Language="C#" Value="EventSourceNameInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceNameInvalid = int32(-2146226149)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EventSourceNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="EventSourceNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceNameInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -896,6 +999,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226149</MemberValue>
       <Docs>
         <summary>Value: 0x8013301B</summary>
         <remarks>
@@ -914,6 +1018,8 @@
       <MemberSignature Language="C#" Value="EventSourceNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceNotFound = int32(-2146226148)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EventSourceNotFound" />
+      <MemberSignature Language="VB.NET" Value="EventSourceNotFound" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -922,6 +1028,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226148</MemberValue>
       <Docs>
         <summary>Value: 0x8013301C</summary>
         <remarks>
@@ -940,6 +1047,8 @@
       <MemberSignature Language="C#" Value="EventSourceTypeInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceTypeInvalid = int32(-2146226147)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.EventSourceTypeInvalid" />
+      <MemberSignature Language="VB.NET" Value="EventSourceTypeInvalid" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceTypeInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -948,6 +1057,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226147</MemberValue>
       <Docs>
         <summary>Value: 0x8013301D</summary>
         <remarks>
@@ -966,6 +1076,8 @@
       <MemberSignature Language="C#" Value="FileFormatUnsupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError FileFormatUnsupported = int32(-2146226111)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.FileFormatUnsupported" />
+      <MemberSignature Language="VB.NET" Value="FileFormatUnsupported" />
+      <MemberSignature Language="C++ CLI" Value="FileFormatUnsupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -974,6 +1086,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226111</MemberValue>
       <Docs>
         <summary>Value: 0x80133041</summary>
         <remarks>
@@ -992,6 +1105,8 @@
       <MemberSignature Language="C#" Value="FileTypeUnknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError FileTypeUnknown = int32(-2146226110)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.FileTypeUnknown" />
+      <MemberSignature Language="VB.NET" Value="FileTypeUnknown" />
+      <MemberSignature Language="C++ CLI" Value="FileTypeUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1000,6 +1115,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226110</MemberValue>
       <Docs>
         <summary>Value: 0x80133042</summary>
         <remarks>
@@ -1018,6 +1134,8 @@
       <MemberSignature Language="C#" Value="GetCompiledStateFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError GetCompiledStateFailed = int32(-2146226146)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.GetCompiledStateFailed" />
+      <MemberSignature Language="VB.NET" Value="GetCompiledStateFailed" />
+      <MemberSignature Language="C++ CLI" Value="GetCompiledStateFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1026,6 +1144,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226146</MemberValue>
       <Docs>
         <summary>Value: 0x8013301E</summary>
         <remarks>
@@ -1044,6 +1163,8 @@
       <MemberSignature Language="C#" Value="GlobalInstanceInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError GlobalInstanceInvalid = int32(-2146226145)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.GlobalInstanceInvalid" />
+      <MemberSignature Language="VB.NET" Value="GlobalInstanceInvalid" />
+      <MemberSignature Language="C++ CLI" Value="GlobalInstanceInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1052,6 +1173,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226145</MemberValue>
       <Docs>
         <summary>Value: 0x8013301F</summary>
         <remarks>
@@ -1070,6 +1192,8 @@
       <MemberSignature Language="C#" Value="GlobalInstanceTypeInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError GlobalInstanceTypeInvalid = int32(-2146226144)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.GlobalInstanceTypeInvalid" />
+      <MemberSignature Language="VB.NET" Value="GlobalInstanceTypeInvalid" />
+      <MemberSignature Language="C++ CLI" Value="GlobalInstanceTypeInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1078,6 +1202,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226144</MemberValue>
       <Docs>
         <summary>Value: 0x80133020</summary>
         <remarks>
@@ -1096,6 +1221,8 @@
       <MemberSignature Language="C#" Value="InternalCompilerError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError InternalCompilerError = int32(-2146226143)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.InternalCompilerError" />
+      <MemberSignature Language="VB.NET" Value="InternalCompilerError" />
+      <MemberSignature Language="C++ CLI" Value="InternalCompilerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1104,6 +1231,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226143</MemberValue>
       <Docs>
         <summary>Value: 0x80133021</summary>
         <remarks>
@@ -1122,6 +1250,8 @@
       <MemberSignature Language="C#" Value="ItemCannotBeRemoved" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemCannotBeRemoved = int32(-2146226142)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ItemCannotBeRemoved" />
+      <MemberSignature Language="VB.NET" Value="ItemCannotBeRemoved" />
+      <MemberSignature Language="C++ CLI" Value="ItemCannotBeRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1130,6 +1260,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226142</MemberValue>
       <Docs>
         <summary>Value: 0x80133022</summary>
         <remarks>
@@ -1148,6 +1279,8 @@
       <MemberSignature Language="C#" Value="ItemCannotBeRenamed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemCannotBeRenamed = int32(-2146226109)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ItemCannotBeRenamed" />
+      <MemberSignature Language="VB.NET" Value="ItemCannotBeRenamed" />
+      <MemberSignature Language="C++ CLI" Value="ItemCannotBeRenamed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1156,6 +1289,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226109</MemberValue>
       <Docs>
         <summary>Value: 0x80133043</summary>
         <remarks>
@@ -1174,6 +1308,8 @@
       <MemberSignature Language="C#" Value="ItemFlagNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemFlagNotSupported = int32(-2146226141)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ItemFlagNotSupported" />
+      <MemberSignature Language="VB.NET" Value="ItemFlagNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="ItemFlagNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1182,6 +1318,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226141</MemberValue>
       <Docs>
         <summary>Value: 0x80133023</summary>
         <remarks>
@@ -1200,6 +1337,8 @@
       <MemberSignature Language="C#" Value="ItemNameInUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemNameInUse = int32(-2146226140)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ItemNameInUse" />
+      <MemberSignature Language="VB.NET" Value="ItemNameInUse" />
+      <MemberSignature Language="C++ CLI" Value="ItemNameInUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1208,6 +1347,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226140</MemberValue>
       <Docs>
         <summary>Value: 0x80133024</summary>
         <remarks>
@@ -1226,6 +1366,8 @@
       <MemberSignature Language="C#" Value="ItemNameInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemNameInvalid = int32(-2146226139)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ItemNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="ItemNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="ItemNameInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1234,6 +1376,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226139</MemberValue>
       <Docs>
         <summary>Value: 0x80133025</summary>
         <remarks>
@@ -1252,6 +1395,8 @@
       <MemberSignature Language="C#" Value="ItemNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemNotFound = int32(-2146226138)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ItemNotFound" />
+      <MemberSignature Language="VB.NET" Value="ItemNotFound" />
+      <MemberSignature Language="C++ CLI" Value="ItemNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1260,6 +1405,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226138</MemberValue>
       <Docs>
         <summary>Value: 0x80133026</summary>
         <remarks>
@@ -1278,6 +1424,8 @@
       <MemberSignature Language="C#" Value="ItemTypeNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemTypeNotSupported = int32(-2146226137)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ItemTypeNotSupported" />
+      <MemberSignature Language="VB.NET" Value="ItemTypeNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="ItemTypeNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1286,6 +1434,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226137</MemberValue>
       <Docs>
         <summary>Value: 0x80133027</summary>
         <remarks>
@@ -1304,6 +1453,8 @@
       <MemberSignature Language="C#" Value="LCIDNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError LCIDNotSupported = int32(-2146226136)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.LCIDNotSupported" />
+      <MemberSignature Language="VB.NET" Value="LCIDNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="LCIDNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1312,6 +1463,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226136</MemberValue>
       <Docs>
         <summary>Value: 0x80133028</summary>
         <remarks>
@@ -1330,6 +1482,8 @@
       <MemberSignature Language="C#" Value="LoadElementFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError LoadElementFailed = int32(-2146226135)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.LoadElementFailed" />
+      <MemberSignature Language="VB.NET" Value="LoadElementFailed" />
+      <MemberSignature Language="C++ CLI" Value="LoadElementFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1338,6 +1492,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226135</MemberValue>
       <Docs>
         <summary>Value: 0x80133029</summary>
         <remarks>
@@ -1356,6 +1511,8 @@
       <MemberSignature Language="C#" Value="MissingPdb" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError MissingPdb = int32(-2146226102)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.MissingPdb" />
+      <MemberSignature Language="VB.NET" Value="MissingPdb" />
+      <MemberSignature Language="C++ CLI" Value="MissingPdb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1364,6 +1521,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226102</MemberValue>
       <Docs>
         <summary>Value: 0x8013304A</summary>
         <remarks>
@@ -1382,6 +1540,8 @@
       <MemberSignature Language="C#" Value="MissingSource" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError MissingSource = int32(-2146226108)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.MissingSource" />
+      <MemberSignature Language="VB.NET" Value="MissingSource" />
+      <MemberSignature Language="C++ CLI" Value="MissingSource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1390,6 +1550,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226108</MemberValue>
       <Docs>
         <summary>Value: 0x80133044</summary>
         <remarks>
@@ -1408,6 +1569,8 @@
       <MemberSignature Language="C#" Value="NameTooLong" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError NameTooLong = int32(-2146226106)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.NameTooLong" />
+      <MemberSignature Language="VB.NET" Value="NameTooLong" />
+      <MemberSignature Language="C++ CLI" Value="NameTooLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1416,6 +1579,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226106</MemberValue>
       <Docs>
         <summary>Value: 0x80133046</summary>
         <remarks>
@@ -1434,6 +1598,8 @@
       <MemberSignature Language="C#" Value="NotClientSideAndNoUrl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError NotClientSideAndNoUrl = int32(-2146226101)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.NotClientSideAndNoUrl" />
+      <MemberSignature Language="VB.NET" Value="NotClientSideAndNoUrl" />
+      <MemberSignature Language="C++ CLI" Value="NotClientSideAndNoUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1442,6 +1608,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226101</MemberValue>
       <Docs>
         <summary>Value: 0x8013304B</summary>
         <remarks>
@@ -1460,6 +1627,8 @@
       <MemberSignature Language="C#" Value="NotificationInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError NotificationInvalid = int32(-2146226134)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.NotificationInvalid" />
+      <MemberSignature Language="VB.NET" Value="NotificationInvalid" />
+      <MemberSignature Language="C++ CLI" Value="NotificationInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1468,6 +1637,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226134</MemberValue>
       <Docs>
         <summary>Value: 0x8013302A</summary>
         <remarks>
@@ -1486,6 +1656,8 @@
       <MemberSignature Language="C#" Value="NotInitCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError NotInitCompleted = int32(-2146226107)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.NotInitCompleted" />
+      <MemberSignature Language="VB.NET" Value="NotInitCompleted" />
+      <MemberSignature Language="C++ CLI" Value="NotInitCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1494,6 +1666,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226107</MemberValue>
       <Docs>
         <summary>Value: 0x80133045</summary>
         <remarks>
@@ -1512,6 +1685,8 @@
       <MemberSignature Language="C#" Value="OptionInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError OptionInvalid = int32(-2146226133)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.OptionInvalid" />
+      <MemberSignature Language="VB.NET" Value="OptionInvalid" />
+      <MemberSignature Language="C++ CLI" Value="OptionInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1520,6 +1695,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226133</MemberValue>
       <Docs>
         <summary>Value: 0x8013302B</summary>
         <remarks>
@@ -1538,6 +1714,8 @@
       <MemberSignature Language="C#" Value="OptionNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError OptionNotSupported = int32(-2146226132)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.OptionNotSupported" />
+      <MemberSignature Language="VB.NET" Value="OptionNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="OptionNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1546,6 +1724,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226132</MemberValue>
       <Docs>
         <summary>Value: 0x8013302C</summary>
         <remarks>
@@ -1564,6 +1743,8 @@
       <MemberSignature Language="C#" Value="ProcNameInUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ProcNameInUse = int32(-2146226105)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ProcNameInUse" />
+      <MemberSignature Language="VB.NET" Value="ProcNameInUse" />
+      <MemberSignature Language="C++ CLI" Value="ProcNameInUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1572,6 +1753,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226105</MemberValue>
       <Docs>
         <summary>Value: 0x80133047</summary>
         <remarks>
@@ -1590,6 +1772,8 @@
       <MemberSignature Language="C#" Value="ProcNameInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ProcNameInvalid = int32(-2146226104)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.ProcNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="ProcNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="ProcNameInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1598,6 +1782,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226104</MemberValue>
       <Docs>
         <summary>Value: 0x80133048</summary>
         <remarks>
@@ -1616,6 +1801,8 @@
       <MemberSignature Language="C#" Value="RevokeFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RevokeFailed = int32(-2146226131)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.RevokeFailed" />
+      <MemberSignature Language="VB.NET" Value="RevokeFailed" />
+      <MemberSignature Language="C++ CLI" Value="RevokeFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1624,6 +1811,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226131</MemberValue>
       <Docs>
         <summary>Value: 0x8013302D</summary>
         <remarks>
@@ -1642,6 +1830,8 @@
       <MemberSignature Language="C#" Value="RootMonikerAlreadySet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerAlreadySet = int32(-2146226130)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.RootMonikerAlreadySet" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerAlreadySet" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerAlreadySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1650,6 +1840,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226130</MemberValue>
       <Docs>
         <summary>Value: 0x8013302E</summary>
         <remarks>
@@ -1668,6 +1859,8 @@
       <MemberSignature Language="C#" Value="RootMonikerInUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerInUse = int32(-2146226129)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.RootMonikerInUse" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerInUse" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerInUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1676,6 +1869,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226129</MemberValue>
       <Docs>
         <summary>Value: 0x8013302F</summary>
         <remarks>
@@ -1694,6 +1888,8 @@
       <MemberSignature Language="C#" Value="RootMonikerInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerInvalid = int32(-2146226128)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.RootMonikerInvalid" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerInvalid" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1702,6 +1898,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226128</MemberValue>
       <Docs>
         <summary>Value: 0x80133030</summary>
         <remarks>
@@ -1724,6 +1921,8 @@
       <MemberSignature Language="C#" Value="RootMonikerNotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerNotSet = int32(-2146226127)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.RootMonikerNotSet" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerNotSet" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerNotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1732,6 +1931,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226127</MemberValue>
       <Docs>
         <summary>Value: 0x80133031</summary>
         <remarks>
@@ -1750,6 +1950,8 @@
       <MemberSignature Language="C#" Value="RootMonikerProtocolInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerProtocolInvalid = int32(-2146226126)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.RootMonikerProtocolInvalid" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerProtocolInvalid" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerProtocolInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1758,6 +1960,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226126</MemberValue>
       <Docs>
         <summary>Value: 0x80133032</summary>
         <remarks>
@@ -1776,6 +1979,8 @@
       <MemberSignature Language="C#" Value="RootNamespaceInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootNamespaceInvalid = int32(-2146226125)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.RootNamespaceInvalid" />
+      <MemberSignature Language="VB.NET" Value="RootNamespaceInvalid" />
+      <MemberSignature Language="C++ CLI" Value="RootNamespaceInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1784,6 +1989,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226125</MemberValue>
       <Docs>
         <summary>Value: 0x80133033</summary>
         <remarks>
@@ -1802,6 +2008,8 @@
       <MemberSignature Language="C#" Value="RootNamespaceNotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootNamespaceNotSet = int32(-2146226124)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.RootNamespaceNotSet" />
+      <MemberSignature Language="VB.NET" Value="RootNamespaceNotSet" />
+      <MemberSignature Language="C++ CLI" Value="RootNamespaceNotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1810,6 +2018,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226124</MemberValue>
       <Docs>
         <summary>Value: 0x80133034</summary>
         <remarks>
@@ -1828,6 +2037,8 @@
       <MemberSignature Language="C#" Value="SaveCompiledStateFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SaveCompiledStateFailed = int32(-2146226123)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.SaveCompiledStateFailed" />
+      <MemberSignature Language="VB.NET" Value="SaveCompiledStateFailed" />
+      <MemberSignature Language="C++ CLI" Value="SaveCompiledStateFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1836,6 +2047,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226123</MemberValue>
       <Docs>
         <summary>Value: 0x80133035</summary>
         <remarks>
@@ -1854,6 +2066,8 @@
       <MemberSignature Language="C#" Value="SaveElementFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SaveElementFailed = int32(-2146226122)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.SaveElementFailed" />
+      <MemberSignature Language="VB.NET" Value="SaveElementFailed" />
+      <MemberSignature Language="C++ CLI" Value="SaveElementFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1862,6 +2076,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226122</MemberValue>
       <Docs>
         <summary>Value: 0x80133036</summary>
         <remarks>
@@ -1880,6 +2095,8 @@
       <MemberSignature Language="C#" Value="SiteAlreadySet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SiteAlreadySet = int32(-2146226121)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.SiteAlreadySet" />
+      <MemberSignature Language="VB.NET" Value="SiteAlreadySet" />
+      <MemberSignature Language="C++ CLI" Value="SiteAlreadySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1888,6 +2105,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226121</MemberValue>
       <Docs>
         <summary>Value: 0x80133037</summary>
         <remarks>
@@ -1906,6 +2124,8 @@
       <MemberSignature Language="C#" Value="SiteInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SiteInvalid = int32(-2146226120)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.SiteInvalid" />
+      <MemberSignature Language="VB.NET" Value="SiteInvalid" />
+      <MemberSignature Language="C++ CLI" Value="SiteInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1914,6 +2134,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226120</MemberValue>
       <Docs>
         <summary>Value: 0x80133038</summary>
         <remarks>
@@ -1932,6 +2153,8 @@
       <MemberSignature Language="C#" Value="SiteNotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SiteNotSet = int32(-2146226119)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.SiteNotSet" />
+      <MemberSignature Language="VB.NET" Value="SiteNotSet" />
+      <MemberSignature Language="C++ CLI" Value="SiteNotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1940,6 +2163,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226119</MemberValue>
       <Docs>
         <summary>Value: 0x80133039</summary>
         <remarks>
@@ -1958,6 +2182,8 @@
       <MemberSignature Language="C#" Value="SourceItemNotAvailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SourceItemNotAvailable = int32(-2146226118)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.SourceItemNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="SourceItemNotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="SourceItemNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1966,6 +2192,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226118</MemberValue>
       <Docs>
         <summary>Value: 0x8013303A</summary>
         <remarks>
@@ -1984,6 +2211,8 @@
       <MemberSignature Language="C#" Value="SourceMonikerNotAvailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SourceMonikerNotAvailable = int32(-2146226117)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.SourceMonikerNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="SourceMonikerNotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="SourceMonikerNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1992,6 +2221,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226117</MemberValue>
       <Docs>
         <summary>Value: 0x8013303B</summary>
         <remarks>
@@ -2010,6 +2240,8 @@
       <MemberSignature Language="C#" Value="UnknownError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError UnknownError = int32(-2146225921)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.UnknownError" />
+      <MemberSignature Language="VB.NET" Value="UnknownError" />
+      <MemberSignature Language="C++ CLI" Value="UnknownError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2018,6 +2250,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146225921</MemberValue>
       <Docs>
         <summary>Value: 0x801330FF</summary>
         <remarks>
@@ -2036,6 +2269,8 @@
       <MemberSignature Language="C#" Value="URLInvalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError URLInvalid = int32(-2146226116)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.URLInvalid" />
+      <MemberSignature Language="VB.NET" Value="URLInvalid" />
+      <MemberSignature Language="C++ CLI" Value="URLInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2044,6 +2279,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226116</MemberValue>
       <Docs>
         <summary>Value: 0x8013303C</summary>
         <remarks>
@@ -2062,6 +2298,8 @@
       <MemberSignature Language="C#" Value="VsaServerDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError VsaServerDown = int32(-2146226103)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaError.VsaServerDown" />
+      <MemberSignature Language="VB.NET" Value="VsaServerDown" />
+      <MemberSignature Language="C++ CLI" Value="VsaServerDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2070,6 +2308,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
       </ReturnValue>
+      <MemberValue>-2146226103</MemberValue>
       <Docs>
         <summary>Value: 0x80133049</summary>
         <remarks>

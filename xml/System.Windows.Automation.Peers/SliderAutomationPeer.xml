@@ -1,7 +1,9 @@
-<Type Name="SliderAutomationPeer" FullName="System.Windows.Automation.Peers.SliderAutomationPeer">
+﻿<Type Name="SliderAutomationPeer" FullName="System.Windows.Automation.Peers.SliderAutomationPeer">
   <TypeSignature Language="C#" Value="public class SliderAutomationPeer : System.Windows.Automation.Peers.RangeBaseAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SliderAutomationPeer extends System.Windows.Automation.Peers.RangeBaseAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.SliderAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class SliderAutomationPeer&#xA;Inherits RangeBaseAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SliderAutomationPeer : System::Windows::Automation::Peers::RangeBaseAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public SliderAutomationPeer (System.Windows.Controls.Slider owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Slider owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SliderAutomationPeer.#ctor(System.Windows.Controls.Slider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Slider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SliderAutomationPeer(System::Windows::Controls::Slider ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SliderAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SliderAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Point GetClickablePointCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Point GetClickablePointCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SliderAutomationPeer.GetClickablePointCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClickablePointCore () As Point" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Point GetClickablePointCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CustomUserNameSecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator">
+﻿<Type Name="CustomUserNameSecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator">
   <TypeSignature Language="C#" Value="public class CustomUserNameSecurityTokenAuthenticator : System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomUserNameSecurityTokenAuthenticator extends System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomUserNameSecurityTokenAuthenticator&#xA;Inherits UserNameSecurityTokenAuthenticator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomUserNameSecurityTokenAuthenticator : System::IdentityModel::Selectors::UserNameSecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public CustomUserNameSecurityTokenAuthenticator (System.IdentityModel.Selectors.UserNamePasswordValidator validator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Selectors.UserNamePasswordValidator validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator.#ctor(System.IdentityModel.Selectors.UserNamePasswordValidator)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (validator As UserNamePasswordValidator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomUserNameSecurityTokenAuthenticator(System::IdentityModel::Selectors::UserNamePasswordValidator ^ validator);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateUserNamePasswordCore (string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateUserNamePasswordCore(string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateUserNamePasswordCore (userName As String, password As String) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateUserNamePasswordCore(System::String ^ userName, System::String ^ password);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

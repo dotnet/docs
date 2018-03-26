@@ -1,7 +1,9 @@
-<Type Name="ActivationArguments" FullName="System.Runtime.Hosting.ActivationArguments">
+﻿<Type Name="ActivationArguments" FullName="System.Runtime.Hosting.ActivationArguments">
   <TypeSignature Language="C#" Value="public sealed class ActivationArguments : System.Security.Policy.EvidenceBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ActivationArguments extends System.Security.Policy.EvidenceBase" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Hosting.ActivationArguments" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivationArguments&#xA;Inherits EvidenceBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivationArguments sealed : System::Security::Policy::EvidenceBase" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,10 +40,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivationArguments (ActivationContext activationData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ActivationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (activationData As ActivationContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivationArguments(ActivationContext ^ activationData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +84,7 @@
       <MemberSignature Language="C#" Value="public ActivationArguments (ApplicationIdentity applicationIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ApplicationIdentity applicationIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ApplicationIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivationArguments(ApplicationIdentity ^ applicationIdentity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +113,7 @@
       <MemberSignature Language="C#" Value="public ActivationArguments (ActivationContext activationContext, string[] activationData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationContext, string[] activationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ActivationContext,System.String[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivationArguments(ActivationContext ^ activationContext, cli::array &lt;System::String ^&gt; ^ activationData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +144,7 @@
       <MemberSignature Language="C#" Value="public ActivationArguments (ApplicationIdentity applicationIdentity, string[] activationData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ApplicationIdentity applicationIdentity, string[] activationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ApplicationIdentity,System.String[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivationArguments(ApplicationIdentity ^ applicationIdentity, cli::array &lt;System::String ^&gt; ^ activationData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +175,8 @@
       <MemberSignature Language="C#" Value="public ActivationContext ActivationContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ActivationContext ActivationContext" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ActivationContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationContext As ActivationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ActivationContext ^ ActivationContext { ActivationContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -194,6 +213,8 @@
       <MemberSignature Language="C#" Value="public string[] ActivationData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ActivationData" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ActivationData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationData As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ActivationData { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +241,8 @@
       <MemberSignature Language="C#" Value="public ApplicationIdentity ApplicationIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ApplicationIdentity ApplicationIdentity" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ApplicationIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationIdentity As ApplicationIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ApplicationIdentity ^ ApplicationIdentity { ApplicationIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -246,6 +269,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.EvidenceBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::EvidenceBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -268,15 +293,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

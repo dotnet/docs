@@ -1,7 +1,9 @@
-<Type Name="IProducerConsumerCollection&lt;T&gt;" FullName="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;">
+﻿<Type Name="IProducerConsumerCollection&lt;T&gt;" FullName="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IProducerConsumerCollection&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProducerConsumerCollection`1&lt;T&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProducerConsumerCollection(Of T)&#xA;Implements ICollection, IEnumerable(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IProducerConsumerCollection : System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +56,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -103,6 +107,8 @@
       <MemberSignature Language="C#" Value="public T[] ToArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T[] ToArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.ToArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -140,6 +146,8 @@
       <MemberSignature Language="C#" Value="public bool TryAdd (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryAdd(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.TryAdd(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryAdd (item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAdd(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -174,6 +182,8 @@
       <MemberSignature Language="C#" Value="public bool TryTake (out T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTake([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.TryTake(`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryTake (ByRef item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryTake([Runtime::InteropServices::Out] T % item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>

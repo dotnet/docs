@@ -1,7 +1,9 @@
-<Type Name="AppWinStyle" FullName="Microsoft.VisualBasic.AppWinStyle">
+﻿<Type Name="AppWinStyle" FullName="Microsoft.VisualBasic.AppWinStyle">
   <TypeSignature Language="C#" Value="public enum AppWinStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppWinStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.AppWinStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AppWinStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AppWinStyle" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="Hide" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.AppWinStyle Hide = int16(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.Hide" />
+      <MemberSignature Language="VB.NET" Value="Hide" />
+      <MemberSignature Language="C++ CLI" Value="Hide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AppWinStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Window is hidden and focus is passed to the hidden window. This member is equivalent to the Visual Basic constant <see langword="vbHide" />.</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="MaximizedFocus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.AppWinStyle MaximizedFocus = int16(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.MaximizedFocus" />
+      <MemberSignature Language="VB.NET" Value="MaximizedFocus" />
+      <MemberSignature Language="C++ CLI" Value="MaximizedFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AppWinStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Window is maximized with focus. This member is equivalent to the Visual Basic constant <see langword="vbMaximizedFocus" />.</summary>
       </Docs>
@@ -60,6 +68,8 @@
       <MemberSignature Language="C#" Value="MinimizedFocus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.AppWinStyle MinimizedFocus = int16(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.MinimizedFocus" />
+      <MemberSignature Language="VB.NET" Value="MinimizedFocus" />
+      <MemberSignature Language="C++ CLI" Value="MinimizedFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AppWinStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Window is displayed as an icon with focus. This member is equivalent to the Visual Basic constant <see langword="vbMinimizedFocus" />.</summary>
       </Docs>
@@ -76,6 +87,8 @@
       <MemberSignature Language="C#" Value="MinimizedNoFocus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.AppWinStyle MinimizedNoFocus = int16(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.MinimizedNoFocus" />
+      <MemberSignature Language="VB.NET" Value="MinimizedNoFocus" />
+      <MemberSignature Language="C++ CLI" Value="MinimizedNoFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -84,6 +97,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AppWinStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Window is displayed as an icon. The currently active window remains active. This member is equivalent to the Visual Basic constant <see langword="vbMinimizedNoFocus" />.</summary>
       </Docs>
@@ -92,6 +106,8 @@
       <MemberSignature Language="C#" Value="NormalFocus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.AppWinStyle NormalFocus = int16(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.NormalFocus" />
+      <MemberSignature Language="VB.NET" Value="NormalFocus" />
+      <MemberSignature Language="C++ CLI" Value="NormalFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -100,6 +116,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AppWinStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Window has focus and is restored to its original size and position. This member is equivalent to the Visual Basic constant <see langword="vbNormalFocus" />.</summary>
       </Docs>
@@ -108,6 +125,8 @@
       <MemberSignature Language="C#" Value="NormalNoFocus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.AppWinStyle NormalNoFocus = int16(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.NormalNoFocus" />
+      <MemberSignature Language="VB.NET" Value="NormalNoFocus" />
+      <MemberSignature Language="C++ CLI" Value="NormalNoFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -116,6 +135,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AppWinStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Window is restored to its most recent size and position. The currently active window remains active. This member is equivalent to the Visual Basic constant <see langword="vbNormalNoFocus" />.</summary>
       </Docs>

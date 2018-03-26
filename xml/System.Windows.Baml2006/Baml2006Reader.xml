@@ -1,7 +1,9 @@
-<Type Name="Baml2006Reader" FullName="System.Windows.Baml2006.Baml2006Reader">
+﻿<Type Name="Baml2006Reader" FullName="System.Windows.Baml2006.Baml2006Reader">
   <TypeSignature Language="C#" Value="public class Baml2006Reader : System.Xaml.XamlReader, System.Xaml.IXamlLineInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Baml2006Reader extends System.Xaml.XamlReader implements class System.Xaml.IXamlLineInfo" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Baml2006.Baml2006Reader" />
+  <TypeSignature Language="VB.NET" Value="Public Class Baml2006Reader&#xA;Inherits XamlReader&#xA;Implements IXamlLineInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Baml2006Reader : System::Xaml::XamlReader, System::Xaml::IXamlLineInfo" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Baml2006.Baml2006Reader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Baml2006Reader (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Baml2006.Baml2006Reader.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Baml2006Reader(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +68,8 @@
       <MemberSignature Language="C#" Value="public Baml2006Reader (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Baml2006.Baml2006Reader.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Baml2006Reader(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +90,7 @@
       <MemberSignature Language="C#" Value="public Baml2006Reader (System.IO.Stream stream, System.Xaml.XamlReaderSettings xamlReaderSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Xaml.XamlReaderSettings xamlReaderSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Baml2006.Baml2006Reader.#ctor(System.IO.Stream,System.Xaml.XamlReaderSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Baml2006Reader(System::IO::Stream ^ stream, System::Xaml::XamlReaderSettings ^ xamlReaderSettings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +120,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Baml2006.Baml2006Reader.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,6 +144,8 @@
       <MemberSignature Language="C#" Value="public override bool IsEof { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEof" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.IsEof" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEof As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEof { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +165,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.XamlMember Member { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember Member" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.Member" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Member As XamlMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlMember ^ Member { System::Xaml::XamlMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +185,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.NamespaceDeclaration Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.NamespaceDeclaration Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Namespace As NamespaceDeclaration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::NamespaceDeclaration ^ Namespace { System::Xaml::NamespaceDeclaration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -182,6 +205,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.XamlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xaml.XamlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XamlNodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlNodeType NodeType { System::Xaml::XamlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -200,6 +225,8 @@
       <MemberSignature Language="C#" Value="public override bool Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Baml2006.Baml2006Reader.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -228,6 +255,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.XamlSchemaContext SchemaContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.SchemaContext" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaContext As XamlSchemaContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,7 +275,12 @@
       <MemberSignature Language="C#" Value="bool System.Xaml.IXamlLineInfo.HasLineInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Xaml.IXamlLineInfo.HasLineInfo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#HasLineInfo" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasLineInfo As Boolean Implements IXamlLineInfo.HasLineInfo" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Xaml.IXamlLineInfo.HasLineInfo { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xaml.IXamlLineInfo.HasLineInfo</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -265,7 +299,12 @@
       <MemberSignature Language="C#" Value="int System.Xaml.IXamlLineInfo.LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xaml.IXamlLineInfo.LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#LineNumber" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property LineNumber As Integer Implements IXamlLineInfo.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Xaml.IXamlLineInfo.LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xaml.IXamlLineInfo.LineNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -283,7 +322,12 @@
       <MemberSignature Language="C#" Value="int System.Xaml.IXamlLineInfo.LinePosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xaml.IXamlLineInfo.LinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#LinePosition" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property LinePosition As Integer Implements IXamlLineInfo.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Xaml.IXamlLineInfo.LinePosition { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xaml.IXamlLineInfo.LinePosition</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -301,6 +345,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.XamlType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType Type" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As XamlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -319,6 +365,8 @@
       <MemberSignature Language="C#" Value="public override object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -333,14 +381,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Baml2006.Baml2006Reader" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

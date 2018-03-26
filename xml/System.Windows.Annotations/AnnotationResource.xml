@@ -1,7 +1,9 @@
-<Type Name="AnnotationResource" FullName="System.Windows.Annotations.AnnotationResource">
-  <TypeSignature Language="C#" Value="public sealed class AnnotationResource : System.ComponentModel.INotifyPropertyChanged, System.Xml.Serialization.IXmlSerializable" />
+﻿<Type Name="AnnotationResource" FullName="System.Windows.Annotations.AnnotationResource">
+  <TypeSignature Language="C#" Value="public sealed class AnnotationResource : System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnotationResource extends System.Object implements class System.ComponentModel.INotifyPropertyChanged, class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationResource" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnnotationResource&#xA;Implements IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnnotationResource sealed : System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,9 +12,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
-    </Interface>
     <Interface>
       <InterfaceName>System.Xml.Serialization.IXmlSerializable</InterfaceName>
     </Interface>
@@ -36,10 +35,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationResource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AnnotationResource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationResource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +72,8 @@
       <MemberSignature Language="C#" Value="public AnnotationResource (Guid id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationResource.#ctor(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationResource(Guid id);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +101,8 @@
       <MemberSignature Language="C#" Value="public AnnotationResource (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationResource.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationResource(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +132,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.ContentLocatorBase&gt; ContentLocators { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Annotations.ContentLocatorBase&gt; ContentLocators" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationResource.ContentLocators" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentLocators As Collection(Of ContentLocatorBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::ContentLocatorBase ^&gt; ^ ContentLocators { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::ContentLocatorBase ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; Contents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt; Contents" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationResource.Contents" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contents As Collection(Of XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ Contents { System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,7 +186,12 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema GetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationResource.GetSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSchema () As XmlSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -187,6 +210,8 @@
       <MemberSignature Language="C#" Value="public Guid Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationResource.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -205,6 +230,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationResource.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -223,7 +250,12 @@
       <MemberSignature Language="C#" Value="public void ReadXml (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationResource.ReadXml(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReadXml (reader As XmlReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -248,7 +280,12 @@
       <MemberSignature Language="C#" Value="public void WriteXml (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationResource.WriteXml(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -269,14 +306,5 @@
         <altmember cref="M:System.Windows.Annotations.AnnotationResource.ReadXml(System.Xml.XmlReader)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationResource" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

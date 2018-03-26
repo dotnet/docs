@@ -1,7 +1,9 @@
-<Type Name="AuthenticationModuleElementCollection" FullName="System.Net.Configuration.AuthenticationModuleElementCollection">
+﻿<Type Name="AuthenticationModuleElementCollection" FullName="System.Net.Configuration.AuthenticationModuleElementCollection">
   <TypeSignature Language="C#" Value="public sealed class AuthenticationModuleElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AuthenticationModuleElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.AuthenticationModuleElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthenticationModuleElementCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationModuleElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public AuthenticationModuleElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationModuleElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Net.Configuration.AuthenticationModuleElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Net.Configuration.AuthenticationModuleElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.Add(System.Net.Configuration.AuthenticationModuleElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (element As AuthenticationModuleElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::Configuration::AuthenticationModuleElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +132,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +161,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Net.Configuration.AuthenticationModuleElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Net.Configuration.AuthenticationModuleElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.IndexOf(System.Net.Configuration.AuthenticationModuleElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As AuthenticationModuleElement) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Net::Configuration::AuthenticationModuleElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,10 +183,23 @@
         <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the element with the specified index or key.</summary>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Net.Configuration.AuthenticationModuleElement this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.AuthenticationModuleElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.AuthenticationModuleElementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As AuthenticationModuleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::AuthenticationModuleElement ^ default[int] { System::Net::Configuration::AuthenticationModuleElement ^ get(int index); void set(int index, System::Net::Configuration::AuthenticationModuleElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +229,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.AuthenticationModuleElement this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.AuthenticationModuleElement Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.AuthenticationModuleElementCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As AuthenticationModuleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::AuthenticationModuleElement ^ default[System::String ^] { System::Net::Configuration::AuthenticationModuleElement ^ get(System::String ^ name); void set(System::String ^ name, System::Net::Configuration::AuthenticationModuleElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -227,10 +256,21 @@
         <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an element from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Net.Configuration.AuthenticationModuleElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Net.Configuration.AuthenticationModuleElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.Remove(System.Net.Configuration.AuthenticationModuleElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As AuthenticationModuleElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Net::Configuration::AuthenticationModuleElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -254,6 +294,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -277,6 +319,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElementCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,25 +340,5 @@
         <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes an element from the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the element with the specified index or key.</summary>
-        <altmember cref="T:System.Net.IAuthenticationModule" />
-        <altmember cref="T:System.Net.AuthenticationManager" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

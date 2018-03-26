@@ -1,7 +1,9 @@
-<Type Name="ValuePattern+ValuePatternInformation" FullName="System.Windows.Automation.ValuePattern+ValuePatternInformation">
+﻿<Type Name="ValuePattern+ValuePatternInformation" FullName="System.Windows.Automation.ValuePattern+ValuePatternInformation">
   <TypeSignature Language="C#" Value="public struct ValuePattern.ValuePatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit ValuePattern/ValuePatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ValuePattern.ValuePatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ValuePattern.ValuePatternInformation" />
+  <TypeSignature Language="C++ CLI" Value="public: value class ValuePattern::ValuePatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ValuePattern.ValuePatternInformation.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ValuePattern.ValuePatternInformation.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="SchemaClassType" FullName="System.DirectoryServices.ActiveDirectory.SchemaClassType">
+﻿<Type Name="SchemaClassType" FullName="System.DirectoryServices.ActiveDirectory.SchemaClassType">
   <TypeSignature Language="C#" Value="public enum SchemaClassType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SchemaClassType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SchemaClassType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SchemaClassType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SchemaClassType" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="Abstract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SchemaClassType Abstract = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SchemaClassType.Abstract" />
+      <MemberSignature Language="VB.NET" Value="Abstract" />
+      <MemberSignature Language="C++ CLI" Value="Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -30,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SchemaClassType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The class is an abstract class.</summary>
       </Docs>
@@ -38,6 +43,8 @@
       <MemberSignature Language="C#" Value="Auxiliary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SchemaClassType Auxiliary = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SchemaClassType.Auxiliary" />
+      <MemberSignature Language="VB.NET" Value="Auxiliary" />
+      <MemberSignature Language="C++ CLI" Value="Auxiliary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SchemaClassType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The class is an auxiliary class.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="Structural" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SchemaClassType Structural = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SchemaClassType.Structural" />
+      <MemberSignature Language="VB.NET" Value="Structural" />
+      <MemberSignature Language="C++ CLI" Value="Structural" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SchemaClassType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The class is a structural class.</summary>
       </Docs>
@@ -72,6 +83,8 @@
       <MemberSignature Language="C#" Value="Type88" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SchemaClassType Type88 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SchemaClassType.Type88" />
+      <MemberSignature Language="VB.NET" Value="Type88" />
+      <MemberSignature Language="C++ CLI" Value="Type88" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SchemaClassType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The class is a type 88 class. Classes defined before 1993 are not required to be included in another category; assigning classes to categories was not required in the X.500 1988 specification. Classes defined prior to the X.500 1993 standards default to the 1988 class. This type of class is specified by a value of 0 in the **objectClassCategory** attribute.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="RadioButton" FullName="System.Windows.Controls.RadioButton">
+﻿<Type Name="RadioButton" FullName="System.Windows.Controls.RadioButton">
   <TypeSignature Language="C#" Value="public class RadioButton : System.Windows.Controls.Primitives.ToggleButton" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RadioButton extends System.Windows.Controls.Primitives.ToggleButton" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RadioButton" />
+  <TypeSignature Language="VB.NET" Value="Public Class RadioButton&#xA;Inherits ToggleButton" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RadioButton : System::Windows::Controls::Primitives::ToggleButton" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +59,8 @@
       <MemberSignature Language="C#" Value="public RadioButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RadioButton();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public string GroupName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GroupName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RadioButton.GroupName" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GroupNameProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GroupNameProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.RadioButton.GroupNameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GroupNameProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GroupNameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +145,8 @@
       <MemberSignature Language="C#" Value="protected override void OnAccessKey (System.Windows.Input.AccessKeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAccessKey(class System.Windows.Input.AccessKeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAccessKey (e As AccessKeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAccessKey(System::Windows::Input::AccessKeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +168,8 @@
       <MemberSignature Language="C#" Value="protected override void OnChecked (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChecked(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnChecked(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChecked (e As RoutedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChecked(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -179,6 +191,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -195,9 +209,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnToggle">
-      <MemberSignature Language="C#" Value="protected override void OnToggle ();" />
+      <MemberSignature Language="C#" Value="protected internal override void OnToggle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnToggle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnToggle" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnToggle ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnToggle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

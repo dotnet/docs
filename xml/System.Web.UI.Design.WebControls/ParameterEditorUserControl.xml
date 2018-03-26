@@ -1,7 +1,9 @@
-<Type Name="ParameterEditorUserControl" FullName="System.Web.UI.Design.WebControls.ParameterEditorUserControl">
+﻿<Type Name="ParameterEditorUserControl" FullName="System.Web.UI.Design.WebControls.ParameterEditorUserControl">
   <TypeSignature Language="C#" Value="public class ParameterEditorUserControl : System.Windows.Forms.UserControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParameterEditorUserControl extends System.Windows.Forms.UserControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ParameterEditorUserControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParameterEditorUserControl&#xA;Inherits UserControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParameterEditorUserControl : System::Windows::Forms::UserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public ParameterEditorUserControl (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.#ctor(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParameterEditorUserControl(IServiceProvider ^ serviceProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public void AddParameters (System.Web.UI.WebControls.Parameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddParameters(class System.Web.UI.WebControls.Parameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.AddParameters(System.Web.UI.WebControls.Parameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddParameters (parameters As Parameter())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddParameters(cli::array &lt;System::Web::UI::WebControls::Parameter ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="public void ClearParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ClearParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearParameters ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -136,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Parameter[] GetParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.Parameter[] GetParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.GetParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParameters () As Parameter()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::WebControls::Parameter ^&gt; ^ GetParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -168,6 +178,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnParametersChanged (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnParametersChanged(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.OnParametersChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnParametersChanged (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnParametersChanged(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -194,6 +206,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ParametersChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParametersChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ParametersChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ParametersChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParametersChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -214,6 +228,8 @@
       <MemberSignature Language="C#" Value="public bool ParametersConfigured { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ParametersConfigured" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ParametersConfigured" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParametersConfigured As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ParametersConfigured { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -236,6 +252,8 @@
       <MemberSignature Language="C#" Value="public void SetAllowCollectionChanges (bool allowChanges);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAllowCollectionChanges(bool allowChanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.SetAllowCollectionChanges(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAllowCollectionChanges (allowChanges As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAllowCollectionChanges(bool allowChanges);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -267,6 +285,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.TypeDescriptionProvider TypeDescriptionProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.TypeDescriptionProvider TypeDescriptionProvider" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ParameterEditorUserControl.TypeDescriptionProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeDescriptionProvider As TypeDescriptionProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::TypeDescriptionProvider ^ TypeDescriptionProvider { System::ComponentModel::TypeDescriptionProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

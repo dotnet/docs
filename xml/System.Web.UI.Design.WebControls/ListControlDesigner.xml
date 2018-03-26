@@ -1,7 +1,9 @@
-<Type Name="ListControlDesigner" FullName="System.Web.UI.Design.WebControls.ListControlDesigner">
+﻿<Type Name="ListControlDesigner" FullName="System.Web.UI.Design.WebControls.ListControlDesigner">
   <TypeSignature Language="C#" Value="public class ListControlDesigner : System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListControlDesigner extends System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ListControlDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListControlDesigner&#xA;Inherits DataBoundControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListControlDesigner : System::Web::UI::Design::WebControls::DataBoundControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +77,8 @@
       <MemberSignature Language="C#" Value="public ListControlDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -103,6 +107,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +132,8 @@
       <MemberSignature Language="C#" Value="protected override void DataBind (System.Web.UI.WebControls.BaseDataBoundControl dataBoundControl);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DataBind(class System.Web.UI.WebControls.BaseDataBoundControl dataBoundControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DataBind (dataBoundControl As BaseDataBoundControl)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DataBind(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -162,6 +170,8 @@
       <MemberSignature Language="C#" Value="public string DataTextField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataTextField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.DataTextField" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataTextField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataTextField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -190,6 +200,8 @@
       <MemberSignature Language="C#" Value="public string DataValueField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataValueField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.DataValueField" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataValueField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataValueField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -218,6 +230,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -258,6 +272,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetResolvedSelectedDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetResolvedSelectedDataSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetResolvedSelectedDataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResolvedSelectedDataSource () As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetResolvedSelectedDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -292,6 +308,8 @@
       <MemberSignature Language="C#" Value="public object GetSelectedDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetSelectedDataSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetSelectedDataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedDataSource () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSelectedDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -323,6 +341,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -365,10 +385,21 @@
         <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnDataSourceChanged">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called when the data source for the associated control has changed.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OnDataSourceChanged">
       <MemberSignature Language="C#" Value="public virtual void OnDataSourceChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDataSourceChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDataSourceChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDataSourceChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -409,6 +440,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDataSourceChanged (bool forceUpdateView);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataSourceChanged(bool forceUpdateView) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataSourceChanged (forceUpdateView As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataSourceChanged(bool forceUpdateView);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -455,6 +488,8 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -498,6 +533,8 @@
       <MemberSignature Language="C#" Value="protected override bool UseDataSourcePickerActionList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDataSourcePickerActionList" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.UseDataSourcePickerActionList" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UseDataSourcePickerActionList As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UseDataSourcePickerActionList { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -528,14 +565,5 @@
         <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="OnDataSourceChanged">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Called when the data source for the associated control has changed.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

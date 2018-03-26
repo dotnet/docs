@@ -1,7 +1,9 @@
-<Type Name="RemoteTypeData" FullName="System.AddIn.Contract.Automation.RemoteTypeData">
+﻿<Type Name="RemoteTypeData" FullName="System.AddIn.Contract.Automation.RemoteTypeData">
   <TypeSignature Language="C#" Value="public struct RemoteTypeData" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit RemoteTypeData extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.RemoteTypeData" />
+  <TypeSignature Language="VB.NET" Value="Public Structure RemoteTypeData" />
+  <TypeSignature Language="C++ CLI" Value="public value class RemoteTypeData" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public int ArrayRank;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 ArrayRank" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.ArrayRank" />
+      <MemberSignature Language="VB.NET" Value="Public ArrayRank As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int ArrayRank;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyName;" />
       <MemberSignature Language="ILAsm" Value=".field public string AssemblyName" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public AssemblyName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AssemblyName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyQualifiedName;" />
       <MemberSignature Language="ILAsm" Value=".field public string AssemblyQualifiedName" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.AssemblyQualifiedName" />
+      <MemberSignature Language="VB.NET" Value="Public AssemblyQualifiedName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AssemblyQualifiedName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.TypeAttributes Attributes;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Reflection.TypeAttributes Attributes" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Attributes As TypeAttributes " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Reflection::TypeAttributes Attributes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -115,6 +125,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteTypeContract BaseType;" />
       <MemberSignature Language="ILAsm" Value=".field public class System.AddIn.Contract.Automation.IRemoteTypeContract BaseType" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.BaseType" />
+      <MemberSignature Language="VB.NET" Value="Public BaseType As IRemoteTypeContract " />
+      <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::IRemoteTypeContract ^ BaseType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -132,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteTypeContract ElementType;" />
       <MemberSignature Language="ILAsm" Value=".field public class System.AddIn.Contract.Automation.IRemoteTypeContract ElementType" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.ElementType" />
+      <MemberSignature Language="VB.NET" Value="Public ElementType As IRemoteTypeContract " />
+      <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::IRemoteTypeContract ^ ElementType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -156,6 +170,8 @@
       <MemberSignature Language="C#" Value="public string FullName;" />
       <MemberSignature Language="ILAsm" Value=".field public string FullName" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public FullName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ FullName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -180,6 +196,8 @@
       <MemberSignature Language="C#" Value="public bool IsArray;" />
       <MemberSignature Language="ILAsm" Value=".field public bool IsArray" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.IsArray" />
+      <MemberSignature Language="VB.NET" Value="Public IsArray As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool IsArray;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -204,6 +222,8 @@
       <MemberSignature Language="C#" Value="public bool IsByRef;" />
       <MemberSignature Language="ILAsm" Value=".field public bool IsByRef" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.IsByRef" />
+      <MemberSignature Language="VB.NET" Value="Public IsByRef As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool IsByRef;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -228,6 +248,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.RemoteMemberData MemberData;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.AddIn.Contract.Automation.RemoteMemberData MemberData" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.MemberData" />
+      <MemberSignature Language="VB.NET" Value="Public MemberData As RemoteMemberData " />
+      <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::RemoteMemberData MemberData;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -245,6 +267,8 @@
       <MemberSignature Language="C#" Value="public TypeCode TypeCode;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.TypeCode TypeCode" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.TypeCode" />
+      <MemberSignature Language="VB.NET" Value="Public TypeCode As TypeCode " />
+      <MemberSignature Language="C++ CLI" Value="public: TypeCode TypeCode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

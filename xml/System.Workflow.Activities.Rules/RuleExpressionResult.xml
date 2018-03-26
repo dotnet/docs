@@ -1,7 +1,9 @@
-<Type Name="RuleExpressionResult" FullName="System.Workflow.Activities.Rules.RuleExpressionResult">
+﻿<Type Name="RuleExpressionResult" FullName="System.Workflow.Activities.Rules.RuleExpressionResult">
   <TypeSignature Language="C#" Value="public abstract class RuleExpressionResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RuleExpressionResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExpressionResult" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RuleExpressionResult" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleExpressionResult abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected RuleExpressionResult ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RuleExpressionResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public abstract object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExpressionResult.Value" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

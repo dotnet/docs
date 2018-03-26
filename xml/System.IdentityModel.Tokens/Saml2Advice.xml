@@ -1,7 +1,9 @@
-<Type Name="Saml2Advice" FullName="System.IdentityModel.Tokens.Saml2Advice">
+﻿<Type Name="Saml2Advice" FullName="System.IdentityModel.Tokens.Saml2Advice">
   <TypeSignature Language="C#" Value="public class Saml2Advice" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2Advice extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Advice" />
+  <TypeSignature Language="VB.NET" Value="Public Class Saml2Advice" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Saml2Advice" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public Saml2Advice ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Advice.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Advice();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Id&gt; AssertionIdReferences { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Tokens.Saml2Id&gt; AssertionIdReferences" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Advice.AssertionIdReferences" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssertionIdReferences As Collection(Of Saml2Id)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Id ^&gt; ^ AssertionIdReferences { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Id ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Assertion&gt; Assertions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Tokens.Saml2Assertion&gt; Assertions" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Advice.Assertions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assertions As Collection(Of Saml2Assertion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Assertion ^&gt; ^ Assertions { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Assertion ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Uri&gt; AssertionUriReferences { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; AssertionUriReferences" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Advice.AssertionUriReferences" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssertionUriReferences As Collection(Of Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ AssertionUriReferences { System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CngKey" FullName="System.Security.Cryptography.CngKey">
+﻿<Type Name="CngKey" FullName="System.Security.Cryptography.CngKey">
   <TypeSignature Language="C#" Value="public sealed class CngKey : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CngKey extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngKey" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CngKey&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CngKey sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public CngKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CngKey();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngAlgorithm Algorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CngAlgorithm Algorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.Algorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Algorithm As CngAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngAlgorithm ^ Algorithm { System::Security::Cryptography::CngAlgorithm ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngAlgorithmGroup AlgorithmGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CngAlgorithmGroup AlgorithmGroup" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.AlgorithmGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlgorithmGroup As CngAlgorithmGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngAlgorithmGroup ^ AlgorithmGroup { System::Security::Cryptography::CngAlgorithmGroup ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -118,10 +126,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Security.Cryptography.CngKey" /> object that represents a new key.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Create (System.Security.Cryptography.CngAlgorithm algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Create(class System.Security.Cryptography.CngAlgorithm algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algorithm As CngAlgorithm) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Create(System::Security::Cryptography::CngAlgorithm ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -166,6 +186,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Create (System.Security.Cryptography.CngAlgorithm algorithm, string keyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Create(class System.Security.Cryptography.CngAlgorithm algorithm, string keyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algorithm As CngAlgorithm, keyName As String) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Create(System::Security::Cryptography::CngAlgorithm ^ algorithm, System::String ^ keyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -212,6 +234,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Create (System.Security.Cryptography.CngAlgorithm algorithm, string keyName, System.Security.Cryptography.CngKeyCreationParameters creationParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Create(class System.Security.Cryptography.CngAlgorithm algorithm, string keyName, class System.Security.Cryptography.CngKeyCreationParameters creationParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String,System.Security.Cryptography.CngKeyCreationParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algorithm As CngAlgorithm, keyName As String, creationParameters As CngKeyCreationParameters) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Create(System::Security::Cryptography::CngAlgorithm ^ algorithm, System::String ^ keyName, System::Security::Cryptography::CngKeyCreationParameters ^ creationParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -265,6 +289,8 @@
       <MemberSignature Language="C#" Value="public void Delete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -311,7 +337,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -350,10 +381,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Exists">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks for a named key in a specific key storage provider(KSP).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Exists">
       <MemberSignature Language="C#" Value="public static bool Exists (string keyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string keyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Exists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (keyName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ keyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -398,6 +441,8 @@
       <MemberSignature Language="C#" Value="public static bool Exists (string keyName, System.Security.Cryptography.CngProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string keyName, class System.Security.Cryptography.CngProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (keyName As String, provider As CngProvider) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ keyName, System::Security::Cryptography::CngProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -444,6 +489,8 @@
       <MemberSignature Language="C#" Value="public static bool Exists (string keyName, System.Security.Cryptography.CngProvider provider, System.Security.Cryptography.CngKeyOpenOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string keyName, class System.Security.Cryptography.CngProvider provider, valuetype System.Security.Cryptography.CngKeyOpenOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (keyName As String, provider As CngProvider, options As CngKeyOpenOptions) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ keyName, System::Security::Cryptography::CngProvider ^ provider, System::Security::Cryptography::CngKeyOpenOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -497,6 +544,8 @@
       <MemberSignature Language="C#" Value="public byte[] Export (System.Security.Cryptography.CngKeyBlobFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Export(class System.Security.Cryptography.CngKeyBlobFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Export(System.Security.Cryptography.CngKeyBlobFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Export (format As CngKeyBlobFormat) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Export(System::Security::Cryptography::CngKeyBlobFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -545,6 +594,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngExportPolicies ExportPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.CngExportPolicies ExportPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.ExportPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExportPolicy As CngExportPolicies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngExportPolicies ExportPolicy { System::Security::Cryptography::CngExportPolicies get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -585,6 +636,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngProperty GetProperty (string name, System.Security.Cryptography.CngPropertyOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Security.Cryptography.CngProperty GetProperty(string name, valuetype System.Security.Cryptography.CngPropertyOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.GetProperty(System.String,System.Security.Cryptography.CngPropertyOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, options As CngPropertyOptions) As CngProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::CngProperty GetProperty(System::String ^ name, System::Security::Cryptography::CngPropertyOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -651,6 +704,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle Handle" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As SafeNCryptKeyHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeNCryptKeyHandle ^ Handle { Microsoft::Win32::SafeHandles::SafeNCryptKeyHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -694,6 +749,8 @@
       <MemberSignature Language="C#" Value="public bool HasProperty (string name, System.Security.Cryptography.CngPropertyOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasProperty(string name, valuetype System.Security.Cryptography.CngPropertyOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.HasProperty(System.String,System.Security.Cryptography.CngPropertyOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasProperty (name As String, options As CngPropertyOptions) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasProperty(System::String ^ name, System::Security::Cryptography::CngPropertyOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -748,10 +805,22 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Import">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new key by importing key material into the key storage provider (KSP).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Import">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Import (byte[] keyBlob, System.Security.Cryptography.CngKeyBlobFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Import(unsigned int8[] keyBlob, class System.Security.Cryptography.CngKeyBlobFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Import (keyBlob As Byte(), format As CngKeyBlobFormat) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Import(cli::array &lt;System::Byte&gt; ^ keyBlob, System::Security::Cryptography::CngKeyBlobFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -800,6 +869,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Import (byte[] keyBlob, System.Security.Cryptography.CngKeyBlobFormat format, System.Security.Cryptography.CngProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Import(unsigned int8[] keyBlob, class System.Security.Cryptography.CngKeyBlobFormat format, class System.Security.Cryptography.CngProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Import (keyBlob As Byte(), format As CngKeyBlobFormat, provider As CngProvider) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Import(cli::array &lt;System::Byte&gt; ^ keyBlob, System::Security::Cryptography::CngKeyBlobFormat ^ format, System::Security::Cryptography::CngProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -855,6 +926,8 @@
       <MemberSignature Language="C#" Value="public bool IsEphemeral { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEphemeral" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.IsEphemeral" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEphemeral As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEphemeral { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -907,6 +980,8 @@
       <MemberSignature Language="C#" Value="public bool IsMachineKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMachineKey" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.IsMachineKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMachineKey As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMachineKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -941,6 +1016,8 @@
       <MemberSignature Language="C#" Value="public string KeyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.KeyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -974,6 +1051,8 @@
       <MemberSignature Language="C#" Value="public int KeySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.KeySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1007,6 +1086,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngKeyUsages KeyUsage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.CngKeyUsages KeyUsage" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.KeyUsage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyUsage As CngKeyUsages" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngKeyUsages KeyUsage { System::Security::Cryptography::CngKeyUsages get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1036,10 +1117,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of an <see cref="T:System.Security.Cryptography.CngKey" /> object that represents an existing key.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Open">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Open (string keyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Open(string keyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Open(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (keyName As String) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Open(System::String ^ keyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1088,6 +1181,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Open (Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle keyHandle, System.Security.Cryptography.CngKeyHandleOpenOptions keyHandleOpenOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Open(class Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle keyHandle, valuetype System.Security.Cryptography.CngKeyHandleOpenOptions keyHandleOpenOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Open(Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle,System.Security.Cryptography.CngKeyHandleOpenOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (keyHandle As SafeNCryptKeyHandle, keyHandleOpenOptions As CngKeyHandleOpenOptions) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Open(Microsoft::Win32::SafeHandles::SafeNCryptKeyHandle ^ keyHandle, System::Security::Cryptography::CngKeyHandleOpenOptions keyHandleOpenOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1143,6 +1238,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Open (string keyName, System.Security.Cryptography.CngProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Open(string keyName, class System.Security.Cryptography.CngProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (keyName As String, provider As CngProvider) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Open(System::String ^ keyName, System::Security::Cryptography::CngProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1189,6 +1286,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.CngKey Open (string keyName, System.Security.Cryptography.CngProvider provider, System.Security.Cryptography.CngKeyOpenOptions openOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.CngKey Open(string keyName, class System.Security.Cryptography.CngProvider provider, valuetype System.Security.Cryptography.CngKeyOpenOptions openOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (keyName As String, provider As CngProvider, openOptions As CngKeyOpenOptions) As CngKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::CngKey ^ Open(System::String ^ keyName, System::Security::Cryptography::CngProvider ^ provider, System::Security::Cryptography::CngKeyOpenOptions openOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1242,6 +1341,8 @@
       <MemberSignature Language="C#" Value="public IntPtr ParentWindowHandle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ParentWindowHandle" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.ParentWindowHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentWindowHandle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ParentWindowHandle { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1288,6 +1389,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngProvider Provider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CngProvider Provider" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As CngProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngProvider ^ Provider { System::Security::Cryptography::CngProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1321,6 +1424,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle ProviderHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle ProviderHandle" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.ProviderHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderHandle As SafeNCryptProviderHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeNCryptProviderHandle ^ ProviderHandle { Microsoft::Win32::SafeHandles::SafeNCryptProviderHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1364,6 +1469,8 @@
       <MemberSignature Language="C#" Value="public void SetProperty (System.Security.Cryptography.CngProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty(valuetype System.Security.Cryptography.CngProperty property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKey.SetProperty(System.Security.Cryptography.CngProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (property As CngProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::Security::Cryptography::CngProperty property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1408,6 +1515,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngUIPolicy UIPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CngUIPolicy UIPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.UIPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UIPolicy As CngUIPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngUIPolicy ^ UIPolicy { System::Security::Cryptography::CngUIPolicy ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1448,6 +1557,8 @@
       <MemberSignature Language="C#" Value="public string UniqueName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKey.UniqueName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UniqueName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UniqueName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -1484,45 +1595,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Import">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new key by importing key material into the key storage provider (KSP).</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.Security.Cryptography.CngKey" /> object that represents a new key.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Open">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of an <see cref="T:System.Security.Cryptography.CngKey" /> object that represents an existing key.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Exists">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Checks for a named key in a specific key storage provider(KSP).</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

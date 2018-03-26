@@ -1,7 +1,9 @@
-<Type Name="X509KeyUsageFlags" FullName="System.Security.Cryptography.X509Certificates.X509KeyUsageFlags">
+﻿<Type Name="X509KeyUsageFlags" FullName="System.Security.Cryptography.X509Certificates.X509KeyUsageFlags">
   <TypeSignature Language="C#" Value="public enum X509KeyUsageFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509KeyUsageFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum X509KeyUsageFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class X509KeyUsageFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="CrlSign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags CrlSign = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.CrlSign" />
+      <MemberSignature Language="VB.NET" Value="CrlSign" />
+      <MemberSignature Language="C++ CLI" Value="CrlSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -60,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The key can be used to sign a certificate revocation list (CRL).</summary>
       </Docs>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="DataEncipherment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags DataEncipherment = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DataEncipherment" />
+      <MemberSignature Language="VB.NET" Value="DataEncipherment" />
+      <MemberSignature Language="C++ CLI" Value="DataEncipherment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -87,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The key can be used for data encryption.</summary>
       </Docs>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="DecipherOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags DecipherOnly = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DecipherOnly" />
+      <MemberSignature Language="VB.NET" Value="DecipherOnly" />
+      <MemberSignature Language="C++ CLI" Value="DecipherOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -114,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>The key can be used for decryption only.</summary>
       </Docs>
@@ -122,6 +133,8 @@
       <MemberSignature Language="C#" Value="DigitalSignature" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags DigitalSignature = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DigitalSignature" />
+      <MemberSignature Language="VB.NET" Value="DigitalSignature" />
+      <MemberSignature Language="C++ CLI" Value="DigitalSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -141,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The key can be used as a digital signature.</summary>
       </Docs>
@@ -149,6 +163,8 @@
       <MemberSignature Language="C#" Value="EncipherOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags EncipherOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.EncipherOnly" />
+      <MemberSignature Language="VB.NET" Value="EncipherOnly" />
+      <MemberSignature Language="C++ CLI" Value="EncipherOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -168,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The key can be used for encryption only.</summary>
       </Docs>
@@ -176,6 +193,8 @@
       <MemberSignature Language="C#" Value="KeyAgreement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags KeyAgreement = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyAgreement" />
+      <MemberSignature Language="VB.NET" Value="KeyAgreement" />
+      <MemberSignature Language="C++ CLI" Value="KeyAgreement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -195,6 +214,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The key can be used to determine key agreement, such as a key created using the Diffie-Hellman key agreement algorithm.</summary>
       </Docs>
@@ -203,6 +223,8 @@
       <MemberSignature Language="C#" Value="KeyCertSign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags KeyCertSign = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyCertSign" />
+      <MemberSignature Language="VB.NET" Value="KeyCertSign" />
+      <MemberSignature Language="C++ CLI" Value="KeyCertSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -222,6 +244,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The key can be used to sign certificates.</summary>
       </Docs>
@@ -230,6 +253,8 @@
       <MemberSignature Language="C#" Value="KeyEncipherment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags KeyEncipherment = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyEncipherment" />
+      <MemberSignature Language="VB.NET" Value="KeyEncipherment" />
+      <MemberSignature Language="C++ CLI" Value="KeyEncipherment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -249,6 +274,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The key can be used for key encryption.</summary>
       </Docs>
@@ -257,6 +283,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -276,6 +304,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No key usage parameters.</summary>
       </Docs>
@@ -284,6 +313,8 @@
       <MemberSignature Language="C#" Value="NonRepudiation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509KeyUsageFlags NonRepudiation = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.NonRepudiation" />
+      <MemberSignature Language="VB.NET" Value="NonRepudiation" />
+      <MemberSignature Language="C++ CLI" Value="NonRepudiation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -303,6 +334,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyUsageFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The key can be used for authentication.</summary>
       </Docs>

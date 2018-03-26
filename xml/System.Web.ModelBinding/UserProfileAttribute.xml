@@ -1,7 +1,9 @@
-<Type Name="UserProfileAttribute" FullName="System.Web.ModelBinding.UserProfileAttribute">
+﻿<Type Name="UserProfileAttribute" FullName="System.Web.ModelBinding.UserProfileAttribute">
   <TypeSignature Language="C#" Value="public sealed class UserProfileAttribute : Attribute, System.Web.ModelBinding.IValueProviderSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UserProfileAttribute extends System.Attribute implements class System.Web.ModelBinding.IValueProviderSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.UserProfileAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UserProfileAttribute&#xA;Inherits Attribute&#xA;Implements IValueProviderSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserProfileAttribute sealed : Attribute, System::Web::ModelBinding::IValueProviderSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public UserProfileAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.UserProfileAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserProfileAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,7 +61,11 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.IValueProvider GetValueProvider (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.IValueProvider GetValueProvider(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.UserProfileAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::ModelBinding::IValueProvider ^ GetValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.ModelBinding.IValueProviderSource.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

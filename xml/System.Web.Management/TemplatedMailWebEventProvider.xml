@@ -1,7 +1,9 @@
-<Type Name="TemplatedMailWebEventProvider" FullName="System.Web.Management.TemplatedMailWebEventProvider">
+﻿<Type Name="TemplatedMailWebEventProvider" FullName="System.Web.Management.TemplatedMailWebEventProvider">
   <TypeSignature Language="C#" Value="public sealed class TemplatedMailWebEventProvider : System.Web.Management.MailWebEventProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplatedMailWebEventProvider extends System.Web.Management.MailWebEventProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.TemplatedMailWebEventProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TemplatedMailWebEventProvider&#xA;Inherits MailWebEventProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplatedMailWebEventProvider sealed : System::Web::Management::MailWebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +119,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Management.MailEventNotificationInfo CurrentNotification { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.Management.MailEventNotificationInfo CurrentNotification" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.TemplatedMailWebEventProvider.CurrentNotification" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentNotification As MailEventNotificationInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Management::MailEventNotificationInfo ^ CurrentNotification { System::Web::Management::MailEventNotificationInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +147,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection config);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.TemplatedMailWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

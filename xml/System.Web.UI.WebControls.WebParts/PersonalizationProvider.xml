@@ -1,7 +1,9 @@
-<Type Name="PersonalizationProvider" FullName="System.Web.UI.WebControls.WebParts.PersonalizationProvider">
+﻿<Type Name="PersonalizationProvider" FullName="System.Web.UI.WebControls.WebParts.PersonalizationProvider">
   <TypeSignature Language="C#" Value="public abstract class PersonalizationProvider : System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PersonalizationProvider extends System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PersonalizationProvider&#xA;Inherits ProviderBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersonalizationProvider abstract : System::Configuration::Provider::ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected PersonalizationProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PersonalizationProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public abstract string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationProvider.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property ApplicationName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +102,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.IList CreateSupportedUserCapabilities ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IList CreateSupportedUserCapabilities() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.CreateSupportedUserCapabilities" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateSupportedUserCapabilities () As IList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IList ^ CreateSupportedUserCapabilities();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +130,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.PersonalizationScope DetermineInitialScope (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, System.Web.UI.WebControls.WebParts.PersonalizationState loadedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope DetermineInitialScope(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, class System.Web.UI.WebControls.WebParts.PersonalizationState loadedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.DetermineInitialScope(System.Web.UI.WebControls.WebParts.WebPartManager,System.Web.UI.WebControls.WebParts.PersonalizationState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::WebControls::WebParts::PersonalizationScope DetermineInitialScope(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager, System::Web::UI::WebControls::WebParts::PersonalizationState ^ loadedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +187,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IDictionary DetermineUserCapabilities (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionary DetermineUserCapabilities(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.DetermineUserCapabilities(System.Web.UI.WebControls.WebParts.WebPartManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionary ^ DetermineUserCapabilities(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +226,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindState (System.Web.UI.WebControls.WebParts.PersonalizationScope scope, System.Web.UI.WebControls.WebParts.PersonalizationStateQuery query, int pageIndex, int pageSize, out int totalRecords);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection FindState(valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope, class System.Web.UI.WebControls.WebParts.PersonalizationStateQuery query, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.FindState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.Web.UI.WebControls.WebParts.PersonalizationStateQuery,System.Int32,System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function FindState (scope As PersonalizationScope, query As PersonalizationStateQuery, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As PersonalizationStateInfoCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ FindState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope, System::Web::UI::WebControls::WebParts::PersonalizationStateQuery ^ query, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,6 +293,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetCountOfState (System.Web.UI.WebControls.WebParts.PersonalizationScope scope, System.Web.UI.WebControls.WebParts.PersonalizationStateQuery query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCountOfState(valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope, class System.Web.UI.WebControls.WebParts.PersonalizationStateQuery query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.Web.UI.WebControls.WebParts.PersonalizationStateQuery)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCountOfState (scope As PersonalizationScope, query As PersonalizationStateQuery) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetCountOfState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope, System::Web::UI::WebControls::WebParts::PersonalizationStateQuery ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -336,6 +350,7 @@
       <MemberSignature Language="C#" Value="protected abstract void LoadPersonalizationBlobs (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName, ref byte[] sharedDataBlob, ref byte[] userDataBlob);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadPersonalizationBlobs(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName, unsigned int8[]&amp; sharedDataBlob, unsigned int8[]&amp; userDataBlob) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.LoadPersonalizationBlobs(System.Web.UI.WebControls.WebParts.WebPartManager,System.String,System.String,System.Byte[]@,System.Byte[]@)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void LoadPersonalizationBlobs(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager, System::String ^ path, System::String ^ userName, cli::array &lt;System::Byte&gt; ^ % sharedDataBlob, cli::array &lt;System::Byte&gt; ^ % userDataBlob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,6 +393,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.PersonalizationState LoadPersonalizationState (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, bool ignoreCurrentUser);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.PersonalizationState LoadPersonalizationState(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, bool ignoreCurrentUser) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.LoadPersonalizationState(System.Web.UI.WebControls.WebParts.WebPartManager,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::WebControls::WebParts::PersonalizationState ^ LoadPersonalizationState(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager, bool ignoreCurrentUser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -425,6 +441,7 @@
       <MemberSignature Language="C#" Value="protected abstract void ResetPersonalizationBlob (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ResetPersonalizationBlob(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.ResetPersonalizationBlob(System.Web.UI.WebControls.WebParts.WebPartManager,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void ResetPersonalizationBlob(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager, System::String ^ path, System::String ^ userName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -459,6 +476,7 @@
       <MemberSignature Language="C#" Value="public virtual void ResetPersonalizationState (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetPersonalizationState(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.ResetPersonalizationState(System.Web.UI.WebControls.WebParts.WebPartManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetPersonalizationState(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,6 +513,8 @@
       <MemberSignature Language="C#" Value="public abstract int ResetState (System.Web.UI.WebControls.WebParts.PersonalizationScope scope, string[] paths, string[] usernames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ResetState(valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope, string[] paths, string[] usernames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.ResetState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.String[],System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResetState (scope As PersonalizationScope, paths As String(), usernames As String()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int ResetState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope, cli::array &lt;System::String ^&gt; ^ paths, cli::array &lt;System::String ^&gt; ^ usernames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -558,6 +578,8 @@
       <MemberSignature Language="C#" Value="public abstract int ResetUserState (string path, DateTime userInactiveSinceDate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ResetUserState(string path, valuetype System.DateTime userInactiveSinceDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.ResetUserState(System.String,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResetUserState (path As String, userInactiveSinceDate As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int ResetUserState(System::String ^ path, DateTime userInactiveSinceDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -607,6 +629,7 @@
       <MemberSignature Language="C#" Value="protected abstract void SavePersonalizationBlob (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName, byte[] dataBlob);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SavePersonalizationBlob(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName, unsigned int8[] dataBlob) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.SavePersonalizationBlob(System.Web.UI.WebControls.WebParts.WebPartManager,System.String,System.String,System.Byte[])" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void SavePersonalizationBlob(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager, System::String ^ path, System::String ^ userName, cli::array &lt;System::Byte&gt; ^ dataBlob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -643,6 +666,8 @@
       <MemberSignature Language="C#" Value="public virtual void SavePersonalizationState (System.Web.UI.WebControls.WebParts.PersonalizationState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SavePersonalizationState(class System.Web.UI.WebControls.WebParts.PersonalizationState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProvider.SavePersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationState)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SavePersonalizationState (state As PersonalizationState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SavePersonalizationState(System::Web::UI::WebControls::WebParts::PersonalizationState ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

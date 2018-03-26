@@ -1,7 +1,9 @@
-<Type Name="UGUID" FullName="Microsoft.VisualBasic.Compatibility.VB6.UGUID">
+﻿<Type Name="UGUID" FullName="Microsoft.VisualBasic.Compatibility.VB6.UGUID">
   <TypeSignature Language="C#" Value="public struct UGUID" />
   <TypeSignature Language="ILAsm" Value=".class public ansi sealed UGUID extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.UGUID" />
+  <TypeSignature Language="VB.NET" Value="Public Structure UGUID" />
+  <TypeSignature Language="C++ CLI" Value="public value class UGUID" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public Guid guid;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Guid guid" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.UGUID.guid" />
+      <MemberSignature Language="VB.NET" Value="Public guid As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: Guid guid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

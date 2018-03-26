@@ -1,7 +1,9 @@
-<Type Name="RibbonToolTipAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonToolTipAutomationPeer">
+﻿<Type Name="RibbonToolTipAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonToolTipAutomationPeer">
   <TypeSignature Language="C#" Value="public class RibbonToolTipAutomationPeer : System.Windows.Automation.Peers.ToolTipAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonToolTipAutomationPeer extends System.Windows.Automation.Peers.ToolTipAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonToolTipAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonToolTipAutomationPeer&#xA;Inherits ToolTipAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonToolTipAutomationPeer : System::Windows::Automation::Peers::ToolTipAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public RibbonToolTipAutomationPeer (System.Windows.Controls.Ribbon.RibbonToolTip owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonToolTip owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonToolTip)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonToolTip)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonToolTipAutomationPeer(System::Windows::Controls::Ribbon::RibbonToolTip ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.GetNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

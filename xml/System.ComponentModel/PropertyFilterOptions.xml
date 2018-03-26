@@ -1,7 +1,9 @@
-<Type Name="PropertyFilterOptions" FullName="System.ComponentModel.PropertyFilterOptions">
+﻿<Type Name="PropertyFilterOptions" FullName="System.ComponentModel.PropertyFilterOptions">
   <TypeSignature Language="C#" Value="public enum PropertyFilterOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyFilterOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyFilterOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PropertyFilterOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PropertyFilterOptions" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions All = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Return all properties.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Invalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions Invalid = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.Invalid" />
+      <MemberSignature Language="VB.NET" Value="Invalid" />
+      <MemberSignature Language="C++ CLI" Value="Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Return only those properties that are not valid given the current context of the object.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Return no properties</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="SetValues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions SetValues = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.SetValues" />
+      <MemberSignature Language="VB.NET" Value="SetValues" />
+      <MemberSignature Language="C++ CLI" Value="SetValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Return only those properties that have local values currently set.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="UnsetValues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions UnsetValues = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.UnsetValues" />
+      <MemberSignature Language="VB.NET" Value="UnsetValues" />
+      <MemberSignature Language="C++ CLI" Value="UnsetValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -106,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Return only those properties whose local values are not set, or do not have properties set in an external expression store (such as binding or deferred resource).</summary>
       </Docs>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="Valid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions Valid = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.Valid" />
+      <MemberSignature Language="VB.NET" Value="Valid" />
+      <MemberSignature Language="C++ CLI" Value="Valid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -122,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Return any property that is valid on the  object in the current scope.</summary>
       </Docs>

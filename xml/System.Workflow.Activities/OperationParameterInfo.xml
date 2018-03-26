@@ -1,7 +1,9 @@
-<Type Name="OperationParameterInfo" FullName="System.Workflow.Activities.OperationParameterInfo">
+﻿<Type Name="OperationParameterInfo" FullName="System.Workflow.Activities.OperationParameterInfo">
   <TypeSignature Language="C#" Value="public sealed class OperationParameterInfo : System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationParameterInfo extends System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.OperationParameterInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationParameterInfo&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationParameterInfo sealed : System::Workflow::ComponentModel::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.OperationParameterInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OperationParameterInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationParameterInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -54,6 +67,8 @@
       <MemberSignature Language="C#" Value="public OperationParameterInfo (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfo.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationParameterInfo(System::String ^ parameterName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -72,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ParameterAttributes Attributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.ParameterAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attributes As ParameterAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ParameterAttributes Attributes { System::Reflection::ParameterAttributes get(); void set(System::Reflection::ParameterAttributes value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -90,6 +107,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty AttributesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty AttributesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.OperationParameterInfo.AttributesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AttributesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ AttributesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -107,6 +126,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.OperationParameterInfo Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Activities.OperationParameterInfo Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfo.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As OperationParameterInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::OperationParameterInfo ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -126,6 +147,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -149,6 +172,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -168,6 +193,8 @@
       <MemberSignature Language="C#" Value="public bool IsIn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsIn" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.IsIn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIn As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIn { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -188,6 +215,8 @@
       <MemberSignature Language="C#" Value="public bool IsLcid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLcid" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.IsLcid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLcid As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLcid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -208,6 +237,8 @@
       <MemberSignature Language="C#" Value="public bool IsOptional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOptional" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.IsOptional" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOptional As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOptional { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -228,6 +259,8 @@
       <MemberSignature Language="C#" Value="public bool IsOut { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOut" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.IsOut" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOut As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOut { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -248,6 +281,8 @@
       <MemberSignature Language="C#" Value="public bool IsRetval { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRetval" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.IsRetval" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRetval As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRetval { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -268,6 +303,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -286,6 +323,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty NameProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty NameProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.OperationParameterInfo.NameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NameProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ NameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -303,6 +342,8 @@
       <MemberSignature Language="C#" Value="public Type ParameterType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ParameterType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.ParameterType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ParameterType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -321,6 +362,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ParameterTypeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ParameterTypeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.OperationParameterInfo.ParameterTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParameterTypeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ParameterTypeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -338,6 +381,8 @@
       <MemberSignature Language="C#" Value="public int Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfo.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Position { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -356,6 +401,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty PositionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty PositionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.OperationParameterInfo.PositionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PositionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ PositionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -369,14 +416,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.OperationParameterInfo" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="PageAction" FullName="System.Web.DynamicData.PageAction">
+﻿<Type Name="PageAction" FullName="System.Web.DynamicData.PageAction">
   <TypeSignature Language="C#" Value="public static class PageAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PageAction extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.PageAction" />
+  <TypeSignature Language="VB.NET" Value="Public Class PageAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageAction abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static string Details { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Details" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.PageAction.Details" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Details As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Details { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public static string Edit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Edit" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.PageAction.Edit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Edit As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Edit { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="public static string Insert { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Insert" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.PageAction.Insert" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Insert As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Insert { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -74,6 +82,8 @@
       <MemberSignature Language="C#" Value="public static string List { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string List" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.PageAction.List" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property List As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ List { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

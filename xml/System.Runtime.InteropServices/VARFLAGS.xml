@@ -1,7 +1,9 @@
-<Type Name="VARFLAGS" FullName="System.Runtime.InteropServices.VARFLAGS">
+﻿<Type Name="VARFLAGS" FullName="System.Runtime.InteropServices.VARFLAGS">
   <TypeSignature Language="C#" Value="public enum VARFLAGS" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed VARFLAGS extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.VARFLAGS" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VARFLAGS" />
+  <TypeSignature Language="C++ CLI" Value="public enum class VARFLAGS" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FBINDABLE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FBINDABLE = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FBINDABLE" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FBINDABLE" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FBINDABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The variable supports data binding.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FDEFAULTBIND" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FDEFAULTBIND = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDEFAULTBIND" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FDEFAULTBIND" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDEFAULTBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The variable is the single property that best represents the object. Only one variable in type information can have this attribute.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FDEFAULTCOLLELEM" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FDEFAULTCOLLELEM = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDEFAULTCOLLELEM" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FDEFAULTCOLLELEM" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDEFAULTCOLLELEM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Permits an optimization in which the compiler looks for a member named "xyz" on the type of "abc". If such a member is found and is flagged as an accessor function for an element of the default collection, then a call is generated to that member function. Permitted on members in dispinterfaces and interfaces; not permitted on modules.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FDISPLAYBIND" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FDISPLAYBIND = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDISPLAYBIND" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FDISPLAYBIND" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDISPLAYBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The variable is displayed to the user as bindable. <see cref="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FBINDABLE" /> must also be set.</summary>
       </Docs>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FHIDDEN" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FHIDDEN = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FHIDDEN" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FHIDDEN" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FHIDDEN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The variable should not be displayed to the user in a browser, although it exists and is bindable.</summary>
       </Docs>
@@ -119,6 +136,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FIMMEDIATEBIND" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FIMMEDIATEBIND = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FIMMEDIATEBIND" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FIMMEDIATEBIND" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FIMMEDIATEBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>The variable is mapped as individual bindable properties.</summary>
       </Docs>
@@ -136,6 +156,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FNONBROWSABLE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FNONBROWSABLE = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FNONBROWSABLE" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FNONBROWSABLE" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FNONBROWSABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +167,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The variable appears in an object browser, but not in a properties browser.</summary>
       </Docs>
@@ -153,6 +176,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FREADONLY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FREADONLY = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREADONLY" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FREADONLY" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREADONLY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Assignment to the variable should not be allowed.</summary>
       </Docs>
@@ -170,6 +196,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FREPLACEABLE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FREPLACEABLE = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREPLACEABLE" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FREPLACEABLE" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREPLACEABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +207,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Tags the interface as having default behaviors.</summary>
       </Docs>
@@ -187,6 +216,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FREQUESTEDIT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FREQUESTEDIT = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREQUESTEDIT" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FREQUESTEDIT" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREQUESTEDIT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +227,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>When set, any attempt to directly change the property results in a call to <see langword="IPropertyNotifySink::OnRequestEdit" />. The implementation of <see langword="OnRequestEdit" /> determines if the change is accepted.</summary>
       </Docs>
@@ -204,6 +236,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FRESTRICTED" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FRESTRICTED = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FRESTRICTED" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FRESTRICTED" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FRESTRICTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -213,6 +247,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The variable should not be accessible from macro languages. This flag is intended for system-level variables or variables that you do not want type browsers to display.</summary>
       </Docs>
@@ -221,6 +256,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FSOURCE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FSOURCE = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FSOURCE" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FSOURCE" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FSOURCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +267,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The variable returns an object that is a source of events.</summary>
       </Docs>
@@ -238,6 +276,8 @@
       <MemberSignature Language="C#" Value="VARFLAG_FUIDEFAULT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.VARFLAGS VARFLAG_FUIDEFAULT = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FUIDEFAULT" />
+      <MemberSignature Language="VB.NET" Value="VARFLAG_FUIDEFAULT" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FUIDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -247,6 +287,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.VARFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The variable is the default display in the user interface.</summary>
       </Docs>

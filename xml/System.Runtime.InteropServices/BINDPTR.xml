@@ -1,7 +1,9 @@
-<Type Name="BINDPTR" FullName="System.Runtime.InteropServices.BINDPTR">
+﻿<Type Name="BINDPTR" FullName="System.Runtime.InteropServices.BINDPTR">
   <TypeSignature Language="C#" Value="public struct BINDPTR" />
   <TypeSignature Language="ILAsm" Value=".class public sealed beforefieldinit BINDPTR extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.BINDPTR" />
+  <TypeSignature Language="VB.NET" Value="Public Structure BINDPTR" />
+  <TypeSignature Language="C++ CLI" Value="public value class BINDPTR" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lpfuncdesc;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lpfuncdesc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BINDPTR.lpfuncdesc" />
+      <MemberSignature Language="VB.NET" Value="Public lpfuncdesc As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lpfuncdesc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lptcomp;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lptcomp" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BINDPTR.lptcomp" />
+      <MemberSignature Language="VB.NET" Value="Public lptcomp As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lptcomp;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lpvardesc;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lpvardesc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BINDPTR.lpvardesc" />
+      <MemberSignature Language="VB.NET" Value="Public lpvardesc As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lpvardesc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Path" FullName="System.Windows.Shapes.Path">
+﻿<Type Name="Path" FullName="System.Windows.Shapes.Path">
   <TypeSignature Language="C#" Value="public sealed class Path : System.Windows.Shapes.Shape" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Path extends System.Windows.Shapes.Shape" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shapes.Path" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Path&#xA;Inherits Shape" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Path sealed : System::Windows::Shapes::Shape" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public Path ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Path.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Path();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry Data" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Path.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As Geometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Geometry ^ Data { System::Windows::Media::Geometry ^ get(); void set(System::Windows::Media::Geometry ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,6 +133,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DataProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DataProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Path.DataProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DataProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +153,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry DefiningGeometry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry DefiningGeometry" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Path.DefiningGeometry" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefiningGeometry As Geometry" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Media::Geometry ^ DefiningGeometry { System::Windows::Media::Geometry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

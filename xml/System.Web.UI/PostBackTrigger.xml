@@ -1,7 +1,9 @@
-<Type Name="PostBackTrigger" FullName="System.Web.UI.PostBackTrigger">
+﻿<Type Name="PostBackTrigger" FullName="System.Web.UI.PostBackTrigger">
   <TypeSignature Language="C#" Value="public class PostBackTrigger : System.Web.UI.UpdatePanelControlTrigger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostBackTrigger extends System.Web.UI.UpdatePanelControlTrigger" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PostBackTrigger" />
+  <TypeSignature Language="VB.NET" Value="Public Class PostBackTrigger&#xA;Inherits UpdatePanelControlTrigger" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PostBackTrigger : System::Web::UI::UpdatePanelControlTrigger" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public PostBackTrigger ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PostBackTrigger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PostBackTrigger();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public string ControlID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PostBackTrigger.ControlID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -84,9 +90,11 @@
       </Docs>
     </Member>
     <Member MemberName="HasTriggered">
-      <MemberSignature Language="C#" Value="protected override bool HasTriggered ();" />
+      <MemberSignature Language="C#" Value="protected internal override bool HasTriggered ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool HasTriggered() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PostBackTrigger.HasTriggered" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function HasTriggered () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool HasTriggered();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -111,9 +119,11 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected override void Initialize ();" />
+      <MemberSignature Language="C#" Value="protected internal override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PostBackTrigger.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -132,6 +142,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PostBackTrigger.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

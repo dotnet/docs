@@ -1,7 +1,9 @@
-<Type Name="CompilationSection" FullName="System.Web.Configuration.CompilationSection">
+﻿<Type Name="CompilationSection" FullName="System.Web.Configuration.CompilationSection">
   <TypeSignature Language="C#" Value="public sealed class CompilationSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompilationSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CompilationSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompilationSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompilationSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +70,8 @@
       <MemberSignature Language="C#" Value="public CompilationSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilationSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilationSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.AssemblyCollection Assemblies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.AssemblyCollection Assemblies" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.Assemblies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assemblies As AssemblyCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AssemblyCollection ^ Assemblies { System::Web::Configuration::AssemblyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +126,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyPostProcessorType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyPostProcessorType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.AssemblyPostProcessorType" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyPostProcessorType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyPostProcessorType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +151,8 @@
       <MemberSignature Language="C#" Value="public bool Batch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Batch" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.Batch" />
+      <MemberSignature Language="VB.NET" Value="Public Property Batch As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Batch { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +192,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan BatchTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan BatchTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.BatchTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property BatchTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan BatchTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +238,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.BuildProviderCollection BuildProviders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.BuildProviderCollection BuildProviders" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.BuildProviders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildProviders As BuildProviderCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::BuildProviderCollection ^ BuildProviders { System::Web::Configuration::BuildProviderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -257,6 +271,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.CodeSubDirectoriesCollection CodeSubDirectories { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.CodeSubDirectoriesCollection CodeSubDirectories" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.CodeSubDirectories" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeSubDirectories As CodeSubDirectoriesCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::CodeSubDirectoriesCollection ^ CodeSubDirectories { System::Web::Configuration::CodeSubDirectoriesCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,6 +303,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.CompilerCollection Compilers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.CompilerCollection Compilers" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.Compilers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Compilers As CompilerCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::CompilerCollection ^ Compilers { System::Web::Configuration::CompilerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -317,6 +335,8 @@
       <MemberSignature Language="C#" Value="public string ControlBuilderInterceptorType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlBuilderInterceptorType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.ControlBuilderInterceptorType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlBuilderInterceptorType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlBuilderInterceptorType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -340,6 +360,8 @@
       <MemberSignature Language="C#" Value="public bool Debug { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Debug" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.Debug" />
+      <MemberSignature Language="VB.NET" Value="Public Property Debug As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Debug { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -374,6 +396,8 @@
       <MemberSignature Language="C#" Value="public string DefaultLanguage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.DefaultLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultLanguage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultLanguage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -412,6 +436,8 @@
       <MemberSignature Language="C#" Value="public bool DisableObsoleteWarnings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisableObsoleteWarnings" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.DisableObsoleteWarnings" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableObsoleteWarnings As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableObsoleteWarnings { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -436,6 +462,8 @@
       <MemberSignature Language="C#" Value="public bool EnablePrefetchOptimization { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnablePrefetchOptimization" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.EnablePrefetchOptimization" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnablePrefetchOptimization As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnablePrefetchOptimization { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -470,6 +498,8 @@
       <MemberSignature Language="C#" Value="public bool Explicit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Explicit" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.Explicit" />
+      <MemberSignature Language="VB.NET" Value="Public Property Explicit As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Explicit { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -509,6 +539,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.ExpressionBuilderCollection ExpressionBuilders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ExpressionBuilderCollection ExpressionBuilders" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.ExpressionBuilders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionBuilders As ExpressionBuilderCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ExpressionBuilderCollection ^ ExpressionBuilders { System::Web::Configuration::ExpressionBuilderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -533,6 +565,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.FolderLevelBuildProviderCollection FolderLevelBuildProviders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.FolderLevelBuildProviderCollection FolderLevelBuildProviders" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.FolderLevelBuildProviders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FolderLevelBuildProviders As FolderLevelBuildProviderCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FolderLevelBuildProviderCollection ^ FolderLevelBuildProviders { System::Web::Configuration::FolderLevelBuildProviderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -564,6 +598,8 @@
       <MemberSignature Language="C#" Value="protected override object GetRuntimeObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetRuntimeObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilationSection.GetRuntimeObject" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetRuntimeObject () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetRuntimeObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -583,6 +619,8 @@
       <MemberSignature Language="C#" Value="public int MaxBatchGeneratedFileSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBatchGeneratedFileSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.MaxBatchGeneratedFileSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBatchGeneratedFileSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBatchGeneratedFileSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -621,6 +659,8 @@
       <MemberSignature Language="C#" Value="public int MaxBatchSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBatchSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.MaxBatchSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBatchSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBatchSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -654,6 +694,8 @@
       <MemberSignature Language="C#" Value="public int MaxConcurrentCompilations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentCompilations" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.MaxConcurrentCompilations" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentCompilations As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentCompilations { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -678,6 +720,8 @@
       <MemberSignature Language="C#" Value="public int NumRecompilesBeforeAppRestart { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumRecompilesBeforeAppRestart" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.NumRecompilesBeforeAppRestart" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumRecompilesBeforeAppRestart As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumRecompilesBeforeAppRestart { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -719,6 +763,8 @@
       <MemberSignature Language="C#" Value="public bool OptimizeCompilations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OptimizeCompilations" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.OptimizeCompilations" />
+      <MemberSignature Language="VB.NET" Value="Public Property OptimizeCompilations As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OptimizeCompilations { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -743,6 +789,8 @@
       <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilationSection.PostDeserialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -761,6 +809,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.ProfileGuidedOptimizationsFlags ProfileGuidedOptimizations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.ProfileGuidedOptimizationsFlags ProfileGuidedOptimizations" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.ProfileGuidedOptimizations" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProfileGuidedOptimizations As ProfileGuidedOptimizationsFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProfileGuidedOptimizationsFlags ProfileGuidedOptimizations { System::Web::Configuration::ProfileGuidedOptimizationsFlags get(); void set(System::Web::Configuration::ProfileGuidedOptimizationsFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -791,6 +841,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -809,6 +861,8 @@
       <MemberSignature Language="C#" Value="protected override void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilationSection.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -827,6 +881,8 @@
       <MemberSignature Language="C#" Value="public bool Strict { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Strict" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.Strict" />
+      <MemberSignature Language="VB.NET" Value="Public Property Strict As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Strict { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -866,6 +922,8 @@
       <MemberSignature Language="C#" Value="public string TargetFramework { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFramework" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.TargetFramework" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFramework As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFramework { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -901,6 +959,8 @@
       <MemberSignature Language="C#" Value="public string TempDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TempDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.TempDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property TempDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TempDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -934,6 +994,8 @@
       <MemberSignature Language="C#" Value="public bool UrlLinePragmas { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UrlLinePragmas" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilationSection.UrlLinePragmas" />
+      <MemberSignature Language="VB.NET" Value="Public Property UrlLinePragmas As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UrlLinePragmas { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

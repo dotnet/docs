@@ -1,7 +1,9 @@
-<Type Name="Stapling" FullName="System.Printing.Stapling">
+﻿<Type Name="Stapling" FullName="System.Printing.Stapling">
   <TypeSignature Language="C#" Value="public enum Stapling" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Stapling extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.Stapling" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Stapling" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Stapling" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling None = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -54,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The document is not stapled.</summary>
       </Docs>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="SaddleStitch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling SaddleStitch = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.SaddleStitch" />
+      <MemberSignature Language="VB.NET" Value="SaddleStitch" />
+      <MemberSignature Language="C++ CLI" Value="SaddleStitch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -70,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Multiple staples along the fold line. Also called saddle-stitch stapling.</summary>
       </Docs>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="StapleBottomLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleBottomLeft = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleBottomLeft" />
+      <MemberSignature Language="VB.NET" Value="StapleBottomLeft" />
+      <MemberSignature Language="C++ CLI" Value="StapleBottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A single staple in the lower-left corner.</summary>
       </Docs>
@@ -94,6 +105,8 @@
       <MemberSignature Language="C#" Value="StapleBottomRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleBottomRight = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleBottomRight" />
+      <MemberSignature Language="VB.NET" Value="StapleBottomRight" />
+      <MemberSignature Language="C++ CLI" Value="StapleBottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -102,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A single staple in the lower-right corner.</summary>
       </Docs>
@@ -110,6 +124,8 @@
       <MemberSignature Language="C#" Value="StapleDualBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleDualBottom = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleDualBottom" />
+      <MemberSignature Language="VB.NET" Value="StapleDualBottom" />
+      <MemberSignature Language="C++ CLI" Value="StapleDualBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -118,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Two staples along the lower edge.</summary>
       </Docs>
@@ -126,6 +143,8 @@
       <MemberSignature Language="C#" Value="StapleDualLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleDualLeft = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleDualLeft" />
+      <MemberSignature Language="VB.NET" Value="StapleDualLeft" />
+      <MemberSignature Language="C++ CLI" Value="StapleDualLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -134,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Two staples along the left edge.</summary>
       </Docs>
@@ -142,6 +162,8 @@
       <MemberSignature Language="C#" Value="StapleDualRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleDualRight = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleDualRight" />
+      <MemberSignature Language="VB.NET" Value="StapleDualRight" />
+      <MemberSignature Language="C++ CLI" Value="StapleDualRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -150,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Two staples along the right edge.</summary>
       </Docs>
@@ -158,6 +181,8 @@
       <MemberSignature Language="C#" Value="StapleDualTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleDualTop = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleDualTop" />
+      <MemberSignature Language="VB.NET" Value="StapleDualTop" />
+      <MemberSignature Language="C++ CLI" Value="StapleDualTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -166,6 +191,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Two staples along the upper edge.</summary>
       </Docs>
@@ -174,6 +200,8 @@
       <MemberSignature Language="C#" Value="StapleTopLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleTopLeft = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleTopLeft" />
+      <MemberSignature Language="VB.NET" Value="StapleTopLeft" />
+      <MemberSignature Language="C++ CLI" Value="StapleTopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -182,6 +210,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A single staple in the upper-left corner.</summary>
       </Docs>
@@ -190,6 +219,8 @@
       <MemberSignature Language="C#" Value="StapleTopRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleTopRight = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleTopRight" />
+      <MemberSignature Language="VB.NET" Value="StapleTopRight" />
+      <MemberSignature Language="C++ CLI" Value="StapleTopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -198,6 +229,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>A single staple in the upper-right corner.</summary>
       </Docs>
@@ -206,6 +238,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -214,6 +248,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Stapling</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

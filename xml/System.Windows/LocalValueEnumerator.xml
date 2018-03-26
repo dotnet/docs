@@ -1,7 +1,9 @@
-<Type Name="LocalValueEnumerator" FullName="System.Windows.LocalValueEnumerator">
+﻿<Type Name="LocalValueEnumerator" FullName="System.Windows.LocalValueEnumerator">
   <TypeSignature Language="C#" Value="public struct LocalValueEnumerator : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LocalValueEnumerator extends System.ValueType implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalValueEnumerator" />
+  <TypeSignature Language="VB.NET" Value="Public Structure LocalValueEnumerator&#xA;Implements IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="public value class LocalValueEnumerator : System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalValueEnumerator.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.LocalValueEntry Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.LocalValueEntry Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalValueEnumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As LocalValueEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::LocalValueEntry Current { System::Windows::LocalValueEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -117,6 +125,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -136,7 +146,12 @@
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -156,6 +171,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.LocalValueEnumerator obj1, System.Windows.LocalValueEnumerator obj2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.LocalValueEnumerator obj1, valuetype System.Windows.LocalValueEnumerator obj2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.op_Equality(System.Windows.LocalValueEnumerator,System.Windows.LocalValueEnumerator)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (obj1 As LocalValueEnumerator, obj2 As LocalValueEnumerator) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::LocalValueEnumerator obj1, System::Windows::LocalValueEnumerator obj2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -188,6 +205,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.LocalValueEnumerator obj1, System.Windows.LocalValueEnumerator obj2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.LocalValueEnumerator obj1, valuetype System.Windows.LocalValueEnumerator obj2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.op_Inequality(System.Windows.LocalValueEnumerator,System.Windows.LocalValueEnumerator)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (obj1 As LocalValueEnumerator, obj2 As LocalValueEnumerator) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::LocalValueEnumerator obj1, System::Windows::LocalValueEnumerator obj2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -220,7 +239,12 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -238,7 +262,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalValueEnumerator.System#Collections#IEnumerator#Current" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

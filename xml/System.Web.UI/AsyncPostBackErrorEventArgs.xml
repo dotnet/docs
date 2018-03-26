@@ -1,7 +1,9 @@
-<Type Name="AsyncPostBackErrorEventArgs" FullName="System.Web.UI.AsyncPostBackErrorEventArgs">
+﻿<Type Name="AsyncPostBackErrorEventArgs" FullName="System.Web.UI.AsyncPostBackErrorEventArgs">
   <TypeSignature Language="C#" Value="public class AsyncPostBackErrorEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AsyncPostBackErrorEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.AsyncPostBackErrorEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class AsyncPostBackErrorEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsyncPostBackErrorEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,7 @@
       <MemberSignature Language="C#" Value="public AsyncPostBackErrorEventArgs (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.AsyncPostBackErrorEventArgs.#ctor(System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncPostBackErrorEventArgs(Exception ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.AsyncPostBackErrorEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

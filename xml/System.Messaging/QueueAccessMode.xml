@@ -1,7 +1,9 @@
-<Type Name="QueueAccessMode" FullName="System.Messaging.QueueAccessMode">
+﻿<Type Name="QueueAccessMode" FullName="System.Messaging.QueueAccessMode">
   <TypeSignature Language="C#" Value="public enum QueueAccessMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueueAccessMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.QueueAccessMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum QueueAccessMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class QueueAccessMode" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Peek" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode Peek = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.Peek" />
+      <MemberSignature Language="VB.NET" Value="Peek" />
+      <MemberSignature Language="C++ CLI" Value="Peek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The queue can only peek at messages.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="PeekAndAdmin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode PeekAndAdmin = int32(160)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.PeekAndAdmin" />
+      <MemberSignature Language="VB.NET" Value="PeekAndAdmin" />
+      <MemberSignature Language="C++ CLI" Value="PeekAndAdmin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
+      <MemberValue>160</MemberValue>
       <Docs>
         <summary>The queue can peek at messages. It can also be purged.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Receive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode Receive = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.Receive" />
+      <MemberSignature Language="VB.NET" Value="Receive" />
+      <MemberSignature Language="C++ CLI" Value="Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The queue can peek at or receive messages.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="ReceiveAndAdmin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode ReceiveAndAdmin = int32(129)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.ReceiveAndAdmin" />
+      <MemberSignature Language="VB.NET" Value="ReceiveAndAdmin" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveAndAdmin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -83,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
+      <MemberValue>129</MemberValue>
       <Docs>
         <summary>The queue can receive messages. It can also be purged.</summary>
       </Docs>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="Send" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode Send = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.Send" />
+      <MemberSignature Language="VB.NET" Value="Send" />
+      <MemberSignature Language="C++ CLI" Value="Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -99,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The queue can only send messages.</summary>
       </Docs>
@@ -107,6 +124,8 @@
       <MemberSignature Language="C#" Value="SendAndReceive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode SendAndReceive = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.SendAndReceive" />
+      <MemberSignature Language="VB.NET" Value="SendAndReceive" />
+      <MemberSignature Language="C++ CLI" Value="SendAndReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -115,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The queue can peek at, receive, or send messages.</summary>
       </Docs>

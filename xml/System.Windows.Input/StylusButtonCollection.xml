@@ -1,7 +1,9 @@
-<Type Name="StylusButtonCollection" FullName="System.Windows.Input.StylusButtonCollection">
+﻿<Type Name="StylusButtonCollection" FullName="System.Windows.Input.StylusButtonCollection">
   <TypeSignature Language="C#" Value="public class StylusButtonCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusButton&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusButtonCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Input.StylusButton&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusButtonCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class StylusButtonCollection&#xA;Inherits ReadOnlyCollection(Of StylusButton)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StylusButtonCollection : System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Input::StylusButton ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusButton GetStylusButtonByGuid (Guid guid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusButton GetStylusButtonByGuid(valuetype System.Guid guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusButtonCollection.GetStylusButtonByGuid(System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StylusButton ^ GetStylusButtonByGuid(Guid guid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

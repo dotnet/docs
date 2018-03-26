@@ -1,7 +1,9 @@
-<Type Name="TrackingChannel" FullName="System.Workflow.Runtime.Tracking.TrackingChannel">
+﻿<Type Name="TrackingChannel" FullName="System.Workflow.Runtime.Tracking.TrackingChannel">
   <TypeSignature Language="C#" Value="public abstract class TrackingChannel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TrackingChannel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingChannel" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingChannel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingChannel abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="protected TrackingChannel ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingChannel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrackingChannel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -49,9 +53,11 @@
       </Docs>
     </Member>
     <Member MemberName="InstanceCompletedOrTerminated">
-      <MemberSignature Language="C#" Value="protected abstract void InstanceCompletedOrTerminated ();" />
+      <MemberSignature Language="C#" Value="protected internal abstract void InstanceCompletedOrTerminated ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InstanceCompletedOrTerminated() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingChannel.InstanceCompletedOrTerminated" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub InstanceCompletedOrTerminated ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void InstanceCompletedOrTerminated();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -74,9 +80,11 @@
       </Docs>
     </Member>
     <Member MemberName="Send">
-      <MemberSignature Language="C#" Value="protected abstract void Send (System.Workflow.Runtime.Tracking.TrackingRecord record);" />
+      <MemberSignature Language="C#" Value="protected internal abstract void Send (System.Workflow.Runtime.Tracking.TrackingRecord record);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Send(class System.Workflow.Runtime.Tracking.TrackingRecord record) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingChannel.Send(System.Workflow.Runtime.Tracking.TrackingRecord)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Send (record As TrackingRecord)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Send(System::Workflow::Runtime::Tracking::TrackingRecord ^ record);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

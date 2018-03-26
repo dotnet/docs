@@ -1,7 +1,9 @@
-<Type Name="RC2CryptoServiceProvider" FullName="System.Security.Cryptography.RC2CryptoServiceProvider">
+﻿<Type Name="RC2CryptoServiceProvider" FullName="System.Security.Cryptography.RC2CryptoServiceProvider">
   <TypeSignature Language="C#" Value="public sealed class RC2CryptoServiceProvider : System.Security.Cryptography.RC2" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RC2CryptoServiceProvider extends System.Security.Cryptography.RC2" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RC2CryptoServiceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RC2CryptoServiceProvider&#xA;Inherits RC2" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RC2CryptoServiceProvider sealed : System::Security::Cryptography::RC2" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public RC2CryptoServiceProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RC2CryptoServiceProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,10 +96,22 @@
         <exception cref="T:System.InvalidOperationException">A non-compliant FIPS algorithm was found.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDecryptor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric decryptor object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateDecryptor">
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[] rgbIV);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.CreateDecryptor(System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,10 +174,22 @@
  The algorithm key size was not available.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateEncryptor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric encryptor object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateEncryptor">
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[] rgbIV);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +256,8 @@
       <MemberSignature Language="C#" Value="public override int EffectiveKeySize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EffectiveKeySize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2CryptoServiceProvider.EffectiveKeySize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EffectiveKeySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EffectiveKeySize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -256,6 +286,8 @@
       <MemberSignature Language="C#" Value="public override void GenerateIV ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateIV() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.GenerateIV" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateIV ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateIV();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -298,6 +330,8 @@
       <MemberSignature Language="C#" Value="public override void GenerateKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.GenerateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateKey ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -342,6 +376,8 @@
       <MemberSignature Language="C#" Value="public bool UseSalt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSalt" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2CryptoServiceProvider.UseSalt" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSalt As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSalt { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -387,25 +423,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateDecryptor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a symmetric decryptor object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateEncryptor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a symmetric encryptor object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

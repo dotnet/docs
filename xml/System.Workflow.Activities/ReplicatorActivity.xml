@@ -1,7 +1,9 @@
-<Type Name="ReplicatorActivity" FullName="System.Workflow.Activities.ReplicatorActivity">
+﻿<Type Name="ReplicatorActivity" FullName="System.Workflow.Activities.ReplicatorActivity">
   <TypeSignature Language="C#" Value="public sealed class ReplicatorActivity : System.Workflow.ComponentModel.CompositeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReplicatorActivity extends System.Workflow.ComponentModel.CompositeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ReplicatorActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReplicatorActivity&#xA;Inherits CompositeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReplicatorActivity sealed : System::Workflow::ComponentModel::CompositeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,10 +61,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ReplicatorActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ReplicatorActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReplicatorActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -88,6 +101,8 @@
       <MemberSignature Language="C#" Value="public ReplicatorActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ReplicatorActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReplicatorActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -106,6 +121,8 @@
       <MemberSignature Language="C#" Value="public bool AllChildrenComplete { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllChildrenComplete" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorActivity.AllChildrenComplete" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllChildrenComplete As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllChildrenComplete { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -116,7 +133,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,6 +157,8 @@
       <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Cancel (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Cancel(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ReplicatorActivity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Cancel (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Cancel(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -162,6 +181,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Activities.ReplicatorChildEventArgs&gt; ChildCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Activities.ReplicatorChildEventArgs&gt; ChildCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.ReplicatorActivity.ChildCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ChildCompleted As EventHandler(Of ReplicatorChildEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Activities::ReplicatorChildEventArgs ^&gt; ^ ChildCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -184,6 +205,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ChildCompletedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ChildCompletedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ReplicatorActivity.ChildCompletedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildCompletedEvent As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ChildCompletedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -208,6 +231,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Activities.ReplicatorChildEventArgs&gt; ChildInitialized;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Activities.ReplicatorChildEventArgs&gt; ChildInitialized" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.ReplicatorActivity.ChildInitialized" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ChildInitialized As EventHandler(Of ReplicatorChildEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Activities::ReplicatorChildEventArgs ^&gt; ^ ChildInitialized;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -245,6 +270,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ChildInitializedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ChildInitializedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ReplicatorActivity.ChildInitializedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildInitializedEvent As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ChildInitializedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -269,6 +296,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Completed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Completed" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.ReplicatorActivity.Completed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Completed As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Completed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -291,6 +320,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty CompletedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty CompletedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ReplicatorActivity.CompletedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CompletedEvent As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CompletedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -315,6 +346,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList CurrentChildData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList CurrentChildData" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorActivity.CurrentChildData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentChildData As IList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ CurrentChildData { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -325,7 +358,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -341,6 +374,8 @@
       <MemberSignature Language="C#" Value="public int CurrentIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentIndex" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorActivity.CurrentIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -351,7 +386,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -367,6 +402,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt; DynamicActivities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; DynamicActivities" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorActivity.DynamicActivities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynamicActivities As ICollection(Of Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ DynamicActivities { System::Collections::Generic::ICollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -377,7 +414,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -400,6 +437,8 @@
       <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ReplicatorActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -422,6 +461,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.ExecutionType ExecutionType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.Activities.ExecutionType ExecutionType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorActivity.ExecutionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExecutionType As ExecutionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::ExecutionType ExecutionType { System::Workflow::Activities::ExecutionType get(); void set(System::Workflow::Activities::ExecutionType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -432,7 +473,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -458,6 +499,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ExecutionTypeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ExecutionTypeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ReplicatorActivity.ExecutionTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExecutionTypeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ExecutionTypeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -482,6 +525,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList InitialChildData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList InitialChildData" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorActivity.InitialChildData" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialChildData As IList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ InitialChildData { System::Collections::IList ^ get(); void set(System::Collections::IList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -495,7 +540,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.Design.BindUITypeEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -514,6 +559,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty InitialChildDataProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty InitialChildDataProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ReplicatorActivity.InitialChildDataProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InitialChildDataProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InitialChildDataProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -538,6 +585,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Initialized;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Initialized" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.ReplicatorActivity.Initialized" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Initialized As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Initialized;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -570,6 +619,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty InitializedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty InitializedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ReplicatorActivity.InitializedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InitializedEvent As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InitializedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -587,6 +638,8 @@
       <MemberSignature Language="C#" Value="public bool IsExecuting (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsExecuting(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ReplicatorActivity.IsExecuting(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsExecuting (index As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsExecuting(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -610,6 +663,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClosed (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClosed(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ReplicatorActivity.OnClosed(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed (provider As IServiceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -631,6 +686,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityCondition UntilCondition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.ActivityCondition UntilCondition" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorActivity.UntilCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property UntilCondition As ActivityCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityCondition ^ UntilCondition { System::Workflow::ComponentModel::ActivityCondition ^ get(); void set(System::Workflow::ComponentModel::ActivityCondition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -671,6 +728,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty UntilConditionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty UntilConditionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ReplicatorActivity.UntilConditionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UntilConditionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ UntilConditionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -691,14 +750,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="RefreshProperties" FullName="System.ComponentModel.RefreshProperties">
+﻿<Type Name="RefreshProperties" FullName="System.ComponentModel.RefreshProperties">
   <TypeSignature Language="C#" Value="public enum RefreshProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RefreshProperties extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.RefreshProperties" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RefreshProperties" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RefreshProperties" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.RefreshProperties All = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshProperties.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -62,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.RefreshProperties</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The properties should be requeried and the view should be refreshed.</summary>
         <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.RefreshProperties None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshProperties.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -89,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.RefreshProperties</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No refresh is necessary.</summary>
         <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
@@ -98,6 +106,8 @@
       <MemberSignature Language="C#" Value="Repaint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.RefreshProperties Repaint = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshProperties.Repaint" />
+      <MemberSignature Language="VB.NET" Value="Repaint" />
+      <MemberSignature Language="C++ CLI" Value="Repaint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -116,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.RefreshProperties</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The view should be refreshed.</summary>
         <remarks>

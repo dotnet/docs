@@ -1,7 +1,9 @@
-<Type Name="TextRunBounds" FullName="System.Windows.Media.TextFormatting.TextRunBounds">
+﻿<Type Name="TextRunBounds" FullName="System.Windows.Media.TextFormatting.TextRunBounds">
   <TypeSignature Language="C#" Value="public sealed class TextRunBounds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextRunBounds extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextRunBounds" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextRunBounds" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextRunBounds sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunBounds.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect Rectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Rectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunBounds.Rectangle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rectangle As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Rectangle { System::Windows::Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.TextRun TextRun { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextRun TextRun" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunBounds.TextRun" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextRun As TextRun" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextRun ^ TextRun { System::Windows::Media::TextFormatting::TextRun ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="public int TextSourceCharacterIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TextSourceCharacterIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunBounds.TextSourceCharacterIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextSourceCharacterIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TextSourceCharacterIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

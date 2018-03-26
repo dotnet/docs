@@ -1,7 +1,9 @@
-<Type Name="Overlapped" FullName="System.Threading.Overlapped">
+﻿<Type Name="Overlapped" FullName="System.Threading.Overlapped">
   <TypeSignature Language="C#" Value="public class Overlapped" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Overlapped extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Overlapped" />
+  <TypeSignature Language="VB.NET" Value="Public Class Overlapped" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Overlapped" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,10 +40,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Overlapped" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Overlapped ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Overlapped();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +80,8 @@
       <MemberSignature Language="C#" Value="public Overlapped (int offsetLo, int offsetHi, int hEvent, IAsyncResult ar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 offsetLo, int32 offsetHi, int32 hEvent, class System.IAsyncResult ar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.#ctor(System.Int32,System.Int32,System.Int32,System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (offsetLo As Integer, offsetHi As Integer, hEvent As Integer, ar As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Overlapped(int offsetLo, int offsetHi, int hEvent, IAsyncResult ^ ar);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +129,8 @@
       <MemberSignature Language="C#" Value="public Overlapped (int offsetLo, int offsetHi, IntPtr hEvent, IAsyncResult ar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 offsetLo, int32 offsetHi, native int hEvent, class System.IAsyncResult ar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.#ctor(System.Int32,System.Int32,System.IntPtr,System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (offsetLo As Integer, offsetHi As Integer, hEvent As IntPtr, ar As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Overlapped(int offsetLo, int offsetHi, IntPtr hEvent, IAsyncResult ^ ar);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +173,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult AsyncResult { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IAsyncResult AsyncResult" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Overlapped.AsyncResult" />
+      <MemberSignature Language="VB.NET" Value="Public Property AsyncResult As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IAsyncResult ^ AsyncResult { IAsyncResult ^ get(); void set(IAsyncResult ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +202,8 @@
       <MemberSignature Language="C#" Value="public int EventHandle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EventHandle" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Overlapped.EventHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Property EventHandle As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventHandle { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -223,6 +245,8 @@
       <MemberSignature Language="C#" Value="public IntPtr EventHandleIntPtr { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int EventHandleIntPtr" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Overlapped.EventHandleIntPtr" />
+      <MemberSignature Language="VB.NET" Value="Public Property EventHandleIntPtr As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr EventHandleIntPtr { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -262,6 +286,7 @@
       <MemberSignature Language="C#" Value="public static void Free (System.Threading.NativeOverlapped* nativeOverlappedPtr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Free(valuetype System.Threading.NativeOverlapped* nativeOverlappedPtr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.Free(System.Threading.NativeOverlapped*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Free(System::Threading::NativeOverlapped* nativeOverlappedPtr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -307,6 +332,8 @@
       <MemberSignature Language="C#" Value="public int OffsetHigh { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OffsetHigh" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Overlapped.OffsetHigh" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffsetHigh As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OffsetHigh { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -334,6 +361,8 @@
       <MemberSignature Language="C#" Value="public int OffsetLow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OffsetLow" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Overlapped.OffsetLow" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffsetLow As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OffsetLow { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -357,10 +386,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Pack">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Packs the current instance into a <see cref="T:System.Threading.NativeOverlapped" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Pack">
       <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* Pack (System.Threading.IOCompletionCallback iocb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* Pack(class System.Threading.IOCompletionCallback iocb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.Pack(System.Threading.IOCompletionCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* Pack(System::Threading::IOCompletionCallback ^ iocb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -412,6 +452,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* Pack (System.Threading.IOCompletionCallback iocb, object userData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* Pack(class System.Threading.IOCompletionCallback iocb, object userData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.Pack(System.Threading.IOCompletionCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* Pack(System::Threading::IOCompletionCallback ^ iocb, System::Object ^ userData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -467,6 +508,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Overlapped Unpack (System.Threading.NativeOverlapped* nativeOverlappedPtr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Overlapped Unpack(valuetype System.Threading.NativeOverlapped* nativeOverlappedPtr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.Unpack(System.Threading.NativeOverlapped*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Overlapped ^ Unpack(System::Threading::NativeOverlapped* nativeOverlappedPtr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -509,10 +551,21 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UnsafePack">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Packs the current instance into a <see cref="T:System.Threading.NativeOverlapped" /> structure. Does not propagate the calling stack.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UnsafePack">
       <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* UnsafePack (System.Threading.IOCompletionCallback iocb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* UnsafePack(class System.Threading.IOCompletionCallback iocb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.UnsafePack(System.Threading.IOCompletionCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* UnsafePack(System::Threading::IOCompletionCallback ^ iocb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -566,6 +619,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* UnsafePack (System.Threading.IOCompletionCallback iocb, object userData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* UnsafePack(class System.Threading.IOCompletionCallback iocb, object userData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Overlapped.UnsafePack(System.Threading.IOCompletionCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* UnsafePack(System::Threading::IOCompletionCallback ^ iocb, System::Object ^ userData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -620,35 +674,5 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="UnsafePack">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Packs the current instance into a <see cref="T:System.Threading.NativeOverlapped" /> structure. Does not propagate the calling stack.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.Overlapped" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Pack">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Packs the current instance into a <see cref="T:System.Threading.NativeOverlapped" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

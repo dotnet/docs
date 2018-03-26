@@ -1,7 +1,9 @@
-<Type Name="ISelectionService" FullName="System.ComponentModel.Design.ISelectionService">
+﻿<Type Name="ISelectionService" FullName="System.ComponentModel.Design.ISelectionService">
   <TypeSignature Language="C#" Value="public interface ISelectionService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISelectionService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ISelectionService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISelectionService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISelectionService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public bool GetComponentSelected (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetComponentSelected(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.GetComponentSelected(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetComponentSelected (component As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetComponentSelected(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection GetSelectedComponents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetSelectedComponents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.GetSelectedComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedComponents () As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetSelectedComponents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +119,8 @@
       <MemberSignature Language="C#" Value="public object PrimarySelection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object PrimarySelection" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ISelectionService.PrimarySelection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimarySelection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PrimarySelection { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,9 +152,11 @@
       </Docs>
     </Member>
     <Member MemberName="SelectionChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler SelectionChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler SelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.ISelectionService.SelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Event SelectionChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,9 +201,11 @@
       </Docs>
     </Member>
     <Member MemberName="SelectionChanging">
-      <MemberSignature Language="C#" Value="public event EventHandler SelectionChanging;" />
+      <MemberSignature Language="C#" Value="event EventHandler SelectionChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanging" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.ISelectionService.SelectionChanging" />
+      <MemberSignature Language="VB.NET" Value="Event SelectionChanging As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,6 +253,8 @@
       <MemberSignature Language="C#" Value="public int SelectionCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionCount" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ISelectionService.SelectionCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -264,10 +278,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetSelectedComponents">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects the specified components.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetSelectedComponents">
       <MemberSignature Language="C#" Value="public void SetSelectedComponents (System.Collections.ICollection components);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelectedComponents(class System.Collections.ICollection components) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.SetSelectedComponents(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSelectedComponents (components As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedComponents(System::Collections::ICollection ^ components);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,6 +331,8 @@
       <MemberSignature Language="C#" Value="public void SetSelectedComponents (System.Collections.ICollection components, System.ComponentModel.Design.SelectionTypes selectionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelectedComponents(class System.Collections.ICollection components, valuetype System.ComponentModel.Design.SelectionTypes selectionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.SetSelectedComponents(System.Collections.ICollection,System.ComponentModel.Design.SelectionTypes)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSelectedComponents (components As ICollection, selectionType As SelectionTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedComponents(System::Collections::ICollection ^ components, System::ComponentModel::Design::SelectionTypes selectionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -341,15 +369,5 @@
         <altmember cref="T:System.ComponentModel.Design.SelectionTypes" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetSelectedComponents">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Selects the specified components.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

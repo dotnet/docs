@@ -1,7 +1,9 @@
-<Type Name="AdvancedFilters" FullName="System.DirectoryServices.AccountManagement.AdvancedFilters">
+﻿<Type Name="AdvancedFilters" FullName="System.DirectoryServices.AccountManagement.AdvancedFilters">
   <TypeSignature Language="C#" Value="public class AdvancedFilters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdvancedFilters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.AdvancedFilters" />
+  <TypeSignature Language="VB.NET" Value="Public Class AdvancedFilters" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AdvancedFilters" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,9 +33,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected AdvancedFilters (System.DirectoryServices.AccountManagement.Principal p);" />
+      <MemberSignature Language="C#" Value="protected internal AdvancedFilters (System.DirectoryServices.AccountManagement.Principal p);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.Principal p) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.#ctor(System.DirectoryServices.AccountManagement.Principal)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (p As Principal)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; AdvancedFilters(System::DirectoryServices::AccountManagement::Principal ^ p);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public void AccountExpirationDate (DateTime expirationTime, System.DirectoryServices.AccountManagement.MatchType match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AccountExpirationDate(valuetype System.DateTime expirationTime, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.AccountExpirationDate(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AccountExpirationDate (expirationTime As DateTime, match As MatchType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AccountExpirationDate(DateTime expirationTime, System::DirectoryServices::AccountManagement::MatchType match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -123,6 +129,8 @@ foreach (UserPrincipal u in results)
       <MemberSignature Language="C#" Value="public void AccountLockoutTime (DateTime lockoutTime, System.DirectoryServices.AccountManagement.MatchType match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AccountLockoutTime(valuetype System.DateTime lockoutTime, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.AccountLockoutTime(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AccountLockoutTime (lockoutTime As DateTime, match As MatchType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AccountLockoutTime(DateTime lockoutTime, System::DirectoryServices::AccountManagement::MatchType match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -184,6 +192,8 @@ foreach (UserPrincipal u in results)
       <MemberSignature Language="C#" Value="protected void AdvancedFilterSet (string attribute, object value, Type objectType, System.DirectoryServices.AccountManagement.MatchType mt);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AdvancedFilterSet(string attribute, object value, class System.Type objectType, valuetype System.DirectoryServices.AccountManagement.MatchType mt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.AdvancedFilterSet(System.String,System.Object,System.Type,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AdvancedFilterSet (attribute As String, value As Object, objectType As Type, mt As MatchType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AdvancedFilterSet(System::String ^ attribute, System::Object ^ value, Type ^ objectType, System::DirectoryServices::AccountManagement::MatchType mt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -239,6 +249,8 @@ public class InetOrgPersonSearchFilter : AdvancedFilters
       <MemberSignature Language="C#" Value="public void BadLogonCount (int badLogonCount, System.DirectoryServices.AccountManagement.MatchType match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BadLogonCount(int32 badLogonCount, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.BadLogonCount(System.Int32,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BadLogonCount (badLogonCount As Integer, match As MatchType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BadLogonCount(int badLogonCount, System::DirectoryServices::AccountManagement::MatchType match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -293,6 +305,8 @@ foreach (UserPrincipal u in results)
       <MemberSignature Language="C#" Value="public void LastBadPasswordAttempt (DateTime lastAttempt, System.DirectoryServices.AccountManagement.MatchType match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LastBadPasswordAttempt(valuetype System.DateTime lastAttempt, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.LastBadPasswordAttempt(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LastBadPasswordAttempt (lastAttempt As DateTime, match As MatchType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LastBadPasswordAttempt(DateTime lastAttempt, System::DirectoryServices::AccountManagement::MatchType match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -354,6 +368,8 @@ foreach (UserPrincipal u in results)
       <MemberSignature Language="C#" Value="public void LastLogonTime (DateTime logonTime, System.DirectoryServices.AccountManagement.MatchType match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LastLogonTime(valuetype System.DateTime logonTime, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.LastLogonTime(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LastLogonTime (logonTime As DateTime, match As MatchType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LastLogonTime(DateTime logonTime, System::DirectoryServices::AccountManagement::MatchType match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -413,6 +429,8 @@ foreach (UserPrincipal u in results)
       <MemberSignature Language="C#" Value="public void LastPasswordSetTime (DateTime passwordSetTime, System.DirectoryServices.AccountManagement.MatchType match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LastPasswordSetTime(valuetype System.DateTime passwordSetTime, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.LastPasswordSetTime(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LastPasswordSetTime (passwordSetTime As DateTime, match As MatchType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LastPasswordSetTime(DateTime passwordSetTime, System::DirectoryServices::AccountManagement::MatchType match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

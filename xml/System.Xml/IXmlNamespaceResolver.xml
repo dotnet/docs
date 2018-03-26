@@ -1,7 +1,9 @@
-<Type Name="IXmlNamespaceResolver" FullName="System.Xml.IXmlNamespaceResolver">
+﻿<Type Name="IXmlNamespaceResolver" FullName="System.Xml.IXmlNamespaceResolver">
   <TypeSignature Language="C#" Value="public interface IXmlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlNamespaceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlNamespaceResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXmlNamespaceResolver" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlNamespaceResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; GetNamespacesInScope (System.Xml.XmlNamespaceScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GetNamespacesInScope(valuetype System.Xml.XmlNamespaceScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNamespacesInScope (scope As XmlNamespaceScope) As IDictionary(Of String, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GetNamespacesInScope(System::Xml::XmlNamespaceScope scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -77,6 +81,8 @@
       <MemberSignature Language="C#" Value="public string LookupNamespace (string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LookupNamespace(string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LookupNamespace (prefix As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupNamespace(System::String ^ prefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -129,6 +135,8 @@
       <MemberSignature Language="C#" Value="public string LookupPrefix (string namespaceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LookupPrefix(string namespaceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LookupPrefix (namespaceName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupPrefix(System::String ^ namespaceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

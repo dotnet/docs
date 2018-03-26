@@ -1,7 +1,9 @@
-<Type Name="DsmlDirectoryIdentifier" FullName="System.DirectoryServices.Protocols.DsmlDirectoryIdentifier">
+﻿<Type Name="DsmlDirectoryIdentifier" FullName="System.DirectoryServices.Protocols.DsmlDirectoryIdentifier">
   <TypeSignature Language="C#" Value="public class DsmlDirectoryIdentifier : System.DirectoryServices.Protocols.DirectoryIdentifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DsmlDirectoryIdentifier extends System.DirectoryServices.Protocols.DirectoryIdentifier" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" />
+  <TypeSignature Language="VB.NET" Value="Public Class DsmlDirectoryIdentifier&#xA;Inherits DirectoryIdentifier" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DsmlDirectoryIdentifier : System::DirectoryServices::Protocols::DirectoryIdentifier" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public DsmlDirectoryIdentifier (Uri serverUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri serverUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serverUri As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DsmlDirectoryIdentifier(Uri ^ serverUri);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public Uri ServerUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ServerUri" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier.ServerUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ServerUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

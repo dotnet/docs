@@ -1,7 +1,9 @@
-<Type Name="IXsltContextVariable" FullName="System.Xml.Xsl.IXsltContextVariable">
+﻿<Type Name="IXsltContextVariable" FullName="System.Xml.Xsl.IXsltContextVariable">
   <TypeSignature Language="C#" Value="public interface IXsltContextVariable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXsltContextVariable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.IXsltContextVariable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXsltContextVariable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXsltContextVariable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,7 @@
       <MemberSignature Language="C#" Value="public object Evaluate (System.Xml.Xsl.XsltContext xsltContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Evaluate(class System.Xml.Xsl.XsltContext xsltContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.IXsltContextVariable.Evaluate(System.Xml.Xsl.XsltContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Evaluate(System::Xml::Xsl::XsltContext ^ xsltContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -63,6 +66,8 @@
       <MemberSignature Language="C#" Value="public bool IsLocal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocal" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextVariable.IsLocal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocal As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLocal { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -91,6 +96,8 @@
       <MemberSignature Language="C#" Value="public bool IsParam { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsParam" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextVariable.IsParam" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsParam As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsParam { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -119,6 +126,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathResultType VariableType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XPath.XPathResultType VariableType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextVariable.VariableType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VariableType As XPathResultType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XPath::XPathResultType VariableType { System::Xml::XPath::XPathResultType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

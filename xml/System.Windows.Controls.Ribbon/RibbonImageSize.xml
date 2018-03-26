@@ -1,7 +1,9 @@
-<Type Name="RibbonImageSize" FullName="System.Windows.Controls.Ribbon.RibbonImageSize">
+﻿<Type Name="RibbonImageSize" FullName="System.Windows.Controls.Ribbon.RibbonImageSize">
   <TypeSignature Language="C#" Value="public enum RibbonImageSize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RibbonImageSize extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonImageSize" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RibbonImageSize" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RibbonImageSize" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Collapsed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonImageSize Collapsed = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonImageSize.Collapsed" />
+      <MemberSignature Language="VB.NET" Value="Collapsed" />
+      <MemberSignature Language="C++ CLI" Value="Collapsed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonImageSize</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The image is collapsed.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Large" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonImageSize Large = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonImageSize.Large" />
+      <MemberSignature Language="VB.NET" Value="Large" />
+      <MemberSignature Language="C++ CLI" Value="Large" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonImageSize</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The large image is shown.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Small" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonImageSize Small = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonImageSize.Small" />
+      <MemberSignature Language="VB.NET" Value="Small" />
+      <MemberSignature Language="C++ CLI" Value="Small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonImageSize</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The small image is shown.</summary>
       </Docs>

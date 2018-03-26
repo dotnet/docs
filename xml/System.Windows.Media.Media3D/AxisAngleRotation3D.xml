@@ -1,7 +1,9 @@
-<Type Name="AxisAngleRotation3D" FullName="System.Windows.Media.Media3D.AxisAngleRotation3D">
+﻿<Type Name="AxisAngleRotation3D" FullName="System.Windows.Media.Media3D.AxisAngleRotation3D">
   <TypeSignature Language="C#" Value="public sealed class AxisAngleRotation3D : System.Windows.Media.Media3D.Rotation3D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AxisAngleRotation3D extends System.Windows.Media.Media3D.Rotation3D" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.AxisAngleRotation3D" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AxisAngleRotation3D&#xA;Inherits Rotation3D" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AxisAngleRotation3D sealed : System::Windows::Media::Media3D::Rotation3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of a 3-D rotation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AxisAngleRotation3D ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AxisAngleRotation3D.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AxisAngleRotation3D();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public AxisAngleRotation3D (System.Windows.Media.Media3D.Vector3D axis, double angle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Vector3D axis, float64 angle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AxisAngleRotation3D.#ctor(System.Windows.Media.Media3D.Vector3D,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (axis As Vector3D, angle As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AxisAngleRotation3D(System::Windows::Media::Media3D::Vector3D axis, double angle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +94,8 @@
       <MemberSignature Language="C#" Value="public double Angle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Angle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.AxisAngleRotation3D.Angle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Angle As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Angle { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +135,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AngleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AngleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.AxisAngleRotation3D.AngleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AngleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AngleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D Axis { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Vector3D Axis" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.AxisAngleRotation3D.Axis" />
+      <MemberSignature Language="VB.NET" Value="Public Property Axis As Vector3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3D Axis { System::Windows::Media::Media3D::Vector3D get(); void set(System::Windows::Media::Media3D::Vector3D value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +206,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AxisProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AxisProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.AxisAngleRotation3D.AxisProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AxisProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AxisProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -212,6 +235,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.AxisAngleRotation3D Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.AxisAngleRotation3D Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AxisAngleRotation3D.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As AxisAngleRotation3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::AxisAngleRotation3D ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -240,6 +265,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.AxisAngleRotation3D CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.AxisAngleRotation3D CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AxisAngleRotation3D.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As AxisAngleRotation3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::AxisAngleRotation3D ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -268,6 +295,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AxisAngleRotation3D.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,14 +312,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of a 3-D rotation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

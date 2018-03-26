@@ -1,7 +1,9 @@
-<Type Name="DirectorySynchronization" FullName="System.DirectoryServices.DirectorySynchronization">
+﻿<Type Name="DirectorySynchronization" FullName="System.DirectoryServices.DirectorySynchronization">
   <TypeSignature Language="C#" Value="public class DirectorySynchronization" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectorySynchronization extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectorySynchronization" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectorySynchronization" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectorySynchronization" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +83,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public DirectorySynchronization ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySynchronization();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -97,6 +101,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public DirectorySynchronization (byte[] cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cookie As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySynchronization(cli::array &lt;System::Byte&gt; ^ cookie);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -116,6 +122,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public DirectorySynchronization (System.DirectoryServices.DirectorySynchronization sync);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.DirectorySynchronization sync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.#ctor(System.DirectoryServices.DirectorySynchronization)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sync As DirectorySynchronization)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySynchronization(System::DirectoryServices::DirectorySynchronization ^ sync);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -135,6 +143,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public DirectorySynchronization (System.DirectoryServices.DirectorySynchronizationOptions option);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.DirectorySynchronizationOptions option) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.#ctor(System.DirectoryServices.DirectorySynchronizationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (option As DirectorySynchronizationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySynchronization(System::DirectoryServices::DirectorySynchronizationOptions option);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -154,6 +164,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public DirectorySynchronization (System.DirectoryServices.DirectorySynchronizationOptions option, byte[] cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.DirectorySynchronizationOptions option, unsigned int8[] cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.#ctor(System.DirectoryServices.DirectorySynchronizationOptions,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (option As DirectorySynchronizationOptions, cookie As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySynchronization(System::DirectoryServices::DirectorySynchronizationOptions option, cli::array &lt;System::Byte&gt; ^ cookie);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -175,6 +187,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectorySynchronization Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectorySynchronization Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As DirectorySynchronization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectorySynchronization ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -195,6 +209,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public byte[] GetDirectorySynchronizationCookie ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetDirectorySynchronizationCookie() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.GetDirectorySynchronizationCookie" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDirectorySynchronizationCookie () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetDirectorySynchronizationCookie();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -222,6 +238,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectorySynchronizationOptions Option { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.DirectorySynchronizationOptions Option" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySynchronization.Option" />
+      <MemberSignature Language="VB.NET" Value="Public Property Option As DirectorySynchronizationOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectorySynchronizationOptions Option { System::DirectoryServices::DirectorySynchronizationOptions get(); void set(System::DirectoryServices::DirectorySynchronizationOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -257,6 +275,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public void ResetDirectorySynchronizationCookie ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetDirectorySynchronizationCookie() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.ResetDirectorySynchronizationCookie" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetDirectorySynchronizationCookie ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetDirectorySynchronizationCookie();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -276,6 +296,8 @@ foreach(SearchResult res in src.FindAll() )
       <MemberSignature Language="C#" Value="public void ResetDirectorySynchronizationCookie (byte[] cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetDirectorySynchronizationCookie(unsigned int8[] cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySynchronization.ResetDirectorySynchronizationCookie(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetDirectorySynchronizationCookie (cookie As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetDirectorySynchronizationCookie(cli::array &lt;System::Byte&gt; ^ cookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

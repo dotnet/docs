@@ -1,7 +1,9 @@
-<Type Name="FirstMatchCodeGroup" FullName="System.Security.Policy.FirstMatchCodeGroup">
+﻿<Type Name="FirstMatchCodeGroup" FullName="System.Security.Policy.FirstMatchCodeGroup">
   <TypeSignature Language="C#" Value="public sealed class FirstMatchCodeGroup : System.Security.Policy.CodeGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FirstMatchCodeGroup extends System.Security.Policy.CodeGroup" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.FirstMatchCodeGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FirstMatchCodeGroup&#xA;Inherits CodeGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FirstMatchCodeGroup sealed : System::Security::Policy::CodeGroup" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public FirstMatchCodeGroup (System.Security.Policy.IMembershipCondition membershipCondition, System.Security.Policy.PolicyStatement policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Policy.IMembershipCondition membershipCondition, class System.Security.Policy.PolicyStatement policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.FirstMatchCodeGroup.#ctor(System.Security.Policy.IMembershipCondition,System.Security.Policy.PolicyStatement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (membershipCondition As IMembershipCondition, policy As PolicyStatement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FirstMatchCodeGroup(System::Security::Policy::IMembershipCondition ^ membershipCondition, System::Security::Policy::PolicyStatement ^ policy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +99,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.CodeGroup Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.CodeGroup Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.FirstMatchCodeGroup.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As CodeGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +141,8 @@
       <MemberSignature Language="C#" Value="public override string MergeLogic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MergeLogic" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.FirstMatchCodeGroup.MergeLogic" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MergeLogic As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MergeLogic { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +177,7 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.PolicyStatement Resolve (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.FirstMatchCodeGroup.Resolve(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -222,6 +231,7 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.CodeGroup ResolveMatchingCodeGroups (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.FirstMatchCodeGroup.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

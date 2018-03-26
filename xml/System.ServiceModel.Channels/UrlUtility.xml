@@ -1,7 +1,9 @@
-<Type Name="UrlUtility" FullName="System.ServiceModel.Channels.UrlUtility">
+﻿<Type Name="UrlUtility" FullName="System.ServiceModel.Channels.UrlUtility">
   <TypeSignature Language="C#" Value="public static class UrlUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UrlUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.UrlUtility" />
+  <TypeSignature Language="VB.NET" Value="Public Class UrlUtility" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UrlUtility abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static string UrlDecode (string s, System.Text.Encoding e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlDecode(string s, class System.Text.Encoding e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UrlUtility.UrlDecode(System.String,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (s As String, e As Encoding) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ s, System::Text::Encoding ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public static string UrlEncode (string s, System.Text.Encoding e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string s, class System.Text.Encoding e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UrlUtility.UrlEncode(System.String,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (s As String, e As Encoding) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ s, System::Text::Encoding ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

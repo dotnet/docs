@@ -1,7 +1,9 @@
-<Type Name="IImmutableList&lt;T&gt;" FullName="System.Collections.Immutable.IImmutableList&lt;T&gt;">
+﻿<Type Name="IImmutableList&lt;T&gt;" FullName="System.Collections.Immutable.IImmutableList&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IImmutableList&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IImmutableList`1&lt;T&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.IImmutableList`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IImmutableList(Of T)&#xA;Implements IEnumerable(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IImmutableList : System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::IReadOnlyList&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; Add (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; Add(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As T) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ Add(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; AddRange (System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; AddRange(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddRange (items As IEnumerable(Of T)) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ AddRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -93,6 +99,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clear () As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (T item, int index, int count, System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(!T item, int32 index, int32 count, class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; equalityComparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As T, index As Integer, count As Integer, equalityComparer As IEqualityComparer(Of T)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(T item, int index, int count, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; Insert (int index, T element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; Insert(int32 index, !T element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.Insert(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, element As T) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ Insert(int index, T element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -170,6 +182,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; InsertRange (int index, System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; InsertRange(int32 index, class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertRange (index As Integer, items As IEnumerable(Of T)) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ InsertRange(int index, System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -196,6 +210,8 @@
       <MemberSignature Language="C#" Value="public int LastIndexOf (T item, int index, int count, System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(!T item, int32 index, int32 count, class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; equalityComparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (item As T, index As Integer, count As Integer, equalityComparer As IEqualityComparer(Of T)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(T item, int index, int count, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -226,6 +242,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; Remove (T value, System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; Remove(!T value, class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; equalityComparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (value As T, equalityComparer As IEqualityComparer(Of T)) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ Remove(T value, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -252,6 +270,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; RemoveAll (Predicate&lt;T&gt; match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; RemoveAll(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.RemoveAll(System.Predicate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAll (match As Predicate(Of T)) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ RemoveAll(Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -276,6 +296,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAt (index As Integer) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -300,6 +322,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; RemoveRange (System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; RemoveRange(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; equalityComparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveRange (items As IEnumerable(Of T), equalityComparer As IEqualityComparer(Of T)) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ RemoveRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -326,6 +350,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; RemoveRange (int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; RemoveRange(int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.RemoveRange(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveRange (index As Integer, count As Integer) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ RemoveRange(int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -352,6 +378,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; Replace (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; Replace(!T oldValue, !T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; equalityComparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As T, newValue As T, equalityComparer As IEqualityComparer(Of T)) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ Replace(T oldValue, T newValue, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -382,6 +410,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.IImmutableList&lt;T&gt; SetItem (int index, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; SetItem(int32 index, !T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableList`1.SetItem(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetItem (index As Integer, value As T) As IImmutableList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableList&lt;T&gt; ^ SetItem(int index, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

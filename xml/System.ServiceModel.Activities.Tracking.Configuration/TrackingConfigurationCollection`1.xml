@@ -1,7 +1,9 @@
-<Type Name="TrackingConfigurationCollection&lt;TConfigurationElement&gt;" FullName="System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection&lt;TConfigurationElement&gt;">
+﻿<Type Name="TrackingConfigurationCollection&lt;TConfigurationElement&gt;" FullName="System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection&lt;TConfigurationElement&gt;">
   <TypeSignature Language="C#" Value="public class TrackingConfigurationCollection&lt;TConfigurationElement&gt; : System.Configuration.ConfigurationElementCollection where TConfigurationElement : TrackingConfigurationElementnew()" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TrackingConfigurationCollection`1&lt;.ctor (class System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement) TConfigurationElement&gt; extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class TrackingConfigurationCollection(Of TConfigurationElement)&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TConfigurationElement&gt;&#xA; where TConfigurationElement : TrackingConfigurationElementgcnew()public ref class TrackingConfigurationCollection : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public TrackingConfigurationCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingConfigurationCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public void Add (TConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(!TConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (element As TConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(TConfigurationElement element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -100,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -119,6 +131,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -141,6 +155,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (TConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(!TConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.IndexOf(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As TConfigurationElement) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(TConfigurationElement element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -163,6 +179,8 @@
       <MemberSignature Language="C#" Value="public TConfigurationElement this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TConfigurationElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TConfigurationElement default[int] { TConfigurationElement get(int index); void set(int index, TConfigurationElement value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -185,6 +203,8 @@
       <MemberSignature Language="C#" Value="public void Remove (TConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(!TConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As TConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(TConfigurationElement element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -206,6 +226,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

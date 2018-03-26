@@ -1,7 +1,9 @@
-<Type Name="SetIndexBinder" FullName="System.Dynamic.SetIndexBinder">
+﻿<Type Name="SetIndexBinder" FullName="System.Dynamic.SetIndexBinder">
   <TypeSignature Language="C#" Value="public abstract class SetIndexBinder : System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SetIndexBinder extends System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.SetIndexBinder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SetIndexBinder&#xA;Inherits DynamicMetaObjectBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SetIndexBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -32,6 +34,7 @@
       <MemberSignature Language="C#" Value="protected SetIndexBinder (System.Dynamic.CallInfo callInfo);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Dynamic.CallInfo callInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.SetIndexBinder.#ctor(System.Dynamic.CallInfo)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SetIndexBinder(System::Dynamic::CallInfo ^ callInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -63,6 +66,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Dynamic.DynamicMetaObject Bind (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Dynamic.DynamicMetaObject Bind(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.SetIndexBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -100,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Dynamic.CallInfo CallInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Dynamic.CallInfo CallInfo" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.SetIndexBinder.CallInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallInfo As CallInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Dynamic::CallInfo ^ CallInfo { System::Dynamic::CallInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -127,10 +134,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FallbackSetIndex">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the binding of the dynamic set index operation if the target dynamic object cannot bind.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FallbackSetIndex">
       <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject FallbackSetIndex (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] indexes, System.Dynamic.DynamicMetaObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Dynamic.DynamicMetaObject FallbackSetIndex(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] indexes, class System.Dynamic.DynamicMetaObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.SetIndexBinder.FallbackSetIndex(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FallbackSetIndex (target As DynamicMetaObject, indexes As DynamicMetaObject(), value As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackSetIndex(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ indexes, System::Dynamic::DynamicMetaObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -170,6 +188,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackSetIndex (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] indexes, System.Dynamic.DynamicMetaObject value, System.Dynamic.DynamicMetaObject errorSuggestion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject FallbackSetIndex(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] indexes, class System.Dynamic.DynamicMetaObject value, class System.Dynamic.DynamicMetaObject errorSuggestion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.SetIndexBinder.FallbackSetIndex(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackSetIndex (target As DynamicMetaObject, indexes As DynamicMetaObject(), value As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackSetIndex(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ indexes, System::Dynamic::DynamicMetaObject ^ value, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -211,6 +231,8 @@
       <MemberSignature Language="C#" Value="public override sealed Type ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.SetIndexBinder.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -238,14 +260,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FallbackSetIndex">
-      <AssemblyInfo>
-        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs the binding of the dynamic set index operation if the target dynamic object cannot bind.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

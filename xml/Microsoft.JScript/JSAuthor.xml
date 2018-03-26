@@ -1,7 +1,9 @@
-<Type Name="JSAuthor" FullName="Microsoft.JScript.JSAuthor">
+﻿<Type Name="JSAuthor" FullName="Microsoft.JScript.JSAuthor">
   <TypeSignature Language="C#" Value="public class JSAuthor : Microsoft.JScript.IAuthorServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JSAuthor extends System.Object implements class Microsoft.JScript.IAuthorServices" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSAuthor" />
+  <TypeSignature Language="VB.NET" Value="Public Class JSAuthor&#xA;Implements IAuthorServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSAuthor : Microsoft::JScript::IAuthorServices" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public JSAuthor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSAuthor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSAuthor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,7 +57,12 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.JScript.IParseText GetCodeSense ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IParseText GetCodeSense() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSAuthor.GetCodeSense" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCodeSense () As IParseText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::IParseText ^ GetCodeSense();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IAuthorServices.GetCodeSense</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -75,7 +84,12 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.JScript.IColorizeText GetColorizer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IColorizeText GetColorizer() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSAuthor.GetColorizer" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetColorizer () As IColorizeText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::IColorizeText ^ GetColorizer();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IAuthorServices.GetColorizer</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>

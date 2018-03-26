@@ -1,7 +1,9 @@
-<Type Name="DetailsViewCommandEventHandler" FullName="System.Web.UI.WebControls.DetailsViewCommandEventHandler">
+﻿<Type Name="DetailsViewCommandEventHandler" FullName="System.Web.UI.WebControls.DetailsViewCommandEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DetailsViewCommandEventHandler(object sender, DetailsViewCommandEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DetailsViewCommandEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewCommandEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DetailsViewCommandEventHandler(sender As Object, e As DetailsViewCommandEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DetailsViewCommandEventHandler(System::Object ^ sender, DetailsViewCommandEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

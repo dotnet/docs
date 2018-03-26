@@ -1,7 +1,9 @@
-<Type Name="DataGridRowsPresenter" FullName="System.Windows.Controls.Primitives.DataGridRowsPresenter">
+﻿<Type Name="DataGridRowsPresenter" FullName="System.Windows.Controls.Primitives.DataGridRowsPresenter">
   <TypeSignature Language="C#" Value="public class DataGridRowsPresenter : System.Windows.Controls.VirtualizingStackPanel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridRowsPresenter extends System.Windows.Controls.VirtualizingStackPanel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DataGridRowsPresenter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridRowsPresenter&#xA;Inherits VirtualizingStackPanel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridRowsPresenter : System::Windows::Controls::VirtualizingStackPanel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public DataGridRowsPresenter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowsPresenter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridRowsPresenter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowsPresenter.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="protected override void OnCleanUpVirtualizedItem (System.Windows.Controls.CleanUpVirtualizedItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCleanUpVirtualizedItem(class System.Windows.Controls.CleanUpVirtualizedItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowsPresenter.OnCleanUpVirtualizedItem(System.Windows.Controls.CleanUpVirtualizedItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCleanUpVirtualizedItem (e As CleanUpVirtualizedItemEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCleanUpVirtualizedItem(System::Windows::Controls::CleanUpVirtualizedItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="protected override void OnIsItemsHostChanged (bool oldIsItemsHost, bool newIsItemsHost);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnIsItemsHostChanged(bool oldIsItemsHost, bool newIsItemsHost) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowsPresenter.OnIsItemsHostChanged(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsItemsHostChanged (oldIsItemsHost As Boolean, newIsItemsHost As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsItemsHostChanged(bool oldIsItemsHost, bool newIsItemsHost);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +140,8 @@
       <MemberSignature Language="C#" Value="protected override void OnViewportSizeChanged (System.Windows.Size oldViewportSize, System.Windows.Size newViewportSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnViewportSizeChanged(valuetype System.Windows.Size oldViewportSize, valuetype System.Windows.Size newViewportSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowsPresenter.OnViewportSizeChanged(System.Windows.Size,System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnViewportSizeChanged (oldViewportSize As Size, newViewportSize As Size)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnViewportSizeChanged(System::Windows::Size oldViewportSize, System::Windows::Size newViewportSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

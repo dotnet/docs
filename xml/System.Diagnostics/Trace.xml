@@ -1,7 +1,9 @@
-<Type Name="Trace" FullName="System.Diagnostics.Trace">
+﻿<Type Name="Trace" FullName="System.Diagnostics.Trace">
   <TypeSignature Language="C#" Value="public sealed class Trace" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Trace extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Trace" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Trace" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Trace sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,10 +87,22 @@
     <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="Assert">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks for a condition; if the condition is <see langword="false" />, outputs messages and displays a message box that shows the call stack.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Assert">
       <MemberSignature Language="C#" Value="public static void Assert (bool condition);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Assert(bool condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Assert(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Assert (condition As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assert(bool condition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -169,6 +183,8 @@
       <MemberSignature Language="C#" Value="public static void Assert (bool condition, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Assert(bool condition, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Assert(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Assert (condition As Boolean, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assert(bool condition, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -251,6 +267,8 @@
       <MemberSignature Language="C#" Value="public static void Assert (bool condition, string message, string detailMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Assert(bool condition, string message, string detailMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Assert(System.Boolean,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Assert (condition As Boolean, message As String, detailMessage As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assert(bool condition, System::String ^ message, System::String ^ detailMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -335,6 +353,8 @@
       <MemberSignature Language="C#" Value="public static bool AutoFlush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool AutoFlush" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.AutoFlush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property AutoFlush As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AutoFlush { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -391,6 +411,8 @@
       <MemberSignature Language="C#" Value="public static void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -450,6 +472,8 @@
       <MemberSignature Language="C#" Value="public static System.Diagnostics.CorrelationManager CorrelationManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.CorrelationManager CorrelationManager" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.CorrelationManager" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CorrelationManager As CorrelationManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::CorrelationManager ^ CorrelationManager { System::Diagnostics::CorrelationManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -486,10 +510,22 @@
         <altmember cref="T:System.Diagnostics.CorrelationManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fail">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Emits an error message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Fail">
       <MemberSignature Language="C#" Value="public static void Fail (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Fail(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Fail(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Fail (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Fail(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -560,6 +596,8 @@
       <MemberSignature Language="C#" Value="public static void Fail (string message, string detailMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Fail(string message, string detailMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Fail(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Fail (message As String, detailMessage As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Fail(System::String ^ message, System::String ^ detailMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -632,6 +670,8 @@
       <MemberSignature Language="C#" Value="public static void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -688,6 +728,8 @@
       <MemberSignature Language="C#" Value="public static void Indent ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Indent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Indent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Indent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Indent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -744,6 +786,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static int IndentLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 IndentLevel" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.IndentLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property IndentLevel As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int IndentLevel { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -807,6 +851,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static int IndentSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 IndentSize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.IndentSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property IndentSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int IndentSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -862,6 +908,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceListenerCollection Listeners { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceListenerCollection Listeners" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.Listeners" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Listeners As TraceListenerCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::TraceListenerCollection ^ Listeners { System::Diagnostics::TraceListenerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -917,6 +965,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -948,10 +998,22 @@ End of list of errors
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceError">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes error information to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceError">
       <MemberSignature Language="C#" Value="public static void TraceError (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceError(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceError(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceError (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceError(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1002,6 +1064,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static void TraceError (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceError(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceError(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceError (format As String, ParamArray args As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceError(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1056,10 +1120,22 @@ End of list of errors
         <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceInformation">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an informational message to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceInformation">
       <MemberSignature Language="C#" Value="public static void TraceInformation (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceInformation(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceInformation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceInformation (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceInformation(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1110,6 +1186,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static void TraceInformation (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceInformation(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceInformation(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceInformation (format As String, ParamArray args As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceInformation(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1164,10 +1242,22 @@ End of list of errors
         <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceWarning">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes warning information to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceWarning">
       <MemberSignature Language="C#" Value="public static void TraceWarning (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceWarning(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceWarning(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceWarning (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceWarning(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1218,6 +1308,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static void TraceWarning (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceWarning(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceWarning(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceWarning (format As String, ParamArray args As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceWarning(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1276,6 +1368,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static void Unindent ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unindent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Unindent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unindent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unindent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1334,6 +1428,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static bool UseGlobalLock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool UseGlobalLock" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.UseGlobalLock" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property UseGlobalLock As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UseGlobalLock { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1377,10 +1473,22 @@ End of list of errors
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration:  <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information about the trace to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public static void Write (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Write(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1451,6 +1559,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static void Write (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1521,6 +1631,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static void Write (object value, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(object value, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Write(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Object, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::Object ^ value, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1595,6 +1707,8 @@ End of list of errors
       <MemberSignature Language="C#" Value="public static void Write (string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Write(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (message As String, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ message, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1665,10 +1779,22 @@ End of list of errors
         <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteIf">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information about the trace to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection if a condition is <see langword="true" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteIf">
       <MemberSignature Language="C#" Value="public static void WriteIf (bool condition, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIf(bool condition, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteIf(System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIf (condition As Boolean, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIf(bool condition, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1753,6 +1879,8 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="C#" Value="public static void WriteIf (bool condition, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIf(bool condition, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteIf(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIf (condition As Boolean, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIf(bool condition, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1837,6 +1965,8 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="C#" Value="public static void WriteIf (bool condition, object value, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIf(bool condition, object value, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteIf(System.Boolean,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIf (condition As Boolean, value As Object, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIf(bool condition, System::Object ^ value, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1925,6 +2055,8 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="C#" Value="public static void WriteIf (bool condition, string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIf(bool condition, string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteIf(System.Boolean,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIf (condition As Boolean, message As String, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIf(bool condition, System::String ^ message, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2009,10 +2141,22 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
         <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information about the trace to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLine">
       <MemberSignature Language="C#" Value="public static void WriteLine (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLine(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2078,6 +2222,8 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="C#" Value="public static void WriteLine (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2143,6 +2289,8 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="C#" Value="public static void WriteLine (object value, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(object value, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLine(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Object, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::Object ^ value, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2212,6 +2360,8 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="C#" Value="public static void WriteLine (string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLine(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (message As String, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ message, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2277,10 +2427,22 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
         <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLineIf">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information about the trace to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection if a condition is <see langword="true" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLineIf">
       <MemberSignature Language="C#" Value="public static void WriteLineIf (bool condition, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLineIf(bool condition, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLineIf(System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLineIf (condition As Boolean, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLineIf(bool condition, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2365,6 +2527,8 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
       <MemberSignature Language="C#" Value="public static void WriteLineIf (bool condition, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLineIf(bool condition, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLineIf(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLineIf (condition As Boolean, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLineIf(bool condition, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2449,6 +2613,8 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
       <MemberSignature Language="C#" Value="public static void WriteLineIf (bool condition, object value, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLineIf(bool condition, object value, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLineIf(System.Boolean,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLineIf (condition As Boolean, value As Object, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLineIf(bool condition, System::Object ^ value, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2537,6 +2703,8 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
       <MemberSignature Language="C#" Value="public static void WriteLineIf (bool condition, string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLineIf(bool condition, string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLineIf(System.Boolean,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLineIf (condition As Boolean, message As String, category As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLineIf(bool condition, System::String ^ message, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2621,95 +2789,5 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
         <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="TraceError">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes error information to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Assert">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Checks for a condition; if the condition is <see langword="false" />, outputs messages and displays a message box that shows the call stack.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Fail">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Emits an error message.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes information about the trace to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceWarning">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes warning information to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteIf">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes information about the trace to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection if a condition is <see langword="true" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes information about the trace to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceInformation">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes an informational message to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteLineIf">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes information about the trace to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection if a condition is <see langword="true" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

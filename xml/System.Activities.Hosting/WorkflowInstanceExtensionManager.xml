@@ -1,7 +1,9 @@
-<Type Name="WorkflowInstanceExtensionManager" FullName="System.Activities.Hosting.WorkflowInstanceExtensionManager">
+﻿<Type Name="WorkflowInstanceExtensionManager" FullName="System.Activities.Hosting.WorkflowInstanceExtensionManager">
   <TypeSignature Language="C#" Value="public class WorkflowInstanceExtensionManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowInstanceExtensionManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstanceExtensionManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowInstanceExtensionManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstanceExtensionManager" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public WorkflowInstanceExtensionManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceExtensionManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceExtensionManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public virtual void Add (object singletonExtension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(object singletonExtension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (singletonExtension As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Object ^ singletonExtension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public virtual void Add&lt;T&gt; (Func&lt;T&gt; extensionCreationFunction) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add&lt;class T&gt;(class System.Func`1&lt;!!T&gt; extensionCreationFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add``1(System.Func{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add(Of T As Class) (extensionCreationFunction As Func(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual void Add(Func&lt;T&gt; ^ extensionCreationFunction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="public void MakeReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceExtensionManager.MakeReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ListViewItemStates" FullName="System.Windows.Forms.ListViewItemStates">
+﻿<Type Name="ListViewItemStates" FullName="System.Windows.Forms.ListViewItemStates">
   <TypeSignature Language="C#" Value="public enum ListViewItemStates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewItemStates extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemStates" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ListViewItemStates" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ListViewItemStates" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="Checked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates Checked = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.Checked" />
+      <MemberSignature Language="VB.NET" Value="Checked" />
+      <MemberSignature Language="C++ CLI" Value="Checked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The item is checked.</summary>
       </Docs>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates Default = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The item is in its default state.</summary>
       </Docs>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="Focused" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates Focused = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.Focused" />
+      <MemberSignature Language="VB.NET" Value="Focused" />
+      <MemberSignature Language="C++ CLI" Value="Focused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The item has focus.</summary>
       </Docs>
@@ -98,6 +109,8 @@
       <MemberSignature Language="C#" Value="Grayed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates Grayed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.Grayed" />
+      <MemberSignature Language="VB.NET" Value="Grayed" />
+      <MemberSignature Language="C++ CLI" Value="Grayed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -106,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The item is disabled.</summary>
       </Docs>
@@ -114,6 +128,8 @@
       <MemberSignature Language="C#" Value="Hot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates Hot = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.Hot" />
+      <MemberSignature Language="VB.NET" Value="Hot" />
+      <MemberSignature Language="C++ CLI" Value="Hot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +138,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The item is currently under the mouse pointer.</summary>
       </Docs>
@@ -130,6 +147,8 @@
       <MemberSignature Language="C#" Value="Indeterminate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates Indeterminate = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.Indeterminate" />
+      <MemberSignature Language="VB.NET" Value="Indeterminate" />
+      <MemberSignature Language="C++ CLI" Value="Indeterminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The item is in an indeterminate state.</summary>
       </Docs>
@@ -146,6 +166,8 @@
       <MemberSignature Language="C#" Value="Marked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates Marked = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.Marked" />
+      <MemberSignature Language="VB.NET" Value="Marked" />
+      <MemberSignature Language="C++ CLI" Value="Marked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +176,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The item is marked.</summary>
       </Docs>
@@ -162,6 +185,8 @@
       <MemberSignature Language="C#" Value="Selected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates Selected = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.Selected" />
+      <MemberSignature Language="VB.NET" Value="Selected" />
+      <MemberSignature Language="C++ CLI" Value="Selected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +195,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The item is selected.</summary>
       </Docs>
@@ -178,6 +204,8 @@
       <MemberSignature Language="C#" Value="ShowKeyboardCues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewItemStates ShowKeyboardCues = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewItemStates.ShowKeyboardCues" />
+      <MemberSignature Language="VB.NET" Value="ShowKeyboardCues" />
+      <MemberSignature Language="C++ CLI" Value="ShowKeyboardCues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -186,6 +214,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The item should indicate a keyboard shortcut.</summary>
       </Docs>

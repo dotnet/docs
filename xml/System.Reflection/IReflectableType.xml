@@ -1,7 +1,9 @@
-<Type Name="IReflectableType" FullName="System.Reflection.IReflectableType">
+﻿<Type Name="IReflectableType" FullName="System.Reflection.IReflectableType">
   <TypeSignature Language="C#" Value="public interface IReflectableType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReflectableType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.IReflectableType" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IReflectableType" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IReflectableType" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.TypeInfo GetTypeInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.TypeInfo GetTypeInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.IReflectableType.GetTypeInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeInfo () As TypeInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::TypeInfo ^ GetTypeInfo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

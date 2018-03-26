@@ -1,7 +1,9 @@
-<Type Name="MembershipCreateUserException" FullName="System.Web.Security.MembershipCreateUserException">
+﻿<Type Name="MembershipCreateUserException" FullName="System.Web.Security.MembershipCreateUserException">
   <TypeSignature Language="C#" Value="public class MembershipCreateUserException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MembershipCreateUserException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipCreateUserException" />
+  <TypeSignature Language="VB.NET" Value="Public Class MembershipCreateUserException&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MembershipCreateUserException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +45,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.MembershipCreateUserException" /> class.</summary>
+        <altmember cref="T:System.Web.Security.MembershipCreateUserException" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MembershipCreateUserException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipCreateUserException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MembershipCreateUserException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -77,6 +91,8 @@
       <MemberSignature Language="C#" Value="public MembershipCreateUserException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipCreateUserException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MembershipCreateUserException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -112,6 +128,8 @@
       <MemberSignature Language="C#" Value="public MembershipCreateUserException (System.Web.Security.MembershipCreateStatus statusCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.Security.MembershipCreateStatus statusCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipCreateUserException.#ctor(System.Web.Security.MembershipCreateStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As MembershipCreateStatus)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MembershipCreateUserException(System::Web::Security::MembershipCreateStatus statusCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -147,6 +165,8 @@
       <MemberSignature Language="C#" Value="protected MembershipCreateUserException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipCreateUserException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MembershipCreateUserException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -182,6 +202,8 @@
       <MemberSignature Language="C#" Value="public MembershipCreateUserException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipCreateUserException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MembershipCreateUserException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -219,6 +241,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipCreateUserException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -251,6 +275,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Security.MembershipCreateStatus StatusCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Security.MembershipCreateStatus StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipCreateUserException.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusCode As MembershipCreateStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::MembershipCreateStatus StatusCode { System::Web::Security::MembershipCreateStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -280,15 +306,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.MembershipCreateUserException" /> class.</summary>
-        <altmember cref="T:System.Web.Security.MembershipCreateUserException" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

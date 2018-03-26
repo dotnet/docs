@@ -1,7 +1,9 @@
-<Type Name="CorHeader" FullName="System.Reflection.PortableExecutable.CorHeader">
+﻿<Type Name="CorHeader" FullName="System.Reflection.PortableExecutable.CorHeader">
   <TypeSignature Language="C#" Value="public sealed class CorHeader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CorHeader extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.CorHeader" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CorHeader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CorHeader sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry CodeManagerTableDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry CodeManagerTableDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.CodeManagerTableDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeManagerTableDirectory As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry CodeManagerTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int EntryPointTokenOrRelativeVirtualAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EntryPointTokenOrRelativeVirtualAddress" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.EntryPointTokenOrRelativeVirtualAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntryPointTokenOrRelativeVirtualAddress As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EntryPointTokenOrRelativeVirtualAddress { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ExportAddressTableJumpsDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ExportAddressTableJumpsDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.ExportAddressTableJumpsDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExportAddressTableJumpsDirectory As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ExportAddressTableJumpsDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.CorFlags Flags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.CorFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Flags As CorFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::CorFlags Flags { System::Reflection::PortableExecutable::CorFlags get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="public ushort MajorRuntimeVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MajorRuntimeVersion" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.MajorRuntimeVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorRuntimeVersion As UShort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MajorRuntimeVersion { System::UInt16 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -121,6 +133,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ManagedNativeHeaderDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ManagedNativeHeaderDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.ManagedNativeHeaderDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagedNativeHeaderDirectory As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ManagedNativeHeaderDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -141,6 +155,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry MetadataDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry MetadataDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.MetadataDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataDirectory As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry MetadataDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -161,6 +177,8 @@
       <MemberSignature Language="C#" Value="public ushort MinorRuntimeVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MinorRuntimeVersion" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.MinorRuntimeVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorRuntimeVersion As UShort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MinorRuntimeVersion { System::UInt16 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -181,6 +199,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ResourcesDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ResourcesDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.ResourcesDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourcesDirectory As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ResourcesDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -201,6 +221,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry StrongNameSignatureDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry StrongNameSignatureDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.StrongNameSignatureDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StrongNameSignatureDirectory As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry StrongNameSignatureDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -221,6 +243,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry VtableFixupsDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry VtableFixupsDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.VtableFixupsDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VtableFixupsDirectory As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry VtableFixupsDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

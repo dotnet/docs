@@ -1,7 +1,9 @@
-<Type Name="UpdateOperations" FullName="System.Data.Services.UpdateOperations">
+﻿<Type Name="UpdateOperations" FullName="System.Data.Services.UpdateOperations">
   <TypeSignature Language="C#" Value="public enum UpdateOperations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdateOperations extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.UpdateOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UpdateOperations" />
+  <TypeSignature Language="C++ CLI" Value="public enum class UpdateOperations" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Add" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.UpdateOperations Add = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.UpdateOperations.Add" />
+      <MemberSignature Language="VB.NET" Value="Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The entity was added.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="Change" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.UpdateOperations Change = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.UpdateOperations.Change" />
+      <MemberSignature Language="VB.NET" Value="Change" />
+      <MemberSignature Language="C++ CLI" Value="Change" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The entity was modified.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.UpdateOperations Delete = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.UpdateOperations.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The entity was deleted.</summary>
       </Docs>
@@ -78,6 +89,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.UpdateOperations None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.UpdateOperations.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -86,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No operations were performed on the resource.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ImeModeConversion" FullName="System.Windows.Forms.ImeModeConversion">
+﻿<Type Name="ImeModeConversion" FullName="System.Windows.Forms.ImeModeConversion">
   <TypeSignature Language="C#" Value="public struct ImeModeConversion" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImeModeConversion extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImeModeConversion" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ImeModeConversion" />
+  <TypeSignature Language="C++ CLI" Value="public value class ImeModeConversion" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;System.Windows.Forms.ImeMode,System.Windows.Forms.ImeModeConversion&gt; ImeModeConversionBits { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.Dictionary`2&lt;valuetype System.Windows.Forms.ImeMode, valuetype System.Windows.Forms.ImeModeConversion&gt; ImeModeConversionBits" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImeModeConversion.ImeModeConversionBits" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImeModeConversionBits As Dictionary(Of ImeMode, ImeModeConversion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::Dictionary&lt;System::Windows::Forms::ImeMode, System::Windows::Forms::ImeModeConversion&gt; ^ ImeModeConversionBits { System::Collections::Generic::Dictionary&lt;System::Windows::Forms::ImeMode, System::Windows::Forms::ImeModeConversion&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public static bool IsCurrentConversionTableSupported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsCurrentConversionTableSupported" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImeModeConversion.IsCurrentConversionTableSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsCurrentConversionTableSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsCurrentConversionTableSupported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

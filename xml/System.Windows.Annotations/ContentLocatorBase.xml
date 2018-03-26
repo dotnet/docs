@@ -1,7 +1,9 @@
-<Type Name="ContentLocatorBase" FullName="System.Windows.Annotations.ContentLocatorBase">
-  <TypeSignature Language="C#" Value="public abstract class ContentLocatorBase : System.ComponentModel.INotifyPropertyChanged" />
+﻿<Type Name="ContentLocatorBase" FullName="System.Windows.Annotations.ContentLocatorBase">
+  <TypeSignature Language="C#" Value="public abstract class ContentLocatorBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContentLocatorBase extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContentLocatorBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentLocatorBase abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -9,11 +11,7 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents an object that identifies an item of content.</summary>
     <remarks>
@@ -32,6 +30,8 @@
       <MemberSignature Language="C#" Value="public abstract object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorBase.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

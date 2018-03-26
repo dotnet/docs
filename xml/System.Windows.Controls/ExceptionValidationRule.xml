@@ -1,7 +1,9 @@
-<Type Name="ExceptionValidationRule" FullName="System.Windows.Controls.ExceptionValidationRule">
+﻿<Type Name="ExceptionValidationRule" FullName="System.Windows.Controls.ExceptionValidationRule">
   <TypeSignature Language="C#" Value="public sealed class ExceptionValidationRule : System.Windows.Controls.ValidationRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionValidationRule extends System.Windows.Controls.ValidationRule" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ExceptionValidationRule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExceptionValidationRule&#xA;Inherits ValidationRule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExceptionValidationRule sealed : System::Windows::Controls::ValidationRule" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public ExceptionValidationRule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ExceptionValidationRule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExceptionValidationRule();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +64,7 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Controls.ValidationResult Validate (object value, System.Globalization.CultureInfo cultureInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Controls.ValidationResult Validate(object value, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ExceptionValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Controls::ValidationResult ^ Validate(System::Object ^ value, System::Globalization::CultureInfo ^ cultureInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

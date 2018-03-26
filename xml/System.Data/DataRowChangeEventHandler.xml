@@ -1,7 +1,9 @@
-<Type Name="DataRowChangeEventHandler" FullName="System.Data.DataRowChangeEventHandler">
+﻿<Type Name="DataRowChangeEventHandler" FullName="System.Data.DataRowChangeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataRowChangeEventHandler(object sender, DataRowChangeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataRowChangeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowChangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataRowChangeEventHandler(sender As Object, e As DataRowChangeEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataRowChangeEventHandler(System::Object ^ sender, DataRowChangeEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

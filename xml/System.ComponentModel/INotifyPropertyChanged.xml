@@ -1,7 +1,9 @@
-<Type Name="INotifyPropertyChanged" FullName="System.ComponentModel.INotifyPropertyChanged">
+﻿<Type Name="INotifyPropertyChanged" FullName="System.ComponentModel.INotifyPropertyChanged">
   <TypeSignature Language="C#" Value="public interface INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -348,9 +350,11 @@ End Class
   </Docs>
   <Members>
     <Member MemberName="PropertyChanged">
-      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ParallelLoopState" FullName="System.Threading.Tasks.ParallelLoopState">
+﻿<Type Name="ParallelLoopState" FullName="System.Threading.Tasks.ParallelLoopState">
   <TypeSignature Language="C#" Value="public class ParallelLoopState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParallelLoopState extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ParallelLoopState" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParallelLoopState" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParallelLoopState" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,8 @@
       <MemberSignature Language="C#" Value="public void Break ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Break() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ParallelLoopState.Break" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Break ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Break();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -124,6 +128,8 @@
       <MemberSignature Language="C#" Value="public bool IsExceptional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsExceptional" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelLoopState.IsExceptional" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExceptional As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExceptional { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -153,6 +159,8 @@
       <MemberSignature Language="C#" Value="public bool IsStopped { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStopped" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelLoopState.IsStopped" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStopped As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStopped { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -197,6 +205,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; LowestBreakIteration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; LowestBreakIteration" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LowestBreakIteration As Nullable(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; LowestBreakIteration { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -252,6 +262,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldExitCurrentIteration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShouldExitCurrentIteration" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShouldExitCurrentIteration As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShouldExitCurrentIteration { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -309,6 +321,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ParallelLoopState.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>

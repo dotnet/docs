@@ -1,7 +1,9 @@
-<Type Name="ToolStripSplitButton" FullName="System.Windows.Forms.ToolStripSplitButton">
+﻿<Type Name="ToolStripSplitButton" FullName="System.Windows.Forms.ToolStripSplitButton">
   <TypeSignature Language="C#" Value="public class ToolStripSplitButton : System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripSplitButton extends System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSplitButton" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripSplitButton&#xA;Inherits ToolStripDropDownItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripSplitButton : System::Windows::Forms::ToolStripDropDownItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ToolStripSplitButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSplitButton();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +64,7 @@
       <MemberSignature Language="C#" Value="public ToolStripSplitButton (System.Drawing.Image image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.#ctor(System.Drawing.Image)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSplitButton(System::Drawing::Image ^ image);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +83,8 @@
       <MemberSignature Language="C#" Value="public ToolStripSplitButton (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSplitButton(System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +103,7 @@
       <MemberSignature Language="C#" Value="public ToolStripSplitButton (string text, System.Drawing.Image image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSplitButton(System::String ^ text, System::Drawing::Image ^ image);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +124,7 @@
       <MemberSignature Language="C#" Value="public ToolStripSplitButton (string text, System.Drawing.Image image, EventHandler onClick);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image,System.EventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSplitButton(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +147,7 @@
       <MemberSignature Language="C#" Value="public ToolStripSplitButton (string text, System.Drawing.Image image, params System.Windows.Forms.ToolStripItem[] dropDownItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.Windows.Forms.ToolStripItem[] dropDownItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image,System.Windows.Forms.ToolStripItem[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSplitButton(System::String ^ text, System::Drawing::Image ^ image, ... cli::array &lt;System::Windows::Forms::ToolStripItem ^&gt; ^ dropDownItems);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -157,6 +176,7 @@
       <MemberSignature Language="C#" Value="public ToolStripSplitButton (string text, System.Drawing.Image image, EventHandler onClick, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.EventHandler onClick, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image,System.EventHandler,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSplitButton(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,6 +201,8 @@
       <MemberSignature Language="C#" Value="public bool AutoToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.AutoToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoToolTip As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoToolTip { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -212,6 +234,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle ButtonBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ButtonBounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.ButtonBounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ButtonBounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ButtonBounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +260,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ButtonClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ButtonClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripSplitButton.ButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ButtonClick As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ButtonClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -270,6 +296,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ButtonDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ButtonDoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ButtonDoubleClick As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ButtonDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -304,6 +332,8 @@
       <MemberSignature Language="C#" Value="public bool ButtonPressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ButtonPressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.ButtonPressed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ButtonPressed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ButtonPressed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -328,6 +358,8 @@
       <MemberSignature Language="C#" Value="public bool ButtonSelected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ButtonSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.ButtonSelected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ButtonSelected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ButtonSelected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -353,6 +385,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -372,6 +406,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ToolStripDropDown CreateDefaultDropDown ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.ToolStripDropDown CreateDefaultDropDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.CreateDefaultDropDown" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDefaultDropDown () As ToolStripDropDown" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::ToolStripDropDown ^ CreateDefaultDropDown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -392,6 +428,8 @@
       <MemberSignature Language="C#" Value="protected override bool DefaultAutoToolTip { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DefaultAutoToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.DefaultAutoToolTip" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultAutoToolTip As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DefaultAutoToolTip { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -411,6 +449,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem DefaultItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItem DefaultItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.DefaultItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultItem As ToolStripItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ DefaultItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -446,6 +486,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DefaultItemChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DefaultItemChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DefaultItemChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DefaultItemChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -477,9 +519,11 @@
       </Docs>
     </Member>
     <Member MemberName="DismissWhenClicked">
-      <MemberSignature Language="C#" Value="protected override bool DismissWhenClicked { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool DismissWhenClicked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DismissWhenClicked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.DismissWhenClicked" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DismissWhenClicked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool DismissWhenClicked { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -499,6 +543,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle DropDownButtonBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle DropDownButtonBounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonBounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropDownButtonBounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle DropDownButtonBounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -523,6 +569,8 @@
       <MemberSignature Language="C#" Value="public bool DropDownButtonPressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DropDownButtonPressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonPressed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropDownButtonPressed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DropDownButtonPressed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -547,6 +595,8 @@
       <MemberSignature Language="C#" Value="public bool DropDownButtonSelected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DropDownButtonSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonSelected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropDownButtonSelected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DropDownButtonSelected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -572,6 +622,8 @@
       <MemberSignature Language="C#" Value="public int DropDownButtonWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DropDownButtonWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownButtonWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DropDownButtonWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -592,6 +644,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size GetPreferredSize (System.Drawing.Size constrainingSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(valuetype System.Drawing.Size constrainingSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.GetPreferredSize(System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreferredSize (constrainingSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Size constrainingSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -614,6 +668,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnButtonClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnButtonClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.OnButtonClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnButtonClick (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnButtonClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -647,6 +703,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnButtonDoubleClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnButtonDoubleClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.OnButtonDoubleClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnButtonDoubleClick (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnButtonDoubleClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -680,6 +738,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDefaultItemChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDefaultItemChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.OnDefaultItemChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDefaultItemChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDefaultItemChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -713,6 +773,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -746,6 +808,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.OnMouseLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -779,6 +843,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -812,6 +878,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -834,6 +902,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRightToLeftChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.OnRightToLeftChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRightToLeftChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRightToLeftChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -867,6 +937,8 @@
       <MemberSignature Language="C#" Value="public void PerformButtonClick ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PerformButtonClick() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.PerformButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PerformButtonClick ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PerformButtonClick();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -882,9 +954,11 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
-      <MemberSignature Language="C#" Value="protected override bool ProcessDialogKey (System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="C#" Value="protected internal override bool ProcessDialogKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessDialogKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.ProcessDialogKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -918,9 +992,11 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
-      <MemberSignature Language="C#" Value="protected override bool ProcessMnemonic (char charCode);" />
+      <MemberSignature Language="C#" Value="protected internal override bool ProcessMnemonic (char charCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessMnemonic(char charCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.ProcessMnemonic(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -944,6 +1020,8 @@
       <MemberSignature Language="C#" Value="public virtual void ResetDropDownButtonWidth ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetDropDownButtonWidth() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.ResetDropDownButtonWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetDropDownButtonWidth ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetDropDownButtonWidth();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -975,6 +1053,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle SplitterBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle SplitterBounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSplitButton.SplitterBounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SplitterBounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle SplitterBounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1002,14 +1082,5 @@
         <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterWidth" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

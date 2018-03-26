@@ -1,7 +1,9 @@
-<Type Name="XpsSerializationManagerAsync" FullName="System.Windows.Xps.Serialization.XpsSerializationManagerAsync">
+﻿<Type Name="XpsSerializationManagerAsync" FullName="System.Windows.Xps.Serialization.XpsSerializationManagerAsync">
   <TypeSignature Language="C#" Value="public sealed class XpsSerializationManagerAsync : System.Windows.Xps.Serialization.XpsSerializationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XpsSerializationManagerAsync extends System.Windows.Xps.Serialization.XpsSerializationManager" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationManagerAsync" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XpsSerializationManagerAsync&#xA;Inherits XpsSerializationManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsSerializationManagerAsync sealed : System::Windows::Xps::Serialization::XpsSerializationManager" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public XpsSerializationManagerAsync (System.Windows.Xps.Serialization.BasePackagingPolicy packagingPolicy, bool batchMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Xps.Serialization.BasePackagingPolicy packagingPolicy, bool batchMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.#ctor(System.Windows.Xps.Serialization.BasePackagingPolicy,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (packagingPolicy As BasePackagingPolicy, batchMode As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsSerializationManagerAsync(System::Windows::Xps::Serialization::BasePackagingPolicy ^ packagingPolicy, bool batchMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public void CancelAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.CancelAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public override void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public override void SaveAsXaml (object serializedObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SaveAsXaml(object serializedObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.SaveAsXaml(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SaveAsXaml (serializedObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SaveAsXaml(System::Object ^ serializedObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -106,6 +116,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler XpsSerializationCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler XpsSerializationCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.XpsSerializationCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event XpsSerializationCompleted As XpsSerializationCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Xps::Serialization::XpsSerializationCompletedEventHandler ^ XpsSerializationCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

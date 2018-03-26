@@ -1,7 +1,9 @@
-<Type Name="PipeOptions" FullName="System.IO.Pipes.PipeOptions">
+﻿<Type Name="PipeOptions" FullName="System.IO.Pipes.PipeOptions">
   <TypeSignature Language="C#" Value="public enum PipeOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PipeOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PipeOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PipeOptions" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="Asynchronous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeOptions Asynchronous = int32(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.Asynchronous" />
+      <MemberSignature Language="VB.NET" Value="Asynchronous" />
+      <MemberSignature Language="C++ CLI" Value="Asynchronous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -58,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>Indicates that the pipe can be used for asynchronous reading and writing.</summary>
       </Docs>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that there are no additional parameters.</summary>
       </Docs>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="WriteThrough" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeOptions WriteThrough = int32(-2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.WriteThrough" />
+      <MemberSignature Language="VB.NET" Value="WriteThrough" />
+      <MemberSignature Language="C++ CLI" Value="WriteThrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -110,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
       <Docs>
         <summary>Indicates that the system should write through any intermediate cache and go directly to the pipe.</summary>
       </Docs>

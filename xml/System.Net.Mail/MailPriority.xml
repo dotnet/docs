@@ -1,7 +1,9 @@
-<Type Name="MailPriority" FullName="System.Net.Mail.MailPriority">
+﻿<Type Name="MailPriority" FullName="System.Net.Mail.MailPriority">
   <TypeSignature Language="C#" Value="public enum MailPriority" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MailPriority extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.MailPriority" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MailPriority" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MailPriority" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.MailPriority High = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.MailPriority.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -51,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.MailPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The email has high priority.</summary>
       </Docs>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="Low" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.MailPriority Low = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.MailPriority.Low" />
+      <MemberSignature Language="VB.NET" Value="Low" />
+      <MemberSignature Language="C++ CLI" Value="Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.MailPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The email has low priority.</summary>
       </Docs>
@@ -84,6 +92,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.MailPriority Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.MailPriority.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.MailPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The email has normal priority.</summary>
       </Docs>

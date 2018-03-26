@@ -1,7 +1,9 @@
-<Type Name="MatchEvaluator" FullName="System.Text.RegularExpressions.MatchEvaluator">
+﻿<Type Name="MatchEvaluator" FullName="System.Text.RegularExpressions.MatchEvaluator">
   <TypeSignature Language="C#" Value="public delegate string MatchEvaluator(Match match);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MatchEvaluator extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.MatchEvaluator" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function MatchEvaluator(match As Match) As String " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::String ^ MatchEvaluator(Match ^ match);" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

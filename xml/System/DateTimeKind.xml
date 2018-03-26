@@ -1,7 +1,9 @@
-<Type Name="DateTimeKind" FullName="System.DateTimeKind">
+﻿<Type Name="DateTimeKind" FullName="System.DateTimeKind">
   <TypeSignature Language="C#" Value="public enum DateTimeKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DateTimeKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DateTimeKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DateTimeKind" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DateTimeKind" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="Local" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DateTimeKind Local = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DateTimeKind.Local" />
+      <MemberSignature Language="VB.NET" Value="Local" />
+      <MemberSignature Language="C++ CLI" Value="Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -66,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.DateTimeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The time represented is local time.</summary>
       </Docs>
@@ -74,6 +79,8 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DateTimeKind Unspecified = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DateTimeKind.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -95,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.DateTimeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The time represented is not specified as either local time or Coordinated Universal Time (UTC).</summary>
       </Docs>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="Utc" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DateTimeKind Utc = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DateTimeKind.Utc" />
+      <MemberSignature Language="VB.NET" Value="Utc" />
+      <MemberSignature Language="C++ CLI" Value="Utc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -124,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.DateTimeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The time represented is UTC.</summary>
       </Docs>

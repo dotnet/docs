@@ -1,7 +1,9 @@
-<Type Name="WorkflowChangeAction" FullName="System.Workflow.ComponentModel.WorkflowChangeAction">
+﻿<Type Name="WorkflowChangeAction" FullName="System.Workflow.ComponentModel.WorkflowChangeAction">
   <TypeSignature Language="C#" Value="public abstract class WorkflowChangeAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowChangeAction extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowChangeAction" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowChangeAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowChangeAction abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="protected WorkflowChangeAction ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChangeAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowChangeAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -48,9 +52,11 @@
       </Docs>
     </Member>
     <Member MemberName="ApplyTo">
-      <MemberSignature Language="C#" Value="protected abstract bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
+      <MemberSignature Language="C#" Value="protected internal abstract bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ApplyTo(class System.Workflow.ComponentModel.Activity rootActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChangeAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function ApplyTo (rootActivity As Activity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -71,9 +77,10 @@
       </Docs>
     </Member>
     <Member MemberName="ValidateChanges">
-      <MemberSignature Language="C#" Value="protected abstract System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges (System.Workflow.ComponentModel.Activity activity);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ ValidateChanges(System::Workflow::ComponentModel::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

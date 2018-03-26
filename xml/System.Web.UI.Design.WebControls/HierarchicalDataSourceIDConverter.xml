@@ -1,7 +1,9 @@
-<Type Name="HierarchicalDataSourceIDConverter" FullName="System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter">
+﻿<Type Name="HierarchicalDataSourceIDConverter" FullName="System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter">
   <TypeSignature Language="C#" Value="public class HierarchicalDataSourceIDConverter : System.Web.UI.Design.WebControls.DataSourceIDConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HierarchicalDataSourceIDConverter extends System.Web.UI.Design.WebControls.DataSourceIDConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class HierarchicalDataSourceIDConverter&#xA;Inherits DataSourceIDConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HierarchicalDataSourceIDConverter : System::Web::UI::Design::WebControls::DataSourceIDConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public HierarchicalDataSourceIDConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HierarchicalDataSourceIDConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="protected override bool IsValidDataSource (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsValidDataSource(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter.IsValidDataSource(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsValidDataSource (component As IComponent) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsValidDataSource(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

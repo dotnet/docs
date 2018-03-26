@@ -1,7 +1,9 @@
-<Type Name="RuleChainingBehavior" FullName="System.Workflow.Activities.Rules.RuleChainingBehavior">
+﻿<Type Name="RuleChainingBehavior" FullName="System.Workflow.Activities.Rules.RuleChainingBehavior">
   <TypeSignature Language="C#" Value="public enum RuleChainingBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RuleChainingBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleChainingBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RuleChainingBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RuleChainingBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Full" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleChainingBehavior Full = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleChainingBehavior.Full" />
+      <MemberSignature Language="VB.NET" Value="Full" />
+      <MemberSignature Language="C++ CLI" Value="Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.Rules.RuleChainingBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that chaining is performed when fields or properties are modified by actions, <see cref="T:System.Workflow.Activities.Rules.RuleWriteAttribute" /> are specified for methods called by actions, or when a <see cref="T:System.Workflow.Activities.Rules.RuleUpdateAction" /> is performed.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleChainingBehavior None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleChainingBehavior.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.Rules.RuleChainingBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that no chaining is performed. Each rule is executed exactly once.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="UpdateOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleChainingBehavior UpdateOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleChainingBehavior.UpdateOnly" />
+      <MemberSignature Language="VB.NET" Value="UpdateOnly" />
+      <MemberSignature Language="C++ CLI" Value="UpdateOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.Rules.RuleChainingBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that chaining is performed if executed actions explicitly specify it using a <see cref="T:System.Workflow.Activities.Rules.RuleUpdateAction" />.</summary>
       </Docs>

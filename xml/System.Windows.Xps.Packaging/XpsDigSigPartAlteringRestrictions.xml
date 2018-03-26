@@ -1,7 +1,9 @@
-<Type Name="XpsDigSigPartAlteringRestrictions" FullName="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions">
+﻿<Type Name="XpsDigSigPartAlteringRestrictions" FullName="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions">
   <TypeSignature Language="C#" Value="public enum XpsDigSigPartAlteringRestrictions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsDigSigPartAlteringRestrictions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XpsDigSigPartAlteringRestrictions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XpsDigSigPartAlteringRestrictions" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="Annotations" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions Annotations = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.Annotations" />
+      <MemberSignature Language="VB.NET" Value="Annotations" />
+      <MemberSignature Language="C++ CLI" Value="Annotations" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -54,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The Annotations part is excluded.</summary>
       </Docs>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="CoreMetadata" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions CoreMetadata = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.CoreMetadata" />
+      <MemberSignature Language="VB.NET" Value="CoreMetadata" />
+      <MemberSignature Language="C++ CLI" Value="CoreMetadata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -70,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The Core Properties part is excluded.</summary>
       </Docs>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No parts are excluded.</summary>
       </Docs>
@@ -94,6 +105,8 @@
       <MemberSignature Language="C#" Value="SignatureOrigin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions SignatureOrigin = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin" />
+      <MemberSignature Language="VB.NET" Value="SignatureOrigin" />
+      <MemberSignature Language="C++ CLI" Value="SignatureOrigin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -102,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The Signature Origin part is excluded.</summary>
       </Docs>

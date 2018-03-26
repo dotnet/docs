@@ -1,7 +1,9 @@
-<Type Name="IApplicationIdentifier" FullName="System.Runtime.Caching.Hosting.IApplicationIdentifier">
+﻿<Type Name="IApplicationIdentifier" FullName="System.Runtime.Caching.Hosting.IApplicationIdentifier">
   <TypeSignature Language="C#" Value="public interface IApplicationIdentifier" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationIdentifier" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Hosting.IApplicationIdentifier" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IApplicationIdentifier" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IApplicationIdentifier" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public string GetApplicationId ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetApplicationId() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IApplicationIdentifier.GetApplicationId" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetApplicationId () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetApplicationId();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

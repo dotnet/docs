@@ -1,7 +1,9 @@
-<Type Name="TemplateContainer" FullName="System.Web.UI.MobileControls.TemplateContainer">
+﻿<Type Name="TemplateContainer" FullName="System.Web.UI.MobileControls.TemplateContainer">
   <TypeSignature Language="C#" Value="public class TemplateContainer : System.Web.UI.MobileControls.Panel, System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateContainer extends System.Web.UI.MobileControls.Panel implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.TemplateContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateContainer&#xA;Inherits Panel&#xA;Implements INamingContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateContainer : System::Web::UI::MobileControls::Panel, System::Web::UI::INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="public TemplateContainer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.TemplateContainer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateContainer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public override bool BreakAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BreakAfter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TemplateContainer.BreakAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BreakAfter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool BreakAfter { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

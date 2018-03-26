@@ -1,7 +1,9 @@
-<Type Name="UpnEndpointIdentity" FullName="System.ServiceModel.UpnEndpointIdentity">
+﻿<Type Name="UpnEndpointIdentity" FullName="System.ServiceModel.UpnEndpointIdentity">
   <TypeSignature Language="C#" Value="public class UpnEndpointIdentity : System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpnEndpointIdentity extends System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.UpnEndpointIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class UpnEndpointIdentity&#xA;Inherits EndpointIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpnEndpointIdentity : System::ServiceModel::EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UpnEndpointIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UpnEndpointIdentity (System.IdentityModel.Claims.Claim identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UpnEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpnEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +76,8 @@
       <MemberSignature Language="C#" Value="public UpnEndpointIdentity (string upnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string upnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UpnEndpointIdentity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (upnName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpnEndpointIdentity(System::String ^ upnName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,14 +109,5 @@
         <exception cref="T:System.ArgumentException">The claim type of <paramref name="upnName" /> is not <see cref="P:System.IdentityModel.Claims.ClaimTypes.Upn" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UpnEndpointIdentity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

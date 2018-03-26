@@ -1,7 +1,9 @@
-<Type Name="WindowsFormsSection" FullName="System.Windows.Forms.WindowsFormsSection">
+﻿<Type Name="WindowsFormsSection" FullName="System.Windows.Forms.WindowsFormsSection">
   <TypeSignature Language="C#" Value="public sealed class WindowsFormsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsFormsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WindowsFormsSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsFormsSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public WindowsFormsSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsFormsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public bool JitDebugging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool JitDebugging" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WindowsFormsSection.JitDebugging" />
+      <MemberSignature Language="VB.NET" Value="Public Property JitDebugging As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool JitDebugging { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WindowsFormsSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ICryptoTransform" FullName="System.Security.Cryptography.ICryptoTransform">
+﻿<Type Name="ICryptoTransform" FullName="System.Security.Cryptography.ICryptoTransform">
   <TypeSignature Language="C#" Value="public interface ICryptoTransform : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICryptoTransform implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ICryptoTransform" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICryptoTransform&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICryptoTransform : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public bool CanReuseTransform { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanReuseTransform" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICryptoTransform.CanReuseTransform" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanReuseTransform As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanReuseTransform { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public bool CanTransformMultipleBlocks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanTransformMultipleBlocks" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICryptoTransform.CanTransformMultipleBlocks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanTransformMultipleBlocks As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanTransformMultipleBlocks { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public int InputBlockSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InputBlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICryptoTransform.InputBlockSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputBlockSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InputBlockSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -128,6 +136,8 @@
       <MemberSignature Language="C#" Value="public int OutputBlockSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OutputBlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICryptoTransform.OutputBlockSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputBlockSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OutputBlockSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -156,6 +166,8 @@
       <MemberSignature Language="C#" Value="public int TransformBlock (byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 TransformBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount, unsigned int8[] outputBuffer, int32 outputOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ICryptoTransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer, outputBuffer As Byte(), outputOffset As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int TransformBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount, cli::array &lt;System::Byte&gt; ^ outputBuffer, int outputOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -203,6 +215,8 @@ The return value of <xref:System.Security.Cryptography.ICryptoTransform.Transfor
       <MemberSignature Language="C#" Value="public byte[] TransformFinalBlock (byte[] inputBuffer, int inputOffset, int inputCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] TransformFinalBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ICryptoTransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformFinalBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ TransformFinalBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>

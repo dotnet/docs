@@ -1,7 +1,9 @@
-<Type Name="ContentDispositionHeaderValue" FullName="System.Net.Http.Headers.ContentDispositionHeaderValue">
+﻿<Type Name="ContentDispositionHeaderValue" FullName="System.Net.Http.Headers.ContentDispositionHeaderValue">
   <TypeSignature Language="C#" Value="public class ContentDispositionHeaderValue : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentDispositionHeaderValue extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContentDispositionHeaderValue&#xA;Implements ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentDispositionHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ContentDispositionHeaderValue (System.Net.Http.Headers.ContentDispositionHeaderValue source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.Headers.ContentDispositionHeaderValue source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(System.Net.Http.Headers.ContentDispositionHeaderValue)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (source As ContentDispositionHeaderValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ContentDispositionHeaderValue(System::Net::Http::Headers::ContentDispositionHeaderValue ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -68,6 +84,8 @@
       <MemberSignature Language="C#" Value="public ContentDispositionHeaderValue (string dispositionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dispositionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dispositionType As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentDispositionHeaderValue(System::String ^ dispositionType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -93,6 +111,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; CreationDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreationDate" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.CreationDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreationDate As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; CreationDate { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -118,6 +138,8 @@
       <MemberSignature Language="C#" Value="public string DispositionType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DispositionType" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DispositionType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DispositionType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -150,6 +172,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -180,6 +204,8 @@
       <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -212,6 +238,8 @@
       <MemberSignature Language="C#" Value="public string FileNameStar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileNameStar" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileNameStar As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileNameStar { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -244,6 +272,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -279,6 +309,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; ModificationDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ModificationDate" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.ModificationDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModificationDate As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; ModificationDate { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -304,6 +336,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -329,6 +363,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt; Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Net.Http.Headers.NameValueHeaderValue&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ICollection(Of NameValueHeaderValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ Parameters { System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -354,6 +390,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.Http.Headers.ContentDispositionHeaderValue Parse (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.Headers.ContentDispositionHeaderValue Parse(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As ContentDispositionHeaderValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::ContentDispositionHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -387,6 +425,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; ReadDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ReadDate" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.ReadDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadDate As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; ReadDate { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -412,6 +452,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Size" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Nullable(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; Size { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -437,7 +479,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -461,6 +508,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -487,6 +536,8 @@
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out System.Net.Http.Headers.ContentDispositionHeaderValue parsedValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class System.Net.Http.Headers.ContentDispositionHeaderValue&amp; parsedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.TryParse(System.String,System.Net.Http.Headers.ContentDispositionHeaderValue@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As ContentDispositionHeaderValue) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::ContentDispositionHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -515,17 +566,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

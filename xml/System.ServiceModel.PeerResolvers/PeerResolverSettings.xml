@@ -1,7 +1,9 @@
-<Type Name="PeerResolverSettings" FullName="System.ServiceModel.PeerResolvers.PeerResolverSettings">
+﻿<Type Name="PeerResolverSettings" FullName="System.ServiceModel.PeerResolvers.PeerResolverSettings">
   <TypeSignature Language="C#" Value="public class PeerResolverSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PeerResolverSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.PeerResolverSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class PeerResolverSettings" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerResolverSettings" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public PeerResolverSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.PeerResolverSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerResolverSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.PeerResolvers.PeerCustomResolverSettings Custom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.PeerResolvers.PeerCustomResolverSettings Custom" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerResolverSettings.Custom" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Custom As PeerCustomResolverSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolvers::PeerCustomResolverSettings ^ Custom { System::ServiceModel::PeerResolvers::PeerCustomResolverSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.PeerResolvers.PeerResolverMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.PeerResolvers.PeerResolverMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerResolverSettings.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As PeerResolverMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolvers::PeerResolverMode Mode { System::ServiceModel::PeerResolvers::PeerResolverMode get(); void set(System::ServiceModel::PeerResolvers::PeerResolverMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.PeerResolvers.PeerReferralPolicy ReferralPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.PeerResolvers.PeerReferralPolicy ReferralPolicy" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerResolverSettings.ReferralPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferralPolicy As PeerReferralPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolvers::PeerReferralPolicy ReferralPolicy { System::ServiceModel::PeerResolvers::PeerReferralPolicy get(); void set(System::ServiceModel::PeerResolvers::PeerReferralPolicy value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

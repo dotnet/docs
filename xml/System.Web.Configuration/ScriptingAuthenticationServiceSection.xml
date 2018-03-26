@@ -1,7 +1,9 @@
-<Type Name="ScriptingAuthenticationServiceSection" FullName="System.Web.Configuration.ScriptingAuthenticationServiceSection">
+﻿<Type Name="ScriptingAuthenticationServiceSection" FullName="System.Web.Configuration.ScriptingAuthenticationServiceSection">
   <TypeSignature Language="C#" Value="public sealed class ScriptingAuthenticationServiceSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptingAuthenticationServiceSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingAuthenticationServiceSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptingAuthenticationServiceSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptingAuthenticationServiceSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public ScriptingAuthenticationServiceSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ScriptingAuthenticationServiceSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptingAuthenticationServiceSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingAuthenticationServiceSection.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingAuthenticationServiceSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="public bool RequireSSL { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireSSL" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingAuthenticationServiceSection.RequireSSL" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireSSL As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSSL { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

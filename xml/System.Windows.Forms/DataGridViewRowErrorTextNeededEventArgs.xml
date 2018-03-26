@@ -1,7 +1,9 @@
-<Type Name="DataGridViewRowErrorTextNeededEventArgs" FullName="System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs">
+﻿<Type Name="DataGridViewRowErrorTextNeededEventArgs" FullName="System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewRowErrorTextNeededEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRowErrorTextNeededEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewRowErrorTextNeededEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewRowErrorTextNeededEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public string ErrorText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.ErrorText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +98,8 @@
       <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.RowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

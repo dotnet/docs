@@ -1,7 +1,9 @@
-<Type Name="CngPropertyCollection" FullName="System.Security.Cryptography.CngPropertyCollection">
+﻿<Type Name="CngPropertyCollection" FullName="System.Security.Cryptography.CngPropertyCollection">
   <TypeSignature Language="C#" Value="public sealed class CngPropertyCollection : System.Collections.ObjectModel.Collection&lt;System.Security.Cryptography.CngProperty&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CngPropertyCollection extends System.Collections.ObjectModel.Collection`1&lt;valuetype System.Security.Cryptography.CngProperty&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngPropertyCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CngPropertyCollection&#xA;Inherits Collection(Of CngProperty)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CngPropertyCollection sealed : System::Collections::ObjectModel::Collection&lt;System::Security::Cryptography::CngProperty&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public CngPropertyCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngPropertyCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CngPropertyCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

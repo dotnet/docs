@@ -1,7 +1,9 @@
-<Type Name="WebEventBufferFlushInfo" FullName="System.Web.Management.WebEventBufferFlushInfo">
+﻿<Type Name="WebEventBufferFlushInfo" FullName="System.Web.Management.WebEventBufferFlushInfo">
   <TypeSignature Language="C#" Value="public sealed class WebEventBufferFlushInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebEventBufferFlushInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventBufferFlushInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebEventBufferFlushInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebEventBufferFlushInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Management.WebBaseEventCollection Events { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebBaseEventCollection Events" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.Events" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Events As WebBaseEventCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebBaseEventCollection ^ Events { System::Web::Management::WebBaseEventCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public int EventsDiscardedSinceLastNotification { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EventsDiscardedSinceLastNotification" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.EventsDiscardedSinceLastNotification" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsDiscardedSinceLastNotification As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsDiscardedSinceLastNotification { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="public int EventsInBuffer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EventsInBuffer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.EventsInBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsInBuffer As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsInBuffer { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +146,8 @@
       <MemberSignature Language="C#" Value="public DateTime LastNotificationUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastNotificationUtc" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.LastNotificationUtc" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastNotificationUtc As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastNotificationUtc { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +176,8 @@
       <MemberSignature Language="C#" Value="public int NotificationSequence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NotificationSequence" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.NotificationSequence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotificationSequence As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NotificationSequence { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +206,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Management.EventNotificationType NotificationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Management.EventNotificationType NotificationType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.NotificationType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotificationType As EventNotificationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::EventNotificationType NotificationType { System::Web::Management::EventNotificationType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

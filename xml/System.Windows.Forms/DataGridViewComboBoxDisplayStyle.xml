@@ -1,7 +1,9 @@
-<Type Name="DataGridViewComboBoxDisplayStyle" FullName="System.Windows.Forms.DataGridViewComboBoxDisplayStyle">
+﻿<Type Name="DataGridViewComboBoxDisplayStyle" FullName="System.Windows.Forms.DataGridViewComboBoxDisplayStyle">
   <TypeSignature Language="C#" Value="public enum DataGridViewComboBoxDisplayStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewComboBoxDisplayStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxDisplayStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewComboBoxDisplayStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewComboBoxDisplayStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="ComboBox" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewComboBoxDisplayStyle ComboBox = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox" />
+      <MemberSignature Language="VB.NET" Value="ComboBox" />
+      <MemberSignature Language="C++ CLI" Value="ComboBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewComboBoxDisplayStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>When it is not in edit mode, the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> mimics the appearance of a <see cref="T:System.Windows.Forms.ComboBox" /> control.</summary>
       </Docs>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="DropDownButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewComboBoxDisplayStyle DropDownButton = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.DropDownButton" />
+      <MemberSignature Language="VB.NET" Value="DropDownButton" />
+      <MemberSignature Language="C++ CLI" Value="DropDownButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewComboBoxDisplayStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>When it is not in edit mode, the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> is displayed with a drop-down button but does not otherwise mimic the appearance of a <see cref="T:System.Windows.Forms.ComboBox" /> control.</summary>
       </Docs>
@@ -61,6 +69,8 @@
       <MemberSignature Language="C#" Value="Nothing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewComboBoxDisplayStyle Nothing = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing" />
+      <MemberSignature Language="VB.NET" Value="Nothing" />
+      <MemberSignature Language="C++ CLI" Value="Nothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewComboBoxDisplayStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>When it is not in edit mode, the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> is displayed without a drop-down button.</summary>
       </Docs>

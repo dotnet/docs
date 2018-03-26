@@ -1,7 +1,9 @@
-<Type Name="AspNetWebSocketOptions" FullName="System.Web.WebSockets.AspNetWebSocketOptions">
+﻿<Type Name="AspNetWebSocketOptions" FullName="System.Web.WebSockets.AspNetWebSocketOptions">
   <TypeSignature Language="C#" Value="public sealed class AspNetWebSocketOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AspNetWebSocketOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.WebSockets.AspNetWebSocketOptions" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetWebSocketOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AspNetWebSocketOptions sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public AspNetWebSocketOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebSockets.AspNetWebSocketOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspNetWebSocketOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool RequireSameOrigin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireSameOrigin" />
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketOptions.RequireSameOrigin" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireSameOrigin As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSameOrigin { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public string SubProtocol { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubProtocol" />
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketOptions.SubProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubProtocol As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubProtocol { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

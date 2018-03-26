@@ -1,7 +1,9 @@
-<Type Name="DynamicMetaObject" FullName="System.Dynamic.DynamicMetaObject">
+﻿<Type Name="DynamicMetaObject" FullName="System.Dynamic.DynamicMetaObject">
   <TypeSignature Language="C#" Value="public class DynamicMetaObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicMetaObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.DynamicMetaObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicMetaObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicMetaObject" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -35,10 +37,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.DynamicMetaObject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DynamicMetaObject (System.Linq.Expressions.Expression expression, System.Dynamic.BindingRestrictions restrictions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression expression, class System.Dynamic.BindingRestrictions restrictions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.#ctor(System.Linq.Expressions.Expression,System.Dynamic.BindingRestrictions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMetaObject(System::Linq::Expressions::Expression ^ expression, System::Dynamic::BindingRestrictions ^ restrictions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -72,6 +84,7 @@
       <MemberSignature Language="C#" Value="public DynamicMetaObject (System.Linq.Expressions.Expression expression, System.Dynamic.BindingRestrictions restrictions, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression expression, class System.Dynamic.BindingRestrictions restrictions, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.#ctor(System.Linq.Expressions.Expression,System.Dynamic.BindingRestrictions,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMetaObject(System::Linq::Expressions::Expression ^ expression, System::Dynamic::BindingRestrictions ^ restrictions, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -107,6 +120,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindBinaryOperation (System.Dynamic.BinaryOperationBinder binder, System.Dynamic.DynamicMetaObject arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindBinaryOperation(class System.Dynamic.BinaryOperationBinder binder, class System.Dynamic.DynamicMetaObject arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindBinaryOperation(System.Dynamic.BinaryOperationBinder,System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindBinaryOperation (binder As BinaryOperationBinder, arg As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindBinaryOperation(System::Dynamic::BinaryOperationBinder ^ binder, System::Dynamic::DynamicMetaObject ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -144,6 +159,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindConvert (System.Dynamic.ConvertBinder binder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindConvert(class System.Dynamic.ConvertBinder binder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindConvert(System.Dynamic.ConvertBinder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindConvert (binder As ConvertBinder) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindConvert(System::Dynamic::ConvertBinder ^ binder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -186,6 +203,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindCreateInstance (System.Dynamic.CreateInstanceBinder binder, System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindCreateInstance(class System.Dynamic.CreateInstanceBinder binder, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindCreateInstance(System.Dynamic.CreateInstanceBinder,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindCreateInstance (binder As CreateInstanceBinder, args As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindCreateInstance(System::Dynamic::CreateInstanceBinder ^ binder, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -223,6 +242,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindDeleteIndex (System.Dynamic.DeleteIndexBinder binder, System.Dynamic.DynamicMetaObject[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindDeleteIndex(class System.Dynamic.DeleteIndexBinder binder, class System.Dynamic.DynamicMetaObject[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindDeleteIndex(System.Dynamic.DeleteIndexBinder,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindDeleteIndex (binder As DeleteIndexBinder, indexes As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindDeleteIndex(System::Dynamic::DeleteIndexBinder ^ binder, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ indexes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -260,6 +281,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindDeleteMember (System.Dynamic.DeleteMemberBinder binder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindDeleteMember(class System.Dynamic.DeleteMemberBinder binder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindDeleteMember(System.Dynamic.DeleteMemberBinder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindDeleteMember (binder As DeleteMemberBinder) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindDeleteMember(System::Dynamic::DeleteMemberBinder ^ binder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -295,6 +318,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindGetIndex (System.Dynamic.GetIndexBinder binder, System.Dynamic.DynamicMetaObject[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindGetIndex(class System.Dynamic.GetIndexBinder binder, class System.Dynamic.DynamicMetaObject[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindGetIndex(System.Dynamic.GetIndexBinder,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindGetIndex (binder As GetIndexBinder, indexes As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindGetIndex(System::Dynamic::GetIndexBinder ^ binder, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ indexes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -332,6 +357,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindGetMember (System.Dynamic.GetMemberBinder binder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindGetMember(class System.Dynamic.GetMemberBinder binder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindGetMember(System.Dynamic.GetMemberBinder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindGetMember (binder As GetMemberBinder) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindGetMember(System::Dynamic::GetMemberBinder ^ binder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -367,6 +394,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindInvoke (System.Dynamic.InvokeBinder binder, System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindInvoke(class System.Dynamic.InvokeBinder binder, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindInvoke(System.Dynamic.InvokeBinder,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindInvoke (binder As InvokeBinder, args As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindInvoke(System::Dynamic::InvokeBinder ^ binder, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -404,6 +433,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindInvokeMember (System.Dynamic.InvokeMemberBinder binder, System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindInvokeMember(class System.Dynamic.InvokeMemberBinder binder, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindInvokeMember(System.Dynamic.InvokeMemberBinder,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindInvokeMember (binder As InvokeMemberBinder, args As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindInvokeMember(System::Dynamic::InvokeMemberBinder ^ binder, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -441,6 +472,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindSetIndex (System.Dynamic.SetIndexBinder binder, System.Dynamic.DynamicMetaObject[] indexes, System.Dynamic.DynamicMetaObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindSetIndex(class System.Dynamic.SetIndexBinder binder, class System.Dynamic.DynamicMetaObject[] indexes, class System.Dynamic.DynamicMetaObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindSetIndex(System.Dynamic.SetIndexBinder,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindSetIndex (binder As SetIndexBinder, indexes As DynamicMetaObject(), value As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindSetIndex(System::Dynamic::SetIndexBinder ^ binder, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ indexes, System::Dynamic::DynamicMetaObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -480,6 +513,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindSetMember (System.Dynamic.SetMemberBinder binder, System.Dynamic.DynamicMetaObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindSetMember(class System.Dynamic.SetMemberBinder binder, class System.Dynamic.DynamicMetaObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindSetMember(System.Dynamic.SetMemberBinder,System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindSetMember (binder As SetMemberBinder, value As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindSetMember(System::Dynamic::SetMemberBinder ^ binder, System::Dynamic::DynamicMetaObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -517,6 +552,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject BindUnaryOperation (System.Dynamic.UnaryOperationBinder binder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject BindUnaryOperation(class System.Dynamic.UnaryOperationBinder binder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.BindUnaryOperation(System.Dynamic.UnaryOperationBinder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindUnaryOperation (binder As UnaryOperationBinder) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ BindUnaryOperation(System::Dynamic::UnaryOperationBinder ^ binder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -552,6 +589,7 @@
       <MemberSignature Language="C#" Value="public static System.Dynamic.DynamicMetaObject Create (object value, System.Linq.Expressions.Expression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Dynamic.DynamicMetaObject Create(object value, class System.Linq.Expressions.Expression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.Create(System.Object,System.Linq.Expressions.Expression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Dynamic::DynamicMetaObject ^ Create(System::Object ^ value, System::Linq::Expressions::Expression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -589,6 +627,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Dynamic.DynamicMetaObject[] EmptyMetaObjects;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Dynamic.DynamicMetaObject[] EmptyMetaObjects" />
       <MemberSignature Language="DocId" Value="F:System.Dynamic.DynamicMetaObject.EmptyMetaObjects" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EmptyMetaObjects As DynamicMetaObject() " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ EmptyMetaObjects;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -619,6 +659,8 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression Expression { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression Expression" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DynamicMetaObject.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -650,6 +692,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;string&gt; GetDynamicMemberNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetDynamicMemberNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObject.GetDynamicMemberNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDynamicMemberNames () As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetDynamicMemberNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -682,6 +726,8 @@
       <MemberSignature Language="C#" Value="public bool HasValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasValue" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DynamicMetaObject.HasValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasValue { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -713,6 +759,8 @@
       <MemberSignature Language="C#" Value="public Type LimitType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type LimitType" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DynamicMetaObject.LimitType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LimitType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ LimitType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -752,6 +800,8 @@
       <MemberSignature Language="C#" Value="public System.Dynamic.BindingRestrictions Restrictions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Dynamic.BindingRestrictions Restrictions" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DynamicMetaObject.Restrictions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Restrictions As BindingRestrictions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Dynamic::BindingRestrictions ^ Restrictions { System::Dynamic::BindingRestrictions ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -783,6 +833,8 @@
       <MemberSignature Language="C#" Value="public Type RuntimeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type RuntimeType" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DynamicMetaObject.RuntimeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RuntimeType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ RuntimeType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -814,6 +866,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DynamicMetaObject.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -841,14 +895,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.DynamicMetaObject" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

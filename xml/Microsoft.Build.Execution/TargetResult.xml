@@ -1,7 +1,9 @@
-<Type Name="TargetResult" FullName="Microsoft.Build.Execution.TargetResult">
+﻿<Type Name="TargetResult" FullName="Microsoft.Build.Execution.TargetResult">
   <TypeSignature Language="C#" Value="public class TargetResult : Microsoft.Build.Execution.ITargetResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TargetResult extends System.Object implements class Microsoft.Build.Execution.ITargetResult" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.TargetResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class TargetResult&#xA;Implements ITargetResult" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TargetResult : Microsoft::Build::Execution::ITargetResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,7 +25,12 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.TargetResult.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Execution.ITargetResult.Exception</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,7 +53,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Items" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.TargetResult.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Items { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Execution.ITargetResult.Items</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,7 +88,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.TargetResultCode ResultCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Execution.TargetResultCode ResultCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.TargetResult.ResultCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultCode As TargetResultCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Execution::TargetResultCode ResultCode { Microsoft::Build::Execution::TargetResultCode get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Execution.ITargetResult.ResultCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

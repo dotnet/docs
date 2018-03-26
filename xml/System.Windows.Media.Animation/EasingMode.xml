@@ -1,7 +1,9 @@
-<Type Name="EasingMode" FullName="System.Windows.Media.Animation.EasingMode">
+﻿<Type Name="EasingMode" FullName="System.Windows.Media.Animation.EasingMode">
   <TypeSignature Language="C#" Value="public enum EasingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EasingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.EasingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EasingMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EasingMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +79,8 @@
       <MemberSignature Language="C#" Value="EaseIn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.EasingMode EaseIn = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingMode.EaseIn" />
+      <MemberSignature Language="VB.NET" Value="EaseIn" />
+      <MemberSignature Language="C++ CLI" Value="EaseIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.EasingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Interpolation follows the mathematical formula associated with the easing function.</summary>
       </Docs>
@@ -93,6 +98,8 @@
       <MemberSignature Language="C#" Value="EaseInOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.EasingMode EaseInOut = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingMode.EaseInOut" />
+      <MemberSignature Language="VB.NET" Value="EaseInOut" />
+      <MemberSignature Language="C++ CLI" Value="EaseInOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.EasingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Interpolation uses <see cref="F:System.Windows.Media.Animation.EasingMode.EaseIn" /> for the first half of the animation and <see cref="F:System.Windows.Media.Animation.EasingMode.EaseOut" /> for the second half.</summary>
       </Docs>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="EaseOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.EasingMode EaseOut = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingMode.EaseOut" />
+      <MemberSignature Language="VB.NET" Value="EaseOut" />
+      <MemberSignature Language="C++ CLI" Value="EaseOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -117,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.EasingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Interpolation follows 100% interpolation minus the output of the formula associated with the easing function.</summary>
       </Docs>

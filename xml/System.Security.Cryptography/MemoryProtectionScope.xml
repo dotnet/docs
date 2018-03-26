@@ -1,7 +1,9 @@
-<Type Name="MemoryProtectionScope" FullName="System.Security.Cryptography.MemoryProtectionScope">
+﻿<Type Name="MemoryProtectionScope" FullName="System.Security.Cryptography.MemoryProtectionScope">
   <TypeSignature Language="C#" Value="public enum MemoryProtectionScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemoryProtectionScope extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MemoryProtectionScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MemoryProtectionScope" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MemoryProtectionScope" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="CrossProcess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.MemoryProtectionScope CrossProcess = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.CrossProcess" />
+      <MemberSignature Language="VB.NET" Value="CrossProcess" />
+      <MemberSignature Language="C++ CLI" Value="CrossProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>All code in any process can unprotect memory that was protected using the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="SameLogon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.MemoryProtectionScope SameLogon = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.SameLogon" />
+      <MemberSignature Language="VB.NET" Value="SameLogon" />
+      <MemberSignature Language="C++ CLI" Value="SameLogon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Only code running in the same user context as the code that called the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method can unprotect memory.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="SameProcess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.MemoryProtectionScope SameProcess = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.SameProcess" />
+      <MemberSignature Language="VB.NET" Value="SameProcess" />
+      <MemberSignature Language="C++ CLI" Value="SameProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Only code running in the same process as the code that called the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method can unprotect memory.</summary>
       </Docs>

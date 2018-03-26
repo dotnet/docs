@@ -1,7 +1,9 @@
-<Type Name="CoerceValueCallback" FullName="System.Windows.CoerceValueCallback">
+﻿<Type Name="CoerceValueCallback" FullName="System.Windows.CoerceValueCallback">
   <TypeSignature Language="C#" Value="public delegate object CoerceValueCallback(DependencyObject d, object baseValue);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CoerceValueCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.CoerceValueCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function CoerceValueCallback(d As DependencyObject, baseValue As Object) As Object " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ CoerceValueCallback(DependencyObject ^ d, System::Object ^ baseValue);" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

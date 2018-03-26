@@ -1,7 +1,9 @@
-<Type Name="TableLayoutStyle" FullName="System.Windows.Forms.TableLayoutStyle">
+﻿<Type Name="TableLayoutStyle" FullName="System.Windows.Forms.TableLayoutStyle">
   <TypeSignature Language="C#" Value="public abstract class TableLayoutStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TableLayoutStyle extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutStyle" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TableLayoutStyle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableLayoutStyle abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected TableLayoutStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TableLayoutStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.SizeType SizeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SizeType SizeType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyle.SizeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizeType As SizeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SizeType SizeType { System::Windows::Forms::SizeType get(); void set(System::Windows::Forms::SizeType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

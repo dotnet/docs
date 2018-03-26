@@ -1,7 +1,9 @@
-<Type Name="KeyTypes" FullName="System.IdentityModel.Protocols.WSTrust.KeyTypes">
+﻿<Type Name="KeyTypes" FullName="System.IdentityModel.Protocols.WSTrust.KeyTypes">
   <TypeSignature Language="C#" Value="public static class KeyTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit KeyTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.KeyTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyTypes" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyTypes abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public const string Asymmetric;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Asymmetric" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Asymmetric" />
+      <MemberSignature Language="VB.NET" Value="Public Const Asymmetric As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Asymmetric;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public const string Bearer;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Bearer" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Bearer" />
+      <MemberSignature Language="VB.NET" Value="Public Const Bearer As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Bearer;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public const string Symmetric;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Symmetric" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Symmetric" />
+      <MemberSignature Language="VB.NET" Value="Public Const Symmetric As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Symmetric;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

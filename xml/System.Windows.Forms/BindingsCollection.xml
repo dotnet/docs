@@ -1,7 +1,9 @@
-<Type Name="BindingsCollection" FullName="System.Windows.Forms.BindingsCollection">
+﻿<Type Name="BindingsCollection" FullName="System.Windows.Forms.BindingsCollection">
   <TypeSignature Language="C#" Value="public class BindingsCollection : System.Windows.Forms.BaseCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingsCollection extends System.Windows.Forms.BaseCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingsCollection&#xA;Inherits BaseCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingsCollection : System::Windows::Forms::BaseCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,9 +40,10 @@
   </Docs>
   <Members>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="protected void Add (System.Windows.Forms.Binding binding);" />
+      <MemberSignature Language="C#" Value="protected internal void Add (System.Windows.Forms.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Add(class System.Windows.Forms.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.Add(System.Windows.Forms.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Add(System::Windows::Forms::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="protected virtual void AddCore (System.Windows.Forms.Binding dataBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddCore(class System.Windows.Forms.Binding dataBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.AddCore(System.Windows.Forms.Binding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddCore (dataBinding As Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddCore(System::Windows::Forms::Binding ^ dataBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,9 +93,11 @@
       </Docs>
     </Member>
     <Member MemberName="Clear">
-      <MemberSignature Language="C#" Value="protected void Clear ();" />
+      <MemberSignature Language="C#" Value="protected internal void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +123,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ClearCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ClearCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.ClearCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ClearCore ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ClearCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -134,6 +143,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler CollectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingsCollection.CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanged As CollectionChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +179,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler CollectionChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler CollectionChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingsCollection.CollectionChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanging As CollectionChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -202,6 +215,8 @@
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingsCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -220,6 +235,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Binding Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingsCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Binding ^ default[int] { System::Windows::Forms::Binding ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -255,6 +272,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.ArrayList List { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList List" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingsCollection.List" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property List As ArrayList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ArrayList ^ List { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -273,6 +292,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs ccevent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs ccevent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (ccevent As CollectionChangeEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -307,6 +328,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanging (System.ComponentModel.CollectionChangeEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanging(class System.ComponentModel.CollectionChangeEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.OnCollectionChanging(System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanging (e As CollectionChangeEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanging(System::ComponentModel::CollectionChangeEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -339,9 +362,10 @@
       </Docs>
     </Member>
     <Member MemberName="Remove">
-      <MemberSignature Language="C#" Value="protected void Remove (System.Windows.Forms.Binding binding);" />
+      <MemberSignature Language="C#" Value="protected internal void Remove (System.Windows.Forms.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Remove(class System.Windows.Forms.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.Remove(System.Windows.Forms.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Remove(System::Windows::Forms::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -362,9 +386,11 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
-      <MemberSignature Language="C#" Value="protected void RemoveAt (int index);" />
+      <MemberSignature Language="C#" Value="protected internal void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -388,6 +414,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RemoveCore (System.Windows.Forms.Binding dataBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RemoveCore(class System.Windows.Forms.Binding dataBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.RemoveCore(System.Windows.Forms.Binding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RemoveCore (dataBinding As Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RemoveCore(System::Windows::Forms::Binding ^ dataBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -406,9 +434,11 @@
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMyAll">
-      <MemberSignature Language="C#" Value="protected bool ShouldSerializeMyAll ();" />
+      <MemberSignature Language="C#" Value="protected internal bool ShouldSerializeMyAll ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool ShouldSerializeMyAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.ShouldSerializeMyAll" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function ShouldSerializeMyAll () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; bool ShouldSerializeMyAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

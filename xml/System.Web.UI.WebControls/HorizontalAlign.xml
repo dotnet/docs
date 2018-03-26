@@ -1,7 +1,9 @@
-<Type Name="HorizontalAlign" FullName="System.Web.UI.WebControls.HorizontalAlign">
+﻿<Type Name="HorizontalAlign" FullName="System.Web.UI.WebControls.HorizontalAlign">
   <TypeSignature Language="C#" Value="public enum HorizontalAlign" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HorizontalAlign extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HorizontalAlign" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HorizontalAlign" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HorizontalAlign" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign Center = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.Center" />
+      <MemberSignature Language="VB.NET" Value="Center" />
+      <MemberSignature Language="C++ CLI" Value="Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The contents of a container are centered.</summary>
       </Docs>
@@ -54,6 +59,8 @@
       <MemberSignature Language="C#" Value="Justify" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign Justify = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.Justify" />
+      <MemberSignature Language="VB.NET" Value="Justify" />
+      <MemberSignature Language="C++ CLI" Value="Justify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The contents of a container are uniformly spread out and aligned with both the left and right margins.</summary>
       </Docs>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign Left = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The contents of a container are left justified.</summary>
       </Docs>
@@ -86,6 +97,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The horizontal alignment is not set.</summary>
       </Docs>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HorizontalAlign Right = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HorizontalAlign.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The contents of a container are right justified.</summary>
       </Docs>

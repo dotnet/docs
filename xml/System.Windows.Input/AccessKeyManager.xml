@@ -1,7 +1,9 @@
-<Type Name="AccessKeyManager" FullName="System.Windows.Input.AccessKeyManager">
+﻿<Type Name="AccessKeyManager" FullName="System.Windows.Input.AccessKeyManager">
   <TypeSignature Language="C#" Value="public sealed class AccessKeyManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AccessKeyManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.AccessKeyManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AccessKeyManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AccessKeyManager sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,27 @@
     <altmember cref="T:System.Windows.Input.AccessKeyPressedEventHandler" />
   </Docs>
   <Members>
+    <Member MemberName="AccessKeyPressed">
+      <MemberSignature Language="C#" Value="see AddAccessKeyPressedHandler, and RemoveAccessKeyPressedHandler" />
+      <MemberSignature Language="ILAsm" Value="see AddAccessKeyPressedHandler, and RemoveAccessKeyPressedHandler" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.AccessKeyManager.AccessKeyPressed" />
+      <MemberSignature Language="VB.NET" Value="see AddAccessKeyPressedHandler, and RemoveAccessKeyPressedHandler" />
+      <MemberType>AttachedEvent</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AccessKeyPressedEvent">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent AccessKeyPressedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent AccessKeyPressedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.AccessKeyManager.AccessKeyPressedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AccessKeyPressedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ AccessKeyPressedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +71,8 @@
       <MemberSignature Language="C#" Value="public static void AddAccessKeyPressedHandler (System.Windows.DependencyObject element, System.Windows.Input.AccessKeyPressedEventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAccessKeyPressedHandler(class System.Windows.DependencyObject element, class System.Windows.Input.AccessKeyPressedEventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.AddAccessKeyPressedHandler(System.Windows.DependencyObject,System.Windows.Input.AccessKeyPressedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddAccessKeyPressedHandler (element As DependencyObject, handler As AccessKeyPressedEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddAccessKeyPressedHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::AccessKeyPressedEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +96,8 @@
       <MemberSignature Language="C#" Value="public static bool IsKeyRegistered (object scope, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsKeyRegistered(object scope, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.IsKeyRegistered(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsKeyRegistered (scope As Object, key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsKeyRegistered(System::Object ^ scope, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +123,8 @@
       <MemberSignature Language="C#" Value="public static bool ProcessKey (object scope, string key, bool isMultiple);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ProcessKey(object scope, string key, bool isMultiple) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.ProcessKey(System.Object,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ProcessKey (scope As Object, key As String, isMultiple As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ProcessKey(System::Object ^ scope, System::String ^ key, bool isMultiple);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +157,8 @@
       <MemberSignature Language="C#" Value="public static void Register (string key, System.Windows.IInputElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(string key, class System.Windows.IInputElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.Register(System.String,System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Register (key As String, element As IInputElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Register(System::String ^ key, System::Windows::IInputElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +191,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveAccessKeyPressedHandler (System.Windows.DependencyObject element, System.Windows.Input.AccessKeyPressedEventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAccessKeyPressedHandler(class System.Windows.DependencyObject element, class System.Windows.Input.AccessKeyPressedEventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.RemoveAccessKeyPressedHandler(System.Windows.DependencyObject,System.Windows.Input.AccessKeyPressedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveAccessKeyPressedHandler (element As DependencyObject, handler As AccessKeyPressedEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveAccessKeyPressedHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::AccessKeyPressedEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +216,8 @@
       <MemberSignature Language="C#" Value="public static void Unregister (string key, System.Windows.IInputElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(string key, class System.Windows.IInputElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.Unregister(System.String,System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (key As String, element As IInputElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unregister(System::String ^ key, System::Windows::IInputElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

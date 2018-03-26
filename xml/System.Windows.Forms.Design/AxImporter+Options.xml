@@ -1,7 +1,9 @@
-<Type Name="AxImporter+Options" FullName="System.Windows.Forms.Design.AxImporter+Options">
+﻿<Type Name="AxImporter+Options" FullName="System.Windows.Forms.Design.AxImporter+Options">
   <TypeSignature Language="C#" Value="public sealed class AxImporter.Options" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit AxImporter/Options extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxImporter.Options" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AxImporter.Options" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class AxImporter::Options sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public Options ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.Options.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Options();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool delaySign;" />
       <MemberSignature Language="ILAsm" Value=".field public bool delaySign" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.delaySign" />
+      <MemberSignature Language="VB.NET" Value="Public delaySign As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool delaySign;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public bool genSources;" />
       <MemberSignature Language="ILAsm" Value=".field public bool genSources" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.genSources" />
+      <MemberSignature Language="VB.NET" Value="Public genSources As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool genSources;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public bool ignoreRegisteredOcx;" />
       <MemberSignature Language="ILAsm" Value=".field public bool ignoreRegisteredOcx" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.ignoreRegisteredOcx" />
+      <MemberSignature Language="VB.NET" Value="Public ignoreRegisteredOcx As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool ignoreRegisteredOcx;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -99,6 +109,8 @@
       <MemberSignature Language="C#" Value="public string keyContainer;" />
       <MemberSignature Language="ILAsm" Value=".field public string keyContainer" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.keyContainer" />
+      <MemberSignature Language="VB.NET" Value="Public keyContainer As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ keyContainer;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -123,6 +135,8 @@
       <MemberSignature Language="C#" Value="public string keyFile;" />
       <MemberSignature Language="ILAsm" Value=".field public string keyFile" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.keyFile" />
+      <MemberSignature Language="VB.NET" Value="Public keyFile As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ keyFile;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.StrongNameKeyPair keyPair;" />
       <MemberSignature Language="ILAsm" Value=".field public class System.Reflection.StrongNameKeyPair keyPair" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.keyPair" />
+      <MemberSignature Language="VB.NET" Value="Public keyPair As StrongNameKeyPair " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Reflection::StrongNameKeyPair ^ keyPair;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -171,6 +187,8 @@
       <MemberSignature Language="C#" Value="public bool msBuildErrors;" />
       <MemberSignature Language="ILAsm" Value=".field public bool msBuildErrors" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.msBuildErrors" />
+      <MemberSignature Language="VB.NET" Value="Public msBuildErrors As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool msBuildErrors;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -195,6 +213,8 @@
       <MemberSignature Language="C#" Value="public bool noLogo;" />
       <MemberSignature Language="ILAsm" Value=".field public bool noLogo" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.noLogo" />
+      <MemberSignature Language="VB.NET" Value="Public noLogo As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool noLogo;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -219,6 +239,8 @@
       <MemberSignature Language="C#" Value="public string outputDirectory;" />
       <MemberSignature Language="ILAsm" Value=".field public string outputDirectory" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.outputDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public outputDirectory As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ outputDirectory;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -243,6 +265,8 @@
       <MemberSignature Language="C#" Value="public string outputName;" />
       <MemberSignature Language="ILAsm" Value=".field public string outputName" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.outputName" />
+      <MemberSignature Language="VB.NET" Value="Public outputName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ outputName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -267,6 +291,8 @@
       <MemberSignature Language="C#" Value="public bool overwriteRCW;" />
       <MemberSignature Language="ILAsm" Value=".field public bool overwriteRCW" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.overwriteRCW" />
+      <MemberSignature Language="VB.NET" Value="Public overwriteRCW As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool overwriteRCW;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -291,6 +317,8 @@
       <MemberSignature Language="C#" Value="public byte[] publicKey;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] publicKey" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.publicKey" />
+      <MemberSignature Language="VB.NET" Value="Public publicKey As Byte() " />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ publicKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -315,6 +343,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.AxImporter.IReferenceResolver references;" />
       <MemberSignature Language="ILAsm" Value=".field public class System.Windows.Forms.Design.AxImporter/IReferenceResolver references" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.references" />
+      <MemberSignature Language="VB.NET" Value="Public references As AxImporter.IReferenceResolver " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Windows::Forms::Design::AxImporter::IReferenceResolver ^ references;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -340,6 +370,8 @@
       <MemberSignature Language="C#" Value="public bool silentMode;" />
       <MemberSignature Language="ILAsm" Value=".field public bool silentMode" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.silentMode" />
+      <MemberSignature Language="VB.NET" Value="Public silentMode As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool silentMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -364,6 +396,8 @@
       <MemberSignature Language="C#" Value="public bool verboseMode;" />
       <MemberSignature Language="ILAsm" Value=".field public bool verboseMode" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.verboseMode" />
+      <MemberSignature Language="VB.NET" Value="Public verboseMode As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool verboseMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

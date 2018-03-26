@@ -1,7 +1,9 @@
-<Type Name="SspiSecurityTokenProvider" FullName="System.ServiceModel.Security.SspiSecurityTokenProvider">
+﻿<Type Name="SspiSecurityTokenProvider" FullName="System.ServiceModel.Security.SspiSecurityTokenProvider">
   <TypeSignature Language="C#" Value="public class SspiSecurityTokenProvider : System.IdentityModel.Selectors.SecurityTokenProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SspiSecurityTokenProvider extends System.IdentityModel.Selectors.SecurityTokenProvider" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SspiSecurityTokenProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class SspiSecurityTokenProvider&#xA;Inherits SecurityTokenProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SspiSecurityTokenProvider : System::IdentityModel::Selectors::SecurityTokenProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SspiSecurityTokenProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SspiSecurityTokenProvider (System.Net.NetworkCredential credential, bool extractGroupsForWindowsAccounts, bool allowUnauthenticatedCallers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.NetworkCredential credential, bool extractGroupsForWindowsAccounts, bool allowUnauthenticatedCallers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SspiSecurityTokenProvider.#ctor(System.Net.NetworkCredential,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credential As NetworkCredential, extractGroupsForWindowsAccounts As Boolean, allowUnauthenticatedCallers As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SspiSecurityTokenProvider(System::Net::NetworkCredential ^ credential, bool extractGroupsForWindowsAccounts, bool allowUnauthenticatedCallers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +70,8 @@
       <MemberSignature Language="C#" Value="public SspiSecurityTokenProvider (System.Net.NetworkCredential credential, bool allowNtlm, System.Security.Principal.TokenImpersonationLevel impersonationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.NetworkCredential credential, bool allowNtlm, valuetype System.Security.Principal.TokenImpersonationLevel impersonationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SspiSecurityTokenProvider.#ctor(System.Net.NetworkCredential,System.Boolean,System.Security.Principal.TokenImpersonationLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credential As NetworkCredential, allowNtlm As Boolean, impersonationLevel As TokenImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SspiSecurityTokenProvider(System::Net::NetworkCredential ^ credential, bool allowNtlm, System::Security::Principal::TokenImpersonationLevel impersonationLevel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +102,8 @@
       <MemberSignature Language="C#" Value="protected override System.IdentityModel.Tokens.SecurityToken GetTokenCore (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken GetTokenCore(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SspiSecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,14 +129,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SspiSecurityTokenProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

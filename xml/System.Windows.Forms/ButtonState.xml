@@ -1,7 +1,9 @@
-<Type Name="ButtonState" FullName="System.Windows.Forms.ButtonState">
+﻿<Type Name="ButtonState" FullName="System.Windows.Forms.ButtonState">
   <TypeSignature Language="C#" Value="public enum ButtonState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ButtonState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ButtonState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ButtonState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ButtonState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ButtonState All = int32(18176)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonState.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>18176</MemberValue>
       <Docs>
         <summary>All flags except <see langword="Normal" /> are set.</summary>
       </Docs>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="Checked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ButtonState Checked = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonState.Checked" />
+      <MemberSignature Language="VB.NET" Value="Checked" />
+      <MemberSignature Language="C++ CLI" Value="Checked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The button has a checked or latched appearance. Use this appearance to show that a toggle button has been pressed.</summary>
       </Docs>
@@ -72,6 +80,8 @@
       <MemberSignature Language="C#" Value="Flat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ButtonState Flat = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonState.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>The button has a flat, two-dimensional appearance.</summary>
       </Docs>
@@ -88,6 +99,8 @@
       <MemberSignature Language="C#" Value="Inactive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ButtonState Inactive = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonState.Inactive" />
+      <MemberSignature Language="VB.NET" Value="Inactive" />
+      <MemberSignature Language="C++ CLI" Value="Inactive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The button is inactive (grayed).</summary>
       </Docs>
@@ -104,6 +118,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ButtonState Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonState.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The button has its normal appearance (three-dimensional).</summary>
       </Docs>
@@ -120,6 +137,8 @@
       <MemberSignature Language="C#" Value="Pushed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ButtonState Pushed = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonState.Pushed" />
+      <MemberSignature Language="VB.NET" Value="Pushed" />
+      <MemberSignature Language="C++ CLI" Value="Pushed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The button appears pressed.</summary>
       </Docs>

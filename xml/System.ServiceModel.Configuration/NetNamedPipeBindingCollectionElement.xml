@@ -1,7 +1,9 @@
-<Type Name="NetNamedPipeBindingCollectionElement" FullName="System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement">
+﻿<Type Name="NetNamedPipeBindingCollectionElement" FullName="System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement">
   <TypeSignature Language="C#" Value="public class NetNamedPipeBindingCollectionElement : System.ServiceModel.Configuration.StandardBindingCollectionElement&lt;System.ServiceModel.NetNamedPipeBinding,System.ServiceModel.Configuration.NetNamedPipeBindingElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetNamedPipeBindingCollectionElement extends System.ServiceModel.Configuration.StandardBindingCollectionElement`2&lt;class System.ServiceModel.NetNamedPipeBinding, class System.ServiceModel.Configuration.NetNamedPipeBindingElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetNamedPipeBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetNamedPipeBinding, NetNamedPipeBindingElement)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetNamedPipeBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetNamedPipeBinding ^, System::ServiceModel::Configuration::NetNamedPipeBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public NetNamedPipeBindingCollectionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetNamedPipeBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

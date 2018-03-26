@@ -1,7 +1,9 @@
-<Type Name="CaseInsensitiveHashCodeProvider" FullName="System.Collections.CaseInsensitiveHashCodeProvider">
+﻿<Type Name="CaseInsensitiveHashCodeProvider" FullName="System.Collections.CaseInsensitiveHashCodeProvider">
   <TypeSignature Language="C#" Value="public class CaseInsensitiveHashCodeProvider : System.Collections.IHashCodeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CaseInsensitiveHashCodeProvider extends System.Object implements class System.Collections.IHashCodeProvider" />
   <TypeSignature Language="DocId" Value="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class CaseInsensitiveHashCodeProvider&#xA;Implements IHashCodeProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CaseInsensitiveHashCodeProvider : System::Collections::IHashCodeProvider" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,10 +61,22 @@
     <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.CaseInsensitiveHashCodeProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CaseInsensitiveHashCodeProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveHashCodeProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CaseInsensitiveHashCodeProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,6 +120,8 @@
       <MemberSignature Language="C#" Value="public CaseInsensitiveHashCodeProvider (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveHashCodeProvider.#ctor(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (culture As CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CaseInsensitiveHashCodeProvider(System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -152,6 +168,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.CaseInsensitiveHashCodeProvider Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.CaseInsensitiveHashCodeProvider Default" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveHashCodeProvider.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As CaseInsensitiveHashCodeProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveHashCodeProvider ^ Default { System::Collections::CaseInsensitiveHashCodeProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +205,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.CaseInsensitiveHashCodeProvider DefaultInvariant { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.CaseInsensitiveHashCodeProvider DefaultInvariant" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveHashCodeProvider.DefaultInvariant" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultInvariant As CaseInsensitiveHashCodeProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveHashCodeProvider ^ DefaultInvariant { System::Collections::CaseInsensitiveHashCodeProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -231,7 +251,12 @@
       <MemberSignature Language="C#" Value="public int GetHashCode (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveHashCodeProvider.GetHashCode(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IHashCodeProvider.GetHashCode(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -268,15 +293,5 @@
         <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.CaseInsensitiveHashCodeProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

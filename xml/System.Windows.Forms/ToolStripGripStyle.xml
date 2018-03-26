@@ -1,7 +1,9 @@
-<Type Name="ToolStripGripStyle" FullName="System.Windows.Forms.ToolStripGripStyle">
+﻿<Type Name="ToolStripGripStyle" FullName="System.Windows.Forms.ToolStripGripStyle">
   <TypeSignature Language="C#" Value="public enum ToolStripGripStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripGripStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripGripStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ToolStripGripStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolStripGripStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Hidden" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripGripStyle Hidden = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripGripStyle.Hidden" />
+      <MemberSignature Language="VB.NET" Value="Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripGripStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that a <see cref="T:System.Windows.Forms.ToolStrip" /> move handle (grip) is not visible.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Visible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripGripStyle Visible = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripGripStyle.Visible" />
+      <MemberSignature Language="VB.NET" Value="Visible" />
+      <MemberSignature Language="C++ CLI" Value="Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripGripStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that a <see cref="T:System.Windows.Forms.ToolStrip" /> move handle (grip) is visible.</summary>
       </Docs>

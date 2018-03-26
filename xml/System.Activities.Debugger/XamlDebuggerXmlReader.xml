@@ -1,7 +1,9 @@
-<Type Name="XamlDebuggerXmlReader" FullName="System.Activities.Debugger.XamlDebuggerXmlReader">
+﻿<Type Name="XamlDebuggerXmlReader" FullName="System.Activities.Debugger.XamlDebuggerXmlReader">
   <TypeSignature Language="C#" Value="public class XamlDebuggerXmlReader : System.Xaml.XamlReader, System.Xaml.IXamlLineInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlDebuggerXmlReader extends System.Xaml.XamlReader implements class System.Xaml.IXamlLineInfo" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.XamlDebuggerXmlReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlDebuggerXmlReader&#xA;Inherits XamlReader&#xA;Implements IXamlLineInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlDebuggerXmlReader : System::Xaml::XamlReader, System::Xaml::IXamlLineInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +21,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlDebuggerXmlReader (System.IO.TextReader underlyingTextReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader underlyingTextReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.IO.TextReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (underlyingTextReader As TextReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDebuggerXmlReader(System::IO::TextReader ^ underlyingTextReader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public XamlDebuggerXmlReader (System.IO.TextReader underlyingTextReader, System.Xaml.XamlSchemaContext schemaContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader underlyingTextReader, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlSchemaContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (underlyingTextReader As TextReader, schemaContext As XamlSchemaContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDebuggerXmlReader(System::IO::TextReader ^ underlyingTextReader, System::Xaml::XamlSchemaContext ^ schemaContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +76,7 @@
       <MemberSignature Language="C#" Value="public XamlDebuggerXmlReader (System.Xaml.XamlReader underlyingReader, System.IO.TextReader textReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlReader underlyingReader, class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.Xaml.XamlReader,System.IO.TextReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDebuggerXmlReader(System::Xaml::XamlReader ^ underlyingReader, System::IO::TextReader ^ textReader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -86,6 +102,7 @@
       <MemberSignature Language="C#" Value="public XamlDebuggerXmlReader (System.Xaml.XamlReader underlyingReader, System.Xaml.IXamlLineInfo xamlLineInfo, System.IO.TextReader textReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlReader underlyingReader, class System.Xaml.IXamlLineInfo xamlLineInfo, class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.Xaml.XamlReader,System.Xaml.IXamlLineInfo,System.IO.TextReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDebuggerXmlReader(System::Xaml::XamlReader ^ underlyingReader, System::Xaml::IXamlLineInfo ^ xamlLineInfo, System::IO::TextReader ^ textReader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,6 +130,8 @@
       <MemberSignature Language="C#" Value="public bool CollectNonActivitySourceLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CollectNonActivitySourceLocation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.CollectNonActivitySourceLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property CollectNonActivitySourceLocation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CollectNonActivitySourceLocation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -132,6 +151,8 @@
       <MemberSignature Language="C#" Value="public static void CopyAttachedSourceLocation (object source, object destination);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyAttachedSourceLocation(object source, object destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.CopyAttachedSourceLocation(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CopyAttachedSourceLocation (source As Object, destination As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CopyAttachedSourceLocation(System::Object ^ source, System::Object ^ destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -155,6 +176,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -177,6 +200,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier EndColumnName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier EndColumnName" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.EndColumnName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndColumnName As AttachableMemberIdentifier " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ EndColumnName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -194,6 +219,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier EndLineName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier EndLineName" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.EndLineName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndLineName As AttachableMemberIdentifier " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ EndLineName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -211,6 +238,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier FileNameName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier FileNameName" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.FileNameName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FileNameName As AttachableMemberIdentifier " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ FileNameName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -228,6 +257,8 @@
       <MemberSignature Language="C#" Value="public static object GetEndColumn (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetEndColumn(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetEndColumn(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEndColumn (instance As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetEndColumn(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -235,7 +266,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,6 +286,8 @@
       <MemberSignature Language="C#" Value="public static object GetEndLine (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetEndLine(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetEndLine(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEndLine (instance As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetEndLine(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -262,7 +295,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -282,6 +315,8 @@
       <MemberSignature Language="C#" Value="public static object GetFileName (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetFileName(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetFileName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileName (instance As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetFileName(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -304,6 +339,8 @@
       <MemberSignature Language="C#" Value="public static object GetStartColumn (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetStartColumn(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetStartColumn(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStartColumn (instance As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetStartColumn(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -311,7 +348,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -331,6 +368,8 @@
       <MemberSignature Language="C#" Value="public static object GetStartLine (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetStartLine(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetStartLine(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStartLine (instance As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetStartLine(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -338,7 +377,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -358,7 +397,12 @@
       <MemberSignature Language="C#" Value="public bool HasLineInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasLineInfo" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.HasLineInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLineInfo As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLineInfo { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xaml.IXamlLineInfo.HasLineInfo</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -377,6 +421,8 @@
       <MemberSignature Language="C#" Value="public override bool IsEof { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEof" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.IsEof" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEof As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEof { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -396,7 +442,12 @@
       <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xaml.IXamlLineInfo.LineNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -414,7 +465,12 @@
       <MemberSignature Language="C#" Value="public int LinePosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.LinePosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xaml.IXamlLineInfo.LinePosition</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -439,6 +495,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.XamlMember Member { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember Member" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Member" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Member As XamlMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlMember ^ Member { System::Xaml::XamlMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -457,6 +515,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.NamespaceDeclaration Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.NamespaceDeclaration Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Namespace As NamespaceDeclaration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::NamespaceDeclaration ^ Namespace { System::Xaml::NamespaceDeclaration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -475,6 +535,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.XamlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xaml.XamlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XamlNodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlNodeType NodeType { System::Xaml::XamlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -493,6 +555,8 @@
       <MemberSignature Language="C#" Value="public override bool Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -513,6 +577,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.XamlSchemaContext SchemaContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.SchemaContext" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaContext As XamlSchemaContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -531,6 +597,8 @@
       <MemberSignature Language="C#" Value="public static void SetEndColumn (object instance, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEndColumn(object instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetEndColumn(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEndColumn (instance As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEndColumn(System::Object ^ instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -554,6 +622,8 @@
       <MemberSignature Language="C#" Value="public static void SetEndLine (object instance, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEndLine(object instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetEndLine(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEndLine (instance As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEndLine(System::Object ^ instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -577,6 +647,8 @@
       <MemberSignature Language="C#" Value="public static void SetFileName (object instance, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFileName(object instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetFileName(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFileName (instance As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetFileName(System::Object ^ instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -600,6 +672,8 @@
       <MemberSignature Language="C#" Value="public static void SetStartColumn (object instance, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStartColumn(object instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetStartColumn(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStartColumn (instance As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStartColumn(System::Object ^ instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -623,6 +697,8 @@
       <MemberSignature Language="C#" Value="public static void SetStartLine (object instance, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStartLine(object instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetStartLine(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStartLine (instance As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStartLine(System::Object ^ instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -646,6 +722,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Debugger.SourceLocationFoundEventArgs&gt; SourceLocationFound;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Debugger.SourceLocationFoundEventArgs&gt; SourceLocationFound" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Debugger.XamlDebuggerXmlReader.SourceLocationFound" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SourceLocationFound As EventHandler(Of SourceLocationFoundEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Debugger::SourceLocationFoundEventArgs ^&gt; ^ SourceLocationFound;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -663,6 +741,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier StartColumnName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier StartColumnName" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.StartColumnName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartColumnName As AttachableMemberIdentifier " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ StartColumnName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -680,6 +760,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier StartLineName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier StartLineName" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.StartLineName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartLineName As AttachableMemberIdentifier " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ StartLineName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -697,6 +779,8 @@
       <MemberSignature Language="C#" Value="public override System.Xaml.XamlType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType Type" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As XamlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -715,6 +799,8 @@
       <MemberSignature Language="C#" Value="public override object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -729,14 +815,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

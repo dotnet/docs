@@ -1,7 +1,9 @@
-<Type Name="CursorEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.CursorEventArgs">
+﻿<Type Name="CursorEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.CursorEventArgs">
   <TypeSignature Language="C#" Value="public class CursorEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CursorEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class CursorEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CursorEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CursorEventArgs (System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea, System.Windows.Forms.DataVisualization.Charting.Axis axis, double newPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea, class System.Windows.Forms.DataVisualization.Charting.Axis axis, float64 newPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.ChartArea,System.Windows.Forms.DataVisualization.Charting.Axis,System.Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CursorEventArgs(System::Windows::Forms::DataVisualization::Charting::ChartArea ^ chartArea, System::Windows::Forms::DataVisualization::Charting::Axis ^ axis, double newPosition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -60,6 +72,7 @@
       <MemberSignature Language="C#" Value="public CursorEventArgs (System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea, System.Windows.Forms.DataVisualization.Charting.Axis axis, double newSelectionStart, double newSelectionEnd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea, class System.Windows.Forms.DataVisualization.Charting.Axis axis, float64 newSelectionStart, float64 newSelectionEnd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.ChartArea,System.Windows.Forms.DataVisualization.Charting.Axis,System.Double,System.Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CursorEventArgs(System::Windows::Forms::DataVisualization::Charting::ChartArea ^ chartArea, System::Windows::Forms::DataVisualization::Charting::Axis ^ axis, double newSelectionStart, double newSelectionEnd);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -84,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis Axis { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis Axis" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.Axis" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Axis As Axis" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::Axis ^ Axis { System::Windows::Forms::DataVisualization::Charting::Axis ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -115,6 +130,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartArea ChartArea { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ChartArea ChartArea" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.ChartArea" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartArea As ChartArea" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartArea ^ ChartArea { System::Windows::Forms::DataVisualization::Charting::ChartArea ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -146,6 +163,8 @@
       <MemberSignature Language="C#" Value="public double NewPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.NewPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewPosition As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewPosition { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -177,6 +196,8 @@
       <MemberSignature Language="C#" Value="public double NewSelectionEnd { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewSelectionEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.NewSelectionEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewSelectionEnd As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewSelectionEnd { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -210,6 +231,8 @@
       <MemberSignature Language="C#" Value="public double NewSelectionStart { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewSelectionStart" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.NewSelectionStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewSelectionStart As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewSelectionStart { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -239,14 +262,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="StatusStrip" FullName="System.Windows.Forms.StatusStrip">
+﻿<Type Name="StatusStrip" FullName="System.Windows.Forms.StatusStrip">
   <TypeSignature Language="C#" Value="public class StatusStrip : System.Windows.Forms.ToolStrip" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusStrip extends System.Windows.Forms.ToolStrip" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusStrip" />
+  <TypeSignature Language="VB.NET" Value="Public Class StatusStrip&#xA;Inherits ToolStrip" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StatusStrip : System::Windows::Forms::ToolStrip" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="public StatusStrip ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatusStrip();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public bool CanOverflow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanOverflow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.CanOverflow" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanOverflow As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanOverflow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,9 +139,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultItem">
-      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ToolStripItem CreateDefaultItem (string text, System.Drawing.Image image, EventHandler onClick);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Windows.Forms.ToolStripItem CreateDefaultItem (string text, System.Drawing.Image image, EventHandler onClick);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Windows.Forms.ToolStripItem CreateDefaultItem(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.CreateDefaultItem(System.String,System.Drawing.Image,System.EventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Windows::Forms::ToolStripItem ^ CreateDefaultItem(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +176,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.DockStyle DefaultDock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DockStyle DefaultDock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.DefaultDock" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultDock As DockStyle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::DockStyle DefaultDock { System::Windows::Forms::DockStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +196,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultPadding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultPadding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.DefaultPadding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultPadding As Padding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::Padding DefaultPadding { System::Windows::Forms::Padding get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -210,6 +223,8 @@
       <MemberSignature Language="C#" Value="protected override bool DefaultShowItemToolTips { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DefaultShowItemToolTips" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.DefaultShowItemToolTips" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultShowItemToolTips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DefaultShowItemToolTips { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -229,6 +244,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -247,6 +264,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -284,6 +303,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DockStyle Dock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DockStyle Dock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.Dock" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Dock As DockStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DockStyle Dock { System::Windows::Forms::DockStyle get(); void set(System::Windows::Forms::DockStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -324,6 +345,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripGripStyle GripStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripGripStyle GripStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.GripStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property GripStyle As ToolStripGripStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripGripStyle GripStyle { System::Windows::Forms::ToolStripGripStyle get(); void set(System::Windows::Forms::ToolStripGripStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -362,6 +385,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripLayoutStyle LayoutStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripLayoutStyle LayoutStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.LayoutStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LayoutStyle As ToolStripLayoutStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripLayoutStyle LayoutStyle { System::Windows::Forms::ToolStripLayoutStyle get(); void set(System::Windows::Forms::ToolStripLayoutStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -400,6 +425,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs levent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs levent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (levent As LayoutEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ levent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -421,6 +448,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaintBackground (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaintBackground(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (e As PaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintBackground(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -454,6 +483,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSpringTableLayoutCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSpringTableLayoutCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.OnSpringTableLayoutCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSpringTableLayoutCore ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSpringTableLayoutCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -479,6 +510,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -509,6 +542,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusStrip.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -538,6 +573,8 @@
       <MemberSignature Language="C#" Value="protected override void SetDisplayedItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDisplayedItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.SetDisplayedItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDisplayedItems ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDisplayedItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -556,6 +593,8 @@
       <MemberSignature Language="C#" Value="public bool ShowItemToolTips { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowItemToolTips" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.ShowItemToolTips" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowItemToolTips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowItemToolTips { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -595,6 +634,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle SizeGripBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle SizeGripBounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.SizeGripBounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeGripBounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle SizeGripBounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -618,6 +659,8 @@
       <MemberSignature Language="C#" Value="public bool SizingGrip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SizingGrip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.SizingGrip" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizingGrip As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SizingGrip { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -659,6 +702,8 @@
       <MemberSignature Language="C#" Value="public bool Stretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Stretch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusStrip.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stretch As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Stretch { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -693,6 +738,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusStrip.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

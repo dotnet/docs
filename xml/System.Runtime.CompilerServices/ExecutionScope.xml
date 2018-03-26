@@ -1,7 +1,9 @@
-<Type Name="ExecutionScope" FullName="System.Runtime.CompilerServices.ExecutionScope">
+﻿<Type Name="ExecutionScope" FullName="System.Runtime.CompilerServices.ExecutionScope">
   <TypeSignature Language="C#" Value="public class ExecutionScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExecutionScope extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ExecutionScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExecutionScope" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExecutionScope" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public Delegate CreateDelegate (int indexLambda, object[] locals);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Delegate CreateDelegate(int32 indexLambda, object[] locals) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.CreateDelegate(System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateDelegate (indexLambda As Integer, locals As Object()) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Delegate ^ CreateDelegate(int indexLambda, cli::array &lt;System::Object ^&gt; ^ locals);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public object[] CreateHoistedLocals ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object[] CreateHoistedLocals() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.CreateHoistedLocals" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateHoistedLocals () As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ CreateHoistedLocals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public object[] Globals;" />
       <MemberSignature Language="ILAsm" Value=".field public object[] Globals" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Globals" />
+      <MemberSignature Language="VB.NET" Value="Public Globals As Object() " />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Object ^&gt; ^ Globals;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -99,6 +107,7 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression IsolateExpression (System.Linq.Expressions.Expression expression, object[] locals);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.Expression IsolateExpression(class System.Linq.Expressions.Expression expression, object[] locals) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.IsolateExpression(System.Linq.Expressions.Expression,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ IsolateExpression(System::Linq::Expressions::Expression ^ expression, cli::array &lt;System::Object ^&gt; ^ locals);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -125,6 +134,8 @@
       <MemberSignature Language="C#" Value="public object[] Locals;" />
       <MemberSignature Language="ILAsm" Value=".field public object[] Locals" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Locals" />
+      <MemberSignature Language="VB.NET" Value="Public Locals As Object() " />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Object ^&gt; ^ Locals;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -144,6 +155,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ExecutionScope Parent;" />
       <MemberSignature Language="ILAsm" Value=".field public class System.Runtime.CompilerServices.ExecutionScope Parent" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Parent As ExecutionScope " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::CompilerServices::ExecutionScope ^ Parent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

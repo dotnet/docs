@@ -1,7 +1,9 @@
-<Type Name="SharedPropertyGroup" FullName="System.EnterpriseServices.SharedPropertyGroup">
+﻿<Type Name="SharedPropertyGroup" FullName="System.EnterpriseServices.SharedPropertyGroup">
   <TypeSignature Language="C#" Value="public sealed class SharedPropertyGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SharedPropertyGroup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SharedPropertyGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SharedPropertyGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SharedPropertyGroup sealed" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty CreateProperty (string name, out bool fExists);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty CreateProperty(string name, [out] bool&amp; fExists) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.CreateProperty(System.String,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateProperty (name As String, ByRef fExists As Boolean) As SharedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::EnterpriseServices::SharedProperty ^ CreateProperty(System::String ^ name, [Runtime::InteropServices::Out] bool % fExists);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty CreatePropertyByPosition (int position, out bool fExists);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty CreatePropertyByPosition(int32 position, [out] bool&amp; fExists) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.CreatePropertyByPosition(System.Int32,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreatePropertyByPosition (position As Integer, ByRef fExists As Boolean) As SharedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::EnterpriseServices::SharedProperty ^ CreatePropertyByPosition(int position, [Runtime::InteropServices::Out] bool % fExists);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty Property (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty Property(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.Property(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Property (name As String) As SharedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::EnterpriseServices::SharedProperty ^ Property(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -128,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty PropertyByPosition (int position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty PropertyByPosition(int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.PropertyByPosition(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PropertyByPosition (position As Integer) As SharedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::EnterpriseServices::SharedProperty ^ PropertyByPosition(int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

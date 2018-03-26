@@ -1,7 +1,9 @@
-<Type Name="BulletedListDisplayMode" FullName="System.Web.UI.WebControls.BulletedListDisplayMode">
+﻿<Type Name="BulletedListDisplayMode" FullName="System.Web.UI.WebControls.BulletedListDisplayMode">
   <TypeSignature Language="C#" Value="public enum BulletedListDisplayMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BulletedListDisplayMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BulletedListDisplayMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BulletedListDisplayMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class BulletedListDisplayMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="HyperLink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletedListDisplayMode HyperLink = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink" />
+      <MemberSignature Language="VB.NET" Value="HyperLink" />
+      <MemberSignature Language="C++ CLI" Value="HyperLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletedListDisplayMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Displays the list item content as hyperlinks.</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="LinkButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletedListDisplayMode LinkButton = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton" />
+      <MemberSignature Language="VB.NET" Value="LinkButton" />
+      <MemberSignature Language="C++ CLI" Value="LinkButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletedListDisplayMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Displays the list item content as link buttons.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletedListDisplayMode Text = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletedListDisplayMode.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletedListDisplayMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Displays the list item content as text.</summary>
       </Docs>

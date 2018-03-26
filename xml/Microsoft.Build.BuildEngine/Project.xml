@@ -1,7 +1,9 @@
-<Type Name="Project" FullName="Microsoft.Build.BuildEngine.Project">
+﻿<Type Name="Project" FullName="Microsoft.Build.BuildEngine.Project">
   <TypeSignature Language="C#" Value="public class Project" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Project extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Project" />
+  <TypeSignature Language="VB.NET" Value="Public Class Project" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Project" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public Project ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Project();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -78,6 +82,7 @@
       <MemberSignature Language="C#" Value="public Project (Microsoft.Build.BuildEngine.Engine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.BuildEngine.Engine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.#ctor(Microsoft.Build.BuildEngine.Engine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Project(Microsoft::Build::BuildEngine::Engine ^ engine);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="C#" Value="public Project (Microsoft.Build.BuildEngine.Engine engine, string toolsVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.BuildEngine.Engine engine, string toolsVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.#ctor(Microsoft.Build.BuildEngine.Engine,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Project(Microsoft::Build::BuildEngine::Engine ^ engine, System::String ^ toolsVersion);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -126,6 +132,8 @@
       <MemberSignature Language="C#" Value="public void AddNewImport (string projectFile, string condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddNewImport(string projectFile, string condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewImport(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddNewImport (projectFile As String, condition As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNewImport(System::String ^ projectFile, System::String ^ condition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -145,10 +153,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddNewItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified  element to the project.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddNewItem">
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildItem AddNewItem (string itemName, string itemInclude);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildItem AddNewItem(string itemName, string itemInclude) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewItem(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNewItem (itemName As String, itemInclude As String) As BuildItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItem ^ AddNewItem(System::String ^ itemName, System::String ^ itemInclude);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -180,6 +199,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildItem AddNewItem (string itemName, string itemInclude, bool treatItemIncludeAsLiteral);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildItem AddNewItem(string itemName, string itemInclude, bool treatItemIncludeAsLiteral) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewItem(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNewItem (itemName As String, itemInclude As String, treatItemIncludeAsLiteral As Boolean) As BuildItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItem ^ AddNewItem(System::String ^ itemName, System::String ^ itemInclude, bool treatItemIncludeAsLiteral);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -214,6 +235,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildItemGroup AddNewItemGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildItemGroup AddNewItemGroup() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewItemGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNewItemGroup () As BuildItemGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItemGroup ^ AddNewItemGroup();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -233,6 +256,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildPropertyGroup AddNewPropertyGroup (bool insertAtEndOfProject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildPropertyGroup AddNewPropertyGroup(bool insertAtEndOfProject) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewPropertyGroup(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNewPropertyGroup (insertAtEndOfProject As Boolean) As BuildPropertyGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildPropertyGroup ^ AddNewPropertyGroup(bool insertAtEndOfProject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -256,6 +281,8 @@
       <MemberSignature Language="C#" Value="public void AddNewUsingTaskFromAssemblyFile (string taskName, string assemblyFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddNewUsingTaskFromAssemblyFile(string taskName, string assemblyFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewUsingTaskFromAssemblyFile(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddNewUsingTaskFromAssemblyFile (taskName As String, assemblyFile As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNewUsingTaskFromAssemblyFile(System::String ^ taskName, System::String ^ assemblyFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -279,6 +306,8 @@
       <MemberSignature Language="C#" Value="public void AddNewUsingTaskFromAssemblyName (string taskName, string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddNewUsingTaskFromAssemblyName(string taskName, string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewUsingTaskFromAssemblyName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddNewUsingTaskFromAssemblyName (taskName As String, assemblyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNewUsingTaskFromAssemblyName(System::String ^ taskName, System::String ^ assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -298,10 +327,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Build">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds the project.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Build">
       <MemberSignature Language="C#" Value="public bool Build ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Build() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build" />
+      <MemberSignature Language="VB.NET" Value="Public Function Build () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -322,6 +362,8 @@
       <MemberSignature Language="C#" Value="public bool Build (string targetName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Build(string targetName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Build (targetName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(System::String ^ targetName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -345,6 +387,8 @@
       <MemberSignature Language="C#" Value="public bool Build (string[] targetNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Build(string[] targetNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Build (targetNames As String()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targetNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -368,6 +412,8 @@
       <MemberSignature Language="C#" Value="public bool Build (string[] targetNames, System.Collections.IDictionary targetOutputs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Build(string[] targetNames, class System.Collections.IDictionary targetOutputs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build(System.String[],System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Build (targetNames As String(), targetOutputs As IDictionary) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targetNames, System::Collections::IDictionary ^ targetOutputs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -393,6 +439,8 @@
       <MemberSignature Language="C#" Value="public bool Build (string[] targetNames, System.Collections.IDictionary targetOutputs, Microsoft.Build.BuildEngine.BuildSettings buildFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Build(string[] targetNames, class System.Collections.IDictionary targetOutputs, valuetype Microsoft.Build.BuildEngine.BuildSettings buildFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build(System.String[],System.Collections.IDictionary,Microsoft.Build.BuildEngine.BuildSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Build (targetNames As String(), targetOutputs As IDictionary, buildFlags As BuildSettings) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targetNames, System::Collections::IDictionary ^ targetOutputs, Microsoft::Build::BuildEngine::BuildSettings buildFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -420,6 +468,8 @@
       <MemberSignature Language="C#" Value="public bool BuildEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BuildEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.BuildEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuildEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -446,6 +496,8 @@
       <MemberSignature Language="C#" Value="public string DefaultTargets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultTargets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.DefaultTargets" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultTargets As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultTargets { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -464,6 +516,8 @@
       <MemberSignature Language="C#" Value="public string DefaultToolsVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultToolsVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultToolsVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultToolsVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -493,6 +547,8 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding Encoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Encoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -511,6 +567,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildItemGroup EvaluatedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.BuildItemGroup EvaluatedItems" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.EvaluatedItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedItems As BuildItemGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildItemGroup ^ EvaluatedItems { Microsoft::Build::BuildEngine::BuildItemGroup ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -536,6 +594,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildItemGroup EvaluatedItemsIgnoringCondition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.BuildItemGroup EvaluatedItemsIgnoringCondition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.EvaluatedItemsIgnoringCondition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedItemsIgnoringCondition As BuildItemGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildItemGroup ^ EvaluatedItemsIgnoringCondition { Microsoft::Build::BuildEngine::BuildItemGroup ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -561,6 +621,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildPropertyGroup EvaluatedProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.BuildPropertyGroup EvaluatedProperties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.EvaluatedProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedProperties As BuildPropertyGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildPropertyGroup ^ EvaluatedProperties { Microsoft::Build::BuildEngine::BuildPropertyGroup ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -589,6 +651,8 @@
       <MemberSignature Language="C#" Value="public string FullFileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullFileName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.FullFileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FullFileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullFileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -614,6 +678,8 @@
       <MemberSignature Language="C#" Value="public string[] GetConditionedPropertyValues (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetConditionedPropertyValues(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetConditionedPropertyValues(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConditionedPropertyValues (propertyName As String) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetConditionedPropertyValues(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -643,6 +709,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildItemGroup GetEvaluatedItemsByName (string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildItemGroup GetEvaluatedItemsByName(string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetEvaluatedItemsByName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEvaluatedItemsByName (itemName As String) As BuildItemGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItemGroup ^ GetEvaluatedItemsByName(System::String ^ itemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -665,6 +733,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildItemGroup GetEvaluatedItemsByNameIgnoringCondition (string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildItemGroup GetEvaluatedItemsByNameIgnoringCondition(string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetEvaluatedItemsByNameIgnoringCondition(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEvaluatedItemsByNameIgnoringCondition (itemName As String) As BuildItemGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItemGroup ^ GetEvaluatedItemsByNameIgnoringCondition(System::String ^ itemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -687,6 +757,8 @@
       <MemberSignature Language="C#" Value="public string GetEvaluatedProperty (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetEvaluatedProperty(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetEvaluatedProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEvaluatedProperty (propertyName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetEvaluatedProperty(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -716,6 +788,8 @@
       <MemberSignature Language="C#" Value="public string GetProjectExtensions (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetProjectExtensions(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetProjectExtensions(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProjectExtensions (id As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetProjectExtensions(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -738,6 +812,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildPropertyGroup GlobalProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.BuildPropertyGroup GlobalProperties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.GlobalProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property GlobalProperties As BuildPropertyGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildPropertyGroup ^ GlobalProperties { Microsoft::Build::BuildEngine::BuildPropertyGroup ^ get(); void set(Microsoft::Build::BuildEngine::BuildPropertyGroup ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -763,6 +839,8 @@
       <MemberSignature Language="C#" Value="public bool HasToolsVersionAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasToolsVersionAttribute" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.HasToolsVersionAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasToolsVersionAttribute As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasToolsVersionAttribute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -789,6 +867,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.ImportCollection Imports { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.ImportCollection Imports" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.Imports" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Imports As ImportCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::ImportCollection ^ Imports { Microsoft::Build::BuildEngine::ImportCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -814,6 +894,8 @@
       <MemberSignature Language="C#" Value="public string InitialTargets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InitialTargets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.InitialTargets" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialTargets As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitialTargets { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -832,6 +914,8 @@
       <MemberSignature Language="C#" Value="public bool IsDirty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.IsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -851,6 +935,8 @@
       <MemberSignature Language="C#" Value="public bool IsValidated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValidated" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.IsValidated" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsValidated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValidated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -870,6 +956,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildItemGroupCollection ItemGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.BuildItemGroupCollection ItemGroups" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.ItemGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemGroups As BuildItemGroupCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildItemGroupCollection ^ ItemGroups { Microsoft::Build::BuildEngine::BuildItemGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -923,6 +1011,7 @@
       <MemberSignature Language="C#" Value="public void Load (System.IO.TextReader textReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Load(System.IO.TextReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::IO::TextReader ^ textReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -945,6 +1034,8 @@
       <MemberSignature Language="C#" Value="public void Load (string projectFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(string projectFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (projectFileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ projectFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -977,6 +1068,7 @@
       <MemberSignature Language="C#" Value="public void Load (System.IO.TextReader textReader, Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.IO.TextReader textReader, valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Load(System.IO.TextReader,Microsoft.Build.BuildEngine.ProjectLoadSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::IO::TextReader ^ textReader, Microsoft::Build::BuildEngine::ProjectLoadSettings projectLoadSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1000,6 +1092,7 @@
       <MemberSignature Language="C#" Value="public void Load (string projectFileName, Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(string projectFileName, valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Load(System.String,Microsoft.Build.BuildEngine.ProjectLoadSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ projectFileName, Microsoft::Build::BuildEngine::ProjectLoadSettings projectLoadSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1019,10 +1112,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadXml">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of the specified string into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadXml">
       <MemberSignature Language="C#" Value="public void LoadXml (string projectXml);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(string projectXml) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.LoadXml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (projectXml As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::String ^ projectXml);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1055,6 +1159,7 @@
       <MemberSignature Language="C#" Value="public void LoadXml (string projectXml, Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(string projectXml, valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.LoadXml(System.String,Microsoft.Build.BuildEngine.ProjectLoadSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::String ^ projectXml, Microsoft::Build::BuildEngine::ProjectLoadSettings projectLoadSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1078,6 +1183,8 @@
       <MemberSignature Language="C#" Value="public void MarkProjectAsDirty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MarkProjectAsDirty() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.MarkProjectAsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MarkProjectAsDirty ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MarkProjectAsDirty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1096,6 +1203,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.Engine ParentEngine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.Engine ParentEngine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.ParentEngine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentEngine As Engine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::Engine ^ ParentEngine { Microsoft::Build::BuildEngine::Engine ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1114,6 +1223,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildPropertyGroupCollection PropertyGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.BuildPropertyGroupCollection PropertyGroups" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.PropertyGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyGroups As BuildPropertyGroupCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildPropertyGroupCollection ^ PropertyGroups { Microsoft::Build::BuildEngine::BuildPropertyGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1147,6 +1258,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAllItemGroups ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAllItemGroups() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveAllItemGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllItemGroups ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllItemGroups();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1165,6 +1278,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAllPropertyGroups ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAllPropertyGroups() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveAllPropertyGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllPropertyGroups ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllPropertyGroups();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1183,6 +1298,8 @@
       <MemberSignature Language="C#" Value="public void RemoveImportedPropertyGroup (Microsoft.Build.BuildEngine.BuildPropertyGroup propertyGroupToRemove);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveImportedPropertyGroup(class Microsoft.Build.BuildEngine.BuildPropertyGroup propertyGroupToRemove) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveImportedPropertyGroup(Microsoft.Build.BuildEngine.BuildPropertyGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveImportedPropertyGroup (propertyGroupToRemove As BuildPropertyGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveImportedPropertyGroup(Microsoft::Build::BuildEngine::BuildPropertyGroup ^ propertyGroupToRemove);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1204,6 +1321,8 @@
       <MemberSignature Language="C#" Value="public void RemoveItem (Microsoft.Build.BuildEngine.BuildItem itemToRemove);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveItem(class Microsoft.Build.BuildEngine.BuildItem itemToRemove) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveItem(Microsoft.Build.BuildEngine.BuildItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (itemToRemove As BuildItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItem(Microsoft::Build::BuildEngine::BuildItem ^ itemToRemove);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1225,6 +1344,8 @@
       <MemberSignature Language="C#" Value="public void RemoveItemGroup (Microsoft.Build.BuildEngine.BuildItemGroup itemGroupToRemove);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveItemGroup(class Microsoft.Build.BuildEngine.BuildItemGroup itemGroupToRemove) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveItemGroup(Microsoft.Build.BuildEngine.BuildItemGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItemGroup (itemGroupToRemove As BuildItemGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItemGroup(Microsoft::Build::BuildEngine::BuildItemGroup ^ itemGroupToRemove);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1246,6 +1367,8 @@
       <MemberSignature Language="C#" Value="public void RemoveItemGroupsWithMatchingCondition (string matchCondition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveItemGroupsWithMatchingCondition(string matchCondition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveItemGroupsWithMatchingCondition(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItemGroupsWithMatchingCondition (matchCondition As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItemGroupsWithMatchingCondition(System::String ^ matchCondition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1267,6 +1390,8 @@
       <MemberSignature Language="C#" Value="public void RemoveItemsByName (string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveItemsByName(string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveItemsByName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItemsByName (itemName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItemsByName(System::String ^ itemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1288,6 +1413,8 @@
       <MemberSignature Language="C#" Value="public void RemovePropertyGroup (Microsoft.Build.BuildEngine.BuildPropertyGroup propertyGroupToRemove);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePropertyGroup(class Microsoft.Build.BuildEngine.BuildPropertyGroup propertyGroupToRemove) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemovePropertyGroup(Microsoft.Build.BuildEngine.BuildPropertyGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyGroup (propertyGroupToRemove As BuildPropertyGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyGroup(Microsoft::Build::BuildEngine::BuildPropertyGroup ^ propertyGroupToRemove);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1326,6 +1453,8 @@
       <MemberSignature Language="C#" Value="public void RemovePropertyGroupsWithMatchingCondition (string matchCondition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePropertyGroupsWithMatchingCondition(string matchCondition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemovePropertyGroupsWithMatchingCondition(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyGroupsWithMatchingCondition (matchCondition As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyGroupsWithMatchingCondition(System::String ^ matchCondition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1347,6 +1476,8 @@
       <MemberSignature Language="C#" Value="public void RemovePropertyGroupsWithMatchingCondition (string matchCondition, bool includeImportedPropertyGroups);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePropertyGroupsWithMatchingCondition(string matchCondition, bool includeImportedPropertyGroups) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemovePropertyGroupsWithMatchingCondition(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyGroupsWithMatchingCondition (matchCondition As String, includeImportedPropertyGroups As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyGroupsWithMatchingCondition(System::String ^ matchCondition, bool includeImportedPropertyGroups);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1377,6 +1508,8 @@
       <MemberSignature Language="C#" Value="public void ResetBuildStatus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetBuildStatus() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.ResetBuildStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetBuildStatus ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetBuildStatus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1391,10 +1524,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the project to a file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public void Save (System.IO.TextWriter textWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Save(System.IO.TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1416,6 +1559,8 @@
       <MemberSignature Language="C#" Value="public void Save (string projectFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string projectFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (projectFileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ projectFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1437,6 +1582,7 @@
       <MemberSignature Language="C#" Value="public void Save (string projectFileName, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string projectFileName, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Save(System.String,System.Text.Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ projectFileName, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1460,6 +1606,8 @@
       <MemberSignature Language="C#" Value="public string SchemaFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SchemaFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.SchemaFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property SchemaFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1474,10 +1622,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetImportedProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of a property in an imported project.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetImportedProperty">
       <MemberSignature Language="C#" Value="public void SetImportedProperty (string propertyName, string propertyValue, string condition, Microsoft.Build.BuildEngine.Project importProject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImportedProperty(string propertyName, string propertyValue, string condition, class Microsoft.Build.BuildEngine.Project importProject) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetImportedProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.Project)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetImportedProperty (propertyName As String, propertyValue As String, condition As String, importProject As Project)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::Project ^ importProject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1505,6 +1664,8 @@
       <MemberSignature Language="C#" Value="public void SetImportedProperty (string propertyName, string propertyValue, string condition, Microsoft.Build.BuildEngine.Project importedProject, Microsoft.Build.BuildEngine.PropertyPosition position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImportedProperty(string propertyName, string propertyValue, string condition, class Microsoft.Build.BuildEngine.Project importedProject, valuetype Microsoft.Build.BuildEngine.PropertyPosition position) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetImportedProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.Project,Microsoft.Build.BuildEngine.PropertyPosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetImportedProperty (propertyName As String, propertyValue As String, condition As String, importedProject As Project, position As PropertyPosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::Project ^ importedProject, Microsoft::Build::BuildEngine::PropertyPosition position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1534,6 +1695,8 @@
       <MemberSignature Language="C#" Value="public void SetImportedProperty (string propertyName, string propertyValue, string condition, Microsoft.Build.BuildEngine.Project importedProject, Microsoft.Build.BuildEngine.PropertyPosition position, bool treatPropertyValueAsLiteral);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImportedProperty(string propertyName, string propertyValue, string condition, class Microsoft.Build.BuildEngine.Project importedProject, valuetype Microsoft.Build.BuildEngine.PropertyPosition position, bool treatPropertyValueAsLiteral) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetImportedProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.Project,Microsoft.Build.BuildEngine.PropertyPosition,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetImportedProperty (propertyName As String, propertyValue As String, condition As String, importedProject As Project, position As PropertyPosition, treatPropertyValueAsLiteral As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::Project ^ importedProject, Microsoft::Build::BuildEngine::PropertyPosition position, bool treatPropertyValueAsLiteral);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1573,6 +1736,8 @@
       <MemberSignature Language="C#" Value="public void SetProjectExtensions (string id, string content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProjectExtensions(string id, string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProjectExtensions(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProjectExtensions (id As String, content As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProjectExtensions(System::String ^ id, System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1592,10 +1757,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the specified property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetProperty">
       <MemberSignature Language="C#" Value="public void SetProperty (string propertyName, string propertyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty(string propertyName, string propertyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1619,6 +1795,8 @@
       <MemberSignature Language="C#" Value="public void SetProperty (string propertyName, string propertyValue, string condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty(string propertyName, string propertyValue, string condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String, condition As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1644,6 +1822,8 @@
       <MemberSignature Language="C#" Value="public void SetProperty (string propertyName, string propertyValue, string condition, Microsoft.Build.BuildEngine.PropertyPosition position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty(string propertyName, string propertyValue, string condition, valuetype Microsoft.Build.BuildEngine.PropertyPosition position) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.PropertyPosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String, condition As String, position As PropertyPosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::PropertyPosition position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1678,6 +1858,8 @@
       <MemberSignature Language="C#" Value="public void SetProperty (string propertyName, string propertyValue, string condition, Microsoft.Build.BuildEngine.PropertyPosition position, bool treatPropertyValueAsLiteral);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty(string propertyName, string propertyValue, string condition, valuetype Microsoft.Build.BuildEngine.PropertyPosition position, bool treatPropertyValueAsLiteral) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.PropertyPosition,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String, condition As String, position As PropertyPosition, treatPropertyValueAsLiteral As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::PropertyPosition position, bool treatPropertyValueAsLiteral);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1708,6 +1890,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.TargetCollection Targets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.TargetCollection Targets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.Targets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Targets As TargetCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::TargetCollection ^ Targets { Microsoft::Build::BuildEngine::TargetCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1733,6 +1917,8 @@
       <MemberSignature Language="C#" Value="public DateTime TimeOfLastDirty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeOfLastDirty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.TimeOfLastDirty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeOfLastDirty As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeOfLastDirty { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1751,6 +1937,8 @@
       <MemberSignature Language="C#" Value="public string ToolsVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolsVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.ToolsVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolsVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1781,6 +1969,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.UsingTaskCollection UsingTasks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.UsingTaskCollection UsingTasks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.UsingTasks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsingTasks As UsingTaskCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::UsingTaskCollection ^ UsingTasks { Microsoft::Build::BuildEngine::UsingTaskCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1799,6 +1989,8 @@
       <MemberSignature Language="C#" Value="public string Xml { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Xml" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.Xml" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Xml As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Xml { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -1823,59 +2015,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Save">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the project to a file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LoadXml">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads the contents of the specified string into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Build">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Builds the project.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddNewItem">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified  element to the project.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetImportedProperty">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the value of a property in an imported project.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetProperty">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the value of the specified property.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

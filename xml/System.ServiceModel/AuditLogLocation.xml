@@ -1,7 +1,9 @@
-<Type Name="AuditLogLocation" FullName="System.ServiceModel.AuditLogLocation">
+﻿<Type Name="AuditLogLocation" FullName="System.ServiceModel.AuditLogLocation">
   <TypeSignature Language="C#" Value="public enum AuditLogLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuditLogLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.AuditLogLocation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AuditLogLocation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AuditLogLocation" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="Application" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.AuditLogLocation Application = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.AuditLogLocation.Application" />
+      <MemberSignature Language="VB.NET" Value="Application" />
+      <MemberSignature Language="C++ CLI" Value="Application" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.AuditLogLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies the Application log in the event log.</summary>
       </Docs>
@@ -65,6 +70,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.AuditLogLocation Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.AuditLogLocation.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.AuditLogLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies the default location, which is determined by the operating system. If writing to the Security log is supported (such as on [!INCLUDE[wv](~/includes/wv-md.md)] and [!INCLUDE[ws2003](~/includes/ws2003-md.md)] and later platforms), the default log location is the Security log. Otherwise (such as in [!INCLUDE[wxpsp2](~/includes/wxpsp2-md.md)]), the default log location is the Application log.</summary>
       </Docs>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="Security" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.AuditLogLocation Security = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.AuditLogLocation.Security" />
+      <MemberSignature Language="VB.NET" Value="Security" />
+      <MemberSignature Language="C++ CLI" Value="Security" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.AuditLogLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the Security log in the event log. The calling thread must have <see langword="SeAuditPrivilege" /> to be able to write to the Security log.</summary>
       </Docs>

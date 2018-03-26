@@ -1,7 +1,9 @@
-<Type Name="ColumnSpaceDistribution" FullName="System.Windows.ColumnSpaceDistribution">
+﻿<Type Name="ColumnSpaceDistribution" FullName="System.Windows.ColumnSpaceDistribution">
   <TypeSignature Language="C#" Value="public enum ColumnSpaceDistribution" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnSpaceDistribution extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ColumnSpaceDistribution" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ColumnSpaceDistribution" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ColumnSpaceDistribution" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="Between" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ColumnSpaceDistribution Between = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.ColumnSpaceDistribution.Between" />
+      <MemberSignature Language="VB.NET" Value="Between" />
+      <MemberSignature Language="C++ CLI" Value="Between" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -27,6 +31,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.ColumnSpaceDistribution</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Space is distributed evenly between all columns.</summary>
       </Docs>
@@ -35,6 +40,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ColumnSpaceDistribution Left = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.ColumnSpaceDistribution.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.ColumnSpaceDistribution</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Space is distributed before the first column.</summary>
       </Docs>
@@ -51,6 +59,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ColumnSpaceDistribution Right = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.ColumnSpaceDistribution.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.ColumnSpaceDistribution</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Space is distributed after the last column.</summary>
       </Docs>

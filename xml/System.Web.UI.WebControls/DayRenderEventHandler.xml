@@ -1,7 +1,9 @@
-<Type Name="DayRenderEventHandler" FullName="System.Web.UI.WebControls.DayRenderEventHandler">
+﻿<Type Name="DayRenderEventHandler" FullName="System.Web.UI.WebControls.DayRenderEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DayRenderEventHandler(object sender, DayRenderEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DayRenderEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DayRenderEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DayRenderEventHandler(sender As Object, e As DayRenderEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DayRenderEventHandler(System::Object ^ sender, DayRenderEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

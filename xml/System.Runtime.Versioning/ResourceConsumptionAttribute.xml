@@ -1,7 +1,9 @@
-<Type Name="ResourceConsumptionAttribute" FullName="System.Runtime.Versioning.ResourceConsumptionAttribute">
+﻿<Type Name="ResourceConsumptionAttribute" FullName="System.Runtime.Versioning.ResourceConsumptionAttribute">
   <TypeSignature Language="C#" Value="public sealed class ResourceConsumptionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceConsumptionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.ResourceConsumptionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourceConsumptionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceConsumptionAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,10 +50,21 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.ResourceConsumptionAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResourceConsumptionAttribute (System.Runtime.Versioning.ResourceScope resourceScope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.Versioning.ResourceScope resourceScope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.ResourceConsumptionAttribute.#ctor(System.Runtime.Versioning.ResourceScope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceConsumptionAttribute(System::Runtime::Versioning::ResourceScope resourceScope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +93,7 @@
       <MemberSignature Language="C#" Value="public ResourceConsumptionAttribute (System.Runtime.Versioning.ResourceScope resourceScope, System.Runtime.Versioning.ResourceScope consumptionScope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.Versioning.ResourceScope resourceScope, valuetype System.Runtime.Versioning.ResourceScope consumptionScope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.ResourceConsumptionAttribute.#ctor(System.Runtime.Versioning.ResourceScope,System.Runtime.Versioning.ResourceScope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceConsumptionAttribute(System::Runtime::Versioning::ResourceScope resourceScope, System::Runtime::Versioning::ResourceScope consumptionScope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,6 +133,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Versioning.ResourceScope ConsumptionScope { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Versioning.ResourceScope ConsumptionScope" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.ResourceConsumptionAttribute.ConsumptionScope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConsumptionScope As ResourceScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Versioning::ResourceScope ConsumptionScope { System::Runtime::Versioning::ResourceScope get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +163,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Versioning.ResourceScope ResourceScope { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Versioning.ResourceScope ResourceScope" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.ResourceConsumptionAttribute.ResourceScope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceScope As ResourceScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Versioning::ResourceScope ResourceScope { System::Runtime::Versioning::ResourceScope get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -171,15 +189,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.ResourceConsumptionAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

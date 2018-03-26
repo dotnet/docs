@@ -1,7 +1,9 @@
-<Type Name="LinkLabelLinkClickedEventArgs" FullName="System.Windows.Forms.LinkLabelLinkClickedEventArgs">
+﻿<Type Name="LinkLabelLinkClickedEventArgs" FullName="System.Windows.Forms.LinkLabelLinkClickedEventArgs">
   <TypeSignature Language="C#" Value="public class LinkLabelLinkClickedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinkLabelLinkClickedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinkLabelLinkClickedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinkLabelLinkClickedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +38,20 @@
     <altmember cref="M:System.Windows.Forms.LinkLabel.OnLinkClicked(System.Windows.Forms.LinkLabelLinkClickedEventArgs)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinkLabelLinkClickedEventArgs (System.Windows.Forms.LinkLabel.Link link);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.LinkLabel/Link link) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabelLinkClickedEventArgs.#ctor(System.Windows.Forms.LinkLabel.Link)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkLabelLinkClickedEventArgs(System::Windows::Forms::LinkLabel::Link ^ link);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +71,7 @@
       <MemberSignature Language="C#" Value="public LinkLabelLinkClickedEventArgs (System.Windows.Forms.LinkLabel.Link link, System.Windows.Forms.MouseButtons button);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.LinkLabel/Link link, valuetype System.Windows.Forms.MouseButtons button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabelLinkClickedEventArgs.#ctor(System.Windows.Forms.LinkLabel.Link,System.Windows.Forms.MouseButtons)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkLabelLinkClickedEventArgs(System::Windows::Forms::LinkLabel::Link ^ link, System::Windows::Forms::MouseButtons button);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +92,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.MouseButtons Button { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.MouseButtons Button" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabelLinkClickedEventArgs.Button" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Button As MouseButtons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MouseButtons Button { System::Windows::Forms::MouseButtons get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +124,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.LinkLabel.Link Link { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.LinkLabel/Link Link" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabelLinkClickedEventArgs.Link" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Link As LinkLabel.Link" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::LinkLabel::Link ^ Link { System::Windows::Forms::LinkLabel::Link ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,14 +152,5 @@
         <altmember cref="T:System.Windows.Forms.LinkLabel.Link" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="EventParameterType" FullName="System.Speech.Synthesis.TtsEngine.EventParameterType">
+﻿<Type Name="EventParameterType" FullName="System.Speech.Synthesis.TtsEngine.EventParameterType">
   <TypeSignature Language="C#" Value="public enum EventParameterType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventParameterType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.EventParameterType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventParameterType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventParameterType" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -103,6 +105,8 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="C#" Value="Object" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EventParameterType Object = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EventParameterType.Object" />
+      <MemberSignature Language="VB.NET" Value="Object" />
+      <MemberSignature Language="C++ CLI" Value="Object" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -111,6 +115,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EventParameterType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Currently not supported.</summary>
       </Docs>
@@ -119,6 +124,8 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="C#" Value="Pointer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EventParameterType Pointer = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EventParameterType.Pointer" />
+      <MemberSignature Language="VB.NET" Value="Pointer" />
+      <MemberSignature Language="C++ CLI" Value="Pointer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -127,6 +134,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EventParameterType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Currently not supported.</summary>
       </Docs>
@@ -135,6 +143,8 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EventParameterType String = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EventParameterType.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -143,6 +153,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EventParameterType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the <paramref name="param2" /> argument to the <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> is a <see langword="System.IntPtr" /> created using <see langword="System.Runtime.InteropServices.Marshal.StringToCoTaskMemUni" /> referencing a <see langword="System.String" /> object; <paramref name="param1" /> may take on any value.</summary>
       </Docs>
@@ -151,6 +162,8 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="C#" Value="Token" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EventParameterType Token = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EventParameterType.Token" />
+      <MemberSignature Language="VB.NET" Value="Token" />
+      <MemberSignature Language="C++ CLI" Value="Token" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -159,6 +172,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EventParameterType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the <paramref name="param2" /> argument to the <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> is a</summary>
         <remarks>
@@ -180,6 +194,8 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="C#" Value="Undefined" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EventParameterType Undefined = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EventParameterType.Undefined" />
+      <MemberSignature Language="VB.NET" Value="Undefined" />
+      <MemberSignature Language="C++ CLI" Value="Undefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -188,6 +204,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EventParameterType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the <paramref name="param2" /> argument to the <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> is undefined.</summary>
         <remarks>

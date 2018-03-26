@@ -1,7 +1,9 @@
-<Type Name="BitmapSizeOptions" FullName="System.Windows.Media.Imaging.BitmapSizeOptions">
+﻿<Type Name="BitmapSizeOptions" FullName="System.Windows.Media.Imaging.BitmapSizeOptions">
   <TypeSignature Language="C#" Value="public class BitmapSizeOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BitmapSizeOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapSizeOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class BitmapSizeOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapSizeOptions" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromEmptyOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromEmptyOptions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromEmptyOptions () As BitmapSizeOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapSizeOptions ^ FromEmptyOptions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromHeight (int pixelHeight);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromHeight(int32 pixelHeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromHeight(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHeight (pixelHeight As Integer) As BitmapSizeOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapSizeOptions ^ FromHeight(int pixelHeight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +84,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromRotation (System.Windows.Media.Imaging.Rotation rotation);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromRotation(valuetype System.Windows.Media.Imaging.Rotation rotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromRotation(System.Windows.Media.Imaging.Rotation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapSizeOptions ^ FromRotation(System::Windows::Media::Imaging::Rotation rotation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -110,6 +117,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromWidth (int pixelWidth);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromWidth(int32 pixelWidth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromWidth(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromWidth (pixelWidth As Integer) As BitmapSizeOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapSizeOptions ^ FromWidth(int pixelWidth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -140,6 +149,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromWidthAndHeight (int pixelWidth, int pixelHeight);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromWidthAndHeight(int32 pixelWidth, int32 pixelHeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromWidthAndHeight(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromWidthAndHeight (pixelWidth As Integer, pixelHeight As Integer) As BitmapSizeOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapSizeOptions ^ FromWidthAndHeight(int pixelWidth, int pixelHeight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -174,6 +185,8 @@
       <MemberSignature Language="C#" Value="public int PixelHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PixelHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelHeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +212,8 @@
       <MemberSignature Language="C#" Value="public int PixelWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PixelWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSizeOptions.PixelWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelWidth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -224,6 +239,8 @@
       <MemberSignature Language="C#" Value="public bool PreservesAspectRatio { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PreservesAspectRatio" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSizeOptions.PreservesAspectRatio" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreservesAspectRatio As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreservesAspectRatio { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -250,6 +267,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.Rotation Rotation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Imaging.Rotation Rotation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSizeOptions.Rotation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rotation As Rotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::Rotation Rotation { System::Windows::Media::Imaging::Rotation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

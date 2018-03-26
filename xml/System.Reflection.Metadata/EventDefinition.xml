@@ -1,7 +1,9 @@
-<Type Name="EventDefinition" FullName="System.Reflection.Metadata.EventDefinition">
+﻿<Type Name="EventDefinition" FullName="System.Reflection.Metadata.EventDefinition">
   <TypeSignature Language="C#" Value="public struct EventDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit EventDefinition extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.EventDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Structure EventDefinition" />
+  <TypeSignature Language="C++ CLI" Value="public value class EventDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.EventAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.EventAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.EventDefinition.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As EventAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::EventAttributes Attributes { System::Reflection::EventAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.EventAccessors GetAccessors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.EventAccessors GetAccessors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.EventDefinition.GetAccessors" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAccessors () As EventAccessors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::EventAccessors GetAccessors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.EventDefinition.GetCustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.EventDefinition.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -103,6 +113,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.EntityHandle Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.EntityHandle Type" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.EventDefinition.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As EntityHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Type { System::Reflection::Metadata::EntityHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

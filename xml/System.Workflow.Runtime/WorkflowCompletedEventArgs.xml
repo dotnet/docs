@@ -1,7 +1,9 @@
-<Type Name="WorkflowCompletedEventArgs" FullName="System.Workflow.Runtime.WorkflowCompletedEventArgs">
+﻿<Type Name="WorkflowCompletedEventArgs" FullName="System.Workflow.Runtime.WorkflowCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class WorkflowCompletedEventArgs : System.Workflow.Runtime.WorkflowEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowCompletedEventArgs extends System.Workflow.Runtime.WorkflowEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowCompletedEventArgs&#xA;Inherits WorkflowEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowCompletedEventArgs : System::Workflow::Runtime::WorkflowEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt; OutputParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; OutputParameters" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowCompletedEventArgs.OutputParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputParameters As Dictionary(Of String, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ OutputParameters { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity WorkflowDefinition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity WorkflowDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowCompletedEventArgs.WorkflowDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowDefinition As Activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ WorkflowDefinition { System::Workflow::ComponentModel::Activity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

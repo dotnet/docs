@@ -1,7 +1,9 @@
-<Type Name="DataGridComboBoxColumn" FullName="System.Windows.Controls.DataGridComboBoxColumn">
+﻿<Type Name="DataGridComboBoxColumn" FullName="System.Windows.Controls.DataGridComboBoxColumn">
   <TypeSignature Language="C#" Value="public class DataGridComboBoxColumn : System.Windows.Controls.DataGridColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataGridComboBoxColumn extends System.Windows.Controls.DataGridColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridComboBoxColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridComboBoxColumn&#xA;Inherits DataGridColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridComboBoxColumn : System::Windows::Controls::DataGridColumn" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +75,8 @@
       <MemberSignature Language="C#" Value="public DataGridComboBoxColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridComboBoxColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,8 @@
       <MemberSignature Language="C#" Value="protected override void CancelCellEdit (System.Windows.FrameworkElement editingElement, object uneditedValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CancelCellEdit(class System.Windows.FrameworkElement editingElement, object uneditedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.CancelCellEdit(System.Windows.FrameworkElement,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CancelCellEdit (editingElement As FrameworkElement, uneditedValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CancelCellEdit(System::Windows::FrameworkElement ^ editingElement, System::Object ^ uneditedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +117,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Data.BindingBase ClipboardContentBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase ClipboardContentBinding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.ClipboardContentBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ClipboardContentBinding As BindingBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Data::BindingBase ^ ClipboardContentBinding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +137,8 @@
       <MemberSignature Language="C#" Value="protected override bool CommitCellEdit (System.Windows.FrameworkElement editingElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CommitCellEdit(class System.Windows.FrameworkElement editingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.CommitCellEdit(System.Windows.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CommitCellEdit (editingElement As FrameworkElement) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CommitCellEdit(System::Windows::FrameworkElement ^ editingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -152,6 +162,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Style DefaultEditingElementStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Style DefaultEditingElementStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.DefaultEditingElementStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultEditingElementStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Style ^ DefaultEditingElementStyle { System::Windows::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -179,6 +191,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Style DefaultElementStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Style DefaultElementStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.DefaultElementStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultElementStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Style ^ DefaultElementStyle { System::Windows::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -204,6 +218,8 @@
       <MemberSignature Language="C#" Value="public string DisplayMemberPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayMemberPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.DisplayMemberPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayMemberPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayMemberPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -232,6 +248,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayMemberPathProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayMemberPathProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridComboBoxColumn.DisplayMemberPathProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayMemberPathProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DisplayMemberPathProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +267,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Style EditingElementStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style EditingElementStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.EditingElementStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditingElementStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ EditingElementStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -274,6 +294,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EditingElementStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EditingElementStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridComboBoxColumn.EditingElementStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EditingElementStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EditingElementStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +313,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Style ElementStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style ElementStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.ElementStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElementStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ ElementStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -316,6 +340,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ElementStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ElementStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridComboBoxColumn.ElementStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ElementStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ElementStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -333,6 +359,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.FrameworkElement GenerateEditingElement (System.Windows.Controls.DataGridCell cell, object dataItem);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.FrameworkElement GenerateEditingElement(class System.Windows.Controls.DataGridCell cell, object dataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.GenerateEditingElement(System.Windows.Controls.DataGridCell,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateEditingElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::FrameworkElement ^ GenerateEditingElement(System::Windows::Controls::DataGridCell ^ cell, System::Object ^ dataItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +385,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.FrameworkElement GenerateElement (System.Windows.Controls.DataGridCell cell, object dataItem);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.FrameworkElement GenerateElement(class System.Windows.Controls.DataGridCell cell, object dataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.GenerateElement(System.Windows.Controls.DataGridCell,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::FrameworkElement ^ GenerateElement(System::Windows::Controls::DataGridCell ^ cell, System::Object ^ dataItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -381,6 +411,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable ItemsSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.ItemsSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemsSource As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ ItemsSource { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -406,6 +438,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemsSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemsSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridComboBoxColumn.ItemsSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemsSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -423,6 +457,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnCoerceIsReadOnly (bool baseValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnCoerceIsReadOnly(bool baseValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.OnCoerceIsReadOnly(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCoerceIsReadOnly (baseValue As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnCoerceIsReadOnly(bool baseValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -446,6 +482,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectedItemBindingChanged (System.Windows.Data.BindingBase oldBinding, System.Windows.Data.BindingBase newBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedItemBindingChanged(class System.Windows.Data.BindingBase oldBinding, class System.Windows.Data.BindingBase newBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.OnSelectedItemBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedItemBindingChanged (oldBinding As BindingBase, newBinding As BindingBase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedItemBindingChanged(System::Windows::Data::BindingBase ^ oldBinding, System::Windows::Data::BindingBase ^ newBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -469,6 +507,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectedValueBindingChanged (System.Windows.Data.BindingBase oldBinding, System.Windows.Data.BindingBase newBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedValueBindingChanged(class System.Windows.Data.BindingBase oldBinding, class System.Windows.Data.BindingBase newBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.OnSelectedValueBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedValueBindingChanged (oldBinding As BindingBase, newBinding As BindingBase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedValueBindingChanged(System::Windows::Data::BindingBase ^ oldBinding, System::Windows::Data::BindingBase ^ newBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -492,6 +532,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnTextBindingChanged (System.Windows.Data.BindingBase oldBinding, System.Windows.Data.BindingBase newBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTextBindingChanged(class System.Windows.Data.BindingBase oldBinding, class System.Windows.Data.BindingBase newBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.OnTextBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextBindingChanged (oldBinding As BindingBase, newBinding As BindingBase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextBindingChanged(System::Windows::Data::BindingBase ^ oldBinding, System::Windows::Data::BindingBase ^ newBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -515,6 +557,8 @@
       <MemberSignature Language="C#" Value="protected override object PrepareCellForEdit (System.Windows.FrameworkElement editingElement, System.Windows.RoutedEventArgs editingEventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object PrepareCellForEdit(class System.Windows.FrameworkElement editingElement, class System.Windows.RoutedEventArgs editingEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.PrepareCellForEdit(System.Windows.FrameworkElement,System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareCellForEdit (editingElement As FrameworkElement, editingEventArgs As RoutedEventArgs) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ PrepareCellForEdit(System::Windows::FrameworkElement ^ editingElement, System::Windows::RoutedEventArgs ^ editingEventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -536,9 +580,11 @@
       </Docs>
     </Member>
     <Member MemberName="RefreshCellContent">
-      <MemberSignature Language="C#" Value="protected override void RefreshCellContent (System.Windows.FrameworkElement element, string propertyName);" />
+      <MemberSignature Language="C#" Value="protected internal override void RefreshCellContent (System.Windows.FrameworkElement element, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RefreshCellContent(class System.Windows.FrameworkElement element, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridComboBoxColumn.RefreshCellContent(System.Windows.FrameworkElement,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RefreshCellContent (element As FrameworkElement, propertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RefreshCellContent(System::Windows::FrameworkElement ^ element, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -562,6 +608,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Data.BindingBase SelectedItemBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase SelectedItemBinding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedItemBinding As BindingBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Data::BindingBase ^ SelectedItemBinding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -588,6 +636,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Data.BindingBase SelectedValueBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase SelectedValueBinding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.SelectedValueBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedValueBinding As BindingBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Data::BindingBase ^ SelectedValueBinding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -614,6 +664,8 @@
       <MemberSignature Language="C#" Value="public string SelectedValuePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedValuePath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.SelectedValuePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedValuePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedValuePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -639,6 +691,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectedValuePathProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectedValuePathProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridComboBoxColumn.SelectedValuePathProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedValuePathProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedValuePathProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -656,6 +710,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Data.BindingBase TextBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase TextBinding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.TextBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TextBinding As BindingBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Data::BindingBase ^ TextBinding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -681,6 +737,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ComponentResourceKey TextBlockComboBoxStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ComponentResourceKey TextBlockComboBoxStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridComboBoxColumn.TextBlockComboBoxStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TextBlockComboBoxStyleKey As ComponentResourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ComponentResourceKey ^ TextBlockComboBoxStyleKey { System::Windows::ComponentResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

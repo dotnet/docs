@@ -1,7 +1,9 @@
-<Type Name="FormatterAssemblyStyle" FullName="System.Runtime.Serialization.Formatters.FormatterAssemblyStyle">
+﻿<Type Name="FormatterAssemblyStyle" FullName="System.Runtime.Serialization.Formatters.FormatterAssemblyStyle">
   <TypeSignature Language="C#" Value="public enum FormatterAssemblyStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FormatterAssemblyStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormatterAssemblyStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FormatterAssemblyStyle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Full" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Full = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Full" />
+      <MemberSignature Language="VB.NET" Value="Full" />
+      <MemberSignature Language="C++ CLI" Value="Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.Formatters.FormatterAssemblyStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>In full mode, the assembly used during deserialization must match exactly the assembly used during serialization. The <see cref="Overload:System.Reflection.Assembly.Load" /> method of the <see cref="T:System.Reflection.Assembly" /> class is used to load the assembly.</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="Simple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Simple = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple" />
+      <MemberSignature Language="VB.NET" Value="Simple" />
+      <MemberSignature Language="C++ CLI" Value="Simple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.Formatters.FormatterAssemblyStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>In simple mode, the assembly used during deserialization need not match exactly the assembly used during serialization. Specifically, the version numbers need not match as the <see cref="Overload:System.Reflection.Assembly.LoadWithPartialName" /> method is used to load the assembly.</summary>
       </Docs>

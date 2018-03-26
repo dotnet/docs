@@ -1,7 +1,9 @@
-<Type Name="ParameterTypeSemantics" FullName="System.Data.Metadata.Edm.ParameterTypeSemantics">
+﻿<Type Name="ParameterTypeSemantics" FullName="System.Data.Metadata.Edm.ParameterTypeSemantics">
   <TypeSignature Language="C#" Value="public enum ParameterTypeSemantics" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParameterTypeSemantics extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ParameterTypeSemantics" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ParameterTypeSemantics" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ParameterTypeSemantics" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="AllowImplicitConversion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterTypeSemantics AllowImplicitConversion = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterTypeSemantics.AllowImplicitConversion" />
+      <MemberSignature Language="VB.NET" Value="AllowImplicitConversion" />
+      <MemberSignature Language="C++ CLI" Value="AllowImplicitConversion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ParameterTypeSemantics</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A flag indicating the implicit conversion between the given and the formal argument types. This is the default conversion type.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="AllowImplicitPromotion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterTypeSemantics AllowImplicitPromotion = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterTypeSemantics.AllowImplicitPromotion" />
+      <MemberSignature Language="VB.NET" Value="AllowImplicitPromotion" />
+      <MemberSignature Language="C++ CLI" Value="AllowImplicitPromotion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ParameterTypeSemantics</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A flag indicating the type promotion between the given and the formal argument types.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="ExactMatchOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterTypeSemantics ExactMatchOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterTypeSemantics.ExactMatchOnly" />
+      <MemberSignature Language="VB.NET" Value="ExactMatchOnly" />
+      <MemberSignature Language="C++ CLI" Value="ExactMatchOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ParameterTypeSemantics</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A flag indicating the usage of strict equivalence only.</summary>
       </Docs>

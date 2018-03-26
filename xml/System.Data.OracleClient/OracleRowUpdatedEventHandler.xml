@@ -1,7 +1,9 @@
-<Type Name="OracleRowUpdatedEventHandler" FullName="System.Data.OracleClient.OracleRowUpdatedEventHandler">
+﻿<Type Name="OracleRowUpdatedEventHandler" FullName="System.Data.OracleClient.OracleRowUpdatedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void OracleRowUpdatedEventHandler(object sender, OracleRowUpdatedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OracleRowUpdatedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleRowUpdatedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub OracleRowUpdatedEventHandler(sender As Object, e As OracleRowUpdatedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void OracleRowUpdatedEventHandler(System::Object ^ sender, OracleRowUpdatedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

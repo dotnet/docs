@@ -1,7 +1,9 @@
-<Type Name="INamespacePrefixLookup" FullName="System.Xaml.INamespacePrefixLookup">
+﻿<Type Name="INamespacePrefixLookup" FullName="System.Xaml.INamespacePrefixLookup">
   <TypeSignature Language="C#" Value="public interface INamespacePrefixLookup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INamespacePrefixLookup" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.INamespacePrefixLookup" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INamespacePrefixLookup" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INamespacePrefixLookup" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public string LookupPrefix (string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LookupPrefix(string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.INamespacePrefixLookup.LookupPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LookupPrefix (ns As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupPrefix(System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="PreviewKeyDownEventArgs" FullName="System.Windows.Forms.PreviewKeyDownEventArgs">
+﻿<Type Name="PreviewKeyDownEventArgs" FullName="System.Windows.Forms.PreviewKeyDownEventArgs">
   <TypeSignature Language="C#" Value="public class PreviewKeyDownEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PreviewKeyDownEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PreviewKeyDownEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class PreviewKeyDownEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PreviewKeyDownEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public PreviewKeyDownEventArgs (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PreviewKeyDownEventArgs.#ctor(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (keyData As Keys)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PreviewKeyDownEventArgs(System::Windows::Forms::Keys keyData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public bool Alt { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Alt" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Alt" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Alt As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Alt { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public bool Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Control" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Control" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Control { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -117,6 +125,8 @@
       <MemberSignature Language="C#" Value="public bool IsInputKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInputKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInputKey As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInputKey { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +158,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys KeyCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys KeyCode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyCode As Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys KeyCode { System::Windows::Forms::Keys get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +190,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys KeyData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys KeyData" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyData As Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys KeyData { System::Windows::Forms::Keys get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,6 +222,8 @@
       <MemberSignature Language="C#" Value="public int KeyValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeyValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyValue As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyValue { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +254,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys Modifiers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys Modifiers" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Modifiers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modifiers As Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys Modifiers { System::Windows::Forms::Keys get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -268,6 +286,8 @@
       <MemberSignature Language="C#" Value="public bool Shift { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Shift" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Shift" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shift As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shift { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

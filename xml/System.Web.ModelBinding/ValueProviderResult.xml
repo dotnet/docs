@@ -1,7 +1,9 @@
-<Type Name="ValueProviderResult" FullName="System.Web.ModelBinding.ValueProviderResult">
+﻿<Type Name="ValueProviderResult" FullName="System.Web.ModelBinding.ValueProviderResult">
   <TypeSignature Language="C#" Value="public class ValueProviderResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ValueProviderResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ValueProviderResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValueProviderResult" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValueProviderResult" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValueProviderResult" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ValueProviderResult ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ValueProviderResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +47,8 @@
       <MemberSignature Language="C#" Value="public ValueProviderResult (object rawValue, string attemptedValue, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object rawValue, string attemptedValue, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderResult.#ctor(System.Object,System.String,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rawValue As Object, attemptedValue As String, culture As CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueProviderResult(System::Object ^ rawValue, System::String ^ attemptedValue, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string AttemptedValue { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttemptedValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ValueProviderResult.AttemptedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttemptedValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ AttemptedValue {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,10 +87,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConvertTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a value that is encapsulated by this result to the specified type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ConvertTo">
       <MemberSignature Language="C#" Value="public object ConvertTo (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ConvertTo(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderResult.ConvertTo(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertTo(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +125,7 @@
       <MemberSignature Language="C#" Value="public virtual object ConvertTo (Type type, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertTo(class System.Type type, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderResult.ConvertTo(System.Type,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ConvertTo(Type ^ type, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +152,8 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Culture { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ValueProviderResult.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Globalization::CultureInfo ^ Culture {  public:&#xA;System::Globalization::CultureInfo ^ get(); protected:&#xA; void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +172,8 @@
       <MemberSignature Language="C#" Value="public object RawValue { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object RawValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ValueProviderResult.RawValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property RawValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Object ^ RawValue {  public:&#xA;System::Object ^ get(); protected:&#xA; void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,23 +188,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ConvertTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a value that is encapsulated by this result to the specified type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValueProviderResult" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

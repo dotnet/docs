@@ -1,7 +1,9 @@
-<Type Name="TrackingProfile" FullName="System.Activities.Tracking.TrackingProfile">
+﻿<Type Name="TrackingProfile" FullName="System.Activities.Tracking.TrackingProfile">
   <TypeSignature Language="C#" Value="public class TrackingProfile" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TrackingProfile extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.TrackingProfile" />
+  <TypeSignature Language="VB.NET" Value="Public Class TrackingProfile" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingProfile" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public TrackingProfile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingProfile.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingProfile();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public string ActivityDefinitionId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ActivityDefinitionId" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingProfile.ActivityDefinitionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActivityDefinitionId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityDefinitionId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Tracking.ImplementationVisibility ImplementationVisibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.Tracking.ImplementationVisibility ImplementationVisibility" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingProfile.ImplementationVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImplementationVisibility As ImplementationVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Tracking::ImplementationVisibility ImplementationVisibility { System::Activities::Tracking::ImplementationVisibility get(); void set(System::Activities::Tracking::ImplementationVisibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -111,6 +119,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingProfile.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -134,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Tracking.TrackingQuery&gt; Queries { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Tracking.TrackingQuery&gt; Queries" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingProfile.Queries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Queries As Collection(Of TrackingQuery)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Tracking::TrackingQuery ^&gt; ^ Queries { System::Collections::ObjectModel::Collection&lt;System::Activities::Tracking::TrackingQuery ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

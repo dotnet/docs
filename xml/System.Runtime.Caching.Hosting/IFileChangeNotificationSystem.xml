@@ -1,7 +1,9 @@
-<Type Name="IFileChangeNotificationSystem" FullName="System.Runtime.Caching.Hosting.IFileChangeNotificationSystem">
+﻿<Type Name="IFileChangeNotificationSystem" FullName="System.Runtime.Caching.Hosting.IFileChangeNotificationSystem">
   <TypeSignature Language="C#" Value="public interface IFileChangeNotificationSystem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFileChangeNotificationSystem" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFileChangeNotificationSystem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFileChangeNotificationSystem" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="public void StartMonitoring (string filePath, System.Runtime.Caching.OnChangedCallback onChangedCallback, out object state, out DateTimeOffset lastWriteTime, out long fileSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartMonitoring(string filePath, class System.Runtime.Caching.OnChangedCallback onChangedCallback, [out] object&amp; state, [out] valuetype System.DateTimeOffset&amp; lastWriteTime, [out] int64&amp; fileSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StartMonitoring(System.String,System.Runtime.Caching.OnChangedCallback,System.Object@,System.DateTimeOffset@,System.Int64@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartMonitoring(System::String ^ filePath, System::Runtime::Caching::OnChangedCallback ^ onChangedCallback, [Runtime::InteropServices::Out] System::Object ^ % state, [Runtime::InteropServices::Out] DateTimeOffset % lastWriteTime, [Runtime::InteropServices::Out] long % fileSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -65,6 +68,8 @@
       <MemberSignature Language="C#" Value="public void StopMonitoring (string filePath, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopMonitoring(string filePath, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StopMonitoring(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopMonitoring (filePath As String, state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopMonitoring(System::String ^ filePath, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MissingMappingAction" FullName="System.Data.MissingMappingAction">
+﻿<Type Name="MissingMappingAction" FullName="System.Data.MissingMappingAction">
   <TypeSignature Language="C#" Value="public enum MissingMappingAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MissingMappingAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.MissingMappingAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MissingMappingAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MissingMappingAction" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MissingMappingAction Error = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.MissingMappingAction.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -51,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Data.MissingMappingAction</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An <see cref="T:System.InvalidOperationException" /> is generated if the specified column mapping is missing.</summary>
       </Docs>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="Ignore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MissingMappingAction Ignore = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.MissingMappingAction.Ignore" />
+      <MemberSignature Language="VB.NET" Value="Ignore" />
+      <MemberSignature Language="C++ CLI" Value="Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -76,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Data.MissingMappingAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The column or table not having a mapping is ignored. Returns <see langword="null" />.</summary>
       </Docs>
@@ -84,6 +92,8 @@
       <MemberSignature Language="C#" Value="Passthrough" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MissingMappingAction Passthrough = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.MissingMappingAction.Passthrough" />
+      <MemberSignature Language="VB.NET" Value="Passthrough" />
+      <MemberSignature Language="C++ CLI" Value="Passthrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -101,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Data.MissingMappingAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The source column or source table is created and added to the <see cref="T:System.Data.DataSet" /> using its original name.</summary>
       </Docs>

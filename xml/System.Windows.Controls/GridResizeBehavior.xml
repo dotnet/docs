@@ -1,7 +1,9 @@
-<Type Name="GridResizeBehavior" FullName="System.Windows.Controls.GridResizeBehavior">
+﻿<Type Name="GridResizeBehavior" FullName="System.Windows.Controls.GridResizeBehavior">
   <TypeSignature Language="C#" Value="public enum GridResizeBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridResizeBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridResizeBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GridResizeBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GridResizeBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="BasedOnAlignment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeBehavior BasedOnAlignment = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeBehavior.BasedOnAlignment" />
+      <MemberSignature Language="VB.NET" Value="BasedOnAlignment" />
+      <MemberSignature Language="C++ CLI" Value="BasedOnAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Space is redistributed based on the value of the <see cref="P:System.Windows.FrameworkElement.HorizontalAlignment" /> and <see cref="P:System.Windows.FrameworkElement.VerticalAlignment" /> properties.</summary>
         <remarks>
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="CurrentAndNext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeBehavior CurrentAndNext = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeBehavior.CurrentAndNext" />
+      <MemberSignature Language="VB.NET" Value="CurrentAndNext" />
+      <MemberSignature Language="C++ CLI" Value="CurrentAndNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>For a horizontal <see cref="T:System.Windows.Controls.GridSplitter" />, space is redistributed between the row that is specified for the <see cref="T:System.Windows.Controls.GridSplitter" /> and the next row that is below it. For a vertical <see cref="T:System.Windows.Controls.GridSplitter" />, space is redistributed between the column that is specified for the <see cref="T:System.Windows.Controls.GridSplitter" /> and the next column that is to the right.</summary>
       </Docs>
@@ -87,6 +95,8 @@
       <MemberSignature Language="C#" Value="PreviousAndCurrent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeBehavior PreviousAndCurrent = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeBehavior.PreviousAndCurrent" />
+      <MemberSignature Language="VB.NET" Value="PreviousAndCurrent" />
+      <MemberSignature Language="C++ CLI" Value="PreviousAndCurrent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>For a horizontal <see cref="T:System.Windows.Controls.GridSplitter" />, space is redistributed between the row that is specified for the <see cref="T:System.Windows.Controls.GridSplitter" /> and the next row that is above it. For a vertical <see cref="T:System.Windows.Controls.GridSplitter" />, space is redistributed between the column that is specified for the <see cref="T:System.Windows.Controls.GridSplitter" /> and the next column that is to the left.</summary>
       </Docs>
@@ -103,6 +114,8 @@
       <MemberSignature Language="C#" Value="PreviousAndNext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeBehavior PreviousAndNext = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeBehavior.PreviousAndNext" />
+      <MemberSignature Language="VB.NET" Value="PreviousAndNext" />
+      <MemberSignature Language="C++ CLI" Value="PreviousAndNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>For a horizontal <see cref="T:System.Windows.Controls.GridSplitter" />, space is redistributed between the rows that are above and below the row that is specified for the <see cref="T:System.Windows.Controls.GridSplitter" />. For a vertical <see cref="T:System.Windows.Controls.GridSplitter" />, space is redistributed between the columns that are to the left and right of the column that is specified for the <see cref="T:System.Windows.Controls.GridSplitter" />.</summary>
       </Docs>

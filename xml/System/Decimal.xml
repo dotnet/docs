@@ -1,7 +1,9 @@
-<Type Name="Decimal" FullName="System.Decimal">
+﻿<Type Name="Decimal" FullName="System.Decimal">
   <TypeSignature Language="C#" Value="public struct Decimal : IComparable, IComparable&lt;decimal&gt;, IConvertible, IEquatable&lt;decimal&gt;, IFormattable, System.Runtime.Serialization.IDeserializationCallback" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Decimal extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;valuetype System.Decimal&gt;, class System.IConvertible, class System.IEquatable`1&lt;valuetype System.Decimal&gt;, class System.IFormattable, class System.Runtime.Serialization.IDeserializationCallback" />
   <TypeSignature Language="DocId" Value="T:System.Decimal" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Decimal&#xA;Implements IComparable, IComparable(Of Decimal), IConvertible, IDeserializationCallback, IEquatable(Of Decimal), IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Decimal : IComparable, IComparable&lt;System::Decimal&gt;, IConvertible, IEquatable&lt;System::Decimal&gt;, IFormattable, System::Runtime::Serialization::IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,10 +114,25 @@
     <altmember cref="T:System.Char" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Decimal" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Decimal (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Decimal(double value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -174,6 +191,8 @@
       <MemberSignature Language="C#" Value="public Decimal (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Decimal(int value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -216,6 +235,8 @@
       <MemberSignature Language="C#" Value="public Decimal (int[] bits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32[] bits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.#ctor(System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bits As Integer())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Decimal(cli::array &lt;int&gt; ^ bits);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -287,6 +308,8 @@
       <MemberSignature Language="C#" Value="public Decimal (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.#ctor(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Decimal(long value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -329,6 +352,8 @@
       <MemberSignature Language="C#" Value="public Decimal (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.#ctor(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Decimal(float value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -387,6 +412,8 @@
       <MemberSignature Language="C#" Value="public Decimal (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.#ctor(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Decimal(System::UInt32 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -434,6 +461,8 @@
       <MemberSignature Language="C#" Value="public Decimal (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.#ctor(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Decimal(System::UInt64 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -481,6 +510,8 @@
       <MemberSignature Language="C#" Value="public Decimal (int lo, int mid, int hi, bool isNegative, byte scale);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 lo, int32 mid, int32 hi, bool isNegative, unsigned int8 scale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (lo As Integer, mid As Integer, hi As Integer, isNegative As Boolean, scale As Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Decimal(int lo, int mid, int hi, bool isNegative, System::Byte scale);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -544,6 +575,8 @@
       <MemberSignature Language="C#" Value="public static decimal Add (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Add(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Add(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Add(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -601,6 +634,8 @@
       <MemberSignature Language="C#" Value="public static decimal Ceiling (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Ceiling(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Ceiling(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Ceiling(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -653,6 +688,8 @@
       <MemberSignature Language="C#" Value="public static int Compare (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (d1 As Decimal, d2 As Decimal) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -724,11 +761,29 @@
         <altmember cref="M:System.Decimal.Equals(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Decimal" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompareTo">
       <MemberSignature Language="C#" Value="public int CompareTo (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.CompareTo(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Decimal) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Decimal value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -810,7 +865,12 @@
       <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -890,6 +950,8 @@
       <MemberSignature Language="C#" Value="public static decimal Divide (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Divide(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Divide(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Divide(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -944,11 +1006,29 @@
         <altmember cref="M:System.Decimal.Multiply(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two instances of <see cref="T:System.Decimal" /> represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Equals(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Decimal value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1011,6 +1091,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1071,6 +1153,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Equals(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (d1 As Decimal, d2 As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1127,6 +1211,8 @@
       <MemberSignature Language="C#" Value="public static decimal Floor (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Floor(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Floor(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Floor (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Floor(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1190,6 +1276,8 @@
       <MemberSignature Language="C#" Value="public static decimal FromOACurrency (long cy);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal FromOACurrency(int64 cy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.FromOACurrency(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromOACurrency (cy As Long) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal FromOACurrency(long cy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1233,6 +1321,8 @@
       <MemberSignature Language="C#" Value="public static int[] GetBits (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32[] GetBits(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.GetBits(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBits (d As Decimal) As Integer()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;int&gt; ^ GetBits(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1306,6 +1396,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1343,7 +1435,12 @@
       <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1382,6 +1479,8 @@
       <MemberSignature Language="C#" Value="public static readonly decimal MaxValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Decimal MaxValue" />
       <MemberSignature Language="DocId" Value="F:System.Decimal.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As Decimal " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Decimal MaxValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1432,6 +1531,8 @@
       <MemberSignature Language="C#" Value="public static readonly decimal MinusOne;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Decimal MinusOne" />
       <MemberSignature Language="DocId" Value="F:System.Decimal.MinusOne" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinusOne As Decimal " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Decimal MinusOne;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1477,6 +1578,8 @@
       <MemberSignature Language="C#" Value="public static readonly decimal MinValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Decimal MinValue" />
       <MemberSignature Language="DocId" Value="F:System.Decimal.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As Decimal " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Decimal MinValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1527,6 +1630,8 @@
       <MemberSignature Language="C#" Value="public static decimal Multiply (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Multiply(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Multiply(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Multiply(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1584,6 +1689,8 @@
       <MemberSignature Language="C#" Value="public static decimal Negate (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Negate(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Negate(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Negate (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Negate(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1634,6 +1741,8 @@
       <MemberSignature Language="C#" Value="public static readonly decimal One;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Decimal One" />
       <MemberSignature Language="DocId" Value="F:System.Decimal.One" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly One As Decimal " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Decimal One;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1679,6 +1788,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator + (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Addition(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Addition(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator +(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1735,6 +1846,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator -- (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Decrement(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Decrement(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_Decrement (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator --(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1790,6 +1903,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator / (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Division(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Division(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator / (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator /(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1848,6 +1963,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Equality(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (d1 As Decimal, d2 As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1901,10 +2018,25 @@
         <altmember cref="M:System.Decimal.op_Inequality(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an explicit conversion between a <see cref="T:System.Decimal" /> object and another type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Explicit">
       <MemberSignature Language="C#" Value="public static explicit operator byte (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Byte" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Byte(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1958,6 +2090,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator char (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname char op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Char" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator char(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2010,6 +2144,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator double (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Double" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator double(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2063,6 +2199,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator short (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int16 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Int16" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator short(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2117,6 +2255,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator int (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Int32" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator int(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2170,6 +2310,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator long (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Int64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator long(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2222,6 +2364,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator sbyte (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int8 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.SByte" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As SByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::SByte(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2283,6 +2427,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator float (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Single" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator float(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2336,6 +2482,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator ushort (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int16 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.UInt16" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As UShort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt16(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2396,6 +2544,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator uint (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int32 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.UInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt32(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2457,6 +2607,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator ulong (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int64 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.UInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt64(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2517,6 +2669,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator decimal (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Double)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Double) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Decimal(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2571,6 +2725,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator decimal (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Single)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Single) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Decimal(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2624,6 +2780,8 @@
       <MemberSignature Language="C#" Value="public static bool operator &gt; (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_GreaterThan(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (d1 As Decimal, d2 As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2682,6 +2840,8 @@
       <MemberSignature Language="C#" Value="public static bool operator &gt;= (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_GreaterThanOrEqual(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (d1 As Decimal, d2 As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2760,6 +2920,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Byte)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Byte) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2811,6 +2973,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Char)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Char) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2862,6 +3026,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Int16)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Short) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2913,6 +3079,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Int32)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Integer) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2964,6 +3132,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Int64)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Long) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3015,6 +3185,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.SByte)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As SByte) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3073,6 +3245,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.UInt16)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As UShort) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3131,6 +3305,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.UInt32)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As UInteger) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3189,6 +3365,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator decimal (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.UInt64)~System.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As ULong) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3247,6 +3425,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator ++ (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Increment(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Increment(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_Increment (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator ++(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3302,6 +3482,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Inequality(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (d1 As Decimal, d2 As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3363,6 +3545,8 @@
       <MemberSignature Language="C#" Value="public static bool operator &lt; (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_LessThan(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (d1 As Decimal, d2 As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3421,6 +3605,8 @@
       <MemberSignature Language="C#" Value="public static bool operator &lt;= (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_LessThanOrEqual(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (d1 As Decimal, d2 As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3479,6 +3665,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator % (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Modulus(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Modulus(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Mod (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator %(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3534,6 +3722,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator * (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Multiply(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Multiply(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator *(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3590,6 +3780,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator - (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Subtraction(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Subtraction(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator -(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3646,6 +3838,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator - (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_UnaryNegation(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_UnaryNegation(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator -(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3689,6 +3883,8 @@
       <MemberSignature Language="C#" Value="public static decimal operator + (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_UnaryPlus(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_UnaryPlus(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal operator +(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3727,10 +3923,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent.</summary>
+        <altmember cref="Overload:System.Decimal.TryParse" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Parse">
       <MemberSignature Language="C#" Value="public static decimal Parse (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Parse(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Parse(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3812,6 +4024,8 @@
       <MemberSignature Language="C#" Value="public static decimal Parse (string s, System.Globalization.NumberStyles style);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Parse(string s, valuetype System.Globalization.NumberStyles style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Parse(System.String,System.Globalization.NumberStyles)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, style As NumberStyles) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Parse(System::String ^ s, System::Globalization::NumberStyles style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3924,6 +4138,8 @@
       <MemberSignature Language="C#" Value="public static decimal Parse (string s, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Parse(string s, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Parse(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, provider As IFormatProvider) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Parse(System::String ^ s, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4007,6 +4223,8 @@
       <MemberSignature Language="C#" Value="public static decimal Parse (string s, System.Globalization.NumberStyles style, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Parse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, style As NumberStyles, provider As IFormatProvider) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Parse(System::String ^ s, System::Globalization::NumberStyles style, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4121,6 +4339,8 @@
       <MemberSignature Language="C#" Value="public static decimal Remainder (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Remainder(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Remainder(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Remainder (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Remainder(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4167,10 +4387,22 @@
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Round">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Rounds a value to the nearest integer or specified number of decimal places.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Round">
       <MemberSignature Language="C#" Value="public static decimal Round (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Round(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Round (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Round(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4219,6 +4451,8 @@
       <MemberSignature Language="C#" Value="public static decimal Round (decimal d, int decimals);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, int32 decimals) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Round(System.Decimal,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Round (d As Decimal, decimals As Integer) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Round(System::Decimal d, int decimals);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4277,6 +4511,8 @@
       <MemberSignature Language="C#" Value="public static decimal Round (decimal d, MidpointRounding mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, valuetype System.MidpointRounding mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Round(System.Decimal,System.MidpointRounding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Round (d As Decimal, mode As MidpointRounding) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Round(System::Decimal d, MidpointRounding mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4339,6 +4575,8 @@
       <MemberSignature Language="C#" Value="public static decimal Round (decimal d, int decimals, MidpointRounding mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, int32 decimals, valuetype System.MidpointRounding mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Round (d As Decimal, decimals As Integer, mode As MidpointRounding) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Round(System::Decimal d, int decimals, MidpointRounding mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4413,6 +4651,8 @@
       <MemberSignature Language="C#" Value="public static decimal Subtract (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Subtract(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Subtract(System.Decimal,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (d1 As Decimal, d2 As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Subtract(System::Decimal d1, System::Decimal d2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4470,7 +4710,12 @@
       <MemberSignature Language="C#" Value="int IComparable.CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IComparable#CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareTo (value As Object) As Integer Implements IComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IComparable.CompareTo(System::Object ^ value) = IComparable::CompareTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -4495,7 +4740,12 @@
       <MemberSignature Language="C#" Value="TypeCode IConvertible.GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.TypeCode System.IConvertible.GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Function GetTypeCode () As TypeCode Implements IConvertible.GetTypeCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual TypeCode System.IConvertible.GetTypeCode() = IConvertible::GetTypeCode;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4515,7 +4765,12 @@
       <MemberSignature Language="C#" Value="bool IConvertible.ToBoolean (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IConvertible.ToBoolean(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToBoolean(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToBoolean (provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IConvertible.ToBoolean(IFormatProvider ^ provider) = IConvertible::ToBoolean;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToBoolean(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4556,7 +4811,12 @@
       <MemberSignature Language="C#" Value="byte IConvertible.ToByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int8 System.IConvertible.ToByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToByte (provider As IFormatProvider) As Byte Implements IConvertible.ToByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Byte System.IConvertible.ToByte(IFormatProvider ^ provider) = IConvertible::ToByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4597,7 +4857,12 @@
       <MemberSignature Language="C#" Value="char IConvertible.ToChar (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance char System.IConvertible.ToChar(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToChar(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToChar (provider As IFormatProvider) As Char Implements IConvertible.ToChar" />
+      <MemberSignature Language="C++ CLI" Value=" virtual char System.IConvertible.ToChar(IFormatProvider ^ provider) = IConvertible::ToChar;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToChar(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4631,7 +4896,12 @@
       <MemberSignature Language="C#" Value="DateTime IConvertible.ToDateTime (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.DateTime System.IConvertible.ToDateTime(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToDateTime(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDateTime (provider As IFormatProvider) As DateTime Implements IConvertible.ToDateTime" />
+      <MemberSignature Language="C++ CLI" Value=" virtual DateTime System.IConvertible.ToDateTime(IFormatProvider ^ provider) = IConvertible::ToDateTime;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDateTime(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4665,7 +4935,12 @@
       <MemberSignature Language="C#" Value="decimal IConvertible.ToDecimal (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Decimal System.IConvertible.ToDecimal(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToDecimal(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDecimal (provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Decimal System.IConvertible.ToDecimal(IFormatProvider ^ provider) = IConvertible::ToDecimal;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDecimal(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4705,7 +4980,12 @@
       <MemberSignature Language="C#" Value="double IConvertible.ToDouble (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 System.IConvertible.ToDouble(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToDouble(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDouble (provider As IFormatProvider) As Double Implements IConvertible.ToDouble" />
+      <MemberSignature Language="C++ CLI" Value=" virtual double System.IConvertible.ToDouble(IFormatProvider ^ provider) = IConvertible::ToDouble;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDouble(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4747,7 +5027,12 @@
       <MemberSignature Language="C#" Value="short IConvertible.ToInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int16 System.IConvertible.ToInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt16 (provider As IFormatProvider) As Short Implements IConvertible.ToInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual short System.IConvertible.ToInt16(IFormatProvider ^ provider) = IConvertible::ToInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4790,7 +5075,12 @@
       <MemberSignature Language="C#" Value="int IConvertible.ToInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IConvertible.ToInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt32 (provider As IFormatProvider) As Integer Implements IConvertible.ToInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IConvertible.ToInt32(IFormatProvider ^ provider) = IConvertible::ToInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4833,7 +5123,12 @@
       <MemberSignature Language="C#" Value="long IConvertible.ToInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.IConvertible.ToInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt64 (provider As IFormatProvider) As Long Implements IConvertible.ToInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual long System.IConvertible.ToInt64(IFormatProvider ^ provider) = IConvertible::ToInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4874,7 +5169,12 @@
       <MemberSignature Language="C#" Value="sbyte IConvertible.ToSByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int8 System.IConvertible.ToSByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToSByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSByte (provider As IFormatProvider) As SByte Implements IConvertible.ToSByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::SByte System.IConvertible.ToSByte(IFormatProvider ^ provider) = IConvertible::ToSByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4915,7 +5215,12 @@
       <MemberSignature Language="C#" Value="float IConvertible.ToSingle (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float32 System.IConvertible.ToSingle(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToSingle(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSingle (provider As IFormatProvider) As Single Implements IConvertible.ToSingle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual float System.IConvertible.ToSingle(IFormatProvider ^ provider) = IConvertible::ToSingle;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSingle(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -4955,7 +5260,11 @@
       <MemberSignature Language="C#" Value="object IConvertible.ToType (Type type, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IConvertible.ToType(class System.Type type, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToType(System.Type,System.IFormatProvider)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IConvertible.ToType(Type ^ type, IFormatProvider ^ provider) = IConvertible::ToType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToType(System.Type,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -5000,7 +5309,12 @@
       <MemberSignature Language="C#" Value="ushort IConvertible.ToUInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int16 System.IConvertible.ToUInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToUInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt16 (provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt16 System.IConvertible.ToUInt16(IFormatProvider ^ provider) = IConvertible::ToUInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -5041,7 +5355,12 @@
       <MemberSignature Language="C#" Value="uint IConvertible.ToUInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int32 System.IConvertible.ToUInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToUInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt32 (provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt32 System.IConvertible.ToUInt32(IFormatProvider ^ provider) = IConvertible::ToUInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -5084,7 +5403,12 @@
       <MemberSignature Language="C#" Value="ulong IConvertible.ToUInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 System.IConvertible.ToUInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#IConvertible#ToUInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt64 (provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt64 System.IConvertible.ToUInt64(IFormatProvider ^ provider) = IConvertible::ToUInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -5127,7 +5451,12 @@
       <MemberSignature Language="C#" Value="void IDeserializationCallback.OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -5158,6 +5487,8 @@
       <MemberSignature Language="C#" Value="public static byte ToByte (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 ToByte(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToByte(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Decimal) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5213,6 +5544,8 @@
       <MemberSignature Language="C#" Value="public static double ToDouble (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ToDouble(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToDouble(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (d As Decimal) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5272,6 +5605,8 @@
       <MemberSignature Language="C#" Value="public static short ToInt16 (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ToInt16(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToInt16(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Decimal) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5325,6 +5660,8 @@
       <MemberSignature Language="C#" Value="public static int ToInt32 (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToInt32(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToInt32(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (d As Decimal) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5385,6 +5722,8 @@
       <MemberSignature Language="C#" Value="public static long ToInt64 (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ToInt64(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToInt64(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (d As Decimal) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5445,6 +5784,8 @@
       <MemberSignature Language="C#" Value="public static long ToOACurrency (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ToOACurrency(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToOACurrency(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToOACurrency (value As Decimal) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToOACurrency(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5488,6 +5829,8 @@
       <MemberSignature Language="C#" Value="public static sbyte ToSByte (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int8 ToSByte(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToSByte(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Decimal) As SByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5547,6 +5890,8 @@
       <MemberSignature Language="C#" Value="public static float ToSingle (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 ToSingle(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToSingle(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (d As Decimal) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5602,10 +5947,25 @@
         <altmember cref="T:System.Single" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of this instance to its equivalent <see cref="T:System.String" /> representation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5677,7 +6037,12 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5749,6 +6114,8 @@
       <MemberSignature Language="C#" Value="public string ToString (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5823,7 +6190,12 @@
       <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5899,6 +6271,8 @@
       <MemberSignature Language="C#" Value="public static ushort ToUInt16 (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 ToUInt16(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToUInt16(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Decimal) As UShort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5960,6 +6334,8 @@
       <MemberSignature Language="C#" Value="public static uint ToUInt32 (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 ToUInt32(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToUInt32(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (d As Decimal) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6024,6 +6400,8 @@
       <MemberSignature Language="C#" Value="public static ulong ToUInt64 (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 ToUInt64(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.ToUInt64(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (d As Decimal) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6087,6 +6465,8 @@
       <MemberSignature Language="C#" Value="public static decimal Truncate (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Truncate(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.Truncate(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate (d As Decimal) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Truncate(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6141,10 +6521,26 @@
         <altmember cref="M:System.Decimal.Floor(System.Decimal)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <altmember cref="Overload:System.Decimal.Parse" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out decimal result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] valuetype System.Decimal&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.TryParse(System.String,System.Decimal@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, ByRef result As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, [Runtime::InteropServices::Out] System::Decimal % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6225,6 +6621,8 @@
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out decimal result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] valuetype System.Decimal&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Decimal@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, style As NumberStyles, provider As IFormatProvider, ByRef result As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, System::Globalization::NumberStyles style, IFormatProvider ^ provider, [Runtime::InteropServices::Out] System::Decimal % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6319,6 +6717,8 @@
       <MemberSignature Language="C#" Value="public static readonly decimal Zero;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Decimal Zero" />
       <MemberSignature Language="DocId" Value="F:System.Decimal.Zero" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Zero As Decimal " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Decimal Zero;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6360,108 +6760,5 @@
         <altmember cref="F:System.Decimal.MinValue" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the numeric value of this instance to its equivalent <see cref="T:System.String" /> representation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Decimal" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryParse">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
-        <altmember cref="Overload:System.Decimal.Parse" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value indicating whether two instances of <see cref="T:System.Decimal" /> represent the same value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CompareTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares this instance to a specified object or <see cref="T:System.Decimal" /> and returns an indication of their relative values.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Explicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Defines an explicit conversion between a <see cref="T:System.Decimal" /> object and another type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Parse">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent.</summary>
-        <altmember cref="Overload:System.Decimal.TryParse" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Round">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Rounds a value to the nearest integer or specified number of decimal places.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

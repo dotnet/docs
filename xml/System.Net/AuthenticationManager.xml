@@ -1,7 +1,9 @@
-<Type Name="AuthenticationManager" FullName="System.Net.AuthenticationManager">
+﻿<Type Name="AuthenticationManager" FullName="System.Net.AuthenticationManager">
   <TypeSignature Language="C#" Value="public class AuthenticationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticationManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.AuthenticationManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class AuthenticationManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationManager" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.Authorization Authenticate (string challenge, System.Net.WebRequest request, System.Net.ICredentials credentials);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Authorization Authenticate(string challenge, class System.Net.WebRequest request, class System.Net.ICredentials credentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Authenticate (challenge As String, request As WebRequest, credentials As ICredentials) As Authorization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Authorization ^ Authenticate(System::String ^ challenge, System::Net::WebRequest ^ request, System::Net::ICredentials ^ credentials);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +109,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.ICredentialPolicy CredentialPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Net.ICredentialPolicy CredentialPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Net.AuthenticationManager.CredentialPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CredentialPolicy As ICredentialPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::ICredentialPolicy ^ CredentialPolicy { System::Net::ICredentialPolicy ^ get(); void set(System::Net::ICredentialPolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +155,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Specialized.StringDictionary CustomTargetNameDictionary { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.Specialized.StringDictionary CustomTargetNameDictionary" />
       <MemberSignature Language="DocId" Value="P:System.Net.AuthenticationManager.CustomTargetNameDictionary" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CustomTargetNameDictionary As StringDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Specialized::StringDictionary ^ CustomTargetNameDictionary { System::Collections::Specialized::StringDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -208,6 +216,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.Authorization PreAuthenticate (System.Net.WebRequest request, System.Net.ICredentials credentials);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Authorization PreAuthenticate(class System.Net.WebRequest request, class System.Net.ICredentials credentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreAuthenticate (request As WebRequest, credentials As ICredentials) As Authorization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Authorization ^ PreAuthenticate(System::Net::WebRequest ^ request, System::Net::ICredentials ^ credentials);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -252,6 +262,8 @@
       <MemberSignature Language="C#" Value="public static void Register (System.Net.IAuthenticationModule authenticationModule);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(class System.Net.IAuthenticationModule authenticationModule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.Register(System.Net.IAuthenticationModule)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Register (authenticationModule As IAuthenticationModule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Register(System::Net::IAuthenticationModule ^ authenticationModule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -301,6 +313,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerator RegisteredModules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.IEnumerator RegisteredModules" />
       <MemberSignature Language="DocId" Value="P:System.Net.AuthenticationManager.RegisteredModules" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RegisteredModules As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::IEnumerator ^ RegisteredModules { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -340,10 +354,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Unregister">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes authentication modules from the list of registered modules.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Unregister">
       <MemberSignature Language="C#" Value="public static void Unregister (System.Net.IAuthenticationModule authenticationModule);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(class System.Net.IAuthenticationModule authenticationModule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.Unregister(System.Net.IAuthenticationModule)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (authenticationModule As IAuthenticationModule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unregister(System::Net::IAuthenticationModule ^ authenticationModule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -394,6 +420,8 @@
       <MemberSignature Language="C#" Value="public static void Unregister (string authenticationScheme);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(string authenticationScheme) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.Unregister(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (authenticationScheme As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unregister(System::String ^ authenticationScheme);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -440,15 +468,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for executing unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Unregister">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes authentication modules from the list of registered modules.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

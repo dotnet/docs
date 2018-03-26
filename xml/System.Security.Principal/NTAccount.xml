@@ -1,7 +1,9 @@
-<Type Name="NTAccount" FullName="System.Security.Principal.NTAccount">
+﻿<Type Name="NTAccount" FullName="System.Security.Principal.NTAccount">
   <TypeSignature Language="C#" Value="public sealed class NTAccount : System.Security.Principal.IdentityReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NTAccount extends System.Security.Principal.IdentityReference" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.NTAccount" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NTAccount&#xA;Inherits IdentityReference" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NTAccount sealed : System::Security::Principal::IdentityReference" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.NTAccount" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NTAccount (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NTAccount(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -69,6 +83,8 @@
       <MemberSignature Language="C#" Value="public NTAccount (string domainName, string accountName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string domainName, string accountName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (domainName As String, accountName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NTAccount(System::String ^ domainName, System::String ^ accountName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -114,6 +130,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -143,6 +161,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -168,6 +188,8 @@
       <MemberSignature Language="C#" Value="public override bool IsValidTargetType (Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsValidTargetType(class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.IsValidTargetType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValidTargetType (targetType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValidTargetType(Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -201,6 +223,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Principal.NTAccount left, System.Security.Principal.NTAccount right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.Principal.NTAccount left, class System.Security.Principal.NTAccount right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.op_Equality(System.Security.Principal.NTAccount,System.Security.Principal.NTAccount)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As NTAccount, right As NTAccount) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::Principal::NTAccount ^ left, System::Security::Principal::NTAccount ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -232,6 +256,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Principal.NTAccount left, System.Security.Principal.NTAccount right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.Principal.NTAccount left, class System.Security.Principal.NTAccount right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.op_Inequality(System.Security.Principal.NTAccount,System.Security.Principal.NTAccount)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As NTAccount, right As NTAccount) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::Principal::NTAccount ^ left, System::Security::Principal::NTAccount ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -263,6 +289,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -288,6 +316,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Principal.IdentityReference Translate (Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Principal.IdentityReference Translate(class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.Translate(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Translate (targetType As Type) As IdentityReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Principal::IdentityReference ^ Translate(Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -327,6 +357,8 @@
       <MemberSignature Language="C#" Value="public override string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.NTAccount.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -347,15 +379,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.NTAccount" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

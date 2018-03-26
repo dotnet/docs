@@ -1,7 +1,9 @@
-<Type Name="ContentOperations" FullName="System.Windows.ContentOperations">
+﻿<Type Name="ContentOperations" FullName="System.Windows.ContentOperations">
   <TypeSignature Language="C#" Value="public static class ContentOperations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ContentOperations extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ContentOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContentOperations" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentOperations abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject GetParent (System.Windows.ContentElement reference);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject GetParent(class System.Windows.ContentElement reference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ContentOperations.GetParent(System.Windows.ContentElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetParent (reference As ContentElement) As DependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetParent(System::Windows::ContentElement ^ reference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public static void SetParent (System.Windows.ContentElement reference, System.Windows.DependencyObject parent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetParent(class System.Windows.ContentElement reference, class System.Windows.DependencyObject parent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ContentOperations.SetParent(System.Windows.ContentElement,System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetParent (reference As ContentElement, parent As DependencyObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetParent(System::Windows::ContentElement ^ reference, System::Windows::DependencyObject ^ parent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

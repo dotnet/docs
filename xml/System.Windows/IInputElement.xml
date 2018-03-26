@@ -1,7 +1,9 @@
-<Type Name="IInputElement" FullName="System.Windows.IInputElement">
+﻿<Type Name="IInputElement" FullName="System.Windows.IInputElement">
   <TypeSignature Language="C#" Value="public interface IInputElement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInputElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.IInputElement" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInputElement" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInputElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,7 @@
       <MemberSignature Language="C#" Value="public void AddHandler (System.Windows.RoutedEvent routedEvent, Delegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddHandler(class System.Windows.RoutedEvent routedEvent, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IInputElement.AddHandler(System.Windows.RoutedEvent,System.Delegate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHandler(System::Windows::RoutedEvent ^ routedEvent, Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +64,8 @@
       <MemberSignature Language="C#" Value="public bool CaptureMouse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CaptureMouse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IInputElement.CaptureMouse" />
+      <MemberSignature Language="VB.NET" Value="Public Function CaptureMouse () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CaptureMouse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +97,8 @@
       <MemberSignature Language="C#" Value="public bool CaptureStylus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CaptureStylus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IInputElement.CaptureStylus" />
+      <MemberSignature Language="VB.NET" Value="Public Function CaptureStylus () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CaptureStylus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +130,8 @@
       <MemberSignature Language="C#" Value="public bool Focus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Focus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IInputElement.Focus" />
+      <MemberSignature Language="VB.NET" Value="Public Function Focus () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Focus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +163,8 @@
       <MemberSignature Language="C#" Value="public bool Focusable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Focusable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.Focusable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Focusable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Focusable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -181,9 +192,11 @@
       </Docs>
     </Member>
     <Member MemberName="GotKeyboardFocus">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.KeyboardFocusChangedEventHandler GotKeyboardFocus;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.KeyboardFocusChangedEventHandler GotKeyboardFocus;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.KeyboardFocusChangedEventHandler GotKeyboardFocus" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.GotKeyboardFocus" />
+      <MemberSignature Language="VB.NET" Value="Event GotKeyboardFocus As KeyboardFocusChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::KeyboardFocusChangedEventHandler ^ GotKeyboardFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,9 +223,11 @@
       </Docs>
     </Member>
     <Member MemberName="GotMouseCapture">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseEventHandler GotMouseCapture;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseEventHandler GotMouseCapture;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseEventHandler GotMouseCapture" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.GotMouseCapture" />
+      <MemberSignature Language="VB.NET" Value="Event GotMouseCapture As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseEventHandler ^ GotMouseCapture;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -241,9 +256,11 @@
       </Docs>
     </Member>
     <Member MemberName="GotStylusCapture">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler GotStylusCapture;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler GotStylusCapture;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler GotStylusCapture" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.GotStylusCapture" />
+      <MemberSignature Language="VB.NET" Value="Event GotStylusCapture As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ GotStylusCapture;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -275,6 +292,8 @@
       <MemberSignature Language="C#" Value="public bool IsEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +324,8 @@
       <MemberSignature Language="C#" Value="public bool IsKeyboardFocused { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsKeyboardFocused" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsKeyboardFocused" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsKeyboardFocused As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsKeyboardFocused { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -335,6 +356,8 @@
       <MemberSignature Language="C#" Value="public bool IsKeyboardFocusWithin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsKeyboardFocusWithin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsKeyboardFocusWithin" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsKeyboardFocusWithin As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsKeyboardFocusWithin { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -365,6 +388,8 @@
       <MemberSignature Language="C#" Value="public bool IsMouseCaptured { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMouseCaptured" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsMouseCaptured" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMouseCaptured As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMouseCaptured { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -395,6 +420,8 @@
       <MemberSignature Language="C#" Value="public bool IsMouseDirectlyOver { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMouseDirectlyOver" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsMouseDirectlyOver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMouseDirectlyOver As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMouseDirectlyOver { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -425,6 +452,8 @@
       <MemberSignature Language="C#" Value="public bool IsMouseOver { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMouseOver" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsMouseOver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMouseOver As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMouseOver { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -455,6 +484,8 @@
       <MemberSignature Language="C#" Value="public bool IsStylusCaptured { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStylusCaptured" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsStylusCaptured" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStylusCaptured As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStylusCaptured { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -485,6 +516,8 @@
       <MemberSignature Language="C#" Value="public bool IsStylusDirectlyOver { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStylusDirectlyOver" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsStylusDirectlyOver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStylusDirectlyOver As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStylusDirectlyOver { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -515,6 +548,8 @@
       <MemberSignature Language="C#" Value="public bool IsStylusOver { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStylusOver" />
       <MemberSignature Language="DocId" Value="P:System.Windows.IInputElement.IsStylusOver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStylusOver As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStylusOver { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -544,9 +579,11 @@
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.KeyEventHandler KeyDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.KeyEventHandler KeyDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.KeyEventHandler KeyDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.KeyDown" />
+      <MemberSignature Language="VB.NET" Value="Event KeyDown As KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -573,9 +610,11 @@
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.KeyEventHandler KeyUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.KeyEventHandler KeyUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.KeyEventHandler KeyUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.KeyUp" />
+      <MemberSignature Language="VB.NET" Value="Event KeyUp As KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -602,9 +641,11 @@
       </Docs>
     </Member>
     <Member MemberName="LostKeyboardFocus">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.KeyboardFocusChangedEventHandler LostKeyboardFocus;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.KeyboardFocusChangedEventHandler LostKeyboardFocus;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.KeyboardFocusChangedEventHandler LostKeyboardFocus" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.LostKeyboardFocus" />
+      <MemberSignature Language="VB.NET" Value="Event LostKeyboardFocus As KeyboardFocusChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::KeyboardFocusChangedEventHandler ^ LostKeyboardFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -631,9 +672,11 @@
       </Docs>
     </Member>
     <Member MemberName="LostMouseCapture">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseEventHandler LostMouseCapture;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseEventHandler LostMouseCapture;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseEventHandler LostMouseCapture" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.LostMouseCapture" />
+      <MemberSignature Language="VB.NET" Value="Event LostMouseCapture As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseEventHandler ^ LostMouseCapture;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -662,9 +705,11 @@
       </Docs>
     </Member>
     <Member MemberName="LostStylusCapture">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler LostStylusCapture;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler LostStylusCapture;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler LostStylusCapture" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.LostStylusCapture" />
+      <MemberSignature Language="VB.NET" Value="Event LostStylusCapture As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ LostStylusCapture;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -693,9 +738,11 @@
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseEventHandler MouseEnter;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseEventHandler MouseEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseEventHandler MouseEnter" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.MouseEnter" />
+      <MemberSignature Language="VB.NET" Value="Event MouseEnter As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseEventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -722,9 +769,11 @@
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseEventHandler MouseLeave;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseEventHandler MouseLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseEventHandler MouseLeave" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.MouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Event MouseLeave As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseEventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -751,9 +800,11 @@
       </Docs>
     </Member>
     <Member MemberName="MouseLeftButtonDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler MouseLeftButtonDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseButtonEventHandler MouseLeftButtonDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler MouseLeftButtonDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.MouseLeftButtonDown" />
+      <MemberSignature Language="VB.NET" Value="Event MouseLeftButtonDown As MouseButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseButtonEventHandler ^ MouseLeftButtonDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -780,9 +831,11 @@
       </Docs>
     </Member>
     <Member MemberName="MouseLeftButtonUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler MouseLeftButtonUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseButtonEventHandler MouseLeftButtonUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler MouseLeftButtonUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.MouseLeftButtonUp" />
+      <MemberSignature Language="VB.NET" Value="Event MouseLeftButtonUp As MouseButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseButtonEventHandler ^ MouseLeftButtonUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -809,9 +862,11 @@
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseEventHandler MouseMove;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseEventHandler MouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseEventHandler MouseMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Event MouseMove As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -839,9 +894,11 @@
       </Docs>
     </Member>
     <Member MemberName="MouseRightButtonDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler MouseRightButtonDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseButtonEventHandler MouseRightButtonDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler MouseRightButtonDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.MouseRightButtonDown" />
+      <MemberSignature Language="VB.NET" Value="Event MouseRightButtonDown As MouseButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseButtonEventHandler ^ MouseRightButtonDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -867,9 +924,11 @@
       </Docs>
     </Member>
     <Member MemberName="MouseRightButtonUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler MouseRightButtonUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseButtonEventHandler MouseRightButtonUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler MouseRightButtonUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.MouseRightButtonUp" />
+      <MemberSignature Language="VB.NET" Value="Event MouseRightButtonUp As MouseButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseButtonEventHandler ^ MouseRightButtonUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -896,9 +955,11 @@
       </Docs>
     </Member>
     <Member MemberName="MouseWheel">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseWheelEventHandler MouseWheel;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseWheelEventHandler MouseWheel;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseWheelEventHandler MouseWheel" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.MouseWheel" />
+      <MemberSignature Language="VB.NET" Value="Event MouseWheel As MouseWheelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseWheelEventHandler ^ MouseWheel;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -925,9 +986,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewGotKeyboardFocus">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.KeyboardFocusChangedEventHandler PreviewGotKeyboardFocus;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.KeyboardFocusChangedEventHandler PreviewGotKeyboardFocus;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.KeyboardFocusChangedEventHandler PreviewGotKeyboardFocus" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewGotKeyboardFocus" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewGotKeyboardFocus As KeyboardFocusChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::KeyboardFocusChangedEventHandler ^ PreviewGotKeyboardFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -954,9 +1017,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.KeyEventHandler PreviewKeyDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.KeyEventHandler PreviewKeyDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.KeyEventHandler PreviewKeyDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewKeyDown" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewKeyDown As KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::KeyEventHandler ^ PreviewKeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -983,9 +1048,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.KeyEventHandler PreviewKeyUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.KeyEventHandler PreviewKeyUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.KeyEventHandler PreviewKeyUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewKeyUp" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewKeyUp As KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::KeyEventHandler ^ PreviewKeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1012,9 +1079,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewLostKeyboardFocus">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.KeyboardFocusChangedEventHandler PreviewLostKeyboardFocus;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.KeyboardFocusChangedEventHandler PreviewLostKeyboardFocus;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.KeyboardFocusChangedEventHandler PreviewLostKeyboardFocus" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewLostKeyboardFocus" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewLostKeyboardFocus As KeyboardFocusChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::KeyboardFocusChangedEventHandler ^ PreviewLostKeyboardFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1041,9 +1110,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseLeftButtonDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler PreviewMouseLeftButtonDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseButtonEventHandler PreviewMouseLeftButtonDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler PreviewMouseLeftButtonDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewMouseLeftButtonDown" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewMouseLeftButtonDown As MouseButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseButtonEventHandler ^ PreviewMouseLeftButtonDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1070,9 +1141,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseLeftButtonUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler PreviewMouseLeftButtonUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseButtonEventHandler PreviewMouseLeftButtonUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler PreviewMouseLeftButtonUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewMouseLeftButtonUp" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewMouseLeftButtonUp As MouseButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseButtonEventHandler ^ PreviewMouseLeftButtonUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1099,9 +1172,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseMove">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseEventHandler PreviewMouseMove;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseEventHandler PreviewMouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseEventHandler PreviewMouseMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewMouseMove" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewMouseMove As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseEventHandler ^ PreviewMouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1127,9 +1202,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseRightButtonDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler PreviewMouseRightButtonDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseButtonEventHandler PreviewMouseRightButtonDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler PreviewMouseRightButtonDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewMouseRightButtonDown" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewMouseRightButtonDown As MouseButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseButtonEventHandler ^ PreviewMouseRightButtonDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1156,9 +1233,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseRightButtonUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler PreviewMouseRightButtonUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseButtonEventHandler PreviewMouseRightButtonUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler PreviewMouseRightButtonUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewMouseRightButtonUp" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewMouseRightButtonUp As MouseButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseButtonEventHandler ^ PreviewMouseRightButtonUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1185,9 +1264,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseWheel">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseWheelEventHandler PreviewMouseWheel;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.MouseWheelEventHandler PreviewMouseWheel;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseWheelEventHandler PreviewMouseWheel" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewMouseWheel" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewMouseWheel As MouseWheelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::MouseWheelEventHandler ^ PreviewMouseWheel;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1213,9 +1294,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusButtonDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusButtonEventHandler PreviewStylusButtonDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusButtonEventHandler PreviewStylusButtonDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusButtonEventHandler PreviewStylusButtonDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusButtonDown" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusButtonDown As StylusButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusButtonEventHandler ^ PreviewStylusButtonDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1242,9 +1325,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusButtonUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusButtonEventHandler PreviewStylusButtonUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusButtonEventHandler PreviewStylusButtonUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusButtonEventHandler PreviewStylusButtonUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusButtonUp" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusButtonUp As StylusButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusButtonEventHandler ^ PreviewStylusButtonUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1271,9 +1356,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusDownEventHandler PreviewStylusDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusDownEventHandler PreviewStylusDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusDownEventHandler PreviewStylusDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusDown" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusDown As StylusDownEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusDownEventHandler ^ PreviewStylusDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1300,9 +1387,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusInAirMove">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler PreviewStylusInAirMove;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler PreviewStylusInAirMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler PreviewStylusInAirMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusInAirMove" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusInAirMove As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ PreviewStylusInAirMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1328,9 +1417,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusInRange">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler PreviewStylusInRange;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler PreviewStylusInRange;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler PreviewStylusInRange" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusInRange" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusInRange As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ PreviewStylusInRange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1357,9 +1448,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusMove">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler PreviewStylusMove;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler PreviewStylusMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler PreviewStylusMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusMove" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusMove As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ PreviewStylusMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1385,9 +1478,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusOutOfRange">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler PreviewStylusOutOfRange;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler PreviewStylusOutOfRange;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler PreviewStylusOutOfRange" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusOutOfRange" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusOutOfRange As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ PreviewStylusOutOfRange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1414,9 +1509,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusSystemGesture">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusSystemGestureEventHandler PreviewStylusSystemGesture;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusSystemGestureEventHandler PreviewStylusSystemGesture;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusSystemGestureEventHandler PreviewStylusSystemGesture" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusSystemGesture" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusSystemGesture As StylusSystemGestureEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusSystemGestureEventHandler ^ PreviewStylusSystemGesture;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1442,9 +1539,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler PreviewStylusUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler PreviewStylusUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler PreviewStylusUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewStylusUp" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewStylusUp As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ PreviewStylusUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1471,9 +1570,11 @@
       </Docs>
     </Member>
     <Member MemberName="PreviewTextInput">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.TextCompositionEventHandler PreviewTextInput;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.TextCompositionEventHandler PreviewTextInput;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.TextCompositionEventHandler PreviewTextInput" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.PreviewTextInput" />
+      <MemberSignature Language="VB.NET" Value="Event PreviewTextInput As TextCompositionEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::TextCompositionEventHandler ^ PreviewTextInput;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1502,6 +1603,8 @@
       <MemberSignature Language="C#" Value="public void RaiseEvent (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RaiseEvent(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IInputElement.RaiseEvent(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RaiseEvent (e As RoutedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseEvent(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1534,6 +1637,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseMouseCapture ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseMouseCapture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IInputElement.ReleaseMouseCapture" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseMouseCapture ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseMouseCapture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1563,6 +1668,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseStylusCapture ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseStylusCapture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IInputElement.ReleaseStylusCapture" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseStylusCapture ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseStylusCapture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1592,6 +1699,7 @@
       <MemberSignature Language="C#" Value="public void RemoveHandler (System.Windows.RoutedEvent routedEvent, Delegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveHandler(class System.Windows.RoutedEvent routedEvent, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IInputElement.RemoveHandler(System.Windows.RoutedEvent,System.Delegate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveHandler(System::Windows::RoutedEvent ^ routedEvent, Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1623,9 +1731,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusButtonDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusButtonEventHandler StylusButtonDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusButtonEventHandler StylusButtonDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusButtonEventHandler StylusButtonDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusButtonDown" />
+      <MemberSignature Language="VB.NET" Value="Event StylusButtonDown As StylusButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusButtonEventHandler ^ StylusButtonDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1652,9 +1762,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusButtonUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusButtonEventHandler StylusButtonUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusButtonEventHandler StylusButtonUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusButtonEventHandler StylusButtonUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusButtonUp" />
+      <MemberSignature Language="VB.NET" Value="Event StylusButtonUp As StylusButtonEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusButtonEventHandler ^ StylusButtonUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1681,9 +1793,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusDown">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusDownEventHandler StylusDown;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusDownEventHandler StylusDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusDownEventHandler StylusDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusDown" />
+      <MemberSignature Language="VB.NET" Value="Event StylusDown As StylusDownEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusDownEventHandler ^ StylusDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1710,9 +1824,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusEnter">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler StylusEnter;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler StylusEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler StylusEnter" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusEnter" />
+      <MemberSignature Language="VB.NET" Value="Event StylusEnter As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ StylusEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1739,9 +1855,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusInAirMove">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler StylusInAirMove;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler StylusInAirMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler StylusInAirMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusInAirMove" />
+      <MemberSignature Language="VB.NET" Value="Event StylusInAirMove As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ StylusInAirMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1767,9 +1885,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusInRange">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler StylusInRange;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler StylusInRange;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler StylusInRange" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusInRange" />
+      <MemberSignature Language="VB.NET" Value="Event StylusInRange As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ StylusInRange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1796,9 +1916,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusLeave">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler StylusLeave;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler StylusLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler StylusLeave" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusLeave" />
+      <MemberSignature Language="VB.NET" Value="Event StylusLeave As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ StylusLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1825,9 +1947,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusMove">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler StylusMove;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler StylusMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler StylusMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusMove" />
+      <MemberSignature Language="VB.NET" Value="Event StylusMove As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ StylusMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1853,9 +1977,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusOutOfRange">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler StylusOutOfRange;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler StylusOutOfRange;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler StylusOutOfRange" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusOutOfRange" />
+      <MemberSignature Language="VB.NET" Value="Event StylusOutOfRange As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ StylusOutOfRange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1882,9 +2008,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusSystemGesture">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusSystemGestureEventHandler StylusSystemGesture;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusSystemGestureEventHandler StylusSystemGesture;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusSystemGestureEventHandler StylusSystemGesture" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusSystemGesture" />
+      <MemberSignature Language="VB.NET" Value="Event StylusSystemGesture As StylusSystemGestureEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusSystemGestureEventHandler ^ StylusSystemGesture;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1910,9 +2038,11 @@
       </Docs>
     </Member>
     <Member MemberName="StylusUp">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.StylusEventHandler StylusUp;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.StylusEventHandler StylusUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.StylusEventHandler StylusUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.StylusUp" />
+      <MemberSignature Language="VB.NET" Value="Event StylusUp As StylusEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::StylusEventHandler ^ StylusUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1939,9 +2069,11 @@
       </Docs>
     </Member>
     <Member MemberName="TextInput">
-      <MemberSignature Language="C#" Value="public event System.Windows.Input.TextCompositionEventHandler TextInput;" />
+      <MemberSignature Language="C#" Value="event System.Windows.Input.TextCompositionEventHandler TextInput;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.TextCompositionEventHandler TextInput" />
       <MemberSignature Language="DocId" Value="E:System.Windows.IInputElement.TextInput" />
+      <MemberSignature Language="VB.NET" Value="Event TextInput As TextCompositionEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::TextCompositionEventHandler ^ TextInput;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

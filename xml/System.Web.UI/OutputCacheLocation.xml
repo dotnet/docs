@@ -1,7 +1,9 @@
-<Type Name="OutputCacheLocation" FullName="System.Web.UI.OutputCacheLocation">
+﻿<Type Name="OutputCacheLocation" FullName="System.Web.UI.OutputCacheLocation">
   <TypeSignature Language="C#" Value="public enum OutputCacheLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputCacheLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.OutputCacheLocation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OutputCacheLocation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OutputCacheLocation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Any" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.OutputCacheLocation Any = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.Any" />
+      <MemberSignature Language="VB.NET" Value="Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The output cache can be located on the browser client (where the request originated), on a proxy server (or any other server) participating in the request, or on the server where the request was processed. This value corresponds to the <see cref="F:System.Web.HttpCacheability.Public" /> enumeration value.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.OutputCacheLocation Client = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.Client" />
+      <MemberSignature Language="VB.NET" Value="Client" />
+      <MemberSignature Language="C++ CLI" Value="Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The output cache is located on the browser client where the request originated. This value corresponds to the <see cref="F:System.Web.HttpCacheability.Private" /> enumeration value.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Downstream" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.OutputCacheLocation Downstream = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.Downstream" />
+      <MemberSignature Language="VB.NET" Value="Downstream" />
+      <MemberSignature Language="C++ CLI" Value="Downstream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The output cache can be stored in any HTTP 1.1 cache-capable devices other than the origin server. This includes proxy servers and the client that made the request.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.OutputCacheLocation None = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The output cache is disabled for the requested page. This value corresponds to the <see cref="F:System.Web.HttpCacheability.NoCache" /> enumeration value.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.OutputCacheLocation Server = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.Server" />
+      <MemberSignature Language="VB.NET" Value="Server" />
+      <MemberSignature Language="C++ CLI" Value="Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The output cache is located on the Web server where the request was processed. This value corresponds to the <see cref="F:System.Web.HttpCacheability.Server" /> enumeration value.</summary>
       </Docs>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="ServerAndClient" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.OutputCacheLocation ServerAndClient = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.ServerAndClient" />
+      <MemberSignature Language="VB.NET" Value="ServerAndClient" />
+      <MemberSignature Language="C++ CLI" Value="ServerAndClient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The output cache can be stored only at the origin server or at the requesting client. Proxy servers are not allowed to cache the response. This value corresponds to the combination of the <see cref="F:System.Web.HttpCacheability.Private" /> and <see cref="F:System.Web.HttpCacheability.Server" /> enumeration values.</summary>
       </Docs>

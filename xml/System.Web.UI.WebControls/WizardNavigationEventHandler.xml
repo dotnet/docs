@@ -1,7 +1,9 @@
-<Type Name="WizardNavigationEventHandler" FullName="System.Web.UI.WebControls.WizardNavigationEventHandler">
+﻿<Type Name="WizardNavigationEventHandler" FullName="System.Web.UI.WebControls.WizardNavigationEventHandler">
   <TypeSignature Language="C#" Value="public delegate void WizardNavigationEventHandler(object sender, WizardNavigationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WizardNavigationEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardNavigationEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WizardNavigationEventHandler(sender As Object, e As WizardNavigationEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WizardNavigationEventHandler(System::Object ^ sender, WizardNavigationEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

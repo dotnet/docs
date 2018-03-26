@@ -1,7 +1,9 @@
-<Type Name="ServiceHostFactory" FullName="System.ServiceModel.Activation.ServiceHostFactory">
+﻿<Type Name="ServiceHostFactory" FullName="System.ServiceModel.Activation.ServiceHostFactory">
   <TypeSignature Language="C#" Value="public class ServiceHostFactory : System.ServiceModel.Activation.ServiceHostFactoryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceHostFactory extends System.ServiceModel.Activation.ServiceHostFactoryBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceHostFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceHostFactory&#xA;Inherits ServiceHostFactoryBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceHostFactory : System::ServiceModel::Activation::ServiceHostFactoryBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public ServiceHostFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceHostFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -64,10 +68,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateServiceHost">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.ServiceModel.ServiceHost" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateServiceHost">
       <MemberSignature Language="C#" Value="public override System.ServiceModel.ServiceHostBase CreateServiceHost (string constructorString, Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.ServiceHostBase CreateServiceHost(string constructorString, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.String,System.Uri[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceHost (constructorString As String, baseAddresses As Uri()) As ServiceHostBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::ServiceHostBase ^ CreateServiceHost(System::String ^ constructorString, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -105,6 +120,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.ServiceHost CreateServiceHost (Type serviceType, Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.ServiceHost CreateServiceHost(class System.Type serviceType, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateServiceHost (serviceType As Type, baseAddresses As Uri()) As ServiceHost" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::ServiceHost ^ CreateServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -134,14 +151,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateServiceHost">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.ServiceModel.ServiceHost" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

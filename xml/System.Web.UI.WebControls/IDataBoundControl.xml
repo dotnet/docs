@@ -1,7 +1,9 @@
-<Type Name="IDataBoundControl" FullName="System.Web.UI.WebControls.IDataBoundControl">
+﻿<Type Name="IDataBoundControl" FullName="System.Web.UI.WebControls.IDataBoundControl">
   <TypeSignature Language="C#" Value="public interface IDataBoundControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataBoundControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IDataBoundControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataBoundControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataBoundControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public string[] DataKeyNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] DataKeyNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataKeyNames As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public string DataMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundControl.DataMember" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataMember As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundControl.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public string DataSourceID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSourceID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundControl.DataSourceID" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSourceID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSourceID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.IDataSource DataSourceObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.IDataSource DataSourceObject" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundControl.DataSourceObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceObject As IDataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::IDataSource ^ DataSourceObject { System::Web::UI::IDataSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

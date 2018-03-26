@@ -1,7 +1,9 @@
-<Type Name="ExceptionRegion" FullName="System.Reflection.Metadata.ExceptionRegion">
+﻿<Type Name="ExceptionRegion" FullName="System.Reflection.Metadata.ExceptionRegion">
   <TypeSignature Language="C#" Value="public struct ExceptionRegion" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ExceptionRegion extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ExceptionRegion" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ExceptionRegion" />
+  <TypeSignature Language="C++ CLI" Value="public value class ExceptionRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.EntityHandle CatchType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.EntityHandle CatchType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ExceptionRegion.CatchType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CatchType As EntityHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle CatchType { System::Reflection::Metadata::EntityHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int FilterOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FilterOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ExceptionRegion.FilterOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilterOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public int HandlerLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HandlerLength" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ExceptionRegion.HandlerLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandlerLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HandlerLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="public int HandlerOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HandlerOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ExceptionRegion.HandlerOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandlerOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HandlerOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ExceptionRegionKind Kind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.ExceptionRegionKind Kind" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ExceptionRegion.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As ExceptionRegionKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::ExceptionRegionKind Kind { System::Reflection::Metadata::ExceptionRegionKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -121,6 +133,8 @@
       <MemberSignature Language="C#" Value="public int TryLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TryLength" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ExceptionRegion.TryLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TryLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TryLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -141,6 +155,8 @@
       <MemberSignature Language="C#" Value="public int TryOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TryOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ExceptionRegion.TryOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TryOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TryOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

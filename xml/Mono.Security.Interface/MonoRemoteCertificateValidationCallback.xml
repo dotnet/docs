@@ -1,7 +1,9 @@
-<Type Name="MonoRemoteCertificateValidationCallback" FullName="Mono.Security.Interface.MonoRemoteCertificateValidationCallback">
+﻿<Type Name="MonoRemoteCertificateValidationCallback" FullName="Mono.Security.Interface.MonoRemoteCertificateValidationCallback">
   <TypeSignature Language="C#" Value="public delegate bool MonoRemoteCertificateValidationCallback(string targetHost, X509Certificate certificate, X509Chain chain, MonoSslPolicyErrors sslPolicyErrors);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MonoRemoteCertificateValidationCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoRemoteCertificateValidationCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function MonoRemoteCertificateValidationCallback(targetHost As String, certificate As X509Certificate, chain As X509Chain, sslPolicyErrors As MonoSslPolicyErrors) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool MonoRemoteCertificateValidationCallback(System::String ^ targetHost, X509Certificate ^ certificate, X509Chain ^ chain, MonoSslPolicyErrors sslPolicyErrors);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="EventTypeFilter" FullName="System.Diagnostics.EventTypeFilter">
+﻿<Type Name="EventTypeFilter" FullName="System.Diagnostics.EventTypeFilter">
   <TypeSignature Language="C#" Value="public class EventTypeFilter : System.Diagnostics.TraceFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventTypeFilter extends System.Diagnostics.TraceFilter" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventTypeFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventTypeFilter&#xA;Inherits TraceFilter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventTypeFilter : System::Diagnostics::TraceFilter" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public EventTypeFilter (System.Diagnostics.SourceLevels level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.SourceLevels level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventTypeFilter.#ctor(System.Diagnostics.SourceLevels)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (level As SourceLevels)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventTypeFilter(System::Diagnostics::SourceLevels level);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -90,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SourceLevels EventType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.SourceLevels EventType" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventTypeFilter.EventType" />
+      <MemberSignature Language="VB.NET" Value="Public Property EventType As SourceLevels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SourceLevels EventType { System::Diagnostics::SourceLevels get(); void set(System::Diagnostics::SourceLevels value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -125,6 +131,8 @@
       <MemberSignature Language="C#" Value="public override bool ShouldTrace (System.Diagnostics.TraceEventCache cache, string source, System.Diagnostics.TraceEventType eventType, int id, string formatOrMessage, object[] args, object data1, object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ShouldTrace(class System.Diagnostics.TraceEventCache cache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string formatOrMessage, object[] args, object data1, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventTypeFilter.ShouldTrace(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[],System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldTrace (cache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, formatOrMessage As String, args As Object(), data1 As Object, data As Object()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldTrace(System::Diagnostics::TraceEventCache ^ cache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ formatOrMessage, cli::array &lt;System::Object ^&gt; ^ args, System::Object ^ data1, cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Globals" FullName="Microsoft.JScript.Globals">
+﻿<Type Name="Globals" FullName="Microsoft.JScript.Globals">
   <TypeSignature Language="C#" Value="public sealed class Globals" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Globals extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Globals" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Globals" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Globals sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject ConstructArray (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject ConstructArray(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Globals.ConstructArray(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConstructArray (ParamArray args As Object()) As ArrayObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ ConstructArray(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject ConstructArrayLiteral (object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject ConstructArrayLiteral(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Globals.ConstructArrayLiteral(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConstructArrayLiteral (args As Object()) As ArrayObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ ConstructArrayLiteral(cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.Vsa.VsaEngine contextEngine;" />
       <MemberSignature Language="ILAsm" Value=".field public static class Microsoft.JScript.Vsa.VsaEngine contextEngine" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Globals.contextEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Shared contextEngine As VsaEngine " />
+      <MemberSignature Language="C++ CLI" Value="public: static Microsoft::JScript::Vsa::VsaEngine ^ contextEngine;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

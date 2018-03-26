@@ -1,7 +1,9 @@
-<Type Name="CertificateEmbeddingOption" FullName="System.IO.Packaging.CertificateEmbeddingOption">
+﻿<Type Name="CertificateEmbeddingOption" FullName="System.IO.Packaging.CertificateEmbeddingOption">
   <TypeSignature Language="C#" Value="public enum CertificateEmbeddingOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CertificateEmbeddingOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.CertificateEmbeddingOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CertificateEmbeddingOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CertificateEmbeddingOption" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="InCertificatePart" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.CertificateEmbeddingOption InCertificatePart = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CertificateEmbeddingOption.InCertificatePart" />
+      <MemberSignature Language="VB.NET" Value="InCertificatePart" />
+      <MemberSignature Language="C++ CLI" Value="InCertificatePart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CertificateEmbeddingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The certificate is embedded in its own <see cref="T:System.IO.Packaging.PackagePart" />.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="InSignaturePart" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.CertificateEmbeddingOption InSignaturePart = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CertificateEmbeddingOption.InSignaturePart" />
+      <MemberSignature Language="VB.NET" Value="InSignaturePart" />
+      <MemberSignature Language="C++ CLI" Value="InSignaturePart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CertificateEmbeddingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The certificate is embedded in the <see cref="P:System.IO.Packaging.PackageDigitalSignature.SignaturePart" /> that is created for the signature being added.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="NotEmbedded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.CertificateEmbeddingOption NotEmbedded = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CertificateEmbeddingOption.NotEmbedded" />
+      <MemberSignature Language="VB.NET" Value="NotEmbedded" />
+      <MemberSignature Language="C++ CLI" Value="NotEmbedded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CertificateEmbeddingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The certificate in not embedded in the package.</summary>
       </Docs>

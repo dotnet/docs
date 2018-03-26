@@ -1,7 +1,9 @@
-<Type Name="TypedTableBaseExtensions" FullName="System.Data.TypedTableBaseExtensions">
+﻿<Type Name="TypedTableBaseExtensions" FullName="System.Data.TypedTableBaseExtensions">
   <TypeSignature Language="C#" Value="public static class TypedTableBaseExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TypedTableBaseExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.TypedTableBaseExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module TypedTableBaseExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypedTableBaseExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.EnumerableRowCollection&lt;TRow&gt; AsEnumerable&lt;TRow&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source) where TRow : System.Data.DataRow;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; AsEnumerable&lt;(class System.Data.DataRow) TRow&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.AsEnumerable``1(System.Data.TypedTableBase{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsEnumerable(Of TRow As DataRow) (source As TypedTableBase(Of TRow)) As EnumerableRowCollection(Of TRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow&gt;&#xA; where TRow : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;TRow&gt; ^ AsEnumerable(System::Data::TypedTableBase&lt;TRow&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public static TRow ElementAtOrDefault&lt;TRow&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, int index) where TRow : System.Data.DataRow;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TRow ElementAtOrDefault&lt;(class System.Data.DataRow) TRow&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.ElementAtOrDefault``1(System.Data.TypedTableBase{``0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ElementAtOrDefault(Of TRow As DataRow) (source As TypedTableBase(Of TRow), index As Integer) As TRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow&gt;&#xA; where TRow : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static TRow ElementAtOrDefault(System::Data::TypedTableBase&lt;TRow&gt; ^ source, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -86,10 +92,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OrderBy&lt;TRow,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in ascending order.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OrderBy&lt;TRow,TKey&gt;">
       <MemberSignature Language="C#" Value="public static System.Data.OrderedEnumerableRowCollection&lt;TRow&gt; OrderBy&lt;TRow,TKey&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,TKey&gt; keySelector) where TRow : System.Data.DataRow;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderBy&lt;(class System.Data.DataRow) TRow, TKey&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.OrderBy``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy(Of TRow As DataRow, TKey As DataRow) (source As TypedTableBase(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA; where TRow : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderBy(System::Data::TypedTableBase&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -124,6 +141,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OrderedEnumerableRowCollection&lt;TRow&gt; OrderBy&lt;TRow,TKey&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,TKey&gt; keySelector, System.Collections.Generic.IComparer&lt;TKey&gt; comparer) where TRow : System.Data.DataRow;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderBy&lt;(class System.Data.DataRow) TRow, TKey&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector, class System.Collections.Generic.IComparer`1&lt;!!TKey&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.OrderBy``2(System.Data.TypedTableBase{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy(Of TRow As DataRow, TKey As DataRow) (source As TypedTableBase(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA; where TRow : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderBy(System::Data::TypedTableBase&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -156,10 +175,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OrderByDescending&lt;TRow,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in descending order.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OrderByDescending&lt;TRow,TKey&gt;">
       <MemberSignature Language="C#" Value="public static System.Data.OrderedEnumerableRowCollection&lt;TRow&gt; OrderByDescending&lt;TRow,TKey&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,TKey&gt; keySelector) where TRow : System.Data.DataRow;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderByDescending&lt;(class System.Data.DataRow) TRow, TKey&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.OrderByDescending``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending(Of TRow As DataRow, TKey As DataRow) (source As TypedTableBase(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA; where TRow : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderByDescending(System::Data::TypedTableBase&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -194,6 +224,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OrderedEnumerableRowCollection&lt;TRow&gt; OrderByDescending&lt;TRow,TKey&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,TKey&gt; keySelector, System.Collections.Generic.IComparer&lt;TKey&gt; comparer) where TRow : System.Data.DataRow;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderByDescending&lt;(class System.Data.DataRow) TRow, TKey&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector, class System.Collections.Generic.IComparer`1&lt;!!TKey&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.OrderByDescending``2(System.Data.TypedTableBase{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending(Of TRow As DataRow, TKey As DataRow) (source As TypedTableBase(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA; where TRow : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderByDescending(System::Data::TypedTableBase&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -230,6 +262,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.EnumerableRowCollection&lt;S&gt; Select&lt;TRow,S&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,S&gt; selector) where TRow : System.Data.DataRow;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!S&gt; Select&lt;(class System.Data.DataRow) TRow, S&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!S&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.Select``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Select(Of TRow As DataRow, S As DataRow) (source As TypedTableBase(Of TRow), selector As Func(Of TRow, S)) As EnumerableRowCollection(Of S)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename S&gt;&#xA; where TRow : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;S&gt; ^ Select(System::Data::TypedTableBase&lt;TRow&gt; ^ source, Func&lt;TRow, S&gt; ^ selector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -271,6 +305,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.EnumerableRowCollection&lt;TRow&gt; Where&lt;TRow&gt; (this System.Data.TypedTableBase&lt;TRow&gt; source, Func&lt;TRow,bool&gt; predicate) where TRow : System.Data.DataRow;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; Where&lt;(class System.Data.DataRow) TRow&gt;(class System.Data.TypedTableBase`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedTableBaseExtensions.Where``1(System.Data.TypedTableBase{``0},System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of TRow As DataRow) (source As TypedTableBase(Of TRow), predicate As Func(Of TRow, Boolean)) As EnumerableRowCollection(Of TRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow&gt;&#xA; where TRow : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;TRow&gt; ^ Where(System::Data::TypedTableBase&lt;TRow&gt; ^ source, Func&lt;TRow, bool&gt; ^ predicate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -299,23 +335,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="OrderBy&lt;TRow,TKey&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in ascending order.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OrderByDescending&lt;TRow,TKey&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in descending order.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

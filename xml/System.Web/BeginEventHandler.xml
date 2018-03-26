@@ -1,7 +1,9 @@
-<Type Name="BeginEventHandler" FullName="System.Web.BeginEventHandler">
+﻿<Type Name="BeginEventHandler" FullName="System.Web.BeginEventHandler">
   <TypeSignature Language="C#" Value="public delegate IAsyncResult BeginEventHandler(object sender, EventArgs e, AsyncCallback cb, object extraData);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BeginEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.BeginEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function BeginEventHandler(sender As Object, e As EventArgs, cb As AsyncCallback, extraData As Object) As IAsyncResult " />
+  <TypeSignature Language="C++ CLI" Value="public delegate IAsyncResult ^ BeginEventHandler(System::Object ^ sender, EventArgs ^ e, AsyncCallback ^ cb, System::Object ^ extraData);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="ContentDisposition" FullName="System.Net.Mime.ContentDisposition">
+﻿<Type Name="ContentDisposition" FullName="System.Net.Mime.ContentDisposition">
   <TypeSignature Language="C#" Value="public class ContentDisposition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ContentDisposition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mime.ContentDisposition" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContentDisposition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentDisposition" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,10 +49,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mime.ContentDisposition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ContentDisposition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentDisposition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentDisposition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +104,8 @@
       <MemberSignature Language="C#" Value="public ContentDisposition (string disposition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string disposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentDisposition.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (disposition As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentDisposition(System::String ^ disposition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +145,8 @@
       <MemberSignature Language="C#" Value="public DateTime CreationDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationDate" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentDisposition.CreationDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreationDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreationDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +193,8 @@
       <MemberSignature Language="C#" Value="public string DispositionType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DispositionType" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentDisposition.DispositionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DispositionType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DispositionType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -221,6 +241,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object rparam);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object rparam) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentDisposition.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (rparam As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ rparam);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -253,6 +275,8 @@
       <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentDisposition.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -299,6 +323,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentDisposition.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -327,6 +353,8 @@
       <MemberSignature Language="C#" Value="public bool Inline { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Inline" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentDisposition.Inline" />
+      <MemberSignature Language="VB.NET" Value="Public Property Inline As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Inline { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -372,6 +400,8 @@
       <MemberSignature Language="C#" Value="public DateTime ModificationDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ModificationDate" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentDisposition.ModificationDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModificationDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ModificationDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -418,6 +448,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringDictionary Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringDictionary Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentDisposition.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As StringDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringDictionary ^ Parameters { System::Collections::Specialized::StringDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -462,6 +494,8 @@
       <MemberSignature Language="C#" Value="public DateTime ReadDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ReadDate" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentDisposition.ReadDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ReadDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -508,6 +542,8 @@
       <MemberSignature Language="C#" Value="public long Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Size" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentDisposition.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Size { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -552,6 +588,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentDisposition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -593,15 +631,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mime.ContentDisposition" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

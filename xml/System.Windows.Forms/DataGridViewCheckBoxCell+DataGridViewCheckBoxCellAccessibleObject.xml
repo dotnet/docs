@@ -1,7 +1,9 @@
-<Type Name="DataGridViewCheckBoxCell+DataGridViewCheckBoxCellAccessibleObject" FullName="System.Windows.Forms.DataGridViewCheckBoxCell+DataGridViewCheckBoxCellAccessibleObject">
+﻿<Type Name="DataGridViewCheckBoxCell+DataGridViewCheckBoxCellAccessibleObject" FullName="System.Windows.Forms.DataGridViewCheckBoxCell+DataGridViewCheckBoxCellAccessibleObject">
   <TypeSignature Language="C#" Value="protected class DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject : System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridViewCheckBoxCell/DataGridViewCheckBoxCellAccessibleObject extends System.Windows.Forms.DataGridViewCell/DataGridViewCellAccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject" />
+  <TypeSignature Language="VB.NET" Value="Protected Class DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject&#xA;Inherits DataGridViewCell.DataGridViewCellAccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class DataGridViewCheckBoxCell::DataGridViewCheckBoxCellAccessibleObject : System::Windows::Forms::DataGridViewCell::DataGridViewCellAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewCheckBoxCellAccessibleObject (System.Windows.Forms.DataGridViewCell owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewCell owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridViewCell)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCheckBoxCellAccessibleObject(System::Windows::Forms::DataGridViewCell ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public override string DefaultAction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject.DefaultAction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public override void DoDefaultAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DoDefaultAction() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject.DoDefaultAction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +131,8 @@
       <MemberSignature Language="C#" Value="public override int GetChildCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChildCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject.GetChildCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +155,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleStates State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleStates State" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject.State" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

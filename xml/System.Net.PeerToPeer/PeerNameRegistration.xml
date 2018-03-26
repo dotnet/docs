@@ -1,7 +1,9 @@
-<Type Name="PeerNameRegistration" FullName="System.Net.PeerToPeer.PeerNameRegistration">
+﻿<Type Name="PeerNameRegistration" FullName="System.Net.PeerToPeer.PeerNameRegistration">
   <TypeSignature Language="C#" Value="public class PeerNameRegistration : IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable PeerNameRegistration extends System.Object implements class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameRegistration" />
+  <TypeSignature Language="VB.NET" Value="Public Class PeerNameRegistration&#xA;Implements IDisposable, ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerNameRegistration : IDisposable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PeerNameRegistration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerNameRegistration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -59,6 +72,8 @@
       <MemberSignature Language="C#" Value="public PeerNameRegistration (System.Net.PeerToPeer.PeerName name, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.PeerToPeer.PeerName name, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.#ctor(System.Net.PeerToPeer.PeerName,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As PeerName, port As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerNameRegistration(System::Net::PeerToPeer::PeerName ^ name, int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -95,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected PeerNameRegistration (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PeerNameRegistration(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -118,6 +135,7 @@
       <MemberSignature Language="C#" Value="public PeerNameRegistration (System.Net.PeerToPeer.PeerName name, int port, System.Net.PeerToPeer.Cloud cloud);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.PeerToPeer.PeerName name, int32 port, class System.Net.PeerToPeer.Cloud cloud) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.#ctor(System.Net.PeerToPeer.PeerName,System.Int32,System.Net.PeerToPeer.Cloud)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerNameRegistration(System::Net::PeerToPeer::PeerName ^ name, int port, System::Net::PeerToPeer::Cloud ^ cloud);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -157,6 +175,8 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Cloud Cloud { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Cloud Cloud" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.Cloud" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cloud As Cloud" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Cloud ^ Cloud { System::Net::PeerToPeer::Cloud ^ get(); void set(System::Net::PeerToPeer::Cloud ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -175,6 +195,8 @@
       <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -194,6 +216,8 @@
       <MemberSignature Language="C#" Value="public byte[] Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Data" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Data { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -239,7 +263,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -260,6 +289,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -285,6 +316,8 @@
       <MemberSignature Language="C#" Value="public System.Net.IPEndPointCollection EndPointCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPEndPointCollection EndPointCollection" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndPointCollection As IPEndPointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPEndPointCollection ^ EndPointCollection { System::Net::IPEndPointCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -319,7 +352,12 @@
       <MemberSignature Language="C#" Value="protected virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -342,6 +380,8 @@
       <MemberSignature Language="C#" Value="public bool IsRegistered ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsRegistered() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.IsRegistered" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsRegistered () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsRegistered();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -363,6 +403,8 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.PeerName PeerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.PeerName PeerName" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PeerName As PeerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::PeerName ^ PeerName { System::Net::PeerToPeer::PeerName ^ get(); void set(System::Net::PeerToPeer::PeerName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -390,6 +432,8 @@
       <MemberSignature Language="C#" Value="public int Port { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.Port" />
+      <MemberSignature Language="VB.NET" Value="Public Property Port As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -418,6 +462,8 @@
       <MemberSignature Language="C#" Value="public void Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -470,6 +516,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -507,7 +555,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -535,6 +588,8 @@
       <MemberSignature Language="C#" Value="public void Update ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Update() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Update" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -573,6 +628,8 @@
       <MemberSignature Language="C#" Value="public bool UseAutoEndPointSelection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAutoEndPointSelection" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.UseAutoEndPointSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseAutoEndPointSelection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAutoEndPointSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -601,14 +658,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

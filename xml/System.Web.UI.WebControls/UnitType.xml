@@ -1,7 +1,9 @@
-<Type Name="UnitType" FullName="System.Web.UI.WebControls.UnitType">
+﻿<Type Name="UnitType" FullName="System.Web.UI.WebControls.UnitType">
   <TypeSignature Language="C#" Value="public enum UnitType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnitType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.UnitType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UnitType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class UnitType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Cm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Cm = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Cm" />
+      <MemberSignature Language="VB.NET" Value="Cm" />
+      <MemberSignature Language="C++ CLI" Value="Cm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Measurement is in centimeters.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="Em" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Em = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Em" />
+      <MemberSignature Language="VB.NET" Value="Em" />
+      <MemberSignature Language="C++ CLI" Value="Em" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Measurement is relative to the height of the parent element's font.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="Ex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Ex = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Ex" />
+      <MemberSignature Language="VB.NET" Value="Ex" />
+      <MemberSignature Language="C++ CLI" Value="Ex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Measurement is relative to the height of the lowercase letter x of the parent element's font.</summary>
       </Docs>
@@ -84,6 +95,8 @@
       <MemberSignature Language="C#" Value="Inch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Inch = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Inch" />
+      <MemberSignature Language="VB.NET" Value="Inch" />
+      <MemberSignature Language="C++ CLI" Value="Inch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Measurement is in inches.</summary>
       </Docs>
@@ -100,6 +114,8 @@
       <MemberSignature Language="C#" Value="Mm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Mm = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Mm" />
+      <MemberSignature Language="VB.NET" Value="Mm" />
+      <MemberSignature Language="C++ CLI" Value="Mm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Measurement is in millimeters.</summary>
       </Docs>
@@ -116,6 +133,8 @@
       <MemberSignature Language="C#" Value="Percentage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Percentage = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Percentage" />
+      <MemberSignature Language="VB.NET" Value="Percentage" />
+      <MemberSignature Language="C++ CLI" Value="Percentage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +143,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Measurement is a percentage relative to the parent element.</summary>
       </Docs>
@@ -132,6 +152,8 @@
       <MemberSignature Language="C#" Value="Pica" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Pica = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Pica" />
+      <MemberSignature Language="VB.NET" Value="Pica" />
+      <MemberSignature Language="C++ CLI" Value="Pica" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +162,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Measurement is in picas. A pica represents 12 points.</summary>
       </Docs>
@@ -148,6 +171,8 @@
       <MemberSignature Language="C#" Value="Pixel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Pixel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Pixel" />
+      <MemberSignature Language="VB.NET" Value="Pixel" />
+      <MemberSignature Language="C++ CLI" Value="Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +181,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Measurement is in pixels.</summary>
       </Docs>
@@ -164,6 +190,8 @@
       <MemberSignature Language="C#" Value="Point" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.UnitType Point = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.UnitType.Point" />
+      <MemberSignature Language="VB.NET" Value="Point" />
+      <MemberSignature Language="C++ CLI" Value="Point" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Measurement is in points. A point represents 1/72 of an inch.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="AggregateCatalog" FullName="System.ComponentModel.Composition.Hosting.AggregateCatalog">
+﻿<Type Name="AggregateCatalog" FullName="System.ComponentModel.Composition.Hosting.AggregateCatalog">
   <TypeSignature Language="C#" Value="public class AggregateCatalog : System.ComponentModel.Composition.Primitives.ComposablePartCatalog, System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AggregateCatalog extends System.ComponentModel.Composition.Primitives.ComposablePartCatalog implements class System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.AggregateCatalog" />
+  <TypeSignature Language="VB.NET" Value="Public Class AggregateCatalog&#xA;Inherits ComposablePartCatalog&#xA;Implements INotifyComposablePartCatalogChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AggregateCatalog : System::ComponentModel::Composition::Primitives::ComposablePartCatalog, System::ComponentModel::Composition::Hosting::INotifyComposablePartCatalogChanged" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,10 +31,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AggregateCatalog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AggregateCatalog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AggregateCatalog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -49,6 +63,8 @@
       <MemberSignature Language="C#" Value="public AggregateCatalog (System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePartCatalog&gt; catalogs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePartCatalog&gt; catalogs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePartCatalog})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (catalogs As IEnumerable(Of ComposablePartCatalog))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AggregateCatalog(System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^&gt; ^ catalogs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -70,6 +86,8 @@
       <MemberSignature Language="C#" Value="public AggregateCatalog (params System.ComponentModel.Composition.Primitives.ComposablePartCatalog[] catalogs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog[] catalogs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray catalogs As ComposablePartCatalog())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AggregateCatalog(... cli::array &lt;System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^&gt; ^ catalogs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -99,6 +117,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.ComponentModel.Composition.Primitives.ComposablePartCatalog&gt; Catalogs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePartCatalog&gt; Catalogs" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.AggregateCatalog.Catalogs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Catalogs As ICollection(Of ComposablePartCatalog)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^&gt; ^ Catalogs { System::Collections::Generic::ICollection&lt;System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -119,7 +139,12 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; Changed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; Changed" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Composition.Hosting.AggregateCatalog.Changed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As EventHandler(Of ComposablePartCatalogChangeEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^&gt; ^ Changed;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -137,7 +162,12 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; Changing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; Changing" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Composition.Hosting.AggregateCatalog.Changing" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Changing As EventHandler(Of ComposablePartCatalogChangeEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^&gt; ^ Changing;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changing</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -155,6 +185,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -178,6 +210,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerator&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator(Of ComposablePartDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerator&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -198,6 +232,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;Tuple&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt; GetExports (System.ComponentModel.Composition.Primitives.ImportDefinition definition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition, class System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt; GetExports(class System.ComponentModel.Composition.Primitives.ImportDefinition definition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExports (definition As ImportDefinition) As IEnumerable(Of Tuple(Of ComposablePartDefinition, ExportDefinition))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;Tuple&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^, System::ComponentModel::Composition::Primitives::ExportDefinition ^&gt; ^&gt; ^ GetExports(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -224,6 +260,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnChanged (System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChanged(class System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.OnChanged(System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanged (e As ComposablePartCatalogChangeEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChanged(System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -246,6 +284,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnChanging (System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChanging(class System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.OnChanging(System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanging (e As ComposablePartCatalogChangeEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChanging(System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -264,15 +304,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AggregateCatalog" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

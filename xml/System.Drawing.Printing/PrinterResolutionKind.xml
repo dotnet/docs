@@ -1,7 +1,9 @@
-<Type Name="PrinterResolutionKind" FullName="System.Drawing.Printing.PrinterResolutionKind">
+﻿<Type Name="PrinterResolutionKind" FullName="System.Drawing.Printing.PrinterResolutionKind">
   <TypeSignature Language="C#" Value="public enum PrinterResolutionKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PrinterResolutionKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterResolutionKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PrinterResolutionKind" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PrinterResolutionKind" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind Custom = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Custom resolution.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="Draft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind Draft = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Draft" />
+      <MemberSignature Language="VB.NET" Value="Draft" />
+      <MemberSignature Language="C++ CLI" Value="Draft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Draft-quality resolution.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind High = int32(-4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>-4</MemberValue>
       <Docs>
         <summary>High resolution.</summary>
       </Docs>
@@ -80,6 +91,8 @@
       <MemberSignature Language="C#" Value="Low" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind Low = int32(-2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Low" />
+      <MemberSignature Language="VB.NET" Value="Low" />
+      <MemberSignature Language="C++ CLI" Value="Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -88,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>-2</MemberValue>
       <Docs>
         <summary>Low resolution.</summary>
       </Docs>
@@ -96,6 +110,8 @@
       <MemberSignature Language="C#" Value="Medium" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind Medium = int32(-3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Medium" />
+      <MemberSignature Language="VB.NET" Value="Medium" />
+      <MemberSignature Language="C++ CLI" Value="Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -104,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>-3</MemberValue>
       <Docs>
         <summary>Medium resolution.</summary>
       </Docs>

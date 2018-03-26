@@ -1,7 +1,9 @@
-<Type Name="VBMath" FullName="Microsoft.VisualBasic.VBMath">
+﻿<Type Name="VBMath" FullName="Microsoft.VisualBasic.VBMath">
   <TypeSignature Language="C#" Value="public sealed class VBMath" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VBMath extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBMath" />
+  <TypeSignature Language="VB.NET" Value="Public Module VBMath" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VBMath sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Randomize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the random-number generator.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Randomize">
       <MemberSignature Language="C#" Value="public static void Randomize ();" />
       <MemberSignature Language="ILAsm" Value=".method public static void Randomize() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBMath.Randomize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Randomize ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Randomize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -79,6 +92,8 @@
       <MemberSignature Language="C#" Value="public static void Randomize (double Number);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Randomize(float64 Number) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBMath.Randomize(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Randomize (Number As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Randomize(double Number);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -119,10 +134,21 @@
         <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Rnd" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Rnd">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a random number of type <see langword="Single" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Rnd">
       <MemberSignature Language="C#" Value="public static float Rnd ();" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 Rnd() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBMath.Rnd" />
+      <MemberSignature Language="VB.NET" Value="Public Function Rnd () As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Rnd();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -171,6 +197,8 @@
       <MemberSignature Language="C#" Value="public static float Rnd (float Number);" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 Rnd(float32 Number) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBMath.Rnd(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Rnd (Number As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Rnd(float Number);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -222,23 +250,5 @@
         <altmember cref="Overload:Microsoft.VisualBasic.VBMath.Randomize" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Randomize">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes the random-number generator.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Rnd">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a random number of type <see langword="Single" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

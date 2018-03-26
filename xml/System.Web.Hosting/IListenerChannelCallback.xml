@@ -1,7 +1,9 @@
-<Type Name="IListenerChannelCallback" FullName="System.Web.Hosting.IListenerChannelCallback">
+﻿<Type Name="IListenerChannelCallback" FullName="System.Web.Hosting.IListenerChannelCallback">
   <TypeSignature Language="C#" Value="public interface IListenerChannelCallback" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IListenerChannelCallback" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IListenerChannelCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IListenerChannelCallback" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IListenerChannelCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("dc3b0a85-9da7-47e4-ba1b-e27da9db8a1e")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public void GetBlob (byte[] buffer, ref int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBlob([out] unsigned int8[] buffer, int32&amp; bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.GetBlob(System.Byte[],System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetBlob (buffer As Byte(), ByRef bufferSize As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetBlob(cli::array &lt;System::Byte&gt; ^ buffer, int % bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public int GetBlobLength ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetBlobLength() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.GetBlobLength" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBlobLength () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetBlobLength();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public int GetId ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetId() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.GetId" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetId () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetId();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +125,8 @@
       <MemberSignature Language="C#" Value="public void ReportMessageReceived ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReportMessageReceived() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.ReportMessageReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReportMessageReceived ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportMessageReceived();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +155,8 @@
       <MemberSignature Language="C#" Value="public void ReportStarted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReportStarted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.ReportStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReportStarted ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportStarted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +183,8 @@
       <MemberSignature Language="C#" Value="public void ReportStopped (int hr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReportStopped(int32 hr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.ReportStopped(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReportStopped (hr As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportStopped(int hr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

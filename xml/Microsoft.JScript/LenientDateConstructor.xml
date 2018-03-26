@@ -1,7 +1,9 @@
-<Type Name="LenientDateConstructor" FullName="Microsoft.JScript.LenientDateConstructor">
+﻿<Type Name="LenientDateConstructor" FullName="Microsoft.JScript.LenientDateConstructor">
   <TypeSignature Language="C#" Value="public sealed class LenientDateConstructor : Microsoft.JScript.DateConstructor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientDateConstructor extends Microsoft.JScript.DateConstructor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientDateConstructor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientDateConstructor&#xA;Inherits DateConstructor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientDateConstructor sealed : Microsoft::JScript::DateConstructor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public object parse;" />
       <MemberSignature Language="ILAsm" Value=".field public object parse" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDateConstructor.parse" />
+      <MemberSignature Language="VB.NET" Value="Public parse As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ parse;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public object UTC;" />
       <MemberSignature Language="ILAsm" Value=".field public object UTC" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDateConstructor.UTC" />
+      <MemberSignature Language="VB.NET" Value="Public UTC As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ UTC;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

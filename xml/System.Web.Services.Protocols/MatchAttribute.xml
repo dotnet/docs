@@ -1,7 +1,9 @@
-<Type Name="MatchAttribute" FullName="System.Web.Services.Protocols.MatchAttribute">
+﻿<Type Name="MatchAttribute" FullName="System.Web.Services.Protocols.MatchAttribute">
   <TypeSignature Language="C#" Value="public sealed class MatchAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MatchAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MatchAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MatchAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MatchAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public MatchAttribute (string pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pattern) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MatchAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pattern As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MatchAttribute(System::String ^ pattern);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public int Capture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Capture" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.MatchAttribute.Capture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Capture As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capture { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="public int Group { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Group" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.MatchAttribute.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Property Group As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Group { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -139,6 +147,8 @@
       <MemberSignature Language="C#" Value="public bool IgnoreCase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCase" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.MatchAttribute.IgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreCase As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreCase { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -167,6 +177,8 @@
       <MemberSignature Language="C#" Value="public int MaxRepeats { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxRepeats" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.MatchAttribute.MaxRepeats" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxRepeats As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRepeats { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -199,6 +211,8 @@
       <MemberSignature Language="C#" Value="public string Pattern { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Pattern" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.MatchAttribute.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Property Pattern As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pattern { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

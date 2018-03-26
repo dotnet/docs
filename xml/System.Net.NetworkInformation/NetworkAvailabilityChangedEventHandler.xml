@@ -1,7 +1,9 @@
-<Type Name="NetworkAvailabilityChangedEventHandler" FullName="System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler">
+﻿<Type Name="NetworkAvailabilityChangedEventHandler" FullName="System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void NetworkAvailabilityChangedEventHandler(object sender, NetworkAvailabilityEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetworkAvailabilityChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub NetworkAvailabilityChangedEventHandler(sender As Object, e As NetworkAvailabilityEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void NetworkAvailabilityChangedEventHandler(System::Object ^ sender, NetworkAvailabilityEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

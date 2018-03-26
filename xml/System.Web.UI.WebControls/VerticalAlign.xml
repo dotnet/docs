@@ -1,7 +1,9 @@
-<Type Name="VerticalAlign" FullName="System.Web.UI.WebControls.VerticalAlign">
+﻿<Type Name="VerticalAlign" FullName="System.Web.UI.WebControls.VerticalAlign">
   <TypeSignature Language="C#" Value="public enum VerticalAlign" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerticalAlign extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.VerticalAlign" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VerticalAlign" />
+  <TypeSignature Language="C++ CLI" Value="public enum class VerticalAlign" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.VerticalAlign Bottom = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.VerticalAlign.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Text or object is aligned with the bottom of the enclosing control.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="Middle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.VerticalAlign Middle = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.VerticalAlign.Middle" />
+      <MemberSignature Language="VB.NET" Value="Middle" />
+      <MemberSignature Language="C++ CLI" Value="Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Text or object is aligned with the center of the enclosing control.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.VerticalAlign NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.VerticalAlign.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Vertical alignment is not set.</summary>
       </Docs>
@@ -81,6 +92,8 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.VerticalAlign Top = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.VerticalAlign.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Text or object is aligned with the top of the enclosing control.</summary>
       </Docs>

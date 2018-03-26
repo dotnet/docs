@@ -1,7 +1,9 @@
-<Type Name="CreationPolicy" FullName="System.ComponentModel.Composition.CreationPolicy">
+﻿<Type Name="CreationPolicy" FullName="System.ComponentModel.Composition.CreationPolicy">
   <TypeSignature Language="C#" Value="public enum CreationPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CreationPolicy extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.CreationPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CreationPolicy" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CreationPolicy" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Any" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Composition.CreationPolicy Any = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.CreationPolicy.Any" />
+      <MemberSignature Language="VB.NET" Value="Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.CreationPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> will use the most appropriate <see cref="T:System.ComponentModel.Composition.CreationPolicy" /> for the part given the current context. This is the default <see cref="T:System.ComponentModel.Composition.CreationPolicy" />. By default, <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> will use <see cref="F:System.ComponentModel.Composition.CreationPolicy.Shared" />, unless the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> or importer requests <see cref="F:System.ComponentModel.Composition.CreationPolicy.NonShared" />.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="NewScope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Composition.CreationPolicy NewScope = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.CreationPolicy.NewScope" />
+      <MemberSignature Language="VB.NET" Value="NewScope" />
+      <MemberSignature Language="C++ CLI" Value="NewScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.CreationPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="NonShared" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Composition.CreationPolicy NonShared = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.CreationPolicy.NonShared" />
+      <MemberSignature Language="VB.NET" Value="NonShared" />
+      <MemberSignature Language="C++ CLI" Value="NonShared" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.CreationPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that a new non-shared instance of the associated <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> will be created by the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> for every requestor.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="Shared" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Composition.CreationPolicy Shared = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.CreationPolicy.Shared" />
+      <MemberSignature Language="VB.NET" Value="Shared" />
+      <MemberSignature Language="C++ CLI" Value="Shared" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -94,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.CreationPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that a single shared instance of the associated <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> will be created by the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> and shared by all requestors.</summary>
       </Docs>

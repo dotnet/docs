@@ -1,7 +1,9 @@
-<Type Name="ExtractCollection" FullName="System.Workflow.Runtime.Tracking.ExtractCollection">
+﻿<Type Name="ExtractCollection" FullName="System.Workflow.Runtime.Tracking.ExtractCollection">
   <TypeSignature Language="C#" Value="public class ExtractCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.TrackingExtract&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ExtractCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.TrackingExtract&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ExtractCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExtractCollection&#xA;Inherits List(Of TrackingExtract)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtractCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::TrackingExtract ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ExtractCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExtractCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ExtractCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtractCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public ExtractCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.TrackingExtract&gt; extracts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.TrackingExtract&gt; extracts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ExtractCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.TrackingExtract})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (extracts As IEnumerable(Of TrackingExtract))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtractCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::TrackingExtract ^&gt; ^ extracts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -81,14 +96,5 @@
           <paramref name="extracts" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ExtractCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

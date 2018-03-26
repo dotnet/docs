@@ -1,7 +1,9 @@
-<Type Name="INavigateUIData" FullName="System.Web.UI.INavigateUIData">
+﻿<Type Name="INavigateUIData" FullName="System.Web.UI.INavigateUIData">
   <TypeSignature Language="C#" Value="public interface INavigateUIData" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INavigateUIData" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.INavigateUIData" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INavigateUIData" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INavigateUIData" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.INavigateUIData.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.INavigateUIData.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public string NavigateUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.INavigateUIData.NavigateUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigateUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.INavigateUIData.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

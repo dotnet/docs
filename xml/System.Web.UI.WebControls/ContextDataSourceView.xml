@@ -1,7 +1,9 @@
-<Type Name="ContextDataSourceView" FullName="System.Web.UI.WebControls.ContextDataSourceView">
+﻿<Type Name="ContextDataSourceView" FullName="System.Web.UI.WebControls.ContextDataSourceView">
   <TypeSignature Language="C#" Value="public abstract class ContextDataSourceView : System.Web.UI.WebControls.QueryableDataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContextDataSourceView extends System.Web.UI.WebControls.QueryableDataSourceView" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ContextDataSourceView" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContextDataSourceView&#xA;Inherits QueryableDataSourceView" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContextDataSourceView abstract : System::Web::UI::WebControls::QueryableDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected ContextDataSourceView (System.Web.UI.DataSourceControl owner, string viewName, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataSourceControl owner, string viewName, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.#ctor(System.Web.UI.DataSourceControl,System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As DataSourceControl, viewName As String, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ContextDataSourceView(System::Web::UI::DataSourceControl ^ owner, System::String ^ viewName, System::Web::HttpContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="protected object Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.Context" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Context As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ Context { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public virtual Type ContextType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContextType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.ContextType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContextType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ContextType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public virtual string ContextTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContextTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.ContextTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ContextTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -95,6 +105,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.ContextDataSourceContextData CreateContext (System.Web.UI.DataSourceOperation operation);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.ContextDataSourceContextData CreateContext(valuetype System.Web.UI.DataSourceOperation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.CreateContext(System.Web.UI.DataSourceOperation)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateContext (operation As DataSourceOperation) As ContextDataSourceContextData" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ContextDataSourceContextData ^ CreateContext(System::Web::UI::DataSourceOperation operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -113,10 +125,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DisposeContext">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disposes the context after an operation is performed.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DisposeContext">
       <MemberSignature Language="C#" Value="protected void DisposeContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DisposeContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.DisposeContext" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DisposeContext ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DisposeContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -135,6 +158,8 @@
       <MemberSignature Language="C#" Value="protected virtual void DisposeContext (object dataContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DisposeContext(object dataContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.DisposeContext(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DisposeContext (dataContext As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DisposeContext(System::Object ^ dataContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -156,6 +181,8 @@
       <MemberSignature Language="C#" Value="protected object EntitySet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object EntitySet" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntitySet" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property EntitySet As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ EntitySet { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -174,6 +201,8 @@
       <MemberSignature Language="C#" Value="public string EntitySetName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EntitySetName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntitySetName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntitySetName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntitySetName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -192,6 +221,8 @@
       <MemberSignature Language="C#" Value="protected Type EntitySetType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type EntitySetType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntitySetType" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property EntitySetType As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ EntitySetType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -210,6 +241,8 @@
       <MemberSignature Language="C#" Value="protected override Type EntityType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type EntityType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntityType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property EntityType As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ EntityType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -228,6 +261,8 @@
       <MemberSignature Language="C#" Value="public string EntityTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EntityTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntityTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntityTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntityTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -246,6 +281,8 @@
       <MemberSignature Language="C#" Value="protected static readonly object EventContextCreated;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly object EventContextCreated" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ContextDataSourceView.EventContextCreated" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly EventContextCreated As Object " />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Object ^ EventContextCreated;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -263,6 +300,8 @@
       <MemberSignature Language="C#" Value="protected static readonly object EventContextCreating;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly object EventContextCreating" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ContextDataSourceView.EventContextCreating" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly EventContextCreating As Object " />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Object ^ EventContextCreating;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -280,6 +319,8 @@
       <MemberSignature Language="C#" Value="protected static readonly object EventContextDisposing;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly object EventContextDisposing" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ContextDataSourceView.EventContextDisposing" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly EventContextDisposing As Object " />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Object ^ EventContextDisposing;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -297,6 +338,8 @@
       <MemberSignature Language="C#" Value="protected override int ExecuteDelete (System.Collections.IDictionary keys, System.Collections.IDictionary oldValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteDelete(class System.Collections.IDictionary keys, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDelete (keys As IDictionary, oldValues As IDictionary) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteDelete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -321,6 +364,8 @@
       <MemberSignature Language="C#" Value="protected override int ExecuteInsert (System.Collections.IDictionary values);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteInsert(class System.Collections.IDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteInsert (values As IDictionary) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteInsert(System::Collections::IDictionary ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -343,6 +388,8 @@
       <MemberSignature Language="C#" Value="protected override int ExecuteUpdate (System.Collections.IDictionary keys, System.Collections.IDictionary values, System.Collections.IDictionary oldValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteUpdate(class System.Collections.IDictionary keys, class System.Collections.IDictionary values, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteUpdate (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteUpdate(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -369,6 +416,7 @@
       <MemberSignature Language="C#" Value="protected virtual Type GetDataObjectType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type GetDataObjectType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.GetDataObjectType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetDataObjectType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -391,6 +439,8 @@
       <MemberSignature Language="C#" Value="protected virtual Type GetEntitySetType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type GetEntitySetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.GetEntitySetType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetEntitySetType () As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetEntitySetType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -410,6 +460,8 @@
       <MemberSignature Language="C#" Value="protected override object GetSource (System.Web.UI.WebControls.QueryContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetSource(class System.Web.UI.WebControls.QueryContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.GetSource(System.Web.UI.WebControls.QueryContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSource (context As QueryContext) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetSource(System::Web::UI::WebControls::QueryContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -428,14 +480,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DisposeContext">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Disposes the context after an operation is performed.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

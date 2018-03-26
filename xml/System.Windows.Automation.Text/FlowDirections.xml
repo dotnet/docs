@@ -1,7 +1,9 @@
-<Type Name="FlowDirections" FullName="System.Windows.Automation.Text.FlowDirections">
+﻿<Type Name="FlowDirections" FullName="System.Windows.Automation.Text.FlowDirections">
   <TypeSignature Language="C#" Value="public enum FlowDirections" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlowDirections extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.FlowDirections" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FlowDirections" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FlowDirections" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="BottomToTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.FlowDirections BottomToTop = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.BottomToTop" />
+      <MemberSignature Language="VB.NET" Value="BottomToTop" />
+      <MemberSignature Language="C++ CLI" Value="BottomToTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Bottom to top.</summary>
       </Docs>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.FlowDirections Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -53,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Top to bottom, left to right, horizontal.</summary>
       </Docs>
@@ -61,6 +69,8 @@
       <MemberSignature Language="C#" Value="RightToLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.FlowDirections RightToLeft = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.RightToLeft" />
+      <MemberSignature Language="VB.NET" Value="RightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="RightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Right to left.</summary>
       </Docs>
@@ -77,6 +88,8 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.FlowDirections Vertical = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -85,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Vertical.</summary>
       </Docs>

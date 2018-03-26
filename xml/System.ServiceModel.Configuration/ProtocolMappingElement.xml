@@ -1,7 +1,9 @@
-<Type Name="ProtocolMappingElement" FullName="System.ServiceModel.Configuration.ProtocolMappingElement">
+﻿<Type Name="ProtocolMappingElement" FullName="System.ServiceModel.Configuration.ProtocolMappingElement">
   <TypeSignature Language="C#" Value="public sealed class ProtocolMappingElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProtocolMappingElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ProtocolMappingElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtocolMappingElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtocolMappingElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ProtocolMappingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProtocolMappingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ProtocolMappingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolMappingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +47,8 @@
       <MemberSignature Language="C#" Value="public ProtocolMappingElement (string schemeType, string binding, string bindingConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string schemeType, string binding, string bindingConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ProtocolMappingElement.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schemeType As String, binding As String, bindingConfiguration As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolMappingElement(System::String ^ schemeType, System::String ^ binding, System::String ^ bindingConfiguration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Binding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Binding As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Binding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +99,8 @@
       <MemberSignature Language="C#" Value="public string BindingConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BindingConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.BindingConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property BindingConfiguration As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BindingConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +127,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +147,8 @@
       <MemberSignature Language="C#" Value="public string Scheme { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scheme As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scheme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,7 +156,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("scheme", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("scheme", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
@@ -148,14 +171,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ProtocolMappingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

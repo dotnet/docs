@@ -1,7 +1,9 @@
-<Type Name="SchemaImporterExtension" FullName="System.Xml.Serialization.Advanced.SchemaImporterExtension">
+﻿<Type Name="SchemaImporterExtension" FullName="System.Xml.Serialization.Advanced.SchemaImporterExtension">
   <TypeSignature Language="C#" Value="public abstract class SchemaImporterExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SchemaImporterExtension extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Advanced.SchemaImporterExtension" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SchemaImporterExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SchemaImporterExtension abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected SchemaImporterExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SchemaImporterExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public virtual string ImportAnyElement (System.Xml.Schema.XmlSchemaAny any, bool mixed, System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.XmlSchemaImporter importer, System.CodeDom.CodeCompileUnit compileUnit, System.CodeDom.CodeNamespace mainNamespace, System.Xml.Serialization.CodeGenerationOptions options, System.CodeDom.Compiler.CodeDomProvider codeProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ImportAnyElement(class System.Xml.Schema.XmlSchemaAny any, bool mixed, class System.Xml.Serialization.XmlSchemas schemas, class System.Xml.Serialization.XmlSchemaImporter importer, class System.CodeDom.CodeCompileUnit compileUnit, class System.CodeDom.CodeNamespace mainNamespace, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.CodeDom.Compiler.CodeDomProvider codeProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtension.ImportAnyElement(System.Xml.Schema.XmlSchemaAny,System.Boolean,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportAnyElement (any As XmlSchemaAny, mixed As Boolean, schemas As XmlSchemas, importer As XmlSchemaImporter, compileUnit As CodeCompileUnit, mainNamespace As CodeNamespace, options As CodeGenerationOptions, codeProvider As CodeDomProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ImportAnyElement(System::Xml::Schema::XmlSchemaAny ^ any, bool mixed, System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::XmlSchemaImporter ^ importer, System::CodeDom::CodeCompileUnit ^ compileUnit, System::CodeDom::CodeNamespace ^ mainNamespace, System::Xml::Serialization::CodeGenerationOptions options, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -111,6 +117,8 @@
       <MemberSignature Language="C#" Value="public virtual System.CodeDom.CodeExpression ImportDefaultValue (string value, string type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.CodeExpression ImportDefaultValue(string value, string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtension.ImportDefaultValue(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportDefaultValue (value As String, type As String) As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::CodeDom::CodeExpression ^ ImportDefaultValue(System::String ^ value, System::String ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -162,6 +170,8 @@
       <MemberSignature Language="C#" Value="public virtual string ImportSchemaType (System.Xml.Schema.XmlSchemaType type, System.Xml.Schema.XmlSchemaObject context, System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.XmlSchemaImporter importer, System.CodeDom.CodeCompileUnit compileUnit, System.CodeDom.CodeNamespace mainNamespace, System.Xml.Serialization.CodeGenerationOptions options, System.CodeDom.Compiler.CodeDomProvider codeProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ImportSchemaType(class System.Xml.Schema.XmlSchemaType type, class System.Xml.Schema.XmlSchemaObject context, class System.Xml.Serialization.XmlSchemas schemas, class System.Xml.Serialization.XmlSchemaImporter importer, class System.CodeDom.CodeCompileUnit compileUnit, class System.CodeDom.CodeNamespace mainNamespace, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.CodeDom.Compiler.CodeDomProvider codeProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtension.ImportSchemaType(System.Xml.Schema.XmlSchemaType,System.Xml.Schema.XmlSchemaObject,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportSchemaType (type As XmlSchemaType, context As XmlSchemaObject, schemas As XmlSchemas, importer As XmlSchemaImporter, compileUnit As CodeCompileUnit, mainNamespace As CodeNamespace, options As CodeGenerationOptions, codeProvider As CodeDomProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ImportSchemaType(System::Xml::Schema::XmlSchemaType ^ type, System::Xml::Schema::XmlSchemaObject ^ context, System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::XmlSchemaImporter ^ importer, System::CodeDom::CodeCompileUnit ^ compileUnit, System::CodeDom::CodeNamespace ^ mainNamespace, System::Xml::Serialization::CodeGenerationOptions options, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -208,6 +218,8 @@
       <MemberSignature Language="C#" Value="public virtual string ImportSchemaType (string name, string ns, System.Xml.Schema.XmlSchemaObject context, System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.XmlSchemaImporter importer, System.CodeDom.CodeCompileUnit compileUnit, System.CodeDom.CodeNamespace mainNamespace, System.Xml.Serialization.CodeGenerationOptions options, System.CodeDom.Compiler.CodeDomProvider codeProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ImportSchemaType(string name, string ns, class System.Xml.Schema.XmlSchemaObject context, class System.Xml.Serialization.XmlSchemas schemas, class System.Xml.Serialization.XmlSchemaImporter importer, class System.CodeDom.CodeCompileUnit compileUnit, class System.CodeDom.CodeNamespace mainNamespace, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.CodeDom.Compiler.CodeDomProvider codeProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtension.ImportSchemaType(System.String,System.String,System.Xml.Schema.XmlSchemaObject,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportSchemaType (name As String, ns As String, context As XmlSchemaObject, schemas As XmlSchemas, importer As XmlSchemaImporter, compileUnit As CodeCompileUnit, mainNamespace As CodeNamespace, options As CodeGenerationOptions, codeProvider As CodeDomProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ImportSchemaType(System::String ^ name, System::String ^ ns, System::Xml::Schema::XmlSchemaObject ^ context, System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::XmlSchemaImporter ^ importer, System::CodeDom::CodeCompileUnit ^ compileUnit, System::CodeDom::CodeNamespace ^ mainNamespace, System::Xml::Serialization::CodeGenerationOptions options, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

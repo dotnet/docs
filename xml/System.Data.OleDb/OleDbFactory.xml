@@ -1,7 +1,9 @@
-<Type Name="OleDbFactory" FullName="System.Data.OleDb.OleDbFactory">
+﻿<Type Name="OleDbFactory" FullName="System.Data.OleDb.OleDbFactory">
   <TypeSignature Language="C#" Value="public sealed class OleDbFactory : System.Data.Common.DbProviderFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbFactory extends System.Data.Common.DbProviderFactory" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbFactory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbFactory&#xA;Inherits DbProviderFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OleDbFactory sealed : System::Data::Common::DbProviderFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommand CreateCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommand CreateCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbFactory.CreateCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommand () As DbCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -55,6 +59,8 @@ DbCommand cmd = newFactory.CreateCommand();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommandBuilder CreateCommandBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommandBuilder CreateCommandBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbFactory.CreateCommandBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommandBuilder () As DbCommandBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbCommandBuilder ^ CreateCommandBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -91,6 +97,8 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnection CreateConnection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnection CreateConnection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbFactory.CreateConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnection () As DbConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbConnection ^ CreateConnection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -127,6 +135,8 @@ DbConnection cmd = newFactory.CreateConnection();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbFactory.CreateConnectionStringBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnectionStringBuilder () As DbConnectionStringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbConnectionStringBuilder ^ CreateConnectionStringBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -163,6 +173,8 @@ DbConnectionStringBuilder cmd = newFactory.CreateConnectionStringBuilder();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbDataAdapter CreateDataAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbDataAdapter CreateDataAdapter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbFactory.CreateDataAdapter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDataAdapter () As DbDataAdapter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbDataAdapter ^ CreateDataAdapter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -199,6 +211,8 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbParameter CreateParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbParameter CreateParameter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbFactory.CreateParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateParameter () As DbParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbParameter ^ CreateParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -235,6 +249,8 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="C#" Value="public override System.Security.CodeAccessPermission CreatePermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.CodeAccessPermission CreatePermission(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission (state As PermissionState) As CodeAccessPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::CodeAccessPermission ^ CreatePermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -257,6 +273,8 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="C#" Value="public static readonly System.Data.OleDb.OleDbFactory Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Data.OleDb.OleDbFactory Instance" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbFactory.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As OleDbFactory " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OleDb::OleDbFactory ^ Instance;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

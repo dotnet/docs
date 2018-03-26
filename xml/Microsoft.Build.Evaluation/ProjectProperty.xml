@@ -1,7 +1,9 @@
-<Type Name="ProjectProperty" FullName="Microsoft.Build.Evaluation.ProjectProperty">
+﻿<Type Name="ProjectProperty" FullName="Microsoft.Build.Evaluation.ProjectProperty">
   <TypeSignature Language="C#" Value="public abstract class ProjectProperty : IEquatable&lt;Microsoft.Build.Evaluation.ProjectProperty&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProjectProperty extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Build.Evaluation.ProjectProperty&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectProperty" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProjectProperty&#xA;Implements IEquatable(Of ProjectProperty)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectProperty abstract : IEquatable&lt;Microsoft::Build::Evaluation::ProjectProperty ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,7 +30,12 @@
       <MemberSignature Language="C#" Value="public string EvaluatedValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EvaluatedValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.EvaluatedValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EvaluatedValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Evaluation.IProperty.EvaluatedValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +65,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsEnvironmentProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnvironmentProperty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.IsEnvironmentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsEnvironmentProperty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsEnvironmentProperty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -81,6 +90,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsGlobalProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGlobalProperty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.IsGlobalProperty" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsGlobalProperty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsGlobalProperty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -104,6 +115,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsImported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsImported" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.IsImported" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsImported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsImported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -122,6 +135,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsReservedProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReservedProperty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.IsReservedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReservedProperty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReservedProperty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -145,14 +160,19 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Evaluation.IProperty.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
@@ -171,6 +191,8 @@
       <MemberSignature Language="C#" Value="public abstract Microsoft.Build.Evaluation.ProjectProperty Predecessor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Evaluation.ProjectProperty Predecessor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.Predecessor" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Predecessor As ProjectProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Evaluation::ProjectProperty ^ Predecessor { Microsoft::Build::Evaluation::ProjectProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -203,6 +225,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Evaluation.Project Project { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Evaluation.Project Project" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.Project" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Project As Project" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Evaluation::Project ^ Project { Microsoft::Build::Evaluation::Project ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -210,7 +234,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
@@ -229,7 +253,12 @@
       <MemberSignature Language="C#" Value="bool IEquatable&lt;ProjectProperty&gt;.Equals (Microsoft.Build.Evaluation.ProjectProperty other);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IEquatable&lt;Microsoft.Build.Evaluation.ProjectProperty&gt;.Equals(class Microsoft.Build.Evaluation.ProjectProperty other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectProperty.System#IEquatable&lt;Microsoft#Build#Evaluation#ProjectProperty&gt;#Equals(Microsoft.Build.Evaluation.ProjectProperty)" />
+      <MemberSignature Language="VB.NET" Value="Function Equals (other As ProjectProperty) As Boolean Implements IEquatable(Of ProjectProperty).Equals" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IEquatable&lt;Microsoft.Build.Evaluation.ProjectProperty&gt;.Equals(Microsoft::Build::Evaluation::ProjectProperty ^ other) = IEquatable&lt;Microsoft::Build::Evaluation::ProjectProperty ^&gt;::Equals;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -251,6 +280,8 @@
       <MemberSignature Language="C#" Value="public abstract string UnevaluatedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UnevaluatedValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.UnevaluatedValue" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property UnevaluatedValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ UnevaluatedValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -283,6 +314,8 @@
       <MemberSignature Language="C#" Value="public abstract Microsoft.Build.Construction.ProjectPropertyElement Xml { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ProjectPropertyElement Xml" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.Xml" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Xml As ProjectPropertyElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Construction::ProjectPropertyElement ^ Xml { Microsoft::Build::Construction::ProjectPropertyElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -290,7 +323,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>

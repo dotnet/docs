@@ -1,7 +1,9 @@
-<Type Name="PrintPageEventArgs" FullName="System.Drawing.Printing.PrintPageEventArgs">
+﻿<Type Name="PrintPageEventArgs" FullName="System.Drawing.Printing.PrintPageEventArgs">
   <TypeSignature Language="C#" Value="public class PrintPageEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintPageEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintPageEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintPageEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintPageEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="public PrintPageEventArgs (System.Drawing.Graphics graphics, System.Drawing.Rectangle marginBounds, System.Drawing.Rectangle pageBounds, System.Drawing.Printing.PageSettings pageSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle marginBounds, valuetype System.Drawing.Rectangle pageBounds, class System.Drawing.Printing.PageSettings pageSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintPageEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Printing.PageSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintPageEventArgs(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle marginBounds, System::Drawing::Rectangle pageBounds, System::Drawing::Printing::PageSettings ^ pageSettings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -68,6 +71,8 @@
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -87,6 +92,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.Graphics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -119,6 +126,8 @@
       <MemberSignature Language="C#" Value="public bool HasMorePages { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasMorePages" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.HasMorePages" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasMorePages As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasMorePages { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -153,6 +162,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle MarginBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle MarginBounds" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.MarginBounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MarginBounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle MarginBounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -172,6 +183,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle PageBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle PageBounds" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.PageBounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageBounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle PageBounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -200,6 +213,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PageSettings PageSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PageSettings PageSettings" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.PageSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageSettings As PageSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PageSettings ^ PageSettings { System::Drawing::Printing::PageSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

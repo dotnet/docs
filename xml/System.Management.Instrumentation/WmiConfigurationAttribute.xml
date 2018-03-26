@@ -1,7 +1,9 @@
-<Type Name="WmiConfigurationAttribute" FullName="System.Management.Instrumentation.WmiConfigurationAttribute">
+﻿<Type Name="WmiConfigurationAttribute" FullName="System.Management.Instrumentation.WmiConfigurationAttribute">
   <TypeSignature Language="C#" Value="public sealed class WmiConfigurationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WmiConfigurationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.WmiConfigurationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WmiConfigurationAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmiConfigurationAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="public WmiConfigurationAttribute (string scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.WmiConfigurationAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmiConfigurationAttribute(System::String ^ scope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -84,6 +88,8 @@
       <MemberSignature Language="C#" Value="public string HostingGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HostingGroup" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.HostingGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostingGroup As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HostingGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -120,6 +126,8 @@
       <MemberSignature Language="C#" Value="public System.Management.Instrumentation.ManagementHostingModel HostingModel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Management.Instrumentation.ManagementHostingModel HostingModel" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.HostingModel" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostingModel As ManagementHostingModel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::Instrumentation::ManagementHostingModel HostingModel { System::Management::Instrumentation::ManagementHostingModel get(); void set(System::Management::Instrumentation::ManagementHostingModel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -162,6 +170,8 @@
       <MemberSignature Language="C#" Value="public bool IdentifyLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IdentifyLevel" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.IdentifyLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdentifyLevel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IdentifyLevel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -196,6 +206,8 @@
       <MemberSignature Language="C#" Value="public string NamespaceSecurity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceSecurity" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.NamespaceSecurity" />
+      <MemberSignature Language="VB.NET" Value="Public Property NamespaceSecurity As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceSecurity { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -230,6 +242,8 @@
       <MemberSignature Language="C#" Value="public string Scope { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scope" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scope As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scope { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -255,6 +269,8 @@
       <MemberSignature Language="C#" Value="public string SecurityRestriction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SecurityRestriction" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.SecurityRestriction" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityRestriction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecurityRestriction { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

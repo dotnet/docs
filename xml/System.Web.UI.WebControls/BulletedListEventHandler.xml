@@ -1,7 +1,9 @@
-<Type Name="BulletedListEventHandler" FullName="System.Web.UI.WebControls.BulletedListEventHandler">
+﻿<Type Name="BulletedListEventHandler" FullName="System.Web.UI.WebControls.BulletedListEventHandler">
   <TypeSignature Language="C#" Value="public delegate void BulletedListEventHandler(object sender, BulletedListEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BulletedListEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BulletedListEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub BulletedListEventHandler(sender As Object, e As BulletedListEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void BulletedListEventHandler(System::Object ^ sender, BulletedListEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

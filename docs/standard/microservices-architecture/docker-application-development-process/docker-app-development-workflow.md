@@ -346,7 +346,7 @@ For [DC/OS](https://mesosphere.com/blog/2015/09/02/dcos-cli-command-line-tool-da
 
 ## Step 6. Test your Docker application using your local Docker host
 
-This step will vary depending on what your application is doing. In a simple .NET Core Web application that is deployed as a single container or service, you can access the service by opening a browser on the Docker host and navigating to that site as shown in Figure 5-13. (If the configuration in the Dockerfile maps the container to a port on the host that is anything other than 80, include the host post in the URL.)
+This step will vary depending on what your application is doing. In a simple .NET Core Web application that is deployed as a single container or service, you can access the service by opening a browser on the Docker host and navigating to that site as shown in Figure 5-13. (If the configuration in the Dockerfile maps the container to a port on the host that is anything other than 80, include the host port in the URL.)
 
 ![](./media/image18.png)
 

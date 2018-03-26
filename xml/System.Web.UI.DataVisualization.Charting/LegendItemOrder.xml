@@ -1,7 +1,9 @@
-<Type Name="LegendItemOrder" FullName="System.Web.UI.DataVisualization.Charting.LegendItemOrder">
+﻿<Type Name="LegendItemOrder" FullName="System.Web.UI.DataVisualization.Charting.LegendItemOrder">
   <TypeSignature Language="C#" Value="public enum LegendItemOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LegendItemOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendItemOrder" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LegendItemOrder" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LegendItemOrder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendItemOrder Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendItemOrder.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The chart automatically determines the order in which items are added to the legend.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="ReversedSeriesOrder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendItemOrder ReversedSeriesOrder = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendItemOrder.ReversedSeriesOrder" />
+      <MemberSignature Language="VB.NET" Value="ReversedSeriesOrder" />
+      <MemberSignature Language="C++ CLI" Value="ReversedSeriesOrder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Items are added to the legend in the reverse order of items added to the chart series.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="SameAsSeriesOrder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendItemOrder SameAsSeriesOrder = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder" />
+      <MemberSignature Language="VB.NET" Value="SameAsSeriesOrder" />
+      <MemberSignature Language="C++ CLI" Value="SameAsSeriesOrder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Items are added to the legend in the same order as items added to the chart series.</summary>
       </Docs>

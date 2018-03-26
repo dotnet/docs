@@ -1,7 +1,9 @@
-<Type Name="DataAnnotationsValidatableObjectAdapterFactory" FullName="System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory">
+﻿<Type Name="DataAnnotationsValidatableObjectAdapterFactory" FullName="System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory">
   <TypeSignature Language="C#" Value="public delegate System.Web.ModelBinding.ModelValidator DataAnnotationsValidatableObjectAdapterFactory(ModelMetadata metadata, ModelBindingExecutionContext context);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataAnnotationsValidatableObjectAdapterFactory extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function DataAnnotationsValidatableObjectAdapterFactory(metadata As ModelMetadata, context As ModelBindingExecutionContext) As ModelValidator " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Web::ModelBinding::ModelValidator ^ DataAnnotationsValidatableObjectAdapterFactory(ModelMetadata ^ metadata, ModelBindingExecutionContext ^ context);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

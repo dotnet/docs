@@ -1,7 +1,9 @@
-<Type Name="DataGridViewCellMouseEventHandler" FullName="System.Windows.Forms.DataGridViewCellMouseEventHandler">
+﻿<Type Name="DataGridViewCellMouseEventHandler" FullName="System.Windows.Forms.DataGridViewCellMouseEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewCellMouseEventHandler(object sender, DataGridViewCellMouseEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellMouseEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellMouseEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellMouseEventHandler(sender As Object, e As DataGridViewCellMouseEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellMouseEventHandler(System::Object ^ sender, DataGridViewCellMouseEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

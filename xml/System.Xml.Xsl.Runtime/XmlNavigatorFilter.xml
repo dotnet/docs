@@ -1,7 +1,9 @@
-<Type Name="XmlNavigatorFilter" FullName="System.Xml.Xsl.Runtime.XmlNavigatorFilter">
+﻿<Type Name="XmlNavigatorFilter" FullName="System.Xml.Xsl.Runtime.XmlNavigatorFilter">
   <TypeSignature Language="C#" Value="public abstract class XmlNavigatorFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlNavigatorFilter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlNavigatorFilter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlNavigatorFilter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="protected XmlNavigatorFilter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlNavigatorFilter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsFiltered (System.Xml.XPath.XPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsFiltered(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.IsFiltered(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsFiltered (navigator As XPathNavigator) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsFiltered(System::Xml::XPath::XPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public abstract bool MoveToContent (System.Xml.XPath.XPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveToContent(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToContent(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToContent (navigator As XPathNavigator) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToContent(System::Xml::XPath::XPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="public abstract bool MoveToFollowing (System.Xml.XPath.XPathNavigator navigator, System.Xml.XPath.XPathNavigator navigatorEnd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveToFollowing(class System.Xml.XPath.XPathNavigator navigator, class System.Xml.XPath.XPathNavigator navigatorEnd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToFollowing(System.Xml.XPath.XPathNavigator,System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToFollowing (navigator As XPathNavigator, navigatorEnd As XPathNavigator) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToFollowing(System::Xml::XPath::XPathNavigator ^ navigator, System::Xml::XPath::XPathNavigator ^ navigatorEnd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -150,6 +160,8 @@
       <MemberSignature Language="C#" Value="public abstract bool MoveToFollowingSibling (System.Xml.XPath.XPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveToFollowingSibling(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToFollowingSibling(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToFollowingSibling (navigator As XPathNavigator) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToFollowingSibling(System::Xml::XPath::XPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -185,6 +197,8 @@
       <MemberSignature Language="C#" Value="public abstract bool MoveToNextContent (System.Xml.XPath.XPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveToNextContent(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToNextContent(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToNextContent (navigator As XPathNavigator) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToNextContent(System::Xml::XPath::XPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -220,6 +234,8 @@
       <MemberSignature Language="C#" Value="public abstract bool MoveToPreviousSibling (System.Xml.XPath.XPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveToPreviousSibling(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToPreviousSibling(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToPreviousSibling (navigator As XPathNavigator) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToPreviousSibling(System::Xml::XPath::XPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

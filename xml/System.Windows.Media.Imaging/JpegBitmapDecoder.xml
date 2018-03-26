@@ -1,7 +1,9 @@
-<Type Name="JpegBitmapDecoder" FullName="System.Windows.Media.Imaging.JpegBitmapDecoder">
+﻿<Type Name="JpegBitmapDecoder" FullName="System.Windows.Media.Imaging.JpegBitmapDecoder">
   <TypeSignature Language="C#" Value="public sealed class JpegBitmapDecoder : System.Windows.Media.Imaging.BitmapDecoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JpegBitmapDecoder extends System.Windows.Media.Imaging.BitmapDecoder" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.JpegBitmapDecoder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JpegBitmapDecoder&#xA;Inherits BitmapDecoder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JpegBitmapDecoder sealed : System::Windows::Media::Imaging::BitmapDecoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.Windows.Media.Imaging.BitmapDecoder" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.JpegBitmapDecoder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public JpegBitmapDecoder (System.IO.Stream bitmapStream, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream bitmapStream, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.JpegBitmapDecoder.#ctor(System.IO.Stream,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bitmapStream As Stream, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JpegBitmapDecoder(System::IO::Stream ^ bitmapStream, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +90,8 @@
       <MemberSignature Language="C#" Value="public JpegBitmapDecoder (Uri bitmapUri, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri bitmapUri, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.JpegBitmapDecoder.#ctor(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bitmapUri As Uri, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JpegBitmapDecoder(Uri ^ bitmapUri, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,14 +133,5 @@
         <exception cref="T:System.IO.FileFormatException">The <paramref name="bitmapUri" /> is not a [!INCLUDE[TLA#tla_jpegorg](~/includes/tlasharptla-jpegorg-md.md)] encoded image.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.JpegBitmapDecoder" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

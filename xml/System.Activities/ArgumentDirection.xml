@@ -1,7 +1,9 @@
-<Type Name="ArgumentDirection" FullName="System.Activities.ArgumentDirection">
+﻿<Type Name="ArgumentDirection" FullName="System.Activities.ArgumentDirection">
   <TypeSignature Language="C#" Value="public enum ArgumentDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ArgumentDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.ArgumentDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ArgumentDirection" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ArgumentDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <MemberSignature Language="C#" Value="In" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.ArgumentDirection In = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.ArgumentDirection.In" />
+      <MemberSignature Language="VB.NET" Value="In" />
+      <MemberSignature Language="C++ CLI" Value="In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -37,6 +41,7 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <ReturnValue>
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An <see cref="T:System.Activities.Argument" /> that represents the flow of data into a workflow or activity.</summary>
       </Docs>
@@ -45,6 +50,8 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <MemberSignature Language="C#" Value="InOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.ArgumentDirection InOut = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.ArgumentDirection.InOut" />
+      <MemberSignature Language="VB.NET" Value="InOut" />
+      <MemberSignature Language="C++ CLI" Value="InOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -53,6 +60,7 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <ReturnValue>
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An <see cref="T:System.Activities.Argument" /> that represents the flow of data into and out of a workflow or activity.</summary>
       </Docs>
@@ -61,6 +69,8 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <MemberSignature Language="C#" Value="Out" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.ArgumentDirection Out = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.ArgumentDirection.Out" />
+      <MemberSignature Language="VB.NET" Value="Out" />
+      <MemberSignature Language="C++ CLI" Value="Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -69,6 +79,7 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <ReturnValue>
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An <see cref="T:System.Activities.Argument" /> that represents the flow of data out of a workflow or activity.</summary>
       </Docs>

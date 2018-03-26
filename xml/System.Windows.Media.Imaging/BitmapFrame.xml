@@ -1,7 +1,9 @@
-<Type Name="BitmapFrame" FullName="System.Windows.Media.Imaging.BitmapFrame">
+﻿<Type Name="BitmapFrame" FullName="System.Windows.Media.Imaging.BitmapFrame">
   <TypeSignature Language="C#" Value="public abstract class BitmapFrame : System.Windows.Media.Imaging.BitmapSource, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BitmapFrame extends System.Windows.Media.Imaging.BitmapSource implements class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapFrame" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BitmapFrame&#xA;Inherits BitmapSource&#xA;Implements IUriContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapFrame abstract : System::Windows::Media::Imaging::BitmapSource, System::Windows::Markup::IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="protected BitmapFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BitmapFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,7 +70,12 @@
       <MemberSignature Language="C#" Value="public abstract Uri BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.BaseUri" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property BaseUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +93,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt; ColorContexts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Media.ColorContext&gt; ColorContexts" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.ColorContexts" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ColorContexts As ReadOnlyCollection(Of ColorContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ ColorContexts { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,10 +110,21 @@
         <altmember cref="T:System.Windows.Media.ColorContext" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> based on the supplied arguments.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.IO.Stream bitmapStream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.IO.Stream bitmapStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapStream As Stream) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::IO::Stream ^ bitmapStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +154,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (Uri bitmapUri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Uri bitmapUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapUri As Uri) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(Uri ^ bitmapUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +188,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.Windows.Media.Imaging.BitmapSource source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Windows.Media.Imaging.BitmapSource source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (source As BitmapSource) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::Windows::Media::Imaging::BitmapSource ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +212,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (Uri bitmapUri, System.Net.Cache.RequestCachePolicy uriCachePolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Uri bitmapUri, class System.Net.Cache.RequestCachePolicy uriCachePolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Net.Cache.RequestCachePolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapUri As Uri, uriCachePolicy As RequestCachePolicy) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(Uri ^ bitmapUri, System::Net::Cache::RequestCachePolicy ^ uriCachePolicy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -217,6 +245,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.Windows.Media.Imaging.BitmapSource source, System.Windows.Media.Imaging.BitmapSource thumbnail);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Windows.Media.Imaging.BitmapSource source, class System.Windows.Media.Imaging.BitmapSource thumbnail) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (source As BitmapSource, thumbnail As BitmapSource) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::Windows::Media::Imaging::BitmapSource ^ source, System::Windows::Media::Imaging::BitmapSource ^ thumbnail);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -241,6 +271,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.IO.Stream bitmapStream, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.IO.Stream bitmapStream, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.IO.Stream,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapStream As Stream, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::IO::Stream ^ bitmapStream, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -274,6 +306,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (Uri bitmapUri, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Uri bitmapUri, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapUri As Uri, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(Uri ^ bitmapUri, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +334,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (Uri bitmapUri, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption, System.Net.Cache.RequestCachePolicy uriCachePolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Uri bitmapUri, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption, class System.Net.Cache.RequestCachePolicy uriCachePolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption,System.Net.Cache.RequestCachePolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapUri As Uri, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption, uriCachePolicy As RequestCachePolicy) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(Uri ^ bitmapUri, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption, System::Net::Cache::RequestCachePolicy ^ uriCachePolicy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -335,6 +371,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapFrame Create (System.Windows.Media.Imaging.BitmapSource source, System.Windows.Media.Imaging.BitmapSource thumbnail, System.Windows.Media.Imaging.BitmapMetadata metadata, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt; colorContexts);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapFrame Create(class System.Windows.Media.Imaging.BitmapSource source, class System.Windows.Media.Imaging.BitmapSource thumbnail, class System.Windows.Media.Imaging.BitmapMetadata metadata, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Media.ColorContext&gt; colorContexts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapMetadata,System.Collections.ObjectModel.ReadOnlyCollection{System.Windows.Media.ColorContext})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (source As BitmapSource, thumbnail As BitmapSource, metadata As BitmapMetadata, colorContexts As ReadOnlyCollection(Of ColorContext)) As BitmapFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::Windows::Media::Imaging::BitmapSource ^ source, System::Windows::Media::Imaging::BitmapSource ^ thumbnail, System::Windows::Media::Imaging::BitmapMetadata ^ metadata, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ colorContexts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -363,6 +401,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter CreateInPlaceBitmapMetadataWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter CreateInPlaceBitmapMetadataWriter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.CreateInPlaceBitmapMetadataWriter" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateInPlaceBitmapMetadataWriter () As InPlaceBitmapMetadataWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::Imaging::InPlaceBitmapMetadataWriter ^ CreateInPlaceBitmapMetadataWriter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -399,6 +439,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Imaging.BitmapDecoder Decoder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapDecoder Decoder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.Decoder" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Decoder As BitmapDecoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Imaging::BitmapDecoder ^ Decoder { System::Windows::Media::Imaging::BitmapDecoder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -418,6 +460,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Imaging.BitmapSource Thumbnail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapSource Thumbnail" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.Thumbnail" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Thumbnail As BitmapSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Imaging::BitmapSource ^ Thumbnail { System::Windows::Media::Imaging::BitmapSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -434,14 +478,5 @@
         <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.Thumbnail" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> based on the supplied arguments.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

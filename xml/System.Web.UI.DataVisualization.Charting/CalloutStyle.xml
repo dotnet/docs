@@ -1,7 +1,9 @@
-<Type Name="CalloutStyle" FullName="System.Web.UI.DataVisualization.Charting.CalloutStyle">
+﻿<Type Name="CalloutStyle" FullName="System.Web.UI.DataVisualization.Charting.CalloutStyle">
   <TypeSignature Language="C#" Value="public enum CalloutStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CalloutStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.CalloutStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CalloutStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CalloutStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Borderline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.CalloutStyle Borderline = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Borderline" />
+      <MemberSignature Language="VB.NET" Value="Borderline" />
+      <MemberSignature Language="C++ CLI" Value="Borderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.CalloutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A border is drawn around the callout text and a line points to the anchor point.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Cloud" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.CalloutStyle Cloud = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Cloud" />
+      <MemberSignature Language="VB.NET" Value="Cloud" />
+      <MemberSignature Language="C++ CLI" Value="Cloud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.CalloutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Callout text is inside the cloud and smaller clouds point to the anchor point.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Ellipse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.CalloutStyle Ellipse = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Ellipse" />
+      <MemberSignature Language="VB.NET" Value="Ellipse" />
+      <MemberSignature Language="C++ CLI" Value="Ellipse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.CalloutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>An ellipse is drawn around the callout text, which is connected to the anchor point.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="Perspective" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.CalloutStyle Perspective = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Perspective" />
+      <MemberSignature Language="VB.NET" Value="Perspective" />
+      <MemberSignature Language="C++ CLI" Value="Perspective" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.CalloutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A perspective rectangle is drawn around the callout text, which is connected to the anchor point.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="Rectangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.CalloutStyle Rectangle = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Rectangle" />
+      <MemberSignature Language="VB.NET" Value="Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.CalloutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A rectangle is drawn around the callout text, which is connected to the anchor point.</summary>
       </Docs>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="RoundedRectangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.CalloutStyle RoundedRectangle = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.RoundedRectangle" />
+      <MemberSignature Language="VB.NET" Value="RoundedRectangle" />
+      <MemberSignature Language="C++ CLI" Value="RoundedRectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -113,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.CalloutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A rounded rectangle is drawn around the callout text, which is connected to the anchor point.</summary>
       </Docs>
@@ -121,6 +141,8 @@
       <MemberSignature Language="C#" Value="SimpleLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.CalloutStyle SimpleLine = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.SimpleLine" />
+      <MemberSignature Language="VB.NET" Value="SimpleLine" />
+      <MemberSignature Language="C++ CLI" Value="SimpleLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -129,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.CalloutStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Callout text is underlined and a line points to the anchor point.</summary>
       </Docs>

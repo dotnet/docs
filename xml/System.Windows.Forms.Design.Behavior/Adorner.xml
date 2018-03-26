@@ -1,7 +1,9 @@
-<Type Name="Adorner" FullName="System.Windows.Forms.Design.Behavior.Adorner">
+﻿<Type Name="Adorner" FullName="System.Windows.Forms.Design.Behavior.Adorner">
   <TypeSignature Language="C#" Value="public sealed class Adorner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Adorner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.Adorner" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Adorner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Adorner sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public Adorner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Adorner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Adorner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.BehaviorService BehaviorService { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Design.Behavior.BehaviorService BehaviorService" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Adorner.BehaviorService" />
+      <MemberSignature Language="VB.NET" Value="Public Property BehaviorService As BehaviorService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::BehaviorService ^ BehaviorService { System::Windows::Forms::Design::Behavior::BehaviorService ^ get(); void set(System::Windows::Forms::Design::Behavior::BehaviorService ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Adorner.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -140,6 +148,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.GlyphCollection Glyphs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Design.Behavior.GlyphCollection Glyphs" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Adorner.Glyphs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Glyphs As GlyphCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::GlyphCollection ^ Glyphs { System::Windows::Forms::Design::Behavior::GlyphCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -195,6 +205,8 @@
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Adorner.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -226,6 +238,7 @@
       <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Rectangle rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(System::Drawing::Rectangle rectangle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -250,6 +263,7 @@
       <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Region region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(class System.Drawing.Region region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Region)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(System::Drawing::Region ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

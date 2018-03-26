@@ -1,7 +1,9 @@
-<Type Name="DetailsViewModeEventArgs" FullName="System.Web.UI.WebControls.DetailsViewModeEventArgs">
+﻿<Type Name="DetailsViewModeEventArgs" FullName="System.Web.UI.WebControls.DetailsViewModeEventArgs">
   <TypeSignature Language="C#" Value="public class DetailsViewModeEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DetailsViewModeEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewModeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DetailsViewModeEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DetailsViewModeEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public DetailsViewModeEventArgs (System.Web.UI.WebControls.DetailsViewMode mode, bool cancelingEdit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.WebControls.DetailsViewMode mode, bool cancelingEdit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewModeEventArgs.#ctor(System.Web.UI.WebControls.DetailsViewMode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mode As DetailsViewMode, cancelingEdit As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DetailsViewModeEventArgs(System::Web::UI::WebControls::DetailsViewMode mode, bool cancelingEdit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +94,8 @@
       <MemberSignature Language="C#" Value="public bool CancelingEdit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CancelingEdit" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancelingEdit As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CancelingEdit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +133,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DetailsViewMode NewMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DetailsViewMode NewMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewMode As DetailsViewMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DetailsViewMode NewMode { System::Web::UI::WebControls::DetailsViewMode get(); void set(System::Web::UI::WebControls::DetailsViewMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

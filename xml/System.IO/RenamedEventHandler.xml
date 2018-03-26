@@ -1,7 +1,9 @@
-<Type Name="RenamedEventHandler" FullName="System.IO.RenamedEventHandler">
+﻿<Type Name="RenamedEventHandler" FullName="System.IO.RenamedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void RenamedEventHandler(object sender, RenamedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RenamedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.IO.RenamedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void RenamedEventHandler(System::Object ^ sender, RenamedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

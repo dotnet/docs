@@ -1,7 +1,9 @@
-<Type Name="ConfiguredTaskAwaitable" FullName="System.Runtime.CompilerServices.ConfiguredTaskAwaitable">
+﻿<Type Name="ConfiguredTaskAwaitable" FullName="System.Runtime.CompilerServices.ConfiguredTaskAwaitable">
   <TypeSignature Language="C#" Value="public struct ConfiguredTaskAwaitable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ConfiguredTaskAwaitable extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredTaskAwaitable" />
+  <TypeSignature Language="C++ CLI" Value="public value class ConfiguredTaskAwaitable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter GetAwaiter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredTaskAwaitable/ConfiguredTaskAwaiter GetAwaiter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.GetAwaiter" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As ConfiguredTaskAwaitable.ConfiguredTaskAwaiter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter GetAwaiter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

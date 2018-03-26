@@ -1,7 +1,9 @@
-<Type Name="HyperLinkDesigner" FullName="System.Web.UI.Design.WebControls.HyperLinkDesigner">
+﻿<Type Name="HyperLinkDesigner" FullName="System.Web.UI.Design.WebControls.HyperLinkDesigner">
   <TypeSignature Language="C#" Value="public class HyperLinkDesigner : System.Web.UI.Design.TextControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HyperLinkDesigner extends System.Web.UI.Design.TextControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.HyperLinkDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class HyperLinkDesigner&#xA;Inherits TextControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HyperLinkDesigner : System::Web::UI::Design::TextControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public HyperLinkDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HyperLinkDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HyperLinkDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HyperLinkDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public override void OnComponentChanged (object sender, System.ComponentModel.Design.ComponentChangedEventArgs ce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnComponentChanged(object sender, class System.ComponentModel.Design.ComponentChangedEventArgs ce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HyperLinkDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

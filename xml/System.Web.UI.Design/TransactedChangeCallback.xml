@@ -1,7 +1,9 @@
-<Type Name="TransactedChangeCallback" FullName="System.Web.UI.Design.TransactedChangeCallback">
+﻿<Type Name="TransactedChangeCallback" FullName="System.Web.UI.Design.TransactedChangeCallback">
   <TypeSignature Language="C#" Value="public delegate bool TransactedChangeCallback(object context);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransactedChangeCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TransactedChangeCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function TransactedChangeCallback(context As Object) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool TransactedChangeCallback(System::Object ^ context);" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

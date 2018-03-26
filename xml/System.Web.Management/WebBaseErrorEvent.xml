@@ -1,7 +1,9 @@
-<Type Name="WebBaseErrorEvent" FullName="System.Web.Management.WebBaseErrorEvent">
+﻿<Type Name="WebBaseErrorEvent" FullName="System.Web.Management.WebBaseErrorEvent">
   <TypeSignature Language="C#" Value="public class WebBaseErrorEvent : System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBaseErrorEvent extends System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseErrorEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebBaseErrorEvent&#xA;Inherits WebManagementEvent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBaseErrorEvent : System::Web::Management::WebManagementEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,10 +78,21 @@
     <altmember cref="T:System.Web.Management.WebRequestEvent" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseErrorEvent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebBaseErrorEvent (string message, object eventSource, int eventCode, Exception e);" />
+      <MemberSignature Language="C#" Value="protected internal WebBaseErrorEvent (string message, object eventSource, int eventCode, Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.#ctor(System.String,System.Object,System.Int32,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, e As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebBaseErrorEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,9 +130,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebBaseErrorEvent (string message, object eventSource, int eventCode, int eventDetailCode, Exception e);" />
+      <MemberSignature Language="C#" Value="protected internal WebBaseErrorEvent (string message, object eventSource, int eventCode, int eventDetailCode, Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode, class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.#ctor(System.String,System.Object,System.Int32,System.Int32,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer, e As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebBaseErrorEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +177,8 @@
       <MemberSignature Language="C#" Value="public Exception ErrorException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ErrorException" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseErrorEvent.ErrorException" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorException As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ ErrorException { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,9 +201,11 @@
       </Docs>
     </Member>
     <Member MemberName="IncrementPerfCounters">
-      <MemberSignature Language="C#" Value="protected override void IncrementPerfCounters ();" />
+      <MemberSignature Language="C#" Value="protected internal override void IncrementPerfCounters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void IncrementPerfCounters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.IncrementPerfCounters" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub IncrementPerfCounters ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void IncrementPerfCounters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,14 +235,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseErrorEvent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

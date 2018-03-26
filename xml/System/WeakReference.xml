@@ -1,7 +1,9 @@
-<Type Name="WeakReference" FullName="System.WeakReference">
+﻿<Type Name="WeakReference" FullName="System.WeakReference">
   <TypeSignature Language="C#" Value="public class WeakReference : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WeakReference extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.WeakReference" />
+  <TypeSignature Language="VB.NET" Value="Public Class WeakReference&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WeakReference : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,10 +58,21 @@
     <altmember cref="T:System.GC" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.WeakReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected WeakReference ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.WeakReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WeakReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +88,8 @@
       <MemberSignature Language="C#" Value="public WeakReference (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.WeakReference.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (target As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WeakReference(System::Object ^ target);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -114,6 +129,8 @@
       <MemberSignature Language="C#" Value="public WeakReference (object target, bool trackResurrection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object target, bool trackResurrection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.WeakReference.#ctor(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (target As Object, trackResurrection As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WeakReference(System::Object ^ target, bool trackResurrection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -165,6 +182,8 @@
       <MemberSignature Language="C#" Value="protected WeakReference (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.WeakReference.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WeakReference(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +222,8 @@
       <MemberSignature Language="C#" Value="~WeakReference ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.WeakReference.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!WeakReference ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -236,7 +257,12 @@
       <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.WeakReference.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -282,6 +308,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsAlive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAlive" />
       <MemberSignature Language="DocId" Value="P:System.WeakReference.IsAlive" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsAlive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAlive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -323,6 +351,8 @@
       <MemberSignature Language="C#" Value="public virtual object Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Target" />
       <MemberSignature Language="DocId" Value="P:System.WeakReference.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Target As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Target { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -373,6 +403,8 @@
       <MemberSignature Language="C#" Value="public virtual bool TrackResurrection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrackResurrection" />
       <MemberSignature Language="DocId" Value="P:System.WeakReference.TrackResurrection" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TrackResurrection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool TrackResurrection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -409,14 +441,5 @@
         <altmember cref="T:System.GC" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.WeakReference" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

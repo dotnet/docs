@@ -1,7 +1,9 @@
-<Type Name="IExpando" FullName="System.Runtime.InteropServices.Expando.IExpando">
+﻿<Type Name="IExpando" FullName="System.Runtime.InteropServices.Expando.IExpando">
   <TypeSignature Language="C#" Value="public interface IExpando : System.Reflection.IReflect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpando implements class System.Reflection.IReflect" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.Expando.IExpando" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExpando&#xA;Implements IReflect" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExpando : System::Reflection::IReflect" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo AddField (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo AddField(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddField(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddField (name As String) As FieldInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ AddField(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo AddMethod (string name, Delegate method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo AddMethod(string name, class System.Delegate method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddMethod(System.String,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMethod (name As String, method As Delegate) As MethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ AddMethod(System::String ^ name, Delegate ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo AddProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo AddProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddProperty (name As String) As PropertyInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ AddProperty(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public void RemoveMember (System.Reflection.MemberInfo m);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveMember(class System.Reflection.MemberInfo m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.RemoveMember(System.Reflection.MemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveMember (m As MemberInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveMember(System::Reflection::MemberInfo ^ m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

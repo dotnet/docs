@@ -1,7 +1,9 @@
-<Type Name="RuntimeOps" FullName="System.Runtime.CompilerServices.RuntimeOps">
+﻿<Type Name="RuntimeOps" FullName="System.Runtime.CompilerServices.RuntimeOps">
   <TypeSignature Language="C#" Value="public static class RuntimeOps" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeOps extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeOps" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuntimeOps" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuntimeOps abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,10 +27,22 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateRuntimeVariables">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an interface that can be used to modify closed over variables at runtime.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateRuntimeVariables">
       <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.IRuntimeVariables CreateRuntimeVariables ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.CompilerServices.IRuntimeVariables CreateRuntimeVariables() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRuntimeVariables () As IRuntimeVariables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::IRuntimeVariables ^ CreateRuntimeVariables();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -58,6 +72,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.IRuntimeVariables CreateRuntimeVariables (object[] data, long[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.CompilerServices.IRuntimeVariables CreateRuntimeVariables(object[] data, int64[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables(System.Object[],System.Int64[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRuntimeVariables (data As Object(), indexes As Long()) As IRuntimeVariables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::IRuntimeVariables ^ CreateRuntimeVariables(cli::array &lt;System::Object ^&gt; ^ data, cli::array &lt;long&gt; ^ indexes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -92,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static bool ExpandoCheckVersion (System.Dynamic.ExpandoObject expando, object version);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ExpandoCheckVersion(class System.Dynamic.ExpandoObject expando, object version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoCheckVersion(System.Dynamic.ExpandoObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandoCheckVersion (expando As ExpandoObject, version As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ExpandoCheckVersion(System::Dynamic::ExpandoObject ^ expando, System::Object ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -126,6 +144,8 @@
       <MemberSignature Language="C#" Value="public static void ExpandoPromoteClass (System.Dynamic.ExpandoObject expando, object oldClass, object newClass);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExpandoPromoteClass(class System.Dynamic.ExpandoObject expando, object oldClass, object newClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoPromoteClass(System.Dynamic.ExpandoObject,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ExpandoPromoteClass (expando As ExpandoObject, oldClass As Object, newClass As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExpandoPromoteClass(System::Dynamic::ExpandoObject ^ expando, System::Object ^ oldClass, System::Object ^ newClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -161,6 +181,8 @@
       <MemberSignature Language="C#" Value="public static bool ExpandoTryDeleteValue (System.Dynamic.ExpandoObject expando, object indexClass, int index, string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ExpandoTryDeleteValue(class System.Dynamic.ExpandoObject expando, object indexClass, int32 index, string name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoTryDeleteValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandoTryDeleteValue (expando As ExpandoObject, indexClass As Object, index As Integer, name As String, ignoreCase As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ExpandoTryDeleteValue(System::Dynamic::ExpandoObject ^ expando, System::Object ^ indexClass, int index, System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -201,6 +223,8 @@
       <MemberSignature Language="C#" Value="public static bool ExpandoTryGetValue (System.Dynamic.ExpandoObject expando, object indexClass, int index, string name, bool ignoreCase, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ExpandoTryGetValue(class System.Dynamic.ExpandoObject expando, object indexClass, int32 index, string name, bool ignoreCase, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoTryGetValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.String,System.Boolean,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandoTryGetValue (expando As ExpandoObject, indexClass As Object, index As Integer, name As String, ignoreCase As Boolean, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ExpandoTryGetValue(System::Dynamic::ExpandoObject ^ expando, System::Object ^ indexClass, int index, System::String ^ name, bool ignoreCase, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -243,6 +267,8 @@
       <MemberSignature Language="C#" Value="public static object ExpandoTrySetValue (System.Dynamic.ExpandoObject expando, object indexClass, int index, object value, string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ExpandoTrySetValue(class System.Dynamic.ExpandoObject expando, object indexClass, int32 index, object value, string name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoTrySetValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.Object,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandoTrySetValue (expando As ExpandoObject, indexClass As Object, index As Integer, value As Object, name As String, ignoreCase As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ExpandoTrySetValue(System::Dynamic::ExpandoObject ^ expando, System::Object ^ indexClass, int index, System::Object ^ value, System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -285,6 +311,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.IRuntimeVariables MergeRuntimeVariables (System.Runtime.CompilerServices.IRuntimeVariables first, System.Runtime.CompilerServices.IRuntimeVariables second, int[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.CompilerServices.IRuntimeVariables MergeRuntimeVariables(class System.Runtime.CompilerServices.IRuntimeVariables first, class System.Runtime.CompilerServices.IRuntimeVariables second, int32[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.MergeRuntimeVariables(System.Runtime.CompilerServices.IRuntimeVariables,System.Runtime.CompilerServices.IRuntimeVariables,System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MergeRuntimeVariables (first As IRuntimeVariables, second As IRuntimeVariables, indexes As Integer()) As IRuntimeVariables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::IRuntimeVariables ^ MergeRuntimeVariables(System::Runtime::CompilerServices::IRuntimeVariables ^ first, System::Runtime::CompilerServices::IRuntimeVariables ^ second, cli::array &lt;int&gt; ^ indexes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -321,6 +349,7 @@
       <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression Quote (System.Linq.Expressions.Expression expression, object hoistedLocals, object[] locals);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.Expression Quote(class System.Linq.Expressions.Expression expression, object hoistedLocals, object[] locals) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.Quote(System.Linq.Expressions.Expression,System.Object,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::Expression ^ Quote(System::Linq::Expressions::Expression ^ expression, System::Object ^ hoistedLocals, cli::array &lt;System::Object ^&gt; ^ locals);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -353,15 +382,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateRuntimeVariables">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an interface that can be used to modify closed over variables at runtime.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

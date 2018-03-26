@@ -1,7 +1,9 @@
-<Type Name="ChannelFactory&lt;TChannel&gt;" FullName="System.ServiceModel.ChannelFactory&lt;TChannel&gt;">
+﻿<Type Name="ChannelFactory&lt;TChannel&gt;" FullName="System.ServiceModel.ChannelFactory&lt;TChannel&gt;">
   <TypeSignature Language="C#" Value="public class ChannelFactory&lt;TChannel&gt; : System.ServiceModel.ChannelFactory, System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChannelFactory`1&lt;TChannel&gt; extends System.ServiceModel.ChannelFactory implements class System.ServiceModel.Channels.IChannelFactory, class System.ServiceModel.Channels.IChannelFactory`1&lt;!TChannel&gt;, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ChannelFactory`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChannelFactory(Of TChannel)&#xA;Inherits ChannelFactory&#xA;Implements IChannelFactory(Of TChannel)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA;public ref class ChannelFactory : System::ServiceModel::ChannelFactory, System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,10 +56,22 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChannelFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +97,7 @@
       <MemberSignature Language="C#" Value="public ChannelFactory (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelFactory(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +124,8 @@
       <MemberSignature Language="C#" Value="public ChannelFactory (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpoint As ServiceEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelFactory(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +158,8 @@
       <MemberSignature Language="C#" Value="public ChannelFactory (string endpointConfigurationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelFactory(System::String ^ endpointConfigurationName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -180,6 +199,8 @@
       <MemberSignature Language="C#" Value="protected ChannelFactory (Type channelType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type channelType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (channelType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelFactory(Type ^ channelType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,6 +235,7 @@
       <MemberSignature Language="C#" Value="public ChannelFactory (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelFactory(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -254,6 +276,7 @@
       <MemberSignature Language="C#" Value="public ChannelFactory (System.ServiceModel.Channels.Binding binding, string remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelFactory(System::ServiceModel::Channels::Binding ^ binding, System::String ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -289,6 +312,8 @@
       <MemberSignature Language="C#" Value="public ChannelFactory (string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelFactory(System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -343,6 +368,8 @@
       <MemberSignature Language="C#" Value="public TChannel CreateChannel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannel () As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -381,7 +408,12 @@
       <MemberSignature Language="C#" Value="public TChannel CreateChannel (System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel CreateChannel(class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannel (address As EndpointAddress) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TChannel CreateChannel(System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -419,6 +451,8 @@
       <MemberSignature Language="C#" Value="protected static TChannel CreateChannel (string endpointConfigurationName);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig !TChannel CreateChannel(string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateChannel (endpointConfigurationName As String) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static TChannel CreateChannel(System::String ^ endpointConfigurationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -447,43 +481,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
-      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>TChannel</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
-      </Parameters>
-      <Docs>
-        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
-        <param name="address">To be added.</param>
-        <summary>Creates a channel of a specified type that is used to send messages to a service endpoint that is configured with a specified binding.</summary>
-        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-csharp[S_UEChannels#31](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#31)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateChannel">
       <MemberSignature Language="C#" Value="public virtual TChannel CreateChannel (System.ServiceModel.EndpointAddress address, Uri via);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel CreateChannel(class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateChannel (address As EndpointAddress, via As Uri) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TChannel CreateChannel(System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -521,9 +527,14 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
-      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address, Uri via);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress endpointAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -534,12 +545,54 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="0" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
+        <param name="endpointAddress">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>Creates a channel of a specified type that is used to send messages to a service endpoint that is configured with a specified binding.</summary>
+        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEChannels#31](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#31)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress endpointAddress, Uri via);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress, class System.Uri via) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress, Uri ^ via);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address, Uri via);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="0" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="via" Type="System.Uri" Index="2" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
+        <param name="endpointAddress">To be added.</param>
         <param name="address">To be added.</param>
         <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the channel sends messages.</param>
         <summary>Creates a channel of a specified type that is used to send messages to a service endpoint at a specified transport address that is configured with a specified binding.</summary>
@@ -555,10 +608,21 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateChannelWithActAsToken">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a channel that is used to send messages to a service with an act as security token.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateChannelWithActAsToken">
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithActAsToken (System.IdentityModel.Tokens.SecurityToken actAsToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithActAsToken(class System.IdentityModel.Tokens.SecurityToken actAsToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithActAsToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithActAsToken (actAsToken As SecurityToken) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithActAsToken(System::IdentityModel::Tokens::SecurityToken ^ actAsToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -581,6 +645,8 @@
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithActAsToken (System.IdentityModel.Tokens.SecurityToken actAsToken, System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithActAsToken(class System.IdentityModel.Tokens.SecurityToken actAsToken, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithActAsToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithActAsToken (actAsToken As SecurityToken, address As EndpointAddress) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithActAsToken(System::IdentityModel::Tokens::SecurityToken ^ actAsToken, System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -605,6 +671,8 @@
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithActAsToken (System.IdentityModel.Tokens.SecurityToken actAsToken, System.ServiceModel.EndpointAddress address, Uri via);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithActAsToken(class System.IdentityModel.Tokens.SecurityToken actAsToken, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithActAsToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithActAsToken (actAsToken As SecurityToken, address As EndpointAddress, via As Uri) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithActAsToken(System::IdentityModel::Tokens::SecurityToken ^ actAsToken, System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -627,10 +695,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateChannelWithIssuedToken">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a channel that is used to send messages to a service with an issued security token.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateChannelWithIssuedToken">
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithIssuedToken (System.IdentityModel.Tokens.SecurityToken issuedToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithIssuedToken(class System.IdentityModel.Tokens.SecurityToken issuedToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithIssuedToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithIssuedToken (issuedToken As SecurityToken) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithIssuedToken(System::IdentityModel::Tokens::SecurityToken ^ issuedToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -653,6 +732,8 @@
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithIssuedToken (System.IdentityModel.Tokens.SecurityToken issuedToken, System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithIssuedToken(class System.IdentityModel.Tokens.SecurityToken issuedToken, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithIssuedToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithIssuedToken (issuedToken As SecurityToken, address As EndpointAddress) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithIssuedToken(System::IdentityModel::Tokens::SecurityToken ^ issuedToken, System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -677,6 +758,8 @@
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithIssuedToken (System.IdentityModel.Tokens.SecurityToken issuedToken, System.ServiceModel.EndpointAddress address, Uri via);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithIssuedToken(class System.IdentityModel.Tokens.SecurityToken issuedToken, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithIssuedToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithIssuedToken (issuedToken As SecurityToken, address As EndpointAddress, via As Uri) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithIssuedToken(System::IdentityModel::Tokens::SecurityToken ^ issuedToken, System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -699,10 +782,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateChannelWithOnBehalfOfToken">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a channel that is used to send messages to a service with an on behalf of security token.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateChannelWithOnBehalfOfToken">
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithOnBehalfOfToken (System.IdentityModel.Tokens.SecurityToken onBehalfOf);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithOnBehalfOfToken(class System.IdentityModel.Tokens.SecurityToken onBehalfOf) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithOnBehalfOfToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithOnBehalfOfToken (onBehalfOf As SecurityToken) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithOnBehalfOfToken(System::IdentityModel::Tokens::SecurityToken ^ onBehalfOf);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -725,6 +819,8 @@
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithOnBehalfOfToken (System.IdentityModel.Tokens.SecurityToken onBehalfOf, System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithOnBehalfOfToken(class System.IdentityModel.Tokens.SecurityToken onBehalfOf, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithOnBehalfOfToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithOnBehalfOfToken (onBehalfOf As SecurityToken, address As EndpointAddress) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithOnBehalfOfToken(System::IdentityModel::Tokens::SecurityToken ^ onBehalfOf, System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -749,6 +845,8 @@
       <MemberSignature Language="C#" Value="public TChannel CreateChannelWithOnBehalfOfToken (System.IdentityModel.Tokens.SecurityToken onBehalfOf, System.ServiceModel.EndpointAddress address, Uri via);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TChannel CreateChannelWithOnBehalfOfToken(class System.IdentityModel.Tokens.SecurityToken onBehalfOf, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannelWithOnBehalfOfToken(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateChannelWithOnBehalfOfToken (onBehalfOf As SecurityToken, address As EndpointAddress, via As Uri) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannelWithOnBehalfOfToken(System::IdentityModel::Tokens::SecurityToken ^ onBehalfOf, System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -775,6 +873,8 @@
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.Description.ServiceEndpoint CreateDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Description.ServiceEndpoint CreateDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateDescription" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDescription () As ServiceEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Description::ServiceEndpoint ^ CreateDescription();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -798,42 +898,5 @@
         <exception cref="T:System.InvalidOperationException">The callback contract is <see langword="null" /> but the service endpoint requires one that is non-<see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateChannelWithOnBehalfOfToken">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a channel that is used to send messages to a service with an on behalf of security token.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateChannelWithActAsToken">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a channel that is used to send messages to a service with an act as security token.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateChannelWithIssuedToken">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a channel that is used to send messages to a service with an issued security token.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

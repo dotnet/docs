@@ -1,7 +1,9 @@
-<Type Name="IVbcHostObject4" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject4">
+﻿<Type Name="IVbcHostObject4" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject4">
   <TypeSignature Language="C#" Value="public interface IVbcHostObject4 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.IVbcHostObject3" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVbcHostObject4 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.IVbcHostObject, class Microsoft.Build.Tasks.Hosting.IVbcHostObject2, class Microsoft.Build.Tasks.Hosting.IVbcHostObject3" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject4" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVbcHostObject4&#xA;Implements ITaskHost, IVbcHostObject3" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVbcHostObject4 : Microsoft::Build::Framework::ITaskHost, Microsoft::Build::Tasks::Hosting::IVbcHostObject3" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,7 +24,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("2AE3233C-8AB3-48A0-9ED9-6E3545B3C566")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public bool SetVBRuntime (string VBRuntime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetVBRuntime(string VBRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject4.SetVBRuntime(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetVBRuntime (VBRuntime As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetVBRuntime(System::String ^ VBRuntime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

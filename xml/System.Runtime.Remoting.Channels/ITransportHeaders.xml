@@ -1,7 +1,9 @@
-<Type Name="ITransportHeaders" FullName="System.Runtime.Remoting.Channels.ITransportHeaders">
+﻿<Type Name="ITransportHeaders" FullName="System.Runtime.Remoting.Channels.ITransportHeaders">
   <TypeSignature Language="C#" Value="public interface ITransportHeaders" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransportHeaders" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.ITransportHeaders" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITransportHeaders" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITransportHeaders" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ITransportHeaders.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public object this[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.ITransportHeaders.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ProcessShutdownReason" FullName="System.Web.ProcessShutdownReason">
+﻿<Type Name="ProcessShutdownReason" FullName="System.Web.ProcessShutdownReason">
   <TypeSignature Language="C#" Value="public enum ProcessShutdownReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessShutdownReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.ProcessShutdownReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProcessShutdownReason" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProcessShutdownReason" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="DeadlockSuspected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason DeadlockSuspected = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.DeadlockSuspected" />
+      <MemberSignature Language="VB.NET" Value="DeadlockSuspected" />
+      <MemberSignature Language="C++ CLI" Value="DeadlockSuspected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -28,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates that a deadlock was suspected because the response time limit was exceeded with requests in the queue.</summary>
       </Docs>
@@ -36,6 +41,8 @@
       <MemberSignature Language="C#" Value="IdleTimeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason IdleTimeout = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.IdleTimeout" />
+      <MemberSignature Language="VB.NET" Value="IdleTimeout" />
+      <MemberSignature Language="C++ CLI" Value="IdleTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates that the process exceeded the allowable idle time.</summary>
       </Docs>
@@ -52,6 +60,8 @@
       <MemberSignature Language="C#" Value="MemoryLimitExceeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason MemoryLimitExceeded = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.MemoryLimitExceeded" />
+      <MemberSignature Language="VB.NET" Value="MemoryLimitExceeded" />
+      <MemberSignature Language="C++ CLI" Value="MemoryLimitExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Indicates that the process exceeded the per-process memory limit.</summary>
       </Docs>
@@ -68,6 +79,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the process has not shut down.</summary>
       </Docs>
@@ -84,6 +98,8 @@
       <MemberSignature Language="C#" Value="PingFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason PingFailed = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.PingFailed" />
+      <MemberSignature Language="VB.NET" Value="PingFailed" />
+      <MemberSignature Language="C++ CLI" Value="PingFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Indicates that the worker process did not respond to a ping from the Internet Information Services (IIS) process.</summary>
       </Docs>
@@ -100,6 +117,8 @@
       <MemberSignature Language="C#" Value="RequestQueueLimit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason RequestQueueLimit = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.RequestQueueLimit" />
+      <MemberSignature Language="VB.NET" Value="RequestQueueLimit" />
+      <MemberSignature Language="C++ CLI" Value="RequestQueueLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that requests assigned to the process exceeded the allowable number in the queue.</summary>
       </Docs>
@@ -116,6 +136,8 @@
       <MemberSignature Language="C#" Value="RequestsLimit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason RequestsLimit = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.RequestsLimit" />
+      <MemberSignature Language="VB.NET" Value="RequestsLimit" />
+      <MemberSignature Language="C++ CLI" Value="RequestsLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +146,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that requests executed by the process exceeded the allowable limit.</summary>
       </Docs>
@@ -132,6 +155,8 @@
       <MemberSignature Language="C#" Value="Timeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason Timeout = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Timeout" />
+      <MemberSignature Language="C++ CLI" Value="Timeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +165,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the process restarted because it was active longer than allowed.</summary>
       </Docs>
@@ -148,6 +174,8 @@
       <MemberSignature Language="C#" Value="Unexpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessShutdownReason Unexpected = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessShutdownReason.Unexpected" />
+      <MemberSignature Language="VB.NET" Value="Unexpected" />
+      <MemberSignature Language="C++ CLI" Value="Unexpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the process shut down unexpectedly.</summary>
       </Docs>

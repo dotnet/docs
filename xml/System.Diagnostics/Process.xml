@@ -1,7 +1,9 @@
-<Type Name="Process" FullName="System.Diagnostics.Process">
+﻿<Type Name="Process" FullName="System.Diagnostics.Process">
   <TypeSignature Language="C#" Value="public class Process : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Process extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Process" />
+  <TypeSignature Language="VB.NET" Value="Public Class Process&#xA;Inherits Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Process : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -20,8 +22,7 @@
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.ComponentModel.Component</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName>System.ComponentModel.DefaultEvent("Exited")</AttributeName>
@@ -110,6 +111,8 @@
       <MemberSignature Language="C#" Value="public Process ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Process();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -153,6 +156,8 @@
       <MemberSignature Language="C#" Value="public int BasePriority { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BasePriority" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.BasePriority" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BasePriority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BasePriority { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -229,6 +234,8 @@
       <MemberSignature Language="C#" Value="public void BeginErrorReadLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginErrorReadLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.BeginErrorReadLine" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginErrorReadLine ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginErrorReadLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -314,6 +321,8 @@
       <MemberSignature Language="C#" Value="public void BeginOutputReadLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginOutputReadLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.BeginOutputReadLine" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginOutputReadLine ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginOutputReadLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -401,6 +410,8 @@
       <MemberSignature Language="C#" Value="public void CancelErrorRead ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelErrorRead() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.CancelErrorRead" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelErrorRead ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelErrorRead();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -480,6 +491,8 @@ process.BeginErrorReadLine();
       <MemberSignature Language="C#" Value="public void CancelOutputRead ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelOutputRead() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.CancelOutputRead" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelOutputRead ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelOutputRead();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -559,6 +572,8 @@ process.BeginOutputReadLine();
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -606,6 +621,8 @@ process.BeginOutputReadLine();
       <MemberSignature Language="C#" Value="public bool CloseMainWindow ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CloseMainWindow() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.CloseMainWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloseMainWindow () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CloseMainWindow();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -662,7 +679,12 @@ process.BeginOutputReadLine();
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -680,6 +702,8 @@ process.BeginOutputReadLine();
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -712,6 +736,8 @@ process.BeginOutputReadLine();
       <MemberSignature Language="C#" Value="public bool EnableRaisingEvents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableRaisingEvents" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.EnableRaisingEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableRaisingEvents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableRaisingEvents { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -784,6 +810,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public static void EnterDebugMode ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnterDebugMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.EnterDebugMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub EnterDebugMode ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnterDebugMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -821,6 +849,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public event System.Diagnostics.DataReceivedEventHandler ErrorDataReceived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Diagnostics.DataReceivedEventHandler ErrorDataReceived" />
       <MemberSignature Language="DocId" Value="E:System.Diagnostics.Process.ErrorDataReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ErrorDataReceived As DataReceivedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Diagnostics::DataReceivedEventHandler ^ ErrorDataReceived;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -883,6 +913,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int ExitCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ExitCode" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.ExitCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExitCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExitCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -963,6 +995,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public event EventHandler Exited;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Exited" />
       <MemberSignature Language="DocId" Value="E:System.Diagnostics.Process.Exited" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Exited As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Exited;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1023,6 +1057,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public DateTime ExitTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ExitTime" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.ExitTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExitTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ExitTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1082,6 +1118,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process GetCurrentProcess ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process GetCurrentProcess() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.GetCurrentProcess" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentProcess () As Process" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ GetCurrentProcess();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1129,10 +1167,22 @@ The following code example creates a process that prints a file. It sets the <xr
         <altmember cref="M:System.Diagnostics.Process.GetProcesses" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProcessById">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Diagnostics.Process" /> component, and associates it with the existing process resource that you specify.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProcessById">
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process GetProcessById (int processId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process GetProcessById(int32 processId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.GetProcessById(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProcessById (processId As Integer) As Process" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ GetProcessById(int processId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1190,6 +1240,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process GetProcessById (int processId, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process GetProcessById(int32 processId, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.GetProcessById(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProcessById (processId As Integer, machineName As String) As Process" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ GetProcessById(int processId, System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1258,10 +1310,22 @@ The following code example creates a process that prints a file. It sets the <xr
         <altmember cref="M:System.Diagnostics.Process.GetCurrentProcess" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProcesses">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an array of new <see cref="T:System.Diagnostics.Process" /> components and associates them with existing process resources.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProcesses">
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process[] GetProcesses ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process[] GetProcesses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.GetProcesses" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProcesses () As Process()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::Process ^&gt; ^ GetProcesses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1317,6 +1381,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process[] GetProcesses (string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process[] GetProcesses(string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.GetProcesses(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProcesses (machineName As String) As Process()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::Process ^&gt; ^ GetProcesses(System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1383,10 +1449,22 @@ The following code example creates a process that prints a file. It sets the <xr
         <altmember cref="M:System.Diagnostics.Process.GetCurrentProcess" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProcessesByName">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an array of new <see cref="T:System.Diagnostics.Process" /> components and associates them with the existing process resources that all share the specified process name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProcessesByName">
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process[] GetProcessesByName (string processName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process[] GetProcessesByName(string processName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.GetProcessesByName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProcessesByName (processName As String) As Process()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::Process ^&gt; ^ GetProcessesByName(System::String ^ processName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1445,6 +1523,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process[] GetProcessesByName (string processName, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process[] GetProcessesByName(string processName, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.GetProcessesByName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProcessesByName (processName As String, machineName As String) As Process()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::Process ^&gt; ^ GetProcessesByName(System::String ^ processName, System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1520,6 +1600,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1582,6 +1664,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int HandleCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HandleCount" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.HandleCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandleCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HandleCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1633,6 +1717,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public bool HasExited { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasExited" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.HasExited" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasExited As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasExited { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1703,6 +1789,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1769,6 +1857,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public void Kill ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Kill() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Kill" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Kill ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Kill();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1833,6 +1923,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public static void LeaveDebugMode ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LeaveDebugMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.LeaveDebugMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub LeaveDebugMode ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LeaveDebugMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1870,6 +1962,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public string MachineName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1933,6 +2027,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public System.Diagnostics.ProcessModule MainModule { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.ProcessModule MainModule" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.MainModule" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MainModule As ProcessModule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ProcessModule ^ MainModule { System::Diagnostics::ProcessModule ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1989,6 +2085,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public IntPtr MainWindowHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int MainWindowHandle" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.MainWindowHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MainWindowHandle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr MainWindowHandle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2046,6 +2144,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public string MainWindowTitle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MainWindowTitle" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.MainWindowTitle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MainWindowTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MainWindowTitle { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2107,6 +2207,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public IntPtr MaxWorkingSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int MaxWorkingSet" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.MaxWorkingSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxWorkingSet As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr MaxWorkingSet { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2176,6 +2278,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public IntPtr MinWorkingSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int MinWorkingSet" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.MinWorkingSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinWorkingSet As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr MinWorkingSet { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2245,6 +2349,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public System.Diagnostics.ProcessModuleCollection Modules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.ProcessModuleCollection Modules" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.Modules" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modules As ProcessModuleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ProcessModuleCollection ^ Modules { System::Diagnostics::ProcessModuleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2301,6 +2407,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int NonpagedSystemMemorySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NonpagedSystemMemorySize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.NonpagedSystemMemorySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NonpagedSystemMemorySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NonpagedSystemMemorySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2345,6 +2453,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public long NonpagedSystemMemorySize64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 NonpagedSystemMemorySize64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.NonpagedSystemMemorySize64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NonpagedSystemMemorySize64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long NonpagedSystemMemorySize64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2408,6 +2518,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="protected void OnExited ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnExited() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.OnExited" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnExited ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnExited();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2460,6 +2572,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public event System.Diagnostics.DataReceivedEventHandler OutputDataReceived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Diagnostics.DataReceivedEventHandler OutputDataReceived" />
       <MemberSignature Language="DocId" Value="E:System.Diagnostics.Process.OutputDataReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event OutputDataReceived As DataReceivedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Diagnostics::DataReceivedEventHandler ^ OutputDataReceived;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2524,6 +2638,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int PagedMemorySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PagedMemorySize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PagedMemorySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagedMemorySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PagedMemorySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2565,6 +2681,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public long PagedMemorySize64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PagedMemorySize64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PagedMemorySize64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagedMemorySize64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PagedMemorySize64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2626,6 +2744,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int PagedSystemMemorySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PagedSystemMemorySize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PagedSystemMemorySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagedSystemMemorySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PagedSystemMemorySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2667,6 +2787,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public long PagedSystemMemorySize64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PagedSystemMemorySize64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PagedSystemMemorySize64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagedSystemMemorySize64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PagedSystemMemorySize64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2728,6 +2850,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int PeakPagedMemorySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PeakPagedMemorySize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PeakPagedMemorySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeakPagedMemorySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PeakPagedMemorySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2772,6 +2896,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public long PeakPagedMemorySize64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PeakPagedMemorySize64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PeakPagedMemorySize64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeakPagedMemorySize64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PeakPagedMemorySize64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2835,6 +2961,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int PeakVirtualMemorySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PeakVirtualMemorySize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PeakVirtualMemorySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeakVirtualMemorySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PeakVirtualMemorySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2876,6 +3004,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public long PeakVirtualMemorySize64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PeakVirtualMemorySize64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PeakVirtualMemorySize64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeakVirtualMemorySize64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PeakVirtualMemorySize64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -2936,6 +3066,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int PeakWorkingSet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PeakWorkingSet" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PeakWorkingSet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeakWorkingSet As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PeakWorkingSet { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2989,6 +3121,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public long PeakWorkingSet64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PeakWorkingSet64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PeakWorkingSet64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeakWorkingSet64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PeakWorkingSet64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3053,6 +3187,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public bool PriorityBoostEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PriorityBoostEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PriorityBoostEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property PriorityBoostEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PriorityBoostEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3114,6 +3250,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public System.Diagnostics.ProcessPriorityClass PriorityClass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.ProcessPriorityClass PriorityClass" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PriorityClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property PriorityClass As ProcessPriorityClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ProcessPriorityClass PriorityClass { System::Diagnostics::ProcessPriorityClass get(); void set(System::Diagnostics::ProcessPriorityClass value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3189,6 +3327,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int PrivateMemorySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PrivateMemorySize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PrivateMemorySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateMemorySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PrivateMemorySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3230,6 +3370,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public long PrivateMemorySize64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PrivateMemorySize64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PrivateMemorySize64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateMemorySize64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PrivateMemorySize64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3289,6 +3431,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public TimeSpan PrivilegedProcessorTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan PrivilegedProcessorTime" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.PrivilegedProcessorTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivilegedProcessorTime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PrivilegedProcessorTime { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3341,6 +3485,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public string ProcessName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProcessName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.ProcessName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProcessName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3398,6 +3544,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public IntPtr ProcessorAffinity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ProcessorAffinity" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.ProcessorAffinity" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProcessorAffinity As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ProcessorAffinity { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3469,6 +3617,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3516,6 +3666,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public bool Responding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Responding" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.Responding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Responding As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Responding { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3578,6 +3730,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeProcessHandle SafeHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafeProcessHandle SafeHandle" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.SafeHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeHandle As SafeProcessHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeProcessHandle ^ SafeHandle { Microsoft::Win32::SafeHandles::SafeProcessHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3621,6 +3775,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public int SessionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SessionId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.SessionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SessionId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3675,6 +3831,8 @@ The following code example creates a process that prints a file. It sets the <xr
       <MemberSignature Language="C#" Value="public System.IO.StreamReader StandardError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.StreamReader StandardError" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.StandardError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StandardError As StreamReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::StreamReader ^ StandardError { System::IO::StreamReader ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3789,6 +3947,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public System.IO.StreamWriter StandardInput { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.StreamWriter StandardInput" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.StandardInput" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StandardInput As StreamWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::StreamWriter ^ StandardInput { System::IO::StreamWriter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3852,6 +4012,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public System.IO.StreamReader StandardOutput { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.StreamReader StandardOutput" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.StandardOutput" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StandardOutput As StreamReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::StreamReader ^ StandardOutput { System::IO::StreamReader ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -3954,10 +4116,22 @@ p.WaitForExit();
         <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts a process resource and associates it with a <see cref="T:System.Diagnostics.Process" /> component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Start">
       <MemberSignature Language="C#" Value="public bool Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Function Start () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4038,6 +4212,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process Start (System.Diagnostics.ProcessStartInfo startInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process Start(class System.Diagnostics.ProcessStartInfo startInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Start(System.Diagnostics.ProcessStartInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Start (startInfo As ProcessStartInfo) As Process" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ Start(System::Diagnostics::ProcessStartInfo ^ startInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4134,6 +4310,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process Start (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process Start(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Start(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Start (fileName As String) As Process" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ Start(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4212,6 +4390,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process Start (string fileName, string arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process Start(string fileName, string arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Start(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Start (fileName As String, arguments As String) As Process" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ Start(System::String ^ fileName, System::String ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4294,6 +4474,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process Start (string fileName, string userName, System.Security.SecureString password, string domain);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process Start(string fileName, string userName, class System.Security.SecureString password, string domain) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Start(System.String,System.String,System.Security.SecureString,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Start (fileName As String, userName As String, password As SecureString, domain As String) As Process" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ Start(System::String ^ fileName, System::String ^ userName, System::Security::SecureString ^ password, System::String ^ domain);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4366,6 +4548,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process Start (string fileName, string arguments, string userName, System.Security.SecureString password, string domain);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process Start(string fileName, string arguments, string userName, class System.Security.SecureString password, string domain) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Start(System.String,System.String,System.String,System.Security.SecureString,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Start (fileName As String, arguments As String, userName As String, password As SecureString, domain As String) As Process" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ Start(System::String ^ fileName, System::String ^ arguments, System::String ^ userName, System::Security::SecureString ^ password, System::String ^ domain);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4436,6 +4620,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public System.Diagnostics.ProcessStartInfo StartInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.ProcessStartInfo StartInfo" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.StartInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartInfo As ProcessStartInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ProcessStartInfo ^ StartInfo { System::Diagnostics::ProcessStartInfo ^ get(); void set(System::Diagnostics::ProcessStartInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4505,6 +4691,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public DateTime StartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StartTime" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4550,6 +4738,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public System.ComponentModel.ISynchronizeInvoke SynchronizingObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISynchronizeInvoke SynchronizingObject" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.SynchronizingObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4614,6 +4804,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public System.Diagnostics.ProcessThreadCollection Threads { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.ProcessThreadCollection Threads" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.Threads" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Threads As ProcessThreadCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ProcessThreadCollection ^ Threads { System::Diagnostics::ProcessThreadCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4671,6 +4863,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4713,6 +4907,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public TimeSpan TotalProcessorTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TotalProcessorTime" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.TotalProcessorTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalProcessorTime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TotalProcessorTime { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4765,6 +4961,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public TimeSpan UserProcessorTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan UserProcessorTime" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.UserProcessorTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserProcessorTime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan UserProcessorTime { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4817,6 +5015,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public int VirtualMemorySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VirtualMemorySize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.VirtualMemorySize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualMemorySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VirtualMemorySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4859,6 +5059,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public long VirtualMemorySize64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 VirtualMemorySize64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.VirtualMemorySize64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualMemorySize64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long VirtualMemorySize64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4915,10 +5117,24 @@ p.WaitForExit();
         <altmember cref="P:System.Diagnostics.Process.PeakVirtualMemorySize64" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForExit">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the period of time to wait for the associated process to exit, and blocks the current thread of execution until the time has elapsed or the process has exited. To avoid blocking the current thread, use the <see cref="E:System.Diagnostics.Process.Exited" /> event.  
+  
+ For code examples, see the <see cref="P:System.Diagnostics.Process.StandardError" /> and the <see cref="P:System.Diagnostics.Process.ExitCode" /> property reference pages.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WaitForExit">
       <MemberSignature Language="C#" Value="public void WaitForExit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WaitForExit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.WaitForExit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WaitForExit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WaitForExit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -4988,6 +5204,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public bool WaitForExit (int milliseconds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WaitForExit(int32 milliseconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.WaitForExit(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WaitForExit (milliseconds As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WaitForExit(int milliseconds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -5048,7 +5266,8 @@ p.WaitForExit();
  -or-  
   
  You are attempting to call <see cref="M:System.Diagnostics.Process.WaitForExit(System.Int32)" /> for a process that is running on a remote computer. This method is available only for processes that are running on the local computer.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="milliseconds" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="milliseconds" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
         <altmember cref="M:System.Diagnostics.Process.Kill" />
@@ -5060,10 +5279,22 @@ p.WaitForExit();
         <altmember cref="P:System.Diagnostics.Process.SynchronizingObject" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForInputIdle">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes the <see cref="T:System.Diagnostics.Process" /> component to wait for the associated process to enter an idle state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WaitForInputIdle">
       <MemberSignature Language="C#" Value="public bool WaitForInputIdle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WaitForInputIdle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.WaitForInputIdle" />
+      <MemberSignature Language="VB.NET" Value="Public Function WaitForInputIdle () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WaitForInputIdle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5120,6 +5351,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public bool WaitForInputIdle (int milliseconds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WaitForInputIdle(int32 milliseconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.WaitForInputIdle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WaitForInputIdle (milliseconds As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WaitForInputIdle(int milliseconds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5181,6 +5414,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public int WorkingSet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WorkingSet" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.WorkingSet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkingSet As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WorkingSet { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5244,6 +5479,8 @@ p.WaitForExit();
       <MemberSignature Language="C#" Value="public long WorkingSet64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 WorkingSet64" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Process.WorkingSet64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkingSet64 As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long WorkingSet64 { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -5304,67 +5541,5 @@ p.WaitForExit();
         <altmember cref="P:System.Diagnostics.Process.PeakWorkingSet64" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Start">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Process</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Starts a process resource and associates it with a <see cref="T:System.Diagnostics.Process" /> component.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WaitForExit">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Process</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the period of time to wait for the associated process to exit, and blocks the current thread of execution until the time has elapsed or the process has exited. To avoid blocking the current thread, use the <see cref="E:System.Diagnostics.Process.Exited" /> event.  
-  
- For code examples, see the <see cref="P:System.Diagnostics.Process.StandardError" /> and the <see cref="P:System.Diagnostics.Process.ExitCode" /> property reference pages.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetProcessesByName">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Process</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an array of new <see cref="T:System.Diagnostics.Process" /> components and associates them with the existing process resources that all share the specified process name.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetProcesses">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Process</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an array of new <see cref="T:System.Diagnostics.Process" /> components and associates them with existing process resources.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetProcessById">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Process</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Diagnostics.Process" /> component, and associates it with the existing process resource that you specify.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WaitForInputIdle">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes the <see cref="T:System.Diagnostics.Process" /> component to wait for the associated process to enter an idle state.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

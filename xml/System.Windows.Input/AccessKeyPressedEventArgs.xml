@@ -1,7 +1,9 @@
-<Type Name="AccessKeyPressedEventArgs" FullName="System.Windows.Input.AccessKeyPressedEventArgs">
+﻿<Type Name="AccessKeyPressedEventArgs" FullName="System.Windows.Input.AccessKeyPressedEventArgs">
   <TypeSignature Language="C#" Value="public class AccessKeyPressedEventArgs : System.Windows.RoutedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessKeyPressedEventArgs extends System.Windows.RoutedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.AccessKeyPressedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class AccessKeyPressedEventArgs&#xA;Inherits RoutedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AccessKeyPressedEventArgs : System::Windows::RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public AccessKeyPressedEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyPressedEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessKeyPressedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public AccessKeyPressedEventArgs (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyPressedEventArgs.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessKeyPressedEventArgs(System::String ^ key);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyPressedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public string Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Key" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.AccessKeyPressedEventArgs.Key" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -129,6 +139,8 @@
       <MemberSignature Language="C#" Value="public object Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Scope" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.AccessKeyPressedEventArgs.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Scope { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -156,6 +168,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.UIElement Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement Target" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.AccessKeyPressedEventArgs.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As UIElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ Target { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

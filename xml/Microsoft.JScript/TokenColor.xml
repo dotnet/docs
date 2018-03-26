@@ -1,7 +1,9 @@
-<Type Name="TokenColor" FullName="Microsoft.JScript.TokenColor">
+﻿<Type Name="TokenColor" FullName="Microsoft.JScript.TokenColor">
   <TypeSignature Language="C#" Value="public enum TokenColor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TokenColor extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.TokenColor" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TokenColor" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TokenColor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="COLOR_COMMENT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_COMMENT = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_COMMENT" />
+      <MemberSignature Language="VB.NET" Value="COLOR_COMMENT" />
+      <MemberSignature Language="C++ CLI" Value="COLOR_COMMENT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The color for a unit of code that represents a comment.</summary>
         <forInternalUseOnly />
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="COLOR_CONDITIONAL_COMP" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_CONDITIONAL_COMP = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_CONDITIONAL_COMP" />
+      <MemberSignature Language="VB.NET" Value="COLOR_CONDITIONAL_COMP" />
+      <MemberSignature Language="C++ CLI" Value="COLOR_CONDITIONAL_COMP" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Not used.</summary>
         <forInternalUseOnly />
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="COLOR_IDENTIFIER" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_IDENTIFIER = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_IDENTIFIER" />
+      <MemberSignature Language="VB.NET" Value="COLOR_IDENTIFIER" />
+      <MemberSignature Language="C++ CLI" Value="COLOR_IDENTIFIER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The color for a unit of code that represents an identifier.</summary>
         <forInternalUseOnly />
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="COLOR_KEYWORD" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_KEYWORD = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_KEYWORD" />
+      <MemberSignature Language="VB.NET" Value="COLOR_KEYWORD" />
+      <MemberSignature Language="C++ CLI" Value="COLOR_KEYWORD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The color for a unit of code that represents a keyword.</summary>
         <forInternalUseOnly />
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="COLOR_NUMBER" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_NUMBER = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_NUMBER" />
+      <MemberSignature Language="VB.NET" Value="COLOR_NUMBER" />
+      <MemberSignature Language="C++ CLI" Value="COLOR_NUMBER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -107,6 +123,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The color for a unit of code that represents a numeric literal.</summary>
         <forInternalUseOnly />
@@ -116,6 +133,8 @@
       <MemberSignature Language="C#" Value="COLOR_OPERATOR" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_OPERATOR = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_OPERATOR" />
+      <MemberSignature Language="VB.NET" Value="COLOR_OPERATOR" />
+      <MemberSignature Language="C++ CLI" Value="COLOR_OPERATOR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -124,6 +143,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The color for a unit of code that represents an operator.</summary>
         <forInternalUseOnly />
@@ -133,6 +153,8 @@
       <MemberSignature Language="C#" Value="COLOR_STRING" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_STRING = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_STRING" />
+      <MemberSignature Language="VB.NET" Value="COLOR_STRING" />
+      <MemberSignature Language="C++ CLI" Value="COLOR_STRING" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -141,6 +163,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The color for a unit of code that represents a string literal.</summary>
         <forInternalUseOnly />
@@ -150,6 +173,8 @@
       <MemberSignature Language="C#" Value="COLOR_TEXT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_TEXT = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_TEXT" />
+      <MemberSignature Language="VB.NET" Value="COLOR_TEXT" />
+      <MemberSignature Language="C++ CLI" Value="COLOR_TEXT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -158,6 +183,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The color for a unit of code that represents text. This is the default value.</summary>
         <forInternalUseOnly />

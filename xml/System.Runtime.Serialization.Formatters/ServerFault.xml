@@ -1,7 +1,9 @@
-<Type Name="ServerFault" FullName="System.Runtime.Serialization.Formatters.ServerFault">
+﻿<Type Name="ServerFault" FullName="System.Runtime.Serialization.Formatters.ServerFault">
   <TypeSignature Language="C#" Value="public sealed class ServerFault" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ServerFault extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.ServerFault" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServerFault" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServerFault sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public ServerFault (string exceptionType, string message, string stackTrace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string exceptionType, string message, string stackTrace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.ServerFault.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (exceptionType As String, message As String, stackTrace As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServerFault(System::String ^ exceptionType, System::String ^ message, System::String ^ stackTrace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public string ExceptionMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExceptionMessage" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.ExceptionMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExceptionMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExceptionMessage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public string ExceptionType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExceptionType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.ExceptionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExceptionType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExceptionType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +104,8 @@
       <MemberSignature Language="C#" Value="public string StackTrace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StackTrace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.StackTrace" />
+      <MemberSignature Language="VB.NET" Value="Public Property StackTrace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StackTrace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

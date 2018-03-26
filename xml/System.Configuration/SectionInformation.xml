@@ -1,7 +1,9 @@
-<Type Name="SectionInformation" FullName="System.Configuration.SectionInformation">
+﻿<Type Name="SectionInformation" FullName="System.Configuration.SectionInformation">
   <TypeSignature Language="C#" Value="public sealed class SectionInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SectionInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SectionInformation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SectionInformation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SectionInformation sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +63,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationAllowDefinition AllowDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationAllowDefinition AllowDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowDefinition As ConfigurationAllowDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationAllowDefinition AllowDefinition { System::Configuration::ConfigurationAllowDefinition get(); void set(System::Configuration::ConfigurationAllowDefinition value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -107,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationAllowExeDefinition AllowExeDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationAllowExeDefinition AllowExeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowExeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowExeDefinition As ConfigurationAllowExeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationAllowExeDefinition AllowExeDefinition { System::Configuration::ConfigurationAllowExeDefinition get(); void set(System::Configuration::ConfigurationAllowExeDefinition value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -153,6 +159,8 @@
       <MemberSignature Language="C#" Value="public bool AllowLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowLocation" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowLocation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowLocation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -199,6 +207,8 @@
       <MemberSignature Language="C#" Value="public bool AllowOverride { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowOverride" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowOverride" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowOverride As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowOverride { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -239,6 +249,8 @@
       <MemberSignature Language="C#" Value="public string ConfigSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigSource" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ConfigSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigSource As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigSource { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -285,6 +297,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationBuilder ConfigurationBuilder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationBuilder ConfigurationBuilder" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ConfigurationBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConfigurationBuilder As ConfigurationBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationBuilder ^ ConfigurationBuilder { System::Configuration::ConfigurationBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -320,6 +334,8 @@
       <MemberSignature Language="C#" Value="public void ForceDeclaration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -349,9 +365,16 @@
       </Docs>
     </Member>
     <Member MemberName="ForceDeclaration">
-      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" />
+      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool force) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (force As Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (require As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool require);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -365,7 +388,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="force" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="require" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="require">To be added.</param>
@@ -398,6 +422,8 @@
       <MemberSignature Language="C#" Value="public bool ForceSave { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ForceSave" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ForceSave" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForceSave As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ForceSave { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -436,6 +462,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection GetParentSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection GetParentSection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.GetParentSection" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentSection () As ConfigurationSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSection ^ GetParentSection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -475,6 +503,8 @@
       <MemberSignature Language="C#" Value="public string GetRawXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRawXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.GetRawXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRawXml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRawXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -509,6 +539,8 @@
       <MemberSignature Language="C#" Value="public bool InheritInChildApplications { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InheritInChildApplications" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.InheritInChildApplications" />
+      <MemberSignature Language="VB.NET" Value="Public Property InheritInChildApplications As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InheritInChildApplications { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -555,6 +587,8 @@
       <MemberSignature Language="C#" Value="public bool IsDeclarationRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeclarationRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsDeclarationRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclarationRequired As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeclarationRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -596,6 +630,8 @@
       <MemberSignature Language="C#" Value="public bool IsDeclared { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeclared" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsDeclared" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclared As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeclared { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -636,6 +672,8 @@
       <MemberSignature Language="C#" Value="public bool IsLocked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocked" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsLocked" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLocked { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -681,6 +719,8 @@
       <MemberSignature Language="C#" Value="public bool IsProtected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsProtected" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsProtected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsProtected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsProtected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -728,6 +768,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -765,6 +807,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideMode" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property OverrideMode As OverrideMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::OverrideMode OverrideMode { System::Configuration::OverrideMode get(); void set(System::Configuration::OverrideMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -798,6 +842,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideModeDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideModeDefault" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideModeDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property OverrideModeDefault As OverrideMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::OverrideMode OverrideModeDefault { System::Configuration::OverrideMode get(); void set(System::Configuration::OverrideMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -829,6 +875,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideModeEffective { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideModeEffective" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideModeEffective" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverrideModeEffective As OverrideMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::OverrideMode OverrideModeEffective { System::Configuration::OverrideMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -858,6 +906,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ProtectedConfigurationProvider ProtectionProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProtectedConfigurationProvider ProtectionProvider" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ProtectionProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtectionProvider As ProtectedConfigurationProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProtectedConfigurationProvider ^ ProtectionProvider { System::Configuration::ProtectedConfigurationProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -894,9 +944,16 @@
       </Docs>
     </Member>
     <Member MemberName="ProtectSection">
-      <MemberSignature Language="C#" Value="public void ProtectSection (string provider);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string provider) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" />
+      <MemberSignature Language="C#" Value="public void ProtectSection (string protectionProvider);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string protectionProvider) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProtectSection (protectionProvider As String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProtectSection(System::String ^ protectionProvider);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public void ProtectSection (string provider);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string provider) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProtectSection (provider As String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProtectSection(System::String ^ provider);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -910,7 +967,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="protectionProvider" Type="System.String" />
+        <Parameter Name="protectionProvider" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="provider" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="provider">To be added.</param>
@@ -955,6 +1013,8 @@
       <MemberSignature Language="C#" Value="public bool RequirePermission { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequirePermission" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.RequirePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequirePermission As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequirePermission { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1032,6 +1092,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public bool RestartOnExternalChanges { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RestartOnExternalChanges" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.RestartOnExternalChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Property RestartOnExternalChanges As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RestartOnExternalChanges { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1071,6 +1133,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public void RevertToParent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RevertToParent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.RevertToParent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RevertToParent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RevertToParent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1094,6 +1158,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public string SectionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SectionName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.SectionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SectionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1128,9 +1194,16 @@ Dim apSection As AppSettingsSection = _
       </Docs>
     </Member>
     <Member MemberName="SetRawXml">
-      <MemberSignature Language="C#" Value="public void SetRawXml (string xml);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string xml) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" />
+      <MemberSignature Language="C#" Value="public void SetRawXml (string rawXml);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string rawXml) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRawXml (rawXml As String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawXml(System::String ^ rawXml);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public void SetRawXml (string xml);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string xml) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRawXml (xml As String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawXml(System::String ^ xml);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1144,7 +1217,8 @@ Dim apSection As AppSettingsSection = _
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rawXml" Type="System.String" />
+        <Parameter Name="rawXml" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="xml" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="xml">To be added.</param>
@@ -1158,6 +1232,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1197,6 +1273,8 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C#" Value="public void UnprotectSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnprotectSection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.UnprotectSection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnprotectSection ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnprotectSection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="AssemblyHash" FullName="System.Configuration.Assemblies.AssemblyHash">
+﻿<Type Name="AssemblyHash" FullName="System.Configuration.Assemblies.AssemblyHash">
   <TypeSignature Language="C#" Value="public struct AssemblyHash : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit AssemblyHash extends System.ValueType implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Assemblies.AssemblyHash" />
+  <TypeSignature Language="VB.NET" Value="Public Structure AssemblyHash&#xA;Implements ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public value class AssemblyHash : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,10 +37,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Assemblies.AssemblyHash" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AssemblyHash (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyHash(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +77,8 @@
       <MemberSignature Language="C#" Value="public AssemblyHash (System.Configuration.Assemblies.AssemblyHashAlgorithm algorithm, byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm algorithm, unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.#ctor(System.Configuration.Assemblies.AssemblyHashAlgorithm,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (algorithm As AssemblyHashAlgorithm, value As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyHash(System::Configuration::Assemblies::AssemblyHashAlgorithm algorithm, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.Assemblies.AssemblyHashAlgorithm Algorithm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm Algorithm" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Assemblies.AssemblyHash.Algorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property Algorithm As AssemblyHashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Assemblies::AssemblyHashAlgorithm Algorithm { System::Configuration::Assemblies::AssemblyHashAlgorithm get(); void set(System::Configuration::Assemblies::AssemblyHashAlgorithm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -121,7 +139,12 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Configuration.Assemblies.AssemblyHash Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Configuration.Assemblies.AssemblyHash Empty" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.Assemblies.AssemblyHash.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As AssemblyHash " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Configuration::Assemblies::AssemblyHash Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +194,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.GetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -194,6 +221,8 @@
       <MemberSignature Language="C#" Value="public void SetValue (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.SetValue(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,15 +246,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Assemblies.AssemblyHash" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

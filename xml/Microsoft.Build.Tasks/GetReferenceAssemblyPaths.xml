@@ -1,7 +1,9 @@
-<Type Name="GetReferenceAssemblyPaths" FullName="Microsoft.Build.Tasks.GetReferenceAssemblyPaths">
+﻿<Type Name="GetReferenceAssemblyPaths" FullName="Microsoft.Build.Tasks.GetReferenceAssemblyPaths">
   <TypeSignature Language="C#" Value="public class GetReferenceAssemblyPaths : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetReferenceAssemblyPaths extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GetReferenceAssemblyPaths" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetReferenceAssemblyPaths&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetReferenceAssemblyPaths : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public GetReferenceAssemblyPaths ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GetReferenceAssemblyPaths();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool BypassFrameworkInstallChecks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BypassFrameworkInstallChecks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.BypassFrameworkInstallChecks" />
+      <MemberSignature Language="VB.NET" Value="Public Property BypassFrameworkInstallChecks As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BypassFrameworkInstallChecks { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -52,6 +58,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="public string[] FullFrameworkReferenceAssemblyPaths { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] FullFrameworkReferenceAssemblyPaths" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.FullFrameworkReferenceAssemblyPaths" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullFrameworkReferenceAssemblyPaths As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ FullFrameworkReferenceAssemblyPaths { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -94,6 +104,8 @@
       <MemberSignature Language="C#" Value="public string[] ReferenceAssemblyPaths { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ReferenceAssemblyPaths" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.ReferenceAssemblyPaths" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferenceAssemblyPaths As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ReferenceAssemblyPaths { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -117,6 +129,8 @@
       <MemberSignature Language="C#" Value="public string RootPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RootPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.RootPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -135,6 +149,8 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkMoniker { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkMoniker" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkMoniker As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMoniker { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -153,6 +169,8 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkMonikerDisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkMonikerDisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMonikerDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkMonikerDisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMonikerDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

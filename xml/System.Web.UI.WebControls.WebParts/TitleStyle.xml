@@ -1,7 +1,9 @@
-<Type Name="TitleStyle" FullName="System.Web.UI.WebControls.WebParts.TitleStyle">
+﻿<Type Name="TitleStyle" FullName="System.Web.UI.WebControls.WebParts.TitleStyle">
   <TypeSignature Language="C#" Value="public sealed class TitleStyle : System.Web.UI.WebControls.TableItemStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TitleStyle extends System.Web.UI.WebControls.TableItemStyle" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleStyle&#xA;Inherits TableItemStyle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TitleStyle sealed : System::Web::UI::WebControls::TableItemStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public TitleStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TitleStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TitleStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public override bool Wrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Wrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.TitleStyle.Wrap" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Wrap As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Wrap { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

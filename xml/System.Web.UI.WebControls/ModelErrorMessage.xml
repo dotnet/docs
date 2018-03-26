@@ -1,7 +1,9 @@
-<Type Name="ModelErrorMessage" FullName="System.Web.UI.WebControls.ModelErrorMessage">
+﻿<Type Name="ModelErrorMessage" FullName="System.Web.UI.WebControls.ModelErrorMessage">
   <TypeSignature Language="C#" Value="public class ModelErrorMessage : System.Web.UI.WebControls.Label" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelErrorMessage extends System.Web.UI.WebControls.Label" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ModelErrorMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class ModelErrorMessage&#xA;Inherits Label" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelErrorMessage : System::Web::UI::WebControls::Label" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public ModelErrorMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelErrorMessage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelErrorMessage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public override string AssociatedControlID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssociatedControlID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelErrorMessage.AssociatedControlID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AssociatedControlID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AssociatedControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public string ModelStateKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ModelStateKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelErrorMessage.ModelStateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModelStateKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModelStateKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,9 +108,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelErrorMessage.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="public bool SetFocusOnError { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SetFocusOnError" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelErrorMessage.SetFocusOnError" />
+      <MemberSignature Language="VB.NET" Value="Public Property SetFocusOnError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SetFocusOnError { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +170,8 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelErrorMessage.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

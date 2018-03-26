@@ -1,7 +1,9 @@
-<Type Name="Point" FullName="System.Windows.Point">
+﻿<Type Name="Point" FullName="System.Windows.Point">
   <TypeSignature Language="C#" Value="public struct Point : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Point extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Point" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Point&#xA;Implements IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Point : IFormattable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +67,8 @@
       <MemberSignature Language="C#" Value="public Point (double x, double y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Double, y As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Point(double x, double y);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Point Add (System.Windows.Point point, System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Point Add(valuetype System.Windows.Point point, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Add(System.Windows.Point,System.Windows.Vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point Add(System::Windows::Point point, System::Windows::Vector vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -120,10 +125,21 @@
         <altmember cref="M:System.Windows.Point.op_Addition(System.Windows.Point,System.Windows.Vector)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Point" /> structures for equality.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -162,6 +178,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Point value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Point value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Equals(System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Point value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -193,6 +211,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Point point1, System.Windows.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Equals(System.Windows.Point,System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (point1 As Point, point2 As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Point point1, System::Windows::Point point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -233,6 +253,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -261,6 +283,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Point Multiply (System.Windows.Point point, System.Windows.Media.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Point Multiply(valuetype System.Windows.Point point, valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Multiply(System.Windows.Point,System.Windows.Media.Matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point Multiply(System::Windows::Point point, System::Windows::Media::Matrix matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -295,6 +318,8 @@
       <MemberSignature Language="C#" Value="public void Offset (double offsetX, double offsetY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Offset(float64 offsetX, float64 offsetY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Offset(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Offset (offsetX As Double, offsetY As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(double offsetX, double offsetY);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -338,6 +363,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Point operator + (System.Windows.Point point, System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Addition(valuetype System.Windows.Point point, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Addition(System.Windows.Point,System.Windows.Vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point operator +(System::Windows::Point point, System::Windows::Vector vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -373,6 +399,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Point point1, System.Windows.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Equality(System.Windows.Point,System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (point1 As Point, point2 As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Point point1, System::Windows::Point point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -410,10 +438,20 @@
         <altmember cref="Overload:System.Windows.Point.Equals" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a <see cref="T:System.Windows.Point" /> into a <see cref="T:System.Windows.Size" /> or a <see cref="T:System.Windows.Vector" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Explicit">
       <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Size (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Size op_Explicit(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Explicit(System.Windows.Point)~System.Windows.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Size(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -451,6 +489,7 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Vector (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Explicit(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Explicit(System.Windows.Point)~System.Windows.Vector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Vector(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -483,6 +522,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Point point1, System.Windows.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Inequality(System.Windows.Point,System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (point1 As Point, point2 As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Point point1, System::Windows::Point point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -523,6 +564,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Point operator * (System.Windows.Point point, System.Windows.Media.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Multiply(valuetype System.Windows.Point point, valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Multiply(System.Windows.Point,System.Windows.Media.Matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point operator *(System::Windows::Point point, System::Windows::Media::Matrix matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -554,10 +596,21 @@
         <altmember cref="M:System.Windows.Point.Multiply(System.Windows.Point,System.Windows.Media.Matrix)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts the specified <see cref="T:System.Windows.Vector" /> or <see cref="T:System.Windows.Point" /> from the specified <see cref="T:System.Windows.Point" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Subtraction">
       <MemberSignature Language="C#" Value="public static System.Windows.Vector operator - (System.Windows.Point point1, System.Windows.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Subtraction(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Subtraction(System.Windows.Point,System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (point1 As Point, point2 As Point) As Vector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector operator -(System::Windows::Point point1, System::Windows::Point point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -593,6 +646,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Point operator - (System.Windows.Point point, System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Subtraction(valuetype System.Windows.Point point, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Subtraction(System.Windows.Point,System.Windows.Vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point operator -(System::Windows::Point point, System::Windows::Vector vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -628,6 +682,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Point Parse (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Point Parse(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point Parse(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -664,10 +720,21 @@
  <paramref name="source" /> contains too many delimiters.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts the specified <see cref="T:System.Windows.Point" /> or <see cref="T:System.Windows.Vector" /> from the specified <see cref="T:System.Windows.Point" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Subtract">
       <MemberSignature Language="C#" Value="public static System.Windows.Vector Subtract (System.Windows.Point point1, System.Windows.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Subtract(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Subtract(System.Windows.Point,System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (point1 As Point, point2 As Point) As Vector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector Subtract(System::Windows::Point point1, System::Windows::Point point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -703,6 +770,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Point Subtract (System.Windows.Point point, System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Point Subtract(valuetype System.Windows.Point point, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.Subtract(System.Windows.Point,System.Windows.Vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point Subtract(System::Windows::Point point, System::Windows::Vector vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -738,7 +806,12 @@
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -766,10 +839,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Point" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -799,6 +883,8 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -821,6 +907,8 @@
       <MemberSignature Language="C#" Value="public double X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Point.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -850,6 +938,8 @@
       <MemberSignature Language="C#" Value="public double Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Point.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -875,50 +965,5 @@
         <altmember cref="P:System.Windows.Point.X" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Subtract">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Subtracts the specified <see cref="T:System.Windows.Point" /> or <see cref="T:System.Windows.Vector" /> from the specified <see cref="T:System.Windows.Point" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Subtraction">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Subtracts the specified <see cref="T:System.Windows.Vector" /> or <see cref="T:System.Windows.Point" /> from the specified <see cref="T:System.Windows.Point" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Explicit">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a <see cref="T:System.Windows.Point" /> into a <see cref="T:System.Windows.Size" /> or a <see cref="T:System.Windows.Vector" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two <see cref="T:System.Windows.Point" /> structures for equality.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Point" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

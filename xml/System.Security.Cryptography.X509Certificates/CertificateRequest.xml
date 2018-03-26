@@ -192,7 +192,7 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Security.Cryptography.X509Certificates.X509Extension&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the X.509 Certificate Extensions colletion, which is a mutable collection, to include in the certificate or certificate request.</summary>
+        <summary>Gets the X.509 Certificate Extensions collection, which is a mutable collection, to include in the certificate or certificate request.</summary>
         <value>The X.509 Certificate Extensions collection to include in the certificate or certificate request.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,7 +219,7 @@
         <param name="issuerCertificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> instance representing the issuing Certificate Authority (CA).</param>
         <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow"/>, plus or minus a few seconds.</param>
         <param name="notAfter">The date and time when this certificate is no longer considered valid.</param>
-        <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned (big) integer in big-endian byte ordering.</param>
+        <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned integer of arbitrary size in big-endian byte ordering. <see href="https://tools.ietf.org/html/rfc3280#section-4.1.2.2">RFC 3280</see> recommends confining it to 20 bytes or less.</param>
         <summary>Creates a certificate using the established subject, key, and optional extensions using the specified certificate as the issuer.</summary>
         <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> object with the specified values. The returned object won't assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>

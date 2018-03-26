@@ -1853,7 +1853,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 -   Creates three brushes, each a different color. Each <xref:System.Drawing.Color> structure that is used to create a brush is created from a 32-bit ARGB value.  
   
@@ -1909,7 +1909,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 1.  Creates <xref:System.Drawing.Color> structures from the three color component values (red, green, blue). Three <xref:System.Drawing.Color> structures are created, one for each primary color.  
   
@@ -1968,7 +1968,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 1.  Creates <xref:System.Drawing.Color> structures from the three color component values (red, green, blue). Three <xref:System.Drawing.Color> structures are created, one for each primary color.  
   
@@ -2034,7 +2034,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 -   Creates three brushes, each a different color. Each <xref:System.Drawing.Color> structure that is used to create a brush is created from four component values (alpha, red, green, blue).  
   
@@ -2085,7 +2085,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 -   Creates an instance of a <xref:System.Drawing.Color> structure, `redShade`, to be used for comparisons.  
   
@@ -2301,7 +2301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 -   Creates an instance of a <xref:System.Drawing.Color> structure, `redShade`, to be used for comparisons.  
   
@@ -2380,7 +2380,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 -   Creates an instance of a <xref:System.Drawing.Color> structure, `redShade`, to be used for comparisons.  
   
@@ -2430,7 +2430,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 -   Creates an instance of a <xref:System.Drawing.Color> structure, `redShade`, to be used for comparisons.  
   
@@ -5782,7 +5782,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 -   Iterates through the <xref:System.Drawing.KnownColor> enumeration elements to find all known colors that have a non-zero green component and a zero-value red component, and that are not system colors.  
   
@@ -5904,7 +5904,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
 -   Iterates through the <xref:System.Drawing.KnownColor> enumeration elements to find all known colors that have a non-zero green component and a zero-value red component and that are not system colors.  
   

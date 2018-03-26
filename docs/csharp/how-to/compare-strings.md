@@ -121,7 +121,7 @@ Linguistic comparisions are dependent on the current culture, and are OS depende
 
 ## Linguistic sorting and searching strings in arrays
 
-The following examples show how to sort and search for strings in an array using a linguistic comparison dependent on the curren cultuer. You use the static <xref:System.Array> methods that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter.
+The following examples show how to sort and search for strings in an array using a linguistic comparison dependent on the current culture. You use the static <xref:System.Array> methods that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter.
 
 This example shows how to sort an array of strings using the current culture: 
 

@@ -16,9 +16,9 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # Formatting Numeric Results Table (C# Reference)
-You can format numeric results by using the <xref:System.String.Format%2A?displayProperty=nameWithType> method, or through the <xref:System.Console.Write%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method, which calls `String.Format`. The format is specified by using format strings. The following table contains the supported standard format strings. The format string takes the following form: `Axx`, where `A` is the format specifier and `xx` is the precision specifier. The format specifier controls the type of formatting applied to the numeric value, and the precision specifier controls the number of significant digits or decimal places of the formatted output. The value of the precision specifier ranges from 0 to 99.  
+You can format numeric results by using the <xref:System.String.Format%2A?displayProperty=nameWithType> method, through the <xref:System.Console.Write%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> methods, which call `String.Format`, or by using [string interpolation](../tokens/interpolated.md). The format is specified by using format strings. The following table contains the supported standard format strings. The format string takes the following form: `Axx`, where `A` is the format specifier and `xx` is the precision specifier. The format specifier controls the type of formatting applied to the numeric value, and the precision specifier controls the number of significant digits or decimal places of the formatted output. The value of the precision specifier ranges from 0 to 99.  
   
- For more information about standard and custom formatting strings, see [Formatting Types](../../../standard/base-types/formatting-types.md). For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=nameWithType>.  
+ For more information about standard and custom formatting strings, see [Formatting Types](../../../standard/base-types/formatting-types.md).
   
 |Format Specifier|Description|Examples|Output|  
 |----------------------|-----------------|--------------|------------|  

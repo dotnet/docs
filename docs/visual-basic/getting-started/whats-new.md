@@ -149,7 +149,7 @@ For more information, see [Reference Return Values](../programming-guide/languag
 [Nameof](../../csharp/language-reference/keywords/nameof.md)  
  You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.  
   
-[String Interpolation](../../csharp/language-reference/keywords/interpolated-strings.md)  
+[String Interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
  You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
 [Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  

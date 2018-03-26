@@ -88,7 +88,7 @@ public class Person
 ```
 
 When a property implementation is a single expression, you can
-use *expression bodied members* for the getter or setter:
+use *expression-bodied members* for the getter or setter:
 
 ```csharp
 public class Person
@@ -235,10 +235,10 @@ public class Person
 }
 ```
 
-The example above uses the *String Interpolation* syntax to create
+The example above uses the [string interpolation](../csharp/language-reference/tokens/interpolated.md) feature to create
 the formatted string for the full name.
 
-You can also use *Expression-bodied Members*, which provides a more
+You can also use *expression-bodied members*, which provides a more
 succinct way to create the computed `FullName` property:
 
 ```csharp
@@ -252,7 +252,7 @@ public class Person
 }
 ```
  
-*Expression-bodied Members* use the *lambda expression* syntax to
+*Expression-bodied members* use the *lambda expression* syntax to
 define a method that contain a single expression. Here, that
 expression returns the full name for the person object.
 

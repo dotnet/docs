@@ -366,12 +366,8 @@ and the '.' character as the thousands separator.)
 
 ```csharp
 FormattableString str = $"Average grade is {s.Grades.Average()}";
-var gradeStr = str.ToString(System.Globalization.CultureInfo.GetCultureInfo("de-DE"));
+var gradeStr = str.ToString(new System.Globalization.CultureInfo("de-DE"));
 ```
-
-> [!NOTE]
-> The preceding example is not supported in .NET Core version 1.0.1. It is
-> only supported in the .NET Framework.
 
 For more information, see the [String interpolation](../language-reference/tokens/interpolated.md) topic.
 

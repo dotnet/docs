@@ -32,14 +32,14 @@ String interpolation is a more convenient way to create formatted strings than a
 The structure of an item with an interpolated expression is as follows:
 
 ```
-{<interpolated-expression>[,<alignment>][:<formatString>]}
+{<interpolatedExpression>[,<alignment>][:<formatString>]}
 ```
 
 Elements in square brackets are optional. The following table describes each element.
 
 |Element|Description|
 |-------------|-----------------|
-|`interpolated-expression`|The expression to evaluate to get a result to be formatted. String representation of the `null` result is <xref:System.String.Empty?displayProperty=nameWithType>.|
+|`interpolatedExpression`|The expression to evaluate to get a result to be formatted. String representation of the `null` result is <xref:System.String.Empty?displayProperty=nameWithType>.|
 |`alignment`|The constant expression whose value defines the minimum number of characters in the string representation of the result of the interpolated expression. If positive, the string representation is right-aligned; if negative, it is left-aligned. For more information, see [Alignment Component](../../../standard/base-types/composite-formatting.md#alignment-component).|
 |`formatString`|A standard or custom format string that is supported by the expression result. For more information, see [Format String Component](../../../standard/base-types/composite-formatting.md#format-string-component).|
 

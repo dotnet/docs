@@ -85,7 +85,9 @@ The developer pack for the .NET Framework 4.5.1 or 4.5.2, the targeting pack for
   
 - [.NET Framework 4.5.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=324213) to install version 4.5.1 on Visual Studio 2012 or other IDEs.  
   
-From the developer pack download page, choose **Download**. Next choose **Run** or **Save**, and follow the instructions when prompted.  
+From the developer pack download page, choose **Download**. Next choose **Run** or **Save**, and follow the instructions when prompted. You can also install the developer pack or targeting pack for a specific version of the .NET Framework by selecting it from the optional components in the **.NET desktop development** workload in the Visual Studio Installer, as the following figure shows.
+
+   ![Visual Studio Installer with the .NET desktop development workload](./media/visual-studio-installer.jpg) 
 
 ### To install or download the .NET Framework redistributable
 

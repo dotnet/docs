@@ -43,7 +43,7 @@ Standard numeric format strings are supported by:
  
 - The .NET [composite formatting feature](../../../docs/standard/base-types/composite-formatting.md), which is used by some `Write` and `WriteLine` methods of the <xref:System.Console> and <xref:System.IO.StreamWriter> classes, the <xref:System.String.Format%2A?displayProperty=nameWithType> method, and the <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method. The composite format feature allows you to include the string representation of multiple data items in a single string, to specify field width, and to align numbers in a field. For more information, see [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md).  
 
-- [Interpolated strings](../../csharp/language-reference/keywords/interpolated-strings.md) in C# and Visual Basic, which provide a simplified syntax when compared to composite format strings.
+- [Interpolated strings](../../csharp/language-reference/tokens/interpolated.md) in C# and Visual Basic, which provide a simplified syntax when compared to composite format strings.
  
 > [!TIP]
 >  You can download the [Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.  
@@ -84,6 +84,8 @@ Standard numeric format strings are supported by:
      [!code-cpp[Formatting.Numeric.Standard#12](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/standardusage1.cpp#12)]
      [!code-csharp[Formatting.Numeric.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#12)]
      [!code-vb[Formatting.Numeric.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#12)]  
+  
+-   It can be supplied as the `formatString` argument in an interpolated expression item of an interpolated string. For more information, see the [String interpolation](../../csharp/language-reference/tokens/interpolated.md) topic in the C# reference or the [Interpolated strings](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) topic in the Visual Basic reference.  
   
  The following sections provide detailed information about each of the standard numeric format strings.  
   

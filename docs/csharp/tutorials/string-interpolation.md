@@ -125,4 +125,4 @@ By default, an interpolated string uses the current culture. To use a different 
 
 ## Conclusion 
 
-In this tutorial, you learned how to use string interpolation features of C# 6. It's basically a more concise way of writing simple `String.Format` statements, with some caveats for more advanced uses. For more information, see the [Interpolated Strings](../../csharp//language-reference/keywords/interpolated-strings.md) topic.
+In this tutorial, you learned how to use string interpolation features of C# 6. It's basically a more concise way of writing simple `String.Format` statements, with some caveats for more advanced uses. For more information, see the [String interpolation](../../csharp//language-reference/tokens/interpolated.md) topic.

@@ -140,7 +140,7 @@ You now print the results:
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L102-L103)]
 
-## Retrieve a single entity
+### Retrieve a single entity
 
 You can write a query to retrieve a single, specific entity. Here, you use a `TableOperation` to specify the customer "Ben Smith". Instead of a collection, you get back a `Customer`. Specifying both the partition key and the row key in a query is the fastest way to retrieve a single entity from the Table service.
 

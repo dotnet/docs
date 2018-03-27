@@ -3,7 +3,7 @@ title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 author: mairaw
 ms.author: mairaw
-ms.date: 03/21/2018
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -37,7 +37,7 @@ dotnet new [-h|--help]
 
 ## Description
 
-The `dotnet new` command provides a convenient way to initialize a valid .NET Core project. 
+The `dotnet new` command provides a convenient way to initialize a valid .NET Core project.
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
@@ -117,6 +117,9 @@ Lists templates containing the specified name. If invoked for the `dotnet new` c
 
 The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
+    > [!NOTE]
+    > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
+
 `-n|--name <OUTPUT_NAME>`
 
 The name for the created output. If no name is specified, the name of the current directory is used.
@@ -154,6 +157,9 @@ Lists templates containing the specified name. If invoked for the `dotnet new` c
 `-lang|--language {C#|F#}`
 
 The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
+
+    > [!NOTE]
+    > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
 
 `-n|--name <OUTPUT_NAME>`
 
@@ -299,7 +305,7 @@ Each project template may have additional options available. The core templates 
 
 Create an F# console application project in the current directory:
 
-`dotnet new console -lang f#`
+`dotnet new console -lang F#`
 
 Create a .NET Standard class library project in the specified directory (available only with .NET Core 2.0 SDK or later versions):
 

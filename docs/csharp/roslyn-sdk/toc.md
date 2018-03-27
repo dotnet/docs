@@ -3,8 +3,8 @@
 ## [Work with syntax](work-with-syntax.md)
 ## [Work with semantics](work-with-semantics.md)
 ## [Work with a workspace](work-with-workspace.md)
-
-## Quick starts
+## [Explore code with the syntax visualizer](syntax-visualizer.md)
+## Quick Starts
 ### [Syntax analysis](get-started/syntax-analysis.md)
 ### [Semantic analysis](get-started/semantic-analysis.md)
 

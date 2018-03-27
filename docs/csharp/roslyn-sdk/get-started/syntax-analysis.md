@@ -38,6 +38,10 @@ The Syntax API creates a tree structure with the root representing the compilati
 
 That brief description provides an overview of the kind of information accessible using the Syntax API. The Syntax API is nothing more than a formal API that describes the familiar code constructs you know from C#. The full capabilities include information about how the code is formatted including line breaks, whitespace, and indenting. Using this information, you can fully represent the code as written and read by human programmers or the compiler. Using this structure enables you to interact with the source code on a deeply meaningful level. It's no longer text strings, but data that represents the structure of a C# program.
 
+To get started, you'll need to install the **.NET Compiler Platform SDK**:
+
+[!INCLUDE[interactive-note](~/includes/roslyn-installation.md)]
+
 ## Understanding syntax trees
 
 You use the Syntax API for any analysis of the structure of C# code. The **Syntax API** exposes the parsers, the syntax trees, and utilities for analyzing and constructing syntax trees. It's how you search code for specific syntax elements or read the code for a program.
@@ -63,9 +67,6 @@ While you can find anything in a code file using the Syntax APIs, most scenarios
 ## Traversing trees
 
 You can examine the nodes in a syntax tree in two ways. You can traverse the tree to examine each node, or you can query for specific elements or nodes.
-
-> [!IMPORTANT]
-> The following samples require the **.NET Compiler Platform SDK** installed as part of Visual Studio 2017. You can find the .NET Compiler SDK as the last optional component listed under the **Visual Studio extension development** workload. The templates aren't installed without this component.
 
 ### Manual traversal
 

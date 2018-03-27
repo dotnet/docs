@@ -16,6 +16,10 @@ This tutorial assumes you're familiar with the Syntax API. The [get started with
 
 In this tutorial, you explore the **Symbol** and **Binding APIs**. These APIs provide information about the _semantic meaning_ of a program. They enable you to ask and answer questions about the types represented by any symbol in your program.
 
+You'll need to install the **.NET Compiler Platform SDK**:
+
+[!INCLUDE[interactive-note](~/includes/roslyn-installation.md)]
+
 ## Understanding Compilations and Symbols
 
 As you work more with the .NET Compiler SDK, you become familiar with the distinctions between Syntax API and the Semantic API. The **Syntax API** allows you to look at the _structure_ of a program. However, often you want richer information about the semantics or _meaning_ of a program. While a loose code file or snippet of VB or C# code can be syntactically analyzed in isolation, it's not meaningful to ask questions such as "what's the type of this variable" in a vacuum. The meaning of a type name may be dependent on assembly references, namespace imports, or other code files. Those questions are answered using the **Semantic API**, specifically the <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> class.
@@ -27,9 +31,6 @@ Like <xref:Microsoft.CodeAnalysis.SyntaxTree?displayProperty=nameWithType>, <xre
 ## Querying symbols
 
 In this tutorial, you look at the "Hello World" program again. This time, you query the symbols in the program to understand what types those symbols represent. You query for the types in a namespace, and learn to find the methods available on a type.
-
-> [!IMPORTANT]
-> The following samples require the **.NET Compiler SDK** installed as part of Visual Studio 2017. You can find the .NET Compiler SDK as the last optional component listed under the **Visual Studio extension development** workload. The templates aren't installed without this component.
 
 You can see the finished code for this sample in [our GitHub repository](https://github.com/dotnet/docs/tree/master/samples/csharp/roslyn-sdk/SemanticQuickStart).
 

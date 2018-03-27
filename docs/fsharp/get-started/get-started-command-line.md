@@ -44,7 +44,7 @@ Change directories to *FSNetCore* and start adding projects to the solution fold
 Use the `dotnet new` command, create a Class Library project in the **src** folder named Library. 
 
 ```bash
-dotnet new lib -lang F# -o src/Library 
+dotnet new lib -lang "F#" -o src/Library 
 ```
 
 The following directory structure is produced as a result of the command completing:
@@ -88,7 +88,7 @@ Restore the NuGet dependencies, `dotnet restore` ([see note](#dotnet-restore-not
 Use the `dotnet new` command, create a Console app in the **src** folder named App. 
 
 ```bash
-dotnet new console -lang F# -o src/App 
+dotnet new console -lang "F#" -o src/App 
 ```
 
 The following directory structure is produced as a result of the command completing:

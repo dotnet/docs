@@ -30,13 +30,7 @@ The tables in this topic provide the hardware, operating system, and software re
 
 Development environments that enable you to develop apps for the .NET Framework have a separate set of requirements.
 
-> [!IMPORTANT]
-> All .NET Framework versions since .NET Framework 4 are in-place updates, so only a single 4.x version can be present on a system.
-> In addition, particular versions of the .NET Framework are pre-installed on some versions of the Windows operating system. This means that:
->
-> * If there's a later version installed on the machine already, you cannot install a previous 4.x version.
-> * If the OS comes pre-installed with a particular .NET version, you cannot install a previous 4.x version on the same machine.
-> * If you install a later version, you don't have to first uninstall the previous version.
+[!INCLUDE[net-framework-4-versions](../../../includes/net-framework-4x-versions.md)]
 
 For download information and links, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).
 

@@ -125,7 +125,7 @@ a read-write property with no validation. By writing the code you want in the
 
 You can write code in the `set` accessor to ensure that the values represented
 by a property are always valid. For example, suppose one rule for the `Person`
-class is that the name cannot be blank, or white space. You would write that as
+class is that the name cannot be blank or white space. You would write that as
 follows:
 
 ```csharp
@@ -146,7 +146,7 @@ public class Person
 }
 ```
 
-The example above enforces the rule that the first name must not be blank,
+The example above enforces the rule that the first name must not be blank
 or white space. If a developer writes
 
 ```csharp

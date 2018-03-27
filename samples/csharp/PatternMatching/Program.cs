@@ -45,7 +45,7 @@ namespace PatternMatching
                     return new Circle(12);
 
                 case var o when (o?.Trim()?.Length ?? 0) == 0:
-                    // whitespace
+                    // white space
                     return null;
                 default:
                     return "invalid shape description";

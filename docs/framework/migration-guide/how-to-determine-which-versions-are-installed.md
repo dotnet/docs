@@ -19,7 +19,7 @@ manager: "wpickett"
 ms.workload: 
   - "dotnet"
 ---
-# How to: Determine Which .NET Framework versions are installed
+# How to: Determine which .NET Framework versions are installed
 
 Users can install and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer. Note that the .NET Framework consists of two main components, which are versioned separately:  
   

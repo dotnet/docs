@@ -13,79 +13,9 @@
           "**/includes/**",
           "***/contributing.md"
         ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "src": "docs",
-        "dest": ".",
-        "exclude": [
-          "api/overwrites/**",
-          "samples/**/*.*",
-          "**/includes/**",
-          "***/contributing.md"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "src": "_csharplang/spec",
-        "dest": "csharp/language-reference/language-specification",
-        "exclude": [
-          "README.md",
-          "LICENSE.md",
-          "**/includes/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "src": "_vblang/spec",
-        "dest": "visual-basic/reference/language-specification",
-        "exclude": [
-          "README.md",
-          "LICENSE.md",
-          "**/includes/**"
-        ]
-      },
-      {
-        "files": [
-          "core/**/*.md",
-          "core/**/*.yml"
-        ]
-      },
-      {
-        "files": [
-          "index.md"
-        ]
-      },
-      {
-        "files": "toc.yml",
-        "dest": "breadcrumb"
       }
     ],
     "resource": [
-      {
-        "files": [
-          "images/**",
-          "**/*.png",
-          "**/*.svg",
-          "**/*.jpg",
-          "**/*.gif",
-          "**/*.bmp"
-        ],
-        "src": "docs",
-        "dest": ".",
-        "exclude": [
-          "**/obj/**",
-          "samples/**/*.*",
-          "_themes/DocPacker/**"
-        ]
-      },
       {
         "files": [
           "**/*.png",
@@ -118,46 +48,26 @@
       "manager": "wpickett",
       "searchScope": [".NET"],
       "uhfHeaderId": "MSDocsHeader-DotNet",
-      "apiPlatform": "dotnet"
+      "apiPlatform": "dotnet",
+      "_op_documentIdPathDepotMapping": {
+        "api/": {
+          "depot_name": "VS.core-docs"
+        }
+      }
     },
     "fileMetadata": {
       "ms.prod": {
-        "api/**.yml": ".net",
-        "_csharplang/spec/*.md": ".net",
-        "_vblang/spec/*.md": ".net"
+        "api/**.yml": ".net"
       },
       "ms.topic": {
-        "api/**.yml": "managed-reference",
-        "_csharplang/spec/*.md": "language-reference",
-        "_vblang/spec/*.md": "language-reference"
+        "api/**.yml": "managed-reference"
      },
       "langs": {
         "api/**.yml": ["csharp", "vb", "cpp"],
-        "api/System.Convert.yml": ["csharp", "vb", "cpp"]        
-      },
-      "dev_langs": {
-        "docs/core/**/**.md": ["csharp"],
-        "docs/csharp/**/**.md": ["csharp"],
-        "docs/framework/**/**.md": ["csharp"],
-        "docs/fsharp/**/**.md": ["fsharp"],
-        "docs/standard/**/**.md": ["csharp"],
-        "docs/visual-basic/**/**.md": ["vb"]
+        "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        
       },
       "ROBOTS": {
         "api/**.yml": "NOINDEX, NOFOLLOW"
-      },
-      "ms.author": {
-        "_csharplang/spec/*.md": "wiwagn",
-        "_vblang/spec/*.md": "wiwagn"
-      },
-      "ms.technology": {
-        "_csharplang/spec/*.md": "devlang-csharp",
-        "csharp/quick-starts/**": "csharp-interactive",
-        "_vblang/spec/*.md": "devlang-visual-basic"
-      },
-      "ms.date": {
-        "_csharplang/spec/*.md": "07/01/2017",
-        "_vblang/spec/*.md": "07/21/2017"
       }
     },
     "dest": "_site",
@@ -166,7 +76,7 @@
     ],
     "xref": [
       "_zip/office15.zip",
-      "_zip/missingapi.yml"
+      "_zip/missingapi.yml",
     ],
     "lruSize": 0
   }

@@ -1,53 +1,19 @@
 {
-  "need_generate_intellisense": false,
-  "need_preview_pull_request": true,
-  "need_pr_comments": false,
-  "need_generate_pdf_url_template": true,
-  "git_repository_branch_open_to_public_contributors": "master",
-  "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf",
-      "Intellisense"
-    ],
-    "serverless-ebook": [
-      "Publish",
-      "Pdf"
-    ],    
-    "ai-ebook": [
-      "Publish",
-      "Pdf"
-    ],    
-    "master": [
-      "Publish",
-      "Pdf"
-    ],
-    "CITest": [
-      "Publish",
-      "Pdf"
-    ]
-  },
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
   "docsets_to_publish": [
     {
-      "docset_name": "core-docs",
+      "docset_name": "dotnet-api-docs",
       "build_source_folder": ".",
       "build_output_subfolder": ".",
       "locale": "en-us",
-      "xref_query_tags": ["/uwp/api"],
       "monikers": [
-        "netframework-4.5.1",
+      	"netframework-4.5.1",
         "netframework-4.5.2",
         "netframework-4.5",
         "netframework-4.6",
         "netframework-4.6.1",
         "netframework-4.6.2",
         "netframework-4.7",
-        "netframework-4.7.1",
+		"netframework-4.7.1",					 
         "netcore-1.0",
         "netcore-1.1",
         "netcore-2.0",
@@ -86,7 +52,7 @@
         ]
       },
       "pdf_build_exclude_tocs": [],
-      "ECMA2Yaml": {
+	    "ECMA2Yaml": {
         "SourceXmlFolder": "xml",
         "SourceMetadataFolder": "add\\metadata",
         "OutputYamlFolder": "api",
@@ -97,17 +63,22 @@
       ],
       "DiffFolder": [
         "api"
-      ]
+      ]							 
     }
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "need_pr_comments": false,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
@@ -115,16 +86,40 @@
       "branch": "master"
     },
     {
-      "path_to_root": "_csharplang",
-      "url": "https://github.com/dotnet/csharplang",
-      "branch": "master"
-    },
-    {
-      "path_to_root": "_vblang",
-      "url": "https://github.com/dotnet/vblang",
-      "branch": "master"
+      "path_to_root": "samples",
+      "url": "https://github.com/dotnet/samples",
+      "branch": "master",
+      "branch_mapping": 
+      {
+      	"live": "live"
+      }	  
     }
   ],
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf",
+      "Intellisense"
+    ],
+	"serverless-ebook": [
+      "Publish",
+      "Pdf"
+    ],    
+    "ai-ebook": [
+      "Publish",
+      "Pdf"
+    ],    
+    "master": [
+      "Publish",
+      "Pdf"
+    ],
+    "CITest": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "need_generate_pdf_url_template": true,
+  "need_generate_intellisense": false,
   "dependent_packages": [
     {
       "id": "Microsoft.DocAsCode.ECMA2Yaml",
@@ -147,5 +142,10 @@
       "target_framework": "net45",
       "version": "latest"
     }
-  ]
+  ],
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  }
 }

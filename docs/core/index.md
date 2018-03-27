@@ -71,15 +71,6 @@ By itself, .NET Core includes a single application model -- console apps -- whic
 
 .NET Core is distributed in two main ways, as packages on NuGet.org and as standalone distributions.
 
-### Distributions
-
-You can download .NET Core at the [.NET Core Getting Started](https://www.microsoft.com/net/core) page.
-
-- The *Microsoft .NET Core* distribution includes the CoreCLR runtime, associated libraries, a console application host and the `dotnet` app launcher. It is described by the [`Microsoft.NETCore.App`](https://www.nuget.org/packages/Microsoft.NETCore.App) metapackage.
-- The *Microsoft .NET Core SDK* distribution includes .NET Core and a set of tools for restoring NuGet packages and compiling and building apps. 
-
-Typically, you will first install the .NET Core SDK to get started with .NET Core development. You may choose to install additional .NET Core (perhaps pre-release) builds.
-
 ### Packages
 
 - [.NET Core Packages](packages.md) contain the .NET Core runtime and libraries (reference assemblies and implementations). For example, [System.Net.Http](https://www.nuget.org/packages/System.Net.Http/).

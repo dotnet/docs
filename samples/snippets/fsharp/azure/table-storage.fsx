@@ -97,7 +97,7 @@ let range =
             TableQuery.GenerateFilterCondition(
                 "RowKey", QueryComparisons.LessThan, "M")))
 
-let rangeResult = table.ExecuteQuery(query)
+let rangeResult = table.ExecuteQuery(range)
 
 for customer in rangeResult do 
     printfn "customer: %A %A" customer.RowKey customer.PartitionKey
@@ -132,6 +132,7 @@ with e ->
 //
 
 try
+    let customer = retrieveResult.Result :?> Customer
     customer.PhoneNumber <- "425-555-0104"
     let replaceOp = TableOperation.InsertOrReplace(customer)
     table.Execute(replaceOp) |> ignore

@@ -61,10 +61,6 @@ For Windows Forms and other applications, see [How to: Target a Version of the .
 
 Use the following sections to verify you're not using a specific TLS or SSL version.
 
-## If your app targets .NET Framework 4.7 or later versions
-
-The following sections show how to verify you're not using a specific TLS or SSL version.
-
 ### For HTTP networking
 
 <xref:System.Net.ServicePointManager>, using .NET Framework 4.7 and later versions, defaults to the OS choosing the best security protocol and version. To get the default OS best choice, if possible, don't set a value for the <xref:System.Net.ServicePointManager.SecurityProtocol> property. Otherwise, set it to <xref:System.Net.SecurityProtocolType.SystemDefault>.
@@ -83,7 +79,7 @@ The remainder of this topic is not relevant when targeting .NET Framework 4.7 or
 
 <a name="wcf-tcp-cert"></a>
 
-### For WCF TCP transport using transport security with certificate credentials
+### For WCF using TCP transport security with Certificate Credentials
 
 WCF uses the same networking stack as the rest of the .NET Framework.
 
@@ -101,7 +97,7 @@ If you're using a custom binding:
 
 If you're **not** using a custom binding **and** you're setting your WCF binding using configuration, set the protocol used with the configuration path `system.serviceModel/bindings/netTcpBinding/binding/security/transport:sslProtocols`.
 
-### For WCF Message Security with certificate credentials
+### For WCF Message Security with Certificate Credentials
 
 .NET Framework 4.7 and later versions by default uses the protocol specified in the <xref:System.Net.ServicePointManager.SecurityProtocol> property. When the [AppContextSwitch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` is set to `true`, WCF chooses the best protocol, up to TLS 1.0.
 
@@ -117,7 +113,7 @@ Set the `DontEnableSystemDefaultTlsVersions` `AppContext` switch to `false`. See
 
 You must install the latest OS patches. See [Security updates](#security-updates).
 
-The WCF framework automatically chooses the highest protocol available up to TLS 1.2 unless you explicitly configure a protocol version. For more information, see the preceding section [For WCF TCP transport using transport security with certificate credentials](#wcf-tcp-cert).
+The WCF framework automatically chooses the highest protocol available up to TLS 1.2 unless you explicitly configure a protocol version. For more information, see the preceding section [For WCF using TCP transport security with Certificate Credentials](#wcf-tcp-cert).
 
 ### For .NET Framework 3.5 - 4.5.1 and not WCF
 

@@ -1,6 +1,6 @@
 ---
 title: "Visual Basic"
-ms.date: 07/20/2015
+ms.date: 03/28/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"

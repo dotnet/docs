@@ -79,7 +79,7 @@ The remainder of this topic is not relevant when targeting .NET Framework 4.7 or
 
 <a name="wcf-tcp-cert"></a>
 
-### For WCF using TCP transport security with Certificate Credentials
+### For WCF using TCP transport security with certificate credentials
 
 WCF uses the same networking stack as the rest of the .NET Framework.
 
@@ -97,7 +97,7 @@ If you're using a custom binding:
 
 If you're **not** using a custom binding **and** you're setting your WCF binding using configuration, set the protocol used with the configuration path `system.serviceModel/bindings/netTcpBinding/binding/security/transport:sslProtocols`.
 
-### For WCF Message Security with Certificate Credentials
+### For WCF Message Security with certificate credentials
 
 .NET Framework 4.7 and later versions by default uses the protocol specified in the <xref:System.Net.ServicePointManager.SecurityProtocol> property. When the [AppContextSwitch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` is set to `true`, WCF chooses the best protocol, up to TLS 1.0.
 
@@ -109,11 +109,11 @@ Audit your code to verify you're not setting a specific TLS or SSL version using
 
 Set the `DontEnableSystemDefaultTlsVersions` `AppContext` switch to `false`. See [Configuring security via AppContext switches](#configuring-security-via-appcontext-switches).
 
-### For WCF using .NET Framework 4.6 - 4.6.2 using TCP transport security with Certificate Credentials
+### For WCF using .NET Framework 4.6 - 4.6.2 using TCP transport security with certificate credentials
 
 You must install the latest OS patches. See [Security updates](#security-updates).
 
-The WCF framework automatically chooses the highest protocol available up to TLS 1.2 unless you explicitly configure a protocol version. For more information, see the preceding section [For WCF using TCP transport security with Certificate Credentials](#wcf-tcp-cert).
+The WCF framework automatically chooses the highest protocol available up to TLS 1.2 unless you explicitly configure a protocol version. For more information, see the preceding section [For WCF using TCP transport security with certificate credentials](#wcf-tcp-cert).
 
 ### For .NET Framework 3.5 - 4.5.1 and not WCF
 
@@ -129,7 +129,7 @@ If you are running on .NET Framework 3.5, you need to install a hot patch so tha
 | [KB3154520](https://support.microsoft.com/kb/3154520) | Reliability Rollup HR-1605 -Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
 | [KB3156421](https://support.microsoft.com/kb/3156421) | 1605 Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows |
 
-### For WCF using .NET Framework 3.5 - 4.5.2 using TCP transport security with Certificate Credentials
+### For WCF using .NET Framework 3.5 - 4.5.2 using TCP transport security with certificate credentials
 
 These versions of the WCF framework are hardcoded to use values SSL 3.0 and TLS 1.0. These values cannot be changed. You must update and retarget to NET Framework 4.6 or later versions to use TLS 1.1 and 1.2.
 

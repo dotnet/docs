@@ -1,7 +1,0 @@
-﻿<Page
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    x:Class="SDKSample.FirstPage"
-    WindowTitle="FirstPage">
-  <Hyperlink NavigateUri="SecondPage.xaml">To Second Page</Hyperlink>
-</Page>

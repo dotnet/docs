@@ -1,9 +1,0 @@
-<DockPanel
-  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
->
-<DockPanel.Resources>
-  <SolidColorBrush x:Key="MyBrush" Color="Gold"/>
-</DockPanel.Resources>
-<Button Background="{DynamicResource MyBrush}" Content="I am gold" />
-</DockPanel>

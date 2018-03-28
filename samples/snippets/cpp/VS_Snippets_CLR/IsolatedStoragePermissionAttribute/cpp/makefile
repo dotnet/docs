@@ -1,2 +1,0 @@
-IsolatedStoragePermissionAttribute.exe: IsolatedStoragePermissionAttribute.cpp
-   cl /clr:pure /FeIsolatedStoragePermissionAttribute.exe IsolatedStoragePermissionAttribute.cpp

@@ -1,1 +1,0 @@
-nmake /S /nologo /I /f makefile PolicyStatement.exe

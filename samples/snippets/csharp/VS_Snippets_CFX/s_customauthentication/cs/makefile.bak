@@ -1,7 +1,0 @@
-all: instance1.exe instance2.exe
- 
-instance1.exe: instance.cs Snippets.cs
- csc /t:exe /out:instance1.exe instance.cs Snippets.cs /r:System.ServiceModel.dll,System.IdentityModel.dll,System.Security.dll /lib:c:\whidbey\assemblies
- 
-instance2.exe: instance.cs
-  csc /t:exe /out:instance2.exe instance.cs /r:System.ServiceModel.dll,System.IdentityModel.dll,System.Security.dll /lib:c:\whidbey\assemblies

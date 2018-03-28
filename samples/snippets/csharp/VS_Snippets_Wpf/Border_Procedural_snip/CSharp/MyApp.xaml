@@ -1,7 +1,0 @@
-<?Mapping XmlNamespace="SampleControls" ClrNamespace="SDKSample" ?>
-<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-  x:Class="SDKSample.MyApp"
-  xmlns:SampleControls="SampleControls"
-  Startup="myAppStartup">
-</Application>

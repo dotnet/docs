@@ -1,3 +1,0 @@
-<%@ Control inherits="MyControl" %>
-
-

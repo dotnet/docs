@@ -1,1 +1,0 @@
-exception MyError of string

@@ -1,5 +1,0 @@
-CMFCRibbonPanel* pPanel3 = pCategory->AddPanel(_T("Check Boxes"));
-
-pPanel3->Add(new CMFCRibbonCheckBox(ID_RIBBON_BTN_7, _T("Check Box 1")));
-pPanel3->Add(new CMFCRibbonCheckBox(ID_RIBBON_BTN_8, _T("Check Box 2")));
-pPanel3->Add(new CMFCRibbonCheckBox(ID_RIBBON_BTN_9, _T("Check Box 3")));

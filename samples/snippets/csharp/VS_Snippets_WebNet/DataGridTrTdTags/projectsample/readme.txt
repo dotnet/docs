@@ -1,1 +1,0 @@
-For a full VS solution with CS and VB projects that include this sample, see the folder see the sample "Classic DataGrid Example 2."

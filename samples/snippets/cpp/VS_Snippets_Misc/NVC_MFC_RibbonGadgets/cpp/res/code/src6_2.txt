@@ -1,9 +1,0 @@
-CMFCRibbonPanel* pPanel2 = pCategory->AddPanel(_T("Label"));
-
-pPanel2->Add(new CMFCRibbonLabel(_T("Label 1")));
-pPanel2->Add(new CMFCRibbonLabel(_T("Label 2")));
-pPanel2->Add(new CMFCRibbonLabel(_T("Label 3")));
-
-pPanel2->Add(new CMFCRibbonSeparator());
-
-pPanel2->Add(new CMFCRibbonLabel(_T("This is a multi-line label"), TRUE));

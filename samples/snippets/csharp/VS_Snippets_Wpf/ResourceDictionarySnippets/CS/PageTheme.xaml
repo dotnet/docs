@@ -1,8 +1,0 @@
-<ResourceDictionary 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:ResourceDictionarySnippets;assembly=ResourceDictionarySnippets" >
-  <Style TargetType="{x:Type local:HomePage}">
-    <Setter Property="Background" Value="Blue" />
-  </Style>
-</ResourceDictionary>

@@ -118,6 +118,29 @@ Your topic will also contain links to the sample. Link directly to the sample's 
 
 For more information, see the [Samples Readme](https://github.com/dotnet/docs/blob/master/samples/README.md).
 
+## The C# interactive experience #
+
+Short code samples in C# can use the `csharp-interactive` language tag to
+specify a C# sample that run in the browswer. When these sample are built, the code sample
+displays as a code window and an output window. The output window displays any output from
+executing the interactive code once the user has run the sample. 
+
+The C# interactive experience changes how we work with samples. Visitors can run the sample
+to see the results by running the sample. A number of factors help determine if the sample
+or corresponding text should include information about the output.
+
+### When to display the expected output without running the sample
+
+- Articles intended for beginners should provide output so that readers can compare the output of their work with the expected answer.
+- Samples where the output is integral to the topic should display that output. For example, articles on text formatting should show  the text format without running the sample.
+- When both the sample and the expected output is short, consider showing the output. It saves a bit of time.
+- Articles explaining how current culture or invariant culture affect output should explain the expected output. The interactive REPL runs on a Linux based host. Culture-specific output is different for different OSes and machines. The article should explain the output in Windows, Linux, and Mac systems.
+
+### When to exclude expected output from the sample 
+
+- Articles where the sample generates a larger output should not include that in comments. It obscures the code once the sample has been run.
+- Articles where the sample demonstrates a topic, but the output isn't integral to understanding. For example, code that runs a LINQ query to explain query syntax and then display every item in the output collection.
+
 ## DOs and DON'Ts
 
 The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:

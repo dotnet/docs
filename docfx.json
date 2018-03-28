@@ -4,14 +4,7 @@
     "content": [
       {
         "files": [
-          "api/**/*.yml",
           "api/**/*.md"
-        ],
-        "exclude": [
-          "api/overwrites/**",
-          "samples/**/*.*",
-          "**/includes/**",
-          "***/contributing.md"
         ]
       },
       {
@@ -85,28 +78,8 @@
           "samples/**/*.*",
           "_themes/DocPacker/**"
         ]
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.svg",
-          "**/*.jpg",
-          "**/*.gif",
-          "**/*.bmp"
-        ],
-        "src": "add",
-        "dest": ".",
-        "exclude": [
-          "metadata/**/*.*"
-        ]
       }
     ],
-    "overwrite": {
-        "files": [
-          "api/overwrites/**/*.md",
-          "apidoc/*.md"
-        ]
-      },
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/breadcrumb/toc.json",
@@ -122,19 +95,13 @@
     },
     "fileMetadata": {
       "ms.prod": {
-        "api/**.yml": ".net",
         "_csharplang/spec/*.md": ".net",
         "_vblang/spec/*.md": ".net"
       },
       "ms.topic": {
-        "api/**.yml": "managed-reference",
         "_csharplang/spec/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference"
      },
-      "langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"],
-        "api/System.Convert.yml": ["csharp", "vb", "cpp"]        
-      },
       "dev_langs": {
         "docs/core/**/**.md": ["csharp"],
         "docs/csharp/**/**.md": ["csharp"],
@@ -142,9 +109,6 @@
         "docs/fsharp/**/**.md": ["fsharp"],
         "docs/standard/**/**.md": ["csharp"],
         "docs/visual-basic/**/**.md": ["vb"]
-      },
-      "ROBOTS": {
-        "api/**.yml": "NOINDEX, NOFOLLOW"
       },
       "ms.author": {
         "_csharplang/spec/*.md": "wiwagn",

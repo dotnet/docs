@@ -218,8 +218,8 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
         <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the certificate collection used when authenticating using client certificates.</summary>
-        <value>A collection of X.509 certificates to use when presenting client certificates to the server.</value>
+        <summary>Gets the collection of security certificates that are associated requests to the server.</summary>
+        <value>The <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" /> that is presented to the server when performing certificate based client authentication.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

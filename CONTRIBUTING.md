@@ -121,25 +121,27 @@ For more information, see the [Samples Readme](https://github.com/dotnet/docs/bl
 ## The C# interactive experience #
 
 Short code samples in C# can use the `csharp-interactive` language tag to
-specify a C# sample that run in the browswer. When these sample are built, the code sample
-displays as a code window and an output window. The output window displays any output from
+specify a C# sample that runs in the browser. (Inline code samples use the
+`csharp-interactive` tag, for snippets included from source, use the
+`code-csharp-interactive` tag.) These code samples
+display a code window and an output window in the article. The output window displays any output from
 executing the interactive code once the user has run the sample. 
 
 The C# interactive experience changes how we work with samples. Visitors can run the sample
-to see the results by running the sample. A number of factors help determine if the sample
+to see the results. A number of factors help determine if the sample
 or corresponding text should include information about the output.
 
 ### When to display the expected output without running the sample
 
 - Articles intended for beginners should provide output so that readers can compare the output of their work with the expected answer.
-- Samples where the output is integral to the topic should display that output. For example, articles on text formatting should show  the text format without running the sample.
+- Samples where the output is integral to the topic should display that output. For example, articles on formatted text should show the text format without running the sample.
 - When both the sample and the expected output is short, consider showing the output. It saves a bit of time.
-- Articles explaining how current culture or invariant culture affect output should explain the expected output. The interactive REPL runs on a Linux based host. Culture-specific output is different for different OSes and machines. The article should explain the output in Windows, Linux, and Mac systems.
+- Articles explaining how current culture or invariant culture affect output should explain the expected output. The interactive REPL (Read Evaluate Print Loop) runs on a Linux-based host. The default culture, and the invariant culture produce different output on different operating systems and machines. The article should explain the output in Windows, Linux, and Mac systems.
 
 ### When to exclude expected output from the sample 
 
 - Articles where the sample generates a larger output should not include that in comments. It obscures the code once the sample has been run.
-- Articles where the sample demonstrates a topic, but the output isn't integral to understanding. For example, code that runs a LINQ query to explain query syntax and then display every item in the output collection.
+- Articles where the sample demonstrates a topic, but the output isn't integral to understanding it. For example, code that runs a LINQ query to explain query syntax and then display every item in the output collection.
 
 ## DOs and DON'Ts
 

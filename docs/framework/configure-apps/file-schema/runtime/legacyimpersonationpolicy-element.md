@@ -90,8 +90,8 @@ Specifies that the Windows identity does not flow across asynchronous points, re
   
  ASP.NET by default disables the impersonation flow in the aspnet.config file by using the following configuration settings:  
   
-```  
-configuration>  
+``` xml
+<configuration>  
    <runtime>  
       <legacyImpersonationPolicy enabled="true"/>  
       <alwaysFlowImpersonationPolicy enabled="false"/>  

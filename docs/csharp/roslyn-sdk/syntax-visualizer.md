@@ -23,16 +23,17 @@ The **Syntax Visualizer** enables inspection of the syntax tree for the C# or VB
 
 This command opens the Syntax Visualizer as a floating tool window. If you don't have a code editor window open, the display is blank, as shown in the following figure. 
 
-![The Syntax Visualizer tool window](media/syntax-visualizer.png)
+![The Syntax Visualizer tool window](media/syntax-visualizer/syntax-visualizer.png)
 
 Dock this tool window at a convenient location inside Visual Studio, such as the left side. The Visualizer shows information about the current code file.
 
 Create a new project using the **File** > **New Project** command. You can create either a VB or C# project. When Visual Studio opens the main code file for this project, the visualizer displays the syntax tree for it. You can open any existing C# / VB file in this Visual Studio instance, and the visualizer displays that file's syntax tree. If you have multiple code files open inside Visual Studio, the visualizer displays the syntax tree for the currently active code file, (the code file that has keyboard focus.)
 
 # [C#](#tab/csharp)
-![Visualizing a C# syntax tree](media/visualize-csharp.png)
+![Visualizing a C# syntax tree](media/syntax-visualizer/visualize-csharp.png)
 # [Visual Basic](#tab/visual-basic)
-![Visualizing a VB syntax tree](media/visualize-visual-basic.png)
+![Visualizing a VB syntax tree](media/syntax-visualizer/visualize-visual-basic.png)
+
 ---
 
 As shown in the preceding images, the visualizer tool window displays the syntax tree at the top and a property grid at the bottom. The property grid displays the properties of the item that is currently selected in the tree, including the .NET *Type* and the *Kind* (SyntaxKind) of the item.
@@ -55,13 +56,18 @@ Pause typing once you have typed `Console.`. The tree has some items colored in 
 
 Right click on any item in the tree and click on **View Directed Syntax Graph**. 
 
+# [C#](#tab/csharp)
+
 The visualizer displays a graphical representation of the subtree rooted at the selected item. Try these steps for the **MethodDeclaration** node corresponding to the `Main()` method in the C# example. The visualizer displays a syntax graph that looks as follows:
 
-![Viewing a C# syntax graph](media/csharp-syntax-graph.png)
+![Viewing a C# syntax graph](media/syntax-visualizer/csharp-syntax-graph.png)
+# [Visual Basic](#tab/visual-basic)
 
 Try the same for the **SubBlock** node corresponding to the `Main()` method in the preceding VB example. The visualizer displays a syntax graph that looks as follows:
 
-![Viewing a VB syntax graph](media/visual-basic-syntax-graph.png)
+![Viewing a VB syntax graph](media/syntax-visualizer/visual-basic-syntax-graph.png)
+
+---
 
 The syntax graph viewer has an option to display a legend its coloring scheme. You can also hover over individual items in the syntax graph with the mouse to view the properties corresponding to that item.
 
@@ -69,7 +75,7 @@ You can view syntax graphs for different items in the tree repeatedly and the gr
 
 Here is the docking layout to use with the visualizer tool window and the syntax graph window:
 
-![One docking layout for the visualizer and syntax graph window](media/docking-layout.png)
+![One docking layout for the visualizer and syntax graph window](media/syntax-visualizer/docking-layout.png)
 
 Another option is to put the syntax graph window on a second monitor, in a dual monitor setup.
 
@@ -79,19 +85,19 @@ The Syntax Visualizer enables rudimentary inspection of symbols and semantic inf
 
 The property grid in the visualizer updates as shown in the following figure: The symbol for the expression is a **SynthesizedIntrinsicOperatorSymbol** with **Kind = Method**.
 
-![Symbol properties](media/symbol-properties.png)
+![Symbol properties](media/syntax-visualizer/symbol-properties.png)
 
 Try **View TypeSymbol (if any)** for the same **AddExpression** node. The property grid in the visualizer updates as shown in the following figure, indicating that the type of the selected expression is `Int32`.
 
-![TypeSymbol properties](media/type-symbol-properties.png)
+![TypeSymbol properties](media/syntax-visualizer/type-symbol-properties.png)
 
 Try **View Converted TypeSymbol (if any)** for the same **AddExpression** node. The property grid updates indicating that although the type of the expression is `Int32`, the converted type of the expression is `Double` as shown in the following figure. This node includes converted type symbol information because the `Int32` expression occurs in a context where it must be converted to a `Double`. This conversion satisfies the `Double` type specified for the variable `x` on the left-hand side of the assignment operator.
 
-![Converted TypeSymbol properties](media/converted-type-symbol-properties.png)
+![Converted TypeSymbol properties](media/syntax-visualizer/converted-type-symbol-properties.png)
 
 Finally, try **View Constant Value (if any)** for the same **AddExpression** node. The property grid shows that the value of the expression is a compile time constant with value `2`.
 
-![A constant value](media/constant-value.png)
+![A constant value](media/syntax-visualizer/constant-value.png)
 
 The preceding example can also be replicated in VB. Type `Dim x As Double = 1 + 1` in a VB file. Select the expression `1 + 1` in the code editor window. The visualizer highlights the corresponding **AddExpression** node in the visualizer. Repeat the preceding steps for this **AddExpression** and you should see identical results.
 
@@ -109,15 +115,15 @@ End Module
 
 This code introduces an alias named `C` that maps to the type `System.Console` at the top of the file and uses this alias inside `Main()`. Select the use of this alias, the `C` in `C.WriteLine()`, inside the `Main()` method. The visualizer selects the corresponding **IdentifierName** node in the visualizer. Right-click this node and click on **View Symbol (if any)**. The property grid indicates that this identifier is bound to the type `System.Console` as shown in the following figure:
 
-![Symbol properties](media/symbol-visual-basic.png)
+![Symbol properties](media/syntax-visualizer/symbol-visual-basic.png)
 
 Try **View AliasSymbol (if any)** for the same **IdentifierName** node. The property grid indicates the identifier is an alias with name `C` that is bound to the `System.Console` target. In other words, the property grid provides information regarding the **AliasSymbol** corresponding to the identifier `C`.
 
-![AliasSymbol properties](media/alias-symbol.png)
+![AliasSymbol properties](media/syntax-visualizer/alias-symbol.png)
 
 Inspect the symbol corresponding to any declared type, method, property. Select the corresponding node in the visualizer and click on **View Symbol (if any)**. Select the method `Sub Main()`, including the body of the method. Click on **View Symbol (if any)** for the corresponding **SubBlock** node in the visualizer. The property grid shows the **MethodSymbol** for this **SubBlock** has name `Main` with return type `Void`.
 
-![Viewing symbol for a method declaration](media/method-symbol.png)
+![Viewing symbol for a method declaration](media/syntax-visualizer/method-symbol.png)
 
 The above VB examples can be easily replicated in C#. Type `using C = System.Console;` in place of `Imports C = System.Console` for the alias. The preceding steps in C# yield identical results in the visualizer window.
 

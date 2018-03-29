@@ -70,7 +70,7 @@ You can examine the nodes in a syntax tree in two ways. You can traverse the tre
 
 ### Manual traversal
 
-You can see the finished code for this sample in [our GitHub repository](https://github.com/dotnet/samples/tree/master/samples/csharp/roslyn-sdk/SyntaxQuickStart).
+You can see the finished code for this sample in [our GitHub repository](https://github.com/dotnet/samples/tree/master/csharp/roslyn-sdk/SyntaxQuickStart).
 
 > [!NOTE]
 > The Syntax Tree types use inheritance to describe the different syntax elements that are valid at different locations in the program. Using these APIs often means casting properties or collection members to specific derived types. In the following examples, the assignment and the casts are separate statements, using explicitly typed variables. You can read the code to see the return types of the API and the runtime type of the objects returned. In practice, it's more common to use implicitly typed variables and rely on API names to describe the type of objects being examined.
@@ -160,7 +160,7 @@ This example implements a <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker
 
 Create a new C# **Stand-Alone Code Analysis Tool** project; name it "**SyntaxWalker**."
 
-You can see the finished code for this sample in [our GitHub repository](https://github.com/dotnet/samples/tree/master/samples/csharp/roslyn-sdk/SyntaxQuickStart). The sample on GitHub contains both projects described in this tutorial.
+You can see the finished code for this sample in [our GitHub repository](https://github.com/dotnet/samples/tree/master/csharp/roslyn-sdk/SyntaxQuickStart). The sample on GitHub contains both projects described in this tutorial.
 
 As in the previous sample, you can define a string constant to hold the text of the program you're going to analyze:
 

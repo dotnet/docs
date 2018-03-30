@@ -6,14 +6,14 @@
       "build_output_subfolder": ".",
       "locale": "en-us",
       "monikers": [
-      	"netframework-4.5.1",
+        "netframework-4.5.1",
         "netframework-4.5.2",
         "netframework-4.5",
         "netframework-4.6",
         "netframework-4.6.1",
         "netframework-4.6.2",
         "netframework-4.7",
-		"netframework-4.7.1",					 
+        "netframework-4.7.1",
         "netcore-1.0",
         "netcore-1.1",
         "netcore-2.0",
@@ -29,6 +29,7 @@
         "xamarinandroid-7.1",
         "xamarinmac-3.0"
       ],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -38,6 +39,8 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
+      "base_path": "dotnet",
+      "site_name": "Docs",
       "customized_template_paths": [
         "_dependentPackages/memberpage.plugins/content"
       ],
@@ -51,8 +54,7 @@
           "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
         ]
       },
-      "pdf_build_exclude_tocs": [],
-	    "ECMA2Yaml": {
+      "ECMA2Yaml": {
         "SourceXmlFolder": "xml",
         "SourceMetadataFolder": "add\\metadata",
         "OutputYamlFolder": "api",
@@ -63,7 +65,8 @@
       ],
       "DiffFolder": [
         "api"
-      ]							 
+      ],
+      "pdf_build_exclude_tocs": []
     }
   ],
   "notification_subscribers": [],
@@ -83,16 +86,16 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "samples",
       "url": "https://github.com/dotnet/samples",
       "branch": "master",
-      "branch_mapping": 
-      {
-      	"live": "live"
-      }	  
+      "branch_mapping": {
+        "live": "live"
+      }
     }
   ],
   "branch_target_mapping": {
@@ -101,14 +104,14 @@
       "Pdf",
       "Intellisense"
     ],
-	"serverless-ebook": [
+    "serverless-ebook": [
       "Publish",
       "Pdf"
-    ],    
+    ],
     "ai-ebook": [
       "Publish",
       "Pdf"
-    ],    
+    ],
     "master": [
       "Publish",
       "Pdf"
@@ -119,6 +122,12 @@
     ]
   },
   "need_generate_pdf_url_template": true,
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "dependent_packages": [
     {
@@ -142,10 +151,5 @@
       "target_framework": "net45",
       "version": "latest"
     }
-  ],
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  }
+  ]
 }

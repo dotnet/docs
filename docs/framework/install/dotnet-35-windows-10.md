@@ -3,7 +3,7 @@ title: Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
 description: Learn how to install the .NET Framework 3.5 on Windows 10, Windows 8.1 and Windows 8.
 author: rlander
 ms.author: mairaw
-ms.date: 03/28/2018
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: .net-framework
 ms.workload: 
@@ -21,7 +21,7 @@ You may see the following configuration dialog if you try to run an app that req
 
 ### Why am I getting this pop-up?
 
-The .NET Framework is a development framework created by Microsoft and used by many companies to develop their apps. Different versions of the .NET Framework already come pre-installed in your Windows machine. When you try to run an app that was developed using version 3.5 of the .NET Framework and you don't have it installed on your machine, you are prompted to do so.
+The .NET Framework is created by Microsoft and provides an environment for running applications. There are different versions available and your Windows computer already comes with a specific version pre-installed. Many companies develop their apps to run using the .NET Framework and these apps target a specific version. If you see this pop-up, you're trying to run an application that requires the .NET Framework version 3.5, but that version is not installed on your system.
 
 ## Enable the .NET Framework 3.5 in Control Panel
 

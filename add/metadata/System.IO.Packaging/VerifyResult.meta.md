@@ -1,8 +1,0 @@
----
-uid: System.IO.Packaging.VerifyResult
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
----

@@ -106,7 +106,7 @@ let base1 = d1 :> Base1
 with
 
 ```fsharp
-base1 = upcast d1
+let base1 = upcast d1
 ```
 
 In the previous code, the argument type and return types are `Derived1` and `Base1`, respectively.

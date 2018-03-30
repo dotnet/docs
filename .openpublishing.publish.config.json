@@ -101,7 +101,10 @@
     {
       "path_to_root": "samples",
       "url": "https://github.com/dotnet/samples",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {
+        "live": "live"
+      }
     }
   ]
 }

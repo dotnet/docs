@@ -31,7 +31,7 @@ The C# language provides
 features for both these scenarios. This article provides an overview
 of those features.
 
-This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also [view or download the completed sample](https://github.com/dotnet/docs/blob/master/samples/csharp/iterators) for this topic. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also [view or download the completed sample](https://github.com/dotnet/samples/blob/master/csharp/iterators) for this topic. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Iterating with foreach
 

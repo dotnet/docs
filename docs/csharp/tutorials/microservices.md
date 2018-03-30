@@ -125,7 +125,7 @@ And once you build the application, you run it from the command line:
 dotnet run
 ```
 
-The default configuration listens to http://localhost:5000. You can open a
+The default configuration listens to `http://localhost:5000`. You can open a
 browser and navigate to that page and see a "Hello World!" message.
 
 ### Anatomy of an ASP.NET Core application

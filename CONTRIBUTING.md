@@ -116,7 +116,7 @@ with `http://docs.microsoft.com/dotnet/articles`.
 
 Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
 
-For more information, see the [Samples Readme](https://github.com/dotnet/docs/blob/master/samples/README.md).
+For more information, see the [Samples Readme](https://github.com/dotnet/samples/blob/master/README.md).
 
 ## DOs and DON'Ts
 

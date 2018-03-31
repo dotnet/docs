@@ -523,7 +523,7 @@ Const DisableCngCertificates As String = "Switch.System.ServiceModel.DisableCngC
 AppContext.SetSwitch(disableCngCertificates, False)
 ```
 
- **Better support for multiple daylight saving time adjustment rules by the DataContractJsonSerializer class**
+ **Better support for multiple daylight saving time adjustment rules by the DataContractJsonSerializer class**   
  Customers can use an application configuration setting to determine whether the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> class supports multiple adjustment rules for a single time zone. This is an opt-in feature. To enable it, add the following setting to your app.config file:
 
 ```xml
@@ -532,37 +532,11 @@ AppContext.SetSwitch(disableCngCertificates, False)
 </runtime>
 ```
 
-When this feature is enabled, a <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> object  uses the <xref:System.TimeZoneInfo> type instead of the <xref:System.TimeZone> type to deserialize date and time data. <xref:System.TimeZoneInfo> supports multiple adjustment rules, which makes it possible to work with historic time zone data;   <xref:System.TimeZone> does not.
+When this feature is enabled, a <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> object uses the <xref:System.TimeZoneInfo> type instead of the <xref:System.TimeZone> type to deserialize date and time data. <xref:System.TimeZoneInfo> supports multiple adjustment rules, which makes it possible to work with historic time zone data;   <xref:System.TimeZone> does not.
 
 For more information on the <xref:System.TimeZoneInfo> structure and time zone adjustments, see [Time Zone Overview](../../../docs/standard/datetime/time-zone-overview.md).
 
-**Support for preserving a UTC time when serializing and deserializing with the XMLSerializer class**
-Ordinarily, when the <xref:System.Xml.Serialization.XmlSerializer> class is used to serialize a UTC <xref:System.DateTime> value, it creates a serialized time string that preserves the date and time but assumes the time is local.  For example, if you instantiate a UTC date and time by calling the following code:
-
-```csharp
-DateTime utc = new DateTime(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc);
-```
-
-```vb
-Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
-```
-
-The result is the serialized time string "03:00:00.0000000-08:00" for a system eight hours behind UTC.  And serialized values are always deserialized as local date and time values.
-
- You can use an application configuration setting to determine whether the <xref:System.Xml.Serialization.XmlSerializer> preserves UTC time zone information when serializing and deserializing <xref:System.DateTime> values:
-
-```xml 
-<runtime>
-     <AppContextSwitchOverrides 
-          value="Switch.System.Runtime.Serialization.DisableSerializeUTCDateTimeToTimeAndDeserializeUTCTimeToUTCDateTime=false" />
-</runtime>
-```
-
-When this feature is enabled, a <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> object  uses the <xref:System.TimeZoneInfo> type instead of the <xref:System.TimeZone> type to deserialize date and time data. <xref:System.TimeZoneInfo> supports multiple adjustment rules, which makes it possible to work with historic time zone data;   <xref:System.TimeZone> does not.
-
-For more information on the <xref:System.TimeZoneInfo> structure and time zone adjustments, see [Time Zone Overview](../../../docs/standard/datetime/time-zone-overview.md).
-
- **NetNamedPipeBinding best match**
+ **NetNamedPipeBinding best match**   
  WCF has a new app setting that can be set on client applications to ensure they always connect to the service listening on the URI that best matches the one that they request. With this app setting set to `false` (the default), it is possible for clients using <xref:System.ServiceModel.NetNamedPipeBinding> to attempt to connect to a service listening on a URI that is a substring of the requested URI.
 
  For example, a client tries to connect to a service listening at `net.pipe://localhost/Service1`, but a different service on that machine running with administrator privilege is listening at `net.pipe://localhost`. With this app setting set to `false`, the client would attempt to connect to the wrong service. After setting the app setting to `true`, the client will always connect to the best matching service.

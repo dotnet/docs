@@ -269,6 +269,7 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |AzCopy|azcopy|
 |C++|cpp|
 |C#|csharp|
+|C# in browser|csharp-interactive]
 |F#|fsharp|
 |Java|java|
 |JavaScript|javascript|
@@ -284,6 +285,8 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |VB|vb|
 |XAML|xaml|
 |XML|xml|
+
+The `csharp-interactive` name specifies the C# language, and the ability to run the samples from the browser. These snippets are compiled and executed in a Docker container, and the results of that program execution are displayed in the user's browser window.
 
 The following are examples of code blocks using the language IDs for C# (\`\`\`csharp), Python (\`\`\`python), and PowerShell (\`\`\`powershell).
 

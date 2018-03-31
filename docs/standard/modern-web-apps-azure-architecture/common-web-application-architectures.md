@@ -10,7 +10,7 @@ ms.workload:
   - "dotnet"
   - "dotnetcore"
 ---
-#Common Web Application Architectures
+# Common Web Application Architectures
 
 > "If you think good architecture is expensive, try bad architecture."  
 > _- Brian Foote and Joseph Yoder_

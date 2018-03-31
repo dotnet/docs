@@ -40,10 +40,6 @@ The following topics are available:
 
    This topic shows you how to create and run a simple Hello World application with Visual Studio Code and .NET Core.
 
-* [Additional Resources for Visual C# Programmers](additional-resources.md)
-
-   Provides links to Web sites and newsgroups that can help you find answers to common problems.
-
 ## Related Sections
 
 * [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  

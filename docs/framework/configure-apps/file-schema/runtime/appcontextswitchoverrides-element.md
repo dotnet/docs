@@ -1,10 +1,8 @@
 ---
 title: "&lt;AppContextSwitchOverrides&gt; Element"
 ms.custom: ""
-ms.date: "01/08/2018"
+ms.date: "03/28/2018"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-bcl"
   - "dotnet-clr"
@@ -16,7 +14,6 @@ helpviewer_keywords:
   - "configuration switches"
   - "configuration"
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -89,6 +86,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Net.`<br/>`DontEnableSystemDefaultTlsVersions`|Disables SystemDefault TLS versions reverting back to a default of Tls12, Tls11, Tls.|.NET Framework 4.7|
 |`Switch.System.Net.`<br/>`DontEnableTlsAlerts`|Disables SslStream TLS server-side Alerts.|.NET Framework 4.7|
 |`Switch.System.Runtime.Serialization.`<br/>`DoNotUseECMAScriptV6EscapeControlCharacter` |Controls whether the [DataContractJsonSerializer](xref:System.Runtime.Serialization.Json.DataContractJsonSerializer) serializes some control characters based on the ECMAScript V6 and V8 standards. For more information, see [Mitigation: Serialization of Control Characters with the DataContractJsonSerializer](Mitigation:%20Serialization%20of%20Control%20Characters%20with%20the%20DataContractJsonSerializer.md)| .NET Framework 4.7 |
+|`Switch.System.Runtime.Serialization.`<br/>`DoNotUseTimeZoneInfo`|Controls whether the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> supports multiple adjustments or only a single adjustment for a time zone. If `true`, it uses the <xref:System.TimeZoneInfo> type to serialize and deserialize date and time data; otherwise, it uses the <xref:System.TimeZone> type, which does not support multiple adjustment rules.|.NET Framework 4.6.2|
 |`Switch.System.Security.ClaimsIdentity.`<br/>`SetActorAsReferenceWhenCopyingClaimsIdentity`|Controls whether the <xref:System.Security.Claims.ClaimsIdentity.%23ctor%28System.Security.Principal.IIdentity%29?displayProperty=nameWithType> constructor sets the  new object's <xref:System.Security.Claims.ClaimsIdentity.Actor%2A?displayProperty=nameWithType> property with an existing object reference. For more information, see [Mitigation: ClaimsIdentity Constructor](~/docs/framework/migration-guide/mitigation-claimsidentity-constructor.md).|.NET Framework 4.6.2|  
 |`Switch.System.Security.Cryptography.`<br/>`AesCryptoServiceProvider.DontCorrectlyResetDecryptor`|Controls whether the attempt to reuse an <xref:System.Security.Cryptography.AesCryptoServiceProvider> decryptor throws a <xref:System.Security.Cryptography.CryptographicException>. For more information, see AesCryptoServiceProvider decryptor provides a reusable transform](~/docs/framework/migration-guide/retargeting/4.6.1-4.6.2.md#aescryptoserviceprovider-decryptor-provides-a-reusable-transform).|.NET Framework 4.6.2|
 |`Switch.System.Security.Cryptography.`<br/>`DoNotAddrOfCspParentWindowHandle`|Controls whether the value of the [CspParameters.ParentWindowHandle](xref:System.Security.Cryptography.CspParameters.ParentWindowHandle) property is an [IntPtr](xref:System.IntPtr) that represents the memory location of a window handle, or whether it is a window handle (an HWND). For more information, see [Mitigation: CspParameters.ParentWindowHandle Expects an HWND](Mitigation:%20CspParameters.ParentWindowHandle%20Expects%20an%20HWND.md). |.NET Framework 4.7|   
@@ -104,6 +102,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.ServiceProcess.`<br/>`DontThrowExceptionsOnStart`|Controls whether exceptions thrown on service startup are propagated to the caller of the <xref:System.ServiceProcess.ServiceBase.Run%2A?displayProperty=nameWithType> method.|.NET Framework 4.7.1|
 |`Switch.System.Windows.Controls.Grid.`<br/>`StarDefinitionsCanExceedAvailableSpace` |Determines whether Windows Presentation Foundation applies an old algorithm (`true`) or a new algorithm (`false`) in allocating space to \*-columns. For more information, see [Mitigation: Grid Control's Space Allocation to Star-columns](Mitigation:%20Grid%20Control's%20Space%20Allocation%20to%20Star-columns.md). |.NET Framework 4.7 |
 |`Switch.System.Windows.Controls.TabControl.`<br/>`SelectionPropertiesCanLagBehindSelectionChangedEvent`|Controls whether a selector or a tab control always updates the value of its selected value property before raising the selection changed event.|.NET Framework 4.7.1|
+|`Switch.System.Windows.DoNotScaleForDpiChanges`|Determines whether DPI changes occur on a per-system (a value of `false`) or per-monitor basis (a value of `true`).|.NET Framework 4.6.2|
 |`Switch.System.Windows.Forms.`<br />`DontSupportReentrantFilterMessage`|Opts out of the code that allows a custom <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage%2A?displayProperty=nameWithType> implementation to safely filter messages without throwing an exception when the <xref:System.Windows.Forms.Application.FilterMessage%2A?displayProperty=nameWithType> method is called. For more information, see [Mitigation: Custom IMessageFilter.PreFilterMessage Implementations](~/docs/framework/migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md).|.NET Framework 4.6.1|  
 |`Switch.System.Windows.Input.Stylus.`<br/>`EnablePointerSupport`|Determines whether an optional `WM_POINTER`-based touch/stylus stack is enabled in WPF applications. For more information, see [Mitigation: Pointer-based Touch and Stylus Support](Mitigation:%20Pointer-based%20Touch%20and%20Stylus%20Support.md) | 
 |`Switch.System.Windows.Media.ImageSourceConverter.`<br/>`OverrideExceptionWithNullReferenceException`|Controls whether a legacy [NullReferenceException](xref:System.NullReferenceException) is thrown instead of the exception that more specifically indicates the cause of the exception (such as a [DirectoryNotFoundException](xref:System.IO.DirectoryNotFoundException) or a [FileNotFoundException](xref:System.IO.FileNotFoundException). It is intended for use by code that depends on handling the [NullReferenceException](xref:System.NullReferenceException). | .NET Framework 4.7 |

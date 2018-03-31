@@ -36,7 +36,7 @@ A document is also a part of the overall immutable solution model. A document re
 
 The following diagram is a representation of how the Workspace relates to the host environment, tools, and how edits are made.
 
-![the relationships between different elements of a workspace containing projects and source files](media/workspace-obj-relations.png)
+![the relationships between different elements of a workspace containing projects and source files](media/work-with-workspace/workspace-obj-relations.png)
 
 ## Summary
 

@@ -1,6 +1,6 @@
 ---
 title: "If...Then...Else Statement (Visual Basic)"
-ms.date: 07/20/2015
+ms.date: 02/02/2018
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

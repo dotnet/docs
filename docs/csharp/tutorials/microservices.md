@@ -30,7 +30,7 @@ Along the way, you'll also see some C# language features:
 * How to process incoming HTTP Requests and generate the HTTP Response
 * How to work with nullable value types
 
-You can [view or download the sample app](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice) for this topic. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+You can [view or download the sample app](https://github.com/dotnet/samples/tree/master/csharp/getting-started/WeatherMicroservice) for this topic. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### Why Docker?
 
@@ -125,7 +125,7 @@ And once you build the application, you run it from the command line:
 dotnet run
 ```
 
-The default configuration listens to http://localhost:5000. You can open a
+The default configuration listens to `http://localhost:5000`. You can open a
 browser and navigate to that page and see a "Hello World!" message.
 
 ### Anatomy of an ASP.NET Core application

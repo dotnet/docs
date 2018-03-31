@@ -352,7 +352,7 @@ is the radius squared multiplied by PI. One hint: .NET contains a constant
 for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. 
 
 You should get an answer between 19 and 20.
-You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/numbers-quickstart/Program.cs#L104-L106)
+You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/numbers-quickstart/Program.cs#L104-L106)
 
 Try some other formulas if you'd like. 
 

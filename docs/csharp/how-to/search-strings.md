@@ -73,7 +73,7 @@ The following code uses regular expressions to validate the format of each strin
 
 This single search pattern matches many valid strings. Regular expressions are better to search for or validate against a pattern, rather than a single text string.
 
-You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings.zip).
+You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/strings.zip).
 
 ## See Also  
 

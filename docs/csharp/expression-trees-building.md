@@ -201,7 +201,7 @@ The code to build the expression tree for the factorial function is quite a bit 
 more complicated, and it's riddled with labels and break statements and other elements
 we'd like to avoid in our everyday coding tasks. 
 
-For this section, I've also updated the visitor code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/docs/tree/master/samples/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+For this section, I've also updated the visitor code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/samples/tree/master/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Examining the APIs
 

@@ -20,7 +20,7 @@ The compiler generates an ID string for each construct in your code that is tagg
   
  The compiler observes the following rules when it generates the ID strings:  
   
--   No whitespace is in the string.  
+-   No white space is in the string.  
   
 -   The first part of the ID string identifies the kind of member being identified, by way of a single character followed by a colon. The following member types are used:  
   

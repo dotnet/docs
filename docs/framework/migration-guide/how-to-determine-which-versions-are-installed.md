@@ -19,7 +19,8 @@ manager: "wpickett"
 ms.workload: 
   - "dotnet"
 ---
-# How to: Determine Which .NET Framework Versions Are Installed
+# How to: Determine which .NET Framework versions are installed
+
 Users can install and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer. Note that the .NET Framework consists of two main components, which are versioned separately:  
   
 -   A set of assemblies, which are collections of types and resources that provide the functionality for your apps. The .NET Framework and assemblies share the same version number.  
@@ -42,7 +43,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
  For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md). For information about installing the .NET Framework, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
   
 <a name="net_a"></a>   
-#### To find .NET Framework versions by viewing the registry (.NET Framework 1-4)  
+## To find .NET Framework versions by viewing the registry (.NET Framework 1-4)  
   
 1.  On the **Start** menu, choose **Run**.  
   
@@ -61,7 +62,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     > The "NET Framework Setup" folder in the registry does not begin with a period.
 
 <a name="net_b"></a> 
-#### To find .NET Framework versions by viewing the registry (.NET Framework 4.5 and later)
+## To find .NET Framework versions by viewing the registry (.NET Framework 4.5 and later)
 
 1. On the **Start** menu, choose **Run**.
 
@@ -97,8 +98,9 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |On Windows 10 Anniversary Update: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
     |On Windows 10 Creators Update: 460798<br/><br/> On all other OS versions: 460805 | .NET Framework 4.7 |
     |On Windows 10 Fall Creators Update: 461308<br/><br/> On all other OS versions: 461310 | .NET Framework 4.7.1 |
+    
 <a name="net_c"></a> 
-#### To find .NET Framework versions by querying the registry in code (.NET Framework 1-4)
+## To find .NET Framework versions by querying the registry in code (.NET Framework 1-4)
 
 - Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the Software\Microsoft\NET Framework Setup\NDP\ subkey under HKEY_LOCAL_MACHINE in the Windows registry.
 
@@ -122,7 +124,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     ```
 
 <a name="net_d"></a> 
-#### To find .NET Framework versions by querying the registry in code (.NET Framework 4.5 and later)
+## To find .NET Framework versions by querying the registry in code (.NET Framework 4.5 and later)
 
 1. The existence of the `Release` DWORD indicates that the .NET Framework 4.5 or later has been installed on a computer. The value of the keyword indicates the installed version. To check this keyword, use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> methods of the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the Software\Microsoft\NET Framework Setup\NDP\v4\Full subkey under HKEY_LOCAL_MACHINE in the Windows registry.
 
@@ -159,7 +161,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     - It checks in order from most recent version to earliest version.
 
 <a name="ps_a"></a> 
-#### To check for a minimum-required .NET Framework version by querying the registry in PowerShell (.NET Framework 4.5 and later)
+## To check for a minimum-required .NET Framework version by querying the registry in PowerShell (.NET Framework 4.5 and later)
 
 - The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed, regardless of Windows OS version (returning `True` if it is and `False` otherwise).
 
@@ -181,7 +183,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |.NET Framework 4.7.1|461308|
     
 <a name="clr_a"></a> 
-#### To find the current runtime version by using the Clrver tool
+## To find the current runtime version by using the Clrver tool
 
 - Use the CLR Version Tool (Clrver.exe) to determine which versions of the common language runtime are installed on a computer.
 
@@ -196,7 +198,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
      For more information about using this tool, see [Clrver.exe (CLR Version Tool)](~/docs/framework/tools/clrver-exe-clr-version-tool.md).
 
 <a name="clr_b"></a> 
-#### To find the current runtime version by querying the Environment class in code
+## To find the current runtime version by querying the Environment class in code
 
 - Query the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to retrieve a <xref:System.Version> object that identifies the version of the runtime that is currently executing the code. You can use the <xref:System.Version.Major%2A?displayProperty=nameWithType> property to get the major release identifier (for example, "4" for version 4.0), the <xref:System.Version.Minor%2A?displayProperty=nameWithType> property to get the minor release identifier (for example, "0" for version 4.0), or the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to get the entire version string (for example, "4.0.30319.18010", as shown in the following code). This property returns a single value that reflects the version of the runtime that is currently executing the code; it does not return assembly versions or other versions of the runtime that may have been installed on the computer.
 
@@ -216,7 +218,8 @@ Users can install and run multiple versions of the .NET Framework on their compu
     Version: 4.0.30319.18010
     ```
 
-## See Also
- [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)  
- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)  
- [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)
+## See also
+
+[How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)  
+[Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)  
+[Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)  

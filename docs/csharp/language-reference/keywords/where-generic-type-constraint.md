@@ -1,6 +1,6 @@
 ---
 title: "where (generic type constraint) (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 03/28/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -28,13 +28,22 @@ public class MyGenericClass<T> where T:IComparable { }
  In addition to interface constraints, a `where` clause can include a base class constraint, which states that a type must have the specified class as a base class (or be that class itself) in order to be used as a type argument for that generic type. If such a constraint is used, it must appear before any other constraints on that type parameter.  
   
  [!code-csharp[csrefKeywordsContextual#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_1.cs)]  
-  
+
+ The `where` clause may also include an `unmanaged` constraint. The unmanaged
+ constraint limits the type parameter to types known as **unmanaged types**.
+ An **unmanaged type** is a type which is not a reference type and doesn't
+ contain reference type fields at any level of nesting. The `unmanaged`
+ constraint makes it easier to write low-level interop code in C#. This constraint
+ enables reusable routines across all unmanaged types. The `unmanaged` constraint
+ cannot be combined with the `class` or `struct` constraint. The `unmanaged` constraint
+ implies the `struct` constraint. 
+ 
  The `where` clause may also include a constructor constraint. It is possible to create an instance of a type parameter using the new operator; however, in order to do so the type parameter must be constrained by the constructor constraint, `new()`. The [new() Constraint](../../../csharp/language-reference/keywords/new-constraint.md) lets the compiler know that any type argument supplied must have an accessible parameterless--or default-- constructor. For example:  
   
  [!code-csharp[csrefKeywordsContextual#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_2.cs)]  
   
- The `new()` constraint appears last in the `where` clause.  
-  
+ The `new()` constraint appears last in the `where` clause.  The `new()` constraint cannot be combined with the `struct` or `unmanaged` constraints. All types satisfying those constraints must have an accessible parameterless constructor, making the `new()` constraint redundant.
+
  With multiple type parameters, use one `where` clause for each type parameter, for example:  
   
  [!code-csharp[csrefKeywordsContextual#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_3.cs)]  

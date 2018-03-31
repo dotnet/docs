@@ -33,7 +33,7 @@ The following web sites provide guidance and can help you find answers to common
 |Term|Definition|
 |----------|----------------|
 |[Code Gallery](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)|Download and share sample applications and other resources with the developer community.|
-|[Visual Basic documentation samples](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
+|[Visual Basic documentation samples](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
 
 ### Forums
 

@@ -60,7 +60,7 @@ The following example illustrates the use of the <xref:System.DateTime.Parse%2A?
 > All the C# samples in this article run in your browser. Press the **Run** button to see the output. You can also edit them to experiment yourself.
 
 > [!NOTE]
-> These examples are available in the GitHub docs repo for both [C#](https://github.com/dotnet/docs/samples/tree/master/snippets/csharp/how-to/conversions) and [VB](https://github.com/dotnet/docs/samples/tree/master/snippets/visualbasic/how-to/conversions). Or you can download the project as a zipfile for [C#](https://github.com/dotnet/docs/samples/tree/master/snippets/csharp/how-to/conversions.zip) or [VB](https://github.com/dotnet/docs/samples/tree/master/snippets/visualbasic/how-to/conversions.zip).
+> These examples are available in the GitHub docs repo for both [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/conversions) and [VB](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/how-to/conversions). Or you can download the project as a zipfile for [C#](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/conversions.zip) or [VB](https://github.com/dotnet/samples/raw/master/snippets/visualbasic/how-to/conversions.zip).
 
 [!code-csharp-interactive[Parsing.DateAndTime#1](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#1)]
 [!code-vb[Parsing.DateAndTime#1](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#1)]

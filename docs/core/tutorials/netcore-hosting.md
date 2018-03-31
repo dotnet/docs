@@ -31,7 +31,7 @@ This tutorial and its associated sample build a Windows host; see the notes at t
 
 ## Creating the host
 
-A [sample host](https://github.com/dotnet/docs/tree/master/samples/core/hosting) demonstrating the steps outlined in this article is available in the dotnet/docs GitHub repository. Comments in the sample's *host.cpp* file clearly associate the numbered steps from this tutorial with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+A [sample host](https://github.com/dotnet/samples/tree/master/core/hosting) demonstrating the steps outlined in this article is available in the dotnet/docs GitHub repository. Comments in the sample's *host.cpp* file clearly associate the numbered steps from this tutorial with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and is designed to emphasize readability over efficiency. More real-world host samples are available in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository. The [CoreRun host](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun), in particular, is a good general-purpose host to study after reading through the simpler sample.
 
@@ -86,7 +86,7 @@ Common AppDomain properties include:
 *  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 *  `AppDomainCompatSwitch` This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker (an assembly-level attribute indicating which Framework an assembly is meant to run against). Typically, this should be set to `"UseLatestBehaviorWhenTFMNotSpecified"` but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.
 
-In our [simple sample host](https://github.com/dotnet/docs/tree/master/samples/core/hosting), these properties are set up as follows:
+In our [simple sample host](https://github.com/dotnet/samples/tree/master/core/hosting), these properties are set up as follows:
 
 [!code-cpp[NetCoreHost#6](../../../samples/core/hosting/host.cpp#6)]
 

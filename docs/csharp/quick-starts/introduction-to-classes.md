@@ -210,6 +210,6 @@ Type `dotnet run` to see the results.
 
 ## Next Steps
 
-If you got stuck, you can see the source for this quickstart [in our GitHub repo](https://github.com/dotnet/docs/tree/master/samples/csharp/classes-quickstart/)
+If you got stuck, you can see the source for this quickstart [in our GitHub repo](https://github.com/dotnet/samples/tree/master/csharp/classes-quickstart/)
 
 Congratulations, you've finished all our Quickstarts. If you're eager to learn more, try our [tutorials](../tutorials/index.md)

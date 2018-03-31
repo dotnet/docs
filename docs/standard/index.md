@@ -64,4 +64,4 @@ Additionally, check out each language guide to learn about the three major .NET 
 
 ## API Reference
 
-Check out the [.NET API Reference](../../api/index.md) to see the breadth of APIs avaialable.
+Check out the [.NET API Reference](../../api/index.md) to see the breadth of APIs available.

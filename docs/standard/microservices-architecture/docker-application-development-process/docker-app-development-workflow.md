@@ -102,7 +102,7 @@ Using an official .NET image repository from Docker Hub with a version number en
 
 The following example shows a sample Dockerfile for an ASP.NET Core container.
 
-```
+```Dockerfile
 FROM microsoft/aspnetcore:2.0
   
 ARG source
@@ -291,7 +291,7 @@ If your application only has a single container, you can run it by deploying it 
 
 You can run a Docker container using the docker run command, as in Figure 5-9:
 
-```
+```console
   docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
 ```
 
@@ -400,7 +400,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
 
-```
+```Dockerfile
 FROM microsoft/windowsservercore
   
 LABEL Description="IIS" Vendor="Microsoft" Version="10"
@@ -412,7 +412,7 @@ CMD [ "ping", "localhost", "-t" ]
 
 In this case, we are using a Windows Server Core base image (the FROM setting) and installing IIS with a PowerShell command (the RUN setting). In a similar way, you could also use PowerShell commands to set up additional components like ASP.NET 4.x, .NET 4.6, or any other Windows software. For example, the following command in a Dockerfile sets up ASP.NET 4.5:
 
-```
+```Dockerfile
 RUN powershell add-windowsfeature web-asp-net45
 ```
 

@@ -22,16 +22,14 @@ ms.workload:
 # For Further Reading (Parallel Programming)
 The following resources contain additional information about Parallel Programming in the .NET Framework:  
   
--   The [Parallel Computing Developer Center](http://go.microsoft.com/fwlink/?LinkID=160570) on the MSDN Web site has links to the latest content and forum posts about parallel programming in the .NET Framework, and in native C++.  
+-   The [Parallel Computing Developer Center](https://msdn.microsoft.com/vstudio/bb964701) on the MSDN Web site has links to the content and forum posts about parallel programming in the .NET Framework, and in native C++.  
   
--   The [Parallel Programming with .NET blog](http://go.microsoft.com/fwlink/?LinkID=169627) on the MSDN blog site contains many in-depth articles about parallel programming in the .NET Framework.  
+-   The [Parallel Programming with .NET blog](https://blogs.msdn.microsoft.com/pfxteam/) on the MSDN blog site contains many in-depth articles about parallel programming in the .NET Framework.  
   
--   The [Concurrency Visualizer blog](http://go.microsoft.com/fwlink/?LinkID=169630) on the MSDN blog site covers the new performance profiling tool that is included in some editions of [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)].  
+-   The [Parallel Extensions forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=parallelextensions) on the MSDN forums site is where to ask and answer questions about parallel programming.  
   
--   The [Parallel Extensions forum](http://go.microsoft.com/fwlink/?LinkID=169628) on the MSDN forums site is where to ask and answer questions about parallel programming.  
-  
--   The [Parallel Extensions Samples](http://go.microsoft.com/fwlink/?LinkID=165717) page on the MSDN Code Gallery Web site contains many samples that demonstrate intermediate and advanced parallel programming techniques.  
+-   The [Parallel Extensions Samples](https://code.msdn.microsoft.com/ParExtSamples) page on the MSDN Code Gallery Web site contains many samples that demonstrate intermediate and advanced parallel programming techniques.  
   
 ## See Also  
  [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
- [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=185142)
+ [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=19222)

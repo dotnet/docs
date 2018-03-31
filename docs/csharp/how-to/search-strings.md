@@ -47,7 +47,7 @@ The search pattern describes the text you search for. The following table descri
 | -------- |-------------|
 | the      | match the text "the" |
 | (eir)?   | match 0 or 1 occurence of "eir" |
-| \s       | match a whitespace character    |
+| \s       | match a white-space character    |
   
 [!code-csharp-interactive[Search using regular expressions](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#3)]
   

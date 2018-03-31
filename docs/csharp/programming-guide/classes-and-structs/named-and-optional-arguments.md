@@ -39,7 +39,7 @@ ms.author: "wiwagn"
   
  `PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);`
   
- Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` cannot be null or whitespace. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
+ Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` cannot be null or white space. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
   
  Named arguments, when used with positional arguments, are valid as long as 
 

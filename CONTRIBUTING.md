@@ -80,7 +80,7 @@ We make the following distinction for code that exists in our repository:
 
 - snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
 
-Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repositories and is organized as follows:
+Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository and is organized as follows:
 
 - *core* contains .NET Core samples.
 

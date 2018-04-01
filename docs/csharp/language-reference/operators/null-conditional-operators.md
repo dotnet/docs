@@ -35,7 +35,7 @@ Dim first as Customer = customers?(0)  ' null if customers is null
 Dim count as Integer? = customers?(0)?.Orders?.Count()  ' null if customers, the first customer, or Orders is null  
 ```  
   
- The last example demonstrates that the null-condition operators are short-circuiting.  If one operation in a chain of conditional member access and index operation returns null, then the rest of the chain’s execution stops.  Other operations with lower precedence in the expression continue.  For example, `E` in the following executes in the second line, and the `?.` and `==` operations execute.  In the first line, the `??` short circuits and `E` does not execute when the left side evaluates to non-null.
+ The last example demonstrates that the null-condition operators are short-circuiting.  If one operation in a chain of conditional member access and index operation returns null, then the rest of the chain’s execution stops.  Other operations with lower precedence in the expression continue.  For example, `E` in the following executes in the second line, and the `==` operation executes.  In the first line, the `??` short circuits and `E` does not execute when the left side evaluates to non-null.
   
 ```csharp
 A?.B?.C?[0] ?? E  

@@ -73,7 +73,7 @@ PropertyChanged?.Invoke(e)
   
  The new way is thread-safe because the compiler generates code to evaluate `PropertyChanged` one time only, keeping the result in a temporary variable.  
   
- You need to explicitly call the `Invoke` method because there is no null-conditional delegate invocation syntax `PropertyChanged?(e)`.  There were too many ambiguous parsing situations to allow it.  
+ You need to explicitly call the `Invoke` method because there is no null-conditional delegate invocation syntax `PropertyChanged?(e)`.  
   
 ## Language Specifications  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

@@ -12,7 +12,7 @@
                 Console.WriteLine(s);
             }
 
-            // Example #2: var is required because
+            // Example #2: var is required when
             // the select clause specifies an anonymous type
             var custQuery = from cust in customers
                             where cust.City == "Phoenix"

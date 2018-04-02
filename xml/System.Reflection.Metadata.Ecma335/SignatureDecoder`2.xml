@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
+    <AssemblyVersion>1.4.3.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TType" />
@@ -16,6 +17,11 @@
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="TType">To be added.</typeparam>
     <typeparam name="TGenericContext">To be added.</typeparam>
@@ -32,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt;" />
@@ -56,6 +63,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TType</ReturnType>
@@ -80,6 +88,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
@@ -104,6 +113,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.MethodSignature&lt;TType&gt;</ReturnType>
@@ -128,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
@@ -151,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TType</ReturnType>

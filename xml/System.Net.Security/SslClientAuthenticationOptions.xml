@@ -1,0 +1,218 @@
+﻿<Type Name="SslClientAuthenticationOptions" FullName="System.Net.Security.SslClientAuthenticationOptions">
+  <TypeSignature Language="C#" Value="public class SslClientAuthenticationOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SslClientAuthenticationOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Security.SslClientAuthenticationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class SslClientAuthenticationOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SslClientAuthenticationOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Security</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SslClientAuthenticationOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslClientAuthenticationOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SslClientAuthenticationOptions();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowRenegotiation">
+      <MemberSignature Language="C#" Value="public bool AllowRenegotiation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowRenegotiation" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.AllowRenegotiation" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowRenegotiation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowRenegotiation { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationProtocols">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Net.Security.SslApplicationProtocol&gt; ApplicationProtocols { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;valuetype System.Net.Security.SslApplicationProtocol&gt; ApplicationProtocols" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.ApplicationProtocols" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationProtocols As List(Of SslApplicationProtocol)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Net::Security::SslApplicationProtocol&gt; ^ ApplicationProtocols { System::Collections::Generic::List&lt;System::Net::Security::SslApplicationProtocol&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::Net::Security::SslApplicationProtocol&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Net.Security.SslApplicationProtocol&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateRevocationCheckMode">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509RevocationMode CertificateRevocationCheckMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.X509RevocationMode CertificateRevocationCheckMode" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateRevocationCheckMode As X509RevocationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode CertificateRevocationCheckMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509RevocationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCertificates">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientCertificates As X509CertificateCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); void set(System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnabledSslProtocols">
+      <MemberSignature Language="C#" Value="public System.Security.Authentication.SslProtocols EnabledSslProtocols { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Authentication.SslProtocols EnabledSslProtocols" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnabledSslProtocols As SslProtocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::SslProtocols EnabledSslProtocols { System::Security::Authentication::SslProtocols get(); void set(System::Security::Authentication::SslProtocols value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.SslProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionPolicy">
+      <MemberSignature Language="C#" Value="public System.Net.Security.EncryptionPolicy EncryptionPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.EncryptionPolicy EncryptionPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property EncryptionPolicy As EncryptionPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::EncryptionPolicy EncryptionPolicy { System::Net::Security::EncryptionPolicy get(); void set(System::Net::Security::EncryptionPolicy value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.EncryptionPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalCertificateSelectionCallback">
+      <MemberSignature Language="C#" Value="public System.Net.Security.LocalCertificateSelectionCallback LocalCertificateSelectionCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Security.LocalCertificateSelectionCallback LocalCertificateSelectionCallback" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.LocalCertificateSelectionCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalCertificateSelectionCallback As LocalCertificateSelectionCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::LocalCertificateSelectionCallback ^ LocalCertificateSelectionCallback { System::Net::Security::LocalCertificateSelectionCallback ^ get(); void set(System::Net::Security::LocalCertificateSelectionCallback ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.LocalCertificateSelectionCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteCertificateValidationCallback">
+      <MemberSignature Language="C#" Value="public System.Net.Security.RemoteCertificateValidationCallback RemoteCertificateValidationCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Security.RemoteCertificateValidationCallback RemoteCertificateValidationCallback" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemoteCertificateValidationCallback As RemoteCertificateValidationCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::RemoteCertificateValidationCallback ^ RemoteCertificateValidationCallback { System::Net::Security::RemoteCertificateValidationCallback ^ get(); void set(System::Net::Security::RemoteCertificateValidationCallback ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.RemoteCertificateValidationCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetHost">
+      <MemberSignature Language="C#" Value="public string TargetHost { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetHost" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.TargetHost" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetHost As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetHost { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,119 @@
+﻿<Type Name="MemoryHandle" FullName="System.Buffers.MemoryHandle">
+  <TypeSignature Language="C#" Value="public struct MemoryHandle : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MemoryHandle extends System.ValueType implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.MemoryHandle" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MemoryHandle&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public value class MemoryHandle : IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MemoryHandle (System.Buffers.IRetainable owner, void* pointer = null, System.Runtime.InteropServices.GCHandle handle = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.IRetainable owner, void* pointer, valuetype System.Runtime.InteropServices.GCHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryHandle.#ctor(System.Buffers.IRetainable,System.Void*,System.Runtime.InteropServices.GCHandle)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Buffers.IRetainable" />
+        <Parameter Name="pointer" Type="System.Void*" />
+        <Parameter Name="handle" Type="System.Runtime.InteropServices.GCHandle" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="pointer">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryHandle.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasPointer">
+      <MemberSignature Language="C#" Value="public bool HasPointer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasPointer" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.MemoryHandle.HasPointer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPointer As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPointer { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pointer">
+      <MemberSignature Language="C#" Value="public void* Pointer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance void* Pointer" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.MemoryHandle.Pointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property void* Pointer { void* get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void*</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

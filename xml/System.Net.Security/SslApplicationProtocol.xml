@@ -1,0 +1,273 @@
+﻿<Type Name="SslApplicationProtocol" FullName="System.Net.Security.SslApplicationProtocol">
+  <TypeSignature Language="C#" Value="public struct SslApplicationProtocol : IEquatable&lt;System.Net.Security.SslApplicationProtocol&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SslApplicationProtocol extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Net.Security.SslApplicationProtocol&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Security.SslApplicationProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SslApplicationProtocol&#xA;Implements IEquatable(Of SslApplicationProtocol)" />
+  <TypeSignature Language="C++ CLI" Value="public value class SslApplicationProtocol : IEquatable&lt;System::Net::Security::SslApplicationProtocol&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Security</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Net.Security.SslApplicationProtocol&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SslApplicationProtocol (byte[] protocol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] protocol) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SslApplicationProtocol(cli::array &lt;System::Byte&gt; ^ protocol);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="protocol" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="protocol">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SslApplicationProtocol (string protocol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string protocol) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SslApplicationProtocol(System::String ^ protocol);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="protocol" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="protocol">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Net.Security.SslApplicationProtocol other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Net.Security.SslApplicationProtocol other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.Equals(System.Net.Security.SslApplicationProtocol)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SslApplicationProtocol) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Net::Security::SslApplicationProtocol other);" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Net.Security.SslApplicationProtocol" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Http11">
+      <MemberSignature Language="C#" Value="public static readonly System.Net.Security.SslApplicationProtocol Http11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Net.Security.SslApplicationProtocol Http11" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Security.SslApplicationProtocol.Http11" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Http11 As SslApplicationProtocol " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::Security::SslApplicationProtocol Http11;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.SslApplicationProtocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Http2">
+      <MemberSignature Language="C#" Value="public static readonly System.Net.Security.SslApplicationProtocol Http2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Net.Security.SslApplicationProtocol Http2" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Security.SslApplicationProtocol.Http2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Http2 As SslApplicationProtocol " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::Security::SslApplicationProtocol Http2;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.SslApplicationProtocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Net.Security.SslApplicationProtocol left, System.Net.Security.SslApplicationProtocol right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Net.Security.SslApplicationProtocol left, valuetype System.Net.Security.SslApplicationProtocol right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.op_Equality(System.Net.Security.SslApplicationProtocol,System.Net.Security.SslApplicationProtocol)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As SslApplicationProtocol, right As SslApplicationProtocol) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Net::Security::SslApplicationProtocol left, System::Net::Security::SslApplicationProtocol right);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Net.Security.SslApplicationProtocol" />
+        <Parameter Name="right" Type="System.Net.Security.SslApplicationProtocol" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Net.Security.SslApplicationProtocol left, System.Net.Security.SslApplicationProtocol right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Net.Security.SslApplicationProtocol left, valuetype System.Net.Security.SslApplicationProtocol right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.op_Inequality(System.Net.Security.SslApplicationProtocol,System.Net.Security.SslApplicationProtocol)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As SslApplicationProtocol, right As SslApplicationProtocol) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Net::Security::SslApplicationProtocol left, System::Net::Security::SslApplicationProtocol right);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Net.Security.SslApplicationProtocol" />
+        <Parameter Name="right" Type="System.Net.Security.SslApplicationProtocol" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Protocol">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;byte&gt; Protocol { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; Protocol" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslApplicationProtocol.Protocol" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protocol As ReadOnlyMemory(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlyMemory&lt;System::Byte&gt; Protocol { ReadOnlyMemory&lt;System::Byte&gt; get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

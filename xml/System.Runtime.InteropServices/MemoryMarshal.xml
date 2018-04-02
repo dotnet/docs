@@ -1,0 +1,135 @@
+﻿<Type Name="MemoryMarshal" FullName="System.Runtime.InteropServices.MemoryMarshal">
+  <TypeSignature Language="C#" Value="public static class MemoryMarshal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MemoryMarshal extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.MemoryMarshal" />
+  <TypeSignature Language="VB.NET" Value="Public Class MemoryMarshal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemoryMarshal abstract sealed" />
+  <AssemblyInfo>
+    <AssemblyName>System.Memory</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsMemory&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; AsMemory&lt;T&gt; (ReadOnlyMemory&lt;T&gt; readOnlyMemory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; AsMemory&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; readOnlyMemory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsMemory``1(System.ReadOnlyMemory{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsMemory(Of T) (readOnlyMemory As ReadOnlyMemory(Of T)) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static Memory&lt;T&gt; AsMemory(ReadOnlyMemory&lt;T&gt; readOnlyMemory);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="readOnlyMemory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="readOnlyMemory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReference&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T GetReference&lt;T&gt; (ReadOnlySpan&lt;T&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetReference&lt;T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetReference(Of T) (span As ReadOnlySpan(Of T)) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % GetReference(ReadOnlySpan&lt;T&gt; span);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T@</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReference&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T GetReference&lt;T&gt; (Span&lt;T&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetReference&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetReference(Of T) (span As Span(Of T)) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % GetReference(Span&lt;T&gt; span);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T@</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryGetArray&lt;T&gt; (ReadOnlyMemory&lt;T&gt; readOnlyMemory, out ArraySegment&lt;T&gt; arraySegment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetArray&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; readOnlyMemory, [out] valuetype System.ArraySegment`1&lt;!!T&gt;&amp; arraySegment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetArray``1(System.ReadOnlyMemory{``0},System.ArraySegment{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetArray(Of T) (readOnlyMemory As ReadOnlyMemory(Of T), ByRef arraySegment As ArraySegment(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetArray(ReadOnlyMemory&lt;T&gt; readOnlyMemory, [Runtime::InteropServices::Out] ArraySegment&lt;T&gt; % arraySegment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="readOnlyMemory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+        <Parameter Name="arraySegment" Type="System.ArraySegment&lt;T&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="readOnlyMemory">To be added.</param>
+        <param name="arraySegment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

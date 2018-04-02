@@ -1,0 +1,96 @@
+﻿<Type Name="OperationStatus" FullName="System.Buffers.OperationStatus">
+  <TypeSignature Language="C#" Value="public enum OperationStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OperationStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.OperationStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OperationStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OperationStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Memory</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DestinationTooSmall">
+      <MemberSignature Language="C#" Value="DestinationTooSmall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Buffers.OperationStatus DestinationTooSmall = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Buffers.OperationStatus.DestinationTooSmall" />
+      <MemberSignature Language="VB.NET" Value="DestinationTooSmall" />
+      <MemberSignature Language="C++ CLI" Value="DestinationTooSmall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Done">
+      <MemberSignature Language="C#" Value="Done" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Buffers.OperationStatus Done = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Buffers.OperationStatus.Done" />
+      <MemberSignature Language="VB.NET" Value="Done" />
+      <MemberSignature Language="C++ CLI" Value="Done" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidData">
+      <MemberSignature Language="C#" Value="InvalidData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Buffers.OperationStatus InvalidData = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Buffers.OperationStatus.InvalidData" />
+      <MemberSignature Language="VB.NET" Value="InvalidData" />
+      <MemberSignature Language="C++ CLI" Value="InvalidData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedMoreData">
+      <MemberSignature Language="C#" Value="NeedMoreData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Buffers.OperationStatus NeedMoreData = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Buffers.OperationStatus.NeedMoreData" />
+      <MemberSignature Language="VB.NET" Value="NeedMoreData" />
+      <MemberSignature Language="C++ CLI" Value="NeedMoreData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

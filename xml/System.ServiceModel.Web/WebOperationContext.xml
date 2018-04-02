@@ -35,11 +35,10 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebOperationContext (System.ServiceModel.OperationContext operationContext);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.OperationContext operationContext) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebOperationContext(System::ServiceModel::OperationContext ^ operationContext);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="C#" Value="public WebOperationContext (System.ServiceModel.OperationContext operation);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.OperationContext operation) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operation As OperationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebOperationContext(System::ServiceModel::OperationContext ^ operation);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
@@ -61,12 +60,11 @@
     <Member MemberName="Attach">
       <MemberSignature Language="C#" Value="public void Attach (System.ServiceModel.OperationContext owner);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(class System.ServiceModel.OperationContext owner) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (owner As OperationContext)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Attach(System::ServiceModel::OperationContext ^ owner);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="C#" Value="public void Attach (System.ServiceModel.OperationContext context);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Attach(class System.ServiceModel.OperationContext context) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (context As OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::ServiceModel::OperationContext ^ context);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
@@ -639,12 +637,11 @@
     <Member MemberName="Detach">
       <MemberSignature Language="C#" Value="public void Detach (System.ServiceModel.OperationContext owner);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Detach(class System.ServiceModel.OperationContext owner) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (owner As OperationContext)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Detach(System::ServiceModel::OperationContext ^ owner);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="C#" Value="public void Detach (System.ServiceModel.OperationContext context);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Detach(class System.ServiceModel.OperationContext context) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (context As OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach(System::ServiceModel::OperationContext ^ context);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>

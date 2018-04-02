@@ -1777,6 +1777,60 @@
       <Member Id="P:System.Environment.Version" />
       <Member Id="P:System.Environment.WorkingSet" />
     </Type>
+    <Type Name="System.Environment/SpecialFolder" Id="T:System.Environment.SpecialFolder">
+      <Member Id="F:System.Environment.SpecialFolder.AdminTools" />
+      <Member Id="F:System.Environment.SpecialFolder.ApplicationData" />
+      <Member Id="F:System.Environment.SpecialFolder.CDBurning" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonAdminTools" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonApplicationData" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonDesktopDirectory" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonDocuments" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonMusic" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonOemLinks" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonPictures" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonProgramFiles" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonProgramFilesX86" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonPrograms" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonStartMenu" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonStartup" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonTemplates" />
+      <Member Id="F:System.Environment.SpecialFolder.CommonVideos" />
+      <Member Id="F:System.Environment.SpecialFolder.Cookies" />
+      <Member Id="F:System.Environment.SpecialFolder.Desktop" />
+      <Member Id="F:System.Environment.SpecialFolder.DesktopDirectory" />
+      <Member Id="F:System.Environment.SpecialFolder.Favorites" />
+      <Member Id="F:System.Environment.SpecialFolder.Fonts" />
+      <Member Id="F:System.Environment.SpecialFolder.History" />
+      <Member Id="F:System.Environment.SpecialFolder.InternetCache" />
+      <Member Id="F:System.Environment.SpecialFolder.LocalApplicationData" />
+      <Member Id="F:System.Environment.SpecialFolder.LocalizedResources" />
+      <Member Id="F:System.Environment.SpecialFolder.MyComputer" />
+      <Member Id="F:System.Environment.SpecialFolder.MyDocuments" />
+      <Member Id="F:System.Environment.SpecialFolder.MyMusic" />
+      <Member Id="F:System.Environment.SpecialFolder.MyPictures" />
+      <Member Id="F:System.Environment.SpecialFolder.MyVideos" />
+      <Member Id="F:System.Environment.SpecialFolder.NetworkShortcuts" />
+      <Member Id="F:System.Environment.SpecialFolder.Personal" />
+      <Member Id="F:System.Environment.SpecialFolder.PrinterShortcuts" />
+      <Member Id="F:System.Environment.SpecialFolder.ProgramFiles" />
+      <Member Id="F:System.Environment.SpecialFolder.ProgramFilesX86" />
+      <Member Id="F:System.Environment.SpecialFolder.Programs" />
+      <Member Id="F:System.Environment.SpecialFolder.Recent" />
+      <Member Id="F:System.Environment.SpecialFolder.Resources" />
+      <Member Id="F:System.Environment.SpecialFolder.SendTo" />
+      <Member Id="F:System.Environment.SpecialFolder.StartMenu" />
+      <Member Id="F:System.Environment.SpecialFolder.Startup" />
+      <Member Id="F:System.Environment.SpecialFolder.System" />
+      <Member Id="F:System.Environment.SpecialFolder.SystemX86" />
+      <Member Id="F:System.Environment.SpecialFolder.Templates" />
+      <Member Id="F:System.Environment.SpecialFolder.UserProfile" />
+      <Member Id="F:System.Environment.SpecialFolder.Windows" />
+    </Type>
+    <Type Name="System.Environment/SpecialFolderOption" Id="T:System.Environment.SpecialFolderOption">
+      <Member Id="F:System.Environment.SpecialFolderOption.Create" />
+      <Member Id="F:System.Environment.SpecialFolderOption.DoNotVerify" />
+      <Member Id="F:System.Environment.SpecialFolderOption.None" />
+    </Type>
     <Type Name="System.EnvironmentVariableTarget" Id="T:System.EnvironmentVariableTarget">
       <Member Id="F:System.EnvironmentVariableTarget.Machine" />
       <Member Id="F:System.EnvironmentVariableTarget.Process" />
@@ -2997,6 +3051,35 @@
       <Member Id="P:System.TimeZoneInfo.StandardName" />
       <Member Id="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
       <Member Id="P:System.TimeZoneInfo.Utc" />
+    </Type>
+    <Type Name="System.TimeZoneInfo/AdjustmentRule" Id="T:System.TimeZoneInfo.AdjustmentRule">
+      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule(System.DateTime,System.DateTime,System.TimeSpan,System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
+      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.Equals(System.TimeZoneInfo.AdjustmentRule)" />
+      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.GetHashCode" />
+      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DateEnd" />
+      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DateStart" />
+      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DaylightDelta" />
+      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DaylightTransitionEnd" />
+      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DaylightTransitionStart" />
+    </Type>
+    <Type Name="System.TimeZoneInfo/TransitionTime" Id="T:System.TimeZoneInfo.TransitionTime">
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.CreateFixedDateRule(System.DateTime,System.Int32,System.Int32)" />
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule(System.DateTime,System.Int32,System.Int32,System.DayOfWeek)" />
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.Equals(System.Object)" />
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.Equals(System.TimeZoneInfo.TransitionTime)" />
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.GetHashCode" />
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.op_Equality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.op_Inequality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <Member Id="M:System.TimeZoneInfo.TransitionTime.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="P:System.TimeZoneInfo.TransitionTime.Day" />
+      <Member Id="P:System.TimeZoneInfo.TransitionTime.DayOfWeek" />
+      <Member Id="P:System.TimeZoneInfo.TransitionTime.IsFixedDateRule" />
+      <Member Id="P:System.TimeZoneInfo.TransitionTime.Month" />
+      <Member Id="P:System.TimeZoneInfo.TransitionTime.TimeOfDay" />
+      <Member Id="P:System.TimeZoneInfo.TransitionTime.Week" />
     </Type>
     <Type Name="System.TimeZoneNotFoundException" Id="T:System.TimeZoneNotFoundException">
       <Member Id="M:System.TimeZoneNotFoundException.#ctor" />
@@ -4597,6 +4680,62 @@
       <Member Id="P:System.Collections.Generic.Dictionary`2.System#Collections#IDictionary#Values" />
       <Member Id="P:System.Collections.Generic.Dictionary`2.Values" />
     </Type>
+    <Type Name="System.Collections.Generic.Dictionary`2/Enumerator" Id="T:System.Collections.Generic.Dictionary`2.Enumerator">
+      <Member Id="M:System.Collections.Generic.Dictionary`2.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Current" />
+    </Type>
+    <Type Name="System.Collections.Generic.Dictionary`2/KeyCollection" Id="T:System.Collections.Generic.Dictionary`2.KeyCollection">
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.#ctor(System.Collections.Generic.Dictionary{`0,`1})" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.CopyTo(`0[],System.Int32)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.GetEnumerator" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#IEnumerable&lt;TKey&gt;#GetEnumerator" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.Count" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#ICollection#SyncRoot" />
+    </Type>
+    <Type Name="System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator" Id="T:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator">
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.System#Collections#IEnumerator#Current" />
+    </Type>
+    <Type Name="System.Collections.Generic.Dictionary`2/ValueCollection" Id="T:System.Collections.Generic.Dictionary`2.ValueCollection">
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.#ctor(System.Collections.Generic.Dictionary{`0,`1})" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.CopyTo(`1[],System.Int32)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.GetEnumerator" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#IEnumerable&lt;TValue&gt;#GetEnumerator" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.Count" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot" />
+    </Type>
+    <Type Name="System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator" Id="T:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator">
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.System#Collections#IEnumerator#Current" />
+    </Type>
     <Type Name="System.Collections.Generic.EqualityComparer`1" Id="T:System.Collections.Generic.EqualityComparer`1">
       <Member Id="M:System.Collections.Generic.EqualityComparer`1.#ctor" />
       <Member Id="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" />
@@ -4640,6 +4779,13 @@
       <Member Id="P:System.Collections.Generic.HashSet`1.Comparer" />
       <Member Id="P:System.Collections.Generic.HashSet`1.Count" />
       <Member Id="P:System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
+    </Type>
+    <Type Name="System.Collections.Generic.HashSet`1/Enumerator" Id="T:System.Collections.Generic.HashSet`1.Enumerator">
+      <Member Id="M:System.Collections.Generic.HashSet`1.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.HashSet`1.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.HashSet`1.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.HashSet`1.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.HashSet`1.Enumerator.System#Collections#IEnumerator#Current" />
     </Type>
     <Type Name="System.Collections.Generic.ICollection`1" Id="T:System.Collections.Generic.ICollection`1">
       <Member Id="M:System.Collections.Generic.ICollection`1.Add(`0)" />
@@ -4751,6 +4897,15 @@
       <Member Id="P:System.Collections.Generic.LinkedList`1.System#Collections#ICollection#IsSynchronized" />
       <Member Id="P:System.Collections.Generic.LinkedList`1.System#Collections#ICollection#SyncRoot" />
     </Type>
+    <Type Name="System.Collections.Generic.LinkedList`1/Enumerator" Id="T:System.Collections.Generic.LinkedList`1.Enumerator">
+      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="P:System.Collections.Generic.LinkedList`1.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.LinkedList`1.Enumerator.System#Collections#IEnumerator#Current" />
+    </Type>
     <Type Name="System.Collections.Generic.LinkedListNode`1" Id="T:System.Collections.Generic.LinkedListNode`1">
       <Member Id="M:System.Collections.Generic.LinkedListNode`1.#ctor(`0)" />
       <Member Id="P:System.Collections.Generic.LinkedListNode`1.List" />
@@ -4826,6 +4981,13 @@
       <Member Id="P:System.Collections.Generic.List`1.System#Collections#IList#IsReadOnly" />
       <Member Id="P:System.Collections.Generic.List`1.System#Collections#IList#Item(System.Int32)" />
     </Type>
+    <Type Name="System.Collections.Generic.List`1/Enumerator" Id="T:System.Collections.Generic.List`1.Enumerator">
+      <Member Id="M:System.Collections.Generic.List`1.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.List`1.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.List`1.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.List`1.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.List`1.Enumerator.System#Collections#IEnumerator#Current" />
+    </Type>
     <Type Name="System.Collections.Generic.Queue`1" Id="T:System.Collections.Generic.Queue`1">
       <Member Id="M:System.Collections.Generic.Queue`1.#ctor" />
       <Member Id="M:System.Collections.Generic.Queue`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
@@ -4845,6 +5007,13 @@
       <Member Id="P:System.Collections.Generic.Queue`1.Count" />
       <Member Id="P:System.Collections.Generic.Queue`1.System#Collections#ICollection#IsSynchronized" />
       <Member Id="P:System.Collections.Generic.Queue`1.System#Collections#ICollection#SyncRoot" />
+    </Type>
+    <Type Name="System.Collections.Generic.Queue`1/Enumerator" Id="T:System.Collections.Generic.Queue`1.Enumerator">
+      <Member Id="M:System.Collections.Generic.Queue`1.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.Queue`1.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.Queue`1.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.Queue`1.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.Queue`1.Enumerator.System#Collections#IEnumerator#Current" />
     </Type>
     <Type Name="System.Collections.Generic.SortedDictionary`2" Id="T:System.Collections.Generic.SortedDictionary`2">
       <Member Id="M:System.Collections.Generic.SortedDictionary`2.#ctor" />
@@ -4886,6 +5055,62 @@
       <Member Id="P:System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Keys" />
       <Member Id="P:System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Values" />
       <Member Id="P:System.Collections.Generic.SortedDictionary`2.Values" />
+    </Type>
+    <Type Name="System.Collections.Generic.SortedDictionary`2/Enumerator" Id="T:System.Collections.Generic.SortedDictionary`2.Enumerator">
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IEnumerator#Current" />
+    </Type>
+    <Type Name="System.Collections.Generic.SortedDictionary`2/KeyCollection" Id="T:System.Collections.Generic.SortedDictionary`2.KeyCollection">
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.#ctor(System.Collections.Generic.SortedDictionary{`0,`1})" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.CopyTo(`0[],System.Int32)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.GetEnumerator" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#IEnumerable&lt;TKey&gt;#GetEnumerator" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.Count" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#SyncRoot" />
+    </Type>
+    <Type Name="System.Collections.Generic.SortedDictionary`2/KeyCollection/Enumerator" Id="T:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator">
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.System#Collections#IEnumerator#Current" />
+    </Type>
+    <Type Name="System.Collections.Generic.SortedDictionary`2/ValueCollection" Id="T:System.Collections.Generic.SortedDictionary`2.ValueCollection">
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.#ctor(System.Collections.Generic.SortedDictionary{`0,`1})" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.GetEnumerator" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#IEnumerable&lt;TValue&gt;#GetEnumerator" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.Count" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot" />
+    </Type>
+    <Type Name="System.Collections.Generic.SortedDictionary`2/ValueCollection/Enumerator" Id="T:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator">
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.System#Collections#IEnumerator#Current" />
     </Type>
     <Type Name="System.Collections.Generic.SortedList`2" Id="T:System.Collections.Generic.SortedList`2">
       <Member Id="M:System.Collections.Generic.SortedList`2.#ctor" />
@@ -4980,6 +5205,15 @@
       <Member Id="P:System.Collections.Generic.SortedSet`1.System#Collections#ICollection#IsSynchronized" />
       <Member Id="P:System.Collections.Generic.SortedSet`1.System#Collections#ICollection#SyncRoot" />
     </Type>
+    <Type Name="System.Collections.Generic.SortedSet`1/Enumerator" Id="T:System.Collections.Generic.SortedSet`1.Enumerator">
+      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.Dispose" />
+      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.MoveNext" />
+      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="P:System.Collections.Generic.SortedSet`1.Enumerator.Current" />
+      <Member Id="P:System.Collections.Generic.SortedSet`1.Enumerator.System#Collections#IEnumerator#Current" />
+    </Type>
     <Type Name="System.Collections.Generic.Stack`1" Id="T:System.Collections.Generic.Stack`1">
       <Member Id="M:System.Collections.Generic.Stack`1.#ctor" />
       <Member Id="M:System.Collections.Generic.Stack`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
@@ -5000,481 +5234,12 @@
       <Member Id="P:System.Collections.Generic.Stack`1.System#Collections#ICollection#IsSynchronized" />
       <Member Id="P:System.Collections.Generic.Stack`1.System#Collections#ICollection#SyncRoot" />
     </Type>
-  </Namespace>
-  <Namespace Name="">
-    <Type Name="System.Collections.Generic.Dictionary`2/Enumerator" Id="T:System.Collections.Generic.Dictionary`2.Enumerator">
-      <Member Id="M:System.Collections.Generic.Dictionary`2.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.Dictionary`2/KeyCollection" Id="T:System.Collections.Generic.Dictionary`2.KeyCollection">
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.#ctor(System.Collections.Generic.Dictionary{`0,`1})" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.CopyTo(`0[],System.Int32)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#IEnumerable&lt;TKey&gt;#GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.Count" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator" Id="T:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator">
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.Dictionary`2/ValueCollection" Id="T:System.Collections.Generic.Dictionary`2.ValueCollection">
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.#ctor(System.Collections.Generic.Dictionary{`0,`1})" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.CopyTo(`1[],System.Int32)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#IEnumerable&lt;TValue&gt;#GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.Count" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator" Id="T:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator">
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.HashSet`1/Enumerator" Id="T:System.Collections.Generic.HashSet`1.Enumerator">
-      <Member Id="M:System.Collections.Generic.HashSet`1.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.HashSet`1.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.HashSet`1.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.HashSet`1.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.HashSet`1.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.LinkedList`1/Enumerator" Id="T:System.Collections.Generic.LinkedList`1.Enumerator">
-      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
-      <Member Id="M:System.Collections.Generic.LinkedList`1.Enumerator.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="P:System.Collections.Generic.LinkedList`1.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.LinkedList`1.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.List`1/Enumerator" Id="T:System.Collections.Generic.List`1.Enumerator">
-      <Member Id="M:System.Collections.Generic.List`1.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.List`1.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.List`1.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.List`1.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.List`1.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.Queue`1/Enumerator" Id="T:System.Collections.Generic.Queue`1.Enumerator">
-      <Member Id="M:System.Collections.Generic.Queue`1.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.Queue`1.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.Queue`1.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.Queue`1.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.Queue`1.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.SortedDictionary`2/Enumerator" Id="T:System.Collections.Generic.SortedDictionary`2.Enumerator">
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.SortedDictionary`2/KeyCollection" Id="T:System.Collections.Generic.SortedDictionary`2.KeyCollection">
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.#ctor(System.Collections.Generic.SortedDictionary{`0,`1})" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.CopyTo(`0[],System.Int32)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#IEnumerable&lt;TKey&gt;#GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.Count" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.Collections.Generic.SortedDictionary`2/KeyCollection/Enumerator" Id="T:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator">
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.SortedDictionary`2/ValueCollection" Id="T:System.Collections.Generic.SortedDictionary`2.ValueCollection">
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.#ctor(System.Collections.Generic.SortedDictionary{`0,`1})" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#IEnumerable&lt;TValue&gt;#GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.Count" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.Collections.Generic.SortedDictionary`2/ValueCollection/Enumerator" Id="T:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator">
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.Generic.SortedSet`1/Enumerator" Id="T:System.Collections.Generic.SortedSet`1.Enumerator">
-      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.Dispose" />
-      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.MoveNext" />
-      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
-      <Member Id="M:System.Collections.Generic.SortedSet`1.Enumerator.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="P:System.Collections.Generic.SortedSet`1.Enumerator.Current" />
-      <Member Id="P:System.Collections.Generic.SortedSet`1.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
     <Type Name="System.Collections.Generic.Stack`1/Enumerator" Id="T:System.Collections.Generic.Stack`1.Enumerator">
       <Member Id="M:System.Collections.Generic.Stack`1.Enumerator.Dispose" />
       <Member Id="M:System.Collections.Generic.Stack`1.Enumerator.MoveNext" />
       <Member Id="M:System.Collections.Generic.Stack`1.Enumerator.System#Collections#IEnumerator#Reset" />
       <Member Id="P:System.Collections.Generic.Stack`1.Enumerator.Current" />
       <Member Id="P:System.Collections.Generic.Stack`1.Enumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.Collections.ObjectModel.ReadOnlyDictionary`2/KeyCollection" Id="T:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection">
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.CopyTo(`0[],System.Int32)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.GetEnumerator" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.Count" />
-      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly" />
-      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.Collections.ObjectModel.ReadOnlyDictionary`2/ValueCollection" Id="T:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection">
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.GetEnumerator" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.Count" />
-      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly" />
-      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.Collections.Specialized.BitVector32/Section" Id="T:System.Collections.Specialized.BitVector32.Section">
-      <Member Id="M:System.Collections.Specialized.BitVector32.Section.Equals(System.Collections.Specialized.BitVector32.Section)" />
-      <Member Id="M:System.Collections.Specialized.BitVector32.Section.Equals(System.Object)" />
-      <Member Id="M:System.Collections.Specialized.BitVector32.Section.GetHashCode" />
-      <Member Id="M:System.Collections.Specialized.BitVector32.Section.op_Equality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)" />
-      <Member Id="M:System.Collections.Specialized.BitVector32.Section.op_Inequality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)" />
-      <Member Id="M:System.Collections.Specialized.BitVector32.Section.ToString" />
-      <Member Id="M:System.Collections.Specialized.BitVector32.Section.ToString(System.Collections.Specialized.BitVector32.Section)" />
-      <Member Id="P:System.Collections.Specialized.BitVector32.Section.Mask" />
-      <Member Id="P:System.Collections.Specialized.BitVector32.Section.Offset" />
-    </Type>
-    <Type Name="System.Collections.Specialized.NameObjectCollectionBase/KeysCollection" Id="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection">
-      <Member Id="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Get(System.Int32)" />
-      <Member Id="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.GetEnumerator" />
-      <Member Id="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count" />
-      <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item(System.Int32)" />
-      <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.ComponentModel.Design.DesignerOptionService/DesignerOptionCollection" Id="T:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection">
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.GetEnumerator" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.IndexOf(System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection)" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.ShowDialog" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Add(System.Object)" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Clear" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Contains(System.Object)" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#IndexOf(System.Object)" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Remove(System.Object)" />
-      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#RemoveAt(System.Int32)" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Count" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Item(System.Int32)" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Item(System.String)" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Name" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Parent" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Properties" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#ICollection#SyncRoot" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#IsFixedSize" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#IsReadOnly" />
-      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Item(System.Int32)" />
-    </Type>
-    <Type Name="System.ComponentModel.TypeConverter/SimplePropertyDescriptor" Id="T:System.ComponentModel.TypeConverter.SimplePropertyDescriptor">
-      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type)" />
-      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type,System.Attribute[])" />
-      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.CanResetValue(System.Object)" />
-      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ResetValue(System.Object)" />
-      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ShouldSerializeValue(System.Object)" />
-      <Member Id="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ComponentType" />
-      <Member Id="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.IsReadOnly" />
-      <Member Id="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.PropertyType" />
-    </Type>
-    <Type Name="System.ComponentModel.TypeConverter/StandardValuesCollection" Id="T:System.ComponentModel.TypeConverter.StandardValuesCollection">
-      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.#ctor(System.Collections.ICollection)" />
-      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.GetEnumerator" />
-      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.Count" />
-      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.Item(System.Int32)" />
-      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#ICollection#Count" />
-      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.Diagnostics.DebuggableAttribute/DebuggingModes" Id="T:System.Diagnostics.DebuggableAttribute.DebuggingModes">
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.Default" />
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations" />
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue" />
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints" />
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.None" />
-    </Type>
-    <Type Name="System.Diagnostics.Tracing.EventSource/EventData" Id="T:System.Diagnostics.Tracing.EventSource.EventData">
-      <Member Id="P:System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
-      <Member Id="P:System.Diagnostics.Tracing.EventSource.EventData.Size" />
-    </Type>
-    <Type Name="System.Environment/SpecialFolder" Id="T:System.Environment.SpecialFolder">
-      <Member Id="F:System.Environment.SpecialFolder.AdminTools" />
-      <Member Id="F:System.Environment.SpecialFolder.ApplicationData" />
-      <Member Id="F:System.Environment.SpecialFolder.CDBurning" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonAdminTools" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonApplicationData" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonDesktopDirectory" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonDocuments" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonMusic" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonOemLinks" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonPictures" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonProgramFiles" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonProgramFilesX86" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonPrograms" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonStartMenu" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonStartup" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonTemplates" />
-      <Member Id="F:System.Environment.SpecialFolder.CommonVideos" />
-      <Member Id="F:System.Environment.SpecialFolder.Cookies" />
-      <Member Id="F:System.Environment.SpecialFolder.Desktop" />
-      <Member Id="F:System.Environment.SpecialFolder.DesktopDirectory" />
-      <Member Id="F:System.Environment.SpecialFolder.Favorites" />
-      <Member Id="F:System.Environment.SpecialFolder.Fonts" />
-      <Member Id="F:System.Environment.SpecialFolder.History" />
-      <Member Id="F:System.Environment.SpecialFolder.InternetCache" />
-      <Member Id="F:System.Environment.SpecialFolder.LocalApplicationData" />
-      <Member Id="F:System.Environment.SpecialFolder.LocalizedResources" />
-      <Member Id="F:System.Environment.SpecialFolder.MyComputer" />
-      <Member Id="F:System.Environment.SpecialFolder.MyDocuments" />
-      <Member Id="F:System.Environment.SpecialFolder.MyMusic" />
-      <Member Id="F:System.Environment.SpecialFolder.MyPictures" />
-      <Member Id="F:System.Environment.SpecialFolder.MyVideos" />
-      <Member Id="F:System.Environment.SpecialFolder.NetworkShortcuts" />
-      <Member Id="F:System.Environment.SpecialFolder.Personal" />
-      <Member Id="F:System.Environment.SpecialFolder.PrinterShortcuts" />
-      <Member Id="F:System.Environment.SpecialFolder.ProgramFiles" />
-      <Member Id="F:System.Environment.SpecialFolder.ProgramFilesX86" />
-      <Member Id="F:System.Environment.SpecialFolder.Programs" />
-      <Member Id="F:System.Environment.SpecialFolder.Recent" />
-      <Member Id="F:System.Environment.SpecialFolder.Resources" />
-      <Member Id="F:System.Environment.SpecialFolder.SendTo" />
-      <Member Id="F:System.Environment.SpecialFolder.StartMenu" />
-      <Member Id="F:System.Environment.SpecialFolder.Startup" />
-      <Member Id="F:System.Environment.SpecialFolder.System" />
-      <Member Id="F:System.Environment.SpecialFolder.SystemX86" />
-      <Member Id="F:System.Environment.SpecialFolder.Templates" />
-      <Member Id="F:System.Environment.SpecialFolder.UserProfile" />
-      <Member Id="F:System.Environment.SpecialFolder.Windows" />
-    </Type>
-    <Type Name="System.Environment/SpecialFolderOption" Id="T:System.Environment.SpecialFolderOption">
-      <Member Id="F:System.Environment.SpecialFolderOption.Create" />
-      <Member Id="F:System.Environment.SpecialFolderOption.DoNotVerify" />
-      <Member Id="F:System.Environment.SpecialFolderOption.None" />
-    </Type>
-    <Type Name="System.Net.HttpListener/ExtendedProtectionSelector" Id="T:System.Net.HttpListener.ExtendedProtectionSelector" />
-    <Type Name="System.Net.Mime.MediaTypeNames/Application" Id="T:System.Net.Mime.MediaTypeNames.Application">
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Octet" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Pdf" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Rtf" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Soap" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Zip" />
-    </Type>
-    <Type Name="System.Net.Mime.MediaTypeNames/Image" Id="T:System.Net.Mime.MediaTypeNames.Image">
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Image.Gif" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Image.Jpeg" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Image.Tiff" />
-    </Type>
-    <Type Name="System.Net.Mime.MediaTypeNames/Text" Id="T:System.Net.Mime.MediaTypeNames.Text">
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Text.Html" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Text.Plain" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Text.RichText" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Text.Xml" />
-    </Type>
-    <Type Name="System.Net.WebRequestMethods/File" Id="T:System.Net.WebRequestMethods.File">
-      <Member Id="F:System.Net.WebRequestMethods.File.DownloadFile" />
-      <Member Id="F:System.Net.WebRequestMethods.File.UploadFile" />
-    </Type>
-    <Type Name="System.Net.WebRequestMethods/Ftp" Id="T:System.Net.WebRequestMethods.Ftp">
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.AppendFile" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.DeleteFile" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.DownloadFile" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.GetDateTimestamp" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.GetFileSize" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.ListDirectory" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.MakeDirectory" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.PrintWorkingDirectory" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.RemoveDirectory" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.Rename" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.UploadFile" />
-      <Member Id="F:System.Net.WebRequestMethods.Ftp.UploadFileWithUniqueName" />
-    </Type>
-    <Type Name="System.Net.WebRequestMethods/Http" Id="T:System.Net.WebRequestMethods.Http">
-      <Member Id="F:System.Net.WebRequestMethods.Http.Connect" />
-      <Member Id="F:System.Net.WebRequestMethods.Http.Get" />
-      <Member Id="F:System.Net.WebRequestMethods.Http.Head" />
-      <Member Id="F:System.Net.WebRequestMethods.Http.MkCol" />
-      <Member Id="F:System.Net.WebRequestMethods.Http.Post" />
-      <Member Id="F:System.Net.WebRequestMethods.Http.Put" />
-    </Type>
-    <Type Name="System.Runtime.CompilerServices.ConditionalWeakTable`2/CreateValueCallback" Id="T:System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback" />
-    <Type Name="System.Runtime.CompilerServices.ConfiguredTaskAwaitable/ConfiguredTaskAwaiter" Id="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter">
-      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult" />
-      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)" />
-      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)" />
-      <Member Id="P:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted" />
-    </Type>
-    <Type Name="System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter" Id="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter">
-      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult" />
-      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.OnCompleted(System.Action)" />
-      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)" />
-      <Member Id="P:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.IsCompleted" />
-    </Type>
-    <Type Name="System.Runtime.CompilerServices.RuntimeHelpers/CleanupCode" Id="T:System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode" />
-    <Type Name="System.Runtime.CompilerServices.RuntimeHelpers/TryCode" Id="T:System.Runtime.CompilerServices.RuntimeHelpers.TryCode" />
-    <Type Name="System.Runtime.CompilerServices.YieldAwaitable/YieldAwaiter" Id="T:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter">
-      <Member Id="M:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.GetResult" />
-      <Member Id="M:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.OnCompleted(System.Action)" />
-      <Member Id="M:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.UnsafeOnCompleted(System.Action)" />
-      <Member Id="P:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.IsCompleted" />
-    </Type>
-    <Type Name="System.Runtime.InteropServices.ComTypes.ELEMDESC/DESCUNION" Id="T:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION">
-      <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.idldesc" />
-      <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.paramdesc" />
-    </Type>
-    <Type Name="System.Runtime.InteropServices.ComTypes.VARDESC/DESCUNION" Id="T:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION">
-      <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.lpvarValue" />
-      <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.oInst" />
-    </Type>
-    <Type Name="System.Security.Cryptography.ECCurve/ECCurveType" Id="T:System.Security.Cryptography.ECCurve.ECCurveType">
-      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.Characteristic2" />
-      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.Implicit" />
-      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.Named" />
-      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeMontgomery" />
-      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeShortWeierstrass" />
-      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeTwistedEdwards" />
-    </Type>
-    <Type Name="System.Security.Cryptography.ECCurve/NamedCurves" Id="T:System.Security.Cryptography.ECCurve.NamedCurves">
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160r1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160t1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192r1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192t1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224r1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224t1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256r1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256t1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320r1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320t1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384r1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384t1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512r1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512t1" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP256" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP384" />
-      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP521" />
-    </Type>
-    <Type Name="System.Security.Cryptography.X509Certificates.X509CertificateCollection/X509CertificateEnumerator" Id="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator">
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.#ctor(System.Security.Cryptography.X509Certificates.X509CertificateCollection)" />
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.MoveNext" />
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.Reset" />
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.System#Collections#IEnumerator#MoveNext" />
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.System#Collections#IEnumerator#Reset" />
-      <Member Id="P:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.Current" />
-      <Member Id="P:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.System#Collections#IEnumerator#Current" />
-    </Type>
-    <Type Name="System.TimeZoneInfo/AdjustmentRule" Id="T:System.TimeZoneInfo.AdjustmentRule">
-      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule(System.DateTime,System.DateTime,System.TimeSpan,System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
-      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.Equals(System.TimeZoneInfo.AdjustmentRule)" />
-      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.GetHashCode" />
-      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
-      <Member Id="M:System.TimeZoneInfo.AdjustmentRule.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DateEnd" />
-      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DateStart" />
-      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DaylightDelta" />
-      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DaylightTransitionEnd" />
-      <Member Id="P:System.TimeZoneInfo.AdjustmentRule.DaylightTransitionStart" />
-    </Type>
-    <Type Name="System.TimeZoneInfo/TransitionTime" Id="T:System.TimeZoneInfo.TransitionTime">
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.CreateFixedDateRule(System.DateTime,System.Int32,System.Int32)" />
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule(System.DateTime,System.Int32,System.Int32,System.DayOfWeek)" />
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.Equals(System.Object)" />
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.Equals(System.TimeZoneInfo.TransitionTime)" />
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.GetHashCode" />
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.op_Equality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.op_Inequality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
-      <Member Id="M:System.TimeZoneInfo.TransitionTime.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="P:System.TimeZoneInfo.TransitionTime.Day" />
-      <Member Id="P:System.TimeZoneInfo.TransitionTime.DayOfWeek" />
-      <Member Id="P:System.TimeZoneInfo.TransitionTime.IsFixedDateRule" />
-      <Member Id="P:System.TimeZoneInfo.TransitionTime.Month" />
-      <Member Id="P:System.TimeZoneInfo.TransitionTime.TimeOfDay" />
-      <Member Id="P:System.TimeZoneInfo.TransitionTime.Week" />
-    </Type>
-    <Type Name="System.Xml.Schema.XmlSchemaInference/InferenceOption" Id="T:System.Xml.Schema.XmlSchemaInference.InferenceOption">
-      <Member Id="F:System.Xml.Schema.XmlSchemaInference.InferenceOption.Relaxed" />
-      <Member Id="F:System.Xml.Schema.XmlSchemaInference.InferenceOption.Restricted" />
-    </Type>
-    <Type Name="System.Xml.Serialization.XmlSerializationReader/CollectionFixup" Id="T:System.Xml.Serialization.XmlSerializationReader.CollectionFixup">
-      <Member Id="M:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationCollectionFixupCallback,System.Object)" />
-      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Callback" />
-      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection" />
-      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems" />
-    </Type>
-    <Type Name="System.Xml.Serialization.XmlSerializationReader/Fixup" Id="T:System.Xml.Serialization.XmlSerializationReader.Fixup">
-      <Member Id="M:System.Xml.Serialization.XmlSerializationReader.Fixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationFixupCallback,System.Int32)" />
-      <Member Id="M:System.Xml.Serialization.XmlSerializationReader.Fixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationFixupCallback,System.String[])" />
-      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Callback" />
-      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Ids" />
-      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Source" />
     </Type>
   </Namespace>
   <Namespace Name="System.Collections.ObjectModel">
@@ -5614,6 +5379,34 @@
       <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#IDictionary#Values" />
       <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.Values" />
     </Type>
+    <Type Name="System.Collections.ObjectModel.ReadOnlyDictionary`2/KeyCollection" Id="T:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection">
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.CopyTo(`0[],System.Int32)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.GetEnumerator" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.Count" />
+      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly" />
+      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#ICollection#SyncRoot" />
+    </Type>
+    <Type Name="System.Collections.ObjectModel.ReadOnlyDictionary`2/ValueCollection" Id="T:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection">
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.GetEnumerator" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.Count" />
+      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly" />
+      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot" />
+    </Type>
     <Type Name="System.Collections.ObjectModel.ReadOnlyObservableCollection`1" Id="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1">
       <Member Id="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.CollectionChanged" />
       <Member Id="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.PropertyChanged" />
@@ -5639,6 +5432,17 @@
       <Member Id="P:System.Collections.Specialized.BitVector32.Data" />
       <Member Id="P:System.Collections.Specialized.BitVector32.Item(System.Collections.Specialized.BitVector32.Section)" />
       <Member Id="P:System.Collections.Specialized.BitVector32.Item(System.Int32)" />
+    </Type>
+    <Type Name="System.Collections.Specialized.BitVector32/Section" Id="T:System.Collections.Specialized.BitVector32.Section">
+      <Member Id="M:System.Collections.Specialized.BitVector32.Section.Equals(System.Collections.Specialized.BitVector32.Section)" />
+      <Member Id="M:System.Collections.Specialized.BitVector32.Section.Equals(System.Object)" />
+      <Member Id="M:System.Collections.Specialized.BitVector32.Section.GetHashCode" />
+      <Member Id="M:System.Collections.Specialized.BitVector32.Section.op_Equality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)" />
+      <Member Id="M:System.Collections.Specialized.BitVector32.Section.op_Inequality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)" />
+      <Member Id="M:System.Collections.Specialized.BitVector32.Section.ToString" />
+      <Member Id="M:System.Collections.Specialized.BitVector32.Section.ToString(System.Collections.Specialized.BitVector32.Section)" />
+      <Member Id="P:System.Collections.Specialized.BitVector32.Section.Mask" />
+      <Member Id="P:System.Collections.Specialized.BitVector32.Section.Offset" />
     </Type>
     <Type Name="System.Collections.Specialized.CollectionsUtil" Id="T:System.Collections.Specialized.CollectionsUtil">
       <Member Id="M:System.Collections.Specialized.CollectionsUtil.#ctor" />
@@ -5726,6 +5530,15 @@
       <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.Keys" />
       <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.System#Collections#ICollection#IsSynchronized" />
       <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.System#Collections#ICollection#SyncRoot" />
+    </Type>
+    <Type Name="System.Collections.Specialized.NameObjectCollectionBase/KeysCollection" Id="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection">
+      <Member Id="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Get(System.Int32)" />
+      <Member Id="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.GetEnumerator" />
+      <Member Id="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count" />
+      <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item(System.Int32)" />
+      <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#SyncRoot" />
     </Type>
     <Type Name="System.Collections.Specialized.NameValueCollection" Id="T:System.Collections.Specialized.NameValueCollection">
       <Member Id="M:System.Collections.Specialized.NameValueCollection.#ctor" />
@@ -7361,6 +7174,28 @@
       <Member Id="M:System.ComponentModel.TypeConverter.IsValid(System.Object)" />
       <Member Id="M:System.ComponentModel.TypeConverter.SortProperties(System.ComponentModel.PropertyDescriptorCollection,System.String[])" />
     </Type>
+    <Type Name="System.ComponentModel.TypeConverter/SimplePropertyDescriptor" Id="T:System.ComponentModel.TypeConverter.SimplePropertyDescriptor">
+      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type)" />
+      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type,System.Attribute[])" />
+      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.CanResetValue(System.Object)" />
+      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ResetValue(System.Object)" />
+      <Member Id="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ShouldSerializeValue(System.Object)" />
+      <Member Id="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ComponentType" />
+      <Member Id="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.IsReadOnly" />
+      <Member Id="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.PropertyType" />
+    </Type>
+    <Type Name="System.ComponentModel.TypeConverter/StandardValuesCollection" Id="T:System.ComponentModel.TypeConverter.StandardValuesCollection">
+      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.#ctor(System.Collections.ICollection)" />
+      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.GetEnumerator" />
+      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.Count" />
+      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.Item(System.Int32)" />
+      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#ICollection#Count" />
+      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.ComponentModel.TypeConverter.StandardValuesCollection.System#Collections#ICollection#SyncRoot" />
+    </Type>
     <Type Name="System.ComponentModel.TypeConverterAttribute" Id="T:System.ComponentModel.TypeConverterAttribute">
       <Member Id="F:System.ComponentModel.TypeConverterAttribute.Default" />
       <Member Id="M:System.ComponentModel.TypeConverterAttribute.#ctor" />
@@ -7576,6 +7411,30 @@
       <Member Id="M:System.ComponentModel.Design.DesignerOptionService.System#ComponentModel#Design#IDesignerOptionService#GetOptionValue(System.String,System.String)" />
       <Member Id="M:System.ComponentModel.Design.DesignerOptionService.System#ComponentModel#Design#IDesignerOptionService#SetOptionValue(System.String,System.String,System.Object)" />
       <Member Id="P:System.ComponentModel.Design.DesignerOptionService.Options" />
+    </Type>
+    <Type Name="System.ComponentModel.Design.DesignerOptionService/DesignerOptionCollection" Id="T:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection">
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.GetEnumerator" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.IndexOf(System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection)" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.ShowDialog" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Add(System.Object)" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Clear" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Contains(System.Object)" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Remove(System.Object)" />
+      <Member Id="M:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Count" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Item(System.Int32)" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Item(System.String)" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Name" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Parent" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Properties" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#ICollection#SyncRoot" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#IsFixedSize" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#IsReadOnly" />
+      <Member Id="P:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.System#Collections#IList#Item(System.Int32)" />
     </Type>
     <Type Name="System.ComponentModel.Design.DesignerTransaction" Id="T:System.ComponentModel.Design.DesignerTransaction">
       <Member Id="M:System.ComponentModel.Design.DesignerTransaction.#ctor" />
@@ -10988,6 +10847,13 @@
       <Member Id="P:System.Diagnostics.DebuggableAttribute.IsJITOptimizerDisabled" />
       <Member Id="P:System.Diagnostics.DebuggableAttribute.IsJITTrackingEnabled" />
     </Type>
+    <Type Name="System.Diagnostics.DebuggableAttribute/DebuggingModes" Id="T:System.Diagnostics.DebuggableAttribute.DebuggingModes">
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.Default" />
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations" />
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue" />
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints" />
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.None" />
+    </Type>
     <Type Name="System.Diagnostics.Debugger" Id="T:System.Diagnostics.Debugger">
       <Member Id="F:System.Diagnostics.Debugger.DefaultCategory" />
       <Member Id="M:System.Diagnostics.Debugger.Break" />
@@ -12021,6 +11887,10 @@
       <Member Id="P:System.Diagnostics.Tracing.EventSource.Guid" />
       <Member Id="P:System.Diagnostics.Tracing.EventSource.Name" />
       <Member Id="P:System.Diagnostics.Tracing.EventSource.Settings" />
+    </Type>
+    <Type Name="System.Diagnostics.Tracing.EventSource/EventData" Id="T:System.Diagnostics.Tracing.EventSource.EventData">
+      <Member Id="P:System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
+      <Member Id="P:System.Diagnostics.Tracing.EventSource.EventData.Size" />
     </Type>
     <Type Name="System.Diagnostics.Tracing.EventSourceAttribute" Id="T:System.Diagnostics.Tracing.EventSourceAttribute">
       <Member Id="M:System.Diagnostics.Tracing.EventSourceAttribute.#ctor" />
@@ -16333,6 +16203,7 @@
       <Member Id="P:System.Net.HttpListener.TimeoutManager" />
       <Member Id="P:System.Net.HttpListener.UnsafeConnectionNtlmAuthentication" />
     </Type>
+    <Type Name="System.Net.HttpListener/ExtendedProtectionSelector" Id="T:System.Net.HttpListener.ExtendedProtectionSelector" />
     <Type Name="System.Net.HttpListenerBasicIdentity" Id="T:System.Net.HttpListenerBasicIdentity">
       <Member Id="M:System.Net.HttpListenerBasicIdentity.#ctor(System.String,System.String)" />
       <Member Id="P:System.Net.HttpListenerBasicIdentity.Password" />
@@ -17095,6 +16966,33 @@
       <Member Id="P:System.Net.WebRequest.UseDefaultCredentials" />
     </Type>
     <Type Name="System.Net.WebRequestMethods" Id="T:System.Net.WebRequestMethods" />
+    <Type Name="System.Net.WebRequestMethods/File" Id="T:System.Net.WebRequestMethods.File">
+      <Member Id="F:System.Net.WebRequestMethods.File.DownloadFile" />
+      <Member Id="F:System.Net.WebRequestMethods.File.UploadFile" />
+    </Type>
+    <Type Name="System.Net.WebRequestMethods/Ftp" Id="T:System.Net.WebRequestMethods.Ftp">
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.AppendFile" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.DeleteFile" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.DownloadFile" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.GetDateTimestamp" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.GetFileSize" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.ListDirectory" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.MakeDirectory" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.PrintWorkingDirectory" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.RemoveDirectory" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.Rename" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.UploadFile" />
+      <Member Id="F:System.Net.WebRequestMethods.Ftp.UploadFileWithUniqueName" />
+    </Type>
+    <Type Name="System.Net.WebRequestMethods/Http" Id="T:System.Net.WebRequestMethods.Http">
+      <Member Id="F:System.Net.WebRequestMethods.Http.Connect" />
+      <Member Id="F:System.Net.WebRequestMethods.Http.Get" />
+      <Member Id="F:System.Net.WebRequestMethods.Http.Head" />
+      <Member Id="F:System.Net.WebRequestMethods.Http.MkCol" />
+      <Member Id="F:System.Net.WebRequestMethods.Http.Post" />
+      <Member Id="F:System.Net.WebRequestMethods.Http.Put" />
+    </Type>
     <Type Name="System.Net.WebResponse" Id="T:System.Net.WebResponse">
       <Member Id="M:System.Net.WebResponse.#ctor" />
       <Member Id="M:System.Net.WebResponse.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
@@ -18016,6 +17914,24 @@
       <Member Id="F:System.Net.Mime.DispositionTypeNames.Inline" />
     </Type>
     <Type Name="System.Net.Mime.MediaTypeNames" Id="T:System.Net.Mime.MediaTypeNames" />
+    <Type Name="System.Net.Mime.MediaTypeNames/Application" Id="T:System.Net.Mime.MediaTypeNames.Application">
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Octet" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Pdf" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Rtf" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Soap" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Zip" />
+    </Type>
+    <Type Name="System.Net.Mime.MediaTypeNames/Image" Id="T:System.Net.Mime.MediaTypeNames.Image">
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Image.Gif" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Image.Jpeg" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Image.Tiff" />
+    </Type>
+    <Type Name="System.Net.Mime.MediaTypeNames/Text" Id="T:System.Net.Mime.MediaTypeNames.Text">
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Text.Html" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Text.Plain" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Text.RichText" />
+      <Member Id="F:System.Net.Mime.MediaTypeNames.Text.Xml" />
+    </Type>
     <Type Name="System.Net.Mime.TransferEncoding" Id="T:System.Net.Mime.TransferEncoding">
       <Member Id="F:System.Net.Mime.TransferEncoding.Base64" />
       <Member Id="F:System.Net.Mime.TransferEncoding.EightBit" />
@@ -21256,11 +21172,24 @@
       <Member Id="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Remove(`0)" />
       <Member Id="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.TryGetValue(`0,`1@)" />
     </Type>
+    <Type Name="System.Runtime.CompilerServices.ConditionalWeakTable`2/CreateValueCallback" Id="T:System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback" />
     <Type Name="System.Runtime.CompilerServices.ConfiguredTaskAwaitable" Id="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable">
       <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.GetAwaiter" />
     </Type>
+    <Type Name="System.Runtime.CompilerServices.ConfiguredTaskAwaitable/ConfiguredTaskAwaiter" Id="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter">
+      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult" />
+      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)" />
+      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)" />
+      <Member Id="P:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted" />
+    </Type>
     <Type Name="System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1" Id="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1">
       <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.GetAwaiter" />
+    </Type>
+    <Type Name="System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter" Id="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter">
+      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult" />
+      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.OnCompleted(System.Action)" />
+      <Member Id="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)" />
+      <Member Id="P:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.IsCompleted" />
     </Type>
     <Type Name="System.Runtime.CompilerServices.ContractHelper" Id="T:System.Runtime.CompilerServices.ContractHelper">
       <Member Id="M:System.Runtime.CompilerServices.ContractHelper.RaiseContractFailedEvent(System.Diagnostics.Contracts.ContractFailureKind,System.String,System.String,System.Exception)" />
@@ -21462,6 +21391,8 @@
       <Member Id="M:System.Runtime.CompilerServices.RuntimeHelpers.RunModuleConstructor(System.ModuleHandle)" />
       <Member Id="P:System.Runtime.CompilerServices.RuntimeHelpers.OffsetToStringData" />
     </Type>
+    <Type Name="System.Runtime.CompilerServices.RuntimeHelpers/CleanupCode" Id="T:System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode" />
+    <Type Name="System.Runtime.CompilerServices.RuntimeHelpers/TryCode" Id="T:System.Runtime.CompilerServices.RuntimeHelpers.TryCode" />
     <Type Name="System.Runtime.CompilerServices.RuntimeWrappedException" Id="T:System.Runtime.CompilerServices.RuntimeWrappedException">
       <Member Id="M:System.Runtime.CompilerServices.RuntimeWrappedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="P:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException" />
@@ -21517,6 +21448,12 @@
     </Type>
     <Type Name="System.Runtime.CompilerServices.YieldAwaitable" Id="T:System.Runtime.CompilerServices.YieldAwaitable">
       <Member Id="M:System.Runtime.CompilerServices.YieldAwaitable.GetAwaiter" />
+    </Type>
+    <Type Name="System.Runtime.CompilerServices.YieldAwaitable/YieldAwaiter" Id="T:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter">
+      <Member Id="M:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.GetResult" />
+      <Member Id="M:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.OnCompleted(System.Action)" />
+      <Member Id="M:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.UnsafeOnCompleted(System.Action)" />
+      <Member Id="P:System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.IsCompleted" />
     </Type>
   </Namespace>
   <Namespace Name="System.Runtime.ConstrainedExecution">
@@ -22310,6 +22247,10 @@
       <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.desc" />
       <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.tdesc" />
     </Type>
+    <Type Name="System.Runtime.InteropServices.ComTypes.ELEMDESC/DESCUNION" Id="T:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION">
+      <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.idldesc" />
+      <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.paramdesc" />
+    </Type>
     <Type Name="System.Runtime.InteropServices.ComTypes.EXCEPINFO" Id="T:System.Runtime.InteropServices.ComTypes.EXCEPINFO">
       <Member Id="F:System.Runtime.InteropServices.ComTypes.EXCEPINFO.bstrDescription" />
       <Member Id="F:System.Runtime.InteropServices.ComTypes.EXCEPINFO.bstrHelpFile" />
@@ -22743,6 +22684,10 @@
       <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.memid" />
       <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.varkind" />
       <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.wVarFlags" />
+    </Type>
+    <Type Name="System.Runtime.InteropServices.ComTypes.VARDESC/DESCUNION" Id="T:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION">
+      <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.lpvarValue" />
+      <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.oInst" />
     </Type>
     <Type Name="System.Runtime.InteropServices.ComTypes.VARFLAGS" Id="T:System.Runtime.InteropServices.ComTypes.VARFLAGS">
       <Member Id="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FBINDABLE" />
@@ -24045,6 +23990,33 @@
       <Member Id="P:System.Security.Cryptography.ECCurve.IsPrime" />
       <Member Id="P:System.Security.Cryptography.ECCurve.Oid" />
     </Type>
+    <Type Name="System.Security.Cryptography.ECCurve/ECCurveType" Id="T:System.Security.Cryptography.ECCurve.ECCurveType">
+      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.Characteristic2" />
+      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.Implicit" />
+      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.Named" />
+      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeMontgomery" />
+      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeShortWeierstrass" />
+      <Member Id="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeTwistedEdwards" />
+    </Type>
+    <Type Name="System.Security.Cryptography.ECCurve/NamedCurves" Id="T:System.Security.Cryptography.ECCurve.NamedCurves">
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160r1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160t1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192r1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192t1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224r1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224t1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256r1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256t1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320r1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320t1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384r1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384t1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512r1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512t1" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP256" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP384" />
+      <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP521" />
+    </Type>
     <Type Name="System.Security.Cryptography.ECDiffieHellmanPublicKey" Id="T:System.Security.Cryptography.ECDiffieHellmanPublicKey">
       <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.#ctor(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose" />
@@ -24877,6 +24849,15 @@
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.Insert(System.Int32,System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.Remove(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <Member Id="P:System.Security.Cryptography.X509Certificates.X509CertificateCollection.Item(System.Int32)" />
+    </Type>
+    <Type Name="System.Security.Cryptography.X509Certificates.X509CertificateCollection/X509CertificateEnumerator" Id="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator">
+      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.#ctor(System.Security.Cryptography.X509Certificates.X509CertificateCollection)" />
+      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.MoveNext" />
+      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.Reset" />
+      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.System#Collections#IEnumerator#MoveNext" />
+      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.System#Collections#IEnumerator#Reset" />
+      <Member Id="P:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.Current" />
+      <Member Id="P:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.System#Collections#IEnumerator#Current" />
     </Type>
     <Type Name="System.Security.Cryptography.X509Certificates.X509Chain" Id="T:System.Security.Cryptography.X509Certificates.X509Chain">
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Chain.#ctor" />
@@ -29422,6 +29403,10 @@
       <Member Id="P:System.Xml.Schema.XmlSchemaInference.Occurrence" />
       <Member Id="P:System.Xml.Schema.XmlSchemaInference.TypeInference" />
     </Type>
+    <Type Name="System.Xml.Schema.XmlSchemaInference/InferenceOption" Id="T:System.Xml.Schema.XmlSchemaInference.InferenceOption">
+      <Member Id="F:System.Xml.Schema.XmlSchemaInference.InferenceOption.Relaxed" />
+      <Member Id="F:System.Xml.Schema.XmlSchemaInference.InferenceOption.Restricted" />
+    </Type>
     <Type Name="System.Xml.Schema.XmlSchemaInferenceException" Id="T:System.Xml.Schema.XmlSchemaInferenceException">
       <Member Id="M:System.Xml.Schema.XmlSchemaInferenceException.#ctor" />
       <Member Id="M:System.Xml.Schema.XmlSchemaInferenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
@@ -30251,6 +30236,19 @@
       <Member Id="P:System.Xml.Serialization.XmlSerializationReader.IsReturnValue" />
       <Member Id="P:System.Xml.Serialization.XmlSerializationReader.Reader" />
       <Member Id="P:System.Xml.Serialization.XmlSerializationReader.ReaderCount" />
+    </Type>
+    <Type Name="System.Xml.Serialization.XmlSerializationReader/CollectionFixup" Id="T:System.Xml.Serialization.XmlSerializationReader.CollectionFixup">
+      <Member Id="M:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationCollectionFixupCallback,System.Object)" />
+      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Callback" />
+      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection" />
+      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems" />
+    </Type>
+    <Type Name="System.Xml.Serialization.XmlSerializationReader/Fixup" Id="T:System.Xml.Serialization.XmlSerializationReader.Fixup">
+      <Member Id="M:System.Xml.Serialization.XmlSerializationReader.Fixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationFixupCallback,System.Int32)" />
+      <Member Id="M:System.Xml.Serialization.XmlSerializationReader.Fixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationFixupCallback,System.String[])" />
+      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Callback" />
+      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Ids" />
+      <Member Id="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Source" />
     </Type>
     <Type Name="System.Xml.Serialization.XmlSerializationWriteCallback" Id="T:System.Xml.Serialization.XmlSerializationWriteCallback" />
     <Type Name="System.Xml.Serialization.XmlSerializationWriter" Id="T:System.Xml.Serialization.XmlSerializationWriter">

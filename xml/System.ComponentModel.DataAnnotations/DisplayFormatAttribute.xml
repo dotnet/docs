@@ -225,6 +225,27 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetNullDisplayText">
+      <MemberSignature Language="C#" Value="public string GetNullDisplayText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetNullDisplayText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.GetNullDisplayText" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNullDisplayText () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetNullDisplayText();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HtmlEncode">
       <MemberSignature Language="C#" Value="public bool HtmlEncode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HtmlEncode" />
@@ -296,6 +317,26 @@
         </remarks>
         <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
         <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull" />
+      </Docs>
+    </Member>
+    <Member MemberName="NullDisplayTextResourceType">
+      <MemberSignature Language="C#" Value="public Type NullDisplayTextResourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type NullDisplayTextResourceType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayTextResourceType" />
+      <MemberSignature Language="VB.NET" Value="Public Property NullDisplayTextResourceType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ NullDisplayTextResourceType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

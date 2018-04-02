@@ -1,0 +1,90 @@
+﻿<Type Name="ReadOnlyMemoryContent" FullName="System.Net.Http.ReadOnlyMemoryContent">
+  <TypeSignature Language="C#" Value="public sealed class ReadOnlyMemoryContent : System.Net.Http.HttpContent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReadOnlyMemoryContent extends System.Net.Http.HttpContent" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Http.ReadOnlyMemoryContent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReadOnlyMemoryContent&#xA;Inherits HttpContent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyMemoryContent sealed : System::Net::Http::HttpContent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Http</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Net.Http.HttpContent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemoryContent (ReadOnlyMemory&lt;byte&gt; content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.ReadOnlyMemoryContent.#ctor(System.ReadOnlyMemory{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (content As ReadOnlyMemory(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyMemoryContent(ReadOnlyMemory&lt;System::Byte&gt; content);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="content" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeToStreamAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task SerializeToStreamAsync (System.IO.Stream stream, System.Net.TransportContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task SerializeToStreamAsync(class System.IO.Stream stream, class System.Net.TransportContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.ReadOnlyMemoryContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Threading::Tasks::Task ^ SerializeToStreamAsync(System::IO::Stream ^ stream, System::Net::TransportContext ^ context);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="context" Type="System.Net.TransportContext" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryComputeLength">
+      <MemberSignature Language="C#" Value="protected internal override bool TryComputeLength (out long length);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryComputeLength([out] int64&amp; length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.ReadOnlyMemoryContent.TryComputeLength(System.Int64@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryComputeLength (ByRef length As Long) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryComputeLength([Runtime::InteropServices::Out] long % length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

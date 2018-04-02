@@ -2742,6 +2742,13 @@
     <Type Name="System.Diagnostics.DebuggableAttribute" Id="T:System.Diagnostics.DebuggableAttribute">
       <Member Id="M:System.Diagnostics.DebuggableAttribute.#ctor(System.Diagnostics.DebuggableAttribute.DebuggingModes)" />
     </Type>
+    <Type Name="System.Diagnostics.DebuggableAttribute/DebuggingModes" Id="T:System.Diagnostics.DebuggableAttribute.DebuggingModes">
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.Default" />
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations" />
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue" />
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints" />
+      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.None" />
+    </Type>
     <Type Name="System.Diagnostics.Stopwatch" Id="T:System.Diagnostics.Stopwatch">
       <Member Id="F:System.Diagnostics.Stopwatch.Frequency" />
       <Member Id="F:System.Diagnostics.Stopwatch.IsHighResolution" />
@@ -2756,28 +2763,6 @@
       <Member Id="P:System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
       <Member Id="P:System.Diagnostics.Stopwatch.ElapsedTicks" />
       <Member Id="P:System.Diagnostics.Stopwatch.IsRunning" />
-    </Type>
-  </Namespace>
-  <Namespace Name="">
-    <Type Name="System.Diagnostics.DebuggableAttribute/DebuggingModes" Id="T:System.Diagnostics.DebuggableAttribute.DebuggingModes">
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.Default" />
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations" />
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue" />
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints" />
-      <Member Id="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.None" />
-    </Type>
-    <Type Name="System.Diagnostics.Tracing.EventSource/EventData" Id="T:System.Diagnostics.Tracing.EventSource.EventData">
-      <Member Id="P:System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
-      <Member Id="P:System.Diagnostics.Tracing.EventSource.EventData.Size" />
-    </Type>
-    <Type Name="System.Runtime.CompilerServices.ConditionalWeakTable`2/CreateValueCallback" Id="T:System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback" />
-    <Type Name="System.Runtime.InteropServices.ComTypes.ELEMDESC/DESCUNION" Id="T:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION">
-      <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.idldesc" />
-      <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.paramdesc" />
-    </Type>
-    <Type Name="System.Runtime.InteropServices.ComTypes.VARDESC/DESCUNION" Id="T:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION">
-      <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.lpvarValue" />
-      <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.oInst" />
     </Type>
   </Namespace>
   <Namespace Name="System.Diagnostics.Tracing">
@@ -2955,6 +2940,10 @@
       <Member Id="P:System.Diagnostics.Tracing.EventSource.Guid" />
       <Member Id="P:System.Diagnostics.Tracing.EventSource.Name" />
       <Member Id="P:System.Diagnostics.Tracing.EventSource.Settings" />
+    </Type>
+    <Type Name="System.Diagnostics.Tracing.EventSource/EventData" Id="T:System.Diagnostics.Tracing.EventSource.EventData">
+      <Member Id="P:System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
+      <Member Id="P:System.Diagnostics.Tracing.EventSource.EventData.Size" />
     </Type>
     <Type Name="System.Diagnostics.Tracing.EventSourceAttribute" Id="T:System.Diagnostics.Tracing.EventSourceAttribute">
       <Member Id="M:System.Diagnostics.Tracing.EventSourceAttribute.#ctor" />
@@ -4052,6 +4041,7 @@
       <Member Id="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Remove(`0)" />
       <Member Id="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.TryGetValue(`0,`1@)" />
     </Type>
+    <Type Name="System.Runtime.CompilerServices.ConditionalWeakTable`2/CreateValueCallback" Id="T:System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback" />
     <Type Name="System.Runtime.CompilerServices.CustomConstantAttribute" Id="T:System.Runtime.CompilerServices.CustomConstantAttribute">
       <Member Id="M:System.Runtime.CompilerServices.CustomConstantAttribute.#ctor" />
       <Member Id="P:System.Runtime.CompilerServices.CustomConstantAttribute.Value" />
@@ -4762,6 +4752,10 @@
       <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.desc" />
       <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.tdesc" />
     </Type>
+    <Type Name="System.Runtime.InteropServices.ComTypes.ELEMDESC/DESCUNION" Id="T:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION">
+      <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.idldesc" />
+      <Member Id="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.paramdesc" />
+    </Type>
     <Type Name="System.Runtime.InteropServices.ComTypes.EXCEPINFO" Id="T:System.Runtime.InteropServices.ComTypes.EXCEPINFO">
       <Member Id="F:System.Runtime.InteropServices.ComTypes.EXCEPINFO.bstrDescription" />
       <Member Id="F:System.Runtime.InteropServices.ComTypes.EXCEPINFO.bstrHelpFile" />
@@ -5178,6 +5172,10 @@
       <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.memid" />
       <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.varkind" />
       <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.wVarFlags" />
+    </Type>
+    <Type Name="System.Runtime.InteropServices.ComTypes.VARDESC/DESCUNION" Id="T:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION">
+      <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.lpvarValue" />
+      <Member Id="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.oInst" />
     </Type>
     <Type Name="System.Runtime.InteropServices.ComTypes.VARFLAGS" Id="T:System.Runtime.InteropServices.ComTypes.VARFLAGS">
       <Member Id="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FBINDABLE" />

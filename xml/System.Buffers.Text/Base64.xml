@@ -1,0 +1,185 @@
+﻿<Type Name="Base64" FullName="System.Buffers.Text.Base64">
+  <TypeSignature Language="C#" Value="public static class Base64" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Base64 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.Text.Base64" />
+  <TypeSignature Language="VB.NET" Value="Public Class Base64" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Base64 abstract sealed" />
+  <AssemblyInfo>
+    <AssemblyName>System.Memory</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DecodeFromUtf8">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus DecodeFromUtf8 (ReadOnlySpan&lt;byte&gt; utf8, Span&lt;byte&gt; bytes, out int consumed, out int written, bool isFinalBlock = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus DecodeFromUtf8(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8, valuetype System.Span`1&lt;unsigned int8&gt; bytes, [out] int32&amp; consumed, [out] int32&amp; written, bool isFinalBlock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeFromUtf8 (utf8 As ReadOnlySpan(Of Byte), bytes As Span(Of Byte), ByRef consumed As Integer, ByRef written As Integer, Optional isFinalBlock As Boolean = true) As OperationStatus" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="bytes" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="consumed" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="written" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="isFinalBlock" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <param name="consumed">To be added.</param>
+        <param name="written">To be added.</param>
+        <param name="isFinalBlock">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeFromUtf8InPlace">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus DecodeFromUtf8InPlace (Span&lt;byte&gt; buffer, out int written);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus DecodeFromUtf8InPlace(valuetype System.Span`1&lt;unsigned int8&gt; buffer, [out] int32&amp; written) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.DecodeFromUtf8InPlace(System.Span{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeFromUtf8InPlace (buffer As Span(Of Byte), ByRef written As Integer) As OperationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::OperationStatus DecodeFromUtf8InPlace(Span&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] int % written);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="written" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="written">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodeToUtf8">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus EncodeToUtf8 (ReadOnlySpan&lt;byte&gt; bytes, Span&lt;byte&gt; utf8, out int consumed, out int written, bool isFinalBlock = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus EncodeToUtf8(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes, valuetype System.Span`1&lt;unsigned int8&gt; utf8, [out] int32&amp; consumed, [out] int32&amp; written, bool isFinalBlock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.EncodeToUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EncodeToUtf8 (bytes As ReadOnlySpan(Of Byte), utf8 As Span(Of Byte), ByRef consumed As Integer, ByRef written As Integer, Optional isFinalBlock As Boolean = true) As OperationStatus" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="utf8" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="consumed" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="written" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="isFinalBlock" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">To be added.</param>
+        <param name="utf8">To be added.</param>
+        <param name="consumed">To be added.</param>
+        <param name="written">To be added.</param>
+        <param name="isFinalBlock">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodeToUtf8InPlace">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus EncodeToUtf8InPlace (Span&lt;byte&gt; buffer, int dataLength, out int written);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus EncodeToUtf8InPlace(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int32 dataLength, [out] int32&amp; written) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.EncodeToUtf8InPlace(System.Span{System.Byte},System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EncodeToUtf8InPlace (buffer As Span(Of Byte), dataLength As Integer, ByRef written As Integer) As OperationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::OperationStatus EncodeToUtf8InPlace(Span&lt;System::Byte&gt; buffer, int dataLength, [Runtime::InteropServices::Out] int % written);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="dataLength" Type="System.Int32" />
+        <Parameter Name="written" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="dataLength">To be added.</param>
+        <param name="written">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMaxDecodedFromUtf8Length">
+      <MemberSignature Language="C#" Value="public static int GetMaxDecodedFromUtf8Length (int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetMaxDecodedFromUtf8Length(int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.GetMaxDecodedFromUtf8Length(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMaxDecodedFromUtf8Length (length As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetMaxDecodedFromUtf8Length(int length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMaxEncodedToUtf8Length">
+      <MemberSignature Language="C#" Value="public static int GetMaxEncodedToUtf8Length (int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetMaxEncodedToUtf8Length(int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.GetMaxEncodedToUtf8Length(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMaxEncodedToUtf8Length (length As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetMaxEncodedToUtf8Length(int length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

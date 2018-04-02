@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="subjectName" Type="System.Security.Cryptography.X509Certificates.X500DistinguishedName" />
@@ -58,6 +60,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="subjectName" Type="System.Security.Cryptography.X509Certificates.X500DistinguishedName" />
@@ -90,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="subjectName" Type="System.String" />
@@ -123,6 +127,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="subjectName" Type="System.Security.Cryptography.X509Certificates.X500DistinguishedName" />
@@ -161,6 +166,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="subjectName" Type="System.String" />
@@ -200,6 +206,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Security.Cryptography.X509Certificates.X509Extension&gt;</ReturnType>
@@ -220,6 +227,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
@@ -232,33 +240,34 @@
       </Parameters>
       <Docs>
         <param name="issuerCertificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> instance representing the issuing Certificate Authority (CA).</param>
-        <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow"/>, plus or minus a few seconds.</param>
+        <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow" />, plus or minus a few seconds.</param>
         <param name="notAfter">The date and time when this certificate is no longer considered valid.</param>
         <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned integer of arbitrary size in big-endian byte ordering. <see href="https://tools.ietf.org/html/rfc3280#section-4.1.2.2">RFC 3280</see> recommends confining it to 20 bytes or less.</param>
         <summary>Creates a certificate using the established subject, key, and optional extensions using the specified certificate as the issuer.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> object with the specified values. The returned object won't assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
+        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object with the specified values. The returned object won't assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="issuerCertificate" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="issuerCertificate" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          The <paramref name="issuerCertificate"/> doesn't contain a private key.
+          The <paramref name="issuerCertificate" /> doesn't contain a private key.
 
  -or-
 
-The type of signing key represented by <paramref name="issuerCertificate"/> couldn't be determined.
+The type of signing key represented by <paramref name="issuerCertificate" /> couldn't be determined.
 
  -or-
 
-<paramref name="notAfter"/> represents a date and time that happens earlier than <paramref name="notBefore"/>.
+<paramref name="notAfter" /> represents a date and time that happens earlier than <paramref name="notBefore" />.
 
  -or-
 
-<paramref name="serialNumber"/> is zero length or <see langword="null" />.
+<paramref name="serialNumber" /> is zero length or <see langword="null" />.
 
  -or-
 
-<paramref name="issuerCertificate"/> has a different key algorithm than the requested certificate.</exception>
+<paramref name="issuerCertificate" /> has a different key algorithm than the requested certificate.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <paramref name="issuerCertificate"/> is an RSA certificate and the current object was created using a constructor that doesn't accept a <paramref name="padding" /> parameter.</exception>
+          <paramref name="issuerCertificate" /> is an RSA certificate and the current object was created using a constructor that doesn't accept a <paramref name="padding" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -271,6 +280,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
@@ -283,13 +293,13 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
         <Parameter Name="serialNumber" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="issuerName">The <see cref="T:System.Security.Cryptography.X509Certificates.X500DistinguishedName"/> for the issuer.</param>
-        <param name="generator">An <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator"/> object representing the issuing certificate authority.</param>
-        <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow"/>, plus or minus a few seconds.</param>
+        <param name="issuerName">The <see cref="T:System.Security.Cryptography.X509Certificates.X500DistinguishedName" /> for the issuer.</param>
+        <param name="generator">An <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator" /> object representing the issuing certificate authority.</param>
+        <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow" />, plus or minus a few seconds.</param>
         <param name="notAfter">The date and time when this certificate is no longer considered valid.</param>
         <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned integer of arbitrary size in big-endian byte ordering. <see href="https://tools.ietf.org/html/rfc3280#section-4.1.2.2">RFC 3280</see> recommends confining it to 20 bytes or less. </param>
         <summary>Signs the current certificate request to create a chain-signed or self-signed certificate.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> object with the specified values. The returned object won't assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
+        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object with the specified values. The returned object won't assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="issuerCertificate" /> is <see langword="null" />.
@@ -298,11 +308,11 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
 
 <paramref name="generator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="notAfter"/> represents a date and time that happens earlier than <paramref name="notBefore"/>.
+          <paramref name="notAfter" /> represents a date and time that happens earlier than <paramref name="notBefore" />.
 
  -or-
 
-<paramref name="serialNumber"/> is zero length or <see langword="null" />.</exception>
+<paramref name="serialNumber" /> is zero length or <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurs during the signing operation.</exception>
       </Docs>
     </Member>
@@ -316,6 +326,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
@@ -325,12 +336,13 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
         <Parameter Name="notAfter" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow"/>, plus or minus a few seconds.</param>
+        <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow" />, plus or minus a few seconds.</param>
         <param name="notAfter">The date and time when this certificate is no longer considered valid.</param>
         <summary>Creates a self-signed certificate using the established subject, key, and optional extensions.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> object with the specified values. The returned object will assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
+        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object with the specified values. The returned object will assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="notAfter"/> represents a date and time that happens earlier than <paramref name="notBefore"/>.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="notAfter" /> represents a date and time that happens earlier than <paramref name="notBefore" />.</exception>
         <exception cref="T:System.InvalidOperationException">The current object was created using a constructor that doesn't accept a signing key.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurs during the certificate creation process.</exception>
       </Docs>
@@ -345,6 +357,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -403,6 +416,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -415,7 +429,8 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
         <summary>Creates an ASN.1 DER-encoded PKCS#10 CertificationRequest representing the current state of the current object using the provided signature generator.</summary>
         <returns>A DER-encoded certificate signing request.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="signatureGenerator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="signatureGenerator" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">
@@ -428,6 +443,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
@@ -448,6 +464,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.PublicKey</ReturnType>
@@ -468,6 +485,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedName</ReturnType>

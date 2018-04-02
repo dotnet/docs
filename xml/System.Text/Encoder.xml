@@ -21,6 +21,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -91,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -126,6 +128,39 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public virtual void Convert (ReadOnlySpan&lt;char&gt; chars, Span&lt;byte&gt; bytes, bool flush, out int charsUsed, out int bytesUsed, out bool completed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(valuetype System.ReadOnlySpan`1&lt;char&gt; chars, valuetype System.Span`1&lt;unsigned int8&gt; bytes, bool flush, [out] int32&amp; charsUsed, [out] int32&amp; bytesUsed, [out] bool&amp; completed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Encoder.Convert(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Convert (chars As ReadOnlySpan(Of Char), bytes As Span(Of Byte), flush As Boolean, ByRef charsUsed As Integer, ByRef bytesUsed As Integer, ByRef completed As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Convert(ReadOnlySpan&lt;char&gt; chars, Span&lt;System::Byte&gt; bytes, bool flush, [Runtime::InteropServices::Out] int % charsUsed, [Runtime::InteropServices::Out] int % bytesUsed, [Runtime::InteropServices::Out] bool % completed);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="bytes" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="flush" Type="System.Boolean" />
+        <Parameter Name="charsUsed" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesUsed" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="completed" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="chars">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <param name="flush">To be added.</param>
+        <param name="charsUsed">To be added.</param>
+        <param name="bytesUsed">To be added.</param>
+        <param name="completed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public virtual void Convert (char* chars, int charCount, byte* bytes, int byteCount, bool flush, out int charsUsed, out int bytesUsed, out bool completed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount, bool flush, [out] int32&amp; charsUsed, [out] int32&amp; bytesUsed, [out] bool&amp; completed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.Convert(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
@@ -143,6 +178,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -231,6 +267,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -330,6 +367,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -384,6 +422,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -419,6 +458,32 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetByteCount">
+      <MemberSignature Language="C#" Value="public virtual int GetByteCount (ReadOnlySpan&lt;char&gt; chars, bool flush);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetByteCount(valuetype System.ReadOnlySpan`1&lt;char&gt; chars, bool flush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetByteCount(System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByteCount (chars As ReadOnlySpan(Of Char), flush As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetByteCount(ReadOnlySpan&lt;char&gt; chars, bool flush);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="flush" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="chars">To be added.</param>
+        <param name="flush">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByteCount">
       <MemberSignature Language="C#" Value="public virtual int GetByteCount (char* chars, int count, bool flush);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetByteCount(char* chars, int32 count, bool flush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetByteCount(System.Char*,System.Int32,System.Boolean)" />
@@ -436,6 +501,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -513,6 +579,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -580,6 +647,34 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public virtual int GetBytes (ReadOnlySpan&lt;char&gt; chars, Span&lt;byte&gt; bytes, bool flush);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetBytes(valuetype System.ReadOnlySpan`1&lt;char&gt; chars, valuetype System.Span`1&lt;unsigned int8&gt; bytes, bool flush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes (chars As ReadOnlySpan(Of Char), bytes As Span(Of Byte), flush As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetBytes(ReadOnlySpan&lt;char&gt; chars, Span&lt;System::Byte&gt; bytes, bool flush);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="bytes" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="flush" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="chars">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <param name="flush">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
       <MemberSignature Language="C#" Value="public virtual int GetBytes (char* chars, int charCount, byte* bytes, int byteCount, bool flush);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetBytes(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount, bool flush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean)" />
@@ -597,6 +692,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -686,6 +782,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -781,6 +878,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

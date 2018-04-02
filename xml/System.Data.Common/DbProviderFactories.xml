@@ -8,6 +8,10 @@
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -37,6 +41,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DbProviderFactory</ReturnType>
       </ReturnValue>
@@ -60,6 +68,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DbProviderFactory</ReturnType>
@@ -93,6 +105,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DbProviderFactory</ReturnType>
       </ReturnValue>
@@ -123,6 +139,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -163,6 +183,152 @@
  </description><description> Fully qualified name of the factory class, which contains enough information to instantiate the object.  
   
  </description></item></list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderInvariantNames">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; GetProviderInvariantNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetProviderInvariantNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetProviderInvariantNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProviderInvariantNames () As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetProviderInvariantNames();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterFactory">
+      <MemberSignature Language="C#" Value="public static void RegisterFactory (string providerInvariantName, System.Data.Common.DbProviderFactory factory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterFactory(string providerInvariantName, class System.Data.Common.DbProviderFactory factory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.RegisterFactory(System.String,System.Data.Common.DbProviderFactory)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterFactory (providerInvariantName As String, factory As DbProviderFactory)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterFactory(System::String ^ providerInvariantName, System::Data::Common::DbProviderFactory ^ factory);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerInvariantName" Type="System.String" />
+        <Parameter Name="factory" Type="System.Data.Common.DbProviderFactory" />
+      </Parameters>
+      <Docs>
+        <param name="providerInvariantName">To be added.</param>
+        <param name="factory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterFactory">
+      <MemberSignature Language="C#" Value="public static void RegisterFactory (string providerInvariantName, string factoryTypeAssemblyQualifiedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterFactory(string providerInvariantName, string factoryTypeAssemblyQualifiedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.RegisterFactory(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterFactory (providerInvariantName As String, factoryTypeAssemblyQualifiedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterFactory(System::String ^ providerInvariantName, System::String ^ factoryTypeAssemblyQualifiedName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerInvariantName" Type="System.String" />
+        <Parameter Name="factoryTypeAssemblyQualifiedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="providerInvariantName">To be added.</param>
+        <param name="factoryTypeAssemblyQualifiedName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterFactory">
+      <MemberSignature Language="C#" Value="public static void RegisterFactory (string providerInvariantName, Type factoryType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterFactory(string providerInvariantName, class System.Type factoryType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.RegisterFactory(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterFactory (providerInvariantName As String, factoryType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterFactory(System::String ^ providerInvariantName, Type ^ factoryType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerInvariantName" Type="System.String" />
+        <Parameter Name="factoryType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="providerInvariantName">To be added.</param>
+        <param name="factoryType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetFactory">
+      <MemberSignature Language="C#" Value="public static bool TryGetFactory (string providerInvariantName, out System.Data.Common.DbProviderFactory factory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetFactory(string providerInvariantName, [out] class System.Data.Common.DbProviderFactory&amp; factory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.TryGetFactory(System.String,System.Data.Common.DbProviderFactory@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetFactory (providerInvariantName As String, ByRef factory As DbProviderFactory) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetFactory(System::String ^ providerInvariantName, [Runtime::InteropServices::Out] System::Data::Common::DbProviderFactory ^ % factory);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerInvariantName" Type="System.String" />
+        <Parameter Name="factory" Type="System.Data.Common.DbProviderFactory&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="providerInvariantName">To be added.</param>
+        <param name="factory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterFactory">
+      <MemberSignature Language="C#" Value="public static bool UnregisterFactory (string providerInvariantName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UnregisterFactory(string providerInvariantName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.UnregisterFactory(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnregisterFactory (providerInvariantName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnregisterFactory(System::String ^ providerInvariantName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerInvariantName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="providerInvariantName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -113,7 +113,7 @@ When using DI in .NET Core, you might want to be able to scan an assembly and au
 #### Additional resources
 
 -   **Matthew King. Registering services with Scrutor**
-    [*https://mking.io/blog/registering-services-with-scrutor*](https://mking.io/blog/registering-services-with-scrutor)
+    [*https://mking.net/blog/registering-services-with-scrutor*](https://mking.net/blog/registering-services-with-scrutor)
 
 <!-- -->
 

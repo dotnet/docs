@@ -31,7 +31,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
   
 |Option|Meaning|  
 |------------|-------------|  
-|default|The compiler accepts all valid language syntax that it can support. <sup id="TDefault">[Default](#FDefault)</sup>| 
+|default|The compiler accepts all valid language syntax from the latest major version that it can support. <sup id="TDefault">[Default](#FDefault)</sup>| 
 |ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.1) <sup id="TISO1">[ISO1](#FISO1)</sup>|  
 |ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0) <sup id="TISO2">[ISO2](#FISO2)</sup>|
 |3|The compiler accepts only syntax that is included in C# 3.0 or lower <sup id="TCS3">[CS3](#FCS3)</sup>|

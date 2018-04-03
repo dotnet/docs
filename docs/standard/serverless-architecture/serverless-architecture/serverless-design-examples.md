@@ -71,8 +71,8 @@ An API gateway provides a single point of entry for clients and then intelligent
 ## Recommended Resources
 
 * [Azure Event Grid](/azure/event-grid/overview)
-* [Event Hubs](/azure/event-hubs/event-hubs-what-is-event-hubs)
 * [Designing microservices: identifying microservice boundaries](/azure/architecture/microservices/microservice-boundaries)
+* [Event Hubs](/azure/event-hubs/event-hubs-what-is-event-hubs)
 * [IoT Hub](/azure/iot-hub)
 * [Service Bus](/service-bus)
 

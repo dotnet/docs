@@ -12,7 +12,7 @@ ms.topic: article
 
 Modern business applications follow a variety of architecture patterns. This section represents a survey of common patterns. The patterns listed here aren't necessarily all best practices, but illustrate different approaches.
 
-For more information, see: [Azure application architecture guide](https://docs.microsoft.com/en-us/azure/architecture/guide/).
+For more information, see: [Azure application architecture guide](/azure/architecture/guide/).
 
 ## Monoliths
 
@@ -41,7 +41,7 @@ N-layer application partition application logic into specific layers. The most c
 * Business logic
 * Data access
 
-Other layers may include middleware, batch processing, and API. It is important to note the layers are logical. Although they are developed in isolation, they may all be deployed to the same target platform. 
+Other layers may include middleware, batch processing, and API. It is important to note the layers are logical. Although they are developed in isolation, they may all be deployed to the same target platform.
 
 ![N-Layer architecture](./media/architecture-patterns/n-layer-architecture.png)
 
@@ -55,7 +55,7 @@ Serverless may be used to implement one or more layers.
 
 ## Microservices
 
-The term **[microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)** has recently gained popularity. Although there is no universally accepted definition of microservices, there are many common traits of microservices architectures. Characteristics include:
+The term **[microservices](/azure/architecture/guide/architecture-styles/microservices)** has recently gained popularity. Although there is no universally accepted definition of microservices, there are many common traits of microservices architectures. Characteristics include:
 
 * Applications are composed of several small services
 * Each service runs in its own process

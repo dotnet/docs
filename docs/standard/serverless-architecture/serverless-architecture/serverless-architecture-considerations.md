@@ -58,7 +58,7 @@ Rules often specify how to scale-up (increase the host resources) and scale-out 
 
 ## Monitoring, tracing, and logging
 
-An often overlooked aspect of DevOps is monitoring applications once deployed. It is important to have a strategy for monitoring serverless functions. The biggest challenge is often correlation, or recognizing when a user calls multiple functions as part of the same interaction. Most serverless platforms allow console logging that can be imported into third-party tools. There are also options to automate collection of telemetry, generate and track correlation IDs, and monitor specific actions to provide detailed insights. Azure provides the advanced [Application Insights platform](https://docs.microsoft.com/azure/azure-functions/functions-monitoring) for monitoring and analytics.
+An often overlooked aspect of DevOps is monitoring applications once deployed. It is important to have a strategy for monitoring serverless functions. The biggest challenge is often correlation, or recognizing when a user calls multiple functions as part of the same interaction. Most serverless platforms allow console logging that can be imported into third-party tools. There are also options to automate collection of telemetry, generate and track correlation IDs, and monitor specific actions to provide detailed insights. Azure provides the advanced [Application Insights platform](/azure/azure-functions/functions-monitoring) for monitoring and analytics.
 
 ## Inter-service dependencies
 

@@ -172,6 +172,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
         <value>
           <see langword="true" /> if the certificate revocation list is checked; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Framework 4.7.1 only: This property is not implemented.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClientCertificateOptions">
@@ -729,6 +730,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
         <summary>Gets or sets the TLS/SSL protocol used by the <see cref="T:System.Net.Http.HttpClient" /> objects managed by the HttpClientHandler object.</summary>
         <value>One of the values defined in the <see cref="T:System.Security.Authentication.SslProtocols" /> enumeration.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Framework 4.7.1 only: This property is not implemented.</exception>
       </Docs>
     </Member>
     <Member MemberName="SupportsAutomaticDecompression">

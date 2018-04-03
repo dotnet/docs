@@ -67,6 +67,30 @@ references:
   name.vb: ComImportAttribute
   fullName: System.Runtime.InteropServices.ComImportAttribute
   fullName.vb: System.Runtime.InteropServices.ComImportAttribute
+- uid: Microsoft.VisualBasic.PowerPacks
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.aspx
+  name: Microsoft.VisualBasic.PowerPacks
+  name.vb: Microsoft.VisualBasic.PowerPacks
+  fullName: Microsoft.VisualBasic.PowerPacks
+  fullName.vb: Microsoft.VisualBasic.PowerPacks
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.aspx
+  name: DataRepeater
+  name.vb: DataRepeater
+  fullName: Microsoft.VisualBasic.PowerPacks.DataRepeater
+  fullName.vb: Microsoft.VisualBasic.PowerPacks.DataRepeater
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.AllowUserToAddItems*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.allowusertoadditems.aspx
+  name: AllowUserToAddItems
+  name.vb: AllowUserToAddItems
+  fullName: DataRepeater.AllowUserToAddItems
+  fullName.vb: DataRepeater.AllowUserToAddItems
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.AllowUserToDeleteItems*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.allowusertodeleteitems.aspx
+  name: AllowUserToDeleteItems
+  name.vb: AllowUserToDeleteItems
+  fullName: DataRepeater.AllowUserToDeleteItems
+  fullName.vb: DataRepeater.AllowUserToDeleteItems
 - uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.BeginResetItemTemplate*
   href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.beginresetitemtemplate.aspx
   name: BeginResetItemTemplate
@@ -79,6 +103,30 @@ references:
   name.vb: BeginResetItemTemplate
   fullName: DataRepeater.BeginResetItemTemplate
   fullName.vb: DataRepeater.BeginResetItemTemplate
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.CurrentItemIndex*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.currentitemindex.aspx
+  name: CurrentItemIndex
+  name.vb: CurrentItemIndex
+  fullName: DataRepeater.CurrentItemIndex
+  fullName.vb: DataRepeater.CurrentItemIndex
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.CurrentItemIndexChanged
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.currentitemindexchanged.aspx
+  name: CurrentItemIndexChanged
+  name.vb: CurrentItemIndexChanged
+  fullName: DataRepeater.CurrentItemIndexChanged
+  fullName.vb: DataRepeater.CurrentItemIndexChanged
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.DataSource*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.datasource.aspx
+  name: DataSource
+  name.vb: DataSource
+  fullName: DataRepeater.DataSource
+  fullName.vb: DataRepeater.DataSource
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.DrawItem
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.drawitem.aspx
+  name: DrawItem
+  name.vb: DrawItem
+  fullName: DataRepeater.DrawItem
+  fullName.vb: DataRepeater.DrawItem
 - uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.EndResetItemTemplate*
   href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.endresetitemtemplate.aspx
   name: EndResetItemTemplate
@@ -91,6 +139,60 @@ references:
   name.vb: EndResetItemTemplate
   fullName: DataRepeater.EndResetItemTemplate
   fullName.vb: DataRepeater.EndResetItemTemplate
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemHeaderSize*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.itemheadersize.aspx
+  name: ItemHeaderSize
+  name.vb: ItemHeaderSize
+  fullName: DataRepeater.ItemHeaderSize
+  fullName.vb: DataRepeater.ItemHeaderSize
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemHeaderVisible*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.itemheadervisible.aspx
+  name: ItemHeaderVisible
+  name.vb: ItemHeaderVisible
+  fullName: DataRepeater.ItemHeaderVisible
+  fullName.vb: DataRepeater.ItemHeaderVisible
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemTemplate*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.itemtemplate.aspx
+  name: ItemTemplate
+  name.vb: ItemTemplate
+  fullName: DataRepeater.ItemTemplate
+  fullName.vb: DataRepeater.ItemTemplate
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyle*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.layoutstyle.aspx
+  name: LayoutStyle
+  name.vb: LayoutStyle
+  fullName: DataRepeater.LayoutStyle
+  fullName.vb: DataRepeater.LayoutStyle
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyleChanged
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.layoutstylechanged.aspx
+  name: LayoutStyleChanged
+  name.vb: LayoutStyleChanged
+  fullName: DataRepeater.LayoutStyleChanged
+  fullName.vb: DataRepeater.LayoutStyleChanged
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.SelectionColor*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.selectioncolor.aspx
+  name: SelectionColor
+  name.vb: SelectionColor
+  fullName: DataRepeater.SelectionColor
+  fullName.vb: DataRepeater.SelectionColor
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeater.VirtualMode*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeater.virtualmode.aspx
+  name: VirtualMode
+  name.vb: VirtualMode
+  fullName: DataRepeater.VirtualMode
+  fullName.vb: DataRepeater.VirtualMode
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeaterItem
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeateritem.aspx
+  name: DataRepeaterItem
+  name.vb: DataRepeaterItem
+  fullName: Microsoft.VisualBasic.PowerPacks.DataRepeaterItem
+  fullName.vb: Microsoft.VisualBasic.PowerPacks.DataRepeaterItem
+- uid: Microsoft.VisualBasic.PowerPacks.DataRepeaterItem.IsCurrent*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeateritem.iscurrent.aspx
+  name: IsCurrent
+  name.vb: IsCurrent
+  fullName: DataRepeaterItem.IsCurrent
+  fullName.vb: DataRepeaterItem.IsCurrent
 - uid: Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles.Vertical
   href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.datarepeaterlayoutstyles.aspx
   name: DataRepeaterLayoutStyles.Vertical
@@ -133,12 +235,114 @@ references:
   name.vb: FillGradientStyle.None
   fullName: FillGradientStyle.None
   fullName.vb: FillGradientStyle.None
+- uid: Microsoft.VisualBasic.PowerPacks.LineShape
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.lineshape.aspx
+  name: LineShape
+  name.vb: LineShape
+  fullName: Microsoft.VisualBasic.PowerPacks.LineShape
+  fullName.vb: Microsoft.VisualBasic.PowerPacks.LineShape
+- uid: Microsoft.VisualBasic.PowerPacks.OvalShape
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.ovalshape.aspx
+  name: OvalShape
+  name.vb: OvalShape
+  fullName: Microsoft.VisualBasic.PowerPacks.OvalShape
+  fullName.vb: Microsoft.VisualBasic.PowerPacks.OvalShape 
+- uid: Microsoft.VisualBasic.PowerPacks.Printing.PrintForm
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.printing.printform.aspx
+  name: PrintForm
+  name.vb: PrintForm
+  fullName: Printing.PrintForm
+  fullName.vb: Printing.PrintForm
+- uid: Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.BeginPrint
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.printing.printform.beginprint.aspx
+  name: BeginPrint
+  name.vb: BeginPrint
+  fullName: PrintForm.BeginPrint
+  fullName.vb: PrintForm.BeginPrint
+- uid: Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.EndPrint
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.printing.printform.endprint.aspx
+  name: EndPrint
+  name.vb: EndPrint
+  fullName: PrintForm.EndPrint
+  fullName.vb: PrintForm.EndPrint
+- uid: Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.Form*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.printing.printform.form.aspx
+  name: Form
+  name.vb: Form
+  fullName: PrintForm.Form
+  fullName.vb: PrintForm.Form
+- uid: Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.Print*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.printing.printform.print.aspx
+  name: Print
+  name.vb: Print
+  fullName: PrintForm.Print
+  fullName.vb: PrintForm.Print
+- uid: Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.printing.printform.printaction.aspx
+  name: PrintAction
+  name.vb: PrintAction
+  fullName: PrintForm.PrintAction
+  fullName.vb: PrintForm.PrintAction
+- uid: Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrinterSettings*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.printing.printform.printersettings.aspx
+  name: PrinterSettings
+  name.vb: PrinterSettings
+  fullName: PrintForm.PrinterSettings
+  fullName.vb: PrintForm.PrinterSettings
+- uid: Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.QueryPageSettings
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.printing.printform.querypagesettings.aspx
+  name: QueryPageSettings
+  name.vb: QueryPageSettings
+  fullName: PrintForm.QueryPageSettings
+  fullName.vb: PrintForm.QueryPageSettings
+- uid: Microsoft.VisualBasic.PowerPacks.RectangleShape
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.rectangleshape.aspx
+  name: RectangleShape
+  name.vb: RectangleShape
+  fullName: Microsoft.VisualBasic.PowerPacks.RectangleShape
+  fullName.vb: Microsoft.VisualBasic.PowerPacks.RectangleShape
 - uid: System.Web.Mvc.FilterAttribute
   href: https://msdn.microsoft.com/library/system.web.mvc.filterattribute.aspx
   name: FilterAttribute
   name.vb: FilterAttribute
   fullName: Mvc.FilterAttribute
   fullName.vb: Mvc.FilterAttribute
+- uid: Microsoft.VisualBasic.PowerPacks.SimpleShape.BackColor*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.simpleshape.backcolor.aspx
+  name: BackColor
+  name.vb: BackColor
+  fullName: SimpleShape.BackColor
+  fullName.vb: SimpleShape.BackColor
+- uid: Microsoft.VisualBasic.PowerPacks.SimpleShape.BackgroundImage*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.simpleshape.backgroundimage.aspx
+  name: BackgroundImage
+  name.vb: BackgroundImage
+  fullName: SimpleShape.BackgroundImage
+  fullName.vb: SimpleShape.BackgroundImage
+- uid: Microsoft.VisualBasic.PowerPacks.SimpleShape.BackStyle*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.simpleshape.backstyle.aspx
+  name: BackStyle
+  name.vb: BackStyle
+  fullName: SimpleShape.BackStyle
+  fullName.vb: SimpleShape.BackStyle
+- uid: Microsoft.VisualBasic.PowerPacks.SimpleShape.FillColor*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.simpleshape.fillcolor.aspx
+  name: FillColor
+  name.vb: FillColor
+  fullName: SimpleShape.FillColor
+  fullName.vb: SimpleShape.FillColor
+- uid: Microsoft.VisualBasic.PowerPacks.SimpleShape.FillGradientStyle*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.simpleshape.fillgradientstyle.aspx
+  name: FillGradientStyle
+  name.vb: FillGradientStyle
+  fullName: SimpleShape.FillGradientStyle
+  fullName.vb: SimpleShape.FillGradientStyle
+- uid: Microsoft.VisualBasic.PowerPacks.SimpleShape.FillStyle*
+  href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.simpleshape.fillstyle.aspx
+  name: FillStyle
+  name.vb: FillStyle
+  fullName: SimpleShape.FillStyle
+  fullName.vb: SimpleShape.FillStyle
 - uid: System.Web.Mvc.RouteAttribute.#ctor(System.String)
   href: https://msdn.microsoft.com/library/system.web.http.routeattribute.routeattribute.aspx
   name: RouteAttribute
@@ -151,9 +355,27 @@ references:
   name.vb: IPageableItemContainer.TotalRowCountAvailable
   fullName: ListView.IPageableItemContainer.TotalRowCountAvailable
   fullName.vb: ListView.IPageableItemContainer.TotalRowCountAvailable
+- uid: System.Windows.Controls.Validation.HasError*
+  href: https://msdn.microsoft.com/library/system.windows.controls.validation.haserror
+  name: HasError
+  name.vb: HasError
+  fullName: Validation.HasError
+  fullName.vb: Validation.HasError
 - uid: System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)
   href: https://msdn.microsoft.com/library/system.windows.controls.virtualizingstackpanel.isvirtualizing
   name: VirtualizingStackPanel.IsVirtualizing
   name.vb: VirtualizingStackPanel.IsVirtualizing
   fullName: VirtualizingStackPanel.IsVirtualizing
-  fullName.vb: VirtualizingStackPanel.IsVirtualizing
+  fullName.vb: VirtualizingStackPanel.IsVirtualizing  
+- uid: Microsoft.Office.Interop.Excel.Range
+  href: https://msdn.microsoft.com/library/microsoft.office.interop.excel.range.aspx
+  name: Range
+  name.vb: Range
+  fullName: Microsoft.Office.Interop.Excel.Range
+  fullName.vb: Microsoft.Office.Interop.Excel.Range
+- uid: Microsoft.Office.Interop.Excel
+  href: https://msdn.microsoft.com/library/microsoft.office.interop.excel.aspx
+  name: Microsoft.Office.Interop.Excel
+  name.vb: Microsoft.Office.Interop.Excel
+  fullName: Microsoft.Office.Interop.Excel
+  fullName.vb: Microsoft.Office.Interop.Excel

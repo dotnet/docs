@@ -1,6 +1,6 @@
 ---
 title: "* Operator (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 04/04/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -16,11 +16,11 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # * Operator (C# Reference)
-The multiplication operator (`*`), which computes the product of its operands.  Also, the dereference operator, which allows reading and writing to a pointer.  
+The multiplication operator (`*`) computes the product of its operands. All numeric types have predefined multiplication operators.  
+
+`*` also serves as the dereference operator, which allows reading and writing to a pointer.
   
 ## Remarks  
- All numeric types have predefined multiplication operators.  
-  
  The `*` operator is also used to declare pointer types and to dereference pointers. This operator can only be used in unsafe contexts, denoted by the use of the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword, and requiring the [/unsafe](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md) compiler option.  The dereference operator is also known as the indirection operator.  
   
  User-defined types can overload the binary `*` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  

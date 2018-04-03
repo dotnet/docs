@@ -1,13 +1,11 @@
 ---
 title: "Walkthrough: Arranging Windows Forms Controls in WPF"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "04/03/2018"
 ms.prod: ".net-framework"
-ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-wpf"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -16,7 +14,6 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "arranging controls [WPF]"
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
-caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
@@ -158,8 +155,8 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
 5.  Click the **Click me** button. The `button1_Click` event handler sets the <xref:System.Windows.Forms.Control.Top%2A> and <xref:System.Windows.Forms.Control.Left%2A> properties on the hosted control. This causes the hosted control to be repositioned within the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. The host maintains the same screen area, but the hosted control is clipped. Instead, the hosted control should always fill the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
   
 ## Understanding Z-Order Limitations  
- By default, visible <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements are always drawn on top of other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements, and they are unaffected by z-order. To enable z-ordering, set the <xref:System.Windows.Interop.HwndHost.IsRedirected%2A> property of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> to true and the <xref:System.Windows.Interop.HwndHost.CompositionMode%2A> property to <xref:System.Windows.Interop.CompositionMode.Full> or <xref:System.Windows.Interop.CompositionMode.OutputOnly>.  
-  
+ Visible <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements are always drawn on top of other WPF elements, and they are unaffected by z-order.
+
 #### To see the default z-order behavior  
   
 1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  

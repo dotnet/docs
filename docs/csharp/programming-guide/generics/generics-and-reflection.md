@@ -34,15 +34,15 @@ Because the Common Language Runtime (CLR) has access to generic type information
 |<xref:System.Type.DeclaringMethod%2A>|Returns the generic method that defined the current generic type parameter, or null if the type parameter was not defined by a generic method.|  
 |<xref:System.Type.MakeGenericType%2A>|Substitutes the elements of an array of types for the type parameters of the current generic type definition, and returns a <xref:System.Type> object representing the resulting constructed type.|  
   
- In addition, new members are added to the <xref:System.Reflection.MethodInfo> class to enable run-time information for generic methods. See the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property remarks for a list of invariant conditions for terms used to reflect on generic methods.  
+ In addition, members of the <xref:System.Reflection.MethodInfo> class enable run-time information for generic methods. See the <xref:System.Reflection.MethodBase.IsGenericMethod%2A> property remarks for a list of invariant conditions for terms used to reflect on generic methods.  
   
 |System.Reflection.MemberInfo Member Name|Description|  
 |----------------------------------------------|-----------------|  
-|<xref:System.Reflection.MethodInfo.IsGenericMethod%2A>|Returns true if a method is generic.|  
+|<xref:System.Reflection.MethodBase.IsGenericMethod%2A>|Returns true if a method is generic.|  
 |<xref:System.Reflection.MethodInfo.GetGenericArguments%2A>|Returns an array of Type objects that represent the type arguments of a constructed generic method or the type parameters of a generic method definition.|  
 |<xref:System.Reflection.MethodInfo.GetGenericMethodDefinition%2A>|Returns the underlying generic method definition for the current constructed method.|  
-|<xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A>|Returns true if the method or any of its enclosing types contain any type parameters for which specific types have not been supplied.|  
-|<xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A>|Returns true if the current <xref:System.Reflection.MethodInfo> represents the definition of a generic method.|  
+|<xref:System.Reflection.MethodBase.ContainsGenericParameters%2A>|Returns true if the method or any of its enclosing types contain any type parameters for which specific types have not been supplied.|  
+|<xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A>|Returns true if the current <xref:System.Reflection.MethodInfo> represents the definition of a generic method.|  
 |<xref:System.Reflection.MethodInfo.MakeGenericMethod%2A>|Substitutes the elements of an array of types for the type parameters of the current generic method definition, and returns a <xref:System.Reflection.MethodInfo> object representing the resulting constructed method.|  
   
 ## See Also  

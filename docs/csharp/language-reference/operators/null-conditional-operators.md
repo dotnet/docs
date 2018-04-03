@@ -1,6 +1,6 @@
 ---
 title: "Null-conditional Operators (C# and Visual Basic)"
-ms.date: 07/20/2015
+ms.date: 04/03/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -35,16 +35,16 @@ Dim first as Customer = customers?(0)  ' null if customers is null
 Dim count as Integer? = customers?(0)?.Orders?.Count()  ' null if customers, the first customer, or Orders is null  
 ```  
   
- The last example demonstrates that the null-condition operators are short-circuiting.  If one operation in a chain of conditional member access and index operation returns null, then the rest of the chain’s execution stops.  Other operations with lower precedence in the expression continue.  For example, `E` in the following executes in the second line, and the `==` operation executes.  In the first line, the `??` short circuits and `E` does not execute when the left side evaluates to non-null.
+ The null-condition operators are short-circuiting.  If one operation in a chain of conditional member access and index operation returns null, then the rest of the chain’s execution stops.  In the following example, `E` doesn't execute if `A`, `B`, or `C` evaluates to null.
   
 ```csharp
-A?.B?.C?[0] ?? E  
-A?.B?.C?[0] == E  
+A?.B?.C?.Do(E);
+A?.B?.C?[E];
 ```
 
 ```vb
-A?.B?.C?(0) ?? E  
-A?.B?.C?(0) == E  
+A?.B?.C?.Do(E);
+A?.B?.C?(E);
 ```  
   
  Another use for the null-condition member access is invoking delegates in a thread-safe way with much less code.  The old way requires code like the following:  

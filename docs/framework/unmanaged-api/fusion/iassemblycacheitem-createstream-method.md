@@ -60,7 +60,7 @@ HRESULT CreateStream (
  [in] Format-specific flags defined in Fusion.idl.  
   
  `ppIStream`  
- [out] A pointer to the address of the returned `IStream` instance.  
+ [out] A pointer to the address of the returned [IStream](https://msdn.microsoft.com/library/aa380034.aspx) instance.  
   
  `puliMaxSize`  
  [in, optional] The maximum size of the stream referenced by `ppIStream`.  

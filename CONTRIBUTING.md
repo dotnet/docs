@@ -9,7 +9,13 @@ The document covers the process for contributing to the articles and code sample
 * [Building the docs](#building-the-docs)
 * [Contributor License Agreement](#contributor-license-agreement)
 
-This repository contains the conceptual documentation for .NET. There are separate repositories for the [code samples and snippets](https://github.com/dotnet/samples) and [API reference](https://github.com/dotnet/dotnet-api-docs). Issues and tasks for all three of those repositories are tracked here.
+This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
+
+- [Code samples and snippets](https://github.com/dotnet/samples)
+- [API reference](https://github.com/dotnet/dotnet-api-docs)
+- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
+
+Issues and tasks for all these repositories are tracked here.
 
 ## Process for contributing
 

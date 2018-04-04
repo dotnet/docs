@@ -1,13 +1,11 @@
 ---
 title: "Walkthrough: Arranging Windows Forms Controls in WPF"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "04/03/2018"
 ms.prod: ".net-framework"
-ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-wpf"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -16,7 +14,6 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "arranging controls [WPF]"
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
-caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
@@ -158,24 +155,15 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
 5.  Click the **Click me** button. The `button1_Click` event handler sets the <xref:System.Windows.Forms.Control.Top%2A> and <xref:System.Windows.Forms.Control.Left%2A> properties on the hosted control. This causes the hosted control to be repositioned within the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. The host maintains the same screen area, but the hosted control is clipped. Instead, the hosted control should always fill the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
   
 ## Understanding Z-Order Limitations  
- By default, visible <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements are always drawn on top of other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements, and they are unaffected by z-order. To enable z-ordering, set the <xref:System.Windows.Interop.HwndHost.IsRedirected%2A> property of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> to true and the <xref:System.Windows.Interop.HwndHost.CompositionMode%2A> property to <xref:System.Windows.Interop.CompositionMode.Full> or <xref:System.Windows.Interop.CompositionMode.OutputOnly>.  
-  
-#### To see the default z-order behavior  
-  
-1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
-  
+ Visible <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements are always drawn on top of other WPF elements, and they are unaffected by z-order. To see this z-order behavior, do the following:
+
+1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.
+
      [!code-xaml[WpfLayoutHostingWfWithXaml#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#8)]  
-  
+ 
 2.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is painted over the label element.  
-  
-#### To see the z-order behavior when IsRedirected is true  
-  
-1.  Replace the previous z-order example with the following XAML.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#8b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#8b)]  
-  
-     Press F5 to build and run the application. The label element is painted over the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
-  
+
+
 ## Docking  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element supports [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] docking. Set the <xref:System.Windows.Controls.DockPanel.Dock%2A> attached property to dock the hosted control in a <xref:System.Windows.Controls.DockPanel> element.  
   
@@ -219,7 +207,7 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
 2.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is centered in the grid row, but it is not stretched to fill the available space. If the window is large enough, you may see two or more months displayed by the hosted <xref:System.Windows.Forms.MonthCalendar> control, but these are centered in the row. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout engine centers elements that cannot be sized to fill the available space.  
   
 ## Scaling  
- Unlike [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements, most [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls are not continuously scalable. By default, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element scales its hosted control when possible.  To enable full-fledged scaling, set the <xref:System.Windows.Interop.HwndHost.IsRedirected%2A> property of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> to true and the <xref:System.Windows.Interop.HwndHost.CompositionMode%2A> property to <xref:System.Windows.Interop.CompositionMode.Full> or <xref:System.Windows.Interop.CompositionMode.OutputOnly>.  
+ Unlike WPF elements, most Windows Forms controls are not continuously scalable. To provide custom scaling, you override the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A?displayProperty=nameWithType> method. 
   
 #### To scale a hosted control by using the default behavior  
   
@@ -227,19 +215,13 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
   
      [!code-xaml[WpfLayoutHostingWfWithXaml#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#12)]  
   
-2.  Press F5 to build and run the application. The hosted control and its surrounding elements are scaled by a factor of 0.5. However, the hosted control's font is not scaled.  
-  
-#### To scale a hosted control by setting IsRedirected to true  
-  
-1.  Replace the previous scaling example with the following XAML.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#12b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#12b)]  
-  
-2.  Press F5 to build and run the application. The hosted control, its surrounding elements, and the hosted control's font are scaled by a factor of 0.5.  
-  
+2.  Press F5 to build and run the application. The hosted control and its surrounding elements are scaled by a factor of 0.5. However, the hosted control's font is not scaled.
+
+<!-- This could use an example of custom scaling. -->
+
 ## Rotating  
- Unlike [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements, [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls do not support rotation. By default, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element does not rotate with other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements when a rotation transformation is applied. Any rotation value other than 180 degrees raises the <xref:System.Windows.Forms.Integration.WindowsFormsHost.LayoutError> event.  To enable rotating to any angle, set the <xref:System.Windows.Interop.HwndHost.IsRedirected%2A> property of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> to true and the <xref:System.Windows.Interop.HwndHost.CompositionMode%2A> property to <xref:System.Windows.Interop.CompositionMode.Full> or <xref:System.Windows.Interop.CompositionMode.OutputOnly>.  
-  
+ Unlike WPF elements, Windows Forms controls do not support rotation. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element does not rotate with other WPF elements when a rotation transformation is applied. Any rotation value other than 180 degrees raises the <xref:System.Windows.Forms.Integration.WindowsFormsHost.LayoutError> event.
+ 
 #### To see the effect of rotation in a hybrid application  
   
 1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
@@ -247,15 +229,8 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
      [!code-xaml[WpfLayoutHostingWfWithXaml#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#13)]  
   
 2.  Press F5 to build and run the application. The hosted control is not rotated, but its surrounding elements are rotated by an angle of 180 degrees. You may have to resize the window to see the elements.  
-  
-#### To see the effect of rotation in a hybrid application when IsRedirected is true  
-  
-1.  Replace the previous rotation example with the following XAML.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#13b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#13b)]  
-  
-2.  Press F5 to build and run the application. The hosted control is rotated.  Note that the <xref:System.Windows.Media.RotateTransform.Angle%2A> property can be set to any value. You may have to resize the window to see the elements.  
-  
+ 
+
 ## Setting Padding and Margins  
  Padding and margins in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout are similar to padding and margins in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]. Simply set the <xref:System.Windows.Controls.Control.Padding%2A> and <xref:System.Windows.FrameworkElement.Margin%2A> properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
   

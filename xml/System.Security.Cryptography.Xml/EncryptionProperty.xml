@@ -92,7 +92,7 @@
         <Parameter Name="elemProp" Type="System.Xml.XmlElement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="elemProp">To be added.</param>
+        <param name="elementProperty">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> class using an <see cref="T:System.Xml.XmlElement" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -105,12 +105,12 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="elemProp" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="P:System.Xml.XmlElement.LocalName" /> property of the <paramref name="elemProp" /> parameter is not "EncryptionProperty".  
+        <exception cref="T:System.ArgumentNullException">The <paramref name="elementProperty" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="P:System.Xml.XmlElement.LocalName" /> property of the <paramref name="elementProperty" /> parameter is not "EncryptionProperty".  
   
  -or-  
   
- The <see cref="P:System.Xml.XmlElement.NamespaceURI" /> property of the <paramref name="elemProp" /> parameter is not "http://www.w3.org/2001/04/xmlenc#".</exception>
+ The <see cref="P:System.Xml.XmlElement.NamespaceURI" /> property of the <paramref name="elementProperty" /> parameter is not "http://www.w3.org/2001/04/xmlenc#".</exception>
       </Docs>
     </Member>
     <Member MemberName="GetXml">

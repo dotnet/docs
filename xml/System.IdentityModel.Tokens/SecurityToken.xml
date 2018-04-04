@@ -237,10 +237,10 @@
         <Parameter Name="skiClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="skiClause">To be added.</param>
+        <param name="keyIdentifierClause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance can be resolved to the specified key identifier.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="skiClause" /> is a <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> and it has the same unique identifier as the <see cref="P:System.IdentityModel.Tokens.SecurityToken.Id" /> property; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is a <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> and it has the same unique identifier as the <see cref="P:System.IdentityModel.Tokens.SecurityToken.Id" /> property; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -275,7 +275,7 @@
         <Parameter Name="skiClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="skiClause">To be added.</param>
+        <param name="keyIdentifierClause">To be added.</param>
         <summary>Gets the key for the specified key identifier clause.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that represents the key.</returns>
         <remarks>
@@ -289,7 +289,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When you inherit from <see cref="T:System.IdentityModel.Tokens.SecurityToken" />, and implement the <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> method and <paramref name="skiClause" /> cannot be resolved, return <see langword="null" />. An exception should not be thrown from the <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> method.</para>
+          <para>When you inherit from <see cref="T:System.IdentityModel.Tokens.SecurityToken" />, and implement the <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> method and <paramref name="keyIdentifierClause" /> cannot be resolved, return <see langword="null" />. An exception should not be thrown from the <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> method.</para>
         </block>
         <altmember cref="M:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
         <altmember cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />

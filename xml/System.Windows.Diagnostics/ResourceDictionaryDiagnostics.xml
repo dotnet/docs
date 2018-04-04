@@ -1,6 +1,6 @@
 ﻿<Type Name="ResourceDictionaryDiagnostics" FullName="System.Windows.Diagnostics.ResourceDictionaryDiagnostics">
   <TypeSignature Language="C#" Value="public static class ResourceDictionaryDiagnostics" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ResourceDictionaryDiagnostics extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ResourceDictionaryDiagnostics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.ResourceDictionaryDiagnostics" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceDictionaryDiagnostics" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceDictionaryDiagnostics abstract sealed" />
@@ -62,6 +62,120 @@
       </ReturnValue>
       <Docs>
         <summary>Occurs when a managed debugger is attached and a generic <see cref="T:System.Windows.ResourceDictionary" /> object is loaded         by the application.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetApplicationOwners">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Windows.Application&gt; GetApplicationOwners (System.Windows.ResourceDictionary dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Application&gt; GetApplicationOwners(class System.Windows.ResourceDictionary dictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetApplicationOwners(System.Windows.ResourceDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetApplicationOwners (dictionary As ResourceDictionary) As IEnumerable(Of Application)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Windows::Application ^&gt; ^ GetApplicationOwners(System::Windows::ResourceDictionary ^ dictionary);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Application&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFrameworkContentElementOwners">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Windows.FrameworkContentElement&gt; GetFrameworkContentElementOwners (System.Windows.ResourceDictionary dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.FrameworkContentElement&gt; GetFrameworkContentElementOwners(class System.Windows.ResourceDictionary dictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetFrameworkContentElementOwners(System.Windows.ResourceDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFrameworkContentElementOwners (dictionary As ResourceDictionary) As IEnumerable(Of FrameworkContentElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Windows::FrameworkContentElement ^&gt; ^ GetFrameworkContentElementOwners(System::Windows::ResourceDictionary ^ dictionary);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.FrameworkContentElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFrameworkElementOwners">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Windows.FrameworkElement&gt; GetFrameworkElementOwners (System.Windows.ResourceDictionary dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.FrameworkElement&gt; GetFrameworkElementOwners(class System.Windows.ResourceDictionary dictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetFrameworkElementOwners(System.Windows.ResourceDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFrameworkElementOwners (dictionary As ResourceDictionary) As IEnumerable(Of FrameworkElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Windows::FrameworkElement ^&gt; ^ GetFrameworkElementOwners(System::Windows::ResourceDictionary ^ dictionary);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.FrameworkElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceDictionariesForSource">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Windows.ResourceDictionary&gt; GetResourceDictionariesForSource (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.ResourceDictionary&gt; GetResourceDictionariesForSource(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetResourceDictionariesForSource(System.Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Windows::ResourceDictionary ^&gt; ^ GetResourceDictionariesForSource(Uri ^ uri);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.ResourceDictionary&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticResourceResolved">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Windows.Diagnostics.StaticResourceResolvedEventArgs&gt; StaticResourceResolved;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Diagnostics.StaticResourceResolvedEventArgs&gt; StaticResourceResolved" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.StaticResourceResolved" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Event StaticResourceResolved As EventHandler(Of StaticResourceResolvedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Windows::Diagnostics::StaticResourceResolvedEventArgs ^&gt; ^ StaticResourceResolved;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.StaticResourceResolvedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

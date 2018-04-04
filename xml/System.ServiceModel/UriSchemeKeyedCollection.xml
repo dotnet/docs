@@ -62,11 +62,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="uris">To be added.</param>
+        <param name="addresses">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UriSchemeKeyedCollection" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="uris" /> is <see langword="null" />.</exception>
+          <paramref name="addresses" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyForItem">

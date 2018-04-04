@@ -1,0 +1,182 @@
+﻿<Type Name="SqlAuthenticationProvider" FullName="System.Data.SqlClient.SqlAuthenticationProvider">
+  <TypeSignature Language="C#" Value="public abstract class SqlAuthenticationProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SqlAuthenticationProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlAuthenticationProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SqlAuthenticationProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlAuthenticationProvider abstract" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SqlAuthenticationProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SqlAuthenticationProvider();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireTokenAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;System.Data.SqlClient.SqlAuthenticationToken&gt; AcquireTokenAsync (System.Data.SqlClient.SqlAuthenticationParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Data.SqlClient.SqlAuthenticationToken&gt; AcquireTokenAsync(class System.Data.SqlClient.SqlAuthenticationParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.AcquireTokenAsync(System.Data.SqlClient.SqlAuthenticationParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AcquireTokenAsync (parameters As SqlAuthenticationParameters) As Task(Of SqlAuthenticationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task&lt;System::Data::SqlClient::SqlAuthenticationToken ^&gt; ^ AcquireTokenAsync(System::Data::SqlClient::SqlAuthenticationParameters ^ parameters);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Data.SqlClient.SqlAuthenticationToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Data.SqlClient.SqlAuthenticationParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeLoad">
+      <MemberSignature Language="C#" Value="public virtual void BeforeLoad (System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeforeLoad(valuetype System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.BeforeLoad(System.Data.SqlClient.SqlAuthenticationMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeforeLoad (authenticationMethod As SqlAuthenticationMethod)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeforeLoad(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationMethod">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeUnload">
+      <MemberSignature Language="C#" Value="public virtual void BeforeUnload (System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeforeUnload(valuetype System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.BeforeUnload(System.Data.SqlClient.SqlAuthenticationMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeforeUnload (authenticationMethod As SqlAuthenticationMethod)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeforeUnload(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationMethod">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProvider">
+      <MemberSignature Language="C#" Value="public static System.Data.SqlClient.SqlAuthenticationProvider GetProvider (System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.SqlClient.SqlAuthenticationProvider GetProvider(valuetype System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.GetProvider(System.Data.SqlClient.SqlAuthenticationMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProvider (authenticationMethod As SqlAuthenticationMethod) As SqlAuthenticationProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlClient::SqlAuthenticationProvider ^ GetProvider(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlAuthenticationProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationMethod">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public abstract bool IsSupported (System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupported(valuetype System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.IsSupported(System.Data.SqlClient.SqlAuthenticationMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSupported (authenticationMethod As SqlAuthenticationMethod) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSupported(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationMethod">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProvider">
+      <MemberSignature Language="C#" Value="public static bool SetProvider (System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod, System.Data.SqlClient.SqlAuthenticationProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SetProvider(valuetype System.Data.SqlClient.SqlAuthenticationMethod authenticationMethod, class System.Data.SqlClient.SqlAuthenticationProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.SetProvider(System.Data.SqlClient.SqlAuthenticationMethod,System.Data.SqlClient.SqlAuthenticationProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetProvider (authenticationMethod As SqlAuthenticationMethod, provider As SqlAuthenticationProvider) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetProvider(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod, System::Data::SqlClient::SqlAuthenticationProvider ^ provider);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
+        <Parameter Name="provider" Type="System.Data.SqlClient.SqlAuthenticationProvider" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationMethod">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -116,7 +116,7 @@
         <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="messageBuffer">To be added.</param>
         <summary>The <see cref="M:System.ServiceModel.Dispatcher.MatchAllMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" /> method returns <see langword="true" /> for every message that is not <see langword="null" />.</summary>
         <returns>Returns <see langword="true" />.</returns>
         <remarks>
@@ -128,7 +128,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
+          <paramref name="messageBuffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

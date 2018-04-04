@@ -81,7 +81,7 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.ReliableSessionBindingElement" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
+        <param name="reliableSessionBindingElement">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ReliableSession" /> class from a reliable session binding element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -92,7 +92,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="reliableSessionBindingElement" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="InactivityTimeout">

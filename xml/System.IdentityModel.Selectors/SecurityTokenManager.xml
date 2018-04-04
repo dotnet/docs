@@ -107,7 +107,7 @@
         <Parameter Name="requirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="requirement">To be added.</param>
+        <param name="tokenRequirement">To be added.</param>
         <summary>Gets a security token provider that meets the specified security token requirements.</summary>
         <returns>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> that provides security tokens that meet the specified requirements for outgoing SOAP messages.</returns>
         <remarks>

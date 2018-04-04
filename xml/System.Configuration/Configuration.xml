@@ -299,7 +299,7 @@
         <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
+        <param name="sectionName">To be added.</param>
         <summary>Returns the specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</summary>
         <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</returns>
         <remarks>
@@ -347,7 +347,7 @@
         <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
+        <param name="sectionGroupName">To be added.</param>
         <summary>Gets the specified <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object.</summary>
         <returns>The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> specified.</returns>
         <remarks>
@@ -566,7 +566,7 @@
         <Parameter Name="mode" Type="System.Configuration.ConfigurationSaveMode" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="mode">To be added.</param>
+        <param name="saveMode">To be added.</param>
         <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the current XML configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

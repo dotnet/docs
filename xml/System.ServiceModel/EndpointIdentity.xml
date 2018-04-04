@@ -452,10 +452,10 @@
         <Parameter Name="other" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
+        <param name="obj">To be added.</param>
         <summary>Returns a value that determines whether a specified object is equal to the current identity object or if they have equal security properties.</summary>
         <returns>
-          <see langword="true" /> if the specified object <paramref name="other" /> is equivalent to the current identity or contains the same security properties; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified object <paramref name="obj" /> is equivalent to the current identity or contains the same security properties; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -544,7 +544,7 @@
         <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="claim">To be added.</param>
+        <param name="identityClaim">To be added.</param>
         <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

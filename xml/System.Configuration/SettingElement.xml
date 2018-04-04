@@ -112,7 +112,7 @@
         <Parameter Name="o" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
+        <param name="settings">To be added.</param>
         <summary>Compares the current <see cref="T:System.Configuration.SettingElement" /> instance to the specified object.</summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.Configuration.SettingElement" /> instance is equal to the specified object; otherwise, <see langword="false" />.</returns>

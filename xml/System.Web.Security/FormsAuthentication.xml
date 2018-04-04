@@ -255,6 +255,26 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="CookieSameSite">
+      <MemberSignature Language="C#" Value="public static System.Web.SameSiteMode CookieSameSite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Web.SameSiteMode CookieSameSite" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.CookieSameSite" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookieSameSite As SameSiteMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SameSiteMode CookieSameSite { System::Web::SameSiteMode get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SameSiteMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CookiesSupported">
       <MemberSignature Language="C#" Value="public static bool CookiesSupported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool CookiesSupported" />

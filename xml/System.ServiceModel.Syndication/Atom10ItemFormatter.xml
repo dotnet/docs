@@ -141,7 +141,7 @@
         <Parameter Name="feedToWrite" Type="System.ServiceModel.Syndication.SyndicationItem" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="feedToWrite">To be added.</param>
+        <param name="itemToWrite">To be added.</param>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

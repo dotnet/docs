@@ -135,7 +135,7 @@ providerName="System.Data.SqlClient" />
         <Parameter Name="encrypted_node" Type="System.Xml.XmlNode" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="encrypted_node">To be added.</param>
+        <param name="encryptedNode">To be added.</param>
         <summary>Decrypts the passed <see cref="T:System.Xml.XmlNode" /> object from a configuration file.</summary>
         <returns>The <see cref="T:System.Xml.XmlNode" /> object containing decrypted data.</returns>
         <remarks>

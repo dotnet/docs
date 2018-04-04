@@ -124,7 +124,7 @@
         <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackObject">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -135,7 +135,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="callbackInstance" /> is <see langword="null" />.</exception>
+          <paramref name="callbackObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

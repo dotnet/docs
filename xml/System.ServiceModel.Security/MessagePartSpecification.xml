@@ -319,7 +319,7 @@
         <Parameter Name="other" Type="System.ServiceModel.Security.MessagePartSpecification" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
+        <param name="specification">To be added.</param>
         <summary>Merges two message part specifications.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -331,7 +331,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> is read only.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="other" /> is <see langword="null" />.</exception>
+          <paramref name="specification" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

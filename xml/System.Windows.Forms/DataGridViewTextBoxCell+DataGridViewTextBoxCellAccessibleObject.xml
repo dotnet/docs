@@ -1,0 +1,41 @@
+﻿<Type Name="DataGridViewTextBoxCell+DataGridViewTextBoxCellAccessibleObject" FullName="System.Windows.Forms.DataGridViewTextBoxCell+DataGridViewTextBoxCellAccessibleObject">
+  <TypeSignature Language="C#" Value="protected class DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject : System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridViewTextBoxCell/DataGridViewTextBoxCellAccessibleObject extends System.Windows.Forms.DataGridViewCell/DataGridViewCellAccessibleObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject" />
+  <TypeSignature Language="VB.NET" Value="Protected Class DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject&#xA;Inherits DataGridViewCell.DataGridViewCellAccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class DataGridViewTextBoxCell::DataGridViewTextBoxCellAccessibleObject : System::Windows::Forms::DataGridViewCell::DataGridViewCellAccessibleObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataGridViewCell+DataGridViewCellAccessibleObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewTextBoxCellAccessibleObject (System.Windows.Forms.DataGridViewCell owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewCell owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridViewCell)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewTextBoxCellAccessibleObject(System::Windows::Forms::DataGridViewCell ^ owner);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.DataGridViewCell" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

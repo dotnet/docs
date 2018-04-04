@@ -391,7 +391,7 @@
         <Parameter Name="require" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="require">To be added.</param>
+        <param name="force">To be added.</param>
         <summary>Forces the associated configuration section to appear in the configuration file, or removes an existing section from the configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -413,7 +413,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
-          <paramref name="require" /> is <see langword="true" /> and the associated section cannot be exported to the child configuration file, or it is undeclared.</exception>
+          <paramref name="force" /> is <see langword="true" /> and the associated section cannot be exported to the child configuration file, or it is undeclared.</exception>
         <altmember cref="P:System.Configuration.SectionInformation.IsDeclarationRequired" />
       </Docs>
     </Member>
@@ -969,7 +969,7 @@
         <Parameter Name="provider" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
+        <param name="protectionProvider">To be added.</param>
         <summary>Marks a configuration section for protection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1218,11 +1218,11 @@ Dim apSection As AppSettingsSection = _
         <Parameter Name="xml" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="xml">To be added.</param>
+        <param name="rawXml">To be added.</param>
         <summary>Sets the object to an XML representation of the associated configuration section within the configuration file.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="xml" /> is <see langword="null" />.</exception>
+          <paramref name="rawXml" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Type">

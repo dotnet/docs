@@ -37,6 +37,25 @@
         <summary>The authentication method uses Active Directory Integrated. Use Active Directory Integrated to connect to a SQL Database using integrated Windows authentication.</summary>
       </Docs>
     </Member>
+    <Member MemberName="ActiveDirectoryInteractive">
+      <MemberSignature Language="C#" Value="ActiveDirectoryInteractive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlAuthenticationMethod ActiveDirectoryInteractive = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlAuthenticationMethod.ActiveDirectoryInteractive" />
+      <MemberSignature Language="VB.NET" Value="ActiveDirectoryInteractive" />
+      <MemberSignature Language="C++ CLI" Value="ActiveDirectoryInteractive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlAuthenticationMethod</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="ActiveDirectoryPassword">
       <MemberSignature Language="C#" Value="ActiveDirectoryPassword" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlAuthenticationMethod ActiveDirectoryPassword = int32(2)" />

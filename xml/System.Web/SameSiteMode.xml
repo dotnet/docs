@@ -1,0 +1,77 @@
+﻿<Type Name="SameSiteMode" FullName="System.Web.SameSiteMode">
+  <TypeSignature Language="C#" Value="public enum SameSiteMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SameSiteMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SameSiteMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SameSiteMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SameSiteMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Lax">
+      <MemberSignature Language="C#" Value="Lax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SameSiteMode Lax = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.SameSiteMode.Lax" />
+      <MemberSignature Language="VB.NET" Value="Lax" />
+      <MemberSignature Language="C++ CLI" Value="Lax" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SameSiteMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SameSiteMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.SameSiteMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SameSiteMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Strict">
+      <MemberSignature Language="C#" Value="Strict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SameSiteMode Strict = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.SameSiteMode.Strict" />
+      <MemberSignature Language="VB.NET" Value="Strict" />
+      <MemberSignature Language="C++ CLI" Value="Strict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SameSiteMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

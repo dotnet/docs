@@ -76,7 +76,7 @@
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
+        <param name="windowsIdentity">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -87,7 +87,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="identity" /> is <see langword="null" />.</exception>
+          <paramref name="windowsIdentity" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

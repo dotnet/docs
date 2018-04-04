@@ -116,5 +116,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SignColumnMasterKeyMetadata">
+      <MemberSignature Language="C#" Value="public override byte[] SignColumnMasterKeyMetadata (string masterKeyPath, bool allowEnclaveComputations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] SignColumnMasterKeyMetadata(string masterKeyPath, bool allowEnclaveComputations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionCspProvider.SignColumnMasterKeyMetadata(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function SignColumnMasterKeyMetadata (masterKeyPath As String, allowEnclaveComputations As Boolean) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ SignColumnMasterKeyMetadata(System::String ^ masterKeyPath, bool allowEnclaveComputations);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="masterKeyPath" Type="System.String" />
+        <Parameter Name="allowEnclaveComputations" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="masterKeyPath">To be added.</param>
+        <param name="allowEnclaveComputations">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyColumnMasterKeyMetadata">
+      <MemberSignature Language="C#" Value="public override bool VerifyColumnMasterKeyMetadata (string masterKeyPath, bool allowEnclaveComputations, byte[] signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool VerifyColumnMasterKeyMetadata(string masterKeyPath, bool allowEnclaveComputations, unsigned int8[] signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionCspProvider.VerifyColumnMasterKeyMetadata(System.String,System.Boolean,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifyColumnMasterKeyMetadata (masterKeyPath As String, allowEnclaveComputations As Boolean, signature As Byte()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifyColumnMasterKeyMetadata(System::String ^ masterKeyPath, bool allowEnclaveComputations, cli::array &lt;System::Byte&gt; ^ signature);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="masterKeyPath" Type="System.String" />
+        <Parameter Name="allowEnclaveComputations" Type="System.Boolean" />
+        <Parameter Name="signature" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="masterKeyPath">To be added.</param>
+        <param name="allowEnclaveComputations">To be added.</param>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

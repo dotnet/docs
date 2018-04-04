@@ -52,7 +52,7 @@
         <Parameter Name="operation" Type="System.ServiceModel.OperationContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="operation">To be added.</param>
+        <param name="operationContext">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebOperationContext" /> class with the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,6 +68,9 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (context As OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::ServiceModel::OperationContext ^ context);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.IExtension`1.Attach(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -81,7 +84,7 @@
         <Parameter Name="context" Type="System.ServiceModel.OperationContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
+        <param name="owner">To be added.</param>
         <summary>Attaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance to the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -645,6 +648,9 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (context As OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach(System::ServiceModel::OperationContext ^ context);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.IExtension`1.Detach(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -658,7 +664,7 @@
         <Parameter Name="context" Type="System.ServiceModel.OperationContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
+        <param name="owner">To be added.</param>
         <summary>Detaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance from the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>

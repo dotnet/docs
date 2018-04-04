@@ -184,6 +184,26 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <Member MemberName="GenerateTemporaryTargetAssemblyDebuggingInformation">
+      <MemberSignature Language="C#" Value="public bool GenerateTemporaryTargetAssemblyDebuggingInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateTemporaryTargetAssemblyDebuggingInformation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.GenerateTemporaryTargetAssemblyDebuggingInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property GenerateTemporaryTargetAssemblyDebuggingInformation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateTemporaryTargetAssemblyDebuggingInformation { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IntermediateOutputPath">
       <MemberSignature Language="C#" Value="public string IntermediateOutputPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IntermediateOutputPath" />

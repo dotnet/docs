@@ -1,0 +1,83 @@
+﻿<Type Name="SqlAuthenticationToken" FullName="System.Data.SqlClient.SqlAuthenticationToken">
+  <TypeSignature Language="C#" Value="public class SqlAuthenticationToken" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlAuthenticationToken extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlAuthenticationToken" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlAuthenticationToken" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlAuthenticationToken" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlAuthenticationToken (string accessToken, DateTimeOffset expiresOn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string accessToken, valuetype System.DateTimeOffset expiresOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationToken.#ctor(System.String,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (accessToken As String, expiresOn As DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlAuthenticationToken(System::String ^ accessToken, DateTimeOffset expiresOn);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="accessToken" Type="System.String" />
+        <Parameter Name="expiresOn" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="accessToken">To be added.</param>
+        <param name="expiresOn">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessToken">
+      <MemberSignature Language="C#" Value="public string AccessToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AccessToken" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationToken.AccessToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessToken As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccessToken { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpiresOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset ExpiresOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset ExpiresOn" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationToken.ExpiresOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpiresOn As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset ExpiresOn { DateTimeOffset get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

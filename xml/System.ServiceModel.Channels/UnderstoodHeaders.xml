@@ -61,7 +61,7 @@
         <Parameter Name="header" Type="System.ServiceModel.Channels.MessageHeaderInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
+        <param name="headerInfo">To be added.</param>
         <summary>Adds the specified <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> to this collection. This implies that the specific header has been understood.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +94,7 @@
         <Parameter Name="header" Type="System.ServiceModel.Channels.MessageHeaderInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
+        <param name="headerInfo">To be added.</param>
         <summary>Verifies whether the specified <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> is present in this collection.</summary>
         <returns>
           <see langword="true" /> if the specified <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> is present in this collection; otherwise, <see langword="false" />.</returns>
@@ -158,7 +158,7 @@
         <Parameter Name="header" Type="System.ServiceModel.Channels.MessageHeaderInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
+        <param name="headerInfo">To be added.</param>
         <summary>Removes the specified <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> from this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>

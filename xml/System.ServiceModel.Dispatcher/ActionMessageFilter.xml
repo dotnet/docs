@@ -216,7 +216,7 @@
         <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="messageBuffer">To be added.</param>
         <summary>Tests whether a buffered message's action header matches one of the actions specified in this <see cref="T:System.ServiceModel.Dispatcher.ActionMessageFilter" />.</summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> action header matches one of the specified actions; otherwise, <see langword="false" />.</returns>
@@ -229,7 +229,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
+          <paramref name="messageBuffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -87,7 +87,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TValue">The type of the property to get.</typeparam>
-        <param name="property">To be added.</param>
+        <param name="propertyName">To be added.</param>
         <summary>Gets the specified property for the current <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> instance.</summary>
         <returns>The value of the property to get.</returns>
         <remarks>
@@ -99,7 +99,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="property" /> is <see langword="null" />.</exception>
+          <paramref name="propertyName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsOptionalTokenProperty">

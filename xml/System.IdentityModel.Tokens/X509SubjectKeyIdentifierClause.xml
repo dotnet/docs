@@ -54,11 +54,11 @@
         <Parameter Name="certificateSubject" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="certificateSubject">To be added.</param>
+        <param name="ski">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" /> class using the specified subject key identifier.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificateSubject" /> is <see langword="null" />.</exception>
+          <paramref name="ski" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanCreateFrom">

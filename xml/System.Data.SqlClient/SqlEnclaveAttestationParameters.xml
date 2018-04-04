@@ -1,0 +1,106 @@
+﻿<Type Name="SqlEnclaveAttestationParameters" FullName="System.Data.SqlClient.SqlEnclaveAttestationParameters">
+  <TypeSignature Language="C#" Value="public class SqlEnclaveAttestationParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlEnclaveAttestationParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlEnclaveAttestationParameters" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlEnclaveAttestationParameters" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlEnclaveAttestationParameters" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlEnclaveAttestationParameters (int protocol, byte[] input, System.Security.Cryptography.ECDiffieHellmanCng clientDiffieHellmanKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 protocol, unsigned int8[] input, class System.Security.Cryptography.ECDiffieHellmanCng clientDiffieHellmanKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlEnclaveAttestationParameters.#ctor(System.Int32,System.Byte[],System.Security.Cryptography.ECDiffieHellmanCng)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As Integer, input As Byte(), clientDiffieHellmanKey As ECDiffieHellmanCng)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlEnclaveAttestationParameters(int protocol, cli::array &lt;System::Byte&gt; ^ input, System::Security::Cryptography::ECDiffieHellmanCng ^ clientDiffieHellmanKey);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="protocol" Type="System.Int32" />
+        <Parameter Name="input" Type="System.Byte[]" />
+        <Parameter Name="clientDiffieHellmanKey" Type="System.Security.Cryptography.ECDiffieHellmanCng" />
+      </Parameters>
+      <Docs>
+        <param name="protocol">To be added.</param>
+        <param name="input">To be added.</param>
+        <param name="clientDiffieHellmanKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientDiffieHellmanKey">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.ECDiffieHellmanCng ClientDiffieHellmanKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.ECDiffieHellmanCng ClientDiffieHellmanKey" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlEnclaveAttestationParameters.ClientDiffieHellmanKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientDiffieHellmanKey As ECDiffieHellmanCng" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::ECDiffieHellmanCng ^ ClientDiffieHellmanKey { System::Security::Cryptography::ECDiffieHellmanCng ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECDiffieHellmanCng</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInput">
+      <MemberSignature Language="C#" Value="public byte[] GetInput ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetInput() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlEnclaveAttestationParameters.GetInput" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInput () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetInput();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Protocol">
+      <MemberSignature Language="C#" Value="public int Protocol { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Protocol" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlEnclaveAttestationParameters.Protocol" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protocol As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Protocol { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

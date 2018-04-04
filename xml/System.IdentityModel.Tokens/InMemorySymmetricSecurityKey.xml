@@ -53,13 +53,13 @@
         <Parameter Name="key" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
+        <param name="symmetricKey">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" /> class using the specified symmetric key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> is <see langword="null" />.</exception>
+          <paramref name="symmetricKey" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="key" /> is zero length.</exception>
+          <paramref name="symmetricKey" /> is zero length.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

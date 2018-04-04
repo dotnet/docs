@@ -49,7 +49,7 @@
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
+        <param name="windowsIdentity">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

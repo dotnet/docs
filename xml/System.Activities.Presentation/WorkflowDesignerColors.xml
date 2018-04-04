@@ -17,6 +17,45 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ActivityDesignerSelectedTitleForegroundColor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ActivityDesignerSelectedTitleForegroundColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ActivityDesignerSelectedTitleForegroundColor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ActivityDesignerSelectedTitleForegroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ActivityDesignerSelectedTitleForegroundColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ActivityDesignerSelectedTitleForegroundColor { System::Windows::Media::Color get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityDesignerSelectedTitleForegroundColorKey">
+      <MemberSignature Language="C#" Value="public const string ActivityDesignerSelectedTitleForegroundColorKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ActivityDesignerSelectedTitleForegroundColorKey" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ActivityDesignerSelectedTitleForegroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ActivityDesignerSelectedTitleForegroundColorKey As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ActivityDesignerSelectedTitleForegroundColorKey;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AnnotationBackgroundGradientBeginColor">
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationBackgroundGradientBeginColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationBackgroundGradientBeginColor" />
@@ -677,6 +716,26 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies the hover color key for the item text in the context menu. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuItemTextHoverQuirkedColor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuItemTextHoverQuirkedColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuItemTextHoverQuirkedColor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextHoverQuirkedColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuItemTextHoverQuirkedColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuItemTextHoverQuirkedColor { System::Windows::Media::Color get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1496,6 +1555,45 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies the color key to be used for the designer view status bar background. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowchartConnectorColor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color FlowchartConnectorColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color FlowchartConnectorColor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.FlowchartConnectorColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FlowchartConnectorColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color FlowchartConnectorColor { System::Windows::Media::Color get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowchartConnectorColorKey">
+      <MemberSignature Language="C#" Value="public const string FlowchartConnectorColorKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string FlowchartConnectorColorKey" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.FlowchartConnectorColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const FlowchartConnectorColorKey As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ FlowchartConnectorColorKey;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2365,6 +2463,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PropertyToolBarHightlightedButtonForegroundColor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color PropertyToolBarHightlightedButtonForegroundColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color PropertyToolBarHightlightedButtonForegroundColor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyToolBarHightlightedButtonForegroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyToolBarHightlightedButtonForegroundColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color PropertyToolBarHightlightedButtonForegroundColor { System::Windows::Media::Color get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyToolBarHightlightedButtonForegroundColorKey">
+      <MemberSignature Language="C#" Value="public const string PropertyToolBarHightlightedButtonForegroundColorKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PropertyToolBarHightlightedButtonForegroundColorKey" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.PropertyToolBarHightlightedButtonForegroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const PropertyToolBarHightlightedButtonForegroundColorKey As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ PropertyToolBarHightlightedButtonForegroundColorKey;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RubberBandRectangleColorKey">
       <MemberSignature Language="C#" Value="public const string RubberBandRectangleColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string RubberBandRectangleColorKey" />
@@ -2576,6 +2713,45 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies the color key for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> selected border. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowViewElementSelectedCaptionColor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color WorkflowViewElementSelectedCaptionColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color WorkflowViewElementSelectedCaptionColor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedCaptionColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkflowViewElementSelectedCaptionColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color WorkflowViewElementSelectedCaptionColor { System::Windows::Media::Color get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowViewElementSelectedCaptionColorKey">
+      <MemberSignature Language="C#" Value="public const string WorkflowViewElementSelectedCaptionColorKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WorkflowViewElementSelectedCaptionColorKey" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedCaptionColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkflowViewElementSelectedCaptionColorKey As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ WorkflowViewElementSelectedCaptionColorKey;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

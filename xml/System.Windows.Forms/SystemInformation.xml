@@ -975,6 +975,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetHorizontalScrollBarArrowWidthForDpi">
+      <MemberSignature Language="C#" Value="public static int GetHorizontalScrollBarArrowWidthForDpi (int dpi);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHorizontalScrollBarArrowWidthForDpi(int32 dpi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetHorizontalScrollBarArrowWidthForDpi(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHorizontalScrollBarArrowWidthForDpi (dpi As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetHorizontalScrollBarArrowWidthForDpi(int dpi);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dpi" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dpi">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetHorizontalScrollBarHeightForDpi">
       <MemberSignature Language="C#" Value="public static int GetHorizontalScrollBarHeightForDpi (int dpi);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHorizontalScrollBarHeightForDpi(int32 dpi) cil managed" />

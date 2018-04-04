@@ -107,7 +107,7 @@
         <Parameter Name="source" Type="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
+        <param name="other">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -118,7 +118,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> is <see langword="null" />.</exception>
+          <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">

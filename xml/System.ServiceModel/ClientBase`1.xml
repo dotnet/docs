@@ -233,8 +233,8 @@
         <Parameter Name="instance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the <paramref name="instance" /> as the callback object in a duplex conversation.</summary>
+        <param name="callbackInstance">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the <paramref name="callbackInstance" /> as the callback object in a duplex conversation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

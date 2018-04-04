@@ -415,7 +415,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current object is a <see cref="T:System.Reflection.ConstructorInfo" />. Generic constructors are not supported in the .NET Framework version 2.0. This exception is the default behavior if this method is not overridden in a derived class.</exception>
-        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
         <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
         <altmember cref="M:System.Reflection.MethodInfo.GetGenericArguments" />
         <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />

@@ -209,5 +209,30 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <Member MemberName="SameSite">
+      <MemberSignature Language="C#" Value="public System.Web.SameSiteMode SameSite { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.SameSiteMode SameSite" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpCookiesSection.SameSite" />
+      <MemberSignature Language="VB.NET" Value="Public Property SameSite As SameSiteMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SameSiteMode SameSite { System::Web::SameSiteMode get(); void set(System::Web::SameSiteMode value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("sameSite", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.SameSiteMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

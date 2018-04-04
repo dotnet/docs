@@ -248,10 +248,10 @@
         <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="clause">To be added.</param>
+        <param name="keyIdentifierClause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="clause" /> is of type <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> and the binary data returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method is identical for the <paramref name="clause" /> parameter and the current instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> and the binary data returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method is identical for the <paramref name="keyIdentifierClause" /> parameter and the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

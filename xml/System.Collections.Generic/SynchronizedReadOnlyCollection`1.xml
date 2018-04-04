@@ -96,7 +96,7 @@
         <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="sync_root">To be added.</param>
+        <param name="syncRoot">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class with the object used to synchronize access to the thread-safe, read-only collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -107,7 +107,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sync_root" /> is <see langword="null" />.</exception>
+          <paramref name="syncRoot" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

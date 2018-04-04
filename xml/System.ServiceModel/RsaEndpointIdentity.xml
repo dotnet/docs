@@ -105,7 +105,7 @@
         <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="cert">To be added.</param>
+        <param name="certificate">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.RsaEndpointIdentity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -116,8 +116,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="cert" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <paramref name="cert" /> public key is <see langword="null" />.</exception>
+          <paramref name="certificate" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <paramref name="certificate" /> public key is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The certificate's public key cannot be accessed.</exception>
       </Docs>
     </Member>

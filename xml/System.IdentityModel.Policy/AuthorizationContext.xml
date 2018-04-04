@@ -118,7 +118,7 @@
         <Parameter Name="policies" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="policies">To be added.</param>
+        <param name="authorizationPolicies">To be added.</param>
         <summary>Evaluate all of the specified authorization policies and create an <see cref="T:System.IdentityModel.Policy.AuthorizationContext" />.</summary>
         <returns>An <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> that contains the result of evaluating all the specified authorization policies.</returns>
         <remarks>

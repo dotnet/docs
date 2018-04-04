@@ -537,5 +537,25 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="WebObjectActivator">
+      <MemberSignature Language="C#" Value="public static IServiceProvider WebObjectActivator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IServiceProvider WebObjectActivator" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.WebObjectActivator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property WebObjectActivator As IServiceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property IServiceProvider ^ WebObjectActivator { IServiceProvider ^ get(); void set(IServiceProvider ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IServiceProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

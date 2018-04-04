@@ -80,7 +80,7 @@
         <Parameter Name="exception" Type="System.Exception" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
+        <param name="error">To be added.</param>
         <summary>Enables error-related processing and returns a value that indicates whether the dispatcher aborts the session and the instance context in certain cases.</summary>
         <returns>
           <see langword="true" /> if [!INCLUDE[indigo1](~/includes/indigo1-md.md)] should not abort the session (if there is one) and instance context if the instance context is not <see cref="F:System.ServiceModel.InstanceContextMode.Single" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>

@@ -38,7 +38,7 @@ The *package store manifest file* is an XML file that contains the list of packa
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-The runtime identifier to target.
+The [runtime identifier](../rid-catalog.md) to target.
 
 ## Optional options
 

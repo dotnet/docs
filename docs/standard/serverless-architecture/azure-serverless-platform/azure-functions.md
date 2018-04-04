@@ -3,14 +3,18 @@ title: Azure Functions | Serverless apps. Architecture, patterns, and Azure impl
 description: Azure functions provide serverless capabilities across multiple languages (C#, JavaScript, Java, and more) and platforms to provide event-driver instant scale code.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 3/23/2018
+ms.date: 4/4/2018
 ms.prod: .net
 ms.technology: dotnet
 ms.topic: article
 ---
 # Azure Functions
 
-Azure functions provide a serverless compute experience. A function is invoked by a *trigger* (such as access to an HTTP endpoint or a timer) and executes a block of code or business logic. Functions also support specialized *bindings* that connect to resources like storage and queues. There are two versions of the Azure Functions framework. The legacy version supports the full .NET Framework and the new runtime supports cross-platform .NET Core applications. Additional languages besides C# such as JavaScript, F#, and Java are supported. Functions created in the portal provide a rich scripting syntax. Functions created as standalone projects can be deployed with full platform support and capabilities.
+Azure functions provide a serverless compute experience. A function is invoked by a *trigger* (such as access to an HTTP endpoint or a timer) and executes a block of code or business logic. Functions also support specialized *bindings* that connect to resources like storage and queues.
+
+![Azure functions logo](./media/azure-functions/azure-functions-logo.png)
+
+There are two versions of the Azure Functions framework. The legacy version supports the full .NET Framework and the new runtime supports cross-platform .NET Core applications. Additional languages besides C# such as JavaScript, F#, and Java are supported. Functions created in the portal provide a rich scripting syntax. Functions created as standalone projects can be deployed with full platform support and capabilities.
 
 For more information, see: [Azure Functions documentation](/azure/azure-functions).
 

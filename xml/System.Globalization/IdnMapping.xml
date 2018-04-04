@@ -58,6 +58,7 @@
   
  ]]></format>
     </remarks>
+    <threadsafe>All public methods of <see cref="T:System.Globalization.IdnMapping" /> are thread-safe and may be used concurrently from multiple threads, as long as the <see cref="T:System.Globalization.IdnMapping" /> instance's properties are not also set concurrently.</threadsafe>
     <altmember cref="Overload:System.String.Normalize" />
   </Docs>
   <Members>

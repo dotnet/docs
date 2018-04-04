@@ -157,7 +157,7 @@ namespace FileStreamTest
                         string path = reader.GetString(0);  
                         byte[] transactionContext = reader.GetSqlBytes(1).Buffer;  
   
-                        using (Stream fileStream = new SqlFileStream(path, transactionContext, FileAccess.Write, FileOptions.SequentialScan, allocationSize: 0))  
+                        using (Stream fileStream = new SqlFileStream(path, transactionContext, FileAccess.ReadWrite, FileOptions.SequentialScan, allocationSize: 0))  
                         {  
                             // Seek to the end of the file  
                             fileStream.Seek(0, SeekOrigin.End);  
@@ -172,42 +172,7 @@ namespace FileStreamTest
   
         }  
     }  
-} using (SqlConnection connection = new SqlConnection(  
-    connStringBuilder.ToString()))  
-{  
-    connection.Open();  
-  
-    SqlCommand command = new SqlCommand("", connection);  
-    command.CommandText = "select Top(1) Photo.PathName(), "  
-    + "GET_FILESTREAM_TRANSACTION_CONTEXT () from employees";  
-  
-    SqlTransaction tran = connection.BeginTransaction(  
-        System.Data.IsolationLevel.ReadCommitted);  
-    command.Transaction = tran;  
-  
-    using (SqlDataReader reader = command.ExecuteReader())  
-    {  
-        while (reader.Read())  
-        {  
-            // Get the pointer for file  
-            string path = reader.GetString(0);  
-            byte[] transactionContext = reader.GetSqlBytes(1).Buffer;  
-  
-            FileStream fileStream = new SqlFileStream(path,  
-                (byte[])reader.GetValue(1),  
-                FileAccess.ReadWrite,  
-                FileOptions.SequentialScan, 0);  
-  
-            // Seek to the end of the file  
-            fs.Seek(0, SeekOrigin.End);  
-  
-            // Append a single byte   
-            fileStream.WriteByte(0x01);  
-            fileStream.Close();  
-        }  
-    }  
-    tran.Commit();  
-}  
+}
 ```  
   
  For another sample, see [How to store and fetch binary data into a file stream column](http://www.codeproject.com/Articles/32216/How-to-store-and-fetch-binary-data-into-a-file-str).  

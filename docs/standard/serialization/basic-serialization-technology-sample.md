@@ -17,7 +17,7 @@ ms.workload:
   - "dotnetcore"
 ---
 # Basic Serialization Technology Sample
-[Download sample](http://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/Basic.zip.exe)  
+[Download sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/Basic.zip.exe)  
   
  This sample demonstrates the common language runtime's ability to serialize an object graph in memory to a stream. This sample can use either the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> or the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> for serialization. A linked list, filled with data, is serialized or deserialized to or from a file stream. In either case the list is displayed so that you can see the results. The linked list is of type `LinkedList`, a type defined by this sample.  
   

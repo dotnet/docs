@@ -29,7 +29,7 @@ Finally, if you are using a REST architecture, [Hypermedia](https://www.infoq.co
 ## Additional resources
 
 -   **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy**
-    <http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
+    <https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
 
 -   **Versioning a RESTful web API**
     [*https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api*](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)

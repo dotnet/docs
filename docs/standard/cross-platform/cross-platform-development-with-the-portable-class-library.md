@@ -147,10 +147,10 @@ Change Targets dialog box in Visual Studio 2012
   
  ➊ Requires [Microsoft Async](https://www.nuget.org/packages/Microsoft.Bcl.Async/) package  
  ➋ Requires [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) package  
- ➌ Requires [Microsoft HTTP Client Libraries](http://www.nuget.org/packages/Microsoft.Net.Http) package  
+ ➌ Requires [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) package  
   
 > [!WARNING]
->  You may encounter errors when you reference the [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) and [Microsoft HTTP Client Libraries](http://www.nuget.org/packages/Microsoft.Net.Http) packages from a portable library used by a Windows Phone Silverlight 8.1 app. For more information, see [Platform compatibility and breaking changes for Windows Phone Silverlight 8.1 apps](http://go.microsoft.com/fwlink/p/?LinkId=394744).  
+>  You may encounter errors when you reference the [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) and [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) packages from a portable library used by a Windows Phone Silverlight 8.1 app. For more information, see [Platform compatibility and breaking changes for Windows Phone Silverlight 8.1 apps](http://go.microsoft.com/fwlink/p/?LinkId=394744).  
   
 <a name="members"></a>   
 ## Supported types and members  

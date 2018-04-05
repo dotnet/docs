@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.date: "01/24/2018"
+ms.date: "04/10/2018"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -98,6 +98,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |On Windows 10 Anniversary Update: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
     |On Windows 10 Creators Update: 460798<br/><br/> On all other OS versions: 460805 | .NET Framework 4.7 |
     |On Windows 10 Fall Creators Update: 461308<br/><br/> On all other OS versions: 461310 | .NET Framework 4.7.1 |
+    |On Windows 10 RS4:     <br/><br/> On all other OS versions:    | .NET Framework 4.7.2 |
     
 <a name="net_c"></a> 
 ## To find .NET Framework versions by querying the registry in code (.NET Framework 1-4)
@@ -148,7 +149,9 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |.NET Framework 4.7 installed on all other Windows OS versions|460805|
     |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update|461308|
     |.NET Framework 4.7.1 installed on all other Windows OS versions|461310|
-
+    |.NET Framework 4.7.2 installed on Windows 10 RS4|    |
+    |.NET Framework 4.7.2 installed on all other Windows OS versions|     |
+    
      The following example checks the `Release` value in the registry to determine whether the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or a later version of the .NET Framework is installed.
 
      [!code-csharp[ListVersions#5](../../../samples/snippets/csharp/framework/migration-guide/versions-installed3.cs)]

@@ -118,7 +118,7 @@ Azure VMs may be programmatically deployed and managed from F# scripts by using 
 
 Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure Cosmos DB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
 
-Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directy from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/documentation/templates/).
+Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directy from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/).
 
 ## Other resources
 

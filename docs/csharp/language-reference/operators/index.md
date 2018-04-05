@@ -1,6 +1,6 @@
 ---
 title: "C# Operators"
-ms.date: 03/09/2017
+ms.date: 04/04/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -96,7 +96,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x / y](../../../csharp/language-reference/operators/division-operator.md) – division. If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).  
   
- [x % y](../../../csharp/language-reference/operators/modulus-operator.md) – modulus. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.  
+ [x % y](../../../csharp/language-reference/operators/remainder-operator.md) – remainder. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.  
   
 ## Additive Operators  
  These operators have higher precedence than the next section and lower precedence than the previous section.  
@@ -182,7 +182,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x /= y](../../../csharp/language-reference/operators/division-assignment-operator.md) – division assignment. Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.  
   
- [x %= y](../../../csharp/language-reference/operators/modulus-assignment-operator.md) – modulus assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.  
+ [x %= y](../../../csharp/language-reference/operators/remainder-assignment-operator.md) – remainder assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.  
   
  [x &= y](../../../csharp/language-reference/operators/and-assignment-operator.md) – AND assignment. AND the value of `y` with the value of `x`, store the result in `x`, and return the new value.  
   

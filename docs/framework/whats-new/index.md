@@ -22,7 +22,7 @@ ms.workload:
 # What's new in the .NET Framework
 <a name="introduction"></a>This article summarizes key new features and improvements in the following versions of the .NET Framework:  
  
-[.NET Framework 4.7.2](#v472)
+[.NET Framework 4.7.2](#v472)   
 [.NET Framework 4.7.1](#v471)    
 [.NET Framework 4.7](#v47)   
 [.NET Framework 4.6.2](#v462)   
@@ -70,20 +70,21 @@ A continuing focus in the .NET Framework 4.7.2 is improved accessibility, which 
 <a name="core-472" />
 #### Core
 
-The .NET Famework 4.7.2 features a large number of cryptographic enhancements, better decompression support for ZIP archives, and additional collection APIs.
+The .NET Framework 4.7.2 features a large number of cryptographic enhancements, better decompression support for ZIP archives, and additional collection APIs.
 
 **New overloads of RSA.Create and DSA.Create**
 
-The <xref:System.Security.Cryptography.DSA.Create(System.Security.Cryptography.DSAParamteters)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Create(System.Security.Cryptography.RSAParamteters)?displayProperty=nameWithType> methods let you supply key parameters when instantiated a new <xref:System.Security.Cryptography.DSA> or <xref:System.Security.Cryptography.RSA> key. They allow you to replace code like the following:
+The <xref:System.Security.Cryptography.DSA.Create(System.Security.Cryptography.DSAParameters)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Create(System.Security.Cryptography.RSAParameters)?displayProperty=nameWithType> methods let you supply key parameters when instantiated a new <xref:System.Security.Cryptography.DSA> or <xref:System.Security.Cryptography.RSA> key. They allow you to replace code like the following:
 
 ```csharp
 // Before .NET Framework 4.7.2
 using (RSA rsa = RSA.Create())
 {
    rsa.ImportParameters(rsaParameters);
-   // Other code to execute using the rsa instance.
+   // Other code to execute using the RSA instance.
 }
 ``` 
+
 ```vb
 ' Before .NET Framework 4.7.2
 Using rsa = RSA.Create()
@@ -106,7 +107,7 @@ Using rsa = RSA.Create(rsaParameters)
 End Using
 ``` 
 
-The <xref:System.Security.Cryptography.DSA.Create(System.Int32)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Create(System.Int32)?displayProperty=nameWithType> methods let you generate new <xref:System.Security.Cryptography.DSA> or <xref:System.Security.Cryptography.RSA> keys with a specific keysize. For example:
+The <xref:System.Security.Cryptography.DSA.Create(System.Int32)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Create(System.Int32)?displayProperty=nameWithType> methods let you generate new <xref:System.Security.Cryptography.DSA> or <xref:System.Security.Cryptography.RSA> keys with a specific key size. For example:
 
 ```csharp
 using (DSA dsa = DSA.Create(2048))
@@ -210,7 +211,7 @@ The .NET Framework 4.7.2 adds a number of new APIs to the <xref:System.Collectio
    - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source);](xref:System.Linq.Enumerable.ToHashSet%2A)
    - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source, IEqualityComparer<TSource> comparer);](xref:System.Linq.Enumerable.ToHashSet%2A)
 - New <xref:System.Collections.Generic.HashSet%601> constructors that let you set the collection's capacity, which yields a performance benefit when you know the size of the <xref:System.Collections.Generic.HashSet%601> in advance:
-   - [public HashSet(int capacity)](xref:System.Collections.Generic.HashSet%601.#ctor(System.Int32))
+   - [public HashSet(int capacity)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32))
    - [public HashSet(int capacity, IEqualityComparer<T> comparer)](xref:System.Collections.Generic.HashSet%601.#ctor(System.Int32,System.Collections.Generic.IEqualityComparer%7B%600%7D))  
 
 The <xref:System.Collections.Concurrent.ConcurrentDictionary%602> class includes new overloads of the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> methods to retrieve a value from the dictionary or to add it if it is not found, and to add a value to the dictionary or to update it if it already exists.
@@ -277,7 +278,7 @@ You can add SameSite for <xref:System.Web.Security.FormsAuthentication> and <xre
 <a name="net472" />
 #### Networking
 
-**Implementation of HttpClientHandler p0roperties**
+**Implementation of HttpClientHandler properties**
 
 The .NET Framework 4.7.1 added eight properties to the <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> class. However, two threw a <xref:System.PlatformNotSupportedException>. The .NET Framework 4.7.2 now provides an implementation for these properties. The properties are:
 
@@ -358,7 +359,7 @@ The method returns an empty enumerable unless <xref:System.Windows.Diagnostics.
 
 Starting with the .NET Framework 4.7.2, a diagnostic assistant can locate the owners of a given <xref:Windows.UI.Xaml.ResourceDictionary>. (The feature is for use by diagnostic assistants and not by production applications.) Whenever a change is made to a <xref:Windows.UI.Xaml.ResourceDictionary>, WPF automatically finds all [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) references that might be affected by the change. 
 
-A diagnostic assistant such as Visual Studio’s “Edit-and-Continue” facility may want extend this to handle [StaticResource](../wpf/advanced/staticresource-markup-extension.md) references. The first step in this process is to find the owners of the dictionary; that is, to find all the objects whose `Resources` property refers to the dictionary (either directly, or indirectly via the <xref:System.Windows.ResourceDictionary.MergedDictionaries?displayProperty=nameWithType> property). Three new static methods implemented on the <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics?displayProperty=nameWithType> class, one for each of the base types that has a `Resources` property,support this step:
+A diagnostic assistant such as Visual Studio’s “Edit-and-Continue” facility may want extend this to handle [StaticResource](../wpf/advanced/staticresource-markup-extension.md) references. The first step in this process is to find the owners of the dictionary; that is, to find all the objects whose `Resources` property refers to the dictionary (either directly, or indirectly via the <xref:System.Windows.ResourceDictionary.MergedDictionaries?displayProperty=nameWithType> property). Three new static methods implemented on the <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics?displayProperty=nameWithType> class, one for each of the base types that has a `Resources` property, support this step:
 
 - [`public static IEnumerable<FrameworkElement> GetFrameworkElementOwners(ResourceDictionary dictionary);](xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetFrameworkElementOwners%2A)
 
@@ -412,7 +413,7 @@ HDPI-aware applications for Windows Forms, Windows Presentation Foundation (WPF)
 For Windows Forms application, the previous workaround of setting DPI awareness in the application configuration file rather than the application manifest is no longer necessary for ClickOnce deployment to succeed.
 
 <a name="v471"></a> 
-### What's new in the .NET Framework 4.7.1
+## What's new in the .NET Framework 4.7.1
 
 The .NET Framework 4.7.1 includes new features in the following areas:
  
@@ -490,7 +491,7 @@ In the .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to st
 ```
 
 <a name="v47"></a> 
-### What's new in the .NET Framework 4.7
+## What's new in the .NET Framework 4.7
 
 The .NET Framework 4.7 includes new features in the following areas:
 

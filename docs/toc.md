@@ -226,7 +226,6 @@
 ### [C# Type system](csharp/programming-guide/types/index.md)
 ### [Namespaces](csharp/programming-guide/namespaces/index.md)
 ### [Basic Types](csharp/basic-types.md)
-### [Classes](csharp/classes.md)
 ### [Structs](csharp/structs.md)
 ### [Tuples](csharp/tuples.md)
 ### [Deconstructing tuples and other types](csharp/deconstruct.md)

@@ -1,7 +1,7 @@
     public class Person
     {
         // Field
-        public string name;
+        private string name;
 
         // Constructor that takes no arguments.
         public Person()
@@ -36,7 +36,6 @@
             Person person2 = new Person("Sarah Jones");
             Console.WriteLine(person2.name);
 
-            // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }

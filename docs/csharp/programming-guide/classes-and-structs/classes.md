@@ -77,7 +77,7 @@ When the object is created, the memory is allocated on the managed heap, and the
  }
  ```
   
- When a class declares a base class, it inherits all the members of the base class except the constructors.  
+ When a class declares a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md).
   
  Unlike C++, a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement more than one interface. For more information, see [Interfaces](../../../csharp/programming-guide/interfaces/index.md).  
   

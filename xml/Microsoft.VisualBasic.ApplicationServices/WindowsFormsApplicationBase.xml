@@ -381,10 +381,10 @@
   
  You should set the `My.Application.MinimumSplashScreenDisplayTime` property in a method that overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> or <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method. Code that overrides methods of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class should be entered in the ApplicationEvents.vb file, which is hidden by default.  
   
-||  
+| |  
 |-|  
 |To access the Code Editor window for overriding members|  
-|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br /><br />For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
   
 ## Availability by Project Type  
   
@@ -445,10 +445,10 @@
   
  The code for the `NetworkAvailabilityChanged` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
   
-||  
+| |  
 |-|  
 |To access the Code Editor window for application events|  
-|1.  Have a project selected in **Solution Explorer.** Click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
+|1.  Have a project selected in **Solution Explorer.** Click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br /><br />For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
   
 > [!NOTE]
 >  Many network hubs will provide a network connection even if the hub is disconnected from a larger network. Consequently, for wired connections, this event indicates change in the connection between the computer and a hub.  
@@ -937,7 +937,7 @@
   
  The changes to this property are not persisted when the application closes. To change the `SaveMySettingsOnExit` property permanently, you must change the setting in the **Project Designer**:  
   
-||  
+| |  
 |-|  
 |To change the setting in the Project Designer|  
 |1.  Have a project selected in **Solution Explorer**. Click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Select **Save My.Settings on Shutdown**.|  
@@ -1033,10 +1033,10 @@
   
  The code for the `Shutdown` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
   
-||  
+| |  
 |-|  
 |To access the Code Editor window for application events|  
-|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br /><br />For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
   
 ## Availability by Project Type  
   
@@ -1179,7 +1179,7 @@
   
  The code for the `Startup` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
   
-||  
+| |  
 |-|  
 |To access the Code Editor window for application events|  
 |1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br /><br /> For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
@@ -1243,7 +1243,7 @@
 > [!NOTE]
 >  The `StartupNextInstance` event is raised only in single-instance applications. To enable single-instance behavior for your application, you must check the **Make single instance application** check box in the Project Designer.  
   
-||  
+| |  
 |-|  
 |To make an application single instance|  
 |1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Select the **Make single instance application** check box.|  
@@ -1252,10 +1252,10 @@
   
  The code for the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
   
-||  
+| |  
 |-|  
 |To access the Code Editor window for application events|  
-|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br /><br />For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
   
  The following table lists examples of tasks involving the `My.Application.StartupNextInstance` event.  
   
@@ -1320,7 +1320,7 @@
   
  The code for the `UnhandledException` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
   
-||  
+| |  
 |-|  
 |To access the Code Editor window for application events|  
 |1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.|  
@@ -1402,10 +1402,10 @@
   
  Code that overrides methods of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class should be entered in the ApplicationEvents.vb file, which is hidden by default.  
   
-||  
+| |  
 |-|  
 |To access the Code Editor window for overriding members|  
-|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br /><br />For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).|  
   
    
   

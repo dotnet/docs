@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "printing XPS files programmatically [WPF]"
   - "XPS files [WPF], printing programmatically"
 ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
-caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
@@ -45,7 +44,7 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  Accordingly, the example begins by instantiating a <xref:System.Threading.Thread> object and passing it a **PrintXPS** method as the <xref:System.Threading.ThreadStart> parameter. (The **PrintXPS** method is defined later in the example.) Next the thread is set to a single thread apartment. The only remaining code of the `Main` method starts the new thread.  
   
- The meat of the example is in the `static`**BatchXPSPrinter.PrintXPS** method. After creating a print server and queue, the method prompts the user for a directory containing [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files. After validating the existence of the directory and the presence of *.xps files in it, the method adds each such file to the print queue. The example assumes that the printer is non-XPSDrv, so we are passing `false` to the last parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method. For this reason, the method will validate the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] markup in the file before it attempts to convert it to the printer's page description language. If the validation fails, an exception is thrown. The example code will catch the exception, notify the user about it, and then go on to process the next [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] file.  
+ The meat of the example is in the `static`**BatchXPSPrinter.PrintXPS** method. After creating a print server and queue, the method prompts the user for a directory containing [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files. After validating the existence of the directory and the presence of \*.xps files in it, the method adds each such file to the print queue. The example assumes that the printer is non-XPSDrv, so we are passing `false` to the last parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method. For this reason, the method will validate the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] markup in the file before it attempts to convert it to the printer's page description language. If the validation fails, an exception is thrown. The example code will catch the exception, notify the user about it, and then go on to process the next [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] file.  
   
  [!code-csharp[BatchPrintXPSFiles#BatchPrintXPSFiles](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BatchPrintXPSFiles/CSharp/Program.cs#batchprintxpsfiles)]
  [!code-vb[BatchPrintXPSFiles#BatchPrintXPSFiles](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BatchPrintXPSFiles/visualbasic/program.vb#batchprintxpsfiles)]  

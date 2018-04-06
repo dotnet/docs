@@ -33,7 +33,8 @@ Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text
   
 -   [Fixed-Length String Buffers](#cpcondefaultmarshalingforstringsanchor3)  
   
-<a name="cpcondefaultmarshalingforstringsanchor1"></a>   
+<a name="cpcondefaultmarshalingforstringsanchor1"></a>
+
 ## Strings Used in Interfaces  
  The following table shows the marshaling options for the string data type when marshaled as a method argument to unmanaged code. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings to COM interfaces.  
   
@@ -57,12 +58,12 @@ void PassStringRef1(ref String s);
 void PassStringRef2([MarshalAs(UnmanagedType.BStr)]ref String s);  
 void PassStringRef3([MarshalAs(UnmanagedType.LPStr)]ref String s);  
 void PassStringRef4([MarshalAs(UnmanagedType.LPWStr)]ref String s);  
-);  
-```  
-  
- The following example shows the corresponding interface described in a type library.  
-  
-```  
+);
+```
+
+The following example shows the corresponding interface described in a type library.
+
+```
 […]  
 interface IStringWorker : IDispatch {  
 HRESULT PassString1([in] BSTR s);  
@@ -73,10 +74,11 @@ HRESULT PassStringRef1([in, out] BSTR *s);
 HRESULT PassStringRef2([in, out] BSTR *s);  
 HRESULT PassStringRef3([in, out] LPStr *s);  
 HRESULT PassStringRef4([in, out] LPWStr *s);  
-);  
-```  
-  
-<a name="cpcondefaultmarshalingforstringsanchor5"></a>   
+);
+```
+
+<a name="cpcondefaultmarshalingforstringsanchor5"></a>
+
 ## Strings Used in Platform Invoke  
  Platform invoke copies string arguments, converting from the .NET Framework format (Unicode) to the platform unmanaged format. Strings are immutable and are not copied back from unmanaged memory to managed memory when the call returns.  
   
@@ -111,9 +113,9 @@ Public Declare Auto Sub PassAnsiBStr Lib "StringLib.Dll" _
 Public Declare Auto Sub PassTBStr Lib "StringLib.Dll" _  
 (<MarshalAs(UnmanagedType.TBStr)> s As String)  
 End Class  
-```  
-  
-```csharp  
+```
+
+```csharp
 class StringLibAPI {  
 [DllImport("StringLib.Dll")]  
 public static extern void PassLPStr([MarshalAs(UnmanagedType.LPStr)]  
@@ -154,7 +156,7 @@ String s);
   
 ### Type Library Representation  
   
-```  
+```
 struct StringInfoA {  
    char *    f1;  
    char      f2[256];  

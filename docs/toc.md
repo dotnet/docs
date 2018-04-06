@@ -35,7 +35,7 @@
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
 ## [LINQ](standard/using-linq.md)
 ## [Common Type System & Common Language Specification](standard/common-type-system.md)
-## [Parallel Processing and Concurrency](standard/parallel-processing-and-concurrency.md)
+## [Parallel Processing, Concurrency, and Async](standard/parallel-processing-and-concurrency.md)
 ### [Asynchronous programming](standard/async.md)
 #### [Asynchronous programming in depth](standard/async-in-depth.md)
 #### [Asynchronous Programming Patterns](standard/asynchronous-programming-patterns/)

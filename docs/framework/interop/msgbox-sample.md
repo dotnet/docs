@@ -1,13 +1,9 @@
 ---
 title: "MsgBox Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -17,7 +13,6 @@ helpviewer_keywords:
   - "marshaling, MsgBox sample"
   - "data marshaling, MsgBox sample"
 ms.assetid: 9e0edff6-cc0d-4d5c-a445-aecf283d9c3a
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -52,7 +47,7 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
 ## See Also  
  [Marshaling Strings](../../../docs/framework/interop/marshaling-strings.md)  
- [Platform Invoke Data Types](http://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f)  
+ [Platform Invoke Data Types](http://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))  
  [Default Marshaling for Strings](../../../docs/framework/interop/default-marshaling-for-strings.md)  
  [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
  [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)

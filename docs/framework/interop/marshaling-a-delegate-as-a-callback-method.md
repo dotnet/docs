@@ -1,13 +1,9 @@
 ---
 title: "Marshaling a Delegate as a Callback Method"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -17,7 +13,6 @@ helpviewer_keywords:
   - "data marshaling, Callback sample"
   - "marshaling, Callback sample"
 ms.assetid: 6ddd7866-9804-4571-84de-83f5cc017a5a
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -59,6 +54,6 @@ This sample demonstrates how to pass delegates to an unmanaged function expectin
  [!code-vb[Conceptual.Interop.Marshaling#38](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/callback.vb#38)]  
   
 ## See Also  
- [Miscellaneous Marshaling Samples](http://msdn.microsoft.com/library/a915c948-54e9-4d0f-a525-95a77fd8ed70)  
- [Platform Invoke Data Types](http://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f)  
+ [Miscellaneous Marshaling Samples](http://msdn.microsoft.com/library/a915c948-54e9-4d0f-a525-95a77fd8ed70(v=vs.100))  
+ [Platform Invoke Data Types](http://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))  
  [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)

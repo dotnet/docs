@@ -39,7 +39,7 @@ COM developers can benefit from the following information about the managed type
   
      Managed classes that implement the class interface (a COM interop-generated interface) are subject to versioning restrictions.  
   
-     For guidelines on using the class interface, see [Introducing the Class Interface](https://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024(v=vs.100)).  
+     For guidelines on using the class interface, see [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface).  
   
 -   Deployment instructions  
   
@@ -86,7 +86,7 @@ COM developers can benefit from the following information about the managed type
  <xref:System.Runtime.InteropServices.ITypeLibConverter>  
  [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
  [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)  
- [Introducing the Class Interface](https://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024(v=vs.100))  
+ [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)  
  [Assembly Security Considerations](../app-domains/assembly-security-considerations.md)  
  [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)  
  [Registering Assemblies with COM](registering-assemblies-with-com.md)  

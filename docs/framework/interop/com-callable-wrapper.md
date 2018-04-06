@@ -61,15 +61,15 @@ Com interfaces and the COM callable wrapper
   
 |Interface|Description|  
 |---------------|-----------------|  
-|The (_*classname*) class interface|Interface, exposed by the runtime and not explicitly defined, that exposes all public interfaces, methods, properties, and fields that are explicitly exposed on a managed object.|  
+|The (\_*classname*) class interface|Interface, exposed by the runtime and not explicitly defined, that exposes all public interfaces, methods, properties, and fields that are explicitly exposed on a managed object.|  
 |**IConnectionPoint** and **IconnectionPointContainer**|Interface for objects that source delegate-based events (an interface for registering event subscribers).|  
 |**IdispatchEx**|Interface supplied by the runtime if the class implements **IExpando**. The **IDispatchEx** interface is an extension of the **IDispatch** interface that, unlike **IDispatch**, enables enumeration, addition, deletion, and case-sensitive calling of members.|  
 |**IEnumVARIANT**|Interface for collection-type classes, which enumerates the objects in the collection if the class implements **IEnumerable**.|  
   
 ## Introducing the class interface  
- The class interface, which is not explicitly defined in managed code, is an interface that exposes all public methods, properties, fields, and events that are explicitly exposed on the .NET object. This interface can be a dual or dispatch-only interface. The class interface receives the name of the .NET class itself, preceded by an underscore. For example, for class Mammal, the class interface is _Mammal.  
+ The class interface, which is not explicitly defined in managed code, is an interface that exposes all public methods, properties, fields, and events that are explicitly exposed on the .NET object. This interface can be a dual or dispatch-only interface. The class interface receives the name of the .NET class itself, preceded by an underscore. For example, for class Mammal, the class interface is \_Mammal.  
   
- For derived classes, the class interface also exposes all public methods, properties, and fields of the base class. The derived class also exposes a class interface for each base class. For example, if class Mammal extends class MammalSuperclass, which itself extends System.Object, the .NET object exposes to COM clients three class interfaces named _Mammal, _MammalSuperclass, and _Object.  
+ For derived classes, the class interface also exposes all public methods, properties, and fields of the base class. The derived class also exposes a class interface for each base class. For example, if class Mammal extends class MammalSuperclass, which itself extends System.Object, the .NET object exposes to COM clients three class interfaces named \_Mammal, \_MammalSuperclass, and \_Object.  
   
  For example, consider the following .NET class:  
   
@@ -182,6 +182,5 @@ public class LoanApp : IAnother {
  [COM Callable Wrapper](com-callable-wrapper.md)  
  [COM Wrappers](com-wrappers.md)  
  [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
- [Simulating COM Interfaces](https://msdn.microsoft.com/library/ad2ab959-e2be-411b-aaff-275c3fba606c(v=vs.100))  
  [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)  
  [Runtime Callable Wrapper](runtime-callable-wrapper.md)

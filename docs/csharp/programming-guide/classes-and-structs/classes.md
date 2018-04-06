@@ -89,7 +89,7 @@ When the object is created, the memory is allocated on the managed heap, and the
  In the following example, a public class that contains a single field, a method, and a special method called a constructor is defined. For more information, see [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md). The class is then instantiated with the `new` keyword.  
   
 ## Example  
- [!code-csharp[Class Example](../../samples/snippets/csharp/programming-guide/classes-and-structs/class-example.cs)] 
+ [!code-csharp[Class Example](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/class-example.cs)] 
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

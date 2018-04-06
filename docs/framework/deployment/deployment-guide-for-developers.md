@@ -21,7 +21,7 @@ This topic provides information for developers who want to install any version o
 
 For download links, see the section [Redistributable Packages](#redistributable-packages). You can also download the redistributable packages and language packs from these Microsoft Download Center pages:
 
-- .NET Framework 4.7.2 for all operating systems ([web installer](http://go.microsoft.com/fwlink/?LinkId=863262) or [offline installer](http://go.microsoft.com/fwlink/p/?LinkId=863258))
+- .NET Framework 4.7.2 for all operating systems ([web installer](http://go.microsoft.com/fwlink/?LinkId=863262) or [offline installer](http://go.microsoft.com/fwlink/p/?LinkId=863265))
 
 - .NET Framework 4.7.1 for all operating systems ([web installer](http://go.microsoft.com/fwlink/?LinkId=852095) or [offline installer](http://go.microsoft.com/fwlink/p/?LinkId=852107))
 

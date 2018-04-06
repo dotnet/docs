@@ -1,13 +1,9 @@
 ---
 title: "COM Callable Wrapper"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -20,7 +16,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, COM wrappers"
   - "COM callable wrappers"
 ms.assetid: d04be3b5-27b9-4f5b-8469-a44149fabf78
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -32,7 +27,7 @@ When a COM client calls a .NET object, the common language runtime creates the m
   
  The runtime creates exactly one CCW for a managed object, regardless of the number of COM clients requesting its services. As the following illustration shows, multiple COM clients can hold a reference to the CCW that exposes the INew interface. The CCW, in turn, holds a single reference to the managed object that implements the interface and is garbage collected. Both COM and .NET clients can make requests on the same managed object simultaneously.  
   
- ![COM callable wrapper](../../../docs/framework/interop/media/ccw.gif "ccw")  
+ ![COM callable wrapper](./media/ccw.gif "ccw")  
 Accessing .NET objects through COM callable wrapper  
   
  COM callable wrappers are invisible to other classes running within the .NET Framework. Their primary purpose is to marshal calls between managed and unmanaged code; however, CCWs also manage the object identity and object lifetime of the managed objects they wrap.  
@@ -44,11 +39,11 @@ Accessing .NET objects through COM callable wrapper
  Unlike the .NET client it wraps, the CCW is reference-counted in traditional COM fashion. When the reference count on the CCW reaches zero, the wrapper releases its reference on the managed object. A managed object with no remaining references is collected during the next garbage-collection cycle.  
   
 ## Simulating COM interfaces  
- The [COM callable wrapper](../../../docs/framework/interop/com-callable-wrapper.md) (CCW) exposes all public, COM-visible interfaces, data types, and return values to COM clients in a manner that is consistent with COM's enforcement of interface-based interaction. For a COM client, invoking methods on a .NET Framework object is identical to invoking methods on a COM object.  
+ The [COM callable wrapper](com-callable-wrapper.md) (CCW) exposes all public, COM-visible interfaces, data types, and return values to COM clients in a manner that is consistent with COM's enforcement of interface-based interaction. For a COM client, invoking methods on a .NET Framework object is identical to invoking methods on a COM object.  
   
  To create this seamless approach, the CCW manufactures traditional COM interfaces, such as **IUnknown** and **IDispatch**. As the following illustration shows, the CCW maintains a single reference on the .NET object that it wraps. Both the COM client and .NET object interact with each other through the proxy and stub construction of the CCW.  
   
- ![COM interfaces](../../../docs/framework/interop/media/ccwwithinterfaces.gif "ccwwithinterfaces")  
+ ![COM interfaces](./media/ccwwithinterfaces.gif "ccwwithinterfaces")  
 Com interfaces and the COM callable wrapper  
   
  In addition to exposing the interfaces that are explicitly implemented by a class in the managed environment, the .NET Framework supplies implementations of the COM interfaces listed in the following table on behalf of the object. A .NET class can override the default behavior by providing its own implementation of these interfaces. However, the runtime always provides the implementation for the **IUnknown** and **IDispatch** interfaces.  
@@ -101,7 +96,7 @@ public class Mammal
 }  
 ```  
   
- The COM client can obtain a pointer to a class interface named `_Mammal`, which is described in the type library that the [Type Library Exporter (Tlbexp.exe)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md) tool generates. If the `Mammal` class implemented one or more interfaces, the interfaces would appear under the coclass.  
+ The COM client can obtain a pointer to a class interface named `_Mammal`, which is described in the type library that the [Type Library Exporter (Tlbexp.exe)](../tools/tlbexp-exe-type-library-exporter.md) tool generates. If the `Mammal` class implemented one or more interfaces, the interfaces would appear under the coclass.  
   
 ```  
 [odl, uuid(…), hidden, dual, nonextensible, oleautomation]  
@@ -184,9 +179,9 @@ public class LoanApp : IAnother {
   
 ## See Also  
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
- [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)  
- [COM Wrappers](../../../docs/framework/interop/com-wrappers.md)  
- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
- [Simulating COM Interfaces](http://msdn.microsoft.com/library/ad2ab959-e2be-411b-aaff-275c3fba606c)  
- [Qualifying .NET Types for Interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md)  
- [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)
+ [COM Callable Wrapper](com-callable-wrapper.md)  
+ [COM Wrappers](com-wrappers.md)  
+ [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
+ [Simulating COM Interfaces](https://msdn.microsoft.com/library/ad2ab959-e2be-411b-aaff-275c3fba606c(v=vs.100))  
+ [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)  
+ [Runtime Callable Wrapper](runtime-callable-wrapper.md)

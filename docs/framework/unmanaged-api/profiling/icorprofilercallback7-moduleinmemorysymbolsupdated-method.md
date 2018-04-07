@@ -10,14 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 api_name: 
-  - "ICorProfiler7.ModuleInMemorySymbolsUpdated"
+  - "ICorProfilerCallback7.ModuleInMemorySymbolsUpdated"
 api_location: 
   - "mscorwks.dll"
   - "corprof.idl"
 api_type: 
   - "COM"
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -38,7 +37,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
 ```  
   
 #### Parameters  
- `moduleId`  
+ [in] `moduleId`  
  The identifier of the in-memory module whose symbol stream is updated.  
   
 ## Remarks  

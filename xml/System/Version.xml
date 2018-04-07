@@ -1718,7 +1718,7 @@ major.minor[.build[.revision]]
       </Parameters>
       <Docs>
         <param name="input">A string that contains a version number to convert.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.Version" /> equivalent of the number that is contained in <c>input</c>, if the conversion succeeded, or a <see cref="T:System.Version" /> object whose major and minor version numbers are 0 if the conversion failed. If <c>input</c> is <see langword="null" /> or <see cref="F:System.String.Empty" />, <c>result</c> is <see langword="null" /> when the method returns.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.Version" /> equivalent of the number that is contained in <c>input</c>, if the conversion succeeded. If <c>input</c> is <see langword="null" />, <see cref="F:System.String.Empty" />, or if the conversion fails, <c>result</c> is <see langword="null" /> when the method returns.</param>
         <summary>Tries to convert the string representation of a version number to an equivalent <see cref="T:System.Version" /> object, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="input" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>

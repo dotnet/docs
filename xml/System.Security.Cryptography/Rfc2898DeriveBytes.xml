@@ -389,12 +389,16 @@
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="password">To be added.</param>
-        <param name="salt">To be added.</param>
-        <param name="iterations">To be added.</param>
-        <param name="hashAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="password">The password to use to derive the key.</param>
+        <param name="salt">The key salt to use to derive the key.</param>
+        <param name="iterations">The number of iterations for the operation.</param>
+        <param name="hashAlgorithm">The hash algorithm to use to derive the key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class using the specified password, salt, number of iterations and the hash algorithm name to derive the key.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="saltSize" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> property of <paramref name="hashAlgorithm" /> is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">Hash algorithm name is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -420,12 +424,14 @@
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="password">To be added.</param>
-        <param name="salt">To be added.</param>
-        <param name="iterations">To be added.</param>
-        <param name="hashAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="password">The password to use to derive the key.</param>
+        <param name="salt">The key salt to use to derive the key.</param>
+        <param name="iterations">The number of iterations for the operation.</param>
+        <param name="hashAlgorithm">The hash algorithm to use to derive the key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class using the specified password, salt, number of iterations and the hash algorithm name to derive the key.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> property of <paramref name="hashAlgorithm" /> is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">Hash algorithm name is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -456,12 +462,16 @@
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="password">To be added.</param>
-        <param name="saltSize">To be added.</param>
-        <param name="iterations">To be added.</param>
-        <param name="hashAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="password">The password to use to derive the key.</param>
+        <param name="saltSize">The size of the random salt that you want the class to generate.</param>
+        <param name="iterations">The number of iterations for the operation.</param>
+        <param name="hashAlgorithm">The hash algorithm to use to derive the key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class using the specified password, salt size, number of iterations and the hash algorithm name to derive the key.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="saltSize" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> property of <paramref name="hashAlgorithm" /> is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">Hash algorithm name is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="CryptDeriveKey">

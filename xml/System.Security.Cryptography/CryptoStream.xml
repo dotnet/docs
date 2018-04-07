@@ -118,12 +118,15 @@
         <Parameter Name="leaveOpen" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="transform">To be added.</param>
-        <param name="mode">To be added.</param>
-        <param name="leaveOpen">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream on which to perform the cryptographic transformation.</param>
+        <param name="transform">The cryptographic transformation that is to be performed on the stream.</param>
+        <param name="mode">The mode of the stream.</param>
+        <param name="leaveOpen">
+          <see langword="true" /> to not close the underlying stream when the <see cref="T:System.Security.Cryptography.CryptoStream" /> object is disposed; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptoStream" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mode" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginRead">

@@ -18,8 +18,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an abstraction over the PKCS#10 CertificationRequestInfo and the X.509 TbsCertificate, allowing callers to create self-signed or chain-signed X.509 Public-Key Certificates, as well as create a certificate signing request blob to send to a Certificate Authority (CA).</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an abstraction over the PKCS#10 CertificationRequestInfo and the X.509 TbsCertificate.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.X509Certificates.CertificateRequest> class allows callers to create self-signed or chain-signed X.509 Public-Key Certificates, as well as to create a certificate signing request blob to send to a Certificate Authority (CA).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

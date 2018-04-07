@@ -18,7 +18,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class facilitates building a subject alternative name extension for an X.509 certificate.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +67,11 @@
         <Parameter Name="dnsName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dnsName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dnsName">The DNS name to be added.</param>
+        <summary>Adds a DNS Name to the subject alternative name extension.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="dnsName" /> is is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddEmailAddress">
@@ -95,9 +97,11 @@
         <Parameter Name="emailAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="emailAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="emailAddress">The email address to be added.</param>
+        <summary>Adds an email address to the subject alternative name extension.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="emailAddress" /> is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddIpAddress">
@@ -122,9 +126,11 @@
         <Parameter Name="ipAddress" Type="System.Net.IPAddress" />
       </Parameters>
       <Docs>
-        <param name="ipAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ipAddress">The IP address to be added.</param>
+        <summary>Adds an IP address to the subject alternative name extension.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ipAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddUri">
@@ -149,9 +155,11 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="uri">The URI to be added.</param>
+        <summary>Adds a Uniform Resource Identifier (URI) to the subject alternative name extension.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="uri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddUserPrincipalName">
@@ -177,9 +185,11 @@
         <Parameter Name="upn" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="upn">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="upn">The UPN to be added.</param>
+        <summary>Adds a User Principal Name (UPN) to the subject alternative name extension.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="upn" /> is is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Build">
@@ -204,9 +214,10 @@
         <Parameter Name="critical" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="critical">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="critical">
+          <see langword="true" /> to to mark the extension as <see cref="P:System.Security.Cryptography.X509Certificates.X509Extension.Critical" />; otherwise, <see langword="false" />. The default value is <see langword="false" />.</param>
+        <summary>Returns an <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> object that represents the encoded subject alternative name extension.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> object that represents the encoded subject alternative name extension.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

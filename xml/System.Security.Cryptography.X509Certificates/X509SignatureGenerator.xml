@@ -18,7 +18,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Base class for building encoded signatures as needed for X.509 certificates.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, produces the certificate's public key that has the correctly encoded <see cref="T:System.Security.Cryptography.Oid" />, public key parameters and public key values.</summary>
+        <returns>The certificate's public key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +93,12 @@
         <Parameter Name="key" Type="System.Security.Cryptography.ECDsa" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The private key.</param>
+        <summary>Creates an <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator" /> object for ECDSA signatures using the specified private key.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator" /> object for ECDSA signatures.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateForRSA">
@@ -123,11 +125,18 @@
         <Parameter Name="signaturePadding" Type="System.Security.Cryptography.RSASignaturePadding" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="signaturePadding">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The private key.</param>
+        <param name="signaturePadding">The padding mode.</param>
+        <summary>Creates an <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator" /> object for RSA signatures using the specified private key and padding mode.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator" /> object for RSA signatures.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="signaturePadding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified padding mode is not valid for this algorithm.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureAlgorithmIdentifier">
@@ -153,9 +162,9 @@
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="hashAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hashAlgorithm">The hash algorithm to use for encoding.</param>
+        <summary>When overridden in a derived class, encodes the X.509 algorithm identifier for this signature.</summary>
+        <returns>The encoded value for the X.509 algorithm identifier.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +188,16 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.PublicKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the public key associated with the private key with which signatures are being generated.</summary>
+        <value>The public key associated with the private key with which signatures are being generated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the public key is null, it creates a public key by calling the <xref:System.Security.Cryptography.X509Certificates.X509SignatureGenerator.BuildPublicKey> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SignData">
@@ -208,10 +224,10 @@
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="hashAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">The input data for which to produce the signature.</param>
+        <param name="hashAlgorithm">The hash algorithm to use to produce the signature.</param>
+        <summary>When overridden in a derived class, produces a signature for the specified data using the specified hash algorithm and encodes the results appropiately for X.509 signature values.</summary>
+        <returns>The X.509 signature for the specified data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

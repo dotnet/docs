@@ -136,10 +136,12 @@
         <Parameter Name="keySizeInBits" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="keySizeInBits">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keySizeInBits">The key size, in bits.</param>
+        <summary>Creates a new ephemeral DSA key with the specified key size.</summary>
+        <returns>A new ephemeral DSA key with the specified key size.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="keySizeInBits" /> is different than <see cref="P:System.Security.Cryptography.AsymmetricAlgorithm.KeySize" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -165,9 +167,9 @@
         <Parameter Name="parameters" Type="System.Security.Cryptography.DSAParameters" />
       </Parameters>
       <Docs>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parameters">The parameters for the <see cref="T:System.Security.Cryptography.DSA" /> algorithm.</param>
+        <summary>Creates a new ephemeral DSA key with the specified DSA key parameters.</summary>
+        <returns>A new ephemeral DSA key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

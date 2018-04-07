@@ -353,8 +353,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the signature for the current <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object.</summary>
+        <returns>The signature for the current <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,8 +432,8 @@
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the identifier for the signature algorithm used by the current <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object.</summary>
+        <value>The identifier for the signature algorithm used by the current <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

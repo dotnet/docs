@@ -57,11 +57,19 @@
         <Parameter Name="privateKey" Type="System.Security.Cryptography.ECDsa" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <param name="privateKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="certificate">The ECDSA certificate.</param>
+        <param name="privateKey">The private ECDSA key.</param>
+        <summary>Combines a private key with the public key of an <see cref="T:System.Security.Cryptography.ECDsa" /> certificate to generate a new ECDSA certificate.</summary>
+        <returns>A new ECDSA certificate with the <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" /> property set to <see langword="true" />. The input ECDSA certificate object isn't modified.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificate" /> or <paramref name="privateKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The certificate already has an associated private key.</exception>
+        <exception cref="T:System.ArgumentException">The certificate doesn't have a public key.  
+  
+ -or-  
+  
+ The specified private key doesn't match the public key for the specified certificate.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetECDsaPrivateKey">

@@ -32,8 +32,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the foreground color for the selected title in the Activity Designer.</summary>
+        <value>The foreground color for the selected title in the Activity Designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +52,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the foreground color key for the title in the Activity Designer. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -734,8 +734,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the hover color defined by a compatibility setting for the item text in the context menu.</summary>
+        <value>The hover color defined by a compatibility setting for the item text in the context menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1573,8 +1573,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for connector lines in a flowchart.</summary>
+        <value>The color for connector lines in a flowchart.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1593,7 +1593,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for connector lines in a flowchart. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2478,8 +2478,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the foreground color of the highlighted button in the property toolbar.</summary>
+        <value>The foreground color of the highlighted button in the property toolbar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2498,7 +2498,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the foreground color of the highlighted button in the property toolbar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2731,8 +2731,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> selected caption.</summary>
+        <value>The color for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> selected caption.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2751,7 +2751,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the selected caption of the <see cref="T:System.Activities.Presentation.WorkflowViewElement" />. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

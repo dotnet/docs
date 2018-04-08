@@ -513,14 +513,16 @@
         <Parameter Name="factoryArgument" Type="TArg" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg">To be added.</typeparam>
-        <param name="key">To be added.</param>
-        <param name="addValueFactory">To be added.</param>
-        <param name="updateValueFactory">To be added.</param>
-        <param name="factoryArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TArg">The type of the keys in this <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /></typeparam>
+        <param name="key">The key to be added or whose value should be updated.</param>
+        <param name="addValueFactory">The function used to generate a value for an absent key.</param>
+        <param name="updateValueFactory">The function used to generate a new value for an existing key based on the key's existing value.</param>
+        <param name="factoryArgument">An argument to pass into <c>addValueFactory</c> and <c>updateValueFactory</c>.</param>
+        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist, or updates a key/value pair in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key already exists.</summary>
+        <returns>The new value for the key. This will be either be the result of addValueFactory (if the key was absent) or the result of updateValueFactory (if the key was present).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" />, <paramref name="addValueFactory" />, or <paramref name="updateValueFactory" /> is a null reference (Nothing in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -828,12 +830,12 @@
         <Parameter Name="factoryArgument" Type="TArg" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg">To be added.</typeparam>
-        <param name="key">To be added.</param>
-        <param name="valueFactory">To be added.</param>
-        <param name="factoryArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TArg">The type of the keys in this <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /></typeparam>
+        <param name="key">The key of the element to add.</param>
+        <param name="valueFactory">The function used to generate a value for the key.</param>
+        <param name="factoryArgument">An argument value to pass into <c>name</c>.</param>
+        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist.</summary>
+        <returns>The value for the key.  This will be either the existing value for the key if the key is already in the dictionary, or the new value for the key as returned by <paramref name="valueFactory" /> if the key was not in the dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

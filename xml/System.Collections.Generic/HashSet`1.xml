@@ -294,9 +294,16 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="capacity">The initial size of the <see cref="T:System.Collections.Generic.HashSet`1" /></param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class that is empty, but has reserved space for <paramref name="capacity" /> items and uses the default equality comparer for the set type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Since resizes are relatively expensive (require rehashing), this attempts to minimize the need to resize by setting the initial capacity based on the value of the `capacity`.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -376,10 +383,17 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="capacity">The initial size of the <see cref="T:System.Collections.Generic.HashSet`1" /></param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> implementation to use when comparing values in the set, or null (Nothing in Visual Basic) to use the default <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> implementation for the set type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class that uses the specified equality comparer for the set type, and has sufficient capacity to accommodate <paramref name="capacity" /> elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Since resizes are relatively expensive (require rehashing), this attempts to minimize the need to resize by setting the initial capacity based on the value of the `capacity`.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1951,11 +1965,18 @@
         <Parameter Name="actualValue" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="equalValue">To be added.</param>
-        <param name="actualValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="equalValue">The value to search for.</param>
+        <param name="actualValue">The value from the set that the search found, or the default value of T when the search yielded no match.</param>
+        <summary>Searches the set for a given value and returns the equal value it finds, if any.</summary>
+        <returns>A value indicating whether the search was successful.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This can be useful when you want to reuse a previously stored reference instead of a newly constructed one (so that more sharing of references can occur) or to look up a value that has more complete data than the value you currently have, although their comparer functions indicate they are equal.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnionWith">

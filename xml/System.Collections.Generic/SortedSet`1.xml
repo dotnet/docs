@@ -2122,11 +2122,18 @@
         <Parameter Name="actualValue" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="equalValue">To be added.</param>
-        <param name="actualValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="equalValue">The value to search for.</param>
+        <param name="actualValue">The value from the set that the search found, or the default value of T when the search yielded no match.</param>
+        <summary>Searches the set for a given value and returns the equal value it finds, if any.</summary>
+        <returns>A value indicating whether the search was successful.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This can be useful when you want to reuse a previously stored reference instead of a newly constructed one (so that more sharing of references can occur) or to look up a value that has more complete data than the value you currently have, although their comparer functions indicate they are equal.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnionWith">

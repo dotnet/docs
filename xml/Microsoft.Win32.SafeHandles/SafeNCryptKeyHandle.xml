@@ -86,10 +86,18 @@
         <Parameter Name="parentHandle" Type="System.Runtime.InteropServices.SafeHandle" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <param name="parentHandle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handle">The pre-existing handle to use. Using <see cref="F:System.IntPtr.Zero" /> returns an invalid handle.</param>
+        <param name="parentHandle">The parent handle of this <see cref="T:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle" />.</param>
+        <summary>Instantiates a new instance of the <see cref="T:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parentHandle" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="parentHandle" /> is closed.  
+  
+ -or-  
+  
+ <paramref name="parentHandle" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReleaseNativeHandle">

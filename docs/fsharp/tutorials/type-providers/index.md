@@ -23,15 +23,15 @@ Provided Types depend on input parameters to a Type Provider. Such input can be 
 
 Type Providers come in two forms: Generative and Erased.
 
-Generative Type Providers produce types which can be written as .NET types into the assembly in which they are produced. This allows them to be consumed from code in other assemblies. This means that the typed representation of the data source must generally be one which is feasible to represent with .NET types.
+Generative Type Providers produce types that can be written as .NET types into the assembly in which they are produced. This allows them to be consumed from code in other assemblies. This means that the typed representation of the data source must generally be one that is feasible to represent with .NET types.
 
-Erasing Type Providers produce types which can only be consumed in the assembly or project they are generated from. The types are ephemeral; that is, they are not written into an assembly and cannot be consumed by code in other assemblies. They can contain *delayed* members, allowing you to use provided types from a potentially infinite information space. They are useful for using a small subset of a large and interconnected data source.
+Erasing Type Providers produce types that can only be consumed in the assembly or project they are generated from. The types are ephemeral; that is, they are not written into an assembly and cannot be consumed by code in other assemblies. They can contain *delayed* members, allowing you to use provided types from a potentially infinite information space. They are useful for using a small subset of a large and interconnected data source.
 
 ## Commonly used Type Providers
 
 The following widely-used libraries contain Type Providers for different uses:
 
-- [FSharp.Data](https://fsharp.github.io/FSharp.Data/) includes Type Providers for JSON, XML, CSV and HTML document formats.
+- [FSharp.Data](https://fsharp.github.io/FSharp.Data/) includes Type Providers for JSON, XML, CSV, and HTML document formats and resources.
 - [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly-typed access to relation databases through object mapping and F# LINQ queries against these data sources.
 - [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for compile-time checked embedding of T-SQL in F#.
 - [Azure Storage Type provider](https://fsprojects.github.io/AzureStorageTypeProvider/) provides types for Azure Blobs, Tables, and Queues, allowing you to access these resources without needing to specify resource names as strings throughout your program.

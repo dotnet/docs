@@ -731,7 +731,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
 2.  The **Key** column information must be present. If primary key information is present, any duplicate rows are reconciled and only appear once in the <xref:System.Data.DataTable> that corresponds to the <xref:System.Data.DataSet>. Primary key information may be set either through <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, by specifying the <xref:System.Data.DataTable.PrimaryKey%2A> property of the <xref:System.Data.DataTable>, or by setting the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property to `AddWithKey`.  
   
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see[Defining Primary Keys](~/docs/framework/data/adonet/dataset-datatable-dataview/defining-primary-keys.md).  
+ If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see [Defining Primary Keys](~/docs/framework/data/adonet/dataset-datatable-dataview/defining-primary-keys.md).  
   
 > [!NOTE]
 >  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
@@ -1168,7 +1168,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
  You can use the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method multiple times on the same <xref:System.Data.DataTable>. If a primary key exists, incoming rows are merged with matching rows that already exist. If no primary key exists, incoming rows are appended to the <xref:System.Data.DataTable>.  
   
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see[Defining Primary Keys](~/docs/framework/data/adonet/dataset-datatable-dataview/defining-primary-keys.md).  
+ If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see [Defining Primary Keys](~/docs/framework/data/adonet/dataset-datatable-dataview/defining-primary-keys.md).  
   
 > [!NOTE]
 >  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.Fill%2A> and <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for a .NET Framework data provider retrieves schema information for only the first result.  

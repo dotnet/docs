@@ -64,7 +64,7 @@
  Windows Forms controls use ambient properties so child controls can appear like their surrounding environment. An *ambient property* is a control property that, if not set, is retrieved from the parent control. If the control does not have a <xref:System.Windows.Forms.Control.Parent%2A>, and the property is not set, the control attempts to determine the value of the ambient property through the <xref:System.Windows.Forms.Control.Site%2A> property. If the control is not sited, if the site does not support ambient properties, or if the property is not set on the <xref:System.Windows.Forms.AmbientProperties>, the control uses its own default values. Typically, an ambient property represents a characteristic of a control, such as <xref:System.Windows.Forms.Control.BackColor%2A>, that is communicated to a child control. For example, a <xref:System.Windows.Forms.Button> will have the same <xref:System.Windows.Forms.Control.BackColor%2A> as its parent <xref:System.Windows.Forms.Form> by default. Ambient properties provided by the <xref:System.Windows.Forms.Control> class include: <xref:System.Windows.Forms.Control.Cursor%2A>, <xref:System.Windows.Forms.Control.Font%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.ForeColor%2A>, and <xref:System.Windows.Forms.Control.RightToLeft%2A>.  
   
 > [!NOTE]
->  To make your Windows Forms application support visual styles, be sure to set the <xref:System.Windows.Forms.FlatStyle> property to `System` and include a manifest with your executable. A manifest is an XML file that is included either as a resource within your application executable or as a separate file that resides in the same directory as the executable file. For an example of a manifest, see the Example section of the <xref:System.Windows.Forms.FlatStyle> enumeration. For more information about using visual styles, see[Visual Styles](http://msdn.microsoft.com/library/windows/desktop/bb773187.aspx).  
+>  To make your Windows Forms application support visual styles, be sure to set the <xref:System.Windows.Forms.FlatStyle> property to `System` and include a manifest with your executable. A manifest is an XML file that is included either as a resource within your application executable or as a separate file that resides in the same directory as the executable file. For an example of a manifest, see the Example section of the <xref:System.Windows.Forms.FlatStyle> enumeration. For more information about using visual styles, see [Visual Styles](http://msdn.microsoft.com/library/windows/desktop/bb773187.aspx).  
   
  Windows Forms has accessibility support built in, and provides information about your application that enables it to work with accessibility client applications such as screen enlarger and reviewer utilities, voice input utilities, on-screen keyboards, alternative input devices, and keyboard enhancement utilities. Sometimes you will want to provide additional information to accessibility client applications. There are two ways of providing this additional information. You can set the <xref:System.Windows.Forms.Control.AccessibleName%2A>, <xref:System.Windows.Forms.Control.AccessibleDescription%2A>, <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A>, and <xref:System.Windows.Forms.Control.AccessibleRole%2A> property values, which will be reported to accessibility client applications. This method is typically used to provide limited accessibility information for existing controls. Alternatively, you can write your own class deriving from the <xref:System.Windows.Forms.AccessibleObject> or <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes, providing as much accessibility information as needed.  
   
@@ -74,7 +74,7 @@
 > [!NOTE]
 >  Do not add data bindings for a <xref:System.Windows.Forms.Control> in its constructor. Doing so will cause errors in code generation and can cause unwanted behavior.  
   
- The majority of the controls in the <xref:System.Windows.Forms> namespace use the underlying Windows common control as a base to build on. For more information about the Windows common controls, see[General Control Reference](http://msdn.microsoft.com/library/windows/desktop/bb775497.aspx).  
+ The majority of the controls in the <xref:System.Windows.Forms> namespace use the underlying Windows common control as a base to build on. For more information about the Windows common controls, see [General Control Reference](http://msdn.microsoft.com/library/windows/desktop/bb775497.aspx).  
   
  To identify Windows Forms controls from a separate process, use a standard `SendMessage` call to pass the WM_GETCONTROLNAME message. WM_GETCONTROLNAME is independent of the language and Windows hierarchy. For more information, see the "Recommended Solution for Windows Forms" topic in[Automating Windows Forms](http://msdn.microsoft.com/library/ms996405.aspx).  
   
@@ -5843,7 +5843,7 @@ MyControl.Font = New Font(MyControl.Font, _
 ## Remarks  
  A handle is created when the <xref:System.Windows.Forms.Control> is displayed for the first time. For example, if a <xref:System.Windows.Forms.Control> is created that has <xref:System.Windows.Forms.Control.Visible%2A> set to `false`, the <xref:System.Windows.Forms.Control.HandleCreated> event will not be raised until <xref:System.Windows.Forms.Control.Visible%2A> is set to `true`.  
   
- For more information about handling events, see[Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
    
   
@@ -6141,7 +6141,7 @@ MyControl.Font = New Font(MyControl.Font, _
 > [!IMPORTANT]
 >  The user can interactively change the <xref:System.Windows.Forms.Control.ImeMode%2A> unless it has been programmatically set to <xref:System.Windows.Forms.ImeMode.Disable?displayProperty=nameWithType>. In this case, the user will not be able to use the IME.  
 >   
->  The <xref:System.Windows.Forms.Control.ImeMode%2A> property is ignored on Windows 8 when the global input mode is in effect. For more info, see[Switch Text Input Changed from Per-Thread to Per-User](http://go.microsoft.com/fwlink/?LinkID=256509).  
+>  The <xref:System.Windows.Forms.Control.ImeMode%2A> property is ignored on Windows 8 when the global input mode is in effect. For more info, see [Switch Text Input Changed from Per-Thread to Per-User](http://go.microsoft.com/fwlink/?LinkID=256509).  
   
  ]]></format>
         </remarks>

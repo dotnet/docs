@@ -44,7 +44,7 @@
   
  You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). When <xref:System.Windows.Controls.Primitives.Popup> is displayed on the screen, it does not reposition itself if its parent is repositioned.  
   
- A <xref:System.Windows.Controls.Primitives.Popup> displays its content in its own window on the screen. A <xref:System.Windows.Controls.Primitives.Popup> control supports animation when the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true` and the application is running with full trust. An application that is running with full trust has complete access to system resources and is typically installed on the user's system. For more information, see[Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
+ A <xref:System.Windows.Controls.Primitives.Popup> displays its content in its own window on the screen. A <xref:System.Windows.Controls.Primitives.Popup> control supports animation when the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true` and the application is running with full trust. An application that is running with full trust has complete access to system resources and is typically installed on the user's system. For more information, see [Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
   
  For bitmap and opacity effects to appear on the content of a <xref:System.Windows.Controls.Primitives.Popup>, you must set the effects directly on the <xref:System.Windows.Controls.Primitives.Popup> content. The content of a <xref:System.Windows.Controls.Primitives.Popup> does not inherit effects that are set on the <xref:System.Windows.Controls.Primitives.Popup> control or on any other element that is in the parent window.  
   
@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.Popup> control can only contain transparent content when the application runs with full trust. An application that runs with full trust has complete access to system resources and is typically installed on the local system. For more information, see[Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
+ A <xref:System.Windows.Controls.Primitives.Popup> control can only contain transparent content when the application runs with full trust. An application that runs with full trust has complete access to system resources and is typically installed on the local system. For more information, see [Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
   
  This property cannot be set to `true` when the <xref:System.Windows.Controls.Primitives.Popup> is hosted in a [!INCLUDE[TLA#tla_winfxwebapp](~/includes/tlasharptla-winfxwebapp-md.md)].  
   

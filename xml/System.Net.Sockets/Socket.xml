@@ -7805,7 +7805,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see[Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -8267,7 +8267,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see[Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   

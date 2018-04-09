@@ -282,7 +282,7 @@ Type: DWORD
 ### Chaining the language packs to your app setup
  The .NET Framework provides a set of stand-alone language pack executable files that contain localized resources for specific cultures. The language packs are available from the Microsoft Download Center:
 
-- [.NET Framework 4.7.2 language packs]()
+- [.NET Framework 4.7.2 language packs](http://go.microsoft.com/fwlink/p/?LinkId=863258)
 
 - [.NET Framework 4.7.1 language packs](http://go.microsoft.com/fwlink/p/?LinkId=852090)
 

@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # ICorProfilerCallback8::DynamicMethodJITCompilationFinished Method
-[Supported in the .NET Framework 4.7.1 and later versions]  
+[Supported in the .NET Framework 4.7 and later versions]  
   
 Notifies the profiler whenever JIT compilation of a dynamic method has completed.  
   
@@ -39,7 +39,7 @@ HRESULT DynamicMethodJITCompilationFinished(
 The identifier of the in-memory function for which JIT compilation is started.   
 
 [in] `hrStatus`   
-A value that indicates whether the JIT recompilation was successful.
+A value that indicates whether the JIT compilation was successful.
 
 [in] `fIsSafeToBlock`   
 `true` to indicate that blocking may cause the runtime to wait for the calling thread to return from this callback; `false` to indicate that blocking will not affect the operation of the runtime.  
@@ -58,7 +58,7 @@ This callback is triggered whenever JIT compilation of a dynamic method has fini
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v471plus.md)]  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v47plus.md)]  
   
 ## See Also  
  [DynamicMethodJITCompilationStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)  

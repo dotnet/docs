@@ -29,7 +29,7 @@ ms.workload:
   
 |Method|Description|  
 |------------|-----------------|  
-|[DynamicMethodJITUnloaded Method](ICorProfilerCallback9-dynamicmethodunloaded-method.md)|Notifies the profiler that a dynamic method has been garbage collected and subsequently unloaded.|  
+|[DynamicMethodUnloaded Method](ICorProfilerCallback9-dynamicmethodunloaded-method.md)|Notifies the profiler that a dynamic method has been garbage collected and subsequently unloaded.|  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  

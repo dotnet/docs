@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # ICorProfilerCallback8::DynamicMethodJITCompilationStarted Method
-[Supported in the .NET Framework 4.7.1 and later versions]  
+[Supported in the .NET Framework 4.7 and later versions]  
   
 Notifies the profiler whenever JIT compilation of a dynamic method has started.  
   
@@ -64,7 +64,7 @@ The `pILHeader` pointer is only valid during the callback.
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v471plus.md)]  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v47plus.md)]  
   
 ## See Also  
  [DynamicMethodJITCompilationFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)  

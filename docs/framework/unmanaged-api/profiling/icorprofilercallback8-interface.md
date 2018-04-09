@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # ICorProfilerCallback8 Interface
-[Supported in the .NET Framework 4.7.1 and later versions]  
+[Supported in the .NET Framework 4.7 and later versions]  
 
  A subclass of [ICorProfilerCallback7](icorprofilercallback7-interface.md) that provides callback methods used by the common language runtime to notify the profiler that JIT compilation of a dynamic method has started and finished. 
   
@@ -39,7 +39,7 @@ ms.workload:
   
  **Header:** CorProf.idl, CorProf.h  
   
-**.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v471plus.md)]  
+**.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See Also  
 [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)   

@@ -120,7 +120,7 @@ The simplest test we can write is to call `squaresOfOdds` with all even numbers,
 ```fsharp
 [<Test>]
 member this.TestEvenSequence() =
-    let expected = Seq.empty<int> |> Seq.toList
+    let expected = Seq.empty<int>
     let actual = MyMath.squaresOfOdds [2; 4; 6; 8; 10]
     Assert.That(actual, Is.EqualTo(expected))
 ```
@@ -131,7 +131,7 @@ When you run the test, you see that your test fails. You haven't created the imp
 
 ```csharp
 let squaresOfOdds xs =
-    Seq.empty<int> |> Seq.toList
+    Seq.empty<int>
 ```
 
 In the *unit-testing-with-fsharp* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `MathService` project and then for the `MathService.Tests` project. After building both projects, it runs this single test. It passes.

@@ -3763,16 +3763,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Decimal.op_Modulus%2A> method defines the operation of the modulus operator for <xref:System.Decimal> values. It enables code such as the following:  
+ The <xref:System.Decimal.op_Modulus%2A> operator defines the remainder operation that returns the remainder resulting from dividing two specified <xref:System.Decimal> values. It enables code such as the following:  
   
  [!code-csharp[System.Decimal.Operators#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.decimal.operators/cs/modulus1.cs#19)]
  [!code-vb[System.Decimal.Operators#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators/vb/modulus1.vb#19)]  
   
- If the language you're using doesn't support custom operators, call the <xref:System.Decimal.Remainder%2A> method instead.  
+ The sign of the value returned by the remainder operation depends on the sign of dividend. If dividend is positive, the remainder operation returns a positive result; if it is negative, the remainder operation returns a negative result.  
   
- The sign of the value return by the modulus operation depends on the sign of dividend. If dividend is positive, the modulus operation returns a positive result; if it is negative, the modulus operation returns a negative result.  
-  
- The equivalent method for this operator is <xref:System.Decimal.Remainder%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Remainder%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>. If the language you're using doesn't support custom operators, call the <xref:System.Decimal.Remainder%2A> method instead.  
+         ]]></format>
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="d2" /> is <see langword="zero" />.</exception>

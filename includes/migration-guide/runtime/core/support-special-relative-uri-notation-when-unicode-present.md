@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.7.2|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.Uri,System.String,System.Uri)?displayProperty=nameWithType></li></ul>|
+|Affected APIs|<ul><li><xref:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)?displayProperty=nameWithType></li></ul>|
 

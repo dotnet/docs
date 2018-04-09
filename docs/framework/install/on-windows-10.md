@@ -35,6 +35,7 @@ You can install the [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkI
 * Windows 10 Fall Creators Update (version 1709)
 * Windows 10 Creators Update (version 1703)
 * Windows 10 Anniversary Update (version 1607)
+* Windows Server, version 1709
 * Windows Server 2016
 
 The .NET Framework 4.7.2 is not supported on:

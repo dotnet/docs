@@ -19,11 +19,12 @@ The .NET Framework is required to run many applications on Windows. You can use 
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is not supported on Windows 8. It is included with the [Windows 10 RS4](https://www.microsoft.com/software-download/windows10).
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is supported on Windows Server 2012 but is not supported on Windows 8. It is included with the [Windows 10 RS4](https://www.microsoft.com/software-download/windows10).
 
 ## .NET Framework 4.7.2
 
-* [Download the .NET Framework 4.7.2](https://www.microsoft.com/net/framework/versions/net472?utm_source=ms-docs&utm_medium=referral)
+> [!div class="button"]
+[Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
 
 The .NET Framework 4.7.2 is supported on Windows Server 2012. It is not supported on Windows 8.
 

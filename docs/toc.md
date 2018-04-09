@@ -226,7 +226,7 @@
 ### [C# Type system](csharp/programming-guide/types/index.md)
 ### [Namespaces](csharp/programming-guide/namespaces/index.md)
 ### [Basic Types](csharp/basic-types.md)
-### [Classes](csharp/classes.md)
+### [Classes](csharp/programming-guide/classes-and-structs/classes.md)
 ### [Structs](csharp/structs.md)
 ### [Tuples](csharp/tuples.md)
 ### [Deconstructing tuples and other types](csharp/deconstruct.md)
@@ -289,13 +289,7 @@
 ## Tutorials
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)
-#### [Accessing a SQL Database by Using Type Providers](fsharp/tutorials/type-providers/accessing-a-sql-database.md)
-#### [Accessing a SQL Database by Using Type Providers and Entities](fsharp/tutorials/type-providers/accessing-a-sql-database-entities.md)
-#### [Accessing an OData Service by Using Type Providers](fsharp/tutorials/type-providers/accessing-an-odata-service.md)
-#### [Accessing a Web Service Using Type Providers](fsharp/tutorials/type-providers/accessing-a-web-service.md)
-#### [Generating F# Types from a DBML File](fsharp/tutorials/type-providers/generating-fsharp-types-from-dbml.md)
-#### [Generating F# Types from an EDMX File](fsharp/tutorials/type-providers/generating-fsharp-types-from-edmx.md)
-#### [Creating a Type Provider](fsharp/tutorials/type-providers/creating-a-type-provider.md)
+#### [Create a Type Provider](fsharp/tutorials/type-providers/creating-a-type-provider.md)
 #### [Type provider Security](fsharp/tutorials/type-providers/type-provider-security.md)
 #### [Troubleshooting Type Providers](fsharp/tutorials/type-providers/troubleshooting-type-providers.md)
 

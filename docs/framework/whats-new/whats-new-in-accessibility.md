@@ -20,7 +20,7 @@ ms.workload:
 
 # What's new in accessibility in the .NET Framework
 
-The .NET Framework aims at making applications more accessibile for your users. Accessibility features allow an application to provide an appropriate experience for users of Assistive Technology. Starting with the .NET Framework 4.7.1, the .NET Framework includes a large number of accessibility improvements that allow developers to create accessible applications. 
+The .NET Framework aims at making applications more accessible for your users. Accessibility features allow an application to provide an appropriate experience for users of Assistive Technology. Starting with the .NET Framework 4.7.1, the .NET Framework includes a large number of accessibility improvements that allow developers to create accessible applications. 
 
 ## Accessibility switches
 
@@ -79,19 +79,19 @@ Starting with .NET Framework 4.7.2, Windows Forms uses colors defined by the ope
 
 - The drop-down arrow of the <xref:System.Windows.Forms.ToolStripDropDownButton> control.
 
-- The <xref:System.Windows.Forms.Button>, <xref:System.Windows.Forms.RadioButton> and <xref:System.Windows.Forms.CheckBox> controls with <xref:System.Windows.Forms.Control.FlatStyle> set to <xref:System.Windows.Forms.FlatStyle.Flat?displayProperty=nameWithType> or <xref:System.Windows.Forms.FlatStyle.Popup?displayProperty=nameWithType>. Previously, selected text and background colors were not contrasting and were hard to read.
+- The <xref:System.Windows.Forms.Button>, <xref:System.Windows.Forms.RadioButton> and <xref:System.Windows.Forms.CheckBox> controls with <xref:System.Windows.Forms.ButtonBase.FlatStyle> set to <xref:System.Windows.Forms.FlatStyle.Flat?displayProperty=nameWithType> or <xref:System.Windows.Forms.FlatStyle.Popup?displayProperty=nameWithType>. Previously, selected text and background colors were not contrasting and were hard to read.
 
 - Controls contained within a <xref:System.Windows.Forms.GroupBox> that has its <xref:System.Windows.Forms.Control.Enabled> property set to `false`.
  
 - The <xref:System.Windows.Forms.ToolStripButton>, <xref:System.Windows.Forms.ToolStripComboBox>, and <xref:System.Windows.Forms.ToolStripDropDownButton> controls, which have an increased luminosity contrast ratio in High Contrast Mode.
 
-- The <xref:System.Windows.Forms.DataGridViewLinkButton.LinkColor> property of the <xref:System.Windows.Forms.DataGridViewLinkButton>.
+- The <xref:System.Windows.Forms.DataGridViewLinkCell.LinkColor> property of the <xref:System.Windows.Forms.DataGridViewLinkCell>.
 
 **Narrator improvements**
 
 Starting with the .NET Framework 4.7.2, Narrator support is enhanced as follows:
 
-- It announces the value of the <xref:System.Windows.Forms.Keys.ShortcutKeys?displayProperty=nameWithType> property when announcing the text of a <xref:System.Windows.Forms.ToolStripMenuItem>. 
+- It announces the value of the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys?displayProperty=nameWithType> property when announcing the text of a <xref:System.Windows.Forms.ToolStripMenuItem>. 
 
 - It indicates when a <xref:System.Windows.Forms.ToolStripMenuItem> has its <xref:System.Windows.Forms.Control.Enabled> property set to `false`.
 
@@ -107,7 +107,7 @@ Starting with the .NET Framework 4.7.2, the <xref:System.Windows.Forms.DataGridV
 
 - When the <xref:System.Windows.Forms.DataGridView.SelectionMode?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect?displayProperty=nameWithType>, the column header changes color to indicate the current column as the user tabs through the cells in the current row.
 
-- The <xref::System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Parent?displayProperty=nameWithType> property returns the correct parent control.
+- The <xref:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject.Parent?displayProperty=nameWithType> property returns the correct parent control.
 
 **Improved visual cues**
 
@@ -135,7 +135,7 @@ In the .NET Framework 4.7.2, these visuals are now more consistent across themes
 
 **WinForms controls hosted in a WPF application**
 
-For WinForms control hosted in a WPF application in the .NET Framework 4.7.1 and earlier versions, users couldn't tab out of the WinForms layer if the first or last control in that layer is the WPF `System.Windows.Forms.Integration.ElementHost` control. In the .NET Framework 4.7.2, users are now able to tab out of the WinForms layer.
+For WinForms control hosted in a WPF application in the .NET Framework 4.7.1 and earlier versions, users couldn't tab out of the WinForms layer if the first or last control in that layer is the WPF <xref:System.Windows.Forms.Integration.ElementHost> control. In the .NET Framework 4.7.2, users are now able to tab out of the WinForms layer.
 
 However, automated applications that rely on focus never escaping the WinForms layer may no longer work as expected.
 
@@ -151,7 +151,7 @@ The .NET Framework 4.7.1 includes new accessibility features in the following ar
 
 - [.NET SDK Tools](#tools471)
 
-- [Windows Workflow Foundation (WF) Workflow Designer](wf471)
+- [Windows Workflow Foundation (WF) Workflow Designer](#wf471)
 
 <a name="wpf471"></a>
 ### Windows Presentation Foundation (WPF)
@@ -363,7 +363,7 @@ Starting with the .NET Framework 4.7.1, Windows Forms includes:
 <a name="aspnet471"></a>
 ## ASP.NET web controls
 
-Starting with the .NET Framework 4.7.1 and Visual Studio 2017 15.3, ASP.NET improves how ASP.NET web Controls work with accessibility technology in Visual Studio. Changes include the following:
+Starting with the .NET Framework 4.7.1 and Visual Studio 2017 15.3, ASP.NET improves how ASP.NET web controls work with accessibility technology in Visual Studio. Changes include the following:
 
 - Changes to implement missing UI accessibility patterns in controls, like the **Add Field** dialog in the **Details View** wizard, or the **Configure ListView** dialog of the **ListView** wizard.
 

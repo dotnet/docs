@@ -60,7 +60,7 @@ The .NET Framework 4.7.2 includes new features in the following areas:
 
 - [Core](#core472)
 - [ASP.NET](#asp-net472)
-- [Networking](net472)
+- [Networking](#net472)
 - [SQL](#sql472)
 - [WPF](#wpf472)
 - [ClickOnce](#ClickOnce472)
@@ -94,14 +94,14 @@ End Using
 ``` 
 with code like this:
 ```csharp
-// Before .NET Framework 4.7.2
+// Starting with .NET Framework 4.7.2
 using (RSA rsa = RSA.Create(rsaParameters))
 {
    // Other code to execute using the rsa instance.
 }
 ``` 
 ```vb
-' Before .NET Framework 4.7.2
+' Starting with .NET Framework 4.7.2
 Using rsa = RSA.Create(rsaParameters)
    ' Other code to execute using the rsa instance.
 End Using
@@ -123,7 +123,7 @@ End Using
 
 **Rfc2898DeriveBytes constructors accept a hash algorithm name**
 
-The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class has three new constructors with a <xref:System.Security.Cryptography.HashAlgorithmName> parameter that identifies the HMAC algorithm to use when deriving keys. Instead of using SHA-1, developers should use SHA-2-based HMAC, as shown in the following example:
+The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class has three new constructors with a <xref:System.Security.Cryptography.HashAlgorithmName> parameter that identifies the HMAC algorithm to use when deriving keys. Instead of using SHA-1, developers should use a SHA-2-based HMAC like SHA-256, as shown in the following example:
 
 ```csharp
 private static byte[] DeriveKey(string password, out int iterations, out byte[] salt, 
@@ -205,14 +205,14 @@ Support for decompression by using Windows APIs is enabled by default for applic
 The .NET Framework 4.7.2 adds a number of new APIs to the <xref:System.Collections.Generic.SortedSet%601> and <xref:System.Collections.Generic.HashSet%601> types. These include:
 
 - `TryGetValue` methods, which extend the try pattern used in other collection types to these two types. The methods are:
-   - [`public bool HashSet.TryGetValue(T equalValue, out T actualValue);](xref:System.Collections.Generic.SortedSet%601.TryGetValue%2A)
-   - [`public bool SortedSet.TryGetValue(T equalValue, out T actualValue);](xref:System.Collections.Generic.SortedSEt%601.TryGetValue%2A)
+   - [`public bool HashSet<T>.TryGetValue(T equalValue, out T actualValue);](xref:System.Collections.Generic.SortedSet%601.TryGetValue%2A)
+   - [`public bool SortedSet<T>.TryGetValue(T equalValue, out T actualValue);](xref:System.Collections.Generic.SortedSet%601.TryGetValue%2A)
 - `Enumerable.To*` extension methods, which convert a collection to a <xref:System.Collections.Generic.HashSet%601>:
    - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source);](xref:System.Linq.Enumerable.ToHashSet%2A)
    - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source, IEqualityComparer<TSource> comparer);](xref:System.Linq.Enumerable.ToHashSet%2A)
 - New <xref:System.Collections.Generic.HashSet%601> constructors that let you set the collection's capacity, which yields a performance benefit when you know the size of the <xref:System.Collections.Generic.HashSet%601> in advance:
    - [public HashSet(int capacity)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32))
-   - [public HashSet(int capacity, IEqualityComparer<T> comparer)](xref:System.Collections.Generic.HashSet%601.#ctor(System.Int32,System.Collections.Generic.IEqualityComparer%7B%600%7D))  
+   - [public HashSet(int capacity, IEqualityComparer<T> comparer)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32,System.Collections.Generic.IEqualityComparer%7B%600%7D))  
 
 The <xref:System.Collections.Concurrent.ConcurrentDictionary%602> class includes new overloads of the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> methods to retrieve a value from the dictionary or to add it if it is not found, and to add a value to the dictionary or to update it if it already exists.
 
@@ -290,7 +290,7 @@ The .NET Framework 4.7.1 added eight properties to the <xref:System.Net.Http.Htt
 
 **Support for Azure Active Directory Universal Authentication and Multi-Factor authentication**
 
-Growing compliance and security demands require that many customers use multi-factor authentication (MFA). In addition, current best practices discourage including user passwords directly in connection strings. To support these changes, the .NET Framework 4.7.2 extends [SQLClient connection strings](xref:System.Data.SqlClient.ConnectionSTring) by adding a new value, "Active Directory Interactive", for the existing "Authentication" keyword to support MFA and [Azure AD Authentication](/azure/sql-database/sql-database-aad-authentication-configure). The new interactive method supports native and federated Azure AD users as well as Azure AD guest users. When this method is used, the MFA authentiation imposed by Azure AD is supported for SQL databases. In addition, the authentication process requests a user password to adhere to security best practices.
+Growing compliance and security demands require that many customers use multi-factor authentication (MFA). In addition, current best practices discourage including user passwords directly in connection strings. To support these changes, the .NET Framework 4.7.2 extends [SQLClient connection strings](xref:System.Data.SqlClient.ConnectionString) by adding a new value, "Active Directory Interactive", for the existing "Authentication" keyword to support MFA and [Azure AD Authentication](/azure/sql-database/sql-database-aad-authentication-configure). The new interactive method supports native and federated Azure AD users as well as Azure AD guest users. When this method is used, the MFA authentication imposed by Azure AD is supported for SQL databases. In addition, the authentication process requests a user password to adhere to security best practices.
 
 In previous versions of the .NET Framework, SQL connectivity supported only the <xref:System.Data.SqlClient.SqlAuthenticationMethod.ActiveDirectoryPassword?displayProperty=nameWithType> and <xref:System.Data.SqlClient.SqlAuthenticationMethod.ActiveDirectoryIntegrated?displayProperty=nameWithType> options. Both of these are part of the non-interactive [ADAL protocol](/azure/active-directory/develop/active-directory-authentication-libraries), which does not support MFA. With the new <xref:System.Data.SqlClient.SqlAuthenticationMethod.ActiveDirectoryInteractive?displayProperty=nameWithType> option, SQL connectivity supports MFA as well as existing authentication methods (password and integrated authentication), which allows users to enter user passwords interactively without persisting passwords in the connection string.
 
@@ -313,18 +313,18 @@ The application configuration file then specifies a concrete implementation of t
 ```xml
 <configuration>
   <configSections>
-    <section name=" SqlColumnEncryptionEnclaveProviders" type="System.Data.SqlClient. SqlColumnEncryptionEnclaveProviderConfigurationSection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/> 
+    <section name="SqlColumnEncryptionEnclaveProviders" type="System.Data.SqlClient.SqlColumnEncryptionEnclaveProviderConfigurationSection,System.Data,Version=4.0.0.0,Culture=neutral,PublicKeyToken=b77a5c561934e089"/> 
   </configSections>
-  < SqlColumnEncryptionEnclaveProviders>
+  <SqlColumnEncryptionEnclaveProviders>
     <providers>
-      <add name="Azure" type=" Microsoft.SqlServer.Management.AlwaysEncrypted.AzureEnclaveProvider, MyApp"/>
-      <add name="HGS" type=" Microsoft.SqlServer.Management.AlwaysEncrypted.HGSEnclaveProvider, MyApp" />
+      <add name="Azure" type="Microsoft.SqlServer.Management.AlwaysEncrypted.AzureEnclaveProvider,MyApp"/>
+      <add name="HGS" type="Microsoft.SqlServer.Management.AlwaysEncrypted.HGSEnclaveProvider,MyApp" />
     </providers>
-  </ SqlColumnEncryptionEnclaveProviders >
+  </SqlColumnEncryptionEnclaveProviders >
 </configuration>
 ```
 
-The basic flow of a enclave-based Always Encrypted is:
+The basic flow of enclave-based Always Encrypted is:
 
 1. The user creates an AlwaysEncrypted connection to SQL Server that supported enclave-based Always Encrypted. The driver contacts the attestation service to ensure that it is connecting to right enclave.
 
@@ -361,11 +361,11 @@ Starting with the .NET Framework 4.7.2, a diagnostic assistant can locate the o
 
 A diagnostic assistant such as Visual Studio’s “Edit-and-Continue” facility may want extend this to handle [StaticResource](../wpf/advanced/staticresource-markup-extension.md) references. The first step in this process is to find the owners of the dictionary; that is, to find all the objects whose `Resources` property refers to the dictionary (either directly, or indirectly via the <xref:System.Windows.ResourceDictionary.MergedDictionaries?displayProperty=nameWithType> property). Three new static methods implemented on the <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics?displayProperty=nameWithType> class, one for each of the base types that has a `Resources` property, support this step:
 
-- [`public static IEnumerable<FrameworkElement> GetFrameworkElementOwners(ResourceDictionary dictionary);](xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetFrameworkElementOwners%2A)
+- [`public static IEnumerable<FrameworkElement> GetFrameworkElementOwners(ResourceDictionary dictionary);`](xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetFrameworkElementOwners%2A)
 
-- [public static IEnumerable<FrameworkContentElement> GetFrameworkContentElementOwners(ResourceDictionary dictionary);](xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetFrameworkContentElementOwners%2A)
+- [`public static IEnumerable<FrameworkContentElement> GetFrameworkContentElementOwners(ResourceDictionary dictionary);`](xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetFrameworkContentElementOwners%2A)
 
-- [public static IEnumerable<Application> GetApplicationOwners(ResourceDictionary dictionary);](xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetApplicationOwners%2A)
+- [`public static IEnumerable<Application> GetApplicationOwners(ResourceDictionary dictionary);`](xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetApplicationOwners%2A)
 
 These methods return an empty enumerable unless <xref:System.Windows.Diagnostics.VisualDiagnostics> is enabled and the [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) environment variable is set.
 
@@ -382,32 +382,32 @@ public static event EventHandler<StaticResourceResolvedEventArgs> StaticResource
 Public Shared Event StaticResourceResolved As EventHandler(Of StaticResourceResolvedEventArgs)
 ```
 
-This event is raised whenever the runtime resolves a [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference. The <xref:System.Windows.Diagnostics.StaticResourceResolvedEventArgs> arguments describe the resolution, and indicate the object and property that host the [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference, and the <xref:Windows.UI.Xaml.ResourceDictionary> and key used for the resolution:
+This event is raised whenever the runtime resolves a [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference. The <xref:System.Windows.Diagnostics.StaticResourceResolvedEventArgs> arguments describe the resolution, and indicate the object and property that host the [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference and the <xref:Windows.UI.Xaml.ResourceDictionary> and key used for the resolution:
 
 ```csharp
 public class StaticResourceResolvedEventArgs : EventArgs
 {
-   public Object TargetObject { get; private set; }
+   public Object TargetObject { get; }
 
-   public Object TargetProperty { get; private set; }
+   public Object TargetProperty { get; }
 
-   public ResourceDictionary ResourceDictionary { get; private set; }
+   public ResourceDictionary ResourceDictionary { get; }
 
-   public object ResourceKey { get; private set; }
+   public object ResourceKey { get; }
 }
 ```
 
-The event is not raised (and its `add` method is ignored) unless <xref:System.Windows.Diagnostics.VisualDiagnostics> is enabled and the [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) environment variable is set.
+The event is not raised (and its `add` accessor is ignored) unless <xref:System.Windows.Diagnostics.VisualDiagnostics> is enabled and the [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) environment variable is set.
 
 <a name="clickonce472" />
 #### ClickOnce
 
-HDPI-aware applications for Windows Forms, Windows Presentation Foundation (WPF), and Visual Studio Tools for Office (VSTO) can all be deployed by using ClickOnce. If the following entry is found in teh application manifest, deployment will succeed under .NET Framework 4.7.2:
+HDPI-aware applications for Windows Forms, Windows Presentation Foundation (WPF), and Visual Studio Tools for Office (VSTO) can all be deployed by using ClickOnce. If the following entry is found in the application manifest, deployment will succeed under .NET Framework 4.7.2:
 
 ```xml
 <windowsSettings>
-      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
-    </windowsSettings>
+   <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
+</windowsSettings>
 ```
 
 For Windows Forms application, the previous workaround of setting DPI awareness in the application configuration file rather than the application manifest is no longer necessary for ClickOnce deployment to succeed.

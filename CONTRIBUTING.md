@@ -9,6 +9,14 @@ The document covers the process for contributing to the articles and code sample
 * [Building the docs](#building-the-docs)
 * [Contributor License Agreement](#contributor-license-agreement)
 
+This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
+
+- [Code samples and snippets](https://github.com/dotnet/samples)
+- [API reference](https://github.com/dotnet/dotnet-api-docs)
+- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
+
+Issues and tasks for all these repositories are tracked here.
+
 ## Process for contributing
 
 You need a basic understanding of [Git and GitHub.com](https://guides.github.com/activities/hello-world/).
@@ -28,7 +36,7 @@ You can also choose from existing issues for which community contributions are w
 
 You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
 
-**Step 2:** Fork the `/dotnet/docs` repo and create a branch for your changes.
+**Step 2:** Fork the `/dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
 
 For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. 
 GitHub creates the new branch for you when you submit the changes.
@@ -45,8 +53,6 @@ Include larger samples in the *samples* folder under the root of the repo.
 
 Be sure to follow the proper Markdown syntax. For more information, see the [style guide](./styleguide/template.md).
 
-Remove the "wrench" icon (🔧) from the TOC and the file heading, if applicable.
-
 ### Example structure
 
     docs
@@ -57,11 +63,6 @@ Remove the "wrench" icon (🔧) from the TOC and the file heading, if applicable
           /media
             /porting-overview
                 portability_report.png
-      ...
-    samples
-      /core
-        /porting
-          porting_sample.cs
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
 
@@ -85,7 +86,7 @@ We make the following distinction for code that exists in our repository:
 
 - snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
 
-Code all lives in the *samples* directories and is organized as follows:
+Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository and is organized as follows:
 
 - *core* contains .NET Core samples.
 

@@ -39,8 +39,8 @@ ms.workload:
   
  **Header:** CorProf.idl, CorProf.h  
   
-**.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See Also  
-[Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)   
+[Profiling Interfaces](profiling-interfaces.md)   
 [ICorProfilerCallback9 Interface](icorprofilercallback9-interface.md)

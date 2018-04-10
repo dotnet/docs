@@ -64,8 +64,8 @@ The `pILHeader` pointer is only valid during the callback.
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v47plus.md)]  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
 ## See Also  
- [DynamicMethodJITCompilationFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)  
- [ICorProfilerCallback8 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback8-interface.md)
+ [DynamicMethodJITCompilationFinished Method](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)  
+ [ICorProfilerCallback8 Interface](icorprofilercallback8-interface.md)

@@ -58,8 +58,8 @@ This callback is triggered whenever JIT compilation of a dynamic method has fini
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v471plus](../../../../includes/net-current-v47plus.md)]  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
 ## See Also  
- [DynamicMethodJITCompilationStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)  
- [ICorProfilerCallback8 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback8-interface.md)
+ [DynamicMethodJITCompilationStarted Method](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)  
+ [ICorProfilerCallback8 Interface](icorprofilercallback8-interface.md)

@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.StaticResourceResolved" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <ReturnType>System.Windows.ResourceDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the resource dictionary.</summary>
+        <value>The name of the resource dictionary.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +52,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The key for the requested resource.</summary>
+        <value>The key for the requested resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key is initially assigned by the `x:Key` directive if the resource is created in markup, or it's provided as the `key` parameter when calling the <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=fullName> method if the resource is created in code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetObject">
@@ -72,8 +79,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value to assign to the target property.</summary>
+        <value>The value to assign to the target property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +99,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the target property that the resource sets.</summary>
+        <value>The target property that the resource sets.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

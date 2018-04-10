@@ -199,9 +199,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether debugging information is enabled for the <see cref="T:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly" /> Task. The default value is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if debugging information is enabled for the <see cref="T:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly" /> Task; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.GenerateTemporaryTargetAssemblyDebuggingInformation%2A> property is an optional task parameter. It's a diagnostic parameter, and it defaults to `false`.  
+  
+ The only debugging information that is generated consists of the temporary project that is created to generate the temporary target assembly. The temporary project is normally deleted at the end of the MSBuild task. When <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.GenerateTemporaryTargetAssemblyDebuggingInformation%2A> is enabled, the temporary project is retained for inspection by the developer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IntermediateOutputPath">

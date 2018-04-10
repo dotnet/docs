@@ -83,9 +83,9 @@
         <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dictionary">A resource dictionary.</param>
+        <summary>Gets the application owners of a specified resource dictionary.</summary>
+        <returns>The application owners of <paramref name="dictionary" />. If there are no application owners, the method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +107,9 @@
         <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dictionary">A resource dictionary.</param>
+        <summary>Gets the framework content owners of a specified resource dictionary.</summary>
+        <returns>The framework content owners of <paramref name="dictionary" />. If there are no framework content owners, the method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +131,9 @@
         <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dictionary">A resource dictionary.</param>
+        <summary>Gets the framework element owners of a specified resource dictionary.</summary>
+        <returns>The framework element owners of <paramref name="dictionary" />. If there are no framework element owners, the method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,9 +154,9 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">The source URI.</param>
+        <summary>Finds the resource dictionaries created from a given source URI.</summary>
+        <returns>The resource dictionaries created from <paramref name="uri" />. The method returns <see langword="null" /> if Visual Diagnostics is not enabled, the <see langword="ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO" /> environment variable is not set or is set to <see langword="false" />, or no resource dictionaries were created from <paramref name="uri" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,15 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.StaticResourceResolvedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when s static resource reference is resolved.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event populates a <xref:System.Windows.Diagnostics.StaticResourceResolvedEventArgs> object with information about the event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThemedResourceDictionaries">

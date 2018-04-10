@@ -145,7 +145,7 @@ ms.custom: "updateeachrelease"
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/xamarin">Xamarin</a></h3>
-                                                <p><a href="/xamarin/cross-platform/get-started">Get Started</a></p>
+                                                <p><a href="/xamarin/cross-platform">Cross-platform development</a></p>
                                                 <p><a href="/xamarin/ios">Xamarin.iOS Guide</a></p>
                                                 <p><a href="/xamarin/android">Xamarin.Android Guide</a></p>
                                                 <p><a href="/xamarin/xamarin-forms">Xamarin.Forms Guide</a></p>

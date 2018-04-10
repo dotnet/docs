@@ -1,13 +1,9 @@
 ---
 title: "Default Marshaling Behavior"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -17,7 +13,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, marshaling"
   - "marshaling behavior"
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -47,10 +42,10 @@ BSTR MethodOne (BSTR b) {
   
  However, if you define the method as a platform invoke prototype, replace each **BSTR** type with a <xref:System.String> type, and call `MethodOne`, the common language runtime attempts to free `b` twice. You can change the marshaling behavior by using <xref:System.IntPtr> types rather than **String** types.  
   
- The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](http://msdn.microsoft.com/library/e30d36e8-d7c4-4936-916a-8fdbe4d9ffd5).  
+ The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](http://msdn.microsoft.com/library/e30d36e8-d7c4-4936-916a-8fdbe4d9ffd5(v=vs.100)).  
   
 ## Default marshaling for classes  
- Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface).  
   
 ### Passing Classes to COM  
  When a managed class is passed to COM, the interop marshaler automatically wraps the class with a COM proxy and passes the class interface produced by the proxy to the COM method call. The proxy then delegates all calls on the class interface back to the managed object. The proxy also exposes other interfaces that are not explicitly implemented by the class. The proxy automatically implements interfaces such as **IUnknown** and **IDispatch** on behalf of the class.  
@@ -166,7 +161,7 @@ internal class DelegateTest {
 ```  
   
 ## Default marshaling for value types  
- Most value types, such as integers and floating-point numbers, are [blittable](../../../docs/framework/interop/blittable-and-non-blittable-types.md) and do not require marshaling. Other [non-blittable](../../../docs/framework/interop/blittable-and-non-blittable-types.md) types have dissimilar representations in managed and unmanaged memory and do require marshaling. Still other types require explicit formatting across the interoperation boundary.  
+ Most value types, such as integers and floating-point numbers, are [blittable](blittable-and-non-blittable-types.md) and do not require marshaling. Other [non-blittable](blittable-and-non-blittable-types.md) types have dissimilar representations in managed and unmanaged memory and do require marshaling. Still other types require explicit formatting across the interoperation boundary.  
   
  This topic provides the follow information on formatted value types:  
   
@@ -445,8 +440,8 @@ interface IValueTypes : IDispatch {
 ```  
   
 ## See Also  
- [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)  
- [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)  
- [Default Marshaling for Arrays](../../../docs/framework/interop/default-marshaling-for-arrays.md)  
- [Default Marshaling for Objects](../../../docs/framework/interop/default-marshaling-for-objects.md)  
- [Default Marshaling for Strings](../../../docs/framework/interop/default-marshaling-for-strings.md)
+ [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)  
+ [Copying and Pinning](copying-and-pinning.md)  
+ [Default Marshaling for Arrays](default-marshaling-for-arrays.md)  
+ [Default Marshaling for Objects](default-marshaling-for-objects.md)  
+ [Default Marshaling for Strings](default-marshaling-for-strings.md)

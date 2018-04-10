@@ -31,6 +31,6 @@ We feel that the following principles should be kept in mind any time you write 
 
 ## Read next
 
-The [F# Formatting Guidelines](formatting.md) provide guidance on how to format code so that it is easy to read
+The [F# Formatting Guidelines](formatting.md) provide guidance on how to format code so that it is easy to read.
 
 The [F# Component Design Guidelines](component-design-guidelines.md) is a comprehensive set of guidance for F# components such as libraries.

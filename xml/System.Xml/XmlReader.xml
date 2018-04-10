@@ -43,9 +43,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Xml.XmlReader> provides forward-only, read-only access to XML data in adocument or stream. This class conforms to the W3C [Extensible Markup Language (XML) 1.0 (fourth edition)](http://www.w3.org/TR/2006/REC-xml-20060816/) and the [Namespaces in XML 1.0 (third edition)](http://www.w3.org/TR/REC-xml-names/) recommendations.  
+ <xref:System.Xml.XmlReader> provides forward-only, read-only access to XML data in a document or stream. This class conforms to the W3C [Extensible Markup Language (XML) 1.0 (fourth edition)](http://www.w3.org/TR/2006/REC-xml-20060816/) and the [Namespaces in XML 1.0 (third edition)](http://www.w3.org/TR/REC-xml-names/) recommendations.  
   
- <xref:System.Xml.XmlReader> methods let you move through XML data and read the contents of a node. The properties of the class reflect the value of the current node, which is where the reader is positioned.The <xref:System.Xml.XmlReader.ReadState%2A> property value indicates the current state of the XML reader. For example, the property is set to <xref:System.Xml.ReadState.Initial> by the <xref:System.Xml.XmlReader.Read%2A?displayProperty=nameWithType> method and <xref:System.Xml.ReadState.Closed> by the <xref:System.Xml.XmlReader.Close%2A?displayProperty=nameWithType> method. <xref:System.Xml.XmlReader> also provides data conformance checks and validation against a DTD or schema.  
+ <xref:System.Xml.XmlReader> methods let you move through XML data and read the contents of a node. The properties of the class reflect the value of the current node, which is where the reader is positioned.The <xref:System.Xml.XmlReader.ReadState%2A> property value indicates the current state of the XML reader. For example, the property is set to <xref:System.Xml.ReadState.Initial?displayProperty=nameWithType> by the <xref:System.Xml.XmlReader.Read%2A?displayProperty=nameWithType> method and <xref:System.Xml.ReadState.Closed?displayProperty=nameWithType> by the <xref:System.Xml.XmlReader.Close%2A?displayProperty=nameWithType> method. <xref:System.Xml.XmlReader> also provides data conformance checks and validation against a DTD or schema.  
   
  <xref:System.Xml.XmlReader> uses a pull model to retrieve data. This model:  
   
@@ -76,7 +76,7 @@
   
  Although the .NET Framework provides concrete implementations of the <xref:System.Xml.XmlReader> class, such as the <xref:System.Xml.XmlTextReader>, <xref:System.Xml.XmlNodeReader>, and the <xref:System.Xml.XmlValidatingReader> classes, we recommend that you use the specialized classes only in these scenarios:  
   
--   When you want to readan XML DOM subtree from an <xref:System.Xml.XmlNode> object, use the <xref:System.Xml.XmlNodeReader> class. (However, this class doesn't support DTD or schema validation.)  
+-   When you want to read an XML DOM subtree from an <xref:System.Xml.XmlNode> object, use the <xref:System.Xml.XmlNodeReader> class. (However, this class doesn't support DTD or schema validation.)  
   
 -   If you must expand entities on request, you don't want your text content normalized, or you don't want default attributes returned, use the <xref:System.Xml.XmlTextReader> class.  
   
@@ -99,13 +99,13 @@
 |<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property|Whether to allow DTD processing. The default is to disallow DTD processing.|  
 |<xref:System.Xml.XmlReaderSettings.ValidationType%2A> property|Whether the reader should validate data, and what type of validation to perform (DTD or schema). The default is no data validation.|  
 |<xref:System.Xml.XmlReaderSettings.ValidationEventHandler> event|An event handler for receiving information about validation events. If an event handler is not provided, an <xref:System.Xml.XmlException> is thrown on the first validation error.|  
-|<xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> property|Additional validation options through the <xref:System.Xml.Schema.XmlSchemaValidationFlags> enumeration members:<br /><br /> -   `AllowXmlAttributes`-- Allow XML attributes (`xml:*`) in instance documents even when they're not defined in the schema. The attributes are validated based on their data type.See the <xref:System.Xml.Schema.XmlSchemaValidationFlags> reference page for  the setting to use in specific scenarios. (Disabled by default.)<br />-   `ProcessIdentityConstraints` --Process identity constraints (`xs:ID`, `xs:IDREF`, `xs:key`, `xs:keyref`, `xs:unique`) encountered during validation. (Enabled by default.)<br />-   `ProcessSchemaLocation` --Process schemas specified by the `xsi:schemaLocation` or `xsi:noNamespaceSchemaLocation` attribute. (Enabled by default.)<br />-   `ProcessInlineSchema`-- Process inline XML Schemas during validation. (Disabled by default.)<br />-   `ReportValidationWarnings`--Report events if a validation warning occurs. A warning is typically issued when there is no DTD or XML Schema to validate a particular element or attribute against. The <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> is used for notification. (Disabled by default.)|  
+|<xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> property|Additional validation options through the <xref:System.Xml.Schema.XmlSchemaValidationFlags> enumeration members:<br /><br /> -   `AllowXmlAttributes`-- Allow XML attributes (`xml:*`) in instance documents even when they're not defined in the schema. The attributes are validated based on their data type. See the <xref:System.Xml.Schema.XmlSchemaValidationFlags> reference page for  the setting to use in specific scenarios. (Disabled by default.)<br />-   `ProcessIdentityConstraints` --Process identity constraints (`xs:ID`, `xs:IDREF`, `xs:key`, `xs:keyref`, `xs:unique`) encountered during validation. (Enabled by default.)<br />-   `ProcessSchemaLocation` --Process schemas specified by the `xsi:schemaLocation` or `xsi:noNamespaceSchemaLocation` attribute. (Enabled by default.)<br />-   `ProcessInlineSchema`-- Process inline XML Schemas during validation. (Disabled by default.)<br />-   `ReportValidationWarnings`--Report events if a validation warning occurs. A warning is typically issued when there is no DTD or XML Schema to validate a particular element or attribute against. The <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> is used for notification. (Disabled by default.)|  
 |<xref:System.Xml.XmlReaderSettings.Schemas%2A>|The <xref:System.Xml.Schema.XmlSchemaSet> to use for validation.|  
 |<xref:System.Xml.XmlReaderSettings.XmlResolver%2A> property|The <xref:System.Xml.XmlResolver> for resolving and accessing external resources. This can include external entities such as DTD and schemas, and any `xs:include` or `xs:import` elements contained in the XML Schema. If you don't specify an <xref:System.Xml.XmlResolver>, the <xref:System.Xml.XmlReader> uses a default <xref:System.Xml.XmlUrlResolver> with no user credentials.|  
   
 <a name="xmlreader_data"></a>   
 ## Data conformance  
- XML readers that are created by the <xref:System.Xml.XmlReader.Create%2A> methodmeet the following compliance requirements by default:  
+ XML readers that are created by the <xref:System.Xml.XmlReader.Create%2A> method meet the following compliance requirements by default:  
   
 -   New lines and attribute value are normalized according to the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/).  
   
@@ -115,7 +115,7 @@
   
 -   Declaration of XML prefix mapped to the correct XML namespace URI is allowed.  
   
--   The notation names in a single `NotationType` attribute declaration and`NmTokens` in a single `Enumeration` attribute declarationare distinct.  
+-   The notation names in a single `NotationType` attribute declaration and `NmTokens` in a single `Enumeration` attribute declaration are distinct.  
   
  Use these <xref:System.Xml.XmlReaderSettings> properties to specify the type of conformance checks you want to enable:  
   
@@ -224,7 +224,7 @@
   
 -   The **ReadElementContentAs** methods can only be called on element node types. These methods cannot be used on elements that contain child elements or mixed content. When called, the <xref:System.Xml.XmlReader> object reads the start tag, reads the element content, and then moves past the end element tag. Processing instructions and comments are ignored and entities are expanded.  
   
--   The **ReadContentAs**methods read the text content at the current reader position, and if the XML data doesn't have any schema or data type information associated with it, convert the text content to the requested return type. Text, white space, significant white space and CDATA sections are concatenated. Comments and processing instructions are skipped, and entity references are automatically resolved.  
+-   The **ReadContentAs** methods read the text content at the current reader position, and if the XML data doesn't have any schema or data type information associated with it, convert the text content to the requested return type. Text, white space, significant white space and CDATA sections are concatenated. Comments and processing instructions are skipped, and entity references are automatically resolved.  
   
  The <xref:System.Xml.XmlReader> class uses the rules defined by the [W3C XML Schema Part 2: Datatypes](http://www.w3.org/TR/xmlschema-2/)recommendation.  
   

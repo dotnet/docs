@@ -13,8 +13,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The base class that defines the interface for enclave providers for Always Encrypted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An enclave is a protected region of memory inside SQL Server, used for computations on encrypted columns. An enclave provider encapsulates the client-side implementation details of the enclave attestation protocol as well as the logic for creating and caching enclave sessions.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider" /> class</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,13 +64,13 @@
         <Parameter Name="counter" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="enclaveAttestationInfo">To be added.</param>
-        <param name="clientDiffieHellmanKey">To be added.</param>
-        <param name="attestationUrl">To be added.</param>
-        <param name="servername">To be added.</param>
-        <param name="sqlEnclaveSession">To be added.</param>
-        <param name="counter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="enclaveAttestationInfo">The information the provider uses to attest the enclave and generate a symmetric key for the session. The format of this information is specific to the enclave attestation protocol.</param>
+        <param name="clientDiffieHellmanKey">A Diffie-Hellman algorithm object that encapsulates a client-side key pair.</param>
+        <param name="attestationUrl">The endpoint of an attestation service for attesting the enclave.</param>
+        <param name="servername">The name of the SQL Server instance containing the enclave.</param>
+        <param name="sqlEnclaveSession">The requested enclave session or <see langword="null" /> if the provider doesn't implement session caching.</param>
+        <param name="counter">A counter that the enclave provider is expected to increment each time SqlClient retrieves the session from the cache. The purpose of this field is to prevent replay attacks.</param>
+        <summary>When overridden in a derived class, performs enclave attestation, generates a symmetric key for the session, creates a an enclave session and stores the session information in the cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the information that SqlClient subsequently uses to initiate the process of attesting the enclave and to establish a secure session with the enclave.</summary>
+        <returns>The information SqlClient subsequently uses to initiate the process of attesting the enclave and to establish a secure session with the enclave.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,11 +116,11 @@
         <Parameter Name="counter" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="serverName">To be added.</param>
-        <param name="attestationUrl">To be added.</param>
-        <param name="sqlEnclaveSession">To be added.</param>
-        <param name="counter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serverName">The name of the SQL Server instance containing the enclave.</param>
+        <param name="attestationUrl">The endpoint of an attestation service, SqlClient contacts to attest the enclave.</param>
+        <param name="sqlEnclaveSession">When this method returns, the requested enclave session or <see langword="null" /> if the provider doesn't implement session caching. This parameter is treated as uninitialized.</param>
+        <param name="counter">A counter that the enclave provider is expected to increment each time SqlClient retrieves the session from the cache. The purpose of this field is to prevent replay attacks.</param>
+        <summary>When overridden in a derived class, looks up an existing enclave session information in the enclave session cache. If the enclave provider doesn't implement enclave session caching, this method is expected to return <see langword="null" /> in the <paramref name="sqlEnclaveSession" /> parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,10 +144,10 @@
         <Parameter Name="enclaveSession" Type="System.Data.SqlClient.SqlEnclaveSession" />
       </Parameters>
       <Docs>
-        <param name="serverName">To be added.</param>
-        <param name="enclaveAttestationUrl">To be added.</param>
-        <param name="enclaveSession">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serverName">The name of the SQL Server instance containing the enclave.</param>
+        <param name="enclaveAttestationUrl">The endpoint of an attestation service, SqlClient contacts to attest the enclave.</param>
+        <param name="enclaveSession">The session to be invalidated.</param>
+        <summary>When overridden in a derived class, looks up and evicts an enclave session from the enclave session cache, if the provider implements session caching.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an AD authentication token.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +33,11 @@
         <Parameter Name="expiresOn" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="accessToken">To be added.</param>
-        <param name="expiresOn">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="accessToken">The access token.</param>
+        <param name="expiresOn">The token expiration time.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlAuthenticationToken" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="accessToken" /> parameter is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="AccessToken">
@@ -54,8 +55,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token string.</summary>
+        <value>The token string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +75,8 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token expiration time.</summary>
+        <value>The token expiration time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

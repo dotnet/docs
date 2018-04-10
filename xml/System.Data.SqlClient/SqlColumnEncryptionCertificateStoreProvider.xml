@@ -130,10 +130,11 @@ The encrypted column encryption key.</returns>
         <Parameter Name="allowEnclaveComputations" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="masterKeyPath">To be added.</param>
-        <param name="allowEnclaveComputations">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="masterKeyPath">The column master key path.</param>
+        <param name="allowEnclaveComputations">
+          <see langword="true" /> to indicate that the column master key supports enclave computations; otherwise, <see langword="false" />.</param>
+        <summary>Digitally signs the column master key metadata with the column master key referenced by the <paramref name="masterKeyPath" /> parameter.</summary>
+        <returns>The signature of the column master key metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,11 +158,11 @@ The encrypted column encryption key.</returns>
         <Parameter Name="signature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="masterKeyPath">To be added.</param>
-        <param name="allowEnclaveComputations">To be added.</param>
-        <param name="signature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="masterKeyPath">The complete path of an asymmetric key. The path format is specific to a key store provider.</param>
+        <param name="allowEnclaveComputations">A Boolean that indicates if this key can be sent to the trusted enclave.</param>
+        <param name="signature">The master key metadata siognature.</param>
+        <summary>This function must be implemented by the corresponding Key Store providers. This function should use an asymmetric key identified by a key path and verify the masterkey metadata consisting of (masterKeyPath, allowEnclaveComputations, providerName).</summary>
+        <returns>A Boolean value that indicates if the master key metadata can be verified based on the provided signature.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

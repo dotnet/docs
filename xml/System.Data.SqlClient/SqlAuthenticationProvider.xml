@@ -13,8 +13,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the core behavior of authentication providers and provides a base class for derived classes. </summary>
+    <remarks>Derived classes must provide a default constructor if they can be instantiated from the app.config file.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.Data.SqlClient.SqlAuthenticationProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +52,9 @@
         <Parameter Name="parameters" Type="System.Data.SqlClient.SqlAuthenticationParameters" />
       </Parameters>
       <Docs>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parameters">The Active Directory authentication parameters passed by the driver to authentication providers.</param>
+        <summary>Acquires a security token from the authority.</summary>
+        <returns>Represents an asynchronous operation that returns the AD authentication token.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,9 +76,9 @@
         <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
       </Parameters>
       <Docs>
-        <param name="authenticationMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="authenticationMethod">The authentication method.</param>
+        <summary>This method is called immediately before the provider is added to SQL drivers registry. </summary>
+        <remarks>Avoid performing long-waiting tasks in this method, since it can block other threads from accessing the provider registry.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeUnload">
@@ -99,9 +99,9 @@
         <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
       </Parameters>
       <Docs>
-        <param name="authenticationMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="authenticationMethod">The authentication method.</param>
+        <summary>This method is called immediately before the provider is removed from the SQL drivers registry. </summary>
+        <remarks>For example, this method is called when a different provider with the same authentication method overrides this provider in the SQL drivers registry. Avoid performing long-waiting task in this method, since it can block other threads from accessing the provider registry.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProvider">
@@ -122,9 +122,9 @@
         <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
       </Parameters>
       <Docs>
-        <param name="authenticationMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authenticationMethod">The authentication method.</param>
+        <summary>Gets an authentication provider by method.</summary>
+        <returns>The authentication provider or <see langword="null" /> if not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +146,10 @@
         <Parameter Name="authenticationMethod" Type="System.Data.SqlClient.SqlAuthenticationMethod" />
       </Parameters>
       <Docs>
-        <param name="authenticationMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authenticationMethod">The authentication method.</param>
+        <summary>Indicates whether the specified authentication method is supported.</summary>
+        <returns>
+          <see langword="true" /> if the specified authentication method is supported; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,10 +172,11 @@
         <Parameter Name="provider" Type="System.Data.SqlClient.SqlAuthenticationProvider" />
       </Parameters>
       <Docs>
-        <param name="authenticationMethod">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authenticationMethod">The authentication method.</param>
+        <param name="provider">The authentication provider.</param>
+        <summary>Sets an authentication provider by method.</summary>
+        <returns>
+          <see langword="true" /> if the operation succeeded; otherwise, <see langword="false" /> (for example, the existing provider disallows overriding).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

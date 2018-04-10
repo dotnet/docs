@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates the state of a secure session between SqlClient and an enclave inside SQL Server, which can be used for computations on encrypted columns protected with Always Encrypted.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +33,14 @@
         <Parameter Name="sessionId" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="sessionKey">To be added.</param>
-        <param name="sessionId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sessionKey">The symmetric key used to encrypt all the information sent using the session.</param>
+        <param name="sessionId">The session ID.</param>
+        <summary>Instantiates a new instance of the <see cref="T:System.Data.SqlClient.SqlEnclaveSession" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sessionKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sessionKey" /> has zero length.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSessionKey">
@@ -55,8 +59,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the symmetric key that SqlClient uses to encrypt all the information it sends to the enclave using the session.</summary>
+        <returns>The symmetric key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +79,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the session ID.</summary>
+        <value>The session ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a SQL client logger.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlClientLogger" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether bid tracing is enabled.</summary>
+        <value>
+          <see langword="true" /> if bid tracing is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,12 +76,12 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="method">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value"><see langword="false" /> to log the message; otherwise, <see langword="true" />.</param>
+        <param name="type">The type to be logged.</param>
+        <param name="method">The logging method.</param>
+        <param name="message">The message to be logged.</param>
+        <summary>Logs the specified message if <paramref name="value" /> is <see langword="false" />.</summary>
+        <returns><see langword="true" /> if the message is not logged; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,10 +105,10 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="method">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type to be logged.</param>
+        <param name="method">The logging method.</param>
+        <param name="message">The message to be logged.</param>
+        <summary>Logs an error through a specified method of the current instance type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,10 +132,10 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="method">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type to be logged.</param>
+        <param name="method">The logging method.</param>
+        <param name="message">The message to be logged.</param>
+        <summary>Logs information through a specified method of the current instance type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

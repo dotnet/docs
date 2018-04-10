@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents AD authentication parameters passed by a driver to authentication providers.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,15 +39,15 @@
         <Parameter Name="connectionId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="authenticationMethod">To be added.</param>
-        <param name="serverName">To be added.</param>
-        <param name="databaseName">To be added.</param>
-        <param name="resource">To be added.</param>
-        <param name="authority">To be added.</param>
-        <param name="userId">To be added.</param>
-        <param name="password">To be added.</param>
-        <param name="connectionId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="authenticationMethod">One of the enumeration values that specifies the authentication method.</param>
+        <param name="serverName">The server name.</param>
+        <param name="databaseName">The database name.</param>
+        <param name="resource">The resource URI.</param>
+        <param name="authority">The authority URI.</param>
+        <param name="userId">The user login name/ID.</param>
+        <param name="password">The user password.</param>
+        <param name="connectionId">The connection ID.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlAuthenticationParameters" /> class using the specified authentication method, server name, database name, resource URI, authority URI, user login name/ID, user password and connection ID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Data.SqlClient.SqlAuthenticationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the authentication method.</summary>
+        <value>The authentication method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +86,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the authority URI.</summary>
+        <value>The authority URI.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the connection ID.</summary>
+        <value>The connection ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +126,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the database name.</summary>
+        <value>The database name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +146,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the user password.</summary>
+        <value>The user password.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +166,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the resource URI.</summary>
+        <value>The resource URI.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +186,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the server name.</summary>
+        <value>The server name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +206,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the user login name/ID.</summary>
+        <value>The user login name/ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

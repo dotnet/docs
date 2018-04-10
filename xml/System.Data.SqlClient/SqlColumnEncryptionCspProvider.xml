@@ -135,11 +135,20 @@
         <Parameter Name="allowEnclaveComputations" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="masterKeyPath">To be added.</param>
-        <param name="allowEnclaveComputations">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="masterKeyPath">The column master key path. The path format is specific to a key store provider.</param>
+        <param name="allowEnclaveComputations">
+          <see langword="true" /> to indicate that the column master key supports enclave computations; otherwise, <see langword="false" />.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
+        <returns>The signature of the column master key metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlClient.SqlColumnEncryptionCspProvider.SignColumnMasterKeyMetadata%2A> method must be implemented by the corresponding key store providers. <xref:System.Data.SqlClient.SqlColumnEncryptionCspProvider.SignColumnMasterKeyMetadata%2A> should use an asymmetric key identified by a key path and sign the masterkey metadata consisting of `masterKeyPath`, `allowEnclaveComputations`, and providerName.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerifyColumnMasterKeyMetadata">
@@ -162,11 +171,11 @@
         <Parameter Name="signature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="masterKeyPath">To be added.</param>
-        <param name="allowEnclaveComputations">To be added.</param>
-        <param name="signature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="masterKeyPath">The complete path of an asymmetric key. The path format is specific to a key store provider.</param>
+        <param name="allowEnclaveComputations">A boolean that indicates if this key can be sent to the trusted enclave.</param>
+        <param name="signature">Master key metadata signature.</param>
+        <summary>This function must be implemented by the corresponding Key Store providers. This function should use an asymmetric key identified by a key path and sign the masterkey metadata consisting of (masterKeyPath, allowEnclaveComputations, providerName).</summary>
+        <returns>A Boolean that indicates if the master key metadata can be verified based on the provided signature.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

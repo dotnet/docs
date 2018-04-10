@@ -12,7 +12,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies constants that indicate the value for the SameSite attribute of the cookie.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The cookie will be sent with "same-site" requests, and with "cross-site" top level navigation.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -51,7 +51,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No mode is specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strict">
@@ -70,7 +70,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When the value is Strict, or if the value is invalid, the cookie will only be sent along with "same-site" requests.</summary>
       </Docs>
     </Member>
   </Members>

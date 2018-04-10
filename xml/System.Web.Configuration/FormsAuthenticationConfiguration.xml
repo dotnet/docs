@@ -144,8 +144,8 @@
         <ReturnType>System.Web.SameSiteMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value for the SameSite attribute of the cookie.</summary>
+        <value>One of the enumeration values that represents the enforcement mode of the cookie. If the application targets the .NET Framework 4.7.2 or later versions, the default value is <see cref="F:System.Web.SameSiteMode.Lax" />; otherwise, the default value is <see cref="F:System.Web.SameSiteMode.None" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

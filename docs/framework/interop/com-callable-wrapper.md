@@ -38,13 +38,14 @@ Accessing .NET objects through COM callable wrapper
 ## Object Lifetime  
  Unlike the .NET client it wraps, the CCW is reference-counted in traditional COM fashion. When the reference count on the CCW reaches zero, the wrapper releases its reference on the managed object. A managed object with no remaining references is collected during the next garbage-collection cycle.  
   
-## Simulating COM interfaces  
- The [COM callable wrapper](com-callable-wrapper.md) (CCW) exposes all public, COM-visible interfaces, data types, and return values to COM clients in a manner that is consistent with COM's enforcement of interface-based interaction. For a COM client, invoking methods on a .NET Framework object is identical to invoking methods on a COM object.  
+## Simulating COM interfaces
+
+CCW exposes all public, COM-visible interfaces, data types, and return values to COM clients in a manner that is consistent with COM's enforcement of interface-based interaction. For a COM client, invoking methods on a .NET Framework object is identical to invoking methods on a COM object.  
   
  To create this seamless approach, the CCW manufactures traditional COM interfaces, such as **IUnknown** and **IDispatch**. As the following illustration shows, the CCW maintains a single reference on the .NET object that it wraps. Both the COM client and .NET object interact with each other through the proxy and stub construction of the CCW.  
   
  ![COM interfaces](./media/ccwwithinterfaces.gif "ccwwithinterfaces")  
-Com interfaces and the COM callable wrapper  
+COM interfaces and the COM callable wrapper  
   
  In addition to exposing the interfaces that are explicitly implemented by a class in the managed environment, the .NET Framework supplies implementations of the COM interfaces listed in the following table on behalf of the object. A .NET class can override the default behavior by providing its own implementation of these interfaces. However, the runtime always provides the implementation for the **IUnknown** and **IDispatch** interfaces.  
   
@@ -148,7 +149,7 @@ public class LoanApp : IExplicit {
   
  The **ClassInterfaceType.None** value prevents the class interface from being generated when the class metadata is exported to a type library. In the preceding example, COM clients can access the `LoanApp` class only through the `IExplicit` interface.  
   
-### Avoid caching dispatch identifiers (DispIds).  
+### Avoid caching dispatch identifiers (DispIds)
  Using the class interface is an acceptable option for scripted clients, Microsoft Visual Basic 6.0 clients, or any late-bound client that does not cache the DispIds of interface members. DispIds identify interface members to enable late binding.  
   
  For the class interface, generation of DispIds is based on the position of the member in the interface. If you change the order of the member and export the class to a type library, you will alter the DispIds generated in the class interface.  
@@ -179,7 +180,6 @@ public class LoanApp : IAnother {
   
 ## See Also  
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
- [COM Callable Wrapper](com-callable-wrapper.md)  
  [COM Wrappers](com-wrappers.md)  
  [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
  [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)  

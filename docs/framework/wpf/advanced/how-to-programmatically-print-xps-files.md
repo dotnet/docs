@@ -59,7 +59,7 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  This disguise will enable you to pass `true` as the final parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> without causing an exception, but since *\<PseudoXPSPrinter>* is not really an XPSDrv printer, only garbage will print.  
   
- **Note** For simplicity, the example above uses the presence of an *.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3(v=vs.100)) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
+ **Note** For simplicity, the example above uses the presence of an \*.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3(v=vs.100)) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
   
 ## See Also  
  <xref:System.Printing.PrintQueue>  

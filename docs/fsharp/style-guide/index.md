@@ -14,15 +14,15 @@ We feel that the following principles should be kept in mind any time you write 
 
 2. **Good F# code is interoperable**
 
-    Interoperation can take multiple forms, including consuming code in different languages. The boundaries of your code that other callers interoperate with are critical pieces to get right. When writing F#, you should always be thinking about how other code will call into the code you are writing, including if they do so from another language like C#.
+    Interoperation can take multiple forms, including consuming code in different languages. The boundaries of your code that other callers interoperate with are critical pieces to get right. When writing F#, you should always be thinking about how other code will call into the code you are writing, including if they do so from another language like C#. The [F# Component Design Guidelines](component-design-guidelines.md) describe this in detail.
 
-3. **Good F# code makes use of objects, not object orientation**
+3. **Good F# code makes use of object programming, not object orientation**
 
     F# has full support for programming with objects in .NET, including [classes](../language-reference/classes.md), [interfaces](../language-reference/interfaces.md), [access modifiers](../language-reference/access-modifiers.md), [abstract classes](../language-reference/abstract-classes.md), and so on. For more complicated functional code, such as functions which must be context-aware, objects can easily encapsulate contextual information in ways that functions cannot. Features such as [optional parameters](../language-reference/members/methods.md#optional-arguments) and [overloading](../language-reference/members/methods.md#overloaded-methods) also aid consuption of this functionality for callers.
 
 4. **Good F# code performs well without exposing mutation**
 
-    It's no secret that to high performance code, you must use mutation. It's how computers work, after all. Such code is often error-prone and quite difficult to get right. Exposing that mutation to callers should generally be avoided. A functional interface over a mutation based implementation should be sought instead.
+    It's no secret that to write high performance code, you must use mutation. It's how computers work, after all. Such code is often error-prone and quite difficult to get right. Exposing that mutation to callers should generally be avoided. A functional interface over a mutation based implementation should be sought instead.
 
 5. **Good F# code is toolable**
 
@@ -33,4 +33,4 @@ We feel that the following principles should be kept in mind any time you write 
 
 The [F# Formatting Guidelines](formatting.md) provide guidance on how to format code so that it is easy to read
 
-The [F# Component Design Guidelines](design-guidelines.md) is a comprehensive set of guidance for a variety of F# code, especially library and API design.
+The [F# Component Design Guidelines](component-design-guidelines.md) is a comprehensive set of guidance for F# components such as libraries.

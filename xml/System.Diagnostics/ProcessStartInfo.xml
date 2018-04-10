@@ -306,6 +306,8 @@
   
 ## Remarks  
  If the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property is `true` or the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A> properties are not `null`, the <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow%2A> property value is ignored and a new window is created.  
+
+ .NET Core does not support creating windows directly on Unix-like platforms, including macOS and Linux. This property is ignored on such platforms.
   
    
   

@@ -226,8 +226,8 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
         <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum allowed length of the response headers.</summary>
-        <value>The length, in kilobytes (1024 bytes), of the response headers.</value>
+        <summary>Gets the collection of security certificates that are associated requests to the server.</summary>
+        <value>The X509CertificateCollection that is presented to the server when performing certificate based client authentication.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

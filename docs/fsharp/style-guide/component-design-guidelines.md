@@ -21,29 +21,29 @@ Regardless of the methodology, the component and library designer faces a number
 
 There are a few universal guidelines that apply to F# libraries, regardless of the intended audience for the library.
 
-#### Be familiar with the .NET Library Design Guidelines
+### Be familiar with the .NET Library Design Guidelines
 
 Regardless of the kind of F# coding you are doing, it is valuable to have a working knowledge of the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md). Most other F# and .NET programmers will be familiar with these guidelines, and expect .NET code to conform to them.
 
 The .NET Library Design Guidelines provide a lot of general guidance regarding naming, designing classes and interfaces, member design (properties, methods, events, etc.) and more, and are a useful first point of reference for a variety of design guidance.
 
-#### Add XML documentation comments to your code.
+### Add XML documentation comments to your code
 
-XML documents on public APIs ensure that users can get great Intellisense and Quickinfo when using these types and members, and enable building documentation files for the library. See the [XML Documentation](../language-reference/xml-documentation.md) about various xml tags that can be used for additional markup within xmldoc comments. 
+XML documents on public APIs ensure that users can get great Intellisense and Quickinfo when using these types and members, and enable building documentation files for the library. See the [XML Documentation](../language-reference/xml-documentation.md) about various xml tags that can be used for additional markup within xmldoc comments.
 
 ```fsharp
-/// A class for representing (x,y) coordinates 
-type Point = 
+/// A class for representing (x,y) coordinates
+type Point =
 
-    /// Computes the distance between this point and another 
+    /// Computes the distance between this point and another
     member DistanceTo : otherPoint:Point -> float
 ```
 
-#### Consider using explicit signature files (.fsi) for stable library and component APIs.
+### Consider using explicit signature files (.fsi) for stable library and component APIs
 
 Using explicit signatures files in an F# library provides a succinct summary of public API, which both helps to ensure that you know the full public surface of your library, as well as provides a clean separation between public documentation and internal implementation details. Note that signature files add friction to changing the public API, by requiring changes to be made in both the implementation and signature files. As a result, signature files should typically only be introduced when an API has become solidified and is no longer expected to change significantly.
 
-#### Always follow best practices for using strings in .NET
+### Always follow best practices for using strings in .NET
 
 Follow [Best Practices for Using Strings in .NET](../../standard/base-types/best-practices-strings.md) guidance. In particular, always explicitly state *cultural intent* in the conversion and comparison of strings (where applicable).
 
@@ -57,7 +57,7 @@ In this section, we present recommendations for developing public F#-facing libr
 
 The following table follows .NET naming and caputalization conventions. There are small additions to also include F# constructs.
 
-| Construct | Case | Part | Examples | Notes |  
+| Construct | Case | Part | Examples | Notes |
 |-----------|------|------|----------|-------|
 | Concrete types | PascalCase | Noun/ adjective | List, Double, Complex | Concrete types are structs, classes, enumerations, delegates, records, and unions. Though type names are traditionally lowercase in OCaml, F# has adopted the .NET naming scheme for types.
 | DLLs           | PascalCase |                 | Fabrikom.Core.dll |  |
@@ -66,9 +66,9 @@ The following table follows .NET naming and caputalization conventions. There ar
 | Exceptions     | PascalCase |      | WebException | Name should end with “Exception”. |
 | Field          | PascalCase | Noun | CurrentName  | |
 | Interface types |  PascalCase | Noun/ adjective | IDisposable | Name should start with “I”. |
-| Method |  PascalCase |  Verb | ToString | | 
-| Namespace | PascalCase | | Microsoft.FSharp.Core | Generally use <Organization>.<Technology>[.<Subnamespace>], though drop the organization if the technology is independent of organization. |
-| Parameters | camelCase | Noun |  typeName, transform, range | | 
+| Method |  PascalCase |  Verb | ToString | |
+| Namespace | PascalCase | | Microsoft.FSharp.Core | Generally use `<Organization>.<Technology>[.<Subnamespace>]`, though drop the organization if the technology is independent of organization. |
+| Parameters | camelCase | Noun |  typeName, transform, range | |
 | let values (internal) | camelCase or PascalCase | Noun/ verb |  getValue, myTable |
 | let values (external) | camelCase or PascalCase | Noun/verb  | List.map, Dates.Today | let-bound values are often public when following traditional functional design patterns. However, generally use PascalCase when the identifier can be used from other .NET languages. |
 | Property  | PascalCase  | Noun/ adjective  | IsEndOfFile, BackColor  | Boolean properties generally use Is and Can and should be affirmative, as in IsEndOfFile, not IsNotEndOfFile.
@@ -91,7 +91,7 @@ Acronyms such as XML are not abbreviations and are widely used in .NET libraries
 
 Do use PascalCase for generic parameter names in public APIs, including for F#-facing libraries. In particular, use names like `T`, `U`, `T1`, `T2` for arbitrary generic parameters, and when specific names make sense, then for F#-facing libraries use names like `Key`, `Value`, `Arg` (but not e.g. `TKey`).
 
-✔ Use either PascalCase or camelCase for public functions and values in F# modules. 
+✔ Use either PascalCase or camelCase for public functions and values in F# modules.
 
 camelCase is generally used for public functions which are designed to be used unqualified (e.g. invalidArg), and for the “standard collection functions” (e.g. List.map). In both these cases, the function names act much like keywords in the language.
 
@@ -103,10 +103,10 @@ Each F# file in a component should begin with either a namespace declaration or 
 
 ```fsharp
 namespace Fabrikom.BasicOperationsAndTypes
-    
-type ObjectType1() = 
+
+type ObjectType1() =
     ...
-    
+
 type ObjectType2() =
      ...
 
@@ -144,15 +144,15 @@ When working with objects, it is best to ensure that consumable functionality is
 
 ```fsharp
 type HardwareDevice() =
-    
+
     member this.ID = ...
-    
+
     member this.SupportedProtocols = ...
 
 type HashTable<'Key,'Value>(comparer: IEqualityComparer<'Key>) =
 
     member this.Add (key, value) = ...
-    
+
     member this.ContainsKey (key) = ...
 
     member this.ContainsValue (value) = ...
@@ -193,7 +193,7 @@ type Serializer<'T> = {
 }
 ```
 
-#### ✔ Use the “module of collection functions” pattern 
+#### ✔ Use the “module of collection functions” pattern
 
 When you define a collection type, consider providing a standard set of operations like `CollectionType.map` and `CollectionType.iter`) for new collection types.
 
@@ -291,7 +291,7 @@ type SomeType =
 
 type System.ServiceModel.Channels.IInputChannel with
     member this.AsyncReceive() =
-        ... 
+        ...
 ```
 
 #### Consider using option values for return types when failure is not an exceptional scenario
@@ -363,11 +363,11 @@ type BST<'T> =
 
 Representing tree-like data with Discriminated Unions will also allow you to benefit from exhaustiveness in pattern matching.
 
-#### Use `[<RequireQualifiedAccess>]` on union types whose case names are not sufficiently unique.
+#### Use `[<RequireQualifiedAccess>]` on union types whose case names are not sufficiently unique
 
 You may find yourself in a domain where the same name is the best name for different things, such as DU cases. You can use `[<RequireQualifiedAccess>]` to disambiguate case names.
 
-#### Hide the representations of discriminated unions for binary compatible APIs if the design of these types is likely to evolve.
+#### Hide the representations of discriminated unions for binary compatible APIs if the design of these types is likely to evolve
 
 Unions types rely on F# pattern-matching forms for a succinct programming model. As mentioned previously, you should avoid revealing concrete data representations if the design of these types is likely to evolve.
 
@@ -484,7 +484,7 @@ module Utilities =
     let Add3 x y z = x + y + z
 ```
 
-Consider instead: 
+Consider instead:
 
 ```fsharp
 namespace Fabrikom
@@ -523,7 +523,7 @@ public sealed class MyRecord
 }
 ```
 
-#### Hide the representation of F# union types in vanilla .NET APIs.
+#### Hide the representation of F# union types in vanilla .NET APIs
 
 F# union types are not commonly used across component boundaries, even for F#-to-F# coding. They are an excellent implementation device when used internally within components and libraries.
 
@@ -531,7 +531,7 @@ When designing a vanilla .NET API, consider hiding the representation of a union
 
 ```fsharp
 type PropLogic =
-    private 
+    private
     | And of PropLogic * PropLogic
     | Not of PropLogic
     | True
@@ -541,7 +541,7 @@ You may also augment types that use a union representation internally with membe
 
 ```fsharp
 type PropLogic =
-    private 
+    private
     | And of PropLogic * PropLogic
     | Not of PropLogic
     | True
@@ -619,7 +619,7 @@ Here “F# function types” mean “arrow” types like `int -> int`.
 Instead of this:
 
 ```fsharp
-member this.Transform(f:int->int) = 
+member this.Transform(f:int->int) =
     ...
 ```
 
@@ -627,8 +627,8 @@ Do this:
 
 ```fsharp
 member this.Transform(f:Func<int,int>) =
-    ... 
-```    
+    ...
+```
 
 The F# function type appears as `class FSharpFunc<T,U>` to other .NET languages, and is less suitable for language features and tooling that understand delegate types. When authoring a higher-order method targeting .NET Framework 3.5 or higher, the `System.Func` and `System.Action` delegates are the right APIs to publish to enable .NET developers to consume these APIs in a low-friction manner. (When targeting .NET Framework 2.0, the system-defined delegate types are more limited; consider using `System.Converter<T,U>` or defining a specific delegate type.)
 
@@ -641,16 +641,16 @@ Common patterns of use for the F# option type in APIs are better implemented in 
 ```fsharp
 member this.ReturnOption() = Some 3
 
-member this.ReturnBoolAndOut(outVal : byref<int>) = 
-    outVal <- 3 
+member this.ReturnBoolAndOut(outVal : byref<int>) =
+    outVal <- 3
     true
 
-member this.ParamOption(x : int, y : int option) = 
-    match y with 
-    | Some y2 -> x + y2 
-    | None -> x 
+member this.ParamOption(x : int, y : int option) =
+    match y with
+    | Some y2 -> x + y2
+    | None -> x
 
-member this.ParamOverload(x : int) = x 
+member this.ParamOverload(x : int) = x
 
 member this.ParamOverload(x : int, y : int) = x + y
 ```
@@ -678,7 +678,7 @@ member this.PrintNames(names : seq<string>) =
 Avoid other uses of the unit type. These are good:
 
 ```fsharp
-✔ member this.NoArguments() = 3 
+✔ member this.NoArguments() = 3
 
 ✔ member this.ReturnVoid(x : int) = ()
 ```
@@ -710,7 +710,7 @@ Instead, prefer returning a named type holding the aggregate data, or using out 
 
 #### Avoid the use of currying of parameters
 
-Instead, use .NET calling conventions ``Method(arg1,arg2,…,argN)``. 
+Instead, use .NET calling conventions ``Method(arg1,arg2,…,argN)``.
 
 ```fsharp
 member this.TupledArguments(str, num) = String.replicate num str
@@ -754,7 +754,7 @@ Let’s take a look at how this F# type will appear to a programmer using anothe
 
 ```csharp
 // C# signature for the unadjusted Point1 class
-public class Point1 
+public class Point1
 {
     public Point1();
 
@@ -829,7 +829,7 @@ type RadialPoint =
 The C# signature is now as follows:
 
 ```csharp
-public class RadialPoint 
+public class RadialPoint
 {
     public RadialPoint();
 

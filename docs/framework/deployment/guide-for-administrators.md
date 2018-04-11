@@ -234,7 +234,7 @@ This step-by-step article describes how a system administrator can deploy the [!
  
  You can also specify the directory to which log files are written by using the `/log` command-line option in the .NET Framework installation command. For more information, see [.NET Framework deployment guide for developers](deployment-guide-for-developers.md#command-line-options). 
  
- You can use the [log collection tool](http://www.microsoft.com/download/details.aspx?id=12493) to collect the .NET Framework log files and to create a compressed cabinet (.cab) file that reduces the size of the files.  
+ You can use the [log collection tool](https://www.microsoft.com/download/details.aspx?id=12493) to collect the .NET Framework log files and to create a compressed cabinet (.cab) file that reduces the size of the files.  
   
 <a name="return_codes"></a>   
 ### Return codes  

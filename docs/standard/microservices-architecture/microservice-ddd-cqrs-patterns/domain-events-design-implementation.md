@@ -324,7 +324,7 @@ The previous domain event handler code is considered application layer code beca
 
 #### Domain events can generate integration events to be published outside of the microservice boundaries
 
-Finally, is important to mention that you might sometimes want to propagate events across multiple microservices. That is considered an integration event, and it could be published through an event bus from any specific domain event handler.
+Finally, it is important to mention that you might sometimes want to propagate events across multiple microservices. That is considered an integration event, and it could be published through an event bus from any specific domain event handler.
 
 ## Conclusions on domain events
 

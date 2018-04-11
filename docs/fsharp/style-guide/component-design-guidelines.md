@@ -75,29 +75,29 @@ The following table follows .NET naming and caputalization conventions. There ar
 
 In addition to the previous table, be aware of the following:
 
-✘ Avoid abbreviaitons
+#### Avoid abbreviaitons
 
 The .NET guidelines discourage the use of abbreviations (for example, “use `OnButtonClick` rather than `OnBtnClick`”). Very common abbreviations, such as `Async` for “Asynchronous”, are tolerated. This guideline is sometimes ignored for functional programming; for example, `List.iter` uses an abbreviation for “iterate”. For this reason, using abbreviations tends to be tolerated to a greater degree in F#-to-F# programming, but should still generally be avoided in public component design.
 
-✘ Avoid casing name collisions
+#### Avoid casing name collisions
 
 The .NET guidelines say that casing alone cannot be used to avoid name collisions, since some client languages (e.g. Visual Basic) are case-insensitive.
 
-✔ Use acronyms where appropriate
+#### Use acronyms where appropriate
 
 Acronyms such as XML are not abbreviations and are widely used in .NET libraries in uncapitalized form (Xml). Only well-known, widely recognized acronyms should be used.
 
-✔ Use PascalCase for generic parameter names
+#### Use PascalCase for generic parameter names
 
 Do use PascalCase for generic parameter names in public APIs, including for F#-facing libraries. In particular, use names like `T`, `U`, `T1`, `T2` for arbitrary generic parameters, and when specific names make sense, then for F#-facing libraries use names like `Key`, `Value`, `Arg` (but not e.g. `TKey`).
 
-✔ Use either PascalCase or camelCase for public functions and values in F# modules.
+#### Use either PascalCase or camelCase for public functions and values in F# modules.
 
 camelCase is generally used for public functions which are designed to be used unqualified (e.g. invalidArg), and for the “standard collection functions” (e.g. List.map). In both these cases, the function names act much like keywords in the language.
 
 ### Object, Type and Module Design
 
-#### ✔ Use namespaces or modules to contain your types and modules
+#### Use namespaces or modules to contain your types and modules
 
 Each F# file in a component should begin with either a namespace declaration or a module declaration.
 
@@ -160,7 +160,7 @@ type HashTable<'Key,'Value>(comparer: IEqualityComparer<'Key>) =
 
 The bulk of functionality for a given member need not necessarily be implemented in that member, but the consumable piece of that functionality should be.
 
-#### ✔ Use classes to encapsulate mutable state
+#### Use classes to encapsulate mutable state
 
 In F#, this only needs to be done where that state is not already encapsulated by another language construct, such as a closure, sequence expression, or asynchronous computation.
 
@@ -174,7 +174,7 @@ type Counter() =
         count
 ```
 
-#### ✔ Use interfaces to group related operations
+#### Use interfaces to group related operations
 
 We recommend you use interface types to represent a dictionary of operations. This in preference to other options, such as tuples of functions or records of functions.
 
@@ -193,7 +193,7 @@ type Serializer<'T> = {
 }
 ```
 
-#### ✔ Use the “module of collection functions” pattern
+#### Use the “module of collection functions” pattern
 
 When you define a collection type, consider providing a standard set of operations like `CollectionType.map` and `CollectionType.iter`) for new collection types.
 

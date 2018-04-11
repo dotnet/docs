@@ -28,9 +28,10 @@ We feel that the following principles should be kept in mind any time you write 
 
     Tools are invaluable for working in large codebases, and there are ways to write F# code such that it can be used more effectively with tools. One example is making sure you don't overdo it with a point-free style of programming, so that intermmediate values can be inspected with a debugger. Another example is using [XML documentation comments](../language-reference/xml-documentation.md) describing constructs such that tooltips in editors can display those comments at the call site. Always think about how your code will be read, navigated, debugged, and manipulated by other programmers with their tools.
 
-
 ## Read next
 
 The [F# Formatting Guidelines](formatting.md) provide guidance on how to format code so that it is easy to read.
 
-The [F# Component Design Guidelines](component-design-guidelines.md) is a comprehensive set of guidance for F# components such as libraries.
+The [F# coding conventions](conventions.md) provide guidance for F# programming idioms which will help the long-term maintenance of larger F# codebases.
+
+The [F# Component Design Guidelines](component-design-guidelines.md) is a comprehensive set of guidance for authoring F# components, such as libraries.

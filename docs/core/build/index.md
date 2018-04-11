@@ -20,7 +20,7 @@ This article gives guidance to developers who want to build and distribute their
 
 ## Build the CLR from source
 
-The source code for the .NET CoreCLR can be found in [the `dotnet/coreclr` repository on GitHub](https://github.com/dotnet/coreclr/).
+The source code for the .NET CoreCLR can be found in [the CoreCLR repository on GitHub](https://github.com/dotnet/coreclr/).
 
 The build currently depends on the following prerequisites:
 * [Git](https://git-scm.com/)

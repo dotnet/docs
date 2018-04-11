@@ -116,7 +116,7 @@ C# 7.3 to use ref local reassignment:
 
 [!code-csharp[ref-returns](../../../../samples/snippets/csharp/programming-guide/ref-returns/NumberStoreUpdated.cs#1)]
 
-This second version would be more efficient with longer sequences in scenarios where the number sought is
+This second version is more efficient with longer sequences in scenarios where the number sought is
 closer to the end of the array.
 
 ## See also

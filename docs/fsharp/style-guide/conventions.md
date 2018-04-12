@@ -11,6 +11,8 @@ F# features two primarily ways to organize code: modules and namespaces. They ar
 * Namespaces can span mutiple files. Modules cannot.
 * Modules can be decorated with `[<RequireQualifiedAccess>]` and `[<AutoOpen>]`.
 
+The following guidelines will help you use these to organize your code.
+
 ### Prefer namespaces at the top level
 
 For any publically consumable code, namespaces are preferential to modules at the top level. Because they are compiled as .NET namespaces, they are consumable from C# with no issue.
@@ -75,10 +77,10 @@ let parsed = StringHepers.parse s // Must qualify to use 'parse'
 
 ## Use classes to contain values which have side effects
 
-There are numerous places where initializing a value can have side effects, such as instantiating a context to a database or other remote resource. It is tempting to initialize such things in a module and use it in subsequent functions:
+There are many times when initializing a value can have side effects, such as instantiating a context to a database or other remote resource. It is tempting to initialize such things in a module and use it in subsequent functions:
 
 ```fsharp
-// This is really bad!
+// This is bad!
 module MyApi =
     let dep1 = File.ReadAllText "/Users/{your name}/connectionstring.txt"
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
@@ -111,10 +113,148 @@ This enables the following:
 
 One could even argue that the example with classes is more "functional" than the example with let-bound values in a module.
 
-## Prefer error handling with exceptions in most cases
+## Error handling
 
-asdf
+Error handling in large systems is a difficult endeavor, and there are no silver bullets in ensuring your systems are fault-tolerant and behave well. The following guidelines should help in this difficult space.
 
-## Use result-based/monadic error handling only when it is part of your domain
+### Represent error cases and illegal state in your types
 
-asdf
+With Discriminated Unions, F# gives you the ability to represent faulty program state in your type system. For example:
+
+```fsharp
+type MoneyWithdrawalResult =
+    | Success of amount:decimal
+    | InsufficientFunds of balance:decimal
+    | CardExpired of DateTime
+    | UndisclosedFailure
+```
+
+In this case, there are three known ways that withdrawing money from a bank account can fail. Each error case is represented in the type, and can thus be dealt with safely throughout the program.
+
+```fsharp
+let handleWithdrawal amount =
+    let w = withdrawMoney amount
+    match w with
+    | Success am -> printfn "Successfully withdrew %f" am
+    | InsufficientFunds balance -> printfn "Failed: balance is %f" balance
+    | CardExpired expiredDate -> printfn "Failed: card expired on %O" expiredDate
+    | UndisclosedFailure -> printfn "Failed: unknown - retry perhaps?"
+```
+
+In general, if you can model the different ways that something can **fail** in your domain, then error handling code is no longer treated as something you must deal with in addition to regular program flow. It is simply a part of normal program flow. This also makes it easier to maintain as your domain changes over time.
+
+### Use exceptions when errors cannot be represented with types
+
+Not all errors can be represented in a problem domain. These kinds of faults are *exceptional* in nature, hence the ability to raise and catch exceptions in F#.
+
+First, it is recommended that you read the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md). They are also applicable to F#.
+
+There are four primary ways to raise exceptions in F#:
+
+1. The `raise` function with built-in exception types.
+2. The `raise` function with custom exception types.
+3. The `invalidArg` function, which is an alternative to `raise System.ArgumentException`
+4. The `failwith` function, which is an alternative to `raise Exception`
+5. The `failwithf` function, which is like `failwith` but lets you specify a format string for the error message.
+
+This list is also ordered in preferential order. That is, you should consider them as such:
+
+1. Try to use `raise` for built-in exception types whenever you can.
+2. If you need a custom exception type, prefer `raise` with that type.
+
+`invalidArg`, `failwith`, and `failwithf` should generally not be used in favor of `raise`. That said, they are perfectly fine alternatives if the exception you are raising is `ArgumentException` or `Exception`, and their syntax is succinct for that.
+
+### Using exception-handling syntax
+
+F# supports exception patterns via the `try...with` syntax:
+
+```fsharp
+try
+    tryGetFileContents()
+with
+| :? System.IO.FileNotFoundException as e -> // Do something with it here
+| :? System.Security.SecurityException as e -> // Do something with it here
+```
+
+Reconciling functionality to perform in the face of an exception with pattern matching can be a bit tricky if you wish to keep the code clean. One such way to handle this isto use [active patterns](../language-reference/active-patterns.md) as a means to group functionality surrounding an error case with an exception itself. For example, consider consuming an API which, when it throws an exception, wraps valuable information in that exception:
+
+```fsharp
+// TODO
+```
+
+### Do not use monadic error handling to replace exceptions
+
+It is seen as somewhat taboo in functional programming to use exceptions. Indeed, exceptions violate purity and totality, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run. Even in purely functional languages like Haskell, programs such as ```2 `div` 0``` produce a runtime exception.
+
+F# runs on .NET, and exceptions are a key piece of .NET. This is not something to ignore or attempt to work around.
+
+There are 3 reasons why exceptions are good constructs in F# code:
+
+1. They contain detailed diagnostic information, which is very helpful when debugging an issue.
+2. They are well-understood by the runtime and other .NET languages.
+3. They can reduce significant boilerplate when compared with code which goes out of its way to *avoid* exceptions by implementing some subset of their semantics on an ad-hoc basis.
+
+This third point is quite critical. For sufficiently complex operations, failing to use exceptions can result in dealing with structures like this:
+
+```fsharp
+Result<Result<MyType, string>, string list>
+```
+
+Which can easily lead to absurd code like pattern matching on "stringly-typed" errors:
+
+```fsharp
+let result = doStuff()
+match result with
+| Ok r -> ...
+| Error e ->
+    if e.Contains "String1" then ...
+    elif e.Contains "Error string 2" then ...
+    else ... // Who knows?
+```
+
+Additionally, it can be tempting to simply swallow any exception in the desire for a "simple" function which returns a nicer type:
+
+```fsharp
+// This is bad!
+let tryReadAllText (path : string) : string option =
+    try System.IO.File.ReadAllText path |> Some
+    with _ -> None
+```
+
+Unfortunately, `ReadAllText` can throw any number of exceptions based on the strange things which can happen on a file system, and this code throws away any information about what might actually be going wrong in your environment. If you were to replace this code with a result type, then you're back to stringly-typed error message parsing:
+
+```fsharp
+// This is bad!
+let tryReadAllText (path : string) : string option =
+    try System.IO.File.ReadAllText path |> Ok
+    with e -> Error e.Message
+
+let r = tryReadAllText "path-to-file"
+match r with
+| Ok text -> ...
+| Error e ->
+    if e.Contains "uh oh, here we go again..." then ...
+    else ...
+```
+
+And placing the exception in the `Error` constructor just forces you to properly deal with the exception type at the call site rather than in the function.
+
+That said, types such as `Result<'Success, 'Error>` are perfectly fine for basic operations where they aren't nested, and F# optional types are perfect for representing when something could either reutrn *something* or *nothing*. They are not a replacement for exceptions, though, and should not be used in an attempt to replace exceptions.
+
+## Partial application and point-free programming
+
+F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code re-use within a module or the implmentation of something, but it is generally not something to expose publically. In general, point-free programming is not a virtue in and of itself, and comes with a cognitive cost for people who are not familiar with the style.
+
+## Do not use partial application and currying in public APIs
+
+With little exception, the use of partial application in public APIs can be confusing for consumers. Generally speaking, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a very small number of lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions together.
+
+## Consider partial application as a technique to reduce internal boilerplate
+
+In contrast to the previous point, partial application is a wonderful tool for reducing boilerplate inside of an application. It can be particularly helpful for unit testing, where boilerplate is often a pain to deal with. For example, the following code shows how you can accomplish what most mocking frameworks give you without taking an external dependency on such a framework:
+
+```fsharp
+// TODO
+```
+
+This technique should not be universally applied to your entire codebase, but it is a good way to keep things cleaner.

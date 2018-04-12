@@ -60,7 +60,8 @@ This section contains descriptions and links to downloadable network programming
   
  [PeerToPeer Technology Sample](http://go.microsoft.com/fwlink/?LinkID=179571)  
  Shows how to use the new classes in the <xref:System.Net.PeerToPeer> namespace to register and publish a peer name and then resolve a peer name.  
-  
+
+<!---Loc Comment: Please, check above fwlinks are not working properly--->
 ## Reference  
  <xref:System.Net>  
   

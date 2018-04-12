@@ -73,21 +73,23 @@ If you install Visual Studio with the **.NET Core cross-platform development** w
 
 ![Add New .NET Standard library project](./media/std-project-cs.png)
 
+If you're using the .NET Core CLI, the following [dotnet new](../../core/tools/dotnet-new.md) command creates a class library project that targets the .NET Standard 2.0:
+
+```
+dotnet new classlib
+```
+
 # [Visual Basic](#tab/vb)
 
 ![Add New .NET Standard library project](./media/std-project-vb.png)
 
----
+If you're using the .NET Core CLI, the following [dotnet new](../../core/tools/dotnet-new.md) command creates a class library project that targets the .NET Standard 2.0:
 
-If you are using the .NET Core CLI, the following [dotnet new](../../core/tools/dotnet-new.md) command creates a class library project that targets the .NET Standard 2.0.
-
-```csharp
-dotnet new classlib
 ```
-
-```vb
 dotnet new classlib -lang vb
 ```
+
+---
 
 ## See also
 

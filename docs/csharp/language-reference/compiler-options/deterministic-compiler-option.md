@@ -1,16 +1,18 @@
 ---
-title: "-deterministic"
-ms.date: 04/11/2018
+title: "-deterministic (C# Compiler Options)"
+ms.date: 04/12/2018
 ms.prod: .net
 ms.technology: 
-  - "devlang-visual-basic"
+  - "devlang-csharp"
 ms.topic: "article"
+f1_keywords: 
+  - "/deterministic"
 helpviewer_keywords: 
-  - "deterministic compiler option [Visual Basic]"
-  - "-deterministic compiler option [Visual Basic]"
-  - "-deterministic compiler option [Visual Basic]"
-author: rpetrusha
-ms.author: ronpet
+  - "-deterministic compiler option [C#]"
+  - "deterministic compiler option [C#]"
+  - "/deterministic compiler option [C#]"
+author: "BillWagner"
+ms.author: "wiwagn"
 ---
 # -deterministic
 
@@ -32,7 +34,7 @@ The compiler considers the following inputs for the purpose of determinism:
 - The contents of the compiler's .rsp response file.
 - The precise version of the compiler used, and its referenced assemblies.
 - The current directory path.
-- The binary contents of all files explicitly passed to the compiler either directly or indirectly, including: 
+- The binary contents of all files explicitly passed to the compiler either directly or indirectly, including:
     - Source files
     - Referenced assemblies
     - Referenced modules
@@ -50,6 +52,6 @@ The compiler considers the following inputs for the purpose of determinism:
 
 When sources are publicly available, deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. It can also be useful in a continuous build system for determining whether build steps that are dependent on changes to a binary need to be executed. 
 
-## See Also
-[Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
-[Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See Also  
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

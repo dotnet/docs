@@ -1,7 +1,7 @@
 ---
 title: Key takeaways
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools (e-book)_v1.1
-keywords: Docker, Microservices, ASP.NET, Container
+ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017

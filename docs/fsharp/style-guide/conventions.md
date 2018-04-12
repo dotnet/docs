@@ -75,6 +75,10 @@ let s = getAString()
 let parsed = StringHepers.parse s // Must qualify to use 'parse'
 ```
 
+### Do not sort `open` statements alphanumerically
+
+Although it is possible to sort `open` statements, doing so could have confusing consequences. The order of declarations matters in F#, and this also includes `open` statements. Sorting them alphanumerically can shadow values, thus allowing you to interact with values which are likely not what you think they are.
+
 ## Use classes to contain values which have side effects
 
 There are many times when initializing a value can have side effects, such as instantiating a context to a database or other remote resource. It is tempting to initialize such things in a module and use it in subsequent functions:
@@ -248,11 +252,13 @@ That said, types such as `Result<'Success, 'Error>` are perfectly fine for basic
 
 F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code re-use within a module or the implmentation of something, but it is generally not something to expose publically. In general, point-free programming is not a virtue in and of itself, and comes with a cognitive cost for people who are not familiar with the style.
 
-## Do not use partial application and currying in public APIs
+### Do not use partial application and currying in public APIs
 
 With little exception, the use of partial application in public APIs can be confusing for consumers. Generally speaking, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a very small number of lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions together.
 
-Additionally, curried functions do not label their arguments, which has tooling implications. Consider the following two functions.
+### Consider the tooling implications for point-free programming
+
+Curried functions do not label their arguments, which has tooling implications. Consider the following two functions.
 
 ```fsharp
 let foo name age =
@@ -274,7 +280,9 @@ At the call site, tooltips in tooling such as Visual Studio will not give you me
 
 If you encounter point-free code like `foo'` that is publically consumable, we recommend a full η-expansion so that tooling can pick up on meaningful names for arguments.
 
-## Consider partial application as a technique to reduce internal boilerplate
+Furthermore, debugging point-free code can be very challenging, if not impossible. Debugging tools rely on values bound to names (e.g., `let` bindings) so that you can inspect intermmediate values midway through execution. When your code has no values to inspect, there is nothing to debug. In the future, debugging tools may evolve to construct these values based on previously-executed functionality, but it's not a good idea to hedge your bets on *potential* debugging functionality.
+
+### Consider partial application as a technique to reduce internal boilerplate
 
 In contrast to the previous point, partial application is a wonderful tool for reducing boilerplate inside of an application. It can be particularly helpful for unit testing the implementation of more complicated APIs, where boilerplate is often a pain to deal with. For example, the following code shows how you can accomplish what most mocking frameworks give you without taking an external dependency on such a framework.
 
@@ -336,3 +344,19 @@ let ``Test withdrawal transaction with 0.0 for balance``() =
 ```
 
 This technique should not be universally applied to your entire codebase, but it is a good way to reduce boilerplate for complicated internals and unit testing those internals.
+
+## Access control
+
+F# has multiple options for [Access control](../language-reference/access-control.md), inherited from what is available in the .NET runtime. These are not just usable for types - you can use them for functions, too.
+
+* Prefer keeping functions from being `public` unless you know you'll need to consume them elsewhere.
+* Strive to keep all helper functionality `private`.
+* Consider the use of `[<AutoOpen>]` on a private module of helper functions if they become numerous.
+
+## Type inference and generics
+
+Type inference can save you from typing a lot of boilerplate. And automatic generalization in the F# compiler can help you write more generic code with almost no extra effort on your part. However, these features are not universally good.
+
+Consider labeling argument names with explicit types in public APIs and do not rely on type inference for this. The reason for this is that **you** should be in control of the shape of your API, not the compiler. Although the compiler can do a fine job at infering types for you, it is possible to have the shape of your API change if the internals it relies on have changed types. This may be what you want, but it will almost certainly result in a breaking API change that downstream consumers will then have to deal with. Instead, if you explicitly control the shape of your public API, then you can control these breaking changes.
+
+Finally, automatic generalization is not always a boon for people who are new to F# or the codebase. There is cognitive overhead in using components which are generic, and if they not used with different input types (let alone if they are intended to be used as such), then there is no benefit to them being generic.

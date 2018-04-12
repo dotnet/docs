@@ -141,7 +141,10 @@ let handleWithdrawal amount =
     | UndisclosedFailure -> printfn "Failed: unknown - retry perhaps?"
 ```
 
-In general, if you can model the different ways that something can **fail** in your domain, then error handling code is no longer treated as something you must deal with in addition to regular program flow. It is simply a part of normal program flow. This also makes it easier to maintain as your domain changes over time.
+In general, if you can model the different ways that something can **fail** in your domain, then error handling code is no longer treated as something you must deal with in addition to regular program flow. It is simply a part of normal program flow. There are two primary benefits to this:
+
+1. It is easier to maintain as your domain changes over time.
+2. Error cases are easier to unit test.
 
 ### Use exceptions when errors cannot be represented with types
 
@@ -207,7 +210,7 @@ let result = doStuff()
 match result with
 | Ok r -> ...
 | Error e ->
-    if e.Contains "String1" then ...
+    if e.Contains "Error string 1" then ...
     elif e.Contains "Error string 2" then ...
     else ... // Who knows?
 ```
@@ -216,16 +219,16 @@ Additionally, it can be tempting to simply swallow any exception in the desire f
 
 ```fsharp
 // This is bad!
-let tryReadAllText (path : string) : string option =
+let tryReadAllText (path : string) =
     try System.IO.File.ReadAllText path |> Some
     with _ -> None
 ```
 
-Unfortunately, `ReadAllText` can throw any number of exceptions based on the strange things which can happen on a file system, and this code throws away any information about what might actually be going wrong in your environment. If you were to replace this code with a result type, then you're back to stringly-typed error message parsing:
+Unfortunately, `ReadAllText` can throw numerous exceptions based on the strange things which can happen on a file system, and this code throws away any information about what might actually be going wrong in your environment. If you were to replace this code with a result type, then you're back to stringly-typed error message parsing:
 
 ```fsharp
 // This is bad!
-let tryReadAllText (path : string) : string option =
+let tryReadAllText (path : string) =
     try System.IO.File.ReadAllText path |> Ok
     with e -> Error e.Message
 
@@ -237,7 +240,7 @@ match r with
     else ...
 ```
 
-And placing the exception in the `Error` constructor just forces you to properly deal with the exception type at the call site rather than in the function.
+And placing the exception object itself in the `Error` constructor just forces you to properly deal with the exception type at the call site rather than in the function.
 
 That said, types such as `Result<'Success, 'Error>` are perfectly fine for basic operations where they aren't nested, and F# optional types are perfect for representing when something could either reutrn *something* or *nothing*. They are not a replacement for exceptions, though, and should not be used in an attempt to replace exceptions.
 
@@ -249,12 +252,87 @@ F# supports partial application, and thus, various ways to program in a point-fr
 
 With little exception, the use of partial application in public APIs can be confusing for consumers. Generally speaking, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a very small number of lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions together.
 
-## Consider partial application as a technique to reduce internal boilerplate
-
-In contrast to the previous point, partial application is a wonderful tool for reducing boilerplate inside of an application. It can be particularly helpful for unit testing, where boilerplate is often a pain to deal with. For example, the following code shows how you can accomplish what most mocking frameworks give you without taking an external dependency on such a framework:
+Additionally, curried functions do not label their arguments, which has tooling implications. Consider the following two functions.
 
 ```fsharp
-// TODO
+let foo name age =
+    printfn "My name is %s and I am %d years old!" name age
+
+let foo' =
+    printfn "My name is %s and I am %d years old!"
 ```
 
-This technique should not be universally applied to your entire codebase, but it is a good way to keep things cleaner.
+Both are valid functions, but `foo'` is a curried function. When you hover over their types, you see this:
+
+```fsharp
+val foo : name:string -> age:int -> unit
+
+val foo' : (string -> int -> unit)
+```
+
+At the call site, tooltips in tooling such as Visual Studio will not give you meaningful information as to what the `string` and `int` input types actually represent.
+
+If you encounter point-free code like `foo'` that is publically consumable, we recommend a full η-expansion so that tooling can pick up on meaningful names for arguments.
+
+## Consider partial application as a technique to reduce internal boilerplate
+
+In contrast to the previous point, partial application is a wonderful tool for reducing boilerplate inside of an application. It can be particularly helpful for unit testing the implementation of more complicated APIs, where boilerplate is often a pain to deal with. For example, the following code shows how you can accomplish what most mocking frameworks give you without taking an external dependency on such a framework.
+
+For example, consider the following module solution topography:
+
+```
+MySolution.sln
+|_/ImplementationLogic.fsproj
+|_/ImplementationLogic.Tests.fsproj
+|_/API.fsproj
+```
+
+`ImplementationLogic.fsproj` can expose a code like this:
+
+```fsharp
+module Transactions =
+    let doTransaction txnContext txnType balance =
+        ...
+
+type Transactionater(ctx, currentBalance) =
+    member __.ExecuteTransaction(txnType) =
+        Transactions.doTransaction ctx txtType currentBalance
+        ...
+```
+
+Unit testing `Transactions.doTransaction` in `ImplementationLogic.Tests.fspoj` is very easy:
+
+```fsharp
+namespace TransactionsTestingUtil
+
+open Transactions
+
+module TransactionsTestable =
+    let getTestableTransactionRoutine mockContext = Transactions.doTransaction mockContext
+```
+
+Partially applying `doTransaction` with a mocking context object lets you call the function in all of your unit tests without needing to construct a mocked context each time:
+
+```fsharp
+namespace TransactionTests
+
+open Xunit
+open TransactionTypes
+open TransactionsTestingUtil
+open TransactionsTestingUtil.TransactionsTestable
+
+let testableContext =
+    { new ITransactionContext with
+        member __.TheFirstMember() = ...
+        member __.TheSecondMember() = ... }
+
+let transactionRoutine = getTestableTransactionRoutine testableContext
+
+[<Fact>]
+let ``Test withdrawal transaction with 0.0 for balance``() =
+    let expected = ...
+    let actual = transactionRoutine TransactionType.Withdraw 0.0
+    Assert.Equal(expected, actual)
+```
+
+This technique should not be universally applied to your entire codebase, but it is a good way to reduce boilerplate for complicated internals and unit testing those internals.

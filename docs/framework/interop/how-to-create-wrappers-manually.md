@@ -1,12 +1,9 @@
 ---
 title: "How to: Create Wrappers Manually"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "wrappers, creating manually"
@@ -24,7 +21,7 @@ If you decide to declare COM types manually in managed source code, the best pla
   
 1.  Declare the types in a language that is compliant with the Common Language Specification (CLS) and compile the file.  
   
-2.  Export the assembly containing the types with the [Type Library Exporter (Tlbexp.exe)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md).  
+2.  Export the assembly containing the types with the [Type Library Exporter (Tlbexp.exe)](../tools/tlbexp-exe-type-library-exporter.md).  
   
 3.  Use the exported COM type library as a basis for declaring COM-oriented managed types.  
   
@@ -32,7 +29,7 @@ If you decide to declare COM types manually in managed source code, the best pla
   
 1.  Assuming that you have an IDL file or type library file, decide which classes and interfaces you want to include in the custom RCW. You can exclude any types that you do not intend to use directly or indirectly in your application.  
   
-2.  Create a source file in a CLS-compliant language and declare the types. See [Type Library to Assembly Conversion Summary](http://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958) for a complete description of the import conversion process. Effectively, when you create a custom RCW, you are manually performing the type conversion activity provided by the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md). The example in the next section shows types in an IDL or type library file and their corresponding types in C# code.  
+2.  Create a source file in a CLS-compliant language and declare the types. See [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100)) for a complete description of the import conversion process. Effectively, when you create a custom RCW, you are manually performing the type conversion activity provided by the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md). The example in the next section shows types in an IDL or type library file and their corresponding types in C# code.  
   
 3.  When the declarations are complete, compile the file as you compile any other managed source code.  
   
@@ -104,9 +101,9 @@ namespace SAServer
 ```  
   
 ## See Also  
- [Customizing Runtime Callable Wrappers](http://msdn.microsoft.com/library/4652beaf-77d0-4f37-9687-ca193288c0be)  
- [COM Data Types](http://msdn.microsoft.com/library/f93ae35d-a416-4218-8700-c8218cc90061)  
- [How to: Edit Interop Assemblies](http://msdn.microsoft.com/library/16aacb20-2269-42bf-a812-b6a7df17e277)  
- [Type Library to Assembly Conversion Summary](http://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958)  
- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)  
- [Tlbexp.exe (Type Library Exporter)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)
+ [Customizing Runtime Callable Wrappers](https://msdn.microsoft.com/library/4652beaf-77d0-4f37-9687-ca193288c0be(v=vs.100))  
+ [COM Data Types](https://msdn.microsoft.com/library/f93ae35d-a416-4218-8700-c8218cc90061(v=vs.100))  
+ [How to: Edit Interop Assemblies](https://msdn.microsoft.com/library/16aacb20-2269-42bf-a812-b6a7df17e277(v=vs.100))  
+ [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))  
+ [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md)  
+ [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)

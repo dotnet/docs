@@ -21,7 +21,7 @@ This article shows the dependencies needed to develop .NET Core applications on 
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 > [!NOTE]
-> The .NET Core SDK package is not required for production servers/environments. Only the .NET Core runtime package is needed for apps deployed to production environments. The .NET Core runtime is deployed with apps as part of a self-contained deployment, however, it must be deployed for Framework-dependent deployed apps seperately. For more information about framework-dependent and self-contained deployment types, see [.NET Core application deployment](https://docs.microsoft.com/en-us/dotnet/core/deploying/). Also see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md) for specific guidelines.
+> The .NET Core SDK package is not required for production servers/environments. Only the .NET Core runtime package is needed for apps deployed to production environments. The .NET Core runtime is deployed with apps as part of a self-contained deployment, however, it must be deployed for Framework-dependent deployed apps separately. For more information about framework-dependent and self-contained deployment types, see [.NET Core application deployment](./deploying/index.md). Also see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md) for specific guidelines.
 
 ## Supported Linux versions
 
@@ -155,7 +155,7 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=banner+cta&utm_content=vs2017).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview).
 
 |Runtimes / SDKs                  |Ubuntu 17.10    |Ubuntu 16.04 / Linux Mint 18|Ubuntu 14.04 / Linux Mint 17|
 |---------------------------------|----------------|----------------------------|----------------------------|
@@ -206,7 +206,7 @@ To install .NET Core on supported Debian versions (64 bit):
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=banner+cta&utm_content=vs2017).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview).
 
 |Runtimes / SDKs                  |Debian 9       |Debian 8       |
 |---------------------------------|---------------|---------------|
@@ -255,7 +255,7 @@ To install .NET Core on supported Fedora versions:
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=banner+cta&utm_content=vs2017).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview).
 
 |Runtimes / SDKs                  |Fedora 26 or later |Fedora 25 or previous |
 |---------------------------------|-------------------|----------------------|
@@ -307,7 +307,7 @@ To install .NET Core for supported CentOS and Oracle Linux distributions/version
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=banner+cta&utm_content=vs2017).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview/).
 
 * .NET Core Runtime 2.1.0-preview1 [install link](https://www.microsoft.com/net/download/linux-package-manager/centos/runtime-2.1.0-preview1)
 * .NET Core SDK 2.1.300-preview1 [install link](https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-2.1.300-preview1)
@@ -349,7 +349,7 @@ To install .NET Core 2.x for supported SUSE Linux Enterprise Server and OpenSUSE
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=banner+cta&utm_content=vs2017).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview).
 
 * .NET Core Runtime 2.1.0-preview1 [install link](https://www.microsoft.com/net/download/linux-package-manager/opensuse/runtime-2.1.0-preview1)
 * .NET Core SDK 2.1.300-preview1 [install link](https://www.microsoft.com/net/download/linux-package-manager/opensuse/sdk-2.1.300-preview1)
@@ -374,10 +374,8 @@ To install .NET Core 2.x for supported SUSE Linux Enterprise Server and OpenSUSE
 ---
 
 > [!IMPORTANT]
-> If you have problems with the .NET Core 2.x installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:
-> * [.NET Core 2.0 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0)
+> If you have problems with a .NET Core installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:
 > * [.NET Core 2.1 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.1)
->
-> If you have problems with the .NET Core 1.x installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:
-> * [.NET Core 1.0 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.0)
+> * [.NET Core 2.0 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0)
 > * [.NET Core 1.1 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.1)
+> * [.NET Core 1.0 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.0)

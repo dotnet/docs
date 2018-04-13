@@ -2,9 +2,10 @@
 title: "WPF community feedback"
 ms.date: "03/01/2018"
 ms.prod: ".net-framework"
-ms.technology: dotnet-wpf
-ms.topic: conceptual
-helpviewer_keywords:
+ms.technology: 
+  - "dotnet-wpf"
+ms.topic: "article"
+helpviewer_keywords: 
   - "community resources [WPF]"
   - "forums [WPF]"
   - "bug descriptions [WPF]"
@@ -12,7 +13,7 @@ ms.assetid: 468b060a-d54b-4900-a74a-9faccb554045
 author: mairaw
 ms.author: mairaw
 manager: "wpickett"
-ms.workload:
+ms.workload: 
   - dotnet
 ---
 # WPF community feedback

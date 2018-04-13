@@ -125,7 +125,7 @@ The first step is to create the application infrastructure, which includes an ap
    [!code-vb[ExpenseIt#3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/MainWindow.xaml.vb#3)]
 
    > [!TIP]
-   > You can toggle the code language of the sample code between C# and Visual Basic in the drop-down on the upper right side of this article.
+   > You can toggle the code language of the sample code between C# and Visual Basic in the **Language** drop-down on the upper right side of this article.
 
 ## Add files to the application
 
@@ -231,7 +231,7 @@ Layout provides an ordered way to place UI elements, and also manages the size a
 
 Each of these layout controls supports a special type of layout for its child elements. ExpenseIt pages can be resized, and each page has elements that are arranged horizontally and vertically alongside other elements. Consequently, the <xref:System.Windows.Controls.Grid> is the ideal layout element for the application.
 
-> [!NOTE]
+> [!TIP]
 > For more information about <xref:System.Windows.Controls.Panel> elements, see [Panels overview](../../../../docs/framework/wpf/controls/panels-overview.md). For more information about layout, see [Layout](../../../../docs/framework/wpf/advanced/layout.md).
 
 In the section, you create a single-column table with three rows and a 10-pixel margin by adding column and row definitions to the <xref:System.Windows.Controls.Grid> in *ExpenseItHome.xaml*.
@@ -479,36 +479,29 @@ The following illustration shows both pages of the ExpenseIt application with co
 > [!NOTE]
 > This sample demonstrates a specific feature of WPF and doesn't follow all best practices for things like security, localization, and accessibility. For comprehensive coverage of WPF and the .NET Framework application development best practices, see the following topics:
 >
-> - [Accessibility Best Practices](../../../../docs/framework/ui-automation/accessibility-best-practices.md)
+> - [Accessibility](../../../../docs/framework/ui-automation/accessibility-best-practices.md)
 >
 > - [Security](../../../../docs/framework/wpf/security-wpf.md)
 >
-> - [WPF Globalization and Localization](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)
+> - [WPF globalization and localization](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)
 >
-> - Optimize WPF Application [Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+> - [WPF performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
 
 ## Next steps
 
 In this walkthrough you learned a number of techniques for creating a UI using Windows Presentation Foundation (WPF). You should now have a basic understanding of the building blocks of a data-bound, .NET Framework application. For more information about the WPF architecture and programming models, see the following topics:
 
-- [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)
-
-- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
-
-- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
-
+- [WPF architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)
+- [XAML overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [Dependency properties overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
 - [Layout](../../../../docs/framework/wpf/advanced/layout.md)
 
 For more information about creating applications, see the following topics:
 
-- [Application Development](../../../../docs/framework/wpf/app-development/index.md)
-
+- [Application development](../../../../docs/framework/wpf/app-development/index.md)
 - [Controls](../../../../docs/framework/wpf/controls/index.md)
-
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
-
+- [Data binding overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Graphics and multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
 - [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
 
 ## See also

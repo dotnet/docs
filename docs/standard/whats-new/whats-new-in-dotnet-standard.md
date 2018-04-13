@@ -21,15 +21,15 @@ The most recent version of the .NET Standard is 2.0. It is included with the .NE
 
 ## Supported .NET implementations
 
-The .NET Standard 2.0 is supported by the following .NET implementations, including later versions of those:
+The .NET Standard 2.0 is supported by the following .NET implementations:
 
-- .NET Core 2.0
-- .NET Framework 4.6.1
-- Mono 5.4
-- Xamarin.iOS 10.14
-- Xamarin.Mac 3.8
-- Xamarin.Android 8.0
-- Universal Windows Platform 10.0.16299
+- .NET Core 2.0 or later
+- .NET Framework 4.6.1 or later
+- Mono 5.4 or later
+- Xamarin.iOS 10.14 or later
+- Xamarin.Mac 3.8 or later
+- Xamarin.Android 8.0 or later
+- Universal Windows Platform 10.0.16299 or later
 
 ## What's new in the .NET Standard 2.0
 

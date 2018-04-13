@@ -6,7 +6,7 @@ This article offers guidelines for how to format your code so that your F# code 
 * Adhering to formatting tools in Visual Studio and other editors
 * Similar to other code online
 
-These guidelines are based on [F# Coding Guidelines](https://web.archive.org/web/20070306131206/http://research.microsoft.com/fsharp/expert-fsharp-draft/FormattingConventions.doc) and [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
+These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
 
 ## General rules for indentation
 

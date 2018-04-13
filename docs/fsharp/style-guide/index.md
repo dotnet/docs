@@ -18,7 +18,7 @@ We feel that the following principles should be kept in mind any time you write 
 
 3. **Good F# code makes use of object programming, not object orientation**
 
-    F# has full support for programming with objects in .NET, including [classes](../language-reference/classes.md), [interfaces](../language-reference/interfaces.md), [access modifiers](../language-reference/access-modifiers.md), [abstract classes](../language-reference/abstract-classes.md), and so on. For more complicated functional code, such as functions which must be context-aware, objects can easily encapsulate contextual information in ways that functions cannot. Features such as [optional parameters](../language-reference/members/methods.md#optional-arguments) and [overloading](../language-reference/members/methods.md#overloaded-methods) also aid consuption of this functionality for callers.
+    F# has full support for programming with objects in .NET, including [classes](../language-reference/classes.md), [interfaces](../language-reference/interfaces.md), [access modifiers](../language-reference/access-control.md), [abstract classes](../language-reference/abstract-classes.md), and so on. For more complicated functional code, such as functions which must be context-aware, objects can easily encapsulate contextual information in ways that functions cannot. Features such as [optional parameters](../language-reference/members/methods.md#optional-arguments) and [overloading](../language-reference/members/methods.md#overloaded-methods) also aid consuption of this functionality for callers.
 
 4. **Good F# code performs well without exposing mutation**
 

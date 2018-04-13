@@ -452,4 +452,4 @@ let kernels =
     acc |> Seq.toList
 ```
 
-Aside from the single point of mutation in the middle of the lambda expression, all other code which works with `acc` no differently than if it were a normal let-bound immutable value. This will make it easier to change over time.
+Aside from the single point of mutation in the middle of the lambda expression, all other code which works with `acc` no differently than if it were a normal `let`-bound immutable value. This will make it easier to change over time.

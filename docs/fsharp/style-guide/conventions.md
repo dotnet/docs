@@ -2,7 +2,7 @@
 
 The following conventions are formulated from experience working with large F# codebases. The [Five principles of good F# code](index.md#five-principles-of-good-f-code) are the foundation of each recommendation. They are related to the [F# component design guidelines](component-design-guidelines.md), but are generally applicable for any F# code, not just components such as libraries.
 
-## Using namespaces and modules for code organization
+## Organizing code
 
 F# features two primarily ways to organize code: modules and namespaces. They are very similar, but do have the following differences:
 
@@ -360,3 +360,96 @@ Type inference can save you from typing a lot of boilerplate. And automatic gene
 Consider labeling argument names with explicit types in public APIs and do not rely on type inference for this. The reason for this is that **you** should be in control of the shape of your API, not the compiler. Although the compiler can do a fine job at infering types for you, it is possible to have the shape of your API change if the internals it relies on have changed types. This may be what you want, but it will almost certainly result in a breaking API change that downstream consumers will then have to deal with. Instead, if you explicitly control the shape of your public API, then you can control these breaking changes.
 
 Finally, automatic generalization is not always a boon for people who are new to F# or the codebase. There is cognitive overhead in using components which are generic, and if they not used with different input types (let alone if they are intended to be used as such), then there is no benefit to them being generic.
+
+## Performance
+
+F# values are immutable by default, which allows you to bypass certain classes of bugs (especially those involving concurrency and parallelism). However, code which is as performant as possible on a single thread must often use in-place mutation. This is possible in an opt-in basis with F# with the `mutable` keyword.
+
+However, use of `mutable` in F# may feel at odds with functional purity. This is actually fine, if you adjust expectations from purity to referential transparency. We argue that referential transparency - not purity - is the end goal when writing F# functions. This allows you to write a functional interface over a mutation-based implementation for performance critical code.
+
+### Wrap mutatable code in immutable interfaces
+
+With referential transparency as a goal, it is critical to write code which does not expose the mutable underbelly of performance-critical functions. For example, the following code implements the `Array.contains` function in the F# core library:
+
+```fsharp
+[<CompiledName("Contains")>]
+let inline contains value (array:'T[]) =
+    checkNonNull "array" array
+    let mutable state = false
+    let mutable i = 0
+    while not state && i < array.Length do
+        state <- value = array.[i]
+        i <- i + 1
+    state
+```
+
+Calling this function multiple times does not change the underlying array, nor does it require you to maintain any mutable state by yourself. It is referentially transparent, even though almost every line of code inside of it uses mutation.
+
+### Consider encapsulating mutable data in classes
+
+The previous example used a single function to encapsulate operations using mutable data. This is not always sufficient for more complicated information. Consider the following sets of functions:
+
+```fsharp
+let addToClosureTable (t: Dictionary<_,_>) (a, b) =
+    if not (t.Contains(a)) then
+        t.[1] <- HashSet<_>(HashIdentity.Structural)
+    
+    t.[a].Add(b)
+
+let closureTableCount (t: Dictionary<_,_>) = t.Count
+
+let closureTableContains (t: Dictionary<_, HashSet<_>>) (a, b) =
+    t.ContainsKey(a) && t.[a].Contains(b)
+```
+
+This code is performant, but it exposes the mutation-based data structure which callers are responsible for maintaining. This can be wrapped inside of a class with no underlying members that can change:
+
+```fsharp
+/// The results of computing the LALR(1) closure of an LR(0) kernel
+type Closure1Table() =
+    let t = Dictionary<Item0, HashSet<TerminalIndex>>()
+
+    member __.Add(a, b) =
+        if not (t.Contains(a)) then
+            t.[1] <- HashSet<_>(HashIdentity.Structural)
+    
+        t.[a].Add(b)
+
+    member __.Count = t.Count
+
+    member __.Contains(a, b) = t.ContainsKey(a) && t.[a].Contains(b)
+```
+
+Because this class has no members which can change, and its binding is immutable, it is also effectively immutable. Additionally, it safely encapsulates the underlying mutation-based data structure. Classes are a powerful way to encapsulate data and routines which are mutation-based without exposing the details to callers.
+
+### Prefer `let mutable` to reference cells
+
+Reference cells can be a powerful mechanism for pointer arithemetic, but are generally not ideal for other performance-critical code. Consider the following function:
+
+```fsharp
+let kernels =
+    let acc = ref Set.empty
+
+    ProcessWorkList startKernels (fun kernel ->
+        if not ((!acc).Contains(kernel)) then
+            acc := (!acc).Add(kernel)
+        ...)
+
+    !acc |> Seq.toList
+```
+
+The use of a reference cell now "pollutes" all subsequent code with having to dereference and re-reference the underlying data. Instead, consider `let mutable`:
+
+```fsharp
+let kernels =
+    let mutable acc = Set.empty
+
+    ProcessWorkList startKernels (fun kernel ->
+        if not (acc.Contains(kernel) then
+            acc <- acc.Add(kernel)
+        ...)
+
+    acc |> Seq.toList
+```
+
+Aside from the single point of mutation in the middle of the lambda expression, all other code which works with `acc` no differently than if it were a normal let-bound immutable value. This will make it easier to change over time.

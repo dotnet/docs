@@ -103,7 +103,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="sourceRect" /> is outside the boundaries of <paramref name="source" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginInit">

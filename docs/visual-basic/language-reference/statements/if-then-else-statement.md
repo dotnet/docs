@@ -49,7 +49,15 @@ End If
 ' Single-line syntax:  
 If condition Then [ statements ] [ Else [ elsestatements ] ]  
 ```  
-  
+
+## Quick links to example code
+
+This article includes several examples that illustrate uses of the `If`...`Then`...`Else`statement:
+
+* [Multiple-line syntax example](#multi-line)
+* [Nested syntax example](#nested)
+* [Single-line syntax example](#single-line)
+
 ## Parts  
  `condition`  
  Required. Expression. Must evaluate to `True` or `False`, or to a data type that is implicitly convertible to `Boolean`.  
@@ -73,6 +81,8 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
   
  `End If`  
  Terminates the `If`...`Then`...`Else` block.  
+
+
   
 ## Remarks  
   
@@ -93,17 +103,19 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
   
  In the single-line syntax, you can have multiple statements executed as the result of an `If`...`Then` decision. All statements must be on the same line and be separated by colons.  
   
-## Example  
+<a name="multi-line"></a>
+ 
  The following example illustrates the use of the multiple-line syntax of the `If`...`Then`...`Else` statement.  
   
  [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb)]  
   
-## Example  
+<a name="nested"></a>
+
  The following example contains nested `If`...`Then`...`Else` statements.  
   
  [!code-vb[VbVbalrStatements#102](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_2.vb)]  
   
-## Example  
+<a name="single-line"></a>
  The following example illustrates the use of the single-line syntax.  
   
  [!code-vb[VbVbalrStatements#103](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_3.vb)]  

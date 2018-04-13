@@ -364,11 +364,11 @@
       </Docs>
     </Member>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="public T&amp; this[int index] { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.T&amp; modreq(System.Runtime.InteropServices.InAttribute) Item(int32)" />
+      <MemberSignature Language="C#" Value="public T this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class !T modreq(System.Runtime.InteropServices.InAttribute) Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ReadOnlySpan`1.Item(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As T&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T&amp; ^ default[int] { T&amp; ^ get(int index); };" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T % default[int] { T % get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -384,7 +384,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.T&amp;</ReturnType>
+        <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />

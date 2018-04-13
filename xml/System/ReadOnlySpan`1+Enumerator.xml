@@ -29,11 +29,11 @@
   </Docs>
   <Members>
     <Member MemberName="Current">
-      <MemberSignature Language="C#" Value="public T&amp; Current { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.T&amp; modreq(System.Runtime.InteropServices.InAttribute) Current" />
+      <MemberSignature Language="C#" Value="public T Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class !T modreq(System.Runtime.InteropServices.InAttribute) Current" />
       <MemberSignature Language="DocId" Value="P:System.ReadOnlySpan`1.Enumerator.Current" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T&amp; ^ Current { T&amp; ^ get(); };" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T % Current { T % get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -45,7 +45,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.T&amp;</ReturnType>
+        <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

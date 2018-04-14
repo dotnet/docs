@@ -1,6 +1,6 @@
 ---
 title: "If...Then...Else Statement (Visual Basic)"
-ms.date: 07/20/2015
+ms.date: 04/13/2018
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ Conditionally executes a group of statements, depending on the value of an expre
 ## Syntax  
   
 ```  
-' Multiple-line syntax:  
+' Multiline syntax:  
 If condition [ Then ]  
     [ statements ]  
 [ ElseIf elseifcondition [ Then ]  
@@ -54,7 +54,7 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 
 This article includes several examples that illustrate uses of the `If`...`Then`...`Else`statement:
 
-* [Multiple-line syntax example](#multi-line)
+* [Multiline syntax example](#multi-line)
 * [Nested syntax example](#nested)
 * [Single-line syntax example](#single-line)
 
@@ -62,7 +62,7 @@ This article includes several examples that illustrate uses of the `If`...`Then`
  `condition`  
  Required. Expression. Must evaluate to `True` or `False`, or to a data type that is implicitly convertible to `Boolean`.  
   
- If the expression is a [Nullable](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)`Boolean` variable that evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md), the condition is treated as if the expression is not `True`, and the `Else` block is executed.  
+ If the expression is a [Nullable](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md) `Boolean` variable that evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md), the condition is treated as if the expression is `False` and the `Else` block is executed.  
   
  `Then`  
  Required in the single-line syntax; optional in the multiple-line syntax.  
@@ -80,14 +80,12 @@ This article includes several examples that illustrate uses of the `If`...`Then`
  Optional. One or more statements that are executed if no previous `condition` or `elseifcondition` expression evaluates to `True`.  
   
  `End If`  
- Terminates the `If`...`Then`...`Else` block.  
-
-
+ Terminates the multiline version of `If`...`Then`...`Else` block.  
   
 ## Remarks  
   
-## Multiple-Line Syntax  
- When an `If`...`Then`...`Else` statement is encountered, `condition` is tested. If `condition` is `True`, the statements following `Then` are executed. If `condition` is `False`, each `ElseIf` statement (if there are any) is evaluated in order. When a `True``elseifcondition` is found, the statements immediately following the associated `ElseIf` are executed. If no `elseifcondition` evaluates to `True`, or if there are no `ElseIf` statements, the statements following `Else` are executed. After executing the statements following `Then`, `ElseIf`, or `Else`, execution continues with the statement following `End If`.  
+### Multiline Syntax  
+ When an `If`...`Then`...`Else` statement is encountered, `condition` is tested. If `condition` is `True`, the statements following `Then` are executed. If `condition` is `False`, each `ElseIf` statement (if there are any) is evaluated in order. When a `True` `elseifcondition` is found, the statements immediately following the associated `ElseIf` are executed. If no `elseifcondition` evaluates to `True`, or if there are no `ElseIf` statements, the statements following `Else` are executed. After executing the statements following `Then`, `ElseIf`, or `Else`, execution continues with the statement following `End If`.  
   
  The `ElseIf` and `Else` clauses are both optional. You can have as many `ElseIf` clauses as you want in an `If`...`Then`...`Else` statement, but no `ElseIf` clause can appear after an `Else` clause. `If`...`Then`...`Else` statements can be nested within each other.  
   
@@ -96,24 +94,30 @@ This article includes several examples that illustrate uses of the `If`...`Then`
 > [!TIP]
 >  The [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md) might be more useful when you evaluate a single expression that has several possible values.  
   
-## Single-Line Syntax  
- You can use the single-line syntax for short, simple tests. However, the multiple-line syntax provides more structure and flexibility and is usually easier to read, maintain, and debug.  
+### Single-Line Syntax  
+ You can use the single-line syntax for a single condition with code to execute if it's true. However, the multiple-line syntax provides more structure and flexibility and is easier to read, maintain, and debug.  
   
  What follows the `Then` keyword is examined to determine whether a statement is a single-line `If`. If anything other than a comment appears after `Then` on the same line, the statement is treated as a single-line `If` statement. If `Then` is absent, it must be the start of a multiple-line `If`...`Then`...`Else`.  
   
  In the single-line syntax, you can have multiple statements executed as the result of an `If`...`Then` decision. All statements must be on the same line and be separated by colons.  
-  
+
+## Multiline Syntax Example
+
 <a name="multi-line"></a>
  
  The following example illustrates the use of the multiple-line syntax of the `If`...`Then`...`Else` statement.  
   
  [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb)]  
-  
+
+## Nested Syntax Example
+
 <a name="nested"></a>
 
  The following example contains nested `If`...`Then`...`Else` statements.  
   
  [!code-vb[VbVbalrStatements#102](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_2.vb)]  
+
+## Single-Line Syntax Example
   
 <a name="single-line"></a>
  The following example illustrates the use of the single-line syntax.  

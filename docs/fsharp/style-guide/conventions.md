@@ -35,9 +35,9 @@ type MyClass() =
     ...
 ```
 
-### Only use `[<AutoOpen>]` for nested private modules
+### Carefully apply `[<AutoOpen>]`
 
-The `[<AutoOpen>]` can pollute callers and the answer to where something comes from is "magic". The only exception to this rule is the F# Core Library itself (though this fact is also a bit controversial).
+The `[<AutoOpen>]` attribute can pollute callers and the answer to where something comes from is "magic". This is generally not a good thing. An exception to this rule is the F# Core Library itself (though this fact is also a bit controversial).
 
 However, it is a great convenience if you have more complicated helper functionality for a public API that you wish to organize separately from that public API.
 
@@ -57,6 +57,8 @@ module MyAPI =
 ```
 
 This lets you cleanly separate implementation details from the public API of a function without having to fully qualify a helper each time you call it.
+
+Additionally, exposing extension methods and expression builders at the namespace level can be easily done with `[<AutoOpen>]`.
 
 ### Use `[<RequireQualifiedAccess>]` whenever names could conflict or you feel it helps with readability
 
@@ -105,13 +107,13 @@ Instead, just use a simple class to hold dependencies:
 ```fsharp
 type MyParametricApi(dep1, dep2, dep3) =
     member __.Function1 arg1 = doStuffWith dep1 dep2 dep3 arg1
-    member __.Function2 arg2 = doStuffWith' dep1 dep2 dep3 arg2
+    member __.Function2 arg2 = doStuffWith dep1 dep2 dep3 arg2
 ```
 
 This enables the following:
 
 1. Pushing any dependent state outside of the API itself.
-2. Configuration can now be done outsie of the API.
+2. Configuration can now be done outside of the API.
 3. Errors in initialization for dependent values are not likely to manifest as a `TypeInitializationException`.
 4. The API is now easier to test.
 
@@ -191,9 +193,7 @@ Reconciling functionality to perform in the face of an exception with pattern ma
 
 ### Do not use monadic error handling to replace exceptions
 
-It is seen as somewhat taboo in functional programming to use exceptions. Indeed, exceptions violate purity and totality, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run. Even in purely functional languages like Haskell, programs such as ```2 `div` 0``` produce a runtime exception.
-
-F# runs on .NET, and exceptions are a key piece of .NET. This is not something to ignore or attempt to work around.
+It is seen as somewhat taboo in functional programming to use exceptions. Indeed, exceptions violate purity and totality, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run. F# runs on .NET, and exceptions are a key piece of .NET. This is not something to ignore or attempt to work around.
 
 There are 3 reasons why exceptions are good constructs in F# code:
 
@@ -219,7 +219,7 @@ match result with
     else ... // Who knows?
 ```
 
-Additionally, it can be tempting to simply swallow any exception in the desire for a "simple" function which returns a nicer type:
+Additionally, it can be tempting to simply swallow any exception in the desire for a "simple" function which returns a "nicer" type:
 
 ```fsharp
 // This is bad!
@@ -246,7 +246,17 @@ match r with
 
 And placing the exception object itself in the `Error` constructor just forces you to properly deal with the exception type at the call site rather than in the function.
 
-That said, types such as `Result<'Success, 'Error>` are perfectly fine for basic operations where they aren't nested, and F# optional types are perfect for representing when something could either reutrn *something* or *nothing*. They are not a replacement for exceptions, though, and should not be used in an attempt to replace exceptions.
+A good alternative to the above examples is to catch *specific* exceptions and return a meaningful value in the context of that exception. If you modify the `tryReadAllText` function as follows, `None` has more meaning:
+
+```fsharp
+let tryReadAllText (path : string) =
+    try System.IO.File.ReadAllText path |> Some
+    with :? FileNotFoundException -> None
+```
+
+Instead of functioning as a catch-all, this function will now properly handle the case when a file was not found and assign that meaning to a return value which can map to that error case.
+
+Types such as `Result<'Success, 'Error>` are perfectly fine for basic operations where they aren't nested, and F# optional types are perfect for representing when something could either reutrn *something* or *nothing*. They are not a replacement for exceptions, though, and should not be used in an attempt to replace exceptions. Rather, they are excellent options to use when combined with exception types which can map to these types conceptually.
 
 ## Partial application and point-free programming
 
@@ -261,24 +271,24 @@ With little exception, the use of partial application in public APIs can be conf
 Curried functions do not label their arguments, which has tooling implications. Consider the following two functions.
 
 ```fsharp
-let foo name age =
+let func name age =
     printfn "My name is %s and I am %d years old!" name age
 
-let foo' =
+let funcWithApplication =
     printfn "My name is %s and I am %d years old!"
 ```
 
 Both are valid functions, but `foo'` is a curried function. When you hover over their types, you see this:
 
 ```fsharp
-val foo : name:string -> age:int -> unit
+val func : name:string -> age:int -> unit
 
-val foo' : (string -> int -> unit)
+val funcWithApplication : (string -> int -> unit)
 ```
 
 At the call site, tooltips in tooling such as Visual Studio will not give you meaningful information as to what the `string` and `int` input types actually represent.
 
-If you encounter point-free code like `foo'` that is publically consumable, we recommend a full η-expansion so that tooling can pick up on meaningful names for arguments.
+If you encounter point-free code like `funcWithApplication` that is publically consumable, we recommend a full η-expansion so that tooling can pick up on meaningful names for arguments.
 
 Furthermore, debugging point-free code can be very challenging, if not impossible. Debugging tools rely on values bound to names (e.g., `let` bindings) so that you can inspect intermmediate values midway through execution. When your code has no values to inspect, there is nothing to debug. In the future, debugging tools may evolve to construct these values based on previously-executed functionality, but it's not a good idea to hedge your bets on *potential* debugging functionality.
 
@@ -357,9 +367,19 @@ F# has multiple options for [Access control](../language-reference/access-contro
 
 Type inference can save you from typing a lot of boilerplate. And automatic generalization in the F# compiler can help you write more generic code with almost no extra effort on your part. However, these features are not universally good.
 
-Consider labeling argument names with explicit types in public APIs and do not rely on type inference for this. The reason for this is that **you** should be in control of the shape of your API, not the compiler. Although the compiler can do a fine job at infering types for you, it is possible to have the shape of your API change if the internals it relies on have changed types. This may be what you want, but it will almost certainly result in a breaking API change that downstream consumers will then have to deal with. Instead, if you explicitly control the shape of your public API, then you can control these breaking changes.
+* Consider labeling argument names with explicit types in public APIs and do not rely on type inference for this.
 
-Finally, automatic generalization is not always a boon for people who are new to F# or the codebase. There is cognitive overhead in using components which are generic, and if they not used with different input types (let alone if they are intended to be used as such), then there is no benefit to them being generic.
+    The reason for this is that **you** should be in control of the shape of your API, not the compiler. Although the compiler can do a fine job at infering types for you, it is possible to have the shape of your API change if the internals it relies on have changed types. This may be what you want, but it will almost certainly result in a breaking API change that downstream consumers will then have to deal with. Instead, if you explicitly control the shape of your public API, then you can control these breaking changes.
+
+* Consider giving a meaningful name to your generic arguments.
+
+    Unless you are writing truly generic code which is not specific to a particular domain, a meaningful name can help other programmers understanding the domain they're working in. For example, a type parameter named `'Document` in the context of interacting with a document database makes it clearer that generic document types can be accepted by the function or member you are working with.
+
+* Consider naming generic type parameters with PascalCase
+
+    This is the general way to do things in .NET, so it's recommended that you use PascalCase rather than lower case or camelCase.
+
+Finally, automatic generalization is not always a boon for people who are new to F# or the codebase. There is cognitive overhead in using components which are generic. Furthermore, if automatically generalized functions are not used with different input types (let alone if they are intended to be used as such), then there is no real benefit to them being generic at this point in time.
 
 ## Performance
 

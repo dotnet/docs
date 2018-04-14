@@ -107,7 +107,7 @@ This article includes several examples that illustrate uses of the `If`...`Then`
  
  The following example illustrates the use of the multiple-line syntax of the `If`...`Then`...`Else` statement.  
   
- [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb)]?highlight=10,12,14,16 
 
 ## Nested Syntax Example
 
@@ -122,7 +122,7 @@ This article includes several examples that illustrate uses of the `If`...`Then`
 <a name="single-line"></a>
  The following example illustrates the use of the single-line syntax.  
   
- [!code-vb[VbVbalrStatements#103](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#103](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_3.vb)]?highlight=18  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Interaction.Choose%2A>  

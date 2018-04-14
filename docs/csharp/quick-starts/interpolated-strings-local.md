@@ -26,7 +26,7 @@ dotnet new console -n interpolated -o .
 
 This command creates a new .NET Core console application in the current directory.
 
-Open **Program.cs** in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code, where you replace `<name>` with your name:
+Open **Program.cs** in your favourite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code, where you replace `<name>` with your name:
 
 ```csharp
 var name = "<name>";

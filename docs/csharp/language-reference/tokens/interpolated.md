@@ -75,7 +75,7 @@ The following example uses implicit conversion to <xref:System.FormattableString
 
 [!code-csharp-interactive[create culture-specific result strings](../../../../samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#4)]
 
-If you are new to the string interpolation, check the [String interpolation in C#](../../quick-starts//interpolated-strings.yml) quickstart. For more examples, see the [string interpolation tutorial](../../tutorials/string-interpolation.md).
+If you are new to the string interpolation, check the [String interpolation in C#](../../quick-starts/interpolated-strings.yml) quickstart. For more examples, see the [string interpolation tutorial](../../tutorials/string-interpolation.md).
 
 ## See also  
  <xref:System.String.Format%2A?displayProperty=nameWithType>  

@@ -57,7 +57,7 @@ This quickstart assumes that you have finished the [Hello World](hello-world.yml
 
 ## [String interpolation](interpolated-strings.yml)
 
-The [String interpolation](interpolated-strings.yml) quickstart shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded values and how to control the appearance of those values in the result string. This quickstart is also available [to run locally on your machine](interpolated-strings-local.md).
+The [String interpolation](interpolated-strings.yml) quickstart shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string. This quickstart is also available [to run locally on your machine](interpolated-strings-local.md).
 
 This quickstart assumes that you have finished the [Hello World](hello-world.yml), [Numbers in C#](numbers-in-csharp.yml), and [Branches and loops](branches-and-loops.yml) lessons.
 

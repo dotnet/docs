@@ -73,7 +73,7 @@ This statement tells the compiler that any types from the `System` namespace
 are in scope. Like other Object Oriented languages you may have used, C#
 uses namespaces to organize types. This Hello World program is no
 different. You can see that the program is enclosed in the namespace with the name 
-based on the name of the current directory. If that is not what you want, change the name of the namespace to `TeleprompterConsole`:
+based on the name of the current directory. For this tutorial, let's change the name of the namespace to `TeleprompterConsole`:
 
 ```csharp
 namespace TeleprompterConsole
@@ -83,7 +83,7 @@ namespace TeleprompterConsole
 
 The first feature to add is the ability to read a text file and display all that text to the console. First, let’s add a text file. Copy the [sampleQuotes.txt](https://github.com/dotnet/samples/raw/master/csharp/getting-started/console-teleprompter/sampleQuotes.txt) file from the GitHub repository for this [sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-teleprompter) into your project directory. This will serve as the script for your application. If you would like information on how to download the sample app for this topic, see the instructions in the [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples) topic.
 
-Next, add the following method in the `Program` class (right below the `Main` method):
+Next, add the following method in your `Program` class (right below the `Main` method):
 
 ```csharp
 static IEnumerable<string> ReadFrom(string file)
@@ -279,7 +279,7 @@ operator. That would result in the application exiting before all tasks
 have completed.
 
 > [!NOTE]
-> If you use C# 7.1 or later, you can have [`async` `Main` method](../whats-new/csharp-7-1.md#async-main).
+> If you use C# 7.1 or later, you can create console applications with [`async` `Main` method](../whats-new/csharp-7-1.md#async-main).
 
 Next, you need to write the second asynchronous method to read from the
 Console and watch for the ‘<’ and ‘>’ keys. Here’s the method you add for

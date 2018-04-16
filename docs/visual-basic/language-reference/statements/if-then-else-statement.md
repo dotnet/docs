@@ -105,9 +105,9 @@ This article includes several examples that illustrate uses of the `If`...`Then`
 
 <a name="multi-line"></a>
  
- The following example illustrates the use of the multiple-line syntax of the `If`...`Then`...`Else` statement.  
+ The following example illustrates the use of the multiline syntax of the `If`...`Then`...`Else` statement.  
   
- [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb?highlight=10,12,14,16)]
+ [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb?highlight=11,14,17,19)]
 
 ## Nested syntax example
 

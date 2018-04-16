@@ -28,3 +28,5 @@ Module Nested
         End If
     End Function
 End Module
+'This example displays output like the following:
+'Time Check is False.

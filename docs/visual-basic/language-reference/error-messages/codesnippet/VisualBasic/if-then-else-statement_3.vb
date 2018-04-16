@@ -24,3 +24,10 @@ Module SingleLine
 
     End Sub
 End Module
+'This example displays output like the following:
+'A value before If: 11
+'B value before If: 6
+'C value before If: 3
+'A value after If: 12
+'B value after If: 18
+'C value after If: 21

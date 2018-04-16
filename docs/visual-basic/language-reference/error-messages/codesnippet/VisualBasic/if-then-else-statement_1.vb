@@ -21,3 +21,5 @@ Module Multiline
         Console.WriteLine(message)
     End Sub
 End Module
+'This example displays output like the following:
+' There are 4 items.

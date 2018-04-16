@@ -115,7 +115,7 @@ This article includes several examples that illustrate uses of the `If`...`Then`
 
  The following example contains nested `If`...`Then`...`Else` statements.  
   
- [!code-vb[VbVbalrStatements#102](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_2.vb?highlight=14,15,17,18,19,20,21,23,25,26,28)]
+ [!code-vb[VbVbalrStatements#102](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_2.vb?highlight=14,15,17,19,20,21,23,25,26,28)]
 
 ## Single-Line Syntax Example
   

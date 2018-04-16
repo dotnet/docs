@@ -14,8 +14,6 @@ ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 
 # Console Application
 
-## Introduction
-
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 
 - The basics of the .NET Core Command Line Interface (CLI)

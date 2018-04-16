@@ -1008,14 +1008,14 @@
   
  The location of `meth` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
   
- If `meth` represents a generic method, it must be a generic method definition. That is, its <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A?displayProperty=nameWithType> property must be `true`.  
+ If `meth` represents a generic method, it must be a generic method definition. That is, its [MethodInfo.IsGenericMethodDefinition](xref:System.Reflection.MethodBase.IsGenericMethodDefinition) property must be `true`.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="meth" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="meth" /> is a generic method for which the <see cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" /> property is <see langword="false" />.</exception>
+          <paramref name="meth" /> is a generic method for which the <see cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Emit">

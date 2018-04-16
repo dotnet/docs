@@ -387,7 +387,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
         <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
-        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
         <altmember cref="M:System.Reflection.MethodInfo.GetGenericMethodDefinition" />
         <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
@@ -463,7 +463,7 @@ public:
 };  
 ```  
   
- In the constructed type `C<int>` (`C(Of Integer)` in Visual Basic), the generic method `M` returns `B<int, S>`. In the open type `C<T>`, `M` returns `B<T, S>`. In both cases, the <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A> property returns `true` for the <xref:System.Reflection.MethodInfo> that represents `M`, so <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> can be called on both <xref:System.Reflection.MethodInfo> objects. In the case of the constructed type, the result of calling <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> is a <xref:System.Reflection.MethodInfo> that can be invoked. In the case of the open type, the <xref:System.Reflection.MethodInfo> returned by <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> cannot be invoked.  
+ In the constructed type `C<int>` (`C(Of Integer)` in Visual Basic), the generic method `M` returns `B<int, S>`. In the open type `C<T>`, `M` returns `B<T, S>`. In both cases, the <xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A> property returns `true` for the <xref:System.Reflection.MethodInfo> that represents `M`, so <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> can be called on both <xref:System.Reflection.MethodInfo> objects. In the case of the constructed type, the result of calling <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> is a <xref:System.Reflection.MethodInfo> that can be invoked. In the case of the open type, the <xref:System.Reflection.MethodInfo> returned by <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> cannot be invoked.  
   
  For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodBase.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
   
@@ -486,7 +486,7 @@ public:
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The current method is not a generic method. That is, <see cref="P:System.Reflection.MethodInfo.IsGenericMethod" /> returns <see langword="false" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The current method is not a generic method. That is, <see cref="P:System.Reflection.MethodBase.IsGenericMethod" /> returns <see langword="false" />.</exception>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
         <altmember cref="M:System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])" />
         <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />

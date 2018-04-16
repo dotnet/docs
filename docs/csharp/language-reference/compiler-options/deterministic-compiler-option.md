@@ -11,8 +11,8 @@ helpviewer_keywords:
   - "-deterministic compiler option [C#]"
   - "deterministic compiler option [C#]"
   - "/deterministic compiler option [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
+author: "rpetrusha"
+ms.author: "ronpet"
 ---
 # -deterministic
 
@@ -26,7 +26,7 @@ Causes the compiler to produce an assembly whose byte-for-byte output is identic
 
 ## Remarks
 
-By default, compiler output from a given set of inputs is unique, since the compiler adds a timestamp and a GUID that is generated from random numbers. You use the `-deterministic` option to produce a *deterministic assembly**, one whose binary content is identical across compilations as long as the input remains the same.
+By default, compiler output from a given set of inputs is unique, since the compiler adds a timestamp and a GUID that is generated from random numbers. You use the `-deterministic` option to produce a *deterministic assembly*, one whose binary content is identical across compilations as long as the input remains the same.
 
 The compiler considers the following inputs for the purpose of determinism:
 

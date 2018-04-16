@@ -3,7 +3,7 @@ title: Serverless architecture | Serverless apps. Architecture, patterns, and Az
 description: Exploration of various architectures and applications that are supported by serverless architectures, including web apps, mobile, and the Internet of Things.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 3/20/2018
+ms.date: 4/16/2018
 ms.prod: .net
 ms.technology: dotnet
 ms.topic: article
@@ -12,28 +12,30 @@ ms.topic: article
 
 There are many approaches to using serverless architectures. This chapter explores examples of common architectures that integrate serverless. It also covers concerns that may pose additional challenges or require extra consideration when implementing serverless. Finally, several design examples are provided that illustrate various serverless use cases.
 
-Serverless hosts often use an existing container-based or PaaS layer to manage the serverless instances. For example, Azure Functions is based on [Azure App Service](/azure/app-service/). The App Service is used to scale out instances and manage the runtime that executes Azure Functions code.
+Serverless hosts often use an existing container-based or PaaS layer to manage the serverless instances. For example, Azure Functions is based on [Azure App Service](/azure/app-service/). The App Service is used to scale out instances and manage the runtime that executes Azure Functions code. For Windows-based functions, the host runs as PaaS and scales out the .NET runtime. For Linux-based functions, the host leverages containers.
 
 ![Azure Functions architecture](./media/azure-functions-architecture.png)
 
-Some projects may benefit from taking an "all-in" approach to serverless. Applications that rely heavily on microservices may implement all microservices using serverless technology. The majority of apps are hybrid, following an N-tier design and using serverless for the components that make sense because they are modular and independently scalable. To help make sense of these scenarios, this section walks through some common architecture examples that use serverless.
+The WebJobs Core provides an execution context for the function. The Language Runtime runs scripts, executes libraries and hosts the framework for the target language. For example, Node.js is used to run JavaScript functions and the .NET Framework is used to run C# functions. You'll learn more about language and platform options later in this chapter.
+
+Some projects may benefit from taking an "all-in" approach to serverless. Applications that rely heavily on microservices may implement all microservices using serverless technology. The majority of apps are hybrid, following an N-tier design and using serverless for the components that make sense because the components are modular and independently scalable. To help make sense of these scenarios, this section walks through some common architecture examples that use serverless.
 
 ## Full serverless backend
 
-The full serverless backend is ideal for several types of scenarios, especially when building new or "green field" applications. An application with a large surface area of APIs may benefit from implementing each API as a serverless functions. Apps that are based on microservices architecture are another example that could be implemented as a full serverless backend. The microservices communicate over various protocols with each other. Specific scenarios include:
+The full serverless backend is ideal for several types of scenarios, especially when building new or "green field" applications. An application with a large surface area of APIs may benefit from implementing each API as a serverless function. Apps that are based on microservices architecture are another example that could be implemented as a full serverless backend. The microservices communicate over various protocols with each other. Specific scenarios include:
 
 * API-based SaaS product (example: financial payments processor)
 * Message-driven applications (example: device monitoring solution)
 * App focused on integration between services (example: airline booking application)
 * Processes that run periodically (example: timer-based database clean-up)
-* Apps that are focus on data transformation (example: import triggered by file upload)
+* Apps focused on data transformation (example: import triggered by file upload)
 * Extract Transform and Load (ETL)
 
 There are other, more specific use cases that are covered later in this document.
 
 ## Monoliths and "starving the beast"
 
-A common challenge is migrating an existing monolithic application to the cloud. The least risky approach is to "life and shift" entirely onto virtual machines. Many shops prefer to use the migration as an opportunity to modernize their code base. A practical approach to migration is called "starving the beast." In this scenario, the monolith is migrated "as is" to start with. Then, select services are modernized. In some cases, the signature of the service is identical to the original, it simply is hosted as a function. Clients are updated to use the new service rather than the monolith endpoint. In the interim, steps such as database replication enable microservices to host their own storage even when transactions are still handled by the monolith. Eventually, all clients are migrated onto the new services. The monolith is "starved" (its services no longer called) until all functionality has been replaced. The combination of serverless and proxies can facilitate much this migration.
+A common challenge is migrating an existing monolithic application to the cloud. The least risky approach is to "life and shift" entirely onto virtual machines. Many shops prefer to use the migration as an opportunity to modernize their code base. A practical approach to migration is called "starving the beast." In this scenario, the monolith is migrated "as is" to start with. Then, selected services are modernized. In some cases, the signature of the service is identical to the original: it simply is hosted as a function. Clients are updated to use the new service rather than the monolith endpoint. In the interim, steps such as database replication enable microservices to host their own storage even when transactions are still handled by the monolith. Eventually, all clients are migrated onto the new services. The monolith is "starved" (its services no longer called) until all functionality has been replaced. The combination of serverless and proxies can facilitate much of this migration.
 
 ![Serverless monolith migration](./media/serverless-monolith-migration.png)
 
@@ -41,7 +43,7 @@ To learn more about this approach, watch the video: [Bring your app to the cloud
 
 ## Web apps
 
-Web apps are great candidates for serverless applications. There are two common approaches to web apps today: server-driven, and client-driven (such as Single Page Application or SPA). Server-driven web apps typically use a middleware layer to issue API calls to render the web UI. SPA applications make REST API calls directly from the browser. In both scenarios, serverless can accommodate the middleware or REST API request by providing the necessary business logic. A common architecture is to stand up a lightweight static web server that serves HTML, CSS, JavaScript, and other browser assets. The web app then connects to a microservices backend.
+Web apps are great candidates for serverless applications. There are two common approaches to web apps today: server-driven, and client-driven (such as Single Page Application or SPA). Server-driven web apps typically use a middleware layer to issue API calls to render the web UI. SPA applications make REST API calls directly from the browser. In both scenarios, serverless can accommodate the middleware or REST API request by providing the necessary business logic. A common architecture is to stand up a lightweight static web server. The Single Page Application (SPA) serves HTML, CSS, JavaScript, and other browser assets. The web app then connects to a microservices backend.
 
 ## Mobile back-ends
 
@@ -53,7 +55,7 @@ Serverless abstracts the server-side dependencies and enables the developer to f
 
 ![Serverless mobile backend](./media/serverless-mobile-backend.png)
 
-Most cloud providers offer mobile-based serverless products that simplify the entire mobile development lifecycle. The products may automate the provisioning of databases to persist data, automate DevOps concerns, provide cloud-based builds and testing frameworks and the ability to script business processes using the developer's preferred language. Following a mobile-centric serverless approach can streamline the process. Serverless removes the tremendous overhead of provisioning, configuring, and maintaining servers for the mobile backend.
+Most cloud providers offer mobile-based serverless products that simplify the entire mobile development lifecycle. The products may automate the provisioning of databases to persist data, handle DevOps concerns, provide cloud-based builds and testing frameworks and the ability to script business processes using the developer's preferred language. Following a mobile-centric serverless approach can streamline the process. Serverless removes the tremendous overhead of provisioning, configuring, and maintaining servers for the mobile backend.
 
 ## Internet of Things (IoT)
 
@@ -66,7 +68,7 @@ The sheer volume of devices and information often dictates an event-driven archi
 * Facilitates independent versioning so developers can update the business logic for a specific device without having to deploy the entire system
 * Resiliency and less downtime
 
-The pervasiveness of IoT has resulted in several serverless products that focus specifically on IoT concerns. Serverless automates tasks such as device registration, policy enforcement, tracking, and even deployment of code to devices at "the edge."
+The pervasiveness of IoT has resulted in several serverless products that focus specifically on IoT concerns, such as [Azure IoT Hub](/azure/iot-hub). Serverless automates tasks such as device registration, policy enforcement, tracking, and even deployment of code to devices at *the edge*. The edge refers to devices like sensors and actuators that are connected to, but not an active part of, the Internet.
 
 >[!div class="step-by-step"]
 [Previous] (../architecture-approaches/index.md)

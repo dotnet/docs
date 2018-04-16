@@ -3,7 +3,7 @@ title: Serverless apps. Architecture, patterns, and Azure implementation.
 description: Guide to serverless architecture. Learn when, why, and how to implement a serverless architecture (as opposed to Infrastructure-as-a-Service [IaaS] or Platform-as-a-Service [PaaS]) for your enterprise applications.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 4/10/2018
+ms.date: 4/16/2018
 ms.prod: .net
 ms.technology: dotnet
 ms.topic: article
@@ -55,7 +55,7 @@ Participants and reviewers:
 
 ## Introduction
 
-Serverless is the evolution of cloud platforms in the direction of pure cloud native code that brings developers closer to business logic while insulating them from infrastructure concerns. It's a pattern that doesn't imply "no server" but rather, "less server". Serverless code is event-driven. Code may be triggered by anything from a traditional HTTP web request to a timer or the result of uploading a file. The infrastructure behind serverless allows for instant scale to meet elastic demands and offers micro-billing to truly "pay for what you use." Serverless requires a new way thinking and approach to building applications and is not the right solution for every problem. As a developer, you must decide:
+Serverless is the evolution of cloud platforms in the direction of pure cloud native code. Serverless brings developers closer to business logic while insulating them from infrastructure concerns. It's a pattern that doesn't imply "no server" but rather, "less server." Serverless code is event-driven. Code may be triggered by anything from a traditional HTTP web request to a timer or the result of uploading a file. The infrastructure behind serverless allows for instant scale to meet elastic demands and offers micro-billing to truly "pay for what you use." Serverless requires a new way thinking and approach to building applications and is not the right solution for every problem. As a developer, you must decide:
 
 * What are the pros and cons of serverless?
 * Why should you consider serverless for your own applications?
@@ -64,13 +64,13 @@ Serverless is the evolution of cloud platforms in the direction of pure cloud na
 
 ## About this guide
 
-This guide focuses on cloud native development of applications that use serverless. It highlights the benefits and exposes the potential drawbacks of developing serverless apps and provides a survey of serverless architectures. It illustrates numerous examples of how serverless can be used and details various serverless design patterns.
+This guide focuses on cloud native development of applications that use serverless. The book highlights the benefits and exposes the potential drawbacks of developing serverless apps and provides a survey of serverless architectures. Numerous examples of how serverless can be used are illustrated along with various serverless design patterns.
 
 This guide explains the components of the Azure serverless platform and focuses specifically on implementation of serverless using [Azure Functions](/azure/azure-functions/functions-overview). You will learn about triggers and bindings as well as how to implement serverless apps that rely on state using durable functions. Finally, business examples and case studies will help provide context and a frame of reference to determine whether serverless is the right approach for your projects.
 
 ## Evolution of cloud platforms
 
-Serverless is the culmination of several iterations of cloud platforms.
+Serverless is the culmination of several iterations of cloud platforms. The evolution began with physical metal in the data center progressed through Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS).
 
 ![Evolution from on-premises to serverless](./media/serverless-evolution-iaas-paas.png)
 
@@ -82,26 +82,33 @@ Before the cloud a discernable boundary existed between development and operatio
 * Where are storage backups sent?
 * Should there be redundant power?
 
-The list goes on and the overhead was enormous. In many situations, IT departments were forced to deal with incredible waste. The waste was due to over-allocation of servers as backup machines for disaster recovery and standby servers to enable scale out. Fortunately, the introduction of virtualization technology (like [Hyper-V](/virtualization/hyper-v-on-windows/about/)) with Virtual Machines (VMs) gave rise to Infrastructure-as-a-Service (IaaS). Virtualized infrastructure allowed operations to stand up a standard set of servers as the backbone, leading to a flexible environment capable of provisioning unique servers "on demand." More important, virtualization set the stage for using the cloud to provide virtual machines "as a service." Companies could easily get out of the business of worrying about redundant power or physical machines. Instead, they focused on the virtual environment.
+The list goes on and the overhead was enormous. In many situations, IT departments were forced to deal with incredible waste. The waste was due to over-allocation of servers as backup machines for disaster recovery and standby servers to enable scale-out. Fortunately, the introduction of virtualization technology (like [Hyper-V](/virtualization/hyper-v-on-windows/about/)) with Virtual Machines (VMs) gave rise to Infrastructure-as-a-Service (IaaS). Virtualized infrastructure allowed operations to stand up a standard set of servers as the backbone, leading to a flexible environment capable of provisioning unique servers "on demand." More important, virtualization set the stage for using the cloud to provide virtual machines "as a service." Companies could easily get out of the business of worrying about redundant power or physical machines. Instead, they focused on the virtual environment.
 
-IaaS still requires heavy overhead because operation is still responsible for various tasks. These include patching and backing up servers, installing packages, keeping the operating, system up to date and monitoring the application. The next evolution solved the overhead by providing Platform-as-a-Service (PaaS). With PaaS, the cloud provider handles operating systems, security patches, and even the required packages to support a specific platform. Instead of building a VM then configuring the .NET Framework and standing up Internet Information Services (IIS) servers, developers simply choose a "platform target" such as "web application" or "API endpoint" and deploy code directly. The infrastructure questions are reduced to:
+IaaS still requires heavy overhead because operations is still responsible for various tasks. These include:
+
+* Patching and backing up servers.
+* Installing packages.
+* Keeping the operating system up to date 
+* Monitoring the application. 
+
+The next evolution reduced the overhead by providing Platform-as-a-Service (PaaS). With PaaS, the cloud provider handles operating systems, security patches, and even the required packages to support a specific platform. Instead of building a VM then configuring the .NET Framework and standing up Internet Information Services (IIS) servers, developers simply choose a "platform target" such as "web application" or "API endpoint" and deploy code directly. The infrastructure questions are reduced to:
 
 * What size services are needed?
-* How do the services scale out?
-* How do the services scale up?
+* How do the services scale out (add more servers or nodes)?
+* How do the services scale up (increase the capacity of hosting servers or nodes)?
 
-Serverless further abstracts servers by focusing on event-driven code. Instead of a platform, developers can literally focus on a microservice that does one thing. The two key questions for building the serverless code are:
+Serverless further abstracts servers by focusing on event-driven code. Instead of a platform, developers can focus on a microservice that does one thing. The two key questions for building the serverless code are:
 
 * What triggers the code?
 * What does the code do?
 
-With serverless, infrastructure is abstracted. In fact, in some cases the developer no longer must worry about the host at all. Whether or not an instance of IIS, Kestrel, Apache, or some other web server is running to manage web requests, the developer focuses on an HTTP trigger. The trigger provides the standard, cross-platform payload for a request and a response. The payload not only simplifies the development process, but facilitates testing and in some cases, makes the code easily portable across platforms.
+With serverless, infrastructure is abstracted. In some cases, the developer no longer worries about the host at all. Whether or not an instance of IIS, Kestrel, Apache, or some other web server is running to manage web requests, the developer focuses on an HTTP trigger. The trigger provides the standard, cross-platform payload for the request. The payload not only simplifies the development process, but facilitates testing and in some cases, makes the code easily portable across platforms.
 
-Another feature of serverless is micro-billing. Imagine an application with 100 endpoints running on PaaS that is paid for to be available around the clock. If 99 APIs are mostly idle and a single API is called hundreds of millions of times per day, it may make sense to migrate the app to serverless and only pay for usage. Migration may in many circumstances dramatically reduce the ongoing cost to support the endpoints.
+Another feature of serverless is micro-billing. It is common for web applications to host Web API endpoints. In traditional bare metal, IaaS and even PaaS implementations, the resources to host the APIs are paid for continuously. That means you pay to host the endpoints even when they aren't being accessed. Often you'll find one API is called more than others, so the entire system is scaled based on supporting the popular endpoints. Serverless enables you to scale each endpoint independently and pay for usage, so no costs are incurred when the APIs aren't being called. Migration may in many circumstances dramatically reduce the ongoing cost to support the endpoints.
 
 ## What this guide does not cover
 
-This guide specifically emphasizes architecture approaches and design patterns and is not a "deep dive" into the implementation details of Azure Functions, [Logic Apps](/azure/logic-apps/logic-apps-what-are-logic-apps), or other serverless platforms. This guide does not cover, for example, advanced workflows with Logic Apps or features of Azure Functions such as configuring Cross-Origin Resource Sharing (CORS), applying custom domains, or uploading SSL certificates. These details are available through the online [Azure Functions documentation](/azure/azure-functions/functions-reference).
+This guide specifically emphasizes architecture approaches and design patterns and is not a deep dive into the implementation details of Azure Functions, [Logic Apps](/azure/logic-apps/logic-apps-what-are-logic-apps), or other serverless platforms. This guide does not cover, for example, advanced workflows with Logic Apps or features of Azure Functions such as configuring Cross-Origin Resource Sharing (CORS), applying custom domains, or uploading SSL certificates. These details are available through the online [Azure Functions documentation](/azure/azure-functions/functions-reference).
 
 ### Additional resources
 

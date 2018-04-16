@@ -3,18 +3,18 @@ title: Azure Logic Apps | Serverless apps. Architecture, patterns, and Azure imp
 description: Azure Logic Apps enable building automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 4/4/2018
+ms.date: 4/18/2018
 ms.prod: .net
 ms.technology: dotnet
 ms.topic: article
 ---
 # Azure Logic Apps
 
-[Azure Logic Apps](/azure/logic-apps) provides a serverless engine to build automated workflows to integrate apps and data between cloud services and on-premises systems. s you build workflows using a visual designer. You can trigger workflows based on events or timers and leverage connectors to integration applications and facilitate business-to-business (B2B) communication. Logic Apps integrates seamlessly with Azure Functions.
+[Azure Logic Apps](/azure/logic-apps) provides a serverless engine to build automated workflows to integrate apps and data between cloud services and on-premises systems. You build workflows using a visual designer. You can trigger workflows based on events or timers and leverage connectors to integration applications and facilitate business-to-business (B2B) communication. Logic Apps integrates seamlessly with Azure Functions.
 
 ![Azure Logic Apps logo](./media/logic-apps/logic-apps-logo.png)
 
-Do more than connect your cloud services like functions with cloud resources using Logic Apps. You can also orchestrate on-premises workflows with the on-premises gateway. For example, you can trigger a SQL stored procedure in response to a cloud-based event or conditional logic in your workflow.
+Logic Apps are able to do more than just connect your cloud services (like functions) with cloud resources (like queues and databases). You can also orchestrate on-premises workflows with the on-premises gateway. For example, you can used the Logic App to trigger an on-premises SQL stored procedure in response to a cloud-based event or conditional logic in your workflow. Learn more about [Connecting to on-premises data sources with Azure On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway).
 
 ![Logic Apps architecture](./media/logic-apps/logic-apps-architecture.png)
 

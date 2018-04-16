@@ -3,14 +3,14 @@ title: Application Insights | Serverless apps. Architecture, patterns, and Azure
 description: Application Insights is a serverless diagnostics platform that enables developers to detect, triage, and diagnose issues in web apps, mobile apps, desktop apps and microservices.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 4/4/2018
+ms.date: 4/18/2018
 ms.prod: .net
 ms.technology: dotnet
 ms.topic: article
 ---
 # Telemetry with Application Insights
 
-[Application Insights](/azure/application-insights) is a serverless diagnostics platform that enables developers to detect, triage, and diagnose issues in web apps, mobile apps, desktop apps, and microservices. You can turn on Application Insights for function apps simply by flipping a switch in the portal.
+[Application Insights](/azure/application-insights) is a serverless diagnostics platform that enables developers to detect, triage, and diagnose issues in web apps, mobile apps, desktop apps, and microservices. You can turn on Application Insights for function apps simply by flipping a switch in the portal. Application insights provides all of these capabilities without you having to configure a server or set up your own database. All of Application Insight's capabilities are provided as a service that automatically integrates with your apps.
 
 ![Application Insights logo](./media/application-insights/application-insights-logo.png)
 

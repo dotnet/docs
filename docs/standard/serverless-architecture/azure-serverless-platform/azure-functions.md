@@ -30,7 +30,7 @@ For more information, see: [Compare 1.x and 2.x](/azure/azure-functions/function
 
 ## Programming language support
 
-The following languages are supported either in general availability, preview, or experimental.
+The following languages are supported either in general availability (GA), preview, or experimental.
 
 |Language      |1.x         |2.x      |
 |--------------|------------|---------|

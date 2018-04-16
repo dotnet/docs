@@ -14,19 +14,20 @@ There are many design patterns that exist for serverless. This section captures 
 
 ## Scheduling
 
-Scheduling tasks is a common function. The following diagram represents a legacy database that doesn't have appropriate integrity checks. The database must be scrubbed periodically. The serverless function finds invalid data and cleans it. The trigger is a timer that runs the code on a schedule.
+Scheduling tasks is a common function. The following diagram shows a legacy database that doesn't have appropriate integrity checks. The database must be scrubbed periodically. The serverless function finds invalid data and cleans it. The trigger is a timer that runs the code on a schedule.
 
 ![Serverless scheduling](./media/serverless-design-examples/serverless-scheduling.png)
 
 ## Command and Query Responsibility Segregation (CQRS)
 
-Command and Query Responsibility Segregation (CQRS) is a pattern that provides different interfaces for reading (or querying) data and operations that modify data. It addresses several common problems. In traditional Create Read Update Delete (CRUD) based systems, conflicts can arise from high volume of both reads and writes to the same data store. Locking may frequently occur and dramatically slow down reads. Often, data is presented as a composite of several domain objects and read operations must aggregate data from different entities.
+Command and Query Responsibility Segregation (CQRS) is a pattern that provides different interfaces for reading (or querying) data and operations that modify data. It addresses several common problems. In traditional Create Read Update Delete (CRUD) based systems, conflicts can arise from high volume of both reads and writes to the same data store. Locking may frequently occur and dramatically slow down reads. Often, data is presented as a composite of several domain objects and read operations must combine data from different entities.
 
-Using CQRS, a read might involve a special "flattened" entity that represents data the way it is consumed. The read is represented different than how it is stored. For example, although the database may represent a contact as a header record with a child address record, the read may involve an entity with both header and address properties. There are myriad approaches to providing the read model. It may be materialized from views. Update operations may be encapsulated as isolated events that then trigger updates to two different models. Separate models exist for reading and writing.
+Using CQRS, a read might involve a special "flattened" entity that models data the way it's consumed. The read is handled differently than how it's stored. For example, although the database may store a contact as a header record with a child address record, the read could involve an entity with both header and address properties. There are myriad approaches to creating the read model. It might be materialized from views. Update operations could be encapsulated as isolated events that then trigger updates to two different models. Separate models exist for reading and writing.
 
 ![CQRS example](./media/serverless-design-examples/cqrs-example.png)
 
-Serverless can accommodate the CQRS pattern by providing the segregated endpoints. One serverless function accommodates queries or reads, and a different serverless function or set of functions handles update operations. Front-end development is simplified to connecting to the necessary endpoints and processing of events is handled on the backend. This model also scales well for large projects because different teams may work on different operations.
+Serverless can accommodate the CQRS pattern by providing the segregated endpoints. One serverless function accommodates queries or reads, and a different serverless function or set of functions handles update operations. A serverless function may also be responsible for keeping the read model up-to-date, and can be triggered by the database's [change feed](/azure/cosmos-db/change-feed). Front-end development is simplified to connecting to the necessary endpoints. Processing of events is handled on the backend. This model also scales well for large projects because different teams may work on different operations.
+
 
 ## Event-based processing
 
@@ -34,13 +35,13 @@ In message-based system, events are often collected in queues or publisher/subsc
 
 ## File triggers and transformations
 
-Extract, Transform, and Load (ETL) is a common business function. Serverless is a great solution for ETL because it allows code to be triggered as part of a pipeline. Individual code components can address various aspects. One serverless function may download the file, another perform transformation and another that loads. The code can be tested and deployed independently, making it easier to maintain and scale where needed.
+Extract, Transform, and Load (ETL) is a common business function. Serverless is a great solution for ETL because it allows code to be triggered as part of a pipeline. Individual code components can address various aspects. One serverless function may download the file, another applies the transformation and another loads the data. The code can be tested and deployed independently, making it easier to maintain and scale where needed.
 
 ![Serverless file triggers and transformations](./media/serverless-design-examples/serverless-file-triggers.png)
 
 ## Asynchronous background processing and messaging
 
-Asynchronous messaging and background processing allow applications to kick off processes without having to wait. An example of asynchronous processing is an OCR app. An image is submitted and queued for processing. Scanning the image to extract text may take time, and once it is finished a notification is sent. Serverless can handle both the invocation and the result in this scenario.
+Asynchronous messaging and background processing allow applications to kick off processes without having to wait. An example of asynchronous processing is an OCR app. An image is submitted and queued for processing. Scanning the image to extract text may take time, and once it's finished a notification is sent. Serverless can handle both the invocation and the result in this scenario.
 
 ## Web apps and APIs
 
@@ -64,17 +65,20 @@ Devices and sensors often generate streams of data that must be processed in rea
 
 ## API gateway
 
-An API gateway provides a single point of entry for clients and then intelligently routes requests to backend services. It is useful to manage large sets of services. It can also handle versioning and simplify development by easily connecting clients to disparate environments. Serverless can handle backend scaling of individual microservices while presenting a single front via an API gateway.
+An API gateway provides a single point of entry for clients and then intelligently routes requests to backend services. It's useful to manage large sets of services. It can also handle versioning and simplify development by easily connecting clients to disparate environments. Serverless can handle backend scaling of individual microservices while presenting a single front via an API gateway.
 
 ![Serverless API gateway](./media/serverless-design-examples/serverless-api-gateway.png)
 
 ## Recommended Resources
 
 * [Azure Event Grid](/azure/event-grid/overview)
+* [Azure IoT Hub](/azure/iot-hub)
 * [Designing microservices: identifying microservice boundaries](/azure/architecture/microservices/microservice-boundaries)
 * [Event Hubs](/azure/event-hubs/event-hubs-what-is-event-hubs)
+* [Implementing the Circuit Breaker pattern](/dotnet/standard/microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern)
 * [IoT Hub](/azure/iot-hub)
 * [Service Bus](/service-bus)
+* [Working with the change feed support in Azure Cosmos DB](/azure/cosmos-db/change-feed)
 
 >[!div class="step-by-step"]
 [Previous] (./serverless-architecture-considerations.md)

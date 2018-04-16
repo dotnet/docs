@@ -10,7 +10,7 @@ ms.topic: article
 ---
 # Event Grid
 
-[Azure Event Grid](/azure-event-grid/overview) provides serverless infrastructure for event-based applications. You can publish to Event Grid from any source and consume messages from any platform. Event Grid also has built-in support for events from Azure resources to streamline integration with your applications. For example, you can subscribe to blob storage events to notify your app when a file is uploaded. Your application can then publish a custom event grid message that is consumed by other cloud or on-premises applications. Event Grid was built to reliably handle massive scale.
+[Azure Event Grid](/azure-event-grid/overview) provides serverless infrastructure for event-based applications. You can publish to Event Grid from any source and consume messages from any platform. Event Grid also has built-in support for events from Azure resources to streamline integration with your applications. For example, you can subscribe to blob storage events to notify your app when a file is uploaded. Your application can then publish a custom event grid message that is consumed by other cloud or on-premises applications. Event Grid was built to reliably handle massive scale. You get the benefits of publishing and subscribing to messages without the overhead of setting up the necessary infrastructure.
 
 ![Event Grid logo](./media/event-grid/event-grid-logo.png)
 
@@ -22,7 +22,7 @@ The major features of event grid include:
 
 ## Scenarios
 
-Event Grid addresses a variety of scenarios. This section covers three of the most common ones.
+Event Grid addresses several different scenarios. This section covers three of the most common ones.
 
 ### Ops automation
 
@@ -40,7 +40,7 @@ You can use Event Grid to connect your app to other services. Using standard HTT
 
 ![Serverless apps](./media/event-grid/serverless-apps.png)
 
-Event Grid can trigger Azure Functions, Logic Apps, or your own custom code. A major benefit of using Event Grid is that it uses a *push* mechanism to send messages when events occur. The push architecture consumes fewer resources and scales better than *polling* mechanisms that check for updates on a regular interval.
+Event Grid can trigger Azure Functions, Logic Apps, or your own custom code. A major benefit of using Event Grid is that it uses a *push* mechanism to send messages when events occur. The push architecture consumes fewer resources and scales better than *polling* mechanisms. Polling must check for updates on a regular interval.
 
 ## Event Grid vs. other Azure messaging services
 
@@ -109,6 +109,8 @@ A major benefit of using Event Grid is the automatic messages produced by Azure.
 
 For more information, see: [Azure Event Grid event schema](/azure/event-grid/event-schema).
 
+You can access Event Grid from any type of application, even one that runs on-premises.
+
 ## Conclusion
 
 In this chapter you learned about the Azure serverless platform that is composed of Azure Functions, Logic Apps, and Event Grid. You can use these resources to build an entirely serverless app architecture, or create a hybrid solution that interacts with other cloud resources and on-premises servers. Combined with a serverless data platform such as [Azure SQL](/azure/sql-database) or [CosmosDB](/azure/cosmos-db/introduction) you are able to build fully managed cloud native applications.
@@ -128,6 +130,7 @@ In this chapter you learned about the Azure serverless platform that is composed
 * [Azure Service Bus](/azure/service-bus-messaging)
 * [Azure Table Storage](/azure/cosmos-db/table-storage-overview)
 * [Compare functions 1.x and 2.x](/azure/azure-functions/functions-versions)
+* [Connecting to on-premises data sources with Azure On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway)
 * [Create your first function in the Azure portal](/azure/azure-functions/functions-create-first-azure-function)
 * [Create your first function using the Azure CLI](/azure/azure-functions/functions-create-first-azure-function-azure-cli)
 * [Create your first function using Visual Studio](/azure/azure-functions/functions-create-your-first-function-visual-studio)

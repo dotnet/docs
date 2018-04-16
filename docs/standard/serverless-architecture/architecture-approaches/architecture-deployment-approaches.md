@@ -55,33 +55,28 @@ Virtualization of hardware, via "virtual machines" enables Infrastructure-as-a-S
 
 For more information, see: [virtual machine N-tier reference architecture](/azure/architecture/reference-architectures/virtual-machines-windows/n-tier).
 
-Although virtualization and Infrastructure-as-a-Service (IaaS) address many concerns, it still leaves much responsibility in the hands of the infrastructure team. The team is responsible for maintaining operating system versions, applying security patches, and installing third-party dependencies on the target machines. A common issue is that apps behave differently on production machines compared to the test environment. Issues arise due to different dependency versions and/or OS SKU levels. Although to deploy N-Tier applications to these targets, many companies benefit from deploying to a more cloud native model such as Platform-as-a-Service (covered in the next section). Architectures with microservices are more challenging due to the requirements to scale out for elasticity and resiliency.
+Although virtualization and Infrastructure-as-a-Service (IaaS) address many concerns, it still leaves much responsibility in the hands of the infrastructure team. The team maintains operating system versions, applies security patches, and installs third-party dependencies on the target machines. Apps often behave differently on production machines compared to the test environment. Issues arise due to different dependency versions and/or OS SKU levels. Although to deploy N-Tier applications to these targets, many companies benefit from deploying to a more cloud native model such as Platform-as-a-Service (covered in the next section). Architectures with microservices are more challenging due to the requirements to scale out for elasticity and resiliency.
 
 For more information, see: [virtual machines](/azure/virtual-machines/).
 
 ## Platform-as-a-Service (PaaS)
 
-Platform-as-a-Service (PaaS) offers configured solutions that developers can plug into directly. PaaS is another term for managed hosting. It eliminates the need to manage the base operating system, security patches and in many cases any third-party dependencies. Examples of platforms include web applications, databases, and mobile back-ends. Using IaaS the developer has to ensure:
+Platform-as-a-Service (PaaS) offers configured solutions that developers can plug into directly. PaaS is another term for managed hosting. It eliminates the need to manage the base operating system, security patches and in many cases any third-party dependencies. Examples of platforms include web applications, databases, and mobile back-ends.
 
-* The target environment is the correct operating system
-* The right frameworks are installed
-* The environment is configured correctly
-* The virtual machine hosts the right dependencies
-
-PaaS addresses these requirements and allows the developer to focus on the code or database schema rather than how it gets deployed. Benefits of PaaS include:
+PaaS addresses the challenges common to IaaS. PaaS allows the developer to focus on the code or database schema rather than how it gets deployed. Benefits of PaaS include:
 
 * Pay for use models that eliminate the overhead of investing in idle machines
 * Direct deployment and improved DevOps, CI, and CD pipelines
 * Automatic upgrades, updates, and security patches
 * Push-button scale out and scale up (elastic scale)
 
-The main disadvantage of PaaS traditionally has been vendor lock-in. For example, some solutions only support ASP.NET, Node.js, or other specific languages and platforms. Products like Azure App Service have evolved to address multiple platforms and support a variety of languages and frameworks for hosting web apps.
+The main disadvantage of PaaS traditionally has been vendor lock-in. For example, some PaaS providers only support ASP.NET, Node.js, or other specific languages and platforms. Products like Azure App Service have evolved to address multiple platforms and support a variety of languages and frameworks for hosting web apps.
 
 ![Platform-as-a-Service Architecture](./media/architecture-deployment-approaches/paas-architecture.png)
 
 ## Software-as-a-Service (SaaS)
 
-Software-as-a-Service or SaaS is centrally hosted and available without local installation or provisioning. PaaS is a platform for deploying software. In contrast, SaaS provides services to run and connect with existing software. PaaS is a general platform for deploying a variety of solutions. SaaS is often industry and vertical specific. SaaS is often licensed and typically provides a client/server model. Most modern SaaS offerings use web-based apps for the client. Companies typically consider SaaS as a business solution to license offerings. It is not often implemented as architecture consideration for scalability and maintainability of an application. Indeed, most SaaS solutions are built on IaaS, PaaS, and/or serverless back-ends.
+Software-as-a-Service or SaaS is centrally hosted and available without local installation or provisioning. SaaS often is hosted on top of PaaS as a platform for deploying software. SaaS provides services to run and connect with existing software. SaaS is often industry and vertical specific. SaaS is often licensed and typically provides a client/server model. Most modern SaaS offerings use web-based apps for the client. Companies typically consider SaaS as a business solution to license offerings. It is not often implemented as architecture consideration for scalability and maintainability of an application. Indeed, most SaaS solutions are built on IaaS, PaaS, and/or serverless back-ends.
 
 Learn more about SaaS through a [sample application](/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app).
 
@@ -97,13 +92,19 @@ Benefits of containers include:
 * Can be provisioned quickly for scale-out
 * Can be restarted quickly to recover from failure
 
-A container runs on a host. Multiple containers or instances of the same containers may run on a single host. For true failover and resiliency, containers must be scaled across hosts. Managing containers across hosts typically requires an orchestration tool such as Kubernetes. Configuring and managing orchestration solutions may add additional overhead and complexity to projects. Fortunately, many cloud providers provide orchestration services through PaaS solutions to simplify the management of containers.
+A container runs on a container host (that in turn may run on a bare metal machine or a virtual machine). Multiple containers or instances of the same containers may run on a single host. For true failover and resiliency, containers must be scaled across hosts.
+
+For more information about Docker containers, read: [What is Docker?](/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined)
+
+To manage containers across hosts typically requires an orchestration tool such as Kubernetes. Configuring and managing orchestration solutions may add additional overhead and complexity to projects. Fortunately, many cloud providers provide orchestration services through PaaS solutions to simplify the management of containers.
+
+The following image illustrates an example Kubernetes installation. Nodes in the installation address scale out and failover. They run Docker container instances that are managed by the master server. The *kubelet* is the client that relays commands from Kubernetes to Docker.
 
 ![Kubernetes](./media/architecture-deployment-approaches/kubernetes-example.png)
 
-For more information, see: [Kubernetes on Azure](/azure/aks/intro-kubernetes).
+For more information about orchestration, see: [Kubernetes on Azure](/azure/aks/intro-kubernetes).
 
-Functions-as-a-Service (FaaS) is a specialized container service that is similar to serverless. A specific implementation of FaaS, called [OpenFaaS](https://github.com/openfaas/faas), sits on top of containers to provide serverless capabilities. OpenFaaS provides templates that package all of the container dependencies necessary to run a piece of code. Using templates simplifies the process of deploying code as a functional unit. OpenFaaS targets architectures that already include containers and orchestrators because it can use the existing infrastructure.
+Functions-as-a-Service (FaaS) is a specialized container service that is similar to serverless. A specific implementation of FaaS, called [OpenFaaS](https://github.com/openfaas/faas), sits on top of containers to provide serverless capabilities. OpenFaaS provides templates that package all of the container dependencies necessary to run a piece of code. Using templates simplifies the process of deploying code as a functional unit. OpenFaaS targets architectures that already include containers and orchestrators because it can use the existing infrastructure. Although it provides serverless functionality, it specifically requires you to use Docker and an orchestrator.
 
 ## Serverless
 
@@ -115,20 +116,22 @@ Container solutions provide developers existing build scripts to publish code to
 
 The abstraction means the DevOps team does not have to provision or manage servers, nor specific containers. The serverless platform hosts code, either as script or packaged executables built with a related SDK, and allocates the necessary resources for the code to scale.
 
+The following illustration diagrams four serverless components. An HTTP request causes the Checkout API code to run. The Checkout API inserts code into a database, and the insert triggers several other functions to run to perform tasks like computing tasks and fulfilling the order.
+
 ![Serverless implementation](./media/architecture-deployment-approaches/serverless-implementation.png)
 
 The advantages of serverless include:
 
-* **High density.** Many instances of the same serverless code can run on the same host compared to containers or virtual machines.
+* **High density.** Many instances of the same serverless code can run on the same host compared to containers or virtual machines. The instances scale across multiple hosts scale out and resiliency.
 * **Micro-billing**. Most serverless providers bill based on serverless executions, enabling massive cost savings in certain scenarios.
 * **Instant scale**. Serverless can scale to match workloads automatically and quickly.
 * **Faster time to market** Developers focus on code and deploy directly to the serverless platform. Components can be released independently of each other.
 
-Serverless is most often discussed in the context of compute, but can also apply to data. This book focuses on serverless compute.
+Serverless is most often discussed in the context of compute, but can also apply to data. For example, [Azure SQL](/azure/sql-database) and [Cosmos DB](/azure/cosmos-db) both provide cloud databases that don't require you to configure host machines or clusters. This book focuses on serverless compute.
 
 ## Summary
 
-There is a broad spectrum of available choices for architecture, including a hybrid approach. Serverless simplifies the approach, management, and cost of application features at the expense of control and portability. However, many serverless platforms do expose configuration to help fine-tune the solution. Good programming practices can also lead to more portable code and less serverless platform lock-in. The following table illustrates the architecture approaches side by side.
+There is a broad spectrum of available choices for architecture, including a hybrid approach. Serverless simplifies the approach, management, and cost of application features at the expense of control and portability. However, many serverless platforms do expose configuration to help fine-tune the solution. Good programming practices can also lead to more portable code and less serverless platform lock-in. The following table illustrates the architecture approaches side by side. Choose serverless based on your scale needs, whether or not you want to manage the runtime, and how well you are able to break your workloads into small components. You'll learn about potential challenges with serverless and other decision points in the next chapter.
 
 |         |IaaS     |PaaS     |Container|Serverless|
 |---------|---------|---------|---------|----------|
@@ -142,18 +145,21 @@ There is a broad spectrum of available choices for architecture, including a hyb
 * **Abstracts** refers to the layer that is abstracted by the implementation
 * **Unit** refers to the scope of what is deployed
 * **Lifetime** refers to the typical runtime of a specific instance
-* **Responsibility** refers to the overhead to build, deploy, and maintain the application 
+* **Responsibility** refers to the overhead to build, deploy, and maintain the application
 
 The next chapter will focus on serverless architecture, use cases, and design patterns.
 
 ## Recommended resources
 
 * [Azure application architecture guide](/azure/architecture/guide/)
+* [Azure Cosmos DB](/azure/cosmos-db)
+* [Azure SQL](/azure/sql-database)
 * [N-Tier architecture pattern](/azure/architecture/guide/architecture-styles/n-tier)
 * [Kubernetes on Azure](/azure/aks/intro-kubernetes)
 * [Microservices](/azure/architecture/guide/architecture-styles/microservices)
 * [Virtual machine N-tier reference architecture](/azure/architecture/reference-architectures/virtual-machines-windows/n-tier)
 * [Virtual machines](/azure/virtual-machines/)
+* [What is Docker?](/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined)
 * [Wingtip Tickets SaaS application](/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
 
 >[!div class="step-by-step"]

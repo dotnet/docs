@@ -19,21 +19,21 @@ ms.workload:
 ---
 # Walkthrough: My first WPF desktop application
 
-This walkthrough provides an introduction to the development of a Windows Presentation Foundation (WPF) application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles.
+This article shows you how to develop a simple Windows Presentation Foundation (WPF) application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles.
 
-This walkthrough guides you through the development of a simple WPF application using the following steps.
+This walkthrough includes the following steps:
 
-- Defining XAML to design the appearance of the application's user interface (UI).
+- Use XAML to design the appearance of the application's user interface (UI).
 
-- Writing code to build the application's behavior.
+- Write code to build the application's behavior.
 
-- Creating an application definition to manage the application.
+- Create an application definition to manage the application.
 
-- Adding controls and creating the layout to compose the application UI.
+- Add controls and create the layout to compose the application UI.
 
-- Creating styles to create a consistent appearance throughout an application's UI.
+- Create styles for a consistent appearance throughout an application's UI.
 
-- Binding the UI to data to both populate the UI from data and keep the data and UI synchronized.
+- Bind the UI to data to both populate the UI from data and keep the data and UI synchronized.
 
 By the end of the walkthrough, you'll have built a standalone Windows application that allows users to view expense reports for selected people. The application is composed of several WPF pages that are hosted in a browser-style window.
 
@@ -62,10 +62,10 @@ The first step is to create the application infrastructure, which includes an ap
 
       ![New Project dialog with WPF app selected](media/new-project-dialog.png)
 
-      The project is created, and the designer for the default application window named **MainWindow.xaml** opens in the XAML designer.
+      Visual Studio creates the project and opens the designer for the default application window named **MainWindow.xaml**.
 
    > [!NOTE]
-   > This walkthrough uses the <xref:System.Windows.Controls.DataGrid> control that is available in the .NET Framework 4. Be sure that your project targets the .NET Framework 4 or later. For more information, see [How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).
+   > This walkthrough uses the <xref:System.Windows.Controls.DataGrid> control that is available in the .NET Framework 4 and later. Be sure that your project targets the .NET Framework 4 or later. For more information, see [How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).
 
 2. Open *Application.xaml* (Visual Basic) or *App.xaml* (C#).
 

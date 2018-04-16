@@ -4,18 +4,18 @@ The following conventions are formulated from experience working with large F# c
 
 ## Organizing code
 
-F# features two primarily ways to organize code: modules and namespaces. They are very similar, but do have the following differences:
+F# features two primary ways to organize code: modules and namespaces. These are similar, but do have the following differences:
 
-* Namespaces are compiled as .NET namespaces. Modules are compared as static classes.
+* Namespaces are compiled as .NET namespaces. Modules are cmpiled as static classes.
 * Namespaces are always top-level. Modules can be top-level and nested within other modules.
-* Namespaces can span mutiple files. Modules cannot.
+* Namespaces can span multiple files. Modules cannot.
 * Modules can be decorated with `[<RequireQualifiedAccess>]` and `[<AutoOpen>]`.
 
 The following guidelines will help you use these to organize your code.
 
 ### Prefer namespaces at the top level
 
-For any publically consumable code, namespaces are preferential to modules at the top level. Because they are compiled as .NET namespaces, they are consumable from C# with no issue.
+For any publicly consumable code, namespaces are preferential to modules at the top level. Because they are compiled as .NET namespaces, they are consumable from C# with no issue.
 
 ```fsharp
 // Good!
@@ -37,9 +37,9 @@ type MyClass() =
 
 ### Carefully apply `[<AutoOpen>]`
 
-The `[<AutoOpen>]` attribute can pollute callers and the answer to where something comes from is "magic". This is generally not a good thing. An exception to this rule is the F# Core Library itself (though this fact is also a bit controversial).
+The `[<AutoOpen>]` construct can pollute the scope of what is available to callers, and the answer to where something comes from is "magic". This is generally not a good thing. An exception to this rule is the F# Core Library itself (though this fact is also a bit controversial).
 
-However, it is a great convenience if you have more complicated helper functionality for a public API that you wish to organize separately from that public API.
+However, it is a convenience if you have helper functionality for a public API that you wish to organize separately from that public API.
 
 ```fsharp
 module MyAPI =
@@ -58,7 +58,7 @@ module MyAPI =
 
 This lets you cleanly separate implementation details from the public API of a function without having to fully qualify a helper each time you call it.
 
-Additionally, exposing extension methods and expression builders at the namespace level can be easily done with `[<AutoOpen>]`.
+Additionally, exposing extension methods and expression builders at the namespace level can be neatly expressed with `[<AutoOpen>]`.
 
 ### Use `[<RequireQualifiedAccess>]` whenever names could conflict or you feel it helps with readability
 
@@ -68,18 +68,72 @@ This is useful when functions and values in the module have names that are likel
 
 ```fsharp
 [<RequireQualifiedAccess>]
-module StringHelpers =
+module StringTokenization =
     let parse s = ...
 
 ...
 
 let s = getAString()
-let parsed = StringHepers.parse s // Must qualify to use 'parse'
+let parsed = StringTokenization.parse s // Must qualify to use 'parse'
 ```
 
-### Do not sort `open` statements alphanumerically
+### Sort `open` statements topologically
 
-Although it is possible to sort `open` statements, doing so could have confusing consequences. The order of declarations matters in F#, and this also includes `open` statements. Sorting them alphanumerically can shadow values, thus allowing you to interact with values which are likely not what you think they are.
+In F#, the order of declarations matters, including with `open` statements. This is unlike C#, where `using` statements can be sorted arbitrarily; tthe effect is the same regardless of the ordering.
+
+In F#, because elements opened into a scope can shadow others already present, reordering opens can alter the meaning of code. As a result, sorting alphanumerically (or psuedo-randomly) is generally not recommended, lest you generate different behavior that you might expect.
+
+Instead, we recommend that you sort them [topologically](https://en.wikipedia.org/wiki/Topological_sorting); that is, order your `open` statements in the order in which _layers_ of your system are defined. Doing alphanumeric sorting within different topological layers may also be considered.
+
+As an example, here is the topological sorting for the F# compiler service public API file:
+
+```fsharp
+namespace Microsoft.FSharp.Compiler.SourceCodeServices
+
+open System
+open System.Collections.Generic
+open System.Collections.Concurrent
+open System.Diagnostics
+open System.IO
+open System.Reflection
+open System.Text
+
+open Microsoft.FSharp.Core.Printf
+open Microsoft.FSharp.Compiler
+open Microsoft.FSharp.Compiler.AbstractIL
+open Microsoft.FSharp.Compiler.AbstractIL.IL
+open Microsoft.FSharp.Compiler.AbstractIL.ILBinaryReader
+open Microsoft.FSharp.Compiler.AbstractIL.Diagnostics
+open Microsoft.FSharp.Compiler.AbstractIL.Internal
+open Microsoft.FSharp.Compiler.AbstractIL.Internal.Library
+
+open Microsoft.FSharp.Compiler.AccessibilityLogic
+open Microsoft.FSharp.Compiler.Ast
+open Microsoft.FSharp.Compiler.CompileOps
+open Microsoft.FSharp.Compiler.CompileOptions
+open Microsoft.FSharp.Compiler.Driver
+open Microsoft.FSharp.Compiler.ErrorLogger
+open Microsoft.FSharp.Compiler.Lib
+open Microsoft.FSharp.Compiler.PrettyNaming
+open Microsoft.FSharp.Compiler.Parser
+open Microsoft.FSharp.Compiler.Range
+open Microsoft.FSharp.Compiler.Lexhelp
+open Microsoft.FSharp.Compiler.Layout
+open Microsoft.FSharp.Compiler.Tast
+open Microsoft.FSharp.Compiler.Tastops
+open Microsoft.FSharp.Compiler.TcGlobals
+open Microsoft.FSharp.Compiler.Infos
+open Microsoft.FSharp.Compiler.InfoReader
+open Microsoft.FSharp.Compiler.NameResolution
+open Microsoft.FSharp.Compiler.TypeChecker
+open Microsoft.FSharp.Compiler.SourceCodeServices.SymbolHelpers
+
+open Internal.Utilities
+open Internal.Utilities.Collections
+open Microsoft.FSharp.Compiler.Layout.TaggedTextOps
+```
+
+Note that a line break separates topological layers, with each layer being sorted alphanumerically afterwards. This cleanly organizes code without accidentally shadowing values.
 
 ## Use classes to contain values which have side effects
 
@@ -90,17 +144,17 @@ There are many times when initializing a value can have side effects, such as in
 module MyApi =
     let dep1 = File.ReadAllText "/Users/{your name}/connectionstring.txt"
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
-    let dep3 = Random().Next()
- 
+    let dep3 = Random().Next() // Random is not thread-safe
+
     let function1 arg = doStuffWith dep1 dep2 dep3 arg
     let function2 arg = doSutffWith dep1 dep2 dep3 arg
 ```
 
-This is a very bad idea for a few reasons:
+This isfrequently a bad idea for a few reasons:
 
-First, it makes the API itself reliant on global state. Secondly, it pushes application configuration into the codebase itself. This is very difficult to maintain for larger codebases.
+First, it makes the API itself reliant on shared state. For example, multiple calling threads may be attemting to access the `dep3` value. Secondly, it pushes application configuration into the codebase itself. This is very difficult to maintain for larger codebases.
 
-Finally, and this is perhaps the most insidious, is that module initialization compiles into a static constructor for the entire compilation unit. If any error occurs in let-bound value initialization in that module, it manifests as a `TypeInitializationException` which is then cached for the entire lifetime of the application. There is no way to tell what actually went wrong when this happens.
+Finally, and this is perhaps the most insidious, is that module initialization compiles into a static constructor for the entire compilation unit. If any error occurs in let-bound value initialization in that module, it manifests as a `TypeInitializationException` which is then cached for the entire lifetime of the application. This can be difficult to diagnose. There is usually an inner exception that you can attempt to reason about, but if there is not then there is no telling what the root cause is.
 
 Instead, just use a simple class to hold dependencies:
 
@@ -115,15 +169,13 @@ This enables the following:
 1. Pushing any dependent state outside of the API itself.
 2. Configuration can now be done outside of the API.
 3. Errors in initialization for dependent values are not likely to manifest as a `TypeInitializationException`.
-4. The API is now easier to test.
+4. The API is now easier to test.e
 
-One could even argue that the example with classes is more "functional" than the example with let-bound values in a module.
+## Error management
 
-## Error handling
+Error management in large systems is a complex and nuanced endeavor, and there are no silver bullets in ensuring your systems are fault-tolerant and behave well. The following guidelines should offer guidance in navigating this difficult space.
 
-Error handling in large systems is a difficult endeavor, and there are no silver bullets in ensuring your systems are fault-tolerant and behave well. The following guidelines should help in this difficult space.
-
-### Represent error cases and illegal state in your types
+### Represent error cases and illegal state in types intrinsic toy our domain
 
 With Discriminated Unions, F# gives you the ability to represent faulty program state in your type system. For example:
 
@@ -144,7 +196,7 @@ let handleWithdrawal amount =
     | Success am -> printfn "Successfully withdrew %f" am
     | InsufficientFunds balance -> printfn "Failed: balance is %f" balance
     | CardExpired expiredDate -> printfn "Failed: card expired on %O" expiredDate
-    | UndisclosedFailure -> printfn "Failed: unknown - retry perhaps?"
+    | UndisclosedFailure -> printfn "Failed: unknown"
 ```
 
 In general, if you can model the different ways that something can **fail** in your domain, then error handling code is no longer treated as something you must deal with in addition to regular program flow. It is simply a part of normal program flow. There are two primary benefits to this:
@@ -156,22 +208,22 @@ In general, if you can model the different ways that something can **fail** in y
 
 Not all errors can be represented in a problem domain. These kinds of faults are *exceptional* in nature, hence the ability to raise and catch exceptions in F#.
 
-First, it is recommended that you read the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md). They are also applicable to F#.
+First, it is recommended that you read the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md). These are also applicable to F#.
 
-There are four primary ways to raise exceptions in F#:
+The main constructs available in F# for the purposes of raising exceptions should be considered in the following order of preference
 
-1. The `raise` function with built-in exception types.
-2. The `raise` function with custom exception types.
-3. The `invalidArg` function, which is an alternative to `raise System.ArgumentException`
-4. The `failwith` function, which is an alternative to `raise Exception`
-5. The `failwithf` function, which is like `failwith` but lets you specify a format string for the error message.
+| Function | Syntax | Purpose |
+|----------|--------|---------|
+| `invalidArg` | `invalidArg "argumentName" "message"` | Raises a `System.ArgumentException` with a specified argument name and message. |
+| `nullArg` | `nullArg "argumentName"` | Raises a `System.ArgumentNullException` with the specified argument name. |
+| `invalidOp` | `invalidOp "message"` | Raises a `System.InvalidOperationException` with the specified message. |
+|`raise`| `raise ExceptionType("message")` | General purpose mechanism for throwing exceptions. |
+| `failwith` | `failwith "message"` | Raises a `System.Exception` with the specified message. |
+| `failwithf` | `failwithf "format string" argForFormatString` | Raises a `System.Exception` with a message determined by the format string and its inputs. |
 
-This list is also ordered in preferential order. That is, you should consider them as such:
+The `invalidArg`, `nullArg`, and `invalidOp` are useful shorthand functions for their specific exception types, and are preferred if you need to use these exceptions. Otherwise, use `raise`.
 
-1. Try to use `raise` for built-in exception types whenever you can.
-2. If you need a custom exception type, prefer `raise` with that type.
-
-`invalidArg`, `failwith`, and `failwithf` should generally not be used in favor of `raise`. That said, they are perfectly fine alternatives if the exception you are raising is `ArgumentException` or `Exception`, and their syntax is succinct for that.
+The `failwith` and `failwithf` functions should generally be avoided because they raise the base `Exception` type, not a specific exception. As per the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md), you want to raise more specific exceptions when you can.
 
 ### Using exception-handling syntax
 
@@ -185,7 +237,7 @@ with
 | :? System.Security.SecurityException as e -> // Do something with it here
 ```
 
-Reconciling functionality to perform in the face of an exception with pattern matching can be a bit tricky if you wish to keep the code clean. One such way to handle this isto use [active patterns](../language-reference/active-patterns.md) as a means to group functionality surrounding an error case with an exception itself. For example, consider consuming an API which, when it throws an exception, wraps valuable information in that exception:
+Reconciling functionality to perform in the face of an exception with pattern matching can be a bit tricky if you wish to keep the code clean. One such way to handle this isto use [active patterns](../language-reference/active-patterns.md) as a means to group functionality surrounding an error case with an exception itself. For example, consider consuming an API that, when it throws an exception, encloses valuable information in that the exception metadata:
 
 ```fsharp
 // TODO
@@ -193,21 +245,21 @@ Reconciling functionality to perform in the face of an exception with pattern ma
 
 ### Do not use monadic error handling to replace exceptions
 
-It is seen as somewhat taboo in functional programming to use exceptions. Indeed, exceptions violate purity and totality, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run. F# runs on .NET, and exceptions are a key piece of .NET. This is not something to ignore or attempt to work around.
+It is seen as somewhat taboo in functional programming to use exceptions. Indeed, exceptions violate purity, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things are neither pure or total, to minimize unpleasant surprises.
 
-There are 3 reasons why exceptions are good constructs in F# code:
+It is important to consider the following core strengths/aspects of Exceptions with respect to their relevance and appropriateness in the .NET runtime and cross-language ecosystem as a whole:
 
 1. They contain detailed diagnostic information, which is very helpful when debugging an issue.
 2. They are well-understood by the runtime and other .NET languages.
 3. They can reduce significant boilerplate when compared with code which goes out of its way to *avoid* exceptions by implementing some subset of their semantics on an ad-hoc basis.
 
-This third point is quite critical. For sufficiently complex operations, failing to use exceptions can result in dealing with structures like this:
+This third point is quite critical. For nontrivial complex operations, failing to use exceptions can result in dealing with structures like this:
 
 ```fsharp
 Result<Result<MyType, string>, string list>
 ```
 
-Which can easily lead to absurd code like pattern matching on "stringly-typed" errors:
+Which can easily lead to fragile code like pattern matching on "stringly-typed" errors:
 
 ```fsharp
 let result = doStuff()
@@ -228,7 +280,7 @@ let tryReadAllText (path : string) =
     with _ -> None
 ```
 
-Unfortunately, `ReadAllText` can throw numerous exceptions based on the strange things which can happen on a file system, and this code throws away any information about what might actually be going wrong in your environment. If you were to replace this code with a result type, then you're back to stringly-typed error message parsing:
+Unfortunately, `ReadAllText` can throw numerous exceptions based on the myriad of things which can happen on a file system, and this code discards away any information about what might actually be going wrong in your environment. If you were to replace this code with a result type, then you're back to stringly-typed error message parsing:
 
 ```fsharp
 // This is bad!
@@ -244,27 +296,27 @@ match r with
     else ...
 ```
 
-And placing the exception object itself in the `Error` constructor just forces you to properly deal with the exception type at the call site rather than in the function.
+And placing the exception object itself in the `Error` constructor just forces you to properly deal with the exception type at the call site rather than in the function. This is actually the same as checked exceptions, which are notoriously unfun to deal with as a caller of an API.
 
 A good alternative to the above examples is to catch *specific* exceptions and return a meaningful value in the context of that exception. If you modify the `tryReadAllText` function as follows, `None` has more meaning:
 
 ```fsharp
-let tryReadAllText (path : string) =
+let tryReadAllTextIfPresent (path : string) =
     try System.IO.File.ReadAllText path |> Some
     with :? FileNotFoundException -> None
 ```
 
-Instead of functioning as a catch-all, this function will now properly handle the case when a file was not found and assign that meaning to a return value which can map to that error case.
+Instead of functioning as a catch-all, this function will now properly handle the case when a file was not found and assign that meaning to a return value which can map to that error case, while not discarding any contextual information or forcing callers to deal with a case that may not be relevant at that point in the code.
 
-Types such as `Result<'Success, 'Error>` are perfectly fine for basic operations where they aren't nested, and F# optional types are perfect for representing when something could either reutrn *something* or *nothing*. They are not a replacement for exceptions, though, and should not be used in an attempt to replace exceptions. Rather, they are excellent options to use when combined with exception types which can map to these types conceptually.
+Types such as `Result<'Success, 'Error>` are appropriate for basic operations where they aren't nested, and F# optional types are perfect for representing when something could either reutrn *something* or *nothing*. They are not a replacement for exceptions, though, and should not be used in an attempt to replace exceptions. Rather, they should be applied judiciously to address specific aspects of exception and error management policy in targeted ways.
 
 ## Partial application and point-free programming
 
-F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code re-use within a module or the implmentation of something, but it is generally not something to expose publically. In general, point-free programming is not a virtue in and of itself, and comes with a cognitive cost for people who are not familiar with the style.
+F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code re-use within a module or the implmentation of something, but it is generally not something to expose publically. In general, point-free programming is not a virtue in and of itself, and can add a significant congitive barier for people who are not immersed in the style. Point-free programming in F# is very basic for a well-trained mathematician, but can be difficult for people who are not familiar with lambda calculus.
 
 ### Do not use partial application and currying in public APIs
 
-With little exception, the use of partial application in public APIs can be confusing for consumers. Generally speaking, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a very small number of lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions together.
+With little exception, the use of partial application in public APIs can be confusing for consumers. Generally speaking, `let`-bound values in F# code are **values**, not **function values**. Mixing together values and function values can result in saving a very small number of lines of code in exchange for quite a bit of cognitive overhead, especially if combined with operators such as `>>` to compose functions.
 
 ### Consider the tooling implications for point-free programming
 
@@ -288,13 +340,13 @@ val funcWithApplication : (string -> int -> unit)
 
 At the call site, tooltips in tooling such as Visual Studio will not give you meaningful information as to what the `string` and `int` input types actually represent.
 
-If you encounter point-free code like `funcWithApplication` that is publically consumable, we recommend a full η-expansion so that tooling can pick up on meaningful names for arguments.
+If you encounter point-free code like `funcWithApplication` that is publically consumable, it is recommended to do a full η-expansion so that tooling can pick up on meaningful names for arguments.
 
-Furthermore, debugging point-free code can be very challenging, if not impossible. Debugging tools rely on values bound to names (e.g., `let` bindings) so that you can inspect intermmediate values midway through execution. When your code has no values to inspect, there is nothing to debug. In the future, debugging tools may evolve to construct these values based on previously-executed functionality, but it's not a good idea to hedge your bets on *potential* debugging functionality.
+Furthermore, debugging point-free code can be very challenging, if not impossible. Debugging tools rely on values bound to names (e.g., `let` bindings) so that you can inspect intermediate values midway through execution. When your code has no values to inspect, there is nothing to debug. In the future, debugging tools may evolve to synthesize these values based on previously-executed paths, but it's not a good idea to hedge your bets on *potential* debugging functionality coming soon.
 
 ### Consider partial application as a technique to reduce internal boilerplate
 
-In contrast to the previous point, partial application is a wonderful tool for reducing boilerplate inside of an application. It can be particularly helpful for unit testing the implementation of more complicated APIs, where boilerplate is often a pain to deal with. For example, the following code shows how you can accomplish what most mocking frameworks give you without taking an external dependency on such a framework.
+In contrast to the previous point, partial application is a wonderful tool for reducing boilerplate inside of an application. It can be particularly helpful for unit testing the implementation of more complicated APIs, where boilerplate is often a pain to deal with. For example, the following code shows how you can accomplish what most mocking frameworks give you without taking an external dependency on such a framework and having to learn a related bespoke API.
 
 For example, consider the following module solution topography:
 
@@ -305,14 +357,14 @@ MySolution.sln
 |_/API.fsproj
 ```
 
-`ImplementationLogic.fsproj` can expose a code like this:
+`ImplementationLogic.fsproj` might expose code such as:
 
 ```fsharp
 module Transactions =
     let doTransaction txnContext txnType balance =
         ...
 
-type Transactionater(ctx, currentBalance) =
+type Transactor(ctx, currentBalance) =
     member __.ExecuteTransaction(txnType) =
         Transactions.doTransaction ctx txtType currentBalance
         ...
@@ -359,7 +411,7 @@ This technique should not be universally applied to your entire codebase, but it
 
 F# has multiple options for [Access control](../language-reference/access-control.md), inherited from what is available in the .NET runtime. These are not just usable for types - you can use them for functions, too.
 
-* Prefer keeping functions from being `public` unless you know you'll need to consume them elsewhere.
+* Prefer non-`public` types and members until you need them to be publicly consumable. This also minimizes what consumers couple to
 * Strive to keep all helper functionality `private`.
 * Consider the use of `[<AutoOpen>]` on a private module of helper functions if they become numerous.
 
@@ -369,7 +421,7 @@ Type inference can save you from typing a lot of boilerplate. And automatic gene
 
 * Consider labeling argument names with explicit types in public APIs and do not rely on type inference for this.
 
-    The reason for this is that **you** should be in control of the shape of your API, not the compiler. Although the compiler can do a fine job at infering types for you, it is possible to have the shape of your API change if the internals it relies on have changed types. This may be what you want, but it will almost certainly result in a breaking API change that downstream consumers will then have to deal with. Instead, if you explicitly control the shape of your public API, then you can control these breaking changes.
+    The reason for this is that **you** should be in control of the shape of your API, not the compiler. Although the compiler can do a fine job at infering types for you, it is possible to have the shape of your API change if the internals it relies on have changed types. This may be what you want, but it will almost certainly result in a breaking API change that downstream consumers will then have to deal with. Instead, if you explicitly control the shape of your public API, then you can control these breaking changes. In DDD terms, this can be thought of as an Anti-corruption layer.
 
 * Consider giving a meaningful name to your generic arguments.
 
@@ -377,19 +429,19 @@ Type inference can save you from typing a lot of boilerplate. And automatic gene
 
 * Consider naming generic type parameters with PascalCase
 
-    This is the general way to do things in .NET, so it's recommended that you use PascalCase rather than lower case or camelCase.
+    This is the general way to do things in .NET, so it's recommended that you use PascalCase rather than snake_case or camelCase.
 
-Finally, automatic generalization is not always a boon for people who are new to F# or the codebase. There is cognitive overhead in using components which are generic. Furthermore, if automatically generalized functions are not used with different input types (let alone if they are intended to be used as such), then there is no real benefit to them being generic at this point in time.
+Finally, automatic generalization is not always a boon for people who are new to F# or a large codebase. There is cognitive overhead in using components that are generic. Furthermore, if automatically generalized functions are not used with different input types (let alone if they are intended to be used as such), then there is no real benefit to them being generic at that point in time.
 
 ## Performance
 
-F# values are immutable by default, which allows you to bypass certain classes of bugs (especially those involving concurrency and parallelism). However, code which is as performant as possible on a single thread must often use in-place mutation. This is possible in an opt-in basis with F# with the `mutable` keyword.
+F# values are immutable by default, which allows you to avoid certain classes of bugs (especially those involving concurrency and parallelism). However, in certain cases, in order to achieve optimal (or even reasonable) efficiency of execution time or memory allocations, a span of work may best be implemented by using in-place mutation of state. This is possible in an opt-in basis with F# with the `mutable` keyword.
 
 However, use of `mutable` in F# may feel at odds with functional purity. This is actually fine, if you adjust expectations from purity to referential transparency. We argue that referential transparency - not purity - is the end goal when writing F# functions. This allows you to write a functional interface over a mutation-based implementation for performance critical code.
 
-### Wrap mutatable code in immutable interfaces
+### Wrap mutable code in immutable interfaces
 
-With referential transparency as a goal, it is critical to write code which does not expose the mutable underbelly of performance-critical functions. For example, the following code implements the `Array.contains` function in the F# core library:
+With referential transparency as a goal, it is critical to write code that does not expose the mutable underbelly of performance-critical functions. For example, the following code implements the `Array.contains` function in the F# core library:
 
 ```fsharp
 [<CompiledName("Contains")>]
@@ -403,26 +455,28 @@ let inline contains value (array:'T[]) =
     state
 ```
 
-Calling this function multiple times does not change the underlying array, nor does it require you to maintain any mutable state by yourself. It is referentially transparent, even though almost every line of code inside of it uses mutation.
+Calling this function multiple times does not change the underlying array, nor does it require you to maintain any mutable state in consuming it. It is referentially transparent, even though almost every line of code within it uses mutation.
 
 ### Consider encapsulating mutable data in classes
 
-The previous example used a single function to encapsulate operations using mutable data. This is not always sufficient for more complicated information. Consider the following sets of functions:
+The previous example used a single function to encapsulate operations using mutable data. This is not always sufficient for more complex sets of data. Consider the following sets of functions:
 
 ```fsharp
-let addToClosureTable (t: Dictionary<_,_>) (a, b) =
-    if not (t.Contains(a)) then
-        t.[1] <- HashSet<_>(HashIdentity.Structural)
-    
-    t.[a].Add(b)
+open System.Collections.Generic
+
+let addToClosureTable (a, b) (t: Dictionary<_,_>) =
+    if not (t.ContainsKey(a)) then
+        t.Add(a, b)
+    else
+        t.[a] <- b
 
 let closureTableCount (t: Dictionary<_,_>) = t.Count
 
-let closureTableContains (t: Dictionary<_, HashSet<_>>) (a, b) =
-    t.ContainsKey(a) && t.[a].Contains(b)
+let closureTableContains (a, b) (t: Dictionary<_, HashSet<_>>) =
+    t.ContainsKey(a) && t.ContainsValue(b)
 ```
 
-This code is performant, but it exposes the mutation-based data structure which callers are responsible for maintaining. This can be wrapped inside of a class with no underlying members that can change:
+This code is performant, but it exposes the mutation-based data structure that callers are responsible for maintaining. This can be wrapped inside of a class with no underlying members that can change:
 
 ```fsharp
 /// The results of computing the LALR(1) closure of an LR(0) kernel
@@ -430,27 +484,27 @@ type Closure1Table() =
     let t = Dictionary<Item0, HashSet<TerminalIndex>>()
 
     member __.Add(a, b) =
-        if not (t.Contains(a)) then
-            t.[1] <- HashSet<_>(HashIdentity.Structural)
-    
-        t.[a].Add(b)
+        if not (t.ContainsKey(a)) then
+            t.Add(a, b)
+        else
+            t.[a] <- b
 
     member __.Count = t.Count
 
-    member __.Contains(a, b) = t.ContainsKey(a) && t.[a].Contains(b)
+    member __.Contains(a, b) = t.ContainsKey(a) && t.ContainsValue(b)
 ```
 
-Because this class has no members which can change, and its binding is immutable, it is also effectively immutable. Additionally, it safely encapsulates the underlying mutation-based data structure. Classes are a powerful way to encapsulate data and routines which are mutation-based without exposing the details to callers.
+Because this class has no members which can change, and its binding is immutable, it is also effectively immutable. Additionally, it safely encapsulates the underlying mutation-based data structure. Classes are a powerful way to encapsulate data and routines that are mutation-based without exposing the details to callers.
 
 ### Prefer `let mutable` to reference cells
 
-Reference cells can be a powerful mechanism for pointer arithemetic, but are generally not ideal for other performance-critical code. Consider the following function:
+Reference cells are a way to represent the reference to a value rather than the value itself. Although they can be used for performance-critical code, they are generally not recommended. Consider the following example:
 
 ```fsharp
 let kernels =
     let acc = ref Set.empty
 
-    ProcessWorkList startKernels (fun kernel ->
+    processWorkList startKernels (fun kernel ->
         if not ((!acc).Contains(kernel)) then
             acc := (!acc).Add(kernel)
         ...)
@@ -464,12 +518,12 @@ The use of a reference cell now "pollutes" all subsequent code with having to de
 let kernels =
     let mutable acc = Set.empty
 
-    ProcessWorkList startKernels (fun kernel ->
-        if not (acc.Contains(kernel) then
+    processWorkList startKernels (fun kernel ->
+        if not (acc.Contains(kernel)) then
             acc <- acc.Add(kernel)
         ...)
 
     acc |> Seq.toList
 ```
 
-Aside from the single point of mutation in the middle of the lambda expression, all other code which works with `acc` no differently than if it were a normal `let`-bound immutable value. This will make it easier to change over time.
+Aside from the single point of mutation in the middle of the lambda expression, all other code that touches `acc` can do so in a manner that is no different to the usage of a normal `let`-bound immutable value. This will make it easier to change over time.

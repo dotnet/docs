@@ -2,15 +2,15 @@
 
 This article offers guidelines for how to format your code so that your F# code is:
 
-* Generally viewed as easier to read
-* Adhering to formatting tools in Visual Studio and other editors
+* Generally viewed as more legible
+* Is in accordance with conventions applied by formatting tools in Visual Studio and other editors
 * Similar to other code online
 
 These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
 
 ## General rules for indentation
 
-F# uses significant whitespace by default. The following guidelines will help you reign in formatting challenges for this.
+F# uses significant whitespace by default. The following guidelines are intended to provide guidance as to how to juggle some challenges this can impose.
 
 ### Using spaces
 
@@ -28,7 +28,7 @@ Indent `|` in type definition by 4 spaces:
 // OK
 type Volume =
     | Liter of float
-    | USPint of float
+    | FluidOunce of float
     | ImperialPint of float
 
 // Not OK
@@ -38,7 +38,7 @@ type Volume =
 | ImperialPint of float
 ```
 
-Instantiated Discriminated Unions that split across multiple lines should give containing data a new scope with indentation:
+Instantiated Discriminated Unions that split across multiple lines should give contained data a new scope with indentation:
 
 ```fsharp
 let tree1 =
@@ -59,12 +59,12 @@ let tree1 =
 
 ## Formatting tuples
 
-A tuple is parenthesized and the commas therein (delimiters) are each followed by a space e.g. `(1, 2)`, `(x, y, z)`.
+A tuple instantiation should be parenthesized, and the delimiting commas within should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
 
-A commonly accepted exception is to omit parentheses in pattern matching of tuples. The justification is to match multiple values, not construct new tuples.
+A commonly accepted exception is to omit parentheses in pattern matching of tuples:
 
 ```fsharp
-let x, y = z
+let (x, y) = z // Destructuring
 
 match x, y with
 | 1, _ -> 0
@@ -80,7 +80,7 @@ Short records can be written in one line:
 let point = { X = 1.0; Y = 0.0 }
 ```
 
-Records which are longer should use new lines for labels:
+Records that are longer should use new lines for labels:
 
 ```fsharp
 let rainbow =
@@ -139,14 +139,14 @@ let pascalsTriangle = [|
     [|1; 4; 6; 4; 1|]
     [|1; 5; 10; 10; 5; 1|]
     [|1; 6; 15; 20; 15; 6; 1|]
-    [|1; 7; 21; 35; 35; 21; 7; 1|] 
+    [|1; 7; 21; 35; 35; 21; 7; 1|]
     [|1; 8; 28; 56; 70; 56; 28; 8; 1|]
 |]
 ```
 
 ## Formatting if expressions
 
-Indentation of conditionals depends on the sizes of the expressions which make them up. If `cond`, `e1` and `e2` are small, simply write them on one line:
+Indentation of conditionals depends on the sizes of the expressions that make them up. If `cond`, `e1` and `e2` are small, simply write them on one line:
 
 ```fsharp
 if cond then e1 else e2
@@ -177,7 +177,7 @@ else
     e2
 ```
 
-Multiple conditionals open each line counting from the second one by the keyword `else` or `elif`:
+Multiple conditionals with `elif` and `else` are indented at the same scope as the `if`:
 
 ```fsharp
 if cond1 then e1
@@ -193,13 +193,13 @@ Use a `|` for each clause of a match with no indentation. If the expression is s
 ```fsharp
 // OK
 match l with
-| { him = x; her = "Posh" } :: tail -> x
+| { him = x; her = "Posh" } :: tail -> _
 | _ :: tail -> findDavid tail
 | [] -> failwith "Couldn't find David"
 
 // Not OK
 match l with
-    | { him = x; her = "Posh" } :: tail -> x
+    | { him = x; her = "Posh" } :: tail -> _
     | _ :: tail -> findDavid tail
     | [] -> failwith "Couldn't find David"
 
@@ -207,28 +207,29 @@ match l with
 match l with [] -> false | _ :: _ -> true
 ```
 
-If the expression on the right of the pattern matching arrow is too large, add the following expression on a new line which is indented one scope.
+If the expression on the right of the pattern matching arrow is too large, move it to the following line, indented one step from the `match`/`|`.
 
 ```fsharp
 match lam with
+| Var v -> 1
 | Abs(x, body) ->
     1 + sizeLambda body
 | App(lam1, lam2) ->
     sizeLambda lam1 + sizeLambda lam2
-| Var v -> 1
 
 ```
 
-Pattern matching of anonymous functions, starting by `function`, should be indented with respect to the `function` keyword:
+Pattern matching of anonymous functions, starting by `function`, should generally not indent too far. For example, indenting one scope as follows is fine:
 
 ```fsharp
-List.map (function
-          | Abs(x, body) -> 1 + sizeLambda 0 body
-          | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
-          | Var v -> 1) lambdaList
+lambdaList
+|> List.map (function
+    | Abs(x, body) -> 1 + sizeLambda 0 body
+    | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
+    | Var v -> 1)
 ```
 
-Pattern matching in functions defined by `let` or `let rec` should be indented 4 spaces after starting of `let` although `function` keyword may be used:
+Pattern matching in functions defined by `let` or `let rec` should be indented 4 spaces after starting of `let`, even if `function` keyword is used:
 
 ```fsharp
 let rec sizeLambda acc = function
@@ -260,7 +261,7 @@ with
 
 In general, most function parameter application is done on the same line.
 
-If you wish to apply parameters to a function on a new line, indent them 4 lines.
+If you wish to apply parameters to a function on a new line, indent them by one scope.
 
 ```fsharp
 // OK
@@ -288,7 +289,7 @@ let printListWithOffset a list1 =
     List.iter (fun elem ->
         printfn "%d" (a + elem)) list1
 
-// Tolerable
+// OK, but prefer previous
 let printListWithOffset a list1 =
     List.iter (
         fun elem ->
@@ -303,7 +304,7 @@ Infix expressions are OK to lineup on same column:
 
 ```fsharp
 acc +
-(Printf.sprintf "\t%s - %i\n\r"
+(sprintf "\t%s - %i\n\r"
      x.IngredientName x.Quantity)
 
 let function1 arg1 arg2 arg3 arg4 =
@@ -317,6 +318,15 @@ Pipeline `|>` should go at the start of a line immediately under the expression 
 
 ```fsharp
 // OK
+let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
+               |> List.ofArray
+               |> List.map (fun assm -> assm.GetTypes())
+               |> Array.concat
+               |> List.ofArray
+               |> List.map (fun t -> t.GetMethods())
+               |> Array.concat
+
+// OK, but prefer previous
 let methods2 =
     System.AppDomain.CurrentDomain.GetAssemblies()
     |> List.ofArray
@@ -325,15 +335,6 @@ let methods2 =
     |> List.ofArray
     |> List.map (fun t -> t.GetMethods())
     |> Array.concat
-
-// OK
-let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
-               |> List.ofArray
-               |> List.map (fun assm -> assm.GetTypes())
-               |> Array.concat
-               |> List.ofArray
-               |> List.map (fun t -> t.GetMethods())
-               |> Array.concat
 
 // Not OK
 let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
@@ -347,7 +348,7 @@ let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
 
 ### Formatting modules
 
-Code in a local module must be indented relative to the module, but code in a top-level module does not have to be indented. Namespace elements do not have to be indented.
+Code in a local module must be indented relative to the module, but code in a top-level module should not be indented. Namespace elements do not have to be indented.
 
 ```fsharp
 // A is a top-level module.
@@ -375,7 +376,7 @@ let comparer =
           member x.Compare(s1, s2) =
               let rev (s : String) =
                   new String (Array.rev (s.ToCharArray()))
-              let reversed = rev s1 i
+              let reversed = rev s1
               reversed.CompareTo (rev s2) }
 ```
 
@@ -421,7 +422,7 @@ Generally prefer multiple double-slash comments over ML-style block comments.
 *)
 ```
 
-Start inline comments with a new line, and captialize the first letter.
+Inline comments should capitalize the first letter.
 
 ```fsharp
 let f x = x + 1 // Increment by one.
@@ -470,8 +471,6 @@ Use camelCase for private module-bound values, including the following:
 let emailMyBossTheLatestResults =
     ...
 ```
-
-In large assemblies and implementation files, PascalCase is sometimes used to indicate major internal routines.
 
 ### Avoid underscores in names
 

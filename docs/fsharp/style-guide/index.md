@@ -10,7 +10,7 @@ We feel that the following principles should be kept in mind any time you write 
 
 1. **Good F# code is succinct and expressive**
 
-    F# has many features which allow you to express actions in fewer lines of code and re-use generic functionality. The F# core library also contains many useful types and functions for working with common collections of data. As a general rule, if you can express a solution to a problem in less lines of code, other developers (or your future self) will be appreciative. It is also highly recommended that you use a library such as FSharp.Core, the [vast .NET libraries](https://docs.microsoft.com/dotnet/api/) which F# runs on, or a third-party package on [NuGet](https://www.nuget.org/) when you need to do a nontrivial task.
+    F# has many features that allow you to express actions in fewer lines of code and re-use generic functionality. The F# core library also contains many useful types and functions for working with common collections of data. As a general rule, if you can express a solution to a problem in less lines of code, other developers (or your future self) will be appreciative. It is also highly recommended that you use a library such as FSharp.Core, the [vast .NET libraries](https://docs.microsoft.com/dotnet/api/) that F# runs on, or a third-party package on [NuGet](https://www.nuget.org/) when you need to do a nontrivial task.
 
 2. **Good F# code is interoperable**
 
@@ -18,7 +18,7 @@ We feel that the following principles should be kept in mind any time you write 
 
 3. **Good F# code makes use of object programming, not object orientation**
 
-    F# has full support for programming with objects in .NET, including [classes](../language-reference/classes.md), [interfaces](../language-reference/interfaces.md), [access modifiers](../language-reference/access-control.md), [abstract classes](../language-reference/abstract-classes.md), and so on. For more complicated functional code, such as functions which must be context-aware, objects can easily encapsulate contextual information in ways that functions cannot. Features such as [optional parameters](../language-reference/members/methods.md#optional-arguments) and [overloading](../language-reference/members/methods.md#overloaded-methods) also aid consuption of this functionality for callers.
+    F# has full support for programming with objects in .NET, including [classes](../language-reference/classes.md), [interfaces](../language-reference/interfaces.md), [access modifiers](../language-reference/access-control.md), [abstract classes](../language-reference/abstract-classes.md), and so on. For more complicated functional code, such as functions that must be context-aware, objects can easily encapsulate contextual information in ways that functions cannot. Features such as [optional parameters](../language-reference/members/methods.md#optional-arguments) and [overloading](../language-reference/members/methods.md#overloaded-methods) also aid consumption of this functionality for callers.
 
 4. **Good F# code performs well without exposing mutation**
 
@@ -26,12 +26,12 @@ We feel that the following principles should be kept in mind any time you write 
 
 5. **Good F# code is toolable**
 
-    Tools are invaluable for working in large codebases, and there are ways to write F# code such that it can be used more effectively with tools. One example is making sure you don't overdo it with a point-free style of programming, so that intermmediate values can be inspected with a debugger. Another example is using [XML documentation comments](../language-reference/xml-documentation.md) describing constructs such that tooltips in editors can display those comments at the call site. Always think about how your code will be read, navigated, debugged, and manipulated by other programmers with their tools.
+    Tools are invaluable for working in large codebases, and there are ways to write F# code such that it can be used more effectively with tools. One example is making sure you don't overdo it with a point-free style of programming, so that intermediate values can be inspected with a debugger. Another example is using [XML documentation comments](../language-reference/xml-documentation.md) describing constructs such that tooltips in editors can display those comments at the call site. Always think about how your code will be read, navigated, debugged, and manipulated by other programmers with their tools.
 
 ## Read next
 
 The [F# Formatting Guidelines](formatting.md) provide guidance on how to format code so that it is easy to read.
 
-The [F# coding conventions](conventions.md) provide guidance for F# programming idioms which will help the long-term maintenance of larger F# codebases.
+The [F# coding conventions](conventions.md) provide guidance for F# programming idioms that will help the long-term maintenance of larger F# codebases.
 
 The [F# Component Design Guidelines](component-design-guidelines.md) is a comprehensive set of guidance for authoring F# components, such as libraries.

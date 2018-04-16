@@ -1,12 +1,12 @@
 ---
 title: "If...Then...Else Statement (Visual Basic)"
-ms.date: 04/13/2018
+ms.date: 04/16/2018
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: 
   - "vb.ElseIf"
   - "vb.Then"
@@ -107,7 +107,7 @@ This article includes several examples that illustrate uses of the `If`...`Then`
  
  The following example illustrates the use of the multiple-line syntax of the `If`...`Then`...`Else` statement.  
   
- [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb?highlight=14,15,17,18,19,20,21,23,25,26,28)]
+ [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb?highlight=10,12,14,16)]
 
 ## Nested Syntax Example
 
@@ -115,7 +115,7 @@ This article includes several examples that illustrate uses of the `If`...`Then`
 
  The following example contains nested `If`...`Then`...`Else` statements.  
   
- [!code-vb[VbVbalrStatements#102](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_2.vb?highlight=10,12,14,16)]
+ [!code-vb[VbVbalrStatements#102](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_2.vb?highlight=14,15,17,18,19,20,21,23,25,26,28)]
 
 ## Single-Line Syntax Example
   

@@ -63,11 +63,11 @@ There are a number of ways to expose asynchronous features to client code. The E
  [Threading](../../../docs/standard/threading/index.md)  
  Describes multithreading features in the .NET Framework.  
   
- [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)  
+ [Threading](https://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)  
  Describes multithreading features in the C# and Visual Basic languages.  
   
 ## See Also  
  [Managed Threading Best Practices](../../../docs/standard/threading/managed-threading-best-practices.md)  
  [Events](../../../docs/standard/events/index.md)  
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [Multithreading in Components](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
  [Asynchronous Programming Design Patterns](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

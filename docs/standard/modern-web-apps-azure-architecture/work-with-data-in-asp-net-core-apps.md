@@ -6,6 +6,7 @@ ms.author: wiwagn
 ms.date: 10/07/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -12,11 +12,11 @@ ms.topic: article
 ---
 # Orchestration Patterns
 
-Durable Functions makes easier to create stateful workflows that are comprised of discrete, long running activities in a serverless environment. Since Durable Functions is able to track the progress of your your workflows and peridically checkpoints the execution history, let lends itself to implementing some interesting patterns.
+Durable Functions makes easier to create stateful workflows that are comprised of discrete, long running activities in a serverless environment. Since Durable Functions is able to track the progress of your workflows and peridically checkpoints the execution history, it lends itself to implementing some interesting patterns.
 
 ## Function chaining
 
-In a typical sequential process, activites need to execute one after the other in a particular order. Optionally, the upcoming activity my require some output from the previous. This dependency on order and out creates a function chain of execution.
+In a typical sequential process, activites need to execute one after the other in a particular order. Optionally, the upcoming activity may require some output from the previous. This dependency on the ordering of activities creates a function chain of execution.
 
 The benefit of using Durable Functions to implement this workflow pattern comes from its ability to do checkpointing. In the event of a server crash, network timeout or some other issue, Durable functions is able to resume from the last known state and continue running your workflow event if it's on another server.
 
@@ -36,7 +36,7 @@ public static async Task<string> PlaceOrder([OrchestrationTrigger] DurableOrches
 }
 ```
 
-In the preceeding code sample, the `CallActivityAsync` function responsibile for running a given activity on a virtual machine in the data center. When the await returns and the underlying Task completes, the execution will be recorded to the history table. The code in the orchestrator function can make use of any of the familiar constructs of the Task Parallel Library and the async/await keywords.
+In the preceeding code sample, the `CallActivityAsync` function is responsibile for running a given activity on a virtual machine in the data center. When the await returns and the underlying Task completes, the execution will be recorded to the history table. The code in the orchestrator function can make use of any of the familiar constructs of the Task Parallel Library and the async/await keywords.
 
 Below is a simplified example of what the `ProcessPayment` method may look like.
 
@@ -86,7 +86,7 @@ The sample result below shows the structure of the response payload.
 }
 ```
 
-Using your preffered HTTP client, GET requests can be made to the URI in statusQueryGetUri to inspect the status of the running workflow. The returned status resonse should resemble the following.
+Using your preffered HTTP client, GET requests can be made to the URI in statusQueryGetUri to inspect the status of the running workflow. The returned status response should resemble the following.
 
 ```json
 {
@@ -160,4 +160,4 @@ public static async Task CheckStockPrice([OrchestrationTrigger] DurableOrchestra
 
 >[!div class="step-by-step"]
 [Previous] (./index.md)
-[Next] (./orchestration-patterns.md)
+[Next] (../serverless-business-scenarios/index.md)

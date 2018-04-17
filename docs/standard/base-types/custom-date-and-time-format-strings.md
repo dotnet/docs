@@ -30,7 +30,7 @@ A date and time format string defines the text representation of a <xref:System.
  Custom date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.  
   
 > [!TIP]
->  You can download the [Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either date and time or numeric values and displays the result string.  
+>  You can download the [Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either date and time or numeric values and displays the result string.  
   
 <a name="table"></a> In formatting operations, custom date and time format strings can be used either with the `ToString` method of a date and time instance or with a method that supports composite formatting. The following example illustrates both uses.  
   
@@ -697,4 +697,4 @@ A date and time format string defines the text representation of a <xref:System.
  <xref:System.IFormatProvider?displayProperty=nameWithType>  
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
- [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+ [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

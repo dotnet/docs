@@ -189,7 +189,7 @@ In this particular case, this file defines two services: the web service (your c
 
 -   Link the web service to the redis service
 
-The redis service uses the [latest public redis image](https://hub.docker.com/_/redis/) pulled from the Docker Hub registry. [redis](http://redis.io/) is a very popular cache system for server-side applications.
+The redis service uses the [latest public redis image](https://hub.docker.com/_/redis/) pulled from the Docker Hub registry. [redis](https://redis.io/) is a very popular cache system for server-side applications.
 
 ### Step 5: Build and run your Docker app
 

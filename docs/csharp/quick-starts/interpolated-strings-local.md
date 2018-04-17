@@ -26,7 +26,7 @@ dotnet new console
 
 This command creates a new .NET Core console application in the current directory.
 
-Open **Program.cs** in your favourite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code, where you replace `<name>` with your name:
+Open **Program.cs** in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code, where you replace `<name>` with your name:
 
 ```csharp
 var name = "<name>";
@@ -59,7 +59,7 @@ We create an instance of the `Vegetable` type by using `new` keyword and providi
 var item = new Vegetable("eggplant");
 ```
 
-Finally, we include the `item` variable into an interpolated string that also contains a <xref:System.DateTime> value and a <xref:System.Decimal> value. Replace all of the C# code in your editor with the following code, and then use the `dotnet run` command to run it:
+Finally, we include the `item` variable into an interpolated string that also contains a <xref:System.DateTime> value, a <xref:System.Decimal> value, and a `Unit` [enumeration](../programming-guide/enumeration-types.md) value. Replace all of the C# code in your editor with the following code, and then use the `dotnet run` command to run it:
 
 ```csharp
 using System;
@@ -75,12 +75,15 @@ public class Vegetable
 
 public class Program
 {
+   public enum Unit { item, pound, ounce, dozen };
+
    public static void Main()
    {
       var item = new Vegetable("eggplant");
       var date = DateTime.Now;
       var price = 1.99m;
-      Console.WriteLine($"On {date}, the price of {item} was {price} per item.");
+      var unit = Unit.item;
+      Console.WriteLine($"On {date}, the price of {item} was {price} per {unit}.");
    }
 }
 ```
@@ -89,7 +92,7 @@ Note that the interpolated expression `item` in the interpolated string resolves
 
 - If the interpolated expression evaluates to `null`, an empty string ("", or <xref:System.String.Empty?displayProperty=nameWithType>) is used.
 
-- If the interpolated expression doesn't evaluate to `null`, typically the `ToString` method of the result type is called. You can test this by updating the implementation of the `Vegetable.ToString` method. You might even not implement `ToString` method since every C# data type has some implementation of this method. To test that, comment out the definition of the `Vegetable.ToString` method in the example (to do that, put a comment symbol `//` in front of it). In the output, the string "eggplant" is replaced by the fully qualified type name ("Vegetable" in this example), which is the default behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method.
+- If the interpolated expression doesn't evaluate to `null`, typically the `ToString` method of the result type is called. You can test this by updating the implementation of the `Vegetable.ToString` method. You might even not implement `ToString` method since every C# data type has some implementation of this method. To test that, comment out the definition of the `Vegetable.ToString` method in the example (to do that, put a comment symbol `//` in front of it). In the output, the string "eggplant" is replaced by the fully qualified type name ("Vegetable" in this example), which is the default behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. Default behavior of the `ToString` method for an enumeration type is to return the string representation of a value used at the definition of the enumeration.
 
 In the output from this example, the date is too precise (the price of eggplant doesn't change every second), and the price value doesn't indicate a unit of currency. In the next section, you'll learn how to fix those issues by controlling the format of string representations of the expression results.
 
@@ -98,7 +101,7 @@ In the output from this example, the date is too precise (the price of eggplant 
 In the previous section, two poorly formatted strings were inserted into the result string. One was a date and time value for which only the date was appropriate. The second was a price that didn't indicate its unit of currency. Both issues are easy to address. String interpolation lets you specify *format strings* that control the formatting of particular types. Modify the call to `Console.WriteLine` from the previous example to include the format strings for the date and price expressions as shown in the following line:
 
 ```csharp
-Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per item.");
+Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}.");
 ```
 
 You specify a format string by following the interpolated expression with a colon (":") and the format string. "d" is a [standard date and time format string](../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier) that represents the short date format. "C2" is a  [standard numeric format string](../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier) that represents a number as a currency value with two digits after the decimal point.

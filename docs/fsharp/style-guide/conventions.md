@@ -79,7 +79,7 @@ let parsed = StringTokenization.parse s // Must qualify to use 'parse'
 
 ### Sort `open` statements topologically
 
-In F#, the order of declarations matters, including with `open` statements. This is unlike C#, where `using` statements can be sorted arbitrarily, where the effect is the same regardless of ordering.
+In F#, the order of declarations matters, including with `open` statements. This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
 
 In F#, because elements opened into a scope can shadow others already present. This means that reordering `open` statements can alter the meaning of code. As a result, sorting alphanumerically (or psuedo-randomly) is generally not recommended, lest you generate different behavior that you might expect.
 
@@ -135,7 +135,7 @@ open Microsoft.FSharp.Compiler.Layout.TaggedTextOps
 
 Note that a line break separates topological layers, with each layer being sorted alphanumerically afterwards. This cleanly organizes code without accidentally shadowing values.
 
-## Use classes to contain values which have side effects
+## Use classes to contain values that have side effects
 
 There are many times when initializing a value can have side effects, such as instantiating a context to a database or other remote resource. It is tempting to initialize such things in a module and use it in subsequent functions:
 
@@ -214,10 +214,10 @@ The main constructs available in F# for the purposes of raising exceptions shoul
 
 | Function | Syntax | Purpose |
 |----------|--------|---------|
-| `invalidArg` | `invalidArg "argumentName" "message"` | Raises a `System.ArgumentException` with a specified argument name and message. |
 | `nullArg` | `nullArg "argumentName"` | Raises a `System.ArgumentNullException` with the specified argument name. |
+| `invalidArg` | `invalidArg "argumentName" "message"` | Raises a `System.ArgumentException` with a specified argument name and message. |
 | `invalidOp` | `invalidOp "message"` | Raises a `System.InvalidOperationException` with the specified message. |
-|`raise`| `raise ExceptionType("message")` | General purpose mechanism for throwing exceptions. |
+|`raise`| `raise (ExceptionType("message"))` | General purpose mechanism for throwing exceptions. |
 | `failwith` | `failwith "message"` | Raises a `System.Exception` with the specified message. |
 | `failwithf` | `failwithf "format string" argForFormatString` | Raises a `System.Exception` with a message determined by the format string and its inputs. |
 

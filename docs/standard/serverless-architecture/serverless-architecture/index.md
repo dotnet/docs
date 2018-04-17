@@ -1,5 +1,5 @@
 ---
-title: Serverless architecture | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Serverless architecture - Serverless apps architecture, patterns, and Azure implementation
 description: Exploration of various architectures and applications that are supported by serverless architectures, including web apps, mobile, and the Internet of Things.
 author: JEREMYLIKNESS
 ms.author: jeliknes

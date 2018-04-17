@@ -1,5 +1,5 @@
 ---
-title: Azure Logic Apps | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Azure Logic Apps - Serverless apps architecture, patterns, and Azure implementation
 description: Azure Logic Apps enable building automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
 author: JEREMYLIKNESS
 ms.author: jeliknes

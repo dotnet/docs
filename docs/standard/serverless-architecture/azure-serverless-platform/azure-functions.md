@@ -1,5 +1,5 @@
 ---
-title: Azure Functions | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Azure Functions - Serverless apps architecture, patterns, and Azure implementation
 description: Azure functions provide serverless capabilities across multiple languages (C#, JavaScript, Java, and more) and platforms to provide event-driver instant scale code.
 author: JEREMYLIKNESS
 ms.author: jeliknes

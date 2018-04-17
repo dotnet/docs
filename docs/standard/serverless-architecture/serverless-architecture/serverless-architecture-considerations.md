@@ -1,5 +1,5 @@
 ---
-title: Serverless architecture considerations | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Serverless architecture considerations - Serverless apps architecture, patterns, and Azure implementation
 description: Understand the challenges of architecting serverless applications. Understand considerations from state management and persistent storage to scale, logging, tracing and diagnostics.
 author: JEREMYLIKNESS
 ms.author: jeliknes

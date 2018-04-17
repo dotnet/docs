@@ -29,9 +29,9 @@ with the next quickstart online or on your own machine. There are links
 to help you setup your environment and continue with the next quickstart
 on your machine.
 
-## [Hello World](hello-world.yml)
+## [Hello world](hello-world.yml)
 
-In the [Hello World](hello-world.yml) quickstart, you'll create the most basic
+In the [Hello world](hello-world.yml) quickstart, you'll create the most basic
 C# program. You'll explore the `string` type and how to work with text.
 
 ## [Numbers in C#](numbers-in-csharp.yml)
@@ -42,7 +42,7 @@ numeric types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#. This quickstart is also available
 [to run locally on your machine](numbers-in-csharp-local.md).
 
-This quickstart assumes that you have finished the [Hello World](hello-world.yml) lesson.
+This quickstart assumes that you have finished the [Hello world](hello-world.yml) lesson.
 
 ## [Branches and loops](branches-and-loops.yml)
 
@@ -52,14 +52,14 @@ basics of control flow, which is the basis of how programs make decisions and ch
 different actions. This quickstart is also available
 [to run locally on your machine](branches-and-loops-local.md).
 
-This quickstart assumes that you have finished the [Hello World](hello-world.yml) and
+This quickstart assumes that you have finished the [Hello world](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
 
 ## [String interpolation](interpolated-strings.yml)
 
 The [String interpolation](interpolated-strings.yml) quickstart shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string. This quickstart is also available [to run locally on your machine](interpolated-strings-local.md).
 
-This quickstart assumes that you have finished the [Hello World](hello-world.yml), [Numbers in C#](numbers-in-csharp.yml), and [Branches and loops](branches-and-loops.yml) lessons.
+This quickstart assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp.yml), and [Branches and loops](branches-and-loops.yml) lessons.
 
 ## [List collection](list-collection.yml)
 

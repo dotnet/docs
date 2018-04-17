@@ -132,7 +132,7 @@ ACS is currently available for Standard A, D, DS, G, and GS series Linux virtual
     [*https://docs.mesosphere.com/1.7/overview/*](https://docs.mesosphere.com/1.7/overview/)
 
 -   **Kubernetes.** The official site.\
-    [*http://kubernetes.io/*](http://kubernetes.io/)
+    [*https://kubernetes.io/*](https://kubernetes.io/)
 
 
 >[!div class="step-by-step"]

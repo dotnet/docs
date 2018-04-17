@@ -75,7 +75,7 @@ The following table follows .NET naming and capitalization conventions. There ar
 
 In addition to the previous table, be aware of the following:
 
-#### Avoid abbreviaitons
+#### Avoid abbreviations
 
 The .NET guidelines discourage the use of abbreviations (for example, “use `OnButtonClick` rather than `OnBtnClick`”). Very common abbreviations, such as `Async` for “Asynchronous”, are tolerated. This guideline is sometimes ignored for functional programming; for example, `List.iter` uses an abbreviation for “iterate”. For this reason, using abbreviations tends to be tolerated to a greater degree in F#-to-F# programming, but should still generally be avoided in public component design.
 

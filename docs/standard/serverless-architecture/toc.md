@@ -10,5 +10,6 @@
 ### [Azure Logic Apps](azure-serverless-platform/logic-apps.md)
 ### [Azure Event Grid](azure-serverless-platform/event-grid.md)
 ## [Durable Azure functions](durable-azure-functions/index.md)
+### [Orchestration Patterns](durable-azure-functions/orchestration-patterns.md)
 ## [Serverless business scenarios and use cases](serverless-business-scenarios/index.md)
 ## [Conclusion](serverless-conclusion/index.md)

@@ -15,6 +15,7 @@ ms.topic: article
 Durable Functions makes easier to create stateful workflows that are comprised of discrete, long running activities in a serverless environment. Since Durable Functions is able to track the progress of your your workflows and peridically checkpoints the execution history, let lends itself to implementing some interesting patterns.
 
 ## Function chaining
+
 In a typical sequential process, activites need to execute one after the other in a particular order. Optionally, the upcoming activity my require some output from the previous. This dependency on order and out creates a function chain of execution.
 
 The benefit of using Durable Functions to implement this workflow pattern comes from its ability to do checkpointing. In the event of a server crash, network timeout or some other issue, Durable functions is able to resume from the last known state and continue running your workflow event if it's on another server.
@@ -55,6 +56,7 @@ public static bool ProcessPayment([ActivityTrigger] DurableActivityContext conte
 ```
 
 ## Asynchronous HTTP APIs
+
 In some cases, workflows may contain activities that take a realtively long period of time to complete. Imagine a process that kicks off the backup of media files into blob storage. Depending on the size and quantity of the media files, this backup process may take hours to complete.
 
 In a scenario like this, the `DurableOrchestrationClient`'s ability to check the status of a running workflow becomes quite useful. When using an `HttpTrigger` to intiate a workflow, the `CreateCheckStatusResponse` method can be used to return an instance of `HttpResponseMessage`. This response provides the client with a URI in the payload that can be used to check the status of the running process.
@@ -83,6 +85,7 @@ The sample result below shows the structure of the response payload.
     "terminatePostUri": "http://host/terminateUri"
 }
 ```
+
 Using your preffered HTTP client, GET requests can be made to the URI in statusQueryGetUri to inspect the status of the running workflow. The returned status resonse should resemble the following.
 
 ```json
@@ -96,9 +99,11 @@ Using your preffered HTTP client, GET requests can be made to the URI in statusQ
     "lastUpdatedTime": "2018-01-01T00:22:09Z"
 }
 ```
+
 As the process continues, the status response will change to either **Failed** or **Completed**. On successful completion, the **output** property in the payload will contained any returned data.
 
 ## Monitoring
+
 For simple recurring tasks, Azure Functions provides the TimerTrigger that can be scheduled based on CRON expression. This works well for simple, short-lived tasks, but there might be scenarios where more flexible scheduled is needed. This is where the monitoring pattern and Durable Functions can help.
 
 Durable Functions allows for flexible scheduling intervals, lifetime management, and the creation of multiple monitor processes from a single orchestration function. One use case for this might be to create watchers for stock price changes that complete once a certain threshold is met.
@@ -144,7 +149,6 @@ public static async Task CheckStockPrice([OrchestrationTrigger] DurableOrchestra
 ```
 
 `DurableOrchestrationContext`'s `CreateTimer` method sets up the scheduled for the next invocation of the loop to check for stock price changes. DurableOrchestrationContext also has a `CurrentUtcDateTime` property to get the current DateTime value in UTC. It's better to use this property instead of DateTime.UtcNow because it is easily mocked for testing.
-
 
 ## Recommended Resources !TODO
 

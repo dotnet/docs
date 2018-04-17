@@ -1,5 +1,5 @@
 ---
-title: Architecture approaches | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Architecture approaches - Serverless apps architecture, patterns, and Azure implementation
 description: An introduction to architecture approaches for building cloud-based enterprise applications.
 author: JEREMYLIKNESS
 ms.author: jeliknes

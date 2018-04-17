@@ -1,5 +1,5 @@
 ---
-title: Serverless design examples | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Serverless design examples - Serverless apps architecture, patterns, and Azure implementation
 description: Understand the variety of scenarios supported by serverless architectures, from scheduling and event-based processing to file triggers and stream process.  
 author: JEREMYLIKNESS
 ms.author: jeliknes

@@ -17,7 +17,7 @@ ms.workload:
   - "dotnetcore"
 ---
 # Version Tolerant Serialization Technology Sample
-[Download Sample](http://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/VTS.zip.exe)  
+[Download Sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/VTS.zip.exe)  
   
  This sample demonstrates the version tolerance features of .NET Serialization. The sample builds applications that use different versions of a <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> to serialize and deserialize data. Despite the presence of different type versions, the applications communicate seamlessly. For more information, see [Version Tolerant Serialization](../../../docs/standard/serialization/version-tolerant-serialization.md).  
   

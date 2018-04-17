@@ -1,5 +1,5 @@
 ---
-title: Sample business scenarios and use cases for serverless apps | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Sample business scenarios and use cases for serverless apps - Serverless apps architecture, patterns, and Azure implementation
 description: Learn serverless with a hands-on approach by accessing samples that range from image processing to mobile backends and ETL pipelines.
 author: JEREMYLIKNESS
 ms.author: jeliknes

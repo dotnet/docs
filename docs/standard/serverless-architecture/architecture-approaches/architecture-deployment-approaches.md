@@ -1,5 +1,5 @@
 ---
-title: Architecture deployment approaches | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Architecture deployment approaches - Serverless apps architecture, patterns, and Azure implementation
 description: A guide to different ways enterprise architectures are deployed to the cloud, including a comparison between IaaS, PaaS, containers, and serverless.
 author: JEREMYLIKNESS
 ms.author: jeliknes

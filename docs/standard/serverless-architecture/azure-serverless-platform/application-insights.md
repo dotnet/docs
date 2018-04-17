@@ -1,5 +1,5 @@
 ---
-title: Application Insights | Serverless apps. Architecture, patterns, and Azure implementation.
+title: Application Insights - Serverless apps architecture, patterns, and Azure implementation
 description: Application Insights is a serverless diagnostics platform that enables developers to detect, triage, and diagnose issues in web apps, mobile apps, desktop apps and microservices.
 author: JEREMYLIKNESS
 ms.author: jeliknes

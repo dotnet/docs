@@ -1,13 +1,9 @@
 ---
 title: "Creating Prototypes in Managed Code"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "csharp"
@@ -33,7 +29,7 @@ ms.workload:
   - "dotnet"
 ---
 # Creating Prototypes in Managed Code
-This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md).  
+This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
   
  Before you can access an unmanaged DLL function from managed code, you need to know the name of the function and the name of the DLL that exports it. With this information, you can begin to write the managed definition for an unmanaged function that is implemented in a DLL. Furthermore, you can adjust the way that platform invoke creates the function and marshals data to and from the function.  
   
@@ -41,7 +37,7 @@ This topic describes how to access unmanaged functions and introduces several at
 >  Win32 API functions that allocate a string enable you to free the string by using a method such as `LocalFree`. Platform invoke handles such parameters differently. For platform invoke calls, make the parameter an `IntPtr` type instead of a `String` type. Use methods that are provided by the <xref:System.Runtime.InteropServices.Marshal?displayProperty=nameWithType> class to convert the type to a string manually and free it manually.  
   
 ## Declaration Basics  
- Managed definitions to unmanaged functions are language-dependent, as you can see in the following examples. For more complete code examples, see [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md).  
+ Managed definitions to unmanaged functions are language-dependent, as you can see in the following examples. For more complete code examples, see [Platform Invoke Examples](platform-invoke-examples.md).  
   
 ```vb  
 Imports System.Runtime.InteropServices  
@@ -228,11 +224,11 @@ interface IDemandStubsItf
 ```  
   
 ## See Also  
- [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)  
- [Specifying an Entry Point](../../../docs/framework/interop/specifying-an-entry-point.md)  
- [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)  
- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)  
- [Platform Invoke Security Considerations](http://msdn.microsoft.com/library/bbcc67f7-50b5-4917-88ed-cb15470409fb)  
- [Identifying Functions in DLLs](../../../docs/framework/interop/identifying-functions-in-dlls.md)  
- [Creating a Class to Hold DLL Functions](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)  
- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
+ [Consuming Unmanaged DLL Functions](consuming-unmanaged-dll-functions.md)  
+ [Specifying an Entry Point](specifying-an-entry-point.md)  
+ [Specifying a Character Set](specifying-a-character-set.md)  
+ [Platform Invoke Examples](platform-invoke-examples.md)  
+ [Platform Invoke Security Considerations](https://msdn.microsoft.com/library/bbcc67f7-50b5-4917-88ed-cb15470409fb(v=vs.100))  
+ [Identifying Functions in DLLs](identifying-functions-in-dlls.md)  
+ [Creating a Class to Hold DLL Functions](creating-a-class-to-hold-dll-functions.md)  
+ [Calling a DLL Function](calling-a-dll-function.md)

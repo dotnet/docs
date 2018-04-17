@@ -1,13 +1,9 @@
 ---
 title: "Interop Marshaling"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "marshaling, COM interop"
@@ -48,12 +44,12 @@ ms.workload:
   
 -   COM interop, which enables managed code to interact with Component Object Model (COM) objects through interfaces.  
   
- Both platform invoke and COM interop use interop marshaling to accurately move method arguments between caller and callee and back, if required. As the following illustration shows, a platform invoke method call flows from managed to unmanaged code and never the other way, except when [callback functions](../../../docs/framework/interop/callback-functions.md) are involved. Even though platform invoke calls can flow only from managed to unmanaged code, data can flow in both directions as input or output parameters. COM interop method calls can flow in either direction.  
+ Both platform invoke and COM interop use interop marshaling to accurately move method arguments between caller and callee and back, if required. As the following illustration shows, a platform invoke method call flows from managed to unmanaged code and never the other way, except when [callback functions](callback-functions.md) are involved. Even though platform invoke calls can flow only from managed to unmanaged code, data can flow in both directions as input or output parameters. COM interop method calls can flow in either direction.  
   
- ![Platform invoke](../../../docs/framework/interop/media/interopmarshaling.png "interopmarshaling")  
+ ![Platform invoke](./media/interopmarshaling.png "interopmarshaling")  
 Platform invoke and COM interop call flow  
   
- At the lowest level, both mechanisms use the same interop marshaling service; however, certain data types are supported exclusively by COM interop or platform invoke. For details, see [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md).  
+ At the lowest level, both mechanisms use the same interop marshaling service; however, certain data types are supported exclusively by COM interop or platform invoke. For details, see [Default Marshaling Behavior](default-marshaling-behavior.md).  
   
  [Back to top](#top)  
   
@@ -64,7 +60,7 @@ Platform invoke and COM interop call flow
  COM also has a marshaler that marshals data between COM apartments or different COM processes. When calling between managed and unmanaged code within the same COM apartment, the interop marshaler is the only marshaler involved. When calling between managed code and unmanaged code in a different COM apartment or a different process, both the interop marshaler and the COM marshaler are involved.  
   
 ### COM Clients and Managed Servers  
- An exported managed server with a type library registered by the [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md) has a `ThreadingModel` registry entry set to `Both`. This value indicates that the server can be activated in a single-threaded apartment (STA) or a multithreaded apartment (MTA). The server object is created in the same apartment as its caller, as shown in the following table.  
+ An exported managed server with a type library registered by the [Regasm.exe (Assembly Registration Tool)](../tools/regasm-exe-assembly-registration-tool.md) has a `ThreadingModel` registry entry set to `Both`. This value indicates that the server can be activated in a single-threaded apartment (STA) or a multithreaded apartment (MTA). The server object is created in the same apartment as its caller, as shown in the following table.  
   
 |COM client|.NET server|Marshaling requirements|  
 |----------------|-----------------|-----------------------------|  
@@ -73,7 +69,7 @@ Platform invoke and COM interop call flow
   
  Because the client and server are in the same apartment, the interop marshaling service automatically handles all data marshaling. The following illustration shows the interop marshaling service operating between managed and unmanaged heaps within the same COM-style apartment.  
   
- ![Interop marshaling](../../../docs/framework/interop/media/interopheap.gif "interopheap")  
+ ![Interop marshaling](./media/interopheap.gif "interopheap")  
 Same-apartment marshaling process  
   
  If you plan to export a managed server, be aware that the COM client determines the apartment of the server. A managed server called by a COM client initialized in an MTA must ensure thread safety.  
@@ -90,7 +86,7 @@ Same-apartment marshaling process
   
  When a managed client and unmanaged server are in the same apartment, the interop marshaling service handles all data marshaling. However, when client and server are initialized in different apartments, COM marshaling is also required. The following illustration shows the elements of a cross-apartment call.  
   
- ![COM marshaling](../../../docs/framework/interop/media/singleprocessmultapt.gif "singleprocessmultapt")  
+ ![COM marshaling](./media/singleprocessmultapt.gif "singleprocessmultapt")  
 Cross-apartment call between a .NET client and COM object  
   
  For cross-apartment marshaling, you can do the following:  
@@ -102,7 +98,7 @@ Cross-apartment call between a .NET client and COM object
     > [!NOTE]
     >  Once the thread of a C# client is set to STA, calls to MTA COM components will require cross-apartment marshaling.  
   
- For instructions on explicitly selecting an apartment model, see [Managed and Unmanaged Threading](http://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5).  
+ For instructions on explicitly selecting an apartment model, see [Managed and Unmanaged Threading](https://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5(v=vs.100)).  
   
  [Back to top](#top)  
   
@@ -116,13 +112,13 @@ Cross-apartment call between a .NET client and COM object
   
  The following illustration shows how interop marshaling and COM marshaling provide communications channels across process and host boundaries.  
   
- ![COM marshaling](../../../docs/framework/interop/media/interophost.gif "interophost")  
+ ![COM marshaling](./media/interophost.gif "interophost")  
 Cross-process marshaling  
   
 ### Preserving Identity  
  The common language runtime preserves the identity of managed and unmanaged references. The following illustration shows the flow of direct unmanaged references (top row) and direct managed references (bottom row) across process and host boundaries.  
   
- ![COM callable wrapper and runtime callable wrapper](../../../docs/framework/interop/media/interopdirectref.gif "interopdirectref")  
+ ![COM callable wrapper and runtime callable wrapper](./media/interopdirectref.gif "interopdirectref")  
 Reference passing across process and host boundaries  
   
  In this illustration:  
@@ -139,10 +135,10 @@ Reference passing across process and host boundaries
 ### Managed Remoting  
  The runtime also provides managed remoting, which you can use to establish a communications channel between managed objects across process and host boundaries. Managed remoting can accommodate a firewall between the communicating components, as the following illustration shows.  
   
- ![SOAP or TcpChannel](../../../docs/framework/interop/media/interopremotesoap.gif "interopremotesoap")  
+ ![SOAP or TcpChannel](./media/interopremotesoap.gif "interopremotesoap")  
 Remote calls across firewalls using SOAP or the TcpChannel class  
   
- Some unmanaged calls can be channeled through SOAP, such as the calls between [serviced components](http://msdn.microsoft.com/library/f109ee24-81ad-4d99-9892-51ac6f34978c) and COM.  
+ Some unmanaged calls can be channeled through SOAP, such as the calls between serviced components and COM.  
   
  [Back to top](#top)  
   
@@ -151,15 +147,15 @@ Remote calls across firewalls using SOAP or the TcpChannel class
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)|Describes the rules that the interop marshaling service uses to marshal data.|  
-|[Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md)|Describes how to declare method parameters and pass arguments to functions exported by unmanaged libraries.|  
-|[Marshaling Data with COM Interop](../../../docs/framework/interop/marshaling-data-with-com-interop.md)|Describes how to customize COM wrappers to alter marshaling behavior.|  
-|[How to: Migrate Managed-Code DCOM to WCF](../../../docs/framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md)|Describes how to migrate from DCOM to WCF.|  
-|[How to: Map HRESULTs and Exceptions](../../../docs/framework/interop/how-to-map-hresults-and-exceptions.md)|Describes how to map custom exceptions to HRESULTs and provides the complete mapping from each HRESULT to its comparable exception class in the .NET Framework.|  
-|[Interoperating Using Generic Types](http://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58)|Describes which actions are supported when using generic types for COM interoperability.|  
-|[Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)|Describes interoperability services provided by the common language runtime.|  
-|[Advanced COM Interoperability](http://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|Provides links to more information about incorporating COM components into your .NET Framework application.|  
-|[Design Considerations for Interoperation](http://msdn.microsoft.com/library/b59637f6-fe35-40d6-ae72-901e7a707689)|Provides tips for writing integrated COM components.|  
+|[Default Marshaling Behavior](default-marshaling-behavior.md)|Describes the rules that the interop marshaling service uses to marshal data.|  
+|[Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)|Describes how to declare method parameters and pass arguments to functions exported by unmanaged libraries.|  
+|[Marshaling Data with COM Interop](marshaling-data-with-com-interop.md)|Describes how to customize COM wrappers to alter marshaling behavior.|  
+|[How to: Migrate Managed-Code DCOM to WCF](how-to-migrate-managed-code-dcom-to-wcf.md)|Describes how to migrate from DCOM to WCF.|  
+|[How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)|Describes how to map custom exceptions to HRESULTs and provides the complete mapping from each HRESULT to its comparable exception class in the .NET Framework.|  
+|[Interoperating Using Generic Types](https://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58(v=vs.100))|Describes which actions are supported when using generic types for COM interoperability.|  
+|[Interoperating with Unmanaged Code](index.md)|Describes interoperability services provided by the common language runtime.|  
+|[Advanced COM Interoperability](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb(v=vs.100))|Provides links to more information about incorporating COM components into your .NET Framework application.|  
+|[Design Considerations for Interoperation](https://msdn.microsoft.com/library/b59637f6-fe35-40d6-ae72-901e7a707689(v=vs.100))|Provides tips for writing integrated COM components.|  
   
  [Back to top](#top)  
   

@@ -75,7 +75,7 @@ When field name inference fails, Visual Basic does not generate a compiler error
 
 A Visual Basic tuple is a value type that is an instance of one of the a **System.ValueTuple** generic types. For example, the `holiday` tuple defined in the previous example is an instance of the <xref:System.ValueTuple%603> structure. It is designed to be a lightweight container for data. Since the tuple aims to make it easy to create an object with multiple data items, it lacks some of the features that a custom structure might have. These include:
 
-- Customer members. You cannot define your own properties, methods, or events for a tuple.
+- Custom members. You cannot define your own properties, methods, or events for a tuple.
 
 - Validation. You cannot validate the data assigned to fields.
 

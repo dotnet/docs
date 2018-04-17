@@ -94,7 +94,7 @@ The use of asynchronous communication is explained with additional details later
     [*https://msdn.microsoft.com/library/dn589800.aspx*](https://msdn.microsoft.com/library/dn589800.aspx)
 
 -   **Martin Fowler. CQRS (Command and Query Responsibility Segregation)**
-    [*http://martinfowler.com/bliki/CQRS.html*](http://martinfowler.com/bliki/CQRS.html)
+    [*https://martinfowler.com/bliki/CQRS.html*](https://martinfowler.com/bliki/CQRS.html)
 
 -   **Materialized View**
     [*https://docs.microsoft.com/azure/architecture/patterns/materialized-view*](https://docs.microsoft.com/azure/architecture/patterns/materialized-view)

@@ -14,7 +14,7 @@ ms.workload:
 ---
 # Designing the infrastructure persistence layer
 
-Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](http://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom EF DBContexts.
+Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom EF DBContexts.
 
 ## The Repository pattern
 
@@ -85,7 +85,7 @@ A data access object directly performs data access and persistence operations ag
 
 A unit of work is referred to as a single transaction that involves multiple insert, update, or delete operations. In simple terms, it means that for a specific user action (for example, registration on a website), all the insert, update, and delete transactions are handled in a single transaction. This is more efficient than handling multiple database transactions in a chattier way.
 
-These multiple persistence operations are performed later in a single action when your code from the application layer commands it. The decision about applying the in-memory changes to the actual database storage is typically based on the [Unit of Work pattern](http://martinfowler.com/eaaCatalog/unitOfWork.html). In EF, the Unit of Work pattern is implemented as the DBContext.
+These multiple persistence operations are performed later in a single action when your code from the application layer commands it. The decision about applying the in-memory changes to the actual database storage is typically based on the [Unit of Work pattern](https://martinfowler.com/eaaCatalog/unitOfWork.html). In EF, the Unit of Work pattern is implemented as the DBContext.
 
 In many cases, this pattern or way of applying operations against the storage can increase application performance and reduce the possibility of inconsistencies. Also, it reduces transaction blocking in the database tables, because all the intended operations are committed as part of one transaction. This is more efficient in comparison to executing many isolated operations against the database. Therefore, the selected ORM is able to optimize the execution against the database by grouping several update actions within the same transaction, as opposed to many small and separate transaction executions.
 
@@ -134,7 +134,7 @@ In the upcoming sections, it is explained how to implement the Specification pat
 ### The Repository pattern
 
 -   **Edward Hieatt and Rob Mee. Repository pattern.**
-    [*http://martinfowler.com/eaaCatalog/repository.html*](http://martinfowler.com/eaaCatalog/repository.html)
+    [*https://martinfowler.com/eaaCatalog/repository.html*](https://martinfowler.com/eaaCatalog/repository.html)
 
 -   **The Repository pattern**
     [*https://msdn.microsoft.com/library/ff649690.aspx*](https://msdn.microsoft.com/library/ff649690.aspx)
@@ -148,7 +148,7 @@ In the upcoming sections, it is explained how to implement the Specification pat
 ### Unit of Work pattern
 
 -   **Martin Fowler. Unit of Work pattern.**
-    [*http://martinfowler.com/eaaCatalog/unitOfWork.html*](http://martinfowler.com/eaaCatalog/unitOfWork.html)
+    [*https://martinfowler.com/eaaCatalog/unitOfWork.html*](https://martinfowler.com/eaaCatalog/unitOfWork.html)
 
 <!-- -->
 

@@ -1,13 +1,9 @@
 ---
 title: "Runtime Callable Wrapper"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "COM interop, COM wrappers"
@@ -16,7 +12,6 @@ helpviewer_keywords:
   - "runtime callable wrappers"
   - "interoperation with unmanaged code, COM wrappers"
 ms.assetid: 7e542583-1e31-4e10-b523-8cf2f29cb4a4
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -28,7 +23,7 @@ The common language runtime exposes COM objects through a proxy called the runti
   
  The runtime creates exactly one RCW for each COM object, regardless of the number of references that exist on that object. The runtime maintains a single RCW per process for each object.  If you create an RCW in one application domain or apartment, and then pass a reference to another application domain or apartment, a proxy to the first object will be used.  As the following illustration shows, any number of managed clients can hold a reference to the COM objects that expose INew and INewer interfaces.  
   
- ![RCW](../../../docs/framework/interop/media/rcw.gif "rcw")  
+ ![RCW](./media/rcw.gif "rcw")  
 Accessing COM objects through the runtime callable wrapper  
   
  Using metadata derived from a type library, the runtime creates both the COM object being called and a wrapper for that object. Each RCW maintains a cache of interface pointers on the COM object it wraps and releases its reference on the COM object when the RCW is no longer needed. The runtime performs garbage collection on the RCW.  
@@ -38,9 +33,9 @@ Accessing COM objects through the runtime callable wrapper
  The standard wrapper enforces built-in marshaling rules. For example, when a .NET client passes a String type as part of an argument to an unmanaged object, the wrapper converts the string to a BSTR type. Should the COM object return a BSTR to its managed caller, the caller receives a String. Both the client and the server send and receive data that is familiar to them. Other types require no conversion. For instance, a standard wrapper will always pass a 4-byte integer between managed and unmanaged code without converting the type.  
   
 ## Marshaling selected interfaces  
- The primary goal of the [runtime callable wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md) (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration.  
+ The primary goal of the [runtime callable wrapper](runtime-callable-wrapper.md) (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration.  
   
- ![RCW With Interfaces](../../../docs/framework/interop/media/rcwwithinterfaces.gif "rcwwithinterfaces")  
+ ![RCW With Interfaces](./media/rcwwithinterfaces.gif "rcwwithinterfaces")  
 COM interfaces and the runtime callable wrapper  
   
  When created as an early-bound object, the RCW is a specific type. It implements the interfaces that the COM object implements and exposes the methods, properties, and events from the object's interfaces. In the illustration, the RCW exposes the INew interface but consumes the **IUnknown** and **IDispatch** interfaces. Further, the RCW exposes all members of the INew interface to the .NET client.  
@@ -63,8 +58,8 @@ COM interfaces and the runtime callable wrapper
 |**IEnumVARIANT**|Enables COM types that support enumerations to be treated as collections.|  
   
 ## See Also  
- [COM Wrappers](../../../docs/framework/interop/com-wrappers.md)  
- [Marshaling Selected Interfaces](http://msdn.microsoft.com/library/fdb97fd0-f694-4832-bf15-a4e7cf413840)  
- [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)  
- [Type Library to Assembly Conversion Summary](http://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958)  
- [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)
+ [COM Wrappers](com-wrappers.md)  
+ [Marshaling Selected Interfaces](https://msdn.microsoft.com/library/fdb97fd0-f694-4832-bf15-a4e7cf413840(v=vs.100))  
+ [COM Callable Wrapper](com-callable-wrapper.md)  
+ [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))  
+ [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)

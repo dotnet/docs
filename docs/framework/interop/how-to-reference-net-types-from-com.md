@@ -1,13 +1,9 @@
 ---
 title: "How to: Reference .NET Types from COM"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "cpp"
@@ -20,7 +16,6 @@ helpviewer_keywords:
   - "type libraries"
   - "COM interop, importing type library"
 ms.assetid: 54917f6f-cb18-4103-b622-856b55da93f3
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -50,7 +45,7 @@ From the point of view of client and server code, the differences between COM an
     ```  
   
 ## See Also  
- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
- [Registering Assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md)  
- [Calling a .NET Object](http://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33)  
- [Deploying an Application for COM Access](http://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce)
+ [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
+ [Registering Assemblies with COM](registering-assemblies-with-com.md)  
+ [Calling a .NET Object](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))  
+ [Deploying an Application for COM Access](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100))

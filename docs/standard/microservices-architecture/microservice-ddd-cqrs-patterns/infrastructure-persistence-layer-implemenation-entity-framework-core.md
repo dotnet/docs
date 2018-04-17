@@ -337,7 +337,7 @@ The Hi/Lo algorithm describes a mechanism for generating safe IDs on the client 
 
 -   It generates a human readable identifier, unlike techniques that use GUIDs.
 
-EF Core supports [HiLo](http://stackoverflow.com/questions/282099/whats-the-hi-lo-algorithm) with the ForSqlServerUseSequenceHiLo method, as shown in the preceding example.
+EF Core supports [HiLo](https://stackoverflow.com/questions/282099/whats-the-hi-lo-algorithm) with the ForSqlServerUseSequenceHiLo method, as shown in the preceding example.
 
 ### Mapping fields instead of properties
 
@@ -462,7 +462,7 @@ Although we don't recommended to return IQueryable from a repository, it’s per
     [*https://docs.microsoft.com/ef/core/modeling/backing-field*](https://docs.microsoft.com/ef/core/modeling/backing-field)
 
 -   **Steve Smith. Encapsulated Collections in Entity Framework Core**
-    [*http://ardalis.com/encapsulated-collections-in-entity-framework-core*](http://ardalis.com/encapsulated-collections-in-entity-framework-core)
+    [*https://ardalis.com/encapsulated-collections-in-entity-framework-core*](https://ardalis.com/encapsulated-collections-in-entity-framework-core)
 
 -   **Shadow Properties**
     [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)

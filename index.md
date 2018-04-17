@@ -144,11 +144,11 @@ ms.custom: "updateeachrelease"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://developer.xamarin.com/guides/cross-platform/getting_started">Xamarin</a></h3>
-                                                <p><a href="https://developer.xamarin.com/guides/cross-platform/getting_started">Get Started</a></p>
-                                                <p><a href="https://developer.xamarin.com/guides/ios">Xamarin.iOS Guide</a></p>
-                                                <p><a href="https://developer.xamarin.com/guides/android/getting_started">Xamarin.Android Guide</a></p>
-                                                <p><a href="https://developer.xamarin.com/guides/xamarin-forms">Xamarin.Forms Guide</a></p>
+                                                <h3><a href="/xamarin">Xamarin</a></h3>
+                                                <p><a href="/xamarin/cross-platform">Cross-platform development</a></p>
+                                                <p><a href="/xamarin/ios">Xamarin.iOS Guide</a></p>
+                                                <p><a href="/xamarin/android">Xamarin.Android Guide</a></p>
+                                                <p><a href="/xamarin/xamarin-forms">Xamarin.Forms Guide</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -437,7 +437,7 @@ ms.custom: "updateeachrelease"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://developer.xamarin.com/guides/ios/getting_started/">
+                                                <a href="/xamarin/ios">
                                                     <h3>Xamarin.iOS</h3>
                                                     <p>Create native iOS apps using C# and F# with Xamarin.iOS.</p>
                                                 </a>
@@ -456,7 +456,7 @@ ms.custom: "updateeachrelease"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://developer.xamarin.com/guides/android/getting_started">
+                                                <a href="/xamarin/android">
                                                     <h3>Xamarin.Android</h3>
                                                     <p>Create native Android apps using C# and F# with Xamarin.Android.</p>
                                                 </a>
@@ -475,7 +475,7 @@ ms.custom: "updateeachrelease"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://developer.xamarin.com/guides/xamarin-forms">
+                                                <a href="/xamarin/xamarin-forms">
                                                     <h3>Xamarin.Forms</h3>
                                                     <p>Create cross-platform mobile UIs using C# and F# with Xamarin.Forms.</p>
                                                 </a>
@@ -559,7 +559,7 @@ ms.custom: "updateeachrelease"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://developer.xamarin.com/guides/mac/getting_started">
+                                                <a href="/xamarin/mac">
                                                     <h3>Xamarin for macOS</h3>
                                                     <p>Create apps for macOS using C# and F# with Xamarin.</p>
                                                 </a>

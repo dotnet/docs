@@ -45,7 +45,7 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
     [*https://martinfowler.com/articles/injection.html*](https://martinfowler.com/articles/injection.html)
 
 -   **Steve Smith. New is Glue**
-    [*http://ardalis.com/new-is-glue*](http://ardalis.com/new-is-glue)
+    [*https://ardalis.com/new-is-glue*](https://ardalis.com/new-is-glue)
 
 
 >[!div class="step-by-step"]

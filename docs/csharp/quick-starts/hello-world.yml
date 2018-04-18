@@ -65,7 +65,7 @@ items:
     following the code you've already added:
 
     ```csharp
-    aFriend = "Maria";
+    aFriend = "Maira";
     Console.WriteLine(aFriend);
     ```
 
@@ -83,7 +83,7 @@ items:
 
     As we progress, creating strings to print using `+` becomes cumbersome. [String interpolation](../language-reference/tokens/interpolated.md) lets you piece together strings in a more concise and readable way.
 
-    If you add a `$` before the opening quotes of the string, you can then include expressions, like the `aFriend` variable, inside the string in curly brackets.
+    If you add a `$` before the opening quote of the string, you can then include expressions, like the `aFriend` variable, inside the string in curly brackets.
 
 
     ```csharp

@@ -287,7 +287,7 @@ Try it yourself. Then check how you did. You should get 63 for an answer. You ca
 You've completed the "branches and loops" quickstart.
 
 You can continue with
-the [Interpolated strings](interpolated-strings-local.md) quickstart in
+the [String interpolation](interpolated-strings-local.md) quickstart in
 your own development environment.
 
 You can learn more about these concepts in these topics:

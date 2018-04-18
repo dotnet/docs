@@ -109,8 +109,8 @@ As the nature of binary serialization allows the modification of private members
 - <xref:System.Data.ConstraintException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DBConcurrencyException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DataException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
-- <xref:System.Data.DataSet?displayProperty=nameWithType>   
-- <xref:System.Data.DataTable?displayProperty=nameWithType>   
+- <xref:System.Data.DataSet?displayProperty=nameWithType>
+- <xref:System.Data.DataTable?displayProperty=nameWithType> (unless you set RemotingFormat to SerializationFormat.Binary in which case it can only be exchanged with .NET Core 2.1 and later versions.)   
 - <xref:System.Data.DeletedRowInaccessibleException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DuplicateNameException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.EvaluateException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)

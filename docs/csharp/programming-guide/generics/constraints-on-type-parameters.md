@@ -27,25 +27,25 @@ When you define a generic class, you can apply restrictions to the kinds of type
 |`where T :` *\<interface name>*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic.|
 |`where T : U`|The type argument supplied for T must be or derive from the argument supplied for U.|
 
-Some of the constraints are mutually exclusive. You cannot specify the `new()` constraint or a base class constraint with either the `struct` or `unmanaged` constraint.
+Some of the constraints are mutually exclusive. All value types must have an accessible parameterless constructor. Therefore, the `struct` constraint implies the `new()` constraint and the `new()` constraint cannot be combined with the `struct` constraint. The `unmanaged` contraint implies the `struct` constraint. Therefore, the `unmanaged` constraint cannot be combined with either the `struct` or `new()` constraints.
 
 ## Why Use Constraints
 
 If you want to examine an item in a generic list to determine whether it is valid or to compare it to some other item, the compiler must have some guarantee that the operator or method it has to call will be supported by any type argument that might be specified by client code. This guarantee is obtained by applying one or more constraints to your generic class definition. For example, the base class constraint tells the compiler that only objects of this type or derived from this type will be used as type arguments. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. Constraints are applied by using the contextual keyword `where`. The following code example demonstrates the functionality we can add to the `GenericList<T>` class (in [Introduction to Generics](introduction-to-generics.md)) by applying a base class constraint.
 
-[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#4)]
+[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#9)]
 
-The constraint enables the generic class to use the `Employee.Name` property because all items of type T are guaranteed to be either an `Employee` object or an object that inherits from `Employee`.
+The constraint enables the generic class to use the `Employee.Name` property because all items of type `T` are guaranteed to be either an `Employee` object or an object that inherits from `Employee`.
 
 Multiple constraints can be applied to the same type parameter, and the constraints themselves can be generic types, as follows:
 
-[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#5)]
+[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#10)]
 
 By constraining the type parameter, you increase the number of allowable operations and method calls to those supported by the constraining type and all types in its inheritance hierarchy. Therefore, when you design generic classes or methods, if you will be performing any operation on the generic members beyond simple assignment or calling any methods not supported by `System.Object`, you will have to apply constraints to the type parameter.
 
 When applying the `where T : class` constraint, avoid the `==` and `!=` operators on the type parameter because these operators will test for reference identity only, not for value equality. This is the case even if these operators are overloaded in a type that is used as an argument. The following code illustrates this point; the output is false even though the <xref:System.String> class overloads the `==` operator.
 
-[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#6)]
+[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#11)]
 
 The reason for this behavior is that, at compile time, the compiler only knows that T is a reference type, and therefore must use the default operators that are valid for all reference types. If you must test for value equality, the recommended way is to also apply the `where T : IComparable<T>` constraint and implement that interface in any class that will be used to construct the generic class.
 
@@ -53,7 +53,7 @@ The reason for this behavior is that, at compile time, the compiler only knows t
 
 You can apply constraints to multiple parameters, and multiple constraints to a single parameter, as shown in the following example:
 
-[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#7)]
+[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#12)]
 
 ## Unbounded Type Parameters
 
@@ -67,15 +67,49 @@ You can apply constraints to multiple parameters, and multiple constraints to a 
 
 The use of a generic type parameter as a constraint is useful when a member function with its own type parameter has to constrain that parameter to the type parameter of the containing type, as shown in the following example:
 
-[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#8)]
+[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#13)]
 
 In the previous example, `T` is a type constraint in the context of the `Add` method, and an unbounded type parameter in the context of the `List` class.
 
 Type parameters can also be used as constraints in generic class definitions. Note that the type parameter must be declared within the angle brackets together with any other type parameters:
 
-[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#9)]
+[!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#14)]
 
 The usefulness of type parameters as constraints with generic classes is very limited because the compiler can assume nothing about the type parameter except that it derives from `System.Object`. Use type parameters as constraints on generic classes in scenarios in which you want to enforce an inheritance relationship between two type parameters.
+
+## Unmanaged constraint
+
+Beginning with C# 7.3, you can use the `unmanaged` constraint to specify that the type parameter must be an **unmanaged types**. An **unmanaged type** is a type which is not a reference type and doesn't contain reference type fields at any level of nesting. The `unmanaged` constraint enables you to write reusable routines to work with types that can be manipulated as blocks of memory, as shown in the following example:
+
+[!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#15)]
+
+The preceding method must be compiled in an `unsafe` context because it uses the `sizeof` operator on a type not known to be a builtin type. Without the `unmanaged` constraint, the `sizeof` operator would be unavailable.
+
+## Delegate constraints
+
+Also beginning with C# 7.3, you can use `System.Delegate` or `System.MulticastDelegate` as a base class constraint. The CLR always allowed this, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type safe manner. The following code defines an extension method that combines two delegates provided they are the same type:
+
+[!code-csharp[using the delegate constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#16)]
+
+You can use the above method to combine delegates that are the same type:
+
+[!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#17)]
+
+If you uncomment the last line, it won't compile. Both `first` and `test` are delegate types, but they are different delegate types.
+
+## Enum constraints
+
+Beginning in C# 7.3, you can also specify the `System.Enum` type as a base class constraint. This enables type safe programming to cache results from using the static methods in `System.Enum`. The following sample finds all the valid values for an enum type, and then builds a dictionary that maps those values to its string representation.
+
+[!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#18)]
+
+The methods used make use of reflection, which has performance implications. This method could be used to build a collection that would be cached and reused rather than using the expensive enum methods.
+
+You could use it as shown in the following sample to create an enum and build a dictionary of its values and names:
+
+[!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#19)]
+
+[!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#20)]
 
 ## See Also
 

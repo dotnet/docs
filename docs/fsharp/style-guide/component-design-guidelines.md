@@ -91,7 +91,7 @@ Acronyms such as XML are not abbreviations and are widely used in .NET libraries
 
 Do use PascalCase for generic parameter names in public APIs, including for F#-facing libraries. In particular, use names like `T`, `U`, `T1`, `T2` for arbitrary generic parameters, and when specific names make sense, then for F#-facing libraries use names like `Key`, `Value`, `Arg` (but not e.g. `TKey`).
 
-#### Use either PascalCase or camelCase for public functions and values in F# modules.
+#### Use either PascalCase or camelCase for public functions and values in F# modules
 
 camelCase is generally used for public functions that are designed to be used unqualified (e.g. invalidArg), and for the “standard collection functions” (e.g. List.map). In both these cases, the function names act much like keywords in the language.
 

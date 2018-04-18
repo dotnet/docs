@@ -464,16 +464,18 @@ The previous example used a single function to encapsulate operations using muta
 ```fsharp
 open System.Collections.Generic
 
-let addToClosureTable (a, b) (t: Dictionary<_,_>) =
-    if not (t.ContainsKey(a)) then
-        t.Add(a, b)
+let addToClosureTable (key, value) (t: Dictionary<_,_>) =
+    if not (t.ContainsKey(key)) then
+        t.Add(key, value)
     else
-        t.[a] <- b
+        t.[key] <- value
 
 let closureTableCount (t: Dictionary<_,_>) = t.Count
 
-let closureTableContains (a, b) (t: Dictionary<_, HashSet<_>>) =
-    t.ContainsKey(a) && t.ContainsValue(b)
+let closureTableContains (key, value) (t: Dictionary<_, HashSet<_>>) =
+    match t.TryGetValue(key) with
+    | (true, v) -> v = value
+    | (false, _) -> false
 ```
 
 This code is performant, but it exposes the mutation-based data structure that callers are responsible for maintaining. This can be wrapped inside of a class with no underlying members that can change:
@@ -483,15 +485,18 @@ This code is performant, but it exposes the mutation-based data structure that c
 type Closure1Table() =
     let t = Dictionary<Item0, HashSet<TerminalIndex>>()
 
-    member __.Add(a, b) =
-        if not (t.ContainsKey(a)) then
-            t.Add(a, b)
+    member __.Add(key, value) =
+        if not (t.ContainsKey(key)) then
+            t.Add(key, value)
         else
-            t.[a] <- b
+            t.[key] <- value
 
     member __.Count = t.Count
 
-    member __.Contains(a, b) = t.ContainsKey(a) && t.ContainsValue(b)
+    member __.Contains(key, value) =
+        match t.TryGetValue(key) with
+        | (true, v) -> v = value
+        | (false, _) -> false
 ```
 
 Because this class has no members which can change, and its binding is immutable, it is also effectively immutable. Additionally, it safely encapsulates the underlying mutation-based data structure. Classes are a powerful way to encapsulate data and routines that are mutation-based without exposing the details to callers.
@@ -527,3 +532,78 @@ let kernels =
 ```
 
 Aside from the single point of mutation in the middle of the lambda expression, all other code that touches `acc` can do so in a manner that is no different to the usage of a normal `let`-bound immutable value. This will make it easier to change over time.
+
+## Object programming
+
+F# has full support for objects and object-oriented (OO) concepts. Although many OO concepts are powerful and useful, not all of them are ideal to use. The following lists offer guidance on categories of OO features at a high level.
+
+**Consider using these features in many situations:**
+
+* Dot notation (`x.Length`)
+* Instance members
+* Type-directed name resolution
+* Implicit constructors
+* Static members
+* Indexer notation (`arr.[x]`)
+* Named arguments
+* Optional arguments
+* Interface types and their implementations
+
+**Don't reach for these features first, but do judiciously apply them when they make sense:**
+
+* Method overloading
+* Mutable data
+* Operators on types
+* Auto properties
+* `IDisposable` and `IEnumerable`
+* Type extensions
+* Events
+* Structs
+* Delegates
+* Enums
+* Type casting
+
+**Generally avoid these features unless you must use them:**
+
+* Inheritance-based type heirarchies and implementation inheritance
+* Nulls and `Unchecked.defaultof<_>`
+
+**Avoid these entirely:**
+
+* Curried method overloads
+* Protected members
+* Self types
+* Wildcard types
+* Aspect-oriented programming
+
+The following guidelines will explain more of these features in more detail.
+
+### Use object expressions to implement interfaces if you don't need a class
+
+[Object Expressions](../language-reference/object-expressions.md) allow you to implement interfaces on the fly, binding the implemented interface to a value without needing to do so inside of a class. This is very convenient, especially if you _only_ need to implement the interface and have no need for a full class.
+
+For example, here is the code which is run in Ionide to provide a code fix action if you've added a symbol that you don't have an `open` statement for:
+
+```fsharp
+    let private createProvider () =
+        { new CodeActionProvider with
+            member this.provideCodeActions(doc, range, context, ct) =
+                let diagnostics = context.diagnostics
+                let diagnostic = diagnostics |> Seq.tryFind (fun d -> d.message.Contains "Unused open statement")
+                let res =
+                    match diagnostic with
+                    | None -> [||]
+                    | Some d ->
+                        let line = doc.lineAt d.range.start.line
+                        let cmd = createEmpty<Command>
+                        cmd.title <- "Remove unused open"
+                        cmd.command <- "fsharp.unusedOpenFix"
+                        cmd.arguments <- Some ([| doc |> unbox; line.range |> unbox; |] |> ResizeArray)
+                        [|cmd |]
+                res
+                |> ResizeArray
+                |> U2.Case1
+        }
+```
+
+Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also very valuable for unit testing, when you want to stub out an interface with test routines in an ad-hoc manner.

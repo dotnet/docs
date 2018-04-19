@@ -562,16 +562,20 @@ F# has full support for objects and object-oriented (OO) concepts. Although many
 
 **Generally avoid these features unless you must use them:**
 
-* Inheritance-based type heirarchies and implementation inheritance
+* Inheritance-based type hierarchies and implementation inheritance
 * Nulls and `Unchecked.defaultof<_>`
 
-The following guidelines will explain more of these features in more detail.
+The following guidelines will explain some of these features in more detail.
+
+### Prefer composition over inheritance
+
+[Composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance) is a long-standing idiom that good F# code can ahere to. The fundamental principle is that you should not expose a base class and force callers to inherit from that base class to get functionality.
 
 ### Use object expressions to implement interfaces if you don't need a class
 
 [Object Expressions](../language-reference/object-expressions.md) allow you to implement interfaces on the fly, binding the implemented interface to a value without needing to do so inside of a class. This is very convenient, especially if you _only_ need to implement the interface and have no need for a full class.
 
-For example, here is the code which is run in Ionide to provide a code fix action if you've added a symbol that you don't have an `open` statement for:
+For example, here is the code that is run in [Ionide](http://ionide.io/) to provide a code fix action if you've added a symbol that you don't have an `open` statement for:
 
 ```fsharp
     let private createProvider () =

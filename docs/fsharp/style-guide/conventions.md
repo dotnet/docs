@@ -541,40 +541,29 @@ F# has full support for objects and object-oriented (OO) concepts. Although many
 
 * Dot notation (`x.Length`)
 * Instance members
-* Type-directed name resolution
 * Implicit constructors
 * Static members
 * Indexer notation (`arr.[x]`)
-* Named arguments
-* Optional arguments
-* Interface types and their implementations
+* Named and Optional arguments
+* Interfaces and interface implementations
 
 **Don't reach for these features first, but do judiciously apply them when they make sense:**
 
 * Method overloading
-* Mutable data
+* Ecapsulated mutable data
 * Operators on types
 * Auto properties
-* `IDisposable` and `IEnumerable`
+* Implementing `IDisposable` and `IEnumerable`
 * Type extensions
 * Events
 * Structs
 * Delegates
 * Enums
-* Type casting
 
 **Generally avoid these features unless you must use them:**
 
 * Inheritance-based type heirarchies and implementation inheritance
 * Nulls and `Unchecked.defaultof<_>`
-
-**Avoid these entirely:**
-
-* Curried method overloads
-* Protected members
-* Self types
-* Wildcard types
-* Aspect-oriented programming
 
 The following guidelines will explain more of these features in more detail.
 

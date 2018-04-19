@@ -130,7 +130,7 @@
  Although data stored in a <xref:System.Security.SecureString> instance is more secure than data stored in a <xref:System.String> instance, there are significant limitations on how secure a <xref:System.Security.SecureString> instance is. These include:  
   
  Platform  
- On the Windows operating system, the contents of a <xref:System.Security.SecureString> instance's internal character array is encrypted. However, whether because of missing APIs or key management issues,  encryption is not available on all platforms. Because of this, <xref:System.Security.SecureString> is available on Desktop (Windows only), and not on .NET Core.  
+ On the Windows operating system, the contents of a <xref:System.Security.SecureString> instance's internal character array are encrypted. However, whether because of missing APIs or key management issues,  encryption is not available on all platforms. Because of this platform dependency, <xref:System.Security.SecureString> does not encrypt the internal storage on non-Windows platform. Other techniques are used on those platforms to provide additional protection.
   
  Duration  
  Even if the <xref:System.Security.SecureString> implementation is able to take advantage of encryption, the plain text assigned to the <xref:System.Security.SecureString> instance may be exposed at various times:  

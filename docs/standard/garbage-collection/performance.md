@@ -45,8 +45,6 @@ ms.workload:
 ### Debugging with SOS  
  You can use the [Windows Debugger (WinDbg)](/windows-hardware/drivers/debugger/index) to inspect objects on the managed heap.  
   
- To install WinDbg, install Debugging Tools for Windows from the [WDK and Developer Tools Web site](http://go.microsoft.com/fwlink/?LinkID=103787).  
-  
 <a name="etw"></a>   
 ### Garbage Collection ETW Events  
  Event tracing for Windows (ETW) is a tracing system that supplements the profiling and debugging support provided by the .NET Framework. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], [garbage collection ETW events](../../../docs/framework/performance/garbage-collection-etw-events.md) capture useful information for analyzing the managed heap from a statistical point of view. For example, the `GCStart_V1` event, which is raised when a garbage collection is about to occur, provides the following information:  

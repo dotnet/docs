@@ -48,8 +48,8 @@
   
  So, in general, write an exception handler that catches any provider specific exceptions as well as exceptions from the common language runtime.  These can be layered as follows:  
   
-```  
-Try {  
+```csharp  
+try {  
    // code here  
 }  
 catch (SqlException odbcEx) {  
@@ -63,15 +63,15 @@ catch (Exception ex) {
   
  Or:  
   
-```  
-Try {  
+```csharp  
+try {  
    // code here  
 }  
 catch (Exception ex) {  
    if (ex is SqlException) {  
       // Handle more specific SqlException exception here.  
    }  
-   Else {  
+   else {  
       // Handle generic ones here.  
    }  
 }  

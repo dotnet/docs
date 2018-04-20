@@ -221,7 +221,7 @@ The main constructs available in F# for the purposes of raising exceptions shoul
 | `failwith` | `failwith "message"` | Raises a `System.Exception` with the specified message. |
 | `failwithf` | `failwithf "format string" argForFormatString` | Raises a `System.Exception` with a message determined by the format string and its inputs. |
 
-The `invalidArg`, `nullArg`, and `invalidOp` are useful shorthand functions for their specific exception types, and are preferred if you need to use these exceptions. Otherwise, use `raise`.
+Use `nullArg`, `invalidArg` and `invalidOp` as the mechanism to throw `ArgumentNullException`, `ArgumentException` and `InvalidOperationException` when appropriate.
 
 The `failwith` and `failwithf` functions should generally be avoided because they raise the base `Exception` type, not a specific exception. As per the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md), you want to raise more specific exceptions when you can.
 

@@ -1,4 +1,4 @@
-﻿<Type Name="SecurityElement" FullName="System.Security.SecurityElement">
+<Type Name="SecurityElement" FullName="System.Security.SecurityElement">
   <TypeSignature Language="C#" Value="public sealed class SecurityElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SecurityElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityElement" />
@@ -561,17 +561,15 @@
  Use this method to replace invalid characters in a string before using the string in a <xref:System.Security.SecurityElement>. If invalid characters are used in a <xref:System.Security.SecurityElement> without being escaped, an <xref:System.ArgumentException> is thrown.  
   
  The following table shows the invalid XML characters and their escaped equivalents.  
-  
-|invalid XML Character|Replaced With|  
-|---------------------------|-------------------|  
-|"\<"|"&lt;"|  
-|">"|"&gt;"|  
-|"\\""|"&quot;"|  
-|"\\'"|"&apos;"|  
-|"&"|"&amp;"|  
-  
-   
-  
+
+| Invalid XML character | Replaced with |
+|-----------------------|---------------|
+| `<`                   | `&lt;`        |
+| `>`                   | `&gt;`        |
+| `"`                   | `&quot;`      |
+| `'`                   | `&apos;`      |
+| `&`                   | `&amp;`       |   
+
 ## Examples  
  The following code shows the use of the <xref:System.Security.SecurityElement.Escape%2A> method to replace invalid XML characters in a string with their valid XML equivalent. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
   

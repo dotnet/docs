@@ -31,12 +31,12 @@
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity windowsIdentity);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ windowsIdentity);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity windowsIdentity);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ windowsIdentity);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity identity);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.WindowsClaimSet.#ctor(System.Security.Principal.WindowsIdentity)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.WindowsClaimSet.#ctor(System.Security.Principal.WindowsIdentity)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ identity);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
@@ -45,11 +45,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="windowsIdentity">To be added.</param>
+        <param name="identity">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -64,12 +65,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity windowsIdentity, bool includeWindowsGroups);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity, bool includeWindowsGroups) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ windowsIdentity, bool includeWindowsGroups);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity windowsIdentity, bool includeWindowsGroups);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity, bool includeWindowsGroups) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ windowsIdentity, bool includeWindowsGroups);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity identity, bool includeWindowsGroups);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity, bool includeWindowsGroups) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.WindowsClaimSet.#ctor(System.Security.Principal.WindowsIdentity,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.WindowsClaimSet.#ctor(System.Security.Principal.WindowsIdentity,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity, includeWindowsGroups As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ identity, bool includeWindowsGroups);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
@@ -78,7 +79,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="includeWindowsGroups" Type="System.Boolean" Index="1" />
       </Parameters>
@@ -99,12 +100,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity windowsIdentity, DateTime expirationTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity, valuetype System.DateTime expirationTime) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ windowsIdentity, DateTime expirationTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity windowsIdentity, DateTime expirationTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity, valuetype System.DateTime expirationTime) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ windowsIdentity, DateTime expirationTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity identity, DateTime expirationTime);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity, valuetype System.DateTime expirationTime) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.WindowsClaimSet.#ctor(System.Security.Principal.WindowsIdentity,System.DateTime)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.WindowsClaimSet.#ctor(System.Security.Principal.WindowsIdentity,System.DateTime)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity, expirationTime As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ identity, DateTime expirationTime);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
@@ -113,7 +114,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="expirationTime" Type="System.DateTime" Index="1" />
       </Parameters>
@@ -126,12 +127,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity windowsIdentity, bool includeWindowsGroups, DateTime expirationTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity, bool includeWindowsGroups, valuetype System.DateTime expirationTime) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ windowsIdentity, bool includeWindowsGroups, DateTime expirationTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity windowsIdentity, bool includeWindowsGroups, DateTime expirationTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity, bool includeWindowsGroups, valuetype System.DateTime expirationTime) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ windowsIdentity, bool includeWindowsGroups, DateTime expirationTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public WindowsClaimSet (System.Security.Principal.WindowsIdentity identity, bool includeWindowsGroups, DateTime expirationTime);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity, bool includeWindowsGroups, valuetype System.DateTime expirationTime) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.WindowsClaimSet.#ctor(System.Security.Principal.WindowsIdentity,System.Boolean,System.DateTime)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.WindowsClaimSet.#ctor(System.Security.Principal.WindowsIdentity,System.Boolean,System.DateTime)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity, includeWindowsGroups As Boolean, expirationTime As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsClaimSet(System::Security::Principal::WindowsIdentity ^ identity, bool includeWindowsGroups, DateTime expirationTime);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
@@ -140,7 +141,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="includeWindowsGroups" Type="System.Boolean" Index="1" />
         <Parameter Name="expirationTime" Type="System.DateTime" Index="2" />

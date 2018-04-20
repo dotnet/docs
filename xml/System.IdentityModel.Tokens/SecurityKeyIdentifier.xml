@@ -55,13 +55,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SecurityKeyIdentifier (params System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] clauses);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] clauses) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray clauses As SecurityKeyIdentifierClause())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityKeyIdentifier(... cli::array &lt;System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^&gt; ^ clauses);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public SecurityKeyIdentifier (params System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] clauses);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] clauses) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray clauses As SecurityKeyIdentifierClause())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityKeyIdentifier(... cli::array &lt;System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^&gt; ^ clauses);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public SecurityKeyIdentifier (params System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] identifiers);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] identifiers) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifierClause[])" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifierClause[])" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray identifiers As SecurityKeyIdentifierClause())" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityKeyIdentifier(... cli::array &lt;System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^&gt; ^ identifiers);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
@@ -70,7 +70,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="clauses" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1">
+        <Parameter Name="clauses" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -87,6 +87,7 @@
       </Parameters>
       <Docs>
         <param name="clauses">To be added.</param>
+        <param name="identifiers">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> class using the specified key identifier clauses.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -94,13 +95,13 @@
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Add (clause As SecurityKeyIdentifierClause)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public void Add (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (clause As SecurityKeyIdentifierClause)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public void Add (System.IdentityModel.Tokens.SecurityKeyIdentifierClause item);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause item) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.Add(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.Add(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ item);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
@@ -112,11 +113,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="item" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="clause">To be added.</param>
+        <param name="item">To be added.</param>
         <summary>Adds a key identifier clause to the end of the list.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -279,12 +281,12 @@
       </Docs>
     </Member>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyIdentifierClause this[int index] { get; }" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As SecurityKeyIdentifierClause" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ default[int] { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(int index); };" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyIdentifierClause this[int index] { get; }" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As SecurityKeyIdentifierClause" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ default[int] { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(int index); };" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyIdentifierClause this[int i] { get; }" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKeyIdentifierClause Item(int32)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.Item(System.Int32)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKeyIdentifierClause Item(int32)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.Item(System.Int32)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(i As Integer) As SecurityKeyIdentifierClause" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ default[int] { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(int i); };" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Property</MemberType>
@@ -296,11 +298,12 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
+        <param name="i">To be added.</param>
         <summary>Gets the key identifier clause at the specified index.</summary>
         <value>The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> at the specified index.</value>
         <remarks>To be added.</remarks>
@@ -392,13 +395,13 @@
       </Docs>
     </Member>
     <Member MemberName="TryFind&lt;TClause&gt;">
-      <MemberSignature Language="C#" Value="public bool TryFind&lt;TClause&gt; (out TClause clause) where TClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFind&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) TClause&gt;([out] !!TClause&amp; clause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="VB.NET" Value="Public Function TryFind(Of TClause As SecurityKeyIdentifierClause) (ByRef clause As TClause) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TClause&gt;&#xA; where TClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause bool TryFind([Runtime::InteropServices::Out] TClause % clause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public bool TryFind&lt;TClause&gt; (out TClause clause) where TClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFind&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) TClause&gt;([out] !!TClause&amp; clause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryFind(Of TClause As SecurityKeyIdentifierClause) (ByRef clause As TClause) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TClause&gt;&#xA; where TClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause bool TryFind([Runtime::InteropServices::Out] TClause % clause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public bool TryFind&lt;TClause&gt; (out TClause result) where TClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFind&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) TClause&gt;([out] !!TClause&amp; result) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.TryFind``1(``0@)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.TryFind``1(``0@)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFind(Of TClause As SecurityKeyIdentifierClause) (ByRef result As TClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TClause&gt;&#xA; where TClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause bool TryFind([Runtime::InteropServices::Out] TClause % result);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
@@ -417,12 +420,13 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="clause" Type="TClause&amp;" RefType="out" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="clause" Type="TClause&amp;" RefType="out" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="result" Type="TClause&amp;" RefType="out" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents the type of key identifier clause to search the collection for.</typeparam>
         <param name="clause">To be added.</param>
+        <param name="result">To be added.</param>
         <summary>Searches for a key identifier clause of the specified type and returns a value that indicates whether a clause of that type could be found. When a type is found it is returned in the <see langword="out" /> parameter.</summary>
         <returns>
           <see langword="true" /> when a key identifier clause of the type specified in the <paramref name="TClause" /> parameter exists in the collection; otherwise, <see langword="false" />.</returns>

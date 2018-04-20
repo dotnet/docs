@@ -441,12 +441,13 @@
       </Docs>
     </Member>
     <Member MemberName="CreateSubKey">
-      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CreateSubKey (string subkey, Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, Microsoft.Win32.RegistryOptions options);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, valuetype Microsoft.Win32.RegistryOptions options) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0" />
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CreateSubKey (string subkey, Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, Microsoft.Win32.RegistryOptions options);" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, valuetype Microsoft.Win32.RegistryOptions options) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0" />
       <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CreateSubKey (string subkey, Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, Microsoft.Win32.RegistryOptions registryOptions);" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, valuetype Microsoft.Win32.RegistryOptions registryOptions) cil managed" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, Microsoft::Win32::RegistryOptions registryOptions);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, Microsoft::Win32::RegistryOptions options);" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSubKey (subkey As String, permissionCheck As RegistryKeyPermissionCheck, options As RegistryOptions) As RegistryKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -456,13 +457,18 @@
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subkey" Type="System.String" Index="0" />
         <Parameter Name="permissionCheck" Type="Microsoft.Win32.RegistryKeyPermissionCheck" Index="1" />
-        <Parameter Name="options" Type="Microsoft.Win32.RegistryOptions" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+        <Parameter Name="options" Type="Microsoft.Win32.RegistryOptions" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0" />
         <Parameter Name="registryOptions" Type="Microsoft.Win32.RegistryOptions" Index="2" FrameworkAlternate="netcore-2.0" />
       </Parameters>
       <Docs>

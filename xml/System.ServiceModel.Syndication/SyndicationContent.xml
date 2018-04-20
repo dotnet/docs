@@ -379,12 +379,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateXmlContent">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent (System.Xml.XmlReader xmlReader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent(class System.Xml.XmlReader xmlReader) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::XmlSyndicationContent ^ CreateXmlContent(System::Xml::XmlReader ^ xmlReader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent (System.Xml.XmlReader xmlReader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent(class System.Xml.XmlReader xmlReader) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::XmlSyndicationContent ^ CreateXmlContent(System::Xml::XmlReader ^ xmlReader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent (System.Xml.XmlReader reader);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent(class System.Xml.XmlReader reader) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent(System.Xml.XmlReader)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent(System.Xml.XmlReader)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXmlContent (reader As XmlReader) As XmlSyndicationContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::XmlSyndicationContent ^ CreateXmlContent(System::Xml::XmlReader ^ reader);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
@@ -400,11 +400,12 @@
         <ReturnType>System.ServiceModel.Syndication.XmlSyndicationContent</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="xmlReader">To be added.</param>
+        <param name="reader">To be added.</param>
         <summary>Creates XML syndication content.</summary>
         <returns>An instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> class that contains the new content.</returns>
         <remarks>To be added.</remarks>

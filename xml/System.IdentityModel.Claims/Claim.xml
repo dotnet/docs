@@ -118,13 +118,13 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDenyOnlyWindowsSidClaim">
-      <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim (System.Security.Principal.SecurityIdentifier sid);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim(class System.Security.Principal.SecurityIdentifier sid) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDenyOnlyWindowsSidClaim (sid As SecurityIdentifier) As Claim" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateDenyOnlyWindowsSidClaim(System::Security::Principal::SecurityIdentifier ^ sid);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim (System.Security.Principal.SecurityIdentifier sid);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim(class System.Security.Principal.SecurityIdentifier sid) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDenyOnlyWindowsSidClaim (sid As SecurityIdentifier) As Claim" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateDenyOnlyWindowsSidClaim(System::Security::Principal::SecurityIdentifier ^ sid);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim (System.Security.Principal.SecurityIdentifier identifier);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim(class System.Security.Principal.SecurityIdentifier identifier) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateDenyOnlyWindowsSidClaim(System.Security.Principal.SecurityIdentifier)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateDenyOnlyWindowsSidClaim(System.Security.Principal.SecurityIdentifier)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDenyOnlyWindowsSidClaim (identifier As SecurityIdentifier) As Claim" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateDenyOnlyWindowsSidClaim(System::Security::Principal::SecurityIdentifier ^ identifier);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
@@ -136,11 +136,12 @@
         <ReturnType>System.IdentityModel.Claims.Claim</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sid" Type="System.Security.Principal.SecurityIdentifier" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="sid" Type="System.Security.Principal.SecurityIdentifier" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
         <Parameter Name="identifier" Type="System.Security.Principal.SecurityIdentifier" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sid">To be added.</param>
+        <param name="identifier">To be added.</param>
         <summary>Creates a <see cref="T:System.IdentityModel.Claims.Claim" /> object that represents a deny-only specified security identifier (SID).</summary>
         <returns>A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the SID specified in the <paramref name="sid" /> parameter.</returns>
         <remarks>

@@ -546,14 +546,14 @@
       </Docs>
     </Member>
     <Member MemberName="Read">
-      <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader textReader, bool validate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader textReader, bool validate) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::ServiceDescription ^ Read(System::IO::TextReader ^ textReader, bool validate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader reader, bool validate);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader reader, bool validate) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.TextReader,System.Boolean)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader textReader, bool validate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader textReader, bool validate) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::ServiceDescription ^ Read(System::IO::TextReader ^ textReader, bool validate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader reader, bool validate);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader reader, bool validate) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.TextReader,System.Boolean)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (reader As TextReader, validate As Boolean) As ServiceDescription" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::ServiceDescription ^ Read(System::IO::TextReader ^ reader, bool validate);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::ServiceDescription ^ Read(System::IO::TextReader ^ reader, bool validate);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -564,8 +564,8 @@
         <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="textReader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-        <Parameter Name="reader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="textReader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="reader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="validate" Type="System.Boolean" Index="1" />
       </Parameters>
       <Docs>

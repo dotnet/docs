@@ -143,36 +143,39 @@
       </Docs>
     </Member>
     <Member MemberName="HashCore">
-      <MemberSignature Language="C#" Value="protected override void HashCore (byte[] array, int ibStart, int cbSize);" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HashCore(unsigned int8[] array, int32 ibStart, int32 cbSize) cil managed" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MD5CryptoServiceProvider.HashCore(System.Byte[],System.Int32,System.Int32)" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (array As Byte(), ibStart As Integer, cbSize As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ array, int ibStart, int cbSize);" />
+      <MemberSignature Language="C#" Value="protected override void HashCore (byte[] data, int start, int length);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HashCore(unsigned int8[] data, int32 start, int32 length) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MD5CryptoServiceProvider.HashCore(System.Byte[],System.Int32,System.Int32)" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (data As Byte(), start As Integer, length As Integer)" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ data, int start, int length);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C#" Value="protected override void HashCore (byte[] rgb, int ibStart, int cbSize);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HashCore(unsigned int8[] rgb, int32 ibStart, int32 cbSize) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MD5CryptoServiceProvider.HashCore(System.Byte[],System.Int32,System.Int32)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (rgb As Byte(), ibStart As Integer, cbSize As Integer)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ rgb, int ibStart, int cbSize);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0" />
-        <Parameter Name="ibStart" Type="System.Int32" Index="1" />
-        <Parameter Name="cbSize" Type="System.Int32" Index="2" />
+        <Parameter Name="data" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="rgb" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="ibStart" Type="System.Int32" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="cbSize" Type="System.Int32" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="rgb">To be added.</param>
+        <param name="start">To be added.</param>
         <param name="ibStart">To be added.</param>
+        <param name="length">To be added.</param>
         <param name="cbSize">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>

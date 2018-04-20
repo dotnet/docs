@@ -127,9 +127,14 @@
     <Member MemberName="FromXml">
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement element);" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement element) cil managed" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.FromXml(System.Security.SecurityElement)" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (element As SecurityElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ element);" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.FromXml(System.Security.SecurityElement)" FrameworkAlternate="netcore-2.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (element As SecurityElement)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ element);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement esd);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement esd) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermission.FromXml(System.Security.SecurityElement)" FrameworkAlternate="netframework-4.5" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (esd As SecurityElement)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ esd);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -144,9 +149,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="element" Type="System.Security.SecurityElement" Index="0" FrameworkAlternate="netcore-2.0" />
+        <Parameter Name="esd" Type="System.Security.SecurityElement" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       </Parameters>
       <Docs>
         <param name="element">The XML encoding to use to reconstruct the security object.</param>
+        <param name="esd">To be added.</param>
         <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>To be added.</remarks>
       </Docs>

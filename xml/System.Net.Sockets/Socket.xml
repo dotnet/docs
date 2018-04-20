@@ -778,16 +778,16 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="BeginConnect">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.EndPoint remoteEP, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (remoteEP As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::EndPoint ^ remoteEP, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.EndPoint end_point, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.EndPoint end_point, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (end_point As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::EndPoint ^ end_point, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.EndPoint remoteEP, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (remoteEP As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::EndPoint ^ remoteEP, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.EndPoint end_point, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.EndPoint end_point, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (end_point As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::EndPoint ^ end_point, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -801,13 +801,14 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="remoteEP" Type="System.Net.EndPoint" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="end_point" Type="System.Net.EndPoint" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="remoteEP" Type="System.Net.EndPoint" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="end_point" Type="System.Net.EndPoint" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="callback" Type="System.AsyncCallback" Index="1" />
         <Parameter Name="state" Type="System.Object" Index="2" />
       </Parameters>
@@ -870,16 +871,16 @@
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress address, int port, AsyncCallback requestCallback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress address, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (address As IPAddress, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::IPAddress ^ address, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress address, int port, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress address, int32 port, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (address As IPAddress, port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::IPAddress ^ address, int port, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress address, int port, AsyncCallback requestCallback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress address, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (address As IPAddress, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::IPAddress ^ address, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress address, int port, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress address, int32 port, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (address As IPAddress, port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::IPAddress ^ address, int port, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -893,6 +894,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -900,8 +902,8 @@
       <Parameters>
         <Parameter Name="address" Type="System.Net.IPAddress" Index="0" />
         <Parameter Name="port" Type="System.Int32" Index="1" />
-        <Parameter Name="requestCallback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="requestCallback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="state" Type="System.Object" Index="3" />
       </Parameters>
       <Docs>
@@ -964,16 +966,16 @@
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress[] addresses, int port, AsyncCallback requestCallback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress[] addresses, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress[],System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (addresses As IPAddress(), port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(cli::array &lt;System::Net::IPAddress ^&gt; ^ addresses, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress[] addresses, int port, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress[] addresses, int32 port, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress[],System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (addresses As IPAddress(), port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(cli::array &lt;System::Net::IPAddress ^&gt; ^ addresses, int port, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress[] addresses, int port, AsyncCallback requestCallback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress[] addresses, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress[],System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (addresses As IPAddress(), port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(cli::array &lt;System::Net::IPAddress ^&gt; ^ addresses, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (System.Net.IPAddress[] addresses, int port, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(class System.Net.IPAddress[] addresses, int32 port, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.Net.IPAddress[],System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (addresses As IPAddress(), port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(cli::array &lt;System::Net::IPAddress ^&gt; ^ addresses, int port, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -987,6 +989,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -994,8 +997,8 @@
       <Parameters>
         <Parameter Name="addresses" Type="System.Net.IPAddress[]" Index="0" />
         <Parameter Name="port" Type="System.Int32" Index="1" />
-        <Parameter Name="requestCallback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="requestCallback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="state" Type="System.Object" Index="3" />
       </Parameters>
       <Docs>
@@ -1058,16 +1061,16 @@
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (string host, int port, AsyncCallback requestCallback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(string host, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.String,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (host As String, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::String ^ host, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (string host, int port, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(string host, int32 port, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.String,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (host As String, port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::String ^ host, int port, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (string host, int port, AsyncCallback requestCallback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(string host, int32 port, class System.AsyncCallback requestCallback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.String,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (host As String, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::String ^ host, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginConnect (string host, int port, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginConnect(string host, int32 port, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginConnect(System.String,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (host As String, port As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::String ^ host, int port, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1081,6 +1084,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -1088,8 +1092,8 @@
       <Parameters>
         <Parameter Name="host" Type="System.String" Index="0" />
         <Parameter Name="port" Type="System.Int32" Index="1" />
-        <Parameter Name="requestCallback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="requestCallback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="state" Type="System.Object" Index="3" />
       </Parameters>
       <Docs>
@@ -1389,15 +1393,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (buffer As Byte(), offset As Integer, size As Integer, socket_flags As SocketFlags, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socket_flags, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socket_flags, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1411,6 +1415,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -1419,8 +1424,8 @@
         <Parameter Name="buffer" Type="System.Byte[]" Index="0" />
         <Parameter Name="offset" Type="System.Int32" Index="1" />
         <Parameter Name="size" Type="System.Int32" Index="2" />
-        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="socket_flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="socket_flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="callback" Type="System.AsyncCallback" Index="4" />
         <Parameter Name="state" Type="System.Object" Index="5" />
       </Parameters>
@@ -1506,15 +1511,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, [Runtime::InteropServices::Out] System::Net::Sockets::SocketError % errorCode, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags flags, out System.Net.Sockets.SocketError error, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags flags, [out] valuetype System.Net.Sockets.SocketError&amp; error, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, [Runtime::InteropServices::Out] System::Net::Sockets::SocketError % errorCode, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags flags, out System.Net.Sockets.SocketError error, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags flags, [out] valuetype System.Net.Sockets.SocketError&amp; error, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (buffer As Byte(), offset As Integer, size As Integer, flags As SocketFlags, ByRef error As SocketError, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags flags, [Runtime::InteropServices::Out] System::Net::Sockets::SocketError % error, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags flags, [Runtime::InteropServices::Out] System::Net::Sockets::SocketError % error, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1528,6 +1533,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -1536,10 +1542,10 @@
         <Parameter Name="buffer" Type="System.Byte[]" Index="0" />
         <Parameter Name="offset" Type="System.Int32" Index="1" />
         <Parameter Name="size" Type="System.Int32" Index="2" />
-        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
-        <Parameter Name="errorCode" Type="System.Net.Sockets.SocketError&amp;" RefType="out" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="error" Type="System.Net.Sockets.SocketError&amp;" RefType="out" Index="4" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="errorCode" Type="System.Net.Sockets.SocketError&amp;" RefType="out" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="error" Type="System.Net.Sockets.SocketError&amp;" RefType="out" Index="4" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="callback" Type="System.AsyncCallback" Index="5" />
         <Parameter Name="state" Type="System.Object" Index="6" />
       </Parameters>
@@ -1610,15 +1616,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginReceiveFrom">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceiveFrom(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, System::Net::EndPoint ^ % remoteEP, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, ref System.Net.EndPoint remote_end, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint&amp; remote_end, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceiveFrom(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, System::Net::EndPoint ^ % remoteEP, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, ref System.Net.EndPoint remote_end, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint&amp; remote_end, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceiveFrom (buffer As Byte(), offset As Integer, size As Integer, socket_flags As SocketFlags, ByRef remote_end As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceiveFrom(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socket_flags, System::Net::EndPoint ^ % remote_end, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceiveFrom(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socket_flags, System::Net::EndPoint ^ % remote_end, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1632,6 +1638,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -1640,10 +1647,10 @@
         <Parameter Name="buffer" Type="System.Byte[]" Index="0" />
         <Parameter Name="offset" Type="System.Int32" Index="1" />
         <Parameter Name="size" Type="System.Int32" Index="2" />
-        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="socket_flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
-        <Parameter Name="remoteEP" Type="System.Net.EndPoint&amp;" RefType="ref" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="remote_end" Type="System.Net.EndPoint&amp;" RefType="ref" Index="4" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="socket_flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="remoteEP" Type="System.Net.EndPoint&amp;" RefType="ref" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="remote_end" Type="System.Net.EndPoint&amp;" RefType="ref" Index="4" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="callback" Type="System.AsyncCallback" Index="5" />
         <Parameter Name="state" Type="System.Object" Index="6" />
       </Parameters>
@@ -2108,15 +2115,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginSend">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSend (buffer As Byte(), offset As Integer, size As Integer, socket_flags As SocketFlags, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socket_flags, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socket_flags, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2130,6 +2137,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -2138,8 +2146,8 @@
         <Parameter Name="buffer" Type="System.Byte[]" Index="0" />
         <Parameter Name="offset" Type="System.Int32" Index="1" />
         <Parameter Name="size" Type="System.Int32" Index="2" />
-        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="socket_flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="socket_flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="callback" Type="System.AsyncCallback" Index="4" />
         <Parameter Name="state" Type="System.Object" Index="5" />
       </Parameters>
@@ -2394,15 +2402,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginSendTo">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginSendTo (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendTo(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendTo(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, System::Net::EndPoint ^ remoteEP, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginSendTo (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, System.Net.EndPoint remote_end, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendTo(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint remote_end, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginSendTo (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendTo(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendTo(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socketFlags, System::Net::EndPoint ^ remoteEP, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginSendTo (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, System.Net.EndPoint remote_end, AsyncCallback callback, object state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendTo(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint remote_end, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSendTo (buffer As Byte(), offset As Integer, size As Integer, socket_flags As SocketFlags, remote_end As EndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendTo(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socket_flags, System::Net::EndPoint ^ remote_end, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendTo(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size, System::Net::Sockets::SocketFlags socket_flags, System::Net::EndPoint ^ remote_end, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2416,6 +2424,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -2424,10 +2433,10 @@
         <Parameter Name="buffer" Type="System.Byte[]" Index="0" />
         <Parameter Name="offset" Type="System.Int32" Index="1" />
         <Parameter Name="size" Type="System.Int32" Index="2" />
-        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="socket_flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
-        <Parameter Name="remoteEP" Type="System.Net.EndPoint" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="remote_end" Type="System.Net.EndPoint" Index="4" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="socket_flags" Type="System.Net.Sockets.SocketFlags" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="remoteEP" Type="System.Net.EndPoint" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="remote_end" Type="System.Net.EndPoint" Index="4" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="callback" Type="System.AsyncCallback" Index="5" />
         <Parameter Name="state" Type="System.Object" Index="6" />
       </Parameters>
@@ -3840,16 +3849,16 @@
       </Docs>
     </Member>
     <Member MemberName="EndAccept">
-      <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndAccept (asyncResult As IAsyncResult) As Socket" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::Socket ^ EndAccept(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndAccept (result As IAsyncResult) As Socket" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::Socket ^ EndAccept(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndAccept (asyncResult As IAsyncResult) As Socket" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::Socket ^ EndAccept(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndAccept (result As IAsyncResult) As Socket" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::Socket ^ EndAccept(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3863,16 +3872,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.Socket</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">To be added.</param>
+        <param name="result">To be added.</param>
         <summary>Asynchronously accepts an incoming connection attempt and creates a new <see cref="T:System.Net.Sockets.Socket" /> to handle remote host communication.</summary>
         <returns>A <see cref="T:System.Net.Sockets.Socket" /> to handle communication with the remote host.</returns>
         <remarks>
@@ -3989,16 +4000,16 @@
       </Docs>
     </Member>
     <Member MemberName="EndConnect">
-      <MemberSignature Language="C#" Value="public void EndConnect (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndConnect(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub EndConnect (asyncResult As IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndConnect(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public void EndConnect (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndConnect(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub EndConnect (result As IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndConnect(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public void EndConnect (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndConnect(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndConnect (asyncResult As IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndConnect(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public void EndConnect (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndConnect(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndConnect (result As IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndConnect(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4012,16 +4023,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">To be added.</param>
+        <param name="result">To be added.</param>
         <summary>Ends a pending asynchronous connection request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4138,16 +4151,16 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="EndReceive">
-      <MemberSignature Language="C#" Value="public int EndReceive (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndReceive (asyncResult As IAsyncResult) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceive(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public int EndReceive (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndReceive (result As IAsyncResult) As Integer" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceive(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public int EndReceive (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceive (asyncResult As IAsyncResult) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceive(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public int EndReceive (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceive (result As IAsyncResult) As Integer" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceive(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4161,16 +4174,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">To be added.</param>
+        <param name="result">To be added.</param>
         <summary>Ends a pending asynchronous read.</summary>
         <returns>The number of bytes received.</returns>
         <remarks>
@@ -4298,16 +4313,16 @@
       </Docs>
     </Member>
     <Member MemberName="EndReceiveFrom">
-      <MemberSignature Language="C#" Value="public int EndReceiveFrom (IAsyncResult asyncResult, ref System.Net.EndPoint endPoint);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult asyncResult, class System.Net.EndPoint&amp; endPoint) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndReceiveFrom (asyncResult As IAsyncResult, ByRef endPoint As EndPoint) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceiveFrom(IAsyncResult ^ asyncResult, System::Net::EndPoint ^ % endPoint);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public int EndReceiveFrom (IAsyncResult result, ref System.Net.EndPoint end_point);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult result, class System.Net.EndPoint&amp; end_point) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndReceiveFrom (result As IAsyncResult, ByRef end_point As EndPoint) As Integer" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceiveFrom(IAsyncResult ^ result, System::Net::EndPoint ^ % end_point);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public int EndReceiveFrom (IAsyncResult asyncResult, ref System.Net.EndPoint endPoint);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult asyncResult, class System.Net.EndPoint&amp; endPoint) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceiveFrom (asyncResult As IAsyncResult, ByRef endPoint As EndPoint) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceiveFrom(IAsyncResult ^ asyncResult, System::Net::EndPoint ^ % endPoint);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public int EndReceiveFrom (IAsyncResult result, ref System.Net.EndPoint end_point);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult result, class System.Net.EndPoint&amp; end_point) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceiveFrom (result As IAsyncResult, ByRef end_point As EndPoint) As Integer" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceiveFrom(IAsyncResult ^ result, System::Net::EndPoint ^ % end_point);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4321,15 +4336,16 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
-        <Parameter Name="endPoint" Type="System.Net.EndPoint&amp;" RefType="ref" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="end_point" Type="System.Net.EndPoint&amp;" RefType="ref" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endPoint" Type="System.Net.EndPoint&amp;" RefType="ref" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="end_point" Type="System.Net.EndPoint&amp;" RefType="ref" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">To be added.</param>
@@ -4456,16 +4472,16 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="EndSend">
-      <MemberSignature Language="C#" Value="public int EndSend (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndSend (asyncResult As IAsyncResult) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSend(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public int EndSend (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndSend (result As IAsyncResult) As Integer" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSend(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public int EndSend (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSend (asyncResult As IAsyncResult) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSend(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public int EndSend (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSend (result As IAsyncResult) As Integer" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSend(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4479,16 +4495,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">To be added.</param>
+        <param name="result">To be added.</param>
         <summary>Ends a pending asynchronous send.</summary>
         <returns>If successful, the number of bytes sent to the <see cref="T:System.Net.Sockets.Socket" />; otherwise, an invalid <see cref="T:System.Net.Sockets.Socket" /> error.</returns>
         <remarks>
@@ -4689,16 +4707,16 @@
       </Docs>
     </Member>
     <Member MemberName="EndSendTo">
-      <MemberSignature Language="C#" Value="public int EndSendTo (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSendTo(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndSendTo (asyncResult As IAsyncResult) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSendTo(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-      <MemberSignature Language="C#" Value="public int EndSendTo (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSendTo(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndSendTo (result As IAsyncResult) As Integer" FrameworkAlternate="xamarinandroid-7.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSendTo(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C#" Value="public int EndSendTo (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSendTo(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netcore-2.0;netcore-2.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSendTo (asyncResult As IAsyncResult) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSendTo(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public int EndSendTo (IAsyncResult result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSendTo(class System.IAsyncResult result) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSendTo (result As IAsyncResult) As Integer" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSendTo(IAsyncResult ^ result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4712,16 +4730,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
-        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">To be added.</param>
+        <param name="result">To be added.</param>
         <summary>Ends a pending asynchronous send to a specific location.</summary>
         <returns>If successful, the number of bytes sent; otherwise, an invalid <see cref="T:System.Net.Sockets.Socket" /> error.</returns>
         <remarks>

@@ -30,15 +30,15 @@ This sample demonstrates the use of SSL transport security in combination with c
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The program code in the sample is almost identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. There is one additional operation provided by the service contract - `GetCallerIdentity`. This operation returns the name of the caller's identity to the caller.  
-  
-```  
+
+```csharp
 public string GetCallerIdentity()  
 {  
     // Use ServiceSecurityContext.WindowsIdentity to get the name of the caller.  
     return ServiceSecurityContext.Current.WindowsIdentity.Name;  
 }  
-```  
-  
+```
+
  You must create a certificate and assign it by using the Web Server Certificate Wizard before building and running the sample. The endpoint definition and binding definition in the configuration file settings enable `TransportWithMessageCredential` security mode, as shown in the following sample configuration for the client.  
   
 ```xml  
@@ -70,12 +70,12 @@ public string GetCallerIdentity()
  The address specified uses the https:// scheme. The binding configuration sets the security mode to `TransportWithMessageCredential`. The same security mode must be specified in the service's Web.config file.  
   
  Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an https: address, such as https://localhost/servicemodelsamples/service.svc, from your browser. To allow the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. This code, and the accompanying class, is not required when using production certificates.  
-  
-```  
+
+```csharp
 // WARNING: This code is only needed for test certificates such as those created by makecert. It is   
 // not recommended for production code.  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
-```  
+```
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   

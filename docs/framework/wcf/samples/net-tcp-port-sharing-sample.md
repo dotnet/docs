@@ -43,8 +43,8 @@ Unhandled Exception: System.ServiceModel.CommunicationException: The TransportMa
   
 ## Enabling Port Sharing  
  The following code demonstrates enabling port sharing on the server. It starts an instance of the `ICalculator` service on a fixed port with a random URI path. Even though two services can share the same port, their overall endpoint addresses still must be unique so that the NetTcp Port Sharing Service can route messages to the correct application.  
-  
-```  
+
+```csharp
 // Configure a binding with TCP port sharing enabled  
 NetTcpBinding binding = new NetTcpBinding();  
 binding.PortSharingEnabled = true;  
@@ -56,8 +56,8 @@ string address =
    String.Format("net.tcp://localhost:9000/calculator/{0}", salt);  
 host.AddServiceEndpoint(typeof(ICalculator), binding, address);  
 host.Open();  
-```  
-  
+```
+
  With port sharing enabled, you can run the service multiple times without having a conflict over the port number. If you change the code to disable port sharing, starting up two copies of the service results in the second failing with an <xref:System.ServiceModel.AddressAlreadyInUseException>.  
   
 ```  
@@ -66,8 +66,8 @@ Unhandled Exception: System.ServiceModel.AddressAlreadyInUseException: There is 
   
 ## Running the Sample  
  You can use the test client to check that messages are correctly routed to services sharing the port.  
-  
-```  
+
+```csharp
 class client  
 {  
    static void Main(string[] args)  
@@ -109,8 +109,8 @@ class client
       factory.Close();  
    }  
 }  
-```  
-  
+```
+
  Each instance of the service prints out its unique number and address. For instance, you may see the following text when you run service.exe.  
   
 ```  

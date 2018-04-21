@@ -26,8 +26,8 @@ This sample demonstrates how to implement an application that uses WS-Security w
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample demonstrates controlling authentication by using configuration and how to obtain the caller’s identity from the security context, as shown in the following sample code.  
-  
-```  
+
+```csharp
 public class CalculatorService : ICalculator  
 {  
     public string GetCallerIdentity()  
@@ -187,8 +187,8 @@ public class CalculatorService : ICalculator
 ```  
   
  The following sample shows how to call the service in your program.  
-  
-```  
+
+```csharp
 // Create a client.  
 CalculatorClient client = new CalculatorClient();  
   
@@ -197,7 +197,7 @@ Console.WriteLine(client.GetCallerIdentity());
 ...  
 //Closing the client gracefully closes the connection and cleans up resources.  
 client.Close();  
-```  
+```
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
@@ -216,7 +216,7 @@ Press <ENTER> to terminate client.
   
      The following line in the batch file creates the client certificate. The client name specified is used in the subject name of the certificate created. The certificate is stored in `My` store at the `CurrentUser` store location.  
   
-    ```  
+    ```bat
     echo ************  
     echo making client cert  
     echo ************  
@@ -227,7 +227,7 @@ Press <ENTER> to terminate client.
   
      The following line in the batch file copies the client certificate into the server's TrustedPeople store so that the server can make the relevant trust or no-trust decisions. In order for a certificate installed in the TrustedPeople store to be trusted by a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service, the client certificate validation mode must be set to `PeerOrChainTrust` or `PeerTrust`. See the previous service configuration sample to learn how this can be done by using a configuration file.  
   
-    ```  
+    ```bat
     echo ************  
     echo copying client cert to server's LocalMachine store  
     echo ************  
@@ -238,7 +238,7 @@ Press <ENTER> to terminate client.
   
      The following lines from the Setup.bat batch file create the server certificate to be used.  
   
-    ```  
+    ```bat
     echo ************  
     echo Server cert setup starting  
     echo %SERVER_NAME%  
@@ -262,7 +262,7 @@ Press <ENTER> to terminate client.
   
      The following lines in the Setup.bat file make the server certificate stored in the LocalMachine store accessible to the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] worker process account.  
   
-    ```  
+    ```bat
     echo ************  
     echo setting privileges on server certificates  
     echo ************  

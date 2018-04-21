@@ -60,13 +60,13 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
 ```  
   
  The service implementation class implements <xref:System.ServiceModel.InstanceContextMode.PerSession> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
-  
-```  
+
+```csharp
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)] public class CalculatorService : ICalculator  
 {  
     ...  
 }  
-```  
+```
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   

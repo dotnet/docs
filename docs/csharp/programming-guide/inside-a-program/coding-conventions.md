@@ -71,7 +71,7 @@ ms.author: "wiwagn"
   
 ### String Data Type  
   
--   Use the `+` operator to concatenate short strings, as shown in the following code.  
+-   Use [string interpolation](../../language-reference/tokens/interpolated.md) to concatenate short strings, as shown in the following code.  
   
      [!code-csharp[csProgGuideCodingConventions#6](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#6)]  
   

@@ -58,7 +58,7 @@ The examples in this topic use object initialization syntax. Object initializati
   
  [!code-csharp[CFX_ActivityExample#4](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#4)]  
   
- To use the `TextGenerator` activity with the `WriteRandomText` activity, specify it as the <xref:System.Activities.ActivityDelegate.Handler%2A>.  
+ To use the `TextGenerator` activity with the `WriteFillerText` activity, specify it as the <xref:System.Activities.ActivityDelegate.Handler%2A>.  
   
  [!code-csharp[CFX_ActivityExample#5](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#5)]  
   

@@ -35,6 +35,6 @@ The <xref:System.Reflection> namespace contains many methods for obtaining infor
  [!code-vb[Conceptual.Types.ViewInfo#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source6.vb#8)]  
   
 ## See Also  
- [Programming with Application Domains](http://msdn.microsoft.com/library/bd36055b-56bd-43eb-b4d8-820c37172131)  
+ [Programming with Application Domains](./application-domains.md#programming-with-application-domains)
  [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
  [Using Application Domains](../../../docs/framework/app-domains/use.md)

@@ -40,7 +40,7 @@ Although you can use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Rec
  Read [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) before you start this walkthrough.  
   
 ## Creating a Console Application  
- In [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], create a [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] or [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] Console Application project. Install the System.Threading.Tasks.Dataflow NuGet package.
+ In [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], create a Visual C# or [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] Console Application project. Install the System.Threading.Tasks.Dataflow NuGet package.
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
 

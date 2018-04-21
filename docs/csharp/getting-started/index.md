@@ -44,7 +44,7 @@ The following topics are available:
 
 * [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
 
-    Provides a guide to using the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] integrated development environment.
+    Provides a guide to using the Visual C# integrated development environment.
 
 * [C# Programming Guide](../../csharp/programming-guide/index.md)
 

@@ -36,7 +36,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 1.  On the **File** menu, point to **New**, and then click **Project** to open the **New Project** dialog box.  
   
-2.  From the list of [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] projects, select the **Windows Forms Control Library** project template, type `ctlClockLib` in the **Name** box, and then click **OK**.  
+2.  From the list of Visual C# projects, select the **Windows Forms Control Library** project template, type `ctlClockLib` in the **Name** box, and then click **OK**.  
   
      The project name, `ctlClockLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ctlClock`, you can specify your `ctlClock` component using `ctlClockLib.ctlClock.`  
   

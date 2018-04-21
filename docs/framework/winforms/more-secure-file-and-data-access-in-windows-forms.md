@@ -141,7 +141,7 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
 ```  
   
 > [!NOTE]
->  In [!INCLUDE[csprcs](../../../includes/csprcs-md.md)], ensure that you add code to enable the event handler. By using the code from the previous example, the following code shows how to enable the event handler.`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
+>  In Visual C#, ensure that you add code to enable the event handler. By using the code from the previous example, the following code shows how to enable the event handler.`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
   
 ### Other Files  
  Sometimes you will need to read or write to files that the user does not specify, such as when you must persist application settings. In the local intranet and Internet zones, your application will not have permission to store data in a local file. However, your application will be able to store data in isolated storage. Isolated storage is an abstract data compartment (not a specific storage location) that contains one or more isolated storage files, called stores, that contain the actual directory locations where data is stored. File access permissions like <xref:System.Security.Permissions.FileIOPermission> are not required; instead, the <xref:System.Security.Permissions.IsolatedStoragePermission> class controls the permissions for isolated storage. By default, applications that are running in the local intranet and Internet zones can store data using isolated storage; however, settings like disk quota can vary. For more information about isolated storage, see [Isolated Storage](../../../docs/standard/io/isolated-storage.md).  

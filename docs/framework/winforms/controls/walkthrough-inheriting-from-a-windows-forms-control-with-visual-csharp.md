@@ -36,7 +36,7 @@ With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can crea
   
 1.  On the **File** menu, point to **New** and then click **Project** to open the **New Project** dialog box.  
   
-2.  Select the **Windows Forms Control Library** project template from the list of [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] Projects, and type `ValueButtonLib` in the **Name** box.  
+2.  Select the **Windows Forms Control Library** project template from the list of Visual C# Projects, and type `ValueButtonLib` in the **Name** box.  
   
      The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](../../../csharp/programming-guide/namespaces/index.md).  
   

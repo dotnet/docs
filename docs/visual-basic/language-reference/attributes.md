@@ -13,7 +13,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Attributes (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several attributes that allow objects interoperate with unmanaged code, and one attribute that enables module members to be accessed without the module name. The following table lists the attributes used by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+Visual Basic provides several attributes that allow objects interoperate with unmanaged code, and one attribute that enables module members to be accessed without the module name. The following table lists the attributes used by Visual Basic.  
   
 |||  
 |---|---|  

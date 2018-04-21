@@ -23,7 +23,7 @@ ms.author: dotnetcontent
 A variable of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md) can refer to data of any type. The value you store in an `Object` variable is kept elsewhere in memory, while the variable itself holds a pointer to the data.  
   
 ## Object Classifier Functions  
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies functions that return information about what an `Object` variable refers to, as shown in the following table.  
+ Visual Basic supplies functions that return information about what an `Object` variable refers to, as shown in the following table.  
   
 |Function|Returns True if the Object variable refers to|  
 |--------------|---------------------------------------------------|  

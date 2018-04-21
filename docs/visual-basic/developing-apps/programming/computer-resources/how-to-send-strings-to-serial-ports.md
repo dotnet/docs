@@ -19,7 +19,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # How to: Send Strings to Serial Ports in Visual Basic
-This topic describes how to use `My.Computer.Ports` to send strings to the computer's serial ports in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+This topic describes how to use `My.Computer.Ports` to send strings to the computer's serial ports in Visual Basic.  
   
 ## Example  
  This example sends a string to the COM1 serial port. You may need to use a different serial port on your computer.  

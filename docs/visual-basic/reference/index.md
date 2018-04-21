@@ -14,11 +14,11 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Reference (Visual Basic)
-This section provides links to reference information about various aspects of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] programming.  
+This section provides links to reference information about various aspects of Visual Basic programming.  
   
 ## In This Section  
  [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)  
- Provides reference information for various aspects of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language.  
+ Provides reference information for various aspects of the Visual Basic language.  
   
  [Visual Basic Command-Line Compiler](../../visual-basic/reference/command-line-compiler/index.md)  
  Provides links to information about the command-line compiler, which provides an alternative to compiling programs from the Visual Studio IDE.  
@@ -27,7 +27,7 @@ This section provides links to reference information about various aspects of [!
  Provides links to information on working with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  
   
  [Visual Basic Language Specification](../../visual-basic/reference/language-specification/index.md)  
- Provides links to the complete [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language specification, which contains detailed information on all aspects of the language.  
+ Provides links to the complete Visual Basic language specification, which contains detailed information on all aspects of the language.  
   
 ## Reference  
  <xref:Microsoft.VisualBasic.PowerPacks?displayProperty=nameWithType>  

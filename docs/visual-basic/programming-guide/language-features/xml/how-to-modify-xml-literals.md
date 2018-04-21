@@ -19,7 +19,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # How to: Modify XML Literals (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides convenient ways to modify XML literals. You can add or delete elements and attributes, and you can also replace an existing element with a new XML element. This topic provides several examples of how to modify an existing XML literal.  
+Visual Basic provides convenient ways to modify XML literals. You can add or delete elements and attributes, and you can also replace an existing element with a new XML element. This topic provides several examples of how to modify an existing XML literal.  
   
 ### To modify the value of an XML literal  
   

@@ -33,7 +33,7 @@ This sample demonstrates how to catch expected exceptions when using a typed cli
   
  Code that calls a client communication method must catch the `TimeoutException` and `CommunicationException`. One way to handle such errors is to abort the client and report the communication failure.  
   
-```  
+```csharp   
 try  
 {  
     ...  

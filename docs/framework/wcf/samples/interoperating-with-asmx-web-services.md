@@ -27,7 +27,7 @@ This sample demonstrates how to integrate a [!INCLUDE[indigo1](../../../../inclu
   
  The ASMX Web service implementation shown in the following sample code calculates and returns the appropriate result.  
   
-```  
+```csharp  
 [WebService(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public class CalculatorService : System.Web.Services.WebService  
     {  
@@ -75,7 +75,7 @@ svcutil.exe /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samp
   
  The client implementation constructs an instance of the generated client. The generated client can then be used to communicate with the service.  
   
-```  
+```csharp  
 // Create a client.  
 CalculatorServiceSoapClient client = new CalculatorServiceSoapClient();  
   

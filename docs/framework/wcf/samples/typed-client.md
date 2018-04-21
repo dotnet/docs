@@ -25,7 +25,7 @@ The sample demonstrates how to obtain information from a typed client generated 
   
  The client's `Endpoint` property allows access to information about the service endpoint that the client is communicating with—including address, binding and contract information. The client's `InnerChannel` property is an instance of <xref:System.ServiceModel.IClientChannel> that allows access to information about the underlying channel, such as its state and session identifier.  
   
-```  
+```csharp   
 // Create a client.  
 CalculatorClient client = new CalculatorClient();  
 ...  

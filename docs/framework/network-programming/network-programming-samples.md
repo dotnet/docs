@@ -16,9 +16,11 @@ ms.workload:
   - "dotnet"
 ---
 # Network Programming Samples
-This section contains descriptions and links to downloadable network programming samples that use classes in the <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.PeerToPeer>, <xref:System.Net.Security>, <xref:System.Net.Sockets>, and related namespaces.
-Note: all samples are available in the .NET Framework SDK version 2.0 Samples Download, which was released for the .NET Framework 2.0 and may be dated.
+This section contains descriptions and links to downloadable network programming samples that use classes in the <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.Security>, <xref:System.Net.Sockets>, and related namespaces. 
   
+> [!NOTE]
+> All samples are available in the [.NET Framework SDK version 2.0 Samples Download](https://www.microsoft.com/en-us/download/confirmation.aspx?id=22181), which was released for the .NET Framework 2.0 and may be dated.
+
 ## In This Section  
  [Download Progress Indicator Technology Sample](https://msdn.microsoft.com/en-us/library/t8w6294a(v=vs.85).aspx)  
  Shows how to display the progress of a file download.  
@@ -28,6 +30,9 @@ Note: all samples are available in the .NET Framework SDK version 2.0 Samples Do
   
  [HttpListener Technology Sample](https://msdn.microsoft.com/en-us/library/y7cbb2y2(v=vs.85).aspx)  
  Shows how to process HTTP requests from within an application.  
+ 
+ [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90)\)
+ Demonstrates how to use the features of the xref:System.Net.HttpListener class to create an HTTP server that routes calls to a hosted ASP.NET application.
   
  [Mailer Technology Sample](https://msdn.microsoft.com/en-us/library/whw7xbk2(v=vs.85).aspx)  
  Shows how to send email messages from a client application.  
@@ -62,4 +67,3 @@ Note: all samples are available in the .NET Framework SDK version 2.0 Samples Do
 ## See Also  
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [Network Programming How-to Topics](../../../docs/framework/network-programming/network-programming-how-to-topics.md)  
- [Networking Samples for .NET](http://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

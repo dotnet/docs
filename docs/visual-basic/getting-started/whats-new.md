@@ -124,7 +124,7 @@ For more information, see the "Literal assignments" section of the [Byte](../lan
 
 **Support for C# reference return values**
 
-Starting with C# 7, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
+Starting with C# 7.0, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
 
 For example, the following `Sentence` class written in C# includes a `FindNext` method that finds the next word in a sentence that begins with a specified substring. The string is returned as a reference return value, and a `Boolean` variable passed by reference to the method indicates whether the search was successful. This means that the caller can not only read the returned value; he or she can also modify it, and that modification is reflected in the `Sentence` class.
 

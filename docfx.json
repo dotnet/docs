@@ -46,9 +46,11 @@
         ]
       },
       {
+        "group": "netcore",
+        "src": "docs/core",
         "files": [
-          "core/**/*.md",
-          "core/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ]
       },
       {
@@ -73,6 +75,23 @@
         ],
         "src": "docs",
         "dest": ".",
+        "exclude": [
+          "**/obj/**",
+          "samples/**/*.*",
+          "_themes/DocPacker/**"
+        ]
+      },
+      {
+        "group": "netcore",
+        "src": "docs/core",
+        "files": [
+          "images/**",
+          "**/*.png",
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp"
+        ],        
         "exclude": [
           "**/obj/**",
           "samples/**/*.*",
@@ -129,6 +148,10 @@
     "template": [
       "docs.html"
     ],
+    "netcore": {
+      "dest": "netcore",
+      "moniker_range": ">= netcore-1.0"
+    },
     "xref": [
       "_zip/office15.zip",
       "_zip/missingapi.yml"

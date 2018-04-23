@@ -1,5 +1,5 @@
 ---
-title: What's New in C# 7 - C# Guide
+title: What's New in C# 7.0 - C# Guide
 description: Get an overview of the new features coming in the upcoming version 7 of the C# language.    
 keywords: C#, .NET, .NET Core, Latest Features, What's New
 author: BillWagner
@@ -14,7 +14,7 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 
 # What's new in C# 7
 
-C# 7 adds a number of new features to the C# language:
+C# 7.0 adds a number of new features to the C# language:
 * [`out` variables](#out-variables)
     - You can declare `out` values inline as arguments to the method where they are used.
 * [Tuples](#tuples)
@@ -109,10 +109,10 @@ that contain multiple fields to represent the data members.
 The fields are not validated, and you cannot define your own methods
 
 > [!NOTE]
-> Tuples were available before C# 7,
+> Tuples were available before C# 7.0,
 > but they were inefficient and had no language support.
 > This meant that tuple elements could only be referenced as
-> `Item1`, `Item2` and so on. C# 7 introduces language support for tuples,
+> `Item1`, `Item2` and so on. C# 7.0 introduces language support for tuples,
 > which enables semantic names for the fields of a tuple using new,
 > more efficient tuple types.
 
@@ -486,8 +486,8 @@ work begins:
 ## More expression-bodied members
 
 C# 6 introduced [expression-bodied members](csharp-6.md#expression-bodied-function-members)
-for member functions, and read-only properties. C# 7 expands the allowed
-members that can be implemented as expressions. In C# 7, you can implement
+for member functions, and read-only properties. C# 7.0 expands the allowed
+members that can be implemented as expressions. In C# 7.0, you can implement
 *constructors*, *finalizers*, and `get` and `set` accessors on *properties*
 and *indexers*. The following code shows examples of each:
 
@@ -513,7 +513,7 @@ not an expression, there were C# constructs where you could not use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression-bodied members adds more locations
 where `throw` expressions would be useful. So that you can write any of these
-constructs, C# 7 introduces *throw expressions*.
+constructs, C# 7.0 introduces *throw expressions*.
 
 The syntax is the same as you've always used for `throw` statements. The only difference
 is that now you can place them in new locations, such as in a conditional expression:
@@ -576,7 +576,7 @@ both versions before making large scale changes to your code.
 Misreading numeric constants can make it harder to understand
 code when reading it for the first time. This often
 occurs when those numbers are used as bit masks or other symbolic
-rather than numeric values. C# 7 includes two new features to
+rather than numeric values. C# 7.0 includes two new features to
 make it easier to write numbers in the most readable fashion
 for the intended use: *binary literals*, and *digit separators*.
 

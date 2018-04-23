@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---
 
-# What's new in C# 7
+# What's new in C# 7.0
 
 C# 7.0 adds a number of new features to the C# language:
 * [`out` variables](#out-variables)
@@ -175,9 +175,6 @@ were returned from a method.  You can do that by declaring separate variables
 for each of the values in the tuple. This is called *deconstructing* the tuple:
 
 [!code-csharp[CallingWithDeconstructor](../../../samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
-
-<!-- Add wildcards here, if they are in C# 7
--->
 
 You can also provide a similar deconstruction for any type in .NET. This is
 done by writing a `Deconstruct` method as a member of the class. That

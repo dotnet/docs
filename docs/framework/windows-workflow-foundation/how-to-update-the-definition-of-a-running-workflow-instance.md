@@ -676,7 +676,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
 9. Press CTRL+SHIFT+B to build the project.  
   
-10. Choose **Close Solution** from the **File** menu. A solution file for the project is not required, so click **No** to close [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] without saving a solution file. Choose **Exit** from the **File** menu to close [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)].  
+10. Choose **Close Solution** from the **File** menu. A solution file for the project is not required, so click **No** to close Visual Studio without saving a solution file. Choose **Exit** from the **File** menu to close Visual Studio.  
   
 11. Open Windows Explorer and navigate to the **NumberGuessWorkflowActivities_du\bin\Debug** folder (or **bin\Release** depending on your project settings).  
   

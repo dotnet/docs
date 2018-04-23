@@ -100,7 +100,7 @@ public List<Person> GetCommonFriends(List<Person> people)
 ```  
   
 ## Client  
- The client proxy is created using the **Add Service Reference** feature of [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+ The client proxy is created using the **Add Service Reference** feature of Visual Studio.  
   
  A social network that consists of five `Person` objects is created. The client calls each of the three methods in the service.  
   

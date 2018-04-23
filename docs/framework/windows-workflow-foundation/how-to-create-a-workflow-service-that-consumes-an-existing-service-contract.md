@@ -23,7 +23,7 @@ ms.workload:
   
 ### Creating the workflow project  
   
-1.  In [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)], select **File**, **New Project**. Select the **WCF** node under the **C#** node in the **Templates** tree, and select the **WCF Workflow Service Application** template.  
+1.  In Visual Studio, select **File**, **New Project**. Select the **WCF** node under the **C#** node in the **Templates** tree, and select the **WCF Workflow Service Application** template.  
   
 2.  Name the new project `ContractFirst` and click **Ok**.  
   

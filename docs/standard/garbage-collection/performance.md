@@ -43,7 +43,9 @@ ms.workload:
   
 <a name="sos"></a>   
 ### Debugging with SOS  
- You can use the [Windows Debugger (WinDbg)](/windows-hardware/drivers/debugger/index) to inspect objects on the managed heap.  
+ You can use the [Windows Debugger (WinDbg)](/windows-hardware/drivers/debugger/index) to inspect objects on the managed heap.
+ 
+ To install WinDbg, install Debugging Tools for Windows from the [Download Debugging Tools for Windows](/windows-hardware/drivers/debugger/debugger-download-tools) page.
   
 <a name="etw"></a>   
 ### Garbage Collection ETW Events  

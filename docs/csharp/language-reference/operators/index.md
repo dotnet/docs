@@ -58,7 +58,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [unchecked](../../../csharp/language-reference/keywords/unchecked.md) – disables overflow checking for integer operations. This is the default compiler behavior.  
   
- [default(T)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md) – returns the default value of type T: `null` for reference types, zero for numeric types, and zero/`null` filled in members for struct types.  
+ [default(T)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md) – produces the default value of type T.  
   
  [delegate](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.  
   

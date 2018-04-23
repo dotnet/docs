@@ -194,5 +194,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ServerCertificateSelectionCallback">
+      <MemberSignature Language="C#" Value="public System.Net.Security.ServerCertificateSelectionCallback ServerCertificateSelectionCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Security.ServerCertificateSelectionCallback ServerCertificateSelectionCallback" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateSelectionCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerCertificateSelectionCallback As ServerCertificateSelectionCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ServerCertificateSelectionCallback ^ ServerCertificateSelectionCallback { System::Net::Security::ServerCertificateSelectionCallback ^ get(); void set(System::Net::Security::ServerCertificateSelectionCallback ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.ServerCertificateSelectionCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

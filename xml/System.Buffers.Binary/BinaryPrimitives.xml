@@ -18,11 +18,11 @@
   </Docs>
   <Members>
     <Member MemberName="ReadInt16BigEndian">
-      <MemberSignature Language="C#" Value="public static short ReadInt16BigEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static short ReadInt16BigEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt16BigEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16BigEndian (buffer As ReadOnlySpan(Of Byte)) As Short" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16BigEndian (source As ReadOnlySpan(Of Byte)) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -32,21 +32,21 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt16LittleEndian">
-      <MemberSignature Language="C#" Value="public static short ReadInt16LittleEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static short ReadInt16LittleEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt16LittleEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16LittleEndian (buffer As ReadOnlySpan(Of Byte)) As Short" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16LittleEndian (source As ReadOnlySpan(Of Byte)) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -56,21 +56,21 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt32BigEndian">
-      <MemberSignature Language="C#" Value="public static int ReadInt32BigEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static int ReadInt32BigEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt32BigEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32BigEndian (buffer As ReadOnlySpan(Of Byte)) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32BigEndian (source As ReadOnlySpan(Of Byte)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -80,21 +80,21 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt32LittleEndian">
-      <MemberSignature Language="C#" Value="public static int ReadInt32LittleEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static int ReadInt32LittleEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt32LittleEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32LittleEndian (buffer As ReadOnlySpan(Of Byte)) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32LittleEndian (source As ReadOnlySpan(Of Byte)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -104,21 +104,21 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt64BigEndian">
-      <MemberSignature Language="C#" Value="public static long ReadInt64BigEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static long ReadInt64BigEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt64BigEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64BigEndian (buffer As ReadOnlySpan(Of Byte)) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64BigEndian (source As ReadOnlySpan(Of Byte)) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -128,21 +128,21 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt64LittleEndian">
-      <MemberSignature Language="C#" Value="public static long ReadInt64LittleEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static long ReadInt64LittleEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt64LittleEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64LittleEndian (buffer As ReadOnlySpan(Of Byte)) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64LittleEndian (source As ReadOnlySpan(Of Byte)) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -152,55 +152,21 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ReadMachineEndian&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T ReadMachineEndian&lt;T&gt; (ReadOnlySpan&lt;byte&gt; buffer) where T : struct;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ReadMachineEndian&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadMachineEndian``1(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadMachineEndian(Of T As Structure) (buffer As ReadOnlySpan(Of Byte)) As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static T ReadMachineEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>T</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="T">
-          <Constraints>
-            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
-            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
-            <BaseTypeName>System.ValueType</BaseTypeName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-      </Parameters>
-      <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt16BigEndian">
-      <MemberSignature Language="C#" Value="public static ushort ReadUInt16BigEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 ReadUInt16BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static ushort ReadUInt16BigEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 ReadUInt16BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt16BigEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt16BigEndian (buffer As ReadOnlySpan(Of Byte)) As UShort" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ReadUInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt16BigEndian (source As ReadOnlySpan(Of Byte)) As UShort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ReadUInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -215,21 +181,21 @@
         <ReturnType>System.UInt16</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt16LittleEndian">
-      <MemberSignature Language="C#" Value="public static ushort ReadUInt16LittleEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 ReadUInt16LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static ushort ReadUInt16LittleEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 ReadUInt16LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt16LittleEndian (buffer As ReadOnlySpan(Of Byte)) As UShort" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ReadUInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt16LittleEndian (source As ReadOnlySpan(Of Byte)) As UShort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ReadUInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -244,21 +210,21 @@
         <ReturnType>System.UInt16</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt32BigEndian">
-      <MemberSignature Language="C#" Value="public static uint ReadUInt32BigEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 ReadUInt32BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static uint ReadUInt32BigEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 ReadUInt32BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt32BigEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt32BigEndian (buffer As ReadOnlySpan(Of Byte)) As UInteger" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ReadUInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt32BigEndian (source As ReadOnlySpan(Of Byte)) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ReadUInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -273,21 +239,21 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt32LittleEndian">
-      <MemberSignature Language="C#" Value="public static uint ReadUInt32LittleEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 ReadUInt32LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static uint ReadUInt32LittleEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 ReadUInt32LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt32LittleEndian (buffer As ReadOnlySpan(Of Byte)) As UInteger" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ReadUInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt32LittleEndian (source As ReadOnlySpan(Of Byte)) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ReadUInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -302,21 +268,21 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt64BigEndian">
-      <MemberSignature Language="C#" Value="public static ulong ReadUInt64BigEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 ReadUInt64BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static ulong ReadUInt64BigEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 ReadUInt64BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt64BigEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt64BigEndian (buffer As ReadOnlySpan(Of Byte)) As ULong" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ReadUInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt64BigEndian (source As ReadOnlySpan(Of Byte)) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ReadUInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -331,21 +297,21 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt64LittleEndian">
-      <MemberSignature Language="C#" Value="public static ulong ReadUInt64LittleEndian (ReadOnlySpan&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 ReadUInt64LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="C#" Value="public static ulong ReadUInt64LittleEndian (ReadOnlySpan&lt;byte&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 ReadUInt64LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt64LittleEndian(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt64LittleEndian (buffer As ReadOnlySpan(Of Byte)) As ULong" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ReadUInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt64LittleEndian (source As ReadOnlySpan(Of Byte)) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ReadUInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -360,10 +326,10 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -582,11 +548,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadInt16BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadInt16BigEndian (ReadOnlySpan&lt;byte&gt; buffer, out short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt16BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] int16&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadInt16BigEndian (ReadOnlySpan&lt;byte&gt; source, out short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt16BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] int16&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt16BigEndian(System.ReadOnlySpan{System.Byte},System.Int16@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt16BigEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As Short) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] short % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt16BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As Short) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] short % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -596,11 +562,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int16&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -608,11 +574,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadInt16LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadInt16LittleEndian (ReadOnlySpan&lt;byte&gt; buffer, out short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt16LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] int16&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadInt16LittleEndian (ReadOnlySpan&lt;byte&gt; source, out short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt16LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] int16&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt16LittleEndian(System.ReadOnlySpan{System.Byte},System.Int16@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt16LittleEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As Short) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] short % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt16LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As Short) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] short % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -622,11 +588,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int16&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -634,11 +600,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadInt32BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadInt32BigEndian (ReadOnlySpan&lt;byte&gt; buffer, out int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt32BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] int32&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadInt32BigEndian (ReadOnlySpan&lt;byte&gt; source, out int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt32BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] int32&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt32BigEndian(System.ReadOnlySpan{System.Byte},System.Int32@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt32BigEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] int % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt32BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] int % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -648,11 +614,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -660,11 +626,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadInt32LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadInt32LittleEndian (ReadOnlySpan&lt;byte&gt; buffer, out int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt32LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] int32&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadInt32LittleEndian (ReadOnlySpan&lt;byte&gt; source, out int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt32LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] int32&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt32LittleEndian(System.ReadOnlySpan{System.Byte},System.Int32@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt32LittleEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] int % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt32LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] int % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -674,11 +640,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -686,11 +652,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadInt64BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadInt64BigEndian (ReadOnlySpan&lt;byte&gt; buffer, out long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt64BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] int64&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadInt64BigEndian (ReadOnlySpan&lt;byte&gt; source, out long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt64BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] int64&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt64BigEndian(System.ReadOnlySpan{System.Byte},System.Int64@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt64BigEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As Long) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] long % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt64BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As Long) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] long % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -700,11 +666,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -712,11 +678,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadInt64LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadInt64LittleEndian (ReadOnlySpan&lt;byte&gt; buffer, out long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt64LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] int64&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadInt64LittleEndian (ReadOnlySpan&lt;byte&gt; source, out long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadInt64LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] int64&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt64LittleEndian(System.ReadOnlySpan{System.Byte},System.Int64@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt64LittleEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As Long) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] long % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt64LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As Long) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] long % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -726,47 +692,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TryReadMachineEndian&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool TryReadMachineEndian&lt;T&gt; (ReadOnlySpan&lt;byte&gt; buffer, out T value) where T : struct;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadMachineEndian&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] !!T&amp; value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadMachineEndian``1(System.ReadOnlySpan{System.Byte},``0@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadMachineEndian(Of T As Structure) (buffer As ReadOnlySpan(Of Byte), ByRef value As T) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool TryReadMachineEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] T % value);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="T">
-          <Constraints>
-            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
-            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
-            <BaseTypeName>System.ValueType</BaseTypeName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="T&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -774,11 +704,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadUInt16BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadUInt16BigEndian (ReadOnlySpan&lt;byte&gt; buffer, out ushort value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt16BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] unsigned int16&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadUInt16BigEndian (ReadOnlySpan&lt;byte&gt; source, out ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt16BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] unsigned int16&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt16BigEndian(System.ReadOnlySpan{System.Byte},System.UInt16@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt16BigEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As UShort) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] System::UInt16 % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt16BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As UShort) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt16 % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -793,11 +723,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt16&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -805,11 +735,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadUInt16LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadUInt16LittleEndian (ReadOnlySpan&lt;byte&gt; buffer, out ushort value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt16LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] unsigned int16&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadUInt16LittleEndian (ReadOnlySpan&lt;byte&gt; source, out ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt16LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] unsigned int16&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt16LittleEndian(System.ReadOnlySpan{System.Byte},System.UInt16@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt16LittleEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As UShort) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] System::UInt16 % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt16LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As UShort) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt16 % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -824,11 +754,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt16&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -836,11 +766,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadUInt32BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadUInt32BigEndian (ReadOnlySpan&lt;byte&gt; buffer, out uint value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt32BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] unsigned int32&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadUInt32BigEndian (ReadOnlySpan&lt;byte&gt; source, out uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt32BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] unsigned int32&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt32BigEndian(System.ReadOnlySpan{System.Byte},System.UInt32@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt32BigEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As UInteger) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] System::UInt32 % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt32BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As UInteger) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt32 % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -855,11 +785,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -867,11 +797,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadUInt32LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadUInt32LittleEndian (ReadOnlySpan&lt;byte&gt; buffer, out uint value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt32LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] unsigned int32&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadUInt32LittleEndian (ReadOnlySpan&lt;byte&gt; source, out uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt32LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] unsigned int32&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt32LittleEndian(System.ReadOnlySpan{System.Byte},System.UInt32@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt32LittleEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As UInteger) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] System::UInt32 % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt32LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As UInteger) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt32 % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -886,11 +816,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -898,11 +828,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadUInt64BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadUInt64BigEndian (ReadOnlySpan&lt;byte&gt; buffer, out ulong value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt64BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] unsigned int64&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadUInt64BigEndian (ReadOnlySpan&lt;byte&gt; source, out ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt64BigEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] unsigned int64&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt64BigEndian(System.ReadOnlySpan{System.Byte},System.UInt64@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt64BigEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As ULong) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] System::UInt64 % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt64BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As ULong) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt64 % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -917,11 +847,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -929,11 +859,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadUInt64LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadUInt64LittleEndian (ReadOnlySpan&lt;byte&gt; buffer, out ulong value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt64LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer, [out] unsigned int64&amp; value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryReadUInt64LittleEndian (ReadOnlySpan&lt;byte&gt; source, out ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadUInt64LittleEndian(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] unsigned int64&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt64LittleEndian(System.ReadOnlySpan{System.Byte},System.UInt64@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt64LittleEndian (buffer As ReadOnlySpan(Of Byte), ByRef value As ULong) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] System::UInt64 % value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt64LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As ULong) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt64 % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -948,11 +878,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="source">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -960,11 +890,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteInt16BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteInt16BigEndian (Span&lt;byte&gt; buffer, short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt16BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int16 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteInt16BigEndian (Span&lt;byte&gt; destination, short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt16BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt16BigEndian(System.Span{System.Byte},System.Int16)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt16BigEndian (buffer As Span(Of Byte), value As Short) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt16BigEndian(Span&lt;System::Byte&gt; buffer, short value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt16BigEndian (destination As Span(Of Byte), value As Short) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt16BigEndian(Span&lt;System::Byte&gt; destination, short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -974,11 +904,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -986,11 +916,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteInt16LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteInt16LittleEndian (Span&lt;byte&gt; buffer, short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt16LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int16 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteInt16LittleEndian (Span&lt;byte&gt; destination, short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt16LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt16LittleEndian(System.Span{System.Byte},System.Int16)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt16LittleEndian (buffer As Span(Of Byte), value As Short) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt16LittleEndian(Span&lt;System::Byte&gt; buffer, short value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt16LittleEndian (destination As Span(Of Byte), value As Short) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt16LittleEndian(Span&lt;System::Byte&gt; destination, short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1000,11 +930,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1012,11 +942,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteInt32BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteInt32BigEndian (Span&lt;byte&gt; buffer, int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt32BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteInt32BigEndian (Span&lt;byte&gt; destination, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt32BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt32BigEndian(System.Span{System.Byte},System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt32BigEndian (buffer As Span(Of Byte), value As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt32BigEndian(Span&lt;System::Byte&gt; buffer, int value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt32BigEndian (destination As Span(Of Byte), value As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt32BigEndian(Span&lt;System::Byte&gt; destination, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1026,11 +956,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1038,11 +968,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteInt32LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteInt32LittleEndian (Span&lt;byte&gt; buffer, int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt32LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteInt32LittleEndian (Span&lt;byte&gt; destination, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt32LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt32LittleEndian(System.Span{System.Byte},System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt32LittleEndian (buffer As Span(Of Byte), value As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt32LittleEndian(Span&lt;System::Byte&gt; buffer, int value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt32LittleEndian (destination As Span(Of Byte), value As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt32LittleEndian(Span&lt;System::Byte&gt; destination, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1052,11 +982,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1064,11 +994,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteInt64BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteInt64BigEndian (Span&lt;byte&gt; buffer, long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt64BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int64 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteInt64BigEndian (Span&lt;byte&gt; destination, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt64BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt64BigEndian(System.Span{System.Byte},System.Int64)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt64BigEndian (buffer As Span(Of Byte), value As Long) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt64BigEndian(Span&lt;System::Byte&gt; buffer, long value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt64BigEndian (destination As Span(Of Byte), value As Long) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt64BigEndian(Span&lt;System::Byte&gt; destination, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1078,11 +1008,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1090,11 +1020,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteInt64LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteInt64LittleEndian (Span&lt;byte&gt; buffer, long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt64LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int64 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteInt64LittleEndian (Span&lt;byte&gt; destination, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteInt64LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt64LittleEndian(System.Span{System.Byte},System.Int64)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt64LittleEndian (buffer As Span(Of Byte), value As Long) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt64LittleEndian(Span&lt;System::Byte&gt; buffer, long value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt64LittleEndian (destination As Span(Of Byte), value As Long) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt64LittleEndian(Span&lt;System::Byte&gt; destination, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1104,47 +1034,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TryWriteMachineEndian&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool TryWriteMachineEndian&lt;T&gt; (Span&lt;byte&gt; buffer, ref T value) where T : struct;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteMachineEndian&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Span`1&lt;unsigned int8&gt; buffer, !!T&amp; value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteMachineEndian``1(System.Span{System.Byte},``0@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteMachineEndian(Of T As Structure) (buffer As Span(Of Byte), ByRef value As T) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool TryWriteMachineEndian(Span&lt;System::Byte&gt; buffer, T % value);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="T">
-          <Constraints>
-            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
-            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
-            <BaseTypeName>System.ValueType</BaseTypeName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="T&amp;" RefType="ref" />
-      </Parameters>
-      <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1152,11 +1046,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteUInt16BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteUInt16BigEndian (Span&lt;byte&gt; buffer, ushort value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt16BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int16 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteUInt16BigEndian (Span&lt;byte&gt; destination, ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt16BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt16BigEndian(System.Span{System.Byte},System.UInt16)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt16BigEndian (buffer As Span(Of Byte), value As UShort) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt16BigEndian(Span&lt;System::Byte&gt; buffer, System::UInt16 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt16BigEndian (destination As Span(Of Byte), value As UShort) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt16BigEndian(Span&lt;System::Byte&gt; destination, System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1171,11 +1065,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1183,11 +1077,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteUInt16LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteUInt16LittleEndian (Span&lt;byte&gt; buffer, ushort value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt16LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int16 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteUInt16LittleEndian (Span&lt;byte&gt; destination, ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt16LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt16LittleEndian(System.Span{System.Byte},System.UInt16)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt16LittleEndian (buffer As Span(Of Byte), value As UShort) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt16LittleEndian(Span&lt;System::Byte&gt; buffer, System::UInt16 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt16LittleEndian (destination As Span(Of Byte), value As UShort) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt16LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1202,11 +1096,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1214,11 +1108,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteUInt32BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteUInt32BigEndian (Span&lt;byte&gt; buffer, uint value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt32BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteUInt32BigEndian (Span&lt;byte&gt; destination, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt32BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt32BigEndian(System.Span{System.Byte},System.UInt32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt32BigEndian (buffer As Span(Of Byte), value As UInteger) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt32BigEndian(Span&lt;System::Byte&gt; buffer, System::UInt32 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt32BigEndian (destination As Span(Of Byte), value As UInteger) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt32BigEndian(Span&lt;System::Byte&gt; destination, System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1233,11 +1127,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1245,11 +1139,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteUInt32LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteUInt32LittleEndian (Span&lt;byte&gt; buffer, uint value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt32LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteUInt32LittleEndian (Span&lt;byte&gt; destination, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt32LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt32LittleEndian(System.Span{System.Byte},System.UInt32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt32LittleEndian (buffer As Span(Of Byte), value As UInteger) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt32LittleEndian(Span&lt;System::Byte&gt; buffer, System::UInt32 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt32LittleEndian (destination As Span(Of Byte), value As UInteger) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt32LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1264,11 +1158,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1276,11 +1170,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteUInt64BigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteUInt64BigEndian (Span&lt;byte&gt; buffer, ulong value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt64BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int64 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteUInt64BigEndian (Span&lt;byte&gt; destination, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt64BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt64BigEndian(System.Span{System.Byte},System.UInt64)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt64BigEndian (buffer As Span(Of Byte), value As ULong) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt64BigEndian(Span&lt;System::Byte&gt; buffer, System::UInt64 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt64BigEndian (destination As Span(Of Byte), value As ULong) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt64BigEndian(Span&lt;System::Byte&gt; destination, System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1295,11 +1189,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1307,11 +1201,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryWriteUInt64LittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryWriteUInt64LittleEndian (Span&lt;byte&gt; buffer, ulong value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt64LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int64 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryWriteUInt64LittleEndian (Span&lt;byte&gt; destination, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWriteUInt64LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt64LittleEndian(System.Span{System.Byte},System.UInt64)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt64LittleEndian (buffer As Span(Of Byte), value As ULong) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt64LittleEndian(Span&lt;System::Byte&gt; buffer, System::UInt64 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt64LittleEndian (destination As Span(Of Byte), value As ULong) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt64LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1326,11 +1220,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1338,11 +1232,11 @@
       </Docs>
     </Member>
     <Member MemberName="WriteInt16BigEndian">
-      <MemberSignature Language="C#" Value="public static void WriteInt16BigEndian (Span&lt;byte&gt; buffer, short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int16 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteInt16BigEndian (Span&lt;byte&gt; destination, short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt16BigEndian(System.Span{System.Byte},System.Int16)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16BigEndian (buffer As Span(Of Byte), value As Short)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16BigEndian(Span&lt;System::Byte&gt; buffer, short value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16BigEndian (destination As Span(Of Byte), value As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16BigEndian(Span&lt;System::Byte&gt; destination, short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1352,22 +1246,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteInt16LittleEndian">
-      <MemberSignature Language="C#" Value="public static void WriteInt16LittleEndian (Span&lt;byte&gt; buffer, short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int16 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteInt16LittleEndian (Span&lt;byte&gt; destination, short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt16LittleEndian(System.Span{System.Byte},System.Int16)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16LittleEndian (buffer As Span(Of Byte), value As Short)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16LittleEndian(Span&lt;System::Byte&gt; buffer, short value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16LittleEndian (destination As Span(Of Byte), value As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16LittleEndian(Span&lt;System::Byte&gt; destination, short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1377,22 +1271,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteInt32BigEndian">
-      <MemberSignature Language="C#" Value="public static void WriteInt32BigEndian (Span&lt;byte&gt; buffer, int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteInt32BigEndian (Span&lt;byte&gt; destination, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt32BigEndian(System.Span{System.Byte},System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32BigEndian (buffer As Span(Of Byte), value As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32BigEndian(Span&lt;System::Byte&gt; buffer, int value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32BigEndian (destination As Span(Of Byte), value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32BigEndian(Span&lt;System::Byte&gt; destination, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1402,22 +1296,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteInt32LittleEndian">
-      <MemberSignature Language="C#" Value="public static void WriteInt32LittleEndian (Span&lt;byte&gt; buffer, int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteInt32LittleEndian (Span&lt;byte&gt; destination, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt32LittleEndian(System.Span{System.Byte},System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32LittleEndian (buffer As Span(Of Byte), value As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32LittleEndian(Span&lt;System::Byte&gt; buffer, int value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32LittleEndian (destination As Span(Of Byte), value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32LittleEndian(Span&lt;System::Byte&gt; destination, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1427,22 +1321,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteInt64BigEndian">
-      <MemberSignature Language="C#" Value="public static void WriteInt64BigEndian (Span&lt;byte&gt; buffer, long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int64 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteInt64BigEndian (Span&lt;byte&gt; destination, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt64BigEndian(System.Span{System.Byte},System.Int64)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64BigEndian (buffer As Span(Of Byte), value As Long)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64BigEndian(Span&lt;System::Byte&gt; buffer, long value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64BigEndian (destination As Span(Of Byte), value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64BigEndian(Span&lt;System::Byte&gt; destination, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1452,22 +1346,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteInt64LittleEndian">
-      <MemberSignature Language="C#" Value="public static void WriteInt64LittleEndian (Span&lt;byte&gt; buffer, long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, int64 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteInt64LittleEndian (Span&lt;byte&gt; destination, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt64LittleEndian(System.Span{System.Byte},System.Int64)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64LittleEndian (buffer As Span(Of Byte), value As Long)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64LittleEndian(Span&lt;System::Byte&gt; buffer, long value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64LittleEndian (destination As Span(Of Byte), value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64LittleEndian(Span&lt;System::Byte&gt; destination, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1477,57 +1371,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WriteMachineEndian&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static void WriteMachineEndian&lt;T&gt; (Span&lt;byte&gt; buffer, ref T value) where T : struct;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteMachineEndian&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Span`1&lt;unsigned int8&gt; buffer, !!T&amp; value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteMachineEndian``1(System.Span{System.Byte},``0@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteMachineEndian(Of T As Structure) (buffer As Span(Of Byte), ByRef value As T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static void WriteMachineEndian(Span&lt;System::Byte&gt; buffer, T % value);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="T">
-          <Constraints>
-            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
-            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
-            <BaseTypeName>System.ValueType</BaseTypeName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="T&amp;" RefType="ref" />
-      </Parameters>
-      <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteUInt16BigEndian">
-      <MemberSignature Language="C#" Value="public static void WriteUInt16BigEndian (Span&lt;byte&gt; buffer, ushort value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt16BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int16 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteUInt16BigEndian (Span&lt;byte&gt; destination, ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt16BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt16BigEndian(System.Span{System.Byte},System.UInt16)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt16BigEndian (buffer As Span(Of Byte), value As UShort)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt16BigEndian(Span&lt;System::Byte&gt; buffer, System::UInt16 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt16BigEndian (destination As Span(Of Byte), value As UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt16BigEndian(Span&lt;System::Byte&gt; destination, System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1542,22 +1401,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteUInt16LittleEndian">
-      <MemberSignature Language="C#" Value="public static void WriteUInt16LittleEndian (Span&lt;byte&gt; buffer, ushort value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt16LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int16 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteUInt16LittleEndian (Span&lt;byte&gt; destination, ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt16LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt16LittleEndian(System.Span{System.Byte},System.UInt16)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt16LittleEndian (buffer As Span(Of Byte), value As UShort)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt16LittleEndian(Span&lt;System::Byte&gt; buffer, System::UInt16 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt16LittleEndian (destination As Span(Of Byte), value As UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt16LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1572,22 +1431,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteUInt32BigEndian">
-      <MemberSignature Language="C#" Value="public static void WriteUInt32BigEndian (Span&lt;byte&gt; buffer, uint value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt32BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteUInt32BigEndian (Span&lt;byte&gt; destination, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt32BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt32BigEndian(System.Span{System.Byte},System.UInt32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt32BigEndian (buffer As Span(Of Byte), value As UInteger)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt32BigEndian(Span&lt;System::Byte&gt; buffer, System::UInt32 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt32BigEndian (destination As Span(Of Byte), value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt32BigEndian(Span&lt;System::Byte&gt; destination, System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1602,22 +1461,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteUInt32LittleEndian">
-      <MemberSignature Language="C#" Value="public static void WriteUInt32LittleEndian (Span&lt;byte&gt; buffer, uint value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt32LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteUInt32LittleEndian (Span&lt;byte&gt; destination, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt32LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt32LittleEndian(System.Span{System.Byte},System.UInt32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt32LittleEndian (buffer As Span(Of Byte), value As UInteger)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt32LittleEndian(Span&lt;System::Byte&gt; buffer, System::UInt32 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt32LittleEndian (destination As Span(Of Byte), value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt32LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1632,22 +1491,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteUInt64BigEndian">
-      <MemberSignature Language="C#" Value="public static void WriteUInt64BigEndian (Span&lt;byte&gt; buffer, ulong value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt64BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int64 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteUInt64BigEndian (Span&lt;byte&gt; destination, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt64BigEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt64BigEndian(System.Span{System.Byte},System.UInt64)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt64BigEndian (buffer As Span(Of Byte), value As ULong)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt64BigEndian(Span&lt;System::Byte&gt; buffer, System::UInt64 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt64BigEndian (destination As Span(Of Byte), value As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt64BigEndian(Span&lt;System::Byte&gt; destination, System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1662,22 +1521,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteUInt64LittleEndian">
-      <MemberSignature Language="C#" Value="public static void WriteUInt64LittleEndian (Span&lt;byte&gt; buffer, ulong value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt64LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; buffer, unsigned int64 value) cil managed" />
+      <MemberSignature Language="C#" Value="public static void WriteUInt64LittleEndian (Span&lt;byte&gt; destination, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUInt64LittleEndian(valuetype System.Span`1&lt;unsigned int8&gt; destination, unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt64LittleEndian(System.Span{System.Byte},System.UInt64)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt64LittleEndian (buffer As Span(Of Byte), value As ULong)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt64LittleEndian(Span&lt;System::Byte&gt; buffer, System::UInt64 value);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt64LittleEndian (destination As Span(Of Byte), value As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt64LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -1692,11 +1551,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
+        <param name="destination">To be added.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>

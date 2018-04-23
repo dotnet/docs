@@ -1,0 +1,151 @@
+﻿<Type Name="SequenceMarshal" FullName="System.Runtime.InteropServices.SequenceMarshal">
+  <TypeSignature Language="C#" Value="public static class SequenceMarshal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SequenceMarshal extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SequenceMarshal" />
+  <TypeSignature Language="VB.NET" Value="Public Class SequenceMarshal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SequenceMarshal abstract sealed" />
+  <AssemblyInfo>
+    <AssemblyName>System.Memory</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TryGetArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryGetArray&lt;T&gt; (System.Buffers.ReadOnlySequence&lt;T&gt; sequence, out ArraySegment&lt;T&gt; segment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetArray&lt;T&gt;(valuetype System.Buffers.ReadOnlySequence`1&lt;!!T&gt; sequence, [out] valuetype System.ArraySegment`1&lt;!!T&gt;&amp; segment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SequenceMarshal.TryGetArray``1(System.Buffers.ReadOnlySequence{``0},System.ArraySegment{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetArray(Of T) (sequence As ReadOnlySequence(Of T), ByRef segment As ArraySegment(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetArray(System::Buffers::ReadOnlySequence&lt;T&gt; sequence, [Runtime::InteropServices::Out] ArraySegment&lt;T&gt; % segment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sequence">To be added.</param>
+        <param name="segment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetMemoryManager&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryGetMemoryManager&lt;T&gt; (System.Buffers.ReadOnlySequence&lt;T&gt; sequence, out System.Buffers.MemoryManager&lt;T&gt; manager, out int start, out int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetMemoryManager&lt;T&gt;(valuetype System.Buffers.ReadOnlySequence`1&lt;!!T&gt; sequence, [out] class System.Buffers.MemoryManager`1&lt;!!T&gt;&amp; manager, [out] int32&amp; start, [out] int32&amp; length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SequenceMarshal.TryGetMemoryManager``1(System.Buffers.ReadOnlySequence{``0},System.Buffers.MemoryManager{``0}@,System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetMemoryManager(Of T) (sequence As ReadOnlySequence(Of T), ByRef manager As MemoryManager(Of T), ByRef start As Integer, ByRef length As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetMemoryManager(System::Buffers::ReadOnlySequence&lt;T&gt; sequence, [Runtime::InteropServices::Out] System::Buffers::MemoryManager&lt;T&gt; ^ % manager, [Runtime::InteropServices::Out] int % start, [Runtime::InteropServices::Out] int % length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
+        <Parameter Name="manager" Type="System.Buffers.MemoryManager&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="start" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sequence">To be added.</param>
+        <param name="manager">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetReadOnlyMemory&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryGetReadOnlyMemory&lt;T&gt; (System.Buffers.ReadOnlySequence&lt;T&gt; sequence, out ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetReadOnlyMemory&lt;T&gt;(valuetype System.Buffers.ReadOnlySequence`1&lt;!!T&gt; sequence, [out] valuetype System.ReadOnlyMemory`1&lt;!!T&gt;&amp; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlyMemory``1(System.Buffers.ReadOnlySequence{``0},System.ReadOnlyMemory{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetReadOnlyMemory(Of T) (sequence As ReadOnlySequence(Of T), ByRef memory As ReadOnlyMemory(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetReadOnlyMemory(System::Buffers::ReadOnlySequence&lt;T&gt; sequence, [Runtime::InteropServices::Out] ReadOnlyMemory&lt;T&gt; % memory);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sequence">To be added.</param>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetReadOnlySequenceSegment&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryGetReadOnlySequenceSegment&lt;T&gt; (System.Buffers.ReadOnlySequence&lt;T&gt; sequence, out System.Buffers.ReadOnlySequenceSegment&lt;T&gt; startSegment, out int startIndex, out System.Buffers.ReadOnlySequenceSegment&lt;T&gt; endSegment, out int endIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetReadOnlySequenceSegment&lt;T&gt;(valuetype System.Buffers.ReadOnlySequence`1&lt;!!T&gt; sequence, [out] class System.Buffers.ReadOnlySequenceSegment`1&lt;!!T&gt;&amp; startSegment, [out] int32&amp; startIndex, [out] class System.Buffers.ReadOnlySequenceSegment`1&lt;!!T&gt;&amp; endSegment, [out] int32&amp; endIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlySequenceSegment``1(System.Buffers.ReadOnlySequence{``0},System.Buffers.ReadOnlySequenceSegment{``0}@,System.Int32@,System.Buffers.ReadOnlySequenceSegment{``0}@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetReadOnlySequenceSegment(Of T) (sequence As ReadOnlySequence(Of T), ByRef startSegment As ReadOnlySequenceSegment(Of T), ByRef startIndex As Integer, ByRef endSegment As ReadOnlySequenceSegment(Of T), ByRef endIndex As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetReadOnlySequenceSegment(System::Buffers::ReadOnlySequence&lt;T&gt; sequence, [Runtime::InteropServices::Out] System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ % startSegment, [Runtime::InteropServices::Out] int % startIndex, [Runtime::InteropServices::Out] System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ % endSegment, [Runtime::InteropServices::Out] int % endIndex);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
+        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sequence">To be added.</param>
+        <param name="startSegment">To be added.</param>
+        <param name="startIndex">To be added.</param>
+        <param name="endSegment">To be added.</param>
+        <param name="endIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -69,6 +69,25 @@
         <summary>Indicates that the pipe can be used for asynchronous reading and writing.</summary>
       </Docs>
     </Member>
+    <Member MemberName="CurrentUserOnly">
+      <MemberSignature Language="C#" Value="CurrentUserOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeOptions CurrentUserOnly = int32(536870912)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.CurrentUserOnly" />
+      <MemberSignature Language="VB.NET" Value="CurrentUserOnly" />
+      <MemberSignature Language="C++ CLI" Value="CurrentUserOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipes.PipeOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>536870912</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="None">
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeOptions None = int32(0)" />

@@ -587,6 +587,30 @@
       </Docs>
     </Member>
     <Member MemberName="GetUnicodeCategory">
+      <MemberSignature Language="C#" Value="public static System.Globalization.UnicodeCategory GetUnicodeCategory (int codePoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Globalization.UnicodeCategory GetUnicodeCategory(int32 codePoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (codePoint As Integer) As UnicodeCategory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(int codePoint);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codePoint" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="codePoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnicodeCategory">
       <MemberSignature Language="C#" Value="public static System.Globalization.UnicodeCategory GetUnicodeCategory (string s, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Globalization.UnicodeCategory GetUnicodeCategory(string s, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)" />

@@ -68,6 +68,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Acosh">
+      <MemberSignature Language="C#" Value="public static float Acosh (float x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Acosh(float32 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MathF.Acosh(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Acosh (x As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Acosh(float x);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Asin">
       <MemberSignature Language="C#" Value="public static float Asin (float x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Asin(float32 x) cil managed" />
@@ -78,6 +102,30 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Asinh">
+      <MemberSignature Language="C#" Value="public static float Asinh (float x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Asinh(float32 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MathF.Asinh(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Asinh (x As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Asinh(float x);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,6 +187,54 @@
       </Parameters>
       <Docs>
         <param name="y">To be added.</param>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Atanh">
+      <MemberSignature Language="C#" Value="public static float Atanh (float x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Atanh(float32 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MathF.Atanh(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Atanh (x As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Atanh(float x);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cbrt">
+      <MemberSignature Language="C#" Value="public static float Cbrt (float x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Cbrt(float32 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MathF.Cbrt(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Cbrt (x As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Cbrt(float x);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+      </Parameters>
+      <Docs>
         <param name="x">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>

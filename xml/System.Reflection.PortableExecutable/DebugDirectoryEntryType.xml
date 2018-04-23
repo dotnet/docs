@@ -84,6 +84,25 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="PdbChecksum">
+      <MemberSignature Language="C#" Value="PdbChecksum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutable.DebugDirectoryEntryType PdbChecksum = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.DebugDirectoryEntryType.PdbChecksum" />
+      <MemberSignature Language="VB.NET" Value="PdbChecksum" />
+      <MemberSignature Language="C++ CLI" Value="PdbChecksum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DebugDirectoryEntryType</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="Reproducible">
       <MemberSignature Language="C#" Value="Reproducible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutable.DebugDirectoryEntryType Reproducible = int32(16)" />

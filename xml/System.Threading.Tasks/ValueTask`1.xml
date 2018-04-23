@@ -107,6 +107,28 @@ As such, the default choice for any asynchronous method should be to return a <x
         <remarks></remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueTask (System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt; source, short token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.Sources.IValueTaskSource`1&lt;!TResult&gt; source, int16 token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Sources.IValueTaskSource{`0},System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As IValueTaskSource(Of TResult), token As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTask(System::Threading::Tasks::Sources::IValueTaskSource&lt;TResult&gt; ^ source, short token);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;" />
+        <Parameter Name="token" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AsTask">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; AsTask ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; AsTask() cil managed" />
@@ -487,6 +509,27 @@ As such, the default choice for any asynchronous method should be to return a <x
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are not equal; otherwise, <see langword="false" />.</returns>
         <remarks></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Preserve">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;TResult&gt; Preserve ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt; Preserve() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.Preserve" />
+      <MemberSignature Language="VB.NET" Value="Public Function Preserve () As ValueTask(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::ValueTask&lt;TResult&gt; Preserve();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">

@@ -1,0 +1,70 @@
+﻿<Type Name="CryptographicOperations" FullName="System.Security.Cryptography.CryptographicOperations">
+  <TypeSignature Language="C#" Value="public static class CryptographicOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CryptographicOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptographicOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class CryptographicOperations" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CryptographicOperations abstract sealed" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FixedTimeEquals">
+      <MemberSignature Language="C#" Value="public static bool FixedTimeEquals (ReadOnlySpan&lt;byte&gt; left, ReadOnlySpan&lt;byte&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FixedTimeEquals(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; left, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FixedTimeEquals (left As ReadOnlySpan(Of Byte), right As ReadOnlySpan(Of Byte)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool FixedTimeEquals(ReadOnlySpan&lt;System::Byte&gt; left, ReadOnlySpan&lt;System::Byte&gt; right);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="right" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZeroMemory">
+      <MemberSignature Language="C#" Value="public static void ZeroMemory (Span&lt;byte&gt; buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ZeroMemory(valuetype System.Span`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicOperations.ZeroMemory(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ZeroMemory (buffer As Span(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ZeroMemory(Span&lt;System::Byte&gt; buffer);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

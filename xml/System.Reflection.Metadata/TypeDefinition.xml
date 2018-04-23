@@ -359,6 +359,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsNested">
+      <MemberSignature Language="C#" Value="public bool IsNested { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNested" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.TypeDefinition.IsNested" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNested As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNested { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />

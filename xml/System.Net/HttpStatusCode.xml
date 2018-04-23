@@ -79,6 +79,25 @@
         <summary>Equivalent to HTTP status 202. <see cref="F:System.Net.HttpStatusCode.Accepted" /> indicates that the request has been accepted for further processing.</summary>
       </Docs>
     </Member>
+    <Member MemberName="AlreadyReported">
+      <MemberSignature Language="C#" Value="AlreadyReported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode AlreadyReported = int32(208)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.AlreadyReported" />
+      <MemberSignature Language="VB.NET" Value="AlreadyReported" />
+      <MemberSignature Language="C++ CLI" Value="AlreadyReported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>208</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="Ambiguous">
       <MemberSignature Language="C#" Value="Ambiguous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Ambiguous = int32(300)" />
@@ -281,6 +300,25 @@
         <summary>Equivalent to HTTP status 201. <see cref="F:System.Net.HttpStatusCode.Created" /> indicates that the request resulted in a new resource created before the response was sent.</summary>
       </Docs>
     </Member>
+    <Member MemberName="EarlyHints">
+      <MemberSignature Language="C#" Value="EarlyHints" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode EarlyHints = int32(103)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.EarlyHints" />
+      <MemberSignature Language="VB.NET" Value="EarlyHints" />
+      <MemberSignature Language="C++ CLI" Value="EarlyHints" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>103</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="ExpectationFailed">
       <MemberSignature Language="C#" Value="ExpectationFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode ExpectationFailed = int32(417)" />
@@ -311,6 +349,25 @@
       <MemberValue>417</MemberValue>
       <Docs>
         <summary>Equivalent to HTTP status 417. <see cref="F:System.Net.HttpStatusCode.ExpectationFailed" /> indicates that an expectation given in an Expect header could not be met by the server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FailedDependency">
+      <MemberSignature Language="C#" Value="FailedDependency" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode FailedDependency = int32(424)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.FailedDependency" />
+      <MemberSignature Language="VB.NET" Value="FailedDependency" />
+      <MemberSignature Language="C++ CLI" Value="FailedDependency" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>424</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forbidden">
@@ -483,6 +540,44 @@
         <summary>Equivalent to HTTP status 505. <see cref="F:System.Net.HttpStatusCode.HttpVersionNotSupported" /> indicates that the requested HTTP version is not supported by the server.</summary>
       </Docs>
     </Member>
+    <Member MemberName="IMUsed">
+      <MemberSignature Language="C#" Value="IMUsed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode IMUsed = int32(226)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.IMUsed" />
+      <MemberSignature Language="VB.NET" Value="IMUsed" />
+      <MemberSignature Language="C++ CLI" Value="IMUsed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>226</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InsufficientStorage">
+      <MemberSignature Language="C#" Value="InsufficientStorage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode InsufficientStorage = int32(507)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.InsufficientStorage" />
+      <MemberSignature Language="VB.NET" Value="InsufficientStorage" />
+      <MemberSignature Language="C++ CLI" Value="InsufficientStorage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>507</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="InternalServerError">
       <MemberSignature Language="C#" Value="InternalServerError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode InternalServerError = int32(500)" />
@@ -547,6 +642,44 @@
         <summary>Equivalent to HTTP status 411. <see cref="F:System.Net.HttpStatusCode.LengthRequired" /> indicates that the required Content-length header is missing.</summary>
       </Docs>
     </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="Locked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Locked = int32(423)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Locked" />
+      <MemberSignature Language="VB.NET" Value="Locked" />
+      <MemberSignature Language="C++ CLI" Value="Locked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>423</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LoopDetected">
+      <MemberSignature Language="C#" Value="LoopDetected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode LoopDetected = int32(508)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.LoopDetected" />
+      <MemberSignature Language="VB.NET" Value="LoopDetected" />
+      <MemberSignature Language="C++ CLI" Value="LoopDetected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>508</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="MethodNotAllowed">
       <MemberSignature Language="C#" Value="MethodNotAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode MethodNotAllowed = int32(405)" />
@@ -577,6 +710,25 @@
       <MemberValue>405</MemberValue>
       <Docs>
         <summary>Equivalent to HTTP status 405. <see cref="F:System.Net.HttpStatusCode.MethodNotAllowed" /> indicates that the request method (POST or GET) is not allowed on the requested resource.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MisdirectedRequest">
+      <MemberSignature Language="C#" Value="MisdirectedRequest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode MisdirectedRequest = int32(421)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MisdirectedRequest" />
+      <MemberSignature Language="VB.NET" Value="MisdirectedRequest" />
+      <MemberSignature Language="C++ CLI" Value="MisdirectedRequest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>421</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Moved">
@@ -701,6 +853,44 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="MultiStatus">
+      <MemberSignature Language="C#" Value="MultiStatus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode MultiStatus = int32(207)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MultiStatus" />
+      <MemberSignature Language="VB.NET" Value="MultiStatus" />
+      <MemberSignature Language="C++ CLI" Value="MultiStatus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>207</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkAuthenticationRequired">
+      <MemberSignature Language="C#" Value="NetworkAuthenticationRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NetworkAuthenticationRequired = int32(511)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NetworkAuthenticationRequired" />
+      <MemberSignature Language="VB.NET" Value="NetworkAuthenticationRequired" />
+      <MemberSignature Language="C++ CLI" Value="NetworkAuthenticationRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>511</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="NoContent">
       <MemberSignature Language="C#" Value="NoContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NoContent = int32(204)" />
@@ -795,6 +985,25 @@
       <MemberValue>406</MemberValue>
       <Docs>
         <summary>Equivalent to HTTP status 406. <see cref="F:System.Net.HttpStatusCode.NotAcceptable" /> indicates that the client has indicated with Accept headers that it will not accept any of the available representations of the resource.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotExtended">
+      <MemberSignature Language="C#" Value="NotExtended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NotExtended = int32(510)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotExtended" />
+      <MemberSignature Language="VB.NET" Value="NotExtended" />
+      <MemberSignature Language="C++ CLI" Value="NotExtended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>510</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotFound">
@@ -989,6 +1198,25 @@
         <summary>Equivalent to HTTP status 402. <see cref="F:System.Net.HttpStatusCode.PaymentRequired" /> is reserved for future use.</summary>
       </Docs>
     </Member>
+    <Member MemberName="PermanentRedirect">
+      <MemberSignature Language="C#" Value="PermanentRedirect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode PermanentRedirect = int32(308)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PermanentRedirect" />
+      <MemberSignature Language="VB.NET" Value="PermanentRedirect" />
+      <MemberSignature Language="C++ CLI" Value="PermanentRedirect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>308</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="PreconditionFailed">
       <MemberSignature Language="C#" Value="PreconditionFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode PreconditionFailed = int32(412)" />
@@ -1019,6 +1247,44 @@
       <MemberValue>412</MemberValue>
       <Docs>
         <summary>Equivalent to HTTP status 412. <see cref="F:System.Net.HttpStatusCode.PreconditionFailed" /> indicates that a condition set for this request failed, and the request cannot be carried out. Conditions are set with conditional request headers like If-Match, If-None-Match, or If-Unmodified-Since.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreconditionRequired">
+      <MemberSignature Language="C#" Value="PreconditionRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode PreconditionRequired = int32(428)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PreconditionRequired" />
+      <MemberSignature Language="VB.NET" Value="PreconditionRequired" />
+      <MemberSignature Language="C++ CLI" Value="PreconditionRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>428</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Processing">
+      <MemberSignature Language="C#" Value="Processing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Processing = int32(102)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Processing" />
+      <MemberSignature Language="VB.NET" Value="Processing" />
+      <MemberSignature Language="C++ CLI" Value="Processing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>102</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProxyAuthenticationRequired">
@@ -1241,6 +1507,25 @@
       <MemberValue>413</MemberValue>
       <Docs>
         <summary>Equivalent to HTTP status 413. <see cref="F:System.Net.HttpStatusCode.RequestEntityTooLarge" /> indicates that the request is too large for the server to process.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestHeaderFieldsTooLarge">
+      <MemberSignature Language="C#" Value="RequestHeaderFieldsTooLarge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode RequestHeaderFieldsTooLarge = int32(431)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestHeaderFieldsTooLarge" />
+      <MemberSignature Language="VB.NET" Value="RequestHeaderFieldsTooLarge" />
+      <MemberSignature Language="C++ CLI" Value="RequestHeaderFieldsTooLarge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>431</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestTimeout">
@@ -1487,6 +1772,25 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="TooManyRequests">
+      <MemberSignature Language="C#" Value="TooManyRequests" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode TooManyRequests = int32(429)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.TooManyRequests" />
+      <MemberSignature Language="VB.NET" Value="TooManyRequests" />
+      <MemberSignature Language="C++ CLI" Value="TooManyRequests" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>429</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="Unauthorized">
       <MemberSignature Language="C#" Value="Unauthorized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Unauthorized = int32(401)" />
@@ -1517,6 +1821,44 @@
       <MemberValue>401</MemberValue>
       <Docs>
         <summary>Equivalent to HTTP status 401. <see cref="F:System.Net.HttpStatusCode.Unauthorized" /> indicates that the requested resource requires authentication. The WWW-Authenticate header contains the details of how to perform the authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnavailableForLegalReasons">
+      <MemberSignature Language="C#" Value="UnavailableForLegalReasons" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode UnavailableForLegalReasons = int32(451)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnavailableForLegalReasons" />
+      <MemberSignature Language="VB.NET" Value="UnavailableForLegalReasons" />
+      <MemberSignature Language="C++ CLI" Value="UnavailableForLegalReasons" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>451</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnprocessableEntity">
+      <MemberSignature Language="C#" Value="UnprocessableEntity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode UnprocessableEntity = int32(422)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnprocessableEntity" />
+      <MemberSignature Language="VB.NET" Value="UnprocessableEntity" />
+      <MemberSignature Language="C++ CLI" Value="UnprocessableEntity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>422</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedMediaType">
@@ -1644,6 +1986,25 @@
       <MemberValue>305</MemberValue>
       <Docs>
         <summary>Equivalent to HTTP status 305. <see cref="F:System.Net.HttpStatusCode.UseProxy" /> indicates that the request should use the proxy server at the URI specified in the Location header.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VariantAlsoNegotiates">
+      <MemberSignature Language="C#" Value="VariantAlsoNegotiates" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode VariantAlsoNegotiates = int32(506)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.VariantAlsoNegotiates" />
+      <MemberSignature Language="VB.NET" Value="VariantAlsoNegotiates" />
+      <MemberSignature Language="C++ CLI" Value="VariantAlsoNegotiates" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>506</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

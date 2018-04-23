@@ -1,0 +1,96 @@
+﻿<Type Name="ValueTaskSourceStatus" FullName="System.Threading.Tasks.Sources.ValueTaskSourceStatus">
+  <TypeSignature Language="C#" Value="public enum ValueTaskSourceStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValueTaskSourceStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Sources.ValueTaskSourceStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValueTaskSourceStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValueTaskSourceStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Canceled">
+      <MemberSignature Language="C#" Value="Canceled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Sources.ValueTaskSourceStatus Canceled = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceStatus.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Canceled" />
+      <MemberSignature Language="C++ CLI" Value="Canceled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Sources.ValueTaskSourceStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Faulted">
+      <MemberSignature Language="C#" Value="Faulted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Sources.ValueTaskSourceStatus Faulted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceStatus.Faulted" />
+      <MemberSignature Language="VB.NET" Value="Faulted" />
+      <MemberSignature Language="C++ CLI" Value="Faulted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Sources.ValueTaskSourceStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pending">
+      <MemberSignature Language="C#" Value="Pending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Sources.ValueTaskSourceStatus Pending = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceStatus.Pending" />
+      <MemberSignature Language="VB.NET" Value="Pending" />
+      <MemberSignature Language="C++ CLI" Value="Pending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Sources.ValueTaskSourceStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Succeeded">
+      <MemberSignature Language="C#" Value="Succeeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Sources.ValueTaskSourceStatus Succeeded = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceStatus.Succeeded" />
+      <MemberSignature Language="VB.NET" Value="Succeeded" />
+      <MemberSignature Language="C++ CLI" Value="Succeeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Sources.ValueTaskSourceStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

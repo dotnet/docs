@@ -3397,11 +3397,11 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public bool Equals (ReadOnlySpan&lt;char&gt; value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.ReadOnlySpan`1&lt;char&gt; value) cil managed" />
+      <MemberSignature Language="C#" Value="public bool Equals (ReadOnlySpan&lt;char&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.ReadOnlySpan`1&lt;char&gt; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Equals(System.ReadOnlySpan{System.Char})" />
-      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As ReadOnlySpan(Of Char)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (span As ReadOnlySpan(Of Char)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ReadOnlySpan&lt;char&gt; span);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3411,10 +3411,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
+        <param name="span">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

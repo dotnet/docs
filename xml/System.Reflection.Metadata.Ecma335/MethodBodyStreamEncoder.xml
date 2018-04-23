@@ -47,9 +47,10 @@
       </Docs>
     </Member>
     <Member MemberName="AddMethodBody">
-      <MemberSignature Language="C#" Value="public int AddMethodBody (System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int maxStack = 8, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature = null, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals);" />
+      <MemberSignature Language="C#" Value="public int AddMethodBody (System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int maxStack, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddMethodBody(valuetype System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int32 maxStack, valuetype System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, valuetype System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.AddMethodBody(System.Reflection.Metadata.Ecma335.InstructionEncoder,System.Int32,System.Reflection.Metadata.StandaloneSignatureHandle,System.Reflection.Metadata.Ecma335.MethodBodyAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int AddMethodBody(System::Reflection::Metadata::Ecma335::InstructionEncoder instructionEncoder, int maxStack, System::Reflection::Metadata::StandaloneSignatureHandle localVariablesSignature, System::Reflection::Metadata::Ecma335::MethodBodyAttributes attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -77,10 +78,41 @@
       </Docs>
     </Member>
     <Member MemberName="AddMethodBody">
-      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.MethodBody AddMethodBody (int codeSize, int maxStack = 8, int exceptionRegionCount = 0, bool hasSmallExceptionRegions = true, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature = null, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals);" />
+      <MemberSignature Language="C#" Value="public int AddMethodBody (System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int maxStack = 8, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature = null, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals, bool hasDynamicStackAllocation = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddMethodBody(valuetype System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int32 maxStack, valuetype System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, valuetype System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes, bool hasDynamicStackAllocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.AddMethodBody(System.Reflection.Metadata.Ecma335.InstructionEncoder,System.Int32,System.Reflection.Metadata.StandaloneSignatureHandle,System.Reflection.Metadata.Ecma335.MethodBodyAttributes,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instructionEncoder" Type="System.Reflection.Metadata.Ecma335.InstructionEncoder" />
+        <Parameter Name="maxStack" Type="System.Int32" />
+        <Parameter Name="localVariablesSignature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.MethodBodyAttributes" />
+        <Parameter Name="hasDynamicStackAllocation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="instructionEncoder">To be added.</param>
+        <param name="maxStack">To be added.</param>
+        <param name="localVariablesSignature">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="hasDynamicStackAllocation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodBody">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.MethodBody AddMethodBody (int codeSize, int maxStack, int exceptionRegionCount, bool hasSmallExceptionRegions, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder/MethodBody AddMethodBody(int32 codeSize, int32 maxStack, int32 exceptionRegionCount, bool hasSmallExceptionRegions, valuetype System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, valuetype System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.AddMethodBody(System.Int32,System.Int32,System.Int32,System.Boolean,System.Reflection.Metadata.StandaloneSignatureHandle,System.Reflection.Metadata.Ecma335.MethodBodyAttributes)" />
-      <MemberSignature Language="VB.NET" Value="Public Function AddMethodBody (codeSize As Integer, Optional maxStack As Integer = 8, Optional exceptionRegionCount As Integer = 0, Optional hasSmallExceptionRegions As Boolean = true, Optional localVariablesSignature As StandaloneSignatureHandle = null, Optional attributes As MethodBodyAttributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals) As MethodBodyStreamEncoder.MethodBody" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMethodBody (codeSize As Integer, maxStack As Integer, exceptionRegionCount As Integer, hasSmallExceptionRegions As Boolean, localVariablesSignature As StandaloneSignatureHandle, attributes As MethodBodyAttributes) As MethodBodyStreamEncoder.MethodBody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::MethodBodyStreamEncoder::MethodBody AddMethodBody(int codeSize, int maxStack, int exceptionRegionCount, bool hasSmallExceptionRegions, System::Reflection::Metadata::StandaloneSignatureHandle localVariablesSignature, System::Reflection::Metadata::Ecma335::MethodBodyAttributes attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -106,6 +138,41 @@
         <param name="hasSmallExceptionRegions">To be added.</param>
         <param name="localVariablesSignature">To be added.</param>
         <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodBody">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.MethodBody AddMethodBody (int codeSize, int maxStack = 8, int exceptionRegionCount = 0, bool hasSmallExceptionRegions = true, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature = null, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals, bool hasDynamicStackAllocation = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder/MethodBody AddMethodBody(int32 codeSize, int32 maxStack, int32 exceptionRegionCount, bool hasSmallExceptionRegions, valuetype System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, valuetype System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes, bool hasDynamicStackAllocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.AddMethodBody(System.Int32,System.Int32,System.Int32,System.Boolean,System.Reflection.Metadata.StandaloneSignatureHandle,System.Reflection.Metadata.Ecma335.MethodBodyAttributes,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMethodBody (codeSize As Integer, Optional maxStack As Integer = 8, Optional exceptionRegionCount As Integer = 0, Optional hasSmallExceptionRegions As Boolean = true, Optional localVariablesSignature As StandaloneSignatureHandle = null, Optional attributes As MethodBodyAttributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals, Optional hasDynamicStackAllocation As Boolean = false) As MethodBodyStreamEncoder.MethodBody" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder+MethodBody</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codeSize" Type="System.Int32" />
+        <Parameter Name="maxStack" Type="System.Int32" />
+        <Parameter Name="exceptionRegionCount" Type="System.Int32" />
+        <Parameter Name="hasSmallExceptionRegions" Type="System.Boolean" />
+        <Parameter Name="localVariablesSignature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.MethodBodyAttributes" />
+        <Parameter Name="hasDynamicStackAllocation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="codeSize">To be added.</param>
+        <param name="maxStack">To be added.</param>
+        <param name="exceptionRegionCount">To be added.</param>
+        <param name="hasSmallExceptionRegions">To be added.</param>
+        <param name="localVariablesSignature">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="hasDynamicStackAllocation">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

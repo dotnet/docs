@@ -157,10 +157,10 @@
       </Docs>
     </Member>
     <Member MemberName="BeginWrite">
-      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] array, int offset, int count, AsyncCallback asyncCallback, object asyncState);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] array, int32 offset, int32 count, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback asyncCallback, object asyncState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.BrotliStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ array, int offset, int count, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.Brotli</AssemblyName>
@@ -170,14 +170,14 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
         <Parameter Name="offset" Type="System.Int32" />
         <Parameter Name="count" Type="System.Int32" />
         <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
+        <param name="buffer">To be added.</param>
         <param name="offset">To be added.</param>
         <param name="count">To be added.</param>
         <param name="asyncCallback">To be added.</param>
@@ -378,11 +378,11 @@
       </Docs>
     </Member>
     <Member MemberName="Read">
-      <MemberSignature Language="C#" Value="public override int Read (byte[] array, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.BrotliStream.Read(System.Byte[],System.Int32,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (array As Byte(), offset As Integer, count As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.Brotli</AssemblyName>
@@ -392,12 +392,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
         <Parameter Name="offset" Type="System.Int32" />
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
+        <param name="buffer">To be added.</param>
         <param name="offset">To be added.</param>
         <param name="count">To be added.</param>
         <summary>To be added.</summary>
@@ -406,10 +406,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] array, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] array, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.BrotliStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ array, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.Brotli</AssemblyName>
@@ -419,13 +419,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
         <Parameter Name="offset" Type="System.Int32" />
         <Parameter Name="count" Type="System.Int32" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
+        <param name="buffer">To be added.</param>
         <param name="offset">To be added.</param>
         <param name="count">To be added.</param>
         <param name="cancellationToken">To be added.</param>
@@ -484,11 +484,11 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (byte[] array, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="C#" Value="public override void Write (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.BrotliStream.Write(System.Byte[],System.Int32,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (array As Byte(), offset As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.Brotli</AssemblyName>
@@ -498,12 +498,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
         <Parameter Name="offset" Type="System.Int32" />
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
+        <param name="buffer">To be added.</param>
         <param name="offset">To be added.</param>
         <param name="count">To be added.</param>
         <summary>To be added.</summary>
@@ -511,10 +511,10 @@
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (byte[] array, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] array, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.BrotliStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ array, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.Brotli</AssemblyName>
@@ -524,13 +524,13 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
         <Parameter Name="offset" Type="System.Int32" />
         <Parameter Name="count" Type="System.Int32" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
+        <param name="buffer">To be added.</param>
         <param name="offset">To be added.</param>
         <param name="count">To be added.</param>
         <param name="cancellationToken">To be added.</param>

@@ -1,0 +1,365 @@
+﻿<Type Name="ValueTask" FullName="System.Threading.Tasks.ValueTask">
+  <TypeSignature Language="C#" Value="public struct ValueTask : IEquatable&lt;System.Threading.Tasks.ValueTask&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTask extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Threading.Tasks.ValueTask&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ValueTask" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ValueTask&#xA;Implements IEquatable(Of ValueTask)" />
+  <TypeSignature Language="C++ CLI" Value="public value class ValueTask : IEquatable&lt;System::Threading::Tasks::ValueTask&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Threading.Tasks.ValueTask&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.AsyncMethodBuilder(typeof(System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueTask (System.Threading.Tasks.Task task);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.Task task) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.#ctor(System.Threading.Tasks.Task)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTask(System::Threading::Tasks::Task ^ task);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="task" Type="System.Threading.Tasks.Task" />
+      </Parameters>
+      <Docs>
+        <param name="task">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueTask (System.Threading.Tasks.Sources.IValueTaskSource source, short token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.Sources.IValueTaskSource source, int16 token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.#ctor(System.Threading.Tasks.Sources.IValueTaskSource,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As IValueTaskSource, token As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTask(System::Threading::Tasks::Sources::IValueTaskSource ^ source, short token);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource" />
+        <Parameter Name="token" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsTask">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AsTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AsTask() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.AsTask" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsTask () As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AsTask();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureAwait">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable ConfigureAwait (bool continueOnCapturedContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable ConfigureAwait(bool continueOnCapturedContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.ConfigureAwait(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConfigureAwait (continueOnCapturedContext As Boolean) As ConfiguredValueTaskAwaitable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable ConfigureAwait(bool continueOnCapturedContext);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="continueOnCapturedContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Threading.Tasks.ValueTask other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Threading.Tasks.ValueTask other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.Equals(System.Threading.Tasks.ValueTask)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ValueTask) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Threading::Tasks::ValueTask other);" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Threading.Tasks.ValueTask" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAwaiter">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ValueTaskAwaiter GetAwaiter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ValueTaskAwaiter GetAwaiter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.GetAwaiter" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As ValueTaskAwaiter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ValueTaskAwaiter GetAwaiter();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ValueTaskAwaiter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCanceled">
+      <MemberSignature Language="C#" Value="public bool IsCanceled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCanceled" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask.IsCanceled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCanceled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCanceled { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompleted">
+      <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask.IsCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompletedSuccessfully">
+      <MemberSignature Language="C#" Value="public bool IsCompletedSuccessfully { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCompletedSuccessfully" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask.IsCompletedSuccessfully" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompletedSuccessfully As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompletedSuccessfully { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFaulted">
+      <MemberSignature Language="C#" Value="public bool IsFaulted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFaulted" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask.IsFaulted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFaulted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFaulted { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Threading.Tasks.ValueTask left, System.Threading.Tasks.ValueTask right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Threading.Tasks.ValueTask left, valuetype System.Threading.Tasks.ValueTask right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.op_Equality(System.Threading.Tasks.ValueTask,System.Threading.Tasks.ValueTask)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ValueTask, right As ValueTask) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Threading::Tasks::ValueTask left, System::Threading::Tasks::ValueTask right);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" />
+        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Threading.Tasks.ValueTask left, System.Threading.Tasks.ValueTask right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.Tasks.ValueTask left, valuetype System.Threading.Tasks.ValueTask right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.op_Inequality(System.Threading.Tasks.ValueTask,System.Threading.Tasks.ValueTask)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ValueTask, right As ValueTask) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Threading::Tasks::ValueTask left, System::Threading::Tasks::ValueTask right);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" />
+        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Preserve">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask Preserve ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.Tasks.ValueTask Preserve() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.Preserve" />
+      <MemberSignature Language="VB.NET" Value="Public Function Preserve () As ValueTask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::ValueTask Preserve();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

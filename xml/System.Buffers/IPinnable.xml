@@ -1,0 +1,62 @@
+﻿<Type Name="IPinnable" FullName="System.Buffers.IPinnable">
+  <TypeSignature Language="C#" Value="public interface IPinnable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPinnable" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.IPinnable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPinnable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPinnable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Pin">
+      <MemberSignature Language="C#" Value="public System.Buffers.MemoryHandle Pin (int elementIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Buffers.MemoryHandle Pin(int32 elementIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.IPinnable.Pin(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Pin (elementIndex As Integer) As MemoryHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::MemoryHandle Pin(int elementIndex);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.MemoryHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="elementIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unpin">
+      <MemberSignature Language="C#" Value="public void Unpin ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unpin() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.IPinnable.Unpin" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unpin ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unpin();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

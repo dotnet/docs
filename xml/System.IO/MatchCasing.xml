@@ -1,0 +1,77 @@
+﻿<Type Name="MatchCasing" FullName="System.IO.MatchCasing">
+  <TypeSignature Language="C#" Value="public enum MatchCasing" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MatchCasing extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.MatchCasing" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MatchCasing" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MatchCasing" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CaseInsensitive">
+      <MemberSignature Language="C#" Value="CaseInsensitive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MatchCasing CaseInsensitive = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MatchCasing.CaseInsensitive" />
+      <MemberSignature Language="VB.NET" Value="CaseInsensitive" />
+      <MemberSignature Language="C++ CLI" Value="CaseInsensitive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MatchCasing</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CaseSensitive">
+      <MemberSignature Language="C#" Value="CaseSensitive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MatchCasing CaseSensitive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MatchCasing.CaseSensitive" />
+      <MemberSignature Language="VB.NET" Value="CaseSensitive" />
+      <MemberSignature Language="C++ CLI" Value="CaseSensitive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MatchCasing</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformDefault">
+      <MemberSignature Language="C#" Value="PlatformDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MatchCasing PlatformDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MatchCasing.PlatformDefault" />
+      <MemberSignature Language="VB.NET" Value="PlatformDefault" />
+      <MemberSignature Language="C++ CLI" Value="PlatformDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MatchCasing</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

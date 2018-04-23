@@ -915,6 +915,30 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="EnsureCapacity">
+      <MemberSignature Language="C#" Value="public int EnsureCapacity (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EnsureCapacity(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnsureCapacity (capacity As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnsureCapacity(int capacity);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;TKey,TValue&gt;.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Generic.Dictionary`2/Enumerator&lt;!TKey, !TValue&gt; GetEnumerator() cil managed" />
@@ -2503,6 +2527,49 @@ finally {
  ]]></format>
         </remarks>
         <altmember cref="T:System.Collections.IEnumerator" />
+      </Docs>
+    </Member>
+    <Member MemberName="TrimExcess">
+      <MemberSignature Language="C#" Value="public void TrimExcess ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrimExcess() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.TrimExcess" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrimExcess ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimExcess();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimExcess">
+      <MemberSignature Language="C#" Value="public void TrimExcess (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrimExcess(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrimExcess (capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimExcess(int capacity);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryAdd">

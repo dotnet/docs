@@ -94,6 +94,93 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AddEntry">
+      <MemberSignature Language="C#" Value="public void AddEntry (System.Reflection.PortableExecutable.DebugDirectoryEntryType type, uint version, uint stamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddEntry(valuetype System.Reflection.PortableExecutable.DebugDirectoryEntryType type, unsigned int32 version, unsigned int32 stamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddEntry(System.Reflection.PortableExecutable.DebugDirectoryEntryType,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddEntry (type As DebugDirectoryEntryType, version As UInteger, stamp As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEntry(System::Reflection::PortableExecutable::DebugDirectoryEntryType type, System::UInt32 version, System::UInt32 stamp);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Reflection.PortableExecutable.DebugDirectoryEntryType" />
+        <Parameter Name="version" Type="System.UInt32" />
+        <Parameter Name="stamp" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="stamp">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEntry&lt;TData&gt;">
+      <MemberSignature Language="C#" Value="public void AddEntry&lt;TData&gt; (System.Reflection.PortableExecutable.DebugDirectoryEntryType type, uint version, uint stamp, TData data, Action&lt;System.Reflection.Metadata.BlobBuilder,TData&gt; dataSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddEntry&lt;TData&gt;(valuetype System.Reflection.PortableExecutable.DebugDirectoryEntryType type, unsigned int32 version, unsigned int32 stamp, !!TData data, class System.Action`2&lt;class System.Reflection.Metadata.BlobBuilder, !!TData&gt; dataSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddEntry``1(System.Reflection.PortableExecutable.DebugDirectoryEntryType,System.UInt32,System.UInt32,``0,System.Action{System.Reflection.Metadata.BlobBuilder,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddEntry(Of TData) (type As DebugDirectoryEntryType, version As UInteger, stamp As UInteger, data As TData, dataSerializer As Action(Of BlobBuilder, TData))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TData&gt;&#xA; void AddEntry(System::Reflection::PortableExecutable::DebugDirectoryEntryType type, System::UInt32 version, System::UInt32 stamp, TData data, Action&lt;System::Reflection::Metadata::BlobBuilder ^, TData&gt; ^ dataSerializer);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TData" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="type" Type="System.Reflection.PortableExecutable.DebugDirectoryEntryType" />
+        <Parameter Name="version" Type="System.UInt32" />
+        <Parameter Name="stamp" Type="System.UInt32" />
+        <Parameter Name="data" Type="TData" />
+        <Parameter Name="dataSerializer" Type="System.Action&lt;System.Reflection.Metadata.BlobBuilder,TData&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TData">To be added.</typeparam>
+        <param name="type">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="stamp">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="dataSerializer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPdbChecksumEntry">
+      <MemberSignature Language="C#" Value="public void AddPdbChecksumEntry (string algorithmName, System.Collections.Immutable.ImmutableArray&lt;byte&gt; checksum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPdbChecksumEntry(string algorithmName, valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; checksum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.DebugDirectoryBuilder.AddPdbChecksumEntry(System.String,System.Collections.Immutable.ImmutableArray{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPdbChecksumEntry (algorithmName As String, checksum As ImmutableArray(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPdbChecksumEntry(System::String ^ algorithmName, System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; checksum);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="algorithmName" Type="System.String" />
+        <Parameter Name="checksum" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="algorithmName">To be added.</param>
+        <param name="checksum">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AddReproducibleEntry">
       <MemberSignature Language="C#" Value="public void AddReproducibleEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReproducibleEntry() cil managed" />

@@ -900,6 +900,30 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="EnsureCapacity">
+      <MemberSignature Language="C#" Value="public int EnsureCapacity (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EnsureCapacity(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.EnsureCapacity(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnsureCapacity (capacity As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnsureCapacity(int capacity);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ExceptWith">
       <MemberSignature Language="C#" Value="public void ExceptWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExceptWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />

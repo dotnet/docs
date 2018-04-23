@@ -692,6 +692,31 @@
       </Docs>
     </Member>
     <Member MemberName="EnumerateDirectories">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.IO.DirectoryInfo&gt; EnumerateDirectories (string searchPattern, System.IO.EnumerationOptions enumerationOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.DirectoryInfo&gt; EnumerateDirectories(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::DirectoryInfo ^&gt; ^ EnumerateDirectories(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.DirectoryInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="searchPattern">To be added.</param>
+        <param name="enumerationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateDirectories">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.IO.DirectoryInfo&gt; EnumerateDirectories (string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.DirectoryInfo&gt; EnumerateDirectories(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.SearchOption)" />
@@ -963,6 +988,31 @@
       </Docs>
     </Member>
     <Member MemberName="EnumerateFiles">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.IO.FileInfo&gt; EnumerateFiles (string searchPattern, System.IO.EnumerationOptions enumerationOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.FileInfo&gt; EnumerateFiles(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileInfo ^&gt; ^ EnumerateFiles(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.FileInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="searchPattern">To be added.</param>
+        <param name="enumerationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateFiles">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.IO.FileInfo&gt; EnumerateFiles (string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.FileInfo&gt; EnumerateFiles(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.SearchOption)" />
@@ -1208,6 +1258,31 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path encapsulated in the <see cref="T:System.IO.DirectoryInfo" /> object is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <altmember cref="T:System.IO.FileSystemWatcher" />
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateFileSystemInfos">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.IO.FileSystemInfo&gt; EnumerateFileSystemInfos (string searchPattern, System.IO.EnumerationOptions enumerationOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.FileSystemInfo&gt; EnumerateFileSystemInfos(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileSystemInfo ^&gt; ^ EnumerateFileSystemInfos(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.FileSystemInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="searchPattern">To be added.</param>
+        <param name="enumerationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnumerateFileSystemInfos">
@@ -1662,6 +1737,31 @@
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
+      <MemberSignature Language="C#" Value="public System.IO.DirectoryInfo[] GetDirectories (string searchPattern, System.IO.EnumerationOptions enumerationOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.DirectoryInfo[] GetDirectories(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::DirectoryInfo ^&gt; ^ GetDirectories(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.DirectoryInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="searchPattern">To be added.</param>
+        <param name="enumerationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectories">
       <MemberSignature Language="C#" Value="public System.IO.DirectoryInfo[] GetDirectories (string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.DirectoryInfo[] GetDirectories(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.SearchOption)" />
@@ -1944,6 +2044,31 @@
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
+      <MemberSignature Language="C#" Value="public System.IO.FileInfo[] GetFiles (string searchPattern, System.IO.EnumerationOptions enumerationOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.FileInfo[] GetFiles(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFiles(System.String,System.IO.EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileInfo ^&gt; ^ GetFiles(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.FileInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="searchPattern">To be added.</param>
+        <param name="enumerationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFiles">
       <MemberSignature Language="C#" Value="public System.IO.FileInfo[] GetFiles (string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.FileInfo[] GetFiles(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFiles(System.String,System.IO.SearchOption)" />
@@ -2222,6 +2347,31 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from files and directories and for access to the path. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <altmember cref="T:System.IO.FileSystemInfo" />
         <altmember cref="T:System.IO.FileSystemWatcher" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileSystemInfos">
+      <MemberSignature Language="C#" Value="public System.IO.FileSystemInfo[] GetFileSystemInfos (string searchPattern, System.IO.EnumerationOptions enumerationOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.FileSystemInfo[] GetFileSystemInfos(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String,System.IO.EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileSystemInfo ^&gt; ^ GetFileSystemInfos(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.FileSystemInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="searchPattern">To be added.</param>
+        <param name="enumerationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFileSystemInfos">

@@ -1,0 +1,232 @@
+﻿<Type Name="MemoryManager&lt;T&gt;" FullName="System.Buffers.MemoryManager&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class MemoryManager&lt;T&gt; : System.Buffers.IMemoryOwner&lt;T&gt;, System.Buffers.IPinnable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MemoryManager`1&lt;T&gt; extends System.Object implements class System.Buffers.IMemoryOwner`1&lt;!T&gt;, class System.Buffers.IPinnable, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.MemoryManager`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemoryManager(Of T)&#xA;Implements IMemoryOwner(Of T), IPinnable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class MemoryManager abstract : System::Buffers::IMemoryOwner&lt;T&gt;, System::Buffers::IPinnable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Buffers.IMemoryOwner&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Buffers.IPinnable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MemoryManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryManager`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemoryManager();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected abstract void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryManager`1.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Dispose(bool disposing);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpan">
+      <MemberSignature Language="C#" Value="public abstract Span&lt;T&gt; GetSpan ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Span`1&lt;!T&gt; GetSpan() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryManager`1.GetSpan" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSpan () As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Span&lt;T&gt; GetSpan();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public virtual int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.MemoryManager`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Length { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Memory">
+      <MemberSignature Language="C#" Value="public virtual Memory&lt;T&gt; Memory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Memory`1&lt;!T&gt; Memory" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.MemoryManager`1.Memory" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Memory As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Memory&lt;T&gt; Memory { Memory&lt;T&gt; get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Buffers.IMemoryOwner`1.Memory</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pin">
+      <MemberSignature Language="C#" Value="public abstract System.Buffers.MemoryHandle Pin (int elementIndex = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Buffers.MemoryHandle Pin(int32 elementIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryManager`1.Pin(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Pin (Optional elementIndex As Integer = 0) As MemoryHandle" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IPinnable.Pin(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.MemoryHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="elementIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryManager`1.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetArray">
+      <MemberSignature Language="C#" Value="protected internal virtual bool TryGetArray (out ArraySegment&lt;T&gt; segment);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryGetArray([out] valuetype System.ArraySegment`1&lt;!T&gt;&amp; segment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryManager`1.TryGetArray(System.ArraySegment{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryGetArray (ByRef segment As ArraySegment(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryGetArray([Runtime::InteropServices::Out] ArraySegment&lt;T&gt; % segment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="segment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unpin">
+      <MemberSignature Language="C#" Value="public abstract void Unpin ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unpin() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryManager`1.Unpin" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Unpin ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Unpin();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IPinnable.Unpin</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

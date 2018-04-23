@@ -466,6 +466,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ReadPdbChecksumDebugDirectoryData">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData ReadPdbChecksumDebugDirectoryData (System.Reflection.PortableExecutable.DebugDirectoryEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData ReadPdbChecksumDebugDirectoryData(valuetype System.Reflection.PortableExecutable.DebugDirectoryEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.ReadPdbChecksumDebugDirectoryData(System.Reflection.PortableExecutable.DebugDirectoryEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadPdbChecksumDebugDirectoryData (entry As DebugDirectoryEntry) As PdbChecksumDebugDirectoryData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PortableExecutable::PdbChecksumDebugDirectoryData ReadPdbChecksumDebugDirectoryData(System::Reflection::PortableExecutable::DebugDirectoryEntry entry);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Reflection.PortableExecutable.DebugDirectoryEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TryOpenAssociatedPortablePdb">
       <MemberSignature Language="C#" Value="public bool TryOpenAssociatedPortablePdb (string peImagePath, Func&lt;string,System.IO.Stream&gt; pdbFileStreamProvider, out System.Reflection.Metadata.MetadataReaderProvider pdbReaderProvider, out string pdbPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryOpenAssociatedPortablePdb(string peImagePath, class System.Func`2&lt;string, class System.IO.Stream&gt; pdbFileStreamProvider, [out] class System.Reflection.Metadata.MetadataReaderProvider&amp; pdbReaderProvider, [out] string&amp; pdbPath) cil managed" />

@@ -34,6 +34,25 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName="Json">
+      <MemberSignature Language="C#" Value="public const string Json;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Json" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Application.Json" />
+      <MemberSignature Language="VB.NET" Value="Public Const Json As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Json;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Octet">
       <MemberSignature Language="C#" Value="public const string Octet;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Octet" />
@@ -154,6 +173,25 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.Net.Mime.MediaTypeNames.Application" /> data is a SOAP document.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xml">
+      <MemberSignature Language="C#" Value="public const string Xml;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Xml" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Application.Xml" />
+      <MemberSignature Language="VB.NET" Value="Public Const Xml As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Xml;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

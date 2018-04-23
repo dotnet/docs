@@ -1,0 +1,140 @@
+﻿<Type Name="FileSystemEnumerable&lt;TResult&gt;" FullName="System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public class FileSystemEnumerable&lt;TResult&gt; : System.Collections.Generic.IEnumerable&lt;TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileSystemEnumerable`1&lt;TResult&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!TResult&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Enumeration.FileSystemEnumerable`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileSystemEnumerable(Of TResult)&#xA;Implements IEnumerable(Of TResult)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class FileSystemEnumerable : System::Collections::Generic::IEnumerable&lt;TResult&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;TResult&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TResult">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileSystemEnumerable (string directory, System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;.FindTransform transform, System.IO.EnumerationOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string directory, class System.IO.Enumeration.FileSystemEnumerable`1/FindTransform&lt;!TResult&gt; transform, class System.IO.EnumerationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable`1.FindTransform{`0},System.IO.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (directory As String, transform As FileSystemEnumerable(Of TResult).FindTransform, Optional options As EnumerationOptions = null)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="directory" Type="System.String" />
+        <Parameter Name="transform" Type="System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindTransform" />
+        <Parameter Name="options" Type="System.IO.EnumerationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="directory">To be added.</param>
+        <param name="transform">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;TResult&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!TResult&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerable`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;TResult&gt; ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldIncludePredicate">
+      <MemberSignature Language="C#" Value="public System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;.FindPredicate ShouldIncludePredicate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Enumeration.FileSystemEnumerable`1/FindPredicate&lt;!TResult&gt; ShouldIncludePredicate" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Enumeration.FileSystemEnumerable`1.ShouldIncludePredicate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShouldIncludePredicate As FileSystemEnumerable(Of TResult).FindPredicate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ ShouldIncludePredicate { System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ get(); void set(System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindPredicate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldRecursePredicate">
+      <MemberSignature Language="C#" Value="public System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;.FindPredicate ShouldRecursePredicate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Enumeration.FileSystemEnumerable`1/FindPredicate&lt;!TResult&gt; ShouldRecursePredicate" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Enumeration.FileSystemEnumerable`1.ShouldRecursePredicate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShouldRecursePredicate As FileSystemEnumerable(Of TResult).FindPredicate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ ShouldRecursePredicate { System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ get(); void set(System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindPredicate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerable`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

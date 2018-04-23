@@ -1,0 +1,102 @@
+﻿<Type Name="ReadOnlySequenceSegment&lt;T&gt;" FullName="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class ReadOnlySequenceSegment&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ReadOnlySequenceSegment`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.ReadOnlySequenceSegment`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ReadOnlySequenceSegment(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ReadOnlySequenceSegment abstract" />
+  <AssemblyInfo>
+    <AssemblyName>System.Memory</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ReadOnlySequenceSegment ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequenceSegment`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ReadOnlySequenceSegment();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Memory">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;T&gt; Memory { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlyMemory`1&lt;!T&gt; Memory" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequenceSegment`1.Memory" />
+      <MemberSignature Language="VB.NET" Value="Public Property Memory As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:  property ReadOnlyMemory&lt;T&gt; Memory {  public:&#xA;ReadOnlyMemory&lt;T&gt; get(); protected:&#xA; void set(ReadOnlyMemory&lt;T&gt; value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequenceSegment&lt;T&gt; Next { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Buffers.ReadOnlySequenceSegment`1&lt;!T&gt; Next" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequenceSegment`1.Next" />
+      <MemberSignature Language="VB.NET" Value="Public Property Next As ReadOnlySequenceSegment(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ Next {  public:&#xA;System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ get(); protected:&#xA; void set(System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequenceSegment&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunningIndex">
+      <MemberSignature Language="C#" Value="public long RunningIndex { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 RunningIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequenceSegment`1.RunningIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property RunningIndex As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:  property long RunningIndex {  public:&#xA;long get(); protected:&#xA; void set(long value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

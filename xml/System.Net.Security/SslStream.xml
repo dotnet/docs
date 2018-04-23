@@ -1090,10 +1090,10 @@
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsServerAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateAsServerAsync (System.Net.Security.SslServerAuthenticationOptions sslClientAuthenticationOptions, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AuthenticateAsServerAsync(class System.Net.Security.SslServerAuthenticationOptions sslClientAuthenticationOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateAsServerAsync (System.Net.Security.SslServerAuthenticationOptions sslServerAuthenticationOptions, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AuthenticateAsServerAsync(class System.Net.Security.SslServerAuthenticationOptions sslServerAuthenticationOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Net.Security.SslServerAuthenticationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Net::Security::SslServerAuthenticationOptions ^ sslClientAuthenticationOptions, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Net::Security::SslServerAuthenticationOptions ^ sslServerAuthenticationOptions, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -1103,11 +1103,11 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sslClientAuthenticationOptions" Type="System.Net.Security.SslServerAuthenticationOptions" />
+        <Parameter Name="sslServerAuthenticationOptions" Type="System.Net.Security.SslServerAuthenticationOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sslClientAuthenticationOptions">To be added.</param>
+        <param name="sslServerAuthenticationOptions">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>

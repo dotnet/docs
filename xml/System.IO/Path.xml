@@ -530,6 +530,30 @@
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryName">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; GetDirectoryName (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; GetDirectoryName(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.GetDirectoryName(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDirectoryName (path As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ReadOnlySpan&lt;char&gt; GetDirectoryName(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectoryName">
       <MemberSignature Language="C#" Value="public static string GetDirectoryName (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDirectoryName(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetDirectoryName(System.String)" />
@@ -595,6 +619,30 @@
       </Docs>
     </Member>
     <Member MemberName="GetExtension">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; GetExtension (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; GetExtension(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.GetExtension(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExtension (path As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ReadOnlySpan&lt;char&gt; GetExtension(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExtension">
       <MemberSignature Language="C#" Value="public static string GetExtension (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetExtension(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetExtension(System.String)" />
@@ -649,6 +697,30 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileName">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; GetFileName (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; GetFileName(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.GetFileName(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileName (path As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ReadOnlySpan&lt;char&gt; GetFileName(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFileName">
@@ -708,6 +780,30 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileNameWithoutExtension">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; GetFileNameWithoutExtension (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; GetFileNameWithoutExtension(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.GetFileNameWithoutExtension(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileNameWithoutExtension (path As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ReadOnlySpan&lt;char&gt; GetFileNameWithoutExtension(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFileNameWithoutExtension">
@@ -846,6 +942,32 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path.</permission>
       </Docs>
     </Member>
+    <Member MemberName="GetFullPath">
+      <MemberSignature Language="C#" Value="public static string GetFullPath (string path, string basePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFullPath(string path, string basePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.GetFullPath(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFullPath (path As String, basePath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFullPath(System::String ^ path, System::String ^ basePath);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="basePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="basePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetInvalidFileNameChars">
       <MemberSignature Language="C#" Value="public static char[] GetInvalidFileNameChars ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig char[] GetInvalidFileNameChars() cil managed" />
@@ -944,6 +1066,30 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathRoot">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; GetPathRoot (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; GetPathRoot(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.GetPathRoot(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPathRoot (path As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ReadOnlySpan&lt;char&gt; GetPathRoot(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPathRoot">
@@ -1221,6 +1367,30 @@ C:\Users\UserName\AppData\Local\Temp\
       </Docs>
     </Member>
     <Member MemberName="HasExtension">
+      <MemberSignature Language="C#" Value="public static bool HasExtension (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasExtension(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.HasExtension(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasExtension (path As ReadOnlySpan(Of Char)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool HasExtension(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasExtension">
       <MemberSignature Language="C#" Value="public static bool HasExtension (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasExtension(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.HasExtension(System.String)" />
@@ -1332,6 +1502,30 @@ C:\Users\UserName\AppData\Local\Temp\
       </Docs>
     </Member>
     <Member MemberName="IsPathFullyQualified">
+      <MemberSignature Language="C#" Value="public static bool IsPathFullyQualified (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPathFullyQualified(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.IsPathFullyQualified(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsPathFullyQualified (path As ReadOnlySpan(Of Char)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPathFullyQualified(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPathFullyQualified">
       <MemberSignature Language="C#" Value="public static bool IsPathFullyQualified (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPathFullyQualified(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.IsPathFullyQualified(System.String)" />
@@ -1347,6 +1541,30 @@ C:\Users\UserName\AppData\Local\Temp\
       </ReturnValue>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPathRooted">
+      <MemberSignature Language="C#" Value="public static bool IsPathRooted (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPathRooted(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.IsPathRooted(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsPathRooted (path As ReadOnlySpan(Of Char)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPathRooted(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
         <param name="path">To be added.</param>
@@ -1415,6 +1633,60 @@ C:\Users\UserName\AppData\Local\Temp\
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(valuetype System.ReadOnlySpan`1&lt;char&gt; path1, valuetype System.ReadOnlySpan`1&lt;char&gt; path2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.Join(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (path1 As ReadOnlySpan(Of Char), path2 As ReadOnlySpan(Of Char)) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path1" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="path2" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path1">To be added.</param>
+        <param name="path2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, ReadOnlySpan&lt;char&gt; path3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(valuetype System.ReadOnlySpan`1&lt;char&gt; path1, valuetype System.ReadOnlySpan`1&lt;char&gt; path2, valuetype System.ReadOnlySpan`1&lt;char&gt; path3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.Join(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (path1 As ReadOnlySpan(Of Char), path2 As ReadOnlySpan(Of Char), path3 As ReadOnlySpan(Of Char)) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, ReadOnlySpan&lt;char&gt; path3);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path1" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="path2" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="path3" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path1">To be added.</param>
+        <param name="path2">To be added.</param>
+        <param name="path3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PathSeparator">
       <MemberSignature Language="C#" Value="public static readonly char PathSeparator;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly char PathSeparator" />
@@ -1460,6 +1732,68 @@ C:\Users\UserName\AppData\Local\Temp\
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryJoin">
+      <MemberSignature Language="C#" Value="public static bool TryJoin (ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, Span&lt;char&gt; destination, out int charsWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryJoin(valuetype System.ReadOnlySpan`1&lt;char&gt; path1, valuetype System.ReadOnlySpan`1&lt;char&gt; path2, valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.TryJoin(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryJoin (path1 As ReadOnlySpan(Of Char), path2 As ReadOnlySpan(Of Char), destination As Span(Of Char), ByRef charsWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryJoin(ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, Span&lt;char&gt; destination, [Runtime::InteropServices::Out] int % charsWritten);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path1" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="path2" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
+        <Parameter Name="charsWritten" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="path1">To be added.</param>
+        <param name="path2">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="charsWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryJoin">
+      <MemberSignature Language="C#" Value="public static bool TryJoin (ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, ReadOnlySpan&lt;char&gt; path3, Span&lt;char&gt; destination, out int charsWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryJoin(valuetype System.ReadOnlySpan`1&lt;char&gt; path1, valuetype System.ReadOnlySpan`1&lt;char&gt; path2, valuetype System.ReadOnlySpan`1&lt;char&gt; path3, valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.TryJoin(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryJoin (path1 As ReadOnlySpan(Of Char), path2 As ReadOnlySpan(Of Char), path3 As ReadOnlySpan(Of Char), destination As Span(Of Char), ByRef charsWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryJoin(ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, ReadOnlySpan&lt;char&gt; path3, Span&lt;char&gt; destination, [Runtime::InteropServices::Out] int % charsWritten);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path1" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="path2" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="path3" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
+        <Parameter Name="charsWritten" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="path1">To be added.</param>
+        <param name="path2">To be added.</param>
+        <param name="path3">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="charsWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VolumeSeparatorChar">

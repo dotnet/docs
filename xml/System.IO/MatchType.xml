@@ -1,0 +1,58 @@
+﻿<Type Name="MatchType" FullName="System.IO.MatchType">
+  <TypeSignature Language="C#" Value="public enum MatchType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MatchType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.MatchType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MatchType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MatchType" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Simple">
+      <MemberSignature Language="C#" Value="Simple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MatchType Simple = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MatchType.Simple" />
+      <MemberSignature Language="VB.NET" Value="Simple" />
+      <MemberSignature Language="C++ CLI" Value="Simple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MatchType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Win32">
+      <MemberSignature Language="C#" Value="Win32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.MatchType Win32 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.MatchType.Win32" />
+      <MemberSignature Language="VB.NET" Value="Win32" />
+      <MemberSignature Language="C++ CLI" Value="Win32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MatchType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -258,11 +258,11 @@
       </Docs>
     </Member>
     <Member MemberName="RegisterFactory">
-      <MemberSignature Language="C#" Value="public static void RegisterFactory (string providerInvariantName, Type factoryType);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterFactory(string providerInvariantName, class System.Type factoryType) cil managed" />
+      <MemberSignature Language="C#" Value="public static void RegisterFactory (string providerInvariantName, Type providerFactoryClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterFactory(string providerInvariantName, class System.Type providerFactoryClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.RegisterFactory(System.String,System.Type)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterFactory (providerInvariantName As String, factoryType As Type)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterFactory(System::String ^ providerInvariantName, Type ^ factoryType);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterFactory (providerInvariantName As String, providerFactoryClass As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterFactory(System::String ^ providerInvariantName, Type ^ providerFactoryClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -273,11 +273,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="providerInvariantName" Type="System.String" />
-        <Parameter Name="factoryType" Type="System.Type" />
+        <Parameter Name="providerFactoryClass" Type="System.Type" />
       </Parameters>
       <Docs>
         <param name="providerInvariantName">To be added.</param>
-        <param name="factoryType">To be added.</param>
+        <param name="providerFactoryClass">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

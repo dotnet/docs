@@ -599,11 +599,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryCreateSignature">
-      <MemberSignature Language="C#" Value="public virtual bool TryCreateSignature (ReadOnlySpan&lt;byte&gt; source, Span&lt;byte&gt; destination, out int bytesWritten);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryCreateSignature(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool TryCreateSignature (ReadOnlySpan&lt;byte&gt; hash, Span&lt;byte&gt; destination, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryCreateSignature(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; hash, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.TryCreateSignature(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryCreateSignature (source As ReadOnlySpan(Of Byte), destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryCreateSignature(ReadOnlySpan&lt;System::Byte&gt; source, Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryCreateSignature (hash As ReadOnlySpan(Of Byte), destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryCreateSignature(ReadOnlySpan&lt;System::Byte&gt; hash, Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -613,12 +613,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="hash" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
+        <param name="hash">To be added.</param>
         <param name="destination">To be added.</param>
         <param name="bytesWritten">To be added.</param>
         <summary>To be added.</summary>
@@ -627,11 +627,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryHashData">
-      <MemberSignature Language="C#" Value="protected virtual bool TryHashData (ReadOnlySpan&lt;byte&gt; source, Span&lt;byte&gt; destination, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, out int bytesWritten);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryHashData(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, valuetype System.Span`1&lt;unsigned int8&gt; destination, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="C#" Value="protected virtual bool TryHashData (ReadOnlySpan&lt;byte&gt; data, Span&lt;byte&gt; destination, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryHashData(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; data, valuetype System.Span`1&lt;unsigned int8&gt; destination, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, [out] int32&amp; bytesWritten) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.TryHashData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function TryHashData (source As ReadOnlySpan(Of Byte), destination As Span(Of Byte), hashAlgorithm As HashAlgorithmName, ByRef bytesWritten As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool TryHashData(ReadOnlySpan&lt;System::Byte&gt; source, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function TryHashData (data As ReadOnlySpan(Of Byte), destination As Span(Of Byte), hashAlgorithm As HashAlgorithmName, ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool TryHashData(ReadOnlySpan&lt;System::Byte&gt; data, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, [Runtime::InteropServices::Out] int % bytesWritten);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -641,13 +641,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="data" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
         <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
+        <param name="data">To be added.</param>
         <param name="destination">To be added.</param>
         <param name="hashAlgorithm">To be added.</param>
         <param name="bytesWritten">To be added.</param>
@@ -657,11 +657,11 @@
       </Docs>
     </Member>
     <Member MemberName="TrySignData">
-      <MemberSignature Language="C#" Value="public virtual bool TrySignData (ReadOnlySpan&lt;byte&gt; source, Span&lt;byte&gt; destination, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, out int bytesWritten);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TrySignData(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, valuetype System.Span`1&lt;unsigned int8&gt; destination, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool TrySignData (ReadOnlySpan&lt;byte&gt; data, Span&lt;byte&gt; destination, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TrySignData(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; data, valuetype System.Span`1&lt;unsigned int8&gt; destination, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, [out] int32&amp; bytesWritten) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.TrySignData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function TrySignData (source As ReadOnlySpan(Of Byte), destination As Span(Of Byte), hashAlgorithm As HashAlgorithmName, ByRef bytesWritten As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TrySignData(ReadOnlySpan&lt;System::Byte&gt; source, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TrySignData (data As ReadOnlySpan(Of Byte), destination As Span(Of Byte), hashAlgorithm As HashAlgorithmName, ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TrySignData(ReadOnlySpan&lt;System::Byte&gt; data, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, [Runtime::InteropServices::Out] int % bytesWritten);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -671,13 +671,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="data" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
         <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
+        <param name="data">To be added.</param>
         <param name="destination">To be added.</param>
         <param name="hashAlgorithm">To be added.</param>
         <param name="bytesWritten">To be added.</param>
@@ -905,11 +905,11 @@
       </Docs>
     </Member>
     <Member MemberName="VerifySignature">
-      <MemberSignature Language="C#" Value="public virtual bool VerifySignature (ReadOnlySpan&lt;byte&gt; rgbHash, ReadOnlySpan&lt;byte&gt; rgbSignature);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifySignature(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; rgbHash, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; rgbSignature) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool VerifySignature (ReadOnlySpan&lt;byte&gt; hash, ReadOnlySpan&lt;byte&gt; signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifySignature(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; hash, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; signature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.VerifySignature(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifySignature (rgbHash As ReadOnlySpan(Of Byte), rgbSignature As ReadOnlySpan(Of Byte)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool VerifySignature(ReadOnlySpan&lt;System::Byte&gt; rgbHash, ReadOnlySpan&lt;System::Byte&gt; rgbSignature);" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifySignature (hash As ReadOnlySpan(Of Byte), signature As ReadOnlySpan(Of Byte)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool VerifySignature(ReadOnlySpan&lt;System::Byte&gt; hash, ReadOnlySpan&lt;System::Byte&gt; signature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -919,12 +919,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rgbHash" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="rgbSignature" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="hash" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="signature" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <param name="rgbSignature">To be added.</param>
+        <param name="hash">To be added.</param>
+        <param name="signature">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

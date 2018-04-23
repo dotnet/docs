@@ -276,6 +276,29 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
         </block>
       </Docs>
     </Member>
+    <Member MemberName="Fill">
+      <MemberSignature Language="C#" Value="public static void Fill (Span&lt;byte&gt; data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Fill(valuetype System.Span`1&lt;unsigned int8&gt; data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.Fill(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Fill (data As Span(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Fill(Span&lt;System::Byte&gt; data);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Span&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="GetBytes">
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

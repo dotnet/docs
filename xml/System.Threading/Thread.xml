@@ -1590,6 +1590,27 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <Member MemberName="GetCurrentProcessorId">
+      <MemberSignature Language="C#" Value="public static int GetCurrentProcessorId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetCurrentProcessorId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetCurrentProcessorId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentProcessorId () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetCurrentProcessorId();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetData">
       <MemberSignature Language="C#" Value="public static object GetData (LocalDataStoreSlot slot);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetData(class System.LocalDataStoreSlot slot) cil managed" />

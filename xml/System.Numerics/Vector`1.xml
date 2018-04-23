@@ -53,6 +53,26 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector (Span&lt;T&gt; values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Span`1&lt;!T&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.#ctor(System.Span{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (values As Span(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector(Span&lt;T&gt; values);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="values" Type="System.Span&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Vector (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.#ctor(`0)" />

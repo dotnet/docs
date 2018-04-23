@@ -17,12 +17,80 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="AsBytes&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;byte&gt; AsBytes&lt;T&gt; (ReadOnlySpan&lt;T&gt; span) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; AsBytes&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsBytes``1(System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsBytes(Of T As Structure) (span As ReadOnlySpan(Of T)) As ReadOnlySpan(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static ReadOnlySpan&lt;System::Byte&gt; AsBytes(ReadOnlySpan&lt;T&gt; span);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsBytes&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;byte&gt; AsBytes&lt;T&gt; (Span&lt;T&gt; span) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;unsigned int8&gt; AsBytes&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Span`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsBytes``1(System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsBytes(Of T As Structure) (span As Span(Of T)) As Span(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static Span&lt;System::Byte&gt; AsBytes(Span&lt;T&gt; span);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AsMemory&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; AsMemory&lt;T&gt; (ReadOnlyMemory&lt;T&gt; readOnlyMemory);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; AsMemory&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; readOnlyMemory) cil managed" />
+      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; AsMemory&lt;T&gt; (ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; AsMemory&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsMemory``1(System.ReadOnlyMemory{``0})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AsMemory(Of T) (readOnlyMemory As ReadOnlyMemory(Of T)) As Memory(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static Memory&lt;T&gt; AsMemory(ReadOnlyMemory&lt;T&gt; readOnlyMemory);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsMemory(Of T) (memory As ReadOnlyMemory(Of T)) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static Memory&lt;T&gt; AsMemory(ReadOnlyMemory&lt;T&gt; memory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -35,11 +103,155 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="readOnlyMemory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="readOnlyMemory">To be added.</param>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cast&lt;TFrom,TTo&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;TTo&gt; Cast&lt;TFrom,TTo&gt; (ReadOnlySpan&lt;TFrom&gt; span) where TFrom : struct where TTo : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!!TTo&gt; Cast&lt;struct .ctor (class System.ValueType) TFrom, struct .ctor (class System.ValueType) TTo&gt;(valuetype System.ReadOnlySpan`1&lt;!!TFrom&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.Cast``2(System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Cast(Of TFrom As Structure, TTo As Structure) (span As ReadOnlySpan(Of TFrom)) As ReadOnlySpan(Of TTo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TFrom, typename TTo&gt;&#xA; where TFrom : value class where TTo : value class static ReadOnlySpan&lt;TTo&gt; Cast(ReadOnlySpan&lt;TFrom&gt; span);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;TTo&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFrom">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TTo">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;TFrom&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFrom">To be added.</typeparam>
+        <typeparam name="TTo">To be added.</typeparam>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cast&lt;TFrom,TTo&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;TTo&gt; Cast&lt;TFrom,TTo&gt; (Span&lt;TFrom&gt; span) where TFrom : struct where TTo : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!TTo&gt; Cast&lt;struct .ctor (class System.ValueType) TFrom, struct .ctor (class System.ValueType) TTo&gt;(valuetype System.Span`1&lt;!!TFrom&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.Cast``2(System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Cast(Of TFrom As Structure, TTo As Structure) (span As Span(Of TFrom)) As Span(Of TTo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TFrom, typename TTo&gt;&#xA; where TFrom : value class where TTo : value class static Span&lt;TTo&gt; Cast(Span&lt;TFrom&gt; span);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;TTo&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFrom">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TTo">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;TFrom&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFrom">To be added.</typeparam>
+        <typeparam name="TTo">To be added.</typeparam>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReadOnlySpan&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; CreateReadOnlySpan&lt;T&gt; (ref T reference, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!!T&gt; CreateReadOnlySpan&lt;T&gt;(!!T&amp; reference, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.CreateReadOnlySpan``1(``0@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReadOnlySpan(Of T) (ByRef reference As T, length As Integer) As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static ReadOnlySpan&lt;T&gt; CreateReadOnlySpan(T % reference, int length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reference" Type="T&amp;" RefType="ref" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="reference">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSpan&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; CreateSpan&lt;T&gt; (ref T reference, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!T&gt; CreateSpan&lt;T&gt;(!!T&amp; reference, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.CreateSpan``1(``0@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSpan(Of T) (ByRef reference As T, length As Integer) As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static Span&lt;T&gt; CreateSpan(T % reference, int length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reference" Type="T&amp;" RefType="ref" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="reference">To be added.</param>
+        <param name="length">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -101,12 +313,74 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Read&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Read&lt;T&gt; (ReadOnlySpan&lt;byte&gt; source) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Read&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.Read``1(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read(Of T As Structure) (source As ReadOnlySpan(Of Byte)) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static T Read(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToEnumerable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; ToEnumerable&lt;T&gt; (ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; ToEnumerable&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.ToEnumerable``1(System.ReadOnlyMemory{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToEnumerable(Of T) (memory As ReadOnlyMemory(Of T)) As IEnumerable(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ ToEnumerable(ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TryGetArray&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool TryGetArray&lt;T&gt; (ReadOnlyMemory&lt;T&gt; readOnlyMemory, out ArraySegment&lt;T&gt; arraySegment);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetArray&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; readOnlyMemory, [out] valuetype System.ArraySegment`1&lt;!!T&gt;&amp; arraySegment) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool TryGetArray&lt;T&gt; (ReadOnlyMemory&lt;T&gt; memory, out ArraySegment&lt;T&gt; segment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetArray&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, [out] valuetype System.ArraySegment`1&lt;!!T&gt;&amp; segment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetArray``1(System.ReadOnlyMemory{``0},System.ArraySegment{``0}@)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetArray(Of T) (readOnlyMemory As ReadOnlyMemory(Of T), ByRef arraySegment As ArraySegment(Of T)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetArray(ReadOnlyMemory&lt;T&gt; readOnlyMemory, [Runtime::InteropServices::Out] ArraySegment&lt;T&gt; % arraySegment);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetArray(Of T) (memory As ReadOnlyMemory(Of T), ByRef segment As ArraySegment(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetArray(ReadOnlyMemory&lt;T&gt; memory, [Runtime::InteropServices::Out] ArraySegment&lt;T&gt; % segment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -119,15 +393,228 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="readOnlyMemory" Type="System.ReadOnlyMemory&lt;T&gt;" />
-        <Parameter Name="arraySegment" Type="System.ArraySegment&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="readOnlyMemory">To be added.</param>
-        <param name="arraySegment">To be added.</param>
+        <param name="memory">To be added.</param>
+        <param name="segment">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetMemoryManager&lt;T,TManager&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryGetMemoryManager&lt;T,TManager&gt; (ReadOnlyMemory&lt;T&gt; memory, out TManager manager) where TManager : System.Buffers.MemoryManager&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetMemoryManager&lt;T, (class System.Buffers.MemoryManager`1&lt;!!T&gt;) TManager&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, [out] !!TManager&amp; manager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetMemoryManager``2(System.ReadOnlyMemory{``0},``1@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetMemoryManager(Of T, TManager) (memory As ReadOnlyMemory(Of T), ByRef manager As TManager) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TManager&gt;&#xA; where TManager : System::Buffers::MemoryManager&lt;T&gt; static bool TryGetMemoryManager(ReadOnlyMemory&lt;T&gt; memory, [Runtime::InteropServices::Out] TManager % manager);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TManager">
+          <Constraints>
+            <BaseTypeName>System.Buffers.MemoryManager&lt;T&gt;</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+        <Parameter Name="manager" Type="TManager&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TManager">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="manager">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetMemoryManager&lt;T,TManager&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryGetMemoryManager&lt;T,TManager&gt; (ReadOnlyMemory&lt;T&gt; memory, out TManager manager, out int start, out int length) where TManager : System.Buffers.MemoryManager&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetMemoryManager&lt;T, (class System.Buffers.MemoryManager`1&lt;!!T&gt;) TManager&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, [out] !!TManager&amp; manager, [out] int32&amp; start, [out] int32&amp; length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetMemoryManager``2(System.ReadOnlyMemory{``0},``1@,System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetMemoryManager(Of T, TManager) (memory As ReadOnlyMemory(Of T), ByRef manager As TManager, ByRef start As Integer, ByRef length As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TManager&gt;&#xA; where TManager : System::Buffers::MemoryManager&lt;T&gt; static bool TryGetMemoryManager(ReadOnlyMemory&lt;T&gt; memory, [Runtime::InteropServices::Out] TManager % manager, [Runtime::InteropServices::Out] int % start, [Runtime::InteropServices::Out] int % length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TManager">
+          <Constraints>
+            <BaseTypeName>System.Buffers.MemoryManager&lt;T&gt;</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+        <Parameter Name="manager" Type="TManager&amp;" RefType="out" />
+        <Parameter Name="start" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TManager">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="manager">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetString">
+      <MemberSignature Language="C#" Value="public static bool TryGetString (ReadOnlyMemory&lt;char&gt; memory, out string text, out int start, out int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetString(valuetype System.ReadOnlyMemory`1&lt;char&gt; memory, [out] string&amp; text, [out] int32&amp; start, [out] int32&amp; length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetString(System.ReadOnlyMemory{System.Char},System.String@,System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetString (memory As ReadOnlyMemory(Of Char), ByRef text As String, ByRef start As Integer, ByRef length As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetString(ReadOnlyMemory&lt;char&gt; memory, [Runtime::InteropServices::Out] System::String ^ % text, [Runtime::InteropServices::Out] int % start, [Runtime::InteropServices::Out] int % length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;System.Char&gt;" />
+        <Parameter Name="text" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="start" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRead&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryRead&lt;T&gt; (ReadOnlySpan&lt;byte&gt; source, out T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryRead&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryRead``1(System.ReadOnlySpan{System.Byte},``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryRead(Of T As Structure) (source As ReadOnlySpan(Of Byte), ByRef value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool TryRead(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] T % value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryWrite&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryWrite&lt;T&gt; (Span&lt;byte&gt; destination, ref T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryWrite&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Span`1&lt;unsigned int8&gt; destination, !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryWrite``1(System.Span{System.Byte},``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWrite(Of T As Structure) (destination As Span(Of Byte), ByRef value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool TryWrite(Span&lt;System::Byte&gt; destination, T % value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="destination">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (Span&lt;byte&gt; destination, ref T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Span`1&lt;unsigned int8&gt; destination, !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.Write``1(System.Span{System.Byte},``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write(Of T As Structure) (destination As Span(Of Byte), ByRef value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static void Write(Span&lt;System::Byte&gt; destination, T % value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="destination">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

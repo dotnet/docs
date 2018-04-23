@@ -506,6 +506,30 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Acosh">
+      <MemberSignature Language="C#" Value="public static double Acosh (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Acosh(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Acosh(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Acosh (d As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Acosh(double d);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Asin">
       <MemberSignature Language="C#" Value="public static double Asin (double d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Asin(float64 d) cil managed" />
@@ -568,6 +592,30 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Asinh">
+      <MemberSignature Language="C#" Value="public static double Asinh (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Asinh(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Asinh(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Asinh (d As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Asinh(double d);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan">
@@ -716,6 +764,30 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Atanh">
+      <MemberSignature Language="C#" Value="public static double Atanh (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Atanh(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Atanh(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Atanh (d As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Atanh(double d);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BigMul">
       <MemberSignature Language="C#" Value="public static long BigMul (int a, int b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 BigMul(int32 a, int32 b) cil managed" />
@@ -761,6 +833,30 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cbrt">
+      <MemberSignature Language="C#" Value="public static double Cbrt (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Cbrt(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Cbrt(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Cbrt (d As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Cbrt(double d);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="Ceiling">

@@ -320,6 +320,32 @@
         <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static StringComparer Create (System.Globalization.CultureInfo culture, System.Globalization.CompareOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.StringComparer Create(class System.Globalization.CultureInfo culture, valuetype System.Globalization.CompareOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.Create(System.Globalization.CultureInfo,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (culture As CultureInfo, options As CompareOptions) As StringComparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static StringComparer ^ Create(System::Globalization::CultureInfo ^ culture, System::Globalization::CompareOptions options);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="options" Type="System.Globalization.CompareOptions" />
+      </Parameters>
+      <Docs>
+        <param name="culture">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CurrentCulture">
       <MemberSignature Language="C#" Value="public static StringComparer CurrentCulture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.StringComparer CurrentCulture" />

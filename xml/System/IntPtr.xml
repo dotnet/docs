@@ -963,15 +963,11 @@
       </Docs>
     </Member>
     <Member MemberName="System.IEquatable&lt;System.IntPtr&gt;.Equals">
-      <MemberSignature Language="C#" Value="bool IEquatable&lt;IntPtr&gt;.Equals (IntPtr other);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IEquatable&lt;System.IntPtr&gt;.Equals(native int other) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0" />
+      <MemberSignature Language="C#" Value="bool IEquatable&lt;IntPtr&gt;.Equals (IntPtr other);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IEquatable&lt;System.IntPtr&gt;.Equals(native int other) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.System#IEquatable&lt;System#IntPtr&gt;#Equals(System.IntPtr)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.1;netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Function Equals (other As IntPtr) As Boolean Implements IEquatable(Of IntPtr).Equals" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0" />
-      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IEquatable&lt;System.IntPtr&gt;.Equals(IntPtr other) = IEquatable&lt;IntPtr&gt;::Equals;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0" />
-      <MemberSignature Language="C#" Value="bool IEquatable&lt;IntPtr&gt;.Equals (IntPtr value);" FrameworkAlternate="netcore-2.1" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IEquatable&lt;System.IntPtr&gt;.Equals(native int value) cil managed" FrameworkAlternate="netcore-2.1" />
-      <MemberSignature Language="VB.NET" Value="Function Equals (value As IntPtr) As Boolean Implements IEquatable(Of IntPtr).Equals" FrameworkAlternate="netcore-2.1" />
-      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IEquatable&lt;System.IntPtr&gt;.Equals(IntPtr value) = IEquatable&lt;IntPtr&gt;::Equals;" FrameworkAlternate="netcore-2.1" />
+      <MemberSignature Language="VB.NET" Value="Function Equals (other As IntPtr) As Boolean Implements IEquatable(Of IntPtr).Equals" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IEquatable&lt;System.IntPtr&gt;.Equals(IntPtr other) = IEquatable&lt;IntPtr&gt;::Equals;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -985,12 +981,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.IntPtr" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0" />
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="netcore-2.1" />
+        <Parameter Name="other" Type="System.IntPtr" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
-        <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

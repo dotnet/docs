@@ -129,6 +129,25 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="Arm64">
+      <MemberSignature Language="C#" Value="Arm64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutable.Machine Arm64 = unsigned int16(43620)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Machine.Arm64" />
+      <MemberSignature Language="VB.NET" Value="Arm64" />
+      <MemberSignature Language="C++ CLI" Value="Arm64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.Machine</ReturnType>
+      </ReturnValue>
+      <MemberValue>43620</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="ArmThumb2">
       <MemberSignature Language="C#" Value="ArmThumb2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutable.Machine ArmThumb2 = unsigned int16(452)" />

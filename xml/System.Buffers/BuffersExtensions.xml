@@ -1,0 +1,159 @@
+﻿<Type Name="BuffersExtensions" FullName="System.Buffers.BuffersExtensions">
+  <TypeSignature Language="C#" Value="public static class BuffersExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BuffersExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.BuffersExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module BuffersExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuffersExtensions abstract sealed" />
+  <AssemblyInfo>
+    <AssemblyName>System.Memory</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyTo&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void CopyTo&lt;T&gt; (this ref System.Buffers.ReadOnlySequence&lt;T&gt; source, Span&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo&lt;T&gt;([in]valuetype System.Buffers.ReadOnlySequence`1&lt;!!T&gt;&amp; source, valuetype System.Span`1&lt;!!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo(Of T) (ByRef source As ReadOnlySequence(Of T), destination As Span(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(System::Buffers::ReadOnlySequence&lt;T&gt; % source, Span&lt;T&gt; destination);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Buffers.ReadOnlySequence&lt;T&gt;&amp;" RefType="this">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PositionOf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;SequencePosition&gt; PositionOf&lt;T&gt; (this ref System.Buffers.ReadOnlySequence&lt;T&gt; source, T value) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.SequencePosition&gt; PositionOf&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;([in]valuetype System.Buffers.ReadOnlySequence`1&lt;!!T&gt;&amp; source, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0}@,``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function PositionOf(Of T As IEquatable(Of T)) (ByRef source As ReadOnlySequence(Of T), value As T) As Nullable(Of SequencePosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;SequencePosition&gt; PositionOf(System::Buffers::ReadOnlySequence&lt;T&gt; % source, T value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.SequencePosition&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Buffers.ReadOnlySequence&lt;T&gt;&amp;" RefType="this">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] ToArray&lt;T&gt; (this ref System.Buffers.ReadOnlySequence&lt;T&gt; sequence);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T[] ToArray&lt;T&gt;([in]valuetype System.Buffers.ReadOnlySequence`1&lt;!!T&gt;&amp; sequence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToArray(Of T) (ByRef sequence As ReadOnlySequence(Of T)) As T()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;T&gt; ^ ToArray(System::Buffers::ReadOnlySequence&lt;T&gt; % sequence);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;&amp;" RefType="this">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sequence">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (this System.Buffers.IBufferWriter&lt;T&gt; writer, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;T&gt;(class System.Buffers.IBufferWriter`1&lt;!!T&gt; writer, valuetype System.ReadOnlySpan`1&lt;!!T&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.BuffersExtensions.Write``1(System.Buffers.IBufferWriter{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write(Of T) (writer As IBufferWriter(Of T), value As ReadOnlySpan(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Write(System::Buffers::IBufferWriter&lt;T&gt; ^ writer, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Buffers.IBufferWriter&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="writer">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

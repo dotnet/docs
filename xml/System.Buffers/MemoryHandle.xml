@@ -22,9 +22,9 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MemoryHandle (System.Buffers.IRetainable owner, void* pointer = null, System.Runtime.InteropServices.GCHandle handle = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.IRetainable owner, void* pointer, valuetype System.Runtime.InteropServices.GCHandle handle) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryHandle.#ctor(System.Buffers.IRetainable,System.Void*,System.Runtime.InteropServices.GCHandle)" />
+      <MemberSignature Language="C#" Value="public MemoryHandle (void* pointer, System.Runtime.InteropServices.GCHandle handle = null, System.Buffers.IPinnable pinnable = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(void* pointer, valuetype System.Runtime.InteropServices.GCHandle handle, class System.Buffers.IPinnable pinnable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryHandle.#ctor(System.Void*,System.Runtime.InteropServices.GCHandle,System.Buffers.IPinnable)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -36,14 +36,14 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="owner" Type="System.Buffers.IRetainable" />
         <Parameter Name="pointer" Type="System.Void*" />
         <Parameter Name="handle" Type="System.Runtime.InteropServices.GCHandle" />
+        <Parameter Name="pinnable" Type="System.Buffers.IPinnable" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
         <param name="pointer">To be added.</param>
         <param name="handle">To be added.</param>
+        <param name="pinnable">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,26 +68,6 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HasPointer">
-      <MemberSignature Language="C#" Value="public bool HasPointer { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool HasPointer" />
-      <MemberSignature Language="DocId" Value="P:System.Buffers.MemoryHandle.HasPointer" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPointer As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPointer { bool get(); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

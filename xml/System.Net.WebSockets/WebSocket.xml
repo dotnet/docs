@@ -360,9 +360,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFromStream">
-      <MemberSignature Language="C#" Value="public static System.Net.WebSockets.WebSocket CreateFromStream (System.IO.Stream stream, bool isServer, string subProtocol, TimeSpan keepAliveInterval, Memory&lt;byte&gt; buffer = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.WebSockets.WebSocket CreateFromStream(class System.IO.Stream stream, bool isServer, string subProtocol, valuetype System.TimeSpan keepAliveInterval, valuetype System.Memory`1&lt;unsigned int8&gt; buffer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.CreateFromStream(System.IO.Stream,System.Boolean,System.String,System.TimeSpan,System.Memory{System.Byte})" />
+      <MemberSignature Language="C#" Value="public static System.Net.WebSockets.WebSocket CreateFromStream (System.IO.Stream stream, bool isServer, string subProtocol, TimeSpan keepAliveInterval);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.WebSockets.WebSocket CreateFromStream(class System.IO.Stream stream, bool isServer, string subProtocol, valuetype System.TimeSpan keepAliveInterval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.CreateFromStream(System.IO.Stream,System.Boolean,System.String,System.TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebSockets::WebSocket ^ CreateFromStream(System::IO::Stream ^ stream, bool isServer, System::String ^ subProtocol, TimeSpan keepAliveInterval);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -376,14 +377,12 @@
         <Parameter Name="isServer" Type="System.Boolean" />
         <Parameter Name="subProtocol" Type="System.String" />
         <Parameter Name="keepAliveInterval" Type="System.TimeSpan" />
-        <Parameter Name="buffer" Type="System.Memory&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
         <param name="stream">To be added.</param>
         <param name="isServer">To be added.</param>
         <param name="subProtocol">To be added.</param>
         <param name="keepAliveInterval">To be added.</param>
-        <param name="buffer">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -729,17 +728,17 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task SendAsync (ReadOnlyMemory&lt;byte&gt; buffer, System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SendAsync(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; buffer, valuetype System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask SendAsync (ReadOnlyMemory&lt;byte&gt; buffer, System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask SendAsync(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; buffer, valuetype System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.SendAsync(System.ReadOnlyMemory{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ SendAsync(ReadOnlyMemory&lt;System::Byte&gt; buffer, System::Net::WebSockets::WebSocketMessageType messageType, bool endOfMessage, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::ValueTask SendAsync(ReadOnlyMemory&lt;System::Byte&gt; buffer, System::Net::WebSockets::WebSocketMessageType messageType, bool endOfMessage, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />

@@ -245,6 +245,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RemoteCertificateValidationCallback">
+      <MemberSignature Language="C#" Value="public System.Net.Security.RemoteCertificateValidationCallback RemoteCertificateValidationCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Security.RemoteCertificateValidationCallback RemoteCertificateValidationCallback" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.RemoteCertificateValidationCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemoteCertificateValidationCallback As RemoteCertificateValidationCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::RemoteCertificateValidationCallback ^ RemoteCertificateValidationCallback { System::Net::Security::RemoteCertificateValidationCallback ^ get(); void set(System::Net::Security::RemoteCertificateValidationCallback ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.RemoteCertificateValidationCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="SetBuffer">
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

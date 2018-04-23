@@ -1,0 +1,47 @@
+﻿<Type Name="ConfiguredValueTaskAwaitable" FullName="System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable">
+  <TypeSignature Language="C#" Value="public struct ConfiguredValueTaskAwaitable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ConfiguredValueTaskAwaitable extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredValueTaskAwaitable" />
+  <TypeSignature Language="C++ CLI" Value="public value class ConfiguredValueTaskAwaitable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAwaiter">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable.ConfiguredValueTaskAwaiter GetAwaiter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable/ConfiguredValueTaskAwaiter GetAwaiter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable.GetAwaiter" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As ConfiguredValueTaskAwaitable.ConfiguredValueTaskAwaiter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable::ConfiguredValueTaskAwaiter GetAwaiter();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable+ConfiguredValueTaskAwaiter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

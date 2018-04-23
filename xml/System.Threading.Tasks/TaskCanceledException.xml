@@ -246,6 +246,30 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskCanceledException (string message, Exception innerException, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.String,System.Exception,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, token As CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCanceledException(System::String ^ message, Exception ^ innerException, System::Threading::CancellationToken token);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Task">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Task { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task Task" />

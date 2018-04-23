@@ -1,0 +1,82 @@
+﻿<Type Name="ValueTaskSourceOnCompletedFlags" FullName="System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags">
+  <TypeSignature Language="C#" Value="public enum ValueTaskSourceOnCompletedFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValueTaskSourceOnCompletedFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValueTaskSourceOnCompletedFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValueTaskSourceOnCompletedFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FlowExecutionContext">
+      <MemberSignature Language="C#" Value="FlowExecutionContext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags FlowExecutionContext = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.FlowExecutionContext" />
+      <MemberSignature Language="VB.NET" Value="FlowExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="FlowExecutionContext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSchedulingContext">
+      <MemberSignature Language="C#" Value="UseSchedulingContext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags UseSchedulingContext = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.UseSchedulingContext" />
+      <MemberSignature Language="VB.NET" Value="UseSchedulingContext" />
+      <MemberSignature Language="C++ CLI" Value="UseSchedulingContext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

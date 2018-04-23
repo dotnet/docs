@@ -529,12 +529,12 @@
           <paramref name="callBack" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <Member MemberName="QueueUserWorkItem">
-      <MemberSignature Language="C#" Value="public static bool QueueUserWorkItem (System.Threading.WaitCallback callBack, object state, bool preferLocal);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool QueueUserWorkItem(class System.Threading.WaitCallback callBack, object state, bool preferLocal) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function QueueUserWorkItem (callBack As WaitCallback, state As Object, preferLocal As Boolean) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool QueueUserWorkItem(System::Threading::WaitCallback ^ callBack, System::Object ^ state, bool preferLocal);" />
+    <Member MemberName="QueueUserWorkItem&lt;TState&gt;">
+      <MemberSignature Language="C#" Value="public static bool QueueUserWorkItem&lt;TState&gt; (Action&lt;TState&gt; callBack, TState state, bool preferLocal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool QueueUserWorkItem&lt;TState&gt;(class System.Action`1&lt;!!TState&gt; callBack, !!TState state, bool preferLocal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.QueueUserWorkItem``1(System.Action{``0},``0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QueueUserWorkItem(Of TState) (callBack As Action(Of TState), state As TState, preferLocal As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TState&gt;&#xA; static bool QueueUserWorkItem(Action&lt;TState&gt; ^ callBack, TState state, bool preferLocal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -543,12 +543,16 @@
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TState" />
+      </TypeParameters>
       <Parameters>
-        <Parameter Name="callBack" Type="System.Threading.WaitCallback" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="callBack" Type="System.Action&lt;TState&gt;" />
+        <Parameter Name="state" Type="TState" />
         <Parameter Name="preferLocal" Type="System.Boolean" />
       </Parameters>
       <Docs>
+        <typeparam name="TState">To be added.</typeparam>
         <param name="callBack">To be added.</param>
         <param name="state">To be added.</param>
         <param name="preferLocal">To be added.</param>

@@ -1,0 +1,608 @@
+﻿<Type Name="ReadOnlySequence&lt;T&gt;" FullName="System.Buffers.ReadOnlySequence&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct ReadOnlySequence&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlySequence`1&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.ReadOnlySequence`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlySequence(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ReadOnlySequence" />
+  <AssemblyInfo>
+    <AssemblyName>System.Memory</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySequence (ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlyMemory`1&lt;!T&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(System.ReadOnlyMemory{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memory As ReadOnlyMemory(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySequence (T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(`0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(cli::array &lt;T&gt; ^ array);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySequence (T[] array, int start, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 start, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(`0[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), start As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(cli::array &lt;T&gt; ^ array, int start, int length);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySequence (System.Buffers.ReadOnlySequenceSegment&lt;T&gt; startSegment, int startIndex, System.Buffers.ReadOnlySequenceSegment&lt;T&gt; endSegment, int endIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.ReadOnlySequenceSegment`1&lt;!T&gt; startSegment, int32 startIndex, class System.Buffers.ReadOnlySequenceSegment`1&lt;!T&gt; endSegment, int32 endIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(System.Buffers.ReadOnlySequenceSegment{`0},System.Int32,System.Buffers.ReadOnlySequenceSegment{`0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (startSegment As ReadOnlySequenceSegment(Of T), startIndex As Integer, endSegment As ReadOnlySequenceSegment(Of T), endIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ startSegment, int startIndex, System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ endSegment, int endIndex);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" />
+        <Parameter Name="startIndex" Type="System.Int32" />
+        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" />
+        <Parameter Name="endIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startSegment">To be added.</param>
+        <param name="startIndex">To be added.</param>
+        <param name="endSegment">To be added.</param>
+        <param name="endIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static readonly System.Buffers.ReadOnlySequence&lt;T&gt; Empty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Empty" />
+      <MemberSignature Language="DocId" Value="F:System.Buffers.ReadOnlySequence`1.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As ReadOnlySequence(Of T) " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Buffers::ReadOnlySequence&lt;T&gt; Empty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public SequencePosition End { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.SequencePosition End" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.End" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As SequencePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition End { SequencePosition get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SequencePosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="First">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;T&gt; First { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlyMemory`1&lt;!T&gt; First" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.First" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlyMemory&lt;T&gt; First { ReadOnlyMemory&lt;T&gt; get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt;.Enumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ReadOnlySequence(Of T).Enumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosition">
+      <MemberSignature Language="C#" Value="public SequencePosition GetPosition (long offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.SequencePosition GetPosition(int64 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPosition (offset As Long) As SequencePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition GetPosition(long offset);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SequencePosition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosition">
+      <MemberSignature Language="C#" Value="public SequencePosition GetPosition (long offset, SequencePosition origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.SequencePosition GetPosition(int64 offset, valuetype System.SequencePosition origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64,System.SequencePosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPosition (offset As Long, origin As SequencePosition) As SequencePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition GetPosition(long offset, SequencePosition origin);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SequencePosition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="origin" Type="System.SequencePosition" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSingleSegment">
+      <MemberSignature Language="C#" Value="public bool IsSingleSegment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleSegment" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.IsSingleSegment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSingleSegment As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSingleSegment { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public long Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (long start);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int64 start) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (SequencePosition start);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(valuetype System.SequencePosition start) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.SequencePosition" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (int start, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int32 start, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer, length As Integer) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(int start, int length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (int start, SequencePosition end);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int32 start, valuetype System.SequencePosition end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.SequencePosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer, end As SequencePosition) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(int start, SequencePosition end);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="end" Type="System.SequencePosition" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (long start, long length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int64 start, int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long, length As Long) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start, long length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int64" />
+        <Parameter Name="length" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (long start, SequencePosition end);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int64 start, valuetype System.SequencePosition end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.SequencePosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long, end As SequencePosition) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start, SequencePosition end);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int64" />
+        <Parameter Name="end" Type="System.SequencePosition" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (SequencePosition start, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(valuetype System.SequencePosition start, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, length As Integer) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, int length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.SequencePosition" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (SequencePosition start, long length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(valuetype System.SequencePosition start, int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, length As Long) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, long length);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.SequencePosition" />
+        <Parameter Name="length" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Slice (SequencePosition start, SequencePosition end);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(valuetype System.SequencePosition start, valuetype System.SequencePosition end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.SequencePosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, end As SequencePosition) As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, SequencePosition end);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.SequencePosition" />
+        <Parameter Name="end" Type="System.SequencePosition" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public SequencePosition Start { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.SequencePosition Start" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.Start" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As SequencePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition Start { SequencePosition get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SequencePosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public bool TryGet (ref SequencePosition position, out ReadOnlyMemory&lt;T&gt; memory, bool advance = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGet(valuetype System.SequencePosition&amp; position, [out] valuetype System.ReadOnlyMemory`1&lt;!T&gt;&amp; memory, bool advance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.TryGet(System.SequencePosition@,System.ReadOnlyMemory{`0}@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGet (ByRef position As SequencePosition, ByRef memory As ReadOnlyMemory(Of T), Optional advance As Boolean = true) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.SequencePosition&amp;" RefType="ref" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="advance" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="position">To be added.</param>
+        <param name="memory">To be added.</param>
+        <param name="advance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

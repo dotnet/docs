@@ -248,7 +248,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
 |-|  
 |`<TextBlock`<br /><br /> `Name="text1" NumberSubstitution.CultureSource="Text">`<br /><br /> `1234+5679=6913`<br /><br /> `</TextBlock>`|  
   
- In the corresponding [!INCLUDE[TLA2#tla_lhcshrp](../../../../includes/tla2sharptla-lhcshrp-md.md)] code, set the `Language` property for example, to `"ar-SA"`.  
+ In the corresponding C# code, set the `Language` property for example, to `"ar-SA"`.  
   
 ||  
 |-|  

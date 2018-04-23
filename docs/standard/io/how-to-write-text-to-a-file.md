@@ -33,7 +33,10 @@ This topic shows different ways you can write text to a file for .NET Framework 
 -   <xref:System.IO.File> – to be used with .NET Framework applications. It provides static methods to write text to a file such as <xref:System.IO.File.WriteAllLines%2A> and <xref:System.IO.File.WriteAllText%2A>, or to append text to a file (<xref:System.IO.File.AppendAllLines%2A>, <xref:System.IO.File.AppendAllText%2A> or <xref:System.IO.File.AppendText%2A>).  
   
 -   [FileIO](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.aspx) - to be used with [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. It contains asynchronous methods to write text to a file ([WriteLinesAsync](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.writelinesasync.aspx) or [WriteTextAsync](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.writetextasync.aspx)) or to append text to a file ([AppendLinesAsync](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.appendlinesasync.aspx) or [AppendTextAsync](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.appendtextasync.aspx)).  
-  
+
+- <xref:System.IO.Path> - to be used on strings that contain file or directory path information. It contains <xref:System.IO.Path.Combine%2A> which allows concatenation of strings to build a file or directory path.
+
+
  The samples have been kept simple in order to focus on the task being performed. For this reason, the samples perform minimal error checking and exception handling, if any. A real-world application generally provides more robust error checking and exception handling.  
   
 ## Example  
@@ -89,7 +92,8 @@ This topic shows different ways you can write text to a file for .NET Framework 
  [!code-vb[OpenFileWindowsStore#Code](../../../samples/snippets/visualbasic/VS_Snippets_CLR/openfilewindowsstore/vb/mainpage.xaml.vb#code)]  
   
 ## See Also  
- <xref:System.IO.StreamWriter>  
+ <xref:System.IO.StreamWriter>
+ <xref:System.IO.Path.Combine>
  <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>  
  [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
  [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  

@@ -26,7 +26,7 @@ You can view the SQL code generated for queries and change processing by using t
 ## Example  
  The following example uses the <xref:System.Data.Linq.DataContext.Log%2A> property to display SQL code in the console window before the code is executed.  You can use this property with query, insert, update, and delete commands.  
   
- The lines from the console window are what you see when you execute the [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] or C# code that follows.  
+ The lines from the console window are what you see when you execute the Visual Basic or C# code that follows.  
   
 ```  
 SELECT [t0].[CustomerID], [t0].[CompanyName], [t0].[ContactName], [t0].[ContactT  

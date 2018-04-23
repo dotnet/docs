@@ -22,7 +22,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Recursive Procedures (Visual Basic)
-A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.  
+A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write Visual Basic code.  
   
  The following procedure uses recursion to calculate the factorial of its original argument.  
   

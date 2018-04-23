@@ -35,7 +35,7 @@ This walkthrough demonstrates how to define classes, which you can then use to c
   
 1.  Create a project by clicking **New Project** on the **File** menu. The **New Project** dialog box appears.  
   
-2.  Select Windows Application from the list of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project templates to display the new project.  
+2.  Select Windows Application from the list of Visual Basic project templates to display the new project.  
   
 3.  Add a new class to the project by clicking **Add Class** on the **Project** menu. The **Add New Item** dialog box appears.  
   
@@ -46,7 +46,7 @@ This walkthrough demonstrates how to define classes, which you can then use to c
      [!code-vb[VbVbalrOOP#5](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_1.vb)]  
   
     > [!NOTE]
-    >  You can use the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Code Editor** to add a class to your startup form by typing the `Class` keyword followed by the name of the new class. The **Code Editor** provides a corresponding `End Class` statement for you.  
+    >  You can use the Visual Basic **Code Editor** to add a class to your startup form by typing the `Class` keyword followed by the name of the new class. The **Code Editor** provides a corresponding `End Class` statement for you.  
   
 6.  Define a private field for the class by adding the following code between the `Class` and `End Class` statements:  
   

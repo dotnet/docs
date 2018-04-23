@@ -18,7 +18,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # &#39;&lt;name1&gt;&#39; is ambiguous, imported from the namespaces or types &#39;&lt;name2&gt;&#39;
-You have provided a name that is ambiguous and therefore conflicts with another name. The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler does not have any conflict resolution rules; you must disambiguate names yourself.  
+You have provided a name that is ambiguous and therefore conflicts with another name. The Visual Basic compiler does not have any conflict resolution rules; you must disambiguate names yourself.  
   
  **Error ID:** BC30561  
   

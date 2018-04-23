@@ -32,7 +32,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Implicit and Explicit Conversions (Visual Basic)
-An *implicit conversion* does not require any special syntax in the source code. In the following example, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] implicitly converts the value of `k` to a single-precision floating-point value before assigning it to `q`.  
+An *implicit conversion* does not require any special syntax in the source code. In the following example, Visual Basic implicitly converts the value of `k` to a single-precision floating-point value before assigning it to `q`.  
   
 ```  
 Dim k As Integer  
@@ -42,7 +42,7 @@ k = 432
 q = k  
 ```  
   
- An *explicit conversion* uses a type conversion keyword. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several such keywords, which coerce an expression in parentheses to the desired data type. These keywords act like functions, but the compiler generates the code inline, so execution is slightly faster than with a function call.  
+ An *explicit conversion* uses a type conversion keyword. Visual Basic provides several such keywords, which coerce an expression in parentheses to the desired data type. These keywords act like functions, but the compiler generates the code inline, so execution is slightly faster than with a function call.  
   
  In the following extension of the preceding example, the `CInt` keyword converts the value of `q` back to an integer before assigning it to `k`.  
   

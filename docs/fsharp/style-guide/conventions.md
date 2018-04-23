@@ -565,8 +565,6 @@ F# has full support for objects and object-oriented (OO) concepts. Although many
 * Inheritance-based type hierarchies and implementation inheritance
 * Nulls and `Unchecked.defaultof<_>`
 
-The following guidelines will explain some of these features in more detail.
-
 ### Prefer composition over inheritance
 
 [Composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance) is a long-standing idiom that good F# code can adhere to. The fundamental principle is that you should not expose a base class and force callers to inherit from that base class to get functionality.
@@ -600,3 +598,40 @@ For example, here is the code that is run in [Ionide](http://ionide.io/) to prov
 ```
 
 Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also valuable for unit testing, when you want to stub out an interface with test routines in an ad-hoc manner.
+
+## Type abbreviations
+
+[Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to give a name to another type, such as a function signature or a more complex type. For example, the following alias gives a name to what can define a computation with [CNTK], a deep learning library:
+
+```fsharp
+open CNTK
+
+// DeviceDescriptor, Variable, and Function all come from CNTK
+type Computation = DeviceDescriptor -> Variable -> Function
+```
+
+The `Computation` name is a convenient way to represent any function which has the signature it is aliasing, and allows you to succinctly represent functions of this shape when they are passed into other functions.
+
+### Avoid using type abbreviations to represent your domain
+
+Although Type Abbreviations are convenient for giving a name to function signatures, they can be confusing when abbreviating other types. Consider this abbreviation:
+
+```fsharp
+// Does not actually abstract integers.
+type BufferSize = int
+```
+
+This can be confusing in multiple ways:
+
+* If `BufferSize` is exposed in a public API, it can easily be misinterpreted to mean more than just `int`. Generally, domain types have multiple attributes to them and are not primitive types like `int`. This abbreviation violates that assumption.
+* The naming convention (upper case) implies that this type holds more data.
+* This alias does not offer increased clarity compared with providing a named argument to a function.
+
+```fsharp
+module Networking =
+    ...
+    let send data (bufferSize: int) =
+        ...
+```
+
+And finally, the most pitfall with type abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional attributes, nor any benefits from the type safety that single-case discriminated unions can give you.

@@ -148,10 +148,12 @@
     "template": [
       "docs.html"
     ],
+    "groups": {
     "netcore": {
       "dest": "netcore",
       "moniker_range": ">= netcore-1.0"
-    },
+    }
+  },
     "xref": [
       "_zip/office15.zip",
       "_zip/missingapi.yml"

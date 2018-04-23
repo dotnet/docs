@@ -54,7 +54,7 @@ ms.workload:
   
 -   The handler must match the delegate for the appropriate event in the backing type system.  
   
--   For the [!INCLUDE[TLA#tla_visualb](../../../../includes/tlasharptla-visualb-md.md)] language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](../../../../docs/framework/wpf/advanced/visual-basic-and-wpf-event-handling.md).  
+-   For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](../../../../docs/framework/wpf/advanced/visual-basic-and-wpf-event-handling.md).  
   
 <a name="x_Code"></a>   
 ## x:Code  

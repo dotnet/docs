@@ -23,7 +23,7 @@ ms.workload:
 # Bidirectional Features in WPF Overview
 Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] has many features that support rapid development of bidirectional content, for example, mixed left to right and right to left data in the same document. At the same time, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] creates an excellent experience for users who require bidirectional features such as Arabic and Hebrew speaking users.  
   
- The following sections explain many bidirectional features together with examples illustrating how to achieve the best display of bidirectional content. Most of the samples use [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)], though you can easily apply the concepts to [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)] or [!INCLUDE[TLA#tla_visualb](../../../../includes/tlasharptla-visualb-md.md)] code.  
+ The following sections explain many bidirectional features together with examples illustrating how to achieve the best display of bidirectional content. Most of the samples use [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)], though you can easily apply the concepts to [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)] or Microsoft Visual Basic code.  
   
 
   

@@ -88,7 +88,7 @@ In many applications, a date and time value is intended to unambiguously identif
 ## Compiling the Code  
  These examples require:  
   
--   That the following namespaces be imported with C# `using` statements or [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] `Imports` statements:  
+-   That the following namespaces be imported with C# `using` statements or Visual Basic `Imports` statements:  
   
     -   <xref:System> (C# only).  
   

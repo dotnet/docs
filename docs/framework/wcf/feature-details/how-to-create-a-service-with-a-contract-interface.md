@@ -27,7 +27,7 @@ The preferred way to create a [!INCLUDE[indigo1](../../../../includes/indigo1-md
   
 ### Creating a WCF contract with an interface  
   
-1.  Create a new interface using [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], C#, or any other common language runtime language.  
+1.  Create a new interface using Visual Basic, C#, or any other common language runtime language.  
   
 2.  Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface.  
   

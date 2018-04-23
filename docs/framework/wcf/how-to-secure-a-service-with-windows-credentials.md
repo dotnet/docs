@@ -58,7 +58,7 @@ This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../
   
 1.  Insert this procedure's code after the code from the preceding procedure.  
   
-2.  Create a <xref:System.Type> variable named `contractType` and assign it the type of the interface (`ICalculator`). When using [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], use the `GetType` operator; when using C#, use the `typeof` keyword.  
+2.  Create a <xref:System.Type> variable named `contractType` and assign it the type of the interface (`ICalculator`). When using Visual Basic, use the `GetType` operator; when using C#, use the `typeof` keyword.  
   
 3.  Create a second `Type` variable named `serviceType` and assign it the type of the implemented contract (`Calculator`).  
   

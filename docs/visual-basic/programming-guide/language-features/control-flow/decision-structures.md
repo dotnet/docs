@@ -21,7 +21,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Decision Structures (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] lets you test conditions and perform different operations depending on the results of that test. You can test for a condition being true or false, for various values of an expression, or for various exceptions generated when you execute a series of statements.  
+Visual Basic lets you test conditions and perform different operations depending on the results of that test. You can test for a condition being true or false, for various values of an expression, or for various exceptions generated when you execute a series of statements.  
   
  The following illustration shows a decision structure that tests for a condition being true and takes different actions depending on whether it is true or false.  
   

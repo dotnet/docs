@@ -18,7 +18,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # How to: Receive Strings From Serial Ports in Visual Basic
-This topic describes how to use `My.Computer.Ports` to receive strings from the computer's serial ports in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+This topic describes how to use `My.Computer.Ports` to receive strings from the computer's serial ports in Visual Basic.  
   
 ### To receive strings from the serial port  
   

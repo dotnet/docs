@@ -1,3 +1,0 @@
-
-> [!IMPORTANT] 
-> Instead of calling the **String.Format** method or using [composite format strings](~/docs/standard/base-types/composite-formatting.md), you can use *interpolated strings* if your language supports them. An interpolated string is a string that contains *interpolated expressions*. Each interpolated expression is resolved with the expression's value and included in the result string when the string is assigned. For more information, see [String interpolation (C# Reference)](~/docs/csharp/language-reference/tokens/interpolated.md) and [Interpolated Strings (Visual Basic Reference)](~/docs/visual-basic/programming-guide/language-features/strings/interpolated-strings.md). 

@@ -16,7 +16,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # String Manipulation Summary (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
+Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  
 |------------|----------------------|  

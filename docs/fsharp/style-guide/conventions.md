@@ -601,7 +601,7 @@ Because there is no need for a class when interacting with the Visual Studio Cod
 
 ## Type abbreviations
 
-[Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to give a name to another type, such as a function signature or a more complex type. For example, the following alias gives a name to what can define a computation with [CNTK], a deep learning library:
+[Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to assign a label to another type, such as a function signature or a more complex type. For example, the following alias assigns a label to what's needed to define a computation with [CNTK](https://www.microsoft.com/cognitive-toolkit/), a deep learning library:
 
 ```fsharp
 open CNTK
@@ -610,7 +610,7 @@ open CNTK
 type Computation = DeviceDescriptor -> Variable -> Function
 ```
 
-The `Computation` name is a convenient way to represent any function which has the signature it is aliasing, and allows you to succinctly represent functions of this shape when they are passed into other functions.
+The `Computation` name is a convenient way to represent any function that matches the signature it is aliasing, and allows you to succinctly represent functions of this shape when they are passed into other functions.
 
 ### Avoid using type abbreviations to represent your domain
 
@@ -623,9 +623,11 @@ type BufferSize = int
 
 This can be confusing in multiple ways:
 
+* `BufferSize` is not an abstraction; it is just another name for an integer.
 * If `BufferSize` is exposed in a public API, it can easily be misinterpreted to mean more than just `int`. Generally, domain types have multiple attributes to them and are not primitive types like `int`. This abbreviation violates that assumption.
-* The naming convention (upper case) implies that this type holds more data.
+* The naming convention (PascalCase) implies that this type holds more data.
 * This alias does not offer increased clarity compared with providing a named argument to a function.
+* The abbreviation will not manifest in compiled IL; it is just an integer and this alias is a compile-time construct.
 
 ```fsharp
 module Networking =
@@ -634,4 +636,4 @@ module Networking =
         ...
 ```
 
-And finally, the most pitfall with type abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional attributes, nor any benefits from the type safety that single-case discriminated unions can give you.
+In summary, the pitfall with type abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional attributes, nor any benefits from the type system other than what `int` already has.

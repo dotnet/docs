@@ -977,18 +977,6 @@
         <summary>Gets the major version of the operating system.</summary>
         <value>An <see cref="T:System.Int32" /> that identifies the major version of the operating system.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The versions of Windows on which [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] can be run have the following major (right of the decimal) and minor (left of the decimal) version numbers:  
-  
--   [!INCLUDE[TLA#tla_winxp](~/includes/tlasharptla-winxp-md.md)]: 5.1  
-  
--   [!INCLUDE[TLA#tla_winnetsvrfam](~/includes/tlasharptla-winnetsvrfam-md.md)]: 5.2  
-  
--   [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)]: 6.0  
-  
- ]]></format>
         </remarks>
         <altmember cref="P:System.Printing.PrintServer.MinorVersion" />
       </Docs>
@@ -1011,18 +999,6 @@
         <summary>Gets the minor version within the major version of the operating system.</summary>
         <value>An <see cref="T:System.Int32" /> that identifies the minor version of the operating system.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The versions of Windows on which [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] can be run have the following major (right of the decimal) and minor (left of the decimal) version numbers:  
-  
--   [!INCLUDE[TLA#tla_winxp](~/includes/tlasharptla-winxp-md.md)]: 5.1  
-  
--   [!INCLUDE[TLA#tla_winnetsvrfam](~/includes/tlasharptla-winnetsvrfam-md.md)]: 5.2  
-  
--   [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)]: 6.0  
-  
- ]]></format>
         </remarks>
         <altmember cref="P:System.Printing.PrintServer.MajorVersion" />
       </Docs>
@@ -1222,14 +1198,6 @@
   
 ## Remarks  
  In practice, the value of this property is always the same as the value of <xref:System.Printing.PrintServer.MajorVersion%2A> except that the latter is a type <xref:System.Int32>.  
-  
- The versions of Windows on which [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] can be run have the following major (right of the decimal) and minor (left of the decimal) version numbers:  
-  
--   [!INCLUDE[TLA#tla_winxp](~/includes/tlasharptla-winxp-md.md)]: 5.1  
-  
--   [!INCLUDE[TLA#tla_winnetsvrfam](~/includes/tlasharptla-winnetsvrfam-md.md)]: 5.2  
-  
--   [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)]: 6.0  
   
  ]]></format>
         </remarks>

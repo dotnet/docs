@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] extends the [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] add-in model to allow [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui#plural](~/includes/tla2sharptla-uisharpplural-md.md)] to be passed between host applications and add-ins. [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] requires that the [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui#plural](~/includes/tla2sharptla-uisharpplural-md.md)] that are passed either directly or indirectly derive from <xref:System.Windows.FrameworkElement>. However, add-ins and host applications are typically run in separate application domains and are, consequently, separated by an isolation boundary. For this reason, the [!INCLUDE[TLA2#tla_winfx](~/includes/tla2sharptla-winfx-md.md)] add-in model requires the types that are passed across the isolation boundary to be remotable. A remotable type conforms to one of the following:  
+Windows Presentation Foundation (WPF) extends the .NET Framework add-in model to allow WPF UIs to be passed between host applications and add-ins. WPF requires that the WPF UIs that are passed either directly or indirectly derive from <xref:System.Windows.FrameworkElement>. However, add-ins and host applications are typically run in separate application domains and are, consequently, separated by an isolation boundary. For this reason, the .NET Framework add-in model requires the types that are passed across the isolation boundary to be remotable. A remotable type conforms to one of the following:  
   
 -   Implements the <xref:System.Runtime.Serialization.ISerializable> interface.  
   
@@ -31,7 +31,7 @@
   
  Once the <xref:System.AddIn.Contract.INativeHandleContract> is passed across the isolation boundary, it must be converted to a type that can be displayed by the host application or the add-in. In this case, the static <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> method is called to convert an <xref:System.AddIn.Contract.INativeHandleContract> to a <xref:System.Windows.FrameworkElement>.  
   
- For more detailed exposition of [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] add-ins, see [WPF Add-Ins Overview](~/docs/framework/wpf/app-development/wpf-add-ins-overview.md).  
+ For more detailed exposition of WPF add-ins, see [WPF Add-Ins Overview](~/docs/framework/wpf/app-development/wpf-add-ins-overview.md).  
   
  ]]></format>
     </remarks>

@@ -48,7 +48,7 @@
       </ReturnValue>
       <MemberValue>131072</MemberValue>
       <Docs>
-        <summary>The message box is displayed on the default desktop of the interactive window station. Specifies that the message box is displayed from a [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] windows service application in order to notify the user of an event.</summary>
+        <summary>The message box is displayed on the default desktop of the interactive window station. Specifies that the message box is displayed from a .NET Framework windows service application in order to notify the user of an event.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -124,7 +124,7 @@
       </ReturnValue>
       <MemberValue>2097152</MemberValue>
       <Docs>
-        <summary>The message box is displayed on the currently active desktop even if a user is not logged on to the computer. Specifies that the message box is displayed from a [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] windows service application in order to notify the user of an event.</summary>
+        <summary>The message box is displayed on the currently active desktop even if a user is not logged on to the computer. Specifies that the message box is displayed from a .NET Framework windows service application in order to notify the user of an event.</summary>
       </Docs>
     </Member>
   </Members>

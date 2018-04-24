@@ -564,7 +564,7 @@
 ## Remarks  
  This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
   
- Within the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] framework, the default value reported will always be `en-US` because the [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] framework automatically defaults to English. For other [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] frameworks this property must be explicitly set or it will not be exposed.  
+ Within the Windows Presentation Foundation (WPF) framework, the default value reported will always be `en-US` because the .NET Framework automatically defaults to English. For other user interface (UI) frameworks, this property must be explicitly set or it will not be exposed.  
   
  This property can exist on a per-control basis, but typically is only available on an application level.  
   

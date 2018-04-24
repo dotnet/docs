@@ -12,7 +12,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Printing and Reporting (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] offers several options for printing and reporting. The following topics provide overviews and links to the relevant documentation related to printing and reporting.  
+Visual Basic offers several options for printing and reporting. The following topics provide overviews and links to the relevant documentation related to printing and reporting.  
   
 ## In This Section  
  [PrintForm Component](../../../visual-basic/developing-apps/printing/printform-component.md)  

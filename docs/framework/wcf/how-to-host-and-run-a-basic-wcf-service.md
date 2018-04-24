@@ -165,7 +165,7 @@ This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../
   
 ### To verify the service is working  
   
-1.  Run the GettingStartedHost console application from inside [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]. When running on [!INCLUDE[wv](../../../includes/wv-md.md)] and later operating systems, the service must be run with administrator privileges. Because [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] was run with Administrator privileges, GettingStartedHost is also run with Administrator privileges. You can also start a new command prompt running it with Administrator privileges and run service.exe within it.  
+1.  Run the GettingStartedHost console application from inside [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]. When running on [!INCLUDE[wv](../../../includes/wv-md.md)] and later operating systems, the service must be run with administrator privileges. Because Visual Studio was run with Administrator privileges, GettingStartedHost is also run with Administrator privileges. You can also start a new command prompt running it with Administrator privileges and run service.exe within it.  
   
 2.  Open Internet Explorer and browse to the service's debug page at `http://localhost:8000/GettingStarted/CalculatorService`.  
   
@@ -419,7 +419,7 @@ End Module
 ```  
   
 > [!NOTE]
->  Services such as this one require permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to configure namespace reservations, see [Configuring HTTP and HTTPS](../../../docs/framework/wcf/feature-details/configuring-http-and-https.md). When running under [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)], the service.exe must be run with administrator privileges.  
+>  Services such as this one require permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to configure namespace reservations, see [Configuring HTTP and HTTPS](../../../docs/framework/wcf/feature-details/configuring-http-and-https.md). When running under Visual Studio, the service.exe must be run with administrator privileges.  
   
  Now the service is running. Proceed to [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). For troubleshooting information, see [Troubleshooting the Getting Started Tutorial](../../../docs/framework/wcf/troubleshooting-the-getting-started-tutorial.md).  
   

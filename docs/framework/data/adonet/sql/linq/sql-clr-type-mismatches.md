@@ -115,7 +115,7 @@ or col1 != col2
   
  In the previous case, you can get equivalent behavior in generating SQL, but the translation might not accurately reflect your intention.  
   
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not impose C# `null` or [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] `nothing` comparison semantics on SQL. Comparison operators are syntactically translated to their SQL equivalents. The semantics reflect SQL semantics as defined by server or connection settings. Two null values are considered unequal under default SQL Server settings (although you can change the settings to change the semantics). Regardless, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not consider server settings in query translation.  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not impose C# `null` or Visual Basic `nothing` comparison semantics on SQL. Comparison operators are syntactically translated to their SQL equivalents. The semantics reflect SQL semantics as defined by server or connection settings. Two null values are considered unequal under default SQL Server settings (although you can change the settings to change the semantics). Regardless, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not consider server settings in query translation.  
   
  A comparison with the literal `null` (`nothing`) is translated to the appropriate SQL version (`is null` or `is not null`).  
   
@@ -176,7 +176,7 @@ Where Col1 = Col2
     > [!NOTE]
     >  This `Like` operator behavior applies to C# only; the Visual Basic `Like` keyword is unchanged.  
   
--   Overflow is always checked in SQL but it has to be explicitly specified in C# (not in [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) to avoid wraparound. Given integer columns C1, C2 and C3, if C1+C2 is stored in C3 (Update T Set C3 = C1 + C2).  
+-   Overflow is always checked in SQL but it has to be explicitly specified in C# (not in Visual Basic) to avoid wraparound. Given integer columns C1, C2 and C3, if C1+C2 is stored in C3 (Update T Set C3 = C1 + C2).  
   
     ```  
     create table T3 (  
@@ -194,7 +194,7 @@ Where Col1 = Col2
   
 -   SQL performs symmetric arithmetic rounding while [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] uses banker’s rounding. See Knowledgebase article 196652 for additional details.  
   
--   By default, for common locales, character-string comparisons are case-insensitive in SQL. In Visual Basic and in C#, they are case-sensitive. For example, `s == "Food"` (`s = "Food"` in [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) and `s == "Food"` can yield different results if `s` is `food`.  
+-   By default, for common locales, character-string comparisons are case-insensitive in SQL. In Visual Basic and in C#, they are case-sensitive. For example, `s == "Food"` (`s = "Food"` in Visual Basic) and `s == "Food"` can yield different results if `s` is `food`.  
   
     ```  
     -- Assume default US-English locale (case insensitive).  

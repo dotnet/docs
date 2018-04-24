@@ -31,10 +31,10 @@ ms.workload:
  Workflow debugging also supports using Visual Studio’s infrastructure to attach to a process. This enables the workflow author to debug a workflow running in a different host environment such as Internet Information Services (IIS) 7.0.  
   
 ## Remote Debugging  
- [!INCLUDE[wf](../../../includes/wf-md.md)] remote debugging functions the same as remote debugging for other [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] components. For information on using remote debugging, see [How to: Enable Remote Debugging](http://go.microsoft.com/fwlink/?LinkId=196257).  
+ [!INCLUDE[wf](../../../includes/wf-md.md)] remote debugging functions the same as remote debugging for other Visual Studio components. For information on using remote debugging, see [How to: Enable Remote Debugging](http://go.microsoft.com/fwlink/?LinkId=196257).  
   
 > [!NOTE]
->  If the workflow application targets the x86 architecture and is hosted on a computer running a 64 bit operating system, then remote debugging will not work unless [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] is installed on the remote computer or the target for the workflow application is changed to **Any CPU**.  
+>  If the workflow application targets the x86 architecture and is hosted on a computer running a 64 bit operating system, then remote debugging will not work unless Visual Studio is installed on the remote computer or the target for the workflow application is changed to **Any CPU**.  
   
 ## Extending the Workflow Debugging Service  
  The workflow debugger service is now public and can be used to create custom applications such as monitoring, simulation, and debugging in a re-hosted designer. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] the <xref:System.Activities.Presentation.Debug.DebuggerService> topic.

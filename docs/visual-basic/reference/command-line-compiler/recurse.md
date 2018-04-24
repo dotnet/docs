@@ -37,13 +37,13 @@ Compiles source-code files in all child directories of either the specified dire
 >  The `-recurse` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
- The following command compiles all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] files in the current directory.  
+ The following command compiles all Visual Basic files in the current directory.  
   
 ```console
 vbc *.vb  
 ```  
   
- The following command compiles all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] files in the `Test\ABC` directory and any directories below it, and then generates `Test.ABC.dll`.  
+ The following command compiles all Visual Basic files in the `Test\ABC` directory and any directories below it, and then generates `Test.ABC.dll`.  
   
 ```console
 vbc -target:library -out:Test.ABC.dll -recurse:Test\ABC\*.vb  

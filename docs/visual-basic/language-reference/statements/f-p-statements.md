@@ -13,7 +13,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # F-P Statements
-The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
+The following table contains a listing of Visual Basic language statements.  
   
 |||||  
 |---|---|---|---|  

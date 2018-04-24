@@ -85,6 +85,6 @@ The .NET Framework for Windows Store apps is a subset of the full .NET Framework
     [!code-vb[System.IO.WindowsRuntimeStreamExtensionsEx#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/vb/mainpage.xaml.vb#2)]  
   
 ## See Also  
- [Quickstart: Reading and writing a file (Windows)](http://msdn.microsoft.com/library/windows/apps/hh464978.aspx)  
+ [Quickstart: Reading and writing a file (Windows)](https://msdn.microsoft.com/library/windows/apps/hh464978.aspx)  
  [.NET for Windows Store apps overview](http://msdn.microsoft.com/library/windows/apps/br230302.aspx)  
- [.NET for Windows Store apps – supported APIs](http://msdn.microsoft.com/library/windows/apps/br230232.aspx)
+ [.NET for Windows Store apps – supported APIs](https://msdn.microsoft.com/library/windows/apps/br230232.aspx)

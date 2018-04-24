@@ -1,13 +1,9 @@
 ---
 title: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "components [.NET Framework], manifest"
@@ -16,7 +12,6 @@ helpviewer_keywords:
   - "registration-free COM interop, configuring .NET-based components"
   - "activation, registration-free"
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -130,7 +125,7 @@ Registration-free activation for .NET Framework-based components is only slightl
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
            <assemblyIdentity  
                         name="myOrganization.myDivision.myManagedComp"  
-                        version="1.2.3.4" />  
+                        version="1.2.3.4"   
                         publicKeyToken="8275b28176rcbbef"  
            />  
            <clrClass  
@@ -179,7 +174,7 @@ Registration-free activation for .NET Framework-based components is only slightl
      Again, `myresource.res` is the name of the resource file containing embedded resource.  
   
 ## See Also  
- [Registration-Free COM Interop](../../../docs/framework/interop/registration-free-com-interop.md)  
- [Requirements for Registration-Free COM Interop](http://msdn.microsoft.com/library/0c43bc57-eecf-4e6c-8114-490141cce4da)  
- [Configuring COM Components for Registration-Free Activation](http://msdn.microsoft.com/library/bfe9b02f-d964-4784-960e-a1f94692fbfe)  
- [Registration-Free Activation of .NET-Based Components: A Walkthrough](http://go.microsoft.com/fwlink/?LinkId=158812)
+ [Registration-Free COM Interop](registration-free-com-interop.md)  
+ [Requirements for Registration-Free COM Interop](https://msdn.microsoft.com/library/0c43bc57-eecf-4e6c-8114-490141cce4da(v=vs.100)))  
+ [Configuring COM Components for Registration-Free Activation](https://msdn.microsoft.com/library/bfe9b02f-d964-4784-960e-a1f94692fbfe(v=vs.100)))  
+ [Registration-Free Activation of .NET-Based Components: A Walkthrough](https://msdn.microsoft.com/library/ms973915.aspx)

@@ -88,7 +88,7 @@ RoundRobinMessageFilter roundRobinFilter2 = new RoundRobinMessageFilter("group1"
   
 2.  To open **Solution Explorer**, select **Solution Explorer** from the **View** menu.  
   
-3.  Press F5 or CTRL+SHIFT+B in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+3.  Press F5 or CTRL+SHIFT+B in Visual Studio.  
   
     1.  If you would like to auto-launch the necessary projects when you press F5, right-click the solution and select **Properties**. Select the **Startup Project** node under **Common Properties** in the left pane. Select the **Multiple Startup Projects**  radio button and set all of the projects to have the **Start** action.  
   

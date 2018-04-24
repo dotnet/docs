@@ -19,9 +19,9 @@ include a simpler syntax, rules for conversions based on number (referred to as 
 and types of elements, and
 consistent rules for copies and assignments. As a tradeoff, Tuples do not
 support some of the object oriented idioms associated with inheritance. You
-can get an overview in the section on [Tuples in the What's new in C# 7](whats-new/csharp-7.md#tuples) topic.
+can get an overview in the section on [Tuples in the What's new in C# 7.0](whats-new/csharp-7.md#tuples) topic.
 
-In this topic, you'll learn the language rules governing Tuples in C# 7,
+In this topic, you'll learn the language rules governing Tuples in C# 7.0 and later,
 different ways to use them, and initial guidance on working with Tuples.
 
 > [!NOTE]

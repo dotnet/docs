@@ -22,7 +22,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Loop Structures (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] loop structures allow you to run one or more lines of code repetitively. You can repeat the statements in a loop structure until a condition is `True`, until a condition is `False`, a specified number of times, or once for each element in a collection.  
+Visual Basic loop structures allow you to run one or more lines of code repetitively. You can repeat the statements in a loop structure until a condition is `True`, until a condition is `False`, a specified number of times, or once for each element in a collection.  
   
  The following illustration shows a loop structure that runs a set of statements until a condition becomes true.  
   

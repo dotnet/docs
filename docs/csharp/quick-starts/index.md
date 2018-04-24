@@ -18,13 +18,13 @@ that you can run in your browser.
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
-numbers, and booleans. It's all interactive, and you'll be writing code
+numbers, and booleans. It's all interactive, and you'll be writing and running code
 within minutes. These first lessons assume no prior knowledge of
 programming or the C# language.
 
 All the quickstarts following the Hello World lesson are available using
-the online browser experience or on your own development
-environment. At the end of each lesson, you decide if you want to continue
+the online browser experience or [in your own local development
+environment](local-environment.md). At the end of each quickstart, you decide if you want to continue
 with the next quickstart online or on your own machine. There are links
 to help you setup your environment and continue with the next quickstart
 on your machine.
@@ -42,7 +42,7 @@ numeric types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#. This quickstart is also available
 [to run locally on your machine](numbers-in-csharp-local.md).
 
-This quickstart assumes that you have finished the [Hello world](hello-world.yml) tutorial.
+This quickstart assumes that you have finished the [Hello world](hello-world.yml) lesson.
 
 ## [Branches and loops](branches-and-loops.yml)
 
@@ -52,14 +52,14 @@ basics of control flow, which is the basis of how programs make decisions and ch
 different actions. This quickstart is also available
 [to run locally on your machine](branches-and-loops-local.md).
 
-This beginning lesson assumes that you have finished the [Hello World](hello-world.yml) and
+This quickstart assumes that you have finished the [Hello world](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
 
-## [Interpolated strings](interpolated-strings.yml)
+## [String interpolation](interpolated-strings.yml)
 
-The [interpolated strings](interpolated-strings.yml) quickstart shows you how to insert an expression into a larger string. You'll learn how to define an interpolated expression, how to create a result string from an interpolated string that has one or more interpolated expressions, and how to control the formatting, column width, and alignment of expressions included in the result string. 
+The [String interpolation](interpolated-strings.yml) quickstart shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string. This quickstart is also available [to run locally on your machine](interpolated-strings-local.md).
 
-This beginning lesson assumes that you have finished the [Hello World](hello-world.yml), [Numbers in C#](numbers-in-csharp.yml), and [Branches and loops](branches-and-loops.yml) lessons.
+This quickstart assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp.yml), and [Branches and loops](branches-and-loops.yml) lessons.
 
 ## [List collection](list-collection.yml)
 
@@ -67,7 +67,7 @@ The [List collection](list-collection.yml) lesson gives you
 a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. This quickstart is also
 available [to run locally on your machine](arrays-and-collections.md).
 
-This beginning quickstart assumes that you have finished the quickstarts listed above.
+This quickstart assumes that you have finished the lessons listed above.
 
 ## [Introduction to classes](introduction-to-classes.md)
 

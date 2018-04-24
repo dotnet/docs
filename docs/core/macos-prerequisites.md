@@ -62,9 +62,9 @@ Download and install the .NET Core SDK from [.NET Downloads](https://www.microso
 
 ---
 
-## Increase the maximum open file limit
+## Increase the maximum open file limit (.NET Core versions before .NET Core SDK 2.0.2) 
 
-The default open file limit on macOS may not be sufficient for some .NET Core workloads, such as restoring projects or running unit tests.
+In older .NET Core versions (before .NET Core SDK 2.0.2), the default open file limit on macOS may not be sufficient for some .NET Core workloads, such as restoring projects or running unit tests.
 
 You can increase this limit by following these steps:
 

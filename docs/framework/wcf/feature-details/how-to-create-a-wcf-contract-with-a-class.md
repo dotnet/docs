@@ -30,7 +30,7 @@ The preferred way of creating a [!INCLUDE[indigo1](../../../../includes/indigo1-
   
 ### Creating a Windows Communication Foundation contract with a class  
   
-1.  Create a new class using [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], C#, or any other common language runtime language.  
+1.  Create a new class using Visual Basic, C#, or any other common language runtime language.  
   
 2.  Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the class.  
   

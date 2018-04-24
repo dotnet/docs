@@ -47,10 +47,9 @@
       },
       {
         "group": "netcore",
-        "src": "docs/core",
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "core/**/*.md",
+          "core/**/*.yml"
         ]
       },
       {

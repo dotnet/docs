@@ -1,1 +1,0 @@
-Microsoft Internet Information Services (IIS) 5.0

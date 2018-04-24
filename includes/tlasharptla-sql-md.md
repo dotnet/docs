@@ -1,1 +1,0 @@
-Structured Query Language (SQL)

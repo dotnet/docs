@@ -1,1 +1,0 @@
-Microsoft Direct3D

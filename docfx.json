@@ -82,14 +82,12 @@
       },
       {
         "group": "netcore",
-        "src": "docs/core",
         "files": [
-          "images/**",
-          "**/*.png",
-          "**/*.svg",
-          "**/*.jpg",
-          "**/*.gif",
-          "**/*.bmp"
+          "core/**/*.png",
+          "core/**/*.svg",
+          "core/**/*.jpg",
+          "core/**/*.gif",
+          "core/**/*.bmp"
         ],        
         "exclude": [
           "**/obj/**",

@@ -22,7 +22,7 @@ This sample demonstrates how to create a workflow that uses the <xref:System.Act
   
 #### To examine TravelRuleLibrary  
   
-1.  Using [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)], open the InteropWith35RuleSet.sln solution file.  
+1.  Using Visual Studio, open the InteropWith35RuleSet.sln solution file.  
   
 2.  Open the TravelRuleSet.cs in the workflow designer.  
   

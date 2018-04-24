@@ -31,8 +31,8 @@ This section contains descriptions and links to downloadable network programming
  [HttpListener Technology Sample](https://msdn.microsoft.com/en-us/library/y7cbb2y2(v=vs.85).aspx)  
  Shows how to process HTTP requests from within an application.  
  
- [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90)\)
- Demonstrates how to use the features of the xref:System.Net.HttpListener class to create an HTTP server that routes calls to a hosted ASP.NET application.
+ [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90))   
+ Demonstrates how to use the features of the <xref:System.Net.HttpListener?displayProperty=nameWithType> class to create an HTTP server that routes calls to a hosted ASP.NET application.
   
  [Mailer Technology Sample](https://msdn.microsoft.com/en-us/library/whw7xbk2(v=vs.85).aspx)  
  Shows how to send email messages from a client application.  

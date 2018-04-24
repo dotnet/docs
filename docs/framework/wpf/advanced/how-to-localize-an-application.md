@@ -85,7 +85,7 @@ This tutorial explains how to create a localized application by using the LocBam
 <a name="build_locbaml"></a>   
 ## Build the LocBaml Tool  
   
-1.  All the files necessary to build LocBaml are located in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] samples. Download the [!INCLUDE[TLA#tla_lhcshrp](../../../../includes/tlasharptla-lhcshrp-md.md)] files from the [LocBaml Tool Sample](http://go.microsoft.com/fwlink/?LinkID=160016).  
+1.  All the files necessary to build LocBaml are located in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] samples. Download the C# files from the [LocBaml Tool Sample](http://go.microsoft.com/fwlink/?LinkID=160016).  
   
 2.  From the command line, run the project file (locbaml.csproj) to build the tool:  
   

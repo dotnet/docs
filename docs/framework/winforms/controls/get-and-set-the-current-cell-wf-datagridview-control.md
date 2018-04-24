@@ -49,7 +49,7 @@ Interaction with the <xref:System.Windows.Forms.DataGridView> often requires tha
 ## Compiling the Code  
  This example requires:  
   
--   <xref:System.Windows.Forms.Button> controls named `getCurrentCellButton` and `setCurrentCellButton`. In [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], you must attach the <xref:System.Windows.Forms.Control.Click> events for each button to the associated event handler in the example code.  
+-   <xref:System.Windows.Forms.Button> controls named `getCurrentCellButton` and `setCurrentCellButton`. In Visual C#, you must attach the <xref:System.Windows.Forms.Control.Click> events for each button to the associated event handler in the example code.  
   
 -   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   

@@ -930,8 +930,8 @@
         <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" />
       </Parameters>
       <Docs>
-        <param name="sources">One or more [!INCLUDE[csprcs](~/includes/csprcs-md.md)] source files.</param>
-        <summary>Specifies one or more [!INCLUDE[csprcs](~/includes/csprcs-md.md)] source files.</summary>
+        <param name="sources">One or more Visual C# source files.</param>
+        <summary>Specifies one or more Visual C# source files.</summary>
         <returns>
           <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

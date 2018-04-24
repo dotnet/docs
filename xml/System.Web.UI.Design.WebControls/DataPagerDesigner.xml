@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a visual designer, when you switch to a designer view (such as `Design` view in [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)]), the markup that describes the <xref:System.Web.UI.WebControls.DataPager> control is parsed. A design-time version of the control is then created on the design surface. When you switch to source view, the design-time control is persisted as markup for the Web page.  
+ In a visual designer, when you switch to a designer view (such as `Design` view in Visual Studio]), the markup that describes the <xref:System.Web.UI.WebControls.DataPager> control is parsed. A design-time version of the control is then created on the design surface. When you switch to source view, the design-time control is persisted as markup for the Web page.  
   
  The properties of the <xref:System.Web.UI.Design.WebControls.DataPagerDesigner> class provide the following functionality:  
   

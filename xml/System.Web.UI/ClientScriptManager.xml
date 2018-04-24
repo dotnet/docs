@@ -595,7 +595,7 @@
  [!code-csharp[System.Web.UI.ClientScriptManager4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/cs/resource.cs#2)]
  [!code-vb[System.Web.UI.ClientScriptManager4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/vb/resource.vb#2)]  
   
- This example requires a JavaScript file named `Script_include.js`. The .js file is an embedded resource in the assembly that contains the `ClientScriptResourceLabel` object. If you are using [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)], in the Properties window of the class library project, set **Build Action** to **Embedded Resource** when the script file is selected. If you are compiling the library at the command line, use the  switch to embed the resource.  
+ This example requires a JavaScript file named `Script_include.js`. The .js file is an embedded resource in the assembly that contains the `ClientScriptResourceLabel` object. If you are using Visual Studio], in the Properties window of the class library project, set **Build Action** to **Embedded Resource** when the script file is selected. If you are compiling the library at the command line, use the  switch to embed the resource.  
   
 ```  
 function DoClick() {Form1.Message.value='Text from resource script.'}  

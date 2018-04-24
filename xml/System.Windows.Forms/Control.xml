@@ -4300,7 +4300,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DragEventArgs.X%2A> and <xref:System.Windows.Forms.DragEventArgs.Y%2A> properties of the <xref:System.Windows.Forms.DragEventArgs> are in screen coordinates, not client coordinates. The following line of [!INCLUDE[csprcs](~/includes/csprcs-md.md)] code converts the properties to a client <xref:System.Drawing.Point>.  
+ The <xref:System.Windows.Forms.DragEventArgs.X%2A> and <xref:System.Windows.Forms.DragEventArgs.Y%2A> properties of the <xref:System.Windows.Forms.DragEventArgs> are in screen coordinates, not client coordinates. The following line of Visual C# code converts the properties to a client <xref:System.Drawing.Point>.  
   
 ```  
 Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));  
@@ -4380,7 +4380,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
 -   If the value of <xref:System.Windows.Forms.DragAction> is `Cancel`, the <xref:System.Windows.Forms.Control.DragLeave> event is raised.  
   
     > [!NOTE]
-    >  The <xref:System.Windows.Forms.DragEventArgs.X%2A> and <xref:System.Windows.Forms.DragEventArgs.Y%2A> properties of the <xref:System.Windows.Forms.DragEventArgs> are in screen coordinates, not client coordinates. The following line of [!INCLUDE[csprcs](~/includes/csprcs-md.md)] code converts the properties to a client <xref:System.Drawing.Point>.  
+    >  The <xref:System.Windows.Forms.DragEventArgs.X%2A> and <xref:System.Windows.Forms.DragEventArgs.Y%2A> properties of the <xref:System.Windows.Forms.DragEventArgs> are in screen coordinates, not client coordinates. The following line of Visual C# code converts the properties to a client <xref:System.Drawing.Point>.  
   
     ```  
     Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));  
@@ -7566,7 +7566,7 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.Drawing.Point> class is a value type (`Structure` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], `struct` in [!INCLUDE[csprcs](~/includes/csprcs-md.md)]), it is returned by value, meaning accessing the property returns a copy of the upper-left point of the control. So, adjusting the <xref:System.Drawing.Point.X%2A> or <xref:System.Drawing.Point.Y%2A> properties of the <xref:System.Drawing.Point> returned from this property will not affect the <xref:System.Windows.Forms.Control.Left%2A>, <xref:System.Windows.Forms.Control.Right%2A>, <xref:System.Windows.Forms.Control.Top%2A>, or <xref:System.Windows.Forms.Control.Bottom%2A> property values of the control. To adjust these properties set each property value individually, or set the <xref:System.Windows.Forms.Control.Location%2A> property with a new <xref:System.Drawing.Point>.  
+ Because the <xref:System.Drawing.Point> class is a value type (`Structure` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], `struct` in Visual C#), it is returned by value, meaning accessing the property returns a copy of the upper-left point of the control. So, adjusting the <xref:System.Drawing.Point.X%2A> or <xref:System.Drawing.Point.Y%2A> properties of the <xref:System.Drawing.Point> returned from this property will not affect the <xref:System.Windows.Forms.Control.Left%2A>, <xref:System.Windows.Forms.Control.Right%2A>, <xref:System.Windows.Forms.Control.Top%2A>, or <xref:System.Windows.Forms.Control.Bottom%2A> property values of the control. To adjust these properties set each property value individually, or set the <xref:System.Windows.Forms.Control.Location%2A> property with a new <xref:System.Drawing.Point>.  
   
  If the <xref:System.Windows.Forms.Control> is a <xref:System.Windows.Forms.Form>, the <xref:System.Windows.Forms.Control.Location%2A> property value represents the upper-left corner of the <xref:System.Windows.Forms.Form> in screen coordinates.  
   
@@ -8588,7 +8588,7 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property can be used at run time to evaluate the object by name rather than type and programmatic name. Because the <xref:System.Windows.Forms.Control.Name%2A> property returns a <xref:System.String> type, it can be evaluated in case-style logic statements (`Select` statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], `switch` statement in [!INCLUDE[csprcs](~/includes/csprcs-md.md)] and [!INCLUDE[vcprvc](~/includes/vcprvc-md.md)]).  
+ The <xref:System.Windows.Forms.Control.Name%2A> property can be used at run time to evaluate the object by name rather than type and programmatic name. Because the <xref:System.Windows.Forms.Control.Name%2A> property returns a <xref:System.String> type, it can be evaluated in case-style logic statements (`Select` statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], `switch` statement in Visual C# and [!INCLUDE[vcprvc](~/includes/vcprvc-md.md)]).  
   
    
   
@@ -15849,7 +15849,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.Drawing.Size> class is a value type (`Structure` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], `struct` in [!INCLUDE[csprcs](~/includes/csprcs-md.md)]), it is returned by value, meaning accessing the property returns a copy of the size of the control. So, adjusting the <xref:System.Drawing.Size.Width%2A> or <xref:System.Drawing.Size.Height%2A> properties of the <xref:System.Drawing.Size> returned from this property will not affect the <xref:System.Windows.Forms.Control.Width%2A> or <xref:System.Windows.Forms.Control.Height%2A> of the control. To adjust the <xref:System.Windows.Forms.Control.Width%2A> or <xref:System.Windows.Forms.Control.Height%2A> of the control, you must set the control's <xref:System.Windows.Forms.Control.Width%2A> or <xref:System.Windows.Forms.Control.Height%2A> property, or set the <xref:System.Windows.Forms.Control.Size%2A> property with a new <xref:System.Drawing.Size>.  
+ Because the <xref:System.Drawing.Size> class is a value type (`Structure` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], `struct` in Visual C#), it is returned by value, meaning accessing the property returns a copy of the size of the control. So, adjusting the <xref:System.Drawing.Size.Width%2A> or <xref:System.Drawing.Size.Height%2A> properties of the <xref:System.Drawing.Size> returned from this property will not affect the <xref:System.Windows.Forms.Control.Width%2A> or <xref:System.Windows.Forms.Control.Height%2A> of the control. To adjust the <xref:System.Windows.Forms.Control.Width%2A> or <xref:System.Windows.Forms.Control.Height%2A> of the control, you must set the control's <xref:System.Windows.Forms.Control.Width%2A> or <xref:System.Windows.Forms.Control.Height%2A> property, or set the <xref:System.Windows.Forms.Control.Size%2A> property with a new <xref:System.Drawing.Size>.  
   
 > [!NOTE]
 >  To maintain better performance, do not set the <xref:System.Drawing.Size> of a control in its constructor. The preferred method is to override the <xref:System.Windows.Forms.Control.DefaultSize%2A> property.  

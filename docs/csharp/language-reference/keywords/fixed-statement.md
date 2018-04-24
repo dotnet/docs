@@ -17,7 +17,7 @@ ms.author: "wiwagn"
 
 The `fixed` statement prevents the garbage collector from relocating a movable variable. The `fixed` statement is only permitted in an [unsafe](unsafe.md) context. `Fixed` can also be used to create [fixed size buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md).
 
-The `fixed` statement sets a pointer to a managed variable and "pins" that variable during the execution of the statement. Without `fixed`, pointers to movable managed variables would be of little use since garbage collection could relocate the variables unpredictably. The C# compiler only lets you assign a pointer to a managed variable in a `fixed` statement.
+The `fixed` statement sets a pointer to a managed variable and "pins" that variable during the execution of the statement. Pointers to movable managed variables are useful only in a `fixed` context. Ouside a `fixed` context, garbage collection could relocate the variables unpredictably. The C# compiler only lets you assign a pointer to a managed variable in a `fixed` statement.
 
 [!code-csharp[Accessing fixed memory](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#1)]
 
@@ -25,7 +25,7 @@ You can initialize a pointer by using an array, a string, a fixed-size buffer, o
 
 [!code-csharp[Initializing fixed size buffers](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#2)]
 
-You can initialize multiple pointers, as long as they are all of the same type.
+Multiple pointers can be initialized in one statement if they are all the same type:
 
 ```csharp
 fixed (byte* ps = srcarray, pd = dstarray) {...}
@@ -35,7 +35,15 @@ To initialize pointers of different types, simply nest `fixed` statements, as sh
 
 [!code-csharp[Initializing multiple pointers](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#3)]
 
-After the code in the statement is executed, any pinned variables are unpinned and subject to garbage collection. Therefore, do not point to those variables outside the `fixed` statement.
+After the code in the statement is executed, any pinned variables are unpinned and subject to garbage collection. Therefore, do not point to those variables outside the `fixed` statement. The variables declared in the `fixed` statement are scoped to that statement, making this easier:
+
+```csharp
+fixed (byte* ps = srcarray, pd = dstarray) 
+{
+   ...
+}
+// ps and pd are no longer in scope here.
+```
 
 > [!NOTE]
 > Pointers initialized in fixed statements cannot be modified.

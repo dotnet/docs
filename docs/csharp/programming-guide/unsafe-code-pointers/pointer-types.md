@@ -64,7 +64,7 @@ You cannot apply the indirection operator to a pointer of type `void*`. However,
 
 A pointer can be `null`. Applying the indirection operator to a null pointer causes an implementation-defined behavior.
 
-Be aware that passing pointers between methods can cause undefined behavior. Consider a method that returns a pointer to a local variable through an `in`, `out` or `ref` parameter or as the function result. If the pointer was set in a fixed block, the variable to which it points may no longer be fixed.
+Passing pointers between methods can cause undefined behavior. Consider a method that returns a pointer to a local variable through an `in`, , or `ref` parameter or as the function result. If the pointer was set in a fixed block, the variable to which it points may no longer be fixed.
 
 The following table lists the operators and statements that can operate on pointers in an unsafe context:
 

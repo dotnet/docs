@@ -15,7 +15,7 @@ ms.author: "wiwagn"
 ---
 # where (generic type constraint) (C# Reference)
 
-The `where` clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, or delegate. For example, you can declare a generic class, `MyGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable%601> interface:
+The `where` clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, delegate, or local function. For example, you can declare a generic class, `MyGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable%601> interface:
 
 [!code-csharp[using an interface constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#1)]
 
@@ -34,7 +34,7 @@ The `where` clause may also include an `unmanaged` constraint. The `unmanaged` c
 
 [!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#4)]
 
-The `where` clause may also include a constructor constraint, `new()`. That constraint makes it possible to create an instance of a type parameter using the new operator. The [new() Constraint](new-constraint.md) lets the compiler know that any type argument supplied must have an accessible parameterless--or default-- constructor. For example:
+The `where` clause may also include a constructor constraint, `new()`. That constraint makes it possible to create an instance of a type parameter using the `new` operator. The [new() Constraint](new-constraint.md) lets the compiler know that any type argument supplied must have an accessible parameterless--or default-- constructor. For example:
 
 [!code-csharp[using the new constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#5)]
 

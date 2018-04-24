@@ -100,7 +100,7 @@ sqlmetal [options] [<input file>]
   
 -   Generating a code output file.  
   
-     By using the appropriate command-line options, you can produce [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] or C# source code, or you can produce an XML mapping file.  
+     By using the appropriate command-line options, you can produce Visual Basic or C# source code, or you can produce an XML mapping file.  
   
  To extract the metadata from an .mdf file, you must specify the name of the .mdf file after all other options.  
   

@@ -69,7 +69,7 @@ ms.workload:
  For more information, see <xref:System.Data.Linq.Mapping.ColumnAttribute>.  
   
 > [!NOTE]
->  AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including [!INCLUDE[vb_current_short](../../../../../../includes/vb-current-short-md.md)]. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
+>  AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including Visual Basic. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
   
 ## AssociationAttribute Attribute  
  Use this attribute to designate a property to represent an association in the database, such as a foreign key to primary key relationship. For more information about relationships, see [How to: Map Database Relationships](../../../../../../docs/framework/data/adonet/sql/linq/how-to-map-database-relationships.md).  
@@ -88,7 +88,7 @@ ms.workload:
  For more information, see <xref:System.Data.Linq.Mapping.AssociationAttribute>.  
   
 > [!NOTE]
->  AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including [!INCLUDE[vb_current_short](../../../../../../includes/vb-current-short-md.md)]. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
+>  AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including Visual Basic. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
   
 ## InheritanceMappingAttribute Attribute  
  Use this attribute to map an inheritance hierarchy.  

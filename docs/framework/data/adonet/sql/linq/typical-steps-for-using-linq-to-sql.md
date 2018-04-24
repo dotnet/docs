@@ -42,7 +42,7 @@ To implement a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md
   
 ### 2. Select the kind of code you want to generate.  
   
--   A C# or [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] source code file for attribute-based mapping.  
+-   A C# or Visual Basic source code file for attribute-based mapping.  
   
      You then include this code file in your Visual Studio project. For more information, see [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md).  
   

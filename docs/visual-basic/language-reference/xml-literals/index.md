@@ -20,7 +20,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # XML Literals (Visual Basic)
-The topics in this section document the syntax of XML literals in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The XML literal syntax enables you to incorporate XML directly in your code.  
+The topics in this section document the syntax of XML literals in Visual Basic. The XML literal syntax enables you to incorporate XML directly in your code.  
   
 ## In This Section  
   

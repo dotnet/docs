@@ -15,11 +15,11 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Variable uses an Automation type not supported in Visual Basic
-You tried to use a variable defined in a type library or object library that has a data type not supported by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+You tried to use a variable defined in a type library or object library that has a data type not supported by Visual Basic.  
   
 ## To correct this error  
   
--   Use a variable of a type recognized by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+-   Use a variable of a type recognized by Visual Basic.  
   
      -or-  
   

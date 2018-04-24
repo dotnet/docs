@@ -88,7 +88,7 @@ Dim contacts = _
 </Contacts>  
 ```  
   
- The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler translates XML literals into [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] method calls.  
+ The Visual Basic compiler translates XML literals into [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] method calls.  
   
  For more information, see [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md).  
   

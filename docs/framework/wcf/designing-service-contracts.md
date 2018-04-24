@@ -103,7 +103,7 @@ Function Hello (ByVal greeting As String) As String
   
  This operation signature dictates the form of underlying message exchange. If no correlation existed, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] cannot determine for which operation the return value is intended.  
   
- Note that unless you specify a different underlying message pattern, even service operations that return `void` (`Nothing` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) are request/reply message exchanges. The result for your operation is that unless a client invokes the operation asynchronously, the client stops processing until the return message is received, even though that message is empty in the normal case. The following C# code example shows an operation that does not return until the client has received an empty message in response.  
+ Note that unless you specify a different underlying message pattern, even service operations that return `void` (`Nothing` in Visual Basic) are request/reply message exchanges. The result for your operation is that unless a client invokes the operation asynchronously, the client stops processing until the return message is received, even though that message is empty in the normal case. The following C# code example shows an operation that does not return until the client has received an empty message in response.  
   
 ```csharp  
 [OperationContractAttribute]  
@@ -157,7 +157,7 @@ Sub Hello (ByVal greeting As String)
 >  When a service receives a duplex message, it looks at the `ReplyTo` element in that incoming message to determine where to send the reply. If the channel that is used to receive the message is not secured, then an untrusted client could send a malicious message with a target machine's `ReplyTo`, leading to a denial of service (DOS) of that target machine.  
   
 ##### Out and Ref Parameters  
- In most cases, you can use `in` parameters (`ByVal` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) and `out` and `ref` parameters (`ByRef` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]). Because both `out` and `ref` parameters indicate that data is returned from an operation, an operation signature such as the following specifies that a request/reply operation is required even though the operation signature returns `void`.  
+ In most cases, you can use `in` parameters (`ByVal` in Visual Basic) and `out` and `ref` parameters (`ByRef` in Visual Basic). Because both `out` and `ref` parameters indicate that data is returned from an operation, an operation signature such as the following specifies that a request/reply operation is required even though the operation signature returns `void`.  
   
 ```csharp  
 [ServiceContractAttribute]  

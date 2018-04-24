@@ -38,7 +38,7 @@ In this task, you will create a sample data service that uses [!INCLUDE[ssAstori
   
 1.  In Visual Studio, on the **File** menu, select **New**, and then select **Project**.  
   
-2.  In the **New Project** dialog box, under either [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] select the **Web** template, and then select **ASP.NET Web Application**.  
+2.  In the **New Project** dialog box, under either Visual Basic or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] select the **Web** template, and then select **ASP.NET Web Application**.  
   
     > [!NOTE]
     >  If you use Visual Studio Web Developer, you must create a new Web site instead of a new Web application.  

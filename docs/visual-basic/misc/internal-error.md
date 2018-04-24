@@ -13,7 +13,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Internal error (Visual Basic)
-An internal malfunction has occurred in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+An internal malfunction has occurred in Visual Basic.  
   
 ## To correct this error  
   

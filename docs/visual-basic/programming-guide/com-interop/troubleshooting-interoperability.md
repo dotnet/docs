@@ -40,7 +40,7 @@ When you interoperate between COM and the managed code of the [!INCLUDE[dnprdnsh
  Managed class hierarchies flatten out when exposed as COM objects. For example, if you define a base class with a member, and then inherit the base class in a derived class that is exposed as a COM object, clients that use the derived class in the COM object will not be able to use the inherited members. Base class members can be accessed from COM objects only as instances of a base class, and then only if the base class is also created as a COM object.  
   
 ## Overloaded Methods  
- Although you can create overloaded methods with [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], they are not supported by COM. When a class that contains overloaded methods is exposed as a COM object, new method names are generated for the overloaded methods.  
+ Although you can create overloaded methods with Visual Basic, they are not supported by COM. When a class that contains overloaded methods is exposed as a COM object, new method names are generated for the overloaded methods.  
   
  For example, consider a class that has two overloads of the `Synch` method. When the class is exposed as a COM object, the new generated method names could be `Synch` and `Synch_2`.  
   

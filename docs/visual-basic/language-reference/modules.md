@@ -13,7 +13,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Modules (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several modules that enable you to simplify common tasks in your code, including manipulating strings, performing mathematical calculations, getting system information, performing file and directory operations, and so on. The following table lists the modules provided by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+Visual Basic provides several modules that enable you to simplify common tasks in your code, including manipulating strings, performing mathematical calculations, getting system information, performing file and directory operations, and so on. The following table lists the modules provided by Visual Basic.  
   
 |||  
 |---|---|  

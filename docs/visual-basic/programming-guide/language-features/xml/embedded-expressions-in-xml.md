@@ -78,7 +78,7 @@ Embedded expressions enable you to create XML literals that contain expressions 
  For more information about using an embedded expression in a particular type of literal, see [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md), [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
   
 ## Scoping Rules  
- The compiler converts each XML literal into a constructor call for the appropriate literal type. The literal content and embedded expressions in an XML literal are passed as arguments to the constructor. This means that all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] programming elements available to an XML literal are also available to its embedded expressions.  
+ The compiler converts each XML literal into a constructor call for the appropriate literal type. The literal content and embedded expressions in an XML literal are passed as arguments to the constructor. This means that all Visual Basic programming elements available to an XML literal are also available to its embedded expressions.  
   
  Within an XML literal, you can access the XML namespace prefixes declared with the `Imports` statement. You can declare a new XML namespace prefix, or shadow an existing XML namespace prefix, in an element by using the `xmlns` attribute. The new namespace is available to the child nodes of that element, but not to XML literals in embedded expressions.  
   

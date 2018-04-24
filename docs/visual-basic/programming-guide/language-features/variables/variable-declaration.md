@@ -37,7 +37,7 @@ You declare a variable to specify its name and characteristics. The declaration 
 ## Declaration Levels  
   
 ### Local and Member Variables  
- A *local variable* is one that is declared within a procedure. A *member variable* is a member of a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] type; it is declared at module level, inside a class, structure, or module, but not within any procedure internal to that class, structure, or module.  
+ A *local variable* is one that is declared within a procedure. A *member variable* is a member of a Visual Basic type; it is declared at module level, inside a class, structure, or module, but not within any procedure internal to that class, structure, or module.  
   
 ### Shared and Instance Variables  
  In a class or structure, the category of a member variable depends on whether or not it is shared. If it is declared with the [Shared](../../../../visual-basic/language-reference/modifiers/shared.md) keyword, it is a *shared variable*, and it exists in a single copy shared among all instances of the class or structure.  

@@ -636,4 +636,4 @@ module Networking =
         ...
 ```
 
-In summary, the pitfall with type abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besdies what `int` already has.
+In summary, the pitfall with type abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besides what `int` already has.

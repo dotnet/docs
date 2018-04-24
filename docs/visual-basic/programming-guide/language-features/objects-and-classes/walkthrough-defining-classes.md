@@ -23,11 +23,12 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Walkthrough: Defining Classes (Visual Basic)
+
 This walkthrough demonstrates how to define classes, which you can then use to create objects. It also shows you how to add properties and methods to the new class, and demonstrates how to initialize an object.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-### To define a class  
+## To define a class
   
 1.  Create a project by clicking **New Project** on the **File** menu. The **New Project** dialog box appears.  
   
@@ -64,7 +65,7 @@ This walkthrough demonstrates how to define classes, which you can then use to c
   
      The `Sub New` constructor is called automatically when an object based on this class is created. This constructor sets the value of the field that holds the user name.  
   
-### To create a button to test the class  
+## To create a button to test the class
   
 1.  Change the startup form to design mode by right-clicking its name in **Solution Explorer** and then clicking **View Designer**. By default, the startup form for Windows Application projects is named Form1.vb. The main form will then appear.  
   
@@ -72,12 +73,13 @@ This walkthrough demonstrates how to define classes, which you can then use to c
   
      [!code-vb[VbVbalrOOP#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#12)]
   
-### To run your application  
+## To run your application
   
 1.  Run your application by pressing F5. Click the button on the form to call the test procedure. It displays a message stating that the original `UserName` is "MOORE, BOBBY", because the procedure called the `Capitalize` method of the object.  
   
 2.  Click **OK** to dismiss the message box. The `Button1 Click` procedure changes the value of the `UserName` property and displays a message stating that the new value of `UserName` is "Worden, Joe".  
   
-## See Also  
+## See also
+
  [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)  
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

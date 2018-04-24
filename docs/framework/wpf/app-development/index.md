@@ -65,7 +65,7 @@ ms.workload:
   
 <a name="WPF_Application_Resource__Content__and_Data_Files"></a>   
 ## WPF Application Resource, Content, and Data Files  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the core support in the [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the core support in the Microsoft .NET Framework for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).  
   
  A key component of the support for WPF non-executable data files is the ability to identify and load them using a unique [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)]. For more information, see [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   

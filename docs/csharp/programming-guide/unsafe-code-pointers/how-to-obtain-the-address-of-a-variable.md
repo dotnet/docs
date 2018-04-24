@@ -29,7 +29,7 @@ int* p = &number; //address-of operator &
  You cannot get the address of a constant or a value.  
   
 ## Example  
- In this example, a pointer to `int`, `p`, is declared and assigned the address of an integer variable, `number`. The variable `number` is initialized as a result of the assignment to *p. If you make this assignment statement a comment, the initialization of the variable `number` will be removed, but no compile-time error is issued.  
+ In this example, a pointer to `int`, `p`, is declared and assigned the address of an integer variable, `number`. The variable `number` is initialized as a result of the assignment to `*p`. If you make this assignment statement a comment, the initialization of the variable `number` will be removed, but no compile-time error is issued.  
   
  [!code-csharp[csProgGuidePointers#7](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-address-of-a-variable_1.cs)]  
   

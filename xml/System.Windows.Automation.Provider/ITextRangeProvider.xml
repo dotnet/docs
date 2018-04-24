@@ -82,7 +82,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a new <see cref="T:System.Windows.Automation.Provider.ITextRangeProvider" /> identical to the original <see cref="T:System.Windows.Automation.Provider.ITextRangeProvider" /> and inheriting all properties of the original.</summary>
-        <returns>The new text range. A null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) is never returned.</returns>
+        <returns>The new text range. A null reference (<see langword="Nothing" /> in Visual Basic) is never returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -243,7 +243,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
         <param name="backward">
           <see langword="true" /> if the last occurring text range should be returned instead of the first; otherwise <see langword="false" />.</param>
         <summary>Returns a text range subset that has the specified attribute value.</summary>
-        <returns>A text range having a matching attribute and attribute value; otherwise null (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</returns>
+        <returns>A text range having a matching attribute and attribute value; otherwise null (<see langword="Nothing" /> in Visual Basic).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -280,7 +280,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
         <param name="ignoreCase">
           <see langword="true" /> if case should be ignored; otherwise <see langword="false" />.</param>
         <summary>Returns a text range subset that contains the specified text.</summary>
-        <returns>A text range matching the specified text; otherwise null (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</returns>
+        <returns>A text range matching the specified text; otherwise null (<see langword="Nothing" /> in Visual Basic).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

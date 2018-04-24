@@ -49,7 +49,7 @@
       <Docs>
         <param name="hwnd">The window handle of the element.</param>
         <summary>Retrieves a UI automation provider for the specified element.</summary>
-        <returns>The provider for the specified element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the element's default provider is not being overridden.</returns>
+        <returns>The provider for the specified element, or a null reference (<see langword="Nothing" /> in Visual Basic) if the element's default provider is not being overridden.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

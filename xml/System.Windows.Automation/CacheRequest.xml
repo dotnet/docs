@@ -24,7 +24,7 @@
   
  Only a single <xref:System.Windows.Automation.CacheRequest> can be active. There are two ways to activate a request:  
   
--   Call <xref:System.Windows.Automation.CacheRequest.Activate%2A> on the request. This pushes the request onto the stack, and the request is popped when the object is disposed. To ensure disposal even if an exception is raised, use the return value from <xref:System.Windows.Automation.CacheRequest.Activate%2A> within a `using` block (`Using` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).  
+-   Call <xref:System.Windows.Automation.CacheRequest.Activate%2A> on the request. This pushes the request onto the stack, and the request is popped when the object is disposed. To ensure disposal even if an exception is raised, use the return value from <xref:System.Windows.Automation.CacheRequest.Activate%2A> within a `using` block (`Using` in Visual Basic).  
   
 -   Put the request onto the internal stack by calling <xref:System.Windows.Automation.CacheRequest.Push%2A>. Only the topmost request on the stack is active, and it must be the next one removed from the stack by <xref:System.Windows.Automation.CacheRequest.Pop%2A>. Popping the request deactivates it.  
   
@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using this method is usually preferable to using <xref:System.Windows.Automation.CacheRequest.Push%2A> and <xref:System.Windows.Automation.CacheRequest.Pop%2A> as a means of activating the <xref:System.Windows.Automation.CacheRequest>. The object is pushed onto the stack when <xref:System.Windows.Automation.CacheRequest.Activate%2A> is called, and then popped off when it is disposed. To ensure disposal, place the return value within a `using` block (`Using` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).  
+ Using this method is usually preferable to using <xref:System.Windows.Automation.CacheRequest.Push%2A> and <xref:System.Windows.Automation.CacheRequest.Pop%2A> as a means of activating the <xref:System.Windows.Automation.CacheRequest>. The object is pushed onto the stack when <xref:System.Windows.Automation.CacheRequest.Activate%2A> is called, and then popped off when it is disposed. To ensure disposal, place the return value within a `using` block (`Using` in Visual Basic).  
   
    
   
@@ -312,7 +312,7 @@
 ## Remarks  
  Only the currently active request can be removed using the <xref:System.Windows.Automation.CacheRequest.Pop%2A> method. Attempting to remove a request that is not the current one results in an exception.  
   
- Unless you are nesting cache requests, it is preferable to use <xref:System.Windows.Automation.CacheRequest.Activate%2A> to place the request on the stack. The reason is that you can use <xref:System.Windows.Automation.CacheRequest.Activate%2A> within a `using` block (`Using` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]), ensuring that the request is popped off the stack even if an exception is raised.  
+ Unless you are nesting cache requests, it is preferable to use <xref:System.Windows.Automation.CacheRequest.Activate%2A> to place the request on the stack. The reason is that you can use <xref:System.Windows.Automation.CacheRequest.Activate%2A> within a `using` block (`Using` in Visual Basic), ensuring that the request is popped off the stack even if an exception is raised.  
   
    
   
@@ -351,7 +351,7 @@
 ## Remarks  
  Multiple <xref:System.Windows.Automation.CacheRequest> objects can be placed onto the state stack. Cache requests must be removed from the stack in the order they were pushed on; otherwise, an <xref:System.InvalidOperationException> exception is raised.  
   
- Unless you are nesting cache requests, it is preferable to use <xref:System.Windows.Automation.CacheRequest.Activate%2A> to place the request on the stack. The reason is that you can use <xref:System.Windows.Automation.CacheRequest.Activate%2A> within a `using` block (`Using` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]), ensuring that the request is popped off the stack even if an exception is raised.  
+ Unless you are nesting cache requests, it is preferable to use <xref:System.Windows.Automation.CacheRequest.Activate%2A> to place the request on the stack. The reason is that you can use <xref:System.Windows.Automation.CacheRequest.Activate%2A> within a `using` block (`Using` in Visual Basic), ensuring that the request is popped off the stack even if an exception is raised.  
   
    
   

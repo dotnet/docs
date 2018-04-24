@@ -44,7 +44,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `oldValue` can be `null` (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the previous value is not readily available.  
+ `oldValue` can be `null` (`Nothing` in Visual Basic) if the previous value is not readily available.  
   
    
   
@@ -101,7 +101,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the old value of a property that has changed.</summary>
-        <value>The previous value of the property, or null (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the previous value is not readily available.</value>
+        <value>The previous value of the property, or null (<see langword="Nothing" /> in Visual Basic) if the previous value is not readily available.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

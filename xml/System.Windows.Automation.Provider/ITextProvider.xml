@@ -87,7 +87,7 @@
   
  If no text is selected, <xref:System.Windows.Automation.Provider.ITextProvider.GetSelection%2A> returns the degenerate text range (empty range) at the position of the system cursor (text insertion point).  
   
- If the system cursor (text insertion point) is not present, <xref:System.Windows.Automation.Provider.ITextProvider.GetSelection%2A> may return a null reference (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).  
+ If the system cursor (text insertion point) is not present, <xref:System.Windows.Automation.Provider.ITextProvider.GetSelection%2A> may return a null reference (`Nothing` in Visual Basic).  
   
  ]]></format>
         </remarks>
@@ -112,7 +112,7 @@
       <Parameters />
       <Docs>
         <summary>Retrieves an array of disjoint text ranges from a text container where each text range begins with the first partially visible line through to the end of the last partially visible line.</summary>
-        <returns>The collection of visible text ranges within the container or an empty array. A null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) is never returned.</returns>
+        <returns>The collection of visible text ranges within the container or an empty array. A null reference (<see langword="Nothing" /> in Visual Basic) is never returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -161,7 +161,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">If the child element is a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</exception>
+        <exception cref="T:System.ArgumentException">If the child element is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
       </Docs>
     </Member>
@@ -185,7 +185,7 @@
       <Docs>
         <param name="screenLocation">The location in screen coordinates.</param>
         <summary>Returns the degenerate (empty) text range nearest to the specified screen coordinates.</summary>
-        <returns>A degenerate range nearest the specified location. A null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) is never returned.</returns>
+        <returns>A degenerate range nearest the specified location. A null reference (<see langword="Nothing" /> in Visual Basic) is never returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

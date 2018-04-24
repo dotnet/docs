@@ -197,7 +197,7 @@
       <Docs>
         <param name="element">The element from which to retrieve the first child.</param>
         <summary>Retrieves the first child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The first child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
+        <returns>The first child element, or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -240,7 +240,7 @@
         <param name="element">The element from which to retrieve the first child.</param>
         <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
         <summary>Retrieves the first child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The first child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
+        <returns>The first child element, or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -292,7 +292,7 @@
       <Docs>
         <param name="element">The element from which to retrieve the last child.</param>
         <summary>Retrieves the last child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.AutomationElement" /> that is the last child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
+        <returns>The <see cref="T:System.Windows.Automation.AutomationElement" /> that is the last child element, or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -327,7 +327,7 @@
         <param name="element">The element from which to retrieve the last child.</param>
         <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
         <summary>Retrieves the last child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The last element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
+        <returns>The last element, or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -379,7 +379,7 @@
       <Docs>
         <param name="element">The <see cref="T:System.Windows.Automation.AutomationElement" /> from which to retrieve the next sibling.</param>
         <summary>Retrieves the next sibling element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The next sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
+        <returns>The next sibling element, or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -422,7 +422,7 @@
         <param name="element">The element from which to retrieve the next sibling.</param>
         <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
         <summary>Retrieves the next sibling element of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The next sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
+        <returns>The next sibling element, or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -472,7 +472,7 @@
       <Docs>
         <param name="element">The element whose parent is to be returned.</param>
         <summary>Retrieves the parent element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The parent element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the specified element is the root element in the tree, or if the parent element is not visible in the current view.</returns>
+        <returns>The parent element, or a null reference (<see langword="Nothing" /> in Visual Basic) if the specified element is the root element in the tree, or if the parent element is not visible in the current view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -508,7 +508,7 @@
         <param name="element">The element whose parent is to be returned.</param>
         <param name="request">A cache request object specifying members on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
         <summary>Retrieves the parent element of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The parent element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the specified element is the root element in the tree, or the parent element is not visible in this view.</returns>
+        <returns>The parent element, or a null reference (<see langword="Nothing" /> in Visual Basic) if the specified element is the root element in the tree, or the parent element is not visible in this view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -558,7 +558,7 @@
       <Docs>
         <param name="element">The element from which to retrieve the previous sibling.</param>
         <summary>Retrieves the previous sibling of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The previous sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
+        <returns>The previous sibling element, or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -593,7 +593,7 @@
         <param name="element">The element from which to retrieve the previous sibling.</param>
         <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
         <summary>Retrieves the previous sibling of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The previous sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
+        <returns>The previous sibling element, or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no such element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

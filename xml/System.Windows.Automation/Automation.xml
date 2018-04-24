@@ -246,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If either of the arguments is a null reference (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]), <xref:System.Windows.Automation.Automation.Compare%2A> throws an <xref:System.ArgumentNullException> exception.  
+ If either of the arguments is a null reference (`Nothing` in Visual Basic), <xref:System.Windows.Automation.Automation.Compare%2A> throws an <xref:System.ArgumentNullException> exception.  
   
    
   
@@ -289,7 +289,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If either of the arguments is a null reference (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]), <xref:System.Windows.Automation.Automation.Compare%2A> throws an <xref:System.ArgumentNullException> exception.  
+ If either of the arguments is a null reference (`Nothing` in Visual Basic), <xref:System.Windows.Automation.Automation.Compare%2A> throws an <xref:System.ArgumentNullException> exception.  
   
  This method is equivalent to the equality operator for <xref:System.Windows.Automation.AutomationElement> objects.  
   
@@ -380,7 +380,7 @@
       <Docs>
         <param name="pattern">The identifier of the control pattern.</param>
         <summary>Retrieves the name of the specified control pattern.</summary>
-        <returns>The friendly name of the control pattern, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the specified pattern is not found.</returns>
+        <returns>The friendly name of the control pattern, or a null reference (<see langword="Nothing" /> in Visual Basic) if the specified pattern is not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -417,7 +417,7 @@
       <Docs>
         <param name="property">The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property identifier of the named property.</param>
         <summary>Retrieves the name of the specified [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property.</summary>
-        <returns>The friendly name of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) if the specified [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property is not found.</returns>
+        <returns>The friendly name of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property, or a null reference (<see langword="Nothing" /> in Visual Basic) if the specified [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property is not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

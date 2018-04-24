@@ -34,7 +34,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 #### To create a new WPF project and add buttons to the window  
   
-1.  StartVisual Studio.  
+1.  Start Visual Studio.  
   
 2.  **Create a new WPF project:** On the **File** menu, point to **New**, and then click **Project**. Find the **Windows Application (WPF)** template and name the project "AnimatedButton". This will create the skeleton for the application.  
   

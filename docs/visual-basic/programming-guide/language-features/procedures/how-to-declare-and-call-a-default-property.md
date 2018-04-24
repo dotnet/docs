@@ -22,7 +22,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # How to: Declare and Call a Default Property in Visual Basic
-A *default property* is a class or structure property that your code can access without specifying it. When calling code names a class or structure but not a property, and the context allows access to a property, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] resolves the access to that class or structure's default property if one exists.  
+A *default property* is a class or structure property that your code can access without specifying it. When calling code names a class or structure but not a property, and the context allows access to a property, Visual Basic resolves the access to that class or structure's default property if one exists.  
   
  A class or structure can have at most one default property. However, you can overload a default property and have more than one version of it.  
   

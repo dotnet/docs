@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Validate DBML and External Mapping Files
-External mapping files and .dbml files that you modify must be validated against their respective schema definitions. This topic provides [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] users with the steps to implement the validation process.  
+External mapping files and .dbml files that you modify must be validated against their respective schema definitions. This topic provides Visual Studio users with the steps to implement the validation process.  
   
  [!INCLUDE[note_settings_general](../../../../../../includes/note-settings-general-md.md)]  
   
@@ -53,7 +53,7 @@ External mapping files and .dbml files that you modify must be validated against
      Determine whether errors, warnings, or messages have been generated. If not, the XML file is valid against the schema definition.  
   
 ## Alternate Method for Supplying Schema Definition  
- If for some reason the appropriate .xsd file does not appear in the **XML Schemas** dialog box, you can download the .xsd file from a Help topic. The following steps help you save the downloaded file in the Unicode format required by the [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] XML Editor.  
+ If for some reason the appropriate .xsd file does not appear in the **XML Schemas** dialog box, you can download the .xsd file from a Help topic. The following steps help you save the downloaded file in the Unicode format required by the Visual Studio XML Editor.  
   
 #### To copy a schema definition file from a Help topic  
   

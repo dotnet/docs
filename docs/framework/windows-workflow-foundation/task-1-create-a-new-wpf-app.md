@@ -20,7 +20,7 @@ In this task, you will create an empty [!INCLUDE[avalon1](../../../includes/aval
   
 ### To create the WPF Application project  
   
-1.  Open [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] and on the **File** menu, point to **New**, and then click **Project**.  
+1.  Open Visual Studio and on the **File** menu, point to **New**, and then click **Project**.  
   
 2.  In the **New Project** dialog box, select either **Visual C#** or **Visual Basic** from the **Installed Templates** pane on the left side of the box. If the language of your choice does not appear, look under **Other Languages**.  
   
@@ -32,7 +32,7 @@ In this task, you will create an empty [!INCLUDE[avalon1](../../../includes/aval
   
 6.  Set the solution name to **RehostingTheDesigner**.  
   
-7.  Click **OK** to create the application project. [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] creates a basic WPF UI for your application and includes the appropriate XAML and code-behind files.  
+7.  Click **OK** to create the application project. Visual Studio creates a basic WPF UI for your application and includes the appropriate XAML and code-behind files.  
   
 8.  Add references to **WorkflowModel** assemblies. To do this, in **Solution Explorer**, right-click the **HostingApplication** project and select **Add Reference**.  
   

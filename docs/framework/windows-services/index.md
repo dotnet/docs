@@ -36,7 +36,7 @@ Using Microsoft [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] or the Micros
  Provides an overview of Windows service applications, the lifetime of a service, and how service applications differ from other common project types.  
   
  [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)  
- Provides an example of creating a service in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] and Visual C#.  
+ Provides an example of creating a service in Visual Basic and Visual C#.  
   
  [Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)  
  Explains the language elements used in service programming.  

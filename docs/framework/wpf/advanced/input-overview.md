@@ -81,7 +81,7 @@ ms.workload:
   
 <a name="handling_input_events"></a>   
 ## Handling Input Events  
- To receive input on an element, an event handler must be associated with that particular event.  In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] this is straightforward: you reference the name of the event as an attribute of the element that will be listening for this event.  Then, you set the value of the attribute to the name of the event handler that you define, based on a delegate.  The event handler must be written in code such as [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)] and can be included in a code-behind file.  
+ To receive input on an element, an event handler must be associated with that particular event.  In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] this is straightforward: you reference the name of the event as an attribute of the element that will be listening for this event.  Then, you set the value of the attribute to the name of the event handler that you define, based on a delegate.  The event handler must be written in code such as C# and can be included in a code-behind file.  
   
  Keyboard events occur when the operating system reports key actions that occur while keyboard focus is on an element. Mouse and stylus events each fall into two categories: events that report changes in pointer position relative to the element, and events that report changes in the state of device buttons.  
   

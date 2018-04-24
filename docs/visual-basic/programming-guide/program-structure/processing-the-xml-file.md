@@ -34,7 +34,7 @@ The compiler generates an ID string for each construct in your code that is tagg
 |P|property: `Property` (including default properties)|  
 |M|method: `Sub`, `Function`, `Declare`, `Operator`|  
 |E|event: `Event`|  
-|!|error string<br /><br /> The rest of the string provides information about the error. The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler generates error information for links that cannot be resolved.|  
+|!|error string<br /><br /> The rest of the string provides information about the error. The Visual Basic compiler generates error information for links that cannot be resolved.|  
   
 -   The second part of the `String` is the fully qualified name of the item, starting at the root of the namespace. The name of the item, its enclosing type(s), and the namespace are separated by periods. If the name of the item itself contains periods, they are replaced by the number sign (#). It is assumed that no item has a number sign directly in its name. For example, the fully qualified name of the `String` constructor would be `System.String.#ctor`.  
   

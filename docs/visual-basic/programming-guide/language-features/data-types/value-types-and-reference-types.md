@@ -22,7 +22,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Value Types and Reference Types
-In Visual Basic, data types are implemented based on their classification. The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types can be classified according to whether a variable of a particular type stores its own data or a pointer to the data. If it stores its own data it is a *value type*; if it holds a pointer to data elsewhere in memory it is a *reference type*.  
+In Visual Basic, data types are implemented based on their classification. The Visual Basic data types can be classified according to whether a variable of a particular type stores its own data or a pointer to the data. If it stores its own data it is a *value type*; if it holds a pointer to data elsewhere in memory it is a *reference type*.  
   
 ## Value Types  
  A data type is a *value type* if it holds the data within its own memory allocation. Value types include the following:  

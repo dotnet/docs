@@ -18,7 +18,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Unable to link to resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt;
-The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker has reported an error linking to a native COM+ resource file from the assembly.  
+The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker has reported an error linking to a native COM+ resource file from the assembly.  
   
  **Error ID:** BC30144  
   

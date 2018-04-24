@@ -20,7 +20,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Validating Strings in Visual Basic
-This section discusses how to validate strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+This section discusses how to validate strings in Visual Basic.  
   
 ## In This Section  
  [How to: Validate File Names and Paths in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/how-to-validate-file-names-and-paths.md)  

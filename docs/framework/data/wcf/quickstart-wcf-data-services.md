@@ -31,7 +31,7 @@ This quickstart helps you become familiar with [!INCLUDE[ssAstoria](../../../../
   
 -   [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)].  
   
--   An instance of [!INCLUDE[msCoName](../../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]. This includes SQL Server Express, which is included in a default installation of [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+-   An instance of [!INCLUDE[msCoName](../../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]. This includes SQL Server Express, which is included in a default installation of Visual Studio.  
   
 -   The Northwind sample database. To download this sample database, see the download page, [Sample Databases for SQL Server](http://go.microsoft.com/fwlink/?linkid=24758).  
   
@@ -40,7 +40,7 @@ This quickstart helps you become familiar with [!INCLUDE[ssAstoria](../../../../
  Define the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application, define the data model, create the data service, and enable access to resources.  
   
  [Accessing the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md)  
- Start the service from [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] and access the service by submitting HTTP GET requests through a Web browser to the exposed feed.  
+ Start the service from Visual Studio and access the service by submitting HTTP GET requests through a Web browser to the exposed feed.  
   
  [Creating the .NET Framework Client Application](../../../../docs/framework/data/wcf/creating-the-dotnet-client-application-wcf-data-services-quickstart.md)  
  Create a [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)] client application to consume the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed, bind data to Windows controls, change data in the bound controls, and then send the changes back to the data service.  

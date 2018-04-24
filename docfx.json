@@ -18,7 +18,8 @@
           "api/overwrites/**",
           "samples/**/*.*",
           "**/includes/**",
-          "***/contributing.md"
+          "***/contributing.md",
+          "core/**/*.*"
         ]
       },
       {
@@ -79,7 +80,8 @@
         "exclude": [
           "**/obj/**",
           "samples/**/*.*",
-          "_themes/DocPacker/**"
+          "_themes/DocPacker/**",
+          "core/**/*.*"
         ]
       },
       {

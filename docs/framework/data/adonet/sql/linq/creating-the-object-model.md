@@ -30,7 +30,7 @@ You can create your object model from an existing database and use the model in 
  Describes how to generate an external mapping file instead of using attribute-based mapping.  
   
  [How to: Generate Customized Code by Modifying a DBML File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-customized-code-by-modifying-a-dbml-file.md)  
- Describes how to generate [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] or C# code from a DBML metadata file.  
+ Describes how to generate Visual Basic or C# code from a DBML metadata file.  
   
  [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md)  
  Describes how to validate mapping files that you have modified (advanced).  

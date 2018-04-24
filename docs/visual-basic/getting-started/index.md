@@ -50,10 +50,10 @@ Provides a list of Web sites and newsgroups that can help you find answers to co
  Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.  
   
  [Samples](../../visual-basic/sample-applications.md)  
- Provides links to sample code in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Provides links to sample code in Visual Basic.  
   
  [Walkthroughs](../../visual-basic/walkthroughs.md)  
- Provides a list of Help pages that demonstrate aspects of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language.  
+ Provides a list of Help pages that demonstrate aspects of the Visual Basic language.  
   
  [Talk to Us](/visualstudio/ide/talk-to-us)  
  Covers how to receive support and give feedback.  

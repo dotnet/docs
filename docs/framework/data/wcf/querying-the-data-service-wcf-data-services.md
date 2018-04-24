@@ -36,7 +36,7 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
   
 -   When results are enumerated implicitly, such as:  
   
-    -   When a property on the <xref:System.Data.Services.Client.DataServiceContext> that represents and entity set is enumerated, such as during a `foreach` (C#) or `For Each` ([!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)]) loop.  
+    -   When a property on the <xref:System.Data.Services.Client.DataServiceContext> that represents and entity set is enumerated, such as during a `foreach` (C#) or `For Each` (Visual Basic) loop.  
   
     -   When the query is assigned to a `List` collection.  
   

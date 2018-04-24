@@ -25,7 +25,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 #### To build the sample application  
   
-1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project.  
+1.  Open a new Visual Basic Windows Application project.  
   
 2.  Add a button named Button1 to Form1.  
   

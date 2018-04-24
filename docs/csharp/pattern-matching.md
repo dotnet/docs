@@ -65,7 +65,7 @@ of some shape.
 
 ## The `is` type pattern expression
 
-Before C# 7, you'd need to test each type in a series of `if` and `is`
+Before C# 7.0, you'd need to test each type in a series of `if` and `is`
 statements:
 
 [!code-csharp[ClassicIsExpression](../../samples/csharp/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]

@@ -32,7 +32,7 @@ You can generate code to represent a database by using either the [!INCLUDE[vs_o
  The DBML Extractor is a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] component that takes database metadata as input and produces a DBML file as output.  
   
 ## Code Generator  
- The Code Generator is a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] component that translates DBML files to [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)], C#, or XML mapping files.  
+ The Code Generator is a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] component that translates DBML files to Visual Basic, C#, or XML mapping files.  
   
 ## XML Schema Definition File  
  The DBML file must be valid against the following schema definition as an XSD file.  

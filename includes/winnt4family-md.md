@@ -1,1 +1,0 @@
-Windows NT 4.0

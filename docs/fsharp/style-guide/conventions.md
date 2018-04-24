@@ -610,7 +610,7 @@ open CNTK
 type Computation = DeviceDescriptor -> Variable -> Function
 ```
 
-The `Computation` name is a convenient way to represent any function that matches the signature it is aliasing, and allows you to succinctly represent functions of this shape when they are passed into other functions.
+The `Computation` name is a convenient way to denote any function that matches the signature it is aliasing. Using Type Abbreviations like this is convenient and allows for more succinct code.
 
 ### Avoid using type abbreviations to represent your domain
 
@@ -625,7 +625,7 @@ This can be confusing in multiple ways:
 
 * `BufferSize` is not an abstraction; it is just another name for an integer.
 * If `BufferSize` is exposed in a public API, it can easily be misinterpreted to mean more than just `int`. Generally, domain types have multiple attributes to them and are not primitive types like `int`. This abbreviation violates that assumption.
-* The naming convention (PascalCase) implies that this type holds more data.
+* The casing of `BufferSize` (PascalCase) implies that this type holds more data.
 * This alias does not offer increased clarity compared with providing a named argument to a function.
 * The abbreviation will not manifest in compiled IL; it is just an integer and this alias is a compile-time construct.
 
@@ -636,4 +636,4 @@ module Networking =
         ...
 ```
 
-In summary, the pitfall with type abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional attributes, nor any benefits from the type system other than what `int` already has.
+In summary, the pitfall with type abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besdies what `int` already has.

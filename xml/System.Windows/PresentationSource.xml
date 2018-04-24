@@ -100,7 +100,7 @@
   
 -   You cannot use the <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> <xref:System.Windows.UIElement.AddHandler%2A> methods to add handlers. You must use <xref:System.Windows.PresentationSource.AddSourceChangedHandler%2A>.  
   
--   The [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)] `+=` and `-=` event handler syntaxes, and related language specific handler syntaxes, are not supported, because the event itself is not exposed as public. Only the <xref:System.Windows.PresentationSource> utility methods for adding and removing the handlers directly are supported.  
+-   The C# `+=` and `-=` event handler syntaxes, and related language-specific handler syntaxes, are not supported, because the event itself is not exposed as public. Only the <xref:System.Windows.PresentationSource> utility methods for adding and removing the handlers directly are supported.  
   
 -   Class handlers are not allowed. Specifically, you cannot call <xref:System.Windows.EventManager.RegisterClassHandler%2A> against this event in a class constructor because although an identifier field exists for SourceChanged, the identifier is not public.  
   
@@ -381,7 +381,7 @@
   
 -   You cannot use the <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> <xref:System.Windows.UIElement.RemoveHandler%2A> methods to remove handlers. You must use <xref:System.Windows.PresentationSource.RemoveSourceChangedHandler%2A>.  
   
--   The [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)] `+=` and `-=` event handler syntaxes, and other language specific handler syntaxes, are not supported, because the event itself is not exposed as public. Only the <xref:System.Windows.PresentationSource> utility methods for adding and removing the handlers directly are supported.  
+-   The C# `+=` and `-=` event handler syntaxes, and other language-specific handler syntaxes, are not supported, because the event itself is not exposed as public. Only the <xref:System.Windows.PresentationSource> utility methods for adding and removing the handlers directly are supported.  
   
  ]]></format>
         </remarks>

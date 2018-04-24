@@ -15,21 +15,21 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # How to: Obtain the Address of a Variable (C# Programming Guide)
-To obtain the address of a unary expression, which evaluates to a fixed variable, use the address-of operator:  
+To obtain the address of a unary expression, which evaluates to a fixed variable, use the address-of operator `&`:  
   
-```  
+```csharp  
 int number;  
 int* p = &number; //address-of operator &  
 ```  
   
  The address-of operator can only be applied to a variable. If the variable is a moveable variable, you can use the [fixed statement](../../../csharp/language-reference/keywords/fixed-statement.md) to temporarily fix the variable before obtaining its address.  
   
- It is your responsibility to ensure that the variable is initialized. The compiler will not issue an error message if the variable is not initialized.  
+ It's your responsibility to ensure that the variable is initialized. The compiler doesn't issue an error message if the variable is not initialized.  
   
- You cannot get the address of a constant or a value.  
+ You can't get the address of a constant or a value.  
   
 ## Example  
- In this example, a pointer to `int`, `p`, is declared and assigned the address of an integer variable, `number`. The variable `number` is initialized as a result of the assignment to `*p`. If you make this assignment statement a comment, the initialization of the variable `number` will be removed, but no compile-time error is issued.  
+ In this example, a pointer to `int`, `p`, is declared and assigned the address of an integer variable, `number`. The variable `number` is initialized as a result of the assignment to `*p`. If you comment out this assignment statement, the initialization of the variable `number` is removed, but no compile-time error is issued.  
 
 > [!NOTE]
 > Compile this example with the [`-unsafe`](../../language-reference/compiler-options/unsafe-compiler-option.md) compiler option.

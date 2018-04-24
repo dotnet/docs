@@ -973,7 +973,7 @@ Stack Trace:
    
   
 ## Examples  
- The following code example throws and then catches an <xref:System.Exception> Exception and displays the exception's text message using the <xref:System.Exception.Message%2A> property.  
+ The following code example throws and then catches an <xref:System.Exception> exception and displays the exception's text message using the <xref:System.Exception.Message%2A> property.
   
  [!code-cpp[System.Exception.Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Exception.Properties/CPP/properties.cpp#1)]
  [!code-csharp[System.Exception.Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Exception.Properties/CS/properties.cs#1)]

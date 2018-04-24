@@ -47,9 +47,11 @@
       },
       {
         "group": "netcore",
+        "src": "docs/core",
+        "dest": "core",
         "files": [
-          "core/**/*.md",
-          "core/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ]
       },
       {
@@ -83,12 +85,15 @@
       {
         "group": "netcore",
         "files": [
-          "core/**/*.png",
-          "core/**/*.svg",
-          "core/**/*.jpg",
-          "core/**/*.gif",
-          "core/**/*.bmp"
-        ],        
+          "images/**",
+          "**/*.png",
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp"
+        ],
+        "src": "docs/core",
+        "dest": "core",
         "exclude": [
           "**/obj/**",
           "samples/**/*.*",
@@ -146,10 +151,10 @@
       "docs.html"
     ],
     "groups": {
-    "netcore": {      
-      "moniker_range": ">= netcore-1.0"
-    }
-  },
+      "netcore": {
+        "moniker_range": ">= netcore-1.0"
+      }
+    },
     "xref": [
       "_zip/office15.zip",
       "_zip/missingapi.yml"

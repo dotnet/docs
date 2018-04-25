@@ -180,7 +180,7 @@
   
  This correlation should not be confused with correlating an event to the correct workflow instance. The correlation to the correct workflow instance is done by sending the event to an explicit workflow instance and using the <see cref="P:System.Workflow.Activities.ExternalDataEventArgs.InstanceId" /> property to properly identify the correct workflow instance.  
   
- [!INCLUDE[crexample](~/includes/crexample-md.md)] correlation, see the [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).</value>
+ For an example of correlation, see the [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

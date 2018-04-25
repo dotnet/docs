@@ -161,7 +161,7 @@
 ## Remarks  
  This property defines which specific <xref:System.Workflow.Activities.CallExternalMethodActivity> activity a given external method call comes from. This value can then be used in the payload of a local communication service event to direct that event to the correct <xref:System.Workflow.Activities.HandleExternalEventActivity> activity.  
   
- [!INCLUDE[crexample](~/includes/crexample-md.md)] correlation, see the [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ For an example of correlation, see the [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
   
    
   

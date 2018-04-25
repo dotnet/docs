@@ -1769,7 +1769,7 @@
 ## Remarks  
  This method can be invoked by calls to <xref:System.Xaml.XamlType.IsNameScope%2A>.  
   
- The default implementation makes a <xref:System.Xaml.XamlType.CanAssignTo%2A> call indirectly against the type <xref:System.Windows.Markup.INameScope>. <xref:System.Windows.Markup.INameScope> is an interface that is defined in the assembly WindowsBase. This technique for XAML namescope identification is used both by WPF and [!INCLUDE[TLA#tla_workflow](~/includes/tlasharptla-workflow-md.md)] implementations of XAML.  
+ The default implementation makes a <xref:System.Xaml.XamlType.CanAssignTo%2A> call indirectly against the type <xref:System.Windows.Markup.INameScope>. <xref:System.Windows.Markup.INameScope> is an interface that is defined in the assembly WindowsBase.dll. This technique for XAML namescope identification is used both by WPF and Windows Workflow Foundation implementations of XAML.  
   
  Override this method if you want <xref:System.Xaml.XamlType.IsNameScope%2A> to use different logic.  
   

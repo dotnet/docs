@@ -1,8 +1,7 @@
 ---
 title: "#If...Then...#Else Directives"
-ms.date: 07/20/2015
+ms.date: 04/11/2018
 ms.prod: .net
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
@@ -23,9 +22,8 @@ helpviewer_keywords:
   - "else directive (#else)"
   - "#Else directive [Visual Basic]"
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
 ---
 # #If...Then...#Else Directives
 Conditionally compiles selected blocks of Visual Basic code.  
@@ -63,14 +61,29 @@ Conditionally compiles selected blocks of Visual Basic code.
  Regardless of the outcome of any evaluation, all expressions are evaluated using `Option Compare Binary`. The `Option Compare` statement does not affect expressions in `#If` and `#ElseIf` statements.  
   
 > [!NOTE]
->  No single-line form of the `#If`, `#Else`, `#ElseIf`, and `#End If` directives exists. No other code can appear on the same line as any of the directives.  
-  
-## Example  
+>  No single-line form of the `#If`, `#Else`, `#ElseIf`, and `#End If` directives exists. No other code can appear on the same line as any of the directives. 
+
+The statements within a conditional compilation block must be complete logical statements. For example, you cannot conditionally compile only the attributes of a function, but you can conditionally declare the function along with its attributes:
+
+```vb
+   #If DEBUG Then
+   <WebMethod()>
+   Public Function SomeFunction() As String
+   #Else
+   <WebMethod(CacheDuration:=86400)>
+   Public Function SomeFunction() As String
+   #End If
+```
+
+## Example
  This example uses the `#If...Then...#Else` construct to determine whether to compile certain statements.  
   
  [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/if-then-else-directives_1.vb)]  
   
 ## See Also  
- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+[#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  
+[If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
+[Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)   
+<xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>   
+
+

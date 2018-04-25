@@ -21,9 +21,9 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Accessing XML in Visual Basic
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides XML axis properties for accessing and navigating [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] structures. These properties use a special syntax to enable you to access elements and attributes by specifying the XML names.  
+Visual Basic provides XML axis properties for accessing and navigating [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] structures. These properties use a special syntax to enable you to access elements and attributes by specifying the XML names.  
   
- The following table lists the language features that enable you to access XML elements and attributes in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The following table lists the language features that enable you to access XML elements and attributes in Visual Basic.  
   
 ### XML Axis Properties  
   

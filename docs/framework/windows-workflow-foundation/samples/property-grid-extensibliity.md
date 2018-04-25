@@ -38,7 +38,7 @@ A developer can customize the property grid that is displayed when a given activ
   
 -   Creates a type that derives from <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor>.  
   
--   In the constructor, the <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> value is set with a [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] data template. This can be bound to a XAML template, but in this sample, code is used to initialize data binding.  
+-   In the constructor, the <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> value is set with a Windows Presentation Foundation (WPF) data template. This can be bound to a XAML template, but in this sample, code is used to initialize data binding.  
   
 -   The data template has a data context of the <xref:System.Activities.Presentation.PropertyEditing.PropertyValue> of the item rendered in the property grid. Note in the following code (from CustomInlineEditor.cs) that this context then binds to the `Value` property.  
   

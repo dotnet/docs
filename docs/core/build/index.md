@@ -20,7 +20,7 @@ This article gives guidance to developers who want to build and distribute their
 
 ## Build the CLR from source
 
-The source code for the .NET CoreCLR can be found in [the `dotnet/coreclr` repository on GitHub](https://github.com/dotnet/coreclr/).
+The source code for the .NET CoreCLR can be found in the [dotnet/coreclr](https://github.com/dotnet/coreclr/) repository on GitHub.
 
 The build currently depends on the following prerequisites:
 * [Git](https://git-scm.com/)
@@ -28,7 +28,7 @@ The build currently depends on the following prerequisites:
 * [Python](https://www.python.org/)
 * a C++ compiler.
 
-After you've installed these prerequisites are installed, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of [the CoreCLR repository](https://github.com/dotnet/coreclr/).
+After you've installed these prerequisites are installed, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of the [dotnet/coreclr](https://github.com/dotnet/coreclr/) repository.
 
 Installing the components differ depending on the operating system (OS). See the build instructions for your specific OS:
 
@@ -78,12 +78,12 @@ There are two basic techniques for using your new runtime:
  2. **Use corerun.exe to run an application using unpackaged DLLs**.
     This repository also defines a simple host called corerun.exe that does NOT take any dependency on NuGet.
     You need to tell the host where to get the required DLLs you actually use, and you have to manually gather them together.
-    This technique is used by all the tests in [the CoreCLR repo](https://github.com/dotnet/coreclr), and is useful for quick local 'edit-compile-debug' loop such as preliminary unit testing.
+    This technique is used by all the tests in the [dotnet/coreclr](https://github.com/dotnet/coreclr) repo, and is useful for quick local 'edit-compile-debug' loop such as preliminary unit testing.
     See [Executing .NET Core Apps with CoreRun.exe](https://github.com/dotnet/coreclr/blob/master/Documentation/workflow/UsingCoreRun.md) for details on using this technique.
 
 ## Build the CLI from source
 
-The source code for the .NET Core CLI can be found in [the `dotnet/cli` repository on GitHub](https://github.com/dotnet/cli/).
+The source code for the .NET Core CLI can be found in the [dotnet/cli](https://github.com/dotnet/cli/) repository on GitHub.
 
 In order to build the .NET Core CLI, you need the following installed on your machine.
 

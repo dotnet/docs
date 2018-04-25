@@ -50,7 +50,7 @@ You can invoke the command-line compiler by typing the name of its executable fi
   
 6.  Click **OK** to confirm your edits and close the dialog boxes.  
   
-     After you change the PATH environment variable, you can run the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler at the Windows Command Prompt from any directory on the computer.  
+     After you change the PATH environment variable, you can run the Visual Basic compiler at the Windows Command Prompt from any directory on the computer.  
   
 ### To invoke the compiler using the Windows Command Prompt  
   

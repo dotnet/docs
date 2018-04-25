@@ -41,7 +41,7 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
   
      Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open AdvancedErrorHandling.sln.  
   
-2.  Press **F5** or **CTRL+SHIFT+B** in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+2.  Press **F5** or **CTRL+SHIFT+B** in Visual Studio.  
   
     1.  If you build the application with CTRL+SHIFT+B, you must start the application at ./RoutingService/bin/debug/RoutingService.exe.  
   

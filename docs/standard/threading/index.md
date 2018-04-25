@@ -56,8 +56,8 @@ Whether you are developing for computers with one processor or several, you want
  [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
  Describes the performance advantages and basic operation of asynchronous I/O.  
   
- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
- Provides an overview of asynchronous programming.  
+ [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)  
+ Provides an overview of the recommended pattern for asynchronous programming in .NET.  
   
  [Calling Synchronous Methods Asynchronously](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
  Explains how to call methods on thread pool threads using built-in features of delegates.  

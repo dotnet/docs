@@ -92,7 +92,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
 #### Adding Data Binding Support (EnableDataBinding or the /enableDataBinding switch)  
  This corresponds to the **/enableDataBinding** switch on the Svcutil.exe tool.  
   
- Sometimes, you may want to bind the types generated from the schema to graphical user interface components so that any update to instances of these types will automatically update the UI. The `XsdDataContractImporter` can generate types that implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface in such a way that any property change triggers an event. If you are generating types for use with a client UI programming environment that supports this interface (such as [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)]), set the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> property to `true` to enable this feature.  
+ Sometimes, you may want to bind the types generated from the schema to graphical user interface components so that any update to instances of these types will automatically update the UI. The `XsdDataContractImporter` can generate types that implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface in such a way that any property change triggers an event. If you are generating types for use with a client UI programming environment that supports this interface (such as Windows Presentation Foundation (WPF)), set the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> property to `true` to enable this feature.  
   
  The following example shows the `Vehicle` class generated with the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> set to `true`.  
   

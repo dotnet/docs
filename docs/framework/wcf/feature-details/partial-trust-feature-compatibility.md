@@ -100,7 +100,7 @@ ms.workload:
   
 -   Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a partial trust environment. If they can do so, the behavior does not run and no exception is thrown. To ensure this, see the **levelfinal** option using [Caspol.exe (Code Access Security Policy Tool)](../../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md).  
   
- [!INCLUDE[crexample](../../../../includes/crexample-md.md)] a common behavior, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
+ For an example of a common behavior, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
   
 ## Configuration  
  With one exception, partially-trusted code can only load [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections in the local `app.config` file. To load [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections that reference [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sections in machine.config or in a root web.config file requires ConfigurationPermission(Unrestricted). Without this permission, references to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections (behaviors, bindings) outside of the local configuration file results in an exception when the configuration is loaded.  

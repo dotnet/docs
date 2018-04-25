@@ -19,4 +19,4 @@ Learn about how to use the UI to build your custom AI models and generate C# cod
 Find a list of Machine Learning termniology and their definitions.
 
 ## API Reference
-Check out the [ML<span/>.NET API Reference]() to see the breadth of APIs available.
+Check out the [ML.NET API Reference]() to see the breadth of APIs available.

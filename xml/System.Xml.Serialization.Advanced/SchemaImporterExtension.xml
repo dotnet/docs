@@ -22,7 +22,7 @@
   
  The <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension> class allows you to modify the code generated when using any of these tools. For example, you may have an existing class that processes book orders on a system and you have an existing XSD document that supplies your orders. Using the <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension> class, you can enable one of the tools to generate code that uses your class.  
   
- In order to control the generation of the code, you must use the classes found in the <xref:System.CodeDom> namespace. For more information, see [Using the CodeDOM](~/docs/framework/reflection-and-codedom/using-the-codedom.md) and [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524).  
+ In order to control the generation of the code, you must use the classes found in the <xref:System.CodeDom> namespace. For more information, see [Using the CodeDOM](~/docs/framework/reflection-and-codedom/using-the-codedom.md) and [CodeDOM Quick Reference](https://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524(v=vs.100).aspx).  
   
  The steps to enabling the WSDL.exe tool (which in turn is used by other tools such as the Add Web Reference dialog box) to use your extension are:  
   
@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In order to control the generation of the code, you must use the classes found in the <xref:System.CodeDom> namespace. For more information, see [Using the CodeDOM](~/docs/framework/reflection-and-codedom/using-the-codedom.md) and [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524).  
+ In order to control the generation of the code, you must use the classes found in the <xref:System.CodeDom> namespace. For more information, see [Using the CodeDOM](~/docs/framework/reflection-and-codedom/using-the-codedom.md) and [CodeDOM Quick Reference](https://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524(v=vs.100).aspx).  
   
  ]]></format>
         </remarks>
@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In order to control the generation of the code, you must use the classes found in the <xref:System.CodeDom> namespace. For more information, see [Using the CodeDOM](~/docs/framework/reflection-and-codedom/using-the-codedom.md) and [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524).  
+ In order to control the generation of the code, you must use the classes found in the <xref:System.CodeDom> namespace. For more information, see [Using the CodeDOM](~/docs/framework/reflection-and-codedom/using-the-codedom.md) and [CodeDOM Quick Reference](https://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524(v=vs.100).aspx).  
   
  ]]></format>
         </remarks>
@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In order to control the generation of the code, you must use the classes found in the <xref:System.CodeDom> namespace. For more information, see [Using the CodeDOM](~/docs/framework/reflection-and-codedom/using-the-codedom.md) and [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524).  
+ In order to control the generation of the code, you must use the classes found in the <xref:System.CodeDom> namespace. For more information, see [Using the CodeDOM](~/docs/framework/reflection-and-codedom/using-the-codedom.md) and [CodeDOM Quick Reference](https://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524(v=vs.100).aspx).  
   
    
   

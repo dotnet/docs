@@ -272,7 +272,7 @@
       <Docs>
         <param name="insertAtEndOfProject">
           <see langword="true" /> to insert the <see langword="PropertyGroup" /> at the end of the project; otherwise, <see langword="false" />.</param>
-        <summary>Adds a new [PropertyGroup](http://msdn.microsoft.com/library/ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4) element to the project.</summary>
+        <summary>Adds a new <see href="/visualstudio/msbuild/propertygroup-element-msbuild">PropertyGroup</see> element to the project.</summary>
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> containing the created property group.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1234,7 +1234,7 @@
         <ReturnType>Microsoft.Build.BuildEngine.BuildPropertyGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the property groups specified with the [PropertyGroup](http://msdn.microsoft.com/library/ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4) element in the project.</summary>
+        <summary>Gets a collection of the property groups specified with the <see href="/visualstudio/msbuild/propertygroup-element-msbuild">PropertyGroup</see> element in the project.</summary>
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" /> containing the property groups specifiied in the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

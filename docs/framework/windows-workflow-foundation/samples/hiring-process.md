@@ -137,13 +137,13 @@ This sample demonstrates how to implement a business process using messaging act
 ## Data Storage  
  Data is stored in a SQL Server database called `ContosoHR` (the script for creating this database is located in the `DbSetup` folder). Workflow instances are stored in a SQL Server database called `InstanceStore` (the scripts for creating the instance store are part of the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] distribution).  
   
- Both databases are created by running Setup.cmd script from a  [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] command prompt.  
+ Both databases are created by running Setup.cmd script from a  Visual Studio command prompt.  
   
 ## Running the sample  
   
 #### To create the databases  
   
-1.  Open a [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] command prompt.  
+1.  Open a Visual Studio command prompt.  
   
 2.  Navigate to the sample folder.  
   
@@ -153,7 +153,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 #### To set up the solution for execution  
   
-1.  Run [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] as an administrator. Open HiringRequest.sln.  
+1.  Run Visual Studio as an administrator. Open HiringRequest.sln.  
   
 2.  Right-click the solution in **Solution Explorer** and select **Properties**.  
   
@@ -217,7 +217,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 ## Troubleshooting  
   
-1.  Ensure that you are running [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] with administrator privileges.  
+1.  Ensure that you are running Visual Studio with administrator privileges.  
   
 2.  If the solution fails to build, verify the following:  
   
@@ -233,7 +233,7 @@ This sample demonstrates how to implement a business process using messaging act
   
         2.  Right-click **Contoso** and select **Update Web/Service References**.  
   
-        3.  Rebuild the solution by pressing CTRL+SHIFT+B in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+        3.  Rebuild the solution by pressing CTRL+SHIFT+B in Visual Studio.  
   
 ## Uninstalling  
   

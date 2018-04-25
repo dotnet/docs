@@ -71,7 +71,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
   
 <a name="intl_text"></a>   
 ### International Text  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes built-in processing for all [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] supported writing systems.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes built-in processing for all Microsoft .NET Framework supported writing systems.  
   
  The following scripts are currently supported:  
   

@@ -2308,7 +2308,7 @@
   
  This method is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2383,7 +2383,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemClick%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.WebControls.Menu.MenuItemClick> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2424,7 +2424,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemDataBound%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.WebControls.Menu.MenuItemDataBound> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2465,7 +2465,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnPreRender%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.Control.PreRender> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

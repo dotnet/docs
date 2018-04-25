@@ -3528,7 +3528,7 @@
 |Page|"Page"|Used in paging operations to represent a button in the pager row that performs paging. To specify the paging operation, set the `CommandArgument` property of the button to "Next", "Prev", "First", "Last", or the index of the page to which to navigate. Raises the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> and <xref:System.Web.UI.WebControls.FormView.PageIndexChanged> events. **Note:**  This type of button is typically used only in the pager template.|  
 |Update|"Update"|Used in updating operations to attempt to update the displayed record in the data source with the values provided by the user. Raises the <xref:System.Web.UI.WebControls.FormView.ItemUpdating> and <xref:System.Web.UI.WebControls.FormView.ItemUpdated> events.|  
   
- This version of the method returns `true` when one of these buttons is handled. For more information about event bubbling, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ This version of the method returns `true` when one of these buttons is handled. For more information about event bubbling, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

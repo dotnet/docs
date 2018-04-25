@@ -3851,7 +3851,7 @@
 |"Update"|Updates the current record in the data source with the bound values from the <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> template. Raises the <xref:System.Web.UI.WebControls.ListView.ItemUpdating> and <xref:System.Web.UI.WebControls.ListView.ItemUpdated> events.|  
 |"Sort"|Sorts the columns listed in the `CommandArgument` property of the button. Raises the <xref:System.Web.UI.WebControls.ListView.Sorting> and <xref:System.Web.UI.WebControls.ListView.Sorted> events.|  
   
- This version of the method returns `true` if one of these buttons raises an event that is handled by the control. For more information about event bubbling, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ This version of the method returns `true` if one of these buttons raises an event that is handled by the control. For more information about event bubbling, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

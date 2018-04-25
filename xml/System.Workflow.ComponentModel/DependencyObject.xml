@@ -87,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you create a delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs. Multiple delegates can be added to handle an event. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs. Multiple delegates can be added to handle an event. For more information about event-handler delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -522,7 +522,7 @@
 ## Remarks  
  Provided as a convenient direct method for removing an event delegate.  
   
- When you create a delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs. For more information about event-handler delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

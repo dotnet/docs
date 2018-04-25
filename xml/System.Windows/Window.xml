@@ -2358,7 +2358,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting <xref:System.Windows.WindowStartupLocation> to <xref:System.Windows.WindowStartupLocation.Manual> causes a window to be positioned according to its <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> property values. If either the <xref:System.Windows.Window.Left%2A> or <xref:System.Windows.Window.Top%2A> properties aren't specified, their values are determined by [!INCLUDE[TLA2#tla_mswin](~/includes/tla2sharptla-mswin-md.md)].  
+ Setting <xref:System.Windows.WindowStartupLocation> to <xref:System.Windows.WindowStartupLocation.Manual> causes a window to be positioned according to its <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> property values. If either the <xref:System.Windows.Window.Left%2A> or <xref:System.Windows.Window.Top%2A> properties aren't specified, their values are determined by Windows.  
   
  Setting <xref:System.Windows.WindowStartupLocation.CenterScreen> causes a window to be positioned in the center of the screen that contains the mouse cursor.  
   

@@ -1724,24 +1724,24 @@
         <ReturnType>System.Windows.SessionEndingCancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user ends the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] session by logging off or shutting down the operating system.</summary>
+        <summary>Occurs when the user ends the Windows session by logging off or shutting down the operating system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, an application shuts down when the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] session ends, which occurs when a user logs off or shuts down. When this happens, [!INCLUDE[TLA2#tla_mswin](~/includes/tla2sharptla-mswin-md.md)] asks each open application to shut down. However, it is possible that an application may not be ready to shut down when this occurs. For example, an application may have data that is in an inconsistent state, or in the middle of a long-running operation. In these situations, it may be desirable to prevent the session from ending, and may be more desirable to allow users the option to decide whether or not to let the session to end.  
+ By default, an application shuts down when the Windows session ends, which occurs when a user logs off or shuts down. When this happens, Windows asks each open application to shut down. However, it is possible that an application may not be ready to shut down when this occurs. For example, an application may have data that is in an inconsistent state, or in the middle of a long-running operation. In these situations, it may be desirable to prevent the session from ending, and may be more desirable to allow users the option to decide whether or not to let the session to end.  
   
  You can detect when a session ends by handling the <xref:System.Windows.Application.SessionEnding> event. If an application needs to prevent the session from ending, the <xref:System.Windows.SessionEndingCancelEventArgs> argument that is passed to the event handler exposes the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> that you set to `true` (the default value is `false`).  
   
  If <xref:System.Windows.Application.SessionEnding> is unhandled, or is handled without being cancelled, <xref:System.Windows.Application.Shutdown%2A> is called and the <xref:System.Windows.Application.Exit> event is raised.  
   
- To obtain more information about why the session is ending, an application can inspect <xref:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding%2A>, which is one of the <xref:System.Windows.ReasonSessionEnding> values (<xref:System.Windows.ReasonSessionEnding.Logoff> and <xref:System.Windows.ReasonSessionEnding.Shutdown>).  
+ To obtain more information about why the session is ending, an application can inspect <xref:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding%2A>, which is one of the <xref:System.Windows.ReasonSessionEnding> values (<xref:System.Windows.ReasonSessionEnding.Logoff?displayProperty=nameWithType> and <xref:System.Windows.ReasonSessionEnding.Shutdown?displayProperty=nameWithType>).  
   
  <xref:System.Windows.Application.SessionEnding> is not raised by console applications.  
   
  <xref:System.Windows.Application.SessionEnding> is raised only on the thread that creates the <xref:System.Windows.Application> object.  
   
- <xref:System.Windows.Application.SessionEnding> is not raised for [!INCLUDE[TLA#tla_xbap#plural](~/includes/tlasharptla-xbapsharpplural-md.md)].  
+ <xref:System.Windows.Application.SessionEnding> is not raised for XAML browser applications (XBAPs).  
   
    
   

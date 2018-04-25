@@ -1,1 +1,0 @@
-Input Method Editor (IME)

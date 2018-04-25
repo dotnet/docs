@@ -34,7 +34,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
   
 ### To place quotation marks in a string in your code  
   
-1.  In [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], insert two quotation marks in a row as an embedded quotation mark. In [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)], insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.  
+1.  In Visual Basic, insert two quotation marks in a row as an embedded quotation mark. In Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)], insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.  
   
     ```vb  
     Private Sub InsertQuote()  
@@ -58,7 +58,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
   
      -or-  
   
-2.  Insert the ASCII or Unicode character for a quotation mark. In [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], use the ASCII character (34). In [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], use the Unicode character (\u0022).  
+2.  Insert the ASCII or Unicode character for a quotation mark. In Visual Basic, use the ASCII character (34). In Visual C#, use the Unicode character (\u0022).  
   
     ```vb  
     Private Sub InsertAscii()  

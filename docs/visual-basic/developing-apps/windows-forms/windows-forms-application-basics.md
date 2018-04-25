@@ -15,7 +15,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Windows Forms Application Basics (Visual Basic)
-An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability to create Windows Forms applications that run locally on users' computers. You can use Visual Studio to create the application and user interface using Windows Forms. A Windows Forms application is built on classes from the <xref:System.Windows.Forms> namespace.  
+An important part of Visual Basic is the ability to create Windows Forms applications that run locally on users' computers. You can use Visual Studio to create the application and user interface using Windows Forms. A Windows Forms application is built on classes from the <xref:System.Windows.Forms> namespace.  
   
 ## Designing Windows Forms Applications  
  You can create Windows Forms and Windows service applications with [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]. For more information, see the following topics:  

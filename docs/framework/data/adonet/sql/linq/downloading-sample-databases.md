@@ -54,7 +54,7 @@ A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../..
 6.  Follow the installation instructions on the Web site.  
   
 ## Downloading Management Studio Express  
- If you want to modify a database that you have downloaded, you can access the database from **Server Explorer** in the [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] integrated development environment (IDE), or use Microsoft SQL Server Management Studio Express (SSMSE).  
+ If you want to modify a database that you have downloaded, you can access the database from **Server Explorer** in the Visual Studio integrated development environment (IDE), or use Microsoft SQL Server Management Studio Express (SSMSE).  
   
 #### To download Management Studio Express  
   

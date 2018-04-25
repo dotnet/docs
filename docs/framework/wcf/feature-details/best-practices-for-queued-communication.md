@@ -79,7 +79,7 @@ This topic provides recommended practices for queued communication in [!INCLUDE[
  Though queues are typically one-way, in some scenarios you may want to correlate a reply received to a request sent earlier. If you require such correlation, it is recommended that you apply your own SOAP message header that contains correlation information with the message. Typically, the sender attaches this header with the message, and the receiver, upon processing the message and replying back with a new message on a reply queue, attaches the sender's message header that contains the correlation information so that the sender can identify the reply message with the request message.  
   
 ## Integrating with Non-WCF Applications  
- Use `MsmqIntegrationBinding` when integrating [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services or clients with non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services or clients. The non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application can be an MSMQ application written using System.Messaging, COM+, [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], or C++.  
+ Use `MsmqIntegrationBinding` when integrating [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services or clients with non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services or clients. The non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application can be an MSMQ application written using System.Messaging, COM+, Visual Basic, or C++.  
   
  When using `MsmqIntegrationBinding`, be aware of the following:  
   

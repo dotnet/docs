@@ -28,7 +28,7 @@ ms.workload:
   
 -   A function supported by a [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] method.  
   
- The topics in this section show how to form and call these methods in your application if you write the code yourself. Developers using [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] would typically use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to map user-defined functions.  
+ The topics in this section show how to form and call these methods in your application if you write the code yourself. Developers using Visual Studio would typically use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to map user-defined functions.  
   
 ## In This Section  
  [How to: Use Scalar-Valued User-Defined Functions](../../../../../../docs/framework/data/adonet/sql/linq/how-to-use-scalar-valued-user-defined-functions.md)  

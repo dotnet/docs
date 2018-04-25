@@ -63,7 +63,7 @@ The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themse
     }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C#) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.Load += new System.EventHandler(this.Form1_Load);  

@@ -1,1 +1,0 @@
-Ink Serialized Format (ISF)

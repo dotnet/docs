@@ -15,7 +15,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Operators Listed by Functionality (Visual Basic)
-See one of the categories listed below, or open this portion of the Help table of contents to see an alphabetical list of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] operators.  
+See one of the categories listed below, or open this portion of the Help table of contents to see an alphabetical list of Visual Basic operators.  
   
 ## Categories of Operators  
   

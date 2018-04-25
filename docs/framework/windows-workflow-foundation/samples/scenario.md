@@ -35,7 +35,7 @@ This section contains examples of [!INCLUDE[wf](../../../../includes/wf-md.md)] 
  Demonstrates how to implement a simple stopwatch scenario using a combination of the <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Pick> activities.  
   
  [WPF and WF Integration in XAML](../../../../docs/framework/windows-workflow-foundation/samples/wpf-and-wf-integration-in-xaml.md)  
- Demonstrates how to create an application that uses [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] and [!INCLUDE[wf](../../../../includes/wf-md.md)] features in a single XAML document. To accomplish this, the sample uses [!INCLUDE[wf](../../../../includes/wf-md.md)] and XAML extensibility.  
+ Demonstrates how to create an application that uses Windows Presentation Foundation (WPF) and [!INCLUDE[wf](../../../../includes/wf-md.md)] features in a single XAML document. To accomplish this, the sample uses [!INCLUDE[wf](../../../../includes/wf-md.md)] and XAML extensibility.  
   
  [External Ruleset Toolkit](../../../../docs/framework/windows-workflow-foundation/samples/external-ruleset-toolkit.md)  
  Demonstrates how to manage and edit RuleSets in a database and access those RuleSets from a workflow at runtime.

@@ -29,7 +29,7 @@ The process of changing a value from one data type to another type is called *co
  Explains conversions classified by whether the destination type can hold the data.  
   
  [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- Discusses conversions classified by whether [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] performs them automatically.  
+ Discusses conversions classified by whether Visual Basic performs them automatically.  
   
  [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
  Illustrates converting between strings and numeric, `Boolean`, or date/time values.  
@@ -42,10 +42,10 @@ The process of changing a value from one data type to another type is called *co
   
 ## Related Sections  
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- Introduces the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types and describes how to use them.  
+ Introduces the Visual Basic data types and describes how to use them.  
   
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
- Lists the elementary data types supplied by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Lists the elementary data types supplied by Visual Basic.  
   
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  Discusses some common problems that can arise when working with data types.

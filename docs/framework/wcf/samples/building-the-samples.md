@@ -36,7 +36,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be built
   
 1.  If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, and running [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], you must run [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] with elevated permission. To do so, right-click the icon on the Start menu and then click **Run as administrator**.  
   
-2.  From the **File** menu in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)], click **Open**, then click **Project/Solution**. Navigate to the language-specific subdirectory under the directory in which you installed the sample, and double-click the .sln file icon to open the solution in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
+2.  From the **File** menu in Visual Studio, click **Open**, then click **Project/Solution**. Navigate to the language-specific subdirectory under the directory in which you installed the sample, and double-click the .sln file icon to open the solution in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
   
 3.  In the **Build** menu, select **Rebuild Solution**. The client program files are built to client\bin and the service program files are built to service\bin. If the service is hosted in IIS, the service program files are also copied to the servicemodelsamples directory and its \bin subdirectory.  
   

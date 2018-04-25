@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Data Binding in a Windows Presentation Foundation Client
-This sample demonstrates the use of data binding in a Windows Presentation Foundation (WPF) client. The sample uses a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that randomly generates an array of albums to return to the client. Each album has a name, a price, and a list of album tracks. The album tracks have a name and duration. The information that is returned by the service is automatically bound to the user interface (UI) provided by the [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] client.  
+This sample demonstrates the use of data binding in a Windows Presentation Foundation (WPF) client. The sample uses a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that randomly generates an array of albums to return to the client. Each album has a name, a price, and a list of album tracks. The album tracks have a name and duration. The information that is returned by the service is automatically bound to the user interface (UI) provided by the Windows Presentation Foundation (WPF) client.  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  

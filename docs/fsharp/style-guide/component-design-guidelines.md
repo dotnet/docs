@@ -247,7 +247,7 @@ This guidance corresponds to general .NET guidance for these types. However, it 
 
 #### Consider using `[<CompiledName>]` to provide a .NET-friendly name for other .NET language consumers
 
-Sometimes you may wish name something in one style for F# consumers (such as a static member in lower case), but have a different style for the name when it is compiled into an assembly. You can use the [<CompiledName>] attribute to provide a different style for code which is consuming the assembly the code is defined in.
+Sometimes you may wish name something in one style for F# consumers (such as a static member in lower case), but have a different style for the name when it is compiled into an assembly. You can use the `[<CompiledName>]` attribute to provide a different style for non F# code consuming the assembly.
 
 ```fsharp
 type Vector(x:float, y:float) =
@@ -261,7 +261,7 @@ type Vector(x:float, y:float) =
 let v = Vector.create 5.0 3.0
 ```
 
-By using `[<CompiledName>]`, you can use .NET naming conventions for consumers of the assembly the code is defined in, but use a different naming convention for F# code within the assembly.
+By using `[<CompiledName>]`, you can use .NET naming conventions for non F# consumers of the assembly.
 
 #### Use method overloading for member functions, if doing so provides a simpler API
 

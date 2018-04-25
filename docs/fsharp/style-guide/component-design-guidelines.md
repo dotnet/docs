@@ -245,6 +245,24 @@ let u = v * 10.0
 
 This guidance corresponds to general .NET guidance for these types. However, it can be additionally important in F# coding as this will allow these types to be used in conjunction with F# functions and methods with member constraints, such as List.sumBy.
 
+#### Consider using `[<CompiledName>]` to provide a .NET-friendly name for other .NET language consumers
+
+Sometimes you may wish name something in one style for F# consumers (such as a static member in lower case), but have a different style for the name when it is compiled into an assembly. You can use the `[<CompiledName>]` attribute to provide a different style for non F# code consuming the assembly.
+
+```fsharp
+type Vector(x:float, y:float) =
+
+    member v.X = x
+    member v.Y = y
+    
+    [<CompiledName("Create")>]
+    static member create x y = Vector (x, y)
+
+let v = Vector.create 5.0 3.0
+```
+
+By using `[<CompiledName>]`, you can use .NET naming conventions for non F# consumers of the assembly.
+
 #### Use method overloading for member functions, if doing so provides a simpler API
 
 Method overloading is a powerful tool for simplifying an API that may need to do multiple related things.

@@ -17,7 +17,7 @@ ms.author: "wiwagn"
 
 The `fixed` statement prevents the garbage collector from relocating a movable variable. The `fixed` statement is only permitted in an [unsafe](unsafe.md) context. `Fixed` can also be used to create [fixed size buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md).
 
-The `fixed` statement sets a pointer to a managed variable and "pins" that variable during the execution of the statement. Pointers to movable managed variables are useful only in a `fixed` context. Ouside a `fixed` context, garbage collection could relocate the variables unpredictably. The C# compiler only lets you assign a pointer to a managed variable in a `fixed` statement.
+The `fixed` statement sets a pointer to a managed variable and "pins" that variable during the execution of the statement. Pointers to movable managed variables are useful only in a `fixed` context. Without a `fixed` context, garbage collection could relocate the variables unpredictably. The C# compiler only lets you assign a pointer to a managed variable in a `fixed` statement.
 
 [!code-csharp[Accessing fixed memory](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#1)]
 
@@ -38,15 +38,24 @@ To initialize pointers of different types, simply nest `fixed` statements, as sh
 After the code in the statement is executed, any pinned variables are unpinned and subject to garbage collection. Therefore, do not point to those variables outside the `fixed` statement. The variables declared in the `fixed` statement are scoped to that statement, making this easier:
 
 ```csharp
-fixed (byte* ps = srcarray, pd = dstarray) 
+fixed (byte* ps = srcarray, pd = dstarray)
 {
    ...
 }
 // ps and pd are no longer in scope here.
 ```
 
-> [!NOTE]
-> Pointers initialized in fixed statements cannot be modified.
+Pointers initialized in `fixed` statements are readonly variables. If you want to modify the pointer value, you must declare a second pointer variable, and modify that. The variable declared in the `fixed` statement cannot be modified:
+
+```csharp
+fixed (byte* ps = srcarray, pd = dstarray)
+{
+    byte* pSourceCopy = ps;
+    pSourceCopy++; // point to the next element.
+    ps++; // invalid: cannot modify ps, as it is declared in the fixed statement.
+}
+```
+
 
 In unsafe mode, you can allocate memory on the stack, where it is not subject to garbage collection and therefore does not need to be pinned. For more information, see [stackalloc](stackalloc.md).
 

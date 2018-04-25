@@ -20,11 +20,15 @@ type* identifier;
 void* identifier; //allowed but not recommended
 ```
 
-Any of the following types may be a pointer type:
+The type specified before the `*` in a pointer type is called the **referrent type**. Any of the following types may be a referrent type:
 
-- [sbyte](../../language-reference/keywords/sbyte.md), [byte](../../language-reference/keywords/byte.md), [short](../../language-reference/keywords/short.md), [ushort](../../language-reference/keywords/ushort.md), [int](../../language-reference/keywords/int.md), [uint](../../language-reference/keywords/uint.md), [long](../../language-reference/keywords/long.md), [ulong](../../language-reference/keywords/ulong.md), [char](../../language-reference/keywords/char.md), [float](../../language-reference/keywords/float.md), [double](../../language-reference/keywords/double.md), [decimal](../../language-reference/keywords/decimal.md), or [bool](../../language-reference/keywords/bool.md).
+- Any integral type: [sbyte](../../language-reference/keywords/sbyte.md), [byte](../../language-reference/keywords/byte.md), [short](../../language-reference/keywords/short.md), [ushort](../../language-reference/keywords/ushort.md), [int](../../language-reference/keywords/int.md), [uint](../../language-reference/keywords/uint.md), [long](../../language-reference/keywords/long.md), [ulong](../../language-reference/keywords/ulong.md).
+- Any floating point type: [float](../../language-reference/keywords/float.md), [double](../../language-reference/keywords/double.md).
+- [char](../../language-reference/keywords/char.md).
+- [bool](../../language-reference/keywords/bool.md).
+- [decimal](../../language-reference/keywords/decimal.md).
 - Any [enum](../../language-reference/keywords/enum.md) type.
-- Any pointer type.
+- Any pointer type. This allows expressions such as `void**`.
 - Any user-defined struct type that contains fields of unmanaged types only.
 
 Pointer types do not inherit from [object](../../language-reference/keywords/object.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing do not support pointers. However, you can convert between different pointer types and between pointer types and integral types.
@@ -56,7 +60,7 @@ int* myVariable;
 
 The expression `*myVariable` denotes the `int` variable found at the address contained in `myVariable`.
 
-There are several examples of pointers in the topics [fixed Statement](../../language-reference/keywords/fixed-statement.md) and [Pointer Conversions](../../programming-guide/unsafe-code-pointers/pointer-conversions.md). The following example shows the need for the `unsafe` keyword and the `fixed` statement, and how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. (Remember to enable unsafe code in the **Project Designer**; choose **Project**, **Properties** on the menu bar, and then select **Allow unsafe code** in the **Build** tab.)
+There are several examples of pointers in the topics [fixed Statement](../../language-reference/keywords/fixed-statement.md) and [Pointer Conversions](../../programming-guide/unsafe-code-pointers/pointer-conversions.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md) compiler option set.
 
 [!code-csharp[Using pointer types](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#5)]
 
@@ -64,7 +68,7 @@ You cannot apply the indirection operator to a pointer of type `void*`. However,
 
 A pointer can be `null`. Applying the indirection operator to a null pointer causes an implementation-defined behavior.
 
-Passing pointers between methods can cause undefined behavior. Consider a method that returns a pointer to a local variable through an `in`, , or `ref` parameter or as the function result. If the pointer was set in a fixed block, the variable to which it points may no longer be fixed.
+Passing pointers between methods can cause undefined behavior. Consider a method that returns a pointer to a local variable through an `in`, `out`, or `ref` parameter or as the function result. If the pointer was set in a fixed block, the variable to which it points may no longer be fixed.
 
 The following table lists the operators and statements that can operate on pointers in an unsafe context:
 

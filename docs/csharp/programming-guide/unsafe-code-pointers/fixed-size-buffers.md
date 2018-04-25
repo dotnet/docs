@@ -24,11 +24,11 @@ private fixed char name[30];
 
 In safe code, a C# struct that contains an array does not contain the array elements. Instead, the struct contains a reference to the elements. You can embed an array of fixed size in a [struct](../../language-reference/keywords/struct.md) when it is used in an [unsafe](../../language-reference/keywords/unsafe.md) code block.
 
-The following `struct` is 8 bytes in size. The `pathName` array is a reference to the heap-allocated array:
+The following `struct` is 8 bytes in size. The `pathName` array is a reference:
 
 [!code-csharp[Struct with embedded array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#6)]
 
-A `struct` can contain an embedded array in unsafe code. In the following example, the `fixedBuffer` array has a fixed size. You use a `fixed` statement to establish a pointer to the first element. You access the elements of the array through this pointer. The `fixed` statement pins an instance of `fixedBuffer` to a specific location in memory.
+A `struct` can contain an embedded array in unsafe code. In the following example, the `fixedBuffer` array has a fixed size. You use a `fixed` statement to establish a pointer to the first element. You access the elements of the array through this pointer. The `fixed` statement pins the `fixedBuffer` instance field to a specific location in memory.
 
 [!code-csharp[Struct with embedded inline array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#7)]
 
@@ -45,7 +45,7 @@ Unsafe buffers differ from regular arrays in the following ways:
 
 - You can only use unsafe buffers in an unsafe context.
 - Unsafe buffers are always vectors, or one-dimensional arrays.
-- The declaration of the array should include a count, such as `char id[8]`. You cannot use `char id[]` instead.
+- The declaration of the array should include a count, such as `char id[8]`. You cannot use `char id[]`.
 - Unsafe buffers can only be instance fields of structs in an unsafe context.
 
 ## See Also

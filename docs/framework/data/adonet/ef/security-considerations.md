@@ -81,7 +81,7 @@ This topic describes security considerations that are specific to developing, de
   
 -   <xref:System.Security.Permissions.SecurityPermission>: <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> to serialize exceptions by using the <xref:System.Runtime.Serialization.ISerializable> interface.  
   
--   Permission to open a database connection and execute commands against the database, such as <xref:System.Data.SqlClient.SqlClientPermission> for a [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] database.  
+-   Permission to open a database connection and execute commands against the database, such as <xref:System.Data.SqlClient.SqlClientPermission> for a SQL Server database.  
   
  For more information, see [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md).  
   

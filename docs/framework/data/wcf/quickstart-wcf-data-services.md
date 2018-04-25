@@ -31,7 +31,7 @@ This quickstart helps you become familiar with [!INCLUDE[ssAstoria](../../../../
   
 -   [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)].  
   
--   An instance of [!INCLUDE[msCoName](../../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]. This includes SQL Server Express, which is included in a default installation of Visual Studio.  
+-   An instance of [!INCLUDE[msCoName](../../../../includes/msconame-md.md)] SQL Server. This includes SQL Server Express, which is included in a default installation of Visual Studio.  
   
 -   The Northwind sample database. To download this sample database, see the download page, [Sample Databases for SQL Server](http://go.microsoft.com/fwlink/?linkid=24758).  
   

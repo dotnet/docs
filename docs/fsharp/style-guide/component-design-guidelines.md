@@ -245,6 +245,24 @@ let u = v * 10.0
 
 This guidance corresponds to general .NET guidance for these types. However, it can be additionally important in F# coding as this will allow these types to be used in conjunction with F# functions and methods with member constraints, such as List.sumBy.
 
+#### Consider having members on classes that mimic modules to follow the module name convention but use CompiledName
+
+Sometimes you define class methods that mimic module members. Since the fact that you define it on a class instead of a module is an implementation detail, this should not be exposed to f# consumers of your library. 
+
+```fsharp
+type Vector(x:float, y:float) =
+
+    member v.X = x
+    member v.Y = y
+    
+    [<CompiledName("Create")>]
+    static member create x y = Vector (x, y)
+
+let v = Vector.create 5.0 3.0
+```
+
+By using `CompiledName` you can still make sure to follow the .net name convention.
+
 #### Use method overloading for member functions, if doing so provides a simpler API
 
 Method overloading is a powerful tool for simplifying an API that may need to do multiple related things.

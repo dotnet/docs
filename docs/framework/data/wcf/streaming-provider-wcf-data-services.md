@@ -119,7 +119,7 @@ A data service can expose large object binary data. This binary data might repre
   
     -   A binary property that is a media resource should not be included in the data model. All properties exposed in a data model are returned in the entry in a response feed.  
   
-    -   To improve performance with a large binary stream, we recommend that you create a custom stream class to store binary data in the database. This class is returned by your <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> implementation and sends the binary data to the database in chunks. For a [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] database, we recommend that you use a FILESTREAM to stream data into the database when the binary data is larger than 1MB.  
+    -   To improve performance with a large binary stream, we recommend that you create a custom stream class to store binary data in the database. This class is returned by your <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> implementation and sends the binary data to the database in chunks. For a SQL Server database, we recommend that you use a FILESTREAM to stream data into the database when the binary data is larger than 1MB.  
   
     -   Ensure that your database is designed to store the binary large streams that are to be received by your data service.  
   

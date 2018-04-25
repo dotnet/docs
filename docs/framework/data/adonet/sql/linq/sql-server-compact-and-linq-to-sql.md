@@ -23,13 +23,13 @@ SQL Server Compact is the default database installed with Visual Studio. For mor
  This topic outlines the key differences in usage, configuration, feature sets, and scope of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] support.  
   
 ## Characteristics of SQL Server Compact in Relation to LINQ to SQL  
- By default, SQL Server Compact is installed for all Visual Studio editions, and is therefore available on the development computer for use with [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. But deployment of an application that uses SQL Server Compact and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] differs from that for a [!INCLUDE[ssNoVersion](../../../../../../includes/ssnoversion-md.md)] application. SQL Server Compact is not a part of the .NET Framework, and therefore must be packaged with the application or downloaded separately from the Microsoft site.  
+ By default, SQL Server Compact is installed for all Visual Studio editions, and is therefore available on the development computer for use with [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. But deployment of an application that uses SQL Server Compact and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] differs from that for a SQL Server application. SQL Server Compact is not a part of the .NET Framework, and therefore must be packaged with the application or downloaded separately from the Microsoft site.  
   
  Note the following characteristics:  
   
 -   SQL Server Compact is packaged as a DLL that can be used against database files (.sdf extension) directly.  
   
--   SQL Server Compact runs in the same process as the client application. The efficiency of communication with SQL Server Compact can therefore be significantly higher than communicating with [!INCLUDE[ssNoVersion](../../../../../../includes/ssnoversion-md.md)]. On the other hand, SQL Server Compact does require interoperability between managed and unmanaged code with its attendant costs.  
+-   SQL Server Compact runs in the same process as the client application. The efficiency of communication with SQL Server Compact can therefore be significantly higher than communicating with SQL Server. On the other hand, SQL Server Compact does require interoperability between managed and unmanaged code with its attendant costs.  
   
 -   The size of the SQL Server Compact DLL is small. This feature reduces the overall application size.  
   
@@ -38,7 +38,7 @@ SQL Server Compact is the default database installed with Visual Studio. For mor
 -   The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] does not support SQL Server Compact.  
   
 ## Feature Set  
- The SQL Server Compact feature set is much simpler than the feature set of [!INCLUDE[ssNoVersion](../../../../../../includes/ssnoversion-md.md)] in the following ways that can affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications :  
+ The SQL Server Compact feature set is much simpler than the feature set of SQL Server in the following ways that can affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications :  
   
 -   SQL Server Compact does not support stored procedures or views.  
   

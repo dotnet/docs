@@ -1,10 +1,11 @@
 ---
 title: Design and develop containerized apps using Docker and Microsoft Azure
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-keywords: Docker, Microservices, ASP.NET, Container
+ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/21/2017
+ms.topic: article
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

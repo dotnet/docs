@@ -18,7 +18,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Unable to write temporary file because temporary path is not available
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] could not determine the path where temporary files are stored.  
+Visual Basic could not determine the path where temporary files are stored.  
   
  **Error ID:** BC30698  
   

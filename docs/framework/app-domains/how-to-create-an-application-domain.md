@@ -36,5 +36,5 @@ A common language runtime host creates application domains automatically when th
  [!code-vb[ADCreateDomain#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADCreateDomain/VB/source2.vb#2)]  
   
 ## See Also  
- [Programming with Application Domains](http://msdn.microsoft.com/library/bd36055b-56bd-43eb-b4d8-820c37172131)  
+ [Programming with Application Domains](application-domains.md#programming-with-application-domains)  
  [Using Application Domains](../../../docs/framework/app-domains/use.md)

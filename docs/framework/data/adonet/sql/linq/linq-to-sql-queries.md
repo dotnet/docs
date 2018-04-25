@@ -30,7 +30,7 @@ You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] q
 |Item|LINQ Query|[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] Query|  
 |----------|----------------|----------------------------------------------------------------------|  
 |Return type of the local variable that holds the query (for queries that return sequences)|Generic `IEnumerable`|Generic `IQueryable`|  
-|Specifying the data source|Uses the `From` ([!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) or `from` (C#) clause|Same|  
+|Specifying the data source|Uses the `From` (Visual Basic) or `from` (C#) clause|Same|  
 |Filtering|Uses the `Where`/`where` clause|Same|  
 |Grouping|Uses the `Group…By`/`groupby` clause|Same|  
 |Selecting (Projecting)|Uses the `Select`/`select` clause|Same|  

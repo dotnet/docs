@@ -16,7 +16,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Miscellaneous Operators (Visual Basic)
-The following are miscellaneous operators defined in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+The following are miscellaneous operators defined in Visual Basic.  
   
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
   

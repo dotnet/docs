@@ -17,7 +17,7 @@ ms.workload:
   - "dotnetcore"
 ---
 # Custom Serialization Order With XmlSerializer
-[Download Sample](http://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/CustomOrder.zip.exe)  
+[Download Sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/CustomOrder.zip.exe)  
   
  This sample shows how to control the order of serialized and deserialized elements for XML serialization.  
   

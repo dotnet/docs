@@ -171,7 +171,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 3.  Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck.Never>) to determine whether that is the correct value for your application.  
   
     > [!CAUTION]
-    >  If you are using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] in [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)], your changes might be overwritten.  
+    >  If you are using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] in Visual Studio, your changes might be overwritten.  
   
 ## APTCA  
  Q. Is System.Data.Linq marked for use by partially trusted code?  

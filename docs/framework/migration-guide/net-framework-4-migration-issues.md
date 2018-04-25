@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "application compatibility"
 ms.assetid: df478548-8c05-4de2-8ba7-adcdbe1c2a60
 author: "rpetrusha"
-ms.author: "mariaw"
+ms.author: "ronpet"
 manager: "wpickett"
 ms.workload: 
   - "mariaw"

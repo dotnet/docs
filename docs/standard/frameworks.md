@@ -136,4 +136,4 @@ The following target frameworks are deprecated. Packages targeting these target 
 [.NET Core Versioning](~/docs/core/versions/index.md)  
 [dotnet/standard GitHub repository](https://github.com/dotnet/standard)  
 [NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)  
-[Framework Profiles in .NET](http://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)
+[Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)

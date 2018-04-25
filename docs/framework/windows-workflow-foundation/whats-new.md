@@ -61,4 +61,4 @@ ms.workload:
 -   Resuming a pending workflow is now managed using a <xref:System.Activities.Bookmark> object.  
   
 ## Easier Ability to Extend WF Designer Experience  
- The new WF Designer is built on [!INCLUDE[avalon1](../../../includes/avalon1-md.md)] and provides an easier model to use when rehosting the WF Designer outside of Visual Studio and also provides easier mechanisms for creating custom activity designers. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md).
+ The new WF Designer is built on Windows Presentation Foundation (WPF) and provides an easier model to use when rehosting the WF Designer outside of Visual Studio and also provides easier mechanisms for creating custom activity designers. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md).

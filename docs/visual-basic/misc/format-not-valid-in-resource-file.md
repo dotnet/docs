@@ -13,7 +13,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Format not valid in resource file
-A resource file in your project does not follow the standard format for a Windows resource file or there is a mismatch between the resource file and the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project.  
+A resource file in your project does not follow the standard format for a Windows resource file or there is a mismatch between the resource file and the Visual Basic project.  
   
 ## To correct this error  
   

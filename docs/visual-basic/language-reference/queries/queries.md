@@ -16,7 +16,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Queries (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] enables you to create [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
+Visual Basic enables you to create [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
   
 ## In This Section  
  [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  

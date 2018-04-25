@@ -70,7 +70,7 @@ This topic describes how to create a Windows application that uses client applic
   
 7.  Make sure that **Use Forms authentication** is selected, and then set **Authentication service location**, **Roles service location**, and **Web settings service location** to `http://localhost:55555/AppServices`.  
   
-8.  For [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], on the **Application** tab, set **Authentication mode** to **Application-defined**.  
+8.  For Visual Basic, on the **Application** tab, set **Authentication mode** to **Application-defined**.  
   
  The designer stores the specified settings in the application's app.config file.  
   
@@ -310,7 +310,7 @@ This topic describes how to create a Windows application that uses client applic
 ### Creating a Login Form  
  A credentials provider is a class that implements the <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> interface. This interface has a single method named <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A> that returns a <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials> object. The following procedures describe how to create a login dialog box that implements <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A> to display itself and return the user-specified credentials.  
   
- Separate procedures are provided for [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] and C# because [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] provides a **Login Form** template. This saves some time and coding effort.  
+ Separate procedures are provided for Visual Basic and C# because Visual Basic provides a **Login Form** template. This saves some time and coding effort.  
   
 ##### To create a login dialog box as a credentials provider in Visual Basic  
   
@@ -402,7 +402,7 @@ This topic describes how to create a Windows application that uses client applic
  You can now run the application and log in as employee to see that the button does not appear, and then log in as manager to see the button.  
   
 ## Accessing Web Settings  
- In the following procedure, you add a text box to the form and bind it to a Web setting. Like the previous code that uses authentication and roles, your settings code does not access the settings provider directly. Instead, it uses the strongly-typed `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) generated for your project by [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+ In the following procedure, you add a text box to the form and bind it to a Web setting. Like the previous code that uses authentication and roles, your settings code does not access the settings provider directly. Instead, it uses the strongly-typed `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic) generated for your project by [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
   
 #### To use Web settings in your user interface  
   
@@ -522,7 +522,7 @@ This topic describes how to create a Windows application that uses client applic
     > [!NOTE]
     >  The <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A> method is for convenience only. Because it does not have a return value, it cannot indicate whether revalidation has failed. Revalidation can fail, for example, if the user credentials have changed on the server. In this case, you might want to include code that explicitly validates users after a service call fails. For more information, see the Accessing Web Settings section earlier in this walkthrough.  
   
-     After revalidation, this code saves any changes to the local Web settings by calling the `SaveSettings` method that you added previously. It then retrieves any new values on the server by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> method of the project's `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]).  
+     After revalidation, this code saves any changes to the local Web settings by calling the `SaveSettings` method that you added previously. It then retrieves any new values on the server by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> method of the project's `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic).  
   
      [!code-csharp[ClientApplicationServices#080](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#080)]
      [!code-vb[ClientApplicationServices#080](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#080)]  

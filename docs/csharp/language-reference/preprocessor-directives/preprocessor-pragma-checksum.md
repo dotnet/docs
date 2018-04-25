@@ -38,7 +38,7 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
   
  This solution does not work for [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] projects, because the computed checksum is for the generated source file, rather than the .aspx file. To address this problem, `#pragma checksum` provides checksum support for [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] pages.  
   
- When you create an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] project in [!INCLUDE[csprcs](~/includes/csprcs-md.md)], the generated source file contains a checksum for the .aspx file, from which the source is generated. The compiler then writes this information into the PDB file.  
+ When you create an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] project in Visual C#, the generated source file contains a checksum for the .aspx file, from which the source is generated. The compiler then writes this information into the PDB file.  
   
  If the compiler encounters no `#pragma checksum` directive in the file, it computes the checksum and writes the value to the PDB file.  
   

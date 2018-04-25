@@ -50,11 +50,11 @@ The topic describes methods to enable interoperability between C# managed code a
   
 1.  Add interop attributes in the C# project.  
   
-     You can make an assembly COM visible by modifying [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties. For more information, see [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box).  
+     You can make an assembly COM visible by modifying Visual C# project properties. For more information, see [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box).  
   
 2.  Generate a COM type library and register it for COM usage.  
   
-     You can modify [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties to automatically register the C# assembly for COM interop. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Regasm.exe (Assembly Registration Tool)](../../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
+     You can modify Visual C# project properties to automatically register the C# assembly for COM interop. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Regasm.exe (Assembly Registration Tool)](../../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
   
  For more information, see [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md) and [Example COM Class](../../../csharp/programming-guide/interop/example-com-class.md).  
   

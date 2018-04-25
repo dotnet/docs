@@ -172,7 +172,7 @@ In the following procedure, you will create a multipane user interface that is s
     }  
     ```  
   
-3.  In [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], add a call to the procedure you just created in the `New()` procedure. In [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], add this line of code to the constructor for the form class.  
+3.  In Visual Basic, add a call to the procedure you just created in the `New()` procedure. In Visual C#, add this line of code to the constructor for the form class.  
   
     ```vb  
     ' Add this to the New procedure.  

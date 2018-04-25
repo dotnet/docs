@@ -13,11 +13,11 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Too many DLL application clients
-The dynamic-link library (DLL) for [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] can only accommodate access by a limited number of host applications. Your application and other applications that are [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] hosts (some of which may be accessed by your application) are all attempting to access the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] DLL at the same time.  
+The dynamic-link library (DLL) for Visual Basic can only accommodate access by a limited number of host applications. Your application and other applications that are Visual Basic hosts (some of which may be accessed by your application) are all attempting to access the Visual Basic DLL at the same time.  
   
 ## To correct this error  
   
--   Reduce the number of open applications accessing [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+-   Reduce the number of open applications accessing Visual Basic.  
   
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

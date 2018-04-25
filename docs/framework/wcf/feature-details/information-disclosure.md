@@ -54,7 +54,7 @@ Information disclosure enables an attacker to gain valuable information about a 
 ### Specifying Client Credentials or Invalid Identity Forces NTLM Usage  
  When creating a client, specifying client credentials without a domain name, or specifying an invalid server identity, causes NTLM to be used instead of the Kerberos protocol (if the `AlllowNtlm` property is set to `true`). Because  NTLM does not do server authentication, information can potentially be disclosed.  
   
- For example, it is possible to specify Windows client credentials without a domain name, as shown in the following [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] code.  
+ For example, it is possible to specify Windows client credentials without a domain name, as shown in the following Visual C# code.  
   
 ```  
 MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCredential("username", "password");  

@@ -58,7 +58,7 @@ A data service can expose large object binary data. This binary data might repre
   
  You must also add the namespace `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` either to the entity or to the root of the .edmx or .csdl file that defines the data model.  
   
- [!INCLUDE[crexample](../../../../includes/crexample-md.md)] a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](http://go.microsoft.com/fwlink/?LinkID=198989).  
+ For an example of a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](http://go.microsoft.com/fwlink/?LinkID=198989).  
   
  **Reflection Provider**  
  To indicate that an entity is a media link entry, add the <xref:System.Data.Services.Common.HasStreamAttribute> to the class that defines the entity type in the reflection provider.  

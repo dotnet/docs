@@ -58,7 +58,7 @@ This topic describes what service contracts are, how they are defined, what oper
 > [!NOTE]
 >  When inheriting from other service contract interfaces, you cannot override operation properties, such as the name or namespace. If you attempt to do so, you create a new operation in the current service contract.  
   
- [!INCLUDE[crexample](../../../includes/crexample-md.md)] using an interface to create a service contract, see [How to: Create a Service with a Contract Interface](../../../docs/framework/wcf/feature-details/how-to-create-a-service-with-a-contract-interface.md).  
+ For an example of using an interface to create a service contract, see [How to: Create a Service with a Contract Interface](../../../docs/framework/wcf/feature-details/how-to-create-a-service-with-a-contract-interface.md).  
   
  You can, however, use a class to define a service contract and implement that contract at the same time. The advantage of creating your services by applying <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> directly to the class and the methods on the class, respectively, is speed and simplicity. The disadvantages are that managed classes do not support multiple inheritance, and as a result they can only implement one service contract at a time. In addition, any modification to the class or method signatures modifies the public contract for that service, which can prevent unmodified clients from using your service. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md).  
   
@@ -151,7 +151,7 @@ Sub Hello (ByVal greeting As String)
   
  To implement a duplex pattern, you must create a second interface that contains the method declarations that are called on the client.  
   
- [!INCLUDE[crexample](../../../includes/crexample-md.md)] creating a service, and a client that accesses that service, see [How to: Create a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md) and [How to: Access Services with a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md). For a working sample, see [Duplex](../../../docs/framework/wcf/samples/duplex.md). [!INCLUDE[crabout](../../../includes/crabout-md.md)] issues using duplex contracts, see [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md).  
+ For an example of creating a service, and a client that accesses that service, see [How to: Create a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md) and [How to: Access Services with a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md). For a working sample, see [Duplex](../../../docs/framework/wcf/samples/duplex.md). [!INCLUDE[crabout](../../../includes/crabout-md.md)] issues using duplex contracts, see [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md).  
   
 > [!CAUTION]
 >  When a service receives a duplex message, it looks at the `ReplyTo` element in that incoming message to determine where to send the reply. If the channel that is used to receive the message is not secured, then an untrusted client could send a malicious message with a target machine's `ReplyTo`, leading to a denial of service (DOS) of that target machine.  

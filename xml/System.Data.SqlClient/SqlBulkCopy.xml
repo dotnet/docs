@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following console application demonstrates how to load data using the <xref:System.Data.SqlClient.SqlBulkCopy> class. In this example, a <xref:System.Data.SqlClient.SqlDataReader> is used to copy data from the **Production.Product** table in the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)]**AdventureWorks** database to a similar table in the same database.  
+ The following console application demonstrates how to load data using the <xref:System.Data.SqlClient.SqlBulkCopy> class. In this example, a <xref:System.Data.SqlClient.SqlDataReader> is used to copy data from the **Production.Product** table in the SQL Server **AdventureWorks** database to a similar table in the same database.  
   
 > [!IMPORTANT]
 >  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
@@ -101,7 +101,7 @@
    
   
 ## Examples  
- The following console application demonstrates how to bulk load data using a connection that is already open. In this example, a <xref:System.Data.SqlClient.SqlDataReader> is used to copy data from the **Production.Product** table in the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)]**AdventureWorks** database to a similar table in the same database. This example is for demonstration purposes only. You would not use `SqlBulkCopy` to move data from one table to another in the same database in a production application. Note that the source data does not have to be located on SQL Server; you can use any data source that can be read to an <xref:System.Data.IDataReader> or loaded to a <xref:System.Data.DataTable>.  
+ The following console application demonstrates how to bulk load data using a connection that is already open. In this example, a <xref:System.Data.SqlClient.SqlDataReader> is used to copy data from the **Production.Product** table in the SQL Server **AdventureWorks** database to a similar table in the same database. This example is for demonstration purposes only. You would not use `SqlBulkCopy` to move data from one table to another in the same database in a production application. Note that the source data does not have to be located on SQL Server; you can use any data source that can be read to an <xref:System.Data.IDataReader> or loaded to a <xref:System.Data.DataTable>.  
   
 > [!IMPORTANT]
 >  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
@@ -352,10 +352,10 @@
 ## Examples  
  The following console application demonstrates how to modify the time-out to 60 seconds when bulk loading data.  
   
- In this example, the source data is first read from a [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] table to a <xref:System.Data.SqlClient.SqlDataReader> instance. The source data does not have to be located on [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)]; you can use any data source that can be read to an <xref:System.Data.IDataReader> or loaded to a <xref:System.Data.DataTable>.  
+ In this example, the source data is first read from a SQL Server table to a <xref:System.Data.SqlClient.SqlDataReader> instance. The source data does not have to be located on SQL Server; you can use any data source that can be read to an <xref:System.Data.IDataReader> or loaded to a <xref:System.Data.DataTable>.  
   
 > [!IMPORTANT]
->  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] instance, it is easier and faster to use a [!INCLUDE[tsql](~/includes/tsql-md.md)]`INSERT … SELECT` statement to copy the data.  
+>  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a [!INCLUDE[tsql](~/includes/tsql-md.md)]`INSERT … SELECT` statement to copy the data.  
   
  [!code-csharp[DataWorks SqlBulkCopy.Timeout#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.Timeout/CS/source.cs#1)]
  [!code-vb[DataWorks SqlBulkCopy.Timeout#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.Timeout/VB/source.vb#1)]  
@@ -544,7 +544,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Data.SqlClient.SqlBulkCopy.EnableStreaming%2A> is `true`, <xref:System.Data.SqlClient.SqlBulkCopy> reads from an <xref:System.Data.IDataReader> object using <xref:System.Data.CommandBehavior.SequentialAccess>, optimizing memory usage by using the <xref:System.Data.IDataReader> streaming capabilities. When it’s set to false, the <xref:System.Data.SqlClient.SqlBulkCopy> class loads all the data returned by the <xref:System.Data.IDataReader> object into memory before sending it to [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] or SQL Azure.  
+ When <xref:System.Data.SqlClient.SqlBulkCopy.EnableStreaming%2A> is `true`, <xref:System.Data.SqlClient.SqlBulkCopy> reads from an <xref:System.Data.IDataReader> object using <xref:System.Data.CommandBehavior.SequentialAccess>, optimizing memory usage by using the <xref:System.Data.IDataReader> streaming capabilities. When it’s set to false, the <xref:System.Data.SqlClient.SqlBulkCopy> class loads all the data returned by the <xref:System.Data.IDataReader> object into memory before sending it to SQL Server or SQL Azure.  
   
  ]]></format>
         </remarks>
@@ -1054,7 +1054,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1071,7 +1071,7 @@
  Returned in the task object, the <see cref="T:System.Data.SqlClient.SqlConnection" /> object is closed before method execution.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by SQL Server that occurred while opening the connection.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteToServerAsync">
@@ -1103,7 +1103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1120,7 +1120,7 @@
  Returned in the task object, the <see cref="T:System.Data.SqlClient.SqlConnection" /> object is closed before method execution.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by SQL Server that occurred while opening the connection.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteToServerAsync">
@@ -1152,7 +1152,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1173,7 +1173,7 @@
  The <see cref="T:System.Data.IDataReader" />'s associated connection was closed before the completed <see cref="T:System.Threading.Tasks.Task" /> returned.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by SQL Server that occurred while opening the connection.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteToServerAsync">
@@ -1243,7 +1243,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1260,7 +1260,7 @@
  Returned in the task object, the <see cref="T:System.Data.SqlClient.SqlConnection" /> object is closed before method execution.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by SQL Server that occurred while opening the connection.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteToServerAsync">
@@ -1294,7 +1294,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1311,7 +1311,7 @@
  Returned in the task object, the <see cref="T:System.Data.SqlClient.SqlConnection" /> object is closed before method execution.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by SQL Server that occurred while opening the connection.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteToServerAsync">
@@ -1346,7 +1346,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1363,7 +1363,7 @@
  Returned in the task object, the <see cref="T:System.Data.SqlClient.SqlConnection" /> object is closed before method execution.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by SQL Server that occurred while opening the connection.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteToServerAsync">
@@ -1398,7 +1398,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1419,7 +1419,7 @@
  The <see cref="T:System.Data.IDataReader" />'s associated connection was closed before the completed <see cref="T:System.Threading.Tasks.Task" /> returned.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by SQL Server that occurred while opening the connection.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteToServerAsync">
@@ -1456,7 +1456,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1473,7 +1473,7 @@
  Returned in the task object, the <see cref="T:System.Data.SqlClient.SqlConnection" /> object is closed before method execution.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by SQL Server that occurred while opening the connection.</exception>
       </Docs>
     </Member>
   </Members>

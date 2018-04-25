@@ -26,7 +26,7 @@
   
  An <xref:System.Data.EntityClient.EntityDataReader> has no public constructor. It can only be obtained through one of the `EntityCommand.ExecuteReader` method overloads.  
   
- [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
+ SQL Server puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
   
  <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   
@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
+ SQL Server puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
   
  <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   
@@ -152,7 +152,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
+ SQL Server puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
   
  <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   

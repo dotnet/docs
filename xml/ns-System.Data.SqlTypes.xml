@@ -7,9 +7,9 @@
 ## Remarks  
  Each data type in **SqlTypes** has its equivalent data type in SQL Server, with the same underlying data representation. Many of them also have equivalent data types in the CLR. However, **SqlDateTime**, **SqlDecimal**, and **SqlString** have different underlying data structures with their corresponding .NET Framework data types.  
   
- The following table maps the members of the **SqlTypes** namespace to Microsoft [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] data types and to the members of the <xref:System.Data.SqlDbType> enumeration.  
+ The following table maps the members of the **SqlTypes** namespace to Microsoft SQL Server data types and to the members of the <xref:System.Data.SqlDbType> enumeration.  
   
-|.NET Framework SqlTypes|Native [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)]|.NET Framework SqlDbType|  
+|.NET Framework SqlTypes|Native SQL Server|.NET Framework SqlDbType|  
 |-----------------------------|------------------------------------------------------------------------|------------------------------|  
 |<xref:System.Data.SqlTypes.SqlBinary>|binary, image, timestamp, varbinary|Binary, Image, TimeStamp, VarBinary|  
 |<xref:System.Data.SqlTypes.SqlBoolean>|bit|Bit|  

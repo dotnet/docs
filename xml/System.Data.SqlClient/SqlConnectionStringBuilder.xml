@@ -72,7 +72,7 @@ Integrated Security=True
    
   
 ## Examples  
- The following console application builds connection strings for a [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] database. The code uses a <xref:System.Data.SqlClient.SqlConnectionStringBuilder> class to create the connection string, and then passes the <xref:System.Data.Common.DbConnectionStringBuilder.ConnectionString%2A> property of the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> instance to the constructor of the connection class. The example also parses an existing connection string and demonstrates various ways of manipulating the connection string's contents.  
+ The following console application builds connection strings for a SQL Server database. The code uses a <xref:System.Data.SqlClient.SqlConnectionStringBuilder> class to create the connection string, and then passes the <xref:System.Data.Common.DbConnectionStringBuilder.ConnectionString%2A> property of the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> instance to the constructor of the connection class. The example also parses an existing connection string and demonstrates various ways of manipulating the connection string's contents.  
   
 > [!NOTE]
 >  This example includes a password to demonstrate how <xref:System.Data.SqlClient.SqlConnectionStringBuilder> works with connection strings. In your applications, we recommend that you use Windows Authentication. If you must use a password, do not include a hard-coded password in your application.  
@@ -2209,9 +2209,9 @@ Unable to retrieve value for null key.
   
  </term><description> Description  
   
- </description></listheader><item><term> [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] 2005  
+ </description></listheader><item><term> SQL Server 2005  
   
- </term><description> Uses the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] 2005 type system. No conversions are made for the current version of ADO.NET.  
+ </term><description> Uses the SQL Server 2005 type system. No conversions are made for the current version of ADO.NET.  
   
  </description></item><item><term> SQL Server 2008  
   
@@ -2226,7 +2226,7 @@ Unable to retrieve value for null key.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `TypeSystemVersion` property can be used to specify a down-level version of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] for applications written against that version. This avoids possible problems with incompatible types in a newer version of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that may cause the application to break.  
+ The `TypeSystemVersion` property can be used to specify a down-level version of SQL Server for applications written against that version. This avoids possible problems with incompatible types in a newer version of SQL Server that may cause the application to break.  
   
  ]]></format>
         </remarks>
@@ -2320,7 +2320,7 @@ Unable to retrieve value for null key.
  This property corresponds to the "User Instance" key within the connection string.  
   
 > [!NOTE]
->  This feature is available only with the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] Express Edition. For more information on user instances, see [SQL Server Express User Instances](~/docs/framework/data/adonet/sql/sql-server-express-user-instances.md) and "User Instances for Non-Administrators" in [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] Books Online.  
+>  This feature is available only with the SQL Server Express Edition. For more information on user instances, see [SQL Server Express User Instances](~/docs/framework/data/adonet/sql/sql-server-express-user-instances.md) and "User Instances for Non-Administrators" in SQL Server Books Online.  
   
  ]]></format>
         </remarks>

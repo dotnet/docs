@@ -509,7 +509,7 @@ Provider Connection String= 'Data Source=localhost;
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the specific keyword value, such as `Database`, that maps to the <xref:System.Data.EntityClient.EntityConnection.Database%2A> property, see the documentation for the underlying data provider. For [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] equivalent keywords, see the documentation for the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property.  
+ For the specific keyword value, such as `Database`, that maps to the <xref:System.Data.EntityClient.EntityConnection.Database%2A> property, see the documentation for the underlying data provider. For SQL Server equivalent keywords, see the documentation for the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -537,7 +537,7 @@ Provider Connection String= 'Data Source=localhost;
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the specific keyword value, such as `DataSource`, that maps to the <xref:System.Data.EntityClient.EntityConnection.DataSource%2A> property, see the documentation for the underlying data provider. For [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] equivalent keywords, see the documentation for the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property.  
+ For the specific keyword value, such as `DataSource`, that maps to the <xref:System.Data.EntityClient.EntityConnection.DataSource%2A> property, see the documentation for the underlying data provider. For SQL Server equivalent keywords, see the documentation for the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

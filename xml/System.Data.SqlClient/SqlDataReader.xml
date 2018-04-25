@@ -844,7 +844,7 @@
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The value of the column was null (<see cref="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" /> == <see langword="true" />), retrieving a non-SQL type.</exception>
         <exception cref="T:System.InvalidCastException">
-          <paramref name="T" /> doesn’t match the type returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] or cannot be cast.</exception>
+          <paramref name="T" /> doesn’t match the type returned by SQL Server or cannot be cast.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFieldValueAsync&lt;T&gt;">
@@ -917,7 +917,7 @@
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The value of the column was null (<see cref="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" /> == <see langword="true" />), retrieving a non-SQL type.</exception>
         <exception cref="T:System.InvalidCastException">
-          <paramref name="T" /> doesn’t match the type returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] or cannot be cast.</exception>
+          <paramref name="T" /> doesn’t match the type returned by SQL Server or cannot be cast.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFloat">
@@ -2946,14 +2946,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling <see cref="M:System.Data.SqlClient.SqlDataReader.NextResultAsync(System.Threading.CancellationToken)" /> more than once for the same instance before task completion.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] returned an error while executing the command text.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -3006,7 +3006,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Data.SqlClient.SqlException">[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] returned an error while executing the command text.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -3046,14 +3046,14 @@
 ## Remarks  
  If the `behavior` parameter of <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync%2A> is set to `Default`, <xref:System.Data.SqlClient.SqlDataReader.ReadAsync%2A> reads the entire row before returning the Task.  
   
- For more information, including code samples, about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ For more information, including code samples, about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling <see cref="M:System.Data.SqlClient.SqlDataReader.ReadAsync(System.Threading.CancellationToken)" /> more than once for the same instance before task completion.  
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
-        <exception cref="T:System.Data.SqlClient.SqlException">[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] returned an error while executing the command text.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
       </Docs>
     </Member>
     <Member MemberName="RecordsAffected">

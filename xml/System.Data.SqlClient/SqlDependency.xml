@@ -375,7 +375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDependency> listener will restart when an error occurs in the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] connection.  
+ The <xref:System.Data.SqlClient.SqlDependency> listener will restart when an error occurs in the SQL Server connection.  
   
  Multiple calls to the <xref:System.Data.SqlClient.SqlDependency.Start%2A> method can be made, subject to the following restrictions:  
   
@@ -414,14 +414,14 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="connectionString">The connection string for the instance of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] from which to obtain change notifications.</param>
+        <param name="connectionString">The connection string for the instance of SQL Server from which to obtain change notifications.</param>
         <summary>Starts the listener for receiving dependency change notifications from the instance of SQL Server specified by the connection string.</summary>
         <returns>**true** if the listener initialized successfully; **false** if a compatible listener already exists.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method starts the listener for the <xref:System.AppDomain> for receiving dependency notifications from the instance of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] specified by the `connectionString` parameter. This method may be called more than once with different connection strings for multiple servers.  
+ This method starts the listener for the <xref:System.AppDomain> for receiving dependency notifications from the instance of SQL Server specified by the `connectionString` parameter. This method may be called more than once with different connection strings for multiple servers.  
   
  For additional remarks, see <xref:System.Data.SqlClient.SqlDependency.Start%2A>.  
   

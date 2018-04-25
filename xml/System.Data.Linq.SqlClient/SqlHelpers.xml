@@ -118,10 +118,10 @@
         <Parameter Name="escape" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="pattern">The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> search pattern to translate to a [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> search pattern.</param>
+        <param name="pattern">The Visual Basic <see langword="Like" /> search pattern to translate to a SQL Server <see langword="LIKE" /> search pattern.</param>
         <param name="escape">The character to use to escape special SQL characters or the escape character itself.</param>
-        <summary>Translates a search pattern for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> operator to a search pattern for the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> operator.</summary>
-        <returns>A search pattern for the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> operator that corresponds to the specified [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> search pattern.</returns>
+        <summary>Translates a search pattern for the Visual Basic <see langword="Like" /> operator to a search pattern for the SQL Server <see langword="LIKE" /> operator.</summary>
+        <returns>A search pattern for the SQL Server <see langword="LIKE" /> operator that corresponds to the specified Visual Basic <see langword="Like" /> search pattern.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

@@ -1163,7 +1163,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates creating <xref:System.Data.SqlClient.SqlParameter> objects to supply an input parameter to a stored procedure that returns results in an output parameter. The code iterates through the items in the <xref:System.Data.SqlClient.SqlParameterCollection> and displays some parameter properties in the console window. This example assumes a valid connection string to the **AdventureWorks** sample database on an instance of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)].  
+ The following example demonstrates creating <xref:System.Data.SqlClient.SqlParameter> objects to supply an input parameter to a stored procedure that returns results in an output parameter. The code iterates through the items in the <xref:System.Data.SqlClient.SqlParameterCollection> and displays some parameter properties in the console window. This example assumes a valid connection string to the **AdventureWorks** sample database on an instance of SQL Server.  
   
  [!code-csharp[Classic WebData SqlParameterCollection.Parent Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Parent Example/CS/source.cs#1)]  
   

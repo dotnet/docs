@@ -76,7 +76,7 @@
       <Docs>
         <summary>Indicates whether SQL Server should invoke the method on null instances.</summary>
         <value>
-          <see langword="true" /> if SQL Server should invoke the method on null instances; otherwise, <see langword="false" />. If the method cannot be invoked (because of an attribute on the method), the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)]<see langword="DbNull" /> is returned.</value>
+          <see langword="true" /> if SQL Server should invoke the method on null instances; otherwise, <see langword="false" />. If the method cannot be invoked (because of an attribute on the method), the SQL Server <see langword="DbNull" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -140,7 +140,7 @@
       <Docs>
         <summary>Indicates whether the method on a user-defined type (UDT) is called when <see langword="null" /> input arguments are specified in the method invocation.</summary>
         <value>
-          <see langword="true" /> if the method is called when <see langword="null" /> input arguments are specified in the method invocation; <see langword="false" /> if the method returns a <see langword="null" /> value when any of its input parameters are <see langword="null" />. If the method cannot be invoked (because of an attribute on the method), the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)]<see langword="DbNull" /> is returned.</value>
+          <see langword="true" /> if the method is called when <see langword="null" /> input arguments are specified in the method invocation; <see langword="false" /> if the method returns a <see langword="null" /> value when any of its input parameters are <see langword="null" />. If the method cannot be invoked (because of an attribute on the method), the SQL Server <see langword="DbNull" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

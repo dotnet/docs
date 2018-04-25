@@ -277,7 +277,7 @@ Users interact with [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-
   
  While a window can be explicitly closed through mechanisms provided in the non-client and client areas, a window can also be implicitly closed as a result of behavior in other parts of the application or [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)], including the following:  
   
--   A user logs off or shuts down [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)].  
+-   A user logs off or shuts down Windows.  
   
 -   A window's owner closes (see <xref:System.Windows.Window.Owner%2A>).  
   
@@ -310,7 +310,7 @@ Users interact with [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-
   
 -   <xref:System.Windows.WindowStartupLocation.Manual>  
   
- If the startup location is specified as <xref:System.Windows.WindowStartupLocation.Manual>, and the <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> properties have not been set, <xref:System.Windows.Window> will ask [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] for a location to appear in.  
+ If the startup location is specified as <xref:System.Windows.WindowStartupLocation.Manual>, and the <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> properties have not been set, <xref:System.Windows.Window> will ask Windows for a location to appear in.  
   
 <a name="Topmost_Windows_and_Z_Order"></a>   
 ### Topmost Windows and Z-Order  

@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Transactions
-This section contains samples that demonstrate workflow transactions in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate workflow transactions in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Basic TransactionScope](../../../../docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md)  

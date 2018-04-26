@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Services
-This section contains links to samples that demonstrate [!INCLUDE[wf](../../../../includes/wf-md.md)] service functionality.  
+This section contains links to samples that demonstrate Windows Workflow Foundation (WF) service functionality.  
   
 ## In This Section  
  [Absolute Delay](../../../../docs/framework/windows-workflow-foundation/samples/absolute-delay.md)  
@@ -38,7 +38,7 @@ This section contains links to samples that demonstrate [!INCLUDE[wf](../../../.
  Demonstrates how different user types can be used in messaging activities (WF services). The sample service is a simple expense approval service and exposes three operations.  
   
  [Durable Duplex](../../../../docs/framework/windows-workflow-foundation/samples/durable-duplex.md)  
- Demonstrates how to set up and configure durable duplex message exchange using the messaging activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+ Demonstrates how to set up and configure durable duplex message exchange using the messaging activities in Windows Workflow Foundation (WF).  
   
  [Content-Based Correlation](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md)  
  Demonstrates how the messaging activities (<xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, and <xref:System.ServiceModel.Activities.ReceiveReply>) can be used with multiple content-based correlations and content-based correlation.  
@@ -50,7 +50,7 @@ This section contains links to samples that demonstrate [!INCLUDE[wf](../../../.
  Demonstrates how to use a durable delay, which is a delay that persists the workflow to a durable device during the delay.  
   
  [Buffered Receive](../../../../docs/framework/windows-workflow-foundation/samples/buffered-receive.md)  
- Demonstrates how to set up and configure the buffered receive feature in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+ Demonstrates how to set up and configure the buffered receive feature in Windows Workflow Foundation (WF).  
   
  [XAML Activation](../../../../docs/framework/windows-workflow-foundation/samples/xaml-activation.md)  
  Demonstrates how to host a declarative workflow in [!INCLUDE[iisver](../../../../includes/iisver-md.md)]  

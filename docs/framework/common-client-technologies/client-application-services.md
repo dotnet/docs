@@ -50,7 +50,7 @@ Client application services make it easy for you to create Windows-based applica
  Describes the features available through the client application service providers.  
   
  [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)  
- Describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] project designer to enable and configuration application services. Also describes the corresponding changes to your App.config file.  
+ Describes how to use the Visual Studio project designer to enable and configuration application services. Also describes the corresponding changes to your App.config file.  
   
  [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)  
  Describes how to validate a user when your application is configured to use a client authentication service provider.  

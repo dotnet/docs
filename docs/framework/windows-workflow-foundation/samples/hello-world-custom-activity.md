@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Hello World Custom Activity
-This sample demonstrates several key features of [!INCLUDE[wf](../../../../includes/wf-md.md)], including how to create a simple custom activity. Some of the features demonstrated in this sample are creating a custom activity in C# and using `in` and `out` arguments (<xref:System.Activities.InArgument> and <xref:System.Activities.OutArgument>).  
+This sample demonstrates several key features of Windows Workflow Foundation (WF), including how to create a simple custom activity. Some of the features demonstrated in this sample are creating a custom activity in C# and using `in` and `out` arguments (<xref:System.Activities.InArgument> and <xref:System.Activities.OutArgument>).  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

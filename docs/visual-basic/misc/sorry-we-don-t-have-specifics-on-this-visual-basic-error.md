@@ -3063,7 +3063,7 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and issues with upgrading to Visual Basic and working with interoperability features.  
   
  [Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)  
- Provides a forum for questions about how to work in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] environment.  
+ Provides a forum for questions about how to work in the Visual Studio environment.  
   
  [Visual Basic General](http://go.microsoft.com/fwlink/?LinkId=145973)  
  Provides a forum for questions about and issues with Visual Basic that are not discussed in other forums.  

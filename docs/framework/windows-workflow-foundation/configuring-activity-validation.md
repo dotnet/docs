@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Configuring Activity Validation
-Activity validation enables activity authors and users to identify and report errors in an activity’s configuration prior to its execution. [!INCLUDE[wf](../../../includes/wf-md.md)] provides the following three types of activity validation:  
+Activity validation enables activity authors and users to identify and report errors in an activity’s configuration prior to its execution. Windows Workflow Foundation (WF) provides the following three types of activity validation:  
   
 -   `RequiredArgument` and `OverloadGroup` attributes.  
   

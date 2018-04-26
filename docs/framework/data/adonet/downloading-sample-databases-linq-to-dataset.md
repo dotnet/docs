@@ -71,7 +71,7 @@ The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes
      If you have installed these files to a different drive or directory, you must revise the paths appropriately before you execute the `sp_attach_db` stored procedure.  
   
 ## Downloading SQL Server Express Edition  
- The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] section use SQL Server 2005 as the data store but can be modified to use SQL Server Express Edition, instead. SQL Server Express Edition is available without charge, and you can redistribute it with applications. If you are using [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)], SQL Server Express Edition is included in the Pro and higher editions.  
+ The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] section use SQL Server 2005 as the data store but can be modified to use SQL Server Express Edition, instead. SQL Server Express Edition is available without charge, and you can redistribute it with applications. If you are using Visual Studio, SQL Server Express Edition is included in the Pro and higher editions.  
   
 #### To download and install SQL Server Express Edition  
   

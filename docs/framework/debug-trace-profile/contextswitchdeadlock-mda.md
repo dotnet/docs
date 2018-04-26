@@ -51,7 +51,7 @@ The `contextSwitchDeadlock` managed debugging assistant (MDA) is activated when 
  To determine if the MDA is being falsely activated, disable all breakpoints, restart the application, and allow it to run without stopping. If the MDA is not activated, it is likely the initial activation was false. In this case, disable the MDA to avoid interference with the debugging session.  
   
 > [!NOTE]
->  This MDA is in the default set for [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] and later versions. When the hosting process is enabled in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you cannot disable MDAs that are in the default set. The hosting process is enabled by default, so it must be explicitly disabled. For information about how to disable MDAs, see "Enabling and Disabling MDAs" in [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
+>  This MDA is in the default set for [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] and later versions. When the hosting process is enabled in Visual Studio, you cannot disable MDAs that are in the default set. The hosting process is enabled by default, so it must be explicitly disabled. For information about how to disable MDAs, see "Enabling and Disabling MDAs" in [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
   
 ## Resolution  
  Follow COM rules regarding STA message pumping.  

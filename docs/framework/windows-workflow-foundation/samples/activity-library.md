@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Activity Library
-This section contains samples that demonstrate advanced custom activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate advanced custom activities in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Policy Activity in .NET Framework 4.5](../../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md)  

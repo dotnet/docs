@@ -64,7 +64,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
 #### To create a WPF application  
   
-1.  Start [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
+1.  Start Visual Studio.  
   
 2.  In the **File** menu, click **New**, and then click **New Project**.  
   
@@ -83,7 +83,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
 7.  Click **OK**.  
   
-     The WPF Designer opens in **Design** view and displays the MainWindow.xaml file. [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] creates the **My Project** folder, the Application.xaml file, and the MainWindow.xaml file.  
+     The WPF Designer opens in **Design** view and displays the MainWindow.xaml file. Visual Studio creates the **My Project** folder, the Application.xaml file, and the MainWindow.xaml file.  
   
 ## Targeting the .NET Framework and Adding a Reference to the Caching Assemblies  
  By default, WPF applications target the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]. To use the <xref:System.Runtime.Caching> namespace in a WPF application, the application must target the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] (not the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]) and must include a reference to the namespace.  

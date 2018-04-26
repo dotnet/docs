@@ -26,7 +26,7 @@ Declares the name of a property, and the property procedures used to store and r
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ Default ] [ accessmodifier ]   
 [ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ] [ Iterator ]  
 Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  

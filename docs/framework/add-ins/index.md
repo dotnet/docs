@@ -111,7 +111,7 @@ Add-in pipeline
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Pipeline Development](../../../docs/framework/add-ins/pipeline-development.md)|Describes the communication pipeline of segments from the host application to the add-in. Provides code examples in walkthrough topics that describe how to construct the pipeline and how to deploy segments to the pipeline in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].|  
+|[Pipeline Development](../../../docs/framework/add-ins/pipeline-development.md)|Describes the communication pipeline of segments from the host application to the add-in. Provides code examples in walkthrough topics that describe how to construct the pipeline and how to deploy segments to the pipeline in Visual Studio.|  
 |[Application Domains and Assemblies](http://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)|Describes the relationship between application domains, which provide an isolation boundary for security, reliability, and versioning, and assemblies.|  
   
  [Back to top](#top)  

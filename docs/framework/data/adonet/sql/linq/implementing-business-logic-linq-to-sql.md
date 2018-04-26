@@ -163,7 +163,7 @@ public string CustomerID
 }  
 ```  
   
- In your part of the class, you write an implementing definition of the method. In [!INCLUDE[vsprvs](../../../../../../includes/vsprvs-md.md)], after you type `partial` you will see IntelliSense for the method definitions in the other part of the class.  
+ In your part of the class, you write an implementing definition of the method. In Visual Studio, after you type `partial` you will see IntelliSense for the method definitions in the other part of the class.  
   
 ```vb  
 Partial Public Class Customer  

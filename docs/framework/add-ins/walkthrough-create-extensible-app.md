@@ -58,14 +58,14 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
 ## Prerequisites  
  You need the following to complete this walkthrough:  
   
--   [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+-   Visual Studio.  
   
 ## Creating a Visual Studio Solution  
- Use a solution in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] to contain the projects of your pipeline segments.  
+ Use a solution in Visual Studio to contain the projects of your pipeline segments.  
   
 #### To create the pipeline solution  
   
-1.  In [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], create a new project named `Calc1Contract`. Base it on the **Class Library** template.  
+1.  In Visual Studio, create a new project named `Calc1Contract`. Base it on the **Class Library** template.  
   
 2.  Name the solution `CalculatorV1`.  
   

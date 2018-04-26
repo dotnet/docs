@@ -19,7 +19,7 @@ ms.workload:
   - "dotnet"
 ---
 # Windows Workflow Foundation
-This section describes the programming model, samples, and tools of the [!INCLUDE[wf](../../../includes/wf-md.md)].  
+This section describes the programming model, samples, and tools of the Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Guide to the Windows Workflow Documentation](../../../docs/framework/windows-workflow-foundation/guide-to-the-documentation.md)  

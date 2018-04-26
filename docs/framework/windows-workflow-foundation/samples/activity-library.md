@@ -1,4 +1,4 @@
----
+ ---
 title: "Activity Library"
 ms.custom: ""
 ms.date: "03/30/2017"
@@ -20,7 +20,7 @@ This section contains samples that demonstrate advanced custom activities in Win
   
 ## In This Section  
  [Policy Activity in .NET Framework 4.5](../../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md)  
- Demonstrates how the Policy4 activity allows Windows Workflow Foundation in [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects to be used in Windows Workflow Foundationin [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) directly by using the rules engine that is shipped in WF 3.5.  
+ Demonstrates how the Policy4 activity allows Windows Workflow Foundation in [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects to be used in Windows Workflow Foundation in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) directly by using the rules engine that is shipped in WF 3.5.  
   
  [Custom Activity to Switch on a Range of Values](../../../../docs/framework/windows-workflow-foundation/samples/custom-activity-to-switch-on-a-range-of-values.md)  
  Demonstrates how to create a custom activity that extends the use of a <xref:System.Activities.Statements.Switch%601>.  

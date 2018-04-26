@@ -24,41 +24,41 @@ This sample demonstrates how to use the <xref:System.Runtime.Serialization.Json.
 >  The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample uses a `Person` data contract to demonstrate serialization and deserialization.  
-  
-```  
-[DataContract]  
-    class Person  
-    {  
-        [DataMember]  
-        internal string name;  
-  
-        [DataMember]  
-        internal int age;  
-    }  
-```  
-  
+
+```csharp
+[DataContract]
+class Person
+{
+    [DataMember]
+    internal string name;
+
+    [DataMember]
+    internal int age;
+}
+```
+
  To serialize an instance of the `Person` type to JSON, create the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> first and use the `WriteObject` method to write JSON data to a stream.  
-  
-```  
-Person p = new Person();  
-//Set up Person object...  
-MemoryStream stream1 = new MemoryStream();  
-DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(Person));  
-ser.WriteObject(stream1, p);  
-```  
-  
- The memory stream contains valid JSON data.  
+
+```csharp
+Person p = new Person();
+//Set up Person object...
+MemoryStream stream1 = new MemoryStream();
+DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(Person));
+ser.WriteObject(stream1, p);
+```
+
+ The memory stream contains valid JSON data.
   
 ```json  
 {"age":42,"name":"John"}  
 ```  
   
  The sample demonstrates deserializing from JSON data into an object. You then rewind the stream and call `ReadObject`.  
-  
-```  
-Person p2 = (Person)ser.ReadObject(stream1);  
-```  
-  
+
+```csharp
+Person p2 = (Person)ser.ReadObject(stream1);
+```
+
  Examining the `p2` object reveals that the JSON data has been deserialized correctly.  
   
 > [!IMPORTANT]

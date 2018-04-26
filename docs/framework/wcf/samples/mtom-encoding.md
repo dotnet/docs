@@ -38,15 +38,15 @@ This sample demonstrates the use of the Message Transmission Optimization Mechan
 ```  
   
  The MTOM encoder can optimize arrays of bytes and streams. In this sample, the operation uses a `Stream` parameter and can therefore be optimized.  
-  
-```  
+
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
   public interface IUpload  
   {  
       [OperationContract]  
       int Upload(Stream data);  
   }  
-```  
+```
   
  The contract chosen for this sample transmits binary data to the service and receives the number of bytes uploaded as the return value. When the service is installed and the client is run, it prints out the number 1000, which indicates that all 1000 bytes were received. The remainder of the output lists optimized and non-optimized message sizes for various payloads.  
   

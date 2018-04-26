@@ -33,19 +33,19 @@ This sample demonstrates how to perform volatile queued communication over the M
 >  You cannot send volatile messages with no assurances within the scope of a transaction using MSMQ. You also must create a non-transactional queue to send volatile messages.  
   
  The service contract in this sample is `IStockTicker` that defines one-way services that are best suited for use with queuing.  
-  
-```  
+
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 public interface IStockTicker  
 {  
     [OperationContract(IsOneWay = true)]  
     void StockTick(string symbol, float price);  
 }  
-```  
-  
+```
+
  The service operation displays the stock ticker symbol and price, as shown in the following sample code:  
   
-```  
+```csharp
 public class StockTickerService : IStockTicker  
 {  
     public void StockTick(string symbol, float price)  
@@ -57,8 +57,8 @@ public class StockTickerService : IStockTicker
 ```  
   
  The service is self hosted. When using the MSMQ transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service contains code to check for the existence of the queue and create it if required. The queue name is read from the configuration file. The base address is used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy for the service.  
-  
-```  
+
+```csharp
 // Host the service within this EXE console application.  
 public static void Main()  
 {  
@@ -85,8 +85,8 @@ public static void Main()
         serviceHost.Close();  
     }  
 }  
-```  
-  
+```
+
  The MSMQ queue name is specified in the appSettings section of the configuration file. The endpoint for the service is defined in the system.serviceModel section of the configuration file and specifies the `netMsmqBinding` binding.  
   
 > [!NOTE]
@@ -111,7 +111,7 @@ public static void Main()
                 bindingConfiguration="volatileBinding"   
                 contract="Microsoft.ServiceModel.Samples.IStockTicker" />  
     ...  
-          </service>  
+    </service>  
   </services>  
   
   <bindings>  
@@ -126,8 +126,8 @@ public static void Main()
 ```  
   
  Because the sample sends queued messages by using a non-transactional queue, transacted messages cannot be sent to the queue.  
-  
-```  
+
+```csharp
 // Create a client.  
 Random r = new Random(137);  
   
@@ -142,8 +142,8 @@ for (int i = 0; i < 10; i++)
   
 //Closing the client gracefully cleans up resources.  
 client.Close();  
-```  
-  
+```
+
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages.  
   
 ```  

@@ -12,7 +12,7 @@ ms.workload:
   - "dotnet"
 ---
 # Windows Workflow (WF) Samples
-These samples provide instruction on various aspects of [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+These samples provide instruction on various aspects of Windows Workflow Foundation (WF).  
   
 The samples can be downloaded from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=150780).  
   
@@ -24,10 +24,10 @@ The samples can be downloaded from the [Microsoft Download Center](http://go.mic
  Provides samples that are related to workflow applications.  
   
  [Basic](../../../../docs/framework/windows-workflow-foundation/samples/basic.md)  
- Provides samples that demonstrate basic [!INCLUDE[wf](../../../../includes/wf-md.md)] functionality.  
+ Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.  
   
  [Scenario](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md)  
- Provides examples of [!INCLUDE[wf](../../../../includes/wf-md.md)] scenarios.  
+ Provides examples of Windows Workflow Foundation (WF) scenarios.  
   
  The samples contained in this section make use of new features in C# 3.0. For details on some new features of C# 3.0 that may be unfamiliar, please see the [C# 3.0 Overview](http://go.microsoft.com/fwlink/?LinkId=193972).  
   

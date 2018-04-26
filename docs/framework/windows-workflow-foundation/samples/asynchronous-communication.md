@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Asynchronous Communication
-This sample demonstrates how the communication between two different [!INCLUDE[wf](../../../../includes/wf-md.md)] services is done asynchronously by default.  
+This sample demonstrates how the communication between two different Windows Workflow Foundation (WF) services is done asynchronously by default.  
   
 ## Demonstrates  
  Asynchronous communication between [!INCLUDE[wf1](../../../../includes/wf1-md.md)] services.  

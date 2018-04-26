@@ -21,7 +21,7 @@ This sample demonstrates how to manage workflow instances that have been suspend
  The sample shows how a command-line utility can be implemented to query for suspended instances, and how to give the user the option to resume or terminate the instance. In this sample, a workflow service intentionally throws an exception, causing it to become suspended. The command-line utility can then be used to query for the instance and subsequently resume or terminate the instance.  
   
 ## Demonstrates  
- <xref:System.ServiceModel.WorkflowServiceHost> with <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> and <xref:System.ServiceModel.Activities.WorkflowControlEndpoint> in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+ <xref:System.ServiceModel.WorkflowServiceHost> with <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> and <xref:System.ServiceModel.Activities.WorkflowControlEndpoint> in Windows Workflow Foundation (WF).  
   
 ## Discussion  
  The command-line utility implemented in this sample is specific to the SQL instance store implementation that ships in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]. If you have a custom implementation of the instance store, then you can adapt this utility by replacing the `WorkflowInstanceCommand` implementations in the sample with implementations that are specific to your instance store.  

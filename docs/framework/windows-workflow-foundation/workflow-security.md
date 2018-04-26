@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Workflow Security
-[!INCLUDE[wf](../../../includes/wf-md.md)] is integrated with several different technologies, such as Microsoft SQL Server and [!INCLUDE[indigo1](../../../includes/indigo1-md.md)]. Interacting with these technologies may introduce security issues into your workflow if done improperly.  
+Windows Workflow Foundation (WF) is integrated with several different technologies, such as Microsoft SQL Server and [!INCLUDE[indigo1](../../../includes/indigo1-md.md)]. Interacting with these technologies may introduce security issues into your workflow if done improperly.  
   
 ## Persistence Security Concerns  
   

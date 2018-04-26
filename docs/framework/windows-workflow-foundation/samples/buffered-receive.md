@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Buffered Receive
-This sample demonstrates how to set up and configure the buffered receive feature in [!INCLUDE[wf](../../../../includes/wf-md.md)]. Buffered receive allows the workflow author to create a workflow without having to worry about the order in which messages are received. The buffered receive feature buffers messages locally and delivers them when the workflow is ready to receive them.  
+This sample demonstrates how to set up and configure the buffered receive feature in Windows Workflow Foundation (WF). Buffered receive allows the workflow author to create a workflow without having to worry about the order in which messages are received. The buffered receive feature buffers messages locally and delivers them when the workflow is ready to receive them.  
   
 ## Demonstrates  
  Out-of-order message processing using buffered receive with messaging activities.  

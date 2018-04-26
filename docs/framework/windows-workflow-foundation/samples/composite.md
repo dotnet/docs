@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Composite
-This section contains custom activity samples composed of other activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains custom activity samples composed of other activities in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Basic Activity Composition](../../../../docs/framework/windows-workflow-foundation/samples/basic-activity-composition.md)  

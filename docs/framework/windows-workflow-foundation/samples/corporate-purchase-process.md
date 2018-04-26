@@ -54,7 +54,7 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Application\PurchaseProcess`  
   
 ## Description of the Process  
- This sample shows an implementation of a [!INCLUDE[wf](../../../../includes/wf-md.md)] program to gather proposals from vendors for a generic company.  
+ This sample shows an implementation of a Windows Workflow Foundation (WF) program to gather proposals from vendors for a generic company.  
   
 1.  An employee of Company X creates a Request for Proposal (RFP).  
   

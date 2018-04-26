@@ -32,7 +32,7 @@ This sample demonstrates how to use a durable delay, which is a delay that persi
   
  The .xamlx file is a workflow service that is hosted in Visual Studio. Visual Studio uses Cassini that uses a workflow service host to host the workflow.  
   
- In addition to hosting the workflow, the workflow service host manages the workflow instances by loading and unloading them. To start an instance of the [!INCLUDE[wf](../../../../includes/wf-md.md)] definition (on the workflow service host), set a client that sends a message to the <xref:System.ServiceModel.Activities.Receive> activity in the workflow. This <xref:System.ServiceModel.Activities.Receive> has its <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> property set to `true`, enabling it to create a new instance of the workflow once it receives a message.  
+ In addition to hosting the workflow, the workflow service host manages the workflow instances by loading and unloading them. To start an instance of the Windows Workflow Foundation (WF) definition (on the workflow service host), set a client that sends a message to the <xref:System.ServiceModel.Activities.Receive> activity in the workflow. This <xref:System.ServiceModel.Activities.Receive> has its <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> property set to `true`, enabling it to create a new instance of the workflow once it receives a message.  
   
  During initialization, an unload instance behavior is added to the configuration file that specifies to the workflow service host under which it should unload an instance to the persistence store (database). For this sample, it unloads the instance immediately after the workflow goes idle (when the delay is triggered).  
   

@@ -19,7 +19,7 @@ ms.workload:
   - "dotnet"
 ---
 # Windows Workflow Conceptual Overview
-This section contains a set of topics discussing the larger concepts behind [!INCLUDE[wf](../../../includes/wf-md.md)].  
+This section contains a set of topics discussing the larger concepts behind Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Windows Workflow Overview](../../../docs/framework/windows-workflow-foundation/overview.md)  

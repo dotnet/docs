@@ -70,7 +70,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Drawing.Design.IToolboxService> in design mode to list and select toolbox categories and items, and to create components or controls from toolbox items and add them to a <xref:System.Windows.Forms.Form>. To use the example, compile the code to an assembly, and add a reference to the assembly in a Windows Forms application. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `IToolboxServiceControl` is automatically added to the **Toolbox**. Create an instance of the `IToolboxServiceControl` on a form to test its behavior.  
+ The following code example demonstrates the use of the <xref:System.Drawing.Design.IToolboxService> in design mode to list and select toolbox categories and items, and to create components or controls from toolbox items and add them to a <xref:System.Windows.Forms.Form>. To use the example, compile the code to an assembly, and add a reference to the assembly in a Windows Forms application. If you are using Visual Studio, the `IToolboxServiceControl` is automatically added to the **Toolbox**. Create an instance of the `IToolboxServiceControl` on a form to test its behavior.  
   
  [!code-cpp[IToolboxServiceExample1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxServiceExample1/CPP/itoolboxservicecontrol.cpp#1)]
  [!code-csharp[IToolboxServiceExample1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxServiceExample1/CS/itoolboxservicecontrol.cs#1)]

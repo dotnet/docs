@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `includeAsDesignerVerb` parameter is set to `true`, then this item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], a command will also be added to the **Attributes** pane of the Properties window. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+ If the `includeAsDesignerVerb` parameter is set to `true`, then this item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. In Visual Studio, a command will also be added to the **Attributes** pane of the Properties window. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
   
  The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> properties to `null`.  
   

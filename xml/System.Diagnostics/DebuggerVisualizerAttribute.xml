@@ -424,7 +424,7 @@
 ## Remarks  
  If the visualizer object source was specified by its type, then the value returned is the <xref:System.Type.AssemblyQualifiedName%2A> property of the visualizer object source type.  
   
- A visualizer object source created for [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] should inherit from the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] class `VisualizerObjectSource` class. For information on creating a visualizer, see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+ A visualizer object source created for Visual Studio should inherit from the Visual Studio class `VisualizerObjectSource` class. For information on creating a visualizer, see [Create Custom Visualizers of Data](/visualstudio/debugger/create-custom-visualizers-of-data).  
   
  ]]></format>
         </remarks>

@@ -40,7 +40,7 @@
   
  For example, an HTML designer might return a `DemoDOM` tree as its view. The HTML designer returns a view technology of Default. A Windows Forms hosting environment would have one or more view adapter classes available. If one such class could convert the `DemoDOM` into a Windows Forms control, the hosting application can support this type of designer. If no adapter can handle the data type returned from the designer’s <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> method, the load of the designer will fail, and the user will be presented with an error.  
   
- [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] has an extensible scheme for providing view adapters, so it can adapt to any UI technology. Third-party technology providers can also offer an appropriate view adapter, and their object models are immediately consumable.  
+ Visual Studio has an extensible scheme for providing view adapters, so it can adapt to any UI technology. Third-party technology providers can also offer an appropriate view adapter, and their object models are immediately consumable.  
   
  For an example that uses view adapters, see ".NET Shape Library: A Sample Designer" in the Windows Forms Knowledge Base at http://windowsforms.net/articles/shapedesigner.aspx.  
   
@@ -88,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The root designer may return any type of object, but the object must be compatible with an adapter for the technology of the host. Hosting environments such as [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] provide a way to plug in new view technology adapters. The default view object for the Windows Forms designer is a <xref:System.Windows.Forms.Control?displayProperty=nameWithType> instance.  
+ The root designer may return any type of object, but the object must be compatible with an adapter for the technology of the host. Hosting environments such as Visual Studio provide a way to plug in new view technology adapters. The default view object for the Windows Forms designer is a <xref:System.Windows.Forms.Control?displayProperty=nameWithType> instance.  
   
    
   
@@ -139,7 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The view object must implement any interfaces the development environment requires. The [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment supports view objects that are either an ActiveX control, active document, or an object that implements the IVsWindowPane interface that is available through [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] VSI ([!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Integration) program. The [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment provides support for this view technology. Support for this view technology is not necessarily available in all development environments.  
+ The view object must implement any interfaces the development environment requires. The Visual Studio development environment supports view objects that are either an ActiveX control, active document, or an object that implements the IVsWindowPane interface that is available through Visual Studio VSI (Visual Studio Integration) program. The Visual Studio development environment provides support for this view technology. Support for this view technology is not necessarily available in all development environments.  
   
  ]]></format>
         </remarks>

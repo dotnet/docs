@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ComponentModel.EditorBrowsableAttribute> is a hint to a designer indicating whether a property or method is to be displayed. You can use this type in a visual designer or text editor to determine what is visible to the user. For example, the IntelliSense engine in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses this attribute to determine whether to show a property or method.  
+ <xref:System.ComponentModel.EditorBrowsableAttribute> is a hint to a designer indicating whether a property or method is to be displayed. You can use this type in a visual designer or text editor to determine what is visible to the user. For example, the IntelliSense engine in Visual Studio uses this attribute to determine whether to show a property or method.  
   
  In Visual C#, you can control when advanced properties appear in IntelliSense and the Properties Window with the **Hide Advanced Members** setting under **Tools &#124; Options &#124; Text Editor &#124; C#**. The corresponding <xref:System.ComponentModel.EditorBrowsableState> is <xref:System.ComponentModel.EditorBrowsableState.Advanced>.  
   
@@ -49,7 +49,7 @@
 ## Examples  
  The following sample demonstrates how to hide a property of a class from IntelliSense by setting the appropriate value for the <xref:System.ComponentModel.EditorBrowsableAttribute> attribute. Build `Class1` in its own assembly.  
   
- In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], create a new Windows Application solution, and add a reference to the assembly which contains `Class1`. In the Form1 constructor, declare an instance of `Class1`, type the name of the instance, and press the period key to activate the IntelliSense drop-down list of `Class1` members. The `Age` property does not appear in the drop-down list.  
+ In Visual Studio, create a new Windows Application solution, and add a reference to the assembly which contains `Class1`. In the Form1 constructor, declare an instance of `Class1`, type the name of the instance, and press the period key to activate the IntelliSense drop-down list of `Class1` members. The `Age` property does not appear in the drop-down list.  
   
  [!code-cpp[EditorBrowsableAttribute#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorBrowsableAttribute/CPP/ctleditorbrowsable.cpp#1)]
  [!code-csharp[EditorBrowsableAttribute#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorBrowsableAttribute/CS/ctleditorbrowsable.cs#1)]

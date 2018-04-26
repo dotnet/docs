@@ -579,7 +579,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To indicate language neutral, you should specify 0 for the `language` parameter. For a listing of the available languages and sublanguages, see the Winnt.h header file. If you have [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] installed, this header file can typically be found relative to the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] installation directory at \\\VC\PlatformSDK\Include.  
+ To indicate language neutral, you should specify 0 for the `language` parameter. For a listing of the available languages and sublanguages, see the Winnt.h header file. If you have Visual Studio installed, this header file can typically be found relative to the Visual Studio installation directory at \\\VC\PlatformSDK\Include.  
   
    
   

@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used by a visual designer to determine what is visible to the user. For example, the IntelliSense engine in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] never shows methods or properties that are marked as Never. Use <xref:System.ComponentModel.EditorBrowsableAttribute> to specify the <xref:System.ComponentModel.EditorBrowsableState> for a member.  
+ This class is used by a visual designer to determine what is visible to the user. For example, the IntelliSense engine in Visual Studio never shows methods or properties that are marked as Never. Use <xref:System.ComponentModel.EditorBrowsableAttribute> to specify the <xref:System.ComponentModel.EditorBrowsableState> for a member.  
   
    
   

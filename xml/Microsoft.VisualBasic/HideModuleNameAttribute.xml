@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute is useful for exposing module members without showing the module itself. When using IntelliSense in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Integrated Development Environment (IDE) for [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the module does not show in the statement completion list. Instead, IntelliSense shows the module members.  
+ This attribute is useful for exposing module members without showing the module itself. When using IntelliSense in the Visual Studio Integrated Development Environment (IDE) for Visual Basic, the module does not show in the statement completion list. Instead, IntelliSense shows the module members.  
   
  Even when the module name is hidden, the module members are still accessible through the module.  
   

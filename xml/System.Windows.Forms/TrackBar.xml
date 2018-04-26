@@ -330,7 +330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] design environment uses this method to start the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.TrackBar.EndInit%2A> method ends the initialization. Using <xref:System.Windows.Forms.TrackBar.BeginInit%2A> and <xref:System.Windows.Forms.TrackBar.EndInit%2A> methods prevents the control from being used before it is fully initialized.  
+ The Visual Studio design environment uses this method to start the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.TrackBar.EndInit%2A> method ends the initialization. Using <xref:System.Windows.Forms.TrackBar.BeginInit%2A> and <xref:System.Windows.Forms.TrackBar.EndInit%2A> methods prevents the control from being used before it is fully initialized.  
   
  ]]></format>
         </remarks>
@@ -532,7 +532,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] design environment uses this method to end the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.TrackBar.BeginInit%2A> method starts the initialization. Using the <xref:System.Windows.Forms.TrackBar.BeginInit%2A> and <xref:System.Windows.Forms.TrackBar.EndInit%2A> methods prevents the control from being used before it is fully initialized.  
+ The Visual Studio design environment uses this method to end the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.TrackBar.BeginInit%2A> method starts the initialization. Using the <xref:System.Windows.Forms.TrackBar.BeginInit%2A> and <xref:System.Windows.Forms.TrackBar.EndInit%2A> methods prevents the control from being used before it is fully initialized.  
   
  ]]></format>
         </remarks>

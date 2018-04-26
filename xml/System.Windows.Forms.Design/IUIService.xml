@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following code example creates a designer that provides designer verb menu commands that call methods of the <xref:System.Windows.Forms.Design.IUIService>. To use the example, compile the sample code to an assembly, and add a reference to the assembly in a Windows Forms application. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `IUIServiceExampleControl` is automatically added to the **Toolbox**. Add an instance of the `IUIServiceExampleControl` to a <xref:System.Windows.Forms.Form>. To access the designer verb commands that invoke <xref:System.Windows.Forms.Design.IUIService> methods, either right-click on the control's surface or click on the control's smart tag glyph and select an item from the smart tag panel.  
+ The following code example creates a designer that provides designer verb menu commands that call methods of the <xref:System.Windows.Forms.Design.IUIService>. To use the example, compile the sample code to an assembly, and add a reference to the assembly in a Windows Forms application. If you are using Visual Studio, the `IUIServiceExampleControl` is automatically added to the **Toolbox**. Add an instance of the `IUIServiceExampleControl` to a <xref:System.Windows.Forms.Form>. To access the designer verb commands that invoke <xref:System.Windows.Forms.Design.IUIService> methods, either right-click on the control's surface or click on the control's smart tag glyph and select an item from the smart tag panel.  
   
  [!code-cpp[IUIServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#1)]
  [!code-csharp[IUIServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#1)]

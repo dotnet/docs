@@ -35,7 +35,7 @@
 |-------------|-------------|  
 |<xref:System.ComponentModel.Design.ISelectionService>|Used to discover the current selection in order to obtain verbs offered by the currently selected designer.|  
 |<xref:System.ComponentModel.Design.IDesignerHost>|Used to obtain the designer for the currently selected component, if any.|  
-|`Microsoft.VisualStudio.Shell.Interop.IVsUIShell`|Used to notify [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] that the command status has changed.|  
+|`Microsoft.VisualStudio.Shell.Interop.IVsUIShell`|Used to notify Visual Studio that the command status has changed.|  
 |`Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager`|Used to show context menus.|  
   
  ]]></format>

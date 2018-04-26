@@ -39,7 +39,7 @@
  To use <xref:System.Deployment.Application.InPlaceHostingManager> to download and install applications, you must make sure that the certificate for signing the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications you plan to install is already installed on client computers as a trusted publisher. For more information on trusted publishers, see [Trusted Application Deployment Overview](http://msdn.microsoft.com/library/b24a1702-8fbe-45b1-87a0-9618a0708f1d).  
   
 > [!NOTE]
->  There is currently a product limitation that prevents <xref:System.Deployment.Application.InPlaceHostingManager> from working correctly when you debug your code using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]. If you debug your application in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] by using the F5 key, the sample will throw mysterious exceptions when you call <xref:System.Deployment.Application.InPlaceHostingManager.DownloadApplicationAsync%2A>. To debug using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], start the application without debugging, and then attach the debugger. Alternatively, you can use another debugger, such as WinDbg.  
+>  There is currently a product limitation that prevents <xref:System.Deployment.Application.InPlaceHostingManager> from working correctly when you debug your code using Visual Studio. If you debug your application in Visual Studio by using the F5 key, the sample will throw mysterious exceptions when you call <xref:System.Deployment.Application.InPlaceHostingManager.DownloadApplicationAsync%2A>. To debug using Visual Studio, start the application without debugging, and then attach the debugger. Alternatively, you can use another debugger, such as WinDbg.  
   
    
   

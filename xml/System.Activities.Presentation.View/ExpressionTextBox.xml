@@ -22,14 +22,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the <xref:System.Activities.Presentation.View.ExpressionTextBox> provides features such as IntelliSense when editing an expression. Such features are provided by a component called the hostable editor. The expression editing interface is extensible and the editor used for editing expressions can be replaced.  
+ In Visual Studio, the <xref:System.Activities.Presentation.View.ExpressionTextBox> provides features such as IntelliSense when editing an expression. Such features are provided by a component called the hostable editor. The expression editing interface is extensible and the editor used for editing expressions can be replaced.  
   
 > [!NOTE]
->  This component is not available for use in applications that are being re-hosted outside [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+>  This component is not available for use in applications that are being re-hosted outside Visual Studio.  
   
  **ExpressionTextBlock** works in the following manner when you edit an expression.  
   
-1.  When you click on an **ExpressionTextBox**, an <xref:System.Activities.Presentation.View.IExpressionEditorInstance> object is created and a hostable editor session is instantiated in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+1.  When you click on an **ExpressionTextBox**, an <xref:System.Activities.Presentation.View.IExpressionEditorInstance> object is created and a hostable editor session is instantiated in Visual Studio.  
   
 2.  When you type inside a hostable editor, note that the features have two sorts of availability.  
   

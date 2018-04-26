@@ -117,7 +117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.TypeDescriptor.AddAttributes%28System.Object%2CSystem.Attribute%5B%5D%29> method adds class-level attributes to the specified instance of a component. Because this is a common requirement of applications using the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Windows Forms Designer and Properties window, this method provides a shortcut by creating a type description provider that merges the provided attributes with the attributes that already exist on the class. The return value is the type description provider that was used to add the attributes. This provider can later be passed to the <xref:System.ComponentModel.TypeDescriptor.RemoveProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Object%29> method when the added attributes are no longer needed.  
+ The <xref:System.ComponentModel.TypeDescriptor.AddAttributes%28System.Object%2CSystem.Attribute%5B%5D%29> method adds class-level attributes to the specified instance of a component. Because this is a common requirement of applications using the Visual Studio Windows Forms Designer and Properties window, this method provides a shortcut by creating a type description provider that merges the provided attributes with the attributes that already exist on the class. The return value is the type description provider that was used to add the attributes. This provider can later be passed to the <xref:System.ComponentModel.TypeDescriptor.RemoveProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Object%29> method when the added attributes are no longer needed.  
   
  ]]></format>
         </remarks>
@@ -174,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.TypeDescriptor.AddAttributes%28System.Type%2CSystem.Attribute%5B%5D%29> method adds class-level attributes to the specified type of a component. Because this is a common requirement of applications using the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Windows Forms Designer and Properties window, this method provides a shortcut by creating a type description provider that merges the provided attributes with the attributes that already exist on the class. The return value is the type description provider that was used to add the attributes. This provider can later be passed to the <xref:System.ComponentModel.TypeDescriptor.RemoveProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Type%29> method when the added attributes are no longer needed.  
+ The <xref:System.ComponentModel.TypeDescriptor.AddAttributes%28System.Type%2CSystem.Attribute%5B%5D%29> method adds class-level attributes to the specified type of a component. Because this is a common requirement of applications using the Visual Studio Windows Forms Designer and Properties window, this method provides a shortcut by creating a type description provider that merges the provided attributes with the attributes that already exist on the class. The return value is the type description provider that was used to add the attributes. This provider can later be passed to the <xref:System.ComponentModel.TypeDescriptor.RemoveProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Type%29> method when the added attributes are no longer needed.  
   
  ]]></format>
         </remarks>

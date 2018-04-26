@@ -51,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase'1" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] and the XSD.exe [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] tool. This type is not intended to be used directly from your code.</summary>
+        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase'1" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This type is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +73,7 @@
       <Docs>
         <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains data to construct the object.</param>
         <param name="context">The streaming context for the object being deserializad.</param>
-        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase'1" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] and the XSD.exe [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] tool. This method is not intended to be used directly from your code.</summary>
+        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase'1" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This method is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +97,7 @@
       <Parameters />
       <Docs>
         <typeparam name="TResult">To be added.</typeparam>
-        <summary>Converts the elements of an <see cref="T:System.Data.TypedTableBase`1" /> to the specified type. This method supports typed <see cref="T:System.Data.DataTable" /> object generation by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] and the XSD.exe [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] tool. This method is not intended to be used directly from your code.</summary>
+        <summary>Converts the elements of an <see cref="T:System.Data.TypedTableBase`1" /> to the specified type. This method supports typed <see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This method is not intended to be used directly from your code.</summary>
         <returns>An <see cref="T:System.Data.EnumerableRowCollection" /> that contains each element of the source sequence converted to the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +121,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator for the typed-<see cref="T:System.Data.DataRow" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] and the XSD.exe [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] tool. This method is not intended to be used directly from your code.</summary>
+        <summary>Returns an enumerator for the typed-<see cref="T:System.Data.DataRow" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This method is not intended to be used directly from your code.</summary>
         <returns>An object that implements the <see cref="T:System.Collections.Generic.IEnumerator`1" /> interface.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +145,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator for the typed-<see cref="T:System.Data.DataRow" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] and the XSD.exe [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] tool. This method is not intended to be used directly from your code.</summary>
+        <summary>Returns an enumerator for the typed-<see cref="T:System.Data.DataRow" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This method is not intended to be used directly from your code.</summary>
         <returns>An object that implements the <see cref="T:System.Collections.Generic.IEnumerator`1" /> interface.</returns>
         <remarks>To be added.</remarks>
       </Docs>

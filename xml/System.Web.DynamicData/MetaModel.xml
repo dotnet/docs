@@ -22,7 +22,7 @@
   
  A data context is an object that represents a database connection. A data context has access to one data model which represents a database that is available through that connection. A data model is an object that represents a database's data entities as CLR types. Dynamic Data supports data models based on LINQ to SQL and on the ADO.NET Entity Framework.  
   
- In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], you can generate data-model types by using the **LINQ to SQL Classes** template or the **ADO.NET Entity Data Model** template. These templates use the Object Relational Designer (O/R Designer) for the LINQ to SQL model, or the ADO.NET Entity Data Model Designer (Entity Designer) for the Entity Framework model.  
+ In Visual Studio, you can generate data-model types by using the **LINQ to SQL Classes** template or the **ADO.NET Entity Data Model** template. These templates use the Object Relational Designer (O/R Designer) for the LINQ to SQL model, or the ADO.NET Entity Data Model Designer (Entity Designer) for the Entity Framework model.  
   
    
   

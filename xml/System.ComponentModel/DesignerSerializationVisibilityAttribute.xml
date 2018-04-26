@@ -45,7 +45,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> set to <xref:System.ComponentModel.DesignerSerializationVisibility.Content>. It persists the values of a public property of a user control, which can be configured at design time. To use the example, first compile the following code into a user control library. Next, add a reference to the compiled .dll file in a new Windows Application project. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `ContentSerializationExampleControl` is automatically added to the **Toolbox**.  
+ The following code example demonstrates the use of a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> set to <xref:System.ComponentModel.DesignerSerializationVisibility.Content>. It persists the values of a public property of a user control, which can be configured at design time. To use the example, first compile the following code into a user control library. Next, add a reference to the compiled .dll file in a new Windows Application project. If you are using Visual Studio, the `ContentSerializationExampleControl` is automatically added to the **Toolbox**.  
   
  Drag the control from the **Toolbox** to a form, and set the properties of the `DimensionData` object listed in the Properties window. When you view the code for the form, code will have been added to the `InitializeComponent` method of the parent form. This code sets the values of the control's properties to those which you have set in design mode.  
   

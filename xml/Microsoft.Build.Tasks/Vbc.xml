@@ -741,7 +741,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that specifies whether to use the in-process compiler object, if available. Used only by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].</summary>
+        <summary>Gets or sets a Boolean value that specifies whether to use the in-process compiler object, if available. Used only by Visual Studio.</summary>
         <value>
           <see langword="true" /> if the <c>Vbc</c> task will use the in-process compiler object, if available; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

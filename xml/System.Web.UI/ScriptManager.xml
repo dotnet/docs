@@ -2028,7 +2028,7 @@
   
  Use the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method to register controls outside an <xref:System.Web.UI.UpdatePanel> control as triggers for asynchronous postbacks, and to potentially update the content of an update panel. To update an <xref:System.Web.UI.UpdatePanel> control programmatically, call the <xref:System.Web.UI.UpdatePanel.Update%2A> method.  
   
- You can add the trigger declaratively by using the `Triggers` element of the <xref:System.Web.UI.UpdatePanel> control. In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], use the designer's **UpdatePanelTrigger Collection Editor** dialog box.  
+ You can add the trigger declaratively by using the `Triggers` element of the <xref:System.Web.UI.UpdatePanel> control. In Visual Studio, use the designer's **UpdatePanelTrigger Collection Editor** dialog box.  
   
    
   
@@ -2966,7 +2966,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.ScriptManager.RegisterPostBackControl%2A> method to register postback controls inside an <xref:System.Web.UI.UpdatePanel> control as triggers. Controls that are registered by using this method update a whole page instead of updating only the <xref:System.Web.UI.UpdatePanel> control's content. Registering a postback control with this method outside an <xref:System.Web.UI.UpdatePanel> control has no affect because by default these controls do not perform asynchronous postbacks.  
   
- You can add the trigger declaratively by using the `Triggers` element of the <xref:System.Web.UI.UpdatePanel> control. In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], use the designer's **UpdatePanelTrigger Collection Editor** dialog box.  
+ You can add the trigger declaratively by using the `Triggers` element of the <xref:System.Web.UI.UpdatePanel> control. In Visual Studio, use the designer's **UpdatePanelTrigger Collection Editor** dialog box.  
   
  ]]></format>
         </remarks>

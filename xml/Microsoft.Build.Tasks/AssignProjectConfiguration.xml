@@ -328,7 +328,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Since [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] only pre-resolves non-[!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] projects, this means that project references in this list are in the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] format.  
+ Since Visual Studio only pre-resolves non-MSBuild projects, this means that project references in this list are in the MSBuild format.  
   
  ]]></format>
         </remarks>

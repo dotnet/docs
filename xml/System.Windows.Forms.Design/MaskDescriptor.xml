@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Design.MaskDescriptor> abstract class defines the common set of properties that all mask descriptors must implement. You can use mask descriptors to create predefined mask options for use in the UI type editor for the <xref:System.Windows.Forms.MaskedTextBox>. For example, [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] provides predefined masks for data such as the Postal Code, time, different date formats, and telephone number. All predefined masks will be associated with the <xref:System.ComponentModel.MaskedTextProvider> parsing engine.  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor> abstract class defines the common set of properties that all mask descriptors must implement. You can use mask descriptors to create predefined mask options for use in the UI type editor for the <xref:System.Windows.Forms.MaskedTextBox>. For example, Visual Studio provides predefined masks for data such as the Postal Code, time, different date formats, and telephone number. All predefined masks will be associated with the <xref:System.ComponentModel.MaskedTextProvider> parsing engine.  
   
  You can discover <xref:System.Windows.Forms.Design.MaskDescriptor> types at design time by querying the <xref:System.ComponentModel.Design.ITypeDiscoveryService> service provider.  
   
@@ -270,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The mask must contain only valid characters, as defined by the <xref:System.ComponentModel.MaskedTextProvider.IsValidMaskChar%2A> method of the <xref:System.ComponentModel.MaskedTextProvider> class. When a predefined mask is selected in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], its <xref:System.Windows.Forms.Design.MaskDescriptor.Mask%2A> property is displayed.  
+ The mask must contain only valid characters, as defined by the <xref:System.ComponentModel.MaskedTextProvider.IsValidMaskChar%2A> method of the <xref:System.ComponentModel.MaskedTextProvider> class. When a predefined mask is selected in Visual Studio, its <xref:System.Windows.Forms.Design.MaskDescriptor.Mask%2A> property is displayed.  
   
  ]]></format>
         </remarks>

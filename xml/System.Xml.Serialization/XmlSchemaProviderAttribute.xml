@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The main purpose of the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> is to enable the <xref:System.Xml.Serialization.XmlSchemaExporter> class to return a schema when queried by the Web Services Description Language tool (WSDL.exe), or when using the **Add Web Reference** feature of [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]. You can control the actual schema for the type in the static method.  
+ The main purpose of the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> is to enable the <xref:System.Xml.Serialization.XmlSchemaExporter> class to return a schema when queried by the Web Services Description Language tool (WSDL.exe), or when using the **Add Web Reference** feature of Visual Studio. You can control the actual schema for the type in the static method.  
   
 > [!NOTE]
 >  The target class of the attribute must implement the <xref:System.Xml.Serialization.IXmlSerializable> interface.  

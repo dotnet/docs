@@ -27,7 +27,7 @@ This sample demonstrates how to use [!INCLUDE[indigo1](../../../../includes/indi
   
  This sample builds upon the AJAX Service Using HTTP POST. As described in the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md) sample, <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is used to host the service.  
 
-```aspx
+```svc
 <%ServiceHost  
     language=c#  
     Debug="true"  

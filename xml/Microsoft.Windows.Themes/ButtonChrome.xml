@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The actual appearance of the <xref:System.Windows.Controls.Button> is dependent on which theme is active on the user's system. The properties of this class allow [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] to set the appearance based on the current theme.  
+ The actual appearance of the <xref:System.Windows.Controls.Button> is dependent on which theme is active on the user's system. The properties of this class allow the .NET Framework to set the appearance based on the current theme.  
   
  In XAML usage, a <xref:Microsoft.Windows.Themes.ButtonChrome> object element can also have child content, which can be a single <xref:System.Windows.UIElement> that sets the <xref:System.Windows.Controls.Decorator.Child%2A> property.  
   

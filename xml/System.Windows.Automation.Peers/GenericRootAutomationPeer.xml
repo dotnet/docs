@@ -22,7 +22,7 @@
   
  ![HwndSource&#45;&#62;Visual&#45;&#62;2 UIElement objects](~/add/media/apgenericroot.png "HwndSource->Visual->2 UIElement objects")  
   
- Because only <xref:System.Windows.UIElement> types have peers, and visuals are not <xref:System.Windows.UIElement> types, a common parent does not exist in the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree for the <xref:System.Windows.UIElement> types. [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] expects a single root peer from the application; therefore, [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] creates a <xref:System.Windows.Automation.Peers.GenericRootAutomationPeer> for the <xref:System.Windows.Interop.HwndSource> in order to serve as a single root peer to parent peers for the two <xref:System.Windows.UIElement> types.  
+ Because only <xref:System.Windows.UIElement> types have peers, and visuals are not <xref:System.Windows.UIElement> types, a common parent does not exist in the UI automation tree for the <xref:System.Windows.UIElement> types. UI automation expects a single root peer from the application; therefore, the .NET Framework creates a <xref:System.Windows.Automation.Peers.GenericRootAutomationPeer> for the <xref:System.Windows.Interop.HwndSource> in order to serve as a single root peer to parent peers for the two <xref:System.Windows.UIElement> types.  
   
  Typically, the root peer is a <xref:System.Windows.Automation.Peers.WindowAutomationPeer>.  
   

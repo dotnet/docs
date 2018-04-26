@@ -293,7 +293,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the serializer can be loaded with the currently installed version of [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)].</summary>
+        <summary>Gets a value indicating whether the serializer can be loaded with the currently installed version of the .NET Framework.</summary>
         <value>
           <see langword="true" /> if the serializer assembly can be loaded; otherwise, <see langword="false" />.  The default is <see langword="false" />.</value>
         <remarks>
@@ -377,8 +377,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] required by the serializer.</summary>
-        <value>The version of [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] required by the plug-in serializer.</value>
+        <summary>Gets the version of the .NET Framework required by the serializer.</summary>
+        <value>The version of the .NET Framework required by the plug-in serializer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

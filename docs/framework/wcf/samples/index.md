@@ -24,7 +24,7 @@ These samples provide instruction on various aspects of [!INCLUDE[indigo1](../..
   
 -   For Visual Basic versions of the samples, go to [Visual Basic 2010 Samples](http://go.microsoft.com/fwlink/?LinkID=193373) and click **WF HYPERLINK "javascript:__doPostBack('ctl00$ctl00$Content$TabContentPanel$Content$ReleaseFiles$FileList$ctl02$FileNameLink','')" _WCF_Samples.zip**.  
   
- The [!INCLUDE[wf](../../../../includes/wf-md.md)] [Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md) samples also demonstrate several [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]features.  
+ The Windows Workflow Foundation (WF) [Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md) samples also demonstrate several [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]features.  
   
  To install a stand-alone version of the documentation and a Help viewer, download the [Microsoft Windows SDK v 7.1](http://go.microsoft.com/fwlink/?LinkID=194146).  
   

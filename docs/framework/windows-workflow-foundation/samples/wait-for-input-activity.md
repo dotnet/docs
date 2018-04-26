@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Wait For Input Activity
-This sample demonstrates how to create named bookmarks in a workflow. [!INCLUDE[wf](../../../../includes/wf-md.md)] does not provide an activity for declarative bookmark creation. Therefore, when you want to create a bookmark in your workflow, you must write a custom activity that creates it. The `WaitForInput` activity defined in this sample provides this functionality, so that users can create bookmarks declaratively within a workflow.  
+This sample demonstrates how to create named bookmarks in a workflow. Windows Workflow Foundation (WF) does not provide an activity for declarative bookmark creation. Therefore, when you want to create a bookmark in your workflow, you must write a custom activity that creates it. The `WaitForInput` activity defined in this sample provides this functionality, so that users can create bookmarks declaratively within a workflow.  
   
 ## Projects in this sample  
   

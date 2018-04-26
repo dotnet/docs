@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using and Creating Activities
-The topics in this section describe the system-provided activities available in [!INCLUDE[wf](../../../includes/wf-md.md)].  
+The topics in this section describe the system-provided activities available in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Built-In Activity Library](../../../docs/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library.md)  

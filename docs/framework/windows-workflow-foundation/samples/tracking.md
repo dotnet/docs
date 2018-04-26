@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Tracking
-This section contains samples that demonstrate workflow tracking in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate workflow tracking in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Custom Tracking](../../../../docs/framework/windows-workflow-foundation/samples/custom-tracking.md)  

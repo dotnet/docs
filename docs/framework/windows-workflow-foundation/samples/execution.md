@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Execution
-This section contains samples that demonstrate executing workflows in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate executing workflows in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Workflow Management Endpoint Sample](../../../../docs/framework/windows-workflow-foundation/samples/workflow-management-endpoint-sample.md)  

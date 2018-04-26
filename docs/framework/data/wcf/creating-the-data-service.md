@@ -65,7 +65,7 @@ In this task, you will create a sample data service that uses [!INCLUDE[ssAstori
   
 5.  Connect the data model to the database by doing one of the following steps, and then click **Next**:  
   
-    -   If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](http://go.microsoft.com/fwlink/?LinkId=123631). This [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] instance must have the Northwind sample database attached.  
+    -   If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](http://go.microsoft.com/fwlink/?LinkId=123631). This SQL Server instance must have the Northwind sample database attached.  
   
          \- or -  
   

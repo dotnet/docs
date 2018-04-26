@@ -60,8 +60,8 @@ SQL Server and the .NET Framework are based on different type systems. For examp
 <sup>1</sup> You cannot set the `DbType` property of a `SqlParameter` to `SqlDbType.Date`.  
 <sup>2</sup> Use a specific typed accessor if you know the underlying type of the `sql_variant`.  
   
-## [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] Books Online Reference  
- For more information about [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] data types, see [Data Types (Database Engine)](http://go.microsoft.com/fwlink/?LinkID=107468).  
+## SQL Server Books Online Reference  
+ For more information about SQL Server data types, see [Data Types (Database Engine)](http://go.microsoft.com/fwlink/?LinkID=107468).  
   
 ## See Also  
  [SQL Server Data Types and ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  

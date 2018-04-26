@@ -56,7 +56,7 @@ Starting with the .NET Framework version 2.0, the .NET Framework Data Provider f
  The following console application shows how to enable statistics on a connection, retrieve four individual statistic values, and write them out to the console window.  
   
 > [!NOTE]
->  The following example uses the sample **AdventureWorks** database included with [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)]. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
+>  The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
   
 ```vb  
 Option Strict On  
@@ -212,7 +212,7 @@ namespace CS_Stats_Console_GetValue
  The following console application shows how to enable statistics on a connection, retrieve all available statistic values using the enumerator, and write them to the console window.  
   
 > [!NOTE]
->  The following example uses the sample **AdventureWorks** database included with [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)]. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
+>  The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
   
 ```vb  
 Option Strict On  

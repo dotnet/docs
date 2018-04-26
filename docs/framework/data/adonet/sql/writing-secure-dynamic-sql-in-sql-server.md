@@ -65,7 +65,7 @@ SQL Injection is the process by which a malicious user enters Transact-SQL state
  When a stored procedure that has been signed with a certificate executes, the permissions granted to the certificate user are merged with those of the caller. The execution context remains the same; the certificate user does not impersonate the caller. Signing stored procedures requires several steps to implement. Each time the procedure is modified, it must be re-signed.  
   
 ### Cross Database Access  
- Cross-database ownership chaining does not work in cases where dynamically created SQL statements are executed. You can work around this in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] by creating a stored procedure that accesses data in another database and signing the procedure with a certificate that exists in both databases. This gives users access to the database resources used by the procedure without granting them database access or permissions.  
+ Cross-database ownership chaining does not work in cases where dynamically created SQL statements are executed. You can work around this in SQL Server by creating a stored procedure that accesses data in another database and signing the procedure with a certificate that exists in both databases. This gives users access to the database resources used by the procedure without granting them database access or permissions.  
   
 ## External Resources  
  For more information, see the following resources.  

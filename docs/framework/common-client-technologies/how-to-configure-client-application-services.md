@@ -106,7 +106,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
     Data Source = |SQL/CE|;password=<password>;encrypt database=true  
     ```  
   
-5.  To use your own [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] database, specify your own connection string. For information about valid connection string formats, see the [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] documentation. This database is not generated automatically. The connection string must refer to an existing database that you can create using the following SQL statements.  
+5.  To use your own SQL Server database, specify your own connection string. For information about valid connection string formats, see the SQL Server documentation. This database is not generated automatically. The connection string must refer to an existing database that you can create using the following SQL statements.  
   
     ```  
     CREATE TABLE ApplicationProperties (PropertyName nvarchar(256),  

@@ -40,7 +40,7 @@ A primary function of any database application is connecting to a data source an
  Contains topics describing how to perform local transactions, distributed transactions, and work with optimistic concurrency.  
   
  [Retrieving Identity or Autonumber Values](../../../../docs/framework/data/adonet/retrieving-identity-or-autonumber-values.md)  
- Provides an example of mapping the values generated for an **identity** column in a [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] table or for an **Autonumber** field in a Microsoft Access table, to a column of an inserted row in a table. Discusses merging identity values in a `DataTable`.  
+ Provides an example of mapping the values generated for an **identity** column in a SQL Server table or for an **Autonumber** field in a Microsoft Access table, to a column of an inserted row in a table. Discusses merging identity values in a `DataTable`.  
   
  [Retrieving Binary Data](../../../../docs/framework/data/adonet/retrieving-binary-data.md)  
  Describes how to retrieve binary data or large data structures using `CommandBehavior`.`SequentialAccess` to modify the default behavior of a `DataReader`.  
@@ -64,7 +64,7 @@ A primary function of any database application is connecting to a data source an
  Describes [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] support for asynchronous programming.  
   
  [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md)  
- Discusses how to write applications that stream data from [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] without having it fully loaded in memory.  
+ Discusses how to write applications that stream data from SQL Server without having it fully loaded in memory.  
   
 ## See Also  
  [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  

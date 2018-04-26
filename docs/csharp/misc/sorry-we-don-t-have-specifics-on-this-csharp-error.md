@@ -897,7 +897,7 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and general discussions of the Visual C# language syntax and compiler.  
   
  [Visual C# IDE](https://social.msdn.microsoft.com/Forums/en-US/home?forum=csharpide)  
- Provides a forum for questions about how to work in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] environment.  
+ Provides a forum for questions about how to work in the Visual Studio environment.  
   
  [Visual C# General](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=csharpgeneral)  
  Provides a forum for questions about and issues with Visual C# that are not discussed in other forums.  

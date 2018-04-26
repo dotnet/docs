@@ -43,7 +43,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
   
 #### To Create the Windows Forms Application  
   
-1.  In [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], create a Visual C# or Visual Basic **Windows Forms Application** project. In this document, the project is named `CompositeImages`.  
+1.  In Visual Studio, create a Visual C# or Visual Basic **Windows Forms Application** project. In this document, the project is named `CompositeImages`.  
   
 2.  On the form designer for the main form, Form1.cs (Form1.vb for Visual Basic), add a <xref:System.Windows.Forms.ToolStrip> control.  
   

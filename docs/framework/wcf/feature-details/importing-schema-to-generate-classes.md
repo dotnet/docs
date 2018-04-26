@@ -149,7 +149,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
  The `ReferencedTypes` property corresponds to the **/reference** switch in certain modes of operation of the Svcutil.exe tool.  
   
 > [!NOTE]
->  When using the Svcutil.exe or (in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)]) the **Add Service Reference** tools, all of the types in MsCorLib.dll are automatically referenced.  
+>  When using the Svcutil.exe or (in Visual Studio) the **Add Service Reference** tools, all of the types in MsCorLib.dll are automatically referenced.  
   
 #### Import Options: Importing Non-DataContract Schema as IXmlSerializable types  
  The <xref:System.Runtime.Serialization.XsdDataContractImporter> supports a limited subset of the schema. If unsupported schema constructs are present (for example, XML attributes), the import attempt fails with an exception. However, setting the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property to `true` extends the range of schema supported. When set to `true`, the <xref:System.Runtime.Serialization.XsdDataContractImporter> generates types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. This enables direct access to the XML representation of these types.  

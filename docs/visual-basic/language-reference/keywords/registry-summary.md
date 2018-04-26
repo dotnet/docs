@@ -14,7 +14,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Registry Summary (Visual Basic)
-[!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] language keywords and run-time library members are organized by purpose and use.  
+Visual Studio language keywords and run-time library members are organized by purpose and use.  
   
  Using the `My` feature provides you with greater productivity and performance in registry operations than these elements. For more information, see <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>.  
   

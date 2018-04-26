@@ -141,7 +141,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
      The <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method creates the object in the target application domain and returns a proxy that can be used to call the properties and methods of the object.  
   
     > [!NOTE]
-    >  If you use this code in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
+    >  If you use this code in Visual Studio, you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
   
 6.  Add code to call the `SimpleEmitDemo` method. The call is marshaled across the application domain boundary, and the code is executed in the sandboxed application domain.  
   
@@ -215,7 +215,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
 ## Compiling the Code  
   
--   If you build this code example in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you must change the name of the class to include the namespace when you pass it to the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
+-   If you build this code example in Visual Studio, you must change the name of the class to include the namespace when you pass it to the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
   
 ## See Also  
  [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)  

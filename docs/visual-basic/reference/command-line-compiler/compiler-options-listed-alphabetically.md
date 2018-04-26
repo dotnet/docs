@@ -14,7 +14,7 @@ author: rpetrusha
 ms.author: ronpet
 ---
 # Visual Basic compiler options listed alphabetically
-The Visual Basic command-line compiler is provided as an alternative to compiling programs from the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted alphabetically.  
+The Visual Basic command-line compiler is provided as an alternative to compiling programs from the Visual Studio integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted alphabetically.  
 
 [!INCLUDE[compiler-options](~/includes/compiler-options.md)]
   

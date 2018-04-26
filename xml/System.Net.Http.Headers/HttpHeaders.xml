@@ -277,6 +277,7 @@
         <summary>Returns all header values for a specified header stored in the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection.</summary>
         <returns>An array of header strings.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The header cannot be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">

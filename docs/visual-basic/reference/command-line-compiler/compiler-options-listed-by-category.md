@@ -1,6 +1,6 @@
 ---
 title: "Visual Basic Compiler Options Listed by Category"
-ms.date: 03/09/2018
+ms.date: 04/12/2018
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -26,7 +26,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-utf8output](../../../visual-basic/reference/command-line-compiler/utf8output.md)|Displays compiler output using UTF-8 encoding.|  
 |[-verbose](../../../visual-basic/reference/command-line-compiler/verbose.md)|Outputs extra information during compilation.|  
 |`-modulename:<string>`|Specify the name of the source module|  
-|[-preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specify a language for compiler output.|  
+|[-preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specify a language for compiler output.|
   
 ## Optimization  
   
@@ -40,6 +40,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |Option|Purpose|  
 |---|---|  
 |[-doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Process documentation comments to an XML file.|  
+|[-deterministic](../../../visual-basic/reference/command-line-compiler/deterministic.md)|Causes the compiler to output an assembly whose binary content is identical across compilations if inputs are identical.|
 |[-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)|Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].|  
 |[-out](../../../visual-basic/reference/command-line-compiler/out.md)|Specifies an output file.|  
 |[-refonly](refonly-compiler-option.md)|Outputs only a reference assembly.|

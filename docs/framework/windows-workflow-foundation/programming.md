@@ -60,4 +60,4 @@ This section contains a set of primer topics that you should understand to becom
  Discusses how to keep your workflow secure when using SQL and [!INCLUDE[indigo1](../../../includes/indigo1-md.md)].  
   
  [Windows Workflow Foundation 4 Performance](../../../docs/framework/windows-workflow-foundation/performance.md)  
- Discusses [!INCLUDE[wf2](../../../includes/wf2-md.md)] 4 performance and compares it to the previous version of WF.
+ Discusses Windows Workflow Foundation 4 performance and compares it to the previous version of WF.

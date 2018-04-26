@@ -105,7 +105,7 @@ go
  The order of the `promotedValue` elements correlates with the placement of the promoted properties in the `InstancePromotedProperties` view. `Count` is the first `promotedValue` element. As a result, it is mapped to the `Value1` column in the `InstancePromotedProperties` view. `LastIncrementedAt` is the second `promotedValue` element. As a result, it is mapped to the `Value2` column in the `InstancePromotedProperties` view.  
   
 #### Using the PromoteValue Activity  
- Examine the CounterService.xamlx file in the [!INCLUDE[wf2](../../../../includes/wf2-md.md)] Designer. Notice that there are two special activities in the WF definition: `PromoteValue<DateTime>` and `PromoteValue<Int32>`.  
+ Examine the CounterService.xamlx file in the Windows Workflow Foundation Designer. Notice that there are two special activities in the WF definition: `PromoteValue<DateTime>` and `PromoteValue<Int32>`.  
   
  The `PromoteValue<Int32>` activity has its `Name` member defined as `Count`. This matches with the first `promotedValue` element in the configuration, and has its `Value` defined as the `Counter` workflow variable. When the workflow persists, the `Counter` workflow variable is persisted as a promoted property into the `Value1` column of the `InstancePromotedProperties` view.  
   

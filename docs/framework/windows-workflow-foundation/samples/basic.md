@@ -59,6 +59,6 @@ This section provides samples that demonstrate basic [!INCLUDE[wf](../../../../i
  Contains samples that demonstrate workflow transactions.  
   
  [Validation](../../../../docs/framework/windows-workflow-foundation/samples/validation.md)  
- Contains samples that demonstrate validation in [!INCLUDE[wf2](../../../../includes/wf2-md.md)].  
+ Contains samples that demonstrate validation in Windows Workflow Foundation.  
   
 ## Reference

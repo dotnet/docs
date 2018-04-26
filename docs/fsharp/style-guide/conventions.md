@@ -474,13 +474,15 @@ let closureTableCount (t: Dictionary<_,_>) = t.Count
 
 let closureTableContains (key, value) (t: Dictionary<_, HashSet<_>>) =
     match t.TryGetValue(key) with
-    | (true, v) -> v = value
+    | (true, v) -> v.Equals(value)
     | (false, _) -> false
 ```
 
 This code is performant, but it exposes the mutation-based data structure that callers are responsible for maintaining. This can be wrapped inside of a class with no underlying members that can change:
 
 ```fsharp
+open System.Collections.Generic
+
 /// The results of computing the LALR(1) closure of an LR(0) kernel
 type Closure1Table() =
     let t = Dictionary<Item0, HashSet<TerminalIndex>>()
@@ -495,11 +497,11 @@ type Closure1Table() =
 
     member __.Contains(key, value) =
         match t.TryGetValue(key) with
-        | (true, v) -> v = value
+        | (true, v) -> v.Equals(value)
         | (false, _) -> false
 ```
 
-Because this class has no members that can change, and its binding is immutable, it is also effectively immutable. Additionally, it safely encapsulates the underlying mutation-based data structure. Classes are a powerful way to encapsulate data and routines that are mutation-based without exposing the details to callers.
+`Closure1Table` encapsulates the underlying mutation-based data structure, thereby not forcing callers to maintain a the underlying data structure. Classes are a powerful way to encapsulate data and routines that are mutation-based without exposing the details to callers.
 
 ### Prefer `let mutable` to reference cells
 

@@ -23,8 +23,8 @@ ms.author: dotnetcontent
 Collapses and hides sections of code in Visual Basic files.  
   
 ## Syntax  
-  
-```  
+
+ ```vb
       #Region "identifier_string"  
 #End Region  
 ```  

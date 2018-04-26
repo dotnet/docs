@@ -27,7 +27,7 @@ Declares the name of a namespace and causes the source code that follows the dec
   
 ## Syntax  
   
-```  
+```vb  
 Namespace [Global.] { name | name.name }  
     [ componenttypes ]  
 End Namespace  

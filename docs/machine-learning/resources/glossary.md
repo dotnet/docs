@@ -3,7 +3,7 @@ title: Machine Learning Glossary
 description: A glossary of machine learning terms.
 author: aditidugar
 ms.author: johalex
-ms.date: 04/25/2018
+ms.date: 05/072018
 ms.topic: conceptual
 ms.prod: dotnet-ml
 ms.devlang: dotnet

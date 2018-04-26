@@ -1,6 +1,6 @@
 ---
 title: ML.NET Tutorials
-description: Explore these ML.NET tutorials to learn how to build custom AI solutions and integrate into your .NET applications.
+description: Explore these ML.NET tutorials to learn how to build custom AI solutions and integrate them into your .NET applications.
 author: jralexander
 ms.author: johalex
 ms.date: 05/07/2018
@@ -12,7 +12,7 @@ manager: wpickett
 ---
 # ML.NET Tutorials
 
-The following tutorials enable you to understand how to use [ML.NET](../index.md): build custom AI solutions and integrate into your .NET applications.
+The following tutorials enable you to understand how to use [ML.NET](../index.md) to build custom AI solutions and integrate them into your .NET applications.
 
 * [Classification](classification.md): demonstrates how to use ML.NET in a classification scenario.
 * [Regression](regression.md): demonstrates how to use ML.NET in a regression scenario.

@@ -1,6 +1,6 @@
 ---
 title: ML.NET Guide
-description: Learn how the ML.NET Guide can help you understand how to build custom AI solutions and integrate into your .NET applications.
+description: Learn how the ML.NET Guide can help you understand how to build custom AI solutions and integrate them into your .NET applications.
 author: aditidugar
 ms.author: johalex
 ms.date: 04/25/2018
@@ -12,11 +12,11 @@ manager: wpickett
 ---
 # ML.NET Guide
 
-ML.NET is a free, open-source, and cross-platform machine learning framework to build custom AI solutions and integrate into your .NET applications. This guide provides many resources about working with ML.NET. 
+ML.NET is a free, open-source, and cross-platform machine learning framework to build custom AI solutions and integrate them into your .NET applications. This guide provides many resources about working with ML.NET.
 
 For more information about ML.NET, visit our [What is ML.NET]() page.
 
-## Get Started
+## Get started
 To get started with ML.NET right away, visit the [in-browser tutorial]() or [download the UI](). Or, check out the [tutorials](tutorials/index.md) below for more in-depth samples.
 
 ## How the ML.NET guide is organized
@@ -33,5 +33,5 @@ There are several sections in the ML.NET Guide. You can read them in order, or j
    Find a list of Machine Learning terminology and their definitions.
 
 ## See also
-## API Reference
+## API reference
 Check out the [ML.NET API Reference]() to see the breadth of APIs available.

@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Durable Duplex
-This sample demonstrates how to set up and configure durable duplex message exchange using the messaging activities in [!INCLUDE[wf](../../../../includes/wf-md.md)]. A durable duplex message exchange is a two-way message exchange that takes place over a long period of time. The lifetime of the message exchange may be longer than the lifetime of the communication channel and the in-memory lifetime of the service instances.  
+This sample demonstrates how to set up and configure durable duplex message exchange using the messaging activities in Windows Workflow Foundation (WF). A durable duplex message exchange is a two-way message exchange that takes place over a long period of time. The lifetime of the message exchange may be longer than the lifetime of the communication channel and the in-memory lifetime of the service instances.  
   
 ## Sample Details  
  In this sample, two [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services implemented using Windows Workflow Foundation are configured to have a durable duplex message exchange. The durable duplex message exchange is composed from two one-way messages sent over MSMQ and correlated using [.NET Context Exchange](http://go.microsoft.com/fwlink/?LinkID=166059). The messages are sent using the <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.Receive> messaging activities. .NET Context Exchange is use to specify the callback address on the sent messages. Both services are hosted using Windows Process Activation Services (WAS) and are configured to enable persistence of the services instances.  

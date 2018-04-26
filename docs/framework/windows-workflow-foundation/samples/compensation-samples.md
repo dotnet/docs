@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Compensation (Samples)
-This section contains samples related to compensation in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples related to compensation in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Compensable Activity](../../../../docs/framework/windows-workflow-foundation/samples/compensable-activity-sample.md)  

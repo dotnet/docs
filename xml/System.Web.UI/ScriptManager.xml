@@ -470,13 +470,13 @@
         <ReturnType>System.Web.UI.AjaxFrameworkMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies how client scripts of the [!INCLUDE[ajax_current_ext](~/includes/ajax-current-ext-md.md)] client library will be included on the client.</summary>
+        <summary>Gets or sets a value that specifies how client scripts of the Microsoft Ajax client library will be included on the client.</summary>
         <value>An <see cref="T:System.Web.UI.AjaxFrameworkMode" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.ScriptManager.AjaxFrameworkMode%2A> property to enable all [!INCLUDE[ajax_current_ext](~/includes/ajax-current-ext-md.md)] script files, to disable all [!INCLUDE[ajax_current_ext](~/includes/ajax-current-ext-md.md)] script files, or to explicitly include individual script files.  
+ Use the <xref:System.Web.UI.ScriptManager.AjaxFrameworkMode%2A> property to enable all Microsoft Ajax script files, to disable all Microsoft Ajax script files, or to explicitly include individual script files.  
   
    
   

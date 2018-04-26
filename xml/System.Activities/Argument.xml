@@ -134,7 +134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the evaluation order of the argument is unspecified and is equal to the <xref:System.Activities.Argument.UnspecifiedEvaluationOrder> value. Set <xref:System.Activities.Argument.EvaluationOrder%2A> to a value greater or equal to zero to specify an evaluation order for this argument. [!INCLUDE[wf2](~/includes/wf2-md.md)] evaluates arguments with a specified evaluation order in ascending order. Note that arguments with an unspecified evaluation order are evaluated before those with a specified evaluation order.  
+ By default, the evaluation order of the argument is unspecified and is equal to the <xref:System.Activities.Argument.UnspecifiedEvaluationOrder> value. Set <xref:System.Activities.Argument.EvaluationOrder%2A> to a value greater or equal to zero to specify an evaluation order for this argument. Windows Workflow Foundation evaluates arguments with a specified evaluation order in ascending order. Note that arguments with an unspecified evaluation order are evaluated before those with a specified evaluation order.  
   
  ]]></format>
         </remarks>

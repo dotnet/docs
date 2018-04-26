@@ -15,14 +15,16 @@ ms.author: "wiwagn"
 ---
 # where (generic type constraint) (C# Reference)
 
-The `where` clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, delegate, or local function. For example, you can declare a generic class, `MyGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable%601> interface:
+The `where` clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, delegate, or local function. Constraints can specify interfaces, base classes, classes. structs or unmanaged types. They declare capabilities that the type argument must possess.
+
+For example, you can declare a generic class, `MyGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable%601> interface:
 
 [!code-csharp[using an interface constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#1)]
 
 > [!NOTE]
 > For more information on the where clause in a query expression, see [where clause](where-clause.md).
 
-The `where` clause can also include a base class constraint. The base class constraint states that a type has the specified class as a base class (or is that class) to be used as a type argument for that generic type. If the base class constraint is used, it must appear before any other constraints on that type parameter. Some types are disallowed as a base class constraint. These restrictions were relaxed beginning with C# 7.3. The following example shows the types that can now be specified as a base class:
+The `where` clause can also include a base class constraint. The base class constraint states that a type to be used as a type argument for that generic type has the specified class as a base class (or is that base class) to be used as a type argument for that generic type. If the base class constraint is used, it must appear before any other constraints on that type parameter. Some types are disallowed as a base class constraint: <xref:System.Object>, <xref:System.Array>, and <xref:System.ValueType>. Prior to C# 73, <xref:System.Enum>, <xref:System.Delegate>, and <xref:System.MulticastDelegate> were also disallowed as base class constraints. The following example shows the types that can now be specified as a base class:
 
 [!code-csharp[using an interface constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#2)]
 

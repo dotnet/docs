@@ -11,7 +11,7 @@ manager: wpickett
 ms.custom: mvc
 #Customer intent: As a < type of user >, I want < what? > so that < why? >.
 ---
-# Tutorial: 
+# Tutorial: Use ML.NET in a regression scenario.
 Introductory paragraph that ends with: if you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 
 In this tutorial, you learn how to:

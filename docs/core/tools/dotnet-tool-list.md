@@ -53,3 +53,7 @@ Lists all Global Tools installed in your machine (current user profile):
 Lists the sample Global Tools from a specific Windows folder:
 
 `dotnet tool list --tool-path c:\global-tools`
+
+## See also
+
+[.NET Core Global Tool](global-tools.md)

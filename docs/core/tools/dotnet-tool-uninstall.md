@@ -59,3 +59,7 @@ Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Glo
 Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool from a specific Windows folder:
 
 `dotnet tool uninstall dotnetsay --tool-path c:\global-tools`
+
+## See also
+
+[.NET Core Global Tool](global-tools.md)

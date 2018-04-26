@@ -30,6 +30,13 @@ dotnet tool install [-h|--help]
 
 The `dotnet tool install` command provides a way for you to install .NET Core Global Tools on your machine. To use the command, you either have to specify that you want a user-wide installation using the `--global` option or you specify a path to install it using the `--tool-path` option.
 
+Global Tools are installed in the following directories by default when you specify the `-g` (or `--global`) option:
+
+| OS          | Path                          |
+|-------------|-------------------------------|
+| Linux/macOS | `$HOME/.dotnet/tools`         |
+| Windows     | `%USERPROFILE%\.dotnet\tools` |
+
 ## Arguments
 
 `PACKAGE_ID`
@@ -83,3 +90,7 @@ Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Globa
 Installs version 1.0.0 of the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool:
 
 `dotnet tool install -g dotnetsay --version 1.0.0`
+
+## See also
+
+[.NET Core Global Tool](global-tools.md)

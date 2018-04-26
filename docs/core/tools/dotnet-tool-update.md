@@ -75,3 +75,7 @@ Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global
 Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool located on a specific Windows folder:
 
 `dotnet tool update dotnetsay --tool-path c:\global-tools`
+
+## See also
+
+[.NET Core Global Tool](global-tools.md)

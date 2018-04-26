@@ -74,6 +74,6 @@ Sys._json0({"__type":"Customer:#Microsoft.Samples.Jsonp","Address":"1 Example Wa
   
 1.  Open the solution for the JSONP Sample.  
   
-2.  Press F5 to launch  "[http://localhost:26648/JSONPClientPage.aspx]( http://localhost:26648/JSONPClientPage.aspx)" in the browser.  
+2.  Press F5 to launch `http://localhost:26648/JSONPClientPage.aspx` in the browser.  
   
 3.  Notice that after the page loads, the text inputs for "Name" and "Address" are populated by values.  These values were supplied from a call to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service after the browser finished rendering the page.

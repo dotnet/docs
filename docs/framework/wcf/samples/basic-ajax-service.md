@@ -39,7 +39,7 @@ public interface ICalculator
 
  The sample .svc file uses <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory>, which adds a <xref:System.ServiceModel.Description.WebScriptEndpoint> standard endpoint to the service. The endpoint is configured at an empty address relative to the .svc file. This means that the address of the service is http://localhost/ServiceModelSamples/service.svc, with no additional suffixes other than the operation name.  
 
-```xaml
+```svc
 <%@ServiceHost language="C#" Debug="true" Service="Microsoft.Samples.SimpleAjaxService.CalculatorService" Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory" %>
 ```
 
@@ -60,7 +60,7 @@ public interface ICalculator
   
  The client Web page SimpleAjaxClientPage.aspx contains ASP.NET code to invoke the service whenever the user clicks one of the operation buttons on the page. The `ScriptManager` control is used to make a proxy to the service accessible through JavaScript.  
 
-```aspx
+```aspx-csharp
 <asp:ScriptManager ID="ScriptManager" runat="server">  
     <Services>  
         <asp:ServiceReference Path="service.svc" />  

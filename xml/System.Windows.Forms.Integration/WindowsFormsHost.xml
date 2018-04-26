@@ -29,16 +29,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to place a [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control within your [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element or page.  
+ Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to place a Windows Forms control within your WPF element or page.  
   
- To host a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element in a [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control or form, use the <xref:System.Windows.Forms.Integration.ElementHost> control.  
+ To host a WPF element in a Windows Forms control or form, use the <xref:System.Windows.Forms.Integration.ElementHost> control.  
   
 > [!NOTE]
 >  WindowsFormsIntegration.dll is installed with the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] assemblies. The default location for the assembly is %programfiles%\Reference Assemblies\Microsoft\Framework\v3.0\WindowsFormsIntegration.dll.  
   
- To host a [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control in a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element, you must assign the [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control to the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> property.  
+ To host a Windows Forms control in a WPF element, you must assign the Windows Forms control to the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> property.  
   
- Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property to assign custom mappings between a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element and its hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property to assign custom mappings between a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element and its hosted Windows Forms control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlObjectElementUsage_WindowsFormsHost"></a>   
 ## XAML Object Element Usage  
@@ -192,7 +192,7 @@
       </Parameters>
       <Docs>
         <param name="hwndParent">The parent window's handle (HWND).</param>
-        <summary>Overrides the base class implementation of <see cref="M:System.Windows.Interop.HwndHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" /> to build the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
+        <summary>Overrides the base class implementation of <see cref="M:System.Windows.Interop.HwndHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" /> to build the hosted Windows Forms control.</summary>
         <returns>The window handle for this object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Integration.WindowsFormsHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
@@ -215,7 +215,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the child control hosted by the <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> element.</summary>
-        <value>The hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</value>
+        <value>The hosted Windows Forms control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -240,7 +240,7 @@
  A <xref:System.Windows.Forms.Integration.WindowsFormsHost> element (or a possible subclass).  
   
  *hostedControl*  
- An element that specifies the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control. Specifying the custom control in markup usually requires an xmlns mapping, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+ An element that specifies the hosted Windows Forms control. Specifying the custom control in markup usually requires an xmlns mapping, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
    
   
@@ -361,12 +361,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enables a <see cref="T:System.Windows.Forms.Form" /> to function correctly when it is opened modelessly from [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].</summary>
+        <summary>Enables a <see cref="T:System.Windows.Forms.Form" /> to function correctly when it is opened modelessly from WPF.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call the <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method to forward all keyboard messages when a <xref:System.Windows.Forms.Form?displayProperty=nameWithType> is opened modelessly. The <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method installs a message filter that is required for modeless forms to function correctly when opened by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. You need to call this method only once for a particular <xref:System.Windows.Forms.Integration.WindowsFormsHost> instance.  
+ Call the <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method to forward all keyboard messages when a <xref:System.Windows.Forms.Form?displayProperty=nameWithType> is opened modelessly. The <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method installs a message filter that is required for modeless forms to function correctly when opened by WPF. You need to call this method only once for a particular <xref:System.Windows.Forms.Integration.WindowsFormsHost> instance.  
   
  ]]></format>
         </remarks>
@@ -779,7 +779,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Size constraints in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] layout are hard constraints. If the constraints are exceeded, the host must clip the content within the hosted region. The implementation of this method enforces this behavior.  
+ Size constraints in WPF layout are hard constraints. If the constraints are exceeded, the host must clip the content within the hosted region. The implementation of this method enforces this behavior.  
   
  ]]></format>
         </remarks>
@@ -861,8 +861,8 @@
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the size of the desired padding within the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
-        <value>A <see cref="T:System.Windows.Thickness" /> structure representing the padding pf the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</value>
+        <summary>Specifies the size of the desired padding within the hosted Windows Forms control.</summary>
+        <value>A <see cref="T:System.Windows.Thickness" /> structure representing the padding pf the hosted Windows Forms control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -927,13 +927,13 @@
         <ReturnType>System.Windows.Forms.Integration.PropertyMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the property map that determines how setting properties on the <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> element affects the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> that maps <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> properties to properties on the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</value>
+        <summary>Gets the property map that determines how setting properties on the <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> element affects the hosted Windows Forms control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> that maps <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> properties to properties on the hosted Windows Forms control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ The Windows Forms and WPF technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
    
   
@@ -967,15 +967,15 @@
       </Parameters>
       <Docs>
         <param name="newScale">The new scale factor.</param>
-        <summary>Scales the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control, and tracks the scale factor.</summary>
-        <returns>A <see cref="T:System.Windows.Vector" /> which represents the scale factor applied to the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</returns>
+        <summary>Scales the hosted Windows Forms control, and tracks the scale factor.</summary>
+        <returns>A <see cref="T:System.Windows.Vector" /> which represents the scale factor applied to the hosted Windows Forms control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[TLA2#tla_winforms](~/includes/tla2sharptla-winforms-md.md)] controls do not support scaling in the same way as [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] elements. For example, scaling a [!INCLUDE[TLA2#tla_winforms](~/includes/tla2sharptla-winforms-md.md)] control from a factor of 1 to a factor of 0.5 and back to a factor of 1 does not, in general, recover the original size of the control. For more information, see [Layout Considerations for the WindowsFormsHost Element](~/docs/framework/wpf/advanced/layout-considerations-for-the-windowsformshost-element.md).  
+ Windows Forms controls do not support scaling in the same way as WPF elements. For example, scaling a Windows Forms control from a factor of 1 to a factor of 0.5 and back to a factor of 1 does not, in general, recover the original size of the control. For more information, see [Layout Considerations for the WindowsFormsHost Element](~/docs/framework/wpf/advanced/layout-considerations-for-the-windowsformshost-element.md).  
   
- Override the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A> method to provide custom scaling behavior for the hosted [!INCLUDE[TLA2#tla_winforms](~/includes/tla2sharptla-winforms-md.md)] control.  
+ Override the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A> method to provide custom scaling behavior for the hosted Windows Forms control.  
   
  ]]></format>
         </remarks>
@@ -1073,7 +1073,7 @@
       </Parameters>
       <Docs>
         <param name="request">A <see cref="T:System.Windows.Input.TraversalRequest" /> that specifies the focus behavior.</param>
-        <summary>Forwards focus from [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] to the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
+        <summary>Forwards focus from WPF to the hosted Windows Forms control.</summary>
         <returns>
           <see langword="true" /> if a control was activated; otherwise, <see langword="false" />.</returns>
         <remarks>

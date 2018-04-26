@@ -13,7 +13,7 @@ helpviewer_keywords:
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# Constraints on Type Parameters (C# Programming Guide)
+# Constraints on type parameters (C# Programming Guide)
 
 Constraints inform the compiler about the capabilities a type argument must have. Without any constraints, the type argument could be any type. The compiler can only assume the members of <xref:System.Object?displayPropety=nameWithType>, which is the ultimate base class for any .NET type. For more information, see [Why use constraints](#why-use-constraints). If client code tries to instantiate your class by using a type that is not allowed by a constraint, the result is a compile-time error. Constraints are specified by using the `where` contextual keyword. The following table lists the seven types of constraints:
 
@@ -29,7 +29,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 
 Some of the constraints are mutually exclusive. All value types must have an accessible parameterless constructor. The `struct` constraint implies the `new()` constraint and the `new()` constraint cannot be combined with the `struct` constraint. The `unmanaged` constraint implies the `struct` constraint. The `unmanaged` constraint cannot be combined with either the `struct` or `new()` constraints.
 
-## Why use Constraints
+## Why use constraints
 
 By constraining the type parameter, you increase the number of allowable operations and method calls to those supported by the constraining type and all types in its inheritance hierarchy. When you design generic classes or methods, if you will be performing any operation on the generic members beyond simple assignment or calling any methods not supported by <xref:System.Object?displayProperty=nameWithType>, you will have to apply constraints to the type parameter. For example, the base class constraint tells the compiler that only objects of this type or derived from this type will be used as type arguments. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. The following code example demonstrates the functionality you can add to the `GenericList<T>` class (in [Introduction to Generics](introduction-to-generics.md)) by applying a base class constraint.
 
@@ -47,13 +47,13 @@ When applying the `where T : class` constraint, avoid the `==` and `!=` operator
 
 The compiler only knows that T is a reference type at compile time and must use the default operators that are valid for all reference types. If you must test for value equality, the recommended way is to also apply the `where T : IEquatable<T>` or `where T : IComparable<T>` constraint and implement the interface in any class that will be used to construct the generic class.
 
-## Constraining Multiple Parameters
+## Constraining multiple parameters
 
 You can apply constraints to multiple parameters, and multiple constraints to a single parameter, as shown in the following example:
 
 [!code-csharp[using the class and struct constraints](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#12)]
 
-## Unbounded Type Parameters
+## Unbounded type parameters
 
  Type parameters that have no constraints, such as T in public class `SampleClass<T>{}`, are called unbounded type parameters. Unbounded type parameters have the following rules:
 
@@ -61,7 +61,7 @@ You can apply constraints to multiple parameters, and multiple constraints to a 
 - They can be converted to and from `System.Object` or explicitly converted to any interface type.
 - You can compare them to [null](../../language-reference/keywords/null.md). If an unbounded parameter is compared to `null`, the comparison will always return false if the type argument is a value type.
 
-## Type Parameters as Constraints
+## Type parameters as constraints
 
 The use of a generic type parameter as a constraint is useful when a member function with its own type parameter has to constrain that parameter to the type parameter of the containing type, as shown in the following example:
 
@@ -109,7 +109,7 @@ You could use it as shown in the following sample to create an enum and build a 
 
 [!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#20)]
 
-## See Also
+## See also
 
  <xref:System.Collections.Generic>
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  

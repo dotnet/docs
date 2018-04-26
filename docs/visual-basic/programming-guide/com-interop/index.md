@@ -27,7 +27,7 @@ The Component Object Model (COM) allows an object to expose its functionality to
  Covers how to add references to COM objects that have type libraries.  
   
  [How to: Work with ActiveX Controls](../../../visual-basic/programming-guide/com-interop/how-to-work-with-activex-controls.md)  
- Demonstrates how to use existing ActiveX controls to add features to the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Toolbox.  
+ Demonstrates how to use existing ActiveX controls to add features to the Visual Studio Toolbox.  
   
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
  Steps you through the process of calling the APIs that are part of the Windows operating system.  

@@ -37,7 +37,7 @@ This section describes the .NET Framework Data Provider for SQL Server (SqlClien
 |2000|2005|2008|  
   
 > [!NOTE]
->  Starting with [!INCLUDE[vsprvs](../../../../../includes/vsprvs-md.md)] 2010, the [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527) do not support SQL Server 2000.  
+>  Starting with Visual Studio 2010, the [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527) do not support SQL Server 2000.  
   
 ## Provider Namespace Name  
  All providers must specify a namespace. This property tells the Entity Framework which prefix is used by the provider for specific constructs, such as types and functions. The namespace for SqlClient provider manifests is `SqlServer`. For more information about namespaces, see [Namespaces](../../../../../docs/framework/data/adonet/ef/language-reference/namespaces-entity-sql.md).  

@@ -93,7 +93,7 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
 ## Compiling the Code  
  This example requires a reference to System.Core.dll.  
   
- Compile the code at the command line using csc.exe or vb.exe. To compile the code in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], put it in a console application project template.  
+ Compile the code at the command line using csc.exe or vb.exe. To compile the code in Visual Studio, put it in a console application project template.  
   
 ## See Also  
  [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)

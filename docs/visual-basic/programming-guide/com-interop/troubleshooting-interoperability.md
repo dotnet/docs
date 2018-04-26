@@ -102,7 +102,7 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
  You can find information such as the error description, HRESULT, and the source of COM errors by examining the contents of the exception object.  
   
 ##  <a name="vbconinteroperabilitymarshalinganchor10"></a> ActiveX Control Issues  
- Most ActiveX controls that work with Visual Basic 6.0 work with Visual Basic .NET without trouble. The main exceptions are container controls, or controls that visually contain other controls. Some examples of older controls that do not work correctly with [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] are as follows:  
+ Most ActiveX controls that work with Visual Basic 6.0 work with Visual Basic .NET without trouble. The main exceptions are container controls, or controls that visually contain other controls. Some examples of older controls that do not work correctly with Visual Studio are as follows:  
   
 -   Microsoft Forms 2.0 Frame control  
   
@@ -110,7 +110,7 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
 -   Sheridan Tab Control  
   
- There are only a few workarounds for unsupported ActiveX control problems. You can migrate existing controls to [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] if you own the original source code. Otherwise, you can check with software vendors for updated .NET-compatible versions of controls to replace unsupported ActiveX controls.  
+ There are only a few workarounds for unsupported ActiveX control problems. You can migrate existing controls to Visual Studio if you own the original source code. Otherwise, you can check with software vendors for updated .NET-compatible versions of controls to replace unsupported ActiveX controls.  
   
 ##  <a name="vbconinteroperabilitymarshalinganchor11"></a> Passing ReadOnly Properties of Controls ByRef  
  Visual Basic .NET sometimes raises COM errors such as, "Error 0x800A017F CTL_E_SETNOTSUPPORTED", when you pass `ReadOnly` properties of some older ActiveX controls as `ByRef` parameters to other procedures. Similar procedure calls from Visual Basic 6.0 do not raise an error, and the parameters are treated as if you passed them by value. The Visual Basic .NET error message indicates that you are trying to change a property that does not have a property `Set` procedure.  

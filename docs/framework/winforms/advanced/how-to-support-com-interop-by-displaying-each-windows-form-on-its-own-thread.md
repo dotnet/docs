@@ -34,7 +34,7 @@ You can resolve COM interoperability problems by displaying your form on a [!INC
   
 -   Display each Windows Form on a separate thread.  
   
- There is extensive support for this feature in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
+ There is extensive support for this feature in Visual Studio.  
   
  Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](http://msdn.microsoft.com/library/ms233639\(v=vs.110\)).  
   

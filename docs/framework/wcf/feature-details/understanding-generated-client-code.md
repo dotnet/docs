@@ -24,7 +24,7 @@ ms.workload:
 The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) generates client code and a client application configuration file for use in building client applications. This topic provides a tour of generated code examples for standard service contract scenarios. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] building a client application using the generated code, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md).  
   
 ## Overview  
- If you use [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to generate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client types for your project, you typically do not need to examine the generated client code. If you are not using a development environment that performs the same services for you, you can use a tool such as Svcutil.exe to generate client code and then use that code to develop your client application.  
+ If you use Visual Studio to generate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client types for your project, you typically do not need to examine the generated client code. If you are not using a development environment that performs the same services for you, you can use a tool such as Svcutil.exe to generate client code and then use that code to develop your client application.  
   
  Because Svcutil.exe has a number of options that modify the generated type information, this topic does not discuss all scenarios. However, the following standard tasks involve locating generated code:  
   

@@ -26,7 +26,7 @@ There was a problem writing output to memory.
   
 1.  Compile the program again to see if the error reoccurs.  
   
-2.  If the error continues, save your work and restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+2.  If the error continues, save your work and restart Visual Studio.  
   
 3.  If the error recurs, reinstall Visual Basic.  
   

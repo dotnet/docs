@@ -61,4 +61,4 @@ You can use Windows Presentation Foundation (WPF) controls in your Windows Forms
  Describes interoperation between the Windows Presentation Foundation and Windows Forms technologies.  
   
  [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)  
- Describes how to design Windows Presentation Foundation controls in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].
+ Describes how to design Windows Presentation Foundation controls in Visual Studio.

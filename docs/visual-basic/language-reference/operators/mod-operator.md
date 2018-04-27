@@ -53,14 +53,14 @@ Public Module Example
       Console.WriteLine($" 8 Mod  3 = {8 Mod 3}")
       Console.WriteLine($"-8 Mod  3 = {-8 Mod 3}")
       Console.WriteLine($" 8 Mod -3 = {8 Mod -3}")
-      Console.WriteLine($"-8 Mod -3 = {-8 Mod 3}")
+      Console.WriteLine($"-8 Mod -3 = {-8 Mod -3}")
    End Sub
 End Module
 ' The example displays the following output:
-'   8 Mod  3 = 2
-'   -8 Mod  3 = -2
-'    8 Mod -3 = 2
-'   -8 Mod -3 = -2
+'       8 Mod  3 = 2
+'      -8 Mod  3 = -2
+'       8 Mod -3 = 2
+'      -8 Mod -3 = -2
 ```
 
 ## Remarks  
@@ -85,7 +85,7 @@ End Module
  `a - (b * Fix(a / b))`  
   
 ## Floating-point imprecision  
- When you work with floating-point numbers, remember that they do not always have a precise representation in memory. This could lead to unexpected results from certain operations, such as value comparison and the `Mod` operator. For more information, see [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md).  
+ When you work with floating-point numbers, remember that they do not always have a precise decimal representation in memory. This can lead to unexpected results from certain operations, such as value comparison and the `Mod` operator. For more information, see [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md).  
   
 ## Overloading  
  The `Mod` operator can be *overloaded*, which means that a class or structure can redefine its behavior. If your code applies `Mod` to an instance of a class or structure that includes such an overload, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  

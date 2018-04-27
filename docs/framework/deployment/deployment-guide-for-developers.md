@@ -248,8 +248,8 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|
-|.NET Framework 4.7.2 installed on Windows 10 [!INCLUDE [RS4](~/includes/rs4.md)]|      |
-|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 [!INCLUDE [RS4](~/includes/rs4.md)]|      |
+|.NET Framework 4.7.2 installed on Windows 10 [!INCLUDE [RS4](~/includes/rs4.md)]|461808|
+|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 [!INCLUDE [RS4](~/includes/rs4.md)]|461814|
 |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update|461308|
 |.NET Framework 4.7.1 installed on all OS versions other than Windows 10 Fall Creators Update|461310|
 |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|

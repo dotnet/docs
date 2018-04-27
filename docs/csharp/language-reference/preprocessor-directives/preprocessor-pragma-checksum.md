@@ -28,10 +28,10 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
  The name of the file that requires monitoring for changes or updates.  
   
  `"{guid}"`  
- The Globally Unique Identifier (GUID) for the file.  
+ The Globally Unique Identifier (GUID) for the hash algorithm.  
   
  `"checksum_bytes"`  
- The string of hexadecimal digits representing the bytes of the checksum. Must be an even number of hexadecimal digits. An odd number of digits results in a compile-time warning, and the directive are  ignored.  
+ The string of hexadecimal digits representing the bytes of the checksum. Must be an even number of hexadecimal digits. An odd number of digits results in a compile-time warning, and the directive are ignored.  
   
 ## Remarks  
  The Visual Studio debugger uses a checksum to make sure  that it always finds the right source. The compiler computes the checksum for a source file, and then emits the output to the program database (PDB) file. The debugger then uses the PDB to compare against the checksum that it computes for the source file.  
@@ -49,7 +49,7 @@ class TestClass
 {  
     static int Main()  
     {  
-        #pragma checksum "file.cs" "{3673e4ca-6098-4ec1-890f-8fceb2a794a2}" "{012345678AB}" // New checksum  
+        #pragma checksum "file.cs" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "ab007f1d23d9" // New checksum  
     }  
 }  
 ```  

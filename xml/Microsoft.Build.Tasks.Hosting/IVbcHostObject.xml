@@ -999,8 +999,8 @@
         <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" />
       </Parameters>
       <Docs>
-        <param name="sources">One or more [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] source files.</param>
-        <summary>Specifies one or more [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] source files.</summary>
+        <param name="sources">One or more Visual Basic source files.</param>
+        <summary>Specifies one or more Visual Basic source files.</summary>
         <returns>
           <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

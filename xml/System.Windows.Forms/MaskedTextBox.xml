@@ -71,9 +71,9 @@
  As with the <xref:System.Windows.Forms.TextBox> control, several common keyboard shortcuts do not work with <xref:System.Windows.Forms.MaskedTextBox>. In particular, CTRL-R (right justify text), CTRL-L (left justify text), and CTRL-L (center text) have no effect.  
   
 ## Compatibility with Visual Basic 6.0  
- <xref:System.Windows.Forms.MaskedTextBox> was designed to retain most of the functionality of the Masked Edit control in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0. The following table lists common properties on the Masked Edit control and gives their equivalents on <xref:System.Windows.Forms.MaskedTextBox>.  
+ <xref:System.Windows.Forms.MaskedTextBox> was designed to retain most of the functionality of the Masked Edit control in Visual Basic 6.0. The following table lists common properties on the Masked Edit control and gives their equivalents on <xref:System.Windows.Forms.MaskedTextBox>.  
   
-|Masked Edit control ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0) property|Equivalent MaskedTextBox ([!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]) property|  
+|Masked Edit control (Visual Basic 6.0) property|Equivalent MaskedTextBox ([!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]) property|  
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|  
 |`AllowPrompt` property|<xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A>|  
 |`AutoTab` property|None|  
@@ -1070,7 +1070,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> is the default property for the <xref:System.Windows.Forms.MaskedTextBox> class.  
   
- <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> must be a string composed of one or more of the masking elements, as shown in the following table. The masking language used by <xref:System.Windows.Forms.MaskedTextBox> is defined by its associated <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A>. The standard provider specifies a masking language based upon the one used by the Masked Edit control in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0, and should be very familiar to users migrating from that platform.  
+ <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> must be a string composed of one or more of the masking elements, as shown in the following table. The masking language used by <xref:System.Windows.Forms.MaskedTextBox> is defined by its associated <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A>. The standard provider specifies a masking language based upon the one used by the Masked Edit control in Visual Basic 6.0, and should be very familiar to users migrating from that platform.  
   
 |Masking element|Description|  
 |---------------------|-----------------|  
@@ -2690,7 +2690,7 @@
 maskedTextBox1.Mask = "99/99/9999";  
 ```  
   
- The following [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code shows a mask:  
+ The following Visual Basic code shows a mask:  
   
  `MaskedTextBox1.Mask = "99/99/9999"`  
   

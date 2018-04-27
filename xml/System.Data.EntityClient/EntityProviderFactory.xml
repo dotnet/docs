@@ -220,7 +220,7 @@
       <Docs>
         <param name="serviceType">The <see cref="T:System.Type" /> to return.</param>
         <summary>Returns the requested <see cref="T:System.IServiceProvider" /> class.</summary>
-        <returns>A new instance of <see cref="T:System.IServiceProvider" />. The supported types are <see cref="T:System.Data.Common.DbProviderServices" />, <see cref="T:System.Data.Common.DbCommandDefinitionBuilder" />, and <see cref="T:System.Data.IEntityAdapter" />. Returns null (or <see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for every other type.</returns>
+        <returns>A new instance of <see cref="T:System.IServiceProvider" />. The supported types are <see cref="T:System.Data.Common.DbProviderServices" />, <see cref="T:System.Data.Common.DbCommandDefinitionBuilder" />, and <see cref="T:System.Data.IEntityAdapter" />. Returns null (or <see langword="Nothing" /> in Visual Basic) for every other type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

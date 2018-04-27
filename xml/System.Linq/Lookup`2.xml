@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This indexed property provides the ability to index a specific collection of values in the <xref:System.Linq.Lookup%602> by using the following syntax: `myLookup[key]` in Visual C# or `myLookup(key)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. If the `key` is not found in the collection, an empty sequence is returned.  
+ This indexed property provides the ability to index a specific collection of values in the <xref:System.Linq.Lookup%602> by using the following syntax: `myLookup[key]` in Visual C# or `myLookup(key)` in Visual Basic. If the `key` is not found in the collection, an empty sequence is returned.  
   
    
   

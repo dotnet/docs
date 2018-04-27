@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute supports `My.Forms` and `My.WebServices` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It is not intended to be used directly from your code.  
+ This attribute supports `My.Forms` and `My.WebServices` in Visual Basic. It is not intended to be used directly from your code.  
   
  When this attribute is put on a class, the compiler fills that class with properties corresponding to all the types in the project that derive from the type specified by the <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.MyGroupName%2A> property.  
   
@@ -61,12 +61,12 @@
           <see langword="String" />. Initializes the <see cref="P:Microsoft.VisualBasic.MyGroupCollectionAttribute.DisposeMethod" /> property. Specifies the method in the class that disposes of the type's instances.</param>
         <param name="defaultInstanceAlias">
           <see langword="String" />. Initializes the <see cref="P:Microsoft.VisualBasic.MyGroupCollectionAttribute.DefaultInstanceAlias" /> property. Specifies the name of the property that returns the default instance of the class.</param>
-        <summary>This attribute supports <see langword="My.Forms" /> and <see langword="My.WebServices" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].</summary>
+        <summary>This attribute supports <see langword="My.Forms" /> and <see langword="My.WebServices" /> in Visual Basic.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute supports `My.Forms` and `My.WebServices` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It is not intended to be used directly from your code.  
+ This attribute supports `My.Forms` and `My.WebServices` in Visual Basic. It is not intended to be used directly from your code.  
   
  When this attribute is put on a class, the compiler fills that class with properties corresponding to all the types in the project that derive from the type specified by the <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.MyGroupName%2A> property.  
   
@@ -90,13 +90,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property supports <see langword="My" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].</summary>
+        <summary>This property supports <see langword="My" /> in Visual Basic.</summary>
         <value>Specifies the method in the class that creates the type's instances.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property supports `My.Forms` and `My.WebServices` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It is not intended to be used directly from your code.  
+ This property supports `My.Forms` and `My.WebServices` in Visual Basic. It is not intended to be used directly from your code.  
   
  ]]></format>
         </remarks>
@@ -118,13 +118,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property supports <see langword="My" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].</summary>
+        <summary>This property supports <see langword="My" /> in Visual Basic.</summary>
         <value>Specifies the name of the property that returns the default instance of the class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property supports `My.Forms` and `My.WebServices` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It is not intended to be used directly from your code.  
+ This property supports `My.Forms` and `My.WebServices` in Visual Basic. It is not intended to be used directly from your code.  
   
  ]]></format>
         </remarks>
@@ -146,13 +146,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property supports <see langword="My" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].</summary>
+        <summary>This property supports <see langword="My" /> in Visual Basic.</summary>
         <value>Specifies the method in the class that disposes of the type's instances.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property supports `My.Forms` and `My.WebServices` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It is not intended to be used directly from your code.  
+ This property supports `My.Forms` and `My.WebServices` in Visual Basic. It is not intended to be used directly from your code.  
   
  ]]></format>
         </remarks>
@@ -174,13 +174,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property supports <see langword="My" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].</summary>
+        <summary>This property supports <see langword="My" /> in Visual Basic.</summary>
         <value>Specifies the name of the type for which the compiler generates accessor properties.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property supports `My.Forms` and `My.WebServices` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It is not intended to be used directly from your code.  
+ This property supports `My.Forms` and `My.WebServices` in Visual Basic. It is not intended to be used directly from your code.  
   
  ]]></format>
         </remarks>

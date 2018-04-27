@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In Visual Basic 6.0, a `String` could be declared with a fixed length. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], fixed-length strings are no longer supported and a new <xref:System.String> is allocated every time the length of the <xref:System.String> is changed.  
+ In Visual Basic 6.0, a `String` could be declared with a fixed length. In Visual Basic, fixed-length strings are no longer supported and a new <xref:System.String> is allocated every time the length of the <xref:System.String> is changed.  
   
  The `FixedLengthString` class can be used to emulate the behavior of a Visual Basic 6.0 string, which enables you to declare a string with a fixed length. A `FixedLengthString` cannot be converted to a <xref:System.String>; you must either reference the <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value%2A> property or call the <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.ToString%2A> method to convert the type.  
   
@@ -83,7 +83,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In Visual Basic 6.0, you can specify the length of a string in its declaration. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you cannot declare a string to have a fixed length unless you use the <xref:Microsoft.VisualBasic.VBFixedStringAttribute> attribute in the declaration.  
+ In Visual Basic 6.0, you can specify the length of a string in its declaration. In Visual Basic, you cannot declare a string to have a fixed length unless you use the <xref:Microsoft.VisualBasic.VBFixedStringAttribute> attribute in the declaration.  
   
  Use this class to declare a fixed-length string without using the attribute.  
   
@@ -133,7 +133,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In Visual Basic 6.0, you can specify the length of a string in its declaration. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you cannot declare a string to have a fixed length unless you use the <xref:Microsoft.VisualBasic.VBFixedStringAttribute> attribute in the declaration.  
+ In Visual Basic 6.0, you can specify the length of a string in its declaration. In Visual Basic, you cannot declare a string to have a fixed length unless you use the <xref:Microsoft.VisualBasic.VBFixedStringAttribute> attribute in the declaration.  
   
  Use this class to declare a fixed length string without using the attribute.  
   

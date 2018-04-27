@@ -1,4 +1,4 @@
-﻿<Type Name="ClientSettingsProvider" FullName="System.Web.ClientServices.Providers.ClientSettingsProvider">
+<Type Name="ClientSettingsProvider" FullName="System.Web.ClientServices.Providers.ClientSettingsProvider">
   <TypeSignature Language="C#" Value="public class ClientSettingsProvider : System.Configuration.SettingsProvider, System.Configuration.IApplicationSettingsProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientSettingsProvider extends System.Configuration.SettingsProvider implements class System.Configuration.IApplicationSettingsProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.Providers.ClientSettingsProvider" />
@@ -298,7 +298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used internally by the application settings system and it not meant to be used by your application code. To reset Web settings to their default values, you will typically use the <xref:System.Configuration.ApplicationSettingsBase.Reset%2A?displayProperty=nameWithType> method of your project's `Settings` class (typically accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). You can also revert Web settings to the previously cached values by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A?displayProperty=nameWithType> method.  
+ This method is used internally by the application settings system and it not meant to be used by your application code. To reset Web settings to their default values, you will typically use the <xref:System.Configuration.ApplicationSettingsBase.Reset%2A?displayProperty=nameWithType> method of your project's `Settings` class (typically accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic). You can also revert Web settings to the previously cached values by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

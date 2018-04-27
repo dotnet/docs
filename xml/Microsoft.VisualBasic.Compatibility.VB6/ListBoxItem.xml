@@ -23,9 +23,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In Visual Basic 6.0, the `ListBox` and `ComboBox` controls use a `List` property to store list items and an `ItemData` property to optionally store an `Integer` associated with each list item. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls use the <xref:System.Windows.Forms.ListBox.Items%2A> property to store list items, and the `ItemData` property is no longer supported.  
+ In Visual Basic 6.0, the `ListBox` and `ComboBox` controls use a `List` property to store list items and an `ItemData` property to optionally store an `Integer` associated with each list item. In Visual Basic, the <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls use the <xref:System.Windows.Forms.ListBox.Items%2A> property to store list items, and the `ItemData` property is no longer supported.  
   
- When a Visual Basic 6.0 application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the upgrade tools create a `ListBoxItem` class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
+ When a Visual Basic 6.0 application is upgraded to Visual Basic, the upgrade tools create a `ListBoxItem` class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
   
  [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
   
@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a Visual Basic 6.0 application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the upgrade tools create a <xref:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem> class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
+ When a Visual Basic 6.0 application is upgraded to Visual Basic, the upgrade tools create a <xref:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem> class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
   
  [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
   
@@ -94,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a Visual Basic 6.0 application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the upgrade tools create a <xref:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem> class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
+ When a Visual Basic 6.0 application is upgraded to Visual Basic, the upgrade tools create a <xref:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem> class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
   
  [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
   
@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a Visual Basic 6.0 application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the upgrade tools create a <xref:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem> class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
+ When a Visual Basic 6.0 application is upgraded to Visual Basic, the upgrade tools create a <xref:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem> class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
   
  [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
   
@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a Visual Basic 6.0 application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the upgrade tools create a <xref:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem> class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
+ When a Visual Basic 6.0 application is upgraded to Visual Basic, the upgrade tools create a <xref:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem> class for each item in a <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox> control. The <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData%2A> and <xref:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData%2A> functions can then be used to enable any code that references the `ItemData` property.  
   
  [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
   

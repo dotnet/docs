@@ -57,7 +57,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -154,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -205,7 +205,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -249,7 +249,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  This projection method requires the transform function, `selector`, to produce one value for each value in the source sequence, `source`. If `selector` returns a value that is itself a collection, it is up to the consumer to traverse the subsequences manually.  
   
@@ -343,7 +343,7 @@
 ## Remarks  
  The use of a <xref:System.Data.EnumerableRowCollectionExtensions.ThenBy%2A> operation requires an existing primary sorting operation using <xref:System.Data.EnumerableRowCollectionExtensions.OrderBy%2A>.  
   
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -389,7 +389,7 @@
 ## Remarks  
  The use of a <xref:System.Data.EnumerableRowCollectionExtensions.ThenBy%2A> operation requires an existing primary sorting operation using <xref:System.Data.EnumerableRowCollectionExtensions.OrderBy%2A>.  
   
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -442,7 +442,7 @@
 ## Remarks  
  The use of a <xref:System.Data.EnumerableRowCollectionExtensions.ThenByDescending%2A> operation requires an existing primary sorting operation using <xref:System.Data.EnumerableRowCollectionExtensions.OrderBy%2A>.  
   
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -488,7 +488,7 @@
 ## Remarks  
  The use of a <xref:System.Data.EnumerableRowCollectionExtensions.ThenByDescending%2A> operation requires an existing primary sorting operation using <xref:System.Data.EnumerableRowCollectionExtensions.OrderBy%2A>.  
   
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>
@@ -528,7 +528,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  ]]></format>
         </remarks>

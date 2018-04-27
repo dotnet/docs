@@ -342,7 +342,7 @@
 ## Remarks  
  Use the `MainForm` property to get or set the <xref:System.Windows.Forms.Form> object that the Visual Basic Application Startup/Shutdown model uses as the application's main form.  
   
- This property supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application Startup/Shutdown model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+ This property supports the Visual Basic Application Startup/Shutdown model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  The changes to this property are not persisted when the application closes. To change the main form permanently, you must change the setting in the **Project Designer**.  
   
@@ -377,7 +377,7 @@
   
  When you add a splash screen to your application using the Project Designer, it sets the `My.Application.MinimumSplashScreenDisplayTime` property to 2000, giving a minimum display time of two seconds.  
   
- This property supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+ This property supports the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  You should set the `My.Application.MinimumSplashScreenDisplayTime` property in a method that overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> or <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method. Code that overrides methods of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class should be entered in the ApplicationEvents.vb file, which is hidden by default.  
   
@@ -514,7 +514,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, this method does nothing. However, when you select a main form for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides this method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
+ By default, this method does nothing. However, when you select a main form for your application in the Visual Basic **Project Designer**, the designer overrides this method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
   
  This method is called by the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A> method.  
   
@@ -548,7 +548,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, this method does nothing. If you select a splash screen for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A> property to a new instance of the splash-screen form.  
+ By default, this method does nothing. If you select a splash screen for your application in the Visual Basic **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A> property to a new instance of the splash-screen form.  
   
  This method is called by the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> method.  
   
@@ -638,7 +638,7 @@
   
 -   <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A>. Provides a way for a designer to emit code that initializes the main form.  
   
-     By default, this method does nothing. However, when you select a main form for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
+     By default, this method does nothing. However, when you select a main form for your application in the Visual Basic **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
   
 -   <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A>. If the application has a splash screen defined and it is open, this method closes the splash screen.  
   
@@ -886,7 +886,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Application.Run` method provides support for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. This method should be called only from the application's `Sub Main`. By default, the `Sub Main` of a Windows Forms application calls this method. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+ The `My.Application.Run` method provides support for the Visual Basic Application model. This method should be called only from the application's `Sub Main`. By default, the `Sub Main` of a Windows Forms application calls this method. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
 ## Availability by Project Type  
   
@@ -1029,7 +1029,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application raises the `Shutdown` event before it exits. This allows you to control how the application closes its resources. This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+ An application raises the `Shutdown` event before it exits. This allows you to control how the application closes its resources. This event is part of the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  The code for the `Shutdown` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
   
@@ -1171,7 +1171,7 @@
 ## Remarks  
  A normal (non-single-instance) application raises the `Startup` event every time it starts. A single-instance application raises the `Startup` event when it starts only if the application is not already active; otherwise, it raises the `StartupNextInstance` event. For more information, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance>.  
   
- This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+ This event is part of the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  You can use the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the `e` parameter to control the loading of an application's startup form. When the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property is set to `True`, the startup form does not start. In that case, your code should call an alternate startup code path.  
   
@@ -1236,7 +1236,7 @@
 ## Remarks  
  A single-instance application raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event when you attempt to restart the application when it is already active. When a single-instance application starts for the first time, it raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. For more information, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup>.  
   
- This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+ This event is part of the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  This event is raised on the application's main thread with the other user-interface events. This allows the event handler to access directly the application's user interface. However, if the application is busy handling another user-interface event when this event is raised, this event cannot be processed until the other event handler finishes or calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoEvents%2A> method.  
   

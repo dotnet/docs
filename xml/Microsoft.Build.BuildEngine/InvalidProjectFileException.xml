@@ -80,7 +80,7 @@
       </Parameters>
       <Docs>
         <param name="message">The error message that explains the reason for the exception.</param>
-        <param name="innerException">The exception that is the cause of the current excpetion. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <param name="innerException">The exception that is the cause of the current excpetion. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
         <summary>Initializes a new instance of <see cref="T:Microsoft.Build.BuildEngine.InvalidProjectFileException" /> class using the specified error message and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
       <Docs>
         <param name="xmlNode">The XML node where the error is located. Can be null.</param>
         <param name="message">The error message text for the exception.</param>
-        <param name="errorSubcategory">A description for the error. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</param>
+        <param name="errorSubcategory">A description for the error. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic).</param>
         <param name="errorCode">The error code. This parameter can be a null reference (<see langword="Nothing" />).</param>
         <param name="helpKeyword">The F1-help keyword for the host IDE. Can be null.</param>
         <summary>Initializes a new instance of <see cref="T:Microsoft.Build.BuildEngine.InvalidProjectFileException" /> class using rich error information.</summary>
@@ -148,7 +148,7 @@
         <param name="endLineNumber">The end of a range of invalid lines in the project. Set to zero if not available.</param>
         <param name="endColumnNumber">The end of a range of invalid columns in the project. Set to zero if not available.</param>
         <param name="message">The error message text for the exception.</param>
-        <param name="errorSubcategory">The description of the error. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</param>
+        <param name="errorSubcategory">The description of the error. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic).</param>
         <param name="errorCode">The error code. This parameter can be a null reference (<see langword="Nothing" />).</param>
         <param name="helpKeyword">The F1-help keyword for the host IDE. This parameter can be a null reference (<see langword="Nothing" />).</param>
         <summary>Initializes a new instance of <see cref="T:Microsoft.Build.BuildEngine.InvalidProjectFileException" /> class using rich error information.</summary>
@@ -258,7 +258,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the error code, if any, associated with the exception message.</summary>
-        <value>Error code string, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</value>
+        <value>Error code string, or a null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,7 +323,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the F1-help keyword, if any, associated with this error, for the host IDE.</summary>
-        <value>The keyword string, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</value>
+        <value>The keyword string, or a null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,7 +383,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the project file, if any, associated with this exception.</summary>
-        <value>The project file name and path string, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</value>
+        <value>The project file name and path string, or a null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

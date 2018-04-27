@@ -60,7 +60,7 @@
       <Docs>
         <param name="fileName">The name of the dependent file.</param>
         <param name="linkFileName">The name of the file specified by the Link attribute.</param>
-        <param name="rootNamespaceName">The root namespace. This parameter may be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</param>
+        <param name="rootNamespaceName">The root namespace. This parameter may be a null reference (<see langword="Nothing" /> in Visual Basic).</param>
         <param name="dependentUponFileName">The file name of the parent of this dependency. This parameter may be a null reference (<see langword="Nothing" />).</param>
         <param name="binaryStream">The binary stream contents of the file. This parameter may be a null reference (<see langword="Nothing" />).</param>
         <summary>When overridden in a derived class, creates the manifest resource name.</summary>

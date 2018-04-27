@@ -401,7 +401,7 @@
         <Parameter Name="targetNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="targetNames">The list of targets to build. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to build the default targets.</param>
+        <param name="targetNames">The list of targets to build. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic) to build the default targets.</param>
         <summary>Builds the specified list of targets in the project.</summary>
         <returns>
           <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
@@ -427,7 +427,7 @@
         <Parameter Name="targetOutputs" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="targetNames">The list of targets to build. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to build the default targets.</param>
+        <param name="targetNames">The list of targets to build. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic) to build the default targets.</param>
         <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" />) if outputs are not needed.</param>
         <summary>Builds the specified list of targets in the project, and returns the outputs of the targets.</summary>
         <returns>
@@ -455,7 +455,7 @@
         <Parameter Name="buildFlags" Type="Microsoft.Build.BuildEngine.BuildSettings" />
       </Parameters>
       <Docs>
-        <param name="targetNames">The list of targets to build. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to build the default targets.</param>
+        <param name="targetNames">The list of targets to build. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic) to build the default targets.</param>
         <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" />) if outputs are not needed.</param>
         <param name="buildFlags">The <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> to apply to the build.</param>
         <summary>Builds the specified list of targets in the project using the specified settings, and returns the outputs of the targets.</summary>

@@ -324,7 +324,7 @@
       <Docs>
         <param name="version">The version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to target.</param>
         <summary>Gets a fully qualified path to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] root directory.</summary>
-        <returns>A string containing the fully qualified path to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] root directory, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is not installed.</returns>
+        <returns>A string containing the fully qualified path to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] root directory, or a null reference (<see langword="Nothing" /> in Visual Basic) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is not installed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,7 +385,7 @@
         <param name="fileName">The file to locate in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] directory.</param>
         <param name="version">The version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to target.</param>
         <summary>Gets a fully qualified path to a file in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] directory.</summary>
-        <returns>A string containing the fully qualified path to the specified file, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is not installed.</returns>
+        <returns>A string containing the fully qualified path to the specified file, or a null reference (<see langword="Nothing" /> in Visual Basic) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -480,7 +480,7 @@
       <Docs>
         <param name="version">The version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to target.</param>
         <summary>Gets the fully qualified path to the \bin directory of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK.</summary>
-        <returns>A string containing the fully qualified path to the \bin directory of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK is not installed.</returns>
+        <returns>A string containing the fully qualified path to the \bin directory of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK, or a null reference (<see langword="Nothing" /> in Visual Basic) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK is not installed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -540,7 +540,7 @@
         <param name="fileName">The file to locate in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK.</param>
         <param name="version">The version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to target.</param>
         <summary>Gets the fully qualified path to a file in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK.</summary>
-        <returns>A string containing the fully qualified path to the \bin directory of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK is not installed.</returns>
+        <returns>A string containing the fully qualified path to the \bin directory of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK, or a null reference (<see langword="Nothing" /> in Visual Basic) if the targeted version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

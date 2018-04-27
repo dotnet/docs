@@ -550,7 +550,7 @@ abstract class CustomToolTask : ToolTask
       <Parameters />
       <Docs>
         <summary>Returns the directory in which to run the executable file.</summary>
-        <returns>The directory in which to run the executable file, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if the executable file should be run in the current directory.</returns>
+        <returns>The directory in which to run the executable file, or a null reference (<see langword="Nothing" /> in Visual Basic) if the executable file should be run in the current directory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

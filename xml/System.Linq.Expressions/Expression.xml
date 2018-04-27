@@ -1034,7 +1034,7 @@
 -   If the <xref:System.Linq.Expressions.Expression.Type%2A> property of either `left` or `right` represents a user-defined type that overloads the bitwise `AND` operator, the <xref:System.Reflection.MethodInfo> that represents that method is the implementing method.  
   
     > [!NOTE]
-    >  The conditional `AND` operator cannot be overloaded in C# or [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. However, the conditional `AND` operator is evaluated by using the bitwise `AND` operator. Thus, a user-defined overload of the bitwise `AND` operator can be the implementing method for this node type.  
+    >  The conditional `AND` operator cannot be overloaded in C# or Visual Basic. However, the conditional `AND` operator is evaluated by using the bitwise `AND` operator. Thus, a user-defined overload of the bitwise `AND` operator can be the implementing method for this node type.  
   
 -   Otherwise, if `left`.Type and `right`.Type are Boolean types, the implementing method is `null`.  
   
@@ -1130,7 +1130,7 @@
 -   Otherwise, if the <xref:System.Linq.Expressions.Expression.Type%2A> property of either `left` or `right` represents a user-defined type that overloads the bitwise `AND` operator, the <xref:System.Reflection.MethodInfo> that represents that method is the implementing method.  
   
     > [!NOTE]
-    >  The conditional `AND` operator cannot be overloaded in C# or [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. However, the conditional `AND` operator is evaluated by using the bitwise `AND` operator. Thus, a user-defined overload of the bitwise `AND` operator can be the implementing method for this node type.  
+    >  The conditional `AND` operator cannot be overloaded in C# or Visual Basic. However, the conditional `AND` operator is evaluated by using the bitwise `AND` operator. Thus, a user-defined overload of the bitwise `AND` operator can be the implementing method for this node type.  
   
 -   Otherwise, if `left`.Type and `right`.Type are Boolean types, the implementing method is `null`.  
   
@@ -14039,7 +14039,7 @@
 -   If the <xref:System.Linq.Expressions.Expression.Type%2A> property of either `left` or `right` represents a user-defined type that overloads the bitwise `OR` operator, the <xref:System.Reflection.MethodInfo> that represents that method is the implementing method.  
   
     > [!NOTE]
-    >  The conditional `OR` operator cannot be overloaded in C# or [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. However, the conditional `OR` operator is evaluated by using the bitwise `OR` operator. Thus, a user-defined overload of the bitwise `OR` operator can be the implementing method for this node type.  
+    >  The conditional `OR` operator cannot be overloaded in C# or Visual Basic. However, the conditional `OR` operator is evaluated by using the bitwise `OR` operator. Thus, a user-defined overload of the bitwise `OR` operator can be the implementing method for this node type.  
   
 -   Otherwise, if `left`.Type and `right`.Type are Boolean types, the implementing method is `null`.  
   
@@ -14135,7 +14135,7 @@
 -   Otherwise, if the <xref:System.Linq.Expressions.Expression.Type%2A> property of either `left` or `right` represents a user-defined type that overloads the bitwise `OR` operator, the <xref:System.Reflection.MethodInfo> that represents that method is the implementing method.  
   
     > [!NOTE]
-    >  The conditional `OR` operator cannot be overloaded in C# or [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. However, the conditional `OR` operator is evaluated by using the bitwise `OR` operator. Thus, a user-defined overload of the bitwise `OR` operator can be the implementing method for this node type.  
+    >  The conditional `OR` operator cannot be overloaded in C# or Visual Basic. However, the conditional `OR` operator is evaluated by using the bitwise `OR` operator. Thus, a user-defined overload of the bitwise `OR` operator can be the implementing method for this node type.  
   
 -   Otherwise, if `left`.Type and `right`.Type are Boolean types, the implementing method is `null`.  
   

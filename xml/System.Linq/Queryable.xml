@@ -299,7 +299,7 @@
  [!code-csharp[System.Linq.Queryable#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Queryable/CS/queryable.cs#4)]
  [!code-vb[System.Linq.Queryable#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Queryable/VB/queryable.vb#4)]  
   
- The Boolean value that the <xref:System.Linq.Queryable.All%60%601%28System.Linq.IQueryable%7B%60%600%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Boolean%7D%7D%29> method returns is typically used in the predicate of a `where` clause (`Where` clause in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) or a direct call to the <xref:System.Linq.Queryable.Where%2A> method. The following example demonstrates this use of the `All` method.  
+ The Boolean value that the <xref:System.Linq.Queryable.All%60%601%28System.Linq.IQueryable%7B%60%600%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Boolean%7D%7D%29> method returns is typically used in the predicate of a `where` clause (`Where` clause in Visual Basic) or a direct call to the <xref:System.Linq.Queryable.Where%2A> method. The following example demonstrates this use of the `All` method.  
   
  [!code-csharp[System.Linq.Queryable#134](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Queryable/CS/queryable.cs#134)]
  [!code-vb[System.Linq.Queryable#134](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Queryable/VB/queryable.vb#134)]  
@@ -372,7 +372,7 @@
  [!code-csharp[System.Linq.Queryable#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Queryable/CS/queryable.cs#5)]
  [!code-vb[System.Linq.Queryable#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Queryable/VB/queryable.vb#5)]  
   
- The Boolean value that the <xref:System.Linq.Queryable.Any%60%601%28System.Linq.IQueryable%7B%60%600%7D%29> method returns is typically used in the predicate of a `where` clause (`Where` clause in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) or a direct call to the <xref:System.Linq.Queryable.Where%60%601%28System.Linq.IQueryable%7B%60%600%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Boolean%7D%7D%29> method. The following example demonstrates this use of the `Any` method.  
+ The Boolean value that the <xref:System.Linq.Queryable.Any%60%601%28System.Linq.IQueryable%7B%60%600%7D%29> method returns is typically used in the predicate of a `where` clause (`Where` clause in Visual Basic) or a direct call to the <xref:System.Linq.Queryable.Where%60%601%28System.Linq.IQueryable%7B%60%600%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Boolean%7D%7D%29> method. The following example demonstrates this use of the `Any` method.  
   
  [!code-csharp[System.Linq.Queryable#135](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Queryable/CS/queryable.cs#135)]
  [!code-vb[System.Linq.Queryable#135](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Queryable/VB/queryable.vb#135)]  
@@ -2958,7 +2958,7 @@
         <param name="source">An <see cref="T:System.Linq.IQueryable`1" /> whose elements to group.</param>
         <param name="keySelector">A function to extract the key for each element.</param>
         <summary>Groups the elements of a sequence according to a specified key selector function.</summary>
-        <returns>An <c>IQueryable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</c> in C# or <c>IQueryable(Of IGrouping(Of TKey, TSource))</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] where each <see cref="T:System.Linq.IGrouping`2" /> object contains a sequence of objects and a key.</returns>
+        <returns>An <c>IQueryable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</c> in C# or <c>IQueryable(Of IGrouping(Of TKey, TSource))</c> in Visual Basic where each <see cref="T:System.Linq.IGrouping`2" /> object contains a sequence of objects and a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3023,7 +3023,7 @@
         <param name="keySelector">A function to extract the key for each element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare keys.</param>
         <summary>Groups the elements of a sequence according to a specified key selector function and compares the keys by using a specified comparer.</summary>
-        <returns>An <c>IQueryable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</c> in C# or <c>IQueryable(Of IGrouping(Of TKey, TSource))</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] where each <see cref="T:System.Linq.IGrouping`2" /> contains a sequence of objects and a key.</returns>
+        <returns>An <c>IQueryable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</c> in C# or <c>IQueryable(Of IGrouping(Of TKey, TSource))</c> in Visual Basic where each <see cref="T:System.Linq.IGrouping`2" /> contains a sequence of objects and a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3082,7 +3082,7 @@
         <param name="keySelector">A function to extract the key for each element.</param>
         <param name="elementSelector">A function to map each source element to an element in an <see cref="T:System.Linq.IGrouping`2" />.</param>
         <summary>Groups the elements of a sequence according to a specified key selector function and projects the elements for each group by using a specified function.</summary>
-        <returns>An <c>IQueryable&lt;IGrouping&lt;TKey, TElement&gt;&gt;</c> in C# or <c>IQueryable(Of IGrouping(Of TKey, TElement))</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] where each <see cref="T:System.Linq.IGrouping`2" /> contains a sequence of objects of type <paramref name="TElement" /> and a key.</returns>
+        <returns>An <c>IQueryable&lt;IGrouping&lt;TKey, TElement&gt;&gt;</c> in C# or <c>IQueryable(Of IGrouping(Of TKey, TElement))</c> in Visual Basic where each <see cref="T:System.Linq.IGrouping`2" /> contains a sequence of objects of type <paramref name="TElement" /> and a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3151,7 +3151,7 @@
         <param name="elementSelector">A function to map each source element to an element in an <see cref="T:System.Linq.IGrouping`2" />.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare keys.</param>
         <summary>Groups the elements of a sequence and projects the elements for each group by using a specified function. Key values are compared by using a specified comparer.</summary>
-        <returns>An <c>IQueryable&lt;IGrouping&lt;TKey, TElement&gt;&gt;</c> in C# or <c>IQueryable(Of IGrouping(Of TKey, TElement))</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] where each <see cref="T:System.Linq.IGrouping`2" /> contains a sequence of objects of type <paramref name="TElement" /> and a key.</returns>
+        <returns>An <c>IQueryable&lt;IGrouping&lt;TKey, TElement&gt;&gt;</c> in C# or <c>IQueryable(Of IGrouping(Of TKey, TElement))</c> in Visual Basic where each <see cref="T:System.Linq.IGrouping`2" /> contains a sequence of objects of type <paramref name="TElement" /> and a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

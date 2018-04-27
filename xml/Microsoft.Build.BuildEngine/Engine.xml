@@ -388,7 +388,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <Docs>
         <param name="project">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> to build.</param>
         <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if outputs are not required.</param>
+        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic) if outputs are not required.</param>
         <summary>Builds the specified targets of the specified <see cref="T:Microsoft.Build.BuildEngine.Project" />, and returns the outputs of the targets.</summary>
         <returns>
           <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
@@ -417,7 +417,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <Docs>
         <param name="project">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> to build.</param>
         <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if outputs are not required.</param>
+        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic) if outputs are not required.</param>
         <param name="buildFlags">The <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> to apply to the build.</param>
         <summary>Builds the specified targets of the specified <see cref="T:Microsoft.Build.BuildEngine.Project" /> with the specified <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" />, and returns the outputs of the targets.</summary>
         <returns>
@@ -587,7 +587,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <param name="projectFile">The project file to load and build.</param>
         <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
         <param name="globalProperties">The <see cref="P:Microsoft.Build.BuildEngine.Engine.GlobalProperties" /> to apply to the build.</param>
-        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if outputs are not required.</param>
+        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic) if outputs are not required.</param>
         <summary>Loads the specified project file and builds the specified targets of the project with the specified <see cref="P:Microsoft.Build.BuildEngine.Engine.GlobalProperties" />, and returns the outputs of the targets.</summary>
         <returns>
           <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
@@ -619,7 +619,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <param name="projectFile">The project file to load and build.</param>
         <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
         <param name="globalProperties">The <see cref="P:Microsoft.Build.BuildEngine.Engine.GlobalProperties" /> to apply to the build.</param>
-        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if outputs are not required.</param>
+        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in Visual Basic) if outputs are not required.</param>
         <param name="buildFlags">The <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> to apply to the build.</param>
         <summary>Loads the specified project file and builds the specified targets of the project with the specified <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> and <see cref="P:Microsoft.Build.BuildEngine.Engine.GlobalProperties" />, and returns the outputs of the targets.</summary>
         <returns>
@@ -779,7 +779,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <Docs>
         <param name="projectFullFileName">The fully qualified file path to the project file of the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</param>
         <summary>Returns the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object that is associated with the specified project file.</summary>
-        <returns>The <see cref="T:Microsoft.Build.BuildEngine.Project" /> object that associated with the specified project file. If no <see cref="T:Microsoft.Build.BuildEngine.Project" /> object is associated with the specified project file, the method returns a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</returns>
+        <returns>The <see cref="T:Microsoft.Build.BuildEngine.Project" /> object that associated with the specified project file. If no <see cref="T:Microsoft.Build.BuildEngine.Project" /> object is associated with the specified project file, the method returns a null reference (<see langword="Nothing" /> in Visual Basic).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

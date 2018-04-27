@@ -96,25 +96,25 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates and returns a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
+        <summary>Creates and returns a new Visual Basic <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collection returned by this constructor is empty and does not have any initial capacity allocated.  
+ The Visual Basic collection returned by this constructor is empty and does not have any initial capacity allocated.  
   
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collections are not compatible with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] collections available in the <xref:System.Collections?displayProperty=nameWithType>, <xref:System.Collections.Generic?displayProperty=nameWithType>, and <xref:System.Collections.Specialized?displayProperty=nameWithType> namespaces.  
+ Visual Basic collections are not compatible with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] collections available in the <xref:System.Collections?displayProperty=nameWithType>, <xref:System.Collections.Generic?displayProperty=nameWithType>, and <xref:System.Collections.Specialized?displayProperty=nameWithType> namespaces.  
   
    
   
 ## Examples  
- The following example creates a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collection and assigns it to the variable `coll`:  
+ The following example creates a new Visual Basic collection and assigns it to the variable `coll`:  
   
 ```  
 Dim coll As New Microsoft.VisualBasic.Collection()  
 ```  
   
- This `Collection` object is one-based, which means that the index values of the elements range from 1 through the value of the `Count` property. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] collections hold elements of type <xref:System.Object>.  
+ This `Collection` object is one-based, which means that the index values of the elements range from 1 through the value of the `Count` property. Visual Basic collections hold elements of type <xref:System.Object>.  
   
  ]]></format>
         </remarks>

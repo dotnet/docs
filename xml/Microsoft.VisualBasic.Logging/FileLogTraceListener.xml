@@ -25,7 +25,7 @@
 ## Remarks  
  The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class provides automated maintenance capabilities to archive log files as needed, on a daily or per-application basis. This automatic archival functionality helps reduce the maintenance responsibilities of developers and administrators.  
   
- An instance of <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> can be added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=nameWithType> or <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collections to redirect output from logging to a text file. Instances of this class can also be added to `My.Application.Log` or `My.Log` (for Web applications) in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] applications. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)`.`  
+ An instance of <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> can be added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=nameWithType> or <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collections to redirect output from logging to a text file. Instances of this class can also be added to `My.Application.Log` or `My.Log` (for Web applications) in Visual Basic applications. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)`.`  
   
  The main features of this class are:  
   
@@ -87,11 +87,11 @@
   
  **Enabling Output**  
   
- You must enable tracing or debugging to use a trace listener. The following syntax is compiler specific. If you use compilers other than C# or [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], refer to the documentation for your compiler.  
+ You must enable tracing or debugging to use a trace listener. The following syntax is compiler specific. If you use compilers other than C# or Visual Basic, refer to the documentation for your compiler.  
   
--   To enable debugging in C#, add the `/d:DEBUG` flag to the compiler command line when you compile your code, or you can add `#define DEBUG` to the top of your file. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], add the `/d:DEBUG=True` flag to the compiler command line.  
+-   To enable debugging in C#, add the `/d:DEBUG` flag to the compiler command line when you compile your code, or you can add `#define DEBUG` to the top of your file. In Visual Basic, add the `/d:DEBUG=True` flag to the compiler command line.  
   
--   To enable tracing in C#, add the `/d:TRACE` flag to the compiler command line when you compile your code, or add `#define TRACE` to the top of your file. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], add the `/d:TRACE=True` flag to the compiler command line.  
+-   To enable tracing in C#, add the `/d:TRACE` flag to the compiler command line when you compile your code, or add `#define TRACE` to the top of your file. In Visual Basic, add the `/d:TRACE=True` flag to the compiler command line.  
   
  To set the level of your listener, edit the configuration file for your application. Within this file, you can add a listener, set its type and set its parameters, remove a listener, or clear all the listeners previously set by the application. The configuration file should be formatted like the following example.  
   

@@ -58,12 +58,12 @@
         <Parameter Name="binaryStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="fileName">The name of the resource file from which to create the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] manifest name.</param>
+        <param name="fileName">The name of the resource file from which to create the Visual Basic manifest name.</param>
         <param name="linkFileName">The name of the link file.</param>
         <param name="rootNamespace">The root namespace of the resource file, typically taken from the project file. May be <see langword="null" />.</param>
         <param name="dependentUponFileName">The file name of the parent of the resource file (usually a .vb file). May be <see langword="null" />.</param>
         <param name="binaryStream">File contents binary stream. May be <see langword="null" />.</param>
-        <summary>Returns the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]-style manifest resource name that corresponds to the specified resource file.</summary>
+        <summary>Returns the Visual Basic-style manifest resource name that corresponds to the specified resource file.</summary>
         <returns>The manifest resource name that corresponds to the specified resource file.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -88,9 +88,9 @@
       </Parameters>
       <Docs>
         <param name="fileName">The name of the file to examine.</param>
-        <summary>Indicates whether the specified file is a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] source file.</summary>
+        <summary>Indicates whether the specified file is a Visual Basic source file.</summary>
         <returns>
-          <see langword="true" /> if the specified file is a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] source file; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified file is a Visual Basic source file; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

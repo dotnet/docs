@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.EntityClient.EntityConnectionStringBuilder.Clear%2A> method removes all keyword/value pairs from the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> and resets all corresponding properties to null (`Nothing` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).  
+ The <xref:System.Data.EntityClient.EntityConnectionStringBuilder.Clear%2A> method removes all keyword/value pairs from the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> and resets all corresponding properties to null (`Nothing` in Visual Basic).  
   
  ]]></format>
         </remarks>
@@ -224,7 +224,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyword" /> is a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</exception>
+          <paramref name="keyword" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">Tried to add a key that does not exist in the available keys.</exception>
         <exception cref="T:System.FormatException">Invalid value in the connection string (specifically, a Boolean or numeric value was expected but not supplied).</exception>
       </Docs>
@@ -430,7 +430,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyword" /> is null (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)])</exception>
+          <paramref name="keyword" /> is null (<see langword="Nothing" /> in Visual Basic)</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">

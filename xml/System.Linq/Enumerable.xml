@@ -289,7 +289,7 @@
   
  The enumeration of `source` is stopped as soon as the result can be determined.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into All()` clause translates to an invocation of <xref:System.Linq.Enumerable.All%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into All()` clause translates to an invocation of <xref:System.Linq.Enumerable.All%2A>.  
   
    
   
@@ -299,7 +299,7 @@
  [!code-csharp[System.Linq.Enumerable#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#4)]
  [!code-vb[System.Linq.Enumerable#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#4)]  
   
- The Boolean value that the <xref:System.Linq.Enumerable.All%2A> method returns is typically used in the predicate of a `where` clause (`Where` clause in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) or a direct call to the <xref:System.Linq.Enumerable.Where%2A> method. The following example demonstrates this use of the `All` method.  
+ The Boolean value that the <xref:System.Linq.Enumerable.All%2A> method returns is typically used in the predicate of a `where` clause (`Where` clause in Visual Basic) or a direct call to the <xref:System.Linq.Enumerable.Where%2A> method. The following example demonstrates this use of the `All` method.  
   
  [!code-csharp[System.Linq.Enumerable#129](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#129)]
  [!code-vb[System.Linq.Enumerable#129](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#129)]  
@@ -369,7 +369,7 @@
   
  The enumeration of `source` is stopped as soon as the result can be determined.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Any()` clause translates to an invocation of <xref:System.Linq.Enumerable.Any%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Any()` clause translates to an invocation of <xref:System.Linq.Enumerable.Any%2A>.  
   
    
   
@@ -379,7 +379,7 @@
  [!code-csharp[System.Linq.Enumerable#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#5)]
  [!code-vb[System.Linq.Enumerable#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#5)]  
   
- The Boolean value that the <xref:System.Linq.Enumerable.Any%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> method returns is typically used in the predicate of a `where` clause (`Where` clause in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) or a direct call to the <xref:System.Linq.Enumerable.Where%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29> method. The following example demonstrates this use of the `Any` method.  
+ The Boolean value that the <xref:System.Linq.Enumerable.Any%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> method returns is typically used in the predicate of a `where` clause (`Where` clause in Visual Basic) or a direct call to the <xref:System.Linq.Enumerable.Where%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29> method. The following example demonstrates this use of the `Any` method.  
   
  [!code-csharp[System.Linq.Enumerable#130](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#130)]
  [!code-vb[System.Linq.Enumerable#130](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#130)]  
@@ -441,7 +441,7 @@
   
  The enumeration of `source` is stopped as soon as the result can be determined.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Any()` clause translates to an invocation of <xref:System.Linq.Enumerable.Any%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Any()` clause translates to an invocation of <xref:System.Linq.Enumerable.Any%2A>.  
   
    
   
@@ -605,7 +605,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -664,7 +664,7 @@
 ## Remarks  
  If the sum of the elements is too large to represent as a <xref:System.Double>, this method returns positive or negative infinity.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -721,7 +721,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -776,7 +776,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -833,7 +833,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -891,7 +891,7 @@
 ## Remarks  
  If the sum of the elements is too large to represent as a <xref:System.Double>, this method returns positive or negative infinity.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -946,7 +946,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1002,7 +1002,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1056,7 +1056,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1111,7 +1111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1174,7 +1174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1238,7 +1238,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1301,7 +1301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1363,7 +1363,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1425,7 +1425,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1487,7 +1487,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1548,7 +1548,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1610,7 +1610,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1669,7 +1669,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1730,7 +1730,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Average()` clause translates to an invocation of <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
@@ -1791,7 +1791,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> method enables the standard query operators to be invoked on non-generic collections by supplying the necessary type information. For example, <xref:System.Collections.ArrayList> does not implement <xref:System.Collections.Generic.IEnumerable%601>, but by calling <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> on the <xref:System.Collections.ArrayList> object, the standard query operators can then be used to query the sequence.  
   
@@ -1881,7 +1881,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.Concat%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> method differs from the <xref:System.Linq.Enumerable.Union%2A> method because the <xref:System.Linq.Enumerable.Concat%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> method returns all the original elements in the input sequences. The <xref:System.Linq.Enumerable.Union%2A> method returns only unique elements.  
   
@@ -2104,7 +2104,7 @@ Dim doubles = From item As Integer In sequence
   
  Use the <xref:System.Linq.Enumerable.LongCount%2A> method when you expect and want to allow the result to be greater than <xref:System.Int32.MaxValue>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Count()` clause translates to an invocation of <xref:System.Linq.Enumerable.Count%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Count()` clause translates to an invocation of <xref:System.Linq.Enumerable.Count%2A>.  
   
    
   
@@ -2168,7 +2168,7 @@ Dim doubles = From item As Integer In sequence
   
  You should use the <xref:System.Linq.Enumerable.LongCount%2A> method when you expect and want to allow the result to be greater than <xref:System.Int32.MaxValue>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Count()` clause translates to an invocation of <xref:System.Linq.Enumerable.Count%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Count()` clause translates to an invocation of <xref:System.Linq.Enumerable.Count%2A>.  
   
    
   
@@ -2237,7 +2237,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The default value for reference and nullable types is `null`.  
   
@@ -2307,7 +2307,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  This method can be used to produce a left outer join when it is combined with the <xref:System.Linq.Enumerable.GroupJoin%2A>) method.  
   
@@ -2383,11 +2383,11 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> method returns an unordered sequence that contains no duplicate values. It uses the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, a `Distinct` clause translates to an invocation of <xref:System.Linq.Enumerable.Distinct%2A>.  
+ In Visual Basic query expression syntax, a `Distinct` clause translates to an invocation of <xref:System.Linq.Enumerable.Distinct%2A>.  
   
  The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types that implement the <xref:System.IEquatable%601> generic interface. To compare a custom data type, you need to implement this interface and provide your own <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods for the type.  
   
@@ -2460,7 +2460,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29> method returns an unordered sequence that contains no duplicate values. If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
   
@@ -2721,7 +2721,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The set difference of two sets is defined as the members of the first set that do not appear in the second set.  
   
@@ -3139,12 +3139,12 @@ Dim doubles = From item As Integer In sequence
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose elements to group.</param>
         <param name="keySelector">A function to extract the key for each element.</param>
         <summary>Groups the elements of a sequence according to a specified key selector function.</summary>
-        <returns>An <c>IEnumerable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</c> in C# or <c>IEnumerable(Of IGrouping(Of TKey, TSource))</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] where each <see cref="T:System.Linq.IGrouping`2" /> object contains a sequence of objects and a key.</returns>
+        <returns>An <c>IEnumerable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</c> in C# or <c>IEnumerable(Of IGrouping(Of TKey, TSource))</c> in Visual Basic where each <see cref="T:System.Linq.IGrouping`2" /> object contains a sequence of objects and a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
 > [!NOTE]
 >  For examples of `GroupBy`, see the following topics.  
@@ -3159,7 +3159,7 @@ Dim doubles = From item As Integer In sequence
   
  The default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> is used to compare keys.  
   
- In query expression syntax, a `group by` (Visual C#) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
+ In query expression syntax, a `group by` (Visual C#) or `Group By Into` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
   
  ]]></format>
         </remarks>
@@ -3209,12 +3209,12 @@ Dim doubles = From item As Integer In sequence
         <param name="keySelector">A function to extract the key for each element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare keys.</param>
         <summary>Groups the elements of a sequence according to a specified key selector function and compares the keys by using a specified comparer.</summary>
-        <returns>An <c>IEnumerable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</c> in C# or <c>IEnumerable(Of IGrouping(Of TKey, TSource))</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] where each <see cref="T:System.Linq.IGrouping`2" /> object contains a collection of objects and a key.</returns>
+        <returns>An <c>IEnumerable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</c> in C# or <c>IEnumerable(Of IGrouping(Of TKey, TSource))</c> in Visual Basic where each <see cref="T:System.Linq.IGrouping`2" /> object contains a collection of objects and a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
 > [!NOTE]
 >  For examples of `GroupBy`, see the following topics.  
@@ -3231,7 +3231,7 @@ Dim doubles = From item As Integer In sequence
   
  If two keys are considered equal according to `comparer`, the first key is chosen as the key for that grouping.  
   
- In query expression syntax, a `group by` (Visual C#) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
+ In query expression syntax, a `group by` (Visual C#) or `Group By Into` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
   
  ]]></format>
         </remarks>
@@ -3283,12 +3283,12 @@ Dim doubles = From item As Integer In sequence
         <param name="keySelector">A function to extract the key for each element.</param>
         <param name="elementSelector">A function to map each source element to an element in the <see cref="T:System.Linq.IGrouping`2" />.</param>
         <summary>Groups the elements of a sequence according to a specified key selector function and projects the elements for each group by using a specified function.</summary>
-        <returns>An <c>IEnumerable&lt;IGrouping&lt;TKey, TElement&gt;&gt;</c> in C# or <c>IEnumerable(Of IGrouping(Of TKey, TElement))</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] where each <see cref="T:System.Linq.IGrouping`2" /> object contains a collection of objects of type <paramref name="TElement" /> and a key.</returns>
+        <returns>An <c>IEnumerable&lt;IGrouping&lt;TKey, TElement&gt;&gt;</c> in C# or <c>IEnumerable(Of IGrouping(Of TKey, TElement))</c> in Visual Basic where each <see cref="T:System.Linq.IGrouping`2" /> object contains a collection of objects of type <paramref name="TElement" /> and a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29> method returns a collection of <xref:System.Linq.IGrouping%602> objects, one for each distinct key that was encountered. An <xref:System.Linq.IGrouping%602> is an <xref:System.Collections.Generic.IEnumerable%601> that also has a key associated with its elements.  
   
@@ -3304,13 +3304,13 @@ Dim doubles = From item As Integer In sequence
  [!code-csharp[System.Linq.Enumerable#39](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#39)]
  [!code-vb[System.Linq.Enumerable#39](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#39)]  
   
- In query expression syntax, a `group by` (Visual C#) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. The translation of the query expression in the following example is equivalent to the query in the example above.  
+ In query expression syntax, a `group by` (Visual C#) or `Group By Into` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. The translation of the query expression in the following example is equivalent to the query in the example above.  
   
  [!code-csharp[System.Linq.Enumerable#122](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#122)]
  [!code-vb[System.Linq.Enumerable#122](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#122)]  
   
 > [!NOTE]
->  In a Visual C# or [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression, the element and key selection expressions occur in the reverse order from their argument positions in a call to the <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29> method.  
+>  In a Visual C# or Visual Basic query expression, the element and key selection expressions occur in the reverse order from their argument positions in a call to the <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29> method.  
   
  ]]></format>
         </remarks>
@@ -3364,12 +3364,12 @@ Dim doubles = From item As Integer In sequence
         <param name="elementSelector">A function to map each source element to an element in an <see cref="T:System.Linq.IGrouping`2" />.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare keys.</param>
         <summary>Groups the elements of a sequence according to a key selector function. The keys are compared by using a comparer and each group's elements are projected by using a specified function.</summary>
-        <returns>An <c>IEnumerable&lt;IGrouping&lt;TKey, TElement&gt;&gt;</c> in C# or <c>IEnumerable(Of IGrouping(Of TKey, TElement))</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] where each <see cref="T:System.Linq.IGrouping`2" /> object contains a collection of objects of type <paramref name="TElement" /> and a key.</returns>
+        <returns>An <c>IEnumerable&lt;IGrouping&lt;TKey, TElement&gt;&gt;</c> in C# or <c>IEnumerable(Of IGrouping(Of TKey, TElement))</c> in Visual Basic where each <see cref="T:System.Linq.IGrouping`2" /> object contains a collection of objects of type <paramref name="TElement" /> and a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
 > [!NOTE]
 >  For examples of `GroupBy`, see the following topics.  
@@ -3386,7 +3386,7 @@ Dim doubles = From item As Integer In sequence
   
  If two keys are considered equal according to `comparer`, the first key is chosen as the key for that grouping.  
   
- In query expression syntax, a `group by` (Visual C#) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
+ In query expression syntax, a `group by` (Visual C#) or `Group By Into` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
   
  ]]></format>
         </remarks>
@@ -3443,7 +3443,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In query expression syntax, a `group by` (Visual C#) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>.  
+ In query expression syntax, a `group by` (Visual C#) or `Group By Into` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>.  
   
    
   
@@ -3560,7 +3560,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In query expression syntax, a `group by` (Visual C#) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>.  
+ In query expression syntax, a `group by` (Visual C#) or `Group By Into` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>.  
   
    
   
@@ -3694,7 +3694,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
   
@@ -3709,7 +3709,7 @@ Dim doubles = From item As Integer In sequence
   
  <xref:System.Linq.Enumerable.GroupJoin%2A> has no direct equivalent in traditional relational database terms. However, this method does implement a superset of inner joins and left outer joins. Both of these operations can be written in terms of a grouped join. See [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107).  
   
- In query expression syntax, a `join … into` (Visual C#) or `Group Join` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupJoin%2A>.  
+ In query expression syntax, a `join … into` (Visual C#) or `Group Join` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupJoin%2A>.  
   
    
   
@@ -3782,7 +3782,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
   
@@ -3857,7 +3857,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The intersection of two sets A and B is defined as the set that contains all the elements of A that also appear in B, but no other elements.  
   
@@ -3934,7 +3934,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The intersection of two sets A and B is defined as the set that contains all the elements of A that also appear in B, but no other elements.  
   
@@ -4029,7 +4029,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
   
@@ -4037,7 +4037,7 @@ Dim doubles = From item As Integer In sequence
   
  <xref:System.Linq.Enumerable.Join%2A> preserves the order of the elements of `outer`, and for each of these elements, the order of the matching elements of `inner`.  
   
- In query expression syntax, a `join` (Visual C#) or `Join` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.Join%2A>.  
+ In query expression syntax, a `join` (Visual C#) or `Join` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.Join%2A>.  
   
  In relational database terms, the <xref:System.Linq.Enumerable.Join%2A> method implements an inner equijoin. 'Inner' means that only elements that have a match in the other sequence are included in the results. An 'equijoin' is a join in which the keys are compared for equality. A left outer join operation has no dedicated standard query operator, but can be performed by using the <xref:System.Linq.Enumerable.GroupJoin%2A> method. See [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107).  
   
@@ -4112,7 +4112,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
   
@@ -4451,7 +4451,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  Use this method rather than <xref:System.Linq.Enumerable.Count%2A> when you expect the result to be greater than <xref:System.Int32.MaxValue>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into LongCount()` clause translates to an invocation of <xref:System.Linq.Enumerable.LongCount%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into LongCount()` clause translates to an invocation of <xref:System.Linq.Enumerable.LongCount%2A>.  
   
    
   
@@ -4513,7 +4513,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  Use this method rather than <xref:System.Linq.Enumerable.Count%2A> when you expect the result to be greater than <xref:System.Int32.MaxValue>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into LongCount()` clause translates to an invocation of <xref:System.Linq.Enumerable.LongCount%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into LongCount()` clause translates to an invocation of <xref:System.Linq.Enumerable.LongCount%2A>.  
   
    
   
@@ -4580,7 +4580,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%28System.Collections.Generic.IEnumerable%7BSystem.Decimal%7D%29> method uses the <xref:System.Decimal> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -4639,7 +4639,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%28System.Collections.Generic.IEnumerable%7BSystem.Double%7D%29> method uses the <xref:System.Double> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -4698,7 +4698,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%28System.Collections.Generic.IEnumerable%7BSystem.Int32%7D%29> method uses the <xref:System.Int32> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -4757,7 +4757,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%28System.Collections.Generic.IEnumerable%7BSystem.Int64%7D%29> method uses the <xref:System.Int64> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -4807,7 +4807,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Decimal" /> values to determine the maximum value of.</param>
         <summary>Returns the maximum value in a sequence of nullable <see cref="T:System.Decimal" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Decimal&gt;</c> in C# or <c>Nullable(Of Decimal)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Decimal&gt;</c> in C# or <c>Nullable(Of Decimal)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4816,7 +4816,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -4866,7 +4866,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Double" /> values to determine the maximum value of.</param>
         <summary>Returns the maximum value in a sequence of nullable <see cref="T:System.Double" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Double&gt;</c> in C# or <c>Nullable(Of Double)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Double&gt;</c> in C# or <c>Nullable(Of Double)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4875,7 +4875,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -4923,7 +4923,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Int32" /> values to determine the maximum value of.</param>
         <summary>Returns the maximum value in a sequence of nullable <see cref="T:System.Int32" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Int32&gt;</c> in C# or <c>Nullable(Of Int32)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Int32&gt;</c> in C# or <c>Nullable(Of Int32)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4932,7 +4932,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -4982,7 +4982,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Int64" /> values to determine the maximum value of.</param>
         <summary>Returns the maximum value in a sequence of nullable <see cref="T:System.Int64" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Int64&gt;</c> in C# or <c>Nullable(Of Int64)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Int64&gt;</c> in C# or <c>Nullable(Of Int64)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4991,7 +4991,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5041,7 +5041,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Single" /> values to determine the maximum value of.</param>
         <summary>Returns the maximum value in a sequence of nullable <see cref="T:System.Single" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Single&gt;</c> in C# or <c>Nullable(Of Single)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Single&gt;</c> in C# or <c>Nullable(Of Single)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5050,7 +5050,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5107,7 +5107,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%28System.Collections.Generic.IEnumerable%7BSystem.Single%7D%29> method uses the <xref:System.Single> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5172,7 +5172,7 @@ Dim doubles = From item As Integer In sequence
   
  If `TSource` is a reference type and the source sequence is empty or contains only values that are `null`, this method returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5235,7 +5235,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Decimal>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5302,7 +5302,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Double>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5369,7 +5369,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Int32>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5434,7 +5434,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Int64>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5492,16 +5492,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the maximum nullable <see cref="T:System.Decimal" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Decimal&gt;</c> in C# or <c>Nullable(Of Decimal)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Decimal&gt;</c> in C# or <c>Nullable(Of Decimal)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Decimal%7D%7D%29> method uses the <xref:System.Decimal> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Decimal>` in C# or `Nullable(Of Decimal)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Decimal>` in C# or `Nullable(Of Decimal)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5557,16 +5557,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the maximum nullable <see cref="T:System.Double" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Double&gt;</c> in C# or <c>Nullable(Of Double)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Double&gt;</c> in C# or <c>Nullable(Of Double)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Double%7D%7D%29> method uses the <xref:System.Double> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Double>` in C# or `Nullable(Of Double)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Double>` in C# or `Nullable(Of Double)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5622,16 +5622,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the maximum nullable <see cref="T:System.Int32" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Int32&gt;</c> in C# or <c>Nullable(Of Int32)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Int32&gt;</c> in C# or <c>Nullable(Of Int32)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Int32%7D%7D%29> method uses the <xref:System.Int32> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int32>` in C# or `Nullable(Of Int32)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int32>` in C# or `Nullable(Of Int32)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5687,16 +5687,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the maximum nullable <see cref="T:System.Int64" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Int64&gt;</c> in C# or <c>Nullable(Of Int64)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Int64&gt;</c> in C# or <c>Nullable(Of Int64)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Int64%7D%7D%29> method uses the <xref:System.Int64> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int64>` in C# or `Nullable(Of Int64)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int64>` in C# or `Nullable(Of Int64)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5752,16 +5752,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the maximum nullable <see cref="T:System.Single" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Single&gt;</c> in C# or <c>Nullable(Of Single)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the maximum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Single&gt;</c> in C# or <c>Nullable(Of Single)</c> in Visual Basic that corresponds to the maximum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Max%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Single%7D%7D%29> method uses the <xref:System.Single> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Single>` in C# or `Nullable(Of Single)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Single>` in C# or `Nullable(Of Single)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5826,7 +5826,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Single>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5893,7 +5893,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  If type `TResult` implements <xref:System.IComparable%601>, this method uses that implementation to compare values. Otherwise, if type `TResult` implements <xref:System.IComparable>, that implementation is used to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Max()` clause translates to an invocation of <xref:System.Linq.Enumerable.Max%2A>.  
   
    
   
@@ -5961,7 +5961,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%28System.Collections.Generic.IEnumerable%7BSystem.Decimal%7D%29> method uses the <xref:System.Decimal> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6020,7 +6020,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%28System.Collections.Generic.IEnumerable%7BSystem.Double%7D%29> method uses the <xref:System.Double> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6077,7 +6077,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%28System.Collections.Generic.IEnumerable%7BSystem.Int32%7D%29> method uses the <xref:System.Int32> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6136,7 +6136,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%28System.Collections.Generic.IEnumerable%7BSystem.Int64%7D%29> method uses the <xref:System.Int64> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6188,7 +6188,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Decimal" /> values to determine the minimum value of.</param>
         <summary>Returns the minimum value in a sequence of nullable <see cref="T:System.Decimal" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Decimal&gt;</c> in C# or <c>Nullable(Of Decimal)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Decimal&gt;</c> in C# or <c>Nullable(Of Decimal)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6197,7 +6197,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6247,7 +6247,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Double" /> values to determine the minimum value of.</param>
         <summary>Returns the minimum value in a sequence of nullable <see cref="T:System.Double" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Double&gt;</c> in C# or <c>Nullable(Of Double)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Double&gt;</c> in C# or <c>Nullable(Of Double)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6256,7 +6256,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6306,7 +6306,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Int32" /> values to determine the minimum value of.</param>
         <summary>Returns the minimum value in a sequence of nullable <see cref="T:System.Int32" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Int32&gt;</c> in C# or <c>Nullable(Of Int32)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Int32&gt;</c> in C# or <c>Nullable(Of Int32)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6315,7 +6315,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6363,7 +6363,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Int64" /> values to determine the minimum value of.</param>
         <summary>Returns the minimum value in a sequence of nullable <see cref="T:System.Int64" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Int64&gt;</c> in C# or <c>Nullable(Of Int64)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Int64&gt;</c> in C# or <c>Nullable(Of Int64)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6372,7 +6372,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6422,7 +6422,7 @@ Dim doubles = From item As Integer In sequence
       <Docs>
         <param name="source">A sequence of nullable <see cref="T:System.Single" /> values to determine the minimum value of.</param>
         <summary>Returns the minimum value in a sequence of nullable <see cref="T:System.Single" /> values.</summary>
-        <returns>A value of type <c>Nullable&lt;Single&gt;</c> in C# or <c>Nullable(Of Single)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>A value of type <c>Nullable&lt;Single&gt;</c> in C# or <c>Nullable(Of Single)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6431,7 +6431,7 @@ Dim doubles = From item As Integer In sequence
   
  If the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6488,7 +6488,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%28System.Collections.Generic.IEnumerable%7BSystem.Single%7D%29> method uses the <xref:System.Single> implementation of <xref:System.IComparable%601> to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6553,7 +6553,7 @@ Dim doubles = From item As Integer In sequence
   
  If `TSource` is a reference type and the source sequence is empty or contains only values that are `null`, this function returns `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6616,7 +6616,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Decimal>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6683,7 +6683,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Double>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6750,7 +6750,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Int32>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6815,7 +6815,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Int64>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6873,16 +6873,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the minimum nullable <see cref="T:System.Decimal" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Decimal&gt;</c> in C# or <c>Nullable(Of Decimal)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Decimal&gt;</c> in C# or <c>Nullable(Of Decimal)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Decimal%7D%7D%29> method uses the <xref:System.Decimal> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Decimal>` in C# or `Nullable(Of Decimal)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Decimal>` in C# or `Nullable(Of Decimal)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -6938,16 +6938,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the minimum nullable <see cref="T:System.Double" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Double&gt;</c> in C# or <c>Nullable(Of Double)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Double&gt;</c> in C# or <c>Nullable(Of Double)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Double%7D%7D%29> method uses the <xref:System.Double> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Double>` in C# or `Nullable(Of Double)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Double>` in C# or `Nullable(Of Double)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -7003,16 +7003,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the minimum nullable <see cref="T:System.Int32" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Int32&gt;</c> in C# or <c>Nullable(Of Int32)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Int32&gt;</c> in C# or <c>Nullable(Of Int32)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Int32%7D%7D%29> method uses the <xref:System.Int32> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of source into a numeric type, specifically `Nullable<Int32>` in C# or `Nullable(Of Int32)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of source into a numeric type, specifically `Nullable<Int32>` in C# or `Nullable(Of Int32)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -7068,16 +7068,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the minimum nullable <see cref="T:System.Int64" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Int64&gt;</c> in C# or <c>Nullable(Of Int64)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Int64&gt;</c> in C# or <c>Nullable(Of Int64)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Int64%7D%7D%29> method uses the <xref:System.Int64> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int64>` in C# or `Nullable(Of Int64)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int64>` in C# or `Nullable(Of Int64)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -7133,16 +7133,16 @@ Dim doubles = From item As Integer In sequence
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes a transform function on each element of a sequence and returns the minimum nullable <see cref="T:System.Single" /> value.</summary>
-        <returns>The value of type <c>Nullable&lt;Single&gt;</c> in C# or <c>Nullable(Of Single)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that corresponds to the minimum value in the sequence.</returns>
+        <returns>The value of type <c>Nullable&lt;Single&gt;</c> in C# or <c>Nullable(Of Single)</c> in Visual Basic that corresponds to the minimum value in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Linq.Enumerable.Min%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Nullable%7BSystem.Single%7D%7D%29> method uses the <xref:System.Single> implementation of <xref:System.IComparable%601> to compare values.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Single>` in C# or `Nullable(Of Single)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Single>` in C# or `Nullable(Of Single)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -7207,7 +7207,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Single>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -7274,7 +7274,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  If type `TResult` implements <xref:System.IComparable%601>, this method uses that implementation to compare values. Otherwise, if type `TResult` implements <xref:System.IComparable>, that implementation is used to compare values.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Min()` clause translates to an invocation of <xref:System.Linq.Enumerable.Min%2A>.  
   
    
   
@@ -7333,13 +7333,13 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.OfType%60%601%28System.Collections.IEnumerable%29> method returns only those elements in `source` that can be cast to type `TResult`. To instead receive an exception if an element cannot be cast to type `TResult`, use <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
   
  This method is one of the few standard query operator methods that can be applied to a collection that has a non-parameterized type, such as an <xref:System.Collections.ArrayList>. This is because <xref:System.Linq.Enumerable.OfType%2A> extends the type <xref:System.Collections.IEnumerable>. <xref:System.Linq.Enumerable.OfType%2A> cannot only be applied to collections that are based on the parameterized <xref:System.Collections.Generic.IEnumerable%601> type, but collections that are based on the non-parameterized <xref:System.Collections.IEnumerable> type also.  
   
- By applying <xref:System.Linq.Enumerable.OfType%2A> to a collection that implements <xref:System.Collections.IEnumerable>, you gain the ability to query the collection by using the standard query operators. For example, specifying a type argument of <xref:System.Object> to <xref:System.Linq.Enumerable.OfType%2A> would return an object of type `IEnumerable<Object>` in C# or `IEnumerable(Of Object)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], to which the standard query operators can be applied.  
+ By applying <xref:System.Linq.Enumerable.OfType%2A> to a collection that implements <xref:System.Collections.IEnumerable>, you gain the ability to query the collection by using the standard query operators. For example, specifying a type argument of <xref:System.Object> to <xref:System.Linq.Enumerable.OfType%2A> would return an object of type `IEnumerable<Object>` in C# or `IEnumerable(Of Object)` in Visual Basic, to which the standard query operators can be applied.  
   
    
   
@@ -7411,9 +7411,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for `keySelector`.  
+ To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in Visual Basic) for `keySelector`.  
   
  Two methods are defined to extend the type <xref:System.Linq.IOrderedEnumerable%601>, which is the return type of this method. These two methods, namely `ThenBy` and `ThenByDescending`, enable you to specify additional sort criteria to sort a sequence. `ThenBy` and `ThenByDescending` also return an <xref:System.Linq.IOrderedEnumerable%601>, which means any number of consecutive calls to `ThenBy` or `ThenByDescending` can be made.  
   
@@ -7424,7 +7424,7 @@ Dim doubles = From item As Integer In sequence
   
  This method performs a stable sort; that is, if the keys of two elements are equal, the order of the elements is preserved. In contrast, an unstable sort does not preserve the order of elements that have the same key.  
   
- In query expression syntax, an `orderby` (Visual C#) or `Order By` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.OrderBy%2A>.  
+ In query expression syntax, an `orderby` (Visual C#) or `Order By` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.OrderBy%2A>.  
   
    
   
@@ -7489,9 +7489,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for `keySelector`.  
+ To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in Visual Basic) for `keySelector`.  
   
  Two methods are defined to extend the type <xref:System.Linq.IOrderedEnumerable%601>, which is the return type of this method. These two methods, namely `ThenBy` and `ThenByDescending`, enable you to specify additional sort criteria to sort a sequence. `ThenBy` and `ThenByDescending` also return an <xref:System.Linq.IOrderedEnumerable%601>, which means any number of consecutive calls to `ThenBy` or `ThenByDescending` can be made.  
   
@@ -7566,9 +7566,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for `keySelector`.  
+ To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in Visual Basic) for `keySelector`.  
   
  For an example of this method, see <xref:System.Linq.Enumerable.OrderByDescending%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Collections.Generic.IComparer%7B%60%601%7D%29>.  
   
@@ -7581,7 +7581,7 @@ Dim doubles = From item As Integer In sequence
   
  This method performs a stable sort; that is, if the keys of two elements are equal, the order of the elements is preserved. In contrast, an unstable sort does not preserve the order of elements that have the same key.  
   
- In query expression syntax, an `orderby descending` (Visual C#) or `Order By Descending` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.OrderByDescending%2A>.  
+ In query expression syntax, an `orderby descending` (Visual C#) or `Order By Descending` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.OrderByDescending%2A>.  
   
  ]]></format>
         </remarks>
@@ -7638,9 +7638,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for `keySelector`.  
+ To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in Visual Basic) for `keySelector`.  
   
  Two methods are defined to extend the type <xref:System.Linq.IOrderedEnumerable%601>, which is the return type of this method. These two methods, namely `ThenBy` and `ThenByDescending`, enable you to specify additional sort criteria to sort a sequence. `ThenBy` and `ThenByDescending` also return an <xref:System.Linq.IOrderedEnumerable%601>, which means any number of consecutive calls to `ThenBy` or `ThenByDescending` can be made.  
   
@@ -7744,12 +7744,12 @@ Dim doubles = From item As Integer In sequence
         <param name="start">The value of the first integer in the sequence.</param>
         <param name="count">The number of sequential integers to generate.</param>
         <summary>Generates a sequence of integral numbers within a specified range.</summary>
-        <returns>An <c>IEnumerable&lt;Int32&gt;</c> in C# or <c>IEnumerable(Of Int32)</c> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that contains a range of sequential integral numbers.</returns>
+        <returns>An <c>IEnumerable&lt;Int32&gt;</c> in C# or <c>IEnumerable(Of Int32)</c> in Visual Basic that contains a range of sequential integral numbers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
    
   
@@ -7812,7 +7812,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
    
   
@@ -7869,7 +7869,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  Unlike <xref:System.Linq.Enumerable.OrderBy%2A>, this sorting method does not consider the actual values themselves in determining the order. Rather, it just returns the elements in the reverse order from which they are produced by the underlying source.  
   
@@ -7943,7 +7943,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The first argument to `selector` represents the element to process. The second argument to `selector` represents the zero-based index of that element in the source sequence. This can be useful if the elements are in a known order and you want to do something with an element at a particular index, for example. It can also be useful if you want to retrieve the index of one or more elements.  
   
@@ -8008,11 +8008,11 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  This projection method requires the transform function, `selector`, to produce one value for each value in the source sequence, `source`. If `selector` returns a value that is itself a collection, it is up to the consumer to traverse the subsequences manually. In such a situation, it might be better for your query to return a single coalesced sequence of values. To achieve this, use the <xref:System.Linq.Enumerable.SelectMany%2A> method instead of <xref:System.Linq.Enumerable.Select%2A>. Although `SelectMany` works similarly to `Select`, it differs in that the transform function returns a collection that is then expanded by `SelectMany` before it is returned.  
   
- In query expression syntax, a `select` (Visual C#) or `Select` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.Select%2A>.  
+ In query expression syntax, a `select` (Visual C#) or `Select` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.Select%2A>.  
   
    
   
@@ -8084,11 +8084,11 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- The <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> method enumerates the input sequence, uses a transform function to map each element to an <xref:System.Collections.Generic.IEnumerable%601>, and then enumerates and yields the elements of each such <xref:System.Collections.Generic.IEnumerable%601> object. That is, for each element of `source`, `selector` is invoked and a sequence of values is returned. <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> then flattens this two-dimensional collection of collections into a one-dimensional <xref:System.Collections.Generic.IEnumerable%601> and returns it. For example, if a query uses <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> to obtain the orders (of type `Order`) for each customer in a database, the result is of type `IEnumerable<Order>` in C# or `IEnumerable(Of Order)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. If instead the query uses <xref:System.Linq.Enumerable.Select%2A> to obtain the orders, the collection of collections of orders is not combined and the result is of type `IEnumerable<List<Order>>` in C# or `IEnumerable(Of List(Of Order))` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> method enumerates the input sequence, uses a transform function to map each element to an <xref:System.Collections.Generic.IEnumerable%601>, and then enumerates and yields the elements of each such <xref:System.Collections.Generic.IEnumerable%601> object. That is, for each element of `source`, `selector` is invoked and a sequence of values is returned. <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> then flattens this two-dimensional collection of collections into a one-dimensional <xref:System.Collections.Generic.IEnumerable%601> and returns it. For example, if a query uses <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> to obtain the orders (of type `Order`) for each customer in a database, the result is of type `IEnumerable<Order>` in C# or `IEnumerable(Of Order)` in Visual Basic. If instead the query uses <xref:System.Linq.Enumerable.Select%2A> to obtain the orders, the collection of collections of orders is not combined and the result is of type `IEnumerable<List<Order>>` in C# or `IEnumerable(Of List(Of Order))` in Visual Basic.  
   
- In query expression syntax, each `from` clause (Visual C#) or `From` clause ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) after the initial one translates to an invocation of <xref:System.Linq.Enumerable.SelectMany%2A>.  
+ In query expression syntax, each `from` clause (Visual C#) or `From` clause (Visual Basic) after the initial one translates to an invocation of <xref:System.Linq.Enumerable.SelectMany%2A>.  
   
    
   
@@ -8149,9 +8149,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- The <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> method enumerates the input sequence, uses a transform function to map each element to an <xref:System.Collections.Generic.IEnumerable%601>, and then enumerates and yields the elements of each such <xref:System.Collections.Generic.IEnumerable%601> object. That is, for each element of `source`, `selector` is invoked and a sequence of values is returned. <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> then flattens this two-dimensional collection of collections into a one-dimensional <xref:System.Collections.Generic.IEnumerable%601> and returns it. For example, if a query uses <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> to obtain the orders (of type `Order`) for each customer in a database, the result is of type `IEnumerable<Order>` in C# or `IEnumerable(Of Order)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. If instead the query uses <xref:System.Linq.Enumerable.Select%2A> to obtain the orders, the collection of collections of orders is not combined and the result is of type `IEnumerable<List<Order>>` in C# or `IEnumerable(Of List(Of Order))` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> method enumerates the input sequence, uses a transform function to map each element to an <xref:System.Collections.Generic.IEnumerable%601>, and then enumerates and yields the elements of each such <xref:System.Collections.Generic.IEnumerable%601> object. That is, for each element of `source`, `selector` is invoked and a sequence of values is returned. <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> then flattens this two-dimensional collection of collections into a one-dimensional <xref:System.Collections.Generic.IEnumerable%601> and returns it. For example, if a query uses <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> to obtain the orders (of type `Order`) for each customer in a database, the result is of type `IEnumerable<Order>` in C# or `IEnumerable(Of Order)` in Visual Basic. If instead the query uses <xref:System.Linq.Enumerable.Select%2A> to obtain the orders, the collection of collections of orders is not combined and the result is of type `IEnumerable<List<Order>>` in C# or `IEnumerable(Of List(Of Order))` in Visual Basic.  
   
  The first argument to `selector` represents the element to process. The second argument to `selector` represents the zero-based index of that element in the source sequence. This can be useful if the elements are in a known order and you want to do something with an element at a particular index, for example. It can also be useful if you want to retrieve the index of one or more elements.  
   
@@ -8218,11 +8218,11 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.SelectMany%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D%29> method is useful when you have to keep the elements of `source` in scope for query logic that occurs after the call to <xref:System.Linq.Enumerable.SelectMany%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D%29>. See the Example section for a code example. If there is a bidirectional relationship between objects of type `TSource` and objects of type `TCollection`, that is, if an object of type `TCollection` provides a property to retrieve the `TSource` object that produced it, you do not need this overload of <xref:System.Linq.Enumerable.SelectMany%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D%29>. Instead, you can use <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> and navigate back to the `TSource` object through the `TCollection` object.  
   
- In query expression syntax, each `from` clause (Visual C#) or `From` clause ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) after the initial one translates to an invocation of <xref:System.Linq.Enumerable.SelectMany%2A>.  
+ In query expression syntax, each `from` clause (Visual C#) or `From` clause (Visual Basic) after the initial one translates to an invocation of <xref:System.Linq.Enumerable.SelectMany%2A>.  
   
    
   
@@ -8287,7 +8287,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.SelectMany%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D%29> method is useful when you have to keep the elements of `source` in scope for query logic that occurs after the call to <xref:System.Linq.Enumerable.SelectMany%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D%29>. See the Example section for a code example. If there is a bidirectional relationship between objects of type `TSource` and objects of type `TCollection`, that is, if an object of type `TCollection` provides a property to retrieve the `TSource` object that produced it, you do not need this overload of <xref:System.Linq.Enumerable.SelectMany%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D%29>. Instead, you can use <xref:System.Linq.Enumerable.SelectMany%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%29> and navigate back to the `TSource` object through the `TCollection` object.  
   
@@ -8792,13 +8792,13 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  If `source` contains fewer than `count` elements, an empty <xref:System.Collections.Generic.IEnumerable%601> is returned. If `count` is less than or equal to zero, all elements of `source` are yielded.  
   
  The <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> methods are functional complements. Given a sequence `coll` and an integer `n`, concatenating the results of `coll.Take(n)` and `coll.Skip(n)` yields the same sequence as `coll`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, a `Skip` clause translates to an invocation of <xref:System.Linq.Enumerable.Skip%2A>.  
+ In Visual Basic query expression syntax, a `Skip` clause translates to an invocation of <xref:System.Linq.Enumerable.Skip%2A>.  
   
    
   
@@ -8899,7 +8899,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Linq.Enumerable.SkipWhile%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29> method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The <xref:System.Linq.Enumerable.SkipWhile%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29> method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  This method tests each element of `source` by using `predicate` and skips the element if the result is `true`. After the predicate function returns `false` for an element, that element and the remaining elements in `source` are yielded and there are no more invocations of `predicate`.  
   
@@ -8907,7 +8907,7 @@ Dim doubles = From item As Integer In sequence
   
  The <xref:System.Linq.Enumerable.TakeWhile%2A> and <xref:System.Linq.Enumerable.SkipWhile%2A> methods are functional complements. Given a sequence `coll` and a pure function `p`, concatenating the results of `coll.TakeWhile(p)` and `coll.SkipWhile(p)` yields the same sequence as `coll`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, a `Skip While` clause translates to an invocation of <xref:System.Linq.Enumerable.SkipWhile%2A>.  
+ In Visual Basic query expression syntax, a `Skip While` clause translates to an invocation of <xref:System.Linq.Enumerable.SkipWhile%2A>.  
   
    
   
@@ -8966,7 +8966,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.SkipWhile%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Boolean%7D%29> method tests each element of `source` by using `predicate` and skips the element if the result is `true`. After the predicate function returns `false` for an element, that element and the remaining elements in `source` are yielded and there are no more invocations of `predicate`.  
   
@@ -8976,7 +8976,7 @@ Dim doubles = From item As Integer In sequence
   
  The <xref:System.Linq.Enumerable.TakeWhile%2A> and <xref:System.Linq.Enumerable.SkipWhile%2A> methods are functional complements. Given a sequence `coll` and a pure function `p`, concatenating the results of `coll.TakeWhile(p)` and `coll.SkipWhile(p)` yields the same sequence as `coll`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, a `Skip While` clause translates to an invocation of <xref:System.Linq.Enumerable.SkipWhile%2A>.  
+ In Visual Basic query expression syntax, a `Skip While` clause translates to an invocation of <xref:System.Linq.Enumerable.SkipWhile%2A>.  
   
    
   
@@ -9042,7 +9042,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  The <xref:System.Linq.Enumerable.Sum%28System.Collections.Generic.IEnumerable%7BSystem.Decimal%7D%29> method returns zero if `source` contains no elements.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9100,7 +9100,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  This method returns zero if `source` contains no elements.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9157,7 +9157,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  This method returns zero if `source` contains no elements.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9215,7 +9215,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  This method returns zero if `source` contains no elements.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9275,7 +9275,7 @@ Dim doubles = From item As Integer In sequence
   
  The result doesnot include values that are `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9335,7 +9335,7 @@ Dim doubles = From item As Integer In sequence
   
  The result does not include values that are `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9394,7 +9394,7 @@ Dim doubles = From item As Integer In sequence
   
  The result does not include values that are `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9454,7 +9454,7 @@ Dim doubles = From item As Integer In sequence
   
  The result does not include values that are `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9514,7 +9514,7 @@ Dim doubles = From item As Integer In sequence
   
  The result does not include values that are `null`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9569,7 +9569,7 @@ Dim doubles = From item As Integer In sequence
 ## Remarks  
  This method returns zero if `source` contains no elements.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9632,7 +9632,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Decimal>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9698,7 +9698,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Double>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9761,7 +9761,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Int32>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9827,7 +9827,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Int64>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9893,9 +9893,9 @@ Dim doubles = From item As Integer In sequence
   
  The result does not included values that are `null`.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Decimal>` in C# or `Nullable(Of Decimal)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Decimal>` in C# or `Nullable(Of Decimal)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -9961,9 +9961,9 @@ Dim doubles = From item As Integer In sequence
   
  The result does not include values that are `null`.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Double>` in C# or `Nullable(Of Double)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Double>` in C# or `Nullable(Of Double)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -10028,9 +10028,9 @@ Dim doubles = From item As Integer In sequence
   
  The result does not include values that are `null`.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int32>` in C# or `Nullable(Of Int32)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int32>` in C# or `Nullable(Of Int32)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -10096,9 +10096,9 @@ Dim doubles = From item As Integer In sequence
   
  The result does not include values that are `null`.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int64>` in C# or `Nullable(Of Int64)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Int64>` in C# or `Nullable(Of Int64)` in Visual Basic  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -10164,9 +10164,9 @@ Dim doubles = From item As Integer In sequence
   
  The result does not include values that are `null`.  
   
- You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Single>` in C# or `Nullable(Of Single)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically `Nullable<Single>` in C# or `Nullable(Of Single)` in Visual Basic.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -10231,7 +10231,7 @@ Dim doubles = From item As Integer In sequence
   
  You can apply this method to a sequence of arbitrary values if you provide a function, `selector`, that projects the members of `source` into a numeric type, specifically <xref:System.Single>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
+ In Visual Basic query expression syntax, an `Aggregate Into Sum()` clause translates to an invocation of <xref:System.Linq.Enumerable.Sum%2A>.  
   
    
   
@@ -10292,7 +10292,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  <xref:System.Linq.Enumerable.Take%2A> enumerates `source` and yields elements until `count` elements have been yielded or `source` contains no more elements. If `count` exceeds the number of elements in `source`, all elements of `source` are returned.  
   
@@ -10300,7 +10300,7 @@ Dim doubles = From item As Integer In sequence
   
  The <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> methods are functional complements. Given a sequence `coll` and an integer `n`, concatenating the results of `coll.Take(n)` and `coll.Skip(n)` yields the same sequence as `coll`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, a `Take` clause translates to an invocation of <xref:System.Linq.Enumerable.Take%2A>.  
+ In Visual Basic query expression syntax, a `Take` clause translates to an invocation of <xref:System.Linq.Enumerable.Take%2A>.  
   
    
   
@@ -10401,13 +10401,13 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.TakeWhile%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29> method tests each element of `source` by using `predicate` and yields the element if the result is `true`. Enumeration stops when the predicate function returns `false` for an element or when `source` contains no more elements.  
   
  The <xref:System.Linq.Enumerable.TakeWhile%2A> and <xref:System.Linq.Enumerable.SkipWhile%2A> methods are functional complements. Given a sequence `coll` and a pure function `p`, concatenating the results of `coll.TakeWhile(p)` and `coll.SkipWhile(p)` yields the same sequence as `coll`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, a `Take While` clause translates to an invocation of <xref:System.Linq.Enumerable.TakeWhile%2A>.  
+ In Visual Basic query expression syntax, a `Take While` clause translates to an invocation of <xref:System.Linq.Enumerable.TakeWhile%2A>.  
   
    
   
@@ -10466,7 +10466,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The <xref:System.Linq.Enumerable.TakeWhile%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2CSystem.Boolean%7D%29> method tests each element of `source` by using `predicate` and yields the element if the result is `true`. Enumeration stops when the predicate function returns `false` for an element or when `source` contains no more elements.  
   
@@ -10474,7 +10474,7 @@ Dim doubles = From item As Integer In sequence
   
  The <xref:System.Linq.Enumerable.TakeWhile%2A> and <xref:System.Linq.Enumerable.SkipWhile%2A> methods are functional complements. Given a sequence `coll` and a pure function `p`, concatenating the results of `coll.TakeWhile(p)` and `coll.SkipWhile(p)` yields the same sequence as `coll`.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, a `Take While` clause translates to an invocation of <xref:System.Linq.Enumerable.TakeWhile%2A>.  
+ In Visual Basic query expression syntax, a `Take While` clause translates to an invocation of <xref:System.Linq.Enumerable.TakeWhile%2A>.  
   
    
   
@@ -10546,9 +10546,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for `keySelector`.  
+ To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in Visual Basic) for `keySelector`.  
   
  <xref:System.Linq.Enumerable.ThenBy%2A> and <xref:System.Linq.Enumerable.ThenByDescending%2A> are defined to extend the type <xref:System.Linq.IOrderedEnumerable%601>, which is also the return type of these methods. This design enables you to specify multiple sort criteria by applying any number of <xref:System.Linq.Enumerable.ThenBy%2A> or <xref:System.Linq.Enumerable.ThenByDescending%2A> methods.  
   
@@ -10559,7 +10559,7 @@ Dim doubles = From item As Integer In sequence
   
  This method performs a stable sort; that is, if the keys of two elements are equal, the order of the elements is preserved. In contrast, an unstable sort does not preserve the order of elements that have the same key.  
   
- In query expression syntax, an `orderby [first criterion], [second criterion]` (Visual C#) or `Order By [first criterion], [second criterion]` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.ThenBy%2A>.  
+ In query expression syntax, an `orderby [first criterion], [second criterion]` (Visual C#) or `Order By [first criterion], [second criterion]` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.ThenBy%2A>.  
   
    
   
@@ -10622,9 +10622,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for `keySelector`.  
+ To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in Visual Basic) for `keySelector`.  
   
  <xref:System.Linq.Enumerable.ThenBy%2A> and <xref:System.Linq.Enumerable.ThenByDescending%2A> are defined to extend the type <xref:System.Linq.IOrderedEnumerable%601>, which is also the return type of these methods. This design enables you to specify multiple sort criteria by applying any number of <xref:System.Linq.Enumerable.ThenBy%2A> or <xref:System.Linq.Enumerable.ThenByDescending%2A> methods.  
   
@@ -10697,9 +10697,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for `keySelector`.  
+ To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in Visual Basic) for `keySelector`.  
   
  <xref:System.Linq.Enumerable.ThenBy%2A> and <xref:System.Linq.Enumerable.ThenByDescending%2A> are defined to extend the type <xref:System.Linq.IOrderedEnumerable%601>, which is also the return type of these methods. This design enables you to specify multiple sort criteria by applying any number of <xref:System.Linq.Enumerable.ThenBy%2A> or <xref:System.Linq.Enumerable.ThenByDescending%2A> methods.  
   
@@ -10712,7 +10712,7 @@ Dim doubles = From item As Integer In sequence
   
  In Visual C# query expression syntax, an `orderby [first criterion], [second criterion] descending` clause translates to an invocation of <xref:System.Linq.Enumerable.ThenByDescending%2A>.  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query expression syntax, an `Order By [first criterion], [second criterion] Descending` clause translates to an invocation of <xref:System.Linq.Enumerable.ThenByDescending%2A>.  
+ In Visual Basic query expression syntax, an `Order By [first criterion], [second criterion] Descending` clause translates to an invocation of <xref:System.Linq.Enumerable.ThenByDescending%2A>.  
   
  ]]></format>
         </remarks>
@@ -10767,9 +10767,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) for `keySelector`.  
+ To order a sequence by the values of the elements themselves, specify the identity function (`x => x` in Visual C# or `Function(x) x` in Visual Basic) for `keySelector`.  
   
  <xref:System.Linq.Enumerable.ThenBy%2A> and <xref:System.Linq.Enumerable.ThenByDescending%2A> are defined to extend the type <xref:System.Linq.IOrderedEnumerable%601>, which is also the return type of these methods. This design enables you to specify multiple sort criteria by applying any number of <xref:System.Linq.Enumerable.ThenBy%2A> or <xref:System.Linq.Enumerable.ThenByDescending%2A> methods.  
   
@@ -11552,7 +11552,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  This method excludes duplicates from the return set. This is different behavior to the <xref:System.Linq.Enumerable.Concat%2A> method, which returns all the elements in the input sequences including duplicates.  
   
@@ -11629,7 +11629,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
   
@@ -11712,9 +11712,9 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
- In query expression syntax, a `where` (Visual C#) or `Where` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.Where%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29>.  
+ In query expression syntax, a `where` (Visual C#) or `Where` (Visual Basic) clause translates to an invocation of <xref:System.Linq.Enumerable.Where%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29>.  
   
    
   
@@ -11773,7 +11773,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The first argument of `predicate` represents the element to test. The second argument represents the zero-based index of the element within `source`.  
   
@@ -11840,7 +11840,7 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
  The method merges each element of the first sequence with an element that has the same index in the second sequence. If the sequences do not have the same number of elements, the method merges sequences until it reaches the end of one of them. For example, if one sequence has three elements and the other one has four, the result sequence will have only three elements.  
   

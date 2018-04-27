@@ -73,7 +73,7 @@ End Module
   
  See [How to: Create a Document with Namespaces (C#) (LINQ to XML)](http://msdn.microsoft.com/library/af4a595e-ffb2-4187-a61b-d5ed71642c4c) for more information and examples.  
   
- See [Namespaces in Visual Basic (LINQ to XML)](http://msdn.microsoft.com/library/10b7ba7b-518c-4f14-899f-892575d14dcc) for more information on using namespaces in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ See [Namespaces in Visual Basic (LINQ to XML)](http://msdn.microsoft.com/library/10b7ba7b-518c-4f14-899f-892575d14dcc) for more information on using namespaces in Visual Basic.  
   
 ## Controlling Namespace Prefixes  
  If you create an attribute that declares a namespace, the prefix specified in the attribute will be persisted in the serialized XML. To create an attribute that declares a namespace with a prefix, you create an attribute where the namespace of the name of the attribute is <xref:System.Xml.Linq.XNamespace.Xmlns%2A>, and the name of the attribute is the namespace prefix. The value of the attribute is the URI of the namespace. The following example shows this idiom:  
@@ -94,7 +94,7 @@ Dim root As XElement = New XElement(aw + "Root", _
 Console.WriteLine(root)  
 ```  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], instead of creating a namespace node to control namespace prefixes, you would typically use a global namespace declaration:  
+ In Visual Basic, instead of creating a namespace node to control namespace prefixes, you would typically use a global namespace declaration:  
   
 ```vb  
 Imports <xmlns:aw='http://www.adventure-works.com'>  
@@ -139,7 +139,7 @@ Dim root As XElement = New XElement(aw + "Root", _
 Console.WriteLine(root)  
 ```  
   
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], instead of creating a namespace node to create a default namespace, you would typically use a global default namespace declaration:  
+ In Visual Basic, instead of creating a namespace node to create a default namespace, you would typically use a global default namespace declaration:  
   
 ```vb  
 Imports <xmlns='http://www.adventure-works.com'>  

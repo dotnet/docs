@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a Visual Basic 6.0 `WebClass` project is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], it is converted to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web site project.  
+ When a Visual Basic 6.0 `WebClass` project is upgraded to Visual Basic, it is converted to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web site project.  
   
  Declarations are added to your project: one for the `WebClass` and one for each of the `WebItems` and `Templates` in the `WebClass` project. A `Page_Load` event procedure is added to the project, creating first a <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> object and then `WebItem` objects for each of the `WebItems` and `Templates` associated with the Visual Basic 6.0 `WebClass` project. Finally, in the `Page_Load` event procedure, you will see a call to the `WebClass` Compatibility runtime: <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass.ProcessEvents%2A>. This enables the runtime to render the <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> specified in the Request URL. This code is the only new code added to your upgraded project and only serves to emulate the underlying behavior of the Visual Basic 6.0 `WebClass` runtime.  
   

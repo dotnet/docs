@@ -47,7 +47,7 @@
 ## Remarks  
  An <xref:System.Linq.IGrouping%602> is an <xref:System.Collections.Generic.IEnumerable%601> that additionally has a key. The key represents the attribute that is common to each value in the <xref:System.Linq.IGrouping%602>.  
   
- The values of an <xref:System.Linq.IGrouping%602> are accessed much as the elements of an <xref:System.Collections.Generic.IEnumerable%601> are accessed. For example, you can access the values by using a `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] loop to iterate through the <xref:System.Linq.IGrouping%602> object. The Example section contains a code example that shows you how to access both the key and the values of an <xref:System.Linq.IGrouping%602> object.  
+ The values of an <xref:System.Linq.IGrouping%602> are accessed much as the elements of an <xref:System.Collections.Generic.IEnumerable%601> are accessed. For example, you can access the values by using a `foreach` in Visual C# or `For Each` in Visual Basic loop to iterate through the <xref:System.Linq.IGrouping%602> object. The Example section contains a code example that shows you how to access both the key and the values of an <xref:System.Linq.IGrouping%602> object.  
   
  The <xref:System.Linq.IGrouping%602> type is used by the <xref:System.Linq.Enumerable.GroupBy%2A> standard query operator methods, which return a sequence of elements of type <xref:System.Linq.IGrouping%602>.  
   
@@ -106,7 +106,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Linq.IGrouping%602.Key%2A> property to label each <xref:System.Linq.IGrouping%602> object in a sequence of <xref:System.Linq.IGrouping%602> objects. The <xref:System.Linq.Enumerable.GroupBy%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> method is used to obtain a sequence of <xref:System.Linq.IGrouping%602> objects. The `foreach` in Visual C# or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] loop then iterates through each <xref:System.Linq.IGrouping%602> object, outputting its key and the number of values it contains.  
+ The following example demonstrates how to use the <xref:System.Linq.IGrouping%602.Key%2A> property to label each <xref:System.Linq.IGrouping%602> object in a sequence of <xref:System.Linq.IGrouping%602> objects. The <xref:System.Linq.Enumerable.GroupBy%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> method is used to obtain a sequence of <xref:System.Linq.IGrouping%602> objects. The `foreach` in Visual C# or `For Each` in Visual Basic loop then iterates through each <xref:System.Linq.IGrouping%602> object, outputting its key and the number of values it contains.  
   
  [!code-csharp[System.Linq.IGrouping#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.IGrouping/CS/igrouping.cs#2)]
  [!code-vb[System.Linq.IGrouping#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.IGrouping/VB/IGrouping.vb#2)]  

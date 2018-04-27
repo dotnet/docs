@@ -195,7 +195,7 @@
       <Docs>
         <param name="message">The error message that explains the reason for the exception.</param>
         <param name="errorCode">The error code. This parameter can be a null reference (<see langword="Nothing" />).</param>
-        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.InvalidToolsetDefinitionException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

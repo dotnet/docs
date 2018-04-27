@@ -46,7 +46,7 @@ public interface IInterfaceName<TCommand>
    
   
 ## Examples  
- The following code example shows how to set the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute> on an interface. This code example is part of the ActiveDirectoryRoles SDK sample from the IStartPurchaseOrder.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using Active Directory Roles](http://msdn.microsoft.com/library/7b1708da-fd2a-47da-902b-3d50580ee781).  
+ The following code example shows how to set the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute> on an interface. This code example is part of the ActiveDirectoryRoles SDK sample from the IStartPurchaseOrder.cs file. For more information, see [Using Active Directory Roles](http://msdn.microsoft.com/library/7b1708da-fd2a-47da-902b-3d50580ee781).  
   
  [!code-csharp[wf_samples#285](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#285)]  
   

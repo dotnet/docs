@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use the constructor to create an instance of <xref:System.Workflow.Activities.ConditionedActivityGroup>. The code also creates two <xref:System.Workflow.Activities.CodeCondition> class instances and two <xref:System.Workflow.Activities.CodeActivity> class instances. This code example is part of the ConditionedActivityGroup SDK Sample from the SimpleCAGWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+ The following code example shows how to use the constructor to create an instance of <xref:System.Workflow.Activities.ConditionedActivityGroup>. The code also creates two <xref:System.Workflow.Activities.CodeCondition> class instances and two <xref:System.Workflow.Activities.CodeActivity> class instances. This code example is part of the ConditionedActivityGroup SDK Sample from the SimpleCAGWorkflow.Designer.cs file. For more information, see [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
   
  [!code-csharp[wf_samples#157](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#157)]
  [!code-vb[wf_samples#157](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#157)]  
@@ -421,7 +421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to set the <xref:System.Workflow.Activities.ConditionedActivityGroup.UntilCondition%2A> to `null`, which means the `BookingCAG`<xref:System.Workflow.Activities.ConditionedActivityGroup> class never completes. This code example is part of the ConditionedActivityGroup SDK Sample from the SimpleCAGWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+ The following code example shows how to set the <xref:System.Workflow.Activities.ConditionedActivityGroup.UntilCondition%2A> to `null`, which means the `BookingCAG`<xref:System.Workflow.Activities.ConditionedActivityGroup> class never completes. This code example is part of the ConditionedActivityGroup SDK Sample from the SimpleCAGWorkflow.Designer.cs file. For more information, see [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
   
  [!code-csharp[wf_samples#159](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#159)]
  [!code-vb[wf_samples#159](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#159)]  

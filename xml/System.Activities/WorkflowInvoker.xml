@@ -80,7 +80,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -115,7 +115,7 @@
 ## Remarks  
  To be notified when the workflow is complete and retrieve the output parameters of the workflow, call <xref:System.Activities.WorkflowInvoker.EndInvoke%2A> from the `callback` method. If <xref:System.Activities.WorkflowInvoker.EndInvoke%2A> is called before the workflow completes, it blocks until the workflow completes. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A> overloads that take a <xref:System.TimeSpan>.  
   
- This method invokes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method invokes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
    
   
@@ -161,7 +161,7 @@
 ## Remarks  
  To be notified when the workflow is complete and retrieve the output parameters of the workflow, call <xref:System.Activities.WorkflowInvoker.EndInvoke%2A> from the `callback` method. If <xref:System.Activities.WorkflowInvoker.EndInvoke%2A> is called before the workflow completes, it blocks until the workflow completes.  To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A> overloads that take a <xref:System.TimeSpan>.  
   
- This method invokes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method invokes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
    
   
@@ -210,7 +210,7 @@
 > [!NOTE]
 >  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
- This method invokes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method invokes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
    
   
@@ -261,7 +261,7 @@
 > [!NOTE]
 >  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
- This method invokes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method invokes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
    
   
@@ -344,7 +344,7 @@
 ## Remarks  
  To be notified when the workflow is complete and retrieve the output parameters of the workflow, call <xref:System.Activities.WorkflowInvoker.EndInvoke%2A> from the `callback` method specified by <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A>. If <xref:System.Activities.WorkflowInvoker.EndInvoke%2A> is called before the workflow completes, it blocks until the workflow completes.  
   
- This method returns the result of a workflow invoked asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method returns the result of a workflow invoked asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
    
   
@@ -989,7 +989,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
 ## Remarks  
  To be notified when the workflow is complete, handle <xref:System.Activities.WorkflowInvoker.InvokeCompleted>. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> overloads that take a <xref:System.TimeSpan>.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
  ]]></format>
         </remarks>
@@ -1018,7 +1018,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
 ## Remarks  
  To be notified when the workflow is complete, handle <xref:System.Activities.WorkflowInvoker.InvokeCompleted>. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> overloads that take a <xref:System.TimeSpan>.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
    
   
@@ -1059,7 +1059,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
 ## Remarks  
  To be notified when the workflow is complete, handle <xref:System.Activities.WorkflowInvoker.InvokeCompleted>. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> overloads that take a <xref:System.TimeSpan>.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
    
   
@@ -1102,7 +1102,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
   
  To be notified when the workflow is complete, handle <xref:System.Activities.WorkflowInvoker.InvokeCompleted>. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> overloads that take a <xref:System.TimeSpan>.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
    
   
@@ -1146,7 +1146,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
 > [!NOTE]
 >  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
    
   
@@ -1191,7 +1191,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
   
  To be notified when the workflow is complete, handle <xref:System.Activities.WorkflowInvoker.InvokeCompleted>. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> overloads that take a <xref:System.TimeSpan>.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
    
   
@@ -1237,7 +1237,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
 > [!NOTE]
 >  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
    
   
@@ -1285,7 +1285,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
 > [!NOTE]
 >  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
    
   
@@ -1335,7 +1335,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
 > [!NOTE]
 >  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. For more information, see [Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
   
    
   

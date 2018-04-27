@@ -132,7 +132,7 @@ public class SendEmail : Activity
 ## Examples  
  The following code shows how to create activities and add them as children to a composite activity.  
   
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Throw Sample](http://msdn.microsoft.com/library/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Throw Sample](http://msdn.microsoft.com/library/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
   
  [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
  [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
@@ -241,7 +241,7 @@ public class SendEmail : Activity
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Workflow.ComponentModel.Activity.Cancel%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -336,7 +336,7 @@ public class SendEmail : Activity
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Workflow.ComponentModel.Activity.Closed> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -403,7 +403,7 @@ public class SendEmail : Activity
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Workflow.ComponentModel.Activity.Compensating> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -550,7 +550,7 @@ public class SendEmail : Activity
    
   
 ## Examples  
- The following code example shows an implementation of the `Execute` method. In this example, an Outlook email message is constructed and sent. This example is from the Outlook Workflow Wizard SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+ The following code example shows an implementation of the `Execute` method. In this example, an Outlook email message is constructed and sent. This example is from the Outlook Workflow Wizard SDK sample. For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
   
  [!code-csharp[WF_Samples#98](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#98)]
  [!code-vb[WF_Samples#98](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#98)]  
@@ -587,7 +587,7 @@ public class SendEmail : Activity
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Workflow.ComponentModel.Activity.Executing> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1144,7 +1144,7 @@ public class SendEmail : Activity
 ## Examples  
  The following code shows how to create activities and add them as children to a composite activity and set the value for <xref:System.Workflow.ComponentModel.Activity.Name%2A>.  
   
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Throw Sample](http://msdn.microsoft.com/library/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Throw Sample](http://msdn.microsoft.com/library/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
   
  [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
  [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
@@ -1329,7 +1329,7 @@ public class SendEmail : Activity
 ## Examples  
  The following code invokes this method to raise an event that is defined as a <xref:System.Workflow.ComponentModel.DependencyProperty>.  
   
- This code example is part of the Send Email Activity sample and is from the SendEmailActivity.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Send Email Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669)  
+ This code example is part of the Send Email Activity sample and is from the SendEmailActivity.cs file. For more information, see [Send Email Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669)  
   
  [!code-csharp[WF_Samples#233](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#233)]
  [!code-vb[WF_Samples#233](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#233)]  
@@ -1507,7 +1507,7 @@ public class SendEmail : Activity
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Workflow.ComponentModel.Activity.StatusChanged> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1611,7 +1611,7 @@ public class SendEmail : Activity
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows a call to the `TrackData` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+ The following example shows a call to the `TrackData` method. This example is from the Termination Tracking Service SDK sample. For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
   
  [!code-csharp[WF_Samples#118](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#118)]
  [!code-vb[WF_Samples#118](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#118)]  

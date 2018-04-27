@@ -69,7 +69,7 @@ public class TaskEventArgs : ExternalDataEventArgs
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to call the base <xref:System.Workflow.Activities.ExternalDataEventArgs> constructor from a derived class' constructor. This example is from the Ordering State Machine SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Ordering State Machine Sample](http://msdn.microsoft.com/library/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+ The following example shows how to call the base <xref:System.Workflow.Activities.ExternalDataEventArgs> constructor from a derived class' constructor. This example is from the Ordering State Machine SDK sample. For more information, see [Ordering State Machine Sample](http://msdn.microsoft.com/library/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
   
  [!code-csharp[wf_samples#121](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#121)]
  [!code-vb[wf_samples#121](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#121)]  

@@ -27,14 +27,14 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects are returned by a call to both <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A?displayProperty=nameWithType> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=nameWithType> and provide access to the tracking data maintained in a SQL database by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> for a specific workflow instance. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class optimizes its access to the database for its properties, which maintain collections. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A>.  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects are returned by a call to both <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A?displayProperty=nameWithType> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=nameWithType> and provide access to the tracking data maintained in a SQL database by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> for a specific workflow instance. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class optimizes its access to the database for its properties, which maintain collections. For more information, see <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A>.  
   
    
   
 ## Examples  
  The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
   
- This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[WF_Samples#137](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#137)]
  [!code-vb[WF_Samples#137](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#137)]  
@@ -123,7 +123,7 @@
 ## Examples  
  The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
   
- This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
  [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
@@ -243,7 +243,7 @@
 ## Examples  
  The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
   
- This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
  [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
@@ -388,7 +388,7 @@
 ## Examples  
  The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
   
- This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
  [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
@@ -425,7 +425,7 @@
 ## Examples  
  The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
   
- This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
  [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
@@ -457,7 +457,7 @@
 ## Examples  
  The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
   
- This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
  [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  

@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Developers should be careful about what data is being sent over the wire. You can use transport or message security to secure that data. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] see [Security](~/docs/framework/wcf/samples/security-in-wcf.md).  
+ Developers should be careful about what data is being sent over the wire. You can use transport or message security to secure that data. For more information, see see [Security](~/docs/framework/wcf/samples/security-in-wcf.md).  
   
 > [!WARNING]
 >  Only use <xref:System.Runtime.Serialization.DataContractResolver> if you are completely sure of what information is being serialized. Malicious types can cause unexpected behavior.  

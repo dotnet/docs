@@ -55,7 +55,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use the constructor to create a new instance of <xref:System.Workflow.Activities.CodeCondition>. The code also creates two <xref:System.Workflow.Activities.CodeActivity> class instances and an instance of <xref:System.Workflow.Activities.ConditionedActivityGroup>. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+ The following code example shows how to use the constructor to create a new instance of <xref:System.Workflow.Activities.CodeCondition>. The code also creates two <xref:System.Workflow.Activities.CodeActivity> class instances and an instance of <xref:System.Workflow.Activities.ConditionedActivityGroup>. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. For more information, see [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
   
 ```csharp  
 private ConditionedActivityGroup BookingCAG;  
@@ -99,7 +99,7 @@ this.Airline = new CodeActivity();
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows how to attach a <xref:System.Workflow.Activities.CodeCondition.Condition> event handler for the current <xref:System.Workflow.Activities.CodeCondition> instance. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+ The following code shows how to attach a <xref:System.Workflow.Activities.CodeCondition.Condition> event handler for the current <xref:System.Workflow.Activities.CodeCondition> instance. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. For more information, see [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
   
  [!code-csharp[wf_samples#158](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#158)]
  [!code-vb[wf_samples#158](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#158)]  

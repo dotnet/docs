@@ -48,7 +48,7 @@
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity> in a custom activity to call an external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity> in a custom activity to call an external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
   
  [!code-csharp[wf_samples#213](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#213)]
  [!code-vb[wf_samples#213](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#213)]  
@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to create an instance of the `CallExternalMethodActivity` class.  This example is from the PersistenceHost SDK sample, from the DocumentApprovalWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Persistence Host Sample](http://msdn.microsoft.com/library/8ba72a8f-eb95-410f-bb00-180f3c35f251).  
+ The following example shows how to create an instance of the `CallExternalMethodActivity` class.  This example is from the PersistenceHost SDK sample, from the DocumentApprovalWorkflow.designer.cs file. For more information, see [Persistence Host Sample](http://msdn.microsoft.com/library/8ba72a8f-eb95-410f-bb00-180f3c35f251).  
   
  [!code-csharp[wf_samples#278](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#278)]
  [!code-vb[wf_samples#278](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#278)]  
@@ -95,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how initialize a new instance of the <xref:System.Workflow.Activities.CallExternalMethodActivity>. The code also initializes new instances of the <xref:System.Workflow.Activities.ListenActivity>, <xref:System.Workflow.Activities.EventDrivenActivity>, <xref:System.Workflow.Activities.HandleExternalEventActivity>, <xref:System.Workflow.Activities.DelayActivity> and <xref:System.Workflow.Activities.CodeActivity> classes. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how initialize a new instance of the <xref:System.Workflow.Activities.CallExternalMethodActivity>. The code also initializes new instances of the <xref:System.Workflow.Activities.ListenActivity>, <xref:System.Workflow.Activities.EventDrivenActivity>, <xref:System.Workflow.Activities.HandleExternalEventActivity>, <xref:System.Workflow.Activities.DelayActivity> and <xref:System.Workflow.Activities.CodeActivity> classes. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
   
  [!code-csharp[wf_samples#214](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#214)]
  [!code-vb[wf_samples#214](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#214)]  
@@ -166,7 +166,7 @@
    
   
 ## Examples  
- The following sample shows how to access the `CorrelationToken` property of a `CallExternalMethodActivity` object. This sample is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ The following sample shows how to access the `CorrelationToken` property of a `CallExternalMethodActivity` object. This sample is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file. For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
   
  [!code-csharp[wf_samples#200](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#200)]
  [!code-vb[wf_samples#200](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#200)]  
@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to set the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property. The interface type must be attributed with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how to set the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property. The interface type must be attributed with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
   
  [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
  [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
@@ -353,7 +353,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking> event to set the method to call before invoking the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking> event to set the method to call before invoking the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
   
  [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
  [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
@@ -425,7 +425,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property to set the method name of the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property to set the method name of the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
   
  [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
  [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
@@ -519,7 +519,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates an implementation of the `OnMethodInvoking` method. This example is from the Correlated Local Service SDK sample, from the CreateTask.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ The following example demonstrates an implementation of the `OnMethodInvoking` method. This example is from the Correlated Local Service SDK sample, from the CreateTask.cs file. For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
   
  [!code-csharp[wf_samples#207](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#207)]
  [!code-vb[wf_samples#207](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#207)]  
@@ -557,7 +557,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to add a parameter binding to the parameter bindings collection. This example is from the Host Communication SDK sample, from the VotingServiceWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Host Communication Sample](http://msdn.microsoft.com/library/ce4b0b8c-bfa3-4c24-b85a-5835a440ea8f).  
+ The following example shows how to add a parameter binding to the parameter bindings collection. This example is from the Host Communication SDK sample, from the VotingServiceWorkflow.designer.cs file. For more information, see [Host Communication Sample](http://msdn.microsoft.com/library/ce4b0b8c-bfa3-4c24-b85a-5835a440ea8f).  
   
  [!code-csharp[WF_Samples#301](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#301)]  
   

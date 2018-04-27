@@ -460,7 +460,7 @@
 ## Remarks  
  If the maximum number of delivery attempts is reached and the message is not accessed by the application, then the message is sent to a retry queue for redelivery at a later time. The amount of time before the message is transferred back to the sending queue is controlled by <xref:System.ServiceModel.Channels.MsmqBindingElementBase.RetryCycleDelay%2A>. If retry cycles reach the <xref:System.ServiceModel.Channels.MsmqBindingElementBase.MaxRetryCycles%2A> value, then the message is either sent to the poison-message queue, or a negative acknowledgement is sent back to the sender.  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.MsmqBindingElementBase.MaxRetryCycles%2A> and <xref:System.ServiceModel.Channels.MsmqBindingElementBase.RetryCycleDelay%2A>.  
+ For more information, see <xref:System.ServiceModel.Channels.MsmqBindingElementBase.MaxRetryCycles%2A> and <xref:System.ServiceModel.Channels.MsmqBindingElementBase.RetryCycleDelay%2A>.  
   
  ]]></format>
         </remarks>

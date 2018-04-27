@@ -24,7 +24,7 @@
 ## Remarks  
  This exception can happen in the following cases:  
   
--   While negotiating the initial security context. The exact error depends on the negotiation technology used: either [Simple and Protected GSS-API Negotiation (SPNEGO)](http://go.microsoft.com/fwlink/?LinkId=96699) or TLSNEGO. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Security Protocols](~/docs/framework/wcf/feature-details/security-protocols.md).  
+-   While negotiating the initial security context. The exact error depends on the negotiation technology used: either [Simple and Protected GSS-API Negotiation (SPNEGO)](http://go.microsoft.com/fwlink/?LinkId=96699) or TLSNEGO. For more information, see [Security Protocols](~/docs/framework/wcf/feature-details/security-protocols.md).  
   
 -   While establishing a security session on top of an initial security context.  
   

@@ -138,7 +138,7 @@
   
  All service classes that are loaded from a configuration file must implement at least one of these constructor signatures.  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection>.  
+ For more information, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection>.  
   
  ]]></format>
         </remarks>
@@ -1146,7 +1146,7 @@ static void Main(string[] args)
   
  To shut down the <xref:System.Workflow.Runtime.WorkflowRuntime> gracefully, call <xref:System.Workflow.Runtime.WorkflowRuntime.StopRuntime%2A> before you call <xref:System.Workflow.Runtime.WorkflowRuntime.Dispose%2A>.  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Workflow.Runtime.WorkflowRuntime.Dispose%2A> method.  
+ For more information, see the <xref:System.Workflow.Runtime.WorkflowRuntime.Dispose%2A> method.  
   
    
   

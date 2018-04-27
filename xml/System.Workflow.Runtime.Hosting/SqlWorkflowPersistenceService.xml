@@ -398,7 +398,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `rootActivity` is serialized and written to the <xref:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch%2A>. The out-of-box <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> implements locking of the workflow instance state. The user must configure the `instanceOwnershipDuration` parameter in the constructor. This value decides the time interval during which the instance can be locked by a host. If multiple hosts share the same persistence service and database, and another host tries to load the instance during this interval, a <xref:System.Workflow.Runtime.WorkflowOwnershipException> occurs. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService> class.  
+ `rootActivity` is serialized and written to the <xref:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch%2A>. The out-of-box <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> implements locking of the workflow instance state. The user must configure the `instanceOwnershipDuration` parameter in the constructor. This value decides the time interval during which the instance can be locked by a host. If multiple hosts share the same persistence service and database, and another host tries to load the instance during this interval, a <xref:System.Workflow.Runtime.WorkflowOwnershipException> occurs. For more information, see the <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService> class.  
   
  ]]></format>
         </remarks>

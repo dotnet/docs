@@ -45,7 +45,7 @@
   
  This flag is `false` by default and thus [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services run in the Mixed Transports Mode unless you explicitly opt into the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode.  
   
- [!INCLUDE[crabout](~/includes/crdefault-md.md)] [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode, see [&lt;serviceHostingEnvironment&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
+ For more informaiton about ASP.NET compatibility mode, see [&lt;serviceHostingEnvironment&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
  Use the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> property to do this. At runtime, applications can detect if [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode is enabled by checking the value of the static property <xref:System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled%2A>.  
   
@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> property to set the hosting mode in code. This can also be done by setting an application-level configuration flag `aspNetCompatibilityEnabled`. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [&lt;serviceHostingEnvironment&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
+ Use the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> property to set the hosting mode in code. This can also be done by setting an application-level configuration flag `aspNetCompatibilityEnabled`. For more information, see [&lt;serviceHostingEnvironment&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
  At runtime, applications can detect whether [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode is enabled by checking the value of the static property <xref:System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled%2A>.  
   

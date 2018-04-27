@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.IEventActivity.Subscribe%2A> method. This code example is part of the FileWatcher SDK Sample from the FileSystemEvent.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ The following code example shows how to use the <xref:System.Workflow.Activities.IEventActivity.Subscribe%2A> method. This code example is part of the FileWatcher SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[wf_samples#106](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#106)]
  [!code-vb[wf_samples#106](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#106)]  
@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following code example shows how to use the <xref:System.Workflow.Activities.IEventActivity.Unsubscribe%2A> method. This code example is part of the FileWatcher SDK Sample from the FileSystemEvent.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ The following code example shows how to use the <xref:System.Workflow.Activities.IEventActivity.Unsubscribe%2A> method. This code example is part of the FileWatcher SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[wf_samples#107](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#107)]
  [!code-vb[wf_samples#107](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#107)]  

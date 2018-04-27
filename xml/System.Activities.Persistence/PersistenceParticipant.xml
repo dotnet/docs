@@ -106,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The host packages read-write values in the first dictionary as <xref:System.Runtime.DurableInstancing.InstanceValue> objects of an <xref:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceData*> collection, and packages write-only values in the second dictionary as <xref:System.Runtime.DurableInstancing.InstanceValue> objects with <xref:System.Runtime.DurableInstancing.InstanceValueOptions.Optional> and <xref:System.Runtime.DurableInstancing.InstanceValueOptions.WriteOnly> flags set. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.Runtime.DurableInstancing.InstanceValueOptions>.  
+ The host packages read-write values in the first dictionary as <xref:System.Runtime.DurableInstancing.InstanceValue> objects of an <xref:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceData*> collection, and packages write-only values in the second dictionary as <xref:System.Runtime.DurableInstancing.InstanceValue> objects with <xref:System.Runtime.DurableInstancing.InstanceValueOptions.Optional> and <xref:System.Runtime.DurableInstancing.InstanceValueOptions.WriteOnly> flags set. For more information, see <xref:System.Runtime.DurableInstancing.InstanceValueOptions>.  
   
 > [!IMPORTANT]
 >  Each value provided by implementations of <xref:System.Activities.Persistence.PersistenceParticipant.CollectValues%2A> across all persistence participants within one persistence episode must have a unique XName.  

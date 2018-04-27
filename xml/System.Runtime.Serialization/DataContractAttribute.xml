@@ -279,7 +279,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property is used to give a name to a data contract, which is the name of the type in XML schema. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Data Contract Names](~/docs/framework/wcf/feature-details/data-contract-names.md).  
+ The <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property is used to give a name to a data contract, which is the name of the type in XML schema. For more information, see [Data Contract Names](~/docs/framework/wcf/feature-details/data-contract-names.md).  
   
  By default, the name of a data contract is the name of the type that the <xref:System.Runtime.Serialization.DataContractAttribute> is applied to. However, there may be reasons to change this default name. One reason is to allow an existing type to process data that must conform to an existing data contract. For example, there exists a type named `Person` but the data contract, embodied in an XML schema, requires that the name be `Customer`. The contract can be satisfied by setting the property value to `Customer`.  
   

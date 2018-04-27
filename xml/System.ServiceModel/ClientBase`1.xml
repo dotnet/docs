@@ -44,7 +44,7 @@
   
  The <xref:System.ServiceModel.ClientBase%601> class can be used quickly and easily by developers who prefer objects to the use of the interfaces and the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class. In all cases this class wraps or exposes the methods and functionality of the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class and the <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface.  
   
- As when using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> class, you can create the class and modify the endpoint, channel factory, or security information prior to making any calls or calling <xref:System.ServiceModel.ClientBase%601.Open%2A>. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [WCF Client Overview](~/docs/framework/wcf/wcf-client-overview.md) and [Accessing Services Using a WCF Client](~/docs/framework/wcf/accessing-services-using-a-wcf-client.md).  
+ As when using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> class, you can create the class and modify the endpoint, channel factory, or security information prior to making any calls or calling <xref:System.ServiceModel.ClientBase%601.Open%2A>. For more information, see [WCF Client Overview](~/docs/framework/wcf/wcf-client-overview.md) and [Accessing Services Using a WCF Client](~/docs/framework/wcf/accessing-services-using-a-wcf-client.md).  
   
  Special note for Managed C++ users deriving from this class:  
   
@@ -544,7 +544,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -699,7 +699,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -939,7 +939,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -976,7 +976,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1007,7 +1007,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Closes the client object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ Closes the client object. For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1060,7 +1060,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1105,7 +1105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1158,7 +1158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1203,7 +1203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1268,7 +1268,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1364,7 +1364,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1404,7 +1404,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1497,7 +1497,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+ For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

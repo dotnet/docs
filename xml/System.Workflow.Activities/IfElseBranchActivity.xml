@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to create two new instances of the <xref:System.Workflow.Activities.IfElseBranchActivity> class.  This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using Compensation](http://msdn.microsoft.com/library/c847a694-9978-46af-aa80-5bd1833f813b).  
+ The following code example shows how to create two new instances of the <xref:System.Workflow.Activities.IfElseBranchActivity> class.  This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. For more information, see [Using Compensation](http://msdn.microsoft.com/library/c847a694-9978-46af-aa80-5bd1833f813b).  
   
  [!code-csharp[wf_samples#38](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#38)]
  [!code-vb[wf_samples#38](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#38)]  
@@ -135,7 +135,7 @@
    
   
 ## Examples  
- The following code example shows how to set the <xref:System.Workflow.Activities.IfElseBranchActivity.Condition%2A> property. This code assumes that `Available` is of type <xref:System.Workflow.Activities.IfElseBranchActivity>. This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using Compensation](http://msdn.microsoft.com/library/c847a694-9978-46af-aa80-5bd1833f813b).  
+ The following code example shows how to set the <xref:System.Workflow.Activities.IfElseBranchActivity.Condition%2A> property. This code assumes that `Available` is of type <xref:System.Workflow.Activities.IfElseBranchActivity>. This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. For more information, see [Using Compensation](http://msdn.microsoft.com/library/c847a694-9978-46af-aa80-5bd1833f813b).  
   
  [!code-csharp[wf_samples#39](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#39)]
  [!code-vb[wf_samples#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#39)]  

@@ -31,7 +31,7 @@
 ## Examples  
  The following code example shows how to obtain a <xref:System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService> so that you can add a custom glyph provider to an activity designer. The code uses the <xref:System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.AddGlyphProvider%2A> method to add the provider to the activity designer.  
   
- This code example is part of the Workflow Monitor SDK Sample from the ViewHost.cs file. The type `WorkflowMonitorDesignerGlyphProvider` is defined in the sample code. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the ViewHost.cs file. The type `WorkflowMonitorDesignerGlyphProvider` is defined in the sample code. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[Wf_samples#136](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#136)]  
   
@@ -65,7 +65,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.AddGlyphProvider%2A> method to add the provider to an activity designer.  
   
- This code example is part of the Workflow Monitor SDK Sample from the ViewHost.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the ViewHost.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[Wf_samples#136](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#136)]  
   

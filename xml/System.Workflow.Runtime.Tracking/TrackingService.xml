@@ -79,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to create a new instance of a `TerminationTrackingService` object, of a type that derives from `TrackingService`. This sample is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+ The following example shows how to create a new instance of a `TerminationTrackingService` object, of a type that derives from `TrackingService`. This sample is from the Termination Tracking Service SDK sample. For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
   
  [!code-csharp[WF_Samples#111](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#111)]
  [!code-vb[WF_Samples#111](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#111)]  
@@ -135,7 +135,7 @@
    
   
 ## Examples  
- The following example shows an implementation of the `GetProfile` method. In this example, several overloads of the `GetProfile` method call a single private `GetProfile` method, which returns a hard-coded, default tracking profile. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+ The following example shows an implementation of the `GetProfile` method. In this example, several overloads of the `GetProfile` method call a single private `GetProfile` method, which returns a hard-coded, default tracking profile. This example is from the Termination Tracking Service SDK sample. For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
   
  [!code-csharp[WF_Samples#115](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#115)]
  [!code-vb[WF_Samples#115](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#115)]  
@@ -207,7 +207,7 @@
    
   
 ## Examples  
- The following example shows an implementation of the `GetTrackingChannel` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+ The following example shows an implementation of the `GetTrackingChannel` method. This example is from the Termination Tracking Service SDK sample. For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
   
  [!code-csharp[WF_Samples#113](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#113)]
  [!code-vb[WF_Samples#113](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#113)]  
@@ -249,7 +249,7 @@
    
   
 ## Examples  
- The following example demonstrates an implementation of the `TryGetProfile` method, which calls a private `GetProfile` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+ The following example demonstrates an implementation of the `TryGetProfile` method, which calls a private `GetProfile` method. This example is from the Termination Tracking Service SDK sample. For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
   
  [!code-csharp[Wf_samples#209](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#209)]
  [!code-vb[Wf_samples#209](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#209)]  
@@ -293,7 +293,7 @@
    
   
 ## Examples  
- The following example shows a basic implementation of the `TryReloadProfile` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+ The following example shows a basic implementation of the `TryReloadProfile` method. This example is from the Termination Tracking Service SDK sample. For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/library/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
   
  [!code-csharp[WF_Samples#116](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#116)]
  [!code-vb[WF_Samples#116](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#116)]  

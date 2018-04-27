@@ -62,7 +62,7 @@
 ## Remarks  
  If <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterType%2A> is set to custom, <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> is the fully-qualified type name of the class to create. <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> can also contain values to be used during evaluation of the <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> filter. The <xref:System.ServiceModel.Routing.Configuration.FilterElement.CustomType%2A> must implement a constructor that accepts a string value, which contains the <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> information.  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
+ For more information, see <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
   
  ]]></format>
         </remarks>

@@ -1262,7 +1262,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
 > [!NOTE]
 >  While setting this property to `true` increases performance because additional NTLM authentication challenges are not sent, there is a security risk in not requiring all requests to provide authentication information. You must determine whether the increase in performance is worth this risk.  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.Net.HttpListener.UnsafeConnectionNtlmAuthentication%2A>.  
+ For more information, see <xref:System.Net.HttpListener.UnsafeConnectionNtlmAuthentication%2A>.  
   
    
   

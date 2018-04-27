@@ -34,7 +34,7 @@
   
  The XML Path Language (XPath) provides a language for addressing parts of an XML document. The primary syntactic construct in XPath is an expression that defines how to traverse the logical structure of an XML document and address or identify an XPath data type. Specifically, XPath implementations evaluate an expression against the structure of an XML document to yield one of the four basic XPath data types: strings, numbers, Booleans, and node sets. They also support functions that convert an XPath data type to a string, number, or Boolean data type. If a method expects one of these three data types, the result of the expression evaluation is implicitly converted. Note that these three data types cannot be converted to a node-set type. The XML Path language is fully described in the [W3C XML Path Language 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=96179).  
   
- Numbers in XPath expressions are expressed as double-precision 64-bit values. Therefore XPath expressions that involve testing numbers with many significant digits can return incorrect results due to floating point precision issues. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [XML Path Language (XPath) Version 1.0, section 3.5](http://go.microsoft.com/fwlink/?LinkId=96180).  
+ Numbers in XPath expressions are expressed as double-precision 64-bit values. Therefore XPath expressions that involve testing numbers with many significant digits can return incorrect results due to floating point precision issues. For more information, see [XML Path Language (XPath) Version 1.0, section 3.5](http://go.microsoft.com/fwlink/?LinkId=96180).  
   
  ]]></format>
     </remarks>

@@ -360,7 +360,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -395,7 +395,7 @@ The reason for aborting the workflow.
 ## Remarks  
  To determine whether the cancel operation was successful, call <xref:System.Activities.WorkflowApplication.EndCancel%2A>. <xref:System.Activities.WorkflowApplication.EndCancel%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndCancel%2A> is called before the cancel operation completes, it blocks until the cancel operation completes. By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndCancel%2A>.  
   
- This method cancels a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method cancels a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -432,7 +432,7 @@ The reason for aborting the workflow.
 ## Remarks  
  To determine whether the cancel operation was successful, call <xref:System.Activities.WorkflowApplication.EndCancel%2A>. <xref:System.Activities.WorkflowApplication.EndCancel%2A> can be called from inside or outside of the method specified in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndCancel%2A> is called before the cancel operation completes, it blocks until the cancel operation completes. If the cancel operation does not complete in the interval specified by the `timeOut` parameter, a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndCancel%2A>.  
   
- This method cancels a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method cancels a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -721,7 +721,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -953,7 +953,7 @@ The reason for aborting the workflow.
   
  To determine if the load operation was successful, call <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>. <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or else a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>.  
   
- This method loads a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method loads a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -992,7 +992,7 @@ The reason for aborting the workflow.
   
  To determine if the load operation was successful, call <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>. <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the load operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndLoadRunnableInstance%2A>.  
   
- This method loads a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method loads a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1009,7 +1009,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
   
@@ -1048,7 +1048,7 @@ The reason for aborting the workflow.
   
  If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
   
- This method persists a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method persists a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1087,7 +1087,7 @@ The reason for aborting the workflow.
   
  If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
   
- This method persists a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method persists a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1134,7 +1134,7 @@ The reason for aborting the workflow.
 ## Remarks  
  To determine if the resume operation was successful, call <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>. <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or else a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>.  
   
- This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1211,7 +1211,7 @@ The reason for aborting the workflow.
 ## Remarks  
  To determine if the resume operation was successful, call <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>. <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the resume operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndResumeBookmark%2A>.  
   
- This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1267,7 +1267,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1302,7 +1302,7 @@ The reason for aborting the workflow.
 ## Remarks  
  To determine whether the run operation was successful, call <xref:System.Activities.WorkflowApplication.EndRun%2A>. <xref:System.Activities.WorkflowApplication.EndRun%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndRun%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndRun%2A>.  
   
- This method starts or resumes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method starts or resumes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1339,7 +1339,7 @@ The reason for aborting the workflow.
 ## Remarks  
  To determine whether the run operation was successful, call <xref:System.Activities.WorkflowApplication.EndRun%2A>. <xref:System.Activities.WorkflowApplication.EndRun%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndRun%2A> is called before the resume operation completes, it blocks until the resume operation completes. If the resume operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndRun%2A>.  
   
- This method starts or resumes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method starts or resumes a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1356,7 +1356,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1395,7 +1395,7 @@ The reason for aborting the workflow.
   
  To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
   
- This method terminates a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method terminates a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1434,7 +1434,7 @@ The reason for aborting the workflow.
   
  To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
   
- This method terminates a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method terminates a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1475,7 +1475,7 @@ The reason for aborting the workflow.
   
  To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown. This or any other exceptions that occur during the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> process is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
   
- This method terminates a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method terminates a workflow asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1516,7 +1516,7 @@ The reason for aborting the workflow.
   
  To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
   
- This method terminates a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method terminates a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1533,7 +1533,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
   
@@ -1572,7 +1572,7 @@ The reason for aborting the workflow.
   
  If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
   
- This method persists and disposes a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method persists and disposes a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1611,7 +1611,7 @@ The reason for aborting the workflow.
   
  If the workflow instance was previously loaded from persistence, then the same <xref:System.Runtime.DurableInstancing.InstanceStore> used to load the workflow is used for persistence. If the workflow was created and has not yet been persisted, then an <xref:System.Activities.WorkflowApplication.InstanceStore%2A> must be configured before calling this method or else an <xref:System.InvalidOperationException> is thrown when this method is called.  
   
- This method persists and unloads a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method persists and unloads a workflow instance asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -1898,7 +1898,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
 ## Remarks  
  This method determines whether a <xref:System.Activities.WorkflowApplication.BeginCancel%2A> operation was successful. If called before the cancel operation completes, it blocks until the cancel operation is complete.  
   
- This method completes the asynchronous cancel operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method completes the asynchronous cancel operation using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -2024,7 +2024,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
 ## Remarks  
  If this method is called before the loading operation completes, it blocks until the loading operation is complete.  
   
- This method completes the asynchronous load operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method completes the asynchronous load operation using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -2056,7 +2056,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
 ## Remarks  
  This method determines whether a <xref:System.Activities.WorkflowApplication.BeginLoadRunnableInstance%2A> operation was successful. If called before the load operation completes, it blocks until the operation is complete.  
   
- This method loads workflows asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method loads workflows asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -2088,7 +2088,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
 ## Remarks  
  This method determines whether a <xref:System.Activities.WorkflowApplication.BeginPersist%2A> operation was successful. If called before the persist operation completes, it blocks until the persist operation is complete.  
   
- This method completes the asynchronous persist operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method completes the asynchronous persist operation using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -2121,7 +2121,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
 ## Remarks  
  This method determines whether a <xref:System.Activities.WorkflowApplication.BeginResumeBookmark%2A> operation was successful. If called before the load operation completes, it blocks until the operation is complete.  
   
- This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method resumes a bookmark asynchronously using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -2153,7 +2153,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
 ## Remarks  
  This method determines whether a <xref:System.Activities.WorkflowApplication.BeginRun%2A> operation was successful. If called before the resume operation completes, it blocks until the resume operation is complete.  
   
- This method completes an asynchronous run operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method completes an asynchronous run operation using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -2185,7 +2185,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
 ## Remarks  
  This method can be called to determine whether a <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful. If called before the terminate operation completes, it blocks until the operation is complete.  
   
- This method completes an asynchronous <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method completes an asynchronous <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>
@@ -2217,7 +2217,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
 ## Remarks  
  This method can be called to determine whether a <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation was successful. If called before the unload operation completes, it blocks until the operation is complete.  
   
- This method completes an asynchronous <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+ This method completes an asynchronous <xref:System.Activities.WorkflowApplication.BeginUnload%2A> operation using the <xref:System.IAsyncResult> asynchronous design pattern. For more information, see [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
   
  ]]></format>
         </remarks>

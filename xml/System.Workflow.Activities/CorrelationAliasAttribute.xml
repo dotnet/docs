@@ -37,7 +37,7 @@
    
   
 ## Examples  
- The following code example shows how to use a <xref:System.Workflow.Activities.CorrelationAliasAttribute> to override a <xref:System.Workflow.Activities.CorrelationParameterAttribute>. This code example is from the CorrelatedLocalService SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ The following code example shows how to use a <xref:System.Workflow.Activities.CorrelationAliasAttribute> to override a <xref:System.Workflow.Activities.CorrelationParameterAttribute>. This code example is from the CorrelatedLocalService SDK sample. For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
   
  [!code-csharp[WF_Samples#312](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#312)]  
   

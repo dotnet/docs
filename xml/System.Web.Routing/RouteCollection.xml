@@ -877,7 +877,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this value can be changed dynamically, any change made after a service has been activated will be ignored when using ASP.NET routing integration. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [ASP.NET Routing Integration](http://go.microsoft.com/fwlink/?LinkId=195235).  
+ Although this value can be changed dynamically, any change made after a service has been activated will be ignored when using ASP.NET routing integration. For more information, see [ASP.NET Routing Integration](http://go.microsoft.com/fwlink/?LinkId=195235).  
   
  ]]></format>
         </remarks>

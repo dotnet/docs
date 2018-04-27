@@ -1059,7 +1059,7 @@
  Otherwise, a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> is returned, with <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> set to `false`.  
   
 > [!NOTE]
->  When impersonation is required on [!INCLUDE[wxp](~/includes/wxp-md.md)], use a secure session without a security context token. When security context tokens are used with impersonation an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Unsupported Scenarios](~/docs/framework/wcf/feature-details/unsupported-scenarios.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] secure sessions, see [Secure Sessions](~/docs/framework/wcf/feature-details/secure-sessions.md).  
+>  When impersonation is required on [!INCLUDE[wxp](~/includes/wxp-md.md)], use a secure session without a security context token. When security context tokens are used with impersonation an <xref:System.InvalidOperationException> is thrown. For more information, see [Unsupported Scenarios](~/docs/framework/wcf/feature-details/unsupported-scenarios.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] secure sessions, see [Secure Sessions](~/docs/framework/wcf/feature-details/secure-sessions.md).  
   
    
   
@@ -1114,7 +1114,7 @@
  Otherwise, a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> is returned, with <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> set to `false`.  
   
 > [!NOTE]
->  When impersonation is required on [!INCLUDE[wxp](~/includes/wxp-md.md)], use a secure session without a security context token. When security context tokens are used with impersonation an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Unsupported Scenarios](~/docs/framework/wcf/feature-details/unsupported-scenarios.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] secure sessions, see [Secure Sessions](~/docs/framework/wcf/feature-details/secure-sessions.md).  
+>  When impersonation is required on [!INCLUDE[wxp](~/includes/wxp-md.md)], use a secure session without a security context token. When security context tokens are used with impersonation an <xref:System.InvalidOperationException> is thrown. For more information, see [Unsupported Scenarios](~/docs/framework/wcf/feature-details/unsupported-scenarios.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] secure sessions, see [Secure Sessions](~/docs/framework/wcf/feature-details/secure-sessions.md).  
   
  ]]></format>
         </remarks>

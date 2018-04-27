@@ -373,7 +373,7 @@
 ## Remarks  
  If the maximum number of immediate delivery attempts for the message is made and the message is not accessed by the application, then the message is sent to a retry queue to attempt delivery at a later time. If no retry cycles are specified, then the messages is either sent to the poison-message queue, or a negative acknowledgement is sent back to the sender.  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A> and <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A>.  
+ For more information, see <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A> and <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A>.  
   
  ]]></format>
         </remarks>

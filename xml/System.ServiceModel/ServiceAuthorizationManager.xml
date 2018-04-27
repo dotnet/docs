@@ -39,7 +39,7 @@
   
  To create a custom claim, use the <xref:System.IdentityModel.Claims.Claim> class.  For an example, see [How to: Create a Custom Claim](~/docs/framework/wcf/extending/how-to-create-a-custom-claim.md). To compare custom claims, you must compare claims, as shown in [How to: Compare Claims](~/docs/framework/wcf/extending/how-to-compare-claims.md).  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Custom Authorization](~/docs/framework/wcf/extending/custom-authorization.md).  
+ For more information, see [Custom Authorization](~/docs/framework/wcf/extending/custom-authorization.md).  
   
  You can set the type of a custom authorization manager using the [&lt;serviceAuthorization&gt;](~/docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) in a client application configuration file.  
   

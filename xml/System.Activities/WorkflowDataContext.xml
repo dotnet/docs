@@ -88,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Activities.WorkflowDataContext.PropertyChanged> event can indicate all properties on the object have changed by using either `null` (`Nothing` in Visual Basic) or <xref:System.String.Empty?displayProperty=nameWithType> as the property name in the <xref:System.ComponentModel.PropertyChangedEventArgs>. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ComponentModel.INotifyPropertyChanged>.  
+ The <xref:System.Activities.WorkflowDataContext.PropertyChanged> event can indicate all properties on the object have changed by using either `null` (`Nothing` in Visual Basic) or <xref:System.String.Empty?displayProperty=nameWithType> as the property name in the <xref:System.ComponentModel.PropertyChangedEventArgs>. For more information, see <xref:System.ComponentModel.INotifyPropertyChanged>.  
   
  ]]></format>
         </remarks>

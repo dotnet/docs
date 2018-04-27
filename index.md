@@ -684,13 +684,13 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/machinelearning.svg" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/machinelearning.svg?branch=ml.net" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <a href="/dotnet/machine-learning">
-                                                    <h3>Xamarin.iOS</h3>
-                                                    <p>Create native iOS apps using C# and F# with Xamarin.iOS.</p>
+                                                    <h3>ML.NET</h3>
+                                                    <p>Build custom AI solutions and integrate them into your .NET applications.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -703,7 +703,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/i_azure-cognitive-services-color.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/i_azure-cognitive-services-color.svg?branch=ml.net" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -722,7 +722,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/machinelearning.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/machine-learning.svg?branch=ml.net" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

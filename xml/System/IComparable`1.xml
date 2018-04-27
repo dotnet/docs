@@ -136,7 +136,7 @@
    
   
 ## Examples  
- The following code example illustrates the implementation of <xref:System.IComparable> for a simple `Temperature` object. The example creates a <xref:System.Collections.Generic.SortedList%602> collection of strings with `Temperature` object keys, and adds several pairs of temperatures and strings to the list out of sequence. In the call to the <xref:System.Collections.Generic.SortedList%602.Add%2A> method, the <xref:System.Collections.Generic.SortedList%602> collection uses the <xref:System.IComparable%601> implementation to sort the list entries, which are then displayed in order of increasing temperature.  
+ The following code example illustrates the implementation of <xref:System.IComparable%601> for a simple `Temperature` object. The example creates a <xref:System.Collections.Generic.SortedList%602> collection of strings with `Temperature` object keys, and adds several pairs of temperatures and strings to the list out of sequence. In the call to the <xref:System.Collections.Generic.SortedList%602.Add%2A> method, the <xref:System.Collections.Generic.SortedList%602> collection uses the <xref:System.IComparable%601> implementation to sort the list entries, which are then displayed in order of increasing temperature.  
   
  [!code-cpp[IComparable\`1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/IComparable`1 Example/CPP/source.cpp#1)]
  [!code-csharp[IComparable\`1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/IComparable`1 Example/CS/source.cs#1)]

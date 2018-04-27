@@ -57,8 +57,6 @@ Generics were added to version 2.0 of the C# language and the common language ru
   
 -   [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md)  
   
--   [Generics in the .NET Framework Class Library](../../../csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md)  
-  
 ## C# Language Specification  
  For more information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   
@@ -67,4 +65,5 @@ Generics were added to version 2.0 of the C# language and the common language ru
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Types](../../../csharp/programming-guide/types/index.md)  
  [\<typeparam>](../../../csharp/programming-guide/xmldoc/typeparam.md)  
- [\<typeparamref>](../../../csharp/programming-guide/xmldoc/typeparamref.md)
+ [\<typeparamref>](../../../csharp/programming-guide/xmldoc/typeparamref.md)  
+ [Generics in .NET](../../../standard/generics/index.md)  

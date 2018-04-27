@@ -65,7 +65,7 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
     -   If the name is unqualified in the mapping, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
   
 #### XamlBuildTask  
- `XamlBuildTask` is used for [!INCLUDE[vsindigo](../../../includes/vsindigo-md.md)] and Windows Workflow Foundation.  
+ `XamlBuildTask` is used for Windows Communication Foundation (WCF) and Windows Workflow Foundation.  
   
  Note that assembly references through `XamlBuildTask` are always fully qualified.  
   

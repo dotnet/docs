@@ -34,7 +34,7 @@ The `dotnet tool list` command provides a way for you to list all .NET Core Glob
 
 `-g|--global`
 
-Specifies that the tool to be removed is from a user-wide installation. If you don't specify this option, you must specify the `--tool-path` option.
+Lists user-wide Global Tools. Can't be combined with the `--tool-path` option. If you don't specify this option, you must specify the `--tool-path` option.
 
 `-h|--help`
 
@@ -42,7 +42,7 @@ Prints out a short help for the command.
 
 `--tool-path <PATH>`
 
-Specifies a custom location where to find global tools. PATH can be absolute or relative. Can't be combined with the `--global` option.
+Specifies a custom location where to find global tools. PATH can be absolute or relative. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
 
 ## Examples
 

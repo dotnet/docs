@@ -21,8 +21,8 @@ ms.workload:
 ## Synopsis
 
 ```
-dotnet tool uninstall <PACKAGE_ID> <-g|--global>
-dotnet tool uninstall <PACKAGE_ID> <--tool-path>
+dotnet tool uninstall <PACKAGE_NAME> <-g|--global>
+dotnet tool uninstall <PACKAGE_NAME> <--tool-path>
 dotnet tool uninstall [-h|--help]
 ```
 
@@ -32,15 +32,15 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET Cor
 
 ## Arguments
 
-`PACKAGE_ID`
+`PACKAGE_NAME`
 
-ID of the NuGet package that contains the .NET Core Global tool to uninstall.
+Name/ID of the NuGet package that contains the .NET Core Global tool to uninstall. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
 
 `-g|--global`
 
-Specifies that the tool to be removed is from a user-wide installation. If you don't specify this option, you must specify the `--tool-path` option.
+Specifies that the tool to be removed is from a user-wide installation. Can't be combined with the `--tool-path` option. If you don't specify this option, you must specify the `--tool-path` option.
 
 `-h|--help`
 
@@ -48,7 +48,7 @@ Prints out a short help for the command.
 
 `--tool-path <PATH>`
 
-Specifies the location where to uninstall the global tool. PATH can be absolute or relative. Can't be combined with the `--global` option.
+Specifies the location where to uninstall the global tool. PATH can be absolute or relative. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
 
 ## Examples
 

@@ -21,8 +21,8 @@ ms.workload:
 ## Synopsis
 
 ```
-dotnet tool install <PACKAGE_ID> <-g|--global> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity] [--version]
-dotnet tool install <PACKAGE_ID> <--tool-path> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity] [--version]
+dotnet tool install <PACKAGE_NAME> <-g|--global> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity] [--version]
+dotnet tool install <PACKAGE_NAME> <--tool-path> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity] [--version]
 dotnet tool install [-h|--help]
 ```
 
@@ -39,9 +39,9 @@ Global Tools are installed in the following directories by default when you spec
 
 ## Arguments
 
-`PACKAGE_ID`
+`PACKAGE_NAME`
 
-ID of the NuGet package that contains the .NET Core Global tool to install.
+Name/ID of the NuGet package that contains the .NET Core Global tool to install.
 
 ## Options
 
@@ -55,7 +55,7 @@ Specifies the [target framework](../../standard/frameworks.md) to install the to
 
 `-g|--global`
 
-Specifies that the installation is user wide. If you don't specify this option, you must specify the `--tool-path` option.
+Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. If you don't specify this option, you must specify the `--tool-path` option.
 
 `-h|--help`
 
@@ -67,7 +67,7 @@ Adds an additional NuGet package source to use during installation.
 
 `--tool-path <PATH>`
 
-Specifies the location where to install the global tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Can't be combined with the `--global` option.
+Specifies the location where to install the global tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
 
 `-v|--verbosity <LEVEL>`
 
@@ -75,11 +75,11 @@ Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal
 
 `--version <VERSION_NUMBER>`
 
-The version of the tool to install. By default, the latest stable package version is installed.
+The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
 
 ## Examples
 
-Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool:
+Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool in the default location:
 
 `dotnet tool install -g dotnetsay`
 
@@ -87,9 +87,9 @@ Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Globa
 
 `dotnet tool install dotnetsay --tool-path c:\global-tools`
 
-Installs version 1.0.0 of the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool:
+Installs version 2.0.0 of the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool:
 
-`dotnet tool install -g dotnetsay --version 1.0.0`
+`dotnet tool install -g dotnetsay --version 2.0.0`
 
 ## See also
 

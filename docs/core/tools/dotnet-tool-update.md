@@ -21,8 +21,8 @@ ms.workload:
 ## Synopsis
 
 ```
-dotnet tool update <PACKAGE_ID> <-g|--global> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity]
-dotnet tool update <PACKAGE_ID> <--tool-path> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity]
+dotnet tool update <PACKAGE_NAME> <-g|--global> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity]
+dotnet tool update <PACKAGE_NAME> <--tool-path> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity]
 dotnet tool update [-h|--help]
 ```
 
@@ -32,9 +32,9 @@ The `dotnet tool update` command provides a way for you to update .NET Core Glob
 
 ## Arguments
 
-`PACKAGE_ID`
+`PACKAGE_NAME`
 
-ID of the NuGet package that contains the .NET Core Global tool to update.
+Name/ID of the NuGet package that contains the .NET Core Global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
 
@@ -48,7 +48,7 @@ Specifies the [target framework](../../standard/frameworks.md) to update the too
 
 `-g|--global`
 
-Specifies that the update is for a user-wide tool. If you don't specify this option, you must specify the `--tool-path` option.
+Specifies that the update is for a user-wide tool. Can't be combined with the `--tool-path` option. If you don't specify this option, you must specify the `--tool-path` option.
 
 `-h|--help`
 
@@ -60,7 +60,7 @@ Adds an additional NuGet package source to use during the update.
 
 `--tool-path <PATH>`
 
-Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option.
+Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
 
 `-v|--verbosity <LEVEL>`
 

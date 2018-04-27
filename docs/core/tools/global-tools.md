@@ -12,7 +12,9 @@ ms.workload:
 ---
 # .NET Core Global Tools overview
 
-.NET Core Global Tools are applications that are installed on your path.
+[!INCLUDE [topic-appliesto-net-core-2-1plus.md](../../../includes/topic-appliesto-net-core-2-1plus.md)]
+
+.NET Core Global Tools are a special NuGet package that contains a console application. A Global Tool can be installed on your machine on a default location that is specified in the PATH environment variable or on a custom location.
 
 If you want to use a .NET Core Global Tool:
 
@@ -20,27 +22,31 @@ If you want to use a .NET Core Global Tool:
 * Check the author and statistics in the home for the feed (usually NuGet.org).
 * Install the tool.
 * Call the tool.
+* Update the tool.
+* Uninstall the tool.
 
 > [!IMPORTANT]
 > .NET Core Global Tools appear on your path and run in full trust. Do not install .NET Core Global Tools unless you trust the author.
 
 ## Find a .NET Core Global Tool
 
-Currently, there isn't a Global Tool search feature in the .NET Core CLI.
+Currently, there isn't a Global Tool search feature in the .NET Core Command-line Interface (CLI).
 
 You can find .NET Core Global Tools on [NuGet](https://www.nuget.org). However, NuGet doesn't yet allow you to search specifically for .NET Core Global Tools.
 
-You may also find tool recommendations in blog posts.
+You may also find tool recommendations in blog posts or in the [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub repository.
+
+You can also see the source code for the Global Tools created by the ASP.NET team at the [aspnet/DotNetTools](https://github.com/aspnet/DotNetTools/) GitHub repository.
 
 ## Check the author and statistics
 
-Since .NET Core Global Tools run in full trust and are installed on your path, they can be very powerful. Don't download tools from people you don't trust.
+Since .NET Core Global Tools run in full trust and are generally installed on your path, they can be very powerful. Don't download tools from people you don't trust.
 
 If the tool is hosted on NuGet, you can check the author and statistics by searching for the tool.
 
-## Install a global tool
+## Install a Global Tool
 
-To install a global tool, you use the [dotnet tool install](dotnet-tool-install.md) .NET Core CLI command like in the following example:
+To install a Global Tool, you use the [dotnet tool install](dotnet-tool-install.md) .NET Core CLI command. The following example shows how to install a Global Tool in the default location:
 
 ```bash
 dotnet tool install -g dotnetsay
@@ -61,12 +67,19 @@ You can invoke the tool using the following command: dotnetsay
 Tool 'dotnetsay' (version '2.0.0') was successfully installed.
 ```
 
-Global Tools are installed in the following directories by default when you specify the `-g` (or `--global`) option:
+Global Tools can be installed in the default directory or in a specific location. The default directories are:
 
 | OS          | Path                          |
 |-------------|-------------------------------|
 | Linux/macOS | `$HOME/.dotnet/tools`         |
 | Windows     | `%USERPROFILE%\.dotnet\tools` |
+
+These locations are added to the user's path when the SDK is first run, so Global Tools installed there can be called directly.
+
+Note that the Global Tools are user-specific, not machine global. Being user-specific means you cannot install a Global Tool that is available to all users of the machine. The tool is only available for each user profile where the tool was installed.
+
+Global Tools can also be installed in a specific directory. When installed in a specific directory, the user must ensure the command is available, by including that directory in the path, by calling the command with the directory specified, or calling the tool from within the specified directory.
+In this case, the .NET Core CLI doesn't add this location automatically to the PATH environment variable.
 
 ## Use the tool
 
@@ -84,7 +97,7 @@ If the tool author wanted the tool to appear in the context of the `dotnet` prom
 dotnet ef
 ```
 
-You can find which tools are included in an installed Global Tool package by listing the installed packages.
+You can find which tools are included in an installed Global Tool package by listing the installed packages using the [dotnet tool list](dotnet-tool-list.md) command.
 
 You can also look for usage instructions at the tool's website or by typing one of the following commands:
 
@@ -99,7 +112,8 @@ Global Tools are shared framework applications, which means they rely on a .NET 
 
 * An application rolls forward to the highest patch release of the specified major and minor version.
 * If there is no matching runtime with a matching major and minor version number, the next higher minor version is used.
-* Roll forward doesn't occur between preview versions of the runtime or between preview versions and release versions.
+* Roll forward doesn't occur between preview versions of the runtime or between preview versions and release versions. Thus, Global Tools created using preview versions must be rebuilt and republished by the author and reinstalled.
+* Additional issues can occur with Global Tools created in .NET Core 2.1 Preview 1. For more information, see [.NET Core 2.1 Preview 2 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/2.1/Preview/2.1.0-preview2-known-issues.md).
 
 If an application cannot find an appropriate runtime, it fails to run and reports an error.
 
@@ -110,6 +124,9 @@ dotnet --list-runtimes
 ```
 
 Contact the author of the Global Tool and see if they can recompile and republish their tool package to NuGet with an updated version number. Once they have updated the package on NuGet, you can update your copy.
+
+> [!WARNING]
+> If you installed Global Tools that were built with .NET Core 2.1 Preview 1 release, there's a known issue where you must manually uninstall and install the tool, instead of simply updating it. If you try to update it, you'll get errors.
 
 The .NET Core CLI tries to add the default locations to the PATH environment variable on its first usage. However, there are a couple of scenarios where the location might not be added to PATH automatically, such as:
 

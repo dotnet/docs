@@ -98,7 +98,7 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
- Federation is the ability to share identities across multiple enterprises or trust domains for authentication and authorization. It uses the WS-Trust protocol to map the identity representation from one trust domain to another. Federated HTTP binding supports SOAP security as well as mixed-mode security, but it does not support transport security. Services configured with this binding must use the HTTP transport. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
+ Federation is the ability to share identities across multiple enterprises or trust domains for authentication and authorization. It uses the WS-Trust protocol to map the identity representation from one trust domain to another. Federated HTTP binding supports SOAP security as well as mixed-mode security, but it does not support transport security. Services configured with this binding must use the HTTP transport. For more information, see [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
   
 ## Example  
   

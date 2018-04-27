@@ -36,7 +36,7 @@ ms.workload:
   
  As a result, deciding between text or binary is not quite as easy as assuming that binary messages are always smaller than XML-text messages.  
   
- A clear advantage of XML-text messages is that they are standards-based and offer the broadest choice of interoperability options and platform support. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Encodings" section later in this topic.  
+ A clear advantage of XML-text messages is that they are standards-based and offer the broadest choice of interoperability options and platform support. For more information, see the "Encodings" section later in this topic.  
   
 ### Binary Content  
  One area where binary encodings are superior to text-based encodings in terms of the resulting message size are large binary data items such as pictures, videos, sound clips, or any other form of opaque, binary data that must be exchanged between services and their consumers. To fit these types of data into XML text, the common approach is to encode them using the Base64 encoding.  
@@ -47,7 +47,7 @@ ms.workload:
   
  An MTOM SOAP message is modified from its un-encoded version so that special element tags that refer to the respective MIME parts take the place of the original elements in the message that contained binary data. As a result, the SOAP message refers to binary content by pointing to the MIME parts sent with it, but otherwise just carries XML text data. Because this model is closely aligned with the well-established SMTP model, there is broad tooling support to encode and decode MTOM messages on many platforms, which makes it an extremely interoperable choice.  
   
- Still, as with Base64, MTOM also comes with some necessary overhead for the MIME format, so that advantages of using MTOM are only seen when the size of a binary data element exceeds about 1 KB. Due to the overhead, MTOM-encoded messages might be larger than messages that use Base64 encoding for binary data, if the binary payload remains under that threshold. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Encodings" section later in this topic.  
+ Still, as with Base64, MTOM also comes with some necessary overhead for the MIME format, so that advantages of using MTOM are only seen when the size of a binary data element exceeds about 1 KB. Due to the overhead, MTOM-encoded messages might be larger than messages that use Base64 encoding for binary data, if the binary payload remains under that threshold. For more information, see the "Encodings" section later in this topic.  
   
 ### Large Data Content  
  Wire-footprint aside, the previously mentioned 500-MB payload also poses a great local challenge at for the service and the client. By default, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] processes messages in *buffered mode*. This means that the entire content of a message is present in memory before it is sent or after it is received. While that is a good strategy for most scenarios, and necessary for messaging features such as digital signatures and reliable delivery, large messages could exhaust a system's resources.  
@@ -62,7 +62,7 @@ ms.workload:
   
 -   Are not available in their entirety when the transfer is initiated.  
   
- For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Streaming Data" section later in this topic.  
+ For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. For more information, see the "Streaming Data" section later in this topic.  
   
  When sending large amounts of data you will need to set the `maxAllowedContentLength` IIS setting (for more information see [Configuring IIS Request Limits](http://go.microsoft.com/fwlink/?LinkId=253165)) and the `maxReceivedMessageSize` binding setting (for example [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) or <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A>). The `maxAllowedContentLength` property defaults to 28.6 M and the `maxReceivedMessageSize` property defaults to 64KB.  
   

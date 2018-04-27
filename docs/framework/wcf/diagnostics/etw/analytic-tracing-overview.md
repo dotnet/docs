@@ -49,10 +49,10 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
  `ServiceModelReg.exe -i -c:etw`  
   
 ### Dynamic Configuration  
- The ETW infrastructure allows tracing to be enabled and configured dynamically using standard Windows tools. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [Dynamically Enabling Analytic Tracing](../../../../../docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md).  
+ The ETW infrastructure allows tracing to be enabled and configured dynamically using standard Windows tools. For more information, see [Dynamically Enabling Analytic Tracing](../../../../../docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md).  
   
 ### Message Flow Tracing  
  [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] how to enable message flow tracing, see [Configuring Message Flow Tracing](../../../../../docs/framework/wcf/diagnostics/etw/configuring-message-flow-tracing.md).  
   
 ### Keywords  
- Keywords are used to filter trace messages and define which component of the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] emitted the event. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [Dynamically Enabling Analytic Tracing](../../../../../docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md).
+ Keywords are used to filter trace messages and define which component of the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] emitted the event. For more information, see [Dynamically Enabling Analytic Tracing](../../../../../docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md).

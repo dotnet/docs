@@ -83,7 +83,7 @@ The Syndication API is designed to provide a format-neutral programming model th
   
 ## Extensibility  
   
--   A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0 allow you to add attributes and elements to syndication feeds that are not defined in the specifications. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] syndication programming model provides two ways of working with custom attributes and extensions: deriving a new class and loosely-typed access. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Syndication Extensibility](../../../../docs/framework/wcf/feature-details/syndication-extensibility.md).  
+-   A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0 allow you to add attributes and elements to syndication feeds that are not defined in the specifications. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] syndication programming model provides two ways of working with custom attributes and extensions: deriving a new class and loosely-typed access. For more information, see [Syndication Extensibility](../../../../docs/framework/wcf/feature-details/syndication-extensibility.md).  
   
 ## See Also  
  [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  

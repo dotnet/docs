@@ -30,7 +30,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
 >  For applications that use stateful SCTs in a secure session, the thread identity for the service must be a user account that has an associated user profile. When the service is run under an account that does not have a user profile, such as `Local Service`, an exception may be thrown.  
   
 > [!NOTE]
->  When impersonation is required on Windows XP, use a secure session without a stateful SCT. When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+>  When impersonation is required on Windows XP, use a secure session without a stateful SCT. When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
   
 ### To use stateful SCTs in a secure session  
   

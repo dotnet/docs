@@ -47,7 +47,7 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
 ```  
   
 ## Example: TCP Transport Mode with Certificate as Client Credential  
- This example sets the security mode to Transport mode and sets the client credential value to an X.509 certificate. The following procedures demonstrate how to set the client credential value on the client in code and configuration. This assumes that you have used the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to return the metadata (code and configuration) from the service. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
+ This example sets the security mode to Transport mode and sets the client credential value to an X.509 certificate. The following procedures demonstrate how to set the client credential value on the client in code and configuration. This assumes that you have used the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to return the metadata (code and configuration) from the service. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
   
 #### To specify the client credential value on the client in code  
   

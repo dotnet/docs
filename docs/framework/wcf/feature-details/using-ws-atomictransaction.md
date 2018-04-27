@@ -32,7 +32,7 @@ WS-AtomicTransaction (WS-AT) is an interoperable transaction protocol. It enable
   
 -   The network protocol used to run the two-phase commit protocol between the client's transaction manager and the server's transaction, in order to resolve the outcome of the transaction.  
   
- If the server and client are written using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you do not need to use WS-AT. Instead, you can use the default settings of `NetTcpBinding` with the `TransactionFlow` attribute enabled, which will use the `OleTransactions` protocol instead. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [\<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md). Otherwise, if you are flowing transactions to Web services built on third-party technologies, you must use WS-AT.  
+ If the server and client are written using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you do not need to use WS-AT. Instead, you can use the default settings of `NetTcpBinding` with the `TransactionFlow` attribute enabled, which will use the `OleTransactions` protocol instead. For more information, see [\<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md). Otherwise, if you are flowing transactions to Web services built on third-party technologies, you must use WS-AT.  
   
 ## See Also  
  [Configuring WS-Atomic Transaction Support](../../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)

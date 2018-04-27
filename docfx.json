@@ -46,6 +46,10 @@
       "searchScope": [".NET"],
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "apiPlatform": "dotnet",
+      "ms.topic": "managed-reference",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "dotnet/docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
       "_op_documentIdPathDepotMapping": {
         "api/": {
           "depot_name": "VS.core-docs"
@@ -56,9 +60,6 @@
       "ms.prod": {
         "api/**.yml": ".net"
       },
-      "ms.topic": {
-        "api/**.yml": "managed-reference"
-     },
       "langs": {
         "api/**.yml": ["csharp", "vb", "cpp"],
         "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        

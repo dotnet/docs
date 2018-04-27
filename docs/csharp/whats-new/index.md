@@ -28,8 +28,8 @@ major features added in each release.
 * [C# 7.1](csharp-7-1.md):
     - This page describes the features in C# 7.1. These features were added in [Visual Studio 2017 version 15.3](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
 
-* [C# 7](csharp-7.md):
-    - This page describes the features added in C# 7. These features were added in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/) and [.NET Core 1.0](../../core/whats-new/index.md) and later
+* [C# 7.0](csharp-7.md):
+    - This page describes the features added in C# 7.0. These features were added in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/) and [.NET Core 1.0](../../core/whats-new/index.md) and later
      
 * [C# 6](csharp-6.md):
     - This page describes the features that were added in C# 6. These features are available in Visual Studio 2015 for Windows developers, and on .NET Core 1.0 for developers exploring C# on macOS and Linux.

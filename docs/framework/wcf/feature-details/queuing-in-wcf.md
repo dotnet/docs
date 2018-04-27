@@ -51,7 +51,7 @@ This section describes how to use queued communication in [!INCLUDE[indigo1](../
 ### NetMsmqBinding  
  The [\<netMsmqBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md) is the queued binding [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides for two [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoints to communicate using MSMQ. The binding, therefore, exposes properties that are specific to MSMQ. However, not all MSMQ features and properties are exposed in the `NetMsmqBinding`. The compact `NetMsmqBinding` is designed with an optimal set of features that most customers should find sufficient.  
   
- The `NetMsmqBinding` manifests the core queuing concepts discussed thus far in the form of properties on the bindings. These properties, in turn, communicate to MSMQ how to transfer and deliver the messages. A discussion of the property categories is in the following sections. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the conceptual topics that describe specific properties more completely.  
+ The `NetMsmqBinding` manifests the core queuing concepts discussed thus far in the form of properties on the bindings. These properties, in turn, communicate to MSMQ how to transfer and deliver the messages. A discussion of the property categories is in the following sections. For more information, see the conceptual topics that describe specific properties more completely.  
   
 #### ExactlyOnce and Durable Properties  
  The `ExactlyOnce` and `Durable` properties affect how messages are transferred between queues:  
@@ -82,9 +82,9 @@ This section describes how to use queued communication in [!INCLUDE[indigo1](../
  When the service reads messages from the target queue under a transaction, the service may fail to process the message for various reasons. The message is then put back into the queue to be read again. To deal with messages that fail repeatedly, a set of poison-message handling properties can be configured in the binding. There are four properties: `ReceiveRetryCount`, `MaxRetryCycles`, `RetryCycleDelay`, and `ReceiveErrorHandling`. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] these properties, see [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md).  
   
 #### Security Properties  
- MSMQ exposes its own security model, such as access control lists (ACLs) on a queue or sending authenticated messages. The `NetMsmqBinding` exposes these security properties as part of its transport security settings. There are two properties in the binding for transport security: `MsmqAuthenticationMode` and `MsmqProtectionLevel`. Settings in these properties depend on how MSMQ is configured. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md).  
+ MSMQ exposes its own security model, such as access control lists (ACLs) on a queue or sending authenticated messages. The `NetMsmqBinding` exposes these security properties as part of its transport security settings. There are two properties in the binding for transport security: `MsmqAuthenticationMode` and `MsmqProtectionLevel`. Settings in these properties depend on how MSMQ is configured. For more information, see [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md).  
   
- In addition to transport security, the actual SOAP message itself can be secured using message security. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Securing Messages Using Message Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-message-security.md).  
+ In addition to transport security, the actual SOAP message itself can be secured using message security. For more information, see [Securing Messages Using Message Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-message-security.md).  
   
  `MsmqTransportSecurity` also exposes two properties, `MsmqEncryptionAlgorithm` and `MsmqHashAlgorithm`. These are enumerations of different algorithms to choose for queue-to-queue transfer encryption of messages and hashing of the signatures.  
   
@@ -97,7 +97,7 @@ This section describes how to use queued communication in [!INCLUDE[indigo1](../
   
 -   `QueueTransferProtocol`: An enumeration of the protocol to use for queue-to-queue message transfers. MSMQ implements a native queue-to-queue transfer protocol and a SOAP-based protocol called SOAP Reliable Messaging Protocol (SRMP). SRMP is used when using HTTP transport for queue-to-queue transfers. SRMP secure is used when using HTTPS for queue-to-queue transfers.  
   
--   `UseActiveDirectory`: A Boolean value to indicate whether the Active Directory must be used for queue address resolution. By default, this is off. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
+-   `UseActiveDirectory`: A Boolean value to indicate whether the Active Directory must be used for queue address resolution. By default, this is off. For more information, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
   
 ### MsmqIntegrationBinding  
  The `MsmqIntegrationBinding` is used when you want a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint to communicate with an existing MSMQ application written in C, C++, COM, or System.Messaging APIs.  

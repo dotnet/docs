@@ -1,13 +1,9 @@
 ---
 title: "Copying and Pinning"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "pinning, interop marshaling"
@@ -15,7 +11,6 @@ helpviewer_keywords:
   - "interop marshaling, copying"
   - "interop marshaling, pinning"
 ms.assetid: 0059f576-e460-4e70-b257-668870e420b8
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -25,24 +20,24 @@ ms.workload:
 # Copying and Pinning
 When marshaling data, the interop marshaler can copy or pin the data being marshaled. Copying the data places a copy of data from one memory location in another memory location. The following illustration shows the differences between copying a value type and copying a type passed by reference from managed to unmanaged memory.  
   
- ![Value types passed by value and by reference](../../../docs/framework/interop/media/interopmarshalcopy.gif "interopmarshalcopy")  
+ ![Value types passed by value and by reference](./media/interopmarshalcopy.gif "interopmarshalcopy")  
 Value types passed by value and by reference  
   
  Method arguments passed by value are marshaled to unmanaged code as values on the stack. The copying process is direct. Arguments passed by reference are passed as pointers on the stack. Reference types are also passed by value and by reference. As the following illustration shows, reference types passed by value are either copied or pinned.  
   
- ![COM interop](../../../docs/framework/interop/media/interopmarshalpin.gif "interopmarshalpin")  
+ ![COM interop](./media/interopmarshalpin.gif "interopmarshalpin")  
 Reference types passed by value and by reference  
   
  Pinning temporarily locks the data in its current memory location, thus keeping it from being relocated by the common language runtime's garbage collector. The marshaler pins data to reduce the overhead of copying and enhance performance. The type of the data determines whether it is copied or pinned during the marshaling process.  Pinning is automatically performed during marshaling for objects such as <xref:System.String>, however you can also manually pin memory using the <xref:System.Runtime.InteropServices.GCHandle> class.  
   
 ## Formatted Blittable Classes  
- Formatted [blittable](../../../docs/framework/interop/blittable-and-non-blittable-types.md) classes have fixed layout (formatted) and common data representation in both managed and unmanaged memory. When these types require marshaling, a pointer to the object in the heap is passed to the callee directly. The callee can change the contents of the memory location being referenced by the pointer.  
+ Formatted [blittable](blittable-and-non-blittable-types.md) classes have fixed layout (formatted) and common data representation in both managed and unmanaged memory. When these types require marshaling, a pointer to the object in the heap is passed to the callee directly. The callee can change the contents of the memory location being referenced by the pointer.  
   
 > [!NOTE]
 >  The callee can change the memory contents if the parameter is marked Out or In/Out. In contrast, the callee should avoid changing the contents when the parameter is set to marshal as In, which is the default for formatted blittable types. Modifying an In object generates problems when the same class is exported to a type library and used to make cross-apartment calls.  
   
 ## Formatted Non-Blittable Classes  
- Formatted [non-blittable](../../../docs/framework/interop/blittable-and-non-blittable-types.md) classes have fixed layout (formatted) but the data representation is different in managed and unmanaged memory. The data can require transformation under the following conditions:  
+ Formatted [non-blittable](blittable-and-non-blittable-types.md) classes have fixed layout (formatted) but the data representation is different in managed and unmanaged memory. The data can require transformation under the following conditions:  
   
 -   If a non-blittable class is marshaled by value, the callee receives a pointer to a copy of the data structure.  
   
@@ -84,7 +79,7 @@ Reference types passed by value and by reference
  When a <xref:System.Text.StringBuilder?displayProperty=nameWithType> is passed by value, the marshaler passes a reference to the internal buffer of the **StringBuilder** directly to the caller. The caller and callee must agree on the size of the buffer. The caller is responsible for creating a **StringBuilder** of adequate length. The callee must take the necessary precautions to ensure that the buffer is not overrun. **StringBuilder** is an exception to the rule that reference types passed by value are passed as In parameters by default. It is always passed as In/Out.  
   
 ## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)  
- [Memory Management with the Interop Marshaler](http://msdn.microsoft.com/library/417206ce-ee3e-4619-9529-0c0b686c7bee)  
- [Directional Attributes](http://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+ [Default Marshaling Behavior](default-marshaling-behavior.md)  
+ [Memory Management with the Interop Marshaler](https://msdn.microsoft.com/library/417206ce-ee3e-4619-9529-0c0b686c7bee(v=vs.100))  
+ [Directional Attributes](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))  
+ [Interop Marshaling](interop-marshaling.md)

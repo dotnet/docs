@@ -102,8 +102,8 @@ This sample demonstrates how to implement an application that uses WS-Security w
   
 ## Description  
  The sample client and service code are the same as the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) sample with one difference. The operation contract is annotated with protection level, which suggests that the message must be signed and encrypted.  
-  
-```  
+
+```csharp
 // Define a service contract.   
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IOrderProcessor  
@@ -111,8 +111,8 @@ public interface IOrderProcessor
     [OperationContract(IsOneWay = true, ProtectionLevel=ProtectionLevel.EncryptAndSign)]  
     void SubmitPurchaseOrder(PurchaseOrder po);  
 }  
-```  
-  
+```
+
  To ensure that the message is secured using the required token to identify the service and client, the App.config contains credential information.  
   
  The client configuration specifies the service certificate to authenticate the service. It uses its LocalMachine store as the trusted store to rely on the validity of the service. It also specifies the client certificate that is attached with the message for service authentication of the client.  
@@ -253,29 +253,29 @@ public interface IOrderProcessor
   
  The sample demonstrates controlling authentication using configuration, and how to obtain the caller’s identity from the security context, as shown in the following sample code:  
   
-```  
-    // Service class which implements the service contract.  
-    // Added code to write output to the console window.  
-    public class OrderProcessorService : IOrderProcessor  
+```csharp
+// Service class which implements the service contract.  
+// Added code to write output to the console window.  
+public class OrderProcessorService : IOrderProcessor  
+{  
+    private string GetCallerIdentity()  
     {  
-        private string GetCallerIdentity()  
-        {  
-            // The client certificate is not mapped to a Windows identity by default.  
-            // ServiceSecurityContext.PrimaryIdentity is populated based on the information  
-            // in the certificate that the client used to authenticate itself to the service.  
-            return ServiceSecurityContext.Current.PrimaryIdentity.Name;  
-        }  
-  
-        [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]  
-        public void SubmitPurchaseOrder(PurchaseOrder po)  
-        {  
-            Console.WriteLine("Client's Identity {0} ", GetCallerIdentity());  
-            Orders.Add(po);  
-            Console.WriteLine("Processing {0} ", po);  
-        }  
+        // The client certificate is not mapped to a Windows identity by default.  
+        // ServiceSecurityContext.PrimaryIdentity is populated based on the information  
+        // in the certificate that the client used to authenticate itself to the service.  
+        return ServiceSecurityContext.Current.PrimaryIdentity.Name;  
+    }  
+
+    [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]  
+    public void SubmitPurchaseOrder(PurchaseOrder po)  
+    {  
+        Console.WriteLine("Client's Identity {0} ", GetCallerIdentity());  
+        Orders.Add(po);  
+        Console.WriteLine("Processing {0} ", po);  
+    }  
   //…  
 }  
-```  
+```
   
  When run, the service code displays the client identification. The following is a sample output from the service code:  
   
@@ -299,7 +299,7 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
   
      The following line in the batch file creates the client certificate. The client name specified is used in the subject name of the certificate created. The certificate is stored in `My` store at the `CurrentUser` store location.  
   
-    ```  
+    ```bat
     echo ************  
     echo making client cert  
     echo ************  
@@ -310,7 +310,7 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
   
      The following line in the batch file copies the client certificate into the server's TrustedPeople store so that the server can make the relevant trust or no-trust decisions. For a certificate installed in the TrustedPeople store to be trusted by a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service, the client certificate validation mode must be set to `PeerOrChainTrust` or `PeerTrust` value. See the previous service configuration sample to learn how this can be done using a configuration file.  
   
-    ```  
+    ```bat
     echo ************  
     echo copying client cert to server's LocalMachine store  
     echo ************  
@@ -321,7 +321,7 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
   
      The following lines from the Setup.bat batch file create the server certificate to be used:  
   
-    ```  
+    ```bat  
     echo ************  
     echo Server cert setup starting  
     echo %SERVER_NAME%  

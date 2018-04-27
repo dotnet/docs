@@ -26,8 +26,8 @@ This sample demonstrates the use of a client-coordinated transaction and the cli
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  After initiating a connection to the service and a transaction, the client accesses several service operations. The contract for the service is defined as follows with each of the operations demonstrating a different setting for the `TransactionFlowOption`.  
-  
-```  
+
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -43,8 +43,8 @@ public interface ICalculator
     [OperationContract]  
     double Divide(double n1, double n2);   
 }  
-```  
-  
+```
+
  This defines the operations in the order they are to be processed:  
   
 -   An `Add` operation request must include a flowed transaction.  
@@ -78,8 +78,8 @@ public interface ICalculator
   
 > [!NOTE]
 >  The <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property defines behavior local to the service method implementations and does not define the client's ability to or requirement for flowing a transaction.  
-  
-```  
+
+```csharp
 // Service class that implements the service contract.  
 [ServiceBehavior(TransactionIsolationLevel = System.Transactions.IsolationLevel.Serializable)]  
 public class CalculatorService : ICalculator  
@@ -114,22 +114,22 @@ public class CalculatorService : ICalculator
   
     // Logging method omitted for brevity  
 }  
-```  
-  
+```
+
  On the client, the service's `TransactionFlowOption` settings on the operations are reflected in the client's generated definition of the `ICalculator` interface. Also, the service's `transactionFlow` property settings are reflected in the client's application configuration. The client can select the transport and protocol by selecting the appropriate `endpointConfigurationName`.  
-  
-```  
+
+```csharp
 // Create a client using either wsat or oletx endpoint configurations  
 CalculatorClient client = new CalculatorClient("WSAtomicTransaction_endpoint");  
 // CalculatorClient client = new CalculatorClient("OleTransactions_endpoint");  
-```  
-  
+```
+
 > [!NOTE]
 >  The observed behavior of this sample is the same no matter which protocol or transport is chosen.  
   
  Having initiated the connection to the service, the client creates a new `TransactionScope` around the calls to the service operations.  
-  
-```  
+
+```csharp
 // Start a transaction scope  
 using (TransactionScope tx =  
             new TransactionScope(TransactionScopeOption.RequiresNew))  
@@ -186,8 +186,8 @@ using (TransactionScope tx =
 }  
   
 Console.WriteLine("Transaction committed");  
-```  
-  
+```
+
  The calls to the operations are as follows:  
   
 -   The `Add` request flows the required transaction to the service and the service's actions occur within the scope of the client's transaction.  

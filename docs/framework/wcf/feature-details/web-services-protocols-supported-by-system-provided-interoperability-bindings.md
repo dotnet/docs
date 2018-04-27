@@ -91,7 +91,7 @@ ms.workload:
 </wsFederationHttpBinding>  
 ```  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Federation](../../../../docs/framework/wcf/feature-details/federation.md) .  
+ For more information, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md) .  
   
 ## System-Provided Metadata Bindings  
  The following tables describe the protocols supported by the system-provided interoperable metadata bindings exposed by the <xref:System.ServiceModel.Description.MetadataExchangeBindings?displayProperty=nameWithType> class.  

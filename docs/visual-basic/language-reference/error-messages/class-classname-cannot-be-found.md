@@ -28,9 +28,9 @@ Class '\<classname>' cannot be found. This condition is usually the result of a 
   
 1.  Compile the program again to see if the error recurs.  
   
-2.  If the error recurs, save your work and restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+2.  If the error recurs, save your work and restart Visual Studio.  
   
-3.  If the error persists, reinstall [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+3.  If the error persists, reinstall Visual Basic.  
   
 4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   

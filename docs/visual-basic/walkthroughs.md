@@ -22,13 +22,13 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Shows how to create an asynchronous solution by using [Async](../visual-basic/language-reference/modifiers/async.md) and [Await](../visual-basic/language-reference/operators/await-operator.md).  
   
  [Declaring and Raising Events](../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)  
- Illustrates how events are declared and raised in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Illustrates how events are declared and raised in Visual Basic.  
   
  [Handling Events](../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)  
  Shows how to handle events using either the standard `WithEvents` keyword or the new `AddHandler`/`RemoveHandler` keywords.  
   
  [Creating and Implementing Interfaces](../visual-basic/programming-guide/language-features/interfaces/walkthrough-creating-and-implementing-interfaces.md)  
- Shows how interfaces are declared and implemented in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Shows how interfaces are declared and implemented in Visual Basic.  
   
  [Defining Classes](../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)  
  Describes how to declare a class and its fields, properties, methods, and events.  
@@ -43,10 +43,10 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Explains how to use `Declare` statements and call Windows APIs. Includes information about using attributes to control marshaling for the API call and how to expose an API call as a method of a class.  
   
  [Creating COM Objects with Visual Basic](../visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md)  
- Demonstrates how to create COM objects in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], both with and without the COM class template.  
+ Demonstrates how to create COM objects in Visual Basic, both with and without the COM class template.  
   
  [Implementing Inheritance with COM Objects](../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
- Demonstrates how to use [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0 to create a COM object containing a class, and then use it as a base class in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Demonstrates how to use Visual Basic 6.0 to create a COM object containing a class, and then use it as a base class in Visual Basic.  
   
  [Multithreading](http://msdn.microsoft.com/library/2cbf5116-8499-4af9-818c-6f7c1c2ad2c9)  
  Shows how to create a multithreaded application that searches a text file for occurrences of a word.  
@@ -73,7 +73,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Shows how to use the <xref:System.Security.Cryptography.DESCryptoServiceProvider> class to encrypt and decrypt strings.  
   
  [Manipulating Files and Folders in Visual Basic](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
- Demonstrates how to use [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] functions to determine information about a file, search for a string in a file, and write to a file.  
+ Demonstrates how to use Visual Basic functions to determine information about a file, search for a string in a file, and write to a file.  
   
  [Manipulating Files Using .NET Framework Methods](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
  Demonstrates how to use [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods to determine information about a file, search for a string in a file, and write to a file.  

@@ -3,9 +3,9 @@ title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
 author: JRAlexander
 ms.author: johalex
-ms.date: 03/02/2018
-ms.topic: article
-ms.prod: .net-core
+ms.date: 04/24/2018
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.workload: 
   - dotnetcore
 ---
@@ -45,8 +45,8 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 * Installing .NET Core via a *.zip* file. This can include build/CI/CD servers.
 
 > [!NOTE]
-> *For Windows 7 and Windows Server 2008 machines only:*
-> Make sure that your Windows installation is up-to-date and includes hotfix [KB2533623](https://support.microsoft.com/help/2533623) installed through Windows Update.
+> *For Windows 8.1 and earlier versions, or Windows Server 2012 R2 and earlier versions:*
+> Make sure that your Windows installation is up-to-date and includes [KB2999226](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows) which can be installed through Windows Update. If you don't have this update installed, you'll see an error when you launch a .NET Core application like the following: `The program can't start because api-ms-win-crt-runtime-1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`.
 
 ## Prerequisites with Visual Studio 2017
 

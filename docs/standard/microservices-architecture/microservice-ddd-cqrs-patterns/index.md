@@ -33,10 +33,10 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
 ##### DDD (Domain-Driven Design)
 
 -   **Eric Evans. Domain Language**
-    [*http://domainlanguage.com/*](http://domainlanguage.com/)
+    [*https://domainlanguage.com/*](https://domainlanguage.com/)
 
 -   **Martin Fowler. Domain-Driven Design**
-    [*http://martinfowler.com/tags/domain%20driven%20design.html*](http://martinfowler.com/tags/domain%20driven%20design.html)
+    [*https://martinfowler.com/tags/domain%20driven%20design.html*](https://martinfowler.com/tags/domain%20driven%20design.html)
 
 -   **Jimmy Bogard. Strengthening your domain: a primer**
     [*https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/*](https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/)

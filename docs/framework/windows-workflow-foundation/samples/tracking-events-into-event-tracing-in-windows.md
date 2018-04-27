@@ -16,12 +16,12 @@ ms.workload:
   - "dotnet"
 ---
 # Tracking Events into Event Tracing in Windows
-This sample demonstrates how to enable [!INCLUDE[wf](../../../../includes/wf-md.md)] tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW). To emit workflow tracking records into ETW, the sample uses the ETW tracking participant (<xref:System.Activities.Tracking.EtwTrackingParticipant>).  
+This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW). To emit workflow tracking records into ETW, the sample uses the ETW tracking participant (<xref:System.Activities.Tracking.EtwTrackingParticipant>).  
   
  The workflow in the sample receives a request, assigns the reciprocal of the input data to the input variable and returns the reciprocal back to the client. When the input data is 0, a divide by zero exception occurs that is unhandled that causes the workflow to abort. With tracking enabled, the error track record is emitted to ETW, which can help troubleshoot the error later. The ETW tracking participant is configured with a tracking profile to subscribe to tracking records. The tracking profile is defined in the Web.config file and provided as a configuration parameter to the ETW tracking participant. The ETW tracking participant is configured in the Web.config file of the workflow service and is applied to the service as a service behavior. In this sample, you view the tracking events in the event log using Event Viewer.  
   
 ## Workflow Tracking Details  
- [!INCLUDE[wf2](../../../../includes/wf2-md.md)] provides a tracking infrastructure to track the execution of a workflow instance. The tracking runtime creates a workflow instance to emit events related to the workflow lifecycle, events from workflow activities and custom events. The following table details the primary components of the tracking infrastructure.  
+ Windows Workflow Foundation provides a tracking infrastructure to track the execution of a workflow instance. The tracking runtime creates a workflow instance to emit events related to the workflow lifecycle, events from workflow activities and custom events. The following table details the primary components of the tracking infrastructure.  
   
 |Component|Description|  
 |---------------|-----------------|  

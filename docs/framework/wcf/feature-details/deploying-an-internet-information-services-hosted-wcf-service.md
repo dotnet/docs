@@ -43,7 +43,7 @@ Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
   
 -   Windows 7:  
   
- Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkId=201186)  
+ Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. For more information, see [ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkId=201186)  
   
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application  
  IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services must reside inside of an IIS application. You can create a new IIS application to host [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services exclusively. Alternatively, you can deploy an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  

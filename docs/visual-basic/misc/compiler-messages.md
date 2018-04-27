@@ -14,4 +14,4 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Visual Basic Compiler Messages
-This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error messages that occur at compile time.
+This section contains the Visual Basic error messages that occur at compile time.

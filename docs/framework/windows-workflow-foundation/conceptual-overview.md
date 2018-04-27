@@ -19,14 +19,14 @@ ms.workload:
   - "dotnet"
 ---
 # Windows Workflow Conceptual Overview
-This section contains a set of topics discussing the larger concepts behind [!INCLUDE[wf](../../../includes/wf-md.md)].  
+This section contains a set of topics discussing the larger concepts behind Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Windows Workflow Overview](../../../docs/framework/windows-workflow-foundation/overview.md)  
  Describes the foundation that enables users to create system or human workflows in their applications written for [!INCLUDE[wv](../../../includes/wv-md.md)], [!INCLUDE[wxp](../../../includes/wxp-md.md)], [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], and [!INCLUDE[lserver](../../../includes/lserver-md.md)] operating systems.  
   
  [Fundamental Windows Workflow Concepts](../../../docs/framework/windows-workflow-foundation/fundamental-concepts.md)  
- Describes fundamental concepts used in [!INCLUDE[wf2](../../../includes/wf2-md.md)] development that may be new to some developers.  
+ Describes fundamental concepts used in Windows Workflow Foundation development that may be new to some developers.  
   
  [Windows Workflow Architecture](../../../docs/framework/windows-workflow-foundation/architecture.md)  
- Describes components used in [!INCLUDE[wf2](../../../includes/wf2-md.md)] development.
+ Describes components used in Windows Workflow Foundation development.

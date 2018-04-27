@@ -53,12 +53,11 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
   
 ```xml  
 <dependentAssembly>  
-        <assemblyIdentity name="someAssembly"  
-          publicKeyToken="32ab4ba45e0a69a1"  
-          culture="en-us" />  
-  
-        <bindingRedirect oldVersion="7.0.0.0" newVersion="8.0.0.0" />  
-      </dependentAssembly>  
+  <assemblyIdentity name="someAssembly"  
+    publicKeyToken="32ab4ba45e0a69a1"  
+    culture="en-us" />  
+  <bindingRedirect oldVersion="7.0.0.0" newVersion="8.0.0.0" />  
+</dependentAssembly>  
 ```  
   
 ### Relying on automatic binding redirection  

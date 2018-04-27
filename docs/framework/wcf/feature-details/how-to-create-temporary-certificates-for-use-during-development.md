@@ -71,7 +71,7 @@ When developing a secure service or client using [!INCLUDE[indigo1](../../../../
   
 #### To install a self-signed certificate in the Trusted Root Certification Authorities  
   
-1.  Open the certificate snap-in. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
+1.  Open the certificate snap-in. For more information, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
   
 2.  Open the folder to store the certificate, either the **Local Computer** or the **Current User**.  
   

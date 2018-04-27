@@ -118,7 +118,7 @@ XmlDictionaryReader reader = channel.GetMemberProfile().GetReaderAtBodyContents(
 JsonObject json = new JsonObject(reader);  
 ```  
   
- The `JsonObject` constructor takes a <xref:System.Xml.XmlDictionaryReader>, which is obtained through the <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> method. The reader contains an XML representation of the JSON message received by the client. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the topic [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
+ The `JsonObject` constructor takes a <xref:System.Xml.XmlDictionaryReader>, which is obtained through the <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> method. The reader contains an XML representation of the JSON message received by the client. For more information, see the topic [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
   
  The program produces the following output:  
   

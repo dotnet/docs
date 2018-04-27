@@ -1,14 +1,12 @@
 ---
 title: .NET Core app deployment with CLI tools
 description: Learn .NET Core app deployment with command-line interface (CLI) tools
-keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/18/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.devlang: dotnet
-ms.assetid: 82ebe16d-5e1c-46cc-91e8-71974296429c
 ms.workload: 
   - dotnetcore
 ---

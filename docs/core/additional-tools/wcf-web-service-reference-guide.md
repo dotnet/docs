@@ -4,10 +4,12 @@ description: An overview of the Microsoft WCF Web Service Reference Provider Too
 author: mlacouture
 manager: wpickett
 ms.author: johalex
-ms.date: 01/19/2018
-ms.topic: article
-ms.prod: .net-core
+ms.date: 04/19/2018
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.custom: mvc
+ms.workload: 
+  - dotnetcore
 ---
 # Microsoft WCF Web Service Reference Provider Tool
 
@@ -15,6 +17,10 @@ Over the years, many Visual Studio developers have enjoyed the productivity that
 
 > [!IMPORTANT]
 > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security. 
+
+## Prerequisites
+
+* [Visual Studio 2017 15.5](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) or later versions
 
 ## How to use the extension
 

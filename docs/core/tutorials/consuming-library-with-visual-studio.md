@@ -4,8 +4,8 @@ description: Learn how to call the members in a class library with Visual Studio
 author: BillWagner
 ms.author: wiwagn
 ms.date: 08/07/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 dev_langs: 
   - "csharp"
   - "vb"

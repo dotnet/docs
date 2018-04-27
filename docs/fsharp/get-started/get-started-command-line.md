@@ -4,9 +4,8 @@ description: Learn how to build a simple multi-project solution on F# using the 
 author: cartermp
 ms.author: phcart
 ms.date: 03/26/2018
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
+ms.topic: conceptual
+ms.prod: dotnet-fsharp
 ms.devlang: fsharp
 ---
 # Get started with F# with the .NET Core CLI

@@ -50,7 +50,7 @@ The implementation of client-side validation depends on what kind of client appl
     [*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
 
 -   **Validation.** Breeze documentation.
-    [*http://breeze.github.io/doc-js/validation.html*](http://breeze.github.io/doc-js/validation.html)
+    [*https://breeze.github.io/doc-js/validation.html*](https://breeze.github.io/doc-js/validation.html)
 
 In summary, these are the most important concepts in regards to validation:
 

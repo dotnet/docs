@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Compensation
-Compensation in [!INCLUDE[wf](../../../includes/wf-md.md)] is the mechanism by which previously completed work can be undone or compensated (following the logic defined by the application) when a subsequent failure occurs. This section describes how to use compensation in workflows.  
+Compensation in Windows Workflow Foundation (WF) is the mechanism by which previously completed work can be undone or compensated (following the logic defined by the application) when a subsequent failure occurs. This section describes how to use compensation in workflows.  
   
 ## Compensation vs. Transactions  
  A transaction allows you to combine multiple operations into a single unit of work. Using a transaction gives your application the ability to abort (roll back) all changes executed from within the transaction if any errors occur during any part of the transaction process. However, using transactions may not be appropriate if the work is long running. For example, a travel planning application is implemented as a workflow. The steps of the workflow may consist of booking a flight, waiting for manager approval, and then paying for the flight. This process could take many days and it is not practical for the steps of booking and paying for the flight to participate in the same transaction. In a scenario such as this, compensation could be used to undo the booking step of the workflow if there is a failure later in the processing.  

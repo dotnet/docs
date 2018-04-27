@@ -1,18 +1,13 @@
 ---
 title: Using F# on Azure
 description: Guide to using Azure services with F#
-keywords: Azure, cloud, visual f#, f#, functional programming, .NET, .NET Core
 author: sylvanc
 ms.author: phcart
 ms.date: 09/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
+ms.topic: conceptual
+ms.prod: dotnet-fsharp
 ms.devlang: fsharp
-ms.assetid: FAD4D11E-703A-42D4-9F72-893D9E0F569B
 ---
-
-
 # Using F# on Azure
 
 F# is a superb language for cloud programming and is frequently used to write web applications, cloud services, cloud-hosted microservices, and for scalable data processing.
@@ -118,7 +113,7 @@ Azure VMs may be programmatically deployed and managed from F# scripts by using 
 
 Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure Cosmos DB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
 
-Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directy from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/documentation/templates/).
+Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directy from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/).
 
 ## Other resources
 

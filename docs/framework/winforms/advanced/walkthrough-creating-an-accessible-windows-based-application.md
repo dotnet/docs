@@ -49,7 +49,7 @@ Creating an accessible application has important business implications. Many gov
   
 #### To begin making the application  
   
--   Create a new Windows Application in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).)  
+-   Create a new Windows Application in Visual Basic or Visual C#. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).)  
   
 ## Adding the Controls to the Form  
  When adding the controls to a form, keep in mind the following guidelines to make an accessible application:  

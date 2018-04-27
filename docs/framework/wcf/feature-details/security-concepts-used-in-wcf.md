@@ -28,7 +28,7 @@ ms.workload:
 ## Industry-Wide Security Specifications  
   
 ### Public Key Infrastructure  
- Public Key Infrastructure (PKI) is a system of digital certificates, certification authorities, and other registration authorities that verify and authenticate each party involved in an electronic transaction through the use of public key cryptography. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Windows Server 2008 R2 Certificate Services](http://go.microsoft.com/fwlink/?LinkId=210211).  
+ Public Key Infrastructure (PKI) is a system of digital certificates, certification authorities, and other registration authorities that verify and authenticate each party involved in an electronic transaction through the use of public key cryptography. For more information, see [Windows Server 2008 R2 Certificate Services](http://go.microsoft.com/fwlink/?LinkId=210211).  
   
 ### Kerberos Protocol  
  The *Kerberos protocol* is a specification for creating a security mechanism that authenticates users on a Windows domain. It allows a user to establish a secure context with other entities within a domain. Windows 2000 and later platforms use the Kerberos protocol by default. Understanding the mechanisms of the system is useful when creating a service that will interact with intranet clients. In addition, since the *Web Services Security Kerberos Binding* is widely published, you can use the Kerberos protocol to communicate with Internet clients (that is, the Kerberos protocol is interoperable). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how the Kerberos protocol is implemented in Windows, see  [Microsoft Kerberos](http://go.microsoft.com/fwlink/?LinkId=210212).  

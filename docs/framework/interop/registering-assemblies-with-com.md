@@ -1,13 +1,9 @@
 ---
 title: "Registering Assemblies with COM"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "COM interop, registering assemblies"
@@ -23,7 +19,7 @@ ms.workload:
   - "dotnet"
 ---
 # Registering Assemblies with COM
-You can run a command-line tool called the [Assembly Registration Tool (Regasm.exe)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md) to register or unregister an assembly for use with COM. Regasm.exe adds information about the class to the system registry so COM clients can use the .NET Framework class transparently. The <xref:System.Runtime.InteropServices.RegistrationServices> class provides the equivalent functionality.  
+You can run a command-line tool called the [Assembly Registration Tool (Regasm.exe)](../tools/regasm-exe-assembly-registration-tool.md) to register or unregister an assembly for use with COM. Regasm.exe adds information about the class to the system registry so COM clients can use the .NET Framework class transparently. The <xref:System.Runtime.InteropServices.RegistrationServices> class provides the equivalent functionality.  
   
  A managed component must be registered in the Windows registry before it can be activated from a COM client. The following table shows the keys that Regasm.exe typically adds to the Windows registry. (000000 indicates the actual GUID value.)  
   
@@ -50,7 +46,7 @@ You can run a command-line tool called the [Assembly Registration Tool (Regasm.e
  For the `InprocServer32` subkey, a reference to Mscoree.dll appears in place of a traditional COM type library to indicate that the common language runtime creates the managed object.  
   
 ## See Also  
- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
- [How to: Reference .NET Types from COM](../../../docs/framework/interop/how-to-reference-net-types-from-com.md)  
- [Calling a .NET Object](http://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33)  
- [Deploying an Application for COM Access](http://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce)
+ [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
+ [How to: Reference .NET Types from COM](how-to-reference-net-types-from-com.md)  
+ [Calling a .NET Object](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))  
+ [Deploying an Application for COM Access](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100))

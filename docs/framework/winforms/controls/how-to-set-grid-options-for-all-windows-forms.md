@@ -24,7 +24,7 @@ ms.workload:
   - dotnet
 ---
 # How to: Set Grid Options for All Windows Forms
-As you become used to working in the [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] development environment, you can set preferences for all the forms and projects you work with in the Windows Forms Designer.  
+As you become used to working in the Visual Studio development environment, you can set preferences for all the forms and projects you work with in the Windows Forms Designer.  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

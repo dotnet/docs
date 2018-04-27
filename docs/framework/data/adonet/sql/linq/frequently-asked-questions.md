@@ -28,7 +28,7 @@ The following sections answer some common issues that you might encounter when y
 ## Cannot Connect  
  Q. I cannot connect to my database.  
   
- A. Make sure your connection string is correct and that your [!INCLUDE[ssNoVersion](../../../../../../includes/ssnoversion-md.md)] instance is running. Note also that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] requires the Named Pipes protocol to be enabled. For more information, see [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).  
+ A. Make sure your connection string is correct and that your SQL Server instance is running. Note also that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] requires the Named Pipes protocol to be enabled. For more information, see [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).  
   
 ## Changes to Database Lost  
  Q. I made a change to data in the database, but when I reran my application, the change was no longer there.  
@@ -152,7 +152,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 ## Provider Model  
  Q. Is a public provider model available?  
   
- A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports [!INCLUDE[ssNoVersion](../../../../../../includes/ssnoversion-md.md)] and [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] only.  
+ A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports SQL Server and [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] only.  
   
 ## SQL-Injection Attacks  
  Q. How is [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] protected from SQL-injection attacks?  
@@ -171,7 +171,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 3.  Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck.Never>) to determine whether that is the correct value for your application.  
   
     > [!CAUTION]
-    >  If you are using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] in [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)], your changes might be overwritten.  
+    >  If you are using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] in Visual Studio, your changes might be overwritten.  
   
 ## APTCA  
  Q. Is System.Data.Linq marked for use by partially trusted code?  

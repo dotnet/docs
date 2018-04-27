@@ -25,9 +25,9 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Property Procedures (Visual Basic)
-A property procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements that manipulate a custom property on a module, class, or structure. Property procedures are also known as *property accessors*.  
+A property procedure is a series of Visual Basic statements that manipulate a custom property on a module, class, or structure. Property procedures are also known as *property accessors*.  
   
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides for the following property procedures:  
+ Visual Basic provides for the following property procedures:  
   
 -   A `Get` procedure returns the value of a property. It is called when you access the property in an expression.  
   

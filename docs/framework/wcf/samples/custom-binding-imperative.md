@@ -24,8 +24,8 @@ The sample demonstrates how to write imperative code to define and use custom bi
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  On both the client and the service, a custom binding is created that contains two binding elements (Reliable Session and HTTP):  
-  
-```  
+
+```csharp
 ReliableSessionBindingElement reliableSession = new ReliableSessionBindingElement();  
 reliableSession.Ordered = true;  
   
@@ -34,32 +34,32 @@ httpTransport.AuthenticationScheme = System.Net.AuthenticationSchemes.Anonymous;
 httpTransport.HostNameComparisonMode = HostNameComparisonMode.StrongWildcard;  
   
 CustomBinding binding = new CustomBinding(reliableSession, httpTransport);  
-```  
+```
   
  On the service, the binding is used by adding an endpoint to the ServiceHost:  
-  
-```  
+
+```csharp
 serviceHost.AddServiceEndpoint(typeof(ICalculator), binding, "");  
-```  
-  
+```
+
  On the client, the binding is used by a <xref:System.ServiceModel.ChannelFactory> to create a channel to the service:  
-  
-```  
+
+```csharp
 EndpointAddress address = new EndpointAddress("http://localhost:8000/servicemodelsamples/service");  
 ChannelFactory<ICalculator> channelFactory = new ChannelFactory<ICalculator>(binding, address);  
 ICalculator channel = channelFactory.CreateChannel();  
-```  
-  
+```
+
  This channel is then used to interact with the service:  
-  
-```  
+
+```csharp
 // Call the Add service operation.  
 double value1 = 100.00D;  
 double value2 = 15.99D;  
 double result = channel.Add(value1, value2);  
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);  
-```  
-  
+```
+
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  

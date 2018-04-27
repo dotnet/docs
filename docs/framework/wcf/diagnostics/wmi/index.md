@@ -38,7 +38,7 @@ ms.workload:
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
   
 ## Accessing WMI Data  
- WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, [!INCLUDE[vbprvb](../../../../../includes/vbprvb-md.md)] applications, C++ applications, and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)]. For more information, see [Using WMI](http://go.microsoft.com/fwlink/?LinkId=95183).  
+ WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)]. For more information, see [Using WMI](http://go.microsoft.com/fwlink/?LinkId=95183).  
   
 > [!CAUTION]
 >  If you use the .NET Framework provided methods to programmatically access WMI data, you should be aware that such methods may throw exceptions when the connection is established. The connection is not established during the construction of the <xref:System.Management.ManagementObject> instance, but on the first request involving actual data exchange. Therefore, you should use a `try..catch` block to catch the possible exceptions.  
@@ -155,7 +155,7 @@ ms.workload:
 Whoami /user  
 ```  
   
- This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](http://go.microsoft.com/fwlink/?LinkId=186467) tool from the [Windows 2000 Resource Kit Tools for administrative tasks](http://go.microsoft.com/fwlink/?LinkId=178660). This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [Well Known SIDs](http://go.microsoft.com/fwlink/?LinkId=186468).  
+ This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](http://go.microsoft.com/fwlink/?LinkId=186467) tool from the [Windows 2000 Resource Kit Tools for administrative tasks](http://go.microsoft.com/fwlink/?LinkId=178660). This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. For more information, see [Well Known SIDs](http://go.microsoft.com/fwlink/?LinkId=186468).  
   
 ## Accessing Remote WMI Object Instances  
  If you need to access [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] WMI instances on a remote machine, you must enable packet privacy on the tools that you use for access. The following section describes how to achieve these using the WMI CIM Studio, Windows Management Instrumentation Tester, as well as .NET SDK 2.0.  

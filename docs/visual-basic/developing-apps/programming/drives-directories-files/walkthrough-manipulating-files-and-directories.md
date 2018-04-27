@@ -27,9 +27,9 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Walkthrough: Manipulating Files and Directories in Visual Basic
-This walkthrough provides an introduction to the fundamentals of file I/O in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It describes how to create a small application that lists and examines text files in a directory. For each selected text file, the application provides file attributes and the first line of content. There is an option to write information to a log file.  
+This walkthrough provides an introduction to the fundamentals of file I/O in Visual Basic. It describes how to create a small application that lists and examines text files in a directory. For each selected text file, the application provides file attributes and the first line of content. There is an option to write information to a log file.  
   
- This walkthrough uses members of the `My.Computer.FileSystem Object`, which are available in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. See <xref:Microsoft.VisualBasic.FileIO.FileSystem> for more information. At the end of the walkthrough, an equivalent example is provided that uses classes from the <xref:System.IO> namespace.  
+ This walkthrough uses members of the `My.Computer.FileSystem Object`, which are available in Visual Basic. See <xref:Microsoft.VisualBasic.FileIO.FileSystem> for more information. At the end of the walkthrough, an equivalent example is provided that uses classes from the <xref:System.IO> namespace.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -43,7 +43,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
   
 3.  In the **Name** box, type `FileExplorer` to set the project name, and then click **OK**.  
   
-     [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] adds the project to **Solution Explorer**, and the Windows Forms Designer opens.  
+     Visual Studio adds the project to **Solution Explorer**, and the Windows Forms Designer opens.  
   
 4.  Add the controls in the following table to the form, and set the corresponding values for their properties.  
   

@@ -18,7 +18,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # XML Axis Properties (Visual Basic)
-The topics in this section document the syntax of XML axis properties in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The XML axis properties make it easy to access XML directly in your code.  
+The topics in this section document the syntax of XML axis properties in Visual Basic. The XML axis properties make it easy to access XML directly in your code.  
   
 ## In This Section  
   

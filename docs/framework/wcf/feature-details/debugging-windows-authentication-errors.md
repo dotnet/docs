@@ -74,7 +74,7 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  In load-balancing scenarios, such as Web farms or Web gardens, a common practice is to define a unique account for each application, assign an SPN to that account, and ensure that all of the application's services run in that account.  
   
- To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Kerberos Technical Supplement for Windows](http://go.microsoft.com/fwlink/?LinkID=88330).  
+ To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. For more information, see [Kerberos Technical Supplement for Windows](http://go.microsoft.com/fwlink/?LinkID=88330).  
   
 #### Kerberos Protocol Direct Requires the Service to Run Under a Domain Machine Account  
  This occurs when the `ClientCredentialType` property is set to `Windows` and the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property is set to `false`, as shown in the following code.  

@@ -1,14 +1,12 @@
 ---
 title: Packages, metapackages and frameworks
 description: Learn terminology for packages, metapackages, and frameworks.
-keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.devlang: dotnet
-ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
 ms.workload: 
   - dotnetcore
 ---
@@ -74,6 +72,7 @@ The .NET Standard metapackage is:
 The key .NET Core metapackages are:
 
 - [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) - Describes the libraries that are part of the .NET Core distribution. Establishes the [`.NETCoreApp` framework](https://github.com/dotnet/core-setup/blob/release/1.1.0/pkg/projects/Microsoft.NETCore.App/Microsoft.NETCore.App.pkgproj). Depends on the smaller `NETStandard.Library`.
+- [Microsoft.AspNetCore.All](https://www.nuget.org/packages/Microsoft.AspNetCore.All) - Includes all the supported packages from ASP.NET Core, Entity Framework Core, and internal and third-party dependencies used by ASP.NET Core and Entity Framework Core. See [Microsoft.AspNetCore.All metapackage for ASP.NET Core 2.x](/aspnet/core/fundamentals/metapackage) for more information.
 - [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) - A set of compatibility facades that enable mscorlib-based Portable Class Libraries (PCLs) to run on .NET Core.
 
 ## Frameworks

@@ -44,19 +44,20 @@ A *parameter* allows the calling code to pass a value to the procedure when it c
   
      The first parameter accepts a `customer` object, and `updateCustomer` can directly update the variable passed to `c` because the argument is passed [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md). The procedure cannot change the values of the last two arguments because they are passed [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md).  
   
-     If the calling code does not supply a value for the `level` parameter, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] sets it to the default value of 0.  
+     If the calling code does not supply a value for the `level` parameter, Visual Basic sets it to the default value of 0.  
   
      If the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `Off`, the `As` clause is optional when you define a parameter. However, if any one parameter uses an `As` clause, all of them must use it. If the type checking switch is `On`, the `As` clause is required for every parameter definition.  
   
-     Specifying data types for all your programming elements is known as *strong typing*. When you set `Option Strict On`, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] enforces strong typing. This is strongly recommended, for the following reasons:  
+     Specifying data types for all your programming elements is known as *strong typing*. When you set `Option Strict On`, Visual Basic enforces strong typing. This is strongly recommended, for the following reasons:  
   
     -   It enables IntelliSense support for your variables and parameters. This allows you to see their properties and other members as you type in your code.  
   
     -   It allows the compiler to perform type checking. This helps catch statements that can fail at run time due to errors such as overflow. It also catches calls to methods on objects that do not support them.  
   
-    -   It results in faster execution of your code. One reason for this is that if you do not specify a data type for a programming element, the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler assigns it the `Object` type. Your compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
+    -   It results in faster execution of your code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Your compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
   
-## See Also  
+## See also
+
  [Procedures](./index.md)  
  [Sub Procedures](./sub-procedures.md)  
  [Function Procedures](./function-procedures.md)  
@@ -65,4 +66,4 @@ A *parameter* allows the calling code to pass a value to the procedure when it c
  [Recursive Procedures](./recursive-procedures.md)  
  [Procedure Overloading](./procedure-overloading.md)  
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)
+ [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)  

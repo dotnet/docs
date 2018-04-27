@@ -79,13 +79,13 @@ ms.workload:
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure can impersonate the caller only if the caller is authenticated with credentials that can be mapped to a Windows user account. If the service is configured to authenticate using a credential that cannot be mapped to a Windows account, the service method is not executed.  
   
 > [!NOTE]
->  On [!INCLUDE[wxp](../../../../includes/wxp-md.md)], impersonation fails if a stateful SCT is created, resulting in an <xref:System.InvalidOperationException>. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+>  On [!INCLUDE[wxp](../../../../includes/wxp-md.md)], impersonation fails if a stateful SCT is created, resulting in an <xref:System.InvalidOperationException>. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
   
 ## Impersonation in a Service Method: Imperative Model  
  Sometimes a caller does not need to impersonate the entire service method to function, but for only a portion of it. In this case, obtain the Windows identity of the caller inside the service method and imperatively perform the impersonation. Do this by using the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property of the <xref:System.ServiceModel.ServiceSecurityContext> to return an instance of the <xref:System.Security.Principal.WindowsIdentity> class and calling the <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> method before using the instance.  
   
 > [!NOTE]
->  Be sure to use the [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)]`Using` statement or the C# `using` statement to automatically revert the impersonation action. If you do not use the statement, or if you use a programming language other than [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or C#, be sure to revert the impersonation level. Failure to do this can form the basis for denial of service and elevation of privilege attacks.  
+>  Be sure to use the Visual Basic`Using` statement or the C# `using` statement to automatically revert the impersonation action. If you do not use the statement, or if you use a programming language other than Visual Basic or C#, be sure to revert the impersonation level. Failure to do this can form the basis for denial of service and elevation of privilege attacks.  
   
  [!code-csharp[c_ImpersonationAndDelegation#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_impersonationanddelegation/cs/source.cs#2)]
  [!code-vb[c_ImpersonationAndDelegation#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_impersonationanddelegation/vb/source.vb#2)]  

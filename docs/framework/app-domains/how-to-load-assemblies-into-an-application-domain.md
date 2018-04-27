@@ -54,7 +54,7 @@ There are several ways to load an assembly into an application domain. The recom
   
 ## See Also  
  <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>  
- [Programming with Application Domains](http://msdn.microsoft.com/library/bd36055b-56bd-43eb-b4d8-820c37172131)  
+ [Programming with Application Domains](application-domains.md#programming-with-application-domains)  
  [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
  [Using Application Domains](../../../docs/framework/app-domains/use.md)  
  [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)  

@@ -4,10 +4,10 @@ description: Learn unit test concepts in .NET Core through an interactive experi
 author: billwagner
 ms.author: wiwagn
 ms.date: 09/01/2017
-ms.topic: article
+ms.topic: conceptual
 dev_langs: 
   - "vb"
-ms.prod: .net-core
+ms.prod: dotnet-core
 ms.workload: 
   - dotnetcore
 ---

@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Migration
-This section contains samples that demonstrate how to migrate [!INCLUDE[wf](../../../../includes/wf-md.md)] content written using [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] to [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)].  
+This section contains samples that demonstrate how to migrate Windows Workflow Foundation (WF) content written using [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] to [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)].  
   
 ## In This Section  
  [Using a .NET Framework 3.0 or .NET Framework 3.5 Activity in a .NET Framework 4.5 Workflow](../../../../docs/framework/windows-workflow-foundation/samples/using-a-net-3-0-or-net-3-5-activity-in-a-net-4-5-workflow.md)  

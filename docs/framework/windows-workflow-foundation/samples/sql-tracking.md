@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # SQL Tracking
-This sample demonstrates how to write a custom SQL tracking participant, that writes tracking records to a SQL database. [!INCLUDE[wf](../../../../includes/wf-md.md)] provides workflow tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] workflow tracking, see [Workflow Tracking and Tracing](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md).  
+This sample demonstrates how to write a custom SQL tracking participant, that writes tracking records to a SQL database. Windows Workflow Foundation (WF) provides workflow tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] workflow tracking, see [Workflow Tracking and Tracing](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md).  
   
 #### To use this sample  
   

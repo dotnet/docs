@@ -83,9 +83,9 @@ ms.workload:
 |||SSL or Windows StreamSecurityBindingElement|SSL or Windows StreamSecurityBindingElement|SSL or Windows StreamSecurityBindingElement|  
 |||TcpTransportBindingElement|TcpTransportBindingElement|TcpTransportBindingElement|  
   
- Note that there are many configurable settings on the SecurityBindingElements. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md).  
+ Note that there are many configurable settings on the SecurityBindingElements. For more information, see [SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md).  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md).  
+ For more information, see [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md).  
   
 ## Procedures  
   

@@ -27,7 +27,7 @@ A transaction consists of a single command or a group of commands that execute a
   
  If a transaction involves multiple tables in the same database or server, then explicit transactions in stored procedures often perform better. You can create transactions in SQL Server stored procedures by using the Transact-SQL `BEGIN TRANSACTION`, `COMMIT TRANSACTION`, and `ROLLBACK TRANSACTION` statements. For more information, see SQL Server Books Online.  
   
- Transactions involving different resource managers, such as a transaction between [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] and Oracle, require a distributed transaction.  
+ Transactions involving different resource managers, such as a transaction between SQL Server and Oracle, require a distributed transaction.  
   
 ## In This Section  
  [Local Transactions](../../../../docs/framework/data/adonet/local-transactions.md)  
@@ -37,7 +37,7 @@ A transaction consists of a single command or a group of commands that execute a
  Describes how to perform distributed transactions in ADO.NET.  
   
  [System.Transactions Integration with SQL Server](../../../../docs/framework/data/adonet/system-transactions-integration-with-sql-server.md)  
- Describes <xref:System.Transactions> integration with [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] for working with distributed transactions.  
+ Describes <xref:System.Transactions> integration with SQL Server for working with distributed transactions.  
   
  [Optimistic Concurrency](../../../../docs/framework/data/adonet/optimistic-concurrency.md)  
  Describes optimistic and pessimistic concurrency, and how you can test for concurrency violations.  

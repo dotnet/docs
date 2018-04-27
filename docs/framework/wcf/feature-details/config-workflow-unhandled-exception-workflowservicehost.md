@@ -35,7 +35,7 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
     ```  
   
     > [!NOTE]
-    >  The preceding configuration sample is using simplified configuration. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md).  
+    >  The preceding configuration sample is using simplified configuration. For more information, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md).  
   
      This behavior can be configured in code as shown in the following example.  
   

@@ -247,7 +247,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
   
 ## Compiling the Code  
   
--   Create a [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] or [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] project.  
+-   Create a Visual C# or Visual Basic project.  
   
 -   Add the <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.MaskedTextBox> controls to the form, as described in the previous procedure.  
   

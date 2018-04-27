@@ -33,7 +33,7 @@ As its name suggests, [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wp
  Demonstrates how to create buttons with custom behavior by using the designer features of Expression Blend.  
   
  [Create a Button by Using XAML](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-xaml.md)  
- Demonstrates how to create buttons with custom behavior by using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+ Demonstrates how to create buttons with custom behavior by using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and Visual Studio.  
   
 ## Related Sections  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  

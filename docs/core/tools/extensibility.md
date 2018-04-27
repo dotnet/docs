@@ -1,15 +1,13 @@
 ---
 title: .NET Core CLI extensibility model
 description: Learn how you can extend the Command-line Interface (CLI) tools.
-keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
 ms.date: 04/12/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
 ms.workload: 
   - dotnetcore
 ---
@@ -95,8 +93,8 @@ These kinds of tools have a dependency graph that is completely separate from th
 uses them. The restore process first restores the project's dependencies and then restores each of the tools and
 their dependencies.
 
-You can find richer examples and different combinations of this in the [.NET Core CLI repo](https://github.com/dotnet/cli/tree/rel/1.0.1/TestAssets/TestProjects).
-You can also see the [implementation of tools used](https://github.com/dotnet/cli/tree/rel/1.0.1/TestAssets/TestPackages) in the same repo.
+You can find richer examples and different combinations of this in the [.NET Core CLI repo](https://github.com/dotnet/cli/tree/release/2.1/TestAssets/TestProjects).
+You can also see the [implementation of tools used](https://github.com/dotnet/cli/tree/release/2.1/TestAssets/TestPackages) in the same repo.
 
 ### Custom targets
 NuGet has the capability to [package custom MSBuild targets and props files](/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package). With the move of the .NET Core CLI tools to use MSBuild, the same mechanism of extensibility now applies to .NET Core projects. You would use this type of extensibility when you want to extend the build process, or when you want to access any of the artifacts in the build process, such as generated files, or you want to inspect the configuration under which the build is invoked, etc.

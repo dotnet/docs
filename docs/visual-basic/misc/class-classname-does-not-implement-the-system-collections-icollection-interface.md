@@ -14,11 +14,11 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Class &#39;&lt;classname&gt;&#39; does not implement the System.Collections.ICollection interface
-The class does not implement the `System.Collections.ICollection` interface, which defines size, enumerators and synchronization methods for all collections. It may be necessary to reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+The class does not implement the `System.Collections.ICollection` interface, which defines size, enumerators and synchronization methods for all collections. It may be necessary to reinstall Visual Studio.  
   
 ## To correct this error  
   
-1.  Reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+1.  Reinstall Visual Studio.  
   
 ## See Also  
  <xref:System.Collections.ICollection>

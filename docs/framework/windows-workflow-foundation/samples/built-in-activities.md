@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Built-in Activities
-This section contains samples that demonstrate built-in [!INCLUDE[wf](../../../../includes/wf-md.md)] activities.  
+This section contains samples that demonstrate built-in Windows Workflow Foundation (WF) activities.  
   
 ## In This Section  
  [Fault Handling in a Flowchart Activity Using TryCatch](../../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  

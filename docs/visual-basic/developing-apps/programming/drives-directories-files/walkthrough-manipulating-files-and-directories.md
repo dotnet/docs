@@ -43,7 +43,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in Vis
   
 3.  In the **Name** box, type `FileExplorer` to set the project name, and then click **OK**.  
   
-     [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] adds the project to **Solution Explorer**, and the Windows Forms Designer opens.  
+     Visual Studio adds the project to **Solution Explorer**, and the Windows Forms Designer opens.  
   
 4.  Add the controls in the following table to the form, and set the corresponding values for their properties.  
   

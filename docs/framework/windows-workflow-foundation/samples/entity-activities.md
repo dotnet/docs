@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Entity Activities
-This sample shows how to use the ADO.NET Entity Framework with [!INCLUDE[wf2](../../../../includes/wf2-md.md)] to simplify data access.  
+This sample shows how to use the ADO.NET Entity Framework with Windows Workflow Foundation to simplify data access.  
   
  The ADO.NET Entity Framework enables developers to work with data in the form of domain-specific objects, properties and relationships such as Customers, Orders, Order Details and the relationships between these entities. The ADO.NET Entity Framework does this by providing a level of abstraction that enables programming against a conceptual application model instead of programming directly against a relational storage schema. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the ADO.NET Entity Framework see [ADO.NET Entity Framework](http://go.microsoft.com/fwlink/?LinkId=165549).  
   

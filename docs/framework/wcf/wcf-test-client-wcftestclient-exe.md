@@ -169,9 +169,9 @@ ms.workload:
 ## Closing WCF Test Client  
  You can close [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client in the following ways:  
   
--   On the **File** menu, click **Exit**. Alternatively, in the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client main window, click **Close**. Both of these actions also shut down [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Auto Host and stop the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugging process if [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client was launched by [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+-   On the **File** menu, click **Exit**. Alternatively, in the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client main window, click **Close**. Both of these actions also shut down [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Auto Host and stop the Visual Studio debugging process if [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client was launched by Visual Studio.  
   
--   Right-click the **WCF Service Host** icon in the notification area, and then click **Exit.** This shuts down both [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Auto Host and [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client and stops the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugging process.  
+-   Right-click the **WCF Service Host** icon in the notification area, and then click **Exit.** This shuts down both [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Auto Host and [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client and stops the Visual Studio debugging process.  
   
 ## See Also  
  [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

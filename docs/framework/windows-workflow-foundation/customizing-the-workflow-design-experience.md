@@ -25,7 +25,7 @@ The scenarios for designing custom activities and for rehosting the [!INCLUDE[wf
  Describes how to create new custom activity designers and templates.  
   
  [Rehosting the Workflow Designer](../../../docs/framework/windows-workflow-foundation/rehosting-the-workflow-designer.md)  
- Describes how to re-host the [!INCLUDE[wfd1](../../../includes/wfd1-md.md)] outside of [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] and how to display validation errors.  
+ Describes how to re-host the [!INCLUDE[wfd1](../../../includes/wfd1-md.md)] outside of Visual Studio and how to display validation errors.  
   
  [Using a Custom Expression Editor](../../../docs/framework/windows-workflow-foundation/using-a-custom-expression-editor.md)  
  Describes how to implement a custom expression editor to use with workflow designers rehosted outside of [!INCLUDE[vs2010](../../../includes/vs2010-md.md)].  

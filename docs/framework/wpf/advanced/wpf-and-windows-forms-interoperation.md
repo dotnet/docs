@@ -32,7 +32,7 @@ ms.workload:
   
 <a name="Windows_Presentation_Foundation_Application_Hosting"></a>   
 ## Hosting Windows Forms Controls in WPF  
- The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control hosts a [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] control:  
+ The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control hosts a Windows Forms control:  
   
 -   The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control may host one or more [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls using XAML.  
   
@@ -90,7 +90,7 @@ ms.workload:
   
 <a name="Windows_Forms_Application_Hosting_Windows"></a>   
 ## Hosting WPF Controls in Windows Forms  
- The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] control hosts a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
+ The following interoperation scenarios are supported when a Windows Forms control hosts a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
   
 -   Hosting one or more [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls using code.  
   

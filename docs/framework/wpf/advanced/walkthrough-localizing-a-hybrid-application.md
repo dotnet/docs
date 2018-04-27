@@ -120,7 +120,7 @@ This walkthrough shows you how to localize [!INCLUDE[TLA2#tla_winclient](../../.
   
 #### To assign resource identifiers  
   
-1.  From the Start Menu, open the [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] Command Prompt.  
+1.  From the Start Menu, open the Visual Studio Command Prompt.  
   
 2.  Use the following command to assign resource identifiers to your localizable content.  
   
@@ -147,7 +147,7 @@ This walkthrough shows you how to localize [!INCLUDE[TLA2#tla_winclient](../../.
     LocBaml /parse LocalizingWpfInWf.g.en-US.resources /out:temp.csv  
     ```  
   
-3.  Open the temp.csv file with [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] or another text editor. Replace the string `"Hello"` with its Spanish translation, `"Hola"`.  
+3.  Open the temp.csv file with Visual Studio or another text editor. Replace the string `"Hello"` with its Spanish translation, `"Hola"`.  
   
 4.  Save the temp.csv file.  
   

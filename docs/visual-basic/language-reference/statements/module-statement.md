@@ -28,7 +28,7 @@ Declares the name of a module and introduces the definition of the variables, pr
   
 ## Syntax  
   
-```  
+```vb 
 [ <attributelist> ] [ accessmodifier ]  Module name  
     [ statements ]  
 End Module  

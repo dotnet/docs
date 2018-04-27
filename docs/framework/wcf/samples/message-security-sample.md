@@ -102,11 +102,11 @@ This sample demonstrates how to implement an application that uses the `basicHtt
  The same binding and security details are specified in the client configuration file.  
   
  The identity of the caller is displayed in the service console window by using the following code:  
-  
-```  
+
+```csharp
 Console.WriteLine("Called by {0}", ServiceSecurityContext.Current.PrimaryIdentity.Name);  
-```  
-  
+```
+
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  

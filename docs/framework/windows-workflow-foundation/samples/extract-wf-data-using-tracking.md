@@ -19,7 +19,7 @@ ms.workload:
 This sample demonstrates how to use workflow tracking to extract workflow variables and arguments from activities. It also shows the addition of annotations to tracking records and the extraction of data payload within custom tracking records. The sample uses the Event Tracing for Windows (ETW) tracking participant to extract data from the workflow.  
   
 ## Sample Details  
- [!INCLUDE[wf](../../../../includes/wf-md.md)] provides tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. Along with the workflow tracking records, data within the workflow instance can be extracted from the workflow. The following list details the types of data that can be extracted from tracking records:  
+ Windows Workflow Foundation (WF) provides tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. Along with the workflow tracking records, data within the workflow instance can be extracted from the workflow. The following list details the types of data that can be extracted from tracking records:  
   
 1.  Workflow variables within an activity and tracking records during activity execution.  
   

@@ -26,17 +26,17 @@ This sample demonstrates how to use [!INCLUDE[indigo1](../../../../includes/indi
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample builds upon the AJAX Service Using HTTP POST. As described in the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md) sample, <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is used to host the service.  
-  
-```  
+
+```svc
 <%ServiceHost  
     language=c#  
     Debug="true"  
     Service="Microsoft.Ajax.Samples.CalculatorService  
     Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory"  
 %>  
-```  
-  
- <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> automatically adds a <xref:System.ServiceModel.Description.WebScriptEndpoint> to the service. If no configuration changes need to be made to the endpoint, the \<system.ServiceModel> section can be completely removed from the Web.config file for the service. The Web.config file contains some ASP.NET settings, which are used by ConfigFreeClientPage.aspx. If that were not the case, the entire Web.config file could be removed.  
+```
+
+ <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> automatically adds a <xref:System.ServiceModel.Description.WebScriptEndpoint> to the service. If no configuration changes need to be made to the endpoint, the `<system.ServiceModel>` section can be completely removed from the Web.config file for the service. The Web.config file contains some ASP.NET settings, which are used by ConfigFreeClientPage.aspx. If that were not the case, the entire Web.config file could be removed.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

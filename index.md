@@ -684,11 +684,11 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet-internal/images/hub/machinelearning.svg?branch=ml.net" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/machine-learning.svg?branch=pr-en-us-73" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/dotnet/machine-learning">
+                                                <a href="/dotnet-internal/machine-learning?branch=pr-en-us-73">
                                                     <h3>ML.NET</h3>
                                                     <p>Build custom AI solutions and integrate them into your .NET applications.</p>
                                                 </a>
@@ -703,7 +703,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/i_azure-cognitive-services-color.svg?branch=ml.net" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/i_azure-cognitive-services-color.svg?branch=pr-en-us-73" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -722,7 +722,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/machine-learning.svg?branch=ml.net" alt="" />
+                                                    <img src="/dotnet-internal/images/hub//machine-learning.svg?branch=pr-en-us-73" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

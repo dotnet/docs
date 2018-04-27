@@ -1,23 +1,15 @@
 ---
 title: "Securing State Data"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [.NET Framework], state data"
   - "code security, state data"
   - "secure coding, state data"
   - "state data security"
 ms.assetid: 12671309-2877-43fe-a3df-6863507e712d
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

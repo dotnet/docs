@@ -1,13 +1,7 @@
 ---
 title: "Creating Threads and Passing Data at Start Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "threading [.NET Framework], passing data to threads"
   - "threading [.NET Framework], retrieving data from threads"
 ms.assetid: 52b32222-e185-4f42-91a7-eaca65c0ab6d
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

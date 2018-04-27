@@ -1,13 +1,7 @@
 ---
 title: "Lambda Expressions in PLINQ and TPL"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "Action delegate, creating with lambda expression"
   - "lambda expressions, with Action and Func"
 ms.assetid: 645b2c17-29d0-4ffa-8684-430743cc2f2d
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

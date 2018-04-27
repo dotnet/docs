@@ -1,18 +1,10 @@
 ---
 title: "Processing XML Data In-Memory"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1bbb4d05-ead7-4bda-8ece-f86d35c57ad4
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,13 +1,7 @@
 ---
 title: "Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,10 +18,8 @@ helpviewer_keywords:
   - "threading [Windows Forms], asynchronous features"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 61f676b5-936f-40f6-83ce-f22805ec9c2f
-caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

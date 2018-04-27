@@ -1,13 +1,7 @@
 ---
 title: "Culture-Insensitive String Operations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "culture, culture-insensitive string operations"
   - "case-sensitive comparisons"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "culture-sensitive string operations"
   - "culture-insensitive string operations"
 ms.assetid: e6e2bb94-a95d-44e2-b68c-cfdd1db77784
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

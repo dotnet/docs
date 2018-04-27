@@ -1,12 +1,6 @@
 ---
 title: "Examples of XML Serialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "DataSet class, serializing"
   - "XML Schema, serializing"
 ms.assetid: eec46337-9696-435b-a375-dc5effae6992
-caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

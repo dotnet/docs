@@ -1,21 +1,13 @@
 ---
 title: "ManualResetEvent and ManualResetEventSlim"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], ManualResetEvent class"
   - "ManualResetEvent class, about ManualResetEvent class"
 ms.assetid: 465fdcf9-ba24-4d8d-a43f-d983b7cb0cc6
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

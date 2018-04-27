@@ -1,13 +1,7 @@
 ---
 title: "Thread.Suspend, Garbage Collection, and Safe Points"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "suspending threads"
   - "safe points"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "threading [.NET Framework], garbage collection"
   - "garbage collection, threads"
 ms.assetid: e8f58e17-2714-4821-802a-f8eb3b2baa62
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

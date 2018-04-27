@@ -1,21 +1,13 @@
 ---
 title: "&lt;schemaImporterExtensions&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML serialization, configuration"
   - "schemaImporterExtensions element"
   - "<schemaImporterExtensions> element"
 ms.assetid: 465ef2a0-f909-4ac1-9a56-0ead5c849698
-caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

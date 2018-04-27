@@ -1,13 +1,7 @@
 ---
 title: "The Managed Thread Pool"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "threading [.NET Framework], thread pool"
   - "threading [.NET Framework], pooling"
 ms.assetid: 2be05b06-a42e-4c9d-a739-96c21d673927
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

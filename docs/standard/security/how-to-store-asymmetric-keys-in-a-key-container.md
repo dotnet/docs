@@ -1,13 +1,7 @@
 ---
 title: "How to: Store Asymmetric Keys in a Key Container"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - "encryption [.NET Framework], asymmetric keys"
   - "decryption keys"
 ms.assetid: 0dbcbd8d-0dcf-40e9-9f0c-e3f162d35ccc
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

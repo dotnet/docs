@@ -1,13 +1,7 @@
 ---
 title: "Backtracking in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,10 +16,8 @@ helpviewer_keywords:
   - "strings [.NET Framework], regular expressions"
   - "parsing text with regular expressions, backtracking"
 ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

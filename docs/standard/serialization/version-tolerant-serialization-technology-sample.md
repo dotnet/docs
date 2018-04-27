@@ -1,17 +1,9 @@
 ---
 title: "Version Tolerant Serialization Technology Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2a183664-bfbf-4ff0-96f6-c836284ea916
-caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

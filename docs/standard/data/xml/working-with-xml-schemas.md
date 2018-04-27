@@ -1,18 +1,10 @@
 ---
 title: "Working with XML Schemas"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bbbcc70c-bf9a-4f6a-af72-1bab5384a187
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

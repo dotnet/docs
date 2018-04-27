@@ -1,9 +1,7 @@
 ---
 title: "How to: Specify the Degree of Parallelism in a Dataflow Block"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: e4088541-ee05-40db-95f5-147cfe62fde7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -4,8 +4,6 @@ description: Describes .NET architectural components such as the .NET Standard, 
 author: cartermp
 ms.author: mairaw
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
 ms.workload: 
   - "dotnet"

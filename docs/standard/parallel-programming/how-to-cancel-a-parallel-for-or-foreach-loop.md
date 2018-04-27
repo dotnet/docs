@@ -1,13 +1,7 @@
 ---
 title: "How to: Cancel a Parallel.For or ForEach Loop"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "parallel foreach loop, how to cancel"
   - "parallel for loops, how to cancel"
 ms.assetid: 9d19b591-ea95-4418-8ea7-b6266af9905b
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

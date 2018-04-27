@@ -1,13 +1,7 @@
 ---
 title: "Localizability Review"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,10 +16,8 @@ helpviewer_keywords:
   - "global applications, localizability"
   - "localizing resources"
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

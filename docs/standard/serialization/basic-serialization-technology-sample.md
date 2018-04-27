@@ -1,17 +1,9 @@
 ---
 title: "Basic Serialization Technology Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9d824e16-08d1-4a36-bc7f-2388c1f75f34
-caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

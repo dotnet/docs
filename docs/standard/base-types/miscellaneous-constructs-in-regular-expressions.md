@@ -1,13 +1,7 @@
 ---
 title: "Miscellaneous Constructs in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, miscellaneous constructs"
   - "regular expressions, miscellaneous constructs"
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

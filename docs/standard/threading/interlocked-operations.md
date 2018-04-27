@@ -1,13 +1,7 @@
 ---
 title: "Interlocked Operations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "Interlocked class, about Interlocked class"
   - "threading [.NET Framework], Interlocked class"
 ms.assetid: cbda7114-c752-4f3e-ada1-b1e8dd262f2b
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

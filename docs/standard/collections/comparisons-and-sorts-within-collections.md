@@ -1,13 +1,7 @@
 ---
 title: "Comparisons and Sorts Within Collections"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "Equals method"
   - "collections [.NET Framework], comparisons"
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

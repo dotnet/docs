@@ -1,23 +1,15 @@
 ---
 title: "How to: Handle Exceptions in a PLINQ Query"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "PLINQ queries, how to handle exceptions"
 ms.assetid: 8d56ff9b-a571-4d31-b41f-80c0b51b70a5
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

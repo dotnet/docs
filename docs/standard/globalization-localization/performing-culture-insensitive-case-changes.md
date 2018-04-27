@@ -1,13 +1,7 @@
 ---
 title: "Performing Culture-Insensitive Case Changes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - "String.ToUpper method"
   - "culture parameter"
 ms.assetid: 822d551c-c69a-4191-82f4-183d82c9179c
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

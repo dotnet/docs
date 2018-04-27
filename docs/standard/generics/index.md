@@ -1,13 +1,7 @@
 ---
 title: "Generics in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -32,10 +26,8 @@ helpviewer_keywords:
   - "generic types"
   - "generic type parameters"
 ms.assetid: 2994d786-c5c7-4666-ab23-4c83129fe39c
-caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,13 +1,7 @@
 ---
 title: "How to: Convert Numeric User Input in Web Controls to Numbers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "converting numeric user input to number"
   - "numbers [.NET Framework], converting numeric user input to number"
 ms.assetid: f27ddfb8-7479-4b79-8879-02a3bd8402d4
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

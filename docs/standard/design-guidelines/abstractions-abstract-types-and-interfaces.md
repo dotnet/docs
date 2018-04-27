@@ -1,23 +1,15 @@
 ---
 title: "Abstractions (Abstract Types and Interfaces)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "interfaces [.NET Framework], abstract"
   - "abstract interfaces [.NET Framework]"
   - "abstract types [.NET Framework]"
   - "types [.NET Framework], abstract"
 ms.assetid: 0a632bc7-9b03-44ee-8842-c82f88672a45
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

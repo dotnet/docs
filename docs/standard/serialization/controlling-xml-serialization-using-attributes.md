@@ -1,12 +1,6 @@
 ---
 title: "Controlling XML Serialization Using Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - "serialization, examples"
   - "serialization, attributes"
 ms.assetid: 47d4c39d-30e1-4c7b-8a2e-301325390647
-caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

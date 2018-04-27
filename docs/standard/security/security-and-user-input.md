@@ -1,23 +1,15 @@
 ---
 title: "Security and User Input"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [.NET Framework], user input"
   - "user input, security"
   - "secure coding, user input"
   - "code security, user input"
 ms.assetid: 9141076a-96c9-4b01-93de-366bb1d858bc
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

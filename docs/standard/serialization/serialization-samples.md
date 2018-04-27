@@ -1,17 +1,9 @@
 ---
 title: "Serialization Samples for the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6a56f66d-c80a-43e9-8e50-fb9b61120222
-caps.latest.revision: 3
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

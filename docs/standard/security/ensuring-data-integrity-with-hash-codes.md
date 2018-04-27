@@ -1,13 +1,7 @@
 ---
 title: "Ensuring Data Integrity with Hash Codes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,10 +14,8 @@ helpviewer_keywords:
   - "encryption [.NET Framework], hash"
   - "hash"
 ms.assetid: 33660f33-b70f-4dca-8c87-ab35cfc2961a
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

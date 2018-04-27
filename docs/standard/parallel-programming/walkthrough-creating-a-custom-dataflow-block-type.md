@@ -1,9 +1,7 @@
 ---
 title: "Walkthrough: Creating a Custom Dataflow Block Type"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: a6147146-0a6a-4d9b-ab0f-237b3c1ac691
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

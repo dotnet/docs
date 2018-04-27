@@ -1,13 +1,7 @@
 ---
 title: "Enumeration Format Strings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "enumeration format strings"
   - "formatting [.NET Framework], enumeration"
 ms.assetid: dd1ff672-1052-42cf-8666-4924fb6cd1a1
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

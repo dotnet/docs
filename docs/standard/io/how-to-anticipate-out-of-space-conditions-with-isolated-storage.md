@@ -1,13 +1,7 @@
 ---
 title: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -28,10 +22,8 @@ helpviewer_keywords:
   - "isolated storage, out of space conditions"
   - "data storage using isolated storage, out of space conditions"
 ms.assetid: e35d4535-3732-421e-b1a3-37412e036145
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

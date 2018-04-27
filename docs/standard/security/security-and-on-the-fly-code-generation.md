@@ -1,23 +1,15 @@
 ---
 title: "Security and On-the-Fly Code Generation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "code security, on-the-fly code generation"
   - "on-the-fly code generation"
   - "security [.NET Framework], on-the-fly code generation"
   - "secure coding, on-the-fly code generation"
 ms.assetid: 6d221724-bb21-4d76-90c3-0ee2a2e69be2
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

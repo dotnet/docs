@@ -1,13 +1,7 @@
 ---
 title: "Handling COM Interop Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "error-reference"
 helpviewer_keywords: 
   - "unmanaged code, exceptions"
   - "exceptions, unmanaged code"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "exceptions, COM interop"
   - "COM interop, exceptions"
 ms.assetid: e6104aa8-8e5f-4069-b864-def85579c96c
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

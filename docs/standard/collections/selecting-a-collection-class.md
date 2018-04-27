@@ -1,13 +1,7 @@
 ---
 title: "Selecting a Collection Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "last-in-first-out collections"
   - "first-in-first-out collections"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "Collections classes"
   - "grouping data in collections, selecting collection class"
 ms.assetid: ba049f9a-ce87-4cc4-b319-3f75c8ddac8a
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

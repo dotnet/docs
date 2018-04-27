@@ -1,13 +1,7 @@
 ---
 title: "Role-Based Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "role-based security, about role-based security"
   - "user authentication, principals"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "authentication [.NET Framework], principals"
   - "role-based security, principals"
 ms.assetid: 578cc32b-5654-4d8b-9d8c-ebcbc5c75390
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

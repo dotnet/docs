@@ -1,23 +1,15 @@
 ---
 title: "How to: Listen for Cancellation Requests That Have Wait Handles"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "cancellation, waiting with wait handles"
 ms.assetid: 6e2aa49b-fc84-4bcf-962b-17db98b7edcb
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

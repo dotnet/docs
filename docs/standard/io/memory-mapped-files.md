@@ -1,13 +1,7 @@
 ---
 title: "Memory-Mapped Files"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "memory-mapped files"
   - "inter-process communiation"
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
-caps.latest.revision: 24
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

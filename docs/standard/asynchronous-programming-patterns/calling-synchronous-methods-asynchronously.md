@@ -1,13 +1,7 @@
 ---
 title: "Calling Synchronous Methods Asynchronously"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,10 +20,8 @@ helpviewer_keywords:
   - "waiting for asynchronous calls"
   - "status information [.NET Framework], asynchronous operations"
 ms.assetid: 41972034-92ed-450a-9664-ab93fcc6f1fb
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

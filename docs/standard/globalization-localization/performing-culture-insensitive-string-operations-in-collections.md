@@ -1,13 +1,7 @@
 ---
 title: "Performing Culture-Insensitive String Operations in Collections"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - "SortedList class, culture-insensitive string operations"
   - "culture parameter"
 ms.assetid: 5cdc9396-a64b-4615-a1cd-b605db4c5983
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

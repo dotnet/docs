@@ -1,13 +1,7 @@
 ---
 title: "How to: Enumerate Stores for Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "isolated storage, enumerating stores"
   - "data stores, enumerating"
 ms.assetid: 0fcf279a-f241-48f0-8034-2e3d331f1fcb
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

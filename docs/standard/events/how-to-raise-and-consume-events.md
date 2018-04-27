@@ -1,13 +1,7 @@
 ---
 title: "How to: Raise and Consume Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "raising events"
   - "events [.NET Framework], samples"
 ms.assetid: 42afade7-3a02-4f2e-868b-95845f302f8f
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

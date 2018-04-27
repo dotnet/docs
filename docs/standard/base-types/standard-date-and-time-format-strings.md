@@ -1,13 +1,7 @@
 ---
 title: "Standard Date and Time Format Strings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,10 +14,8 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "date and time strings"
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
-caps.latest.revision: 92
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

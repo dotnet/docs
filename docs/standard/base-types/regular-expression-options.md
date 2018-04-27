@@ -1,13 +1,7 @@
 ---
 title: "Regular Expression Options"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "inline option constructs"
   - "options parameter"
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

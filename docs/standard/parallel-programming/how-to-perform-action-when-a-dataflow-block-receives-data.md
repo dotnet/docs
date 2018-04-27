@@ -1,9 +1,7 @@
 ---
 title: "How to: Perform Action When a Dataflow Block Receives Data"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: fc2585dc-965e-4632-ace7-73dd02684ed3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

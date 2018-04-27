@@ -1,23 +1,15 @@
 ---
 title: "How to: Add and Remove Items from a ConcurrentDictionary"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "thread-safe collections, concurrent dictionary"
 ms.assetid: 81b64b95-13f7-4532-9249-ab532f629598
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

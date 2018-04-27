@@ -1,11 +1,10 @@
 ---
 title: Key takeaways
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools (e-book)_v1.1
-ms.prod: ".net"
+ms.technology: dotnet-ebooks
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

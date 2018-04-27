@@ -1,22 +1,14 @@
 ---
 title: "Task Parallel Library (TPL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET, concurrency in"
   - ".NET, parallel programming in"
   - "Parallel Programming"
 ms.assetid: b8f99f43-9104-45fd-9bff-385a20488a23
-caps.latest.revision: 37
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

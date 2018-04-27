@@ -1,23 +1,15 @@
 ---
 title: "How to: Write a Parallel.For Loop with Thread-Local Variables"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "parallel for loops, how to use local state"
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb
-caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,13 +1,7 @@
 ---
 title: "Event-based Asynchronous Pattern Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,10 +16,8 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 792aa8da-918b-458e-b154-9836b97735f3
-caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

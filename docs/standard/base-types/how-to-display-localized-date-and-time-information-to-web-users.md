@@ -1,13 +1,7 @@
 ---
 title: "How to: Display Localized Date and Time Information to Web Users"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "formatting [.NET Framework], dates"
   - "parsing strings [.NET Framework], date and time strings"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "displaying date and time data"
   - "localized date displays [.NET Framework]"
 ms.assetid: 377fe93c-32be-421a-a30a-be639a46ede8
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

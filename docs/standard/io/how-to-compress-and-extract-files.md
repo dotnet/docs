@@ -1,13 +1,7 @@
 ---
 title: "How to: Compress and Extract Files"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "compression"
   - "compress files"
 ms.assetid: e9876165-3c60-4c84-a272-513e47acf579
-caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

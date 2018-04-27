@@ -1,13 +1,7 @@
 ---
 title: "How to: Implement a Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "providers [.NET Framework], in observer design pattern"
   - "observables [.NET Framework], in observer design pattern"
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

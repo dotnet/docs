@@ -1,23 +1,15 @@
 ---
 title: "Names of Assemblies and DLLs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "names [.NET Framework], DLLs"
   - "names [.NET Framework], assemblies"
   - "assemblies [.NET Framework], names"
   - "DLLs, names"
 ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

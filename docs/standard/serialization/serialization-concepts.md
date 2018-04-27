@@ -1,13 +1,9 @@
 ---
 title: "Serialization concepts"
 ms.date: "08/07/2017"
-ms.prod: ".net"
-ms.topic: "article"
 ms.assetid: e1ff4740-20a1-4c76-a8ad-d857db307054
-caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

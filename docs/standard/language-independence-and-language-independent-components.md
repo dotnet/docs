@@ -1,13 +1,7 @@
 ---
 title: "Language Independence and Language-Independent Components"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "runtime, language interoperability"
   - "common language runtime, language interoperability"
 ms.assetid: 4f0b77d0-4844-464f-af73-6e06bedeafc6
-caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,13 +1,7 @@
 ---
 title: "Writing Custom Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,10 +16,8 @@ helpviewer_keywords:
   - "Inherited property"
   - "attribute classes, declaring"
 ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

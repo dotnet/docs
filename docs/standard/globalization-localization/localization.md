@@ -1,13 +1,7 @@
 ---
 title: "Localization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "culture, localization"
   - "application development [.NET Framework], localization"
@@ -20,10 +14,8 @@ helpviewer_keywords:
   - "localization [.NET Framework], about localization"
   - "localizing resources"
 ms.assetid: 49d520d7-92d7-44ee-bb24-8b615db1d41b
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

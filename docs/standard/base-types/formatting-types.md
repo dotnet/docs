@@ -1,13 +1,7 @@
 ---
 title: "Formatting Types in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -31,10 +25,8 @@ helpviewer_keywords:
   - "custom formatting [.NET Framework]"
   - "strings [.NET Framework], formatting"
 ms.assetid: 0d1364da-5b30-4d42-8e6b-03378343343f
-caps.latest.revision: 43
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

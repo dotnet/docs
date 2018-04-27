@@ -1,13 +1,7 @@
 ---
 title: "How to: Open and Append to a Log File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "log files, appending to"
   - "I/O [.NET Framework], log files"
 ms.assetid: 74423362-1721-49cb-aa0a-e04005f72a06
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

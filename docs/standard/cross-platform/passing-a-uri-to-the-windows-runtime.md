@@ -1,13 +1,7 @@
 ---
 title: "Passing a URI to the Windows Runtime"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "Windows Runtime, .NET Framework support for"
   - "Windows Runtime, passing a URI to"
 ms.assetid: 3eb5ce6f-f304-4f87-8e81-0f25092f5ad4
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,13 +1,7 @@
 ---
 title: "How to: Decrypt XML Elements with Asymmetric Keys"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "XML encryption"
   - "decryption"
 ms.assetid: dd5de491-dafe-4b94-966d-99714b2e754a
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

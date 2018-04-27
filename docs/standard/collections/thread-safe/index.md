@@ -1,20 +1,12 @@
 ---
 title: "Thread-Safe Collections"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, overview"
 ms.assetid: 2e7ca21f-786c-4367-96be-0cf3f3dcc6bd
-caps.latest.revision: 24
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

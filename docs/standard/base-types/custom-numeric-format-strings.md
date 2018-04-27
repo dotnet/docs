@@ -1,13 +1,7 @@
 ---
 title: "Custom Numeric Format Strings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,10 +16,8 @@ helpviewer_keywords:
   - "formatting numbers [.NET Framework]"
   - "format specifiers, custom numeric format strings"
 ms.assetid: 6f74fd32-6c6b-48ed-8241-3c2b86dea5f4
-caps.latest.revision: 54
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,23 +1,15 @@
 ---
 title: "Chaining Tasks by Using Continuation Tasks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "tasks, continuations"
 ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
-caps.latest.revision: 30
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

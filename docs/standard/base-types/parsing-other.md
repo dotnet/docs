@@ -1,13 +1,7 @@
 ---
 title: "Parsing Other Strings in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "parsing strings, other strings"
   - "Boolean data type, parsing strings"
 ms.assetid: d139bc00-3c4e-4d78-ac9a-5c951b258d28
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

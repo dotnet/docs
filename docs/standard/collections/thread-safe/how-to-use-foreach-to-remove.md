@@ -1,23 +1,15 @@
 ---
 title: "How to: Use ForEach to Remove Items in a BlockingCollection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "thread-safe collections, how to enumerate blocking collectoin"
 ms.assetid: 2096103c-22f7-420d-b631-f102bc33a6dd
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

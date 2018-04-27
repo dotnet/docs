@@ -1,13 +1,7 @@
 ---
 title: "How to: Read Text from a File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "data streams, reading text from files"
   - "I/O [.NET Framework], reading text from files"
 ms.assetid: ed180baa-dfc6-4c69-a725-46e87edafb27
-caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

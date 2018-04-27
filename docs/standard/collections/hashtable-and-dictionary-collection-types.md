@@ -1,13 +1,7 @@
 ---
 title: "Hashtable and Dictionary Collection Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Hashtable class, grouping data in collections"
   - "Hashtable collection type"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "hash function"
   - "collections [.NET Framework], Hashtable collection type"
 ms.assetid: bfc20837-3d02-4fc7-8a8f-c5215b6b7913
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

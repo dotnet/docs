@@ -1,17 +1,9 @@
 ---
 title: "XML Serializer Generator Tool (Sgen.exe)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
-caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

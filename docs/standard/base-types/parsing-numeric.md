@@ -1,13 +1,7 @@
 ---
 title: "Parsing Numeric Strings in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "enumerations [.NET Framework], parsing strings"
   - "base types, parsing strings"
 ms.assetid: e39324ee-72e5-42d4-a80d-bf3ee7fc6c59
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

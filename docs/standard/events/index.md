@@ -1,13 +1,7 @@
 ---
 title: "Handling and Raising Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "application development [.NET Framework], events"
   - "events [.NET Framework]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
-caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

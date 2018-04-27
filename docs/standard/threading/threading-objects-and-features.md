@@ -1,21 +1,13 @@
 ---
 title: "Threading Objects and Features"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], features"
   - "managed threading"
 ms.assetid: 239b2e8d-581b-4ca3-992b-0e8525b9321c
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

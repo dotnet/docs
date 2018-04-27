@@ -1,21 +1,13 @@
 ---
 title: "&lt;system.xml.serialization&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "system.xml.serialization element"
   - "XML serialization, configuration"
   - "<system.xml.serialization> element"
 ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
-caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

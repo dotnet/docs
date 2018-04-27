@@ -1,12 +1,6 @@
 ---
 title: "How to: Serialize an Object"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,10 +8,8 @@ helpviewer_keywords:
   - "serializing objects"
   - "objects, serializing steps"
 ms.assetid: a1207d05-32b2-4953-8582-959607991227
-caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

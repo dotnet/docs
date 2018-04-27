@@ -1,13 +1,7 @@
 ---
 title: "Type Conversion Tables in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "widening conversions"
   - "narrowing conversions"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "tables [.NET Framework], type conversions"
   - "data types [.NET Framework], converting"
 ms.assetid: 0ea65c59-85eb-4a52-94ca-c36d3bd13058
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

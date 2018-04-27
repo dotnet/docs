@@ -1,13 +1,7 @@
 ---
 title: "Parsing Strings in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "parsing strings, about parsing strings"
   - "IFormatProvider interface, parsing strings"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "Parse method"
   - "parsing strings"
 ms.assetid: 5e758b41-db93-456b-8999-99b7304b090d
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

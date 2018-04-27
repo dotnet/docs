@@ -1,21 +1,13 @@
 ---
 title: "Managed Threading"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], about threading"
   - "managed threading"
 ms.assetid: 7b46a7d9-c6f1-46d1-a947-ae97471bba87
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

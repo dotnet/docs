@@ -1,23 +1,15 @@
 ---
 title: "How to: Add and Take Items Individually from a BlockingCollection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "thread-safe collections, blocking dictionary"
 ms.assetid: 38f2f3d8-15e5-4bf4-9c83-2b5b6f22bad1
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

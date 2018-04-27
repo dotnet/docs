@@ -1,22 +1,14 @@
 ---
 title: "Synchronizing Data for Multithreading"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "synchronization, threads"
   - "threading [.NET Framework], synchronizing threads"
   - "managed threading"
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

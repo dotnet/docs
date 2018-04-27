@@ -1,12 +1,6 @@
 ---
 title: "Attributes That Control Encoded SOAP Serialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "SOAP, XML serialization"
   - "XML serialization, SOAP"
@@ -14,10 +8,8 @@ helpviewer_keywords:
   - "attributes [.NET Framework], XML serialization"
   - "serialization, attributes"
 ms.assetid: 93ee258c-9c0f-4a08-897c-c10db7a00f91
-caps.latest.revision: 8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

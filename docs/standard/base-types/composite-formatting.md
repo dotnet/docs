@@ -1,13 +1,7 @@
 ---
 title: "Composite Formatting"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "composite formatting"
   - "objects [.NET Framework], formatting multiple objects"
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
-caps.latest.revision: 36
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

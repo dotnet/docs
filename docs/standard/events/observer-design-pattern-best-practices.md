@@ -1,21 +1,13 @@
 ---
 title: "Observer Design Pattern Best Practices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "observer design pattern [.NET Framework], best practices"
   - "best practices [.NET Framework], observer design pattern"
 ms.assetid: c834760f-ddd4-417f-abb7-a059679d5b8c
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

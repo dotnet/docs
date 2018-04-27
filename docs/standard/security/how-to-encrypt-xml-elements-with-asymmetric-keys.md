@@ -1,13 +1,7 @@
 ---
 title: "How to: Encrypt XML Elements with Asymmetric Keys"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,10 +17,8 @@ helpviewer_keywords:
   - "Rijndael"
   - "encryption [.NET Framework], asymmetric keys"
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

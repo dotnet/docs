@@ -4,9 +4,7 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | cha
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
+ms.technology: dotnet-ebooks
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

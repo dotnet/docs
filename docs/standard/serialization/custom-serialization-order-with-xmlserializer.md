@@ -1,17 +1,9 @@
 ---
 title: "Custom Serialization Order With XmlSerializer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 975abd20-2a1d-42db-aed3-e898025ccce7
-caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,23 +1,15 @@
 ---
 title: "Data Parallelism (Task Parallel Library)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "parallelism, data"
 ms.assetid: 3f05f33f-f1da-4b16-81c2-9ceff1bef449
-caps.latest.revision: 25
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

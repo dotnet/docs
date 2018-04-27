@@ -1,13 +1,7 @@
 ---
 title: "How to: Verify the Digital Signatures of XML Documents"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,10 +14,8 @@ helpviewer_keywords:
   - "XML digital signatures"
   - "digital signatures, verifying"
 ms.assetid: a4d5ceb1-b9f5-47e8-9e4a-a2b39110002f
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

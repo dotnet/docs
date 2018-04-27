@@ -1,23 +1,15 @@
 ---
 title: "Mutexes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "wait handles"
   - "threading [.NET Framework], Mutex class"
   - "Mutex class, about Mutex class"
   - "threading [.NET Framework], cross-process synchronization"
 ms.assetid: 9dd06e25-12c0-4a9e-855a-452dc83803e2
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

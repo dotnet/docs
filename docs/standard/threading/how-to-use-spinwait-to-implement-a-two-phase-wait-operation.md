@@ -1,23 +1,15 @@
 ---
 title: "How to: Use SpinWait to Implement a Two-Phase Wait Operation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "SpinWait, how to synchronize two-phase wait"
 ms.assetid: b2ac4e4a-051a-4f65-b4b9-f8e103aff195
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

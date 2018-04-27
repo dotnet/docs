@@ -1,23 +1,15 @@
 ---
 title: "Task-based Asynchronous Programming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "parallelism, task"
 ms.assetid: 458b5e69-5210-45e5-bc44-3888f86abd6f
-caps.latest.revision: 51
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

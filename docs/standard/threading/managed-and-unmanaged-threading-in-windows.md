@@ -1,22 +1,14 @@
 ---
 title: "Managed and Unmanaged Threading in Windows"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], unmanaged"
   - "threading [.NET Framework], managed"
   - "managed threading"
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

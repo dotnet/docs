@@ -1,11 +1,10 @@
 ---
 title: Introduction to the Microsoft platform and tools for containerized apps
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
+ms.technology: dotnet-ebooks
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/21/2017
-ms.topic: article
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,21 +1,13 @@
 ---
 title: "Latency Modes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, intrusiveness"
   - "garbage collection, latency modes"
 ms.assetid: 96278bb7-6eab-4612-8594-ceebfc887d81
-caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

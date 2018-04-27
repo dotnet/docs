@@ -1,21 +1,13 @@
 ---
 title: "Property Design"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "member design guidelines, properties"
   - "properties [.NET Framework], design guidelines"
 ms.assetid: 127cbc0c-cbed-48fd-9c89-7c5d4f98f163
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,13 +1,7 @@
 ---
 title: "Semaphore and SemaphoreSlim"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "counting semaphores"
   - "semaphores"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "SemaphoreSlim class, about SemaphoreSlim class"
   - "threading [.NET Framework], Semaphore class"
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

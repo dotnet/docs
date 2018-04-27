@@ -1,13 +1,7 @@
 ---
 title: "Impersonating and Reverting"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "security [.NET Framework], impersonating Windows accounts"
   - "impersonating Windows accounts"
 ms.assetid: b93d402c-6c28-4f50-b2bc-d9607dc3e470
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

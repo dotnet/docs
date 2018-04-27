@@ -1,13 +1,10 @@
 ---
 title: When to choose .NET Framework for Docker containers
 description: .NET Microservices Architecture for Containerized .NET Applications | When to choose .NET Framework for Docker containers
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
+ms.technology: dotnet-ebooks
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

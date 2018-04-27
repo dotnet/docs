@@ -1,21 +1,13 @@
 ---
 title: "Base Classes for Implementing Abstractions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "abstractions [.NET Framework]"
   - "base classes, abstractions"
 ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

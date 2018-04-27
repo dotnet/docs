@@ -1,9 +1,7 @@
 ---
 title: "How to: Specify a Task Scheduler in a Dataflow Block"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: 27ece374-ed5b-49ef-9cec-b20db34a65e8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

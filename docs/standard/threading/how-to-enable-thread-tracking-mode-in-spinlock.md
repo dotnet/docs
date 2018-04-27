@@ -1,23 +1,15 @@
 ---
 title: "How to: Enable Thread-Tracking Mode in SpinLock"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "SpinLock, how to enable thread-tracking"
 ms.assetid: 62ee2e68-0bdd-4869-afc9-f0a57a11ae01
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

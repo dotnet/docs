@@ -1,13 +1,7 @@
 ---
 title: "App Resources for Libraries That Target Multiple Platforms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "resources, for multiple platforms"
   - "targeting multiple platforms, resources for"
 ms.assetid: 72c76f0b-7255-4576-9261-3587f949669c
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

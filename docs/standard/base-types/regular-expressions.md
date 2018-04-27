@@ -1,13 +1,7 @@
 ---
 title: ".NET Framework Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,10 +20,8 @@ helpviewer_keywords:
   - ".NET Framework regular expressions"
   - "strings [.NET Framework], regular expressions"
 ms.assetid: 521b3f6d-f869-42e1-93e5-158c54a6895d
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

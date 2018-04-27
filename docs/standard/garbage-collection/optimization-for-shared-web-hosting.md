@@ -1,22 +1,14 @@
 ---
 title: "Optimization for Shared Web Hosting"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, Web hosting"
   - "garbage collection, optimizing"
   - "garbage collection, shared Web hosting"
 ms.assetid: be98c0ab-7ef8-409f-8a0d-cb6e5b75ff20
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

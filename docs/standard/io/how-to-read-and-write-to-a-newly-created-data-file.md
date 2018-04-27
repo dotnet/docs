@@ -1,13 +1,7 @@
 ---
 title: "How to: Read and Write to a Newly Created Data File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "I/O [.NET Framework], writing data"
   - "BinaryWriter class, examples"
 ms.assetid: e209d949-31e8-44ea-8e38-87f9093f3093
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

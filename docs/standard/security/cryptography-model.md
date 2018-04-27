@@ -1,21 +1,13 @@
 ---
 title: ".NET Framework Cryptography Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "cryptography [.NET Framework], model"
   - "encryption [.NET Framework], model"
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

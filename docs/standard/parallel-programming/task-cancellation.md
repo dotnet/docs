@@ -1,13 +1,7 @@
 ---
 title: "Task Cancellation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "tasks, cancellation"
   - "asynchronous task cancellation"
 ms.assetid: 3ecf1ea9-e399-4a6a-a0d6-8475f48dcb28
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -4,11 +4,10 @@ description: Modernize Existing .NET Applications With Azure Cloud and Windows C
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
-ms.prod: .net
-ms.topic: article
+ms.technology: dotnet-ebooks
 ms.workload: 
-- "dotnet"
-- "dotnetcore"
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Walkthroughs and technical get started overview
 

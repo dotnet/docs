@@ -1,13 +1,7 @@
 ---
 title: "How to: Encrypt XML Elements with X.509 Certificates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,10 +14,8 @@ helpviewer_keywords:
   - "X.509 certificates"
   - "certificates, X.509 certificates"
 ms.assetid: 761f1c66-631c-47af-aa86-ad9c50cfa453
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

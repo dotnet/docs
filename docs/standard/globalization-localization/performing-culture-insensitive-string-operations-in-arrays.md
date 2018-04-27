@@ -1,22 +1,14 @@
 ---
 title: "Performing Culture-Insensitive String Operations in Arrays"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "culture-insensitive string operations, in arrays"
   - "arrays [.NET Framework], culture-insensitive string operations"
   - "comparer parameter"
 ms.assetid: f12922e1-6234-4165-8896-63f0653ab478
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

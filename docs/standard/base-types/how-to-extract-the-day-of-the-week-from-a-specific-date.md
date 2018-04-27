@@ -1,13 +1,7 @@
 ---
 title: "How to: Extract the Day of the Week from a Specific Date"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -28,10 +22,8 @@ helpviewer_keywords:
   - "DateTimeOffset.ToString method"
   - "full weekday names"
 ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

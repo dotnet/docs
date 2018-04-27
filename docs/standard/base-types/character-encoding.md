@@ -1,13 +1,7 @@
 ---
 title: "Character Encoding in .NET"
-ms.custom: ""
 ms.date: "12/22/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "encoding, choosing"
   - "encoding, fallback strategy"
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
-caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

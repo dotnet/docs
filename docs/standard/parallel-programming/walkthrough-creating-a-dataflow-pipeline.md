@@ -1,9 +1,7 @@
 ---
 title: "Walkthrough: Creating a Dataflow Pipeline"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: 69308f82-aa22-4ac5-833d-e748533b58e8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

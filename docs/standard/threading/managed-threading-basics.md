@@ -1,23 +1,15 @@
 ---
 title: "Managed Threading Basics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "multiple threads"
   - "threading [.NET Framework], multiple threads"
   - "threading [.NET Framework], about threading"
   - "managed threading"
 ms.assetid: b2944911-0e8f-427d-a8bb-077550618935
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

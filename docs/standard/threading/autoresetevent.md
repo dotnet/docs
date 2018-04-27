@@ -1,21 +1,13 @@
 ---
 title: "AutoResetEvent"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], AutoResetEvent class"
   - "AutoResetEvent class"
 ms.assetid: 6d39c48d-6b37-4a9b-8631-f2924cfd9c18
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

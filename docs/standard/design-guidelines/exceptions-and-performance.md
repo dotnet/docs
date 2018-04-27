@@ -1,13 +1,7 @@
 ---
 title: "Exceptions and Performance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "tester-doer pattern"
   - "TryParse pattern"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "exceptions, performance"
   - "throwing exceptions, performance"
 ms.assetid: 3ad6aad9-08e6-4232-b336-0e301f2493e6
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

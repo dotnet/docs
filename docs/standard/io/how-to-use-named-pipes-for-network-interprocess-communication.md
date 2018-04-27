@@ -1,13 +1,7 @@
 ---
 title: "How to: Use Named Pipes for Network Interprocess Communication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - "impersonation [.NET Framework], named pipes"
   - "full duplex communcation [.NET Framework], named pipes"
 ms.assetid: 4e4d7e64-9f1b-4026-98f7-20488ac7b42b
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

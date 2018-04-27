@@ -1,13 +1,7 @@
 ---
 title: "Key Security Concepts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "permissions [.NET Framework]"
   - "security [.NET Framework], about security"
 ms.assetid: 3cfced4f-ea02-4e66-ae98-d69286363e98
-caps.latest.revision: 22
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

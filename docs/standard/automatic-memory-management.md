@@ -1,13 +1,7 @@
 ---
 title: "Automatic Memory Management"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, automatic memory management"
   - "memory, allocating"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "managed heap"
   - "runtime, automatic memory management"
 ms.assetid: d4850de5-fa63-4936-a250-5678d118acba
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,22 +1,14 @@
 ---
 title: "Exception Throwing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "exceptions, throwing"
   - "explicitly throwing exceptions"
   - "throwing exceptions, design guidelines"
 ms.assetid: 5388e02b-52f5-460e-a2b5-eeafe60eeebe
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

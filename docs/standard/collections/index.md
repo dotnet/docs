@@ -1,9 +1,7 @@
 ---
 title: "Collections and Data Structures"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 helpviewer_keywords: 
   - "grouping data in collections"
   - "objects [.NET Framework], grouping in collections"
@@ -12,10 +10,8 @@ helpviewer_keywords:
   - "Collections classes"
   - "collections [.NET Framework]"
 ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
-caps.latest.revision: 36
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

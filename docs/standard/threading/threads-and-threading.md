@@ -1,22 +1,14 @@
 ---
 title: "Threads and Threading"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "multiple threads"
   - "threading [.NET Framework]"
   - "threading [.NET Framework], multiple threads"
 ms.assetid: 5baac3aa-e603-4fa6-9f89-0f2c1084e6b1
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

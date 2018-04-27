@@ -1,13 +1,7 @@
 ---
 title: "How to: Write Text to a File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "streams, writing text to files"
   - "data streams, writing text to files"
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
-caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

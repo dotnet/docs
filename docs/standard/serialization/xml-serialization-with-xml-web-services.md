@@ -1,12 +1,6 @@
 ---
 title: "XML Serialization with XML Web Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,10 +17,8 @@ helpviewer_keywords:
   - "literal XML serialization"
   - "serialization, attributes"
 ms.assetid: a416192f-8102-458e-bc0a-0b8f3f784da9
-caps.latest.revision: 5
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

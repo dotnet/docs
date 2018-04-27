@@ -1,13 +1,7 @@
 ---
 title: "How to: Add or Remove Access Control List Entries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "I/O [.NET Framework], access control list entries"
   - "access control lists [.NET Framework]"
 ms.assetid: 53758b39-bd9b-4640-bb04-cad5ed8d0abf
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

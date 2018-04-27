@@ -1,13 +1,7 @@
 ---
 title: "Cleaning Up Unmanaged Resources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Close method"
   - "Dispose method"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "unmanaged resource cleanup"
   - "Finalize method"
 ms.assetid: a17b0066-71c2-4ba4-9822-8e19332fc213
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

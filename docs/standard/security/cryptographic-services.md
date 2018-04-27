@@ -1,13 +1,7 @@
 ---
 title: "Cryptographic Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "cryptography [.NET Framework]"
   - "pattern of derived class inheritance"
@@ -30,10 +24,8 @@ helpviewer_keywords:
   - "cryptography [.NET Framework], about"
   - "random number generation"
 ms.assetid: f96284bc-7b73-44b5-ac59-fac613ad09f8
-caps.latest.revision: 34
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,13 +1,7 @@
 ---
 title: "How to: Find Existing Files and Directories in Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,10 +17,8 @@ helpviewer_keywords:
   - "locating directories in isolated storage file"
   - "storing data using isolated storage, finding files and directories"
 ms.assetid: eb28458a-6161-4e7a-9ada-30ef93761b5c
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

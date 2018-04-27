@@ -1,13 +1,7 @@
 ---
 title: "Asynchronous File I-O"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,10 +17,8 @@ helpviewer_keywords:
   - "multiple I/O requests"
   - "data streams, synchronous streams"
 ms.assetid: dbdd55e7-d6b9-4f9e-8abb-ab0edd4457f7
-caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

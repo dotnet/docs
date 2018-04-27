@@ -1,13 +1,7 @@
 ---
 title: "How to: Create Files and Directories in Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,10 +14,8 @@ helpviewer_keywords:
   - "stores, creating files and directories"
   - "storing data using isolated storage, creating files and directories"
 ms.assetid: 2ca4d2a4-809b-4f00-bc08-bf4a64d3a5c3
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

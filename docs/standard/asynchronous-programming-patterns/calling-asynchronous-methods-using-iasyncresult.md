@@ -1,13 +1,7 @@
 ---
 title: "Calling Asynchronous Methods Using IAsyncResult"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ending asynchronous operations"
   - "waiting for asynchronous operations"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "IAsyncResult interface, calling asynchronous methods"
   - "stopping asynchronous operations"
 ms.assetid: 07fba116-045b-473c-a0b7-acdbeb49861f
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

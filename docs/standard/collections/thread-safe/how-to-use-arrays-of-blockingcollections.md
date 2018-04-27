@@ -1,23 +1,15 @@
 ---
 title: "How to: Use Arrays of Blocking Collections in a Pipeline"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "thread-safe collections, blocking collections in pipeline"
 ms.assetid: a39c7ec3-3ad7-4f4d-8fe4-b3e9dbabe2ed
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,16 +1,12 @@
 ---
 title: "Steps in the serialization process"
 ms.date: "08/07/2017"
-ms.prod: ".net"
-ms.topic: "article"
 helpviewer_keywords: 
   - "binary serialization, steps"
   - "serialization, steps"
 ms.assetid: 4bcbc883-2a91-418f-b968-6c86a25e9737
-caps.latest.revision: 6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

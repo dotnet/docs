@@ -1,13 +1,7 @@
 ---
 title: "Asynchronous Programming Using Delegates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "BeginInvoke method"
   - "asynchronous programming, delegates"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "delegates [.NET Framework], asynchronous"
   - "synchronous calling in asynchronous manner"
 ms.assetid: 38a345ca-6963-4436-9608-5c9defef9c64
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

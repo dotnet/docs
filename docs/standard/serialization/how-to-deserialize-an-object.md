@@ -1,12 +1,6 @@
 ---
 title: "How to: Deserialize an Object"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,10 +8,8 @@ helpviewer_keywords:
   - "deserializing objects"
   - "objects, deserializing steps"
 ms.assetid: 287129c8-035a-4fea-b7b3-4790057ca076
-caps.latest.revision: 4
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

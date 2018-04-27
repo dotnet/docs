@@ -4,8 +4,7 @@ description: Learn to lift and shift existing applications to the Azure cloud an
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
-ms.prod: .net
-ms.topic: article
+ms.technology: dotnet-ebooks
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

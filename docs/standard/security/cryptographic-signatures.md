@@ -1,13 +1,7 @@
 ---
 title: "Cryptographic Signatures"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,10 +20,8 @@ helpviewer_keywords:
   - "digital signatures, verifying"
   - "signing XML"
 ms.assetid: aa87cb7f-e608-4a81-948b-c9b8a1225783
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

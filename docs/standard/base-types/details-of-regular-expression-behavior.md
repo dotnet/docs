@@ -1,13 +1,7 @@
 ---
 title: "Details of Regular Expression Behavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "regular expressions, behavior"
   - ".NET Framework regular expressions, behavior"
 ms.assetid: 0ee1a6b8-caac-41d2-917f-d35570021b10
-caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

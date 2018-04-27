@@ -1,13 +1,7 @@
 ---
 title: "How to: Use Anonymous Pipes for Local Interprocess Communication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "one-way communication [.NET Framework]"
   - "local computer communication [.NET Framework], pipes"
 ms.assetid: e7773c77-c646-4a01-8a96-a003d59fc4c9
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

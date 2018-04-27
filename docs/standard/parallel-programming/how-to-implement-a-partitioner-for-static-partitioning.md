@@ -1,20 +1,12 @@
 ---
 title: "How to: Implement a Partitioner for Static Partitioning"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, how to create a static partitioner"
 ms.assetid: f4410508-cac6-4ba7-bef1-c5e68b2794f3
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

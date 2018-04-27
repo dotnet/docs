@@ -1,22 +1,14 @@
 ---
 title: "Overview of Synchronization Primitives"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "synchronization, threads"
   - "threading [.NET Framework],synchronizing threads"
   - "managed threading"
 ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

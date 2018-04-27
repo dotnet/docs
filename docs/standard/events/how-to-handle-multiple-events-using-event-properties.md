@@ -1,13 +1,7 @@
 ---
 title: "How to: Handle Multiple Events Using Event Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "event handling [.NET Framework], with multiple events"
   - "events [.NET Framework], multiple"
 ms.assetid: 30047cba-e2fd-41c6-b9ca-2ad7a49003db
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

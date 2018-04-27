@@ -1,13 +1,7 @@
 ---
 title: "How to: Create GenericPrincipal and GenericIdentity Objects"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "Creating GenericPrincipal Objects"
   - "GenericIdentity Objects"
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

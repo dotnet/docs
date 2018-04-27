@@ -1,13 +1,7 @@
 ---
 title: "Using an AsyncCallback Delegate and State Object"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "asynchronous programming, state objects"
   - "IAsyncResult interface, samples"
 ms.assetid: e3e5475d-c5e9-43f0-928e-d18df8ca1f1d
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

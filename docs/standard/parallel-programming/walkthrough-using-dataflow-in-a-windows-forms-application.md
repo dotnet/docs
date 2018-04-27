@@ -1,9 +1,7 @@
 ---
 title: "Walkthrough: Using Dataflow in a Windows Forms Application"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 helpviewer_keywords: 
   - "TPL dataflow library, in Windows Forms"
   - "Task Parallel Library, dataflows"
@@ -11,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

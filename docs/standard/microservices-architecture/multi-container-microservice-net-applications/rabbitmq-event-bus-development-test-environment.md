@@ -1,13 +1,10 @@
 ---
 title: Implementing an event bus with RabbitMQ for the development or test environment
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing an event bus with RabbitMQ for the development or test environment
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
+ms.technology: dotnet-ebooks
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

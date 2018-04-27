@@ -1,13 +1,7 @@
 ---
 title: "Secure Coding Guidelines"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "managed wrapper to native code implementation"
   - "secure coding"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - "security-neutral code"
   - "security [.NET Framework], coding guidelines"
 ms.assetid: 4f882d94-262b-4494-b0a6-ba9ba1f5f177
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

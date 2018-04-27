@@ -1,13 +1,7 @@
 ---
 title: "Using an AsyncCallback Delegate to End an Asynchronous Operation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +11,8 @@ helpviewer_keywords:
   - "AsyncCallback delegate"
   - "stopping asynchronous operations"
 ms.assetid: 9d97206c-8917-406c-8961-7d0909d84eeb
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

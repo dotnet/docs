@@ -1,12 +1,6 @@
 ---
 title: "Attributes That Control XML Serialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "classes, serializing"
   - "XmlSerializer class, serializing"
@@ -15,10 +9,8 @@ helpviewer_keywords:
   - "serialization, attributes"
   - "XML Schema, serializing"
 ms.assetid: 414b820f-a696-4206-b576-2711d85490c7
-caps.latest.revision: 7
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

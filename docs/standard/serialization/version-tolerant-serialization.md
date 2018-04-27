@@ -1,8 +1,6 @@
 ---
 title: "Version tolerant serialization"
 ms.date: "08/08/2017"
-ms.prod: ".net"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,10 +13,8 @@ helpviewer_keywords:
   - "BinaryFormatter class, samples"
   - "serialization, attributes"
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
-caps.latest.revision: 9
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,13 +1,7 @@
 ---
 title: "Common Type System"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - "namespaces [.NET Framework], types"
   - "types, about types"
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
-caps.latest.revision: 25
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

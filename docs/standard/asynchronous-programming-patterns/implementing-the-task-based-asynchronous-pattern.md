@@ -1,10 +1,6 @@
 ---
 title: "Implementing the Task-based Asynchronous Pattern"
 ms.date: "06/14/2017"
-ms.prod: ".net"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,10 +11,8 @@ helpviewer_keywords:
   - "Task-based Asynchronous Pattern, .NET Framework support for"
   - ".NET Framework, asynchronous design patterns"
 ms.assetid: fab6bd41-91bd-44ad-86f9-d8319988aa78
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

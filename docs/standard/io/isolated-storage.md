@@ -1,13 +1,7 @@
 ---
 title: "Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data storage using isolated storage"
   - "stores"
@@ -24,10 +18,8 @@ helpviewer_keywords:
   - "data storage using isolated storage, options"
   - "isolation"
 ms.assetid: aff939d7-9e49-46f2-a8cd-938d3020e94e
-caps.latest.revision: 32
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

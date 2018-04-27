@@ -1,13 +1,7 @@
 ---
 title: "Garbage Collection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "memory, garbage collection"
   - "garbage collection, automatic memory management"
@@ -24,10 +18,8 @@ helpviewer_keywords:
   - "runtime, garbage collection"
   - "garbage collection, about"
 ms.assetid: 22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9
-caps.latest.revision: 36
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

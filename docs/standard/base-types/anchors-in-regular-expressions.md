@@ -1,13 +1,7 @@
 ---
 title: "Anchors in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, anchors"
   - ".NET Framework regular expressions, atomic zero-width assertions"
 ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -79,7 +79,7 @@ ms.workload:
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure can impersonate the caller only if the caller is authenticated with credentials that can be mapped to a Windows user account. If the service is configured to authenticate using a credential that cannot be mapped to a Windows account, the service method is not executed.  
   
 > [!NOTE]
->  On [!INCLUDE[wxp](../../../../includes/wxp-md.md)], impersonation fails if a stateful SCT is created, resulting in an <xref:System.InvalidOperationException>. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+>  On [!INCLUDE[wxp](../../../../includes/wxp-md.md)], impersonation fails if a stateful SCT is created, resulting in an <xref:System.InvalidOperationException>. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
   
 ## Impersonation in a Service Method: Imperative Model  
  Sometimes a caller does not need to impersonate the entire service method to function, but for only a portion of it. In this case, obtain the Windows identity of the caller inside the service method and imperatively perform the impersonation. Do this by using the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property of the <xref:System.ServiceModel.ServiceSecurityContext> to return an instance of the <xref:System.Security.Principal.WindowsIdentity> class and calling the <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> method before using the instance.  

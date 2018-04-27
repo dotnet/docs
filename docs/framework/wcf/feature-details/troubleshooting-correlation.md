@@ -138,7 +138,7 @@ supports the context protocol and has a valid context initialized.
   
  The context information that is used for context correlation can be returned by the <xref:System.ServiceModel.Activities.SendReply> to the <xref:System.ServiceModel.Activities.Receive> activity that initializes the context correlation when using a two-way operation, or it can be specified by the caller if the operation is one-way. If the context is not sent by the caller or returned by the workflow service, then the same <xref:System.ServiceModel.FaultException> described previously will be returned when a subsequent operation is invoked.  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Context Exchange](../../../../docs/framework/wcf/feature-details/context-exchange-correlation.md).  
+ For more information, see [Context Exchange](../../../../docs/framework/wcf/feature-details/context-exchange-correlation.md).  
   
 ## Common Request-Reply Correlation Issues  
  Request-reply correlation is used with a <xref:System.ServiceModel.Activities.Receive>/<xref:System.ServiceModel.Activities.SendReply> pair to implement a two-way operation in a workflow service and with a <xref:System.ServiceModel.Activities.Send>/<xref:System.ServiceModel.Activities.ReceiveReply> pair that invokes a two-way operation in another Web service. When invoking a two-way operation in a WCF service, the service can be either a traditional imperative code-based [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service or it can be a workflow service. To use request-reply correlation a two-way binding must be used, such as <xref:System.ServiceModel.BasicHttpBinding>, and the operations must be two-way.  

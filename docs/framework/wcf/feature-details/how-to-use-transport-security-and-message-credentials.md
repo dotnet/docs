@@ -33,11 +33,11 @@ Securing a service with both transport and message credentials uses the best of 
   
 ### To use the WSHttpBinding with a certificate for transport security (in code)  
   
-1.  Use the HttpCfg.exe tool to bind an SSL certificate to a port on the machine. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
+1.  Use the HttpCfg.exe tool to bind an SSL certificate to a port on the machine. For more information, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 2.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.  
   
-3.  Set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property to an appropriate value. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md).) The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.  
+3.  Set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property to an appropriate value. (For more information, see [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md).) The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.  
   
 4.  Create an instance of the <xref:System.Uri> class with an appropriate base address. Note that the address must use the "HTTPS" scheme and must contain the actual name of the machine and the port number that the SSL certificate is bound to. (Alternatively, you can set the base address in configuration.)  
   
@@ -92,7 +92,7 @@ Securing a service with both transport and message credentials uses the best of 
   
 #### To use the WSHttpBinding  
   
-1.  Configure the computer with an SSL certificate bound to a port. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)). You do not need to set a <`transport`> element value with this configuration.  
+1.  Configure the computer with an SSL certificate bound to a port. (For more information, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)). You do not need to set a <`transport`> element value with this configuration.  
   
 2.  Specify the client credential type for the message-level security. The following example sets the `clientCredentialType` attribute of the <`message`> element to `UserName`.  
   

@@ -46,7 +46,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
   
  The <xref:System.UriTemplate.PathSegmentVariableNames%2A> property contains a collection of the names of the variables used within path segments in the template string.  
   
- <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29> takes a <xref:System.UriTemplate> as a parameter and returns a Boolean value that specifies whether the two templates are equivalent. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the Template Equivalence section later in this topic.  
+ <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29> takes a <xref:System.UriTemplate> as a parameter and returns a Boolean value that specifies whether the two templates are equivalent. For more information, see the Template Equivalence section later in this topic.  
   
  <xref:System.UriTemplate> is designed to work with any URI scheme that conforms to the HTTP URI grammar. The following are examples of supported URI schemes.  
   

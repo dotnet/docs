@@ -59,7 +59,7 @@ X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
 |[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
   
 ## Remarks  
- This configuration element specifies the certificate used to authenticate the client with this element. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
+ This configuration element specifies the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  

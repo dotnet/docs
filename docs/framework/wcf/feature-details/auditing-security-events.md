@@ -36,7 +36,7 @@ Applications created with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
  You can check both audit levels for success or failure, which is known as the *audit behavior*.  
   
 ## Audit Log Location  
- Once you determine an audit level and behavior, you (or an administrator) can specify a location for the audit log. The three choices include: Default, Application, and Security. When you specify Default, the actual log depends on which system you are using and whether the system supports writing to the security log. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Operating System" section later in this topic.  
+ Once you determine an audit level and behavior, you (or an administrator) can specify a location for the audit log. The three choices include: Default, Application, and Security. When you specify Default, the actual log depends on which system you are using and whether the system supports writing to the security log. For more information, see the "Operating System" section later in this topic.  
   
  To write to the Security log requires the `SeAuditPrivilege`. By default, only Local System and Network Service accounts have this privilege. To manage the Security log functions `read` and `delete` requires the `SeSecurityPrivilege`. By default, only administrators have this privilege.  
   
@@ -81,10 +81,10 @@ Applications created with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
 </configuration>  
 ```  
   
- If auditing is enabled and an `auditLogLocation` is not specified, the default log name is "Security" log for the platform supporting writing to the Security log; otherwise, it is "Application" log. Only the [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wv](../../../../includes/wv-md.md)] operating systems support writing to the Security log. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Operating System" section later in this topic.  
+ If auditing is enabled and an `auditLogLocation` is not specified, the default log name is "Security" log for the platform supporting writing to the Security log; otherwise, it is "Application" log. Only the [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wv](../../../../includes/wv-md.md)] operating systems support writing to the Security log. For more information, see the "Operating System" section later in this topic.  
   
 ## Security Considerations  
- If a malicious user knows that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails. To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the Microsoft Support article on viewing and managing event logs by using the Event Viewer in Windows XP available at [How to view and manage event logs in Event Viewer in Windows XP](http://go.microsoft.com/fwlink/?LinkId=89150).  
+ If a malicious user knows that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails. To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information, see the Microsoft Support article on viewing and managing event logs by using the Event Viewer in Windows XP available at [How to view and manage event logs in Event Viewer in Windows XP](http://go.microsoft.com/fwlink/?LinkId=89150).  
   
  Audit events that are written to the Application Log on [!INCLUDE[wxp](../../../../includes/wxp-md.md)] are visible to any authenticated user.  
   

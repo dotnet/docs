@@ -1,17 +1,13 @@
 ---
 title: Discriminated Unions (F#)
 description: Learn how to use F# discriminated unions.
-keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
+ms.prod: dotnet-fsharp
 ms.devlang: fsharp
-ms.assetid: 16e2a011-c785-48c8-859f-79df7f3a0e29 
 ---
-
 # Discriminated Unions
 
 Discriminated unions provide support for values that can be one of a number of named cases, possibly each with different values and types. Discriminated unions are useful for heterogeneous data; data that can have special cases, including valid and error cases; data that varies in type from one instance to another; and as an alternative for small object hierarchies. In addition, recursive discriminated unions are used to represent tree data structures.

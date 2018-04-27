@@ -92,9 +92,15 @@
       "searchScope": [".NET"],
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "apiPlatform": "dotnet",
-      "ms.topic": "article"
+      "ms.topic": "conceptual",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "dotnet/docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html" 
     },
     "fileMetadata": {
+      "feedback_product_url": {
+        "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
+      },
       "ms.prod": {
         "_csharplang/spec/*.md": ".net",
         "_vblang/spec/*.md": ".net"

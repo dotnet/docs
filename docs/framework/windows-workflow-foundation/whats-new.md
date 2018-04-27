@@ -39,7 +39,7 @@ Windows Workflow Foundation (WF) in [!INCLUDE[netfx40_long](../../../includes/ne
 -   New messaging activities such as <xref:System.ServiceModel.Activities.SendContent> and <xref:System.ServiceModel.Activities.ReceiveReply>.  
   
 ## Explicit Activity Data Model  
- [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] includes new options for storing or moving data. Data can be stored in an activity using <xref:System.Activities.Variable>. When moving data in and out of an activity, specialized argument types are used to determine which direction data is moving. These types are <xref:System.Activities.InArgument>, <xref:System.Activities.InOutArgument>, and <xref:System.Activities.OutArgument>. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Windows Workflow Foundation Data Model](../../../docs/framework/windows-workflow-foundation/data-model.md).  
+ [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] includes new options for storing or moving data. Data can be stored in an activity using <xref:System.Activities.Variable>. When moving data in and out of an activity, specialized argument types are used to determine which direction data is moving. These types are <xref:System.Activities.InArgument>, <xref:System.Activities.InOutArgument>, and <xref:System.Activities.OutArgument>. For more information, see [Windows Workflow Foundation Data Model](../../../docs/framework/windows-workflow-foundation/data-model.md).  
   
 ## Enhanced Hosting, Persistence, and Tracking Options  
  [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] contains persistence enhancements such as the following:  
@@ -61,4 +61,4 @@ Windows Workflow Foundation (WF) in [!INCLUDE[netfx40_long](../../../includes/ne
 -   Resuming a pending workflow is now managed using a <xref:System.Activities.Bookmark> object.  
   
 ## Easier Ability to Extend WF Designer Experience  
- The new WF Designer is built on Windows Presentation Foundation (WPF) and provides an easier model to use when rehosting the WF Designer outside of Visual Studio and also provides easier mechanisms for creating custom activity designers. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md).
+ The new WF Designer is built on Windows Presentation Foundation (WPF) and provides an easier model to use when rehosting the WF Designer outside of Visual Studio and also provides easier mechanisms for creating custom activity designers. For more information, see [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md).

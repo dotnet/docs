@@ -28,7 +28,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
 4.  Ensure that any network-specific exceptions are normalized to the appropriate derived class of <xref:System.ServiceModel.CommunicationException>.  
   
-5.  Add a binding element that adds the custom transport to a channel stack. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Adding a Binding Element].  
+5.  Add a binding element that adds the custom transport to a channel stack. For more information, see [Adding a Binding Element].  
   
 ## Creating IDuplexSessionChannel  
  The first step in writing the WSE 3.0 TCP Interoperability Transport is to create an implementation of <xref:System.ServiceModel.Channels.IDuplexSessionChannel> on top of a <xref:System.Net.Sockets.Socket>. `WseTcpDuplexSessionChannel` derives from <xref:System.ServiceModel.Channels.ChannelBase>. The logic of sending a message consists of two main pieces: (1) Encoding the message into bytes, and (2) framing those bytes and sending them on the wire.  

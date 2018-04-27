@@ -29,7 +29,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
   
  Normally, when passing parameters and return values between a client and a service, both endpoints share all of the data contracts of the data to be transmitted. However, this is not the case in the following circumstances:  
   
--   The sent data contract is derived from the expected data contract. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the section about inheritance in [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)). In that case, the transmitted data does not have the same data contract as expected by the receiving endpoint.  
+-   The sent data contract is derived from the expected data contract. For more information, see the section about inheritance in [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)). In that case, the transmitted data does not have the same data contract as expected by the receiving endpoint.  
   
 -   The declared type for the information to be transmitted is an interface, as opposed to a class, structure, or enumeration. Therefore, it cannot be known in advance which type that implements the interface is actually sent and therefore, the receiving endpoint cannot determine in advance the data contract for the transmitted data.  
   

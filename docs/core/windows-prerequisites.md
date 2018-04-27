@@ -4,8 +4,8 @@ description: Learn what dependencies you need on your Windows machine to develop
 author: JRAlexander
 ms.author: johalex
 ms.date: 04/24/2018
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.workload: 
   - dotnetcore
 ---

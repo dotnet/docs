@@ -49,20 +49,20 @@ This topic describes the fundamental programming tasks used to create a secure [
   
          Message security means that every message includes the necessary headers and data to keep the message secure. Because the composition of the headers varies, you can include any number of credentials. This becomes a factor if you are interoperating with other services that demand a specific credential type that a transport mechanism can't supply, or if the message must be used with more than one service, where each service demands a different credential type.  
   
-         [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md).  
+         For more information, see [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md).  
   
     3.  `TransportWithMessageCredential`  
   
          This choice uses the transport layer to secure the message transfer, while every message includes the rich credentials other services need. This combines the performance advantage of transport security with the rich credentials advantage of message security. This is available with the following bindings: <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WSFederationHttpBinding>, <xref:System.ServiceModel.NetPeerTcpBinding>, and <xref:System.ServiceModel.WSHttpBinding>.  
   
-3.  If you decide to use transport security for HTTP (in other words, HTTPS), you must also configure the host with an SSL certificate and enable SSL on a port. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+3.  If you decide to use transport security for HTTP (in other words, HTTPS), you must also configure the host with an SSL certificate and enable SSL on a port. For more information, see [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
 4.  If you are using the <xref:System.ServiceModel.WSHttpBinding> and do not need to establish a secure session, set the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property to `false`.  
   
      A secure session occurs when a client and service create a channel using a symmetric key (both client and server use the same key for the length of a conversation, until the dialog is closed).  
   
 ## Setting the Client Credential Type  
- Select a client credential type as appropriate. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md). The following client credential types are available:  
+ Select a client credential type as appropriate. For more information, see [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md). The following client credential types are available:  
   
 -   `Windows`  
   

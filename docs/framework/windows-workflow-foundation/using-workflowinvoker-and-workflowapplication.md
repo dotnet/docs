@@ -30,7 +30,7 @@ Windows Workflow Foundation (WF) provides several methods of hosting workflows. 
 > [!NOTE]
 >  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
- <xref:System.Activities.WorkflowInvoker> also provides asynchronous versions of the invoke method. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> and <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A>.  
+ <xref:System.Activities.WorkflowInvoker> also provides asynchronous versions of the invoke method. For more information, see <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> and <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A>.  
   
 ### Setting Input Arguments of a Workflow  
  Data can be passed into a workflow using a dictionary of input parameters, keyed by argument name, that map to the input arguments of the workflow. In this example, a <xref:System.Activities.Statements.WriteLine> is invoked and the value for its <xref:System.Activities.Statements.WriteLine.Text%2A> argument is specified using the dictionary of input parameters.  

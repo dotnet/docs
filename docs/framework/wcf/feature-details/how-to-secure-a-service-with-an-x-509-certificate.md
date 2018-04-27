@@ -27,7 +27,7 @@ Securing a service with an X.509 certificate is a basic technique that most bind
   
 ### To configure a service with a certificate using code  
   
-1.  Create the service contract and the implemented service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md).  
+1.  Create the service contract and the implemented service. For more information, see [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md).  
   
 2.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set its security mode to <xref:System.ServiceModel.SecurityMode.Message>, as shown in the following code.  
   

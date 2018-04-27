@@ -50,7 +50,7 @@ ms.workload:
 |Windows|Allows SOAP message exchanges to occur under the security context established with a Windows credential.|  
 |Username|Allows the service to require that the client be authenticated with a user name credential. Note that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not allow any cryptographic operations with user names, such as generating a signature or encrypting data. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ensures that the transport is secured when using user name credentials.|  
 |Certificate|Allows the service to require that the client be authenticated using an X.509 certificate.|  
-|Issued Token|A custom token type configured according to a security policy. The default token type is Security Assertions Markup Language (SAML). The token is issued by a secure token service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
+|Issued Token|A custom token type configured according to a security policy. The default token type is Security Assertions Markup Language (SAML). The token is issued by a secure token service. For more information, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
   
 ### Negotiation Model of Service Credentials  
  *Negotiation* is the process of establishing trust between a client and a service by exchanging credentials. The process is performed iteratively between the client and the service, so as to disclose only the information necessary for the next step in the negotiation process. In practice, the end result is the delivery of a service's credential to the client to be used in subsequent operations.  
@@ -72,7 +72,7 @@ ms.workload:
  Depending on whether you are programming a service or a client, the method for setting the credential value differs slightly.  
   
 ### Setting Service Credentials  
- If you are using transport mode, and you are using HTTP as the transport, you must use either Internet Information Services (IIS) or configure the port with a certificate. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md) and [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+ If you are using transport mode, and you are using HTTP as the transport, you must use either Internet Information Services (IIS) or configure the port with a certificate. For more information, see [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md) and [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
  To provision a service with credentials in code, create an instance of the <xref:System.ServiceModel.ServiceHost> class and specify the appropriate credential using the <xref:System.ServiceModel.Description.ServiceCredentials> class, accessed through the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property.  
   

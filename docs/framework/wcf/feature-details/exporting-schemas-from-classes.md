@@ -51,9 +51,9 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
 ## Export Options  
  You can set the <xref:System.Runtime.Serialization.XsdDataContractExporter.Options%2A> property of the <xref:System.Runtime.Serialization.XsdDataContractExporter> to an instance of the <xref:System.Runtime.Serialization.ExportOptions> class to control various aspects of the export process. Specifically, you can set the following options:  
   
--   <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A>. This collection of `Type` represents the known types for the types being exported. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).) These known types are exported on every `Export` call in addition to the types passed to the `Export` method.  
+-   <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A>. This collection of `Type` represents the known types for the types being exported. (For more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).) These known types are exported on every `Export` call in addition to the types passed to the `Export` method.  
   
--   <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A>. An <xref:System.Runtime.Serialization.IDataContractSurrogate> can be supplied through this property that will customize the export process. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
+-   <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A>. An <xref:System.Runtime.Serialization.IDataContractSurrogate> can be supplied through this property that will customize the export process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
   
 ## Helper Methods  
  In addition to its primary role of exporting schema, the `XsdDataContractExporter` provides several useful helper methods that provide information about types. These include:  

@@ -103,7 +103,7 @@ ms.workload:
  In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], access control features are provided through integration with the common language runtime (CLR) <xref:System.Security.Permissions.PrincipalPermissionAttribute> and through a set of APIs known as the *identity model*. For details about access control and claims-based authorization, see [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md).  
   
 ### Auditing  
- *Auditing* is the logging of security events to the Windows event log. You can log security-related events, such as authentication failures (or successes). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md). For programming details, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md).  
+ *Auditing* is the logging of security events to the Windows event log. You can log security-related events, such as authentication failures (or successes). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md). For programming details, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md).  
   
 ## See Also  
  <xref:System.Security.Permissions.PrincipalPermissionAttribute>  

@@ -96,7 +96,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.Ser
   
 11. Optional. Add an `<identity>` child element and specify the identity of the security token service  
   
-12. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+12. For more information, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
 13. Required on the client if no local issuer is specified; not used on the service. Create a [\<binding>](../../../../docs/framework/misc/binding.md) element in the bindings section that can be used to communicate with the security token service. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating a binding, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
   

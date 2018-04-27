@@ -169,7 +169,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
   
  Retrieve a particular header using the <xref:System.ServiceModel.Channels.MessageHeaders.FindHeader%2A> method. This method takes the name and namespace of the header to find, and returns its index. If the header occurs more than once, an exception is thrown. If the header is not found, it returns -1.  
   
- In the SOAP header model, headers can have an `Actor` value that specifies the intended recipient of the header. The most basic `FindHeader` overload searches only headers intended for the ultimate receiver of the message. However, another overload enables you to specify which `Actor` values are included in the search. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the SOAP specification.  
+ In the SOAP header model, headers can have an `Actor` value that specifies the intended recipient of the header. The most basic `FindHeader` overload searches only headers intended for the ultimate receiver of the message. However, another overload enables you to specify which `Actor` values are included in the search. For more information, see the SOAP specification.  
   
  A <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> method is provided to copy headers from a <xref:System.ServiceModel.Channels.MessageHeaders> collection to an array of <xref:System.ServiceModel.Channels.MessageHeaderInfo> objects.  
   

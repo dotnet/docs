@@ -684,7 +684,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet-internal/images/hub/machine-learning.svg?branch=pr-en-us-73" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/swimlane-machine-learning-brain-lightbulb.svg?branch=pr-en-us-73" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -703,7 +703,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet-internal/images/hub/i_azure-cognitive-services-color.svg?branch=pr-en-us-73" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/swimlane-cognitive-services.svg?branch=pr-en-us-73" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -722,7 +722,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet-internal/images/hub//machine-learning.svg?branch=pr-en-us-73" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/swimlane-azure-machine-learning.svg?branch=pr-en-us-73" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

@@ -727,7 +727,7 @@ ms.custom: "updateeachrelease"
                                             </div>
                                             <div class="cardText">
                                                 <a href="/azure/machine-learning">
-                                                    <h3>Machine Learning</h3>
+                                                    <h3>Azure Machine Learning</h3>
                                                     <p>Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management.</p>
                                                 </a>
                                             </div>

@@ -1,17 +1,13 @@
 ---
 title: Tuples (F#)
 description: Learn about the F# tuple, a grouping of unnamed but ordered values, possibly of different types.
-keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
+ms.prod: dotnet-fsharp
 ms.devlang: fsharp
-ms.assetid: 35069073-9a82-410f-8dea-912e2a152e6d 
 ---
-
 # Tuples
 
 A *tuple* is a grouping of unnamed but ordered values, possibly of different types.  Tuples can either be reference types or structs.

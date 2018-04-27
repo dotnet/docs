@@ -5,8 +5,7 @@ author: cartermp
 ms.author: phcart
 ms.date: 04/19/2018
 ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
+ms.prod: dotnet-fsharp
 ms.devlang: fsharp
 ---
 # Match expressions

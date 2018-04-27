@@ -218,14 +218,14 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/netcore.svg" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/netcore.svg?branch=master" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/machine-learning">ML.NET Guide</a></h3>
-                                                <p><a href="/dotnet/machine-learning/tutorials">Tutorials</a></p>
-                                                <p><a href="/dotnet/machine-learning/resources">Resources</a></p>
-                                                <p><a href="/dotnet/machine-learning/resources/glossary">Glossary</a></p>
+                                                <h3><a href="/dotnet-internal/machine-learning?branch=pr-en-us-73">ML.NET Guide</a></h3>
+                                                <p><a href="/dotnet-internal/machine-learning/tutorials?branch=pr-en-us-73">Tutorials</a></p>
+                                                <p><a href="/dotnet-internal/machine-learning/resources?branch=pr-en-us-73">Resources</a></p>
+                                                <p><a href="/dotnet-internal/machine-learning/resources/glossary?branch=pr-en-us-73">Glossary</a></p>
                                             </div>
                                         </div>
                                     </div>

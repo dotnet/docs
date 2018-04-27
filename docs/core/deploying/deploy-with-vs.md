@@ -1,14 +1,12 @@
 ---
 title: .NET Core app deployment with Visual Studio
 description: Learn .NET Core app deployment with Visual Studio
-keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/18/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.devlang: dotnet
-ms.assetid: 01049a21-fd50-4419-9ab2-0e4a2e091050
 ms.workload: 
   - dotnetcore
 ---

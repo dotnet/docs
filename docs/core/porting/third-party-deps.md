@@ -4,9 +4,8 @@ description: Learn how to analyze third-party dependencies in order to port your
 author: cartermp
 ms.author: mairaw
 ms.date: 02/15/2018
-ms.topic: article
-ms.prod: .net-core
-ms.assetid: b446e9e0-72f6-48f6-92c6-70ad0ce3f86a
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.workload: 
   - dotnetcore
 ---

@@ -182,11 +182,11 @@
   
  When the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> method is overridden, follow these guidelines:  
   
--   When the security token passed into the `token` parameter cannot be validated, throw the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
+-   When the security token passed into the `token` parameter cannot be validated, throw a <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
   
 -   When there are no authorization policies in effect for this application, return an empty <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of type <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.  
   
- When `null` is returned by this method, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] throws the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
+ When this method returns `null`, Windows Communication Foundation throws a <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
   
  The <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken%2A> method.  
   

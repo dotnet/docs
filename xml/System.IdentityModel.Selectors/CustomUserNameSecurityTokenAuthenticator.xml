@@ -88,7 +88,7 @@
   
  When there are no authorization policies in effect for this application, return an empty <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of type <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.  
   
- When `null` is returned from the <xref:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] throws the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException>.  
+ When the <xref:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method returns `null`, Windows Communication Foundation throws a <xref:System.IdentityModel.Tokens.SecurityTokenValidationException>.  
   
  ]]></format>
         </remarks>

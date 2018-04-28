@@ -252,7 +252,7 @@
   
 -   When there are no authorization policies in effect for this application, return an empty <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of type <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.  
   
- When `null` is returned by this method, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] throws the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
+ When this method returns `null`, Windows Communication Foundation throws a <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
   
  The <xref:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.ValidateTokenCore%2A> method calls the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%28System.Security.Cryptography.X509Certificates.X509Certificate2%29> method of the validation method specified in the constructor to authenticate the `token` parameter.  
   

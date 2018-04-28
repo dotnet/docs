@@ -20,7 +20,7 @@
 ## Remarks  
  Typically, the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> is not used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token using the distinguished name of the certificate issuer and the X.509 certificate's serial number. The <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties represent the distinguished name of the certificate issuer and the X.509 certificate's serial number, respectively.  
   
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
+ Windows Communication Foundation supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
   
 -   <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>  
   

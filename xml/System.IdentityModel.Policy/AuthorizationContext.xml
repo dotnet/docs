@@ -213,7 +213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] reserves two properties: `Identities` and `Principal`. The `Identities` property is used by an <xref:System.IdentityModel.Policy.IAuthorizationPolicy> to specify the <xref:System.Collections.Generic.IList%601> of one or more identities that are related to the <xref:System.IdentityModel.Policy.AuthorizationContext>. The `Principal` property is used by an <xref:System.IdentityModel.Policy.IAuthorizationPolicy> to specify the <xref:System.Security.Principal.IPrincipal> that is associated with an <xref:System.IdentityModel.Policy.AuthorizationContext>.  
+ Windows Communication Foundation reserves two properties: `Identities` and `Principal`. The `Identities` property is used by an <xref:System.IdentityModel.Policy.IAuthorizationPolicy> to specify the <xref:System.Collections.Generic.IList%601> of one or more identities that are related to the <xref:System.IdentityModel.Policy.AuthorizationContext>. The `Principal` property is used by an <xref:System.IdentityModel.Policy.IAuthorizationPolicy> to specify the <xref:System.Security.Principal.IPrincipal> that is associated with an <xref:System.IdentityModel.Policy.AuthorizationContext>.  
   
  ]]></format>
         </remarks>

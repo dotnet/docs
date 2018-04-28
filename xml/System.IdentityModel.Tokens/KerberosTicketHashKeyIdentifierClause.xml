@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers.  However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] processes and consumes incoming SOAP messages that contain implied derived key identifiers.  
+ Windows Communication Foundation (WCF) does not support the creation of implied derived key identifiers.  However, WCF processes and consumes incoming SOAP messages that contain implied derived key identifiers.  
   
  ]]></format>
         </remarks>

@@ -20,7 +20,7 @@
 ## Remarks  
  Override the <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator> class to authenticate security tokens based on a user name and password.  
   
- The [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] ships with the following classes that provide support for authenticating <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens.  
+ Windows Communication Foundation ships with the following classes that provide support for authenticating <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens.  
   
 |Type|Description|  
 |----------|-----------------|  
@@ -154,7 +154,7 @@
   
 -   When there are no authorization policies in effect for this application, return an empty <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of type <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.  
   
- When `null` is returned by this method, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] throws the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
+ When this method returns `null`, Windows Communication Foundation throws a <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
   
    
   

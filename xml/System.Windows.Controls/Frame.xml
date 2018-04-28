@@ -47,15 +47,15 @@
 > [!CAUTION]
 >  When the <xref:System.Windows.Controls.Frame> control navigates to HTML content, the <xref:System.Windows.Controls.Frame> control internally instantiates the native WebBrowser ActiveX control. WPF enables security features by applying feature controls to the WebBrowser ActiveX control. The feature controls that are applied differ for XBAPs and stand-alone applications. Some applications should apply additional feature controls to prevent malicious content from running. For more information, see the "WebBrowser Control and Feature Controls" section in [Security (WPF)](~/docs/framework/wpf/security-wpf.md) and [WebBrowser Control Overviews and Tutorials](http://go.microsoft.com/fwlink/?LinkId=179388).  
   
- Content can be any type of [!INCLUDE[TLA2#tla_winfx](~/includes/tla2sharptla-winfx-md.md)] object and [!INCLUDE[TLA#tla_html](~/includes/tlasharptla-html-md.md)] files. In general, however, pages are the preferred the way to package content for navigation (see <xref:System.Windows.Controls.Page>).  
+ Content can be any type of .NET Framework object and HTML files. In general, however, pages are the preferred the way to package content for navigation (see <xref:System.Windows.Controls.Page>).  
   
- Content can be navigated to by setting the <xref:System.Windows.Controls.Frame.Source%2A> property with the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the desired content. Additionally, content can be navigated to by using one of the following overloads of the <xref:System.Windows.Controls.Frame.Navigate%2A> method:  
+ Content can be navigated to by setting the <xref:System.Windows.Controls.Frame.Source%2A> property with the URI for the desired content. Additionally, content can be navigated to by using one of the following overloads of the <xref:System.Windows.Controls.Frame.Navigate%2A> method:  
   
 -   <xref:System.Windows.Controls.Frame.Navigate%28System.Uri%29>  
   
 -   <xref:System.Windows.Controls.Frame.Navigate%28System.Uri%2CSystem.Object%29>  
   
- When content is navigated to by [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)], <xref:System.Windows.Controls.Frame> returns an object that contains the content. Alternatively, content can be navigated to by using one of the <xref:System.Windows.Controls.Frame.Navigate%2A> method overloads that accepts an object:  
+ When content is navigated to by URI, <xref:System.Windows.Controls.Frame> returns an object that contains the content. Alternatively, content can be navigated to by using one of the <xref:System.Windows.Controls.Frame.Navigate%2A> method overloads that accepts an object:  
   
 -   <xref:System.Windows.Controls.Frame.Navigate%28System.Object%29>  
   
@@ -83,17 +83,17 @@
   
  ![Page navigation flow chart](~/add/media/navigationoverviewfigure11.png "Page navigation flow chart")  
   
- During or after a navigation, <xref:System.Windows.Controls.Frame> provides information about the content that is being navigated to, including the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the content being navigated to (<xref:System.Windows.Controls.Frame.Source%2A>), the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the current content (<xref:System.Windows.Controls.Frame.CurrentSource%2A>), and an object that contains the content that was navigated to (<xref:System.Windows.Controls.ContentControl.Content%2A>).  
+ During or after a navigation, <xref:System.Windows.Controls.Frame> provides information about the content that is being navigated to, including the URI of the content being navigated to (<xref:System.Windows.Controls.Frame.Source%2A>), the URI of the current content (<xref:System.Windows.Controls.Frame.CurrentSource%2A>), and an object that contains the content that was navigated to (<xref:System.Windows.Controls.ContentControl.Content%2A>).  
   
  When content is navigated to, <xref:System.Windows.Controls.Frame> records the navigation as an entry in navigation history. An entry is added to back navigation history when either a new navigation occurs, by calling the <xref:System.Windows.Controls.Frame.Navigate%2A> method, or by navigating to an entry in forward navigation history, by calling <xref:System.Windows.Controls.Frame.GoForward%2A>. An entry is added to forward navigation history by navigating to an entry in back navigation history, by calling <xref:System.Windows.Controls.Frame.GoBack%2A>. <xref:System.Windows.Controls.Frame.CanGoBack%2A> and <xref:System.Windows.Controls.Frame.CanGoForward%2A> report whether there are entries in back and forward navigation history, respectively.  
   
- The first time that one piece of content is navigated to from another piece of content, <xref:System.Windows.Controls.Frame> automatically displays a navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that allows users to navigate back and forward through navigation history. You can configure when the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] is shown by setting the <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> property.  
+ The first time that one piece of content is navigated to from another piece of content, <xref:System.Windows.Controls.Frame> automatically displays a navigation UI that allows users to navigate back and forward through navigation history. You can configure when the navigation UI is shown by setting the <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> property.  
   
  By default, <xref:System.Windows.Controls.Frame> will use its own navigation history only if a parent navigator (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>) with its own navigation history cannot be found. This means that navigation history entries for the frame are mingled with navigation history entries for the parent navigator. To specify that a <xref:System.Windows.Controls.Frame> manages its own navigation history, set the <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property to <xref:System.Windows.Navigation.JournalOwnership.OwnsJournal>.  
   
  The most recent entry in back navigation history can be removed by calling <xref:System.Windows.Controls.Frame.RemoveBackEntry%2A>.  
   
- <xref:System.Windows.Controls.Frame> does not store an instance of a content object in navigation history. Instead, <xref:System.Windows.Controls.Frame> creates a new instance of the content object each time it is navigated to by using navigation history. This behavior is designed to avoid excessive memory consumption when large numbers and large pieces of content are being navigated to. Consequently, the state of the content is not remembered from one navigation to the next. However, [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] provides several techniques by which you can store a state for a piece of content in navigation history.  
+ <xref:System.Windows.Controls.Frame> does not store an instance of a content object in navigation history. Instead, <xref:System.Windows.Controls.Frame> creates a new instance of the content object each time it is navigated to by using navigation history. This behavior is designed to avoid excessive memory consumption when large numbers and large pieces of content are being navigated to. Consequently, the state of the content is not remembered from one navigation to the next. However, WPF provides several techniques by which you can store a state for a piece of content in navigation history.  
   
  Using <xref:System.Windows.Controls.Frame.AddBackEntry%2A>, you can also remember multiple sets of state for a single page instance.  
   
@@ -108,7 +108,7 @@
    
   
 ## Examples  
- The following example shows how to create a simple <xref:System.Windows.Controls.Frame> control and specify initial source content to load from a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] using the <xref:System.Windows.Controls.Frame.Source%2A> property.  
+ The following example shows how to create a simple <xref:System.Windows.Controls.Frame> control and specify initial source content to load from a URI using the <xref:System.Windows.Controls.Frame.Source%2A> property.  
   
  [!code-xaml[FrameSnippets#SetFrameSourceXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnippets/CS/MainWindow.xaml#setframesourcexaml1)]  
 [!code-xaml[FrameSnippets#SetFrameSourceXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnippets/CS/MainWindow.xaml#setframesourcexaml2)]  
@@ -525,7 +525,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the content that was last navigated to.</summary>
-        <value>A <see cref="T:System.Uri" /> for the content that was last navigated to, if navigated to by using a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)]; otherwise, <see langword="null" />.</value>
+        <value>A <see cref="T:System.Uri" /> for the content that was last navigated to, if navigated to by using a URI; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -893,7 +893,7 @@
         <Parameter Name="source" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="source">A <see cref="T:System.Uri" /> object initialized with the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the desired content.</param>
+        <param name="source">A <see cref="T:System.Uri" /> object initialized with the URI for the desired content.</param>
         <summary>Navigates asynchronously to content that is specified by a [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].</summary>
         <returns>
           <see langword="true" /> if navigation is not canceled; otherwise, <see langword="false" />.</returns>
@@ -977,7 +977,7 @@
         <Parameter Name="extraData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">A <see cref="T:System.Uri" /> object initialized with the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the desired content.</param>
+        <param name="source">A <see cref="T:System.Uri" /> object initialized with the URI for the desired content.</param>
         <param name="extraData">A <see cref="T:System.Object" /> that contains data to be used for processing during navigation.</param>
         <summary>Navigates asynchronously to source content located at a [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)], and passes an object that contains data to be used for processing during navigation.</summary>
         <returns>
@@ -1220,21 +1220,21 @@
         <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets when the <see cref="T:System.Windows.Controls.Frame" /> can show its navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].</summary>
-        <value>A <see cref="T:System.Windows.Navigation.NavigationUIVisibility" /> value that specifies when the <see cref="T:System.Windows.Controls.Frame" /> can show its navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. The default value is <see cref="F:System.Windows.Navigation.NavigationUIVisibility.Automatic" />.</value>
+        <summary>Gets or sets when the <see cref="T:System.Windows.Controls.Frame" /> can show its navigation UI.</summary>
+        <value>A <see cref="T:System.Windows.Navigation.NavigationUIVisibility" /> value that specifies when the <see cref="T:System.Windows.Controls.Frame" /> can show its navigation UI. The default value is <see cref="F:System.Windows.Navigation.NavigationUIVisibility.Automatic" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, a <xref:System.Windows.Controls.Frame> shows its navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] automatically when the first entry is added to navigation history. The navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] subsequently remains visible, with the back or forward navigation buttons becoming appropriately enabled or disabled to reflect the number of entries in back and forward navigation history.  
+ By default, a <xref:System.Windows.Controls.Frame> shows its navigation UI automatically when the first entry is added to navigation history. The navigation UI subsequently remains visible, with the back or forward navigation buttons becoming appropriately enabled or disabled to reflect the number of entries in back and forward navigation history.  
   
- You can ensure that navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] is always visible by setting:  
+ You can ensure that navigation UI is always visible by setting:  
   
 1.  <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility.Visible>  
   
 2.  <xref:System.Windows.Controls.Frame.JournalOwnership%2A> to <xref:System.Windows.Navigation.JournalOwnership.OwnsJournal>  
   
- You set <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility.Hidden> if you want to hide the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. This might be the case when navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] doesn’t make sense with the content you are displaying from a <xref:System.Windows.Controls.Frame>, or because you are providing your own navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
+ You set <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility.Hidden> if you want to hide the navigation UI. This might be the case when navigation UI doesn’t make sense with the content you are displaying from a <xref:System.Windows.Controls.Frame>, or because you are providing your own navigation UI.  
   
 <a name="dependencyPropertyInfo_FrameJournalNavigationUIVisibility"></a>   
 ## Dependency Property Information  
@@ -1544,8 +1544,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the current content, or the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of new content that is currently being navigated to.</summary>
-        <value>A <see cref="T:System.Uri" /> that contains the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the current content, or the content that is currently being navigated to.</value>
+        <summary>Gets or sets the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the current content, or the URI of new content that is currently being navigated to.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the URI for the current content, or the content that is currently being navigated to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1644,7 +1644,7 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Windows.Markup.IUriContext.BaseUri" />.</summary>
-        <value>The base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the current context.</value>
+        <value>The base URI of the current context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

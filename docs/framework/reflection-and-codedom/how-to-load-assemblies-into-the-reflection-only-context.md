@@ -37,7 +37,7 @@ The reflection-only load context allows you to examine assemblies compiled for o
     > [!NOTE]
     >  You cannot use the reflection-only context to load a version of mscorlib.dll from a version of the .NET Framework other than the version in the execution context.  
   
-2.  If the assembly has dependencies, the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> method does not load them. If you need to examine them, you must load them yourself,.  
+2.  If the assembly has dependencies, the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> method does not load them. If you need to examine them, you must load them yourself.  
   
 3.  Determine whether an assembly is loaded into the reflection-only context by using the assembly's <xref:System.Reflection.Assembly.ReflectionOnly%2A> property.  
   

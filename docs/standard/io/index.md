@@ -3,10 +3,7 @@ title: "File and Stream I-O"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "IO namespace"
@@ -16,7 +13,6 @@ helpviewer_keywords:
   - "streams, I/O"
   - "data streams, I/O"
 ms.assetid: 4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2
-caps.latest.revision: 33
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -31,6 +27,8 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
   
 ## Files and Directories  
  You can use the types in the <xref:System.IO?displayProperty=nameWithType> namespace to interact with files and directories. For example, you can get and set properties for files and directories, and retrieve collections of files and directories based on search criteria.  
+
+For path naming conventions and the ways to express a file path for Windows systems, including with the DOS device syntax supported in .NET Core 1.1 and later and the .NET Framework 4.6.2 and later, see [File path formats on Windows systems](file-path-formats.md). 
   
  Here are some commonly used file and directory classes:  
   

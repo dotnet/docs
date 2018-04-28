@@ -1,5 +1,5 @@
 ---
-title: "Supported file path formats on Windows systems"
+title: "File path formats on Windows systems"
 ms.date: "04/25/2018"
 ms.prod: ".net"
 ms.technology: dotnet-standard
@@ -14,9 +14,9 @@ ms.workload:
   - "dotnet"
   - "dotnetcore"
 ---
-# Supported file path formats on Windows systems
+# File path formats on Windows systems
 
-Members of many of the types in the <xref:System.IO> namespace have include a `path` parameter that lets you specify an abolute or relative path to a file system resource. This topic discusses the formats for file paths that you can use on Windows systems.
+Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file sysem APIs](https://msdn.microsoft.com/library/windows/desktop/aa364407(v=vs.85).aspx). This topic discusses the formats for file paths that you can use on Windows systems.
 
 ## Traditional DOS paths
 
@@ -53,35 +53,46 @@ The following are some examples of UNC paths:
 
 UNC paths are always absolute. You can use relative paths only by mapping a UNC path to a drive letter.
 
-## DOS Device Paths
+## DOS device paths
 
-The Windows operating system has a unified object model that points to all resources, including files. These object paths are not directly accessible from the Windows APIs (such as the Console windows and Windows Explorer). They are, however, exposed to the Win32 layer through a special folder of symbolic links that legacy DOS and UNC paths are mapped to. This special folder is accessed via the DOS Device path syntax, which is one of:
+The Windows operating system has a unified object model that points to all resources, including files. These object paths are not directly accessible from the Windows APIs (such as the Console windows and Windows Explorer). They are, however, exposed to the Win32 layer through a special folder of symbolic links that legacy DOS and UNC paths are mapped to. This special folder is accessed via the DOS device path syntax, which is one of:
 
 \\.\C:\Test\Foo.txt   
 \\?\C:\Test\Foo.txt
 
+> [!NOTE]
+> DOS device path syntax is supported on .NET implementations running on Windows starting with .NET Core 1.1 and .NET Framework 4.6.2.
+
 The DOS device path consists of the following components:
 
-- \\\\.\\ or \\\\?\\, which identifies the path as a DOS device path.
+- `\\.\` or `\\?\`, which identifies the path as a DOS device path.
 - A symbolic link to the "real" device object (C: in this case). 
 
-   There is a specific link for UNCs that is called, not surprisingly, "UNC". For example:
+   There is a specific link for UNCs that is called, not surprisingly, `UNC`. For example:
 
       \\.\UNC\Server\Share\Test\Foo.txt   
       \\?\UNC\Server\Share\Test\Foo.txt
 
 Like UNCs, DOS device paths are fully qualified by definition. Current directories never enter into their usage.
 
+## Example: Ways to refer to the same file
+
+The following example illustrates some of the ways in which you can refer to a file when using the APIs in the <xref:System.IO> namespace. The example instantiates a <xref:System.IO.FileInfo> object and uses its <xref:System.IO.FileInfo.Name> and <xref:System.IO.FileInfo.Length> properties to display the filename and the length of the file.
+
+[!code-csharp[referring-to-the-same-file](~/samples/snippets/standard/io/file-names/cs/file-refs.cs)]
+[!code-vb[referring-to-the-same-file](~/samples/snippets/standard/io/file-names/vb/file-refs.vb)]
+
 ## Path normalization
 
-Almost all paths passed to Windows APIs are normalized. During normalization, Windows does the following:
+Almost all paths passed to Windows APIs are normalized. During normalization, Windows performs the following steps:
 
-- Canonicalizes component and directory separators.
+- Identifies the path.
 - Applies the current directory to partially qualified (relative) paths.
+- Canonicalizes component and directory separators.
 - Evaluates relative directory components (`.` for the current directory and `..` for the parent directory).
 - Trims certain characters.
 
-This normalization happens implicitly, but you can do it explicitly by calling the Windows [GetFullPathName() function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa364963(v=vs.85).aspx).
+This normalization happens implicitly, but you can do it explicitly by calling the Windows [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx).
 
 ### Identifying the path
 
@@ -105,40 +116,56 @@ If the path is a legacy DOS device such as `CON`, `COM1`, or `LPT1`, it is conve
 
 If a path isn't fully qualified, Windows applies the current directory to it. UNCs and device paths do not have the current directory applied. Neither does a full drive with separator C:\.
 
-If the path starts with a single component separator, the drive from the current directory is applied. If the file path is `\utilities` and the current directory is `C:\temp\`, normalization produces `C:\utilities`.
+If the path starts with a single component separator, the drive from the current directory is applied. For example, if the file path is `\utilities` and the current directory is `C:\temp\`, normalization produces `C:\utilities`.
 
-If the path starts with a drive letter, volume separator, and no component separator, the last current directory set from the command shell for the specified drive is applied, or the drive alone if none is set. If you pass D:bar and the current directory is C:\foo\ and the last current directory on D: was D:\bar\ you would get D:\bar\bar. These "Drive Relative" paths are a common source of program and script logic errors. Assuming that a path beginning with a letter and a colon isn't relative is obviously not correct.
-The last case is starts with something other than a separator (7). If you pass bar and the current directory is C:\foo\ you would get C:\foo\bar.
-Note that relative paths are dangerous in multithreaded programs (e.g. most programs) as the current directory is a process-wide setting. Any thread can change the current directory at any time. I'll discuss ways to deal with this in a future post.
-Canonicalizing Separators
-All forward slashes (/) are converted into the standard Windows separator- the back slash (\). Runs of slashes are collapsed into a single slash, after the first two slashes if present.
-When identifying paths for normalization purposes, the initial direction of the slash does not matter. It is important to recognize, however, that forward slashes are not supported in Windows outside of this normalization step. This is critically important when it comes to skipping normalization, which we'll discuss shortly.
-Evaluating Relative Components
-As the path is processed, any components/segments that are comprised of a single or double period are evaluated. For a single period (.) the current segment is removed (as it means current directory). For a double period (..) the current segment and the parent segment are removed (as it means parent directory).
-Parent directories are only removed if they aren't past the "root" of the path. The root of the path depends on the type of path. It is the drive (C:\) for DOS paths, the server/share for UNCs (\\Server\Share), and the device path prefix for device paths (\\?\ or \\.\).
-Trimming Characters
-Some characters will be removed (other than runs of separators and relative segments).
-If a segment ends in a single period, that period will be removed. A segment of a single or double period falls under the relative component rule above. A segment of three periods (or more) doesn't hit any of these rules and is actually a valid file/directory name.
-If the path doesn't end in a separator, all trailing periods and spaces (charater code 32 only) will be removed. If the last segment is simply a single or double period it falls under the relative components rule above. This rule leads to the possibly surprising ability to create a directory with a trailing space. You simply need to add a trailing separator to do so.
-Skipping Normalization
-Normally any path passed to a Windows API is (effectively) passed to GetFullPathName() and normalized. There is one important exception- if you have a device path that begins with a question mark instead of a period.  It must use the canonical backslash- if the path does not start with exactly \\?\ it will be normalized.
-Why would you want to skip normalization? One reason is to get access to paths that are normally unavailable, but legal in NTFS/FAT/etc. A file or directory called "foo." for example, is impossible to access any other way. You also get to avoid some cycles by skipping normalization if you've already normalized.
-The last reason is that the MAX_PATH check for path length is skipped as well, allowing for paths that are greater than 259 characters long. Most APIs will allow this, with some notable exceptions, such as Get/SetCurrentDirectory.
-Skipping normalization and max path checks is the only difference between the two device path syntaxes- they are otherwise identical. Tread carefully with skipping normalization as you can easily create paths that are difficult for "normal" applications to deal with.
-Paths that start with \\?\ are normalized if you explicitly pass them to GetFullPathName(). Don't forget, however, that rooting is different with device syntax (C:\.. does not normalize the same as \\?\C:\..). Note that you can pass > MAX_PATH paths to GetFullPathName() without \\?\. It supports arbitrary length paths (well, currently up to the maximum string size that Windows can handle, see UNICODE_STRING).
+If the path starts with a drive letter, volume separator, and no component separator, the last current directory set from the command shell for the specified drive is applied. If the last current directory was not set, the drive alone is applied. For example, if the file path is `D:sources`, the current directory is `C:\Documents\`, and the last current directory on drive D: was `D:\sources\`, the result is `D:\sources\sources. These "drive relative" paths are a common source of program and script logic errors. Assuming that a path beginning with a letter and a colon isn't relative is obviously not correct.
 
+If the path starts with something other than a separator, the current drive and current directory are applied. For example, if the path is `filecompare` and the current directory is `C:\utilities\`, the result is `C:\utilities\filecompare\`.
 
+> [!IMPORTANT]
+> Relative paths are dangerous in multithreaded applications (that is, most applications) because the current directory is a per-process setting. Any thread can change the current directory at any time. 
 
+### Canonicalizing separators
 
-## Long file paths
+All forward slashes (`/`) are converted into the standard Windows separator, the back slash (`\`). If they are present, series of slashes that follow the first two slashes are collapsed into a single slash.
 
-.NET Core and the .NET Framework (starting with version 4.6.2) support long file paths.
+> [!IMPORTANT]
+> It is only when identifying paths for normalization purposes that the direction of the slash does not matter. Forward slashes are not supported in Windows outside of this normalization step. This is critically important if normalization is skipped.
 
-## Example: Ways to refer to the same file
+### Evaluating relative components
 
-The following example illustrates some of the ways in which you can refer to a file when using the APIs in the <xref:System.IO> namespace. The example instantiates a <xref:System.IO.FileInfo> object and uses its <xref:System.IO.FileInfo.Name> and <xref:System.IO.FileInfo.Length> properties to display the filename and the length of the file.
+As the path is processed, any components or segments that are composed of a single or a double period (`.` or `..`) are evaluated: 
 
-[!code-csharp[referring-to-the-same-file](~/samples/snippets/standard/io/file-names/cs/file-refs.cs)]
-[!code-vb[referring-to-the-same-file](~/samples/snippets/standard/io/file-names/vb/file-refs.vb)]
+- For a single period, the current segment is removed, since it refers to the current directory).
 
+- For a double period, the current segment and the parent segment are removed, since the double period refers to the parent directory.
 
+   Parent directories are only removed if they aren't past the root of the path. The root of the path depends on the type of path. It is the drive (`C:\`) for DOS paths, the server/share for UNCs (`\\Server\Share`), and the device path prefix for device paths (`\\?\` or `\\.\`).
+
+### Trimming characters
+
+Along with the runs of separators and relative segments removed earlier, some additional characters are removed during normalization:
+
+- If a segment ends in a single period, that period is removed. (A segment of a single or double period is normalized in the previous step. A segment of three or more periods is not normalized and is actually a valid file/directory name.
+
+- If the path doesn't end in a separator, all trailing periods and spaces (U+0020) are removed. If the last segment is simply a single or double period, it falls under the relative components rule above. 
+
+   This rule leads to the possibly surprising ability to create a directory with a trailing space. You simply need to add a trailing separator to do so.
+
+## Skipping normalization
+
+Normally, any path passed to a Windows API is (effectively) passed to the [GetFullPathName function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) and normalized. There is one important exception: a device path that begins with a question mark instead of a period. Unless the path starts exactly with `\\?\` (note the use of the canonical backslash), it is normalized.
+
+Why would you want to skip normalization? There are three major reasons:
+
+1. To get access to paths that are normally unavailable but are legal. A file or directory called `hidden.`, for example, is impossible to access in any other way. 
+
+2. To improve performance by skipping normalization if you've already normalized.
+
+3. To skip the `MAX_PATH` check for path length to allowing for paths that are greater than 259 characters. Most APIs allow this, with some notable exceptions, such as the [GetCurrentDirectory](https://msdn.microsoft.com/library/windows/desktop/aa364934(v=vs.85).aspx) and [SetCurrentDirectory](https://msdn.microsoft.com/library/windows/desktop/aa365530(v=vs.85).aspx) functions.
+
+Skipping normalization and max path checks is the only difference between the two device path syntaxes; they are otherwise identical. Be carefully with skipping normalization, since you can easily create paths that are difficult for "normal" applications to deal with.
+
+Paths that start with `\\?\` are still normalized if you explicitly pass them to the [GetFullPathName function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx).
+
+Note that you can pass more paths of more than `MAX_PATH` characters to [GetFullPathName](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) without `\\?\`. It supports arbitrary length paths up to the maximum string size that Windows can handle.

@@ -139,7 +139,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a *session
   
  For examples, see [How to: Create a Service That Requires Sessions](../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md) as well as the [Default Service Behavior](../../../docs/framework/wcf/samples/default-service-behavior.md) and [Instancing](../../../docs/framework/wcf/samples/instancing.md) samples.  
   
- [!INCLUDE[crabout](../../../includes/crabout-md.md)] clients and sessions, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
+ For more information about clients and sessions, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
   
 ## Sessions Interact with InstanceContext Settings  
  There is an interaction between the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property, which controls the association between channels and specific service objects. For more information, see [Sessions, Instancing, and Concurrency](../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  

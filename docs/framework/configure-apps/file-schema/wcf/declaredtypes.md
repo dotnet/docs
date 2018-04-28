@@ -69,7 +69,7 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
 |[\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-of-system-runtime-serialization.md)|Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## Remarks  
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] known types, see [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
+ For more information about known types, see [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 ## Example  
  The following XML code shows declared types and known types added to a `DataContractSerializer` element. The example shows three types being added. The first is a custom type named "Orders" that uses a known type named "Item". The second declared type is a <xref:System.Collections.Generic.List%601> that uses `Item` as a known type. Finally the third declared type is a <xref:System.Collections.Generic.Dictionary%602>. The <xref:System.Collections.Generic.Dictionary%602> class type is a generic type, with two type parameters. The first represents the key and the second represents the value. The following example adds a <xref:System.Collections.Generic.List%601> of the second type (the value) to the list of known types. You must use the `index` attribute to specify which type parameter to use in the known type. In this case, the value type is indicated by the index attribute set to "1" (the collection is zero-based).  

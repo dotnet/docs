@@ -34,7 +34,7 @@ This sample demonstrates how to create a workflow that uses the <xref:System.Act
   
 4.  Right click the `DiscountPolicy` and select the **View Code** option to examine the code beside C# code for the activity.  
   
-     Observe the dependency property setting for `DiscountLevel`. This is equivalent to arguments in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] arguments, see [Variables and Arguments](../../../../docs/framework/windows-workflow-foundation/variables-and-arguments.md).  
+     Observe the dependency property setting for `DiscountLevel`. This is equivalent to arguments in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]. For more information about arguments, see [Variables and Arguments](../../../../docs/framework/windows-workflow-foundation/variables-and-arguments.md).  
   
 ## InteropWith35RuleSet  
  This is a sequential workflow project that uses the <xref:System.Activities.Statements.Interop> activity to integrate with the custom Rule set created in the `TravelRuleLibrary` project. Variables are created on the top level <xref:System.Activities.Statements.Sequence> activity. The <xref:System.Activities.Statements.Interop> activity is used to integrate with the `TravelRuleSet` activity. The variables that are declared on the <xref:System.Activities.Statements.Sequence> are used to bind to the dependency properties.  

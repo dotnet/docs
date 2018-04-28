@@ -58,7 +58,7 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
 ### Using HttpCfg for SSL  
  If you are creating a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, download the HttpCfg.exe tool, available at the [Windows XP Service Pack 2 Support Tools site](http://go.microsoft.com/fwlink/?LinkId=29002).  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
+ For more information about using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 ## See Also  
  [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)  

@@ -73,7 +73,7 @@ ms.workload:
   
  If the binding has disabled transaction flow, but one of the operations on a service contract requires an incoming transaction, then a validation exception is thrown at service startup.  
   
- Most of the standing bindings [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides contain the `transactionFlow` and `transactionProtocol` attributes to enable you to configure the specific binding to accept incoming transactions. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] setting the configuration elements, see [\<binding>](../../../../docs/framework/misc/binding.md).  
+ Most of the standing bindings [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides contain the `transactionFlow` and `transactionProtocol` attributes to enable you to configure the specific binding to accept incoming transactions. For more information about setting the configuration elements, see [\<binding>](../../../../docs/framework/misc/binding.md).  
   
  An administrator or deployer can use endpoint-level transaction flow to configure transaction flow requirements or constraints at deployment time using the configuration file.  
   

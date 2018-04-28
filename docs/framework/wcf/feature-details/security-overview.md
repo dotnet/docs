@@ -93,7 +93,7 @@ ms.workload:
   
 -   *Message security mode*, on the other hand, uses WS-Security (and other specifications) to implement transfer security. Because the message security is applied directly to the SOAP messages and is contained inside the SOAP envelopes, together with the application data, it has the advantage of being transport protocol-independent, more extensible, and ensuring end-to-end security (versus point-to-point); it has the disadvantage of being several times slower than transport security mode because it has to deal with the XML nature of the SOAP messages.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] these differences, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md).  
+ For more information about these differences, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md).  
   
  A third security mode uses both previous modes and brings advantages of both. This mode is called `TransportWithMessageCredential`. In this mode, message security is used to authenticate the client and transport security is used to authenticate the server and provide message confidentiality and integrity. Thanks to this, the `TransportWithMessageCredential` security mode is almost as fast as transport security mode and provides client authentication extensibility in the same way as message security. However, unlike message security mode, it does not provide complete end-to-end security.  
   

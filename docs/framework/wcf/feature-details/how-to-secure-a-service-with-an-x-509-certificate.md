@@ -23,7 +23,7 @@ ms.workload:
 # How to: Secure a Service with an X.509 Certificate
 Securing a service with an X.509 certificate is a basic technique that most bindings in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] use. This topic walks through the steps of configuring a self-hosted service with an X.509 certificate.  
   
- A prerequisite is a valid certificate that can be used to authenticate the server. The certificate must be issued to the server by a trusted certificate authority. If the certificate is not valid, any client trying to use the service will not trust the service, and consequently no connection will be made. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ A prerequisite is a valid certificate that can be used to authenticate the server. The certificate must be issued to the server by a trusted certificate authority. If the certificate is not valid, any client trying to use the service will not trust the service, and consequently no connection will be made. For more information about using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   
 ### To configure a service with a certificate using code  
   

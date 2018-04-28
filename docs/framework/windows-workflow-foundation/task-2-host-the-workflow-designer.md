@@ -103,7 +103,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
         }  
         ```  
   
-         [!INCLUDE[crabout](../../../includes/crabout-md.md)] registering activity designers, see [How to: Create a Custom Activity Designer](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer.md).  
+         For more information about registering activity designers, see [How to: Create a Custom Activity Designer](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer.md).  
   
     5.  In the `MainWindow` class constructor, add calls to the methods declared previously to register the metadata for designer support and to create the <xref:System.Activities.Presentation.WorkflowDesigner>.  
   

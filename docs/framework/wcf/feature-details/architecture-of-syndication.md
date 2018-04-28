@@ -38,7 +38,7 @@ The Syndication API is designed to provide a format-neutral programming model th
   
  [!code-csharp[S_UE_SyndicationBoth#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_syndicationboth/cs/service.cs#0)]  
   
- Syndication support is built on top of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model that defines the <xref:System.ServiceModel.WebHttpBinding> binding, which is used in conjunction with <xref:System.ServiceModel.Description.WebHttpBehavior> to make feeds available as services. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model, see [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md).  
+ Syndication support is built on top of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model that defines the <xref:System.ServiceModel.WebHttpBinding> binding, which is used in conjunction with <xref:System.ServiceModel.Description.WebHttpBehavior> to make feeds available as services. For more information about the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model, see [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md).  
   
 > [!NOTE]
 >  The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation ignores the fractional seconds.  

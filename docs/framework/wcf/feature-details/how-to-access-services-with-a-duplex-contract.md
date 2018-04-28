@@ -31,7 +31,7 @@ One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ab
   
 ### To access a duplex service  
   
-1.  Create a service that contains two interfaces. The first interface is for the service, the second is for the callback. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating a duplex service, see [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md).  
+1.  Create a service that contains two interfaces. The first interface is for the service, the second is for the callback. For more information about creating a duplex service, see [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
 2.  Run the service.  
   

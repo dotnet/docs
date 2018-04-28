@@ -28,7 +28,7 @@ ms.workload:
 # How to: Enable Message Replay Detection
 A replay attack occurs when an attacker copies a stream of messages between two parties and replays the stream to one or more of the parties. Unless mitigated, the computers subject to the attack will process the stream as legitimate messages, resulting in a range of bad consequences, such as redundant orders of an item.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] message replay detection, see [Message Replay Detection](http://go.microsoft.com/fwlink/?LinkId=88536).  
+ For more information about message replay detection, see [Message Replay Detection](http://go.microsoft.com/fwlink/?LinkId=88536).  
   
  The following procedure demonstrates various properties that you can use to control replay detection using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
   

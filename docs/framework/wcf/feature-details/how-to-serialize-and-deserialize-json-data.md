@@ -31,7 +31,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
   
 ### To define the data contract for a Person  
   
-1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contracts, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).  
+1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. For more information about data contracts, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).  
   
     ```csharp  
     [DataContract]  

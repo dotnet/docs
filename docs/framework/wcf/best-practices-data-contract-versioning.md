@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Best Practices: Data Contract Versioning
-This topic lists the best practices for creating data contracts that can evolve easily over time. [!INCLUDE[crabout](../../../includes/crabout-md.md)] data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
+This topic lists the best practices for creating data contracts that can evolve easily over time. For more information about data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
   
 ## Note on Schema Validation  
  In discussing data contract versioning, it is important to note that the data contract schema exported by [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] does not have any versioning support, other than the fact that elements are marked as optional by default.  
@@ -51,7 +51,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
 -   Apply a <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to your service contract with the <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> property set to `true`.  
   
- [!INCLUDE[crabout](../../../includes/crabout-md.md)] round-tripping, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ For more information about round-tripping, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 ## Versioning When Schema Validation Is Not Required  
  Strict schema compliance is rarely required. Many platforms tolerate extra elements not described by a schema. As long as this is tolerated, the full set of features described in [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md) and [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md) can be used. The following guidelines are recommended.  
@@ -64,7 +64,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
 3.  Starting with the first version of a data contract, always implement <xref:System.Runtime.Serialization.IExtensibleDataObject> to enable round-tripping. For more information, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md). If you have released one or more versions of a type without implementing this interface, implement it in the next version of the type.  
   
-4.  In later versions, do not change the data contract name or namespace. If changing the name or namespace of the type underlying the data contract, be sure to preserve the data contract name and namespace by using the appropriate mechanisms, such as the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>. [!INCLUDE[crabout](../../../includes/crabout-md.md)] naming, see [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md).  
+4.  In later versions, do not change the data contract name or namespace. If changing the name or namespace of the type underlying the data contract, be sure to preserve the data contract name and namespace by using the appropriate mechanisms, such as the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>. For more information about naming, see [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md).  
   
 5.  In later versions, do not change the names of any data members. If changing the name of the field, property, or event underlying the data member, use the `Name` property of the <xref:System.Runtime.Serialization.DataMemberAttribute> to preserve the existing data member name.  
   
@@ -76,7 +76,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
     1.  The <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property should always be left at its default value of `false`.  
   
-    2.  If a default value of `null` or zero for the member is unacceptable, a callback method should be provided using the <xref:System.Runtime.Serialization.OnDeserializingAttribute> to provide a reasonable default in case the member is not present in the incoming stream. [!INCLUDE[crabout](../../../includes/crabout-md.md)] the callback, see [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
+    2.  If a default value of `null` or zero for the member is unacceptable, a callback method should be provided using the <xref:System.Runtime.Serialization.OnDeserializingAttribute> to provide a reasonable default in case the member is not present in the incoming stream. For more information about the callback, see [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
   
     3.  The `Order` property on the `DataMemberAttribute` should be used to make sure that all of the newly added data members appear after the existing data members. The recommended way of doing this is as follows: None of the data members in the first version of the data contract should have their `Order` property set. All of the data members added in version 2 of the data contract should have their `Order` property set to 2. All of the data members added in version 3 of the data contract should have their `Order` set to 3, and so on. It is permissible to have more than one data member set to the same `Order` number.  
   

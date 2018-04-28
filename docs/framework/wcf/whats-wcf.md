@@ -47,11 +47,11 @@ ms.workload:
   
 -   **Interoperability**  
   
-     [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] implements modern industry standards for Web service interoperability. [!INCLUDE[crabout](../../../includes/crabout-md.md)] the supported standards, see [Interoperability and Integration](../../../docs/framework/wcf/feature-details/interoperability-and-integration.md).  
+     [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] implements modern industry standards for Web service interoperability. For more information about the supported standards, see [Interoperability and Integration](../../../docs/framework/wcf/feature-details/interoperability-and-integration.md).  
   
 -   **Multiple Message Patterns**  
   
-     Messages are exchanged in one of several patterns. The most common pattern is the request/reply pattern, where one endpoint requests data from a second endpoint. The second endpoint replies. There are other patterns such as a one-way message in which a single endpoint sends a message without any expectation of a reply. A more complex pattern is the duplex exchange pattern where two endpoints establish a connection and send data back and forth, similar to an instant messaging program. [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to implement different message exchange patterns using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] see [Contracts](../../../docs/framework/wcf/feature-details/contracts.md).  
+     Messages are exchanged in one of several patterns. The most common pattern is the request/reply pattern, where one endpoint requests data from a second endpoint. The second endpoint replies. There are other patterns such as a one-way message in which a single endpoint sends a message without any expectation of a reply. A more complex pattern is the duplex exchange pattern where two endpoints establish a connection and send data back and forth, similar to an instant messaging program. For more information about how to implement different message exchange patterns using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] see [Contracts](../../../docs/framework/wcf/feature-details/contracts.md).  
   
 -   **Service Metadata**  
   
@@ -67,11 +67,11 @@ ms.workload:
   
 -   **Multiple Transports and Encodings**  
   
-     Messages can be sent on any of several built-in transport protocols and encodings. The most common protocol and encoding is to send text encoded SOAP messages using the HyperText Transfer Protocol (HTTP) for use on the World Wide Web. Alternatively, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] allows you to send messages over TCP, named pipes, or MSMQ. These messages can be encoded as text or using an optimized binary format.  Binary data can be sent efficiently using the MTOM standard. If none of the provided transports or encodings suit your needs you can create your own custom transport or encoding. [!INCLUDE[crabout](../../../includes/crabout-md.md)] transports and encodings supported by [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] see [Transports](../../../docs/framework/wcf/feature-details/transports.md).  
+     Messages can be sent on any of several built-in transport protocols and encodings. The most common protocol and encoding is to send text encoded SOAP messages using the HyperText Transfer Protocol (HTTP) for use on the World Wide Web. Alternatively, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] allows you to send messages over TCP, named pipes, or MSMQ. These messages can be encoded as text or using an optimized binary format.  Binary data can be sent efficiently using the MTOM standard. If none of the provided transports or encodings suit your needs you can create your own custom transport or encoding. For more information about transports and encodings supported by [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] see [Transports](../../../docs/framework/wcf/feature-details/transports.md).  
   
 -   **Reliable and Queued Messages**  
   
-     [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] supports reliable message exchange using reliable sessions implemented over WS-Reliable Messaging and using MSMQ. [!INCLUDE[crabout](../../../includes/crabout-md.md)] reliable and queued messaging support in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] see [Queues and Reliable Sessions](../../../docs/framework/wcf/feature-details/queues-and-reliable-sessions.md).  
+     [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] supports reliable message exchange using reliable sessions implemented over WS-Reliable Messaging and using MSMQ. For more information about reliable and queued messaging support in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] see [Queues and Reliable Sessions](../../../docs/framework/wcf/feature-details/queues-and-reliable-sessions.md).  
   
 -   **Durable Messages**  
   
@@ -79,7 +79,7 @@ ms.workload:
   
 -   **Transactions**  
   
-     WCF also supports transactions using one of three transaction models: WS-AtomicTtransactions, the APIs in the <xref:System.Transactions> namespace, and Microsoft Distributed Transaction Coordinator. [!INCLUDE[crabout](../../../includes/crabout-md.md)] transaction support in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] see [Transactions](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md).  
+     WCF also supports transactions using one of three transaction models: WS-AtomicTtransactions, the APIs in the <xref:System.Transactions> namespace, and Microsoft Distributed Transaction Coordinator. For more information about transaction support in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] see [Transactions](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md).  
   
 -   **AJAX and REST Support**  
   
@@ -87,7 +87,7 @@ ms.workload:
   
 -   **Extensibility**  
   
-     The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] architecture has a number of extensibility points. If extra capability is required, there are a number of entry points that allow you to customize the behavior of a service. [!INCLUDE[crabout](../../../includes/crabout-md.md)] available extensibility points see [Extending WCF](../../../docs/framework/wcf/extending/index.md).  
+     The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] architecture has a number of extensibility points. If extra capability is required, there are a number of entry points that allow you to customize the behavior of a service. For more information about available extensibility points see [Extending WCF](../../../docs/framework/wcf/extending/index.md).  
   
 ## WCF Integration with Other Microsoft Technologies  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] is a flexible platform. Because of this extreme flexibility, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] is also used in several other Microsoft products. By understanding the basics of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], you have an immediate advantage if you also use any of these products.  

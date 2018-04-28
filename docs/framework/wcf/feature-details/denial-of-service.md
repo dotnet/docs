@@ -52,7 +52,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
 ## Auditing Event Log Can Be Filled  
  If a malicious user understands that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails.  
   
- To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using the Event Viewer to view and manage event logs, see [Event Viewer](http://go.microsoft.com/fwlink/?LinkId=186123). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
+ To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information about using the Event Viewer to view and manage event logs, see [Event Viewer](http://go.microsoft.com/fwlink/?LinkId=186123). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
   
 ## Invalid Implementations of IAuthorizationPolicy Can Cause Service Hangs  
  Calling the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method on a faulty implementation of the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface can cause the service to hang.  
@@ -69,7 +69,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
   
  To mitigate this, reference the exact certificate to use by using a more precise search criterion on the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md). For example, use the <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> option, and specify the certificate by its unique thumbprint (hash).  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the autoenrollment feature, see [Certificate Autoenrollment in Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=95166).  
+ For more information about the autoenrollment feature, see [Certificate Autoenrollment in Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=95166).  
   
 ## Last of Multiple Alternative Subject Names Used for Authorization  
  In the rare case when an X.509 certificate contains multiple alternative subject names, and you authorize using the alternative subject name, authorization may fail.  
@@ -83,7 +83,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
  When a client is successfully authenticated by a service and a secure session is established with the service, the service keeps track of the session until the client cancels it or the session expires. Every established session counts against the limit for the maximum number of active simultaneous sessions with a service. When this limit is reached, clients that attempt to create a new session with that service are rejected until one or more active sessions expire or are canceled by a client. A client can have multiple sessions with a service, and each one of those sessions counts toward the limit.  
   
 > [!NOTE]
->  When you use stateful sessions, the previous paragraph does not apply. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] stateful sessions, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+>  When you use stateful sessions, the previous paragraph does not apply. For more information about stateful sessions, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
   
  To mitigate this, set the limit for the maximum number of active sessions and the maximum lifetime for a session by setting the <xref:System.ServiceModel.Channels.SecurityBindingElement> property of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
   

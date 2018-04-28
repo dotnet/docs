@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Regular Expression Activities
-This sample demonstrates how to create a set of activities that expose the regular expression functionality of the <xref:System.Text.RegularExpressions> namespace. These custom activities can be used within a workflow application. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] regular expressions, see [N:System.Text.RegularExpressions](http://go.microsoft.com/fwlink/?LinkId=150434) Namespace.  
+This sample demonstrates how to create a set of activities that expose the regular expression functionality of the <xref:System.Text.RegularExpressions> namespace. These custom activities can be used within a workflow application. For more information about regular expressions, see [N:System.Text.RegularExpressions](http://go.microsoft.com/fwlink/?LinkId=150434) Namespace.  
   
  The following table details the custom activities in this sample.  
   

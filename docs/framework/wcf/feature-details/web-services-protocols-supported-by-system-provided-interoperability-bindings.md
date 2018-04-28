@@ -97,7 +97,7 @@ ms.workload:
  The following tables describe the protocols supported by the system-provided interoperable metadata bindings exposed by the <xref:System.ServiceModel.Description.MetadataExchangeBindings?displayProperty=nameWithType> class.  
   
 ### mexHttpBinding  
- The [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) binding supports the following protocols. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using this binding, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
+ The [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) binding supports the following protocols. For more information about using this binding, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
   
 |Category|Protocol|Specification and Usage|  
 |--------------|--------------|-----------------------------|  
@@ -107,7 +107,7 @@ ms.workload:
 |Metadata|WS-MetadataExchange|[WS-MetadataExchange](http://go.microsoft.com/fwlink/?LinkId=94868)<br /><br /> [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements WS-MetadataExchange to retrieve XML Schema, WSDL, and WS-Policy.|  
   
 ### mexHttpsBinding  
- [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md) supports the following protocols. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using this binding, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
+ [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md) supports the following protocols. For more information about using this binding, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
   
 |Category|Protocol|Specification and Usage|  
 |--------------|--------------|-----------------------------|  

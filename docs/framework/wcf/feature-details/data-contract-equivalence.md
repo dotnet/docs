@@ -32,7 +32,7 @@ For a client to successfully send data of a certain type to a service, or a serv
 > [!NOTE]
 >  Note that data contract names and namespaces, as well as data member names, are case-sensitive.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contract names and namespaces, as well as data member names, see [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md).  
+ For more information about data contract names and namespaces, as well as data member names, see [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md).  
   
  If two types exist on the same side (sender or receiver) and their data contracts are not equivalent (for example, they have different data members), you should not give them the same name and namespace. Doing so may cause exceptions to be thrown.  
   

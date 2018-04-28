@@ -46,7 +46,7 @@ This topic discusses implementing and calling asynchronous service operations.
   
 -   Use an asynchronous approach in a client or calling application in the following cases:  
   
--   If you are invoking operations from a middle-tier application. ([!INCLUDE[crabout](../../../includes/crabout-md.md)] such scenarios, see [Middle-Tier Client Applications](../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md).)  
+-   If you are invoking operations from a middle-tier application. (For more information about such scenarios, see [Middle-Tier Client Applications](../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md).)  
   
 -   If you are invoking operations within an ASP.NET page, use asynchronous pages.  
   

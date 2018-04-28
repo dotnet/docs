@@ -20,7 +20,7 @@ ms.workload:
 # &lt;peerAuthentication&gt; Element
 Specifies authentication options for peer-to-peer clients.  
   
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] peer-to-peer programming, see [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
+ For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
   
  \<system.ServiceModel>  
 \<behaviors>  

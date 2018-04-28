@@ -22,7 +22,7 @@ A feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the abil
   
  The bootstrap policy (defined in section 6.2.7 of the [WS-SecurityPolicy](http://go.microsoft.com/fwlink/?LinkId=99817) standard) contains the message security assertions used to secure the channel and authenticate the client prior to the RST/SCT and RSTR/SCT exchange. Certain [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] standard bindings have a `Security.Message.EstablishSecurityContext` property which controls whether secure conversation is used. When using custom bindings the bootstrap is indicated by nesting security binding elements, either through [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) in the configuration file, or by calling <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%2A> in code.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
+ For more information about sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
   
 ## See Also  
  [Sessions, Instancing, and Concurrency](../../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)  

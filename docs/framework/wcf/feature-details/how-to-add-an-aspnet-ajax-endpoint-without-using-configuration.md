@@ -78,7 +78,7 @@ ms.workload:
     %>  
     ```  
   
-2.  Build the service and call it from the client. Internet Information Services (IIS) activates the service when called. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] hosting in IIS, see [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
+2.  Build the service and call it from the client. Internet Information Services (IIS) activates the service when called. For more information about hosting in IIS, see [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
   
 ### To call the service  
   

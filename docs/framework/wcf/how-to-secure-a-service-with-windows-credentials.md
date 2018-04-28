@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Secure a Service with Windows Credentials
-This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service that resides in a Windows domain and is called by clients in the same domain. [!INCLUDE[crabout](../../../includes/crabout-md.md)] this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
+This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service that resides in a Windows domain and is called by clients in the same domain. For more information about this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
   
  This topic assumes you have an existing contract interface and implementation already defined, and adds on to that. You can also modify an existing service and client.  
   
@@ -52,7 +52,7 @@ This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../
      [!code-vb[c_SecureWindowsService#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#1)]  
   
 ### Using the Binding in a Service  
- This is the second procedure, which shows how to use the binding in a self-hosted service. [!INCLUDE[crabout](../../../includes/crabout-md.md)] hosting services see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
+ This is the second procedure, which shows how to use the binding in a self-hosted service. For more information about hosting services see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
   
 ##### To use a binding in a service  
   

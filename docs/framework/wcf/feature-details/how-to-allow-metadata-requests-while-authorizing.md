@@ -25,7 +25,7 @@ ms.workload:
 # How To: Allow Metadata Requests While Authorizing
 During custom authorization, it may be necessary to allow a request for metadata to be processed. The following topic walks through the steps to validate such a request.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
+ For more information about [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
   
 ### To allow metadata requests during authorization  
   

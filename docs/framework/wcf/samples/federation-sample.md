@@ -21,7 +21,7 @@ ms.workload:
 This sample demonstrates federated security.  
   
 ## Sample Details  
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides support for deploying federated security architectures through the `wsFederationHttpBinding`. The `wsFederationHttpBinding` provides a secure, reliable, and interoperable binding that involves the use of HTTP as the underlying transport mechanism for request/reply communication, and Text/XML as the wire format for encoding. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] Federation in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
+ [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides support for deploying federated security architectures through the `wsFederationHttpBinding`. The `wsFederationHttpBinding` provides a secure, reliable, and interoperable binding that involves the use of HTTP as the underlying transport mechanism for request/reply communication, and Text/XML as the wire format for encoding. For more information about Federation in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
   
  The scenario is made up of 4 pieces:  
   

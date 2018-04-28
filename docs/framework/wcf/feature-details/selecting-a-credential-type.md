@@ -103,7 +103,7 @@ ms.workload:
 > [!IMPORTANT]
 >  There is a situation to be aware of when the identity cannot be switched (that is, when establish security context is on, the default behavior). If you create a service that communicates with a second service, the identity used to open the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client to the second service cannot be changed. This becomes a problem if multiple clients are allowed to use the first service and the service impersonates the clients when accessing the second service. If the service reuses the same client for all callers, all calls to the second service are done under the identity of the first caller that was used to open the client to the second service. In other words, the service uses the identity of the first client for all its clients to communicate with the second service. This can lead to the elevation of privilege. If this is not the desired behavior of your service, you must track each caller and create a new client to the second service for every distinct caller, and ensure that the service uses only the right client for the right caller to communicate with the second service.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] credentials and secure sessions, see [Security Considerations for Secure Sessions](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md).  
+ For more information about credentials and secure sessions, see [Security Considerations for Secure Sessions](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md).  
   
 ## See Also  
  <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>  

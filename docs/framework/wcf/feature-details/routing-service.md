@@ -95,12 +95,12 @@ The Routing Service is a generic SOAP intermediary that acts as a message router
   
  If the Routing Service encounters a <xref:System.ServiceModel.CommunicationException> while attempting to send a message, error handling will take place.  These exceptions typically indicate that a problem was encountered while attempting to communicate with the defined client endpoint, such as an <xref:System.ServiceModel.EndpointNotFoundException>, <xref:System.ServiceModel.ServerTooBusyException>, or <xref:System.ServiceModel.CommunicationObjectFaultedException>.  The error-handling code will also catch and attempt to retry sending when a **TimeoutException** occurs, which is another common exception that is not derived from **CommunicationException**.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] error handling, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md).  
+ For more information about error handling, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md).  
   
 ## Backup Endpoints  
  In addition to the destination client endpoints associated with each filter definition in the filter table, you can also create a list of backup endpoints that the message will be routed to in the event of a transmission failure. If an error occurs and a backup list is defined for the filter entry, the Routing Service will attempt to send the message to the first endpoint defined in the list. If this transmission attempt fails, the service will try the next endpoint, and continue this process until the transmission attempt succeeds, returns a non-transmission related error, or all endpoints in the backup list have returned a transmission error.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] backup endpoints, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md) and [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).  
+ For more information about backup endpoints, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md) and [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).  
   
 ## Streaming  
  The routing service can successfully stream messages if you set the binding to support streaming.  However, there are some conditions under which messages may need to buffered:  

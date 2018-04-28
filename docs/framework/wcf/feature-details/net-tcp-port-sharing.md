@@ -51,7 +51,7 @@ ms.workload:
 ## Using Net.tcp Port Sharing in an Application  
  The easiest way to use net.tcp:// port sharing in your [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application is to expose a service using the <xref:System.ServiceModel.NetTcpBinding> and then to enable Net.TCP Port Sharing Service using the <xref:System.ServiceModel.NetTcpBinding.PortSharingEnabled%2A> property.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to do this, see [How to: Configure a WCF Service to Use Port Sharing](../../../../docs/framework/wcf/feature-details/how-to-configure-a-wcf-service-to-use-port-sharing.md).  
+ For more information about how to do this, see [How to: Configure a WCF Service to Use Port Sharing](../../../../docs/framework/wcf/feature-details/how-to-configure-a-wcf-service-to-use-port-sharing.md).  
   
 ## Security Implications of Port Sharing  
  Although the Net.TCP Port Sharing Service provides a layer of processing between applications and the network, applications that use port sharing should still be secured as if they were directly listening on the network. Specifically, applications that use port sharing should evaluate the process privileges under which they run. Consider running your application using the built-in Network Service account, which runs with the minimal set of process privileges required for network communication.  

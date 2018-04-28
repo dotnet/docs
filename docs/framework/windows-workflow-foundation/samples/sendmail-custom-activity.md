@@ -111,7 +111,7 @@ new SendMail
 ## Set-Up Instructions  
  Access to a SMTP server is required for this sample.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] setting up a SMTP server, see the following links.  
+ For more information about setting up a SMTP server, see the following links.  
   
 -   [Microsoft Technet](http://go.microsoft.com/fwlink/?LinkId=166060)  
   

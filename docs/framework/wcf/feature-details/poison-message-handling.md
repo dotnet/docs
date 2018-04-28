@@ -99,7 +99,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
  A session undergoes the same retry and poison-message handling procedures as a single message. The properties previously listed for poison messages apply to the entire session. This means that the entire session is retried and goes to a final poison-message queue or the sender’s dead-letter queue if the message is rejected.  
   
 ## Batching and Poison Messages  
- If a message becomes a poison message and is part of a batch, then the entire batch is rolled back and the channel returns to reading one message at a time. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] batching, see [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)  
+ If a message becomes a poison message and is part of a batch, then the entire batch is rolled back and the channel returns to reading one message at a time. For more information about batching, see [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)  
   
 ## Poison-message Handling for Messages in a Poison Queue  
  Poison-message handling does not end when a message is placed in the poison-message queue. Messages in the poison-message queue must still be read and handled. You can use a subset of the poison-message handling settings when reading messages from the final poison subqueue. The applicable settings are `ReceiveRetryCount` and `ReceiveErrorHandling`. You can set `ReceiveErrorHandling` to Drop, Reject, or Fault. `MaxRetryCycles` is ignored and an exception is thrown if `ReceiveErrorHandling` is set to Move.  

@@ -38,7 +38,7 @@ The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application model is de
   
  Application messages contain data that is destined for a client or service operation that you or your customer has created. These messages are available to the application-level extension system in message or object form, depending upon your needs.  
   
- All messages pass through the channel system; only application messages are passed from the channel system into the application. To create new channel-level functionality, you must extend the channel system. To create new application-level functionality, you must extend the service or client runtime (dispatchers and channel factories, respectively). [!INCLUDE[crabout](../../../includes/crabout-md.md)] extending the application runtime, see [Extending ServiceHost and the Service Model Layer](../../../docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
+ All messages pass through the channel system; only application messages are passed from the channel system into the application. To create new channel-level functionality, you must extend the channel system. To create new application-level functionality, you must extend the service or client runtime (dispatchers and channel factories, respectively). For more information about extending the application runtime, see [Extending ServiceHost and the Service Model Layer](../../../docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
   
 #### Extending Security  
  To build custom security mechanisms such as tokens and credentials, you must extend the security system. For more information, see [Extending Security](../../../docs/framework/wcf/extending/extending-security.md).  

@@ -5182,13 +5182,13 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="format" /> or <paramref name="arg0" /> is <see langword="null" />.</exception>
+          <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid.  
   
  -or-  
   
- The index of a format item is less than zero, or greater than or equal to one.</exception>
+ The index of a format item is not zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -5390,13 +5390,13 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="format" />, <paramref name="arg0" />, or <paramref name="arg1" /> is <see langword="null" />.</exception>
+          <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid.  
   
  -or-  
   
- The index of a format item is less than zero, or greater than or equal to two.</exception>
+ The index of a format item is not zero or one.</exception>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -5524,13 +5524,13 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="format" />, <paramref name="arg0" />, <paramref name="arg1" />, or <paramref name="arg2" /> is <see langword="null" />.</exception>
+          <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid.  
   
  -or-  
   
- The index of a format item is less than zero, or greater than or equal to three.</exception>
+ The index of a format item is less than zero, or greater than two.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

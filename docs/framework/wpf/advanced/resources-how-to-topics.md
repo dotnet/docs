@@ -23,7 +23,7 @@ ms.workload:
   - dotnet
 ---
 # Resources How-to Topics
-The topics in this section describe how to use [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] resources.  
+The topics in this section describe how to use Windows Presentation Foundation (WPF) resources.  
   
 ## In This Section  
  [Define and Reference a Resource](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)  

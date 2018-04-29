@@ -23,7 +23,7 @@ ms.workload:
   - dotnet
 ---
 # Input (WPF)
-[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] includes support for several types of input. This input includes text, touch, mouse, commands, focus, touch, drag-and-drop, and digital ink. This section describes topics related to input in WPF.  
+Windows Presentation Foundation (WPF) includes support for several types of input. This input includes text, touch, mouse, commands, focus, touch, drag-and-drop, and digital ink. This section describes topics related to input in WPF.  
   
 ## In This Section  
  [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  

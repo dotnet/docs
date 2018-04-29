@@ -23,7 +23,7 @@ ms.workload:
 # WPF Walkthroughs
 Walkthroughs give step-by-step instructions for common scenarios. This makes them a good place to start learning about the product or a particular feature area.  
   
- This topic contains links to [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] walkthroughs.  
+ This topic contains links to Windows Presentation Foundation (WPF) walkthroughs.  
   
 ## WPF Designer Walkthroughs  
   

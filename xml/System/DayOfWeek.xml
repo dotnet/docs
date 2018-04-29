@@ -40,9 +40,7 @@
   
  This enumeration is useful when it is desirable to have a strongly typed specification of the day of the week. For example, this enumeration is the type of the property value for the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> property.  
   
- The members of the <xref:System.DayOfWeek.Saturday?displayProperty=nameWithType> enumeration are not localized. To return the localized name of the day of the week, call the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> or the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method with either the "ddd" or "dddd" format strings. The former format string produces the abbreviated weekday name; the latter produces the full weekday name.  
-  
-   
+ The members of the <xref:System.DayOfWeek> enumeration are not localized. To return the localized name of the day of the week, call the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> or the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method with either the "ddd" or "dddd" format strings. The former format string produces the abbreviated weekday name; the latter produces the full weekday name.  
   
 ## Examples  
  The following example demonstrates the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> property and the <xref:System.DayOfWeek> enumeration.  

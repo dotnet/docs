@@ -1,6 +1,7 @@
 ---
 title: Install the .NET Framework on Windows Vista
 description: Learn how to install the .NET Framework on Windows Vista.
+ms.custom: "updateeachrelease"
 author: rlander
 ms.author: mairaw
 keywords: .NET Framework, Install
@@ -18,7 +19,7 @@ The .NET Framework is required to run many applications on Windows. You can use 
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) is the latest version. It is not supported on Windows Vista and Windows Server 2008. It is included with the [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10) and [Windows Server 2016 Version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709).
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is not supported on Windows Vista and Windows Server 2008. It is included with [Windows 10 [!INCLUDE [RS4](~/includes/rs4.md)]](https://www.microsoft.com/software-download/windows10).
 
 ## .NET Framework 4.6
 

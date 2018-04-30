@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Web Services Protocols Interoperability Guide
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implements a number of Web services protocols. Many of these protocols include a number of options and extensibility points left to the discretion of the implementer. This topic provides a list of Web services protocols [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements. Other topics within this section provide implementation details for each protocol supported.  
+Windows Communication Foundation (WCF) implements a number of Web services protocols. Many of these protocols include a number of options and extensibility points left to the discretion of the implementer. This topic provides a list of Web services protocols [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements. Other topics within this section provide implementation details for each protocol supported.  
   
 ## Web Services Protocols Implemented by WCF  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for Web services (WS) infrastructure protocols through channels and Web services application protocols through the contracts feature. Interoperability for application protocols is accomplished through XML Schema description language 1.0 (XSD) and Web Services Description Language (WSDL) 1.1.  

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;netHttpBinding&gt;
-Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service can use to configure and expose endpoints that are able to communicate over HTTP. When used with a duplex contract, Web Sockets will be used, otherwise HTTP will be used.  
+Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate over HTTP. When used with a duplex contract, Web Sockets will be used, otherwise HTTP will be used.  
   
  \<system.ServiceModel>  
 \<bindings>  

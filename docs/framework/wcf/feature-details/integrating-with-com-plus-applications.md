@@ -25,7 +25,7 @@ ms.workload:
   - "dotnet"
 ---
 # Integrating with COM+ Applications
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich environment for creating distributed applications. If you have a substantial investment in component-based application logic hosted in COM+, you can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to extend your existing logic rather than having to rewrite it. The topics within this section describe how to use COM+ with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+Windows Communication Foundation (WCF) provides a rich environment for creating distributed applications. If you have a substantial investment in component-based application logic hosted in COM+, you can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to extend your existing logic rather than having to rewrite it. The topics within this section describe how to use COM+ with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
   
 ## In This Section  
  [Integrating with COM+ Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)  

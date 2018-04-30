@@ -20,7 +20,7 @@ ms.workload:
 # Understanding HTTP Authentication
 Authentication is the process of identifying whether a client is eligible to access a resource. The HTTP protocol supports authentication as a means of negotiating access to a secure resource.  
   
- The initial request from a client is typically an anonymous request, not containing any authentication information. HTTP server applications can deny the anonymous request while indicating that authentication is required. The server application sends WWW-Authentication headers to indicate the supported authentication schemes. This document describes several authentication schemes for HTTP and discusses their support in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+ The initial request from a client is typically an anonymous request, not containing any authentication information. HTTP server applications can deny the anonymous request while indicating that authentication is required. The server application sends WWW-Authentication headers to indicate the supported authentication schemes. This document describes several authentication schemes for HTTP and discusses their support in Windows Communication Foundation (WCF).  
   
 ## HTTP Authentication Schemes  
  The server can specify multiple authentication schemes for the client to choose from. The following table describes some of the authentication schemes commonly found in Windows applications.  

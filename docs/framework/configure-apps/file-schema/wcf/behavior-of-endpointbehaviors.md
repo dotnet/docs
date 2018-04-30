@@ -51,7 +51,7 @@ The `behavior` element contains a collection of settings for the behavior of an 
 |Element|Description|  
 |-------------|-----------------|  
 |[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
-|[\<callbackDebug>](../../../../../docs/framework/configure-apps/file-schema/wcf/callbackdebug.md)|Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] callback object.|  
+|[\<callbackDebug>](../../../../../docs/framework/configure-apps/file-schema/wcf/callbackdebug.md)|Specifies service debugging for a Windows Communication Foundation (WCF) callback object.|  
 |[\<callbackTimeouts>](../../../../../docs/framework/configure-apps/file-schema/wcf/callbacktimeouts.md)|Specifies the timeout for the client callback.|  
 |[\<clientVia>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientvia.md)|Specifies the route a message should take.|  
 |[\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer.md)|Contains configuration data for the DataContractSerializer.|  

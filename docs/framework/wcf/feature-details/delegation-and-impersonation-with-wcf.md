@@ -35,7 +35,7 @@ ms.workload:
  Both impersonation and delegation require that the client have a Windows identity. If a client does not possess a Windows identity, then the only option available is to flow the client’s identity to the second service.  
   
 ## Impersonation Basics  
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports impersonation for a variety of client credentials. This topic describes service model support for impersonating the caller during the implementation of a service method. Also discussed are common deployment scenarios involving impersonation and SOAP security and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] options in these scenarios.  
+ Windows Communication Foundation (WCF) supports impersonation for a variety of client credentials. This topic describes service model support for impersonating the caller during the implementation of a service method. Also discussed are common deployment scenarios involving impersonation and SOAP security and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] options in these scenarios.  
   
  This topic focuses on impersonation and delegation in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] when using SOAP security. You can also use impersonation and delegation with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] when using transport security, as described in [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md).  
   

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Message Security in WCF
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] has two major modes for providing security (`Transport` and `Message`) and a third mode (`TransportWithMessageCredential`) that combines the two. This topic discusses message security and the reasons to use it.  
+Windows Communication Foundation (WCF) has two major modes for providing security (`Transport` and `Message`) and a third mode (`TransportWithMessageCredential`) that combines the two. This topic discusses message security and the reasons to use it.  
   
 ## What Is Message Security?  
  Message security uses the WS-Security specification to secure messages. The WS-Securityspecification describes enhancements to SOAP messaging to ensure confidentiality, integrity, and authentication at the SOAP message level (instead of the transport level).  

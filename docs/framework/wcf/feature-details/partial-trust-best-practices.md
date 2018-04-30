@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Partial Trust Best Practices
-This topic describes best practices when running [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] in a partial trust environment.  
+This topic describes best practices when running Windows Communication Foundation (WCF) in a partial trust environment.  
   
 ## Serialization  
  Apply the following practices when using the <xref:System.Runtime.Serialization.DataContractSerializer> in a partially-trusted application.  

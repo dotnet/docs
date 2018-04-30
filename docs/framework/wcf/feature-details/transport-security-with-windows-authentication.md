@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Transport Security with Windows Authentication
-The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service secured by Windows security. For more information about programming, see [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md).  
+The following scenario shows a Windows Communication Foundation (WCF) client and service secured by Windows security. For more information about programming, see [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md).  
   
  An intranet Web service displays human resources information. The client is a Windows Form application. The application is deployed in a domain with a Kerberos controller securing the domain.  
   

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Troubleshooting Queued Messaging
-This section contains common questions and troubleshooting help for using queues in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains common questions and troubleshooting help for using queues in Windows Communication Foundation (WCF).  
   
 ## Common Questions  
  **Q:** I used [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Beta 1 and I installed the MSMQ hotfix. Do I need to remove the hotfix?  

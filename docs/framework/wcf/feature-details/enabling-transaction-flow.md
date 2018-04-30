@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Enabling Transaction Flow
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides highly flexible options for controlling transaction flow. A service's transaction flow settings can be expressed using a combination of attributes and configuration.  
+Windows Communication Foundation (WCF) provides highly flexible options for controlling transaction flow. A service's transaction flow settings can be expressed using a combination of attributes and configuration.  
   
 ## Transaction Flow Settings  
  Transaction flow settings are generated for a service endpoint as a result of the intersection of the following three values:  

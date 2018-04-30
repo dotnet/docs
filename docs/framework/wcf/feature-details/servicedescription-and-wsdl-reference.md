@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # ServiceDescription and WSDL Reference
-This topic describes how [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] maps Web Services Description Language (WSDL) documents to and from <xref:System.ServiceModel.Description.ServiceDescription> instances.  
+This topic describes how Windows Communication Foundation (WCF) maps Web Services Description Language (WSDL) documents to and from <xref:System.ServiceModel.Description.ServiceDescription> instances.  
   
 ## How ServiceDescription Maps to WSDL 1.1  
  You can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to export WSDL documents from a <xref:System.ServiceModel.Description.ServiceDescription> instance for your service. WSDL documents are automatically generated for your service when you publish metadata endpoints.  

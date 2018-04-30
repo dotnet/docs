@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Deploying an Internet Information Services-Hosted WCF Service
-Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that is hosted in Internet Information Services (IIS) consists of the following tasks:  
+Developing and deploying a Windows Communication Foundation (WCF) service that is hosted in Internet Information Services (IIS) consists of the following tasks:  
   
 -   Ensure that IIS, ASP.NET, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] activation component are correctly installed and registered.  
   

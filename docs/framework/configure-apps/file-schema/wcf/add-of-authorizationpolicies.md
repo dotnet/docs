@@ -45,7 +45,7 @@ Specifies an authorization policy for claim transformation.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`policyType`|A required String attribute.<br /><br /> The [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] access control model supports provisioning a set of authorization policies as types. This attribute specifies an authorization policy, which enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on that.|  
+|`policyType`|A required String attribute.<br /><br /> The Windows Communication Foundation (WCF) access control model supports provisioning a set of authorization policies as types. This attribute specifies an authorization policy, which enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on that.|  
   
 ### Child Elements  
  None.  

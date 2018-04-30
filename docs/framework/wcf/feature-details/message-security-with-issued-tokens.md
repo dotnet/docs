@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Message Security with Issued Tokens
-The issued token client enables the federated security scenario in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+The issued token client enables the federated security scenario in Windows Communication Foundation (WCF).  
   
  Federated security enables the establishment of trust between independent domains. Each domain centralizes authentication and authorization in a security token service. When trust is established between two such services, members of each domain can use the services of the other.  
   

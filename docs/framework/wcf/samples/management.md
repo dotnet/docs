@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Management
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] management.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) management.  
   
 ## In This Section  
  [WCF Services and Event Tracing for Windows](../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)  

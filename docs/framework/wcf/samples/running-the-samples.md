@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Running the Windows Communication Foundation Samples
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be run in a single-machine or cross-machine configuration. As supplied, the samples are ready for running on a single machine. In a cross-machine configuration, it is necessary to modify a sample's configuration file settings. The following procedures explain how to run a sample in same-machine and cross-machine configurations. Note that there are variations in the steps for services hosted in Internet Information Services (IIS) and the self-hosted samples. Most samples are hosted in IIS; see the sample readme information to determine how it is hosted.  
+The Windows Communication Foundation (WCF) samples can be run in a single-machine or cross-machine configuration. As supplied, the samples are ready for running on a single machine. In a cross-machine configuration, it is necessary to modify a sample's configuration file settings. The following procedures explain how to run a sample in same-machine and cross-machine configurations. Note that there are variations in the steps for services hosted in Internet Information Services (IIS) and the self-hosted samples. Most samples are hosted in IIS; see the sample readme information to determine how it is hosted.  
   
  On [!INCLUDE[wv](../../../../includes/wv-md.md)], samples that are not hosted in IIS require elevated privileges to register a listener with Http.sys. Use Httpcfg.exe to register the service's listening addresses with the account the service is running under, or launch the service from a command prompt running with administrator privileges.  
   

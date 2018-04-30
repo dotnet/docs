@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Specifying Data Transfer in Service Contracts
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can be thought of as a messaging infrastructure. Service operations can receive messages, process them, and send them messages. Messages are described using operation contracts. For example, consider the following contract.  
+The Windows Communication Foundation (WCF) can be thought of as a messaging infrastructure. Service operations can receive messages, process them, and send them messages. Messages are described using operation contracts. For example, consider the following contract.  
   
 ```csharp  
 [ServiceContract]  

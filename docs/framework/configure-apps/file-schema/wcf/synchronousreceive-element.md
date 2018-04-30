@@ -48,7 +48,7 @@ This configuration element is used to specify run-time behavior for receiving me
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## Remarks  
- Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] issues a new thread to pump for each accepted channel. If there are a lot of channels, there is the possibility of running out of threads.  
+ Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. Windows Communication Foundation (WCF) issues a new thread to pump for each accepted channel. If there are a lot of channels, there is the possibility of running out of threads.  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.SynchronousReceiveElement>  

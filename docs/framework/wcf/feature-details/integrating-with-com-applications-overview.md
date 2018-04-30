@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Integrating with COM Applications Overview
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides the managed code developer with a rich environment for creating connected applications. However, if you have a substantial investment in unmanaged COM-based code and do not want to migrate, you can still integrate [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Web services directly into your existing code by using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service moniker. The service moniker can be used from a wide range of COM-based development environments, such as Office VBA, Visual Basic 6.0, or Visual C++ 6.0.  
+Windows Communication Foundation (WCF) provides the managed code developer with a rich environment for creating connected applications. However, if you have a substantial investment in unmanaged COM-based code and do not want to migrate, you can still integrate [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Web services directly into your existing code by using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service moniker. The service moniker can be used from a wide range of COM-based development environments, such as Office VBA, Visual Basic 6.0, or Visual C++ 6.0.  
   
 > [!NOTE]
 >  The service moniker uses a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] communication channel for all communication. The security and identity mechanisms for that channel differ from those used in standard COM and DCOM proxies. In addition, because the service moniker uses a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] communication channel the default timeout period is one minute for all calls.  

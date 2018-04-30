@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Scenario
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] scenarios.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) scenarios.  
   
 ## In This Section  
  [Data Binding Scenarios](../../../../docs/framework/wcf/samples/data-binding-scenarios.md)  
@@ -37,4 +37,4 @@ This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../in
  Demonstrates how to flow caller's identity information from one service to another using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure.  
   
  [Design Patterns: List-Based Publish-Subscribe](../../../../docs/framework/wcf/samples/design-patterns-list-based-publish-subscribe.md)  
- Demonstrates the List-based Publish-Subscribe pattern implemented as a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] program.
+ Demonstrates the List-based Publish-Subscribe pattern implemented as a Windows Communication Foundation (WCF) program.

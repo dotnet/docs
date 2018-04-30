@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Choosing a Transport
-This topic discusses criteria for choosing among the three main transports that are included in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]: HTTP, TCP, and named pipes. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also includes a message queuing (also known as MSMQ) transport, but this document does not cover message queuing.  
+This topic discusses criteria for choosing among the three main transports that are included in Windows Communication Foundation (WCF): HTTP, TCP, and named pipes. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also includes a message queuing (also known as MSMQ) transport, but this document does not cover message queuing.  
   
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] programming model separates endpoint operations (as expressed in a service contract) from the transport mechanism that connects two endpoints. This gives you the flexibility to decide how to expose your services to the network.  
   

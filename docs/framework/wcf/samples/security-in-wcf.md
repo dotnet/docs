@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security in WCF
-This section contains samples relating to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security.  
+This section contains samples relating to Windows Communication Foundation (WCF) security.  
   
 ## In This Section  
  [Cryptographic Agility in WCF Security](../../../../docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md)  

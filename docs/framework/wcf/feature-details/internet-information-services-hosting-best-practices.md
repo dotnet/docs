@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Internet Information Services Hosting Best Practices
-This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  
+This topic outlines some best practices for hosting Windows Communication Foundation (WCF) services.  
   
 ## Implementing WCF Services as DLLs  
  Implementing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service as a DLL that is deployed to the \bin directory of a Web application allows you reuse the service outside of the Web application model, for example, in a test environment that may not have Internet Information Services (IIS) deployed.  

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Interoperability with Web Services Enhancements 3.0
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] clients and services are wire-level compatible with Web Services Enhancements 3.0 for Microsoft .NET (WSE) clients and services when [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients and services are configured to use the August 2004 version of the WS-Addressing specification.  
+Windows Communication Foundation (WCF) clients and services are wire-level compatible with Web Services Enhancements 3.0 for Microsoft .NET (WSE) clients and services when [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients and services are configured to use the August 2004 version of the WS-Addressing specification.  
   
 ## In This Section  
  [How to: Configure WCF Services to Interoperate with WSE 3.0 Clients](../../../../docs/framework/wcf/feature-details/how-to-configure-wcf-services-to-interoperate-with-wse-3-0-clients.md)  

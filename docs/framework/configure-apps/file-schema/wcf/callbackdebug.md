@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;callbackDebug&gt;
-Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] callback object.  
+Specifies service debugging for a Windows Communication Foundation (WCF) callback object.  
   
  \<system.ServiceModel>  
 \<behaviors>  

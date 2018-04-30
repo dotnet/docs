@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Metadata Architecture Overview
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich infrastructure for exporting, publishing, retrieving, and importing service metadata. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services use metadata to describe how to interact with the service's endpoints so that tools, such as Svcutil.exe, can automatically generate client code for accessing the service.  
+Windows Communication Foundation (WCF) provides a rich infrastructure for exporting, publishing, retrieving, and importing service metadata. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services use metadata to describe how to interact with the service's endpoints so that tools, such as Svcutil.exe, can automatically generate client code for accessing the service.  
   
  Most of the types that make up the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] metadata infrastructure reside in the <xref:System.ServiceModel.Description> namespace.  
   

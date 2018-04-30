@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Routing Services
-This section includes samples that demonstrate how to use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Router.  
+This section includes samples that demonstrate how to use the Windows Communication Foundation (WCF) Router.  
   
 ## In This Section  
  [Hello World with the Routing Service](../../../../docs/framework/wcf/samples/hello-world-with-the-routing-service.md)  

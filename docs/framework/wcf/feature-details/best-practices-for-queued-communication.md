@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Best Practices for Queued Communication
-This topic provides recommended practices for queued communication in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. The following sections discuss recommended practices from a scenario perspective.  
+This topic provides recommended practices for queued communication in Windows Communication Foundation (WCF). The following sections discuss recommended practices from a scenario perspective.  
   
 ## Fast, Best-Effort Queued Messaging  
  For scenarios that require separation that queued messaging provides and fast, high-performance messaging with best-effort assurances, use a non-transactional queue and set the <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> property to `false`.  

@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Syndication
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides support to easily work with syndication feeds in Atom, RSS or other custom formats, which allows you to read and create them as well as expose them on a service endpoint. The topics in this section describe this programming model for syndication in detail.  
+Windows Communication Foundation (WCF) provides support to easily work with syndication feeds in Atom, RSS or other custom formats, which allows you to read and create them as well as expose them on a service endpoint. The topics in this section describe this programming model for syndication in detail.  
   
 ## In This Section  
  [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  

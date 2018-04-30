@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Integrating with COM+ Applications Overview
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich environment for creating distributed applications. If you are already using component-based application logic hosted in COM+, you can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to extend your existing logic rather than having to rewrite it. A common scenario is when you want to expose existing COM+ or Enterprise Services business logic through Web Services.  
+Windows Communication Foundation (WCF) provides a rich environment for creating distributed applications. If you are already using component-based application logic hosted in COM+, you can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to extend your existing logic rather than having to rewrite it. A common scenario is when you want to expose existing COM+ or Enterprise Services business logic through Web Services.  
   
  When an interface on a COM+ component is exposed as a Web service, the specification and contract of these services are determined by an automatic mapping that is performed at application initialization time. The following list shows the conceptual model for this mapping:  
   

@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Windows Communication Foundation Security
-The topics in this section describe [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security features and how to use them to help secure messages.  
+The topics in this section describe Windows Communication Foundation (WCF) security features and how to use them to help secure messages.  
   
  For more information about Windows Server AppFabric and security, see [Security Model for Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
   

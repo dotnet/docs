@@ -132,7 +132,7 @@ The .NET composite formatting feature takes a list of objects and a composite fo
   
     -   For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture is used.  
   
-    -   For objects of other types, if a composite formatting is called with an <xref:System.IFormatProvider> argument, its value is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation. Otherwise, `null` is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  
+    -   For objects of other types, if a composite formatting method is called with an <xref:System.IFormatProvider> argument, its value is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation. Otherwise, `null` is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  
   
 4.  The type's parameterless `ToString` method, which either overrides <xref:System.Object.ToString?displayProperty=nameWithType> or inherits the behavior of its base class, is called. In this case, the format string specified by the *formatString* component in the format item, if it is present, is ignored.  
   

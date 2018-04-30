@@ -57,7 +57,7 @@ Specifies settings for a service host.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Specifies the settings for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service.|  
+|[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Specifies the settings for a Windows Communication Foundation (WCF) service.|  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.HostElement>  

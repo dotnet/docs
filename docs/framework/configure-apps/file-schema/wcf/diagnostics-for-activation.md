@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;diagnostics&gt; for Activation
-Configures [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] listener's diagnostics functionalities.  
+Configures Windows Communication Foundation (WCF) listener's diagnostics functionalities.  
   
  \<system.serviceModel.activation>  
 \<diagnostics>  

@@ -20,7 +20,7 @@ ms.workload:
 
 # &lt;filters&gt; of &lt;routing&gt;
 
-Represents a configuration section for defining a set of routing filters, which determine the type of [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] <xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages.
+Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF) <xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages.
 
 [**\<system.serviceModel>**](system-servicemodel.md)   
 &nbsp;&nbsp;[**\<routing>**](routing.md)   
@@ -53,13 +53,13 @@ None
 
 |     | Description |
 | --- | ----------- |
-| [**\<filter>**](../../../../../docs/framework/configure-apps/file-schema/wcf/filter.md) | Contains a routing filter that determines the type of [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)]<xref:System.ServiceModel.Dispatcher.MessageFilter> will be used when evaluating incoming messages. |
+| [**\<filter>**](../../../../../docs/framework/configure-apps/file-schema/wcf/filter.md) | Contains a routing filter that determines the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> will be used when evaluating incoming messages. |
 
 ### Parent elements
 
 |     | Description |
 | --- | ----------- |
-| [**\<routing>**](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md) | Represents a configuration section for defining a set of routing filters, which determine the type of [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)]<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches. |
+| [**\<routing>**](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md) | Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches. |
 
 ## See also
 

@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;system.serviceModel&gt;
-This configuration section contains all the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] ServiceModel configuration elements.  
+This configuration section contains all the Windows Communication Foundation (WCF) ServiceModel configuration elements.  
   
 ## Syntax  
   
@@ -75,7 +75,7 @@ This configuration section contains all the [!INCLUDE[indigo1](../../../../../in
 |[\<extensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/extensions-section.md)|This section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.|  
 |[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|This section contains settings for the diagnostics features of WCF. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.|  
 |[\<protocolMapping>](../../../../../docs/framework/configure-apps/file-schema/wcf/protocolmapping.md)|This section defines a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings.|  
-|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|This section defines a set of routing filters, which determine the type of [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)]<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches.|  
+|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|This section defines a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches.|  
 |[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|This section defines what type the service hosting environment instantiates for a particular transport. If this section is empty, the default type is used.|  
 |[\<services>](../../../../../docs/framework/configure-apps/file-schema/wcf/services.md)|The section contains a collection of services. For each service defined in the assembly, this element contains a `service` element specifying settings for the service.|  
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|This section defines a collection of standard endpoints, which are reusable preconfigured endpoints. A standard endpoint will have one or more of the address, binding and contract attributes set to a fixed value. For example, in the discovery endpoint the contract is fixed. You can also use standard endpoints to extend service endpoint with new properties similar to defining custom bindings.|  

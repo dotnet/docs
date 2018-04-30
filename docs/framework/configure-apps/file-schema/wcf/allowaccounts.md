@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;allowAccounts&gt;
-Contains a collection of configuration elements that specify user accounts for processes that host [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] services, and are granted connection access to the sharing service.  
+Contains a collection of configuration elements that specify user accounts for processes that host Windows Communication Foundation (WCF) services, and are granted connection access to the sharing service.  
   
  \<system.serviceModel.activation>  
   

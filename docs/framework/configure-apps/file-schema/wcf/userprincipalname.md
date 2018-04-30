@@ -50,7 +50,7 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 |[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies the identity of the service to be authenticated by the client.|  
   
 ## Remarks  
- A secure [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
+ A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
   
 ## Example  
  The following configuration code specifies the UPN of the service to be authenticated by the client.  

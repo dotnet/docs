@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;serviceDebug&gt;
-Specifies debugging and help information features for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service.  
+Specifies debugging and help information features for a Windows Communication Foundation (WCF) service.  
   
  \<system.ServiceModel>  
 \<behaviors>  

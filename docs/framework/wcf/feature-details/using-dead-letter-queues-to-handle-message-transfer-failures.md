@@ -31,7 +31,7 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
   
  The custom dead-letter queue provides isolation between clients that share the same MSMQ service to send messages.  
   
- On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a system-wide dead-letter queue for all queued client applications. On [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a dead-letter queue for each queued client application.  
+ On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], Windows Communication Foundation (WCF) provides a system-wide dead-letter queue for all queued client applications. On [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a dead-letter queue for each queued client application.  
   
 ## Specifying Use of the Dead-Letter Queue  
  A dead-letter queue is in the queue manager of the sending application. It stores messages that have expired or that have failed transfer or delivery.  

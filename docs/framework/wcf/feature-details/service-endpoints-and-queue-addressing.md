@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Service Endpoints and Queue Addressing
-This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] queued application deployment.  
+This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic Windows Communication Foundation (WCF) queued application deployment.  
   
  ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   

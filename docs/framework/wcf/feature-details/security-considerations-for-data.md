@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Considerations for Data
-When dealing with data in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you must consider a number of threat categories. The following table lists the most important threat classes that relate to data processing. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides tools to mitigate these threats.  
+When dealing with data in Windows Communication Foundation (WCF), you must consider a number of threat categories. The following table lists the most important threat classes that relate to data processing. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides tools to mitigate these threats.  
   
  Denial of service  
  When receiving untrusted data, the data may cause the receiving side to access a disproportionate amount of various resources, such as memory, threads, available connections, or processor cycles by causing lengthy computations. A denial-of-service attack against a server may cause it to crash and be unable to process messages from other, legitimate clients.  
@@ -33,7 +33,7 @@ When dealing with data in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
  The remote attacker forces the receiving party to respond to its requests in such a way as to disclose more information than it intends to.  
   
 ## User-Provided Code and Code Access Security  
- A number of places in the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure run code that is provided by the user. For example, the <xref:System.Runtime.Serialization.DataContractSerializer> serialization engine may call user-provided property `set` accessors and `get` accessors. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel infrastructure may also call into user-provided derived classes of the <xref:System.ServiceModel.Channels.Message> class.  
+ A number of places in the Windows Communication Foundation (WCF) infrastructure run code that is provided by the user. For example, the <xref:System.Runtime.Serialization.DataContractSerializer> serialization engine may call user-provided property `set` accessors and `get` accessors. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel infrastructure may also call into user-provided derived classes of the <xref:System.ServiceModel.Channels.Message> class.  
   
  It is the responsibility of the code author to ensure that no security vulnerabilities exist. For example, if you create a data contract type with a data member property of type integer, and in the `set` accessor implementation allocate an array based on the property value, you expose the possibility of a denial-of-service attack if a malicious message contains an extremely large value for this data member. In general, avoid any allocations based on incoming data or lengthy processing in user-provided code (especially if lengthy processing can be caused by a small amount of incoming data). When performing security analysis of user-provided code, make sure to also consider all failure cases (that is, all code branches where exceptions are thrown).  
   

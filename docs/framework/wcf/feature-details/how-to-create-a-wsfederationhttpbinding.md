@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Create a WSFederationHttpBinding
-In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.ServiceModel.WSFederationHttpBinding> class ([\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) in configuration) provides a mechanism for exposing a federated service. That is, a service that requires clients to authenticate using a security token issued by a security token service. This topic shows how to set up a <xref:System.ServiceModel.WSFederationHttpBinding> in both code and configuration. Once the binding is created, you can set up an endpoint to use that binding.  
+In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFederationHttpBinding> class ([\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) in configuration) provides a mechanism for exposing a federated service. That is, a service that requires clients to authenticate using a security token issued by a security token service. This topic shows how to set up a <xref:System.ServiceModel.WSFederationHttpBinding> in both code and configuration. Once the binding is created, you can set up an endpoint to use that binding.  
   
  The basic steps are outlined as follows:  
   

@@ -58,7 +58,7 @@ In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], types ha
 ### Schema Representation  
  The details of the XML Schema definition language (XSD) schema representation of data members when the `EmitDefaultValue` property is set to `false` are discussed in [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md). However, the following is a brief overview:  
   
--   When the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> is set to `false`, it is represented in the schema as an annotation specific to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. There is no interoperable way to represent this information. In particular, the "default" attribute in the schema is not used for this purpose, the `minOccurs` attribute is affected only by the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> setting, and the `nillable` attribute is affected only by the type of the data member.  
+-   When the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> is set to `false`, it is represented in the schema as an annotation specific to Windows Communication Foundation (WCF). There is no interoperable way to represent this information. In particular, the "default" attribute in the schema is not used for this purpose, the `minOccurs` attribute is affected only by the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> setting, and the `nillable` attribute is affected only by the type of the data member.  
   
 -   The actual default value to use is not present in the schema. It is up to the receiving endpoint to appropriately interpret a missing element.  
   

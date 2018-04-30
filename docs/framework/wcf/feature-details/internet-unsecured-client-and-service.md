@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Internet Unsecured Client and Service
-The following illustration shows an example of a public, unsecured [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service.  
+The following illustration shows an example of a public, unsecured Windows Communication Foundation (WCF) client and service.  
   
  ![Unsecured Internet cleint and service scenario](../../../../docs/framework/wcf/feature-details/media/publicunsecured.gif "publicUnsecured")  
   

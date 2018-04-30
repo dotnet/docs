@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Hosting in Internet Information Services
-One option for hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services is inside of an Internet Information Services (IIS) application. This hosting model is similar to the model used by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and ASP.NET Web services (ASMX) Web Services.  
+One option for hosting Windows Communication Foundation (WCF) services is inside of an Internet Information Services (IIS) application. This hosting model is similar to the model used by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and ASP.NET Web services (ASMX) Web Services.  
   
 ## Versions of IIS  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can be hosted on the following versions of IIS on the following operating systems:  

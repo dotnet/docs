@@ -20,7 +20,7 @@ ms.workload:
 # Routing Service
 The Routing Service is a generic SOAP intermediary that acts as a message router. The core functionality of the Routing Service is the ability to route messages based on message content, which allows a message to be forwarded to a client endpoint based on a value within the message itself, in either the header or the message body.  
   
- The <xref:System.ServiceModel.Routing.RoutingService> is implemented as a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service in the <xref:System.ServiceModel.Routing> namespace. The Routing Service exposes one or more service endpoints that receive messages and then routes each message to one or more client endpoints based on the message content. The service provides the following features:  
+ The <xref:System.ServiceModel.Routing.RoutingService> is implemented as a Windows Communication Foundation (WCF) service in the <xref:System.ServiceModel.Routing> namespace. The Routing Service exposes one or more service endpoints that receive messages and then routes each message to one or more client endpoints based on the message content. The service provides the following features:  
   
 -   Content-based routing  
   

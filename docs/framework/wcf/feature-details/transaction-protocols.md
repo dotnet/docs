@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Transaction Protocols
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implements WS-Atomic Transaction and WS-Coordination protocols.  
+Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-Coordination protocols.  
   
 |Specification/Document|Version|Link|  
 |-----------------------------|-------------|----------|  

@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Configuring System-Provided Bindings
-Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. Bindings consist of elements that define how the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channels are layered up to provide the required communication features. A binding contains three types of elements:  
+Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. Bindings consist of elements that define how the Windows Communication Foundation (WCF) channels are layered up to provide the required communication features. A binding contains three types of elements:  
   
 -   Protocol channel binding elements, which determine the security, reliability, context flow settings, or user-defined protocols to use with messages that are sent to the endpoint.  
   
@@ -30,7 +30,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
   
 -   Message encoding binding elements, which determine the wire encoding to use for messages that are sent to the endpoint, for example, text/XML, binary, or Message Transmission Optimization Mechanism (MTOM).  
   
- This topic presents all of the system-provided [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] bindings. If none of these meets the exact requirements for your application, you can create a binding using the <xref:System.ServiceModel.Channels.CustomBinding> class. For more information about creating custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
+ This topic presents all of the system-provided Windows Communication Foundation (WCF) bindings. If none of these meets the exact requirements for your application, you can create a binding using the <xref:System.ServiceModel.Channels.CustomBinding> class. For more information about creating custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
 > [!IMPORTANT]
 >  Select a binding that has security enabled. By default, all bindings, except the <xref:System.ServiceModel.BasicHttpBinding> binding, have security enabled. If you do not select a secure binding, or if you disable security, be sure your network exchanges are protected in some other manner, such as being in a secured data center or on an isolated network.  

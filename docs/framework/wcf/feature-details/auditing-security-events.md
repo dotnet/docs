@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Auditing Security Events
-Applications created with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can log security events (either success, failure, or both) with the auditing feature. The events are written to the Windows system event log and can be examined using the Event Viewer.  
+Applications created with Windows Communication Foundation (WCF) can log security events (either success, failure, or both) with the auditing feature. The events are written to the Windows system event log and can be examined using the Event Viewer.  
   
  Auditing provides a way for an administrator to detect an attack that has already occurred or is in progress. In addition, auditing can help a developer to debug security-related problems. For example, if an error in the configuration of the authorization or checking policy accidentally denies access to an authorized user, a developer can quickly discover and isolate the cause of this error by examining the event log.  
   

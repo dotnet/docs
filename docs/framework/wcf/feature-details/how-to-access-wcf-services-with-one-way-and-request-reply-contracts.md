@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Access WCF Services with One-Way and Request-Reply Contracts
-The following procedures describe how to access a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that defines a one-way contract and a request-reply contract and that does not use the duplex communication pattern.  
+The following procedures describe how to access a Windows Communication Foundation (WCF) service that defines a one-way contract and a request-reply contract and that does not use the duplex communication pattern.  
   
 ### To define the service  
   

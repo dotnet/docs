@@ -139,7 +139,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  [!code-vb[C_KnownTypeAttribute#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb/source.vb#10)]  
   
 ## Additional Ways to Add Known Types  
- Additionally, known types can be added through a configuration file. This is useful when you do not control the type that requires known types for proper deserialization, such as when using third-party type libraries with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+ Additionally, known types can be added through a configuration file. This is useful when you do not control the type that requires known types for proper deserialization, such as when using third-party type libraries with Windows Communication Foundation (WCF).  
   
  The following configuration file shows how to specify a known type in a configuration file.  
   

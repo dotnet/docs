@@ -20,7 +20,7 @@ ms.workload:
 # Transaction Models
 This topic describes the relationship between the transaction programming models and the infrastructure components Microsoft provides.  
   
- When using transactions in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], it is important to understand that you are not selecting between different transactional models, but rather operating at different layers of an integrated and consistent model.  
+ When using transactions in Windows Communication Foundation (WCF), it is important to understand that you are not selecting between different transactional models, but rather operating at different layers of an integrated and consistent model.  
   
  The following sections describe the three primary transaction components.  
   

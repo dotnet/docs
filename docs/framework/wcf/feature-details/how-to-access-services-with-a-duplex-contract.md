@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Access Services with a Duplex Contract
-One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ability to create a service that uses a duplex messaging pattern. This pattern allows a service to communicate with the client through a callback. This topic shows the steps to create a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client in a client class that implements the callback interface.  
+One feature of Windows Communication Foundation (WCF) is the ability to create a service that uses a duplex messaging pattern. This pattern allows a service to communicate with the client through a callback. This topic shows the steps to create a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client in a client class that implements the callback interface.  
   
  A dual binding exposes the IP address of the client to the service. The client should use security to ensure that it connects only to services it trusts.  
   

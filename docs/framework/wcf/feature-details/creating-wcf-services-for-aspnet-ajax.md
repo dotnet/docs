@@ -22,7 +22,7 @@ Microsoft ASP.NET AJAX enables you to quickly create Web pages that include a ri
   
  ASP.NET AJAX consists of client-script libraries and of server components that are integrated to provide a robust development framework. To access a service from an ASP.NET page: once the service URL is added to the ASP.NET Script Manager control on the page, service operations may be invoked using JavaScript code that looks exactly like a regular JavaScript function call. See [Learn ASP.NET AJAX](http://go.microsoft.com/fwlink/?LinkId=186475) about the use of Web services within the AJAX framework.  
   
- Most [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services may be exposed as a service compatible with ASP.NET AJAX by adding an appropriate ASP.NET AJAX endpoint.  
+ Most Windows Communication Foundation (WCF) services may be exposed as a service compatible with ASP.NET AJAX by adding an appropriate ASP.NET AJAX endpoint.  
   
  If you are using Visual Studio, you may use a pre-built template for AJAX-enabled WCF services, available in the **Add New Item** dialog when working with ASP.NET Web Sites or Web Applications.  
   

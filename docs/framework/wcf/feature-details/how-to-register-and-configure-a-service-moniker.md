@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Register and Configure a Service Moniker
-Before using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service moniker within a COM application with a typed contract, you must register the required attributed types with COM, and configure the COM application and the moniker with the required binding configuration.  
+Before using the Windows Communication Foundation (WCF) service moniker within a COM application with a typed contract, you must register the required attributed types with COM, and configure the COM application and the moniker with the required binding configuration.  
   
 ### To register the required attributed types with COM  
   

@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Message Security with a Windows Client without Credential Negotiation
-The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service secured by the Kerberos protocol.  
+The following scenario shows a Windows Communication Foundation (WCF) client and service secured by the Kerberos protocol.  
   
  Both the service and the client are in the same domain or trusted domains.  
   

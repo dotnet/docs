@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Behaviors in WCF
-In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run-time behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration. This topic focuses on configuring the following behaviors related to security functions:  
+In Windows Communication Foundation (WCF), behaviors modify run-time behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration. This topic focuses on configuring the following behaviors related to security functions:  
   
 -   [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   

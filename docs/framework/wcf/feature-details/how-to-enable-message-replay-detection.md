@@ -30,7 +30,7 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
  For more information about message replay detection, see [Message Replay Detection](http://go.microsoft.com/fwlink/?LinkId=88536).  
   
- The following procedure demonstrates various properties that you can use to control replay detection using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+ The following procedure demonstrates various properties that you can use to control replay detection using Windows Communication Foundation (WCF).  
   
 ### To control replay detection on the client using code  
   

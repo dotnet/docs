@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Encoding Binary Objects with ByteStream Encoder
-Sending and receiving raw binary data with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is configured using <xref:System.ServiceModel.Channels.ByteStreamMessageEncodingBindingElement>.  
+Sending and receiving raw binary data with Windows Communication Foundation (WCF) is configured using <xref:System.ServiceModel.Channels.ByteStreamMessageEncodingBindingElement>.  
   
 ## Byte Stream Message Encoder Architecture  
  The binary message encoder used by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] has no facility for processing, validating, or identifying the underlying binary data in the message. The data package is encoded into XML, sent, received, and decoded. The encoder processes the data after being passed to the transport and before the message is sent to the message queue. Functionally, the binary encoder wraps the message data in `<binary>` elements for sending and removes the elements after the message is received.  

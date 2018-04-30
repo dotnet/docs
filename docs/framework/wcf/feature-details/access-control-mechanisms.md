@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Access Control Mechanisms
-You can control access in several way with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. This topic briefly discusses the various mechanisms and provides suggestions on when to use each; it is intended to help you select the correct mechanism to use. The access technologies are listed in order of complexity. The simplest is the <xref:System.Security.Permissions.PrincipalPermissionAttribute>; the most complex is the Identity Model.  
+You can control access in several way with Windows Communication Foundation (WCF). This topic briefly discusses the various mechanisms and provides suggestions on when to use each; it is intended to help you select the correct mechanism to use. The access technologies are listed in order of complexity. The simplest is the <xref:System.Security.Permissions.PrincipalPermissionAttribute>; the most complex is the Identity Model.  
   
  In addition to these mechanisms, impersonation and delegation with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is explained in [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   

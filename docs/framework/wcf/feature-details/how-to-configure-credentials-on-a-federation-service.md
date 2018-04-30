@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Configure Credentials on a Federation Service
-In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a federated service consists of the following main procedures:  
+In Windows Communication Foundation (WCF), creating a federated service consists of the following main procedures:  
   
 1.  Configuring a <xref:System.ServiceModel.WSFederationHttpBinding> or similar custom binding. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md).  
   

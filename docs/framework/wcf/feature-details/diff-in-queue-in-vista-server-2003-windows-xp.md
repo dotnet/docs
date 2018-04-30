@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP
-This topic summarizes the differences in the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] queues feature between [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+This topic summarizes the differences in the Windows Communication Foundation (WCF) queues feature between [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
 ## Application-Specific Dead-Letter Queue  
  Queued messages can remain in the queue indefinitely if the receiving application does not read them in a timely fashion. This behavior is not advisable if the messages are time-sensitive. Time-sensitive messages have a `TimeToLive` property set in the queued binding. This property indicates how long the messages can be in the queue before they expire. Expired messages are sent to a special queue called the dead-letter queue. A message can also end up in a dead-letter queue for other reasons, such as exceeding a queue quota or experiencing an authentication failure.  

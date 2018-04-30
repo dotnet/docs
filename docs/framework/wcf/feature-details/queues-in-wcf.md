@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Queues in Windows Communication Foundation
-The topics in this section discuss [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] support for queues. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for queuing by leveraging Microsoft Message Queuing (previously known as MSMQ) as a transport and enables the following scenarios:  
+The topics in this section discuss Windows Communication Foundation (WCF) support for queues. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for queuing by leveraging Microsoft Message Queuing (previously known as MSMQ) as a transport and enables the following scenarios:  
   
 -   Loosely coupled applications. Sending applications can send messages to queues without needing to know whether the receiving application is available to process the message. The queue provides processing independence that allows a sending application to send messages to the queue at a rate that does not depend on how fast the receiving applications can process the messages. Overall system availability increases when sending messages to a queue is not tightly coupled to message processing.  
   

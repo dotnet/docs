@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using Message Contracts
-Typically when building [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] applications, developers pay close attention to the data structures and serialization issues and do not need to concern themselves with the structure of the messages in which the data is carried. For these applications, creating data contracts for the parameters or return values is straightforward. (For more information, see [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).)  
+Typically when building Windows Communication Foundation (WCF) applications, developers pay close attention to the data structures and serialization issues and do not need to concern themselves with the structure of the messages in which the data is carried. For these applications, creating data contracts for the parameters or return values is straightforward. (For more information, see [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).)  
   
  However, sometimes complete control over the structure of a SOAP message is just as important as control over its contents. This is especially true when interoperability is important or to specifically control security issues at the level of the message or message part. In these cases, you can create a *message contract* that enables you to specify the structure of the precise SOAP message required.  
   

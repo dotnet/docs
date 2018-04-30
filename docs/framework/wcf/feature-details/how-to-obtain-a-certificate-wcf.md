@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Obtain a Certificate (WCF)
-To use any of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features of that use X.509 certificates, you just first obtain certificates.  
+To use any of the Windows Communication Foundation (WCF) features of that use X.509 certificates, you just first obtain certificates.  
   
 ### To obtain an X.509 certificate  
   

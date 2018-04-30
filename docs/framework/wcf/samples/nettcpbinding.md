@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # NetTCPBinding
-This section contains samples that demonstrate using TCP binding in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate using TCP binding in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Default NetTcpBinding](../../../../docs/framework/wcf/samples/default-nettcpbinding.md)  

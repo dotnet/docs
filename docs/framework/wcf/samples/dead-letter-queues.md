@@ -177,7 +177,7 @@ public void SubmitPurchaseOrder(PurchaseOrder po)
 }
 ```
 
- Messages in the dead-letter queue are messages that are addressed to the service that is processing the message. Therefore, when the dead-letter message service reads messages from the queue, the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is received by the dead-letter message service. To receive a message that is addressed to a different endpoint, an address filter to match any address is specified in the `ServiceBehavior`. This is required to successfully process messages that are read from the dead-letter queue.  
+ Messages in the dead-letter queue are messages that are addressed to the service that is processing the message. Therefore, when the dead-letter message service reads messages from the queue, the Windows Communication Foundation (WCF) channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is received by the dead-letter message service. To receive a message that is addressed to a different endpoint, an address filter to match any address is specified in the `ServiceBehavior`. This is required to successfully process messages that are read from the dead-letter queue.  
   
  In this sample, the dead-letter message service resends the message if the reason for failure is that the message timed out. For all other reasons, it displays the delivery failure, as shown in the following sample code:  
 
@@ -365,7 +365,7 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  
   

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Message Queueing Integration
-This section contains samples that demonstrate integration between Message Queuing and [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate integration between Message Queuing and Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Message Queuing to Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)  

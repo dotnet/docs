@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Automatic Format Selection
-This sample demonstrates how to enable automatic format selection (XML or JSON) with the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST programming model, as well as how to explicitly set the format in the operation code.  
+This sample demonstrates how to enable automatic format selection (XML or JSON) with the Windows Communication Foundation (WCF) REST programming model, as well as how to explicitly set the format in the operation code.  
   
 ## Sample Details  
  The sample consists of a service along with client code that makes requests to the service. The service supports a single HTTP `GET` operation (`EchoWithGet`) and a single HTTP `POST` operation (`EchoWithPost`). Both operations expect a string and then return the string in the response. With the `GET` operation, the string is provided in a URI query-string parameter. With the `POST` operation, the string is provided in the body of the request, serialized in XML. The service is able to return responses in either XML or JSON, utilizing the new automatic format selection and imperative format selection features in [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)].  
@@ -44,7 +44,7 @@ This sample demonstrates how to enable automatic format selection (XML or JSON) 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\AutomaticFormatSelection`  
   

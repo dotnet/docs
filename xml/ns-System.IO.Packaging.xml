@@ -37,7 +37,7 @@
   
  Based on the <xref:System.IO.Packaging.Package> architecture, an <xref:System.Windows.Xps.Packaging.XpsDocument> is a package type designed for storing documents based on the open [XML Paper Specification (XPS)](http://go.microsoft.com/fwlink/?LinkID=65761).  
   
- [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] uses packages to store content, resources, and relationships for pages and documents using a standard ZIP file by default. As with any ZIP file, your application can use the <xref:System.IO.Packaging> classes to store and optionally protect any type or number of data files in a single efficient-to-access container.  
+ Windows Presentation Foundation uses packages to store content, resources, and relationships for pages and documents using a standard ZIP file by default. As with any ZIP file, your application can use the <xref:System.IO.Packaging> classes to store and optionally protect any type or number of data files in a single efficient-to-access container.  
   
  For more information, see the Open Packaging Conventions (OPC) specification, available for download at the XPS section of [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?LinkID=71255).  
   

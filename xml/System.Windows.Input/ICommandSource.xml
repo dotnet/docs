@@ -23,7 +23,7 @@
   
  Some of the classes in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] that implement <xref:System.Windows.Input.ICommandSource> are: <xref:System.Windows.Controls.Primitives.ButtonBase>, <xref:System.Windows.Controls.MenuItem>, and <xref:System.Windows.Documents.Hyperlink>.  
   
- In the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] commanding system, the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> property on a <xref:System.Windows.Input.ICommandSource> is only applicable when the <xref:System.Windows.Input.ICommand> is a <xref:System.Windows.Input.RoutedCommand>.  If the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> is set on a <xref:System.Windows.Input.ICommandSource> and the corresponding command is not a <xref:System.Windows.Input.RoutedCommand>, the command target is ignored.  
+ In the Windows Presentation Foundation commanding system, the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> property on a <xref:System.Windows.Input.ICommandSource> is only applicable when the <xref:System.Windows.Input.ICommand> is a <xref:System.Windows.Input.RoutedCommand>.  If the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> is set on a <xref:System.Windows.Input.ICommandSource> and the corresponding command is not a <xref:System.Windows.Input.RoutedCommand>, the command target is ignored.  
   
  ]]></format>
     </remarks>
@@ -103,7 +103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] commanding system, the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> property on a <xref:System.Windows.Input.ICommandSource> is only applicable when the <xref:System.Windows.Input.ICommand> is a <xref:System.Windows.Input.RoutedCommand>.  If the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> is set on a <xref:System.Windows.Input.ICommandSource> and the corresponding command is not a <xref:System.Windows.Input.RoutedCommand>, the command target is ignored.  
+ In the Windows Presentation Foundation commanding system, the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> property on a <xref:System.Windows.Input.ICommandSource> is only applicable when the <xref:System.Windows.Input.ICommand> is a <xref:System.Windows.Input.RoutedCommand>.  If the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> is set on a <xref:System.Windows.Input.ICommandSource> and the corresponding command is not a <xref:System.Windows.Input.RoutedCommand>, the command target is ignored.  
   
  When used with a <xref:System.Windows.Input.RoutedCommand>, the command target is the object on which the <xref:System.Windows.Input.CommandManager.Executed> and <xref:System.Windows.Input.CommandManager.CanExecute> events are raised. If the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> property is not set, the element with keyboard focus will be used as the target.  
   

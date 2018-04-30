@@ -67,7 +67,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <summary>This constructor supports the Windows Presentation Foundation infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -122,14 +122,14 @@
         <param name="id">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] for the annotation.</param>
         <param name="creationTime">The date and time the annotation was first created.</param>
         <param name="lastModificationTime">The date and time the annotation was last modified.</param>
-        <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <summary>This constructor supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 > [!NOTE]
->  This constructor is used by the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] serialization infrastructure and should not be used directly under ordinary circumstances.  
+>  This constructor is used by the WPF serialization infrastructure and should not be used directly under ordinary circumstances.  
   
  ]]></format>
         </remarks>

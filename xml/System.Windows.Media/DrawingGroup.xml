@@ -133,7 +133,7 @@
  Only <xref:System.Windows.Media.DrawingGroup> objects support bitmap effects. To apply a bitmap effect to another type of <xref:System.Windows.Media.Drawing> object, add it to a <xref:System.Windows.Media.DrawingGroup> and set the <xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A> property of the <xref:System.Windows.Media.DrawingGroup> object.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] bitmap effects are software rendered. Any object that applies a <xref:System.Windows.Media.Effects.BitmapEffect> is also rendered in the software. Avoid using a <xref:System.Windows.Media.Effects.BitmapEffect> in large visuals or animations because this scenario can cause a decrease in system performance.  
+>  Windows Presentation Foundation bitmap effects are software rendered. Any object that applies a <xref:System.Windows.Media.Effects.BitmapEffect> is also rendered in the software. Avoid using a <xref:System.Windows.Media.Effects.BitmapEffect> in large visuals or animations because this scenario can cause a decrease in system performance.  
   
  The following example uses a <xref:System.Windows.Media.DrawingGroup> to apply a <xref:System.Windows.Media.Effects.BlurBitmapEffect> to several <xref:System.Windows.Media.GeometryDrawing> objects.  
   

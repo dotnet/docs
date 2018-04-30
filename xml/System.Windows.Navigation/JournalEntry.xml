@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] implements a navigation history service that stores one entry for each piece of content that has been previously navigated to, just like navigation history in [!INCLUDE[TLA#tla_ie](~/includes/tlasharptla-ie-md.md)]. Navigation history comprises two stacks, one that remembers back navigation history, and one that remembers forward navigation history.  
+ Windows Presentation Foundation implements a navigation history service that stores one entry for each piece of content that has been previously navigated to, just like navigation history in [!INCLUDE[TLA#tla_ie](~/includes/tlasharptla-ie-md.md)]. Navigation history comprises two stacks, one that remembers back navigation history, and one that remembers forward navigation history.  
   
  An entry for the current item is added to back navigation history when a forward navigation occurs. This occurs in the following situations:  
   
@@ -30,13 +30,13 @@
   
 -   The `GoForward` method is called (<xref:System.Windows.Navigation.NavigationService.GoForward%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigationWindow.GoForward%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.GoForward%2A?displayProperty=nameWithType>).  
   
--   The forward button on the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that is displayed from the current navigator ([!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
+-   The forward button on the navigation UI that is displayed from the current navigator ([!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
   
  Likewise, an entry for the current item is added to forward navigation history before a back navigation occurs, which happens when:  
   
 -   The `GoBack` method is called (<xref:System.Windows.Navigation.NavigationService.GoBack%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigationWindow.GoBack%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.GoBack%2A?displayProperty=nameWithType>).  
   
--   The back button on the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that is displayed from the current navigator ([!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
+-   The back button on the navigation UI that is displayed from the current navigator ([!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
   
  Each entry in back and forward navigation history is an instance of the <xref:System.Windows.Navigation.JournalEntry> class.  
   
@@ -239,7 +239,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Content hosted by <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], display navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that allows users to navigate through back and forward navigation history. The text that is displayed for each entry in navigation history depends on which of the following pieces of data are used to automatically construct a navigation history entry name, in order of precedence:  
+ Content hosted by <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], display navigation UI that allows users to navigate through back and forward navigation history. The text that is displayed for each entry in navigation history depends on which of the following pieces of data are used to automatically construct a navigation history entry name, in order of precedence:  
   
 -   The attached <xref:System.Windows.Navigation.JournalEntry.Name%2A> attribute.  
   

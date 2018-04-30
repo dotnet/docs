@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementations of <xref:System.Windows.Input.InputGesture> in [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] are <xref:System.Windows.Input.KeyGesture> and <xref:System.Windows.Input.MouseGesture>.  
+ Implementations of <xref:System.Windows.Input.InputGesture> in Windows Presentation Foundation are <xref:System.Windows.Input.KeyGesture> and <xref:System.Windows.Input.MouseGesture>.  
   
  An input gesture can be associated with a command so that when the gesture is performed the command is invoked.  For more information, see <xref:System.Windows.Input.InputBinding> and the [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
   

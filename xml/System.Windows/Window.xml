@@ -166,7 +166,7 @@
 ## Remarks  
  The rules that determine whether the window is activated are the same as those used by the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] `SetForegroundWindow` function (User32.dll).  
   
- If the window is activated in a [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application that is not the user's foreground application, <xref:System.Windows.Application.Activated> event is raised.  
+ If the window is activated in a Windows Presentation Foundation application that is not the user's foreground application, <xref:System.Windows.Application.Activated> event is raised.  
   
 > [!NOTE]
 >  This method cannot be called when a window is hosted in a browser.  
@@ -799,7 +799,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] standalone applications have two types of icons:  
+ Windows Presentation Foundation (WPF) standalone applications have two types of icons:  
   
 -   One assembly icon, which is specified by using the `<ApplicationIcon>` property in the application's project build file. This icon is used as the desktop icon for an assembly.  
   
@@ -808,15 +808,15 @@
   
 -   One icon per window that is specified by setting <xref:System.Windows.Window.Icon%2A>. For each window, this icon is used in its title bar, its task bar button, and in its ALT-TAB application selection list entry.  
   
- A [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] window always displays an icon. When one is not provided by setting <xref:System.Windows.Window.Icon%2A>, [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] chooses an icon to display based on the following rules:  
+ A WPF window always displays an icon. When one is not provided by setting <xref:System.Windows.Window.Icon%2A>, WPF chooses an icon to display based on the following rules:  
   
 1.  Use the assembly icon, if specified.  
   
-2.  If the assembly icon is not specified, use the default [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] icon.  
+2.  If the assembly icon is not specified, use the default Microsoft Windows icon.  
   
  If you use <xref:System.Windows.Window.Icon%2A> to specify a custom window icon, you can restore the default application icon by setting <xref:System.Windows.Window.Icon%2A> to `null`.  
   
- A single icon can be used in a variety of ways in [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)], including being shown in the title bar of a window, the task bar for a window, the ALT+TAB file selection list. Each of these shows the icon using a different size; a 16x16 pixel icon is displayed in the title bar of a window and in the task bar, while a 32x32 pixel icon is displayed in the ALT+TAB file selection list. Some applications, like [!INCLUDE[TLA#tla_winexpl](~/includes/tlasharptla-winexpl-md.md)], provide a **View** menu that allows you to choose the size of the icon you'd like to view.  
+ A single icon can be used in a variety of ways in Windows, including being shown in the title bar of a window, the task bar for a window, the ALT+TAB file selection list. Each of these shows the icon using a different size; a 16x16 pixel icon is displayed in the title bar of a window and in the task bar, while a 32x32 pixel icon is displayed in the ALT+TAB file selection list. Some applications, like [!INCLUDE[TLA#tla_winexpl](~/includes/tlasharptla-winexpl-md.md)], provide a **View** menu that allows you to choose the size of the icon you'd like to view.  
   
  To cater to the various display sizes, an icon file is composed of one or more actual icons where each one represents a version of the icon that targets a specific size and color depth. For example, one icon may only have a single 16x16 pixel icon with 16 colors, while another may contain 16x16 pixel and 32x32 pixel icons with both 16 colors and 256 colors.  
   

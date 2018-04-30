@@ -17,7 +17,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Encapsulates a Windows Presentation Foundation (WPF) application.</summary>
+    <summary>Encapsulates a Windows Presentation Foundation application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application that has one or more open windows is activated (becomes the foreground application) when one of the windows is activated for the first time since the application was launched, or when one of the windows is activated while the application is inactive: Specifically, activation occurs when:  
+ A Windows Presentation Foundation application that has one or more open windows is activated (becomes the foreground application) when one of the windows is activated for the first time since the application was launched, or when one of the windows is activated while the application is inactive: Specifically, activation occurs when:  
   
 -   An application opens its first window.  
   
@@ -197,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application that has one or more open windows deactivates (stops being the foreground application) when a user does the following:  
+ A Windows Presentation Foundation application that has one or more open windows deactivates (stops being the foreground application) when a user does the following:  
   
 -   Switches to another application by using ALT+TAB or by using Task Manager.  
   
@@ -245,19 +245,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] catches unhandled exceptions, notifies users of the exception from a dialog box (from which they can report the exception), and automatically shuts down an application.  
+ By default, Windows Presentation Foundation catches unhandled exceptions, notifies users of the exception from a dialog box (from which they can report the exception), and automatically shuts down an application.  
   
  However, if an application needs to perform custom unhandled exception processing from a centralized location, you should handle <xref:System.Windows.Application.DispatcherUnhandledException>.  
   
  <xref:System.Windows.Application.DispatcherUnhandledException> is raised by an <xref:System.Windows.Application> for each exception that is unhandled by code running on the main UI thread.  
   
- If an exception is not handled on either a background [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread (a thread with its own <xref:System.Windows.Threading.Dispatcher>) or a background worker thread (a thread without a <xref:System.Windows.Threading.Dispatcher>), the exception is not forwarded to the main [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread. Consequently, <xref:System.Windows.Application.DispatcherUnhandledException> is not raised. In these circumstances, you will need to write code to do the following:  
+ If an exception is not handled on either a background UI thread (a thread with its own <xref:System.Windows.Threading.Dispatcher>) or a background worker thread (a thread without a <xref:System.Windows.Threading.Dispatcher>), the exception is not forwarded to the main UI thread. Consequently, <xref:System.Windows.Application.DispatcherUnhandledException> is not raised. In these circumstances, you will need to write code to do the following:  
   
 1.  Handle exceptions on the background thread.  
   
-2.  Dispatch those exceptions to the main [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread.  
+2.  Dispatch those exceptions to the main UI thread.  
   
-3.  Rethrow them on the main [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread without handling them to allow <xref:System.Windows.Application.DispatcherUnhandledException> to be raised.  
+3.  Rethrow them on the main UI thread without handling them to allow <xref:System.Windows.Application.DispatcherUnhandledException> to be raised.  
   
  For more information, see the [Threading Model](~/docs/framework/wpf/advanced/threading-model.md) overview.  
   
@@ -1604,7 +1604,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Starts a Windows Presentation Foundation (WPF) application.</summary>
+        <summary>Starts a Windows Presentation Foundation application.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Run">
@@ -1623,7 +1623,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Starts a [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application.</summary>
+        <summary>Starts a Windows Presentation Foundation application.</summary>
         <returns>The <see cref="T:System.Int32" /> application exit code that is returned to the operating system when the application shuts down. By default, the exit code value is 0.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1631,7 +1631,7 @@
 ## Remarks  
  <xref:System.Windows.Application.Run%2A> is called to start a [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] application. If you define your <xref:System.Windows.Application> using markup, or markup and code-behind, <xref:System.Windows.Application.Run%2A> will be called implicitly. However, if you define your <xref:System.Windows.Application> using code, you will need to explicitly call <xref:System.Windows.Application.Run%2A>.  
   
- When <xref:System.Windows.Application.Run%2A> is called, <xref:System.Windows.Application> attaches a new <xref:System.Windows.Threading.Dispatcher> instance to the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread. Next, the <xref:System.Windows.Threading.Dispatcher> object's <xref:System.Windows.Threading.Dispatcher.Run%2A> method is called, which starts a message pump to process windows messages. Finally, the <xref:System.Windows.Threading.Dispatcher> object calls the <xref:System.Windows.Application> object's the <xref:System.Windows.Application.OnStartup%2A> method to raise the <xref:System.Windows.Application.Startup> event. Consequently, the application execution model has been established by the time you handle <xref:System.Windows.Application.Startup>, at which point the application is considered to be running.  
+ When <xref:System.Windows.Application.Run%2A> is called, <xref:System.Windows.Application> attaches a new <xref:System.Windows.Threading.Dispatcher> instance to the UI thread. Next, the <xref:System.Windows.Threading.Dispatcher> object's <xref:System.Windows.Threading.Dispatcher.Run%2A> method is called, which starts a message pump to process windows messages. Finally, the <xref:System.Windows.Threading.Dispatcher> object calls the <xref:System.Windows.Application> object's the <xref:System.Windows.Application.OnStartup%2A> method to raise the <xref:System.Windows.Application.Startup> event. Consequently, the application execution model has been established by the time you handle <xref:System.Windows.Application.Startup>, at which point the application is considered to be running.  
   
  An application stops running when <xref:System.Windows.Application.Shutdown%2A> is called; the value of the <xref:System.Windows.Application.ShutdownMode%2A> property determines when <xref:System.Windows.Application.Shutdown%2A> is called, and whether it happens automatically or you need to explicitly call it.  
   
@@ -1677,7 +1677,7 @@
       </Parameters>
       <Docs>
         <param name="window">A <see cref="T:System.Windows.Window" /> that opens automatically when an application starts.</param>
-        <summary>Starts a [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application and opens the specified window.</summary>
+        <summary>Starts a Windows Presentation Foundation application and opens the specified window.</summary>
         <returns>The <see cref="T:System.Int32" /> application exit code that is returned to the operating system when the application shuts down. By default, the exit code value is 0.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1840,7 +1840,7 @@
 ## Remarks  
  When <xref:System.Windows.Application.Shutdown%2A> is called, an application stops running. You can handle the <xref:System.Windows.Application.Exit> event to detect when an application is about to stop running, to perform any appropriate processing.  
   
- <xref:System.Windows.Application.Shutdown%2A> is implicitly called by [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] in the following situations:  
+ <xref:System.Windows.Application.Shutdown%2A> is implicitly called by Windows Presentation Foundation in the following situations:  
   
 -   When <xref:System.Windows.Application.ShutdownMode%2A> is set to <xref:System.Windows.ShutdownMode.OnLastWindowClose>.  
   
@@ -1927,9 +1927,9 @@
 ## Remarks  
  Applications stop running only when the <xref:System.Windows.Application.Shutdown%2A> method of the Application is called. Shut down can occur implicitly or explicitly, as specified by the value of the <xref:System.Windows.Application.ShutdownMode%2A> property.  
   
- If you set <xref:System.Windows.Application.ShutdownMode%2A> to <xref:System.Windows.ShutdownMode.OnLastWindowClose>, [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] implicitly calls <xref:System.Windows.Application.Shutdown%2A> when the last window in an application closes, even if any currently instantiated windows are set as the main window (see <xref:System.Windows.Application.MainWindow%2A>).  
+ If you set <xref:System.Windows.Application.ShutdownMode%2A> to <xref:System.Windows.ShutdownMode.OnLastWindowClose>, Windows Presentation Foundation (WPF) implicitly calls <xref:System.Windows.Application.Shutdown%2A> when the last window in an application closes, even if any currently instantiated windows are set as the main window (see <xref:System.Windows.Application.MainWindow%2A>).  
   
- A <xref:System.Windows.Application.ShutdownMode%2A> of <xref:System.Windows.ShutdownMode.OnMainWindowClose> causes [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)]to implicitly call <xref:System.Windows.Application.Shutdown%2A> when the <xref:System.Windows.Application.MainWindow%2A> closes, even if other windows are currently open.  
+ A <xref:System.Windows.Application.ShutdownMode%2A> of <xref:System.Windows.ShutdownMode.OnMainWindowClose> causes WPF to implicitly call <xref:System.Windows.Application.Shutdown%2A> when the <xref:System.Windows.Application.MainWindow%2A> closes, even if other windows are currently open.  
   
  The lifetime of some applications may not be dependent on when the main window or last window is closed, or may not be dependent on windows at all. For these scenarios you need to set the <xref:System.Windows.Application.ShutdownMode%2A> property to <xref:System.Windows.ShutdownMode.OnExplicitShutdown>, which requires an explicit <xref:System.Windows.Application.Shutdown%2A> method call to stop the application. Otherwise, the application continues running in the background.  
   
@@ -1970,7 +1970,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A typical [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application may perform a variety of initialization tasks when it starts up, including:  
+ A typical Windows Presentation Foundation application may perform a variety of initialization tasks when it starts up, including:  
   
 -   Processing command-line parameters.  
   
@@ -2033,15 +2033,15 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that is automatically shown when an application starts.</summary>
-        <value>A <see cref="T:System.Uri" /> that refers to the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that automatically opens when an application starts.</value>
+        <summary>Gets or sets a UI that is automatically shown when an application starts.</summary>
+        <value>A <see cref="T:System.Uri" /> that refers to the UI that automatically opens when an application starts.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use <xref:System.Windows.Application.StartupUri%2A> to automatically load a [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] resource when an application starts.  
+ You can use <xref:System.Windows.Application.StartupUri%2A> to automatically load a UI resource when an application starts.  
   
- The following table shows the types of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] resources that can be loaded, the type of window they are opened into, and the type of application that these resources can be set as the <xref:System.Windows.Application.StartupUri%2A>.  
+ The following table shows the types of UI resources that can be loaded, the type of window they are opened into, and the type of application that these resources can be set as the <xref:System.Windows.Application.StartupUri%2A>.  
   
 |Type|Window|Application type|  
 |----------|------------|----------------------|  
@@ -2052,9 +2052,9 @@
 |<xref:System.Windows.Documents.FlowDocument>|<xref:System.Windows.Navigation.NavigationWindow>|Standalone/browser-hosted|  
 |<xref:System.Windows.Navigation.PageFunction%601>|<xref:System.Windows.Navigation.NavigationWindow>|Standalone/browser-hosted|  
   
- Typically, you set the <xref:System.Windows.Application.StartupUri%2A> property declaratively in [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)]. However, you can set <xref:System.Windows.Application.StartupUri%2A> programmatically, such as from a <xref:System.Windows.Application.Startup> event handler, which is useful if for applications that can only load the necessary [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] resources at run time. For example, an application might wait until run time to load its resources if the name of the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] resource is stored in a configuration file.  
+ Typically, you set the <xref:System.Windows.Application.StartupUri%2A> property declaratively in [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)]. However, you can set <xref:System.Windows.Application.StartupUri%2A> programmatically, such as from a <xref:System.Windows.Application.Startup> event handler, which is useful if for applications that can only load the necessary UI resources at run time. For example, an application might wait until run time to load its resources if the name of the UI resource is stored in a configuration file.  
   
- Whether you set <xref:System.Windows.Application.StartupUri%2A> declaratively or programmatically, the corresponding [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] resource is not loaded until after the <xref:System.Windows.Application.Startup> event is handled. Consequently, you won't have access to the resulting window from either the <xref:System.Windows.Application.Windows%2A> property or the <xref:System.Windows.Application.MainWindow%2A> property when handling <xref:System.Windows.Application.Startup>.  
+ Whether you set <xref:System.Windows.Application.StartupUri%2A> declaratively or programmatically, the corresponding UI resource is not loaded until after the <xref:System.Windows.Application.Startup> event is handled. Consequently, you won't have access to the resulting window from either the <xref:System.Windows.Application.Windows%2A> property or the <xref:System.Windows.Application.MainWindow%2A> property when handling <xref:System.Windows.Application.Startup>.  
   
  ]]></format>
         </remarks>

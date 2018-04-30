@@ -22,7 +22,7 @@
   
  Strictly speaking, you can use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method without ever opening the dialog. In that sense, the control can be used as an unseen printing component. But for performance reasons, it would be better to use either the <xref:System.Printing.PrintQueue.AddJob%2A> method or one of the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, see [How to: Programmatically Print XPS Files](~/docs/framework/wpf/advanced/how-to-programmatically-print-xps-files.md).  
   
- Do not confuse this class, <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType>, with <xref:System.Windows.Forms.PrintDialog?displayProperty=nameWithType>. The latter is used with Windows Forms applications. <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> is used with [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] applications.  
+ Do not confuse this class, <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType>, with <xref:System.Windows.Forms.PrintDialog?displayProperty=nameWithType>. The latter is used with Windows Forms applications. <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> is used with Windows Presentation Foundation applications.  
   
    
   

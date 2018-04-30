@@ -57,7 +57,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <summary>This constructor supports the Windows Presentation Foundation infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -83,8 +83,8 @@
         <Parameter Name="id" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="id">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] that identifies this resource.</param>
-        <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <param name="id">The GUID that identifies this resource.</param>
+        <summary>This constructor supports the Windows Presentation Foundation infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
